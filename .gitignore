@@ -21,3 +21,7 @@ env/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
+
+# ─── mro QA probe fixtures — exceed GitHub's 100 MB push limit ───
+projects/mro/workbook/qa/gold/probe/09_Awards.json
+projects/mro/workbook/qa/new/probe/09_Awards.json
