@@ -1,0 +1,511 @@
+# sheet_probe: README_Methodology
+
+- source: `file`
+- tab name: `README_Methodology`
+- tab color: `FF2C6E6E`
+- gridlines shown: `0`
+- columns: 6 · rows: 157 · cells: 459 · formulas: 5
+
+## Banners
+- `B2` S_TITLE_SHEET — README_Methodology
+- `B4` S_TITLE_SECTION — Scope
+- `B10` S_TITLE_SECTION — Audit-color key (font color = edit-state; numeric cells only; NO yellow fills)
+- `B17` S_TITLE_SECTION — Two-stream TAM (v5) at a glance
+- `B24` S_TITLE_SECTION — Version history
+- `B31` S_TITLE_SECTION — Tab map
+- `B44` S_TITLE_SHEET — Market_Definitions
+- `B46` S_TITLE_SECTION — Governing rule
+- `B55` S_TITLE_SECTION — Base -> TAM -> SAM
+- `B63` S_TITLE_SECTION — Two-stream TAM (v5): TAM = BC_base x BC_coeff + AP/LLTM_base x AP/LLTM_coeff
+- `B69` S_TITLE_SECTION — SAM = scenario menu (not a formula)
+- `B75` S_TITLE_SECTION — In / out of TAM
+- `B82` S_TITLE_SHEET — Exclusion_Rules
+- `B84` S_TITLE_SECTION — Governing principle - the award-action SCOPE controls (entity/location are hints only)
+- `B89` S_TITLE_SECTION — scope_class vocabulary (POP_Location_Parse) - sub uses the lean subset
+- `B101` S_TITLE_SECTION — Exclusion categories - action-level flags
+- `B107` S_TITLE_SECTION — Effect on the corpus (live)
+- `B113` S_TITLE_SHEET — Bucket_Taxonomy
+- `B115` S_TITLE_SECTION — Work-type buckets (7 + explicit unbucketed residual)
+- `B126` S_TITLE_SECTION — NAICS-4digit -> bucket crosswalk (submarine = NAICS/vendor-led)
+- `B149` S_TITLE_SECTION — Classification precedence (Worktype_Rules)
+- `B157` S_TITLE_SHEET — Worktype_Rules
+- `B159` S_TITLE_SECTION — Arbiter principle - subawards classify the buckets (not the total-mix truth)
+- `B165` S_TITLE_SECTION — Precedence ladder (first match wins)
+- `B174` S_TITLE_SECTION — Override artifacts (name-based fixes for NAICS that mislead)
+
+## Formula dependencies (referenced sheet → cells)
+- **POP_Corpus** (2): C109, C110
+- **TAM_Model** (2): C65, C66
+- **Validation** (1): C111
+
+## Hardcoded inputs (1)
+- `C12` S_NUM_INPUT = 1234.5
+
+## Cross-sheet links (6)
+- `C14` S_LINK_NUM = None
+- `C65` S_LINK_PCT = 'TAM_Model'!C46
+- `C66` S_LINK_PCT = 'TAM_Model'!C47
+- `C109` S_LINK_NUM = 'POP_Corpus'!D684
+- `C110` S_LINK_NUM = 'POP_Corpus'!D685
+- `C111` S_LINK_NUM = 'Validation'!D13
+
+## Cells
+- `B2` S_TITLE_SHEET: README_Methodology
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: Scope
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `B5` S_DEFAULT: Market-sizing of the outsourced new-construction SUPPLIER opportunity for US Navy submarines
+- `B6` S_DEFAULT:   (Virginia LI 2013 + Columbia LI 1045), for market entrant Saronic.
+- `B7` S_DEFAULT: TAM is built from two cost streams (Basic Construction + AP/LLTM); SAM is a scenario menu.
+- `B8` S_DEFAULT: Every registered/headline deck figure ties to a workbook cell via Deck_Outputs; appendix contrast figures live in the evidence tabs (not all registered). Companion: DDG-51 workbook.
+- `A10` S_DEFAULT: x
+- `B10` S_TITLE_SECTION: Audit-color key (font color = edit-state; numeric cells only; NO yellow fills)
+- `C10` S_TITLE_SECTION: 
+- `D10` S_TITLE_SECTION: 
+- `E10` S_TITLE_SECTION: 
+- `B11` S_HEADER_LEFT: Meaning
+- `C11` S_HEADER_LEFT: Sample
+- `D11` S_HEADER_LEFT: Note
+- `B12` S_DEFAULT: Hardcoded input (blue)
+- `C12` S_NUM_INPUT: 1234.5
+- `D12` S_DEFAULT: edit these
+- `B13` S_DEFAULT: Derived value (black)
+- `C13` S_NUM: 5678.0
+- `D13` S_DEFAULT: formula result - do not edit
+- `B14` S_DEFAULT: Cross-sheet link (green)
+- `C14` S_LINK_NUM: 9012.3
+- `D14` S_DEFAULT: pure =Sheet!Cell reference
+- `B15` S_DEFAULT: Text labels stay black regardless of edit-state
+- `A17` S_DEFAULT: x
+- `B17` S_TITLE_SECTION: Two-stream TAM (v5) at a glance
+- `C17` S_TITLE_SECTION: 
+- `D17` S_TITLE_SECTION: 
+- `E17` S_TITLE_SECTION: 
+- `B18` S_DEFAULT: TAM = BC_base x headline_coeff (~35.0%, applied: non-nuclear, BPMI excluded)  +  AP/LLTM_base x AP/LLTM_coeff (~48.5%)
+- `B19` S_DEFAULT: Coefficients are $-weighted supplier+foreign POP shares (POP_Coefficients); all-gated POP anchor = 51.8% (drift guard, not applied).
+- `B20` S_DEFAULT: GFE + naval-nuclear LLTM (BPMI) dropped from BOTH base and corpus (nuclear-boundary base<->corpus fix).
+- `B21` S_DEFAULT: AP/LLTM additive base = 0 (CONFIRMED): the supplier LLTM is already inside Basic Construction (no double-count).
+- `B22` S_DEFAULT: SAM = SUMPRODUCT(bucket_$, scenario_flags) - a leadership menu, no fit/SOM haircut.
+- `B23` S_DEFAULT: Coefficient legend: 35.0% = headline (applied, non-nuclear) · 75.7% = pre-nuclear-boundary sensitivity (NOT applied) · 51.8% = all-gated anchor (drift guard).
+- `A24` S_DEFAULT: x
+- `B24` S_TITLE_SECTION: Version history
+- `C24` S_TITLE_SECTION: 
+- `D24` S_TITLE_SECTION: 
+- `E24` S_TITLE_SECTION: 
+- `B25` S_HEADER_LEFT: Version
+- `C25` S_HEADER_LEFT: Change
+- `D25` S_HEADER_LEFT: 
+- `B26` S_DEFAULT: v4
+- `C26` S_DEFAULT: BC-only TAM x single ~52% coefficient; SAM x capability_fit x addressability
+- `B27` S_DEFAULT: v5
+- `C27` S_DEFAULT: Two-stream TAM (BC + AP/LLTM, own coefficients); SAM = scenario menu (no haircut)
+- `B28` S_DEFAULT: 2026-05-29
+- `C28` S_DEFAULT: GFE excluded from BC corpus -> BC 61% to 75.7%; MIB column dropped (subaward-only)
+- `B29` S_DEFAULT: 2026-05-29 P3
+- `C29` S_DEFAULT: Phase 3: BPMI naval-nuclear out of BC corpus (base<->corpus fix) -> BC 75.7% to 35.0%, TAM $42.9B to ~$20B; AP/LLTM base = 0 confirmed (supplier LLTM in BC)
+- `B30` S_DEFAULT: 2026-05-31 P4
+- `C30` S_DEFAULT: Consolidation: 27 sheet modules -> 8 source files; 27 tabs -> 10 navigational tabs (rollup on top, full evidence below in collapsible groups). All figures + the audit chain preserved.
+- `A31` S_DEFAULT: x
+- `B31` S_TITLE_SECTION: Tab map
+- `C31` S_TITLE_SECTION: 
+- `D31` S_TITLE_SECTION: 
+- `E31` S_TITLE_SECTION: 
+- `B32` S_HEADER_LEFT: Tab
+- `C32` S_HEADER_LEFT: Group
+- `D32` S_HEADER_LEFT: Holds (sections, top to bottom)
+- `B33` S_DEFAULT: README_Methodology
+- `C33` S_DEFAULT: guide
+- `D33` S_DEFAULT: scope + two-stream at-a-glance + Market_Definitions, Exclusion_Rules, Bucket_Taxonomy, Worktype_Rules (this tab)
+- `B34` S_DEFAULT: Inputs
+- `C34` S_DEFAULT: inputs
+- `D34` S_DEFAULT: run knobs + AP/LLTM additive base (confirmed 0)
+- `B35` S_DEFAULT: Budget_Base
+- `C35` S_DEFAULT: data
+- `D35` S_DEFAULT: SCN P-5c per-FY detail + LLTM P-10 bucket grid + AP->TAM reconciliation bridge
+- `B36` S_DEFAULT: POP_Corpus
+- `C36` S_DEFAULT: data
+- `D36` S_DEFAULT: 658-row place-of-performance corpus + risk-weighted POP_Source_Audit confirmation
+- `B37` S_DEFAULT: Vendor_Buckets
+- `C37` S_DEFAULT: data
+- `D37` S_DEFAULT: Entity_Master vendor classification + Location_Master geography + Worktype_Evidence
+- `B38` S_DEFAULT: TAM_Model
+- `C38` S_DEFAULT: model
+- `D38` S_DEFAULT: Budget_Normalized stream bases + POP_Coefficients + two-stream TAM + annualization
+- `B39` S_DEFAULT: SAM_Model
+- `C39` S_DEFAULT: model
+- `D39` S_DEFAULT: Target_Scenarios matrix + Subaward bucket shares + TAM_Bucket_Allocation + scenario SAM
+- `B40` S_DEFAULT: Deck_Outputs
+- `C40` S_DEFAULT: outputs
+- `D40` S_DEFAULT: one cross-sheet link per deck figure (cumulative + average-annual)
+- `B41` S_DEFAULT: Validation
+- `C41` S_DEFAULT: validation
+- `D41` S_DEFAULT: MIB Excluded + Sensitivity + Number_Audit tie-out + QA_Reconciliation gate
+- `B42` S_DEFAULT: Sources
+- `C42` S_DEFAULT: sources
+- `D42` S_DEFAULT: Source_Index trail + References citations
+- `B44` S_TITLE_SHEET: Market_Definitions
+- `C44` S_TITLE_SHEET: 
+- `D44` S_TITLE_SHEET: 
+- `E44` S_TITLE_SHEET: 
+- `A46` S_DEFAULT: x
+- `B46` S_TITLE_SECTION: Governing rule
+- `C46` S_TITLE_SECTION: 
+- `D46` S_TITLE_SECTION: 
+- `E46` S_TITLE_SECTION: 
+- `B47` S_DEFAULT: TAM - the non-GFE, non-MIB new-construction supplier opportunity funded through Basic
+- `B48` S_DEFAULT:   Construction + AP/LLTM/EOQ (covered vessels), performed AWAY from prime / co-prime /
+- `B49` S_DEFAULT:   prime-controlled / GFE-controlled sites - the dollars genuinely available to outside suppliers.
+- `B50` S_DEFAULT: SAM - the portion of TAM in work-type buckets Saronic may choose to target, shown as a
+- `B51` S_DEFAULT:   scenario menu (no capability-fit / addressability / win-probability haircut).
+- `B52` S_DEFAULT: Distributed-production view (appendix) - work away from the final assembly yard (incl. co-prime);
+- `B53` S_DEFAULT:   broader than the commercial TAM, shown for context only.
+- `A55` S_DEFAULT: x
+- `B55` S_TITLE_SECTION: Base -> TAM -> SAM
+- `C55` S_TITLE_SECTION: 
+- `D55` S_TITLE_SECTION: 
+- `E55` S_TITLE_SECTION: 
+- `B56` S_HEADER_LEFT: Step
+- `C56` S_HEADER_LEFT: What
+- `D56` S_HEADER_LEFT: How
+- `B57` S_DEFAULT: 1. Base
+- `C57` S_DEFAULT: non-GFE/non-MIB new-construction $ per stream
+- `D57` S_DEFAULT: P-5c BC + P-10 AP/LLTM/EOQ, net exclusions
+- `B58` S_DEFAULT: 2. x coeff
+- `C58` S_DEFAULT: supplier+foreign POP share per stream
+- `D58` S_DEFAULT: POP_Coefficients SUMPRODUCT
+- `B59` S_DEFAULT: 3. = TAM
+- `C59` S_DEFAULT: BC_base x BC_coeff + AP_base x AP_coeff
+- `D59` S_DEFAULT: TAM_Model (one headline + stream bridge)
+- `B60` S_DEFAULT: 4. allocate
+- `C60` S_DEFAULT: TAM x modeled bucket share per (program, stream)
+- `D60` S_DEFAULT: TAM_Bucket_Allocation
+- `B61` S_DEFAULT: 5. = SAM
+- `C61` S_DEFAULT: Sum of bucket $ where scenario flag = 1
+- `D61` S_DEFAULT: SAM_Model = SUMPRODUCT(bucket$, flags)
+- `A63` S_DEFAULT: x
+- `B63` S_TITLE_SECTION: Two-stream TAM (v5): TAM = BC_base x BC_coeff + AP/LLTM_base x AP/LLTM_coeff
+- `C63` S_TITLE_SECTION: 
+- `D63` S_TITLE_SECTION: 
+- `E63` S_TITLE_SECTION: 
+- `B64` S_HEADER_LEFT: Stream
+- `C64` S_HEADER_LEFT: Coefficient (live)
+- `D64` S_HEADER_LEFT: Definition
+- `B65` S_BOLD: BC stream
+- `C65` S_LINK_PCT: ='TAM_Model'!C46
+- `D65` S_DEFAULT: supplier+foreign over non-GFE construction + component procurement
+- `B66` S_BOLD: AP/LLTM stream
+- `C66` S_LINK_PCT: ='TAM_Model'!C47
+- `D66` S_DEFAULT: supplier+foreign over long-lead material / advance procurement
+- `B67` S_DEFAULT: (GFE excluded from both base and corpus - strict v5; for submarines the AP/LLTM additive base = 0, confirmed - supplier LLTM is already inside Basic Construction)
+- `A69` S_DEFAULT: x
+- `B69` S_TITLE_SECTION: SAM = scenario menu (not a formula)
+- `C69` S_TITLE_SECTION: 
+- `D69` S_TITLE_SECTION: 
+- `E69` S_TITLE_SECTION: 
+- `B70` S_DEFAULT: Allocate TAM into 7 work-type buckets (by program x stream), then select buckets per scenario:
+- `B71` S_DEFAULT:   SAM_scenario[k] = SUMPRODUCT(bucket_$, scenario_flag[k, bucket])   with flag in {0,1}
+- `B72` S_DEFAULT: No capability_fit, no addressability, no SOM-style haircut - those are win-probability, not SAM.
+- `B73` S_DEFAULT: "If leadership targets these buckets, the opportunity is $X."
+- `A75` S_DEFAULT: x
+- `B75` S_TITLE_SECTION: In / out of TAM
+- `C75` S_TITLE_SECTION: 
+- `D75` S_TITLE_SECTION: 
+- `E75` S_TITLE_SECTION: 
+- `B76` S_HEADER_LEFT: In TAM
+- `C76` S_HEADER_LEFT: Out of TAM
+- `D76` S_HEADER_LEFT: 
+- `E76` S_HEADER_LEFT: 
+- `B77` S_DEFAULT: Basic Construction (non-GFE)
+- `C77` S_DEFAULT: GFE / weapons / sensors / ordnance
+- `B78` S_DEFAULT: AP / LLTM / EOQ (supplier-addressable)
+- `C78` S_DEFAULT: MIB / industrial-base capacity
+- `B79` S_DEFAULT: Component procurement (non-GFE)
+- `C79` S_DEFAULT: Sustainment / depot / design-only
+- `B80` S_DEFAULT: Work away from prime/co-prime/GFE sites
+- `C80` S_DEFAULT: Prime / co-prime / GFE-controlled site work
+- `B82` S_TITLE_SHEET: Exclusion_Rules
+- `C82` S_TITLE_SHEET: 
+- `D82` S_TITLE_SHEET: 
+- `E82` S_TITLE_SHEET: 
+- `F82` S_TITLE_SHEET: 
+- `A84` S_DEFAULT: x
+- `B84` S_TITLE_SECTION: Governing principle - the award-action SCOPE controls (entity/location are hints only)
+- `C84` S_TITLE_SECTION: 
+- `D84` S_TITLE_SECTION: 
+- `E84` S_TITLE_SECTION: 
+- `F84` S_TITLE_SECTION: 
+- `B85` S_DEFAULT: An award is EXCLUDED from TAM when its scope is GFE / weapons / sensors / ordnance /
+- `B86` S_DEFAULT:   Navy-directed systems procurement, MIB / industrial-base capacity, sustainment, depot, or
+- `B87` S_DEFAULT:   design-only - even if the work physically supports or installs on a covered vessel.
+- `A89` S_DEFAULT: x
+- `B89` S_TITLE_SECTION: scope_class vocabulary (POP_Location_Parse) - sub uses the lean subset
+- `C89` S_TITLE_SECTION: 
+- `D89` S_TITLE_SECTION: 
+- `E89` S_TITLE_SECTION: 
+- `F89` S_TITLE_SECTION: 
+- `B90` S_HEADER_LEFT: scope_class
+- `C90` S_HEADER_LEFT: In TAM?
+- `D90` S_HEADER_LEFT: Stream
+- `E90` S_HEADER_LEFT: Meaning
+- `F90` S_HEADER_LEFT: Sub use
+- `B91` S_DEFAULT: INCLUDE_BC
+- `C91` S_DEFAULT: Yes
+- `D91` S_DEFAULT: BC
+- `E91` S_DEFAULT: non-GFE construction / component procurement
+- `F91` S_DEFAULT: yes
+- `B92` S_DEFAULT: INCLUDE_AP_LLTM
+- `C92` S_DEFAULT: Yes
+- `D92` S_DEFAULT: AP/LLTM
+- `E92` S_DEFAULT: long-lead material / early mfg / advance proc
+- `F92` S_DEFAULT: yes
+- `B93` S_DEFAULT: INCLUDE_EOQ
+- `C93` S_DEFAULT: Yes
+- `D93` S_DEFAULT: AP/LLTM
+- `E93` S_DEFAULT: economic-order-quantity buys (folded into AP/LLTM)
+- `F93` S_DEFAULT: DDG
+- `B94` S_DEFAULT: EXCLUDE_GFE
+- `C94` S_DEFAULT: No
+- `D94` S_DEFAULT: -
+- `E94` S_DEFAULT: GFE / weapons / sensors / ordnance / Navy-directed
+- `F94` S_DEFAULT: yes
+- `B95` S_DEFAULT: EXCLUDE_MIB_IB
+- `C95` S_DEFAULT: No
+- `D95` S_DEFAULT: -
+- `E95` S_DEFAULT: MIB / industrial-base capacity (BlueForge-type)
+- `F95` S_DEFAULT: subaward-only
+- `B96` S_DEFAULT: EXCLUDE_SUSTAINMENT
+- `C96` S_DEFAULT: No
+- `D96` S_DEFAULT: -
+- `E96` S_DEFAULT: in-service sustainment / maintenance
+- `F96` S_DEFAULT: DDG
+- `B97` S_DEFAULT: EXCLUDE_DEPOT
+- `C97` S_DEFAULT: No
+- `D97` S_DEFAULT: -
+- `E97` S_DEFAULT: depot-level work
+- `F97` S_DEFAULT: DDG
+- `B98` S_DEFAULT: EXCLUDE_DESIGN_ONLY
+- `C98` S_DEFAULT: No
+- `D98` S_DEFAULT: -
+- `E98` S_DEFAULT: design / engineering only (no hardware)
+- `F98` S_DEFAULT: DDG
+- `B99` S_DEFAULT: EXCLUDE_REVIEW
+- `C99` S_DEFAULT: No
+- `D99` S_DEFAULT: -
+- `E99` S_DEFAULT: catch-all needing manual review
+- `F99` S_DEFAULT: yes
+- `A101` S_DEFAULT: x
+- `B101` S_TITLE_SECTION: Exclusion categories - action-level flags
+- `C101` S_TITLE_SECTION: 
+- `D101` S_TITLE_SECTION: 
+- `E101` S_TITLE_SECTION: 
+- `F101` S_TITLE_SECTION: 
+- `B102` S_HEADER_LEFT: Category
+- `C102` S_HEADER_LEFT: Flag
+- `D102` S_HEADER_LEFT: Covers
+- `E102` S_HEADER_LEFT: Sub treatment
+- `F102` S_HEADER_LEFT: 
+- `B103` S_DEFAULT: GFE / Navy-directed
+- `C103` S_DEFAULT: is_gfe_or_excluded_scope
+- `D103` S_DEFAULT: combat systems, sonar, weapons, ordnance, sensors
+- `E103` S_DEFAULT: sub_gfe_electronics / sub_gfe_components
+- `B104` S_DEFAULT: MIB / industrial base
+- `C104` S_DEFAULT: is_mib_or_industrial_base_support
+- `D104` S_DEFAULT: BlueForge / TMG / IALR capacity + workforce
+- `E104` S_DEFAULT: subaward-level only (MIB Excluded tab)
+- `B105` S_DEFAULT: Sustainment / depot / design
+- `C105` S_DEFAULT: scope_class
+- `D105` S_DEFAULT: in-service, depot, design-only scopes
+- `E105` S_DEFAULT: none gated in sub corpus
+- `A107` S_DEFAULT: x
+- `B107` S_TITLE_SECTION: Effect on the corpus (live)
+- `C107` S_TITLE_SECTION: 
+- `D107` S_TITLE_SECTION: 
+- `E107` S_TITLE_SECTION: 
+- `F107` S_TITLE_SECTION: 
+- `B108` S_HEADER_LEFT: Measure
+- `C108` S_HEADER_LEFT: $M
+- `D108` S_HEADER_LEFT: Note
+- `B109` S_DEFAULT: Gated TAM corpus
+- `C109` S_LINK_NUM: ='POP_Corpus'!D684
+- `D109` S_DEFAULT: before exclusions
+- `B110` S_DEFAULT: less: GFE / excluded scope
+- `C110` S_LINK_NUM: ='POP_Corpus'!D685
+- `D110` S_DEFAULT: dropped from base + coefficient corpus (strict v5)
+- `B111` S_DEFAULT: MIB exclusion (subaward-level)
+- `C111` S_LINK_NUM: ='Validation'!D13
+- `D111` S_DEFAULT: BlueForge/TMG/IALR; not in the gated POP corpus
+- `B113` S_TITLE_SHEET: Bucket_Taxonomy
+- `C113` S_TITLE_SHEET: 
+- `D113` S_TITLE_SHEET: 
+- `E113` S_TITLE_SHEET: 
+- `F113` S_TITLE_SHEET: 
+- `A115` S_DEFAULT: x
+- `B115` S_TITLE_SECTION: Work-type buckets (7 + explicit unbucketed residual)
+- `C115` S_TITLE_SECTION: 
+- `D115` S_TITLE_SECTION: 
+- `E115` S_TITLE_SECTION: 
+- `F115` S_TITLE_SECTION: 
+- `B116` S_HEADER_LEFT: Bucket key
+- `C116` S_HEADER_LEFT: Name
+- `D116` S_HEADER_LEFT: Definition
+- `E116` S_HEADER_LEFT: 
+- `F116` S_HEADER_LEFT: 
+- `B117` S_DEFAULT: structural
+- `C117` S_DEFAULT: Structural fab / pre-outfit
+- `D117` S_DEFAULT: hull sections, fabricated structural metal, pre-outfit modules
+- `B118` S_DEFAULT: machining
+- `C118` S_DEFAULT: Machining
+- `D118` S_DEFAULT: machine shops, precision machining, mechanical power transmission
+- `B119` S_DEFAULT: castings
+- `C119` S_DEFAULT: Castings & forgings
+- `D119` S_DEFAULT: iron/steel forging, steel foundries, cast components
+- `B120` S_DEFAULT: piping
+- `C120` S_DEFAULT: Piping / valves / pumps
+- `D120` S_DEFAULT: industrial valves, pumps, measuring/dispensing, pipe & fittings
+- `B121` S_DEFAULT: electrical
+- `C121` S_DEFAULT: Electrical / power
+- `D121` S_DEFAULT: switchgear, electronic components, propulsion-electronics
+- `B122` S_DEFAULT: hvac
+- `C122` S_DEFAULT: HVAC / ventilation
+- `D122` S_DEFAULT: air-conditioning, warm-air heating, shipboard ventilation
+- `B123` S_DEFAULT: coatings
+- `C123` S_DEFAULT: Coatings / insulation
+- `D123` S_DEFAULT: rubber/synthetic, composites, coatings & insulation
+- `B124` S_DEFAULT: unbucketed
+- `C124` S_DEFAULT: Unbucketed / ambiguous
+- `D124` S_DEFAULT: parent-unknown, naval-nuclear specialty, or no clean NAICS
+- `A126` S_DEFAULT: x
+- `B126` S_TITLE_SECTION: NAICS-4digit -> bucket crosswalk (submarine = NAICS/vendor-led)
+- `C126` S_TITLE_SECTION: 
+- `D126` S_TITLE_SECTION: 
+- `E126` S_TITLE_SECTION: 
+- `F126` S_TITLE_SECTION: 
+- `B127` S_HEADER_LEFT: NAICS-4
+- `C127` S_HEADER_LEFT: Bucket
+- `D127` S_HEADER_LEFT: 
+- `E127` S_HEADER_LEFT: 
+- `F127` S_HEADER_LEFT: 
+- `B128` S_DEFAULT: 3252
+- `C128` S_DEFAULT: coatings
+- `B129` S_DEFAULT: 3259
+- `C129` S_DEFAULT: coatings
+- `B130` S_DEFAULT: 3262
+- `C130` S_DEFAULT: coatings
+- `B131` S_DEFAULT: 3312
+- `C131` S_DEFAULT: castings
+- `B132` S_DEFAULT: 3315
+- `C132` S_DEFAULT: castings
+- `B133` S_DEFAULT: 3321
+- `C133` S_DEFAULT: castings
+- `B134` S_DEFAULT: 3323
+- `C134` S_DEFAULT: structural
+- `B135` S_DEFAULT: 3324
+- `C135` S_DEFAULT: structural
+- `B136` S_DEFAULT: 3327
+- `C136` S_DEFAULT: machining
+- `B137` S_DEFAULT: 3329
+- `C137` S_DEFAULT: piping
+- `B138` S_DEFAULT: 3334
+- `C138` S_DEFAULT: hvac
+- `B139` S_DEFAULT: 3336
+- `C139` S_DEFAULT: machining
+- `B140` S_DEFAULT: 3339
+- `C140` S_DEFAULT: piping
+- `B141` S_DEFAULT: 3344
+- `C141` S_DEFAULT: electrical
+- `B142` S_DEFAULT: 3353
+- `C142` S_DEFAULT: electrical
+- `B143` S_DEFAULT: 3359
+- `C143` S_DEFAULT: electrical
+- `B144` S_DEFAULT: 3364
+- `C144` S_DEFAULT: electrical
+- `B145` S_DEFAULT: 3366
+- `C145` S_DEFAULT: structural
+- `B146` S_DEFAULT: 3369
+- `C146` S_DEFAULT: structural
+- `B147` S_DEFAULT: 4235
+- `C147` S_DEFAULT: piping
+- `A149` S_DEFAULT: x
+- `B149` S_TITLE_SECTION: Classification precedence (Worktype_Rules)
+- `C149` S_TITLE_SECTION: 
+- `D149` S_TITLE_SECTION: 
+- `E149` S_TITLE_SECTION: 
+- `F149` S_TITLE_SECTION: 
+- `B150` S_DEFAULT: 1. prime / co-prime yard -> not addressable (role=prime/co_prime)
+- `B151` S_DEFAULT: 2. GFE / MIB (combat systems, sonar, BlueForge) -> excluded (role=gfe_mib)
+- `B152` S_DEFAULT: 3. vendor-name override -> bucket (5511 holding cos, 3364 propulsion-elec, blank-NAICS names)
+- `B153` S_DEFAULT: 4. NAICS-4digit crosswalk -> role=supplier, bucket per NAICS
+- `B154` S_DEFAULT: 5. service / non-component NAICS -> role=service (not addressable)
+- `B155` S_DEFAULT: 6. residual -> role=supplier, bucket=unbucketed (shown, never silently spread)
+- `B157` S_TITLE_SHEET: Worktype_Rules
+- `C157` S_TITLE_SHEET: 
+- `D157` S_TITLE_SHEET: 
+- `E157` S_TITLE_SHEET: 
+- `A159` S_DEFAULT: x
+- `B159` S_TITLE_SECTION: Arbiter principle - subawards classify the buckets (not the total-mix truth)
+- `C159` S_TITLE_SECTION: 
+- `D159` S_TITLE_SECTION: 
+- `E159` S_TITLE_SECTION: 
+- `B160` S_DEFAULT: Subawards map vendor / description / NAICS -> bucket and SEED the observed shares,
+- `B161` S_DEFAULT:   but the visible subaward mix is never assumed to equal the hidden TAM mix - the modeled
+- `B162` S_DEFAULT:   bucket share is adjusted transparently (Subaward_Clean_Bucketed), residual shown explicitly.
+- `B163` S_DEFAULT: Submarine = NAICS / vendor-led ; DDG = description-led. Entity/location are hints only.
+- `A165` S_DEFAULT: x
+- `B165` S_TITLE_SECTION: Precedence ladder (first match wins)
+- `C165` S_TITLE_SECTION: 
+- `D165` S_TITLE_SECTION: 
+- `E165` S_TITLE_SECTION: 
+- `B166` S_HEADER_LEFT: #
+- `C166` S_HEADER_LEFT: Rule
+- `D166` S_HEADER_LEFT: Result
+- `E166` S_HEADER_LEFT: Example
+- `B167` S_DEFAULT: 1
+- `C167` S_DEFAULT: prime / co-prime yard name
+- `D167` S_DEFAULT: role=prime/co_prime (not addressable)
+- `E167` S_DEFAULT: Electric Boat, HII-Newport News
+- `B168` S_DEFAULT: 2
+- `C168` S_DEFAULT: GFE / MIB name
+- `D168` S_DEFAULT: role=gfe_mib (excluded scope)
+- `E168` S_DEFAULT: Lockheed combat sys, Ultra sonar, BlueForge
+- `B169` S_DEFAULT: 3
+- `C169` S_DEFAULT: vendor-name override
+- `D169` S_DEFAULT: bucket per override
+- `E169` S_DEFAULT: Circor->piping, Rhoads->structural
+- `B170` S_DEFAULT: 4
+- `C170` S_DEFAULT: NAICS-4digit crosswalk
+- `D170` S_DEFAULT: role=supplier, bucket per NAICS
+- `E170` S_DEFAULT: 3329->piping, 3321->castings
+- `B171` S_DEFAULT: 5
+- `C171` S_DEFAULT: service / non-component NAICS
+- `D171` S_DEFAULT: role=service (not addressable)
+- `E171` S_DEFAULT: 5416 mgmt, 5413 eng, 5132 software
+- `B172` S_DEFAULT: 6
+- `C172` S_DEFAULT: residual
+- `D172` S_DEFAULT: role=supplier, bucket=unbucketed
+- `E172` S_DEFAULT: blank-NAICS, parent-unknown
+- `A174` S_DEFAULT: x
+- `B174` S_TITLE_SECTION: Override artifacts (name-based fixes for NAICS that mislead)
+- `C174` S_TITLE_SECTION: 
+- `D174` S_TITLE_SECTION: 
+- `E174` S_TITLE_SECTION: 
+- `B175` S_HEADER_LEFT: Artifact
+- `C175` S_HEADER_LEFT: Why it misleads
+- `D175` S_HEADER_LEFT: Fix
+- `E175` S_HEADER_LEFT: 
+- `B176` S_DEFAULT: 3364 'aircraft parts'
+- `C176` S_DEFAULT: NG / Leonardo coded as aircraft mfg
+- `D176` S_DEFAULT: -> electrical (propulsion-electronics)
+- `B177` S_DEFAULT: 5511 holding companies
+- `C177` S_DEFAULT: parent UEI, no operating NAICS
+- `D177` S_DEFAULT: -> unbucketed (parent unknown)
+- `B178` S_DEFAULT: blank-NAICS 'not_found'
+- `C178` S_DEFAULT: valve/pipe/structural names unmatched
+- `D178` S_DEFAULT: -> vendor-name override to the right bucket
+- `B179` S_DEFAULT: BWX / naval-nuclear
+- `C179` S_DEFAULT: specialty reactor work, not a clean bucket
+- `D179` S_DEFAULT: -> unbucketed (R2 scope nuance)

@@ -21,7 +21,7 @@ SCN page IDs (FY27 book):
 DDG 1000 (Zumwalt) is intentionally out of scope — only 3 ships, almost all
 construction work complete; remaining $ flows through OPN (CPS install on DDG 1002).
 
-Outputs (in OUT = projects/distributed_shipbuilding/ddg/workbook/extracted/):
+Outputs (in OUT = projects/distributed_shipbuilding/tam/ddg/extracted/):
   scn_li_resource_summary.csv     P-40 line-item resource summary (latest book)
   scn_li_cost_categories.csv      P-5c cost categories per FY, multi-vintage reconciled
   scn_li_production_schedule.csv  P-27 ship production schedule (latest book)
@@ -38,8 +38,8 @@ from collections import defaultdict
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # .../projects/distributed_shipbuilding/ddg/research/scripts -> .../ooxml_build_pipelines_light
 _REPO = os.path.abspath(os.path.join(_HERE, "..", "..", "..", "..", ".."))
-BOOKS_DIR = os.path.join(_REPO, "projects", "research_shared", "budget_books")
-OUT = os.path.join(_REPO, "projects", "distributed_shipbuilding", "ddg", "workbook", "extracted")
+BOOKS_DIR = os.path.join(_REPO, "projects", "distributed_shipbuilding", "research_shared", "budget_books")
+OUT = os.path.join(_REPO, "projects", "distributed_shipbuilding", "tam", "ddg", "extracted")
 os.makedirs(OUT, exist_ok=True)
 
 # Reconciled cost-category output is constrained to this FY window (matches the prior

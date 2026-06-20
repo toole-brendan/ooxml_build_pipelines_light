@@ -1,0 +1,878 @@
+{
+  "summary": {
+    "paragraphs": 46,
+    "tables": 2,
+    "list_paragraphs": 0,
+    "bookmarks": 0,
+    "page_setups": 1,
+    "drawings": 0,
+    "ascii_blocks": 0,
+    "wire_tables": 0,
+    "style_counts": {
+      "Heading1": 1,
+      "Body": 16,
+      "Heading2": 10,
+      "ListBody": 16,
+      "Caption": 2,
+      "Source": 1
+    }
+  },
+  "headings": [
+    {
+      "level": "Heading1",
+      "text": "How We Size the Outsourcing Ceiling"
+    },
+    {
+      "level": "Heading2",
+      "text": "Where this fits in the distributed shipbuilding project"
+    },
+    {
+      "level": "Heading2",
+      "text": "The question in one sentence"
+    },
+    {
+      "level": "Heading2",
+      "text": "The breakthrough: build the ceiling, don't look it up"
+    },
+    {
+      "level": "Heading2",
+      "text": "Start with the basics: what is \u201cBasic Construction\u201d?"
+    },
+    {
+      "level": "Heading2",
+      "text": "The two numbers that do the work"
+    },
+    {
+      "level": "Heading2",
+      "text": "The idea in one line: core vs. ceiling"
+    },
+    {
+      "level": "Heading2",
+      "text": "From hours to dollars"
+    },
+    {
+      "level": "Heading2",
+      "text": "What we found"
+    },
+    {
+      "level": "Heading2",
+      "text": "Two honest limits"
+    },
+    {
+      "level": "Heading2",
+      "text": "Where the numbers come from"
+    }
+  ],
+  "sources": [
+    "Plain-language companion to the Outsourcing Ceiling workbook. Basis: FY22-27 Basic Construction for Virginia / Columbia / DDG-51, with the movable-hours and labor-share inputs sourced as above; exact figures, thresholds, and the live controls live in the workbook."
+  ],
+  "structured_blocks": [],
+  "bookmarks": [],
+  "page_setups": [
+    {
+      "page_w": "12240",
+      "page_h": "15840",
+      "orient": "portrait",
+      "margins": {
+        "top": "1440",
+        "right": "1080",
+        "bottom": "1440",
+        "left": "1080"
+      }
+    }
+  ],
+  "drawings": [],
+  "tables": [
+    {
+      "kind": "table",
+      "style": "RuleTable",
+      "rows": 5,
+      "cols": 4,
+      "grid": [
+        [
+          "Program",
+          "Must stay (core)",
+          "Could be outsourced (ceiling)",
+          "vs. today"
+        ],
+        [
+          "Virginia",
+          "25%",
+          "75%",
+          "about 2.2x"
+        ],
+        [
+          "Columbia",
+          "25%",
+          "75%",
+          "about 3.4x"
+        ],
+        [
+          "DDG-51",
+          "20%",
+          "80%",
+          "about 6.1x"
+        ],
+        [
+          "Portfolio",
+          "24%",
+          "76%",
+          "about 3.0x"
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "style": "RuleTable",
+      "rows": 5,
+      "cols": 3,
+      "grid": [
+        [
+          "Number",
+          "What it means",
+          "Where it comes from"
+        ],
+        [
+          "Movable hours (about 50%)",
+          "The share of submarine labor hours that can be done outside the prime yard",
+          "Navy submarine program executive, press interview (2022) \u2014 the two-to-five-million supplier-hours ramp"
+        ],
+        [
+          "Labor share (about 40%)",
+          "Labor as a share of a ship's total cost; re-based higher onto Basic Construction",
+          "Congressional Research Service testimony (2025), cross-checked against an independent cost index (2024)"
+        ],
+        [
+          "One build line",
+          "Confirms there is no published split of assembly vs. outsourceable work to read off",
+          "Pentagon budget-rules exhibit, plus the shipbuilders' annual reports"
+        ],
+        [
+          "Today's outsourcing (the floor)",
+          "Virginia 34%, Columbia 22%, DDG-51 about 13% \u2014 the starting point the ceiling is measured against",
+          "Announced place-of-performance shares for each program"
+        ]
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "style": "Heading1",
+      "num": null,
+      "text": "How We Size the Outsourcing Ceiling",
+      "runs": [
+        {
+          "text": "How We Size the Outsourcing Ceiling",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "In plain terms: the ceiling is the most of a ship's new-construction work that could, in theory, be bought from outside suppliers instead of done inside the prime shipyard \u2014 if the only work that truly has to stay in the yard is final assembly, integration, and test. This page explains, from the top, how we put a number on that ceiling, why we had to build it up from two sourced figures rather than read it off a budget line, and what it comes out to.",
+      "runs": [
+        {
+          "text": "In plain terms: ",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "the ceiling is the most of a ship's new-construction work that could, in theory, be bought from outside suppliers instead of done inside the prime shipyard \u2014 if the only work that truly has to stay in the yard is final assembly, integration, and test. This page explains, from the top, how we put a number on that ceiling, why we had to build it up from two sourced figures rather than read it off a budget line, and what it comes out to."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "Where this fits in the distributed shipbuilding project",
+      "runs": [
+        {
+          "text": "Where this fits in the distributed shipbuilding project",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The wider project asks one question: how much of the work of building the Navy's warships is moving away from the prime shipyards and out to a distributed base of suppliers \u2014 and how big an opening that creates for a new entrant. The work splits in two:",
+      "runs": [
+        {
+          "text": "The wider project asks one question: how much of the work of building the Navy's warships is moving away from the prime shipyards and out to a distributed base of suppliers \u2014 and how big an opening that creates for a new entrant. The work splits in two:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022Looking back \u2014 what is already outsourced. A separate Award Analysis workbook reads the supplier records to map the work the shipbuilders already buy from outside: who wins it, how concentrated it is, and when it comes up to be bought again.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "Looking back \u2014 what is already outsourced.",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " A separate Award Analysis workbook reads the supplier records to map the work the shipbuilders already buy from outside: who wins it, how concentrated it is, and when it comes up to be bought again."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022Looking forward \u2014 how much more could move. That is this workbook. It puts an upper bound on outsourcing \u2014 the largest share of a ship's build that could, in principle, leave the prime yard.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "Looking forward \u2014 how much more could move.",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " That is this workbook. It puts an upper bound on outsourcing \u2014 the largest share of a ship's build that could, in principle, leave the prime yard."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The two meet at this page's headline read: the opening is the gap between what is distributed today \u2014 the share already built away from the prime yard \u2014 and the structural ceiling above it. This workbook sizes that ceiling, and so the headroom still on the table.",
+      "runs": [
+        {
+          "text": "The two meet at this page's headline read: the opening is the gap between what is distributed today \u2014 the share already built away from the prime yard \u2014 and the structural ceiling above it. This workbook sizes that ceiling, and so the headroom still on the table."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "The question in one sentence",
+      "runs": [
+        {
+          "text": "The question in one sentence",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "How much higher could outsourcing go? Today a known share of each ship's build already happens away from the prime yard. The question is not what that share is now \u2014 it is how high it could climb before it runs into the work that physically cannot leave the yard.",
+      "runs": [
+        {
+          "text": "How much higher could outsourcing go? ",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "Today a known share of each ship's build already happens away from the prime yard. The question is not what that share is now \u2014 it is how high it could climb before it runs into the work that physically cannot leave the yard."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "The breakthrough: build the ceiling, don't look it up",
+      "runs": [
+        {
+          "text": "The breakthrough: build the ceiling, don't look it up",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The obvious move would be to find an official figure for \u201cassembly work that must stay\u201d versus \u201cwork that could be outsourced.\u201d Two facts forced a different approach:",
+      "runs": [
+        {
+          "text": "The obvious move would be to find an official figure for \u201cassembly work that must stay\u201d versus \u201cwork that could be outsourced.\u201d Two facts forced a different approach:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022The clean line does not exist. The budget lumps the whole hull-and-structure build into one line; it never splits labor from materials, or \u201cassembly\u201d from \u201cparts you could buy elsewhere.\u201d The Pentagon's own budget rules and the shipbuilders' annual reports confirm the split simply is not published.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "The clean line does not exist.",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " The budget lumps the whole hull-and-structure build into one line; it never splits labor from materials, or \u201cassembly\u201d from \u201cparts you could buy elsewhere.\u201d The Pentagon's own budget rules and the shipbuilders' annual reports confirm the split simply is not published."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022Today's number is the floor, not the ceiling. The share already built away from the prime yard (Virginia 34%, Columbia 22%, DDG-51 about 13%) is current outsourcing. Using it as the ceiling would assume away the very growth we are trying to size \u2014 so it becomes the starting floor, and the ceiling has to come from somewhere else.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "Today's number is the floor, not the ceiling.",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " The share already built away from the prime yard (Virginia 34%, Columbia 22%, DDG-51 about 13%) is current outsourcing. Using it as the ceiling would assume away the very growth we are trying to size \u2014 so it becomes the starting floor, and the ceiling has to come from somewhere else."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "So instead of looking the ceiling up, we build it from two numbers that are published and citable. The rest of this page is those two numbers and the simple arithmetic that turns them into a ceiling.",
+      "runs": [
+        {
+          "text": "So instead of looking the ceiling up, we "
+        },
+        {
+          "text": "build it",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " from two numbers that "
+        },
+        {
+          "text": "are",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " published and citable. The rest of this page is those two numbers and the simple arithmetic that turns them into a ceiling."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "Start with the basics: what is \u201cBasic Construction\u201d?",
+      "runs": [
+        {
+          "text": "Start with the basics: what is \u201cBasic Construction\u201d?",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "When the Navy buys a ship, the largest piece of the price is a single budget line usually called Basic Construction \u2014 the labor and materials to physically build the hull and its structure. It does not include government-furnished gear like the combat system or, on the submarines, the reactor; those are bought separately. Everything in this analysis is measured as a share of that Basic Construction line, because that is the work a shipbuilder can choose to do in-house or send out.",
+      "runs": [
+        {
+          "text": "When the Navy buys a ship, the largest piece of the price is a single budget line usually called Basic Construction \u2014 the labor and materials to physically build the hull and its structure. It does not include government-furnished gear like the combat system or, on the submarines, the reactor; those are bought separately. Everything in this analysis is measured as a share of that Basic Construction line, because that is the work a shipbuilder can choose to do in-house or send out."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "The two numbers that do the work",
+      "runs": [
+        {
+          "text": "The two numbers that do the work",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The whole estimate rests on two sourced figures. Both describe the build as shares, so they travel across programs and dollar years:",
+      "runs": [
+        {
+          "text": "The whole estimate rests on two sourced figures. Both describe the build as shares, so they travel across programs and dollar years:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022How much labor can leave the yard (we call it h). The Navy's submarine program executive has said roughly half the labor hours to build a Virginia-class boat can be done outside the prime yard \u2014 the planned ramp from about two million to five million supplier hours a year. So about 50% of the labor hours are movable.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "How much labor can leave the yard (we call it h).",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " The Navy's submarine program executive has said roughly half the labor hours to build a Virginia-class boat can be done outside the prime yard \u2014 the planned ramp from about two million to five million supplier hours a year. So about 50% of the labor hours are movable."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022How much of the build is labor in the first place (we call it L). Congressional Research Service testimony puts shipyard labor at roughly 40% of a ship's total cost, and an independent cost index puts it in the same 40-to-48% range. Because that 40% is measured against the ship's whole price \u2014 including the government-furnished gear \u2014 labor's share of just the Basic Construction line is higher, so we use about 50% for the submarines and 45% for the destroyer.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "How much of the build is labor in the first place (we call it L).",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " Congressional Research Service testimony puts shipyard labor at roughly 40% of a ship's total cost, and an independent cost index puts it in the same 40-to-48% range. Because that 40% is measured against the ship's whole price \u2014 including the government-furnished gear \u2014 labor's share of just the Basic Construction line is higher, so we use about 50% for the submarines and 45% for the destroyer."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "Why this matters: the submarine half-the-hours figure already implies today's roughly 20% of hours is on its way to about 50% \u2014 a jump of about two-and-a-half times in the labor that can leave the yard.",
+      "runs": [
+        {
+          "text": "Why this matters: ",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "the submarine half-the-hours figure already implies today's roughly 20% of hours is on its way to about 50% \u2014 a jump of about two-and-a-half times in the labor that can leave the yard."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "The idea in one line: core vs. ceiling",
+      "runs": [
+        {
+          "text": "The idea in one line: core vs. ceiling",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "Picture the Basic Construction build as a whole. Part of it is work that has to stay in the prime yard no matter what \u2014 final assembly, integration, and test. Call that the core. The ceiling is simply everything that is not core:",
+      "runs": [
+        {
+          "text": "Picture the Basic Construction build as a whole. Part of it is work that has to stay in the prime yard no matter what \u2014 final assembly, integration, and test. Call that the core. The ceiling is simply everything that is not core:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022Core = the labor share that stays put = labor share \u00d7 the part of labor that cannot leave.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "Core",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " = the labor share that stays put = "
+        },
+        {
+          "text": "labor share \u00d7 the part of labor that cannot leave",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022Ceiling = everything else = 100% minus the core.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "Ceiling",
+          "rStyle": "Strong"
+        },
+        {
+          "text": " = everything else = "
+        },
+        {
+          "text": "100% minus the core",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "That is the entire model. Two sourced numbers go in; a core and a ceiling come out, for each ship class and for the portfolio as a whole.",
+      "runs": [
+        {
+          "text": "That is the entire model. Two sourced numbers go in; a core and a ceiling come out, for each ship class and for the portfolio as a whole."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "From hours to dollars",
+      "runs": [
+        {
+          "text": "From hours to dollars",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The two numbers above are about hours, but the answer people want is in dollars. The bridge adds the materials side back in. Outsourced dollars are the sum of two flows:",
+      "runs": [
+        {
+          "text": "The two numbers above are about hours, but the answer people want is in dollars. The bridge adds the materials side back in. Outsourced dollars are the sum of two flows:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "1.The prime-yard labor that relocates to suppliers \u2014 the movable hours turned into dollars.",
+      "runs": [
+        {
+          "text": "1."
+        },
+        {
+          "text": "The prime-yard labor that relocates to suppliers \u2014 the movable hours turned into dollars."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "2.The parts and materials bought from outside \u2014 a share of the non-labor half of the build, set by how much of that material is genuinely up for grabs rather than locked to a single source.",
+      "runs": [
+        {
+          "text": "2."
+        },
+        {
+          "text": "The parts and materials bought from outside \u2014 a share of the non-labor half of the build, set by how much of that material is genuinely up for grabs rather than locked to a single source."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "Turning the second dial up or down is what moves the answer between a labor-only reading (about a quarter of the build) and the full ceiling. For sizing a supplier opportunity \u2014 where bought-in material is part of the prize \u2014 that dial sits high.",
+      "runs": [
+        {
+          "text": "Turning the second dial up or down is what moves the answer between a labor-only reading (about a quarter of the build) and the full ceiling. For sizing a supplier opportunity \u2014 where bought-in material is part of the prize \u2014 that dial sits high."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "What we found",
+      "runs": [
+        {
+          "text": "What we found",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "Run the two sourced numbers through the model and the ceiling lands near three-quarters of Basic Construction on every program \u2014 roughly three times today's outsourced share:",
+      "runs": [
+        {
+          "text": "Run the two sourced numbers through the model and the ceiling lands near three-quarters of Basic Construction on every program \u2014 roughly three times today's outsourced share:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "num": null,
+      "text": "Table 1. The ceiling read at a glance",
+      "runs": [
+        {
+          "text": "Table 1. The ceiling read at a glance",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "style": "RuleTable",
+      "rows": 5,
+      "cols": 4,
+      "grid": [
+        [
+          "Program",
+          "Must stay (core)",
+          "Could be outsourced (ceiling)",
+          "vs. today"
+        ],
+        [
+          "Virginia",
+          "25%",
+          "75%",
+          "about 2.2x"
+        ],
+        [
+          "Columbia",
+          "25%",
+          "75%",
+          "about 3.4x"
+        ],
+        [
+          "DDG-51",
+          "20%",
+          "80%",
+          "about 6.1x"
+        ],
+        [
+          "Portfolio",
+          "24%",
+          "76%",
+          "about 3.0x"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "The punchline: the nuclear submarines carry the bigger must-stay core (25% vs. the destroyer's 20%) \u2014 the reactor work keeps more locked inside the yard \u2014 yet even they could roughly double or triple what they outsource today.",
+      "runs": [
+        {
+          "text": "The punchline: ",
+          "rStyle": "Strong"
+        },
+        {
+          "text": "the nuclear submarines carry the bigger must-stay core (25% vs. the destroyer's 20%) \u2014 the reactor work keeps more locked inside the yard \u2014 yet even they could roughly double or triple what they outsource today."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "Two honest limits",
+      "runs": [
+        {
+          "text": "Two honest limits",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022The destroyer's two numbers are analyst judgment.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "The destroyer's two numbers are analyst judgment.",
+          "rStyle": "Strong"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u25e6There is no surface-ship equivalent of the submarine half-the-hours figure, so we set the destroyer's movable-hours and labor shares by reasoning (no reactor, so a smaller locked core) rather than a direct quote. They are meant to be adjusted.",
+      "runs": [
+        {
+          "text": "\u25e6"
+        },
+        {
+          "text": "There is no surface-ship equivalent of the submarine half-the-hours figure, so we set the destroyer's movable-hours and labor shares by reasoning (no reactor, so a smaller locked core) rather than a direct quote. They are meant to be adjusted."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022The 40% labor figure is of the whole ship, not just the build.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "The 40% labor figure is of the whole ship, not just the build.",
+          "rStyle": "Strong"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u25e6Re-basing it onto just the Basic Construction line is a judgment call (we used about 50% for subs, 45% for the destroyer), so the workbook lets you sweep it.",
+      "runs": [
+        {
+          "text": "\u25e6"
+        },
+        {
+          "text": "Re-basing it onto just the Basic Construction line is a judgment call (we used about 50% for subs, 45% for the destroyer), so the workbook lets you sweep it."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u2022The dollars are illustrative; the shares are the answer.",
+      "runs": [
+        {
+          "text": "\u2022"
+        },
+        {
+          "text": "The dollars are illustrative; the shares are the answer.",
+          "rStyle": "Strong"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "ListBody",
+      "num": null,
+      "text": "\u25e6Figures are in as-reported (then-year) dollars to show magnitude. The ratios \u2014 core, ceiling, and the multiple over today \u2014 are what the analysis stands on, and they do not depend on the dollar year.",
+      "runs": [
+        {
+          "text": "\u25e6"
+        },
+        {
+          "text": "Figures are in as-reported (then-year) dollars to show magnitude. The ratios \u2014 core, ceiling, and the multiple over today \u2014 are what the analysis stands on, and they do not depend on the dollar year."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Heading2",
+      "num": null,
+      "text": "Where the numbers come from",
+      "runs": [
+        {
+          "text": "Where the numbers come from",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Body",
+      "num": null,
+      "text": "Only a handful of figures drive the whole estimate, and each traces to a named, public source. The rest of the workbook is arithmetic on top of these:",
+      "runs": [
+        {
+          "text": "Only a handful of figures drive the whole estimate, and each traces to a named, public source. The rest of the workbook is arithmetic on top of these:"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Caption",
+      "num": null,
+      "text": "Table 2. The sourced inputs, and where each comes from",
+      "runs": [
+        {
+          "text": "Table 2. The sourced inputs, and where each comes from",
+          "color": "000000"
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "style": "RuleTable",
+      "rows": 5,
+      "cols": 3,
+      "grid": [
+        [
+          "Number",
+          "What it means",
+          "Where it comes from"
+        ],
+        [
+          "Movable hours (about 50%)",
+          "The share of submarine labor hours that can be done outside the prime yard",
+          "Navy submarine program executive, press interview (2022) \u2014 the two-to-five-million supplier-hours ramp"
+        ],
+        [
+          "Labor share (about 40%)",
+          "Labor as a share of a ship's total cost; re-based higher onto Basic Construction",
+          "Congressional Research Service testimony (2025), cross-checked against an independent cost index (2024)"
+        ],
+        [
+          "One build line",
+          "Confirms there is no published split of assembly vs. outsourceable work to read off",
+          "Pentagon budget-rules exhibit, plus the shipbuilders' annual reports"
+        ],
+        [
+          "Today's outsourcing (the floor)",
+          "Virginia 34%, Columbia 22%, DDG-51 about 13% \u2014 the starting point the ceiling is measured against",
+          "Announced place-of-performance shares for each program"
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "style": "Source",
+      "num": null,
+      "text": "Plain-language companion to the Outsourcing Ceiling workbook. Basis: FY22-27 Basic Construction for Virginia / Columbia / DDG-51, with the movable-hours and labor-share inputs sourced as above; exact figures, thresholds, and the live controls live in the workbook.",
+      "runs": [
+        {
+          "text": "Plain-language companion to the Outsourcing Ceiling workbook. Basis: FY22-27 Basic Construction for Virginia / Columbia / DDG-51, with the movable-hours and labor-share inputs sourced as above; exact figures, thresholds, and the live controls live in the workbook.",
+          "color": "000000"
+        }
+      ]
+    }
+  ]
+}

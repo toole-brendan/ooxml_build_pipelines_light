@@ -30,7 +30,7 @@ from collections import defaultdict
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # .../projects/distributed_shipbuilding/submarines/research/scripts -> .../ooxml_build_pipelines_light
 _REPO = os.path.abspath(os.path.join(_HERE, "..", "..", "..", "..", ".."))
-EXTRACTED = os.path.join(_REPO, "projects", "distributed_shipbuilding", "submarines", "workbook", "extracted")
+EXTRACTED = os.path.join(_REPO, "projects", "distributed_shipbuilding", "tam", "submarines", "extracted")
 
 
 def load_scope_summary():

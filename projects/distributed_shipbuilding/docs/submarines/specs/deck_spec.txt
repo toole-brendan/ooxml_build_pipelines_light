@@ -1,0 +1,960 @@
+================================================================================
+SUBMARINE OUTSOURCED-CONSTRUCTION SUPPLIER MARKET SIZING
+CONSOLIDATED DECK SPECIFICATION
+================================================================================
+Status:        v2 build spec (ground-up; supersedes all prior deck artifacts)
+Date:          2026-06-02
+Owner:         Brendan Toole / Saronic
+Built from:    - 3 deck-design transcripts (core/submarine/transcript on slides*.txt)
+               - workbook_finish_handoff_plan_2026-06-02.md
+               - finished workbook: workbook/20260601_Distributed Shipbuilding
+                 Submarines_vS.xlsx (implementation complete; values calculated)
+               - deck_core engine + house style (slide_guide.md, slide_snippets.md,
+                 style.py, charts.py, primitives.py, text_metrics.py)
+
+v2 CHANGES vs v1 (from the deck_core review):
+  - Per-slide chrome is a quadruple (breadcrumb + title + Preliminary chip +
+    Sources line); Sources added to every content slide.
+  - Labels: HYBRID. Work-type buckets read in "and" form on slides; acronym
+    compounds (AP/LLTM, HM&E, GFE, SIB, ...) stay as-is. Workbook keeps slashes
+    as data keys. (Replaces v1 "mirror the workbook verbatim".)
+  - Separators/typography aligned to slide_guide (no / + x -> as word separators;
+    no em dashes; "per year" not "/yr"; en dash only for number ranges).
+  - 4 section dividers added (section_divider_layout). Logical slide IDs S01-S18
+    remain the workbook contract keys; dividers do not renumber content.
+  - Title length capped at 2 lines; long findings shortened.
+  - Visual-hierarchy discipline, table skins, color-role->palette map, waterfall
+    label caveat, and deck_core helper/primitive names folded in.
+
+SOURCE OF TRUTH FOR ALL NUMBERS:
+  The workbook is authoritative. Every figure here is a REFERENCE value copied
+  from the finished workbook on the date above and rounded for display. At build
+  time, pull live values from the workbook "Chart Data", "Slide Data", and
+  "Figure Register" sheets - never from this document, never hardcoded. If a
+  number here disagrees with the workbook, the workbook wins.
+
+ENGINE / STYLE SOURCE OF TRUTH:
+  deck_core is authoritative for build mechanics and house style. This spec does
+  not restate deck_core; it points to it. Do NOT edit deck_core files to build
+  this deck - compose slides from the imported builders + slide-local helpers.
+  Key references: deck_core/slide_guide.md (style + locked chrome),
+  deck_core/slide_snippets.md (recipes), deck_core/style.py (tokens),
+  deck_core/charts.py (chart factories).
+
+WHAT THIS FILE IS:
+  The single consolidated description of how the deck looks and what each slide
+  consumes (via the CD_*/SD_* contract). It is the slide author's brief.
+
+WHAT THIS FILE IS NOT:
+  Not the workbook build plan (see workbook_finish_handoff_plan_2026-06-02.md).
+  Not a restatement of deck_core mechanics (see deck_core docs).
+
+
+================================================================================
+1. THESIS & HEADLINE
+================================================================================
+The "market" is not a normal commercial category. It is a layered federal-
+procurement ecosystem (SCN budget lines, Basic Construction, GFE, advance
+procurement, FFATA subawards, SIB pass-throughs, HII team-build, and a large
+unseen supplier layer). The deck does two jobs at once:
+  (1) make the market legible, and
+  (2) defend the sizing boundary.
+
+OPERATIVE HEADLINE (annual-first; strict, non-nuclear coefficient):
+
+    Average annual opportunity is ~$3.3B TAM and ~$2.8B broad-component SAM
+    (FY22-FY27). Built as $56.6B Basic Construction at a 35.0% supplier
+    coefficient = $19.8B cumulative TAM; broad-component SAM = $16.8B cumulative.
+
+Secondary (supporting) context: the $19.8B / $16.8B cumulative figures sit
+beneath the annual headline, never above it.
+
+This is the STRICT model. It is deliberately NOT the older broad
+"50-65% outsourced band" / "FY27 midpoint pool" framing used in earlier drafts.
+That framing is retired. Do not reintroduce it.
+
+
+================================================================================
+2. GLOBAL RULES / HOUSE STYLE
+================================================================================
+(deck_core/slide_guide.md is authoritative; this section records the deck-
+specific choices and the few places this deck deviates.)
+
+2.1 PER-SLIDE CHROME (the locked quadruple)
+  Every CONTENT slide carries four chrome elements (pre-wired in render(); the
+  author only sets text). Cover and section dividers are exempt from the chip and
+  Sources line.
+    - Breadcrumb:  bold {Section}  +  " / "  +  non-bold {Topic Label}
+                   (Topic Label = a near-variant of the title Topic, not identical)
+    - Title:       {Topic} | {Finding}   (see 2.2)
+    - Preliminary chip: auto, top-right, reads "Preliminary" (the whole deck is
+                   marked preliminary; this is locked chrome)
+    - Sources line: "Sources: (1) ...; (2) ...; (3) ..."  2-3 primary sources,
+                   no final period
+  This spec gives Section, Topic Label, Title, and Sources for every content slide
+  in section 4.
+
+2.2 TITLES
+  - Format: "Topic | Finding". Topic = Title Case noun phrase; Finding = sentence
+    case, concise, carries the number.
+  - HARD LIMIT: the title must fit 2 lines (Arial 20pt across the content column).
+    A 3-line title collides with the body box. Keep findings short.
+  - The pipe "|" is the title separator (this is the one allowed bar separator).
+
+2.3 LABELS (HYBRID convention)
+  On slides, expand work-type compounds to "and" form; keep acronym compounds and
+  program/agency acronyms intact. The workbook keeps its slash forms as internal
+  data keys; the slide author transforms to the display label below.
+
+  Display-label crosswalk (workbook key  ->  slide label):
+    Structural fab / pre-outfit  ->  Structural fabrication and pre-outfit
+    Machining                    ->  Machining
+    Castings & forgings          ->  Castings and forgings
+    Piping / valves / pumps      ->  Piping, valves and pumps
+    Electrical / power           ->  Electrical and power
+    HVAC / ventilation           ->  HVAC and ventilation
+    Coatings / insulation        ->  Coatings and insulation
+    Unbucketed / ambiguous       ->  Unbucketed and ambiguous
+    HM&E components              ->  HM&E components            (keep)
+    AP/LLTM                      ->  AP/LLTM                    (keep acronym compound)
+  Keep as-is: TAM, SAM, GFE, SIB, BPMI, EOQ, POP, FFATA, SCN, NAICS, HM&E, AP, LLTM.
+
+2.4 SEPARATORS & TYPOGRAPHY
+  - No "/", "+", "x", "->" as WORD separators in titles/labels/prose. Use "and"
+    or restructure ("$M / yr" -> "$M per year"; "A / B" -> "A and B").
+    (Arithmetic operators inside an explicit formula or waterfall exhibit are
+    fine - they are math, not word separators.)
+  - No em dashes. En dashes only for number ranges; "FY22-FY27" hyphen form is ok.
+  - Keep "$XXM", "$XXB", "~", "%", and acronyms. Arial everywhere. No double spaces.
+
+2.5 TERMINOLOGY: SIB, not MIB
+  - Use SIB (Submarine Industrial Base) everywhere.
+  - Exactly one glossary note (appendix A1): "SIB - Submarine Industrial Base;
+    earlier source files use MIB / Maritime Industrial Base."
+  - Excluded SIB entities: BlueForge Alliance, Training Modernization Group, IALR.
+
+2.6 NO SOM
+  - SOM / capture / win-probability / revenue ramp is OUT of scope. Never modeled,
+    never shown. SAM is a SCENARIO MENU (opportunity ceiling). Do not use
+    TAM/SAM/SOM nested circles.
+
+2.7 VISUAL HIERARCHY & FILL RESTRAINT (deck_core conventions)
+  - One black-outlined object family per slide (the hero/answer/output block,
+    draft slots, high-risk caveats). Secondary panels use a light GRAY_3 border
+    or no fill + a bottom rule.
+  - At most ONE focal filled callout per slide (_callout, <=35 words). No-fill
+    commentary rails (_commentary_rail) do not count and are preferred for
+    "how to read this" text beside an exhibit.
+  - Fill only semantic objects (answer/KPI, boundary/denominator, evidence chip,
+    method badge, unit caveat, identity, focal warning). Default no-fill/no-border
+    for labels, captions, legends, axis ticks, interpretive bullets.
+  - Readout restraint: do NOT end every slide with a full-width readout bar. Use a
+    dedicated readout strip only for unit/denominator/scope caveats or
+    reconciliation arithmetic the title and labels cannot carry. Takeaway shapes
+    are allowed - just vary the form across the deck; never the same shape on all.
+  - Controlled non-rect vocabulary (tags only, never panels/cards): rounded
+    _classification_tag, numbered _step_dot, _chevron transitions.
+
+2.8 IMAGES (text-driven v1; reserve the footprint)
+  - Raster images are not auto-wired by the build. Use a _draft_slot stand-in
+    (PRELIM-yellow fill + 1.5pt black border, italic centered descriptor) sized to
+    the intended image/logo, so the footprint survives edit iterations. Replace
+    with the real asset once image rel-wiring exists. Slots are named per slide
+    in section 4.
+
+2.9 TABLES
+  - Native tables do not autofit. Compute per-row heights with
+    text_metrics.estimate_row_heights(rows, col_w, size_pt=...) and pass the list;
+    verify with slide_probe --table-fit.
+  - Table skins: "dark" header for the ONE primary table on a page; "rule" (no
+    header fill) for chart-side evidence tables; "light" (GRAY_1) for dense
+    matrices. Keep main-deck tables short; push long lists to appendix/workbook.
+
+2.10 CHARTS
+  - Native editable charts only, from deck_core.charts: column_chart
+    (mode="stacked"/"clustered"), bar_chart (mode="ranked"; horizontal, reads
+    top-to-bottom, pre-sort descending), waterfall_chart, line_chart, marimekko.
+    No scatter/bubble exists -> slide 18 is a scorecard.
+  - Title convention: pass title=None to the factory; render the title as a
+    separate _chart_title box (Arial 12pt bold, left) above the frame; place the
+    graphic_frame at title_y + 380_000, rId2 (first chart on the slide).
+  - Number formats: value_axis_format / value_label_format, e.g. '"$"0.0"B"' for
+    $B and '"$"#,##0"M"' for $M; percent ladder uses '0.0%'.
+  - WATERFALL CAVEAT (CD_08, CD_11): waterfall value labels default OFF (the
+    decrease series is stored as an unsigned magnitude). Overlay signed value
+    text boxes, or pair the waterfall with a small bridge table, to show the
+    step values.
+  - COLOR-ROLE -> PALETTE MAP (workbook color_role -> deck_core.style token):
+        series1   -> BLUE_4        (primary series: Virginia BC, Annual TAM)
+        series2   -> BLUE_2        (secondary series: Columbia BC, Annual broad SAM)
+        start     -> BLUE_4        (waterfall start)
+        decrease  -> GRAY_3        (waterfall decrease; matches factory default)
+        total     -> BLUE_5        (waterfall total; matches factory default)
+        accent    -> BLUE_5        (annualized-TAM marker / headline emphasis)
+        reference -> GRAY_3        (non-applied coefficients)
+        applied   -> BLUE_5        (the applied/headline coefficient bar)
+        bucket    -> BLUE_4        (bucket bars; Unbucketed and ambiguous = GRAY_2)
+        scenario  -> BLUE_4        (scenario bars; Broad component mfg = BLUE_5 focal)
+        supplier  -> BLUE_5, BLUE_4 x4, BLUE_2 ... (rank tint via data_point_colors)
+        sib       -> GRAY ramp     (excluded dollars read gray; BlueForge darkest)
+
+2.11 UNITS
+  - Charts: $M internally; display $0.0B (vendor bars in $M). Coefficients/shares
+    one decimal percent.
+
+
+================================================================================
+3. DECK ARCHITECTURE
+================================================================================
+18 content slides in 4 sections, each section preceded by a divider, plus a cover,
+then a 6-slide core appendix (+ up to 4 optional).
+
+  LOGICAL IDs vs PHYSICAL PAGES:
+    The logical slide IDs S01..S18 are the contract keys the workbook Chart Data /
+    Slide Data / Figure Register reference (e.g. S04, S07; Figure Register "Slide"
+    column values 4, 9, 10, 13, 14, 15, 16). Section dividers and the cover shift
+    the auto-printed PAGE numbers but do NOT renumber the logical content IDs, so
+    the workbook<->deck mapping stays intact. (If you later want the Figure
+    Register "Slide" column to match physical pages, that is a small workbook
+    tweak - out of scope here.)
+
+  RUNNING BUILD ORDER (SLIDE_RENDERS, in order):
+    Cover
+    Divider - Market and Scope
+      S01 Cover ......... NOTE: cover IS the first slide; the divider above
+                          precedes the section's content slides S02-S04.
+    (clarified order:)
+    1  Cover                                   cover_layout
+    2  Divider: Market and Scope               section_divider_layout
+    3  S02 Market Primer                       shape (ecosystem map)
+    4  S03 Sizing Boundary                     shape (in/out matrix)
+    5  S04 Executive Summary                   KPI cards          SD_04
+    6  Divider: TAM Build                       section_divider_layout
+    7  S05 Demand Backdrop                      shape (timeline)   SD_05 (narrative)
+    8  S06 Methodology                          shape (step rail)  SD_06
+    9  S07 Basic Construction                   native stacked col CD_07
+    10 S08 TAM Bridge                           native waterfall   CD_08
+    11 S09 Annual TAM and SAM Cadence           native clustered   CD_09
+    12 S10 Coefficient Evidence                 ranked bar + cards CD_10
+    13 S11 AP/LLTM Reconciliation               native waterfall   CD_11
+    14 Divider: SAM and Supplier Landscape      section_divider_layout
+    15 S12 Work-Type Taxonomy                   shape (taxonomy)   SD_12
+    16 S13 Bucket TAM                           native ranked bar  CD_13
+    17 S14 SAM Scenarios                        native ranked bar  CD_14
+    18 S15 Visible Suppliers                    ranked bar + table CD_15
+    19 S16 SIB Exclusion                        native ranked bar  CD_16
+    20 Divider: Interpretation                  section_divider_layout
+    21 S17 Data Limits                          shape (iceberg)    SD_17
+    22 S18 Implications                         shape (scorecard)  SD_18
+    [appendix A1-A6 core, A7-A10 optional]
+
+  Data-contract coverage matches the workbook exactly: 11 native chart blocks
+  (CD_07..CD_16 + CD_A5, CD_A6) and 6 shape exhibits (SD_04, SD_05, SD_06, SD_12,
+  SD_17, SD_18). Cover, dividers, S02, S03 are narrative/diagram (no CD_/SD_ block;
+  S03 draws its lists from Methodology & Scope sec.4).
+
+
+================================================================================
+4. SLIDE-BY-SLIDE SPEC
+================================================================================
+Each content slide lists: Section, Topic label (breadcrumb), Title (Topic |
+Finding), Build, Data, Main exhibit, Layout, Sources, and any draft image slot.
+
+--------------------------------------------------------------------------------
+COVER (physical 1)
+--------------------------------------------------------------------------------
+Build:        cover_layout(title, subtitle)   (no breadcrumb / chip / sources)
+Title:        Market Sizing Assessment: U.S. Submarine New-Construction Supplier
+              Opportunity
+Subtitle:     FY22-FY27 TAM and SAM for the non-nuclear, non-GFE, non-SIB
+              component-manufacturing opportunity (Virginia and Columbia)
+Image slot:   DRAFT _draft_slot - hero image, right ~45% (approx 6.0in x 7.5in)
+              or full-bleed; submarine / shipyard / blueprint motif.
+
+--------------------------------------------------------------------------------
+DIVIDER 1 - Market and Scope
+--------------------------------------------------------------------------------
+Build:        section_divider_layout(section, subtitle)
+Section:      Market and Scope
+Subtitle:     What the market is, and exactly what we size
+
+--------------------------------------------------------------------------------
+S02 - MARKET PRIMER  ("ducks and bunnies")
+--------------------------------------------------------------------------------
+Section:      Market and Scope
+Topic label:  Market primer
+Title:        Market Primer | Submarine construction is a layered procurement
+              ecosystem, not a single vendor market
+Build:        shape-built (text_box + connector + _classification_tag)
+Data:         none (qualitative diagram)
+Main exhibit: ecosystem map -
+      U.S. NAVY / SCN BUDGET  (P-5c, P-10)
+                 |
+                 v
+      GENERAL DYNAMICS ELECTRIC BOAT (GDEB)   prime of record, Virginia + Columbia
+                 |
+        +--------+-----------------+
+        v                          v
+   BASIC CONSTRUCTION         HII NEWPORT NEWS
+   supplier-addressable       team-build share
+   component layer [IN TAM]   [context only]
+                 |
+                 v
+   first-tier suppliers + lower tiers (structural, machining, castings, piping,
+   electrical, HVAC, coatings)  [IN TAM]
+
+   EXCLUDED LANES (not component TAM):
+     GFE and BPMI naval-nuclear, combat systems, sonar, ordnance   [Excluded]
+     SIB capacity grants (BlueForge, TMG, IALR)                    [Excluded]
+     Prime and co-prime final-assembly yard work                  [Excluded]
+     Sustainment, depot, design-only                              [Context]
+Layout:       map center; classification tags ("IN TAM" / "Excluded" / "Context")
+              as rounded _classification_tag pills; focal = the supplier layer.
+Image slots:  DRAFT _draft_slot logos (~0.8in) in the Navy, GDEB, HII, BlueForge
+              boxes.
+Callout:      "This deck sizes the supplier-addressable component layer - not total
+              ship cost, not GFE, not SIB grants, and not SOM." (one _callout)
+Sources:      Sources: (1) Navy SCN P-5c budget exhibits; (2) GAO and CRS
+              submarine industrial-base reports; (3) DoD contract announcements
+
+--------------------------------------------------------------------------------
+S03 - SIZING BOUNDARY
+--------------------------------------------------------------------------------
+Section:      Market and Scope
+Topic label:  Sizing boundary
+Title:        Sizing Boundary | We size non-nuclear supplier work, excluding GFE,
+              SIB, yards, and SOM
+Build:        shape-built two-column matrix (text_box; not a native table)
+Data:         Methodology & Scope sec.4a / 4b / 5
+Main exhibit: In / Out matrix -
+  IN TAM                                 OUT OF TAM
+  - Basic Construction, non-GFE          - GFE, weapons, sensors, ordnance
+  - Supplier-addressable component        - SIB / industrial-base capacity grants
+    procurement                          - BPMI / naval-nuclear (GFE reactor line)
+  - Work away from prime, co-prime,       - Prime and co-prime final-assembly yard
+    and GFE sites                        - Sustainment, depot, design-only
+  - Eligible AP/LLTM/EOQ only if          - AP/LLTM already booked inside BC
+    additive                             - Service / non-component NAICS
+                                         - SOM / capture / win probability
+Callout:      explicit "No SOM is modeled." + one-line cost-funnel cue (Total Ship
+              Cost -> Plans / GFE / Other / Basic Construction; object = the
+              supplier-addressable layer within Basic Construction; full funnel A3).
+Sources:      Sources: (1) Navy SCN P-5c Basic Construction line; (2) workbook
+              Methodology and Scope; (3) DoD and DoW POP corpus
+
+--------------------------------------------------------------------------------
+S04 - EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Section:      Market and Scope
+Topic label:  Executive summary
+Title:        Executive Summary | Average annual opportunity is ~$3.3B TAM and
+              ~$2.8B broad SAM
+Build:        KPI cards (text_box / _badge); annual dominant, cumulative secondary
+Data:         SD_04_HeadlineKPIs (Figure Register DO-09, DO-10, DO-01, DO-24,
+              DO-02; AP/LLTM base from LLTM AP)
+Hierarchy:    the 2 annual numbers are the focal family (_badge, 1.5pt black); the
+              4 cumulative/coefficient values are secondary (GRAY_3). Not 6 equal
+              bordered cards.
+KPI values:
+    Average annual TAM .................. $3.3B   (3,306.6 $M)   [focal]
+    Average annual broad SAM ........... $2.8B   (2,805.5 $M)   [focal]
+    FY22-FY27 cumulative TAM ........... $19.8B  (19,839.7 $M)  [secondary]
+    FY22-FY27 cumulative broad SAM ..... $16.8B  (16,832.9 $M)  [secondary]
+    Applied BC supplier coefficient .... 35.0%   (non-nuclear, BPMI excluded)
+    AP/LLTM additive base .............. $0      (confirmed; already inside BC)
+Findings (3-4 short, no-fill bullets):
+    1. Basic Construction is the sizing base: $56.6B cumulative FY22-FY27.
+    2. Supplier coefficient is strict (35.0%): nuclear/BPMI, GFE, SIB, yards out.
+    3. AP/LLTM is not additive: $44.7B gross P-10 AP gives $0 additive TAM.
+    4. SAM is a scenario menu, not a capture forecast (no SOM).
+Sources:      Sources: (1) workbook TAM Build and SAM Build; (2) Figure Register
+              DO-01, DO-09, DO-10; (3) Navy SCN P-5c FY22-FY27
+
+--------------------------------------------------------------------------------
+DIVIDER 2 - TAM Build
+--------------------------------------------------------------------------------
+Build:        section_divider_layout
+Section:      TAM Build
+Subtitle:     How the $3.3B-per-year supplier TAM is built and defended
+
+--------------------------------------------------------------------------------
+S05 - DEMAND BACKDROP
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  Demand backdrop
+Title:        Demand Backdrop | Policy and prime behavior point to distributed
+              supplier capacity
+Build:        shape-built timeline (connectors + event cards)
+Data:         SD_05_Timeline gives analysis-window anchors only (FY22 first modeled
+              FY; FY27 horizon; 2026-05 subaward pull; 2026-05 POP parse).
+              ** The POLICY events below are NARRATIVE - sourced from research /
+              References, NOT the workbook numeric contract. To make them data-
+              driven, extend SD_05. **
+Suggested events (narrative):
+    - GAO finds submarine supplier-base atrophy
+    - SIB / industrial-base investment ramp
+    - Navy distributed-shipbuilding policy (Navy-wide ~10% -> ~50% target; note
+      Navy-wide, not submarine-specific)
+    - HII outsourcing-hours guidance (~+30% YoY)
+    - GD/EB supply-chain bottleneck + own-yard capex commentary
+    - AUKUS capacity pressure
+Image slot:   DRAFT _draft_slot - DoD/Navy seal, small (~0.9in), top-right, optional
+Sources:      Sources: (1) GAO submarine industrial-base reports; (2) Navy 30-Year
+              Shipbuilding Plan; (3) HII and GD earnings calls
+
+--------------------------------------------------------------------------------
+S06 - METHODOLOGY
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  Methodology
+Title:        Methodology | TAM builds from Basic Construction, a POP supplier
+              coefficient, and work-type allocation
+Build:        shape-built process rail (_step_dot on a connector rail)
+Data:         SD_06_MethodologySteps (7 steps)
+Steps:        1 Budget base - extract SCN P-5c + P-10 per class and FY
+              2 Remove GFE / non-addressable - apply exclusion rules
+              3 Apply POP supplier coefficient - dollar-weighted supplier and
+                foreign POP share
+              4 Portfolio TAM - stream base times coefficient
+              5 Allocate TAM into buckets - times modeled bucket share
+              6 Apply scenario flags - SUMPRODUCT with scenario inclusion
+              7 SAM scenario output - scenario menu (no SOM haircut)
+Formula box:  TAM = BC base x BC supplier coeff + AP/LLTM base x AP/LLTM coeff
+              (arithmetic, fine in a formula exhibit)
+              Applied: $56.6B x 35.0% + $0 x 48.5% = $19.8B -> $3.3B per year
+Sources:      Sources: (1) workbook Methodology and Scope; (2) Navy SCN P-5c and
+              P-10 exhibits; (3) DoD and DoW POP corpus
+
+--------------------------------------------------------------------------------
+S07 - BASIC CONSTRUCTION
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  Basic Construction base
+Title:        Basic Construction | The FY22-FY27 denominator totals $56.6B
+              (~$9.4B per year)
+Build:        native stacked column chart (column_chart mode="stacked")
+Data:         CD_07_BasicConstructionByFY (series: Virginia BC, Columbia BC; SCN Annual)
+Series ($M):  FY2022  Va 4,758.3  Col      0   (~$4.8B)
+              FY2023  Va 5,095.4  Col      0   (~$5.1B)
+              FY2024  Va 9,070.8  Col 6,356.1  (~$15.4B)
+              FY2025  Va 5,326.5  Col      0   (~$5.3B)
+              FY2026  Va 3,136.8  Col 7,159.8  (~$10.3B)
+              FY2027  Va 8,889.3  Col 6,853.7  (~$15.7B)
+              Total .................................. ~$56.6B
+Colors:       Virginia BC = BLUE_4 (series1); Columbia BC = BLUE_2 (series2).
+Commentary rail (_commentary_rail, no-fill):
+    - Basic Construction is the denominator.
+    - It is not equivalent to GDEB self-performed work.
+    - It includes purchased material, subcontracts, HII team-build, yard labor.
+    - Columbia procurement timing creates sparse columns; blanks are not
+      zero-demand years.
+Sources:      Sources: (1) Navy SCN P-5c Justification Books FY22-FY27; (2) workbook
+              SCN Annual
+
+--------------------------------------------------------------------------------
+S08 - TAM BRIDGE
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  TAM bridge
+Title:        TAM Bridge | A 35.0% supplier coefficient on $56.6B yields $19.8B
+              ($3.3B per year)
+Build:        native waterfall (waterfall_chart)
+Data:         CD_08_TAMBridge (TAM Build)
+Steps ($M):   Basic Construction base ........... 56,646.7   (start)
+              Less prime, co-prime, GFE ......... -36,807.0  (delta; removed by POP)
+              Portfolio TAM .................... 19,839.7   (subtotal/end)
+              Annualized TAM ................... 3,306.6    (accent marker)
+Label note:   waterfall labels default OFF -> overlay signed value text boxes (or a
+              small bridge table) for the step values.
+Callout:      "35.0% is intentionally narrower than broad distributed-production
+              metrics: it excludes nuclear/BPMI, GFE, SIB, and final assembly."
+Sources:      Sources: (1) workbook TAM Build; (2) Navy SCN P-5c Basic Construction;
+              (3) DoD and DoW POP corpus
+
+--------------------------------------------------------------------------------
+S09 - ANNUAL TAM AND SAM CADENCE
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  Annual cadence
+Title:        Annual Cadence | TAM and broad SAM are lumpy, peaking in FY24 and FY27
+Build:        native clustered column chart (column_chart mode="clustered")
+Data:         CD_09_AnnualTAMAndSAM (series1 Annual TAM = TAM Build;
+              series2 Annual broad SAM = SAM Build)
+Series ($M):  FY2022  TAM 1,666.5   SAM 1,414.0
+              FY2023  TAM 1,784.6   SAM 1,514.1
+              FY2024  TAM 5,403.0   SAM 4,584.2
+              FY2025  TAM 1,865.5   SAM 1,582.8
+              FY2026  TAM 3,606.2   SAM 3,059.7
+              FY2027  TAM 5,513.8   SAM 4,678.1
+Colors:       Annual TAM = BLUE_4; Annual broad SAM = BLUE_2.
+Purpose:      shows the ~$3.3B / ~$2.8B headline is an AVERAGE; fiscal-year flow is
+              lumpy (procurement cadence, not commercial volatility).
+Sources:      Sources: (1) workbook TAM Build and SAM Build; (2) Figure Register
+              annual series
+
+--------------------------------------------------------------------------------
+S10 - COEFFICIENT EVIDENCE
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  Coefficient evidence
+Title:        Coefficient Evidence | POP data supports distribution; the applied
+              coefficient stays strict at 35.0%
+Build:        native ranked bar (ladder) + 3-4 evidence cards
+Data:         CD_10_CoefficientLadder (TAM Build) + cards from POP Source Audit /
+              Figure Register (DO-05, DO-06)
+Ladder:       All-gated POP anchor ........ 51.8%  (reference; not applied) GRAY_3
+              AP/LLTM reference ........... 48.5%  (reference; base = 0)     GRAY_3
+              Applied BC supplier ......... 35.0%  (headline / applied)      BLUE_5
+Evidence cards:
+              Gated POP corpus ............ $25.4B  (43 actions)
+              less GFE / excluded ......... $6.1B   (27 actions)
+              In-scope non-GFE corpus ..... $19.3B  (16 actions; coefficient corpus)
+              Confirmation coverage ....... 100%    (16 / 16)
+              Unparsed share (gated) ...... 10.1%
+Footnote:     "Only the applied 35.0% feeds headline TAM. Broader coefficients are
+              explanatory. BPMI/nuclear removal is the biggest swing (see A5)."
+Sources:      Sources: (1) DoD and DoW contract announcements (POP corpus);
+              (2) workbook POP Source Audit; (3) FPDS place-of-performance
+
+--------------------------------------------------------------------------------
+S11 - AP/LLTM RECONCILIATION
+--------------------------------------------------------------------------------
+Section:      TAM Build
+Topic label:  AP/LLTM reconciliation
+Title:        AP/LLTM | Gross advance procurement is large but adds $0 to TAM
+Build:        native waterfall (ends at zero)
+Data:         CD_11_APBridge (LLTM AP)
+Steps ($M):   Gross AP top-line ................ 44,708.9  (start)
+              Less GFE, design, weapons ........ -27,273.4 (delta)
+              Less already inside BC ........... -16,847.0 (delta)
+              Less un-itemized overlap ......... -588.5    (delta)
+              AP/LLTM additive base ............ 0         (end)
+Label note:   waterfall labels default OFF -> overlay signed value text boxes.
+Callout:      "Do not add AP/LLTM on top of Basic Construction - supplier LLTM is
+              already inside BC; adding it would double-count."
+Sources:      Sources: (1) Navy SCN P-10 advance-procurement exhibits; (2) workbook
+              LLTM AP; (3) Figure Register additive-base reconciliation
+
+--------------------------------------------------------------------------------
+DIVIDER 3 - SAM and Supplier Landscape
+--------------------------------------------------------------------------------
+Build:        section_divider_layout
+Section:      SAM and Supplier Landscape
+Subtitle:     Where the serviceable opportunity sits, and who the suppliers are
+
+--------------------------------------------------------------------------------
+S12 - WORK-TYPE TAXONOMY
+--------------------------------------------------------------------------------
+Section:      SAM and Supplier Landscape
+Topic label:  Work-type taxonomy
+Title:        Work-Type Taxonomy | Seven component buckets define the serviceable
+              market
+Build:        shape-built taxonomy (bucket cards + tags)
+Data:         SD_12_WorkTypeTaxonomy (7 buckets + definitions)
+Buckets (slide labels):
+              Structural fabrication and pre-outfit - hull sections, fabricated
+                structural metal, pre-outfit modules
+              Machining - machine shops, precision machining, power transmission
+              Castings and forgings - forging, foundries, cast components
+              Piping, valves and pumps - industrial valves, pumps, pipe and fittings
+              Electrical and power - switchgear, electronic components, propulsion-
+                electronics
+              HVAC and ventilation - air-conditioning, warm-air heating, shipboard
+                ventilation
+              Coatings and insulation - rubber/synthetic, composites, coatings
+Aside:        show "Unbucketed and ambiguous" separately in gray (parent-unknown or
+              no clean NAICS).
+Sources:      Sources: (1) workbook Methodology and Scope (bucket taxonomy);
+              (2) NAICS-4 crosswalk; (3) workbook Worktype Evidence
+
+--------------------------------------------------------------------------------
+S13 - BUCKET TAM
+--------------------------------------------------------------------------------
+Section:      SAM and Supplier Landscape
+Topic label:  Bucket TAM
+Title:        Bucket TAM | Electrical and power, structural fabrication, and piping
+              lead the opportunity
+Build:        native ranked horizontal bar (bar_chart mode="ranked"); primary value
+              = avg annual TAM
+Data:         CD_13_BucketTAM (avg annual TAM, cumulative TAM, share) + unbucketed
+              residual DO-18
+Bars (slide label: avg annual $M / cumulative $M / share of TAM):
+              Electrical and power ................. 1,257.1 / 7,542.7 / 38.0%
+              Structural fabrication and pre-outfit . 624.5 / 3,747.1 / 18.9%
+              Piping, valves and pumps .............. 519.6 / 3,117.5 / 15.7%
+              Castings and forgings ................. 142.8 /   856.7 /  4.3%
+              Coatings and insulation ............... 101.5 /   608.8 /  3.1%
+              Machining .............................  98.1 /   588.5 /  3.0%
+              HVAC and ventilation ..................  61.9 /   371.6 /  1.9%
+              [gray] Unbucketed and ambiguous ...... ~501.1 / 3,006.8 / 15.2%
+Colors:       bucket bars BLUE_4; Unbucketed and ambiguous = GRAY_2 (visually set
+              apart via data_point_colors).
+Callout:      "Broad-component SAM = TAM minus unbucketed = $16.8B cumulative
+              ($2.8B per year)."
+Sources:      Sources: (1) workbook SAM Build; (2) Assumptions and Controls (modeled
+              bucket shares); (3) SAM.gov FFATA and NAICS
+
+--------------------------------------------------------------------------------
+S14 - SAM SCENARIOS
+--------------------------------------------------------------------------------
+Section:      SAM and Supplier Landscape
+Topic label:  SAM scenarios
+Title:        SAM Scenarios | Broad component manufacturing is ~$2.8B average
+              annual SAM
+Build:        native ranked horizontal bar (bar_chart mode="ranked"); primary value
+              = avg annual SAM
+Data:         CD_14_SAMScenarios (SAM Build)
+Bars (avg annual $M / cumulative $M / % of TAM):
+              Broad component manufacturing ... 2,805.5 / 16,832.9 / 84.8%
+              Electrical and power ............ 1,257.1 /  7,542.7 / 38.0%
+              Metal components ................   865.4 /  5,192.3 / 26.2%
+              Modular assemblies .............   726.0 /  4,355.9 / 22.0%
+              HM&E components ................   679.6 /  4,077.6 / 20.6%
+Colors:       scenario bars BLUE_4; Broad component manufacturing = BLUE_5 (focal).
+Label:        "Scenario SAM only - no SOM, share capture, or revenue forecast."
+              (replaces the SOM slide of a generic market-sizing deck.)
+Sources:      Sources: (1) workbook SAM Build (scenario menu); (2) Figure Register
+              DO-20 to DO-24
+
+--------------------------------------------------------------------------------
+S15 - VISIBLE SUPPLIERS
+--------------------------------------------------------------------------------
+Section:      SAM and Supplier Landscape
+Topic label:  Visible suppliers
+Title:        Visible Suppliers | The named base is broad but anchored by a few
+              large suppliers
+Build:        native ranked bar (top 10, $M) + small "rule"-skin evidence table
+Data:         CD_15_TopVisibleSuppliers (Entity Master) + at-a-glance (DO-07)
+Top 10 (FFATA-visible subaward $M):
+              1  Northrop Grumman Corporation ............... 1,426.6
+              2  Leonardo SPA ................................. 490.6
+              3  Curtiss-Wright Electro-Mechanical ........... 198.0
+              4  Scot Forge Company .......................... 197.5
+              5  ESCO Technologies Inc. ...................... 188.5
+              6  DC Fabricators Inc .......................... 162.9
+              7  Rhoads Metal Fabrications ................... 141.9
+              8  Curtiss-Wright Corporation .................. 110.8
+              9  The Graham Corporation ....................... 89.1
+              10 Austal USA, LLC .............................. 87.6
+Colors:       rank tint via data_point_colors: BLUE_5 (1), BLUE_4 (2-5),
+              BLUE_2 (6-10).
+Evidence table ("rule" skin):
+              Classified subaward recipients ............ 150
+              Supplier-addressable subaward total ....... $5.46B  (DO-07)
+              (Prime/co-prime $50.8M and GFE/SIB $67.5M are excluded.)
+Image slot:   DRAFT _draft_slot - vendor logo strip along bottom, full width x ~0.7in
+Note:         top 25 belongs in appendix A7 / workbook, not the main deck.
+Sources:      Sources: (1) SAM.gov FFATA subaward records; (2) workbook Entity
+              Master; (3) SAM entity and NAICS lookup
+
+--------------------------------------------------------------------------------
+S16 - SIB EXCLUSION
+--------------------------------------------------------------------------------
+Section:      SAM and Supplier Landscape
+Topic label:  SIB exclusion
+Title:        SIB Exclusion | Capacity grants are material but sit outside
+              component TAM
+Build:        native ranked bar (bar_chart mode="ranked")
+Data:         CD_16_SIBExclusion (SIB Excluded)
+Bars ($M):    BlueForge Alliance ......................... 4,173.3  (98.2%, 8 actions)
+              Training Modernization Group, Inc. ............. 77.0  (1.8%, 7 actions)
+              Institute for Advanced Learning and Research ... 1.5  (0.04%, 1 action)
+              Total SIB exclusion ........................ 4,251.8  (~$4.25B; DO-08)
+Colors:       GRAY ramp (excluded dollars read gray; BlueForge darkest).
+Image slot:   DRAFT _draft_slot - BlueForge logo, small (~0.9in), optional
+Explanation:  "SIB funds capacity expansion, workforce, qualification, and
+              industrial-base infrastructure - not component procurement into a
+              hull. Including it would distort outsourcing-rate calculations."
+Footnote:     "Earlier source files use MIB; this deck standardizes on SIB."
+Sources:      Sources: (1) SAM.gov FFATA subaward records; (2) workbook SIB Excluded;
+              (3) SIB program scope summary
+
+--------------------------------------------------------------------------------
+DIVIDER 4 - Interpretation
+--------------------------------------------------------------------------------
+Build:        section_divider_layout
+Section:      Interpretation
+Subtitle:     What the data can and cannot say, and where to focus
+
+--------------------------------------------------------------------------------
+S17 - DATA LIMITS
+--------------------------------------------------------------------------------
+Section:      Interpretation
+Topic label:  Data limits
+Title:        Data Limits | FFATA captures a visible floor, not the full supplier
+              layer
+Build:        shape-built iceberg / ledger (rectangles + rule + labels)
+Data:         SD_17_DataLimitations (5 bullets)
+Bullets:      - No SOM / capture modeled - TAM and SAM are ceilings, not forecasts
+              - AP/LLTM additive base = 0 - P-10 gross overlaps BC; reference only
+              - POP unparsed share - some actions lack a parsed site % (10.1%)
+              - FFATA-visible subawards only - sub-tier suppliers under-counted
+              - Nominal dollars - no real / inflation adjustment this phase
+Iceberg:
+       ~~~~~~~~ VISIBLE (the floor) ~~~~~~~~
+       FFATA first-tier subawards | named vendors | NAICS work-type
+       $5.46B supplier-addressable observed
+       ----------------------- waterline -----------------------
+       BELOW (the unseen layer):
+         purchased material booked as direct material
+         lower-tier subcontracts
+         long-term and standing supplier agreements
+         HII team-build share
+         sub-threshold (under $30k) actions
+         FFATA reporting lag (recent FYs under-reported)
+         unparsed place-of-performance rows
+Sources:      Sources: (1) workbook POP Source Audit; (2) SAM.gov FFATA coverage;
+              (3) SEC EDGAR (HII NNS, GD Marine)
+
+--------------------------------------------------------------------------------
+S18 - IMPLICATIONS
+--------------------------------------------------------------------------------
+Section:      Interpretation
+Topic label:  Implications
+Title:        Implications | Prioritize electrical and power, structural
+              fabrication, and piping
+Build:        shape-built scorecard (NOT a bubble matrix)
+Data:         SD_18_OpportunityScorecard (avg annual TAM per bucket = derived;
+              other scorecard attributes set in the deck)
+Rows (slide label; avg annual TAM $M; remaining columns are deck-set judgments):
+              Electrical and power ................. 1,257.1
+              Structural fabrication and pre-outfit . 624.5
+              Piping, valves and pumps .............. 519.6
+              Castings and forgings ................. 142.8
+              Coatings and insulation ............... 101.5
+              Machining .............................  98.1
+              HVAC and ventilation .................  61.9
+Columns:      Avg annual opportunity | Addressability | Qualification burden |
+              Evidence confidence | Priority
+Closing:      "No SOM is modeled; next step is a capability-fit screen by bucket -
+              qualification barrier, customer access, production capacity."
+Sources:      Sources: (1) workbook SAM Build and Slide Data scorecard; (2) Figure
+              Register bucket TAM
+
+
+================================================================================
+5. APPENDIX SPEC
+================================================================================
+Core appendix is deliberately small (6 slides) and table/chart-light, because
+every exhibit is hand-built and linted. Appendix slides carry the same chrome
+quadruple (breadcrumb + title + Preliminary chip + Sources).
+
+A1 - DEFINITIONS AND SCOPE
+     Build: shape-built glossary + scope lists.
+     Source: Methodology & Scope sec.1 (definitions), sec.4 (scope), sec.5 (rules).
+     Terms: TAM, SAM, SOM, BC, AP/LLTM, GFE, SIB, POP, supplier coefficient,
+            distributed-production view. Include the one SIB<-MIB glossary note.
+
+A2 - MODEL MAP AND FIGURE REGISTER
+     Build: shape-built flow + short table.
+     Source: Figure Register (41 registered figures; one live cross-sheet link each).
+     Flow: SCN Annual + LLTM AP -> TAM Build -> SAM Build -> Chart Data / Slide Data
+           -> Figure Register -> Number Audit / QA Reconciliation.
+     Purpose: prove every deck number ties to a producer cell (DO-* ids).
+
+A3 - BASIC CONSTRUCTION BACKUP
+     Build: native table or chart ("light" or "rule" skin).
+     Source: SCN Annual.
+     Content: full SCN P-5c funnel (Total Ship Estimate -> Plans -> GFE -> Basic
+              Construction), Virginia vs Columbia, BC = $56.6B; why BC includes
+              self-performed + HII team-build + purchased material + subcontracts.
+
+A4 - AP/LLTM DETAIL
+     Build: native table + bridge reference.
+     Source: LLTM AP.
+     Content: P-10 AP by class/FY; the four-step bridge to $0 additive; why the
+              48.5% reference coefficient is kept though the additive base is $0.
+
+A5 - COEFFICIENT SENSITIVITY                         CD_A5_CoefficientSensitivity
+     Build: native bar / table.
+     Source: Sensitivity.
+     Content: Applied BC (headline) 35.0%; AP/LLTM reference 48.5%; all-gated
+              anchor 51.8%; BC coeff incl. BPMI 75.7% (pre-boundary, NOT applied);
+              BC swing from BPMI removal 40.7pt; BPMI $ excluded $4.81B;
+              pre-boundary sensitivity TAM $42.9B (NOT headline);
+              real P-10 gross AP $44.7B (overlaps BC; not additive).
+              Tag every non-headline value "NOT headline".
+
+A6 - SAM BUCKET CROSSWALK                            CD_A6_SAMBucketCrosswalk
+     Build: native table.
+     Source: Assumptions & Controls / Methodology & Scope sec.6a, sec.7.
+     Content: NAICS-4 -> bucket map + example vendors + included-in-broad flag:
+       Structural fabrication and pre-outfit . 3323, 3324, 3366, 3369  e.g. Rhoads
+                                               Metal, Austal, CP Industries
+       Machining ............................. 3327, 3336
+       Castings and forgings ................. 3312, 3315, 3321
+       Piping, valves and pumps .............. 3329, 3339, 4235  e.g. Curtiss-Wright
+                                               Flow, CIRCOR, Hunt Valve, Tioga Pipe
+       Electrical and power .................. 3344, 3353, 3359, 3364
+       HVAC and ventilation .................. 3334
+       Coatings and insulation .............. 3252, 3259, 3262  e.g. Oil States
+     Plus classification precedence (first match wins): prime/co-prime name ->
+     GFE/SIB name -> vendor-name override -> NAICS-4 crosswalk -> service NAICS ->
+     residual (unbucketed).
+
+OPTIONAL (add only for a diligence-heavy audience):
+A7  - Top 25 Visible Suppliers (Entity Master).
+A8  - Unseen Layer / Visibility Gap (HII team-build gap; FFATA-vs-BC floor).
+A9  - SIB Exclusion Detail (why BlueForge/TMG/IALR are excluded; downstream limits).
+A10 - QA Reconciliation: 12 invariant checks (QA-01..QA-12) all OK; Number Audit
+      0 FAIL; QA FAIL count 0.
+
+
+================================================================================
+6. CHART-DATA CONTRACT (what the deck consumes)
+================================================================================
+The deck reads ONLY from the workbook "Chart Data" (tbl_deck_chart_data),
+"Slide Data" (tbl_deck_slide_data), and "Figure Register" sheets. Each native
+chart is embedded into the PPTX as its own mini-xlsx at build time; after build it
+is NOT linked back to the workbook. Treat the contract below as a BUILD INPUT.
+Workbook category keys use slash forms; transform to the slide display labels in
+section 2.3 at build time.
+
+6.1 NATIVE CHART BLOCKS (CD_*)  -- normalized long rows:
+    chart_id | slide | cat_order | category | series_order | series | value |
+    unit | label | color_role | source_ref | producer_tab
+
+    CD_07_BasicConstructionByFY  S07  stacked column  - FY x {Virginia BC, Columbia BC}
+    CD_08_TAMBridge              S08  waterfall       - BC base / less prime-coprime-GFE /
+                                                        portfolio TAM / annualized TAM
+    CD_09_AnnualTAMAndSAM        S09  clustered col   - FY x {Annual TAM, Annual broad SAM}
+    CD_10_CoefficientLadder      S10  ranked bar      - 3 coefficient views
+    CD_11_APBridge               S11  waterfall       - gross AP -> 3 deltas -> $0 base
+    CD_13_BucketTAM              S13  ranked bar      - 7 buckets x {avg annual, cumulative, share}
+    CD_14_SAMScenarios           S14  ranked bar      - 5 scenarios x {avg annual, cumulative, %TAM}
+    CD_15_TopVisibleSuppliers    S15  ranked bar      - top 10 vendors x visible subaward $M
+    CD_16_SIBExclusion           S16  ranked bar      - 3 SIB entities x exclusion $M
+    CD_A5_CoefficientSensitivity SA5  bar / table     - coefficient cases + TAM impacts
+    CD_A6_SAMBucketCrosswalk     SA6  table           - bucket x NAICS group / examples / flag
+
+6.2 SHAPE EXHIBITS (SD_*)  -- normalized rows:
+    exhibit_id | slide | item_order | item | value | label | role | source_ref
+
+    SD_04_HeadlineKPIs        S04  KPI cards    - 6 headline metrics (annual first)
+    SD_05_Timeline            S05  timeline     - analysis-window anchors only
+                                                  (policy events are narrative; see S05)
+    SD_06_MethodologySteps    S06  process rail - 7 steps
+    SD_12_WorkTypeTaxonomy    S12  tags         - 7 buckets + definitions
+    SD_17_DataLimitations     S17  bullets      - 5 limitations
+    SD_18_OpportunityScorecard S18 scorecard    - 7 buckets (avg annual TAM; other
+                                                  attributes deck-set)
+
+6.3 COLOR-ROLE -> PALETTE MAP
+    see section 2.10. The workbook color_role column feeds chart colors via this
+    map; do not invent per-chart colors.
+
+6.4 DATA-LINK RULE
+    Chart Data / Slide Data values link to producer cells or Figure Register rows.
+    Do not hardcode model outputs to make a chart convenient. Slides 13 and 18 mark
+    some cells "(derived)" (avg annual = cumulative / fiscal-year count); that is
+    acceptable and documented in the workbook.
+
+
+================================================================================
+7. BUILD-TYPE -> deck_core PRIMITIVE / HELPER MAPPING
+================================================================================
+Imported builders (deck_core.primitives): slide, cover_layout,
+section_divider_layout, run, paragraph, text_box, connector, table/trow/tcell,
+breadcrumb, title_placeholder, prelim_chip, sources_line, picture (not wired).
+Chart factories (deck_core.charts): column_chart, bar_chart, line_chart,
+waterfall_chart, marimekko_chart, graphic_frame.
+Slide-local recipes (copy-from slide_snippets.md; do NOT add to deck_core):
+_grid_x/_grid_y, _draft_slot, _commentary_rail, _table, _chart_title,
+_classification_tag, _step_dot, _chevron, _callout, _badge.
+
+  Cover (1) ............................... cover_layout + _draft_slot (image)
+  Section dividers (4) .................... section_divider_layout
+  Basic Construction by class (S07) ...... column_chart(mode="stacked")
+  Annual TAM and SAM cadence (S09) ....... column_chart(mode="clustered")
+  TAM bridge (S08) ....................... waterfall_chart (+ overlaid value labels)
+  AP/LLTM bridge (S11) ................... waterfall_chart (+ overlaid value labels)
+  Coefficient ladder (S10) ............... bar_chart(mode="ranked") + evidence cards
+  Bucket TAM (S13) ....................... bar_chart(mode="ranked")
+  SAM scenarios (S14) .................... bar_chart(mode="ranked")
+  Top vendors (S15) ...................... bar_chart(mode="ranked") + _table("rule")
+  SIB exclusion (S16) .................... bar_chart(mode="ranked")
+  Coefficient sensitivity (A5) ........... bar_chart(mode="ranked") or _table
+  SAM bucket crosswalk (A6) .............. _table (short)
+  Ecosystem map (S02) .................... text_box + connector + _classification_tag
+  Scope matrix (S03) ..................... shape-built matrix (text_box)
+  KPI cards (S04) ........................ _badge (focal) + text_box (secondary)
+  Timeline (S05) ......................... connector + event cards (+ seal _draft_slot)
+  Methodology rail (S06) ................. _step_dot on a connector rail
+  Taxonomy (S12) ......................... bucket cards + _classification_tag
+  Data-limits iceberg (S17) ............. text_box rectangles + rule + labels
+  Opportunity scorecard (S18) ........... _table or shape-built scorecard (no bubble)
+  Every chart ............................ title=None + _chart_title above + graphic_frame(rId2)
+  Every "how to read" note ............... _commentary_rail (no-fill)
+
+  Not used: scatter/bubble, marimekko, map, dense (>8-row) tables in the main deck.
+
+
+================================================================================
+8. REFERENCE VALUES (snapshot 2026-06-02; workbook wins at build time)
+================================================================================
+HEADLINE
+  Avg annual TAM ................. $3.3B   (3,306.6 $M)  DO-09  TAM Build!C127
+  Cumulative TAM (FY22-27) ...... $19.8B  (19,839.7 $M) DO-01  TAM Build!C125
+  Avg annual broad SAM .......... $2.8B   (2,805.5 $M)  DO-10  SAM Build!C88
+  Cumulative broad SAM .......... $16.8B  (16,832.9 $M) DO-24  SAM Build!D88
+  BC base (FY22-27) ............. $56.6B  (56,646.7 $M)        TAM Build!C128
+  Applied BC supplier coeff ..... 35.0%   (0.35024)     DO-02  TAM Build!C54
+  AP/LLTM reference coeff ....... 48.5%   (0.48486)     DO-03  TAM Build!C55
+  Total weighted coeff .......... 48.1%   (0.48120)     DO-04  TAM Build!C56
+  AP/LLTM additive base ......... $0                            LLTM AP!C66
+
+POP CORPUS (S10)
+  Gated POP corpus .............. $25.4B / 43 actions    DO-05
+  less GFE / excluded ........... $6.1B  / 27 actions    DO-06
+  In-scope non-GFE corpus ....... $19.3B / 16 actions
+  Confirmation coverage ......... 100% (16/16)
+  Unparsed share (gated) ........ 10.1%
+  Largest-action concentration .. 48.8%
+
+SUPPLIER BASE (S15)
+  Classified recipients ......... 150
+  Supplier-addressable subaward . $5.46B (5,463.9 $M)   DO-07  Entity Master!C191
+
+SIB EXCLUSION (S16)
+  BlueForge Alliance ............ $4,173.3M (98.2%)
+  Training Modernization Group .. $77.0M    (1.8%)
+  IALR .......................... $1.5M     (0.04%)
+  Total ......................... $4,251.8M (~$4.25B)   DO-08  SIB Excluded!D17
+
+SENSITIVITY (A5; all NOT headline except the first)
+  Applied BC (headline) ......... 35.0%
+  All-gated anchor .............. 51.8%
+  AP/LLTM reference ............. 48.5%
+  BC coeff incl. BPMI ........... 75.7%   (pre-boundary; NOT applied)
+  BC swing (BPMI removal) ....... 40.7 pt
+  BPMI $ excluded (now GFE) ..... $4.81B  (4,813.6 $M)
+  Pre-boundary sensitivity TAM .. $42.9B  (42,885.6 $M; NOT headline)
+  Real P-10 gross AP ............ $44.7B  (44,708.9 $M; overlaps BC, not additive)
+
+AUDIT
+  Figure Register ............... 41 registered figures (one live link each)
+  Number Audit FAIL count ....... 0
+  QA Reconciliation ............. QA-01..QA-12 all OK; FAIL count 0
+
+
+================================================================================
+9. DO-NOT LIST
+================================================================================
+  - Do NOT edit deck_core to build this deck; compose with imported builders +
+    slide-local helpers.
+  - Do NOT call total submarine cost "TAM".
+  - Do NOT add P-10 AP/LLTM on top of Basic Construction (additive base is $0).
+  - Do NOT mix SIB / MIB in deck-facing labels (one glossary note excepted).
+  - Do NOT model or mention SOM / capture / win probability / revenue ramp.
+  - Do NOT headline the old broad 50-65% outsourced band / FY27-midpoint pool.
+  - Do NOT use TAM/SAM/SOM nested circles (SOM is out of scope).
+  - Do NOT use a native bubble/scatter chart for S18 (use a scorecard).
+  - Do NOT let a title run to 3 lines (it collides with the body box).
+  - Do NOT use "/", "+", "x", "->" as word separators, or em dashes, in slide text.
+  - Do NOT end every slide with a readout bar; vary takeaway shapes.
+  - Do NOT eyeball table row heights; use text_metrics.estimate_row_heights.
+  - Do NOT hardcode chart values; read the workbook contract and keep producer ties.
+  - Do NOT require raster images in v1; reserve _draft_slot footprints instead.
+================================================================================
+END OF SPEC
+================================================================================

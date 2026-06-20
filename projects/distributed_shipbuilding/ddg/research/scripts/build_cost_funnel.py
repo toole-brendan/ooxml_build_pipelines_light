@@ -50,7 +50,7 @@ import os
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # .../projects/distributed_shipbuilding/ddg/research/scripts -> .../ooxml_build_pipelines_light
 _REPO = os.path.abspath(os.path.join(_HERE, "..", "..", "..", "..", ".."))
-EXTRACTED = os.path.join(_REPO, "projects", "distributed_shipbuilding", "ddg", "workbook", "extracted")
+EXTRACTED = os.path.join(_REPO, "projects", "distributed_shipbuilding", "tam", "ddg", "extracted")
 
 # Supplier-content band applied to Basic Construction (from outsourcing_assumptions.md)
 BAND_LOW, BAND_MID, BAND_HIGH = 0.35, 0.42, 0.50

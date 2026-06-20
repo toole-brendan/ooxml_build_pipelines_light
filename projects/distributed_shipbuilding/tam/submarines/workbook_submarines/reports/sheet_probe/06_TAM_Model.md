@@ -1,0 +1,566 @@
+# sheet_probe: TAM_Model
+
+- source: `file`
+- tab name: `TAM_Model`
+- tab color: `FF34406B`
+- gridlines shown: `0`
+- columns: 8 · rows: 92 · cells: 467 · formulas: 182
+
+## Banners
+- `B2` S_TITLE_SHEET — TAM_Model
+- `B4` S_TITLE_SECTION — At a glance - headline TAM bridge
+- `B11` S_TITLE_SECTION — Budget_Normalized - the two TAM stream bases per (class, FY)
+- `B13` S_TITLE_SUBSECTION — Stream include-in-TAM toggles (1 = include)
+- `B18` S_TITLE_SECTION — Virginia (LI 2013) - stream bases ($M, FY22-FY27)
+- `B27` S_TITLE_SECTION — Columbia (LI 1045) - stream bases ($M, FY22-FY27)
+- `B36` S_TITLE_SECTION — Portfolio stream-base totals (Va + Col)
+- `B42` S_TITLE_SECTION — POP_Coefficients - per-stream TAM supplier coefficients (computed in-sheet)
+- `B44` S_TITLE_SECTION — Per-stream supplier coefficients (feed TAM) - $-weighted, gated, in-scope, confirmed
+- `B50` S_TITLE_SUBSECTION — All-gated POP shares (dollar-weighted building blocks)
+- `B58` S_TITLE_SUBSECTION — Distributed-production view (appendix - broader than commercial TAM)
+- `B63` S_TITLE_SUBSECTION — Reconciliation & scope variants (reference - not applied to TAM)
+- `B68` S_TITLE_SUBSECTION — Anchor regression - reproduce the v4 worked example (drift guard)
+- `B75` S_TITLE_SECTION — TAM_Model - one headline TAM = BC_base x BC_coeff + AP_base x AP_coeff
+- `B77` S_TITLE_SECTION — Applied per-stream supplier coefficients (POP_Coefficients)
+- `B82` S_TITLE_SECTION — Virginia (LI 2013) - TAM ($M, FY22-FY27)
+- `B90` S_TITLE_SECTION — Columbia (LI 1045) - TAM ($M, FY22-FY27)
+- `B98` S_TITLE_SECTION — Portfolio TAM + stream bridge (Virginia + Columbia)
+- `B106` S_TITLE_SECTION — Annualization + deck-bridge figures (FY22-27)
+
+## Defined names
+- `bc_supplier_coeff` → `'TAM_Model'!$C$46`
+- `ap_lltm_supplier_coeff` → `'TAM_Model'!$C$47`
+
+## Formula dependencies (referenced sheet → cells)
+- **Budget_Base** (12): C20, D20, E20, F20, G20, H20, C29, D29, E29, F29, G29, H29
+- **Inputs** (13): C21, D21, E21, F21, G21, H21, C30, D30, E30, F30, G30, H30 …
+- **POP_Corpus** (10): C46, C47, C48, C52, C53, C54, C55, C65, C66, C71
+- **TAM_Model** (30): C6, C7, C8, C79, C80, C84, D84, E84, F84, G84, H84, C86 …
+
+## Hardcoded inputs (15)
+- `C15` S_NUM_INPUT = 1
+- `C16` S_NUM_INPUT = 1
+- `C22` S_NUM_INPUT = 0
+- `D22` S_NUM_INPUT = 0
+- `E22` S_NUM_INPUT = 0
+- `F22` S_NUM_INPUT = 0
+- `G22` S_NUM_INPUT = 0
+- `H22` S_NUM_INPUT = 0
+- `C31` S_NUM_INPUT = 0
+- `D31` S_NUM_INPUT = 0
+- `E31` S_NUM_INPUT = 0
+- `F31` S_NUM_INPUT = 0
+- `G31` S_NUM_INPUT = 0
+- `H31` S_NUM_INPUT = 0
+- `C70` S_PCT_INPUT = 0.518
+
+## Cross-sheet links (53)
+- `C6` S_LINK_NUM = 'TAM_Model'!C108
+- `C7` S_LINK_NUM = 'TAM_Model'!C110
+- `C8` S_LINK_PCT = 'TAM_Model'!C46
+- `C20` S_LINK_NUM = 'Budget_Base'!C25
+- `D20` S_LINK_NUM = 'Budget_Base'!D25
+- `E20` S_LINK_NUM = 'Budget_Base'!E25
+- `F20` S_LINK_NUM = 'Budget_Base'!F25
+- `G20` S_LINK_NUM = 'Budget_Base'!G25
+- `H20` S_LINK_NUM = 'Budget_Base'!H25
+- `C21` S_LINK_NUM = 'Inputs'!C15
+- `D21` S_LINK_NUM = 'Inputs'!D15
+- `E21` S_LINK_NUM = 'Inputs'!E15
+- `F21` S_LINK_NUM = 'Inputs'!F15
+- `G21` S_LINK_NUM = 'Inputs'!G15
+- `H21` S_LINK_NUM = 'Inputs'!H15
+- `C29` S_LINK_NUM = 'Budget_Base'!C45
+- `D29` S_LINK_NUM = 'Budget_Base'!D45
+- `E29` S_LINK_NUM = 'Budget_Base'!E45
+- `F29` S_LINK_NUM = 'Budget_Base'!F45
+- `G29` S_LINK_NUM = 'Budget_Base'!G45
+- `H29` S_LINK_NUM = 'Budget_Base'!H45
+- `C30` S_LINK_NUM = 'Inputs'!C16
+- `D30` S_LINK_NUM = 'Inputs'!D16
+- `E30` S_LINK_NUM = 'Inputs'!E16
+- `F30` S_LINK_NUM = 'Inputs'!F16
+- `G30` S_LINK_NUM = 'Inputs'!G16
+- `H30` S_LINK_NUM = 'Inputs'!H16
+- `C79` S_LINK_PCT = 'TAM_Model'!C46
+- `C80` S_LINK_PCT = 'TAM_Model'!C47
+- `C84` S_LINK_NUM = 'TAM_Model'!C23
+- `D84` S_LINK_NUM = 'TAM_Model'!D23
+- `E84` S_LINK_NUM = 'TAM_Model'!E23
+- `F84` S_LINK_NUM = 'TAM_Model'!F23
+- `G84` S_LINK_NUM = 'TAM_Model'!G23
+- `H84` S_LINK_NUM = 'TAM_Model'!H23
+- `C86` S_LINK_NUM = 'TAM_Model'!C24
+- `D86` S_LINK_NUM = 'TAM_Model'!D24
+- `E86` S_LINK_NUM = 'TAM_Model'!E24
+- `F86` S_LINK_NUM = 'TAM_Model'!F24
+- `G86` S_LINK_NUM = 'TAM_Model'!G24
+
+## Cells
+- `B2` S_TITLE_SHEET: TAM_Model
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: At a glance - headline TAM bridge
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `B5` S_HEADER_LEFT: Measure
+- `C5` S_HEADER_LEFT: Value
+- `D5` S_HEADER_LEFT: Note
+- `B6` S_BOLD: Cumulative portfolio TAM (FY22-27)
+- `C6` S_LINK_NUM: ='TAM_Model'!C108
+- `D6` S_DEFAULT: non-nuclear new-construction supplier TAM (BC stream; AP/LLTM base = 0)
+- `B7` S_BOLD: Average annual portfolio TAM
+- `C7` S_LINK_NUM: ='TAM_Model'!C110
+- `D7` S_DEFAULT: cumulative / n_years (not run-rate)
+- `B8` S_DEFAULT: Headline supplier coefficient (applied)
+- `C8` S_LINK_PCT: ='TAM_Model'!C46
+- `D8` S_DEFAULT: non-nuclear, BPMI excluded (~35.0%); full coefficient build below
+- `A11` S_DEFAULT: x
+- `B11` S_TITLE_SECTION: Budget_Normalized - the two TAM stream bases per (class, FY)
+- `C11` S_TITLE_SECTION: 
+- `D11` S_TITLE_SECTION: 
+- `E11` S_TITLE_SECTION: 
+- `F11` S_TITLE_SECTION: 
+- `G11` S_TITLE_SECTION: 
+- `H11` S_TITLE_SECTION: 
+- `A13` S_DEFAULT: x
+- `B13` S_TITLE_SUBSECTION: Stream include-in-TAM toggles (1 = include)
+- `C13` S_TITLE_SUBSECTION: 
+- `D13` S_TITLE_SUBSECTION: 
+- `E13` S_TITLE_SUBSECTION: 
+- `F13` S_TITLE_SUBSECTION: 
+- `G13` S_TITLE_SUBSECTION: 
+- `H13` S_TITLE_SUBSECTION: 
+- `B14` S_HEADER_LEFT: Toggle
+- `C14` S_HEADER_LEFT: Value
+- `D14` S_HEADER_LEFT: Note
+- `B15` S_DEFAULT: Include BC stream
+- `C15` S_NUM_INPUT: 1
+- `D15` S_DEFAULT: P-5c Basic Construction (GFE-free)
+- `B16` S_DEFAULT: Include AP/LLTM stream
+- `C16` S_NUM_INPUT: 1
+- `D16` S_DEFAULT: confirmed-0 additive base; don't enable a nonzero base without redoing the P-10 reconciliation
+- `A18` S_DEFAULT: x
+- `B18` S_TITLE_SECTION: Virginia (LI 2013) - stream bases ($M, FY22-FY27)
+- `C18` S_TITLE_SECTION: 
+- `D18` S_TITLE_SECTION: 
+- `E18` S_TITLE_SECTION: 
+- `F18` S_TITLE_SECTION: 
+- `G18` S_TITLE_SECTION: 
+- `H18` S_TITLE_SECTION: 
+- `B19` S_HEADER_LEFT: Metric
+- `C19` S_HEADER_LEFT: 2022
+- `D19` S_HEADER_LEFT: 2023
+- `E19` S_HEADER_LEFT: 2024
+- `F19` S_HEADER_LEFT: 2025
+- `G19` S_HEADER_LEFT: 2026
+- `H19` S_HEADER_LEFT: 2027
+- `B20` S_BOLD: BC base (P-5c Basic Construction)
+- `C20` S_LINK_NUM: ='Budget_Base'!C25
+- `D20` S_LINK_NUM: ='Budget_Base'!D25
+- `E20` S_LINK_NUM: ='Budget_Base'!E25
+- `F20` S_LINK_NUM: ='Budget_Base'!F25
+- `G20` S_LINK_NUM: ='Budget_Base'!G25
+- `H20` S_LINK_NUM: ='Budget_Base'!H25
+- `B21` S_BOLD: AP/LLTM base (P-10, confirmed 0)
+- `C21` S_LINK_NUM: ='Inputs'!C15
+- `D21` S_LINK_NUM: ='Inputs'!D15
+- `E21` S_LINK_NUM: ='Inputs'!E15
+- `F21` S_LINK_NUM: ='Inputs'!F15
+- `G21` S_LINK_NUM: ='Inputs'!G15
+- `H21` S_LINK_NUM: ='Inputs'!H15
+- `B22` S_DEFAULT: Less: prior-yr AP credit
+- `C22` S_NUM_INPUT: 0
+- `D22` S_NUM_INPUT: 0
+- `E22` S_NUM_INPUT: 0
+- `F22` S_NUM_INPUT: 0
+- `G22` S_NUM_INPUT: 0
+- `H22` S_NUM_INPUT: 0
+- `B23` S_DEFAULT: BC base in TAM
+- `C23` S_NUM: =IF(C20=0,"",$C$15*C20)
+- `D23` S_NUM: =IF(D20=0,"",$C$15*D20)
+- `E23` S_NUM: =IF(E20=0,"",$C$15*E20)
+- `F23` S_NUM: =IF(F20=0,"",$C$15*F20)
+- `G23` S_NUM: =IF(G20=0,"",$C$15*G20)
+- `H23` S_NUM: =IF(H20=0,"",$C$15*H20)
+- `B24` S_DEFAULT: AP/LLTM base in TAM
+- `C24` S_NUM: =IF(C21=0,"",$C$16*(C21-C22))
+- `D24` S_NUM: =IF(D21=0,"",$C$16*(D21-D22))
+- `E24` S_NUM: =IF(E21=0,"",$C$16*(E21-E22))
+- `F24` S_NUM: =IF(F21=0,"",$C$16*(F21-F22))
+- `G24` S_NUM: =IF(G21=0,"",$C$16*(G21-G22))
+- `H24` S_NUM: =IF(H21=0,"",$C$16*(H21-H22))
+- `B25` S_BOLD: TAM base (BC + AP/LLTM)
+- `C25` S_NUM: =N(C23)+N(C24)
+- `D25` S_NUM: =N(D23)+N(D24)
+- `E25` S_NUM: =N(E23)+N(E24)
+- `F25` S_NUM: =N(F23)+N(F24)
+- `G25` S_NUM: =N(G23)+N(G24)
+- `H25` S_NUM: =N(H23)+N(H24)
+- `A27` S_DEFAULT: x
+- `B27` S_TITLE_SECTION: Columbia (LI 1045) - stream bases ($M, FY22-FY27)
+- `C27` S_TITLE_SECTION: 
+- `D27` S_TITLE_SECTION: 
+- `E27` S_TITLE_SECTION: 
+- `F27` S_TITLE_SECTION: 
+- `G27` S_TITLE_SECTION: 
+- `H27` S_TITLE_SECTION: 
+- `B28` S_HEADER_LEFT: Metric
+- `C28` S_HEADER_LEFT: 2022
+- `D28` S_HEADER_LEFT: 2023
+- `E28` S_HEADER_LEFT: 2024
+- `F28` S_HEADER_LEFT: 2025
+- `G28` S_HEADER_LEFT: 2026
+- `H28` S_HEADER_LEFT: 2027
+- `B29` S_BOLD: BC base (P-5c Basic Construction)
+- `C29` S_LINK_NUM: ='Budget_Base'!C45
+- `D29` S_LINK_NUM: ='Budget_Base'!D45
+- `E29` S_LINK_NUM: ='Budget_Base'!E45
+- `F29` S_LINK_NUM: ='Budget_Base'!F45
+- `G29` S_LINK_NUM: ='Budget_Base'!G45
+- `H29` S_LINK_NUM: ='Budget_Base'!H45
+- `B30` S_BOLD: AP/LLTM base (P-10, confirmed 0)
+- `C30` S_LINK_NUM: ='Inputs'!C16
+- `D30` S_LINK_NUM: ='Inputs'!D16
+- `E30` S_LINK_NUM: ='Inputs'!E16
+- `F30` S_LINK_NUM: ='Inputs'!F16
+- `G30` S_LINK_NUM: ='Inputs'!G16
+- `H30` S_LINK_NUM: ='Inputs'!H16
+- `B31` S_DEFAULT: Less: prior-yr AP credit
+- `C31` S_NUM_INPUT: 0
+- `D31` S_NUM_INPUT: 0
+- `E31` S_NUM_INPUT: 0
+- `F31` S_NUM_INPUT: 0
+- `G31` S_NUM_INPUT: 0
+- `H31` S_NUM_INPUT: 0
+- `B32` S_DEFAULT: BC base in TAM
+- `C32` S_NUM: =IF(C29=0,"",$C$15*C29)
+- `D32` S_NUM: =IF(D29=0,"",$C$15*D29)
+- `E32` S_NUM: =IF(E29=0,"",$C$15*E29)
+- `F32` S_NUM: =IF(F29=0,"",$C$15*F29)
+- `G32` S_NUM: =IF(G29=0,"",$C$15*G29)
+- `H32` S_NUM: =IF(H29=0,"",$C$15*H29)
+- `B33` S_DEFAULT: AP/LLTM base in TAM
+- `C33` S_NUM: =IF(C30=0,"",$C$16*(C30-C31))
+- `D33` S_NUM: =IF(D30=0,"",$C$16*(D30-D31))
+- `E33` S_NUM: =IF(E30=0,"",$C$16*(E30-E31))
+- `F33` S_NUM: =IF(F30=0,"",$C$16*(F30-F31))
+- `G33` S_NUM: =IF(G30=0,"",$C$16*(G30-G31))
+- `H33` S_NUM: =IF(H30=0,"",$C$16*(H30-H31))
+- `B34` S_BOLD: TAM base (BC + AP/LLTM)
+- `C34` S_NUM: =N(C32)+N(C33)
+- `D34` S_NUM: =N(D32)+N(D33)
+- `E34` S_NUM: =N(E32)+N(E33)
+- `F34` S_NUM: =N(F32)+N(F33)
+- `G34` S_NUM: =N(G32)+N(G33)
+- `H34` S_NUM: =N(H32)+N(H33)
+- `A36` S_DEFAULT: x
+- `B36` S_TITLE_SECTION: Portfolio stream-base totals (Va + Col)
+- `C36` S_TITLE_SECTION: 
+- `D36` S_TITLE_SECTION: 
+- `E36` S_TITLE_SECTION: 
+- `F36` S_TITLE_SECTION: 
+- `G36` S_TITLE_SECTION: 
+- `H36` S_TITLE_SECTION: 
+- `B37` S_HEADER_LEFT: Metric
+- `C37` S_HEADER_LEFT: 2022
+- `D37` S_HEADER_LEFT: 2023
+- `E37` S_HEADER_LEFT: 2024
+- `F37` S_HEADER_LEFT: 2025
+- `G37` S_HEADER_LEFT: 2026
+- `H37` S_HEADER_LEFT: 2027
+- `B38` S_DEFAULT: BC base in TAM
+- `C38` S_NUM: =N(C23)+N(C32)
+- `D38` S_NUM: =N(D23)+N(D32)
+- `E38` S_NUM: =N(E23)+N(E32)
+- `F38` S_NUM: =N(F23)+N(F32)
+- `G38` S_NUM: =N(G23)+N(G32)
+- `H38` S_NUM: =N(H23)+N(H32)
+- `B39` S_DEFAULT: AP/LLTM base in TAM
+- `C39` S_NUM: =N(C24)+N(C33)
+- `D39` S_NUM: =N(D24)+N(D33)
+- `E39` S_NUM: =N(E24)+N(E33)
+- `F39` S_NUM: =N(F24)+N(F33)
+- `G39` S_NUM: =N(G24)+N(G33)
+- `H39` S_NUM: =N(H24)+N(H33)
+- `B40` S_BOLD: TAM base
+- `C40` S_NUM: =N(C25)+N(C34)
+- `D40` S_NUM: =N(D25)+N(D34)
+- `E40` S_NUM: =N(E25)+N(E34)
+- `F40` S_NUM: =N(F25)+N(F34)
+- `G40` S_NUM: =N(G25)+N(G34)
+- `H40` S_NUM: =N(H25)+N(H34)
+- `A42` S_DEFAULT: x
+- `B42` S_TITLE_SECTION: POP_Coefficients - per-stream TAM supplier coefficients (computed in-sheet)
+- `C42` S_TITLE_SECTION: 
+- `D42` S_TITLE_SECTION: 
+- `A44` S_DEFAULT: x
+- `B44` S_TITLE_SECTION: Per-stream supplier coefficients (feed TAM) - $-weighted, gated, in-scope, confirmed
+- `C44` S_TITLE_SECTION: 
+- `D44` S_TITLE_SECTION: 
+- `B45` S_HEADER_LEFT: Coefficient
+- `C45` S_HEADER_LEFT: Value
+- `D45` S_HEADER_LEFT: Basis
+- `B46` S_BOLD: Headline supplier coefficient (non-nuclear, applied)
+- `C46` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670))
+- `D46` S_DEFAULT: construction + component_procurement, GFE + BPMI nuclear dropped (~35.0%, APPLIED)
+- `B47` S_BOLD: AP/LLTM stream coefficient (reference; base = 0)
+- `C47` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="AP_LLTM")*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="AP_LLTM")*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*('POP_Corpus'!G13:G670="AP_LLTM")*'POP_Corpus'!K13:K670))
+- `D47` S_DEFAULT: lltm_early_mfg + advance_procurement (~48.5%; not applied - AP additive base = 0)
+- `B48` S_DEFAULT: Total weighted (corpus, display)
+- `C48` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!J13:J670*'POP_Corpus'!K13:K670))
+- `D48` S_DEFAULT: both streams, in-scope confirmed - NOT base-weighted (see TAM bridge)
+- `A50` S_DEFAULT: x
+- `B50` S_TITLE_SUBSECTION: All-gated POP shares (dollar-weighted building blocks)
+- `C50` S_TITLE_SUBSECTION: 
+- `D50` S_TITLE_SUBSECTION: 
+- `B51` S_HEADER_LEFT: POP class
+- `C51` S_HEADER_LEFT: Share
+- `D51` S_HEADER_LEFT: Basis
+- `B52` S_DEFAULT: EB site %
+- `C52` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670*'POP_Corpus'!L13:L670)/SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670))
+- `D52` S_DEFAULT: prime yard (Groton/Quonset) - not addressable
+- `B53` S_DEFAULT: HII site %
+- `C53` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670*'POP_Corpus'!M13:M670)/SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670))
+- `D53` S_DEFAULT: co-prime (Newport News) - distributed but not addressable
+- `B54` S_DEFAULT: Other-US supplier %
+- `C54` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670*'POP_Corpus'!N13:N670)/SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670))
+- `D54` S_DEFAULT: open supplier market
+- `B55` S_DEFAULT: Foreign %
+- `C55` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670*'POP_Corpus'!O13:O670)/SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670))
+- `D55` S_DEFAULT: foreign suppliers
+- `B56` S_DEFAULT: Unparsed %
+- `C56` S_PCT: =1-C52-C53-C54-C55
+- `D56` S_DEFAULT: residual (single-site / no-% parses)
+- `A58` S_DEFAULT: x
+- `B58` S_TITLE_SUBSECTION: Distributed-production view (appendix - broader than commercial TAM)
+- `C58` S_TITLE_SUBSECTION: 
+- `D58` S_TITLE_SUBSECTION: 
+- `B59` S_HEADER_LEFT: Coefficient
+- `C59` S_HEADER_LEFT: Value
+- `D59` S_HEADER_LEFT: Basis
+- `B60` S_BOLD: Distributed (confirmed)
+- `C60` S_PCT: =C53+C54+C55
+- `D60` S_DEFAULT: away from EB yard, confirmed (~68%)
+- `B61` S_BOLD: Distributed (incl-unparsed)
+- `C61` S_PCT: =1-C52
+- `D61` S_DEFAULT: away from EB yard incl unparsed (~78%)
+- `A63` S_DEFAULT: x
+- `B63` S_TITLE_SUBSECTION: Reconciliation & scope variants (reference - not applied to TAM)
+- `C63` S_TITLE_SUBSECTION: 
+- `D63` S_TITLE_SUBSECTION: 
+- `B64` S_HEADER_LEFT: Variant
+- `C64` S_HEADER_LEFT: Value
+- `D64` S_HEADER_LEFT: Note
+- `B65` S_DEFAULT: BC stream incl-GFE (handoff ref)
+- `C65` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*('POP_Corpus'!G13:G670="BC")*'POP_Corpus'!K13:K670))
+- `D65` S_DEFAULT: GFE left in denominator - the prior ~61% figure
+- `B66` S_DEFAULT: All-gated, GFE-excluded
+- `C66` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*(1-'POP_Corpus'!I13:I670)*'POP_Corpus'!K13:K670))
+- `D66` S_DEFAULT: both streams minus GFE (~54.5%)
+- `A68` S_DEFAULT: x
+- `B68` S_TITLE_SUBSECTION: Anchor regression - reproduce the v4 worked example (drift guard)
+- `C68` S_TITLE_SUBSECTION: 
+- `D68` S_TITLE_SUBSECTION: 
+- `B69` S_HEADER_LEFT: Check
+- `C69` S_HEADER_LEFT: Value
+- `D69` S_HEADER_LEFT: Note
+- `B70` S_DEFAULT: Published anchor
+- `C70` S_PCT_INPUT: 0.518
+- `D70` S_DEFAULT: v4: 43 actions -> 51.8% primary
+- `B71` S_DEFAULT: Computed all-gated primary
+- `C71` S_PCT: =IF(SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670)=0,"",SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670*('POP_Corpus'!N13:N670+'POP_Corpus'!O13:O670))/SUMPRODUCT('POP_Corpus'!H13:H670*'POP_Corpus'!K13:K670))
+- `D71` S_DEFAULT: supplier+foreign over ALL gated (no stream/GFE filter)
+- `B72` S_DEFAULT: Delta
+- `C72` S_PCT: =C71-C70
+- `D72` S_DEFAULT: computed - published
+- `B73` S_DEFAULT: Anchor OK?
+- `C73` S_DEFAULT: =IF(ABS(C72)<0.01,"OK","FAIL")
+- `D73` S_DEFAULT: tol 1pt
+- `A75` S_DEFAULT: x
+- `B75` S_TITLE_SECTION: TAM_Model - one headline TAM = BC_base x BC_coeff + AP_base x AP_coeff
+- `C75` S_TITLE_SECTION: 
+- `D75` S_TITLE_SECTION: 
+- `E75` S_TITLE_SECTION: 
+- `F75` S_TITLE_SECTION: 
+- `G75` S_TITLE_SECTION: 
+- `H75` S_TITLE_SECTION: 
+- `A77` S_DEFAULT: x
+- `B77` S_TITLE_SECTION: Applied per-stream supplier coefficients (POP_Coefficients)
+- `C77` S_TITLE_SECTION: 
+- `D77` S_TITLE_SECTION: 
+- `E77` S_TITLE_SECTION: 
+- `F77` S_TITLE_SECTION: 
+- `G77` S_TITLE_SECTION: 
+- `H77` S_TITLE_SECTION: 
+- `B78` S_HEADER_LEFT: Coefficient
+- `C78` S_HEADER_LEFT: Value
+- `B79` S_BOLD: Headline supplier coefficient (non-nuclear, applied)
+- `C79` S_LINK_PCT: ='TAM_Model'!C46
+- `B80` S_BOLD: AP/LLTM stream coefficient (reference; base = 0)
+- `C80` S_LINK_PCT: ='TAM_Model'!C47
+- `A82` S_DEFAULT: x
+- `B82` S_TITLE_SECTION: Virginia (LI 2013) - TAM ($M, FY22-FY27)
+- `C82` S_TITLE_SECTION: 
+- `D82` S_TITLE_SECTION: 
+- `E82` S_TITLE_SECTION: 
+- `F82` S_TITLE_SECTION: 
+- `G82` S_TITLE_SECTION: 
+- `H82` S_TITLE_SECTION: 
+- `B83` S_HEADER_LEFT: Metric
+- `C83` S_HEADER_LEFT: 2022
+- `D83` S_HEADER_LEFT: 2023
+- `E83` S_HEADER_LEFT: 2024
+- `F83` S_HEADER_LEFT: 2025
+- `G83` S_HEADER_LEFT: 2026
+- `H83` S_HEADER_LEFT: 2027
+- `B84` S_DEFAULT: BC base
+- `C84` S_LINK_NUM: ='TAM_Model'!C23
+- `D84` S_LINK_NUM: ='TAM_Model'!D23
+- `E84` S_LINK_NUM: ='TAM_Model'!E23
+- `F84` S_LINK_NUM: ='TAM_Model'!F23
+- `G84` S_LINK_NUM: ='TAM_Model'!G23
+- `H84` S_LINK_NUM: ='TAM_Model'!H23
+- `B85` S_DEFAULT: TAM - BC stream
+- `C85` S_NUM: =IF(N(C84)=0,"",N(C84)*$C$79)
+- `D85` S_NUM: =IF(N(D84)=0,"",N(D84)*$C$79)
+- `E85` S_NUM: =IF(N(E84)=0,"",N(E84)*$C$79)
+- `F85` S_NUM: =IF(N(F84)=0,"",N(F84)*$C$79)
+- `G85` S_NUM: =IF(N(G84)=0,"",N(G84)*$C$79)
+- `H85` S_NUM: =IF(N(H84)=0,"",N(H84)*$C$79)
+- `B86` S_DEFAULT: AP/LLTM base
+- `C86` S_LINK_NUM: ='TAM_Model'!C24
+- `D86` S_LINK_NUM: ='TAM_Model'!D24
+- `E86` S_LINK_NUM: ='TAM_Model'!E24
+- `F86` S_LINK_NUM: ='TAM_Model'!F24
+- `G86` S_LINK_NUM: ='TAM_Model'!G24
+- `H86` S_LINK_NUM: ='TAM_Model'!H24
+- `B87` S_DEFAULT: TAM - AP/LLTM stream
+- `C87` S_NUM: =IF(N(C86)=0,"",N(C86)*$C$80)
+- `D87` S_NUM: =IF(N(D86)=0,"",N(D86)*$C$80)
+- `E87` S_NUM: =IF(N(E86)=0,"",N(E86)*$C$80)
+- `F87` S_NUM: =IF(N(F86)=0,"",N(F86)*$C$80)
+- `G87` S_NUM: =IF(N(G86)=0,"",N(G86)*$C$80)
+- `H87` S_NUM: =IF(N(H86)=0,"",N(H86)*$C$80)
+- `B88` S_BOLD: TAM (both streams)
+- `C88` S_NUM: =N(C85)+N(C87)
+- `D88` S_NUM: =N(D85)+N(D87)
+- `E88` S_NUM: =N(E85)+N(E87)
+- `F88` S_NUM: =N(F85)+N(F87)
+- `G88` S_NUM: =N(G85)+N(G87)
+- `H88` S_NUM: =N(H85)+N(H87)
+- `A90` S_DEFAULT: x
+- `B90` S_TITLE_SECTION: Columbia (LI 1045) - TAM ($M, FY22-FY27)
+- `C90` S_TITLE_SECTION: 
+- `D90` S_TITLE_SECTION: 
+- `E90` S_TITLE_SECTION: 
+- `F90` S_TITLE_SECTION: 
+- `G90` S_TITLE_SECTION: 
+- `H90` S_TITLE_SECTION: 
+- `B91` S_HEADER_LEFT: Metric
+- `C91` S_HEADER_LEFT: 2022
+- `D91` S_HEADER_LEFT: 2023
+- `E91` S_HEADER_LEFT: 2024
+- `F91` S_HEADER_LEFT: 2025
+- `G91` S_HEADER_LEFT: 2026
+- `H91` S_HEADER_LEFT: 2027
+- `B92` S_DEFAULT: BC base
+- `C92` S_LINK_NUM: ='TAM_Model'!C32
+- `D92` S_LINK_NUM: ='TAM_Model'!D32
+- `E92` S_LINK_NUM: ='TAM_Model'!E32
+- `F92` S_LINK_NUM: ='TAM_Model'!F32
+- `G92` S_LINK_NUM: ='TAM_Model'!G32
+- `H92` S_LINK_NUM: ='TAM_Model'!H32
+- `B93` S_DEFAULT: TAM - BC stream
+- `C93` S_NUM: =IF(N(C92)=0,"",N(C92)*$C$79)
+- `D93` S_NUM: =IF(N(D92)=0,"",N(D92)*$C$79)
+- `E93` S_NUM: =IF(N(E92)=0,"",N(E92)*$C$79)
+- `F93` S_NUM: =IF(N(F92)=0,"",N(F92)*$C$79)
+- `G93` S_NUM: =IF(N(G92)=0,"",N(G92)*$C$79)
+- `H93` S_NUM: =IF(N(H92)=0,"",N(H92)*$C$79)
+- `B94` S_DEFAULT: AP/LLTM base
+- `C94` S_LINK_NUM: ='TAM_Model'!C33
+- `D94` S_LINK_NUM: ='TAM_Model'!D33
+- `E94` S_LINK_NUM: ='TAM_Model'!E33
+- `F94` S_LINK_NUM: ='TAM_Model'!F33
+- `G94` S_LINK_NUM: ='TAM_Model'!G33
+- `H94` S_LINK_NUM: ='TAM_Model'!H33
+- `B95` S_DEFAULT: TAM - AP/LLTM stream
+- `C95` S_NUM: =IF(N(C94)=0,"",N(C94)*$C$80)
+- `D95` S_NUM: =IF(N(D94)=0,"",N(D94)*$C$80)
+- `E95` S_NUM: =IF(N(E94)=0,"",N(E94)*$C$80)
+- `F95` S_NUM: =IF(N(F94)=0,"",N(F94)*$C$80)
+- `G95` S_NUM: =IF(N(G94)=0,"",N(G94)*$C$80)
+- `H95` S_NUM: =IF(N(H94)=0,"",N(H94)*$C$80)
+- `B96` S_BOLD: TAM (both streams)
+- `C96` S_NUM: =N(C93)+N(C95)
+- `D96` S_NUM: =N(D93)+N(D95)
+- `E96` S_NUM: =N(E93)+N(E95)
+- `F96` S_NUM: =N(F93)+N(F95)
+- `G96` S_NUM: =N(G93)+N(G95)
+- `H96` S_NUM: =N(H93)+N(H95)
+- `B98` S_TITLE_SECTION: Portfolio TAM + stream bridge (Virginia + Columbia)
+- `C98` S_TITLE_SECTION: 
+- `D98` S_TITLE_SECTION: 
+- `E98` S_TITLE_SECTION: 
+- `F98` S_TITLE_SECTION: 
+- `G98` S_TITLE_SECTION: 
+- `H98` S_TITLE_SECTION: 
+- `B99` S_HEADER_LEFT: Metric
+- `C99` S_HEADER_LEFT: 2022
+- `D99` S_HEADER_LEFT: 2023
+- `E99` S_HEADER_LEFT: 2024
+- `F99` S_HEADER_LEFT: 2025
+- `G99` S_HEADER_LEFT: 2026
+- `H99` S_HEADER_LEFT: 2027
+- `B100` S_DEFAULT: BC stream TAM
+- `C100` S_NUM: =N(C85)+N(C93)
+- `D100` S_NUM: =N(D85)+N(D93)
+- `E100` S_NUM: =N(E85)+N(E93)
+- `F100` S_NUM: =N(F85)+N(F93)
+- `G100` S_NUM: =N(G85)+N(G93)
+- `H100` S_NUM: =N(H85)+N(H93)
+- `B101` S_DEFAULT: AP/LLTM stream TAM
+- `C101` S_NUM: =N(C87)+N(C95)
+- `D101` S_NUM: =N(D87)+N(D95)
+- `E101` S_NUM: =N(E87)+N(E95)
+- `F101` S_NUM: =N(F87)+N(F95)
+- `G101` S_NUM: =N(G87)+N(G95)
+- `H101` S_NUM: =N(H87)+N(H95)
+- `B102` S_BOLD: TAM (portfolio)
+- `C102` S_NUM: =N(C88)+N(C96)
+- `D102` S_NUM: =N(D88)+N(D96)
+- `E102` S_NUM: =N(E88)+N(E96)
+- `F102` S_NUM: =N(F88)+N(F96)
+- `G102` S_NUM: =N(G88)+N(G96)
+- `H102` S_NUM: =N(H88)+N(H96)
+- `B104` S_BOLD: Total weighted coefficient (TAM / TAM base, all FY)
+- `C104` S_PCT: =IF((SUM(C84:H84)+SUM(C86:H86)+SUM(C92:H92)+SUM(C94:H94))=0,"",SUM(C102:H102)/(SUM(C84:H84)+SUM(C86:H86)+SUM(C92:H92)+SUM(C94:H94)))
+- `A106` S_DEFAULT: x
+- `B106` S_TITLE_SECTION: Annualization + deck-bridge figures (FY22-27)
+- `C106` S_TITLE_SECTION: 
+- `D106` S_TITLE_SECTION: 
+- `E106` S_TITLE_SECTION: 
+- `F106` S_TITLE_SECTION: 
+- `G106` S_TITLE_SECTION: 
+- `H106` S_TITLE_SECTION: 
+- `B107` S_HEADER_LEFT: Measure
+- `C107` S_HEADER_LEFT: Value
+- `B108` S_BOLD: Cumulative portfolio TAM (FY22-27)
+- `C108` S_NUM: =SUM(C102:H102)
+- `B109` S_DEFAULT: Number of fiscal years
+- `C109` S_NUM: ='Inputs'!C8-'Inputs'!C7+1
+- `B110` S_BOLD: Average annual portfolio TAM
+- `C110` S_NUM: =C108/C109
+- `B111` S_DEFAULT: Cumulative BC construction base (FY22-27)
+- `C111` S_NUM: =N('TAM_Model'!C38)+N('TAM_Model'!D38)+N('TAM_Model'!E38)+N('TAM_Model'!F38)+N('TAM_Model'!G38)+N('TAM_Model'!H38)
+- `B112` S_DEFAULT: Removed by POP (prime / co-prime / GFE)
+- `C112` S_NUM: =C111-C108
