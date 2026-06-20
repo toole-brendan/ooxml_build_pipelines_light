@@ -2,7 +2,7 @@
 
 Local non-sheet helper (like _layout / _taxonomy / _registry): the data-cut
 sheets all read the wide FY-columned CSVs that
-projects/distributed_shipbuilding/research_shared/corpus/scripts/extract_workbook_cuts.py regenerates
+projects/distributed_shipbuilding/sam/award_classification/corpus/scripts/extract_workbook_cuts.py regenerates
 into this pipeline's extracted/ dir. This module centralizes the FY-column
 vocabulary and display-name maps so the FY span lives in exactly one place on
 the workbook side.

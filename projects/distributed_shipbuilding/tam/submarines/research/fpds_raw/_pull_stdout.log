@@ -1,0 +1,313 @@
+=== FPDS pull started 2026-05-24 09:14:58
+DATE_WINDOW=SIGNED_DATE:[2018/01/01,2026/12/31]
+
+--- [gdeb_navy] GD Electric Boat — all Navy contracts FY18+
+    notes: Prime of record for Virginia + Columbia. Includes some misc Navy work.
+    ~753 pages (7530 records max) for: VENDOR_NAME:"ELECTRIC BOAT" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/01
+    !! capping at 300 pages
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    ...275 pages, 2750 records so far
+    -> 3000 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"GENERAL DYNAMICS ELECTRIC BOAT" CONTRACTING_AGENCY_ID:"1700" SIGNED
+    -> 0 records from this query
+    [gdeb_navy] 3000 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      ELECTRIC BOAT CORPORATION                           $    57,885.8M   166 PIIDs
+
+--- [hii_nns_navy] HII Newport News — all Navy contracts FY18+ (mostly CVN, but check for sub work)
+    notes: Most NNS Navy work is CVN refueling/RCOH; submarine work flows through GDEB teaming.
+    ~519 pages (5190 records max) for: VENDOR_NAME:"NEWPORT NEWS SHIPBUILDING" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE
+    !! capping at 300 pages
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    ...275 pages, 2750 records so far
+    -> 3000 records from this query
+    ~4957 pages (49570 records max) for: VENDOR_NAME:"HUNTINGTON INGALLS INCORPORATED" CONTRACTING_AGENCY_ID:"1700" SIGNE
+    !! capping at 300 pages
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    ...275 pages, 2750 records so far
+    -> 3000 records from this query
+    [hii_nns_navy] 5731 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      NATIONAL STEEL AND SHIPBUILDING COMPANY             $    15,408.5M    37 PIIDs
+      NEWPORT NEWS SHIPBUILDING AND                       $     4,636.0M     2 PIIDs
+      NATIONAL STEEL & SHIPBUILDING COMPANY               $     3,394.9M     4 PIIDs
+      NEWPORT NEWS SHIPBUILDING & DR                      $     2,626.7M     1 PIIDs
+      BOLLINGER MISSISSIPPI SHIPBUILDING, LLC             $     2,523.0M     4 PIIDs
+      NEWPORT NEWS SHIPBUILDING                           $     1,211.1M     2 PIIDs
+      NORTHROP GRUMMAN SHIPBUILDING, INC.                 $       959.3M     3 PIIDs
+      HUNTINGTON INGALLS INCORPORATED                     $       266.3M   104 PIIDs
+      NEWPORT NEWS SHIPBUILDING INC                       $       250.7M     1 PIIDs
+      AMERICAN ELECTRONIC WARFARE ASSOCIATES, INCORPORAT  $       146.5M    11 PIIDs
+
+--- [bpmi_navy] Bechtel Plant Machinery — Naval Reactors FY18+
+    notes: S9G reactor components (Virginia); Columbia reactor components; GFE.
+    ~10 pages (100 records max) for: VENDOR_NAME:"BECHTEL PLANT MACHINERY" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[
+    -> 97 records from this query
+    ~10 pages (100 records max) for: VENDOR_NAME:"BECHTEL PLANT MACHINERY, INC." CONTRACTING_AGENCY_ID:"1700" SIGNED_
+    -> 97 records from this query
+    [bpmi_navy] 97 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      BECHTEL PLANT MACHINERY, INC.                       $    21,275.4M    14 PIIDs
+      BECHTEL PLANT MACHINERY, INC                        $     3,815.3M     5 PIIDs
+
+--- [lockheed_navy_sub] Lockheed Martin — Navy submarine-related FY18+
+    notes: LM Virginia combat systems hardware/software; Trident D5/D5LE2 for Columbia.
+    ~1 pages (10 records max) for: VENDOR_NAME:"LOCKHEED MARTIN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIR
+    -> 4 records from this query
+    ~4 pages (40 records max) for: VENDOR_NAME:"LOCKHEED MARTIN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIR
+    -> 33 records from this query
+    ~3 pages (30 records max) for: VENDOR_NAME:"LOCKHEED MARTIN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIR
+    -> 29 records from this query
+    ~37 pages (370 records max) for: VENDOR_NAME:"LOCKHEED MARTIN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIR
+    ...25 pages, 250 records so far
+    -> 369 records from this query
+    [lockheed_navy_sub] 293 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      LOCKHEED MARTIN CORPORATION                         $     4,534.9M    32 PIIDs
+      LOCKHEED MARTIN SIPPICAN, INC.                      $         0.1M     2 PIIDs
+
+--- [northrop_navy_sub] Northrop Grumman — Navy submarine-related FY18+
+    notes: Sonar arrays, EW (AN/BLQ-10), combat systems.
+    ~11 pages (110 records max) for: VENDOR_NAME:"NORTHROP GRUMMAN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUI
+    -> 103 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"NORTHROP GRUMMAN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUI
+    -> 0 records from this query
+    ~6 pages (60 records max) for: VENDOR_NAME:"NORTHROP GRUMMAN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUI
+    -> 55 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"NORTHROP GRUMMAN" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUI
+    -> 3 records from this query
+    [northrop_navy_sub] 132 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      NORTHROP GRUMMAN SYSTEMS CORPORATION                $       387.3M    12 PIIDs
+
+--- [bae_navy_sub] BAE Systems — Navy submarine subassemblies FY18+
+    notes: BAE Systems Land & Armaments builds forward subassemblies (per prior analysis).
+    ~261 pages (2610 records max) for: VENDOR_NAME:"BAE SYSTEMS LAND" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    -> 2610 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"BAE SYSTEMS" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIREMEN
+    -> 8 records from this query
+    ~3 pages (30 records max) for: VENDOR_NAME:"BAE SYSTEMS" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIREMEN
+    -> 24 records from this query
+    [bae_navy_sub] 2223 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      BAE SYSTEMS LAND & ARMAMENTS L.P.                   $     4,403.7M   470 PIIDs
+      BAE SYSTEMS LAND & ARMAMENTS, L.P.                  $       432.2M     5 PIIDs
+      BAE SYSTEMS LAND & ARMAMENTS INC.                   $       111.9M    30 PIIDs
+      BAE SYSTEMS AUSTRALIA LIMITED                       $        36.2M     1 PIIDs
+
+--- [l3harris_navy_sub] L3Harris — submarine periscopes & electronics FY18+
+    notes: Photonic masts (replaced periscopes on Virginia).
+    ~4 pages (40 records max) for: VENDOR_NAME:"L3HARRIS" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIREMENT:"
+    -> 31 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"L3HARRIS" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIREMENT:"
+    -> 0 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"L3 TECHNOLOGIES" CONTRACTING_AGENCY_ID:"1700" DESCRIPTION_OF_REQUIR
+    -> 6 records from this query
+    ~1 pages (10 records max) for: VENDOR_NAME:"KOLLMORGEN" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/01,20
+    -> 7 records from this query
+    [l3harris_navy_sub] 44 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      L3 TECHNOLOGIES, INC.                               $       212.6M     3 PIIDs
+      L3HARRIS MARITIME SERVICES INC                      $        22.6M     5 PIIDs
+      KOLLMORGEN CORPORATION                              $         0.1M     5 PIIDs
+
+--- [curtiss_wright_navy] Curtiss-Wright — Navy nuclear FY18+
+    notes: Nuclear pumps, valves; major submarine component supplier.
+    ~250 pages (2500 records max) for: VENDOR_NAME:"CURTISS-WRIGHT" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/0
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    -> 2494 records from this query
+    ~250 pages (2500 records max) for: VENDOR_NAME:"CURTISS WRIGHT" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/0
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    -> 2494 records from this query
+    [curtiss_wright_navy] 2490 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      CURTISS-WRIGHT ELECTRO-MECHANICAL CORPORATION       $       411.8M   784 PIIDs
+      CURTISS-WRIGHT ELECTRO-MECHANICAL CORP              $        44.7M    55 PIIDs
+      CURTISS-WRIGHT CONTROLS ELECTRONIC SYSTEMS, INC.    $        36.7M    57 PIIDs
+      CURTISS-WRIGHT FLOW CONTROL SERVICE, LLC            $        22.1M    23 PIIDs
+      CURTISS-WRIGHT FLOW CONTROL CORPORATION             $        14.2M    41 PIIDs
+      CURTISS-WRIGHT CONTROLS, INC.                       $         3.1M     7 PIIDs
+      CURTISS WRIGHT FLOW CONTROL CORPORATION             $         2.0M     4 PIIDs
+      CURTISS-WRIGHT DS, INC.                             $         2.0M     5 PIIDs
+      CURTISS-WRIGHT CONTROLS, INC                        $         1.7M     6 PIIDs
+      CURTISS-WRIGHT CORPORATION                          $         0.2M     2 PIIDs
+
+--- [rolls_royce_navy_sub] Rolls-Royce — Navy submarine rotors FY18+
+    notes: Submarine main engine/rotor components.
+    ~351 pages (3510 records max) for: VENDOR_NAME:"ROLLS-ROYCE" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/01,2
+    !! capping at 300 pages
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    ...275 pages, 2750 records so far
+    -> 3000 records from this query
+    ~351 pages (3510 records max) for: VENDOR_NAME:"ROLLS ROYCE" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/01,2
+    !! capping at 300 pages
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    ...250 pages, 2500 records so far
+    ...275 pages, 2750 records so far
+    -> 3000 records from this query
+    [rolls_royce_navy_sub] 2980 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      ROLLS-ROYCE CORPORATION                             $     4,669.0M   479 PIIDs
+      ROLLS ROYCE DEFENSE ENERGY INCORPORATED             $       847.1M     1 PIIDs
+      ROLLS-ROYCE MARINE NORTH AMERICA INC.               $       281.1M   747 PIIDs
+      ROLLS ROYCE NAVAL MARINE INCORPORATED               $        85.5M     5 PIIDs
+      ROLLS-ROYCE NAVAL MARINE INC                        $        65.6M    17 PIIDs
+      ROLLS-ROYCE MILITARY AERO ENGINES LTD               $        34.3M    39 PIIDs
+      ROLLS-ROYCE SOLUTIONS AMERICA INC.                  $        21.2M     9 PIIDs
+      ROLLS-ROYCE SOLUTIONS AMERICA INC                   $        15.3M    58 PIIDs
+      ROLLS-ROYCE MILITARY AERO ENGINES LIMITED           $        12.6M     9 PIIDs
+      ROLLS-ROYCE NORTH AMERICAN TECHNOLOGIES INC.        $         7.9M     5 PIIDs
+
+--- [blueforge_navy] BlueForge Alliance — MIB consortium FY22+
+    notes: Maritime Industrial Base supplier-development consortium. Real flow-through to small shops.
+    ~145 pages (1450 records max) for: VENDOR_NAME:"BLUEFORGE ALLIANCE" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    -> 1445 records from this query
+    ~247 pages (2470 records max) for: VENDOR_NAME:"BLUE FORGE" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2018/01/01,20
+    ...25 pages, 250 records so far
+    ...50 pages, 500 records so far
+    ...75 pages, 750 records so far
+    ...100 pages, 1000 records so far
+    ...125 pages, 1250 records so far
+    ...150 pages, 1500 records so far
+    ...175 pages, 1750 records so far
+    ...200 pages, 2000 records so far
+    ...225 pages, 2250 records so far
+    -> 2464 records from this query
+    [blueforge_navy] 3901 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      BLUEFORGE ALLIANCE                                  $       923.1M     1 PIIDs
+      AIRCRAFT READINESS ALLIANCE, LLC                    $       297.8M     3 PIIDs
+      AIRCRAFT READINESS ALLIANCE II, LLC                 $       242.7M     6 PIIDs
+      BLUE ROCK STRUCTURES INC.                           $       204.2M    35 PIIDs
+      ERIE FORGE AND STEEL, INC.                          $        82.4M    27 PIIDs
+      ERIE FORGE & STEEL INC                              $        80.0M     8 PIIDs
+      BLUE TECH INC.                                      $        70.3M   379 PIIDs
+      BLUE CONSTRUCTION SERVICES LLC                      $        49.3M   272 PIIDs
+      ALLIANCE ONE GROUP LLC                              $        35.5M    36 PIIDs
+      INTERNATIONAL HEALTHCARE STAFFING ALLIANCE, LLC     $        33.8M    61 PIIDs
+
+--- [desc_virginia_class] DESCRIPTION:VIRGINIA CLASS sweep Navy FY18+
+    notes: Catches anything with Virginia Class in description regardless of vendor.
+    ~43 pages (430 records max) for: DESCRIPTION_OF_REQUIREMENT:"VIRGINIA CLASS" CONTRACTING_AGENCY_ID:"1700" SIGNED_
+    ...25 pages, 250 records so far
+    -> 428 records from this query
+    [desc_virginia_class] 420 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      ELECTRIC BOAT CORPORATION                           $    74,512.6M     8 PIIDs
+      BECHTEL PLANT MACHINERY, INC.                       $     2,542.7M     1 PIIDs
+      BAE SYSTEMS LAND & ARMAMENTS L.P.                   $       222.2M     7 PIIDs
+      ADVANCED TECHNOLOGY INTERNATIONAL                   $        90.2M     1 PIIDs
+      SEACORP, LLC                                        $        49.2M     2 PIIDs
+      INTERNATIONAL MARINE AND INDUSTRIAL APPLICATORS, L  $        46.0M     2 PIIDs
+      ROLLS-ROYCE MARINE NORTH AMERICA INC.               $        34.4M     4 PIIDs
+      NTI CORPORATION                                     $        29.5M     1 PIIDs
+      MIKEL, INC.                                         $        21.9M     2 PIIDs
+      APPLIED PHYSICAL SCIENCES CORP.                     $        20.5M     1 PIIDs
+
+--- [desc_columbia_class] DESCRIPTION:COLUMBIA CLASS sweep Navy FY18+
+    notes: Catches anything with Columbia Class in description.
+    ~24 pages (240 records max) for: DESCRIPTION_OF_REQUIREMENT:"COLUMBIA CLASS" CONTRACTING_AGENCY_ID:"1700" SIGNED_
+    -> 237 records from this query
+    ~1 pages (10 records max) for: DESCRIPTION_OF_REQUIREMENT:"COLUMBIA SSBN" CONTRACTING_AGENCY_ID:"1700" SIGNED_D
+    -> 8 records from this query
+    [desc_columbia_class] 237 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      ELECTRIC BOAT CORPORATION                           $    16,661.3M     2 PIIDs
+      BECHTEL PLANT MACHINERY, INC.                       $     5,687.0M     2 PIIDs
+      RAYTHEON COMPANY                                    $        90.3M     1 PIIDs
+      PENNSYLVANIA STATE UNIVERSITY, THE                  $        42.8M     5 PIIDs
+      LOCKHEED MARTIN CORPORATION                         $        29.2M     1 PIIDs
+      UNIFIED INDUSTRIES, INCORPORATED                    $        27.0M     1 PIIDs
+      APPLIED PHYSICAL SCIENCES CORP.                     $        20.5M     1 PIIDs
+      GENERAL DYNAMICS MISSION SYSTEMS, INC.              $        19.8M     1 PIIDs
+      SEACORP, LLC                                        $        18.6M     1 PIIDs
+      JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATOR  $        17.2M     3 PIIDs
+
+--- [desc_submarine_navy_big] DESCRIPTION:SUBMARINE Navy $50M+ floor sweep FY18+
+    notes: Round-3 backstop per lessons learned: agency + dollar-floor catches new vehicles.
+    ~1 pages (10 records max) for: DESCRIPTION_OF_REQUIREMENT:"SUBMARINE" CONTRACTING_AGENCY_ID:"1700" OBLIGATED_AM
+    -> 7 records from this query
+    [desc_submarine_navy_big] 7 unique (PIID,mod,signed_date) records total
+    TOP VENDORS (latest-mod totalObligated):
+      AMENTUM SERVICES, INC.                              $       608.1M     1 PIIDs
+      RQ CONSTRUCTION, LLC                                $       233.7M     2 PIIDs
+      WEEKS-CASHMAN JV                                    $        87.8M     1 PIIDs
+      WEEKS MARINE, INC.                                  $        69.0M     1 PIIDs
+      KIEWIT-ALBERICI SIOP MACC, AJV                      $         0.0M     1 PIIDs
+
+Wrote summary -> /Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/_summary.json

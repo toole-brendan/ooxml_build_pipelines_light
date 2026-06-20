@@ -1,0 +1,20 @@
+category_id,category,type,hii_dollars_total_$M,hii_dollars_with_swbs_$M,hii_records_with_swbs,component_text_coverage,swbs_agreement,expected_swbs,note
+99,Unresolved capability / insufficient evidence,process_not_swbs_gradable,1044.613,580.073,273,0.419,,n/a (process),
+02,"Propulsion, engines & mechanical power transmission",system,555.05,529.716,48,0.042,0.986,2xx,
+01,"Electrical power equipment, conversion & distribution",system,336.827,235.1,150,0.256,1.0,3xx,
+04,"Thermal management, HVAC & air handling",system,331.622,259.005,200,0.208,0.669,51x+531,
+13,"Shipyard work, marine integration & outfitting",process_not_swbs_gradable,293.035,36.576,95,0.743,,n/a (process),
+03,"Fluid systems, flow control & piping",system,271.807,95.422,161,0.334,0.907,5xx fluid,
+10,"Sensors, instrumentation, controls & communications",system_home_not_observable,172.962,110.472,71,0.26,,4xx+504,"combat / C4ISR (4xx) is GFE and excluded upstream; only residual ship-control & instrument work remains, landing in auxiliary systems"
+06,"Primary metals, forgings & castings",process_not_swbs_gradable,118.501,1.777,5,0.964,,n/a (process),
+05,"Structural fabrication, tanks & ship modules",system_home_not_observable,98.604,23.092,72,0.638,,1xx,"hull structure (1xx) is fabricated in-house by Ingalls; subcontracted structural metal appears as foundations/tanks/uptakes coded to the system it serves, not 1xx"
+16,"Distribution, logistics, rental & commercial supply",process_not_swbs_gradable,83.889,0.427,5,0.527,,n/a (process),
+15,"Installation, construction, maintenance & repair",process_not_swbs_gradable,55.026,14.268,19,0.615,,n/a (process),
+11,"Industrial machinery, tooling & material handling",system,51.433,37.365,32,0.226,0.231,57-58x,
+09,"Electronic components, computers, interconnects & cable",process_not_swbs_gradable,45.142,20.43,20,0.406,,n/a (process),
+17,"Business, staffing, training & other support",process_not_swbs_gradable,35.957,20.686,23,0.409,,n/a (process),
+14,"Engineering, software, R&D & testing",process_not_swbs_gradable,20.601,3.138,5,0.745,,n/a (process),
+07,"Precision machining, hardware & metal finishing",process_not_swbs_gradable,19.98,0.305,7,0.692,,n/a (process),
+08,"Polymers, elastomers, composites & formulated materials",process_not_swbs_gradable,9.708,0.0,0,0.227,,n/a (process),
+18,"Interiors, safety gear & miscellaneous manufactured products",system,2.5,0.0,0,0.08,,6xx,
+12,"Ordnance, launchers & specialized mission hardware",system,0.0,0.0,0,,,7xx,

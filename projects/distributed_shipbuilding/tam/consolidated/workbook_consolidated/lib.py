@@ -29,7 +29,7 @@ OUT = PROJECT_DIR / "20260605_Distributed Shipbuilding Consolidated_vS.xlsx"
 EXTRACTED = WORKBOOK_DIR / "extracted"
 # Shared, project-level supplier evidence registry (operating-entity overrides keyed by UEI).
 # Domain data lives at project level - never in workbook_core (locked-core rule).
-REGISTRY_CSV = REPO_ROOT / "projects/distributed_shipbuilding/research_shared/supplier_bucketing/vendor_evidence_registry.csv"
+REGISTRY_CSV = REPO_ROOT / "projects/distributed_shipbuilding/sam/award_classification/supplier_bucketing/vendor_evidence_registry.csv"
 
 _TITLE = "Distributed Shipbuilding Consolidated - Outsourced Construction TAM & SAM"
 _CREATOR = "workbook_consolidated build_workbook.py"

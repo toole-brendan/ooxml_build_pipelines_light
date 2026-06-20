@@ -1,0 +1,142 @@
+{
+  "completed_at": "2026-05-24 09:38:12",
+  "date_window": "SIGNED_DATE:[2018/01/01,2026/12/31]",
+  "navy_filter": "CONTRACTING_AGENCY_ID:\"1700\"",
+  "queries": {
+    "gdeb_navy": {
+      "label": "GD Electric Boat \u2014 all Navy contracts FY18+",
+      "queries": [
+        "VENDOR_NAME:\"ELECTRIC BOAT\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"GENERAL DYNAMICS ELECTRIC BOAT\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 3000,
+      "unique_piids": 166,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/gdeb_navy_raw.json"
+    },
+    "hii_nns_navy": {
+      "label": "HII Newport News \u2014 all Navy contracts FY18+ (mostly CVN, but check for sub work)",
+      "queries": [
+        "VENDOR_NAME:\"NEWPORT NEWS SHIPBUILDING\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"HUNTINGTON INGALLS INCORPORATED\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 5731,
+      "unique_piids": 1516,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/hii_nns_navy_raw.json"
+    },
+    "bpmi_navy": {
+      "label": "Bechtel Plant Machinery \u2014 Naval Reactors FY18+",
+      "queries": [
+        "VENDOR_NAME:\"BECHTEL PLANT MACHINERY\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"BECHTEL PLANT MACHINERY, INC.\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 97,
+      "unique_piids": 19,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/bpmi_navy_raw.json"
+    },
+    "lockheed_navy_sub": {
+      "label": "Lockheed Martin \u2014 Navy submarine-related FY18+",
+      "queries": [
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VIRGINIA\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"COLUMBIA\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SUBMARINE\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"TRIDENT\""
+      ],
+      "record_count": 293,
+      "unique_piids": 34,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/lockheed_navy_sub_raw.json"
+    },
+    "northrop_navy_sub": {
+      "label": "Northrop Grumman \u2014 Navy submarine-related FY18+",
+      "queries": [
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SUBMARINE\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VIRGINIA\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"COLUMBIA\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SONAR\""
+      ],
+      "record_count": 132,
+      "unique_piids": 12,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/northrop_navy_sub_raw.json"
+    },
+    "bae_navy_sub": {
+      "label": "BAE Systems \u2014 Navy submarine subassemblies FY18+",
+      "queries": [
+        "VENDOR_NAME:\"BAE SYSTEMS LAND\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SUBASSEMBLY\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VIRGINIA\""
+      ],
+      "record_count": 2223,
+      "unique_piids": 506,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/bae_navy_sub_raw.json"
+    },
+    "l3harris_navy_sub": {
+      "label": "L3Harris \u2014 submarine periscopes & electronics FY18+",
+      "queries": [
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SUBMARINE\"",
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"PHOTONIC\"",
+        "VENDOR_NAME:\"L3 TECHNOLOGIES\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SUBMARINE\"",
+        "VENDOR_NAME:\"KOLLMORGEN\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 44,
+      "unique_piids": 13,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/l3harris_navy_sub_raw.json"
+    },
+    "curtiss_wright_navy": {
+      "label": "Curtiss-Wright \u2014 Navy nuclear FY18+",
+      "queries": [
+        "VENDOR_NAME:\"CURTISS-WRIGHT\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"CURTISS WRIGHT\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 2490,
+      "unique_piids": 991,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/curtiss_wright_navy_raw.json"
+    },
+    "rolls_royce_navy_sub": {
+      "label": "Rolls-Royce \u2014 Navy submarine rotors FY18+",
+      "queries": [
+        "VENDOR_NAME:\"ROLLS-ROYCE\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"ROLLS ROYCE\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 2980,
+      "unique_piids": 1391,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/rolls_royce_navy_sub_raw.json"
+    },
+    "blueforge_navy": {
+      "label": "BlueForge Alliance \u2014 MIB consortium FY22+",
+      "queries": [
+        "VENDOR_NAME:\"BLUEFORGE ALLIANCE\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"BLUE FORGE\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 3901,
+      "unique_piids": 1972,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/blueforge_navy_raw.json"
+    },
+    "desc_virginia_class": {
+      "label": "DESCRIPTION:VIRGINIA CLASS sweep Navy FY18+",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"VIRGINIA CLASS\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 420,
+      "unique_piids": 124,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/desc_virginia_class_raw.json"
+    },
+    "desc_columbia_class": {
+      "label": "DESCRIPTION:COLUMBIA CLASS sweep Navy FY18+",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"COLUMBIA CLASS\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "DESCRIPTION_OF_REQUIREMENT:\"COLUMBIA SSBN\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 237,
+      "unique_piids": 63,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/desc_columbia_class_raw.json"
+    },
+    "desc_submarine_navy_big": {
+      "label": "DESCRIPTION:SUBMARINE Navy $50M+ floor sweep FY18+",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"SUBMARINE\" CONTRACTING_AGENCY_ID:\"1700\" OBLIGATED_AMOUNT:[50000000,99999999999]"
+      ],
+      "record_count": 7,
+      "unique_piids": 6,
+      "output_file": "/Users/brendantoole/projects2/submarine_outsourced_work/fpds_raw/desc_submarine_navy_big_raw.json"
+    }
+  }
+}

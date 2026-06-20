@@ -1,0 +1,183 @@
+{
+  "completed_at": "2026-05-23 20:32:40",
+  "date_window": "SIGNED_DATE:[2017/10/01,2026/12/31]",
+  "navy_filter": "CONTRACTING_AGENCY_ID:\"1700\"",
+  "queries": {
+    "hii_ingalls_navy": {
+      "label": "HII Ingalls Shipbuilding \u2014 all Navy contracts",
+      "queries": [
+        "VENDOR_NAME:\"INGALLS SHIPBUILDING\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"HUNTINGTON INGALLS INCORPORATED\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"HUNTINGTON INGALLS INCORPORATED\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH BURKE\"",
+        "VENDOR_NAME:\"HUNTINGTON INGALLS INCORPORATED\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\""
+      ],
+      "record_count": 1911,
+      "unique_piids": 40,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/hii_ingalls_navy_raw.json"
+    },
+    "gd_biw_navy": {
+      "label": "GD Bath Iron Works \u2014 all Navy contracts",
+      "queries": [
+        "VENDOR_NAME:\"BATH IRON WORKS\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"GENERAL DYNAMICS BATH IRON WORKS\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 5692,
+      "unique_piids": 810,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/gd_biw_navy_raw.json"
+    },
+    "lm_aegis_navy": {
+      "label": "Lockheed Martin \u2014 Aegis / DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"AEGIS\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VLS\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VERTICAL LAUNCH\"",
+        "VENDOR_NAME:\"LOCKHEED MARTIN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"MK 41\""
+      ],
+      "record_count": 800,
+      "unique_piids": 139,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/lm_aegis_navy_raw.json"
+    },
+    "raytheon_navy_ddg": {
+      "label": "Raytheon / RTX \u2014 DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SPY-6\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"AMDR\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"STANDARD MISSILE\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"TOMAHAWK\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ESSM\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"CIWS\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"PHALANX\"",
+        "VENDOR_NAME:\"RAYTHEON\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SEWIP\""
+      ],
+      "record_count": 476,
+      "unique_piids": 67,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/raytheon_navy_ddg_raw.json"
+    },
+    "ge_lm2500_navy": {
+      "label": "GE Aerospace \u2014 LM2500 propulsion & Navy work",
+      "queries": [
+        "VENDOR_NAME:\"GENERAL ELECTRIC\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"LM2500\"",
+        "VENDOR_NAME:\"GENERAL ELECTRIC\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"GAS TURBINE\"",
+        "VENDOR_NAME:\"GE AEROSPACE\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"GENERAL ELECTRIC\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"GENERAL ELECTRIC\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\""
+      ],
+      "record_count": 57,
+      "unique_piids": 35,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/ge_lm2500_navy_raw.json"
+    },
+    "rolls_royce_navy_ddg": {
+      "label": "Rolls-Royce \u2014 Navy DDG-related work",
+      "queries": [
+        "VENDOR_NAME:\"ROLLS-ROYCE\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"ROLLS ROYCE\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 2979,
+      "unique_piids": 1371,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/rolls_royce_navy_ddg_raw.json"
+    },
+    "bae_navy_ddg": {
+      "label": "BAE Systems \u2014 DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"BAE SYSTEMS LAND\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"MK 45\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"5 INCH\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VLS\"",
+        "VENDOR_NAME:\"BAE SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"VERTICAL LAUNCH\""
+      ],
+      "record_count": 2656,
+      "unique_piids": 561,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/bae_navy_ddg_raw.json"
+    },
+    "ng_navy_ddg": {
+      "label": "Northrop Grumman \u2014 DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SPQ-9\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"AEGIS\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SLQ-32\"",
+        "VENDOR_NAME:\"NORTHROP GRUMMAN\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"SEWIP\""
+      ],
+      "record_count": 39,
+      "unique_piids": 14,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/ng_navy_ddg_raw.json"
+    },
+    "l3harris_navy_ddg": {
+      "label": "L3Harris \u2014 DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+        "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"CEC\"",
+        "VENDOR_NAME:\"L3 TECHNOLOGIES\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"L3 TECHNOLOGIES\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\""
+      ],
+      "record_count": 1,
+      "unique_piids": 1,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/l3harris_navy_ddg_raw.json"
+    },
+    "drs_navy_ddg": {
+      "label": "DRS / Leonardo DRS \u2014 DDG combat systems",
+      "queries": [
+        "VENDOR_NAME:\"LEONARDO DRS\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"DRS SYSTEMS\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"DRS LAUREL\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "VENDOR_NAME:\"DRS NAVAL\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 4679,
+      "unique_piids": 1291,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/drs_navy_ddg_raw.json"
+    },
+    "gd_mission_navy_ddg": {
+      "label": "GD Mission Systems \u2014 DDG-related Navy work",
+      "queries": [
+        "VENDOR_NAME:\"GENERAL DYNAMICS MISSION\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+        "VENDOR_NAME:\"GENERAL DYNAMICS MISSION\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"AEGIS\"",
+        "VENDOR_NAME:\"GENERAL DYNAMICS MISSION\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DIRECTOR\""
+      ],
+      "record_count": 0,
+      "unique_piids": 0,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/gd_mission_navy_ddg_raw.json"
+    },
+    "desc_ddg51_class": {
+      "label": "DESCRIPTION:DDG 51 / ARLEIGH BURKE class sweep",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"DDG 51\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "DESCRIPTION_OF_REQUIREMENT:\"DDG-51\" CONTRACTING_AGENCY_ID:\"1700\"",
+        "DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH BURKE\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 2485,
+      "unique_piids": 271,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/desc_ddg51_class_raw.json"
+    },
+    "desc_destroyer_navy_big": {
+      "label": "DESCRIPTION:DESTROYER $50M+ Navy floor sweep",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\" CONTRACTING_AGENCY_ID:\"1700\" OBLIGATED_AMOUNT:[50000000,99999999999]"
+      ],
+      "record_count": 0,
+      "unique_piids": 0,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/desc_destroyer_navy_big_raw.json"
+    },
+    "desc_flight_iii_navy": {
+      "label": "DESCRIPTION:FLIGHT III sweep",
+      "queries": [
+        "DESCRIPTION_OF_REQUIREMENT:\"FLIGHT III\" CONTRACTING_AGENCY_ID:\"1700\""
+      ],
+      "record_count": 29,
+      "unique_piids": 23,
+      "output_file": "/Users/brendantoole/projects2/destroyer_outsourced_work/fpds_raw/desc_flight_iii_navy_raw.json"
+    }
+  }
+}
