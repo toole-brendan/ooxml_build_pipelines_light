@@ -1,0 +1,152 @@
+<section class="slide" data-label="Addressable vs Adjacent Spend" data-screen-label="04 Addressable vs Adjacent Spend" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="3">
+
+  <div class="chrome-top">
+    <div class="breadcrumb">Market Sizing / Scope</div>
+    <div class="chrome-top__right">
+      <span class="seal-block">
+        <img class="seal" src="assets/usn-crest.jpg" alt="U.S. Navy">
+        <img class="seal" src="assets/uscg-crest.png" alt="U.S. Coast Guard">
+      </span>
+    </div>
+  </div>
+
+  <div class="slide-title">
+    <span class="topic">Addressable vs Adjacent Spend</span><span class="pipe">|</span><span class="assertion">Subtracting newbuild (-$38.1B), public-yard labor (-$9.5B), and reactor procurement (-$1.9B) from $56.6B in total FY2025 Navy and Coast Guard ship-related spending leaves the $7.1B MRO contracting TAM</span>
+  </div>
+
+  <div class="body left-right-wide" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 28px;">
+
+    <!-- LEFT: Waterfall - $56.6B total pool less newbuild, less public-yard
+         labor, less reactor, equals $7.1B MRO TAM.
+         Navy-hero rule: only Total and Terminal $7.1B bars are navy;
+         subtraction bars are slate. Dashed connectors between bar tops. -->
+    <div class="waterfall">
+      <div class="visual-head">
+        <div class="slide-subtitle" style="margin:0;">FY2025 Navy and USCG ship-related spending reconciled to MRO contracting TAM ($M)</div>
+      </div>
+
+      <div class="chart-area">
+        <svg viewBox="0 0 760 540" preserveAspectRatio="xMidYMid meet">
+          <!-- Plot area: x=70..730, y=40..490. Scale: 0..$60,000M -> 450px. h($M) = 0.0075 * $M -->
+
+          <!-- Gridlines -->
+          <g stroke="#eef1f5" stroke-width="1">
+            <line x1="70" y1="40"  x2="730" y2="40"/>
+            <line x1="70" y1="152.5" x2="730" y2="152.5"/>
+            <line x1="70" y1="265" x2="730" y2="265"/>
+            <line x1="70" y1="377.5" x2="730" y2="377.5"/>
+          </g>
+          <!-- Baseline + left axis -->
+          <line x1="70" y1="490" x2="730" y2="490" stroke="#1f2d44" stroke-width="1.5"/>
+          <line x1="70" y1="40"  x2="70"  y2="490" stroke="#c9d2dc" stroke-width="1"/>
+
+          <!-- Y-axis labels (0..60,000 $M) -->
+          <g font-family="Helvetica" font-size="11" fill="#6f8197" text-anchor="end">
+            <text x="64" y="494">0</text>
+            <text x="64" y="381">15,000</text>
+            <text x="64" y="269">30,000</text>
+            <text x="64" y="156">45,000</text>
+            <text x="64" y="44">60,000</text>
+          </g>
+          <text x="34" y="32" font-family="Helvetica" font-size="11" fill="#6f8197">$M</text>
+
+          <!-- Bar geometry:
+               Bar 1 Total $56,577M -> h=424.3, y_top=65.7
+               Bar 2 less $38,100M -> sits on running from $56,577 down to $18,477, y_top=65.7, h=285.7
+               Bar 3 less $9,535M  -> from $18,477 down to $8,942, y_top=351.4, h=71.5
+               Bar 4 less $1,875M  -> from $8,942 down to $7,067, y_top=422.9, h=14.1
+               Bar 5 Total $7,067M -> h=53.0, y_top=437.0
+          -->
+
+          <!-- Bar 1: Total pool (navy hero) [Step A] -->
+          <rect x="77"  y="65.7"  width="120" height="424.3" fill="#1f2d44"/>
+          <text x="137" y="57" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">$56,577M</text>
+          <!-- Step letter A (inside bar, white) -->
+          <circle cx="137" cy="88" r="13" fill="#ffffff"/>
+          <text x="137" y="93" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">A</text>
+
+          <!-- Connector: Bar 1 top -> Bar 2 top (same running total $56,577) -->
+          <line x1="197" y1="65.7" x2="211" y2="65.7" stroke="#8a9bb0" stroke-width="1" stroke-dasharray="4 3"/>
+
+          <!-- Bar 2: -$38,100 Newbuild (slate subtraction) [Step B] -->
+          <rect x="211" y="65.7"  width="120" height="285.7" fill="#b6c2d1" stroke="#6f8197" stroke-width="0.75"/>
+          <text x="271" y="211" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">-$38,100M</text>
+          <text x="271" y="227" text-anchor="middle" font-family="Helvetica" font-size="10.5" fill="#4b5666">Newbuild (PSC 1905)</text>
+          <circle cx="271" cy="88" r="13" fill="#1f2d44"/>
+          <text x="271" y="93" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#ffffff">B</text>
+
+          <!-- Connector: Bar 2 bottom -> Bar 3 top (running $18,477) -->
+          <line x1="331" y1="351.4" x2="345" y2="351.4" stroke="#8a9bb0" stroke-width="1" stroke-dasharray="4 3"/>
+
+          <!-- Bar 3: -$9,535 Public-yard labor [Step C] -->
+          <rect x="345" y="351.4" width="120" height="71.5"  fill="#b6c2d1" stroke="#6f8197" stroke-width="0.75"/>
+          <text x="405" y="343" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">-$9,535M</text>
+          <text x="405" y="328" text-anchor="middle" font-family="Helvetica" font-size="10.5" fill="#4b5666">Public-yard labor (implied)</text>
+          <circle cx="405" cy="387" r="13" fill="#1f2d44"/>
+          <text x="405" y="392" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#ffffff">C</text>
+
+          <!-- Connector: Bar 3 bottom -> Bar 4 top (running $8,942) -->
+          <line x1="465" y1="422.9" x2="479" y2="422.9" stroke="#8a9bb0" stroke-width="1" stroke-dasharray="4 3"/>
+
+          <!-- Bar 4: -$1,875 Reactor procurement (tiny bar - label above) [Step D] -->
+          <rect x="479" y="422.9" width="120" height="14.1" fill="#b6c2d1" stroke="#6f8197" stroke-width="0.75"/>
+          <text x="539" y="414" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">-$1,875M</text>
+          <text x="539" y="399" text-anchor="middle" font-family="Helvetica" font-size="10.5" fill="#4b5666">Reactor procurement (PSC 4470)</text>
+          <circle cx="518" cy="430" r="10" fill="#1f2d44"/>
+          <text x="518" y="434" text-anchor="middle" font-family="Helvetica" font-size="11" font-weight="700" fill="#ffffff">D</text>
+
+          <!-- Connector: Bar 4 bottom -> Bar 5 top (running $7,067) -->
+          <line x1="599" y1="437.0" x2="613" y2="437.0" stroke="#8a9bb0" stroke-width="1" stroke-dasharray="4 3"/>
+
+          <!-- Bar 5: $7,067M MRO TAM (navy hero terminal) [Step E] -->
+          <rect x="613" y="437.0" width="120" height="53.0"  fill="#1f2d44"/>
+          <text x="673" y="429" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">$7,067M</text>
+          <circle cx="673" cy="465" r="13" fill="#ffffff"/>
+          <text x="673" y="470" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">E</text>
+
+          <!-- X-axis labels -->
+          <g font-family="Helvetica" font-size="11" fill="#2a3340" text-anchor="middle">
+            <text x="137" y="508"><tspan font-weight="700">Total pool</tspan></text>
+            <text x="137" y="522">Navy + USCG ship-$</text>
+            <text x="271" y="508"><tspan font-weight="700">less Newbuild</tspan></text>
+            <text x="271" y="522">PSC 1905 all platforms</text>
+            <text x="405" y="508"><tspan font-weight="700">less Public yards</tspan></text>
+            <text x="405" y="522">OMN 1B4B derivation</text>
+            <text x="539" y="508"><tspan font-weight="700">less Reactor proc.</tspan></text>
+            <text x="539" y="522">PSC 4470</text>
+            <text x="673" y="508"><tspan font-weight="700">MRO TAM</tspan></text>
+            <text x="673" y="522">Addressable via contract</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: single text box with three bolded parent lines, each followed by 2-3 unbolded bullets.
+         Scope-reconciliation table deleted (waterfall + x-axis labels on the LHS carry the per-step breakdown). -->
+    <div style="align-self: stretch; display: flex; flex-direction: column; gap: 18px; padding: 16px 20px; justify-content: center;">
+      <div>
+        <p style="margin: 0 0 8px 0; font-weight: 700; color: var(--navy-900); font-size: 15.5px;">PSC 1905 is not purely newbuild</p>
+        <ul style="margin: 0; padding-left: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate-900);">
+          <li>Nuclear-platform depot events (e.g., the $424M HII USS Boise SSN-764 Engineered Overhaul at Newport News) are coded as shipbuilding rather than J998 / J999</li>
+          <li>The Services MRO TAM therefore undercounts private-sector sub and carrier depot work bundled under the newbuild PSC</li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 8px 0; font-weight: 700; color: var(--navy-900); font-size: 15.5px;">Public-yard labor is implied, not directly observed</p>
+        <ul style="margin: 0; padding-left: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate-900);">
+          <li>The $9.5B figure derives from OMN 1B4B Ship Maintenance total ($11,764M) less Ship Maintenance By Contract CE 928 ($2,228M)</li>
+          <li>The four public naval shipyards (Portsmouth, Norfolk, Puget Sound, Pearl Harbor) are NWCF activities; their payroll generates no FPDS record</li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 8px 0; font-weight: 700; color: var(--navy-900); font-size: 15.5px;">Nuclear MRO PSC emptiness explained</p>
+        <ul style="margin: 0; padding-left: 22px; font-size: 13.5px; line-height: 1.5; color: var(--slate-900);">
+          <li>PSCs J044, K044, and N044 sit at approximately $0 in FY2025</li>
+          <li>Reactor maintenance is contracted under ship-level PSC 1905 and PSC 4470 rather than standalone service PSCs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Note: (1) Tie-out check: 56,577 less 38,100 less 9,535 less 1,875 equals 7,067; (2) Public-yard labor implied as OMN 1B4B total ($11,764M) minus Ship Maintenance By Contract CE 928 ($2,228M); the four public naval shipyards (Portsmouth, Norfolk, Puget Sound, Pearl Harbor) are NWCF activities and payroll generates no FPDS record; (3) Nuclear MRO PSCs J044, K044, and N044 contain approximately $0 because reactor work is contracted under ship-level PSC 1905 and PSC 4470, not standalone service PSCs.<br>Sources: FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, Awards master post-exclusions); FY2026 President's Budget exhibits (OMN Vol 1 SAG 1B4B OP-5, SCN P-1). Data as of April 2026.</div>
+</section>

@@ -1,0 +1,278 @@
+# sheet_probe: Deck_Outputs
+
+- source: `file`
+- tab name: `Deck_Outputs`
+- tab color: `FF2E7D4F`
+- gridlines shown: `0`
+- columns: 6 · rows: 44 · cells: 216 · formulas: 40
+
+## Banners
+- `B2` S_TITLE_SHEET — Deck_Outputs
+- `B4` S_TITLE_SECTION — Deck-facing figures - audited contract for headline & registered figures; one live cross-sheet link per row (never hardcoded)
+
+## Formula dependencies (referenced sheet → cells)
+- **Budget_Base** (5): E41, E42, E43, E44, E45
+- **POP_Corpus** (2): E10, E11
+- **SAM_Model** (20): E6, E12, E14, E15, E16, E17, E18, E19, E20, E21, E22, E23 …
+- **TAM_Model** (12): E7, E8, E9, E27, E33, E34, E35, E36, E37, E38, E39, E40
+- **Validation** (1): E13
+
+## Cross-sheet links (40)
+- `E6` S_LINK_NUM = 'SAM_Model'!C47
+- `E7` S_LINK_PCT = 'TAM_Model'!C46
+- `E8` S_LINK_PCT = 'TAM_Model'!C47
+- `E9` S_LINK_PCT = 'TAM_Model'!C48
+- `E10` S_LINK_NUM = 'POP_Corpus'!D684
+- `E11` S_LINK_NUM = 'POP_Corpus'!D685
+- `E12` S_LINK_NUM = 'SAM_Model'!C33
+- `E13` S_LINK_NUM = 'Validation'!D13
+- `E14` S_LINK_NUM = 'SAM_Model'!C51
+- `E15` S_LINK_NUM = 'SAM_Model'!C52
+- `E16` S_LINK_NUM = 'SAM_Model'!C53
+- `E17` S_LINK_NUM = 'SAM_Model'!C54
+- `E18` S_LINK_NUM = 'SAM_Model'!C55
+- `E19` S_LINK_NUM = 'SAM_Model'!C56
+- `E20` S_LINK_NUM = 'SAM_Model'!C57
+- `E21` S_LINK_NUM = 'SAM_Model'!C58
+- `E22` S_LINK_NUM = 'SAM_Model'!C65
+- `E23` S_LINK_NUM = 'SAM_Model'!C66
+- `E24` S_LINK_NUM = 'SAM_Model'!C67
+- `E25` S_LINK_NUM = 'SAM_Model'!C68
+- `E26` S_LINK_NUM = 'SAM_Model'!C69
+- `E27` S_LINK_NUM = 'TAM_Model'!C110
+- `E28` S_LINK_NUM = 'SAM_Model'!E65
+- `E29` S_LINK_NUM = 'SAM_Model'!E66
+- `E30` S_LINK_NUM = 'SAM_Model'!E67
+- `E31` S_LINK_NUM = 'SAM_Model'!E68
+- `E32` S_LINK_NUM = 'SAM_Model'!E69
+- `E33` S_LINK_NUM = 'TAM_Model'!C102
+- `E34` S_LINK_NUM = 'TAM_Model'!D102
+- `E35` S_LINK_NUM = 'TAM_Model'!E102
+- `E36` S_LINK_NUM = 'TAM_Model'!F102
+- `E37` S_LINK_NUM = 'TAM_Model'!G102
+- `E38` S_LINK_NUM = 'TAM_Model'!H102
+- `E39` S_LINK_NUM = 'TAM_Model'!C111
+- `E40` S_LINK_NUM = 'TAM_Model'!C112
+- `E41` S_LINK_NUM = 'Budget_Base'!C102
+- `E42` S_LINK_NUM = 'Budget_Base'!C103
+- `E43` S_LINK_NUM = 'Budget_Base'!C104
+- `E44` S_LINK_NUM = 'Budget_Base'!C105
+- `E45` S_LINK_NUM = 'Budget_Base'!C106
+
+## Cells
+- `B2` S_TITLE_SHEET: Deck_Outputs
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: Deck-facing figures - audited contract for headline & registered figures; one live cross-sheet link per row (never hardcoded)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `B5` S_HEADER_LEFT: Figure ID
+- `C5` S_HEADER_LEFT: Slide
+- `D5` S_HEADER_LEFT: Label
+- `E5` S_HEADER_LEFT: Value
+- `F5` S_HEADER_LEFT: Source cell
+- `B6` S_DEFAULT: DO-01
+- `C6` S_DEFAULT: 2
+- `D6` S_DEFAULT: Headline non-nuclear supplier TAM, FY22-27 cumulative $M (AP/LLTM base=0)
+- `E6` S_LINK_NUM: ='SAM_Model'!C47
+- `F6` S_DEFAULT: 'SAM_Model'!C47
+- `B7` S_DEFAULT: DO-02
+- `C7` S_DEFAULT: 7
+- `D7` S_DEFAULT: BC stream supplier coefficient
+- `E7` S_LINK_PCT: ='TAM_Model'!C46
+- `F7` S_DEFAULT: 'TAM_Model'!C46
+- `B8` S_DEFAULT: DO-03
+- `C8` S_DEFAULT: 7
+- `D8` S_DEFAULT: AP/LLTM reference coefficient (not applied; base=0)
+- `E8` S_LINK_PCT: ='TAM_Model'!C47
+- `F8` S_DEFAULT: 'TAM_Model'!C47
+- `B9` S_DEFAULT: DO-04
+- `C9` S_DEFAULT: 7
+- `D9` S_DEFAULT: Total weighted coefficient (corpus)
+- `E9` S_LINK_PCT: ='TAM_Model'!C48
+- `F9` S_DEFAULT: 'TAM_Model'!C48
+- `B10` S_DEFAULT: DO-05
+- `C10` S_DEFAULT: 6
+- `D10` S_DEFAULT: Gated POP corpus $M
+- `E10` S_LINK_NUM: ='POP_Corpus'!D684
+- `F10` S_DEFAULT: 'POP_Corpus'!D684
+- `B11` S_DEFAULT: DO-06
+- `C11` S_DEFAULT: 6
+- `D11` S_DEFAULT: GFE / excluded-scope $M (dropped)
+- `E11` S_LINK_NUM: ='POP_Corpus'!D685
+- `F11` S_DEFAULT: 'POP_Corpus'!D685
+- `B12` S_DEFAULT: DO-07
+- `C12` S_DEFAULT: 6
+- `D12` S_DEFAULT: Supplier-addressable subaward $M
+- `E12` S_LINK_NUM: ='SAM_Model'!C33
+- `F12` S_DEFAULT: 'SAM_Model'!C33
+- `B13` S_DEFAULT: DO-08
+- `C13` S_DEFAULT: 6
+- `D13` S_DEFAULT: MIB exclusion $M (subaward-level)
+- `E13` S_LINK_NUM: ='Validation'!D13
+- `F13` S_DEFAULT: 'Validation'!D13
+- `B14` S_DEFAULT: DO-11
+- `C14` S_DEFAULT: 11
+- `D14` S_DEFAULT: Bucket TAM - Structural fab / pre-outfit $M
+- `E14` S_LINK_NUM: ='SAM_Model'!C51
+- `F14` S_DEFAULT: 'SAM_Model'!C51
+- `B15` S_DEFAULT: DO-12
+- `C15` S_DEFAULT: 11
+- `D15` S_DEFAULT: Bucket TAM - Machining $M
+- `E15` S_LINK_NUM: ='SAM_Model'!C52
+- `F15` S_DEFAULT: 'SAM_Model'!C52
+- `B16` S_DEFAULT: DO-13
+- `C16` S_DEFAULT: 11
+- `D16` S_DEFAULT: Bucket TAM - Castings & forgings $M
+- `E16` S_LINK_NUM: ='SAM_Model'!C53
+- `F16` S_DEFAULT: 'SAM_Model'!C53
+- `B17` S_DEFAULT: DO-14
+- `C17` S_DEFAULT: 11
+- `D17` S_DEFAULT: Bucket TAM - Piping / valves / pumps $M
+- `E17` S_LINK_NUM: ='SAM_Model'!C54
+- `F17` S_DEFAULT: 'SAM_Model'!C54
+- `B18` S_DEFAULT: DO-15
+- `C18` S_DEFAULT: 11
+- `D18` S_DEFAULT: Bucket TAM - Electrical / power $M
+- `E18` S_LINK_NUM: ='SAM_Model'!C55
+- `F18` S_DEFAULT: 'SAM_Model'!C55
+- `B19` S_DEFAULT: DO-16
+- `C19` S_DEFAULT: 11
+- `D19` S_DEFAULT: Bucket TAM - HVAC / ventilation $M
+- `E19` S_LINK_NUM: ='SAM_Model'!C56
+- `F19` S_DEFAULT: 'SAM_Model'!C56
+- `B20` S_DEFAULT: DO-17
+- `C20` S_DEFAULT: 11
+- `D20` S_DEFAULT: Bucket TAM - Coatings / insulation $M
+- `E20` S_LINK_NUM: ='SAM_Model'!C57
+- `F20` S_DEFAULT: 'SAM_Model'!C57
+- `B21` S_DEFAULT: DO-18
+- `C21` S_DEFAULT: 11
+- `D21` S_DEFAULT: Bucket TAM - unbucketed residual $M
+- `E21` S_LINK_NUM: ='SAM_Model'!C58
+- `F21` S_DEFAULT: 'SAM_Model'!C58
+- `B22` S_DEFAULT: DO-20
+- `C22` S_DEFAULT: 12
+- `D22` S_DEFAULT: SAM - Metal components $M
+- `E22` S_LINK_NUM: ='SAM_Model'!C65
+- `F22` S_DEFAULT: 'SAM_Model'!C65
+- `B23` S_DEFAULT: DO-21
+- `C23` S_DEFAULT: 12
+- `D23` S_DEFAULT: SAM - HM&E components $M
+- `E23` S_LINK_NUM: ='SAM_Model'!C66
+- `F23` S_DEFAULT: 'SAM_Model'!C66
+- `B24` S_DEFAULT: DO-22
+- `C24` S_DEFAULT: 12
+- `D24` S_DEFAULT: SAM - Electrical / power $M
+- `E24` S_LINK_NUM: ='SAM_Model'!C67
+- `F24` S_DEFAULT: 'SAM_Model'!C67
+- `B25` S_DEFAULT: DO-23
+- `C25` S_DEFAULT: 12
+- `D25` S_DEFAULT: SAM - Modular assemblies $M
+- `E25` S_LINK_NUM: ='SAM_Model'!C68
+- `F25` S_DEFAULT: 'SAM_Model'!C68
+- `B26` S_DEFAULT: DO-24
+- `C26` S_DEFAULT: 12
+- `D26` S_DEFAULT: SAM - Broad component mfg $M
+- `E26` S_LINK_NUM: ='SAM_Model'!C69
+- `F26` S_DEFAULT: 'SAM_Model'!C69
+- `B27` S_DEFAULT: DO-09
+- `C27` S_DEFAULT: 2
+- `D27` S_DEFAULT: Average annual portfolio TAM $M
+- `E27` S_LINK_NUM: ='TAM_Model'!C110
+- `F27` S_DEFAULT: 'TAM_Model'!C110
+- `B28` S_DEFAULT: DO-25
+- `C28` S_DEFAULT: 12
+- `D28` S_DEFAULT: Avg annual SAM - Metal components $M
+- `E28` S_LINK_NUM: ='SAM_Model'!E65
+- `F28` S_DEFAULT: 'SAM_Model'!E65
+- `B29` S_DEFAULT: DO-26
+- `C29` S_DEFAULT: 12
+- `D29` S_DEFAULT: Avg annual SAM - HM&E components $M
+- `E29` S_LINK_NUM: ='SAM_Model'!E66
+- `F29` S_DEFAULT: 'SAM_Model'!E66
+- `B30` S_DEFAULT: DO-27
+- `C30` S_DEFAULT: 12
+- `D30` S_DEFAULT: Avg annual SAM - Electrical / power $M
+- `E30` S_LINK_NUM: ='SAM_Model'!E67
+- `F30` S_DEFAULT: 'SAM_Model'!E67
+- `B31` S_DEFAULT: DO-28
+- `C31` S_DEFAULT: 12
+- `D31` S_DEFAULT: Avg annual SAM - Modular assemblies $M
+- `E31` S_LINK_NUM: ='SAM_Model'!E68
+- `F31` S_DEFAULT: 'SAM_Model'!E68
+- `B32` S_DEFAULT: DO-29
+- `C32` S_DEFAULT: 12
+- `D32` S_DEFAULT: Avg annual SAM - Broad component mfg $M
+- `E32` S_LINK_NUM: ='SAM_Model'!E69
+- `F32` S_DEFAULT: 'SAM_Model'!E69
+- `B33` S_DEFAULT: DO-31
+- `C33` S_DEFAULT: 9
+- `D33` S_DEFAULT: FY2022 portfolio TAM $M
+- `E33` S_LINK_NUM: ='TAM_Model'!C102
+- `F33` S_DEFAULT: 'TAM_Model'!C102
+- `B34` S_DEFAULT: DO-32
+- `C34` S_DEFAULT: 9
+- `D34` S_DEFAULT: FY2023 portfolio TAM $M
+- `E34` S_LINK_NUM: ='TAM_Model'!D102
+- `F34` S_DEFAULT: 'TAM_Model'!D102
+- `B35` S_DEFAULT: DO-33
+- `C35` S_DEFAULT: 9
+- `D35` S_DEFAULT: FY2024 portfolio TAM $M
+- `E35` S_LINK_NUM: ='TAM_Model'!E102
+- `F35` S_DEFAULT: 'TAM_Model'!E102
+- `B36` S_DEFAULT: DO-34
+- `C36` S_DEFAULT: 9
+- `D36` S_DEFAULT: FY2025 portfolio TAM $M
+- `E36` S_LINK_NUM: ='TAM_Model'!F102
+- `F36` S_DEFAULT: 'TAM_Model'!F102
+- `B37` S_DEFAULT: DO-35
+- `C37` S_DEFAULT: 9
+- `D37` S_DEFAULT: FY2026 portfolio TAM $M
+- `E37` S_LINK_NUM: ='TAM_Model'!G102
+- `F37` S_DEFAULT: 'TAM_Model'!G102
+- `B38` S_DEFAULT: DO-36
+- `C38` S_DEFAULT: 9
+- `D38` S_DEFAULT: FY2027 portfolio TAM $M
+- `E38` S_LINK_NUM: ='TAM_Model'!H102
+- `F38` S_DEFAULT: 'TAM_Model'!H102
+- `B39` S_DEFAULT: DO-51
+- `C39` S_DEFAULT: 7
+- `D39` S_DEFAULT: BC construction base $M (FY22-27)
+- `E39` S_LINK_NUM: ='TAM_Model'!C111
+- `F39` S_DEFAULT: 'TAM_Model'!C111
+- `B40` S_DEFAULT: DO-52
+- `C40` S_DEFAULT: 7
+- `D40` S_DEFAULT: POP removal (prime/co-prime/GFE) $M
+- `E40` S_LINK_NUM: ='TAM_Model'!C112
+- `F40` S_DEFAULT: 'TAM_Model'!C112
+- `B41` S_DEFAULT: DO-53
+- `C41` S_DEFAULT: 7
+- `D41` S_DEFAULT: P-10 gross AP top-line $M (FY22-27)
+- `E41` S_LINK_NUM: ='Budget_Base'!C102
+- `F41` S_DEFAULT: 'Budget_Base'!C102
+- `B42` S_DEFAULT: DO-54
+- `C42` S_DEFAULT: 7
+- `D42` S_DEFAULT: AP bridge: less GFE/design/weapons $M
+- `E42` S_LINK_NUM: ='Budget_Base'!C103
+- `F42` S_DEFAULT: 'Budget_Base'!C103
+- `B43` S_DEFAULT: DO-55
+- `C43` S_DEFAULT: 7
+- `D43` S_DEFAULT: AP bridge: less already-in-BC $M
+- `E43` S_LINK_NUM: ='Budget_Base'!C104
+- `F43` S_DEFAULT: 'Budget_Base'!C104
+- `B44` S_DEFAULT: DO-56
+- `C44` S_DEFAULT: 7
+- `D44` S_DEFAULT: AP bridge: less un-itemized Va FY22-23 $M
+- `E44` S_LINK_NUM: ='Budget_Base'!C105
+- `F44` S_DEFAULT: 'Budget_Base'!C105
+- `B45` S_DEFAULT: DO-57
+- `C45` S_DEFAULT: 7
+- `D45` S_DEFAULT: AP/LLTM additive base $M (confirmed 0)
+- `E45` S_LINK_NUM: ='Budget_Base'!C106
+- `F45` S_DEFAULT: 'Budget_Base'!C106

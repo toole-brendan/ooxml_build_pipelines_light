@@ -1,0 +1,48 @@
+{
+  "label": "L3Harris \u2014 DDG-related Navy work",
+  "notes": "USG-2B Cooperative Engagement Capability hardware, comms, navigation.",
+  "queries": [
+    "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+    "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"ARLEIGH\"",
+    "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\"",
+    "VENDOR_NAME:\"L3HARRIS\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"CEC\"",
+    "VENDOR_NAME:\"L3 TECHNOLOGIES\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DDG\"",
+    "VENDOR_NAME:\"L3 TECHNOLOGIES\" CONTRACTING_AGENCY_ID:\"1700\" DESCRIPTION_OF_REQUIREMENT:\"DESTROYER\""
+  ],
+  "date_window": "SIGNED_DATE:[2017/10/01,2026/12/31]",
+  "record_count": 1,
+  "records": [
+    {
+      "record_type": "IDV",
+      "piid": "N6449821G4002",
+      "referenced_idv_piid": null,
+      "full_piid": "N6449821G4002",
+      "mod_number": "P00006",
+      "vendor_name": "L3HARRIS MARITIME SERVICES INC",
+      "vendor_alt_name": null,
+      "vendor_uei": "QV38GMJUBJQ3",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 39995295.0,
+      "signed_date": "2026-01-09 00:00:00",
+      "effective_date": "2021-10-01 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "fiscal_year": null,
+      "contracting_agency_id": "DEPT OF THE NAVY",
+      "contracting_office_id": "NSWC PHILADELPHIA DIV",
+      "funding_agency_id": "DEPT OF THE NAVY",
+      "funding_office_id": "NSWC PHILADELPHIA DIV",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "BOA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "description": "BASIC ORDERING AGREEMENT (BOA) IS FOR THE PROCUREMENT OF ORIGINAL EQUIPMENT MANUFACTURER (OEM)\nHARDWARE COMPONENTS FOR LPD 17 , DDG 1000, LSD 41/49 , LHD 1/LHA 6, LHD 1/LHA 6, CVN 78 STEERING GEAR, CG 47, AND FFG 62."
+    }
+  ]
+}

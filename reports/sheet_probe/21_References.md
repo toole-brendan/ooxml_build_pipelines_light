@@ -1,0 +1,164 @@
+# sheet_probe: References
+
+- source: `file`
+- tab name: `References`
+- tab color: `FF1F3A5F`
+- gridlines shown: `0`
+- columns: 7 · rows: 25 · cells: 146 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — References
+- `B4` S_TITLE_SECTION — §1 - Primary sources & data pulls
+- `B23` S_TITLE_SECTION — §2 - Policy & industry citations
+
+## Native tables
+- `tbl_ddg_references_primary` ref `B6:G20` [Source ID, Document / dataset, Type, Date, Location / reference, Context note] style WorkbookCore_NoFormatTable
+- `tbl_ddg_references_citations` ref `B25:G30` [Source ID, Document / dataset, Type, Date, Location / reference, Context note] style WorkbookCore_NoFormatTable
+
+## Cells
+- `B2` S_TITLE_SHEET: References
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Primary sources & data pulls
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Source ID
+- `C6` S_HEADER_LEFT: Document / dataset
+- `D6` S_HEADER_LEFT: Type
+- `E6` S_HEADER_LEFT: Date
+- `F6` S_HEADER_LEFT: Location / reference
+- `G6` S_HEADER_LEFT: Context note
+- `B7` S_DEFAULT: SRC-01
+- `C7` S_DEFAULT: DDG-51 SCN budget justification books FY2022-FY2027
+- `D7` S_DEFAULT: Budget exhibit (P-5c/P-10/P-40)
+- `E7` S_DEFAULT: 2021-2026
+- `F7` S_DEFAULT: budget_books/SCN_Book_FY22..27
+- `G7` S_DEFAULT: Basic Construction, AP/EOQ, cost categories for LI 2122. FY27 PB primary; HM&E gap pre-FY24.
+- `B8` S_DEFAULT: SRC-02
+- `C8` S_DEFAULT: SCN cost categories per FY (LI 2122)
+- `D8` S_DEFAULT: Extracted CSV
+- `E8` S_DEFAULT: FY27 PB
+- `F8` S_DEFAULT: extracted/scn_li_cost_categories.csv (16)
+- `G8` S_DEFAULT: Total ship -> Basic Construction. Feeds TAM Build.
+- `B9` S_DEFAULT: SRC-03
+- `C9` S_DEFAULT: SCN production schedule (hull -> yard -> FY)
+- `D9` S_DEFAULT: Extracted CSV
+- `E9` S_DEFAULT: FY27 PB
+- `F9` S_DEFAULT: extracted/scn_li_production_schedule.csv (31)
+- `G9` S_DEFAULT: DDG 126-156 -> BIW or Ingalls. Drives per-yard BC allocation.
+- `B10` S_DEFAULT: SRC-04
+- `C10` S_DEFAULT: DoD/DoW daily contract announcements + POP
+- `D10` S_DEFAULT: Press releases (>=$7.5M)
+- `E10` S_DEFAULT: CY2022-2026
+- `F10` S_DEFAULT: extracted/dod_announcement_pop.csv (860)
+- `G10` S_DEFAULT: POP % by action; 152 TAM-relevant. MYP master $ redacted here.
+- `B11` S_DEFAULT: SRC-05
+- `C11` S_DEFAULT: DoD announcement POP rollup by work-type
+- `D11` S_DEFAULT: Extracted CSV
+- `E11` S_DEFAULT: CY2022-2026
+- `F11` S_DEFAULT: extracted/dod_action_pop_by_worktype.csv (36)
+- `G11` S_DEFAULT: Dollar-weighted POP shares by program x work-type.
+- `B12` S_DEFAULT: SRC-06
+- `C12` S_DEFAULT: FPDS de-capped prime pulls (BIW + Rolls-Royce)
+- `D12` S_DEFAULT: FPDS Atom feed (raw JSON)
+- `E12` S_DEFAULT: 2017-2026
+- `F12` S_DEFAULT: fpds_raw_v2/ (BIW 30,236 / RR 3,562)
+- `G12` S_DEFAULT: Recovers vendor slugs past the FPDS cap. Prime-obligation sizing.
+- `B13` S_DEFAULT: SRC-07
+- `C13` S_DEFAULT: FPDS prime obligations annual by vendor group
+- `D13` S_DEFAULT: Extracted CSV
+- `E13` S_DEFAULT: FY2017-2026
+- `F13` S_DEFAULT: extracted/fpds_annual_by_prime.csv (10)
+- `G13` S_DEFAULT: Two-yard compare; reads fpds_raw/ + fpds_raw_v2/.
+- `B14` S_DEFAULT: SRC-08
+- `C14` S_DEFAULT: SAM.gov FSRS first-tier subawards (new construction)
+- `D14` S_DEFAULT: Extracted CSV
+- `E14` S_DEFAULT: FY2017-2026
+- `F14` S_DEFAULT: extracted/nc_records_long.csv (22,867)
+- `G14` S_DEFAULT: Canonical subaward source. Signed subaward records + sub_entity_uei for registry-led entity classification.
+- `B15` S_DEFAULT: SRC-09
+- `C15` S_DEFAULT: Subaward annual by PIID (yard-grouped)
+- `D15` S_DEFAULT: Extracted CSV
+- `E15` S_DEFAULT: FY2017-2026
+- `F15` S_DEFAULT: extracted/nc_annual_by_piid.csv
+- `G15` S_DEFAULT: Per-FY subaward by PIID/yard. FFATA ~15% floor of true flow.
+- `B16` S_DEFAULT: SRC-10
+- `C16` S_DEFAULT: Cleaned lifetime vendors + NAICS enrichment
+- `D16` S_DEFAULT: Extracted CSV
+- `E16` S_DEFAULT: 2026
+- `F16` S_DEFAULT: nc_lifetime_vendors.csv (1,555) / entity_naics_lookup.csv (151)
+- `G16` S_DEFAULT: Vendor concentration + sector. ~35% NAICS lookup-fail.
+- `B17` S_DEFAULT: SRC-11
+- `C17` S_DEFAULT: In-scope PIID set + discovered PIIDs
+- `D17` S_DEFAULT: JSON / CSV
+- `E17` S_DEFAULT: 2026
+- `F17` S_DEFAULT: nc_scope_summary.json / _discovered_piids.csv (118)
+- `G17` S_DEFAULT: Scope arbiter. IVECO, DDG-1000, WPN/OPN, Thales ESSM removed.
+- `B18` S_DEFAULT: SRC-12
+- `C18` S_DEFAULT: Cost-funnel decomposition (BC base)
+- `D18` S_DEFAULT: Extracted CSV
+- `E18` S_DEFAULT: FY27 PB
+- `F18` S_DEFAULT: extracted/cost_funnel_summary.csv (13)
+- `G18` S_DEFAULT: Total ship cost -> Basic Construction base. Yard-side band archived.
+- `B19` S_DEFAULT: SRC-13
+- `C19` S_DEFAULT: HII Ingalls segment + GD Marine Systems financials
+- `D19` S_DEFAULT: SEC EDGAR (10-K/10-Q)
+- `E19` S_DEFAULT: FY2019-2025
+- `F19` S_DEFAULT: edgar_research/
+- `G19` S_DEFAULT: Segment-revenue triangulation of the hidden yard-side (archived).
+- `B20` S_DEFAULT: SRC-14
+- `C20` S_DEFAULT: Executive earnings-call commentary on outsourcing
+- `D20` S_DEFAULT: Extracted CSV
+- `E20` S_DEFAULT: FY2019-2026
+- `F20` S_DEFAULT: extracted/exec_quotes_outsourcing.csv (241)
+- `G20` S_DEFAULT: Direction-of-travel signal (HII/GD/LM/RTX). Not dollar sizing.
+- `A23` S_DEFAULT: x
+- `B23` S_TITLE_SECTION: §2 - Policy & industry citations
+- `C23` S_TITLE_SECTION: 
+- `D23` S_TITLE_SECTION: 
+- `E23` S_TITLE_SECTION: 
+- `F23` S_TITLE_SECTION: 
+- `G23` S_TITLE_SECTION: 
+- `B25` S_HEADER_LEFT: Source ID
+- `C25` S_HEADER_LEFT: Document / dataset
+- `D25` S_HEADER_LEFT: Type
+- `E25` S_HEADER_LEFT: Date
+- `F25` S_HEADER_LEFT: Location / reference
+- `G25` S_HEADER_LEFT: Context note
+- `B26` S_DEFAULT: CITE-01
+- `C26` S_DEFAULT: MYP master totals - BIW 2305 (~$6.40B), Ingalls 2307 (~$8.18B)
+- `D26` S_DEFAULT: Trade press (USNI / Defense Daily)
+- `E26` S_DEFAULT: 2023
+- `F26` S_DEFAULT: USNI/Defense Daily + FPDS
+- `G26` S_DEFAULT: Reconstructs the ~$14.58B redacted masters. Outside-yards 87% -> ~33%.
+- `B27` S_DEFAULT: CITE-02
+- `C27` S_DEFAULT: Navy DDG-51 Arleigh Burke-class destroyer program
+- `D27` S_DEFAULT: CRS report (RL32109)
+- `E27` S_DEFAULT: latest
+- `F27` S_DEFAULT: crsreports.congress.gov
+- `G27` S_DEFAULT: Program scope, multi-year procurement, two-yard structure.
+- `B28` S_DEFAULT: CITE-03
+- `C28` S_DEFAULT: GAO shipbuilding / Navy industrial-base assessments
+- `D28` S_DEFAULT: GAO reports
+- `E28` S_DEFAULT: latest
+- `F28` S_DEFAULT: gao.gov
+- `G28` S_DEFAULT: Cost/schedule + supplier-base anchors.
+- `B29` S_DEFAULT: CITE-04
+- `C29` S_DEFAULT: Navy 30-Year Shipbuilding Plan
+- `D29` S_DEFAULT: Navy report
+- `E29` S_DEFAULT: latest
+- `F29` S_DEFAULT: budget_books/30_Year_Shipbuilding_Plan
+- `G29` S_DEFAULT: Build-rate / distributed-shipbuilding direction.
+- `B30` S_DEFAULT: CITE-05
+- `C30` S_DEFAULT: Methodology + model spec (internal)
+- `D30` S_DEFAULT: Internal doc
+- `E30` S_DEFAULT: 2026-05-28
+- `F30` S_DEFAULT: METHODOLOGY.md / WORKBOOK_SPEC.md
+- `G30` S_DEFAULT: Four-denominator framing, MYP guardrail, scope-exclusion list.

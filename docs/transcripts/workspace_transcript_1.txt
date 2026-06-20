@@ -1,0 +1,469 @@
+transcript
+
+
+me: this project's "source" files are the plumbing/ infrastructure files for a build pipeline for pptx centered on ooxml. also in the "source" files sections are the 3 logs describing the effort, and the goals of the effort. i also have an additional build pipeline centered on ooxml that is devoted to .xlsx / workbook generation - THOSE build files are attached to this message. my question to you: should i update the .xlsx  pipeline files too? either because of any potentially superior attributes of the .pptx build pipeline or because of any other issue you see in your review
+
+
+LLM: Yes — but **not as a broad `.pptx → .xlsx` refactor**. The workbook pipeline is already structurally close to the post-refactor deck pipeline: centralized styling, importable primitives, a generic packager, a base template that imports core builders, declarative native artifacts, and a probe. The right move is a **small hardening pass** on the `.xlsx` files, mostly to make the code live up to the invariants already documented.
+
+The clearest answer is:
+
+**Do not transplant the deck polish layer or authoring model into workbooks. Do update a few `.xlsx` pipeline files for correctness and fail-fast behavior.**
+
+## Why I would not do a wholesale workbook refactor
+
+The `.xlsx` side already has the architecture that the deck refactor was moving toward. Sheet modules import from `workbook_core.primitives`, `workbook_core.styles`, and `workbook_core.tables`, then return a `WorksheetSpec`; the per-program layer binds output paths, extracted data, docProps identity, and dash settings.  The guide also already describes the intended authoring flow: copy the sheet template, set metadata, build rows from column B, return a `WorksheetSpec`, and register modules in `SHEETS`; there is no slide-era inline-chrome problem to fix. 
+
+The workbook style system is also intentionally different from the deck style system. It is not trying to support expressive visual composition; it is trying to enforce a finance/modeling convention: Arial 8, no wraps, no merges, no gridlines, no yellow fills, numeric blue/black/green semantics, universal number formats, and 10-point rows.  So I would **not** import deck concepts like typography ladders, commentary rails, fill restraint, or visual-read archetypes into `.xlsx`.
+
+Likewise, the workbook side already has more “compiler-like” package invariants than the deck originally had. `SheetEntry` lets one source file register multiple tabs while preserving group/order semantics, and `ExcelTable`/`WorksheetSpec` give declarative surfaces for native table parts and defined names.  The packager also already treats names as load-bearing and rejects duplicate sheet names rather than silently renaming them. 
+
+## Updates I would make
+
+### 1. Fix `sheet_probe.py` so it recognizes total-row input/link styles
+
+This is the most concrete bug I see. `sheet_probe._style_maps()` currently classifies hardcoded inputs as `S_NUM_INPUT`, `S_PCT_INPUT`, and `S_NUM_INPUT_TOTAL`, and green links only as `S_LINK_NUM` and `S_LINK_PCT`.  But `styles.py` defines additional total-row variants: `S_PCT_INPUT_TOTAL`, `S_LINK_NUM_TOTAL`, and `S_LINK_PCT_TOTAL`, and `BORDER_TOP_FOR` maps base input/link styles to those variants for total rows. 
+
+Because `inspect_worksheet_xml()` only rolls a cell into `hardcoded_inputs` or `green_links` when the style index is in those sets, a percent input in a total row or a green cross-sheet link in a total row will be underreported in the probe summary, even though it appears in the raw cells list. 
+
+I would update:
+
+```python
+inputs = {getattr(st, n) for n in (
+    "S_NUM_INPUT", "S_PCT_INPUT",
+    "S_NUM_INPUT_TOTAL", "S_PCT_INPUT_TOTAL",
+) if hasattr(st, n)}
+
+links = {getattr(st, n) for n in (
+    "S_LINK_NUM", "S_LINK_PCT",
+    "S_LINK_NUM_TOTAL", "S_LINK_PCT_TOTAL",
+) if hasattr(st, n)}
+```
+
+This is a low-risk correctness fix.
+
+### 2. Make worksheet names fail fast instead of silently sanitizing/truncating
+
+`_sheet_name()` currently cleans invalid Excel sheet characters and then truncates to 31 characters before checking duplicates.  That is convenient, but it conflicts with the stated design principle that worksheet names are load-bearing because formulas and accessors reference them by value. The guide also emphasizes that the title banner and tab should not drift and that cross-sheet links should be built through explicit refs/accessors. 
+
+The risk is subtle: if a `TAB_NAME` or `SheetEntry.tab_name` is too long or contains invalid characters, the physical tab can silently differ from the author’s intended formula name. You already reject duplicate names because silent suffixing would break formulas; the same reasoning applies to silent sanitization and silent truncation.
+
+I would change `lib.py` so explicit `TAB_NAME` / `SheetEntry.tab_name` values must already be legal Excel sheet names. For module-derived fallback names, either keep sanitization or also fail fast; I’d prefer fail-fast everywhere unless you are relying on filename-derived sanitization today.
+
+Recommended behavior:
+
+```python
+raw = str(_item_raw_name(item)).strip().strip("'")
+clean = _clean_sheet_name(raw)
+
+if raw != clean:
+    raise ValueError(f"Invalid worksheet name {raw!r}; contains Excel-invalid characters")
+
+if len(clean) > 31:
+    raise ValueError(f"Worksheet name {clean!r} exceeds Excel's 31-character limit")
+```
+
+Keep the case-insensitive duplicate check.
+
+### 3. Validate table names, table headers, table refs, and defined names
+
+The docs say `ExcelTable.name` must follow safe-name rules, headers must be unique and non-empty, and defined names must follow Excel naming rules.  The guide repeats that defined names should follow Excel’s naming rules and warns about sheet-scoped name traps.  But the packager currently mainly checks for duplicate table names and duplicate defined names while rendering.  `build_defined_names_xml()` documents the naming rules but does not enforce them. 
+
+I would add validators to `lib.py` or `tables.py` and call them inside `package_workbook()`:
+
+```python
+validate_defined_name(name)
+validate_table_name(t.name)
+validate_excel_table(t)
+```
+
+Checks worth adding:
+
+* table name is non-empty, starts with a letter or underscore, contains only allowed characters, is not a cell-reference shape, and is workbook-unique case-insensitively;
+* table headers are non-empty and unique case-insensitively;
+* table `ref` is a valid A1 rectangular range and its column count equals `len(headers)`;
+* `t.totals.keys()` are a subset of `headers`;
+* defined names follow `[A-Za-z_][A-Za-z0-9_.]*`, are not cell refs, and do not start with reserved `_xlnm`.
+
+This is directly analogous to the deck refactor’s philosophy: if the build surface documents a contract, the packager should enforce it.
+
+### 4. Make `build_table()` reject over-wide rows
+
+`build_table()` validates that `col_styles` length equals `headers`, but if a data row has **more values than headers**, it slices the row to `len(headers)` and silently drops the extra values.  That is exactly the kind of failure mode a raw-OOXML build pipeline should avoid.
+
+I would add:
+
+```python
+for i, dr in enumerate(data_rows):
+    if len(dr) > len(headers):
+        raise ValueError(
+            f"data row {i} has {len(dr)} values but table has {len(headers)} headers"
+        )
+```
+
+before padding/truncation. Silent truncation is more dangerous than a build error.
+
+### 5. Optionally add `workbook_core/ooxml.py`
+
+The deck refactor centralized XML declarations and namespaces into `deck_core/ooxml.py`, then repointed primitives, lib, charts, and probe to import from it without changing output.  The workbook side still repeats `XML_DECL` / namespace constants across `styles.py`, `primitives.py`, `sheet_probe.py`, and imports them indirectly through `primitives.py`.
+
+This is not urgent, but it is a clean deck-side improvement worth copying:
+
+```python
+# workbook_core/ooxml.py
+XML_DECL = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+NS_SS = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+NS_PR = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+NS_REL = "http://schemas.openxmlformats.org/package/2006/relationships"
+NS_MAP = {"a": NS_SS}
+```
+
+Then import from it in `styles.py`, `primitives.py`, `tables.py`, `lib.py`, and `sheet_probe.py`. This is a maintainability cleanup, not a behavioral change.
+
+### 6. Consider a future `sheet_probe --lint`, but I would not do it first
+
+The deck now has `slide_probe` check modes that can report lint/table-fit violations.  The workbook probe is explicitly a read-only inspector that “never builds, repairs, or judges.”  That is fine for now.
+
+If you later want more guardrails, a workbook `--lint` could check:
+
+* gridlines off;
+* row 1 blank when `with_gutter=True`;
+* title banner at row 2;
+* no merged cells;
+* no wrapped text;
+* no unknown style indices;
+* native table refs match headers;
+* defined names and table names are valid;
+* green pure cross-sheet links use `S_LINK_*`;
+* total divider rows use bordered variants continuously.
+
+But I would not make this the immediate `.xlsx` update. The probe already provides useful emitted truth: styles, formulas, hardcoded inputs, green links, placeholders, tables, and defined names.
+
+## What I would not copy from `.pptx`
+
+I would not copy the deck’s visual-polish guidance into workbooks. The deck logs make clear that those changes were about slide composition — role-based typography, padding, when to use fills, no-fill commentary, and avoiding repetitive readout bars.  The workbook style layer is an analytical/modeling convention, not a slide-design system. 
+
+I also would not promote workbook snippets into global helpers just because the deck now has more importable primitives. The workbook snippets file explicitly says they are copy-from examples, not a required toolkit, and that copied snippets may diverge per sheet.  That is consistent with the deck’s final lesson: capture principles, do not mint a construct for every pattern. 
+
+## Recommended patch set
+
+I’d do this in one small commit:
+
+1. `sheet_probe.py`: classify total-row input/link variants.
+2. `lib.py`: fail fast on illegal or over-31-character worksheet names.
+3. `lib.py` / `tables.py`: validate table names, headers, refs, totals keys, and defined names.
+4. `primitives.py`: make `build_table()` reject over-wide rows.
+5. Optional: add `workbook_core/ooxml.py` and repoint constants.
+
+So the practical answer is: **yes, update the `.xlsx` pipeline, but only for correctness and guardrails. The `.pptx` pipeline is not architecturally superior for workbooks; it mostly highlights a few places where the workbook pipeline can be stricter and less silent.**
+
+
+
+me: does the current workbook pipeline suggest or even mandate certain tab names for any given workbook being built through its pipeline? - because i don't want that. and does the current pipeline give any guidance on formatting of tab names like minimizing use of "_" underscores? - because i do want that
+
+
+LLM: Yes, the current workbook pipeline **does mandate some workbook structure**, but it **does not mandate specific worksheet tab names** like “Inputs,” “Control Panel,” “TAM Model,” etc.
+
+It **does** currently give some implicit guidance toward space-separated tab names, but that guidance is not explicit enough, and a few examples still use underscore-heavy tab names. I would update the docs/snippets to make your preference unambiguous.
+
+## What the pipeline currently mandates
+
+The pipeline mandates **logical tab groups**, not tab names.
+
+Every sheet item must declare a group via `SHEET_GROUP` or `SheetEntry.group`, and the group must be one of the keys in `groups.SHEET_GROUPS`: `guide`, `inputs`, `data`, `model`, `outputs`, `validation`, or `sources`. The groups also control tab color and canonical block order. The packager checks that all sheets declare a group, that the group is known, that each group appears in one contiguous run, and that those runs follow the canonical group order.  
+
+So the current pipeline **does impose a workbook chapter taxonomy**:
+
+`guide → inputs → data → model → outputs → validation → sources`
+
+But it does **not** say a workbook must have a tab literally named `Inputs`, `Data`, `TAM_Model`, `Sources`, or anything similar. The groups are internal organizational metadata, not sheet names.
+
+## What the pipeline currently does with tab names
+
+For the one-module-per-tab style, `TAB_NAME = None` means the tab name is derived from the Python filename by replacing underscores with spaces and applying title case. For example, `pop_coefficients.py` becomes `Pop Coefficients`.  The guide says the same thing and tells authors to set `TAB_NAME` explicitly only when they want a name the filename cannot express, with examples like `"SCN Annual"` and `"Prime 10-K"`. 
+
+For the consolidated style, `SheetEntry(tab_name=..., group=..., render=...)` requires the caller to provide the tab name directly. `SheetEntry` exists so one source file can register multiple tabs; the `tab_name` is described as load-bearing because formulas and accessors reference it by value. 
+
+The template also mirrors the packager: the title banner derives from `TAB_NAME` or the filename in title case, so the row-2 banner and the physical worksheet tab stay in sync. 
+
+So: **no fixed tab names are mandated**, but **tab names are load-bearing once chosen**.
+
+## Where the current pipeline does suggest tab names
+
+It gives examples, not requirements.
+
+The guide’s examples include filename-derived names like `Pop Coefficients`, explicit names like `SCN Annual` and `Prime 10-K`, and accessor examples like `Control_Panel`, `TAM_Model`, and `POP_Location_Parse`.  The snippets also use examples such as `TAM_Model`, `POP_Location_Parse`, and `POP_Coefficients`. 
+
+Those underscore examples are **not mandatory**, but they are a real authoring nudge. If you want agents/authors to avoid underscores in visible tab names, I would clean those up.
+
+## Does the current pipeline guide formatting of tab names?
+
+Partly, but not explicitly enough.
+
+The strongest existing guidance is the default behavior: module filenames use underscores because Python needs them, but visible Excel tab names convert those underscores to spaces. `budget_normalized.py` would become `Budget Normalized`, not `Budget_Normalized`.  The guide also says the registry has “no name to register; the module owns its name,” which reinforces that visible names are owned at the sheet module level rather than centrally prescribed. 
+
+But I do **not** see an explicit style rule like:
+
+> Use short, human-readable tab names with spaces, not underscores. Reserve underscores for Excel defined names, table names, and Python identifiers.
+
+That is the rule you want, and I would add it.
+
+## Important distinction: tab names vs Excel names
+
+I would keep underscores for **defined names** and **native table names**.
+
+The workbook docs correctly require safe Excel identifier names for defined names and table names, such as `portfolio_tam` or `tbl_subawards`. Those are not visible worksheet tabs; they are formula/table identifiers where spaces are not appropriate.  
+
+So the convention should be:
+
+**Visible worksheet tabs:** `Control Panel`, `TAM Model`, `POP Coefficients`, `Budget Normalized`
+**Python modules:** `control_panel.py`, `tam_model.py`, `pop_coefficients.py`
+**Defined names / table names:** `portfolio_tam`, `tbl_subawards`, `tam_total`
+
+## What I would update
+
+I would add a short “Tab names” section to `sheet_guide.md` and align the template/snippets examples.
+
+Recommended wording:
+
+```markdown
+## Tab names
+
+Visible worksheet tab names should be short, human-readable labels. Prefer spaces
+and title case, not underscores: `Control Panel`, not `Control_Panel`; `TAM Model`,
+not `TAM_Model`.
+
+Leave `TAB_NAME = None` when the Python filename already expresses the tab name:
+`pop_coefficients.py` renders as `Pop Coefficients`. Set `TAB_NAME` only when the
+visible Excel tab needs punctuation, acronyms, or wording that the filename cannot
+carry cleanly, e.g. `SCN Annual` or `Prime 10-K`.
+
+Do not use the group keys (`inputs`, `data`, `model`, etc.) as required tab names.
+They are internal chapter metadata for tab color and ordering, not prescribed
+worksheet names.
+
+Underscores remain appropriate for Python module names, accessor function names,
+native Excel table names, and defined names.
+```
+
+I would also revise examples:
+
+```python
+TAB_NAME = "POP Coefficients"
+```
+
+instead of:
+
+```python
+TAB_NAME = "POP_Coefficients"
+```
+
+and:
+
+```python
+sheet_ref("TAM Model", 8, 7)      # 'TAM Model'!$H$8
+range_ref("POP Location Parse", 6, 2, 40, 2)
+```
+
+instead of underscore-heavy sheet-name examples.
+
+## One related code change I still recommend
+
+The packager currently sanitizes invalid tab characters and truncates names to 31 characters.  Since tab names are load-bearing, I would still make that fail fast rather than silently changing names. That change is consistent with your preference: visible tab names should be deliberate, readable, and stable.
+
+So the answer is:
+
+**No, the current pipeline does not mandate specific tab names. It does mandate group keys and group order. It already leans toward space-separated visible tab names by default, but the docs/snippets should be updated to explicitly say “minimize underscores in worksheet tab names,” while preserving underscores for Python identifiers, defined names, and table names.**
+
+
+me: ya also i would like to update verbiage somewhere that i don't want the generated workbook to have "LLM-isms" - like stuff that me or my human colleagues would never include in a workbook that we manually created. even stuff like a "guide" or "readme" tab - those are generally not included by humans. and overly-long titles or section header text or sub-section header text -- can that be added somewhere somehow?
+
+also so you don't think there's a place for "role" or "tokens" in this workbook pipeline. I'm always interested in something if it could standardize styling and/or makes things more polished more consistently (im not anti-polish right now). what are your thoughts?
+
+
+
+LLM: Yes — I’d add this explicitly. I would frame it as a **human workbook standard**, not as an “LLM-isms” rule in the code. The generated workbook should look like something a human analyst would have built in Excel, not like an explanation of the fact that a workbook was generated.
+
+The important nuance: the current pipeline **does not require** a `Guide` or `README` tab. It has a `guide` group available in `groups.py`, but the packager only checks that declared groups are known, contiguous, and in canonical order; it does **not** require every group to appear.   So this is mostly a **docs/template guidance** issue, with an optional lint later.
+
+## Where I’d add it
+
+I’d update three places.
+
+### 1. Add a new section to `sheet_guide.md`
+
+Put this near the top, probably after “Building a sheet” and before “The sheet skeleton,” because it is an authoring rule that applies before styling decisions.
+
+Recommended wording:
+
+```markdown
+## Human workbook standard
+
+The generated workbook should look like a workbook a human analyst would have
+built manually. Do not emit explanatory “AI workbook” scaffolding unless the user
+explicitly asks for it or the source deliverable truly requires it.
+
+Avoid generated-workbook artifacts such as:
+- `Guide`, `README`, `Instructions`, `How to Use`, or `Workbook Overview` tabs;
+- tabs created only to explain the model structure;
+- visible prose such as “This workbook…”, “This sheet…”, “Use this tab to…”,
+  “The purpose of this sheet is…”, or “Generated by…”;
+- long narrative section headers, subsection headers, or title banners.
+
+Use the source module docstring for authoring notes, intent, layout maps, and
+agent-facing explanation. Do not emit that explanation into worksheet cells.
+
+Visible workbook text should be compact and analyst-native:
+- tab names: short human labels, preferably spaces not underscores;
+- title banner: the tab name, not a sentence;
+- section banners: short noun phrases, not full sentences;
+- subsection banners: only when they clarify a dense block;
+- notes/context columns: only where a human workbook would include them.
+
+Groups are metadata for tab color and ordering. They are not a checklist of tabs
+to create. In particular, do not add a `guide` / `readme` tab merely because the
+`guide` group exists.
+```
+
+That last sentence matters because the current group list includes `guide` and describes it as “the rules: how to read it, scope in/out, the taxonomies,” which is exactly the kind of thing that can nudge an agent into producing a non-human “guide” tab. 
+
+### 2. Add a shorter note to `sheet_base_template.py`
+
+The template already has an internal `INTENT` and `LAYOUT` block, which is useful. That should stay. It gives the source file reviewability without forcing that prose into the workbook. 
+
+I’d add this near the top of the template docstring:
+
+```markdown
+Human-output rule:
+    INTENT and LAYOUT are source-only authoring notes. Do not emit them into the
+    worksheet. Visible worksheet text should read like a human-built Excel model:
+    short tab name, short title banner, compact section labels, no README/Guide/
+    Instructions tab unless explicitly requested.
+```
+
+I’d also tweak the `_build_rows()` comment around the title banner:
+
+```python
+# Title banner (row 2) - derives from TAB_NAME / filename; do not hard-code.
+# Keep it short: it should read like the tab label, not a sentence.
+```
+
+That aligns with the current skeleton, where row 2 is already the title banner and section content begins below it. 
+
+### 3. Soften `groups.py` so `guide` is clearly optional
+
+I would **not** necessarily remove the `guide` group. Some workbook types may legitimately need a setup/instructions/source-control tab. But I would change its comments so it stops sounding like a default tab category.
+
+Current behavior is fine structurally: `SHEET_GROUPS` defines available ordering/color groups, not mandatory tabs.  The wording should say that plainly.
+
+Suggested replacement docstring language:
+
+```python
+"""Logical tab groups - one color per group, contiguous in tab order.
+
+Groups are internal metadata for ordering and tab color. They are not a checklist
+of tabs to create, and a workbook should skip any group it does not naturally
+need. In particular, do not add a guide/readme/instructions tab just because the
+`guide` group exists; use it only when such a tab would normally appear in a
+human-built workbook or the user explicitly asks for it.
+"""
+```
+
+And I’d change the `guide` label/comment to something like:
+
+```python
+("guide", "Optional guide", "2C6E6E"),  # rare: only when explicitly requested / human-normal
+```
+
+A stricter version would remove the `guide` group entirely, but I would not start there unless you want a hard ban.
+
+## I would also clean up one workbook naming artifact
+
+The workbook style file still uses `S_TITLE_SLIDE` / `C_BG_SLIDE_TITLE` naming for the worksheet title banner. That is not visible in the workbook, but it is conceptually deck-ish. The actual style system is good — Arial 8, no wraps, no merges, no gridlines, numeric color semantics, standardized number formats, and 10-point rows are already doing the right Excel-polish work. 
+
+I’d add aliases and migrate docs/templates to the workbook-native name:
+
+```python
+S_TITLE_SHEET = S_TITLE_SLIDE
+C_BG_SHEET_TITLE = C_BG_SLIDE_TITLE
+```
+
+Then update new workbook code to import/use `S_TITLE_SHEET`, while keeping `S_TITLE_SLIDE` for backward compatibility.
+
+That is a good example of the distinction here: the pipeline can have internal tokens, but the vocabulary should still feel workbook-native.
+
+## On “role” and “tokens”
+
+I do think there is a place for **tokens** in the workbook pipeline. I do **not** think there should be a visible “role” concept in the generated workbook.
+
+The current workbook pipeline already has token-like pieces:
+
+* `S_NUM_INPUT`, `S_NUM`, `S_LINK_NUM`, `S_PCT`, `S_TOTAL`, etc. are really **cell-purpose tokens**, not just visual styles. They encode hardcoded input vs formula result vs cross-sheet link vs total row. 
+* `SHEET_GROUP` is already a **sheet-purpose / ordering token**, but it should remain internal metadata, not a visible label. 
+* The sheet guide already tells authors to pick styles by cell purpose and explains the finance-model color semantics. 
+
+So my recommendation is:
+
+**Use tokens internally. Avoid “role” language in visible workbook output.**
+
+For example, this is good:
+
+```python
+styles=[S_DEFAULT, S_NUM_INPUT, S_DEFAULT]
+```
+
+This is not good as visible workbook text:
+
+```text
+Role: Input Surface
+Role: Model Engine
+Role: Deck-Facing Contract
+```
+
+Internally, “role” can be called **purpose** or **cell purpose** in the docs. That is more Excel-native and less AI-framework-ish.
+
+## What workbook polish should mean
+
+For workbooks, polish is not the same as slide polish. In a deck, polish often means stronger visual hierarchy, role-based typography, controlled fills, commentary rails, and careful composition. The deck pipeline now has explicit role tokens for typography and insets because slide authors are placing shapes on a canvas. 
+
+In Excel, polish should mean:
+
+* compact labels;
+* consistent numeric semantics;
+* no over-explaining;
+* no artificial guide/readme tabs;
+* title banners that mirror tab names;
+* section headers that are short and functional;
+* inputs visibly blue, links visibly green, formulas black;
+* total rows with clean divider rules;
+* native Excel tables only where filters/structured references are useful;
+* source comments/docstrings can be verbose, emitted cells cannot.
+
+That is already mostly the direction of the workbook style guide: no gridlines, no wraps, no merges, no notes/quality columns except a narrow exception for Sources, explicit styles, total-row discipline, and Arial 8 throughout. 
+
+## Optional enforcement later: `sheet_probe --human-lint`
+
+I would not make this a hard build failure immediately. Some real human workbooks do have a `Sources`, `Notes`, `Method`, or `Guide` tab when the situation calls for it.
+
+But `sheet_probe` is currently a read-only inspector that “never builds, repairs, or judges.”  A future optional lint mode would be useful:
+
+```text
+sheet_probe --human-lint
+```
+
+It could warn on:
+
+* tab names matching `README`, `Guide`, `Instructions`, `How to Use`, `Workbook Overview`;
+* title banners that do not match the tab name;
+* title/section/subsection banners over a soft length threshold;
+* full-sentence banners ending in periods;
+* visible phrases like “This workbook,” “This sheet,” “generated,” “LLM,” “AI-generated,” “below are,” or “use this tab”;
+* all seven groups represented by placeholder tabs, which often signals taxonomy-driven generation rather than human workbook design.
+
+I’d keep those warnings, not errors, unless you want a hard house rule.
+
+## Net recommendation
+
+Add the **human workbook standard** language to `sheet_guide.md`, echo it in `sheet_base_template.py`, and soften the `guide` group wording in `groups.py`.
+
+Keep tokens, but make them workbook-native: **cell purpose tokens, sheet group metadata, and title/section style constants**. Do not add visible role language, role tabs, or tokenized explanatory surfaces to the workbook itself.

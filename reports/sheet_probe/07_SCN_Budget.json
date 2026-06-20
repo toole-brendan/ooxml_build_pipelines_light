@@ -1,0 +1,976 @@
+{
+  "source": "file",
+  "name": "SCN Budget",
+  "tab_name": "SCN Budget",
+  "sheet_index": 7,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 8,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "12"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "12"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "12"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "12"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    }
+  ],
+  "n_rows": 17,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 7
+    },
+    {
+      "r": "4",
+      "n_cells": 8
+    },
+    {
+      "r": "6",
+      "n_cells": 7
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "12",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "14",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "18",
+      "n_cells": 8
+    },
+    {
+      "r": "20",
+      "n_cells": 7
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 7
+    }
+  ],
+  "n_cells": 114,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "SCN Budget"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Cost categories (DDG-51 LI 2122, $M per FY)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Metric"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "2022"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_CENTER",
+      "value": "2023"
+    },
+    {
+      "ref": "E6",
+      "style": "S_HEADER_CENTER",
+      "value": "2024"
+    },
+    {
+      "ref": "F6",
+      "style": "S_HEADER_CENTER",
+      "value": "2025"
+    },
+    {
+      "ref": "G6",
+      "style": "S_HEADER_CENTER",
+      "value": "2026"
+    },
+    {
+      "ref": "H6",
+      "style": "S_HEADER_CENTER",
+      "value": "2027"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Total Ship Estimate"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "4072.882"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "7949.54"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "5492.33"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "7858.814"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "306.125"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "4256.914"
+    },
+    {
+      "ref": "B8",
+      "style": "S_BOLD",
+      "value": "Plans Costs"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "86.682"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "92.152"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "82.697"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "83.596"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT",
+      "value": "87.927"
+    },
+    {
+      "ref": "B9",
+      "style": "S_BOLD",
+      "value": "Electronics"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "546.096"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "949.051"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "619.811"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "950.971"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "23.521"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT",
+      "value": "414.741"
+    },
+    {
+      "ref": "B10",
+      "style": "S_BOLD",
+      "value": "Ordnance"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1161.682"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "1835.479"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "1187.455"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1816.641"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "784.486"
+    },
+    {
+      "ref": "B11",
+      "style": "S_BOLD",
+      "value": "Hull, Mechanical, Electrical (HM&E; missing pre-FY24)"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "100.673"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "154.029"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT",
+      "value": "66.009"
+    },
+    {
+      "ref": "B12",
+      "style": "S_BOLD",
+      "value": "Other Cost"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "76.985"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "82.196"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "87.684"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "88.492"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "89.974"
+    },
+    {
+      "ref": "B13",
+      "style": "S_BOLD",
+      "value": "GFE Sum (Electronics + Ordnance)"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "1707.778"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "2784.53"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "1807.266"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "2767.612"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "23.521"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "1199.227"
+    },
+    {
+      "ref": "B14",
+      "style": "S_BOLD",
+      "value": "Change Orders"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "77.417"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "136.767"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "91.552"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "136.872"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H14",
+      "style": "S_NUM_INPUT",
+      "value": "94.222"
+    },
+    {
+      "ref": "B15",
+      "style": "S_BOLD",
+      "value": "Basic Construction (BC base -> TAM Build)"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "1959.99"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "4558.163"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "3322.458"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "4628.213"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "282.604"
+    },
+    {
+      "ref": "H15",
+      "style": "S_NUM_INPUT",
+      "value": "2719.555"
+    },
+    {
+      "ref": "A18",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B18",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Derived ratios"
+    },
+    {
+      "ref": "C18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H18",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B20",
+      "style": "S_HEADER_LEFT",
+      "value": "Ratio"
+    },
+    {
+      "ref": "C20",
+      "style": "S_HEADER_CENTER",
+      "value": "2022"
+    },
+    {
+      "ref": "D20",
+      "style": "S_HEADER_CENTER",
+      "value": "2023"
+    },
+    {
+      "ref": "E20",
+      "style": "S_HEADER_CENTER",
+      "value": "2024"
+    },
+    {
+      "ref": "F20",
+      "style": "S_HEADER_CENTER",
+      "value": "2025"
+    },
+    {
+      "ref": "G20",
+      "style": "S_HEADER_CENTER",
+      "value": "2026"
+    },
+    {
+      "ref": "H20",
+      "style": "S_HEADER_CENTER",
+      "value": "2027"
+    },
+    {
+      "ref": "B21",
+      "style": "S_BOLD",
+      "value": "BC % of Total"
+    },
+    {
+      "ref": "C21",
+      "style": "S_PCT",
+      "formula": "IF(C7=0,\"\",C15/C7)"
+    },
+    {
+      "ref": "D21",
+      "style": "S_PCT",
+      "formula": "IF(D7=0,\"\",D15/D7)"
+    },
+    {
+      "ref": "E21",
+      "style": "S_PCT",
+      "formula": "IF(E7=0,\"\",E15/E7)"
+    },
+    {
+      "ref": "F21",
+      "style": "S_PCT",
+      "formula": "IF(F7=0,\"\",F15/F7)"
+    },
+    {
+      "ref": "G21",
+      "style": "S_PCT",
+      "formula": "IF(G7=0,\"\",G15/G7)"
+    },
+    {
+      "ref": "H21",
+      "style": "S_PCT",
+      "formula": "IF(H7=0,\"\",H15/H7)"
+    },
+    {
+      "ref": "B22",
+      "style": "S_BOLD",
+      "value": "GFE % of Total"
+    },
+    {
+      "ref": "C22",
+      "style": "S_PCT",
+      "formula": "IF(C7=0,\"\",C13/C7)"
+    },
+    {
+      "ref": "D22",
+      "style": "S_PCT",
+      "formula": "IF(D7=0,\"\",D13/D7)"
+    },
+    {
+      "ref": "E22",
+      "style": "S_PCT",
+      "formula": "IF(E7=0,\"\",E13/E7)"
+    },
+    {
+      "ref": "F22",
+      "style": "S_PCT",
+      "formula": "IF(F7=0,\"\",F13/F7)"
+    },
+    {
+      "ref": "G22",
+      "style": "S_PCT",
+      "formula": "IF(G7=0,\"\",G13/G7)"
+    },
+    {
+      "ref": "H22",
+      "style": "S_PCT",
+      "formula": "IF(H7=0,\"\",H13/H7)"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "SCN Budget"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Cost categories (DDG-51 LI 2122, $M per FY)"
+    },
+    {
+      "ref": "B18",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Derived ratios"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "4072.882"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "7949.54"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "5492.33"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "7858.814"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "306.125"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "4256.914"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "86.682"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "92.152"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "82.697"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "83.596"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT",
+      "value": "87.927"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "546.096"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "949.051"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "619.811"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "950.971"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "23.521"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT",
+      "value": "414.741"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1161.682"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "1835.479"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "1187.455"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1816.641"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "784.486"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "100.673"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "154.029"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT",
+      "value": "66.009"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "76.985"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "82.196"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "87.684"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "88.492"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "89.974"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "1707.778"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "2784.53"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "1807.266"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "2767.612"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "23.521"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "1199.227"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "77.417"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "136.767"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "91.552"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "136.872"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H14",
+      "style": "S_NUM_INPUT",
+      "value": "94.222"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "1959.99"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "4558.163"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "3322.458"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "4628.213"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "282.604"
+    },
+    {
+      "ref": "H15",
+      "style": "S_NUM_INPUT",
+      "value": "2719.555"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 12,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

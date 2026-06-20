@@ -1,0 +1,2436 @@
+{
+  "recipient_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+  "recipient_uei": "TPS3M6GYAL48",
+  "query": "VENDOR_UEI:\"TPS3M6GYAL48\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 5,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1027091.84,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912P418P0004",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P418P0004",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+      "vendor_uei": "TPS3M6GYAL48",
+      "this_obligated": 5000.0,
+      "total_obligated": 1027091.84,
+      "base_and_exercised": 5000.0,
+      "base_and_all_options": -5000.0,
+      "total_base_and_all_options": 1055941.84,
+      "signed_date": "2018-01-11 00:00:00",
+      "effective_date": "2018-01-11 00:00:00",
+      "current_completion_date": "2018-05-25 00:00:00",
+      "ultimate_completion_date": "2018-05-25 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST BUFFALO",
+      "contracting_office_id": "W912P4",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W072 ENDIST BUFFALO",
+      "naics": "336111",
+      "naics_desc": "AUTOMOBILE MANUFACTURING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "FABRICATE&INSTALL NEW CRANE FOUNDATION \nIGF::OT::IGF",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P418P0004",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-01-11 00:00:00",
+          "effectiveDate": "2018-01-11 00:00:00",
+          "currentCompletionDate": "2018-05-25 00:00:00",
+          "ultimateCompletionDate": "2018-05-25 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "5000.00",
+          "baseAndExercisedOptionsValue": "5000.00",
+          "baseAndAllOptionsValue": "-5000.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1027091.84",
+          "totalBaseAndExercisedOptionsValue": "1027091.84",
+          "totalBaseAndAllOptionsValue": "1055941.84"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "@country": "USA",
+            "#text": "W912P4"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "#text": "W912P4"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "EXERCISE AN OPTION",
+            "#text": "G"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P418R0004",
+          "descriptionOfContractRequirement": "FABRICATE&INSTALL NEW CRANE FOUNDATION \nIGF::OT::IGF",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "3123"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "AUTOMOBILE MANUFACTURING",
+            "#text": "336111"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "CONNEAUT CREEK SHIP REPAIR CO., INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "333 WASHINGTON ST STE 201",
+              "city": "JERSEY CITY",
+              "state": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "ZIPCode": {
+                "@city": "JERSEY CITY",
+                "#text": "073023095"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2018146532",
+              "congressionalDistrictCode": "08",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "07302",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "TPS3M6GYAL48",
+                "UEILegalBusinessName": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+                "ultimateParentUEI": "TPS3M6GYAL48",
+                "ultimateParentUEIName": "CONNEAUT CREEK SHIP REPAIR CO.  INC."
+              },
+              "cageCode": "80RV7"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2017-12-20 00:00:00",
+              "renewalDate": "2019-01-02 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "OHIO",
+              "#text": "OH"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "LORAIN",
+            "@city": "AMHERST",
+            "#text": "440010424"
+          },
+          "placeOfPerformanceCongressionalDistrict": "04"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "JEFFERY.G.ERNEST.W912P4@USACE.ARMY.MIL",
+          "createdDate": "2018-01-11 11:26:45",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "JEFFERY.G.ERNEST.W912P4@USACE.ARMY.MIL",
+          "approvedDate": "2018-01-11 11:26:48",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "TPS3M6GYAL48"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P418P0004",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P418P0004",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+      "vendor_uei": "TPS3M6GYAL48",
+      "this_obligated": 16437.24,
+      "total_obligated": 1027091.84,
+      "base_and_exercised": 16437.24,
+      "base_and_all_options": 16437.24,
+      "total_base_and_all_options": 1055941.84,
+      "signed_date": "2018-06-25 00:00:00",
+      "effective_date": "2018-06-14 00:00:00",
+      "current_completion_date": "2018-06-29 00:00:00",
+      "ultimate_completion_date": "2018-06-29 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST BUFFALO",
+      "contracting_office_id": "W912P4",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W072 ENDIST BUFFALO",
+      "naics": "336111",
+      "naics_desc": "AUTOMOBILE MANUFACTURING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P418P0004",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-06-25 00:00:00",
+          "effectiveDate": "2018-06-14 00:00:00",
+          "currentCompletionDate": "2018-06-29 00:00:00",
+          "ultimateCompletionDate": "2018-06-29 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "16437.24",
+          "baseAndExercisedOptionsValue": "16437.24",
+          "baseAndAllOptionsValue": "16437.24"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1027091.84",
+          "totalBaseAndExercisedOptionsValue": "1027091.84",
+          "totalBaseAndAllOptionsValue": "1055941.84"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "@country": "USA",
+            "#text": "W912P4"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "#text": "W912P4"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P418R0004",
+          "descriptionOfContractRequirement": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "AUTOMOBILE MANUFACTURING",
+            "#text": "336111"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "CONNEAUT CREEK SHIP REPAIR CO., INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "333 WASHINGTON ST STE 201",
+              "city": "JERSEY CITY",
+              "state": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "ZIPCode": {
+                "@city": "JERSEY CITY",
+                "#text": "073023095"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2018146532",
+              "congressionalDistrictCode": "08",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "07302",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "TPS3M6GYAL48",
+                "UEILegalBusinessName": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+                "ultimateParentUEI": "TPS3M6GYAL48",
+                "ultimateParentUEIName": "CONNEAUT CREEK SHIP REPAIR CO.  INC."
+              },
+              "cageCode": "80RV7"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2017-12-20 00:00:00",
+              "renewalDate": "2019-01-02 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "OHIO",
+              "#text": "OH"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "LORAIN",
+            "@city": "AMHERST",
+            "#text": "440010424"
+          },
+          "placeOfPerformanceCongressionalDistrict": "04"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "createdDate": "2018-06-25 08:09:39",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "approvedDate": "2018-06-25 08:09:41",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "TPS3M6GYAL48"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P418P0004",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P418P0004",
+      "mod_number": "P00003",
+      "transaction_number": "0",
+      "vendor_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+      "vendor_uei": "TPS3M6GYAL48",
+      "this_obligated": 247377.2,
+      "total_obligated": 1027091.84,
+      "base_and_exercised": 247377.2,
+      "base_and_all_options": 247377.2,
+      "total_base_and_all_options": 1055941.84,
+      "signed_date": "2018-06-25 00:00:00",
+      "effective_date": "2018-06-25 00:00:00",
+      "current_completion_date": "2018-08-10 00:00:00",
+      "ultimate_completion_date": "2018-08-10 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST BUFFALO",
+      "contracting_office_id": "W912P4",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W072 ENDIST BUFFALO",
+      "naics": "336111",
+      "naics_desc": "AUTOMOBILE MANUFACTURING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P418P0004",
+            "modNumber": "P00003",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-06-25 00:00:00",
+          "effectiveDate": "2018-06-25 00:00:00",
+          "currentCompletionDate": "2018-08-10 00:00:00",
+          "ultimateCompletionDate": "2018-08-10 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "247377.20",
+          "baseAndExercisedOptionsValue": "247377.20",
+          "baseAndAllOptionsValue": "247377.20"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1027091.84",
+          "totalBaseAndExercisedOptionsValue": "1027091.84",
+          "totalBaseAndAllOptionsValue": "1055941.84"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "@country": "USA",
+            "#text": "W912P4"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "#text": "W912P4"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P418R0004",
+          "descriptionOfContractRequirement": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "AUTOMOBILE MANUFACTURING",
+            "#text": "336111"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "CONNEAUT CREEK SHIP REPAIR CO., INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "333 WASHINGTON ST STE 201",
+              "city": "JERSEY CITY",
+              "state": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "ZIPCode": {
+                "@city": "JERSEY CITY",
+                "#text": "073023095"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2018146532",
+              "congressionalDistrictCode": "08",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "07302",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "TPS3M6GYAL48",
+                "UEILegalBusinessName": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+                "ultimateParentUEI": "TPS3M6GYAL48",
+                "ultimateParentUEIName": "CONNEAUT CREEK SHIP REPAIR CO.  INC."
+              },
+              "cageCode": "80RV7"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2017-12-20 00:00:00",
+              "renewalDate": "2019-01-02 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "OHIO",
+              "#text": "OH"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "LORAIN",
+            "@city": "AMHERST",
+            "#text": "440010424"
+          },
+          "placeOfPerformanceCongressionalDistrict": "04"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "createdDate": "2018-06-25 11:20:36",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "approvedDate": "2018-06-25 11:20:38",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "TPS3M6GYAL48"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P418P0004",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P418P0004",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+      "vendor_uei": "TPS3M6GYAL48",
+      "this_obligated": 666445.4,
+      "total_obligated": 1027091.84,
+      "base_and_exercised": 666445.4,
+      "base_and_all_options": 705295.4,
+      "total_base_and_all_options": 1055941.84,
+      "signed_date": "2018-01-06 00:00:00",
+      "effective_date": "2018-01-05 00:00:00",
+      "current_completion_date": "2018-05-24 00:00:00",
+      "ultimate_completion_date": "2018-05-24 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST BUFFALO",
+      "contracting_office_id": "W912P4",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W072 ENDIST BUFFALO",
+      "naics": "336111",
+      "naics_desc": "AUTOMOBILE MANUFACTURING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "IGF::OT::IGF\nFABRICATE&INSTALL NEW CRANE FOUNDATION",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P418P0004",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-01-06 00:00:00",
+          "effectiveDate": "2018-01-05 00:00:00",
+          "currentCompletionDate": "2018-05-24 00:00:00",
+          "ultimateCompletionDate": "2018-05-24 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "666445.40",
+          "baseAndExercisedOptionsValue": "666445.40",
+          "baseAndAllOptionsValue": "705295.40"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1027091.84",
+          "totalBaseAndExercisedOptionsValue": "1027091.84",
+          "totalBaseAndAllOptionsValue": "1055941.84"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "@country": "USA",
+            "#text": "W912P4"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "#text": "W912P4"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P418R0004",
+          "descriptionOfContractRequirement": "IGF::OT::IGF\nFABRICATE&INSTALL NEW CRANE FOUNDATION",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "3123"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "AUTOMOBILE MANUFACTURING",
+            "#text": "336111"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "CONNEAUT CREEK SHIP REPAIR CO., INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "333 WASHINGTON ST STE 201",
+              "city": "JERSEY CITY",
+              "state": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "ZIPCode": {
+                "@city": "JERSEY CITY",
+                "#text": "073023095"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2018146532",
+              "congressionalDistrictCode": "08",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "07302",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "TPS3M6GYAL48",
+                "UEILegalBusinessName": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+                "ultimateParentUEI": "TPS3M6GYAL48",
+                "ultimateParentUEIName": "CONNEAUT CREEK SHIP REPAIR CO.  INC."
+              },
+              "cageCode": "80RV7"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2017-12-20 00:00:00",
+              "renewalDate": "2019-01-02 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "OHIO",
+              "#text": "OH"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "LORAIN",
+            "@city": "AMHERST",
+            "#text": "440010424"
+          },
+          "placeOfPerformanceCongressionalDistrict": "04"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "KENNETH.E.MACKAY.W912P4@USACE.ARMY.MIL",
+          "createdDate": "2018-01-04 08:14:45",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "JEFFERY.G.ERNEST.W912P4@USACE.ARMY.MIL",
+          "approvedDate": "2018-01-06 10:56:36",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "TPS3M6GYAL48"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P418P0004",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P418P0004",
+      "mod_number": "P00004",
+      "transaction_number": "0",
+      "vendor_name": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+      "vendor_uei": "TPS3M6GYAL48",
+      "this_obligated": 91832.0,
+      "total_obligated": 1027091.84,
+      "base_and_exercised": 91832.0,
+      "base_and_all_options": 91832.0,
+      "total_base_and_all_options": 1055941.84,
+      "signed_date": "2018-07-02 00:00:00",
+      "effective_date": "2018-07-02 00:00:00",
+      "current_completion_date": "2018-09-07 00:00:00",
+      "ultimate_completion_date": "2018-09-07 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST BUFFALO",
+      "contracting_office_id": "W912P4",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W072 ENDIST BUFFALO",
+      "naics": "336111",
+      "naics_desc": "AUTOMOBILE MANUFACTURING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P418P0004",
+            "modNumber": "P00004",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-07-02 00:00:00",
+          "effectiveDate": "2018-07-02 00:00:00",
+          "currentCompletionDate": "2018-09-07 00:00:00",
+          "ultimateCompletionDate": "2018-09-07 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "91832.00",
+          "baseAndExercisedOptionsValue": "91832.00",
+          "baseAndAllOptionsValue": "91832.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1027091.84",
+          "totalBaseAndExercisedOptionsValue": "1027091.84",
+          "totalBaseAndAllOptionsValue": "1055941.84"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "@country": "USA",
+            "#text": "W912P4"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W072 ENDIST BUFFALO",
+            "#text": "W912P4"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P418R0004",
+          "descriptionOfContractRequirement": "FABRICATE&INSTALL NEW CRANE FOUNDATION IGF::OT::IGF",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "AUTOMOBILE MANUFACTURING",
+            "#text": "336111"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "CONNEAUT CREEK SHIP REPAIR CO., INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "333 WASHINGTON ST STE 201",
+              "city": "JERSEY CITY",
+              "state": {
+                "@name": "NEW JERSEY",
+                "#text": "NJ"
+              },
+              "ZIPCode": {
+                "@city": "JERSEY CITY",
+                "#text": "073023095"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2018146532",
+              "congressionalDistrictCode": "08",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "07302",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "TPS3M6GYAL48",
+                "UEILegalBusinessName": "CONNEAUT CREEK SHIP REPAIR CO., INC.",
+                "ultimateParentUEI": "VPRMUSBJP6J6",
+                "ultimateParentUEIName": "CONNEAUT CREEK SHIP REPAIR CO.  INC."
+              },
+              "cageCode": "80RV7"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2017-12-20 00:00:00",
+              "renewalDate": "2019-01-02 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "OHIO",
+              "#text": "OH"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "LORAIN",
+            "@city": "AMHERST",
+            "#text": "440010424"
+          },
+          "placeOfPerformanceCongressionalDistrict": "04"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "createdDate": "2018-07-02 15:51:13",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "WALTER.KAMAD.W912P4@USACE.ARMY.MIL",
+          "approvedDate": "2018-07-02 15:51:15",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "TPS3M6GYAL48"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2161 @@
+{
+  "source": "file",
+  "name": "SAM Build",
+  "tab_name": "SAM Build",
+  "sheet_index": 6,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 9,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "14"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "16"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "12"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "12"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    },
+    {
+      "min": "9",
+      "max": "9",
+      "width": "13"
+    }
+  ],
+  "n_rows": 65,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 8
+    },
+    {
+      "r": "4",
+      "n_cells": 8
+    },
+    {
+      "r": "6",
+      "n_cells": 4
+    },
+    {
+      "r": "7",
+      "n_cells": 4
+    },
+    {
+      "r": "8",
+      "n_cells": 4
+    },
+    {
+      "r": "9",
+      "n_cells": 4
+    },
+    {
+      "r": "10",
+      "n_cells": 4
+    },
+    {
+      "r": "11",
+      "n_cells": 4
+    },
+    {
+      "r": "14",
+      "n_cells": 9
+    },
+    {
+      "r": "16",
+      "n_cells": 9
+    },
+    {
+      "r": "18",
+      "n_cells": 5
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "27",
+      "n_cells": 5
+    },
+    {
+      "r": "30",
+      "n_cells": 9
+    },
+    {
+      "r": "32",
+      "n_cells": 5
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "34",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "35",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "37",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "40",
+      "n_cells": 5
+    },
+    {
+      "r": "43",
+      "n_cells": 9
+    },
+    {
+      "r": "45",
+      "n_cells": 9
+    },
+    {
+      "r": "47",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "50",
+      "n_cells": 9
+    },
+    {
+      "r": "52",
+      "n_cells": 3
+    },
+    {
+      "r": "53",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "54",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "55",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "56",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "57",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "58",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "59",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "60",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "61",
+      "n_cells": 3
+    },
+    {
+      "r": "64",
+      "n_cells": 9
+    },
+    {
+      "r": "66",
+      "n_cells": 9
+    },
+    {
+      "r": "68",
+      "n_cells": 4
+    },
+    {
+      "r": "69",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "70",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "71",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "72",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "73",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "76",
+      "n_cells": 9
+    },
+    {
+      "r": "78",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "81",
+      "n_cells": 9
+    },
+    {
+      "r": "83",
+      "n_cells": 8
+    },
+    {
+      "r": "84",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "85",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "86",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "87",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "88",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "91",
+      "n_cells": 9
+    },
+    {
+      "r": "93",
+      "n_cells": 2
+    },
+    {
+      "r": "94",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 321,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "SAM Build"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "I2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - SAM scenario menu"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Scenario"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "SAM $M"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_CENTER",
+      "value": "% of TAM"
+    },
+    {
+      "ref": "E6",
+      "style": "S_HEADER_CENTER",
+      "value": "SAM $M/yr"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "Metal components"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C69"
+    },
+    {
+      "ref": "D7",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!D69"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!E69"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "HM&E components"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C70"
+    },
+    {
+      "ref": "D8",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!D70"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!E70"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Electrical / power"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C71"
+    },
+    {
+      "ref": "D9",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!D71"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!E71"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Modular assemblies"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C72"
+    },
+    {
+      "ref": "D10",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!D72"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!E72"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "Broad component mfg"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C73"
+    },
+    {
+      "ref": "D11",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!D73"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!E73"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Supplier-addressable shares"
+    },
+    {
+      "ref": "C14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72a - Observed bucket shares (subaward $) + Inputs adjustment; residual explicit"
+    },
+    {
+      "ref": "C16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B18",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C18",
+      "style": "S_HEADER_CENTER",
+      "value": "Observed $M"
+    },
+    {
+      "ref": "D18",
+      "style": "S_HEADER_CENTER",
+      "value": "Observed %"
+    },
+    {
+      "ref": "E18",
+      "style": "S_HEADER_CENTER",
+      "value": "Adj +/- (Inputs)"
+    },
+    {
+      "ref": "F18",
+      "style": "S_HEADER_CENTER",
+      "value": "Modeled %"
+    },
+    {
+      "ref": "B19",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"structural\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D19",
+      "style": "S_PCT",
+      "formula": "C19/$C$27"
+    },
+    {
+      "ref": "E19",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C44"
+    },
+    {
+      "ref": "F19",
+      "style": "S_PCT",
+      "formula": "D19+E19"
+    },
+    {
+      "ref": "B20",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"machining\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D20",
+      "style": "S_PCT",
+      "formula": "C20/$C$27"
+    },
+    {
+      "ref": "E20",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C45"
+    },
+    {
+      "ref": "F20",
+      "style": "S_PCT",
+      "formula": "D20+E20"
+    },
+    {
+      "ref": "B21",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"castings\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D21",
+      "style": "S_PCT",
+      "formula": "C21/$C$27"
+    },
+    {
+      "ref": "E21",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C46"
+    },
+    {
+      "ref": "F21",
+      "style": "S_PCT",
+      "formula": "D21+E21"
+    },
+    {
+      "ref": "B22",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"piping\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D22",
+      "style": "S_PCT",
+      "formula": "C22/$C$27"
+    },
+    {
+      "ref": "E22",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C47"
+    },
+    {
+      "ref": "F22",
+      "style": "S_PCT",
+      "formula": "D22+E22"
+    },
+    {
+      "ref": "B23",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"electrical\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D23",
+      "style": "S_PCT",
+      "formula": "C23/$C$27"
+    },
+    {
+      "ref": "E23",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C48"
+    },
+    {
+      "ref": "F23",
+      "style": "S_PCT",
+      "formula": "D23+E23"
+    },
+    {
+      "ref": "B24",
+      "style": "S_LABEL_INDENT_1",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"hvac\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D24",
+      "style": "S_PCT",
+      "formula": "C24/$C$27"
+    },
+    {
+      "ref": "E24",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C49"
+    },
+    {
+      "ref": "F24",
+      "style": "S_PCT",
+      "formula": "D24+E24"
+    },
+    {
+      "ref": "B25",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"coatings\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D25",
+      "style": "S_PCT",
+      "formula": "C25/$C$27"
+    },
+    {
+      "ref": "E25",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C50"
+    },
+    {
+      "ref": "F25",
+      "style": "S_PCT",
+      "formula": "D25+E25"
+    },
+    {
+      "ref": "B26",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Unbucketed / ambiguous (not in scenario SAM)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"unbucketed\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D26",
+      "style": "S_PCT",
+      "formula": "C26/$C$27"
+    },
+    {
+      "ref": "F26",
+      "style": "S_PCT",
+      "formula": "1-SUM(F19:F25)"
+    },
+    {
+      "ref": "B27",
+      "style": "S_TOTAL",
+      "value": "Supplier-addressable total"
+    },
+    {
+      "ref": "C27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D27",
+      "style": "S_PCT_TOTAL",
+      "formula": "C27/$C$27"
+    },
+    {
+      "ref": "E27",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "F27",
+      "style": "S_PCT_TOTAL",
+      "formula": "SUM(F19:F26)"
+    },
+    {
+      "ref": "A30",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B30",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72b - Excluded from the addressable base (audit - not supplier-addressable)"
+    },
+    {
+      "ref": "C30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I30",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B32",
+      "style": "S_HEADER_LEFT",
+      "value": "Role"
+    },
+    {
+      "ref": "C32",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "D32",
+      "style": "S_HEADER_LEFT"
+    },
+    {
+      "ref": "E32",
+      "style": "S_HEADER_LEFT"
+    },
+    {
+      "ref": "F32",
+      "style": "S_HEADER_LEFT"
+    },
+    {
+      "ref": "B33",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Mission systems (combat/electronics - VLS, radar, EW)"
+    },
+    {
+      "ref": "C33",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"mission_systems\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B34",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Service / non-component / IT"
+    },
+    {
+      "ref": "C34",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"service\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B35",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Holding / parent unknown"
+    },
+    {
+      "ref": "C35",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"holding\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B36",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Foreign / FMS"
+    },
+    {
+      "ref": "C36",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"foreign_fms\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B37",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Prime yard (Bath Iron Works)"
+    },
+    {
+      "ref": "C37",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"prime\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B38",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Co-prime yard (HII Ingalls)"
+    },
+    {
+      "ref": "C38",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"co_prime\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B39",
+      "style": "S_LABEL_INDENT_1",
+      "value": "GFE / Navy-directed (Aegis/SPY-6/weapons)"
+    },
+    {
+      "ref": "C39",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"gfe_mib\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B40",
+      "style": "S_TOTAL",
+      "value": "Grand total (all recipients)"
+    },
+    {
+      "ref": "C40",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUMPRODUCT('Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "D40",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "E40",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "F40",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "A43",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B43",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Bucket allocation"
+    },
+    {
+      "ref": "C43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I43",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "A45",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B45",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a73a - Portfolio TAM basis (cumulative FY22-FY27)"
+    },
+    {
+      "ref": "C45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I45",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B47",
+      "style": "S_BOLD",
+      "value": "Portfolio TAM (DDG-51, both streams), FY22-27"
+    },
+    {
+      "ref": "C47",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I114"
+    },
+    {
+      "ref": "A50",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B50",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a73b - TAM by work-type bucket"
+    },
+    {
+      "ref": "C50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I50",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B52",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C52",
+      "style": "S_HEADER_CENTER",
+      "value": "Bucket TAM $M"
+    },
+    {
+      "ref": "D52",
+      "style": "S_HEADER_CENTER",
+      "value": "Modeled share"
+    },
+    {
+      "ref": "B53",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C53",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F19"
+    },
+    {
+      "ref": "D53",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F19"
+    },
+    {
+      "ref": "B54",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C54",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F20"
+    },
+    {
+      "ref": "D54",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F20"
+    },
+    {
+      "ref": "B55",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C55",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F21"
+    },
+    {
+      "ref": "D55",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F21"
+    },
+    {
+      "ref": "B56",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C56",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F22"
+    },
+    {
+      "ref": "D56",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F22"
+    },
+    {
+      "ref": "B57",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C57",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F23"
+    },
+    {
+      "ref": "D57",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F23"
+    },
+    {
+      "ref": "B58",
+      "style": "S_LABEL_INDENT_1",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C58",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F24"
+    },
+    {
+      "ref": "D58",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F24"
+    },
+    {
+      "ref": "B59",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C59",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F25"
+    },
+    {
+      "ref": "D59",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F25"
+    },
+    {
+      "ref": "B60",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Unbucketed / ambiguous (not in scenario SAM)"
+    },
+    {
+      "ref": "C60",
+      "style": "S_NUM",
+      "formula": "$C$47*'SAM Build'!F26"
+    },
+    {
+      "ref": "D60",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!F26"
+    },
+    {
+      "ref": "B61",
+      "style": "S_TOTAL",
+      "value": "Total (7 buckets + unbucketed = TAM)"
+    },
+    {
+      "ref": "C61",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C53:C60)"
+    },
+    {
+      "ref": "D61",
+      "style": "S_PCT_TOTAL",
+      "formula": "SUM(D53:D60)"
+    },
+    {
+      "ref": "A64",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B64",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - Scenario calculation"
+    },
+    {
+      "ref": "C64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I64",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "A66",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B66",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a74a - SAM by leadership scenario (subset of TAM, no haircut)"
+    },
+    {
+      "ref": "C66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I66",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B68",
+      "style": "S_HEADER_LEFT",
+      "value": "Scenario"
+    },
+    {
+      "ref": "C68",
+      "style": "S_HEADER_CENTER",
+      "value": "SAM $M"
+    },
+    {
+      "ref": "D68",
+      "style": "S_HEADER_CENTER",
+      "value": "% of TAM"
+    },
+    {
+      "ref": "E68",
+      "style": "S_HEADER_CENTER",
+      "value": "SAM $M/yr"
+    },
+    {
+      "ref": "B69",
+      "style": "S_DEFAULT",
+      "value": "Metal components"
+    },
+    {
+      "ref": "C69",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "D69",
+      "style": "S_PCT",
+      "formula": "C69/'SAM Build'!C47"
+    },
+    {
+      "ref": "E69",
+      "style": "S_NUM",
+      "formula": "C69/'TAM Build'!C132"
+    },
+    {
+      "ref": "B70",
+      "style": "S_DEFAULT",
+      "value": "HM&E components"
+    },
+    {
+      "ref": "C70",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "D70",
+      "style": "S_PCT",
+      "formula": "C70/'SAM Build'!C47"
+    },
+    {
+      "ref": "E70",
+      "style": "S_NUM",
+      "formula": "C70/'TAM Build'!C132"
+    },
+    {
+      "ref": "B71",
+      "style": "S_DEFAULT",
+      "value": "Electrical / power"
+    },
+    {
+      "ref": "C71",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "D71",
+      "style": "S_PCT",
+      "formula": "C71/'SAM Build'!C47"
+    },
+    {
+      "ref": "E71",
+      "style": "S_NUM",
+      "formula": "C71/'TAM Build'!C132"
+    },
+    {
+      "ref": "B72",
+      "style": "S_DEFAULT",
+      "value": "Modular assemblies"
+    },
+    {
+      "ref": "C72",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C47*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "D72",
+      "style": "S_PCT",
+      "formula": "C72/'SAM Build'!C47"
+    },
+    {
+      "ref": "E72",
+      "style": "S_NUM",
+      "formula": "C72/'TAM Build'!C132"
+    },
+    {
+      "ref": "B73",
+      "style": "S_DEFAULT",
+      "value": "Broad component mfg"
+    },
+    {
+      "ref": "C73",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "D73",
+      "style": "S_PCT",
+      "formula": "C73/'SAM Build'!C47"
+    },
+    {
+      "ref": "E73",
+      "style": "S_NUM",
+      "formula": "C73/'TAM Build'!C132"
+    },
+    {
+      "ref": "A76",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B76",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a74b - Residual explanation"
+    },
+    {
+      "ref": "C76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I76",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B78",
+      "style": "S_DEFAULT",
+      "value": "Broad SAM = TAM - unbucketed residual."
+    },
+    {
+      "ref": "A81",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B81",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a75 - Annual SAM by fiscal year"
+    },
+    {
+      "ref": "C81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I81",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B83",
+      "style": "S_HEADER_LEFT",
+      "value": "Scenario"
+    },
+    {
+      "ref": "C83",
+      "style": "S_HEADER_CENTER",
+      "value": "2022"
+    },
+    {
+      "ref": "D83",
+      "style": "S_HEADER_CENTER",
+      "value": "2023"
+    },
+    {
+      "ref": "E83",
+      "style": "S_HEADER_CENTER",
+      "value": "2024"
+    },
+    {
+      "ref": "F83",
+      "style": "S_HEADER_CENTER",
+      "value": "2025"
+    },
+    {
+      "ref": "G83",
+      "style": "S_HEADER_CENTER",
+      "value": "2026"
+    },
+    {
+      "ref": "H83",
+      "style": "S_HEADER_CENTER",
+      "value": "2027"
+    },
+    {
+      "ref": "I83",
+      "style": "S_HEADER_CENTER",
+      "value": "FY22-27"
+    },
+    {
+      "ref": "B84",
+      "style": "S_DEFAULT",
+      "value": "Metal components"
+    },
+    {
+      "ref": "C84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "D84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "E84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "F84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "G84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "H84",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)"
+    },
+    {
+      "ref": "I84",
+      "style": "S_NUM",
+      "formula": "SUM(C84:H84)"
+    },
+    {
+      "ref": "B85",
+      "style": "S_DEFAULT",
+      "value": "HM&E components"
+    },
+    {
+      "ref": "C85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "D85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "E85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "F85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "G85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "H85",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)"
+    },
+    {
+      "ref": "I85",
+      "style": "S_NUM",
+      "formula": "SUM(C85:H85)"
+    },
+    {
+      "ref": "B86",
+      "style": "S_DEFAULT",
+      "value": "Electrical / power"
+    },
+    {
+      "ref": "C86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "D86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "E86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "F86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "G86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "H86",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)"
+    },
+    {
+      "ref": "I86",
+      "style": "S_NUM",
+      "formula": "SUM(C86:H86)"
+    },
+    {
+      "ref": "B87",
+      "style": "S_DEFAULT",
+      "value": "Modular assemblies"
+    },
+    {
+      "ref": "C87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "D87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "E87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "F87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "G87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "H87",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H114*SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27"
+    },
+    {
+      "ref": "I87",
+      "style": "S_NUM",
+      "formula": "SUM(C87:H87)"
+    },
+    {
+      "ref": "B88",
+      "style": "S_DEFAULT",
+      "value": "Broad component mfg"
+    },
+    {
+      "ref": "C88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "D88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "E88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "F88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "G88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "H88",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)"
+    },
+    {
+      "ref": "I88",
+      "style": "S_NUM",
+      "formula": "SUM(C88:H88)"
+    },
+    {
+      "ref": "A91",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B91",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a75b - Annual tie-out (per-FY annual broad SAM sums to cumulative broad SAM)"
+    },
+    {
+      "ref": "C91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "I91",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B93",
+      "style": "S_HEADER_LEFT",
+      "value": "Check"
+    },
+    {
+      "ref": "C93",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B94",
+      "style": "S_DEFAULT",
+      "value": "Annual broad SAM FY22-27 (sum)"
+    },
+    {
+      "ref": "C94",
+      "style": "S_NUM",
+      "formula": "I88"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "SAM Build"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - SAM scenario menu"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Supplier-addressable shares"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72a - Observed bucket shares (subaward $) + Inputs adjustment; residual explicit"
+    },
+    {
+      "ref": "B30",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72b - Excluded from the addressable base (audit - not supplier-addressable)"
+    },
+    {
+      "ref": "B43",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Bucket allocation"
+    },
+    {
+      "ref": "B45",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a73a - Portfolio TAM basis (cumulative FY22-FY27)"
+    },
+    {
+      "ref": "B50",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a73b - TAM by work-type bucket"
+    },
+    {
+      "ref": "B64",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - Scenario calculation"
+    },
+    {
+      "ref": "B66",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a74a - SAM by leadership scenario (subset of TAM, no haircut)"
+    },
+    {
+      "ref": "B76",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a74b - Residual explanation"
+    },
+    {
+      "ref": "B81",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a75 - Annual SAM by fiscal year"
+    },
+    {
+      "ref": "B91",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a75b - Annual tie-out (per-FY annual broad SAM sums to cumulative broad SAM)"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [
+    {
+      "ref": "E19",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C44"
+    },
+    {
+      "ref": "E20",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C45"
+    },
+    {
+      "ref": "E21",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C46"
+    },
+    {
+      "ref": "E22",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C47"
+    },
+    {
+      "ref": "E23",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C48"
+    },
+    {
+      "ref": "E24",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C49"
+    },
+    {
+      "ref": "E25",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C50"
+    },
+    {
+      "ref": "C47",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I114"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 127,
+  "formula_refs_by_sheet": {
+    "Assumptions": [
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25"
+    ],
+    "Entity Master": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C87",
+      "D87",
+      "E87",
+      "F87",
+      "G87",
+      "H87"
+    ],
+    "SAM Build": [
+      "C7",
+      "D7",
+      "E7",
+      "C8",
+      "D8",
+      "E8",
+      "C9",
+      "D9",
+      "E9",
+      "C10",
+      "D10",
+      "E10",
+      "C11",
+      "D11",
+      "E11",
+      "C53",
+      "D53",
+      "C54",
+      "D54",
+      "C55",
+      "D55",
+      "C56",
+      "D56",
+      "C57",
+      "D57",
+      "C58",
+      "D58",
+      "C59",
+      "D59",
+      "C60",
+      "D60",
+      "C69",
+      "D69",
+      "C70",
+      "D70",
+      "C71",
+      "D71",
+      "C72",
+      "D72",
+      "C73",
+      "D73",
+      "C84",
+      "D84",
+      "E84",
+      "F84",
+      "G84",
+      "H84",
+      "C85",
+      "D85",
+      "E85",
+      "F85",
+      "G85",
+      "H85",
+      "C86",
+      "D86",
+      "E86",
+      "F86",
+      "G86",
+      "H86",
+      "C87",
+      "D87",
+      "E87",
+      "F87",
+      "G87",
+      "H87",
+      "C88",
+      "D88",
+      "E88",
+      "F88",
+      "G88",
+      "H88"
+    ],
+    "Scenarios": [
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C84",
+      "D84",
+      "E84",
+      "F84",
+      "G84",
+      "H84",
+      "C85",
+      "D85",
+      "E85",
+      "F85",
+      "G85",
+      "H85",
+      "C86",
+      "D86",
+      "E86",
+      "F86",
+      "G86",
+      "H86",
+      "C88",
+      "D88",
+      "E88",
+      "F88",
+      "G88",
+      "H88"
+    ],
+    "TAM Build": [
+      "C47",
+      "E69",
+      "E70",
+      "E71",
+      "E72",
+      "E73",
+      "C84",
+      "D84",
+      "E84",
+      "F84",
+      "G84",
+      "H84",
+      "C85",
+      "D85",
+      "E85",
+      "F85",
+      "G85",
+      "H85",
+      "C86",
+      "D86",
+      "E86",
+      "F86",
+      "G86",
+      "H86",
+      "C87",
+      "D87",
+      "E87",
+      "F87",
+      "G87",
+      "H87",
+      "C88",
+      "D88",
+      "E88",
+      "F88",
+      "G88",
+      "H88"
+    ]
+  },
+  "tables": [],
+  "defined_names": {
+    "broad_sam_annual": "'SAM Build'!$E$73",
+    "broad_sam_cumulative": "'SAM Build'!$C$73",
+    "sam_broad": "'SAM Build'!$C$73"
+  }
+}

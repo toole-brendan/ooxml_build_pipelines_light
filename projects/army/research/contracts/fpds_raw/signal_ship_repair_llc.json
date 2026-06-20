@@ -1,0 +1,2919 @@
+{
+  "recipient_name": "SIGNAL SHIP REPAIR, LLC",
+  "recipient_uei": "LLBTKUG2P5S7",
+  "query": "VENDOR_UEI:\"LLBTKUG2P5S7\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 6,
+  "distinct_piids": 2,
+  "sum_obligated_amount": 1094330.44,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912P815C0029",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P815C0029",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": 347515.44,
+      "total_obligated": 921346.44,
+      "base_and_exercised": 347515.44,
+      "base_and_all_options": 347515.44,
+      "total_base_and_all_options": 921346.44,
+      "signed_date": "2015-06-01 00:00:00",
+      "effective_date": "2015-05-22 00:00:00",
+      "current_completion_date": "2015-06-12 00:00:00",
+      "ultimate_completion_date": "2015-06-12 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST NEW ORLEANS",
+      "contracting_office_id": "W912P8",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W07V ENDIST NEW ORLEANS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "X1ED",
+      "psc_desc": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "EMERGENCY REPAIR TO THE DREDGE WHEELER--ADDITIONAL WORK\n\nIGF::OT::IGF FOR OTHER FUNCTIONS",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P815C0029",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-06-01 00:00:00",
+          "effectiveDate": "2015-05-22 00:00:00",
+          "currentCompletionDate": "2015-06-12 00:00:00",
+          "ultimateCompletionDate": "2015-06-12 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "347515.44",
+          "baseAndExercisedOptionsValue": "347515.44",
+          "baseAndAllOptionsValue": "347515.44"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "921346.44",
+          "totalBaseAndExercisedOptionsValue": "921346.44",
+          "totalBaseAndAllOptionsValue": "921346.44"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "@country": "USA",
+            "#text": "W912P8"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "#text": "W912P8"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "EMERGENCY REPAIR TO THE DREDGE WHEELER--ADDITIONAL WORK\n\nIGF::OT::IGF FOR OTHER FUNCTIONS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+            "@productOrServiceType": "SERVICE",
+            "#text": "X1ED"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "TIMOTHY.BLACK.W912P8@MVN02.USACE.ARMY.MIL",
+          "createdDate": "2015-06-01 09:41:41",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-10-03 09:50:41",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "TIMOTHY.BLACK.W912P8@MVN02.USACE.ARMY.MIL",
+          "approvedDate": "2015-06-01 09:41:47",
+          "closedBy": "VERONICA.GARNER.W912P8@USACE.ARMY.MIL",
+          "closedDate": "2015-08-19 16:31:54",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P815C0029",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P815C0029",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": -100300.0,
+      "total_obligated": 921346.44,
+      "base_and_exercised": -100300.0,
+      "base_and_all_options": -100300.0,
+      "total_base_and_all_options": 921346.44,
+      "signed_date": "2015-08-19 00:00:00",
+      "effective_date": "2015-08-19 00:00:00",
+      "current_completion_date": "2015-06-12 00:00:00",
+      "ultimate_completion_date": "2015-06-12 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST NEW ORLEANS",
+      "contracting_office_id": "W912P8",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W07V ENDIST NEW ORLEANS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "X1ED",
+      "psc_desc": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "EMERGENCY REPAIR TO THE DREDGE WHEELER'S; IGF::OT::IGF FOR OTHER FUNCTIONS",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P815C0029",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-08-19 00:00:00",
+          "effectiveDate": "2015-08-19 00:00:00",
+          "currentCompletionDate": "2015-06-12 00:00:00",
+          "ultimateCompletionDate": "2015-06-12 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "-100300.00",
+          "baseAndExercisedOptionsValue": "-100300.00",
+          "baseAndAllOptionsValue": "-100300.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "921346.44",
+          "totalBaseAndExercisedOptionsValue": "921346.44",
+          "totalBaseAndAllOptionsValue": "921346.44"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "@country": "USA",
+            "#text": "W912P8"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "#text": "W912P8"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CLOSE OUT",
+            "#text": "K"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "EMERGENCY REPAIR TO THE DREDGE WHEELER'S; IGF::OT::IGF FOR OTHER FUNCTIONS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+            "@productOrServiceType": "SERVICE",
+            "#text": "X1ED"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "VERONICA.GARNER.W912P8@USACE.ARMY.MIL",
+          "createdDate": "2015-08-19 16:31:50",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-10-03 09:50:41",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "VERONICA.GARNER.W912P8@USACE.ARMY.MIL",
+          "approvedDate": "2015-08-19 16:31:54",
+          "closedBy": "VERONICA.GARNER.W912P8@USACE.ARMY.MIL",
+          "closedDate": "2015-08-19 16:31:54",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P815C0029",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P815C0029",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": 674131.0,
+      "total_obligated": 921346.44,
+      "base_and_exercised": 674131.0,
+      "base_and_all_options": 674131.0,
+      "total_base_and_all_options": 921346.44,
+      "signed_date": "2015-05-06 00:00:00",
+      "effective_date": "2015-05-05 00:00:00",
+      "current_completion_date": "2015-05-22 00:00:00",
+      "ultimate_completion_date": "2015-05-22 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST NEW ORLEANS",
+      "contracting_office_id": "W912P8",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W07V ENDIST NEW ORLEANS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "X1ED",
+      "psc_desc": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "EMERGENCY REPAIR TO THE DREDGE WHEELER IGF::OT::IGF",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P815C0029",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-05-06 00:00:00",
+          "effectiveDate": "2015-05-05 00:00:00",
+          "currentCompletionDate": "2015-05-22 00:00:00",
+          "ultimateCompletionDate": "2015-05-22 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "674131.00",
+          "baseAndExercisedOptionsValue": "674131.00",
+          "baseAndAllOptionsValue": "674131.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "921346.44",
+          "totalBaseAndExercisedOptionsValue": "921346.44",
+          "totalBaseAndAllOptionsValue": "921346.44"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "@country": "USA",
+            "#text": "W912P8"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W07V ENDIST NEW ORLEANS",
+            "#text": "W912P8"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "EMERGENCY REPAIR TO THE DREDGE WHEELER IGF::OT::IGF",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "LEASE/RENTAL OF SHIP CONSTRUCTION AND REPAIR FACILITIES",
+            "@productOrServiceType": "SERVICE",
+            "#text": "X1ED"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "W912P8.LAUREN.A.GANDOLFI",
+          "createdDate": "2015-05-05 15:16:45",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-10-03 09:50:41",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "TIMOTHY.BLACK.W912P8@MVN02.USACE.ARMY.MIL",
+          "approvedDate": "2015-05-06 12:35:50",
+          "closedBy": "VERONICA.GARNER.W912P8@USACE.ARMY.MIL",
+          "closedDate": "2015-08-19 16:31:54",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912EE15P0052",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EE15P0052",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": 41613.0,
+      "total_obligated": 172984.0,
+      "base_and_exercised": 41613.0,
+      "base_and_all_options": 41613.0,
+      "total_base_and_all_options": 172984.0,
+      "signed_date": "2015-07-08 00:00:00",
+      "effective_date": "2015-07-07 00:00:00",
+      "current_completion_date": "2015-07-16 00:00:00",
+      "ultimate_completion_date": "2015-07-16 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST VICKSBURG",
+      "contracting_office_id": "W912EE",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2R9 ENDIST VICKSBURG CW",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EE15P0052",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-07-08 00:00:00",
+          "effectiveDate": "2015-07-07 00:00:00",
+          "currentCompletionDate": "2015-07-16 00:00:00",
+          "ultimateCompletionDate": "2015-07-16 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "41613.00",
+          "baseAndExercisedOptionsValue": "41613.00",
+          "baseAndAllOptionsValue": "41613.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "172984.00",
+          "totalBaseAndExercisedOptionsValue": "172984.00",
+          "totalBaseAndAllOptionsValue": "172984.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST VICKSBURG",
+            "@country": "USA",
+            "#text": "W912EE"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2R9 ENDIST VICKSBURG CW",
+            "#text": "W807PM"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912EE15T0024",
+          "descriptionOfContractRequirement": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "ECONOMY ACT",
+            "#text": "A"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ROBIN.L.GREEN.W912EE@USACE.ARMY.MIL",
+          "createdDate": "2015-07-08 12:47:46",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-05-29 13:50:13",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ROBIN.L.GREEN.W912EE@USACE.ARMY.MIL",
+          "approvedDate": "2015-07-08 12:47:48",
+          "closedBy": "FPDS_CLOSEOUT",
+          "closedDate": "2019-07-06 20:07:14",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912EE15P0052",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EE15P0052",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": 122016.0,
+      "total_obligated": 172984.0,
+      "base_and_exercised": 122016.0,
+      "base_and_all_options": 122016.0,
+      "total_base_and_all_options": 172984.0,
+      "signed_date": "2015-06-15 00:00:00",
+      "effective_date": "2015-06-15 00:00:00",
+      "current_completion_date": "2015-07-17 00:00:00",
+      "ultimate_completion_date": "2015-07-17 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST VICKSBURG",
+      "contracting_office_id": "W912EE",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2R9 ENDIST VICKSBURG CW",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EE15P0052",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-06-15 00:00:00",
+          "effectiveDate": "2015-06-15 00:00:00",
+          "currentCompletionDate": "2015-07-17 00:00:00",
+          "ultimateCompletionDate": "2015-07-17 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "122016.00",
+          "baseAndExercisedOptionsValue": "122016.00",
+          "baseAndAllOptionsValue": "122016.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "172984.00",
+          "totalBaseAndExercisedOptionsValue": "172984.00",
+          "totalBaseAndAllOptionsValue": "172984.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST VICKSBURG",
+            "@country": "USA",
+            "#text": "W912EE"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2R9 ENDIST VICKSBURG CW",
+            "#text": "W807PM"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912EE15T0024",
+          "descriptionOfContractRequirement": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "SCOTT.L.BROWN.W912EE@MVK02.USACE.ARMY.MIL",
+          "createdDate": "2015-06-11 14:50:14",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-05-29 13:50:13",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "MICHELLE.D.KELLEY.W912EE@USACE.ARMY.MIL",
+          "approvedDate": "2015-06-15 12:06:58",
+          "closedBy": "FPDS_CLOSEOUT",
+          "closedDate": "2019-07-06 20:07:14",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912EE15P0052",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EE15P0052",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "SIGNAL SHIP REPAIR, LLC",
+      "vendor_uei": "LLBTKUG2P5S7",
+      "this_obligated": 9355.0,
+      "total_obligated": 172984.0,
+      "base_and_exercised": 9355.0,
+      "base_and_all_options": 9355.0,
+      "total_base_and_all_options": 172984.0,
+      "signed_date": "2015-06-30 00:00:00",
+      "effective_date": "2015-06-26 00:00:00",
+      "current_completion_date": "2015-07-17 00:00:00",
+      "ultimate_completion_date": "2015-07-17 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W07V ENDIST VICKSBURG",
+      "contracting_office_id": "W912EE",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2R9 ENDIST VICKSBURG CW",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EE15P0052",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-06-30 00:00:00",
+          "effectiveDate": "2015-06-26 00:00:00",
+          "currentCompletionDate": "2015-07-17 00:00:00",
+          "ultimateCompletionDate": "2015-07-17 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "9355.00",
+          "baseAndExercisedOptionsValue": "9355.00",
+          "baseAndAllOptionsValue": "9355.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "172984.00",
+          "totalBaseAndExercisedOptionsValue": "172984.00",
+          "totalBaseAndAllOptionsValue": "172984.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W07V ENDIST VICKSBURG",
+            "@country": "USA",
+            "#text": "W912EE"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2R9 ENDIST VICKSBURG CW",
+            "#text": "W807PM"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912EE15T0024",
+          "descriptionOfContractRequirement": "IGF::OT::IGF   B4R058C     M/V BENYAURD DRY DOCKING AND REPAIRS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "SIGNAL SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "OTHER"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "601 S ROYAL ST",
+              "city": "MOBILE",
+              "state": {
+                "@name": "ALABAMA",
+                "#text": "AL"
+              },
+              "ZIPCode": {
+                "@city": "MOBILE",
+                "#text": "366032114"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2285491816",
+              "faxNo": "2285491538",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "36603",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LLBTKUG2P5S7",
+                "UEILegalBusinessName": "SIGNAL SHIP REPAIR, LLC",
+                "ultimateParentUEI": "MAEPW39Z9A66",
+                "ultimateParentUEIName": "Signal International  Inc."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2010-02-09 00:00:00",
+              "renewalDate": "2015-07-29 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "ALABAMA",
+              "#text": "AL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "MOBILE",
+            "@city": "MOBILE",
+            "#text": "366010454"
+          },
+          "placeOfPerformanceCongressionalDistrict": "01"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ROBIN.L.GREEN.W912EE@USACE.ARMY.MIL",
+          "createdDate": "2015-06-30 11:30:27",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-05-29 13:50:13",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ROBIN.L.GREEN.W912EE@USACE.ARMY.MIL",
+          "approvedDate": "2015-06-30 11:30:30",
+          "closedBy": "FPDS_CLOSEOUT",
+          "closedDate": "2019-07-06 20:07:14",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LLBTKUG2P5S7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

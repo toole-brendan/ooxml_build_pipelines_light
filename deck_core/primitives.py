@@ -1,0 +1,917 @@
+"""Minimal OOXML primitives — self-contained string builders, shared by all decks.
+
+Public surface:
+    - slide(shapes_xml)                — wrap shape XML in <p:sld> boilerplate
+    - cover_layout(title, subtitle=…)  — cover slide composition (slideLayout1)
+    - section_divider_layout(section)  — divider slide composition (slideLayout2)
+
+The standalone page_number() builder was removed: body slides (slideLayout4)
+auto-number from the base layout. section_divider_layout keeps its OPTIONAL
+page-counter block because dividers (slideLayout2) do not auto-number.
+
+Body builders and the content-slide chrome now live here as importable
+functions (run / paragraph / text_box / table / house_table / connector / picture; the
+breadcrumb / title_placeholder / prelim_chip / sources_line chrome pieces),
+with the design tokens in deck_core.style. They are conveniences, not a
+cage: a slide may still compose raw OOXML directly, or mix raw strings with
+these builders, whenever that reads better.
+"""
+from __future__ import annotations
+from xml.sax.saxutils import escape as _xml_escape
+
+from deck_core.ooxml import XML_DECL, NS
+from deck_core.style import (
+    SLIDE_W, SLIDE_H, LEFT_MARGIN,
+    DK, WHITE, BREADCRUMB, BLACK, PRELIM, LNSPC_BODY, FONT, DENSE_BODY_10PT,
+    BLUE_5, GRAY_1,
+    SZ_BREADCRUMB, SZ_SLIDE_TITLE, SZ_PRELIM, SZ_SOURCES,
+    BREADCRUMB_X, BREADCRUMB_Y, BREADCRUMB_CX, BREADCRUMB_CY,
+    TITLE_X, TITLE_Y, TITLE_CX, TITLE_CY,
+    PRELIM_X, PRELIM_Y, PRELIM_CX, PRELIM_CY,
+    SOURCES_X, SOURCES_Y, SOURCES_CX, SOURCES_CY,
+    SP_ID_BREADCRUMB, SP_ID_TITLE, SP_ID_PRELIM, SP_ID_SOURCES,
+)
+
+
+# ── Private constants ─────────────────────────────────────────────────
+# Canvas (SLIDE_W/SLIDE_H), margin (LEFT_MARGIN), the XML decl, and the slide
+# namespace string are imported from deck_core.style / deck_core.ooxml above
+# (single source of truth — no per-module copies).
+
+_SZ_COVER_TITLE = 2800       # 28pt
+_SZ_COVER_SUBTITLE = 2000    # 20pt
+_SZ_DIVIDER_TITLE = 2800
+_SZ_DIVIDER_SUBTITLE = 2000
+
+_C_DK1 = "162029"
+
+# Sentinel default for text_box(line_color=...): resolve from fill (house rule:
+# a filled shape gets a black border unless the caller opts out).
+_AUTO = object()
+
+
+# ── Public API ─────────────────────────────────────────────────────────
+
+
+def slide(shapes_xml: str, *, ext_lst: str = "") -> str:
+    """Wrap shape XML in the full <p:sld> boilerplate.
+
+    Returns the complete slide XML body that build() packs as
+    ppt/slides/slideN.xml. `shapes_xml` is the concatenated output of
+    whatever <p:sp> / <p:pic> / <p:graphicFrame> / <p:cxnSp> elements
+    the slide contains; the caller is responsible for producing them.
+    """
+    return (
+        f'{XML_DECL}\n'
+        f'<p:sld {NS}>'
+        f'<p:cSld><p:spTree>'
+        f'<p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>'
+        f'<p:grpSpPr><a:xfrm>'
+        f'<a:off x="0" y="0"/><a:ext cx="0" cy="0"/>'
+        f'<a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/>'
+        f'</a:xfrm></p:grpSpPr>'
+        f'{shapes_xml}'
+        f'</p:spTree>{ext_lst}</p:cSld>'
+        f'<p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>'
+        f'</p:sld>'
+    )
+
+
+def cover_layout(title: str, subtitle: str | None = None, *,
+                 footer: str | None = None) -> str:
+    """Cover (deck-title) slide composition.
+
+    Binds to the Saronic Cover layout (slideLayout1). The slide module
+    MUST declare `LAYOUT = "slideLayout1"` at module scope so build()
+    points the slide's rels at the Cover layout.
+
+    Placeholder mapping (positioning inherited from slideLayout1):
+        body idx=12  → title (28pt) on line 1; subtitle (20pt italic)
+                       on line 2 inside the same placeholder.
+        title (idx=) → small footer/date line at the bottom.
+    """
+    title_text = _xml_escape(title)
+    paragraphs = (
+        f'<a:p>'
+        f'<a:pPr><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+        f'<a:r>'
+        f'<a:rPr lang="en-US" sz="{_SZ_COVER_TITLE}" kern="1200" dirty="0"/>'
+        f'<a:t>{title_text}</a:t>'
+        f'</a:r>'
+        f'</a:p>'
+    )
+    if subtitle:
+        subtitle_text = _xml_escape(subtitle)
+        paragraphs += (
+            f'<a:p>'
+            f'<a:pPr><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+            f'<a:r>'
+            f'<a:rPr lang="en-US" sz="{_SZ_COVER_SUBTITLE}" i="1" kern="1200" dirty="0"/>'
+            f'<a:t>{subtitle_text}</a:t>'
+            f'</a:r>'
+            f'</a:p>'
+        )
+
+    big_title_sp = (
+        f'<p:sp>'
+        f'<p:nvSpPr>'
+        f'<p:cNvPr id="100" name="CoverTitle"/>'
+        f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+        f'<p:nvPr><p:ph type="body" sz="quarter" idx="12"/></p:nvPr>'
+        f'</p:nvSpPr>'
+        # Override the layout placeholder geometry. The inherited width
+        # (cx=7_776_399) wraps a multi-word title, so widen to the full content
+        # width. Top-anchor (anchor="t") and pin the block low (y=4_140_000,
+        # ~where the bottom-anchored 2-line cover used to sit) so a subtitle that
+        # wraps to a 2nd line grows DOWNWARD instead of pushing the title up.
+        f'<p:spPr>'
+        f'<a:xfrm><a:off x="453080" y="4140000"/>'
+        f'<a:ext cx="11285842" cy="2162129"/></a:xfrm>'
+        f'</p:spPr>'
+        f'<p:txBody>'
+        f'<a:bodyPr anchor="t"/>'
+        f'<a:lstStyle/>'
+        f'{paragraphs}'
+        f'</p:txBody>'
+        f'</p:sp>'
+    )
+
+    if footer:
+        footer_text = _xml_escape(footer)
+        footer_sp = (
+            f'<p:sp>'
+            f'<p:nvSpPr>'
+            f'<p:cNvPr id="101" name="CoverFooter"/>'
+            f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+            f'<p:nvPr><p:ph type="title"/></p:nvPr>'
+            f'</p:nvSpPr>'
+            f'<p:spPr/>'
+            f'<p:txBody>'
+            f'<a:bodyPr/>'
+            f'<a:lstStyle/>'
+            f'<a:p>'
+            f'<a:pPr><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+            f'<a:r>'
+            f'<a:rPr lang="en-US" kern="1200" dirty="0"/>'
+            f'<a:t>{footer_text}</a:t>'
+            f'</a:r>'
+            f'</a:p>'
+            f'</p:txBody>'
+            f'</p:sp>'
+        )
+        return big_title_sp + footer_sp
+    return big_title_sp
+
+
+def section_divider_layout(section: str, subtitle: str | None = None, *,
+                           page_num: int | None = None,
+                           total_pages: int | None = None) -> str:
+    """Section-divider (transition) slide composition.
+
+    Binds to the Saronic Section Divider layout (slideLayout2). The
+    slide module MUST declare `LAYOUT = "slideLayout2"` at module
+    scope so build() points the slide's rels at the divider layout.
+
+    Placeholder mapping: the section name (line 1, 28pt) and subtitle (line 2,
+    20pt italic) share ONE placeholder (body idx=11 — the slideLayout2 analog of
+    the cover's idx=12: sz=3600, bottom-anchored), overridden to the cover's
+    geometry so the two lines land exactly where cover_layout's title/subtitle do
+    (off 453080/3260838, full content width 11285842, inherited bottom anchor).
+
+    If `page_num` and `total_pages` are both passed, an explicit page
+    counter is rendered at the bottom-right (dividers do not auto-number,
+    so this optional override is kept).
+    """
+    section_text = _xml_escape(section)
+    # Title (line 1) + subtitle (line 2) share ONE top-anchored placeholder,
+    # exactly like cover_layout, so the two lines land where the cover's do and a
+    # wrapping subtitle grows downward rather than pushing the title up.
+    paragraphs = (
+        f'<a:p>'
+        f'<a:pPr><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+        f'<a:r>'
+        f'<a:rPr lang="en-US" sz="{_SZ_DIVIDER_TITLE}" kern="1200" dirty="0"/>'
+        f'<a:t>{section_text}</a:t>'
+        f'</a:r>'
+        f'</a:p>'
+    )
+    if subtitle:
+        subtitle_text = _xml_escape(subtitle)
+        paragraphs += (
+            f'<a:p>'
+            f'<a:pPr><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+            f'<a:r>'
+            f'<a:rPr lang="en-US" sz="{_SZ_DIVIDER_SUBTITLE}" i="1" kern="1200" dirty="0"/>'
+            f'<a:t>{subtitle_text}</a:t>'
+            f'</a:r>'
+            f'</a:p>'
+        )
+
+    # Override idx=11 to the cover's title-block geometry: full content width,
+    # top-anchored (anchor="t") and pinned low (y=4_140_000) so it matches the
+    # cover and a wrapping subtitle grows downward (mirrors cover_layout).
+    out = (
+        f'<p:sp>'
+        f'<p:nvSpPr>'
+        f'<p:cNvPr id="110" name="DividerTitle"/>'
+        f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+        f'<p:nvPr><p:ph type="body" sz="quarter" idx="11"/></p:nvPr>'
+        f'</p:nvSpPr>'
+        f'<p:spPr>'
+        f'<a:xfrm><a:off x="453080" y="4140000"/>'
+        f'<a:ext cx="11285842" cy="2162129"/></a:xfrm>'
+        f'</p:spPr>'
+        f'<p:txBody>'
+        f'<a:bodyPr anchor="t"/>'
+        f'<a:lstStyle/>'
+        f'{paragraphs}'
+        f'</p:txBody>'
+        f'</p:sp>'
+    )
+
+    if page_num is not None and total_pages is not None:
+        cx = 1_500_000
+        cy = 230_000
+        x = SLIDE_W - LEFT_MARGIN - cx
+        y = SLIDE_H - 290_000
+        pn_text = _xml_escape(f"{page_num} / {total_pages}")
+        out += (
+            f'<p:sp>'
+            f'<p:nvSpPr>'
+            f'<p:cNvPr id="4500" name="PageNumber"/>'
+            f'<p:cNvSpPr txBox="1"/>'
+            f'<p:nvPr/>'
+            f'</p:nvSpPr>'
+            f'<p:spPr>'
+            f'<a:xfrm><a:off x="{x}" y="{y}"/><a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
+            f'<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>'
+            f'<a:noFill/>'
+            f'<a:ln><a:noFill/></a:ln>'
+            f'</p:spPr>'
+            f'<p:txBody>'
+            f'<a:bodyPr wrap="square" anchor="t" lIns="91440" tIns="45720" '
+            f'rIns="91440" bIns="45720"/>'
+            f'<a:lstStyle/>'
+            f'<a:p>'
+            f'<a:pPr algn="r"><a:lnSpc><a:spcPct val="115000"/></a:lnSpc></a:pPr>'
+            f'<a:r>'
+            f'<a:rPr lang="en-US" sz="{SZ_SOURCES}" kern="1200" dirty="0">'
+            f'<a:solidFill><a:srgbClr val="{_C_DK1}"/></a:solidFill>'
+            f'<a:latin typeface="Arial"/><a:ea typeface="Arial"/><a:cs typeface="Arial"/>'
+            f'</a:rPr>'
+            f'<a:t>{pn_text}</a:t>'
+            f'</a:r>'
+            f'</a:p>'
+            f'</p:txBody>'
+            f'</p:sp>'
+        )
+
+    return out
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Shared XML escape
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def esc(s: str) -> str:
+    """XML-escape for element text or attribute values."""
+    return _xml_escape(s, {'"': "&quot;", "'": "&apos;"})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Body builders — text runs / paragraphs / shapes / tables. Slides import these
+# instead of copying from slide_snippets.md. Blue/gray FILLS must use a
+# BLUE_*/GRAY_* token from deck_core.style; line colors are unconstrained.
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def run(text, *, size=None, bold=None, italic=None, color=None, font=None,
+        lang="en-US"):
+    """An <a:r> run. Any attribute left None is omitted from <a:rPr> so the
+    placeholder / layout / master default applies. size is 1/100 pt
+    (DENSE_BODY_10PT=1000 => 10pt, BODY_12PT=1200 => 12pt); color is 6-char
+    hex, "scheme:tx1", or None."""
+    return _emit_run({"text": text, "size": size, "bold": bold, "italic": italic,
+                      "color": color, "font": font, "lang": lang})
+
+
+def paragraph(runs, *, align=None, bullet=False, level=0, space_after=0,
+              mar_l=None, indent=None, line_spacing=LNSPC_BODY):
+    """An <a:p>. `runs` is a list of run() outputs. bullet=True prepends a
+    glyph (auto marL/indent); space_after / line_spacing are pptx units."""
+    if bullet and mar_l is None and indent is None:
+        mar_l = 142875
+        indent = -142875
+    attrs = []
+    if align:
+        attrs.append(f'algn="{align}"')
+    if level:
+        attrs.append(f'lvl="{level}"')
+    if mar_l is not None:
+        attrs.append(f'marL="{mar_l}"')
+    if indent is not None:
+        attrs.append(f'indent="{indent}"')
+    pPr_attrs = (" " + " ".join(attrs)) if attrs else ""
+    # <a:pPr> children in schema order: lnSpc -> spcAft -> buFont/buChar.
+    pPr_children = ""
+    if line_spacing:
+        pPr_children += f'<a:lnSpc><a:spcPct val="{line_spacing}"/></a:lnSpc>'
+    if space_after:
+        pPr_children += f'<a:spcAft><a:spcPts val="{space_after}"/></a:spcAft>'
+    if bullet:
+        pPr_children += ('<a:buFont typeface="Arial" panose="020B0604020202020204" '
+                         'pitchFamily="34" charset="0"/><a:buChar char="•"/>')
+    elif attrs or space_after or line_spacing:
+        pPr_children += '<a:buNone/>'
+    if pPr_children or attrs:
+        ppr = f'<a:pPr{pPr_attrs}>{pPr_children}</a:pPr>'
+    else:
+        ppr = ''
+    body = "".join(runs) if runs else '<a:endParaRPr lang="en-US"/>'
+    return f'<a:p>{ppr}{body}</a:p>'
+
+
+def _prst_avlst_xml(geom_adj=None) -> str:
+    """Adjustment-value list for <a:prstGeom>.
+
+    geom_adj maps adjustment-handle names to values:
+        None / {}            -> <a:avLst/>                       (no handles)
+        {"adj": 42000}       -> <a:gd name="adj" fmla="val 42000"/>
+        {"adj1": "val 6500"} -> formula string used verbatim
+    Ints are wrapped as "val N"; strings are taken as the whole fmla. This lets a
+    caller drive preset-geometry handles (a wedgeRectCallout tail via adj1/adj2,
+    a roundRect corner via adj, ...) instead of the default empty list."""
+    if not geom_adj:
+        return '<a:avLst/>'
+    parts = []
+    for name, val in geom_adj.items():
+        fmla = val if isinstance(val, str) else f"val {int(val)}"
+        parts.append(f'<a:gd name="{esc(str(name))}" fmla="{esc(fmla)}"/>')
+    return '<a:avLst>' + ''.join(parts) + '</a:avLst>'
+
+
+def text_box(sp_id, name, x, y, cx, cy, paragraphs, *, anchor="t",
+             fill=None, line_color=_AUTO, line_width=12700, dashed_line=False,
+             num_cols=1, rot=0, prst="rect", geom_adj=None,
+             l_ins=91440, t_ins=45720, r_ins=91440, b_ins=45720,
+             insets=None, wrap="square", body_attrs_extra="", tx_box=True,
+             placeholder=None):
+    """A <p:sp> with a text body. `paragraphs` is a list of paragraph()
+    strings. fill/line_color are 6-char hex or None; pass an INSETS_* tuple via
+    `insets` or the four *_ins kwargs. Blue/gray fills must be ramp tokens.
+
+    House border rule: a filled shape gets a 1pt black border automatically
+    (line_color defaults to AUTO). Pass line_color="none" for a borderless
+    filled shape, an explicit hex to recolor, or line_width=19050 for a 1.5pt
+    focal border; an unfilled shape stays borderless.
+
+    geom_adj (optional) drives preset-geometry handles for a non-rect `prst` —
+    e.g. prst="wedgeRectCallout" with {"adj1": ..., "adj2": ...} to aim the tail,
+    or a roundRect corner radius. Default None emits an empty <a:avLst/>."""
+    if insets is not None:
+        l_ins, t_ins, r_ins, b_ins = insets
+    if line_color is _AUTO:
+        line_color = BLACK if fill not in (None, "none") else None
+    if fill is None or fill == "none":
+        fill_xml = '<a:noFill/>'
+    else:
+        fill_xml = f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
+    if line_color in (None, "none"):
+        line_xml = '<a:ln><a:noFill/></a:ln>'
+    else:
+        dash = '<a:prstDash val="dash"/>' if dashed_line else ''
+        line_xml = (f'<a:ln w="{line_width}"><a:solidFill>'
+                    f'<a:srgbClr val="{line_color}"/></a:solidFill>{dash}</a:ln>')
+    col_attr = f' numCol="{num_cols}" spcCol="91440"' if num_cols > 1 else ''
+    rot_attr = f' rot="{rot}"' if rot else ""
+    body = "".join(paragraphs)
+    if placeholder is not None:
+        ph_attrs = []
+        if placeholder.get("type"):
+            ph_attrs.append(f'type="{placeholder["type"]}"')
+        if placeholder.get("sz"):
+            ph_attrs.append(f'sz="{placeholder["sz"]}"')
+        if placeholder.get("idx") is not None:
+            ph_attrs.append(f'idx="{placeholder["idx"]}"')
+        nv_pr = f'<p:nvPr><p:ph {" ".join(ph_attrs)}/></p:nvPr>'
+    else:
+        nv_pr = '<p:nvPr/>'
+    cNvSpPr = ('<p:cNvSpPr txBox="1"/>' if tx_box
+               else '<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>')
+    sp_pr = (f'<p:spPr><a:xfrm{rot_attr}><a:off x="{x}" y="{y}"/>'
+             f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
+             f'<a:prstGeom prst="{prst}">{_prst_avlst_xml(geom_adj)}</a:prstGeom>'
+             f'{fill_xml}{line_xml}</p:spPr>')
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'{cNvSpPr}{nv_pr}</p:nvSpPr>{sp_pr}'
+            f'<p:txBody><a:bodyPr wrap="{wrap}" anchor="{anchor}" lIns="{l_ins}" '
+            f'tIns="{t_ins}" rIns="{r_ins}" bIns="{b_ins}"{col_attr}{body_attrs_extra}/>'
+            f'<a:lstStyle/>{body}</p:txBody></p:sp>')
+
+
+def placeholder_sp(sp_id, name, *, ph_type=None, ph_sz=None, ph_idx=None,
+                   geom=None, paragraphs=None, body_pr_xml='<a:bodyPr/>'):
+    """A <p:sp> that binds to a layout placeholder by (type, sz, idx). Pass
+    `geom` (dict x/y/cx/cy) to override the layout's inherited position."""
+    if geom:
+        sp_pr = (f'<p:spPr><a:xfrm><a:off x="{geom["x"]}" y="{geom["y"]}"/>'
+                 f'<a:ext cx="{geom["cx"]}" cy="{geom["cy"]}"/></a:xfrm></p:spPr>')
+    else:
+        sp_pr = '<p:spPr/>'
+    ph_attrs = []
+    if ph_type:
+        ph_attrs.append(f'type="{ph_type}"')
+    if ph_sz:
+        ph_attrs.append(f'sz="{ph_sz}"')
+    if ph_idx is not None:
+        ph_attrs.append(f'idx="{ph_idx}"')
+    ph_xml = f'<p:ph {" ".join(ph_attrs)}/>' if ph_attrs else '<p:ph/>'
+    body = "".join(paragraphs) if paragraphs else ''
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+            f'<p:nvPr>{ph_xml}</p:nvPr></p:nvSpPr>{sp_pr}'
+            f'<p:txBody>{body_pr_xml}<a:lstStyle/>{body}</p:txBody></p:sp>')
+
+
+def picture(sp_id, name, r_embed, x, y, cx, cy):
+    """A <p:pic> image. `r_embed` is the slide-rels rId for the media part. Declare the
+    same rId in the module's IMAGES list ({"rId": r_embed, "file": "<name in ppt/media>"})
+    and build_pptx wires the rel for you. Image rIds continue after chart rIds (no charts
+    -> rId2; one chart -> rId3)."""
+    return (f'<p:pic><p:nvPicPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'<p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr>'
+            f'<p:nvPr/></p:nvPicPr>'
+            f'<p:blipFill><a:blip r:embed="{r_embed}"/>'
+            f'<a:stretch><a:fillRect/></a:stretch></p:blipFill>'
+            f'<p:spPr><a:xfrm><a:off x="{x}" y="{y}"/>'
+            f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
+            f'<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr></p:pic>')
+
+
+def connector(sp_id, name, x, y, cx, cy, *, color=BLACK, dashed=False,
+              width=12700, arrow=False, prst="line"):
+    """Straight / right-angled connector. arrow=True adds a tail arrowhead;
+    width in EMU (12700 = 1pt). color None or "none" => invisible line.
+    Connector lines default to BLACK (target_copy: connector lines are always
+    black; solid or dashed, usually with an arrow at one end).
+
+    DrawingML <a:ext> must be a non-negative size box: a left/up vector
+    (negative cx/cy) is normalized to a positive extent + flipH/flipV with the
+    offset shifted, so callers can pass any signed cx/cy without tripping a
+    PowerPoint "repair" on open."""
+    flip_h = ' flipH="1"' if cx < 0 else ""
+    flip_v = ' flipV="1"' if cy < 0 else ""
+    off_x = x + cx if cx < 0 else x
+    off_y = y + cy if cy < 0 else y
+    dash_xml = '<a:prstDash val="dash"/>' if dashed else ''
+    tail = '<a:tailEnd type="triangle" w="med" len="med"/>' if arrow else ''
+    if color in (None, "none"):
+        ln_fill = '<a:noFill/>'
+    else:
+        ln_fill = f'<a:solidFill><a:srgbClr val="{color}"/></a:solidFill>'
+    return (f'<p:cxnSp><p:nvCxnSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'<p:cNvCxnSpPr/><p:nvPr/></p:nvCxnSpPr>'
+            f'<p:spPr><a:xfrm{flip_h}{flip_v}><a:off x="{off_x}" y="{off_y}"/>'
+            f'<a:ext cx="{abs(cx)}" cy="{abs(cy)}"/></a:xfrm>'
+            f'<a:prstGeom prst="{prst}"><a:avLst/></a:prstGeom>'
+            f'<a:ln w="{width}">{ln_fill}{dash_xml}{tail}</a:ln></p:spPr></p:cxnSp>')
+
+
+# -- Tables (native <a:tbl> via <p:graphicFrame>) -----------------------------
+
+# Built-in "No Style, No Grid" table style — the SAME GUID house_table() uses, so
+# a low-level table() table and a house_table() table share one posture and pick
+# up no theme grid lines on edit / copy / reset. Built-in style GUIDs resolve
+# internally; no tableStyles.xml entry is needed.
+NO_STYLE_NO_GRID = "{2D5ABB26-0587-4C30-8999-92F81FD0307C}"
+
+
+def trun(text, *, size=DENSE_BODY_10PT, bold=None, italic=None, underline=None,
+         color=BLACK, font=FONT):
+    """Run dict for table cells (consumed by tpara / tcell_rich)."""
+    return {"text": text, "size": size, "bold": bold, "italic": italic,
+            "underline": underline, "color": color, "font": font}
+
+
+def tpara(runs, *, align="l"):
+    """Paragraph dict for table cells."""
+    return {"align": align, "runs": runs}
+
+
+def tcell_rich(paragraphs, *, fill=None, grid_span=1, row_span=1, anchor="ctr",
+               l_ins=45720, r_ins=45720, borders=None):
+    """Multi-paragraph table cell. gridSpan/rowSpan filler cells are
+    synthesized by the framework - do not author them. `borders` is keyed by
+    side ("L"/"R"/"T"/"B") -> "none" or {"color": hex, "width": EMU}."""
+    return {"paragraphs": paragraphs, "fill": fill, "gridSpan": grid_span,
+            "rowSpan": row_span, "anchor": anchor,
+            "body_pr": {"lIns": l_ins, "rIns": r_ins}, "borders": borders or {}}
+
+
+def tcell(text, *, fill=None, size=DENSE_BODY_10PT, bold=None, italic=None, color=BLACK,
+          align="l", grid_span=1, row_span=1, anchor="ctr", font=FONT,
+          l_ins=45720, r_ins=45720, borders=None):
+    """Single-paragraph single-run cell - shortcut over tcell_rich()."""
+    return tcell_rich([tpara([trun(text, size=size, bold=bold, italic=italic,
+                                   color=color, font=font)], align=align)],
+                      fill=fill, grid_span=grid_span, row_span=row_span,
+                      anchor=anchor, l_ins=l_ins, r_ins=r_ins, borders=borders)
+
+
+def trow(cells, *, h=274_320):
+    """Row dict for table(). h is row height in EMU (a MINIMUM, not a cap).
+    Default = the readability floor (matches text_metrics.DEFAULT_MIN_ROW_H and
+    house_table's row_h default), so a single-line row clears --table-fit; size a
+    wrapping row up with text_metrics.estimate_row_heights."""
+    return {"h": h, "cells": cells}
+
+
+def table(sp_id, name, x, y, cx, cy, *, col_widths, rows,
+          first_row=True, first_col=True, band_row=False,
+          table_style_id=NO_STYLE_NO_GRID):
+    """Hand-built native <a:tbl> graphic frame. col_widths in EMU summing
+    ~cx; rows is a list of trow() outputs. Cell fills follow the ramp rule.
+
+    Defaults to the "No Style, No Grid" table style (same GUID as
+    house_table()) with firstRow/firstCol semantics on, so explicit per-cell
+    borders are the only edges that show and the table picks up no theme grid
+    lines on edit / copy / reset. Any side a cell does not specify is emitted as
+    an explicit no-fill border (see _emit_cell), so a cell with only a bottom
+    rule is deterministically bottom-rule-only regardless of the table style."""
+    return _emit_table_frame({"id": sp_id, "name": name,
+                              "geom": {"x": x, "y": y, "cx": cx, "cy": cy},
+                              "col_widths": col_widths, "rows": rows,
+                              "first_row": first_row, "first_col": first_col,
+                              "band_row": band_row,
+                              "table_style_id": table_style_id})
+
+
+def house_table(sp_id, name, x, y, col_w, rows, *,
+                row_h=274_320, table_skin="rule",
+                header_fill=None, header_color=None,
+                body_fill=None, body_color=BLACK,
+                aligns=None, anchor="ctr", size=950,
+                cell_fills=None, cell_text_colors=None, cell_bold=None):
+    """House-standard table — the common table path. rows[0] is the header row;
+    col_w is the per-column EMU width (sum = table width).
+
+    Promoted from the old copy-paste table recipe so slides IMPORT the house
+    table instead of copying it. Delegates to table() / trow() / tcell(),
+    so it shares the "No Style, No Grid" style, the deterministic 4-side border
+    posture (a side a cell omits is emitted as an explicit no-fill border — see
+    _emit_cell), and the tcPr-only 45_720 inset model text_metrics assumes. Reach
+    for the low-level table() directly ONLY for merges / row-spans / an unusual
+    structure this does not cover.
+
+    table_skin sets the header treatment: "rule" (default — no header fill, the
+    1.5pt header bottom-rule carries it; chart-side evidence / backup), "dark"
+    (BLUE_5 + white, the ONE primary table on a page), or "light" (GRAY_1 header,
+    dense matrices). header_fill / header_color override the skin (pass both).
+    row_h: one EMU height for every row (a MINIMUM — tables do not autofit and a
+    wrapped cell grows past it), OR a per-row list of len(rows); size content-fit
+    rows with text_metrics.estimate_row_heights(rows, col_w, size_pt=size/100) and
+    pass the list, so the frame cy = sum(row_h) matches the render. aligns:
+    per-column h-align ("l"/"ctr"/"r"); default first column left, rest centered.
+    cell_fills / cell_text_colors / cell_bold: optional {(row, col): value}
+    overrides. Cascading bottom borders: 1.5pt under the header, 1pt under each
+    body row but the last; no vertical rules."""
+    if table_skin == "dark":          # primary / answer table only (sparingly)
+        sk_fill, sk_color = BLUE_5, WHITE
+    elif table_skin == "light":       # dense matrices / crosswalks
+        sk_fill, sk_color = GRAY_1, BLACK
+    elif table_skin == "rule":        # chart-side evidence / backup (default)
+        sk_fill, sk_color = None, BLACK
+    else:
+        raise ValueError("table_skin must be 'rule', 'dark', or 'light'")
+    header_fill = sk_fill if header_fill is None else header_fill
+    header_color = sk_color if header_color is None else header_color
+    n = len(rows)
+    ncol = len(col_w)
+    if aligns is None:
+        aligns = ["l"] + ["ctr"] * (ncol - 1)   # house default: label left, rest centered
+    cell_fills = cell_fills or {}
+    cell_text_colors = cell_text_colors or {}
+    cell_bold = cell_bold or {}
+    heights = [row_h] * n if isinstance(row_h, int) else list(row_h)
+    if len(heights) != n:
+        raise ValueError(f"row_h list has {len(heights)} heights but {n} rows")
+
+    built_rows = []
+    for ri, row in enumerate(rows):
+        hdr = ri == 0
+        last = ri == n - 1
+        # Cascading bottom rule; L/R/T are left unset so the engine emits them as
+        # explicit no-fill borders (deterministic regardless of the table style).
+        if hdr:
+            border = {"B": {"color": BLACK, "width": 19_050}}
+        elif not last:
+            border = {"B": {"color": BLACK, "width": 12_700}}
+        else:
+            border = {"B": "none"}
+        cells = []
+        for ci, text in enumerate(row):
+            cells.append(tcell(
+                text,
+                fill=(header_fill if hdr else cell_fills.get((ri, ci), body_fill)),
+                color=(header_color if hdr else cell_text_colors.get((ri, ci), body_color)),
+                bold=(hdr or ci == 0 or cell_bold.get((ri, ci), False)),
+                size=size, align=aligns[ci], anchor=anchor, borders=border))
+        built_rows.append(trow(cells, h=heights[ri]))
+
+    return table(sp_id, name, x, y, sum(col_w), sum(heights),
+                 col_widths=col_w, rows=built_rows)
+
+
+_HMERGE_FILLER = ('<a:tc hMerge="1"><a:txBody><a:bodyPr/><a:lstStyle/>'
+                  '<a:p><a:endParaRPr lang="en-US"/></a:p></a:txBody><a:tcPr/></a:tc>')
+_VMERGE_FILLER = ('<a:tc vMerge="1"><a:txBody><a:bodyPr/><a:lstStyle/>'
+                  '<a:p><a:endParaRPr lang="en-US"/></a:p></a:txBody><a:tcPr/></a:tc>')
+_VHMERGE_FILLER = ('<a:tc vMerge="1" hMerge="1"><a:txBody><a:bodyPr/><a:lstStyle/>'
+                   '<a:p><a:endParaRPr lang="en-US"/></a:p></a:txBody><a:tcPr/></a:tc>')
+
+
+def _emit_cell(cell):
+    paragraphs = cell.get("paragraphs", [])
+    body_pr = cell.get("body_pr", {})
+    fill = cell.get("fill")
+    borders = cell.get("borders", {}) or {}
+    anchor = cell.get("anchor", "ctr")
+    # Cell text inset lives in tcPr (marL/marR/marT/marB) ONLY — not duplicated
+    # on bodyPr, or PowerPoint can honor both and double the padding. These
+    # match text_metrics.DEFAULT_CELL_INSET_* so row-height estimates agree.
+    CELL_INSET_V = 45720
+    CELL_INSET_H = 45720
+    lIns = body_pr.get("lIns") if body_pr.get("lIns") is not None else CELL_INSET_H
+    rIns = body_pr.get("rIns") if body_pr.get("rIns") is not None else CELL_INSET_H
+    bp_attrs = []
+    if body_pr.get("wrap"):
+        bp_attrs.append(f'wrap="{body_pr["wrap"]}"')
+    bp_attrs.append(f'anchor="{anchor}"')
+    bp_attr_str = " " + " ".join(bp_attrs)
+    para_xml = ("".join(_emit_paragraph(p) for p in paragraphs)
+                or '<a:p><a:endParaRPr lang="en-US"/></a:p>')
+    # Emit ALL four sides explicitly: a side the caller omits becomes an explicit
+    # no-fill border, so a cell with only a bottom rule is deterministic
+    # regardless of the table style PowerPoint applies on edit / copy / reset.
+    border_xml = ""
+    for side in ("L", "R", "T", "B"):
+        spec = borders.get(side)
+        if spec is None or spec == "none":
+            border_xml += f'<a:ln{side}><a:noFill/></a:ln{side}>'
+        else:
+            bcolor = spec.get("color")
+            bwidth = spec.get("width", 0)
+            attr_w = f' w="{bwidth}"' if bwidth else ''
+            if bcolor and bcolor != "none":
+                border_xml += (f'<a:ln{side}{attr_w} cap="flat" cmpd="sng" algn="ctr">'
+                               f'<a:solidFill><a:srgbClr val="{bcolor}"/></a:solidFill>'
+                               f'<a:prstDash val="solid"/></a:ln{side}>')
+            else:
+                border_xml += f'<a:ln{side}{attr_w}><a:noFill/></a:ln{side}>'
+    fill_xml = (f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
+                if fill and fill != "none" else '<a:noFill/>')
+    tcPr = (f'<a:tcPr marL="{lIns}" marR="{rIns}" marT="{CELL_INSET_V}" '
+            f'marB="{CELL_INSET_V}" anchor="{anchor}">{border_xml}{fill_xml}</a:tcPr>')
+    span_attrs = ""
+    if cell.get("gridSpan", 1) > 1:
+        span_attrs += f' gridSpan="{cell["gridSpan"]}"'
+    if cell.get("rowSpan", 1) > 1:
+        span_attrs += f' rowSpan="{cell["rowSpan"]}"'
+    if cell.get("hMerge"):
+        span_attrs += ' hMerge="1"'
+    if cell.get("vMerge"):
+        span_attrs += ' vMerge="1"'
+    return (f'<a:tc{span_attrs}><a:txBody><a:bodyPr{bp_attr_str}/>'
+            f'<a:lstStyle/>{para_xml}</a:txBody>{tcPr}</a:tc>')
+
+
+def _emit_paragraph(p):
+    align = p.get("align")
+    level = p.get("level", 0)
+    marL = p.get("marL")
+    indent = p.get("indent")
+    space_after = p.get("space_after")
+    bullet = p.get("bullet")
+    bullet_char = p.get("bullet_char")
+    line_spacing = p.get("line_spacing", LNSPC_BODY)
+    attrs = []
+    if align:
+        attrs.append(f'algn="{align}"')
+    if level:
+        attrs.append(f'lvl="{level}"')
+    if marL is not None:
+        attrs.append(f'marL="{marL}"')
+    if indent is not None:
+        attrs.append(f'indent="{indent}"')
+    pPr_inner = ""
+    if line_spacing:
+        pPr_inner += f'<a:lnSpc><a:spcPct val="{line_spacing}"/></a:lnSpc>'
+    if space_after:
+        pPr_inner += f'<a:spcAft><a:spcPts val="{space_after}"/></a:spcAft>'
+    if bullet:
+        if bullet_char and bullet_char != "auto":
+            pPr_inner += ('<a:buFont typeface="Arial" panose="020B0604020202020204" '
+                          'pitchFamily="34" charset="0"/>'
+                          f'<a:buChar char="{esc(bullet_char)}"/>')
+        else:
+            pPr_inner += '<a:buAutoNum type="arabicPeriod"/>'
+    if attrs or pPr_inner:
+        attr_s = (" " + " ".join(attrs)) if attrs else ""
+        ppr = f'<a:pPr{attr_s}>{pPr_inner}</a:pPr>'
+    else:
+        ppr = ''
+    rxml = ("".join(_emit_run(r) for r in p.get("runs", []))
+            or '<a:endParaRPr lang="en-US"/>')
+    return f'<a:p>{ppr}{rxml}</a:p>'
+
+
+def _emit_run(r):
+    text = r.get("text", "")
+    size = r.get("size")
+    bold = r.get("bold")
+    italic = r.get("italic")
+    underline = r.get("underline")
+    color = r.get("color")
+    font = r.get("font")
+    lang = r.get("lang") or "en-US"
+    rpr_attrs = [f'lang="{lang}"']
+    if size is not None:
+        rpr_attrs.append(f'sz="{size}"')
+    if bold is not None:
+        rpr_attrs.append(f'b="{1 if bold else 0}"')
+    if italic is not None:
+        rpr_attrs.append(f'i="{1 if italic else 0}"')
+    if underline:
+        rpr_attrs.append('u="sng"')
+    rpr_attr_str = " " + " ".join(rpr_attrs)
+    rpr_children = ""
+    if color is not None:
+        if color.startswith("scheme:"):
+            rpr_children += (f'<a:solidFill><a:schemeClr '
+                             f'val="{color[len("scheme:"):]}"/></a:solidFill>')
+        elif color != "none":
+            rpr_children += f'<a:solidFill><a:srgbClr val="{color}"/></a:solidFill>'
+    if font is not None:
+        rpr_children += (f'<a:latin typeface="{font}"/><a:ea typeface="{font}"/>'
+                         f'<a:cs typeface="{font}"/>')
+    if rpr_children:
+        rpr = f'<a:rPr{rpr_attr_str} dirty="0">{rpr_children}</a:rPr>'
+    else:
+        rpr = f'<a:rPr{rpr_attr_str}/>'
+    return f'<a:r>{rpr}<a:t>{esc(text)}</a:t></a:r>'
+
+
+def _emit_table_frame(entry):
+    geom = entry["geom"]
+    rows = entry.get("rows", [])
+    col_widths = entry.get("col_widths", [])
+    sp_id = entry["id"]
+    name = entry["name"] or "Table"
+    first_row = entry.get("first_row", True)
+    first_col = entry.get("first_col", True)
+    band_row = entry.get("band_row", False)
+    style_id = entry.get("table_style_id", NO_STYLE_NO_GRID)
+    grid = "".join(f'<a:gridCol w="{w}"/>' for w in col_widths)
+    n_cols = len(col_widths)
+    # vMerge bookkeeping per grid column (counts down each row; the _h_filler
+    # flag marks columns also under a horizontal span, so the filler gets both).
+    active_vmerge = [0] * n_cols
+    vmerge_is_h_filler = [False] * n_cols
+    tr_xml = []
+    for row_idx, row in enumerate(rows):
+        src_cells = row.get("cells", [])
+        cells_xml_parts = []
+        col = 0
+        src_idx = 0
+        while col < n_cols:
+            if active_vmerge[col] > 0:
+                cells_xml_parts.append(
+                    _VHMERGE_FILLER if vmerge_is_h_filler[col] else _VMERGE_FILLER)
+                active_vmerge[col] -= 1
+                col += 1
+                continue
+            if src_idx >= len(src_cells):
+                raise ValueError(f"table row {row_idx}: ran out of source cells at "
+                                 f"column {col} (grid has {n_cols} columns)")
+            c = src_cells[src_idx]
+            src_idx += 1
+            gs = c.get("gridSpan", 1)
+            rs = c.get("rowSpan", 1)
+            # Validate the span BEFORE emitting any cell/filler XML, and guard
+            # the column overrun for horizontal merges too (not only rowSpan>1):
+            # a pure horizontal over-merge would otherwise append too many filler
+            # cells and push `col` past the grid silently.
+            if gs < 1 or rs < 1:
+                raise ValueError(f"table row {row_idx}: cell at column {col} has "
+                                 f"gridSpan={gs}, rowSpan={rs}; both must be >= 1")
+            if col + gs > n_cols:
+                raise ValueError(f"table row {row_idx}: cell at column {col} "
+                                 f"gridSpan={gs} extends past column count {n_cols}")
+            cells_xml_parts.append(_emit_cell(c))
+            if gs > 1:
+                cells_xml_parts.extend([_HMERGE_FILLER] * (gs - 1))
+            if rs > 1:
+                active_vmerge[col] = rs - 1
+                vmerge_is_h_filler[col] = False
+                for k in range(1, gs):
+                    active_vmerge[col + k] = rs - 1
+                    vmerge_is_h_filler[col + k] = True
+            col += gs
+        if src_idx != len(src_cells):
+            raise ValueError(f"table row {row_idx}: {len(src_cells) - src_idx} extra "
+                             f"source cell(s) after grid was filled")
+        tr_xml.append(f'<a:tr h="{row.get("h", 0)}">{"".join(cells_xml_parts)}</a:tr>')
+    if any(v != 0 for v in active_vmerge):
+        raise ValueError(f"table: rowSpan extends past last row ({active_vmerge})")
+    rows_xml = "".join(tr_xml)
+    return (f'<p:graphicFrame><p:nvGraphicFramePr>'
+            f'<p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'<p:cNvGraphicFramePr><a:graphicFrameLocks noGrp="1"/></p:cNvGraphicFramePr>'
+            f'<p:nvPr/></p:nvGraphicFramePr>'
+            f'<p:xfrm><a:off x="{geom["x"]}" y="{geom["y"]}"/>'
+            f'<a:ext cx="{geom["cx"]}" cy="{geom["cy"]}"/></p:xfrm>'
+            f'<a:graphic>'
+            f'<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/table">'
+            f'<a:tbl><a:tblPr firstRow="{1 if first_row else 0}" '
+            f'firstCol="{1 if first_col else 0}" '
+            f'bandRow="{1 if band_row else 0}">'
+            f'<a:tableStyleId>{style_id}</a:tableStyleId>'
+            f'</a:tblPr><a:tblGrid>{grid}</a:tblGrid>{rows_xml}'
+            f'</a:tbl></a:graphicData></a:graphic></p:graphicFrame>')
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Content-slide chrome — reproduces the locked chrome the template used to
+# inline (breadcrumb / Preliminary chip / title / sources). Geometry, ids, and
+# sizes come from deck_core.style; only the TEXT changes per slide.
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+def _chrome_run(text, *, size, bold=False, color=DK):
+    """Locked chrome run: Arial, kern=1200, explicit size + color. Body text
+    uses run(); chrome uses this so the staples stay byte-stable."""
+    b = ' b="1"' if bold else ""
+    return (f'<a:r><a:rPr lang="en-US" sz="{size}"{b} kern="1200" dirty="0">'
+            f'<a:solidFill><a:srgbClr val="{color}"/></a:solidFill>'
+            f'<a:latin typeface="Arial"/><a:ea typeface="Arial"/><a:cs typeface="Arial"/>'
+            f'</a:rPr><a:t>{esc(text)}</a:t></a:r>')
+
+
+def breadcrumb(section, topic_label, *, sp_id=SP_ID_BREADCRUMB):
+    """Top strip bound to slideLayout4 body placeholder idx=10: bold {Section}
+    + non-bold " / {Topic Label}", Arial 10pt, breadcrumb color."""
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="Breadcrumb"/>'
+            f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+            f'<p:nvPr><p:ph type="body" sz="quarter" idx="10"/></p:nvPr></p:nvSpPr>'
+            f'<p:spPr><a:xfrm><a:off x="{BREADCRUMB_X}" y="{BREADCRUMB_Y}"/>'
+            f'<a:ext cx="{BREADCRUMB_CX}" cy="{BREADCRUMB_CY}"/></a:xfrm></p:spPr>'
+            f'<p:txBody><a:bodyPr/><a:lstStyle/><a:p>'
+            + _chrome_run(section, size=SZ_BREADCRUMB, bold=True, color=BREADCRUMB)
+            + _chrome_run(f" / {topic_label}", size=SZ_BREADCRUMB, color=BREADCRUMB)
+            + '</a:p></p:txBody></p:sp>')
+
+
+def title_placeholder(topic, takeaway, *, sp_id=SP_ID_TITLE):
+    """Slide title bound to the layout title placeholder: single run
+    "{Topic} | {Finding}", Arial 20pt, dark."""
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="Title"/>'
+            f'<p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>'
+            f'<p:nvPr><p:ph type="title"/></p:nvPr></p:nvSpPr>'
+            f'<p:spPr><a:xfrm><a:off x="{TITLE_X}" y="{TITLE_Y}"/>'
+            f'<a:ext cx="{TITLE_CX}" cy="{TITLE_CY}"/></a:xfrm></p:spPr>'
+            f'<p:txBody><a:bodyPr rIns="0"/><a:lstStyle/><a:p>'
+            + _chrome_run(f"{topic} | {takeaway}", size=SZ_SLIDE_TITLE, color=DK)
+            + '</a:p></p:txBody></p:sp>')
+
+
+def prelim_chip(*, sp_id=SP_ID_PRELIM, text="Preliminary"):
+    """Top-right draft chip: draft-yellow fill, 1.5pt black border, 12pt bold.
+    Required on every body slide; exempt on cover / divider."""
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="PrelimChip"/>'
+            f'<p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr>'
+            f'<p:spPr><a:xfrm><a:off x="{PRELIM_X}" y="{PRELIM_Y}"/>'
+            f'<a:ext cx="{PRELIM_CX}" cy="{PRELIM_CY}"/></a:xfrm>'
+            f'<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>'
+            f'<a:solidFill><a:srgbClr val="{PRELIM}"/></a:solidFill>'
+            f'<a:ln w="19050"><a:solidFill><a:srgbClr val="{BLACK}"/></a:solidFill></a:ln></p:spPr>'
+            f'<p:txBody><a:bodyPr wrap="square" anchor="ctr" lIns="45720" tIns="9144" '
+            f'rIns="45720" bIns="9144"/><a:lstStyle/><a:p><a:pPr algn="ctr"/>'
+            + _chrome_run(text, size=SZ_PRELIM, bold=True, color=BLACK)
+            + '</a:p></p:txBody></p:sp>')
+
+
+def sources_line(text, *, sp_id=SP_ID_SOURCES, y=SOURCES_Y):
+    """Bottom strip: "Sources: ...; ..." (semicolon-separated, no parenthetical
+    numbering; a Note line may be combined via a pipe), Arial 8pt, top-anchored.
+    Pass y to lift it above content that reaches the default band."""
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="Sources"/>'
+            f'<p:cNvSpPr txBox="1"/><p:nvPr/></p:nvSpPr>'
+            f'<p:spPr><a:xfrm><a:off x="{SOURCES_X}" y="{y}"/>'
+            f'<a:ext cx="{SOURCES_CX}" cy="{SOURCES_CY}"/></a:xfrm>'
+            f'<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>'
+            f'<a:noFill/><a:ln><a:noFill/></a:ln></p:spPr>'
+            f'<p:txBody><a:bodyPr wrap="square" anchor="t" lIns="91440" tIns="45720" '
+            f'rIns="91440" bIns="45720"/><a:lstStyle/><a:p>'
+            + _chrome_run(text, size=SZ_SOURCES, color=DK)
+            + '</a:p></p:txBody></p:sp>')

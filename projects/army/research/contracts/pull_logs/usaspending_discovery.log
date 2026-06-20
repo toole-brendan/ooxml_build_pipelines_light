@@ -1,0 +1,118 @@
+=== USAspending discovery 2026-06-20 16:25:28
+time_period=[{'start_date': '2015-01-01', 'end_date': '2026-12-31'}]
+
+# KEYWORD axis (agency-unrestricted, post-filtered to Army+USACE)
+  - keyword: 'maneuver support vessel'
+      [contract] 3 records
+      [idv] 0 records
+  - keyword: 'army watercraft'
+      [contract] 33 records
+      [idv] 1 records
+  - keyword: 'watercraft extended service'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'modernized integrated bridge system'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'harbormaster command and control'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'landing craft utility'
+      [contract] 47 records
+      [idv] 2 records
+  - keyword: 'logistic support vessel'
+      [contract] 24 records
+      [idv] 0 records
+  - keyword: 'maneuver support vessel light'
+      [contract] 3 records
+      [idv] 0 records
+  - keyword: 'modular causeway'
+      [contract] 5 records
+      [idv] 0 records
+  - keyword: 'lighterage'
+      [contract] 17 records
+      [idv] 2 records
+  - keyword: 'marine oriented logistics'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'unmanned surface vessel'
+      [contract] 47 records
+      [idv] 0 records
+  - keyword: 'autonomous surface vessel'
+      [contract] 3 records
+      [idv] 0 records
+  - keyword: 'uncrewed surface vessel'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'optionally manned surface'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'robotic surface vessel'
+      [contract] 0 records
+      [idv] 0 records
+
+# NAICS/PSC axis (Army-subtier-scoped so the 1500 cap applies WITHIN Army)
+  - naics:336611
+      [contract] 1500 records
+      [idv] 132 records
+  - naics:336612
+      [contract] 471 records
+      [idv] 3 records
+  - psc:1905
+      [contract] 200 records
+      [idv] 0 records
+  - psc:1925
+      [contract] 80 records
+      [idv] 0 records
+  - psc:1940
+      [contract] 301 records
+      [idv] 2 records
+  - psc:1990
+      [contract] 128 records
+      [idv] 0 records
+  - psc:2090
+      [contract] 367 records
+      [idv] 3 records
+
+=== consolidated: 2677 unique awards; 2595 in-scope (Army+USACE), 82 out-of-scope.
+
+Top awarding sub-agencies seen (calibration):
+   3287  Department of the Army
+     50  Department of the Navy
+     19  Defense Logistics Agency
+      4  Defense Contract Management Agency
+      3  Department of the Air Force
+      3  Defense Information Systems Agency
+      2  Office of the Assistant Secretary for Administration
+      2  National Oceanic and Atmospheric Administration
+      1  Immediate Office of the Secretary of Transportation
+      1  Defense Advanced Research Projects Agency
+      1  U.S. Geological Survey
+      1  Bureau of Ocean Energy Management
+
+Top 25 in-scope awards by amount:
+  $    258.5M  W912BU23C0020       EASTERN SHIPBUILDING GROUP, INC.  Department of the Army        naics:336611
+  $    140.8M  W56HZV14C0015       BIRDON AMERICA INC                Department of the Army        naics:336612; psc:1940
+  $     97.2M  0001                VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     68.6M  W911S014C0004       HEAVY ENGINEERING INDUSTRIES AND  Department of the Army        naics:336611; psc:1905
+  $     66.0M  W56HZV22F0057       BIRDON AMERICA INC                Department of the Army        naics:336612; psc:1940
+  $     63.7M  W56HZV21F0381       VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     61.7M  W56HZV21F0040       BIRDON AMERICA INC                Department of the Army        naics:336612; psc:1940
+  $     61.5M  W56HZV23F0479       VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     60.7M  W912CH24F0171       VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     59.9M  W912CH24F0172       VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     59.6M  W912CH25F0041       VIGOR WORKS LLC                   Department of the Army        naics:336611; psc:1990
+  $     55.1M  W56HZV22FL181       BAY SHIP & YACHT CO               Department of the Army        keyword; naics:336611
+  $     49.8M  W912BU24C0046       GUNDERSON MARINE LLC              Department of the Army        naics:336611
+  $     47.8M  W52P1J09C0049       MAERSK LINE, LIMITED              Department of the Army        naics:336611
+  $     46.4M  W56HZV20F0083       BIRDON AMERICA INC                Department of the Army        naics:336612; psc:1940
+  $     45.8M  W912BU25CA018       CONRAD SHIPYARD, L.L.C            Department of the Army        naics:336611
+  $     41.5M  W56HZV21FL147       BAY SHIP & YACHT CO               Department of the Army        keyword; naics:336611
+  $     41.0M  W56HZV23FL163       YOKOHAMA ENGINEERING WORKS, LTD.  Department of the Army        naics:336611
+  $     39.2M  W912P824C0031       ALABAMA SHIPYARD LLC              Department of the Army        naics:336611
+  $     38.1M  W912BU19C0042       THOMA-SEA MARINE CONSTRUCTORS, L  Department of the Army        naics:336611
+  $     37.7M  W56HZV20FL171       BAY SHIP & YACHT CO               Department of the Army        naics:336611
+  $     30.3M  0001                SERCO INC                         Department of the Army        keyword; naics:336611
+  $     30.0M  W912BU25C0001       SUPERIOR MARINE WAYS, INC         Department of the Army        naics:336611; psc:1925
+  $     29.1M  W56HZV21C0130       GENERAL DYNAMICS EUROPEAN LAND S  Department of the Army        naics:336612
+  $     28.0M  W912CH24F0063       BIRDON AMERICA INC                Department of the Army        naics:336612

@@ -1,0 +1,173 @@
+# sheet_probe: Scenarios
+
+- source: `file`
+- tab name: `Scenarios`
+- tab color: `FFB8860B`
+- gridlines shown: `0`
+- columns: 7 · rows: 28 · cells: 114 · formulas: 6
+
+## Banners
+- `B2` S_TITLE_SHEET — Scenarios
+- `B4` S_TITLE_SECTION — §1 - Scenario matrix (1 = scenario targets this bucket)
+- `B16` S_TITLE_SECTION — §2 - Scenario definitions
+- `B26` S_TITLE_SECTION — §3 - Selected scenario
+- `B32` S_TITLE_SECTION — §4 - Bucket count by scenario
+
+## Native tables
+- `tbl_ddg_scenarios` ref `B6:G13` [Bucket, Metal components, HM&E components, Electrical / power, Modular assemblies, Broad component mfg] style WorkbookCore_NoFormatTable
+
+## Formula dependencies (referenced sheet → cells)
+- **Assumptions** (1): C29
+
+## Hardcoded inputs (35)
+- `C7` S_NUM_INPUT = 1
+- `D7` S_NUM_INPUT = 0
+- `E7` S_NUM_INPUT = 0
+- `F7` S_NUM_INPUT = 0
+- `G7` S_NUM_INPUT = 1
+- `C8` S_NUM_INPUT = 1
+- `D8` S_NUM_INPUT = 1
+- `E8` S_NUM_INPUT = 0
+- `F8` S_NUM_INPUT = 0
+- `G8` S_NUM_INPUT = 1
+- `C9` S_NUM_INPUT = 1
+- `D9` S_NUM_INPUT = 0
+- `E9` S_NUM_INPUT = 0
+- `F9` S_NUM_INPUT = 0
+- `G9` S_NUM_INPUT = 1
+- `C10` S_NUM_INPUT = 0
+- `D10` S_NUM_INPUT = 1
+- `E10` S_NUM_INPUT = 0
+- `F10` S_NUM_INPUT = 0
+- `G10` S_NUM_INPUT = 1
+- `C11` S_NUM_INPUT = 0
+- `D11` S_NUM_INPUT = 1
+- `E11` S_NUM_INPUT = 1
+- `F11` S_NUM_INPUT = 0
+- `G11` S_NUM_INPUT = 1
+- `C12` S_NUM_INPUT = 0
+- `D12` S_NUM_INPUT = 1
+- `E12` S_NUM_INPUT = 0
+- `F12` S_NUM_INPUT = 0
+- `G12` S_NUM_INPUT = 1
+- `C13` S_NUM_INPUT = 0
+- `D13` S_NUM_INPUT = 0
+- `E13` S_NUM_INPUT = 0
+- `F13` S_NUM_INPUT = 0
+- `G13` S_NUM_INPUT = 1
+
+## Cells
+- `B2` S_TITLE_SHEET: Scenarios
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Scenario matrix (1 = scenario targets this bucket)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Bucket
+- `C6` S_HEADER_CENTER: Metal components
+- `D6` S_HEADER_CENTER: HM&E components
+- `E6` S_HEADER_CENTER: Electrical / power
+- `F6` S_HEADER_CENTER: Modular assemblies
+- `G6` S_HEADER_CENTER: Broad component mfg
+- `B7` S_DEFAULT: Structural fabrication & modules
+- `C7` S_NUM_INPUT: 1
+- `D7` S_NUM_INPUT: 0
+- `E7` S_NUM_INPUT: 0
+- `F7` S_NUM_INPUT: 0
+- `G7` S_NUM_INPUT: 1
+- `B8` S_DEFAULT: Machining / mechanical / propulsion
+- `C8` S_NUM_INPUT: 1
+- `D8` S_NUM_INPUT: 1
+- `E8` S_NUM_INPUT: 0
+- `F8` S_NUM_INPUT: 0
+- `G8` S_NUM_INPUT: 1
+- `B9` S_DEFAULT: Castings & forgings
+- `C9` S_NUM_INPUT: 1
+- `D9` S_NUM_INPUT: 0
+- `E9` S_NUM_INPUT: 0
+- `F9` S_NUM_INPUT: 0
+- `G9` S_NUM_INPUT: 1
+- `B10` S_DEFAULT: Piping / fluid handling
+- `C10` S_NUM_INPUT: 0
+- `D10` S_NUM_INPUT: 1
+- `E10` S_NUM_INPUT: 0
+- `F10` S_NUM_INPUT: 0
+- `G10` S_NUM_INPUT: 1
+- `B11` S_DEFAULT: Electrical power / distribution / generation
+- `C11` S_NUM_INPUT: 0
+- `D11` S_NUM_INPUT: 1
+- `E11` S_NUM_INPUT: 1
+- `F11` S_NUM_INPUT: 0
+- `G11` S_NUM_INPUT: 1
+- `B12` S_DEFAULT: HVAC / ventilation / chilled water
+- `C12` S_NUM_INPUT: 0
+- `D12` S_NUM_INPUT: 1
+- `E12` S_NUM_INPUT: 0
+- `F12` S_NUM_INPUT: 0
+- `G12` S_NUM_INPUT: 1
+- `B13` S_DEFAULT: Coatings / insulation / decking
+- `C13` S_NUM_INPUT: 0
+- `D13` S_NUM_INPUT: 0
+- `E13` S_NUM_INPUT: 0
+- `F13` S_NUM_INPUT: 0
+- `G13` S_NUM_INPUT: 1
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SECTION: §2 - Scenario definitions
+- `C16` S_TITLE_SECTION: 
+- `D16` S_TITLE_SECTION: 
+- `E16` S_TITLE_SECTION: 
+- `F16` S_TITLE_SECTION: 
+- `G16` S_TITLE_SECTION: 
+- `B18` S_HEADER_LEFT: Scenario
+- `C18` S_HEADER_LEFT: Definition
+- `D18` S_HEADER_LEFT: 
+- `E18` S_HEADER_LEFT: 
+- `F18` S_HEADER_LEFT: 
+- `B19` S_BOLD: Metal components
+- `C19` S_DEFAULT: structural fab, castings/forgings, and machined components
+- `B20` S_BOLD: HM&E components
+- `C20` S_DEFAULT: hull/mechanical/electrical: piping/valves/pumps, HVAC, machining, ship power
+- `B21` S_BOLD: Electrical / power
+- `C21` S_DEFAULT: electrical power / distribution / generation only
+- `B22` S_BOLD: Modular assemblies
+- `C22` S_DEFAULT: entity-flagged modular-assembly suppliers (registry flag, not a bucket union)
+- `B23` S_BOLD: Broad component mfg
+- `C23` S_DEFAULT: all seven work-type buckets
+- `A26` S_DEFAULT: x
+- `B26` S_TITLE_SECTION: §3 - Selected scenario
+- `C26` S_TITLE_SECTION: 
+- `D26` S_TITLE_SECTION: 
+- `E26` S_TITLE_SECTION: 
+- `F26` S_TITLE_SECTION: 
+- `G26` S_TITLE_SECTION: 
+- `B28` S_HEADER_LEFT: Field
+- `C28` S_HEADER_LEFT: Value
+- `B29` S_DEFAULT: Selected SAM scenario
+- `C29` S_DEFAULT: ='Assumptions'!C11
+- `A32` S_DEFAULT: x
+- `B32` S_TITLE_SECTION: §4 - Bucket count by scenario
+- `C32` S_TITLE_SECTION: 
+- `D32` S_TITLE_SECTION: 
+- `E32` S_TITLE_SECTION: 
+- `F32` S_TITLE_SECTION: 
+- `G32` S_TITLE_SECTION: 
+- `B34` S_HEADER_LEFT: Scenario
+- `C34` S_HEADER_CENTER: # buckets
+- `D34` S_HEADER_LEFT: 
+- `B35` S_DEFAULT: Metal components
+- `C35` S_DEFAULT: =SUM(C7:C13)
+- `B36` S_DEFAULT: HM&E components
+- `C36` S_DEFAULT: =SUM(D7:D13)
+- `B37` S_DEFAULT: Electrical / power
+- `C37` S_DEFAULT: =SUM(E7:E13)
+- `B38` S_DEFAULT: Modular assemblies
+- `C38` S_DEFAULT: =SUM(F7:F13)
+- `B39` S_DEFAULT: Broad component mfg
+- `C39` S_DEFAULT: =SUM(G7:G13)

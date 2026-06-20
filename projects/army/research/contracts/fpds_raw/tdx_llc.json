@@ -1,0 +1,2557 @@
+{
+  "recipient_name": "TDX LLC",
+  "recipient_uei": "P8L4B3DSAKP3",
+  "query": "VENDOR_UEI:\"P8L4B3DSAKP3\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 5,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 2500084.69,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W911QY25FA099",
+      "referenced_idv_piid": "47QRCA25DSB02",
+      "full_piid": "47QRCA25DSB02/W911QY25FA099",
+      "mod_number": "P00004",
+      "transaction_number": "0",
+      "vendor_name": "TDX LLC",
+      "vendor_uei": "P8L4B3DSAKP3",
+      "this_obligated": 135053.91,
+      "total_obligated": 4370668.27,
+      "base_and_exercised": 135053.91,
+      "base_and_all_options": 1514549.79,
+      "total_base_and_all_options": 14912706.91,
+      "signed_date": "2026-03-03 00:00:00",
+      "effective_date": "2025-08-19 00:00:00",
+      "current_completion_date": "2030-09-18 00:00:00",
+      "ultimate_completion_date": "2031-08-18 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-APG NATICK",
+      "contracting_office_id": "W911QY",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W6DZ CPE CBRND STAFFORD",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "18",
+      "description": "PROFESSIONAL SERVICES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W911QY25FA099",
+            "modNumber": "P00004",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DSB02",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2026-03-03 00:00:00",
+          "effectiveDate": "2025-08-19 00:00:00",
+          "currentCompletionDate": "2030-09-18 00:00:00",
+          "ultimateCompletionDate": "2031-08-18 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "135053.91",
+          "baseAndExercisedOptionsValue": "135053.91",
+          "baseAndAllOptionsValue": "1514549.79"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "4370668.27",
+          "totalBaseAndExercisedOptionsValue": "4911000.23",
+          "totalBaseAndAllOptionsValue": "14912706.91"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-APG NATICK",
+            "@country": "USA",
+            "#text": "W911QY"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W6DZ CPE CBRND STAFFORD",
+            "#text": "W56SQD"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "PROFESSIONAL SERVICES",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- PROFESSIONAL: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R499"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "TDX LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "true",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "true",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "true",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "true",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "215 W WASHINGTON ST",
+              "city": "CHARLES TOWN",
+              "state": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "ZIPCode": {
+                "@city": "CHARLES TOWN",
+                "#text": "254141531"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9794461067",
+              "congressionalDistrictCode": "05",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "25414",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "P8L4B3DSAKP3",
+                "UEILegalBusinessName": "TDX LLC",
+                "ultimateParentUEI": "P8L4B3DSAKP3",
+                "ultimateParentUEIName": "TDX SOLUTIONS LLC"
+              },
+              "cageCode": "9HNM0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-03-09 00:00:00",
+              "renewalDate": "2025-01-23 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WEST VIRGINIA",
+              "#text": "WV"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "CHARLES TOWN",
+            "#text": "254141531"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "COMPETITIVE SET ASIDE",
+            "#text": "CSA"
+          },
+          "idvNumberOfOffersReceived": "999",
+          "numberOfOffersReceived": "18",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "DAN.L.ADAMS2.CIV.W911QY@ARMY.MIL",
+          "createdDate": "2026-03-03 14:53:43",
+          "lastModifiedBy": "DAN.L.ADAMS2.CIV.W911QY@ARMY.MIL",
+          "lastModifiedDate": "2026-03-03 14:53:44",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "DAN.L.ADAMS2.CIV.W911QY@ARMY.MIL",
+          "approvedDate": "2026-03-03 14:53:44",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-03-11 00:00:00",
+            "genericString02": "P8L4B3DSAKP3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "true",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W911QY25FA099",
+      "referenced_idv_piid": "47QRCA25DSB02",
+      "full_piid": "47QRCA25DSB02/W911QY25FA099",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "TDX LLC",
+      "vendor_uei": "P8L4B3DSAKP3",
+      "this_obligated": 419267.82,
+      "total_obligated": 4370668.27,
+      "base_and_exercised": 2299910.78,
+      "base_and_all_options": 13238037.12,
+      "total_base_and_all_options": 14912706.91,
+      "signed_date": "2025-07-15 00:00:00",
+      "effective_date": "2025-08-19 00:00:00",
+      "current_completion_date": "2030-09-18 00:00:00",
+      "ultimate_completion_date": "2031-08-18 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-APG NATICK",
+      "contracting_office_id": "W911QY",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W6DZ CPE CBRND STAFFORD",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "18",
+      "description": "PROFESSIONAL SERVICES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W911QY25FA099",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DSB02",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-07-15 00:00:00",
+          "effectiveDate": "2025-08-19 00:00:00",
+          "currentCompletionDate": "2030-09-18 00:00:00",
+          "ultimateCompletionDate": "2031-08-18 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "419267.82",
+          "baseAndExercisedOptionsValue": "2299910.78",
+          "baseAndAllOptionsValue": "13238037.12"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "4370668.27",
+          "totalBaseAndExercisedOptionsValue": "4911000.23",
+          "totalBaseAndAllOptionsValue": "14912706.91"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-APG NATICK",
+            "@country": "USA",
+            "#text": "W911QY"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W6DZ CPE CBRND STAFFORD",
+            "#text": "W56SQD"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "PROFESSIONAL SERVICES",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- PROFESSIONAL: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R499"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "TDX LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "true",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "true",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "true",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "true",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "215 W WASHINGTON ST",
+              "city": "CHARLES TOWN",
+              "state": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "ZIPCode": {
+                "@city": "CHARLES TOWN",
+                "#text": "254141531"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9794461067",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "25414",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "P8L4B3DSAKP3",
+                "UEILegalBusinessName": "TDX LLC",
+                "ultimateParentUEI": "P8L4B3DSAKP3",
+                "ultimateParentUEIName": "TDX LLC"
+              },
+              "cageCode": "9HNM0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-03-09 00:00:00",
+              "renewalDate": "2025-01-23 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WEST VIRGINIA",
+              "#text": "WV"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "CHARLES TOWN",
+            "#text": "254141531"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "COMPETITIVE SET ASIDE",
+            "#text": "CSA"
+          },
+          "idvNumberOfOffersReceived": "999",
+          "numberOfOffersReceived": "18",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "CLAIRE.K.CHOI.CIV@ACWS",
+          "createdDate": "2025-07-15 10:56:41",
+          "lastModifiedBy": "ANDREW.J.RICHARD12.CIV@ACWS",
+          "lastModifiedDate": "2025-07-16 16:32:23",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ANDREW.J.RICHARD12.CIV@ACWS",
+          "approvedDate": "2025-07-16 16:32:23",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-03-11 00:00:00",
+            "genericString02": "P8L4B3DSAKP3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "true",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W911QY25FA099",
+      "referenced_idv_piid": "47QRCA25DSB02",
+      "full_piid": "47QRCA25DSB02/W911QY25FA099",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "TDX LLC",
+      "vendor_uei": "P8L4B3DSAKP3",
+      "this_obligated": 694110.96,
+      "total_obligated": 4370668.27,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 14912706.91,
+      "signed_date": "2025-08-12 00:00:00",
+      "effective_date": "2025-08-19 00:00:00",
+      "current_completion_date": "2030-09-18 00:00:00",
+      "ultimate_completion_date": "2031-08-18 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-APG NATICK",
+      "contracting_office_id": "W911QY",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W6DZ CPE CBRND STAFFORD",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "18",
+      "description": "PROFESSIONAL SERVICES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W911QY25FA099",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DSB02",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-08-12 00:00:00",
+          "effectiveDate": "2025-08-19 00:00:00",
+          "currentCompletionDate": "2030-09-18 00:00:00",
+          "ultimateCompletionDate": "2031-08-18 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "694110.96",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "4370668.27",
+          "totalBaseAndExercisedOptionsValue": "4911000.23",
+          "totalBaseAndAllOptionsValue": "14912706.91"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-APG NATICK",
+            "@country": "USA",
+            "#text": "W911QY"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W6DZ CPE CBRND STAFFORD",
+            "#text": "W56SQD"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "FUNDING ONLY ACTION",
+            "#text": "C"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "PROFESSIONAL SERVICES",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- PROFESSIONAL: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R499"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "TDX LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "true",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "true",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "true",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "true",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "215 W WASHINGTON ST",
+              "city": "CHARLES TOWN",
+              "state": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "ZIPCode": {
+                "@city": "CHARLES TOWN",
+                "#text": "254141531"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9794461067",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "25414",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "P8L4B3DSAKP3",
+                "UEILegalBusinessName": "TDX LLC",
+                "ultimateParentUEI": "P8L4B3DSAKP3",
+                "ultimateParentUEIName": "TDX LLC"
+              },
+              "cageCode": "9HNM0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-03-09 00:00:00",
+              "renewalDate": "2025-01-23 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WEST VIRGINIA",
+              "#text": "WV"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "CHARLES TOWN",
+            "#text": "254141531"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "COMPETITIVE SET ASIDE",
+            "#text": "CSA"
+          },
+          "idvNumberOfOffersReceived": "999",
+          "numberOfOffersReceived": "18",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ELIZABETH.M.NORDELL.CIV@ACWS",
+          "createdDate": "2025-08-12 06:11:35",
+          "lastModifiedBy": "ELIZABETH.M.NORDELL.CIV@ACWS",
+          "lastModifiedDate": "2025-08-12 06:11:36",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ELIZABETH.M.NORDELL.CIV@ACWS",
+          "approvedDate": "2025-08-12 06:11:36",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-03-11 00:00:00",
+            "genericString02": "P8L4B3DSAKP3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "true",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W911QY25FA099",
+      "referenced_idv_piid": "47QRCA25DSB02",
+      "full_piid": "47QRCA25DSB02/W911QY25FA099",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "TDX LLC",
+      "vendor_uei": "P8L4B3DSAKP3",
+      "this_obligated": 1178757.38,
+      "total_obligated": 4370668.27,
+      "base_and_exercised": 65120.0,
+      "base_and_all_options": 65120.0,
+      "total_base_and_all_options": 14912706.91,
+      "signed_date": "2025-07-17 00:00:00",
+      "effective_date": "2025-08-19 00:00:00",
+      "current_completion_date": "2030-09-18 00:00:00",
+      "ultimate_completion_date": "2031-08-18 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-APG NATICK",
+      "contracting_office_id": "W911QY",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W6DZ CPE CBRND STAFFORD",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "18",
+      "description": "PROFESSIONAL SERVICES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W911QY25FA099",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DSB02",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-07-17 00:00:00",
+          "effectiveDate": "2025-08-19 00:00:00",
+          "currentCompletionDate": "2030-09-18 00:00:00",
+          "ultimateCompletionDate": "2031-08-18 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1178757.38",
+          "baseAndExercisedOptionsValue": "65120.00",
+          "baseAndAllOptionsValue": "65120.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "4370668.27",
+          "totalBaseAndExercisedOptionsValue": "4911000.23",
+          "totalBaseAndAllOptionsValue": "14912706.91"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-APG NATICK",
+            "@country": "USA",
+            "#text": "W911QY"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W6DZ CPE CBRND STAFFORD",
+            "#text": "W56SQD"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "FUNDING ONLY ACTION",
+            "#text": "C"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "PROFESSIONAL SERVICES",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- PROFESSIONAL: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R499"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "TDX LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "true",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "true",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "true",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "true",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "215 W WASHINGTON ST",
+              "city": "CHARLES TOWN",
+              "state": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "ZIPCode": {
+                "@city": "CHARLES TOWN",
+                "#text": "254141531"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9794461067",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "25414",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "P8L4B3DSAKP3",
+                "UEILegalBusinessName": "TDX LLC",
+                "ultimateParentUEI": "P8L4B3DSAKP3",
+                "ultimateParentUEIName": "TDX LLC"
+              },
+              "cageCode": "9HNM0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-03-09 00:00:00",
+              "renewalDate": "2025-01-23 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WEST VIRGINIA",
+              "#text": "WV"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "CHARLES TOWN",
+            "#text": "254141531"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "COMPETITIVE SET ASIDE",
+            "#text": "CSA"
+          },
+          "idvNumberOfOffersReceived": "999",
+          "numberOfOffersReceived": "18",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "createdDate": "2025-07-17 17:10:04",
+          "lastModifiedBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "lastModifiedDate": "2025-07-17 17:10:05",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "approvedDate": "2025-07-17 17:10:05",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-03-11 00:00:00",
+            "genericString02": "P8L4B3DSAKP3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "true",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W911QY25FA099",
+      "referenced_idv_piid": "47QRCA25DSB02",
+      "full_piid": "47QRCA25DSB02/W911QY25FA099",
+      "mod_number": "P00003",
+      "transaction_number": "0",
+      "vendor_name": "TDX LLC",
+      "vendor_uei": "P8L4B3DSAKP3",
+      "this_obligated": 72894.62,
+      "total_obligated": 4370668.27,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 14912706.91,
+      "signed_date": "2025-11-26 00:00:00",
+      "effective_date": "2025-08-19 00:00:00",
+      "current_completion_date": "2030-09-18 00:00:00",
+      "ultimate_completion_date": "2031-08-18 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-APG NATICK",
+      "contracting_office_id": "W911QY",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W6DZ CPE CBRND STAFFORD",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R499",
+      "psc_desc": "SUPPORT- PROFESSIONAL: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "18",
+      "description": "PROFESSIONAL SERVICES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W911QY25FA099",
+            "modNumber": "P00003",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DSB02",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-11-26 00:00:00",
+          "effectiveDate": "2025-08-19 00:00:00",
+          "currentCompletionDate": "2030-09-18 00:00:00",
+          "ultimateCompletionDate": "2031-08-18 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "72894.62",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "4370668.27",
+          "totalBaseAndExercisedOptionsValue": "4911000.23",
+          "totalBaseAndAllOptionsValue": "14912706.91"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-APG NATICK",
+            "@country": "USA",
+            "#text": "W911QY"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W6DZ CPE CBRND STAFFORD",
+            "#text": "W56SQD"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "FUNDING ONLY ACTION",
+            "#text": "C"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "PROFESSIONAL SERVICES",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- PROFESSIONAL: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R499"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "TDX LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "true",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "true",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "true",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "true",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "215 W WASHINGTON ST",
+              "city": "CHARLES TOWN",
+              "state": {
+                "@name": "WEST VIRGINIA",
+                "#text": "WV"
+              },
+              "ZIPCode": {
+                "@city": "CHARLES TOWN",
+                "#text": "254141531"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9794461067",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "25414",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "P8L4B3DSAKP3",
+                "UEILegalBusinessName": "TDX LLC",
+                "ultimateParentUEI": "P8L4B3DSAKP3",
+                "ultimateParentUEIName": "TDX LLC"
+              },
+              "cageCode": "9HNM0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-03-09 00:00:00",
+              "renewalDate": "2025-01-23 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WEST VIRGINIA",
+              "#text": "WV"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "CHARLES TOWN",
+            "#text": "254141531"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "COMPETITIVE SET ASIDE",
+            "#text": "CSA"
+          },
+          "idvNumberOfOffersReceived": "999",
+          "numberOfOffersReceived": "18",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "createdDate": "2025-11-26 13:46:05",
+          "lastModifiedBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "lastModifiedDate": "2025-11-26 13:46:06",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "PETER.W.STAHLEY.CIV@ACWS",
+          "approvedDate": "2025-11-26 13:46:06",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-03-11 00:00:00",
+            "genericString02": "P8L4B3DSAKP3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "true",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    }
+  ]
+}

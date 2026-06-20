@@ -1,0 +1,570 @@
+# sheet_probe: TAM Build
+
+- source: `file`
+- tab name: `TAM Build`
+- tab color: `FF34406B`
+- gridlines shown: `0`
+- columns: 8 · rows: 98 · cells: 482 · formulas: 188
+
+## Banners
+- `B2` S_TITLE_SHEET — TAM Build
+- `B4` S_TITLE_SECTION — §1 - Headline TAM
+- `B13` S_TITLE_SECTION — §2 - Budget normalized (two TAM stream bases per class/FY)
+- `B15` S_TITLE_SUBSECTION — §2a - Applied stream toggles (1 = include)
+- `B21` S_TITLE_SUBSECTION — §2b - Virginia (LI 2013) stream bases ($M, FY22-27)
+- `B31` S_TITLE_SUBSECTION — §2c - Columbia (LI 1045) stream bases ($M, FY22-27)
+- `B41` S_TITLE_SUBSECTION — §2d - Portfolio stream-base totals (Va + Col)
+- `B49` S_TITLE_SECTION — §3 - POP coefficients (per-stream TAM supplier coefficients)
+- `B51` S_TITLE_SUBSECTION — §3a - Per-stream supplier coefficients (feed TAM; $-weighted, gated, in-scope)
+- `B58` S_TITLE_SUBSECTION — §3b - All-gated POP shares (dollar-weighted building blocks)
+- `B67` S_TITLE_SUBSECTION — §3c - Distributed-production view (appendix; broader than commercial TAM)
+- `B73` S_TITLE_SUBSECTION — §3d - Reconciliation & scope variants (reference; not applied to TAM)
+- `B79` S_TITLE_SUBSECTION — §3e - Anchor regression
+- `B88` S_TITLE_SECTION — §4 - TAM bridge
+- `B90` S_TITLE_SUBSECTION — §4a - Applied per-stream supplier coefficients
+- `B96` S_TITLE_SUBSECTION — §4b - Virginia (LI 2013) TAM ($M, FY22-27)
+- `B105` S_TITLE_SUBSECTION — §4c - Columbia (LI 1045) TAM ($M, FY22-27)
+- `B114` S_TITLE_SUBSECTION — §4d - Portfolio TAM + stream bridge (Virginia + Columbia)
+- `B122` S_TITLE_SUBSECTION — §4e - Annualization + deck-bridge figures (FY22-27)
+- `B132` S_TITLE_SECTION — §5 - TAM checks
+
+## Defined names
+- `portfolio_tam_annual` → `'TAM Build'!$C$127`
+- `portfolio_tam_cumulative` → `'TAM Build'!$C$125`
+- `portfolio_tam` → `'TAM Build'!$C$125`
+- `fiscal_year_count` → `'TAM Build'!$C$126`
+- `bc_supplier_coeff` → `'TAM Build'!$C$54`
+- `ap_lltm_supplier_coeff` → `'TAM Build'!$C$55`
+
+## Formula dependencies (referenced sheet → cells)
+- **Assumptions** (39): C18, C19, C25, D25, E25, F25, G25, H25, C27, D27, E27, F27 …
+- **POP Corpus** (10): C54, C55, C56, C61, C62, C63, C64, C76, C77, C83
+- **SCN Budget** (12): C24, D24, E24, F24, G24, H24, C34, D34, E34, F34, G34, H34
+- **TAM Build** (34): C7, C8, C9, C10, C93, C94, C99, D99, E99, F99, G99, H99 …
+
+## Hardcoded inputs (13)
+- `C26` S_NUM_INPUT = 0
+- `D26` S_NUM_INPUT = 0
+- `E26` S_NUM_INPUT = 0
+- `F26` S_NUM_INPUT = 0
+- `G26` S_NUM_INPUT = 0
+- `H26` S_NUM_INPUT = 0
+- `C36` S_NUM_INPUT = 0
+- `D36` S_NUM_INPUT = 0
+- `E36` S_NUM_INPUT = 0
+- `F36` S_NUM_INPUT = 0
+- `G36` S_NUM_INPUT = 0
+- `H36` S_NUM_INPUT = 0
+- `C82` S_PCT_INPUT = 0.518
+
+## Cross-sheet links (26)
+- `C18` S_LINK_NUM = 'Assumptions'!C17
+- `C19` S_LINK_NUM = 'Assumptions'!C18
+- `C24` S_LINK_NUM = 'SCN Budget'!C33
+- `D24` S_LINK_NUM = 'SCN Budget'!D33
+- `E24` S_LINK_NUM = 'SCN Budget'!E33
+- `F24` S_LINK_NUM = 'SCN Budget'!F33
+- `G24` S_LINK_NUM = 'SCN Budget'!G33
+- `H24` S_LINK_NUM = 'SCN Budget'!H33
+- `C25` S_LINK_NUM = 'Assumptions'!C25
+- `D25` S_LINK_NUM = 'Assumptions'!D25
+- `E25` S_LINK_NUM = 'Assumptions'!E25
+- `F25` S_LINK_NUM = 'Assumptions'!F25
+- `G25` S_LINK_NUM = 'Assumptions'!G25
+- `H25` S_LINK_NUM = 'Assumptions'!H25
+- `C34` S_LINK_NUM = 'SCN Budget'!C59
+- `D34` S_LINK_NUM = 'SCN Budget'!D59
+- `E34` S_LINK_NUM = 'SCN Budget'!E59
+- `F34` S_LINK_NUM = 'SCN Budget'!F59
+- `G34` S_LINK_NUM = 'SCN Budget'!G59
+- `H34` S_LINK_NUM = 'SCN Budget'!H59
+- `C35` S_LINK_NUM = 'Assumptions'!C26
+- `D35` S_LINK_NUM = 'Assumptions'!D26
+- `E35` S_LINK_NUM = 'Assumptions'!E26
+- `F35` S_LINK_NUM = 'Assumptions'!F26
+- `G35` S_LINK_NUM = 'Assumptions'!G26
+- `H35` S_LINK_NUM = 'Assumptions'!H26
+
+## Cells
+- `B2` S_TITLE_SHEET: TAM Build
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: §1 - Headline TAM
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Measure
+- `C6` S_HEADER_CENTER: Value
+- `B7` S_BOLD: Cumulative portfolio TAM (FY22-27)
+- `C7` S_NUM: ='TAM Build'!C125
+- `B8` S_BOLD: Average annual portfolio TAM
+- `C8` S_NUM: ='TAM Build'!C127
+- `B9` S_DEFAULT: Applied BC supplier coefficient
+- `C9` S_PCT: ='TAM Build'!C54
+- `B10` S_DEFAULT: AP/LLTM reference coefficient
+- `C10` S_PCT: ='TAM Build'!C55
+- `A13` S_DEFAULT: x
+- `B13` S_TITLE_SECTION: §2 - Budget normalized (two TAM stream bases per class/FY)
+- `C13` S_TITLE_SECTION: 
+- `D13` S_TITLE_SECTION: 
+- `E13` S_TITLE_SECTION: 
+- `F13` S_TITLE_SECTION: 
+- `G13` S_TITLE_SECTION: 
+- `H13` S_TITLE_SECTION: 
+- `A15` S_DEFAULT: x
+- `B15` S_TITLE_SUBSECTION: §2a - Applied stream toggles (1 = include)
+- `C15` S_TITLE_SUBSECTION: 
+- `D15` S_TITLE_SUBSECTION: 
+- `E15` S_TITLE_SUBSECTION: 
+- `F15` S_TITLE_SUBSECTION: 
+- `G15` S_TITLE_SUBSECTION: 
+- `H15` S_TITLE_SUBSECTION: 
+- `B17` S_HEADER_LEFT: Toggle
+- `C17` S_HEADER_CENTER: Value
+- `B18` S_DEFAULT: Include BC stream
+- `C18` S_LINK_NUM: ='Assumptions'!C17
+- `B19` S_DEFAULT: Include AP/LLTM stream
+- `C19` S_LINK_NUM: ='Assumptions'!C18
+- `A21` S_DEFAULT: x
+- `B21` S_TITLE_SUBSECTION: §2b - Virginia (LI 2013) stream bases ($M, FY22-27)
+- `C21` S_TITLE_SUBSECTION: 
+- `D21` S_TITLE_SUBSECTION: 
+- `E21` S_TITLE_SUBSECTION: 
+- `F21` S_TITLE_SUBSECTION: 
+- `G21` S_TITLE_SUBSECTION: 
+- `H21` S_TITLE_SUBSECTION: 
+- `B23` S_HEADER_LEFT: Metric
+- `C23` S_HEADER_CENTER: 2022
+- `D23` S_HEADER_CENTER: 2023
+- `E23` S_HEADER_CENTER: 2024
+- `F23` S_HEADER_CENTER: 2025
+- `G23` S_HEADER_CENTER: 2026
+- `H23` S_HEADER_CENTER: 2027
+- `B24` S_BOLD: BC base (P-5c Basic Construction)
+- `C24` S_LINK_NUM: ='SCN Budget'!C33
+- `D24` S_LINK_NUM: ='SCN Budget'!D33
+- `E24` S_LINK_NUM: ='SCN Budget'!E33
+- `F24` S_LINK_NUM: ='SCN Budget'!F33
+- `G24` S_LINK_NUM: ='SCN Budget'!G33
+- `H24` S_LINK_NUM: ='SCN Budget'!H33
+- `B25` S_BOLD: AP/LLTM base (P-10, confirmed 0)
+- `C25` S_LINK_NUM: ='Assumptions'!C25
+- `D25` S_LINK_NUM: ='Assumptions'!D25
+- `E25` S_LINK_NUM: ='Assumptions'!E25
+- `F25` S_LINK_NUM: ='Assumptions'!F25
+- `G25` S_LINK_NUM: ='Assumptions'!G25
+- `H25` S_LINK_NUM: ='Assumptions'!H25
+- `B26` S_DEFAULT: Less: prior-yr AP credit
+- `C26` S_NUM_INPUT: 0
+- `D26` S_NUM_INPUT: 0
+- `E26` S_NUM_INPUT: 0
+- `F26` S_NUM_INPUT: 0
+- `G26` S_NUM_INPUT: 0
+- `H26` S_NUM_INPUT: 0
+- `B27` S_DEFAULT: BC base in TAM
+- `C27` S_NUM: =IF(C24=0,"",'Assumptions'!C17*C24)
+- `D27` S_NUM: =IF(D24=0,"",'Assumptions'!C17*D24)
+- `E27` S_NUM: =IF(E24=0,"",'Assumptions'!C17*E24)
+- `F27` S_NUM: =IF(F24=0,"",'Assumptions'!C17*F24)
+- `G27` S_NUM: =IF(G24=0,"",'Assumptions'!C17*G24)
+- `H27` S_NUM: =IF(H24=0,"",'Assumptions'!C17*H24)
+- `B28` S_DEFAULT: AP/LLTM base in TAM
+- `C28` S_NUM: =IF(C25=0,"",'Assumptions'!C18*(C25-C26))
+- `D28` S_NUM: =IF(D25=0,"",'Assumptions'!C18*(D25-D26))
+- `E28` S_NUM: =IF(E25=0,"",'Assumptions'!C18*(E25-E26))
+- `F28` S_NUM: =IF(F25=0,"",'Assumptions'!C18*(F25-F26))
+- `G28` S_NUM: =IF(G25=0,"",'Assumptions'!C18*(G25-G26))
+- `H28` S_NUM: =IF(H25=0,"",'Assumptions'!C18*(H25-H26))
+- `B29` S_BOLD: TAM base (BC + AP/LLTM)
+- `C29` S_NUM: =N(C27)+N(C28)
+- `D29` S_NUM: =N(D27)+N(D28)
+- `E29` S_NUM: =N(E27)+N(E28)
+- `F29` S_NUM: =N(F27)+N(F28)
+- `G29` S_NUM: =N(G27)+N(G28)
+- `H29` S_NUM: =N(H27)+N(H28)
+- `A31` S_DEFAULT: x
+- `B31` S_TITLE_SUBSECTION: §2c - Columbia (LI 1045) stream bases ($M, FY22-27)
+- `C31` S_TITLE_SUBSECTION: 
+- `D31` S_TITLE_SUBSECTION: 
+- `E31` S_TITLE_SUBSECTION: 
+- `F31` S_TITLE_SUBSECTION: 
+- `G31` S_TITLE_SUBSECTION: 
+- `H31` S_TITLE_SUBSECTION: 
+- `B33` S_HEADER_LEFT: Metric
+- `C33` S_HEADER_CENTER: 2022
+- `D33` S_HEADER_CENTER: 2023
+- `E33` S_HEADER_CENTER: 2024
+- `F33` S_HEADER_CENTER: 2025
+- `G33` S_HEADER_CENTER: 2026
+- `H33` S_HEADER_CENTER: 2027
+- `B34` S_BOLD: BC base (P-5c Basic Construction)
+- `C34` S_LINK_NUM: ='SCN Budget'!C59
+- `D34` S_LINK_NUM: ='SCN Budget'!D59
+- `E34` S_LINK_NUM: ='SCN Budget'!E59
+- `F34` S_LINK_NUM: ='SCN Budget'!F59
+- `G34` S_LINK_NUM: ='SCN Budget'!G59
+- `H34` S_LINK_NUM: ='SCN Budget'!H59
+- `B35` S_BOLD: AP/LLTM base (P-10, confirmed 0)
+- `C35` S_LINK_NUM: ='Assumptions'!C26
+- `D35` S_LINK_NUM: ='Assumptions'!D26
+- `E35` S_LINK_NUM: ='Assumptions'!E26
+- `F35` S_LINK_NUM: ='Assumptions'!F26
+- `G35` S_LINK_NUM: ='Assumptions'!G26
+- `H35` S_LINK_NUM: ='Assumptions'!H26
+- `B36` S_DEFAULT: Less: prior-yr AP credit
+- `C36` S_NUM_INPUT: 0
+- `D36` S_NUM_INPUT: 0
+- `E36` S_NUM_INPUT: 0
+- `F36` S_NUM_INPUT: 0
+- `G36` S_NUM_INPUT: 0
+- `H36` S_NUM_INPUT: 0
+- `B37` S_DEFAULT: BC base in TAM
+- `C37` S_NUM: =IF(C34=0,"",'Assumptions'!C17*C34)
+- `D37` S_NUM: =IF(D34=0,"",'Assumptions'!C17*D34)
+- `E37` S_NUM: =IF(E34=0,"",'Assumptions'!C17*E34)
+- `F37` S_NUM: =IF(F34=0,"",'Assumptions'!C17*F34)
+- `G37` S_NUM: =IF(G34=0,"",'Assumptions'!C17*G34)
+- `H37` S_NUM: =IF(H34=0,"",'Assumptions'!C17*H34)
+- `B38` S_DEFAULT: AP/LLTM base in TAM
+- `C38` S_NUM: =IF(C35=0,"",'Assumptions'!C18*(C35-C36))
+- `D38` S_NUM: =IF(D35=0,"",'Assumptions'!C18*(D35-D36))
+- `E38` S_NUM: =IF(E35=0,"",'Assumptions'!C18*(E35-E36))
+- `F38` S_NUM: =IF(F35=0,"",'Assumptions'!C18*(F35-F36))
+- `G38` S_NUM: =IF(G35=0,"",'Assumptions'!C18*(G35-G36))
+- `H38` S_NUM: =IF(H35=0,"",'Assumptions'!C18*(H35-H36))
+- `B39` S_BOLD: TAM base (BC + AP/LLTM)
+- `C39` S_NUM: =N(C37)+N(C38)
+- `D39` S_NUM: =N(D37)+N(D38)
+- `E39` S_NUM: =N(E37)+N(E38)
+- `F39` S_NUM: =N(F37)+N(F38)
+- `G39` S_NUM: =N(G37)+N(G38)
+- `H39` S_NUM: =N(H37)+N(H38)
+- `A41` S_DEFAULT: x
+- `B41` S_TITLE_SUBSECTION: §2d - Portfolio stream-base totals (Va + Col)
+- `C41` S_TITLE_SUBSECTION: 
+- `D41` S_TITLE_SUBSECTION: 
+- `E41` S_TITLE_SUBSECTION: 
+- `F41` S_TITLE_SUBSECTION: 
+- `G41` S_TITLE_SUBSECTION: 
+- `H41` S_TITLE_SUBSECTION: 
+- `B43` S_HEADER_LEFT: Metric
+- `C43` S_HEADER_CENTER: 2022
+- `D43` S_HEADER_CENTER: 2023
+- `E43` S_HEADER_CENTER: 2024
+- `F43` S_HEADER_CENTER: 2025
+- `G43` S_HEADER_CENTER: 2026
+- `H43` S_HEADER_CENTER: 2027
+- `B44` S_DEFAULT: BC base in TAM
+- `C44` S_NUM: =N(C27)+N(C37)
+- `D44` S_NUM: =N(D27)+N(D37)
+- `E44` S_NUM: =N(E27)+N(E37)
+- `F44` S_NUM: =N(F27)+N(F37)
+- `G44` S_NUM: =N(G27)+N(G37)
+- `H44` S_NUM: =N(H27)+N(H37)
+- `B45` S_DEFAULT: AP/LLTM base in TAM
+- `C45` S_NUM: =N(C28)+N(C38)
+- `D45` S_NUM: =N(D28)+N(D38)
+- `E45` S_NUM: =N(E28)+N(E38)
+- `F45` S_NUM: =N(F28)+N(F38)
+- `G45` S_NUM: =N(G28)+N(G38)
+- `H45` S_NUM: =N(H28)+N(H38)
+- `B46` S_BOLD: TAM base
+- `C46` S_NUM: =N(C29)+N(C39)
+- `D46` S_NUM: =N(D29)+N(D39)
+- `E46` S_NUM: =N(E29)+N(E39)
+- `F46` S_NUM: =N(F29)+N(F39)
+- `G46` S_NUM: =N(G29)+N(G39)
+- `H46` S_NUM: =N(H29)+N(H39)
+- `A49` S_DEFAULT: x
+- `B49` S_TITLE_SECTION: §3 - POP coefficients (per-stream TAM supplier coefficients)
+- `C49` S_TITLE_SECTION: 
+- `D49` S_TITLE_SECTION: 
+- `E49` S_TITLE_SECTION: 
+- `F49` S_TITLE_SECTION: 
+- `G49` S_TITLE_SECTION: 
+- `H49` S_TITLE_SECTION: 
+- `A51` S_DEFAULT: x
+- `B51` S_TITLE_SUBSECTION: §3a - Per-stream supplier coefficients (feed TAM; $-weighted, gated, in-scope)
+- `C51` S_TITLE_SUBSECTION: 
+- `D51` S_TITLE_SUBSECTION: 
+- `E51` S_TITLE_SUBSECTION: 
+- `F51` S_TITLE_SUBSECTION: 
+- `G51` S_TITLE_SUBSECTION: 
+- `H51` S_TITLE_SUBSECTION: 
+- `B53` S_HEADER_LEFT: Coefficient
+- `C53` S_HEADER_CENTER: Value
+- `B54` S_BOLD: Headline BC coefficient (applied)
+- `C54` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674))
+- `B55` S_BOLD: AP/LLTM coefficient (reference; base = 0)
+- `C55` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="AP_LLTM")*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="AP_LLTM")*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="AP_LLTM")*'POP Corpus'!K17:K674))
+- `B56` S_DEFAULT: Total weighted (corpus, display)
+- `C56` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*'POP Corpus'!K17:K674))
+- `A58` S_DEFAULT: x
+- `B58` S_TITLE_SUBSECTION: §3b - All-gated POP shares (dollar-weighted building blocks)
+- `C58` S_TITLE_SUBSECTION: 
+- `D58` S_TITLE_SUBSECTION: 
+- `E58` S_TITLE_SUBSECTION: 
+- `F58` S_TITLE_SUBSECTION: 
+- `G58` S_TITLE_SUBSECTION: 
+- `H58` S_TITLE_SUBSECTION: 
+- `B60` S_HEADER_LEFT: POP class
+- `C60` S_HEADER_CENTER: Share
+- `B61` S_DEFAULT: EB site %
+- `C61` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*'POP Corpus'!L17:L674)/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))
+- `B62` S_DEFAULT: HII site %
+- `C62` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*'POP Corpus'!M17:M674)/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))
+- `B63` S_DEFAULT: Other-US supplier %
+- `C63` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*'POP Corpus'!N17:N674)/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))
+- `B64` S_DEFAULT: Foreign %
+- `C64` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*'POP Corpus'!O17:O674)/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))
+- `B65` S_DEFAULT: Unparsed %
+- `C65` S_PCT: =1-C61-C62-C63-C64
+- `A67` S_DEFAULT: x
+- `B67` S_TITLE_SUBSECTION: §3c - Distributed-production view (appendix; broader than commercial TAM)
+- `C67` S_TITLE_SUBSECTION: 
+- `D67` S_TITLE_SUBSECTION: 
+- `E67` S_TITLE_SUBSECTION: 
+- `F67` S_TITLE_SUBSECTION: 
+- `G67` S_TITLE_SUBSECTION: 
+- `H67` S_TITLE_SUBSECTION: 
+- `B69` S_HEADER_LEFT: Coefficient
+- `C69` S_HEADER_CENTER: Value
+- `B70` S_BOLD: Distributed (confirmed)
+- `C70` S_PCT: =C62+C63+C64
+- `B71` S_BOLD: Distributed (incl-unparsed)
+- `C71` S_PCT: =1-C61
+- `A73` S_DEFAULT: x
+- `B73` S_TITLE_SUBSECTION: §3d - Reconciliation & scope variants (reference; not applied to TAM)
+- `C73` S_TITLE_SUBSECTION: 
+- `D73` S_TITLE_SUBSECTION: 
+- `E73` S_TITLE_SUBSECTION: 
+- `F73` S_TITLE_SUBSECTION: 
+- `G73` S_TITLE_SUBSECTION: 
+- `H73` S_TITLE_SUBSECTION: 
+- `B75` S_HEADER_LEFT: Variant
+- `C75` S_HEADER_CENTER: Value
+- `B76` S_DEFAULT: BC stream incl-GFE (handoff ref)
+- `C76` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674))
+- `B77` S_DEFAULT: All-gated, GFE-excluded
+- `C77` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!K17:K674))
+- `A79` S_DEFAULT: x
+- `B79` S_TITLE_SUBSECTION: §3e - Anchor regression
+- `C79` S_TITLE_SUBSECTION: 
+- `D79` S_TITLE_SUBSECTION: 
+- `E79` S_TITLE_SUBSECTION: 
+- `F79` S_TITLE_SUBSECTION: 
+- `G79` S_TITLE_SUBSECTION: 
+- `H79` S_TITLE_SUBSECTION: 
+- `B81` S_HEADER_LEFT: Check
+- `C81` S_HEADER_CENTER: Value
+- `B82` S_DEFAULT: Published anchor
+- `C82` S_PCT_INPUT: 0.518
+- `B83` S_DEFAULT: Computed all-gated primary
+- `C83` S_PCT: =IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,"",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))
+- `B84` S_DEFAULT: Delta
+- `C84` S_PCT: =C83-C82
+- `B85` S_DEFAULT: Anchor OK?
+- `C85` S_DEFAULT: =IF(ABS(C84)<0.01,"OK","FAIL")
+- `A88` S_DEFAULT: x
+- `B88` S_TITLE_SECTION: §4 - TAM bridge
+- `C88` S_TITLE_SECTION: 
+- `D88` S_TITLE_SECTION: 
+- `E88` S_TITLE_SECTION: 
+- `F88` S_TITLE_SECTION: 
+- `G88` S_TITLE_SECTION: 
+- `H88` S_TITLE_SECTION: 
+- `A90` S_DEFAULT: x
+- `B90` S_TITLE_SUBSECTION: §4a - Applied per-stream supplier coefficients
+- `C90` S_TITLE_SUBSECTION: 
+- `D90` S_TITLE_SUBSECTION: 
+- `E90` S_TITLE_SUBSECTION: 
+- `F90` S_TITLE_SUBSECTION: 
+- `G90` S_TITLE_SUBSECTION: 
+- `H90` S_TITLE_SUBSECTION: 
+- `B92` S_HEADER_LEFT: Coefficient
+- `C92` S_HEADER_CENTER: Value
+- `B93` S_BOLD: Headline BC coefficient (applied)
+- `C93` S_PCT: ='TAM Build'!C54
+- `B94` S_BOLD: AP/LLTM coefficient (reference; base = 0)
+- `C94` S_PCT: ='TAM Build'!C55
+- `A96` S_DEFAULT: x
+- `B96` S_TITLE_SUBSECTION: §4b - Virginia (LI 2013) TAM ($M, FY22-27)
+- `C96` S_TITLE_SUBSECTION: 
+- `D96` S_TITLE_SUBSECTION: 
+- `E96` S_TITLE_SUBSECTION: 
+- `F96` S_TITLE_SUBSECTION: 
+- `G96` S_TITLE_SUBSECTION: 
+- `H96` S_TITLE_SUBSECTION: 
+- `B98` S_HEADER_LEFT: Metric
+- `C98` S_HEADER_CENTER: 2022
+- `D98` S_HEADER_CENTER: 2023
+- `E98` S_HEADER_CENTER: 2024
+- `F98` S_HEADER_CENTER: 2025
+- `G98` S_HEADER_CENTER: 2026
+- `H98` S_HEADER_CENTER: 2027
+- `B99` S_DEFAULT: BC base
+- `C99` S_NUM: ='TAM Build'!C27
+- `D99` S_NUM: ='TAM Build'!D27
+- `E99` S_NUM: ='TAM Build'!E27
+- `F99` S_NUM: ='TAM Build'!F27
+- `G99` S_NUM: ='TAM Build'!G27
+- `H99` S_NUM: ='TAM Build'!H27
+- `B100` S_DEFAULT: TAM - BC stream
+- `C100` S_NUM: =IF(N(C99)=0,"",N(C99)*$C$93)
+- `D100` S_NUM: =IF(N(D99)=0,"",N(D99)*$C$93)
+- `E100` S_NUM: =IF(N(E99)=0,"",N(E99)*$C$93)
+- `F100` S_NUM: =IF(N(F99)=0,"",N(F99)*$C$93)
+- `G100` S_NUM: =IF(N(G99)=0,"",N(G99)*$C$93)
+- `H100` S_NUM: =IF(N(H99)=0,"",N(H99)*$C$93)
+- `B101` S_DEFAULT: AP/LLTM base
+- `C101` S_NUM: ='TAM Build'!C28
+- `D101` S_NUM: ='TAM Build'!D28
+- `E101` S_NUM: ='TAM Build'!E28
+- `F101` S_NUM: ='TAM Build'!F28
+- `G101` S_NUM: ='TAM Build'!G28
+- `H101` S_NUM: ='TAM Build'!H28
+- `B102` S_DEFAULT: TAM - AP/LLTM stream
+- `C102` S_NUM: =IF(N(C101)=0,"",N(C101)*$C$94)
+- `D102` S_NUM: =IF(N(D101)=0,"",N(D101)*$C$94)
+- `E102` S_NUM: =IF(N(E101)=0,"",N(E101)*$C$94)
+- `F102` S_NUM: =IF(N(F101)=0,"",N(F101)*$C$94)
+- `G102` S_NUM: =IF(N(G101)=0,"",N(G101)*$C$94)
+- `H102` S_NUM: =IF(N(H101)=0,"",N(H101)*$C$94)
+- `B103` S_BOLD: TAM (both streams)
+- `C103` S_NUM: =N(C100)+N(C102)
+- `D103` S_NUM: =N(D100)+N(D102)
+- `E103` S_NUM: =N(E100)+N(E102)
+- `F103` S_NUM: =N(F100)+N(F102)
+- `G103` S_NUM: =N(G100)+N(G102)
+- `H103` S_NUM: =N(H100)+N(H102)
+- `A105` S_DEFAULT: x
+- `B105` S_TITLE_SUBSECTION: §4c - Columbia (LI 1045) TAM ($M, FY22-27)
+- `C105` S_TITLE_SUBSECTION: 
+- `D105` S_TITLE_SUBSECTION: 
+- `E105` S_TITLE_SUBSECTION: 
+- `F105` S_TITLE_SUBSECTION: 
+- `G105` S_TITLE_SUBSECTION: 
+- `H105` S_TITLE_SUBSECTION: 
+- `B107` S_HEADER_LEFT: Metric
+- `C107` S_HEADER_CENTER: 2022
+- `D107` S_HEADER_CENTER: 2023
+- `E107` S_HEADER_CENTER: 2024
+- `F107` S_HEADER_CENTER: 2025
+- `G107` S_HEADER_CENTER: 2026
+- `H107` S_HEADER_CENTER: 2027
+- `B108` S_DEFAULT: BC base
+- `C108` S_NUM: ='TAM Build'!C37
+- `D108` S_NUM: ='TAM Build'!D37
+- `E108` S_NUM: ='TAM Build'!E37
+- `F108` S_NUM: ='TAM Build'!F37
+- `G108` S_NUM: ='TAM Build'!G37
+- `H108` S_NUM: ='TAM Build'!H37
+- `B109` S_DEFAULT: TAM - BC stream
+- `C109` S_NUM: =IF(N(C108)=0,"",N(C108)*$C$93)
+- `D109` S_NUM: =IF(N(D108)=0,"",N(D108)*$C$93)
+- `E109` S_NUM: =IF(N(E108)=0,"",N(E108)*$C$93)
+- `F109` S_NUM: =IF(N(F108)=0,"",N(F108)*$C$93)
+- `G109` S_NUM: =IF(N(G108)=0,"",N(G108)*$C$93)
+- `H109` S_NUM: =IF(N(H108)=0,"",N(H108)*$C$93)
+- `B110` S_DEFAULT: AP/LLTM base
+- `C110` S_NUM: ='TAM Build'!C38
+- `D110` S_NUM: ='TAM Build'!D38
+- `E110` S_NUM: ='TAM Build'!E38
+- `F110` S_NUM: ='TAM Build'!F38
+- `G110` S_NUM: ='TAM Build'!G38
+- `H110` S_NUM: ='TAM Build'!H38
+- `B111` S_DEFAULT: TAM - AP/LLTM stream
+- `C111` S_NUM: =IF(N(C110)=0,"",N(C110)*$C$94)
+- `D111` S_NUM: =IF(N(D110)=0,"",N(D110)*$C$94)
+- `E111` S_NUM: =IF(N(E110)=0,"",N(E110)*$C$94)
+- `F111` S_NUM: =IF(N(F110)=0,"",N(F110)*$C$94)
+- `G111` S_NUM: =IF(N(G110)=0,"",N(G110)*$C$94)
+- `H111` S_NUM: =IF(N(H110)=0,"",N(H110)*$C$94)
+- `B112` S_BOLD: TAM (both streams)
+- `C112` S_NUM: =N(C109)+N(C111)
+- `D112` S_NUM: =N(D109)+N(D111)
+- `E112` S_NUM: =N(E109)+N(E111)
+- `F112` S_NUM: =N(F109)+N(F111)
+- `G112` S_NUM: =N(G109)+N(G111)
+- `H112` S_NUM: =N(H109)+N(H111)
+- `A114` S_DEFAULT: x
+- `B114` S_TITLE_SUBSECTION: §4d - Portfolio TAM + stream bridge (Virginia + Columbia)
+- `C114` S_TITLE_SUBSECTION: 
+- `D114` S_TITLE_SUBSECTION: 
+- `E114` S_TITLE_SUBSECTION: 
+- `F114` S_TITLE_SUBSECTION: 
+- `G114` S_TITLE_SUBSECTION: 
+- `H114` S_TITLE_SUBSECTION: 
+- `B116` S_HEADER_LEFT: Metric
+- `C116` S_HEADER_CENTER: 2022
+- `D116` S_HEADER_CENTER: 2023
+- `E116` S_HEADER_CENTER: 2024
+- `F116` S_HEADER_CENTER: 2025
+- `G116` S_HEADER_CENTER: 2026
+- `H116` S_HEADER_CENTER: 2027
+- `B117` S_DEFAULT: BC stream TAM
+- `C117` S_NUM: =N(C100)+N(C109)
+- `D117` S_NUM: =N(D100)+N(D109)
+- `E117` S_NUM: =N(E100)+N(E109)
+- `F117` S_NUM: =N(F100)+N(F109)
+- `G117` S_NUM: =N(G100)+N(G109)
+- `H117` S_NUM: =N(H100)+N(H109)
+- `B118` S_DEFAULT: AP/LLTM stream TAM
+- `C118` S_NUM: =N(C102)+N(C111)
+- `D118` S_NUM: =N(D102)+N(D111)
+- `E118` S_NUM: =N(E102)+N(E111)
+- `F118` S_NUM: =N(F102)+N(F111)
+- `G118` S_NUM: =N(G102)+N(G111)
+- `H118` S_NUM: =N(H102)+N(H111)
+- `B119` S_BOLD: TAM (portfolio)
+- `C119` S_NUM: =N(C103)+N(C112)
+- `D119` S_NUM: =N(D103)+N(D112)
+- `E119` S_NUM: =N(E103)+N(E112)
+- `F119` S_NUM: =N(F103)+N(F112)
+- `G119` S_NUM: =N(G103)+N(G112)
+- `H119` S_NUM: =N(H103)+N(H112)
+- `B120` S_BOLD: Total weighted coefficient (TAM / TAM base, all FY)
+- `C120` S_PCT: =IF((SUM(C99:H99)+SUM(C101:H101)+SUM(C108:H108)+SUM(C110:H110))=0,"",SUM(C119:H119)/(SUM(C99:H99)+SUM(C101:H101)+SUM(C108:H108)+SUM(C110:H110)))
+- `A122` S_DEFAULT: x
+- `B122` S_TITLE_SUBSECTION: §4e - Annualization + deck-bridge figures (FY22-27)
+- `C122` S_TITLE_SUBSECTION: 
+- `D122` S_TITLE_SUBSECTION: 
+- `E122` S_TITLE_SUBSECTION: 
+- `F122` S_TITLE_SUBSECTION: 
+- `G122` S_TITLE_SUBSECTION: 
+- `H122` S_TITLE_SUBSECTION: 
+- `B124` S_HEADER_LEFT: Measure
+- `C124` S_HEADER_CENTER: Value
+- `B125` S_BOLD: Cumulative portfolio TAM (FY22-27)
+- `C125` S_NUM: =SUM(C119:H119)
+- `B126` S_DEFAULT: Number of fiscal years
+- `C126` S_NUM: ='Assumptions'!C9-'Assumptions'!C8+1
+- `B127` S_BOLD: Average annual portfolio TAM
+- `C127` S_NUM: =C125/C126
+- `B128` S_DEFAULT: Cumulative BC construction base (FY22-27)
+- `C128` S_NUM: =N('TAM Build'!C44)+N('TAM Build'!D44)+N('TAM Build'!E44)+N('TAM Build'!F44)+N('TAM Build'!G44)+N('TAM Build'!H44)
+- `B129` S_DEFAULT: Removed by POP (prime / co-prime / GFE)
+- `C129` S_NUM: =C128-C125
+- `A132` S_DEFAULT: x
+- `B132` S_TITLE_SECTION: §5 - TAM checks
+- `C132` S_TITLE_SECTION: 
+- `D132` S_TITLE_SECTION: 
+- `E132` S_TITLE_SECTION: 
+- `F132` S_TITLE_SECTION: 
+- `G132` S_TITLE_SECTION: 
+- `H132` S_TITLE_SECTION: 
+- `B134` S_HEADER_LEFT: Check
+- `C134` S_HEADER_LEFT: Status
+- `B135` S_DEFAULT: Portfolio TAM = BC TAM + AP/LLTM TAM
+- `C135` S_DEFAULT: =IF(ABS(('TAM Build'!C125)-((N('TAM Build'!C117)+N('TAM Build'!D117)+N('TAM Build'!E117)+N('TAM Build'!F117)+N('TAM Build'!G117)+N('TAM Build'!H117))+(N('TAM Build'!C118)+N('TAM Build'!D118)+N('TAM Build'!E118)+N('TAM Build'!F118)+N('TAM Build'!G118)+N('TAM Build'!H118))))<0.5,"OK","FAIL")
+- `B136` S_DEFAULT: Average annual = cumulative / fiscal years
+- `C136` S_DEFAULT: =IF(ABS(('TAM Build'!C127)*('TAM Build'!C126)-('TAM Build'!C125))<0.5,"OK","FAIL")
+- `B137` S_DEFAULT: Anchor regression holds
+- `C137` S_DEFAULT: ='TAM Build'!C85

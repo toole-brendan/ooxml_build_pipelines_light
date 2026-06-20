@@ -1,0 +1,150 @@
+me: also does the current pipeline contain guidance on spacing between section and sub-section headers and when the "x" is in the gutter column? and on column widths? here is also a recent thing i wrote asking an ai agent to fix an issue in a workbook that contains a description of desired spacing concerning section and sub-section headers (and how that pattern kind of looks) - "the row spacing between section headers and their sub-section headers is odd right now - it should be just 1 empty row but it looks like most of the time its 2 empty rows (when in reality, it should just be 2 empty rows between the last row of a section with content and the start of a new section (which then has just 1 empty row before a subsection header OR the section's content/ table - sections don't HAVE to have sub-sections); and then also a lot of tables have a final bottom border line on their final rows - that should be deleted - should be no bottom border if there's no like "total" row being used (so this applies primarily to the data tables that were made excel native tables) - also for same type of tables, we should take off the top-border of the first row (the column header row) for each - the first row of these types of tables currently have a top and bottom border but they should just have a bottom border " -- does current guidance in the pipeline build files already cover this though? because if it does then we don't need to add anything extra - i wrote out that quoted sample for a workbook that had to be ported over to our new workbook pipeline
+
+LLM: Based on the current workbook files from 2026-06-01: **no, the current guidance does not fully cover the quoted spacing/table-border standard.** It covers some adjacent mechanics, but your quoted rule is more specific and should be added.
+
+The current pipeline already covers **gutter behavior** pretty well, partially covers **section spacing**, covers **column-width mechanics** but not width-selection guidance, and covers **styled-range table borders** better than **native Excel table borders**.
+
+## My read by topic
+
+| Topic                                  |               Already covered? | Current state                                                                                                                                                                                                    |
+| -------------------------------------- | -----------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Section → subsection spacing           |               **No / partial** | The guide says to “leave a blank row between sections,” but it does not define the 2-empty-row vs 1-empty-row rhythm you described.                                                                              |
+| Subsections optional                   |               **Only implied** | `S_TITLE_SUBSECTION` exists and appears in the style cheat sheet, but there is no explicit rule saying sections do not need subsections.                                                                         |
+| `x` in gutter column                   |                        **Yes** | `mark_collapsible=True` places a neutral lowercase `x` in column A as the collapse anchor; this is covered in both primitives and snippets.                                                                      |
+| Column-width mechanics                 |                        **Yes** | `COLS` are content widths from column B onward; the gutter is auto-prepended.                                                                                                                                    |
+| Column-width style guidance            |                 **Not really** | The guide says labels should be shortened/restructured instead of wrapped, but it does not give a sizing convention such as “label columns 36–44, numeric columns 12–14.”                                        |
+| Styled-range table header top border   |                        **Yes** | `S_HEADER_LEFT` is a bottom underline only; no top border.                                                                                                                                                       |
+| Styled-range table final bottom border |             **Yes by default** | Regular body styles have no borders; totals/subtotals use `total_row()` with a top border only.                                                                                                                  |
+| Native Excel table border behavior     | **No / not controlled enough** | Native tables default to `TableStyleMedium2` with row striping. The pipeline declares the ListObject style, but it does not explicitly say “no top border on header, no final bottom border unless total row.”   |
+
+## Section and subsection spacing
+
+The current guide only says:
+
+> Row 4+ uses section banners and body; section banners use `S_TITLE_SECTION`, sub-sections use `S_TITLE_SUBSECTION`; leave a blank row between sections.
+
+That is weaker than your desired pattern. 
+
+The current snippet also does **one blank row after a section banner before the header row** because it writes the section banner at `r`, skips `r + 1`, then writes the header at `r + 2`. But after the content, it returns the next free row with “one blank gutter row,” not two empty rows. 
+
+So your quoted rule is **not already captured**. I would add it.
+
+Recommended rule:
+
+```markdown
+## Row spacing rhythm
+
+Use a compact Excel-native rhythm.
+
+- After a section banner, leave exactly 1 empty row before the section's first
+  subsection banner, table header, or content row.
+- After a subsection banner, leave exactly 1 empty row before that subsection's
+  table header or content row.
+- Between the last content row of one section and the next section banner, leave
+  exactly 2 empty rows.
+- Sections do not need subsections. Use a subsection banner only when it clarifies
+  a dense section; do not add subsection banners as decorative structure.
+- Do not create extra spacer rows to make the sheet look more “generated” or
+  explanatory. Prefer compact, human-built workbook rhythm.
+```
+
+This belongs in `sheet_guide.md`, probably under “The sheet skeleton.”
+
+I would also update the `sheet_snippets.md` section block so the helper encodes the rhythm rather than demonstrating the older one-blank trailing pattern.
+
+## Gutter `x`
+
+This is already covered well enough.
+
+`banner_row(..., mark_collapsible=True)` places a neutral lowercase `x` in column A, keeps the banner fill out of the gutter, and moves the banner text to column B. `write_row(..., mark_collapsible=True)` can also place the `x` in column A as a collapse anchor. 
+
+The snippets also explain the intended use: the banner is the collapse anchor, body rows take `outline_level=1`, and level-0 rows such as banners and totals stay visible when collapsed. 
+
+I would not add much more there, except maybe one sentence:
+
+```markdown
+Use the gutter `x` only for collapsible outline anchors. Do not mark ordinary
+section banners with `x` unless the section's body rows are actually outlined.
+```
+
+## Column widths
+
+The pipeline covers the **mechanics**, not the **taste rules**.
+
+Mechanically, the template sets `COLS` as content widths from column B onward, with the gutter auto-added.  The guide says the same: content starts at column B, `COLS` are content columns only, and `worksheet(with_gutter=True)` prepends the gutter.  The primitive then physically prepends the ~1.5-character gutter and writes the `<col ... width="...">` definitions. 
+
+But there is not much guidance on **how to choose** widths. The current guide says no wrap and no merges; if a label does not fit, shorten or restructure rather than wrapping.  That is useful, but it does not give agents a sizing convention.
+
+I would add a compact width convention:
+
+```markdown
+## Column widths
+
+`COLS` are content columns only, starting at column B; the gutter is automatic.
+Choose widths the way a human analyst would:
+
+- first text/label column: usually 36–44;
+- numeric / FY columns: usually 12–14;
+- short category/status columns: usually 10–14;
+- one-line context/source note columns: usually 24–32, used sparingly;
+- avoid very wide columns as a substitute for shorter labels.
+
+Do not wrap text. If a label does not fit, shorten the label, split the block, or
+move detail into source-only comments/docstrings rather than widening the sheet.
+```
+
+The exact numbers can be tuned, but this would prevent agents from inventing awkward 60–90 character columns.
+
+## Table borders
+
+For **styled-range tables**, the current pipeline already mostly does what you want.
+
+`S_HEADER_LEFT` uses border id 1, which is a bottom thin black border with no top border. `S_DEFAULT`, `S_NUM`, and ordinary body styles use no border. `S_TOTAL` / total variants use a medium top border for total/subtotal dividers.  The guide also says to use `total_row()` for totals/subtotals; that helper applies a continuous top divider and pads the row so the divider runs across the block. 
+
+So this part of your quoted note:
+
+> final bottom border line should be deleted unless there is a total row
+
+is already consistent with the styled-range style system. A normal `build_table()` body should not have a final bottom border unless someone manually used a bordered style.
+
+For **native Excel tables**, it is not fully covered. The pipeline tells authors to use native `ExcelTable` for real ListObjects and says the default table style is `TableStyleMedium2` with row striping.  The table part then emits `<tableStyleInfo ... showRowStripes="1" ...>`.  That leaves visual border behavior partly to Excel’s built-in table style. The source rows may be written with `S_HEADER_LEFT`, but the native table style can still affect how Excel displays the table.
+
+So the quoted native-table rule should be added. I would word it like this:
+
+```markdown
+## Native table visual discipline
+
+Native Excel tables are for ListObject functionality: filters, structured
+references, and stable data contracts. They should still look like the rest of
+the workbook.
+
+When writing the visible cells for a native table:
+- use `S_HEADER_LEFT` for the header row: bottom underline only, no top border;
+- use ordinary non-bordered body styles for body rows;
+- do not add a bottom border to the final body row;
+- use a total row only when the table truly has totals/subtotals, and use the
+  appropriate total-row styling for that row.
+
+If a built-in Excel table style adds a top header border or final bottom border,
+choose a less intrusive table style or use a styled range plus `autoFilter` when
+visual control matters more than ListObject semantics.
+```
+
+I would be careful about changing the default `TableStyleMedium2` without checking a rendered workbook, but it is the likely place to look if the native tables are showing extra borders.
+
+## The quoted instruction should become pipeline guidance
+
+Your quoted text is not redundant. I would add it, but in cleaned-up “house rule” form rather than as a one-off repair note.
+
+Minimal patch set:
+
+1. `sheet_guide.md`: add “Row spacing rhythm,” “Column widths,” and “Native table visual discipline.”
+2. `sheet_snippets.md`: update the section block / RowCursor examples so they demonstrate:
+
+   * 2 empty rows before a new section;
+   * 1 empty row after a section banner before subsection/content;
+   * optional subsection banners.
+3. `tables.py` or `sheet_guide.md`: either document a preferred low-border native table style or explicitly say to fall back to styled range + `autoFilter` when native table styling creates unwanted borders.
+4. Optional later: add a `sheet_probe --human-lint` check for excessive spacer rows, banner spacing, and native-table style names. The current probe reports emitted column widths, rows, tables, and styles, but it explicitly “never builds, repairs, or judges.” 
+
+Net: **add guidance.** The current files cover the underlying mechanics, but they do not yet encode the specific human workbook rhythm and native-table border discipline you described.

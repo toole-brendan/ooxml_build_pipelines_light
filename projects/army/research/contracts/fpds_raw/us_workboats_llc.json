@@ -1,0 +1,2035 @@
+{
+  "recipient_name": "US WORKBOATS LLC",
+  "recipient_uei": "DKLJD272LKN3",
+  "query": "VENDOR_UEI:\"DKLJD272LKN3\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 4,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1070493.11,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912BU18C0044",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU18C0044",
+      "mod_number": "P00005",
+      "transaction_number": "0",
+      "vendor_name": "US WORKBOATS LLC",
+      "vendor_uei": "DKLJD272LKN3",
+      "this_obligated": -434.89,
+      "total_obligated": 1070493.11,
+      "base_and_exercised": -434.89,
+      "base_and_all_options": -434.89,
+      "total_base_and_all_options": 1070493.11,
+      "signed_date": "2019-09-26 00:00:00",
+      "effective_date": "2019-09-24 00:00:00",
+      "current_completion_date": "2019-09-24 00:00:00",
+      "ultimate_completion_date": "2019-09-24 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1990",
+      "psc_desc": "MISCELLANEOUS VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "4",
+      "description": "CHANGE REQUEST MODIFICATION FOR A CREDIT IN THE AMOUNT OF %434.89",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU18C0044",
+            "modNumber": "P00005",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-09-26 00:00:00",
+          "effectiveDate": "2019-09-24 00:00:00",
+          "currentCompletionDate": "2019-09-24 00:00:00",
+          "ultimateCompletionDate": "2019-09-24 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "-434.89",
+          "baseAndExercisedOptionsValue": "-434.89",
+          "baseAndAllOptionsValue": "-434.89"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1070493.11",
+          "totalBaseAndExercisedOptionsValue": "1070493.11",
+          "totalBaseAndAllOptionsValue": "1070493.11"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU18B0016",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CHANGE REQUEST MODIFICATION FOR A CREDIT IN THE AMOUNT OF %434.89",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "FAR 52.232-16 PROGRESS PAYMENTS",
+            "#text": "A"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1990"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "US WORKBOATS LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "270 HOGANS RD",
+              "city": "HUBERT",
+              "state": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "ZIPCode": {
+                "@city": "HUBERT",
+                "#text": "285394508"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2526177954",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "28539",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "DKLJD272LKN3",
+                "UEILegalBusinessName": "US WORKBOATS LLC",
+                "ultimateParentUEI": "DKLJD272LKN3",
+                "ultimateParentUEIName": "US WORKBOATS LLC"
+              },
+              "cageCode": "83SL0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2018-05-17 00:00:00",
+              "renewalDate": "2019-05-17 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "NORTH CAROLINA",
+              "#text": "NC"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ONSLOW",
+            "@city": "HUBERT",
+            "#text": "285394508"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2019-09-26 17:55:03",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2019-09-26 17:55:08",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2018-08-17 00:00:00",
+            "genericString02": "DKLJD272LKN3"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU18C0044",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU18C0044",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "US WORKBOATS LLC",
+      "vendor_uei": "DKLJD272LKN3",
+      "this_obligated": 1070928.0,
+      "total_obligated": 1070493.11,
+      "base_and_exercised": 1070928.0,
+      "base_and_all_options": 1070928.0,
+      "total_base_and_all_options": 1070493.11,
+      "signed_date": "2018-09-29 00:00:00",
+      "effective_date": "2018-09-27 00:00:00",
+      "current_completion_date": "2020-01-01 00:00:00",
+      "ultimate_completion_date": "2020-01-01 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST SAVANNAH",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1990",
+      "psc_desc": "MISCELLANEOUS VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "4",
+      "description": "CONSTRUCT, TEST AND DELIVER (2) SURVEY VESSELS FOR SAVANNAH DISTRICT.",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU18C0044",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-09-29 00:00:00",
+          "effectiveDate": "2018-09-27 00:00:00",
+          "currentCompletionDate": "2020-01-01 00:00:00",
+          "ultimateCompletionDate": "2020-01-01 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1070928.00",
+          "baseAndExercisedOptionsValue": "1070928.00",
+          "baseAndAllOptionsValue": "1070928.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1070493.11",
+          "totalBaseAndExercisedOptionsValue": "1070493.11",
+          "totalBaseAndAllOptionsValue": "1070493.11"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST SAVANNAH",
+            "#text": "W912HN"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU18B0016",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CONSTRUCT, TEST AND DELIVER (2) SURVEY VESSELS FOR SAVANNAH DISTRICT.",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "FAR 52.232-16 PROGRESS PAYMENTS",
+            "#text": "A"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1990"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "US WORKBOATS LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "270 HOGANS RD",
+              "city": "HUBERT",
+              "state": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "ZIPCode": {
+                "@city": "HUBERT",
+                "#text": "285394508"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2526177954",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "28539",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "DKLJD272LKN3",
+                "UEILegalBusinessName": "US WORKBOATS LLC",
+                "ultimateParentUEI": "DKLJD272LKN3",
+                "ultimateParentUEIName": "US WORKBOATS LLC"
+              },
+              "cageCode": "83SL0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2018-05-17 00:00:00",
+              "renewalDate": "2019-05-17 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "NORTH CAROLINA",
+              "#text": "NC"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ONSLOW",
+            "@city": "HUBERT",
+            "#text": "285394508"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "DILLON.M.LUCAS.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2018-09-27 12:12:14",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2018-09-29 15:07:46",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2018-08-17 00:00:00",
+            "genericString02": "DKLJD272LKN3"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU18C0044",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU18C0044",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "US WORKBOATS LLC",
+      "vendor_uei": "DKLJD272LKN3",
+      "this_obligated": 0.0,
+      "total_obligated": 1070493.11,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1070493.11,
+      "signed_date": "2018-11-15 00:00:00",
+      "effective_date": "2018-11-16 00:00:00",
+      "current_completion_date": "2019-02-14 00:00:00",
+      "ultimate_completion_date": "2020-02-14 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST SAVANNAH",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1990",
+      "psc_desc": "MISCELLANEOUS VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "4",
+      "description": "NTP CLIN 0001AA",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU18C0044",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-11-15 00:00:00",
+          "effectiveDate": "2018-11-16 00:00:00",
+          "currentCompletionDate": "2019-02-14 00:00:00",
+          "ultimateCompletionDate": "2020-02-14 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1070493.11",
+          "totalBaseAndExercisedOptionsValue": "1070493.11",
+          "totalBaseAndAllOptionsValue": "1070493.11"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST SAVANNAH",
+            "#text": "W912HN"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU18B0016",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "NTP CLIN 0001AA",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "FAR 52.232-16 PROGRESS PAYMENTS",
+            "#text": "A"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1990"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "US WORKBOATS LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "270 HOGANS RD",
+              "city": "HUBERT",
+              "state": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "ZIPCode": {
+                "@city": "HUBERT",
+                "#text": "285394508"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2526177954",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "28539",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "DKLJD272LKN3",
+                "UEILegalBusinessName": "US WORKBOATS LLC",
+                "ultimateParentUEI": "DKLJD272LKN3",
+                "ultimateParentUEIName": "US WORKBOATS LLC"
+              },
+              "cageCode": "83SL0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2018-05-17 00:00:00",
+              "renewalDate": "2019-05-17 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "NORTH CAROLINA",
+              "#text": "NC"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ONSLOW",
+            "@city": "HUBERT",
+            "#text": "285394508"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2018-11-15 18:23:20",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2018-11-15 18:23:24",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2018-08-17 00:00:00",
+            "genericString02": "DKLJD272LKN3"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU18C0044",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU18C0044",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "US WORKBOATS LLC",
+      "vendor_uei": "DKLJD272LKN3",
+      "this_obligated": 0.0,
+      "total_obligated": 1070493.11,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1070493.11,
+      "signed_date": "2019-04-25 00:00:00",
+      "effective_date": "2019-04-25 00:00:00",
+      "current_completion_date": "2020-04-25 00:00:00",
+      "ultimate_completion_date": "2020-04-25 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1990",
+      "psc_desc": "MISCELLANEOUS VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "4",
+      "description": "CONSTRUCT, TEST AND DELIVER",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU18C0044",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-04-25 00:00:00",
+          "effectiveDate": "2019-04-25 00:00:00",
+          "currentCompletionDate": "2020-04-25 00:00:00",
+          "ultimateCompletionDate": "2020-04-25 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1070493.11",
+          "totalBaseAndExercisedOptionsValue": "1070493.11",
+          "totalBaseAndAllOptionsValue": "1070493.11"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU18B0016",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CONSTRUCT, TEST AND DELIVER",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "FAR 52.232-16 PROGRESS PAYMENTS",
+            "#text": "A"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1990"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "US WORKBOATS LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "270 HOGANS RD",
+              "city": "HUBERT",
+              "state": {
+                "@name": "NORTH CAROLINA",
+                "#text": "NC"
+              },
+              "ZIPCode": {
+                "@city": "HUBERT",
+                "#text": "285394508"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2526177954",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "28539",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "DKLJD272LKN3",
+                "UEILegalBusinessName": "US WORKBOATS LLC",
+                "ultimateParentUEI": "DKLJD272LKN3",
+                "ultimateParentUEIName": "US WORKBOATS LLC"
+              },
+              "cageCode": "83SL0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2018-05-17 00:00:00",
+              "renewalDate": "2019-05-17 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "NORTH CAROLINA",
+              "#text": "NC"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ONSLOW",
+            "@city": "HUBERT",
+            "#text": "285394508"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ESTHER.A.EDINBOROUGH.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2019-04-25 17:12:38",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ESTHER.A.EDINBOROUGH.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2019-04-25 17:12:40",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2018-08-17 00:00:00",
+            "genericString02": "DKLJD272LKN3"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1009 @@
+{
+  "recipient_name": "DSC DREDGE, LLC",
+  "recipient_uei": "EL22A937Z8Q4",
+  "query": "VENDOR_UEI:\"EL22A937Z8Q4\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 2,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1287456.0,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912BU19C0052",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU19C0052",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "DSC DREDGE, LLC",
+      "vendor_uei": "EL22A937Z8Q4",
+      "this_obligated": 43000.0,
+      "total_obligated": 1287456.0,
+      "base_and_exercised": 43000.0,
+      "base_and_all_options": 43000.0,
+      "total_base_and_all_options": 1689547.0,
+      "signed_date": "2021-01-21 00:00:00",
+      "effective_date": "2019-09-26 00:00:00",
+      "current_completion_date": "2021-08-31 00:00:00",
+      "ultimate_completion_date": "2021-08-31 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "MOD P00001 ADDITIONAL ANODES & QUARANTINE",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU19C0052",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2021-01-21 00:00:00",
+          "effectiveDate": "2019-09-26 00:00:00",
+          "currentCompletionDate": "2021-08-31 00:00:00",
+          "ultimateCompletionDate": "2021-08-31 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "43000.00",
+          "baseAndExercisedOptionsValue": "43000.00",
+          "baseAndAllOptionsValue": "43000.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1287456.00",
+          "totalBaseAndExercisedOptionsValue": "1287456.00",
+          "totalBaseAndAllOptionsValue": "1689547.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU19Q0020",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD P00001 ADDITIONAL ANODES & QUARANTINE",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "DSC DREDGE, LLC",
+            "vendorAlternateName": "D S C",
+            "vendorLegalOrganizationName": "DSC DREDGE, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "LOUISIANA",
+                "#text": "LA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "156 AIRPORT RD",
+              "city": "RESERVE",
+              "state": {
+                "@name": "LOUISIANA",
+                "#text": "LA"
+              },
+              "ZIPCode": {
+                "@city": "RESERVE",
+                "#text": "700846946"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9854798042",
+              "faxNo": "9854791367",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "70084",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "EL22A937Z8Q4",
+                "UEILegalBusinessName": "DSC DREDGE, LLC",
+                "ultimateParentUEI": "EL22A937Z8Q4",
+                "ultimateParentUEIName": "DSC DREDGE  LLC"
+              },
+              "cageCode": "7PHH6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2016-06-23 00:00:00",
+              "renewalDate": "2020-09-09 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "LOUISIANA",
+              "#text": "LA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ST JOHN THE BAPTIST",
+            "@city": "RESERVE",
+            "#text": "700846946"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2021-01-21 09:29:55",
+          "lastModifiedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "lastModifiedDate": "2021-01-21 09:29:58",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2021-01-21 09:29:58",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2019-08-26 00:00:00",
+            "genericString02": "EL22A937Z8Q4"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU19C0052",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU19C0052",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "DSC DREDGE, LLC",
+      "vendor_uei": "EL22A937Z8Q4",
+      "this_obligated": 1244456.0,
+      "total_obligated": 1287456.0,
+      "base_and_exercised": 1244456.0,
+      "base_and_all_options": 1646547.0,
+      "total_base_and_all_options": 1689547.0,
+      "signed_date": "2019-09-25 00:00:00",
+      "effective_date": "2019-09-26 00:00:00",
+      "current_completion_date": "2020-10-20 00:00:00",
+      "ultimate_completion_date": "2020-10-20 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1925",
+      "psc_desc": "SPECIAL SERVICE VESSELS",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "2",
+      "description": "CONSTRUCT&TEST",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU19C0052",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-09-25 00:00:00",
+          "effectiveDate": "2019-09-26 00:00:00",
+          "currentCompletionDate": "2020-10-20 00:00:00",
+          "ultimateCompletionDate": "2020-10-20 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1244456.00",
+          "baseAndExercisedOptionsValue": "1244456.00",
+          "baseAndAllOptionsValue": "1646547.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1287456.00",
+          "totalBaseAndExercisedOptionsValue": "1287456.00",
+          "totalBaseAndAllOptionsValue": "1689547.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU19Q0020",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CONSTRUCT&TEST",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SPECIAL SERVICE VESSELS",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1925"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "DSC DREDGE, LLC",
+            "vendorAlternateName": "D S C",
+            "vendorLegalOrganizationName": "DSC DREDGE, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "LOUISIANA",
+                "#text": "LA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "156 AIRPORT RD",
+              "city": "RESERVE",
+              "state": {
+                "@name": "LOUISIANA",
+                "#text": "LA"
+              },
+              "ZIPCode": {
+                "@city": "RESERVE",
+                "#text": "700846946"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "9854798042",
+              "faxNo": "9854791367",
+              "congressionalDistrictCode": "02",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "70084",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "EL22A937Z8Q4",
+                "UEILegalBusinessName": "DSC DREDGE, LLC",
+                "ultimateParentUEI": "EL22A937Z8Q4",
+                "ultimateParentUEIName": "DSC DREDGE  LLC"
+              },
+              "cageCode": "7PHH6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2016-06-23 00:00:00",
+              "renewalDate": "2020-09-09 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "LOUISIANA",
+              "#text": "LA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ST JOHN THE BAPTIST",
+            "@city": "RESERVE",
+            "#text": "700846946"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2019-09-23 14:28:43",
+          "lastModifiedBy": "DOD_CLOSEOUT",
+          "lastModifiedDate": "2022-05-25 12:11:17",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "GREGORY.C.KEATON.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2019-09-25 17:00:54",
+          "closedBy": "DOD_CLOSEOUT",
+          "closedDate": "2022-05-25 12:11:17",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2019-08-26 00:00:00",
+            "genericString02": "EL22A937Z8Q4"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1394 @@
+{
+  "source": "file",
+  "name": "AP Bridge",
+  "tab_name": "AP Bridge",
+  "sheet_index": 9,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 12,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "40"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "12"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "12"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "12"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "12"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    },
+    {
+      "min": "9",
+      "max": "9",
+      "width": "11"
+    },
+    {
+      "min": "10",
+      "max": "10",
+      "width": "11"
+    },
+    {
+      "min": "11",
+      "max": "11",
+      "width": "11"
+    },
+    {
+      "min": "12",
+      "max": "12",
+      "width": "11"
+    }
+  ],
+  "n_rows": 26,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 11
+    },
+    {
+      "r": "4",
+      "n_cells": 12
+    },
+    {
+      "r": "6",
+      "n_cells": 11
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "12",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 11
+    },
+    {
+      "r": "16",
+      "n_cells": 12
+    },
+    {
+      "r": "18",
+      "n_cells": 2
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "21",
+      "n_cells": 2
+    },
+    {
+      "r": "24",
+      "n_cells": 12
+    },
+    {
+      "r": "26",
+      "n_cells": 3
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "28",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "29",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "31",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "34",
+      "n_cells": 12
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "37",
+      "outlineLevel": "1",
+      "n_cells": 1
+    }
+  ],
+  "n_cells": 175,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "AP Bridge"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "I2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "J2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "K2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "L2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Resource summary ($M, FY27 PB; P-1/P-10 view)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Row Label"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Prior"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY25"
+    },
+    {
+      "ref": "E6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY26"
+    },
+    {
+      "ref": "F6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY27"
+    },
+    {
+      "ref": "G6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY28"
+    },
+    {
+      "ref": "H6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY29"
+    },
+    {
+      "ref": "I6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY30"
+    },
+    {
+      "ref": "J6",
+      "style": "S_HEADER_CENTER",
+      "value": "FY31"
+    },
+    {
+      "ref": "K6",
+      "style": "S_HEADER_CENTER",
+      "value": "ToCompl"
+    },
+    {
+      "ref": "L6",
+      "style": "S_HEADER_CENTER",
+      "value": "Total"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Gross / Weapon System Cost"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "117822.879"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "7858.814"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "306.125"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "4256.914"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "4026.201"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "4209.44"
+    },
+    {
+      "ref": "I7",
+      "style": "S_NUM_INPUT",
+      "value": "6613.151"
+    },
+    {
+      "ref": "J7",
+      "style": "S_NUM_INPUT",
+      "value": "6964.218"
+    },
+    {
+      "ref": "K7",
+      "style": "S_NUM_INPUT",
+      "value": "15080.837"
+    },
+    {
+      "ref": "L7",
+      "style": "S_NUM_INPUT",
+      "value": "167138.579"
+    },
+    {
+      "ref": "B8",
+      "style": "S_BOLD",
+      "value": "Plus CY Advance Procurement (AP)"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "3340.411"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "83.224"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "1750.0"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "1758.004"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L8",
+      "style": "S_NUM_INPUT",
+      "value": "6931.639"
+    },
+    {
+      "ref": "B9",
+      "style": "S_BOLD",
+      "value": "Plus EOQ (Economic Order Qty)"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "3826.3"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L9",
+      "style": "S_NUM_INPUT",
+      "value": "3826.3"
+    },
+    {
+      "ref": "B10",
+      "style": "S_BOLD",
+      "value": "Less PY Advance Procurement"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "2910.85"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "2.659"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "65.021"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1023.521"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "502.271"
+    },
+    {
+      "ref": "I10",
+      "style": "S_NUM_INPUT",
+      "value": "502.271"
+    },
+    {
+      "ref": "J10",
+      "style": "S_NUM_INPUT",
+      "value": "502.305"
+    },
+    {
+      "ref": "K10",
+      "style": "S_NUM_INPUT",
+      "value": "1001.157"
+    },
+    {
+      "ref": "L10",
+      "style": "S_NUM_INPUT",
+      "value": "6510.055"
+    },
+    {
+      "ref": "B11",
+      "style": "S_BOLD",
+      "value": "Less EOQ"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "2150.761"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "1587.636"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "230.331"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "279.155"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L11",
+      "style": "S_NUM_INPUT",
+      "value": "4247.883"
+    },
+    {
+      "ref": "B12",
+      "style": "S_BOLD",
+      "value": "Net Procurement (P-1)"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "106913.494"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "6268.519"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "10.773"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "2954.238"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "4026.201"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "3707.169"
+    },
+    {
+      "ref": "I12",
+      "style": "S_NUM_INPUT",
+      "value": "6110.88"
+    },
+    {
+      "ref": "J12",
+      "style": "S_NUM_INPUT",
+      "value": "6461.913"
+    },
+    {
+      "ref": "K12",
+      "style": "S_NUM_INPUT",
+      "value": "14079.68"
+    },
+    {
+      "ref": "L12",
+      "style": "S_NUM_INPUT",
+      "value": "150532.867"
+    },
+    {
+      "ref": "B13",
+      "style": "S_BOLD",
+      "value": "Total Obligation Authority (TOA)"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "116656.338"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "8268.628"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "1942.268"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "3132.462"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "6124.325"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "3993.544"
+    },
+    {
+      "ref": "I13",
+      "style": "S_NUM_INPUT",
+      "value": "6375.629"
+    },
+    {
+      "ref": "J13",
+      "style": "S_NUM_INPUT",
+      "value": "6565.705"
+    },
+    {
+      "ref": "K13",
+      "style": "S_NUM_INPUT",
+      "value": "14079.68"
+    },
+    {
+      "ref": "L13",
+      "style": "S_NUM_INPUT",
+      "value": "167138.579"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - TAM-base derivation"
+    },
+    {
+      "ref": "C16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B18",
+      "style": "S_HEADER_LEFT",
+      "value": "Step"
+    },
+    {
+      "ref": "C18",
+      "style": "S_HEADER_CENTER",
+      "value": "Value $M"
+    },
+    {
+      "ref": "B19",
+      "style": "S_BOLD",
+      "value": "CY Advance Procurement, in-window (FY25-27)"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "N('Assumptions'!C24)+N('Assumptions'!D24)+N('Assumptions'!E24)+N('Assumptions'!F24)+N('Assumptions'!G24)+N('Assumptions'!H24)"
+    },
+    {
+      "ref": "B20",
+      "style": "S_LABEL_INDENT_1",
+      "value": "x ship-construction share = non-GFE AP base"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM",
+      "formula": "C19*'Assumptions'!C37"
+    },
+    {
+      "ref": "B21",
+      "style": "S_TOTAL",
+      "value": "x AP/LLTM supplier coeff = AP/LLTM stream TAM"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_TOTAL",
+      "formula": "C20*'Assumptions'!C38"
+    },
+    {
+      "ref": "A24",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Line-level classification (DDG P-10 structure)"
+    },
+    {
+      "ref": "C24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B26",
+      "style": "S_HEADER_LEFT",
+      "value": "AP / EOQ line"
+    },
+    {
+      "ref": "C26",
+      "style": "S_HEADER_LEFT",
+      "value": "TAM treatment"
+    },
+    {
+      "ref": "D26",
+      "style": "S_HEADER_LEFT",
+      "value": "Rationale"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "Ship Construction EOQ"
+    },
+    {
+      "ref": "C27",
+      "style": "S_BOLD",
+      "value": "INCLUDE"
+    },
+    {
+      "ref": "D27",
+      "style": "S_DEFAULT",
+      "value": "new-construction supplier material (ship-construction share)"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "AWS EOQ (Aegis Weapon System)"
+    },
+    {
+      "ref": "C28",
+      "style": "S_BOLD",
+      "value": "EXCLUDE"
+    },
+    {
+      "ref": "D28",
+      "style": "S_DEFAULT",
+      "value": "GFE-controlled combat system (default out)"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "Other GFE / CBSP AP"
+    },
+    {
+      "ref": "C29",
+      "style": "S_BOLD",
+      "value": "EXCLUDE"
+    },
+    {
+      "ref": "D29",
+      "style": "S_DEFAULT",
+      "value": "Navy-furnished equipment"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "VLS / weapons / ordnance AP"
+    },
+    {
+      "ref": "C30",
+      "style": "S_BOLD",
+      "value": "EXCLUDE"
+    },
+    {
+      "ref": "D30",
+      "style": "S_DEFAULT",
+      "value": "WPN/OPN appropriation; not SCN ship construction"
+    },
+    {
+      "ref": "B31",
+      "style": "S_DEFAULT",
+      "value": "Power Conversion Modules"
+    },
+    {
+      "ref": "C31",
+      "style": "S_BOLD",
+      "value": "IN BC ALREADY"
+    },
+    {
+      "ref": "D31",
+      "style": "S_DEFAULT",
+      "value": "moved GFE -> Basic Construction in FY23 (no re-add)"
+    },
+    {
+      "ref": "A34",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B34",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - Caveats"
+    },
+    {
+      "ref": "C34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L34",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "Ship-Construction vs AWS/Other-GFE split is set on Inputs; P-10 line-items don't parse cleanly."
+    },
+    {
+      "ref": "B37",
+      "style": "S_DEFAULT",
+      "value": "No double-count: P-5c BC is net of prior-yr AP, so CY AP is additive (PY-AP-credit in TAM stream bases = 0)."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "AP Bridge"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Resource summary ($M, FY27 PB; P-1/P-10 view)"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - TAM-base derivation"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Line-level classification (DDG P-10 structure)"
+    },
+    {
+      "ref": "B34",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - Caveats"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "117822.879"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "7858.814"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "306.125"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "4256.914"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "4026.201"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "4209.44"
+    },
+    {
+      "ref": "I7",
+      "style": "S_NUM_INPUT",
+      "value": "6613.151"
+    },
+    {
+      "ref": "J7",
+      "style": "S_NUM_INPUT",
+      "value": "6964.218"
+    },
+    {
+      "ref": "K7",
+      "style": "S_NUM_INPUT",
+      "value": "15080.837"
+    },
+    {
+      "ref": "L7",
+      "style": "S_NUM_INPUT",
+      "value": "167138.579"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "3340.411"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "83.224"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "1750.0"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "1758.004"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L8",
+      "style": "S_NUM_INPUT",
+      "value": "6931.639"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "3826.3"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L9",
+      "style": "S_NUM_INPUT",
+      "value": "3826.3"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "2910.85"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "2.659"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "65.021"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1023.521"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "502.271"
+    },
+    {
+      "ref": "I10",
+      "style": "S_NUM_INPUT",
+      "value": "502.271"
+    },
+    {
+      "ref": "J10",
+      "style": "S_NUM_INPUT",
+      "value": "502.305"
+    },
+    {
+      "ref": "K10",
+      "style": "S_NUM_INPUT",
+      "value": "1001.157"
+    },
+    {
+      "ref": "L10",
+      "style": "S_NUM_INPUT",
+      "value": "6510.055"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "2150.761"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "1587.636"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "230.331"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "279.155"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L11",
+      "style": "S_NUM_INPUT",
+      "value": "4247.883"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "106913.494"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "6268.519"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "10.773"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "2954.238"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "4026.201"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "3707.169"
+    },
+    {
+      "ref": "I12",
+      "style": "S_NUM_INPUT",
+      "value": "6110.88"
+    },
+    {
+      "ref": "J12",
+      "style": "S_NUM_INPUT",
+      "value": "6461.913"
+    },
+    {
+      "ref": "K12",
+      "style": "S_NUM_INPUT",
+      "value": "14079.68"
+    },
+    {
+      "ref": "L12",
+      "style": "S_NUM_INPUT",
+      "value": "150532.867"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "116656.338"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "8268.628"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "1942.268"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "3132.462"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "6124.325"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "3993.544"
+    },
+    {
+      "ref": "I13",
+      "style": "S_NUM_INPUT",
+      "value": "6375.629"
+    },
+    {
+      "ref": "J13",
+      "style": "S_NUM_INPUT",
+      "value": "6565.705"
+    },
+    {
+      "ref": "K13",
+      "style": "S_NUM_INPUT",
+      "value": "14079.68"
+    },
+    {
+      "ref": "L13",
+      "style": "S_NUM_INPUT",
+      "value": "167138.579"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 3,
+  "formula_refs_by_sheet": {
+    "Assumptions": [
+      "C19",
+      "C20",
+      "C21"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

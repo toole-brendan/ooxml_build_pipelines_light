@@ -1,0 +1,137 @@
+# sheet_probe: Scope Exclusions
+
+- source: `file`
+- tab name: `Scope Exclusions`
+- tab color: `FF6E6E6E`
+- gridlines shown: `0`
+- columns: 4 · rows: 35 · cells: 101 · formulas: 4
+
+## Banners
+- `B2` S_TITLE_SHEET — Scope Exclusions
+- `B4` S_TITLE_SECTION — §1 - Cleanup summary (after removing 16 contaminant PIIDs)
+- `B14` S_TITLE_SECTION — §2 - Excluded PIIDs by class (FPDS obligated $M = size indicator)
+- `B16` S_TITLE_SUBSECTION — §2a - IVECO - Marine Corps Mk110 gun (not DDG) (1)
+- `B23` S_TITLE_SUBSECTION — §2b - DDG-1000 / Zumwalt - out of class (LI 2119, closed) (6)
+- `B35` S_TITLE_SUBSECTION — §2c - WPN/OPN weapons - ESSM + CIWS, different appropriation (9)
+
+## Hardcoded inputs (17)
+- `C10` S_NUM_INPUT = 11201.9
+- `D19` S_NUM_INPUT = 1108.35
+- `D26` S_NUM_INPUT = 1341.51
+- `D27` S_NUM_INPUT = 379.9
+- `D28` S_NUM_INPUT = 793.09
+- `D29` S_NUM_INPUT = 305.55
+- `D30` S_NUM_INPUT = 621.73
+- `D31` S_NUM_INPUT = 344.05
+- `D38` S_NUM_INPUT = 533.31
+- `D39` S_NUM_INPUT = 188.4
+- `D40` S_NUM_INPUT = 261.94
+- `D41` S_NUM_INPUT = 1391.8
+- `D42` S_NUM_INPUT = 377.34
+- `D43` S_NUM_INPUT = 70.5
+- `D44` S_NUM_INPUT = 79.46
+- `D45` S_NUM_INPUT = 184.87
+- `D46` S_NUM_INPUT = 62.6
+
+## Cells
+- `B2` S_TITLE_SHEET: Scope Exclusions
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Cleanup summary (after removing 16 contaminant PIIDs)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Metric
+- `C6` S_HEADER_CENTER: Value
+- `B7` S_DEFAULT: Records kept (in-scope)
+- `C7` S_DEFAULT: 15720
+- `B8` S_DEFAULT: Records excluded (out-of-scope PIIDs)
+- `C8` S_DEFAULT: 6515
+- `B9` S_DEFAULT: Records pre-clean (kept + excluded)
+- `C9` S_DEFAULT: =C7+C8
+- `B10` S_DEFAULT: In-scope dollars ($M)
+- `C10` S_NUM_INPUT: 11201.9
+- `B11` S_DEFAULT: Unique in-scope parent UEIs
+- `C11` S_DEFAULT: 1554
+- `A14` S_DEFAULT: x
+- `B14` S_TITLE_SECTION: §2 - Excluded PIIDs by class (FPDS obligated $M = size indicator)
+- `C14` S_TITLE_SECTION: 
+- `D14` S_TITLE_SECTION: 
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SUBSECTION: §2a - IVECO - Marine Corps Mk110 gun (not DDG) (1)
+- `C16` S_TITLE_SUBSECTION: 
+- `D16` S_TITLE_SUBSECTION: 
+- `B18` S_HEADER_LEFT: PIID
+- `C18` S_HEADER_LEFT: Reason
+- `D18` S_HEADER_CENTER: FPDS obligated $M
+- `B19` S_DEFAULT: M6785416C0006
+- `C19` S_DEFAULT: MARCORSYSCOM Mk110 gun (IVECO) - Marine Corps, not DDG
+- `D19` S_NUM_INPUT: 1108.35
+- `B20` S_BORDER_TOP: 
+- `C20` S_TOTAL: Subtotal - IVECO
+- `D20` S_NUM_TOTAL: =SUM(D19:D19)
+- `A23` S_DEFAULT: x
+- `B23` S_TITLE_SUBSECTION: §2b - DDG-1000 / Zumwalt - out of class (LI 2119, closed) (6)
+- `C23` S_TITLE_SUBSECTION: 
+- `D23` S_TITLE_SUBSECTION: 
+- `B25` S_HEADER_LEFT: PIID
+- `C25` S_HEADER_LEFT: Reason
+- `D25` S_HEADER_CENTER: FPDS obligated $M
+- `B26` S_DEFAULT: N0002410C5126
+- `C26` S_DEFAULT: DDG-1002 MSE - DDG-1000 out of class
+- `D26` S_NUM_INPUT: 1341.51
+- `B27` S_DEFAULT: N0002413C5212
+- `C27` S_DEFAULT: DDG-1000 opt year 4 - out of class
+- `D27` S_NUM_INPUT: 379.9
+- `B28` S_DEFAULT: N0002417C5145
+- `C28` S_DEFAULT: DDG-1000 MSE/TSCE - out of class
+- `D28` S_NUM_INPUT: 793.09
+- `B29` S_DEFAULT: N0002422C2300
+- `C29` S_DEFAULT: DDG-1002 Zumwalt CSA - out of class
+- `D29` S_NUM_INPUT: 305.55
+- `B30` S_DEFAULT: N0002422C5522
+- `C30` S_DEFAULT: DDG-1000 systems engineering - out of class
+- `D30` S_NUM_INPUT: 621.73
+- `B31` S_DEFAULT: N0002423C2324
+- `C31` S_DEFAULT: DDG-1000 Zumwalt BYMP - out of class
+- `D31` S_NUM_INPUT: 344.05
+- `B32` S_BORDER_TOP: 
+- `C32` S_TOTAL: Subtotal - DDG-1000 / Zumwalt
+- `D32` S_NUM_TOTAL: =SUM(D26:D31)
+- `A35` S_DEFAULT: x
+- `B35` S_TITLE_SUBSECTION: §2c - WPN/OPN weapons - ESSM + CIWS, different appropriation (9)
+- `C35` S_TITLE_SUBSECTION: 
+- `D35` S_TITLE_SUBSECTION: 
+- `B37` S_HEADER_LEFT: PIID
+- `C37` S_HEADER_LEFT: Reason
+- `D37` S_HEADER_CENTER: FPDS obligated $M
+- `B38` S_DEFAULT: N0002415C5420
+- `C38` S_DEFAULT: ESSM Block 2 EMD - WPN/OPN weapon (also the Thales $4.2B artifact PIID)
+- `D38` S_NUM_INPUT: 533.31
+- `B39` S_DEFAULT: N0002416C5433
+- `C39` S_DEFAULT: ESSM design agent - WPN/OPN weapon
+- `D39` S_NUM_INPUT: 188.4
+- `B40` S_DEFAULT: N0002418C5406
+- `C40` S_DEFAULT: CIWS Mk15 Phalanx U&C - WPN/OPN weapon
+- `D40` S_NUM_INPUT: 261.94
+- `B41` S_DEFAULT: N0002421C5408
+- `C41` S_DEFAULT: ESSM Block 2 spares - WPN/OPN weapon
+- `D41` S_NUM_INPUT: 1391.8
+- `B42` S_DEFAULT: N0002424C5406
+- `C42` S_DEFAULT: CIWS FY25 production - WPN/OPN weapon
+- `D42` S_NUM_INPUT: 377.34
+- `B43` S_DEFAULT: N0002426C5434
+- `C43` S_DEFAULT: ESSM CY26-30 design agent - WPN/OPN weapon
+- `D43` S_NUM_INPUT: 70.5
+- `B44` S_DEFAULT: N0010418F0E40
+- `C44` S_DEFAULT: CIWS PBL definitization - WPN/OPN weapon
+- `D44` S_NUM_INPUT: 79.46
+- `B45` S_DEFAULT: N0038319F0VP0
+- `C45` S_DEFAULT: CIWS PBL support - WPN/OPN weapon (sustainment)
+- `D45` S_NUM_INPUT: 184.87
+- `B46` S_DEFAULT: N0038321F0ZM0
+- `C46` S_DEFAULT: CIWS long-term contract - WPN/OPN weapon
+- `D46` S_NUM_INPUT: 62.6
+- `B47` S_BORDER_TOP: 
+- `C47` S_TOTAL: Subtotal - WPN/OPN weapons
+- `D47` S_NUM_TOTAL: =SUM(D38:D46)

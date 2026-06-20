@@ -1,0 +1,414 @@
+{
+  "source": "file",
+  "name": "POP Source Audit",
+  "tab_name": "POP Source Audit",
+  "sheet_index": 19,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 4,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "12"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    }
+  ],
+  "n_rows": 20,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 3
+    },
+    {
+      "r": "4",
+      "n_cells": 4
+    },
+    {
+      "r": "6",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "12",
+      "n_cells": 4
+    },
+    {
+      "r": "14",
+      "n_cells": 3
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "n_cells": 4
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "28",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 49,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "POP Source Audit"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Confirmation approach (risk-weighted)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_DEFAULT",
+      "value": "Tier 1 - top-$ actions covering ~90-95% of the weighted pool; all $250M+ / $100M+."
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "Tier 2 - the two MYP masters (redacted; reconstructed from FPDS + trade press); all AP/EOQ."
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Tier 3 - POP not summing ~100% (high unparsed); GFE-suspect; any coefficient-mover."
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Confirmed = gated AND in-scope (non-GFE) AND manual_review_status<>unresolved (default 1)."
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B12",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Coverage (gated corpus, incl. MYP masters)"
+    },
+    {
+      "ref": "C12",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D12",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B14",
+      "style": "S_HEADER_LEFT",
+      "value": "Metric"
+    },
+    {
+      "ref": "C14",
+      "style": "S_HEADER_CENTER",
+      "value": "Actions"
+    },
+    {
+      "ref": "D14",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B15",
+      "style": "S_BOLD",
+      "value": "Gated TAM corpus"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160)"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B16",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less: GFE / Navy-directed scope"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!J7:J160)"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!J7:J160*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B17",
+      "style": "S_BOLD",
+      "value": "In-scope (non-GFE) gated"
+    },
+    {
+      "ref": "C17",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160))"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B18",
+      "style": "S_LABEL_INDENT_1",
+      "value": "confirmed"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160)"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B19",
+      "style": "S_LABEL_INDENT_1",
+      "value": "of which BC stream"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160=\"BC\"))"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160=\"BC\")*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B20",
+      "style": "S_BOLD",
+      "value": "MYP masters (reconstructed)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!L7:L160)"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!L7:L160*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "Disclosed (excl. masters)"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!L7:L160))"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160)"
+    },
+    {
+      "ref": "A24",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Risk ratios + partition"
+    },
+    {
+      "ref": "C24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "Confirmation coverage (% of in-scope $)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_PCT",
+      "formula": "IF(C17=0,0,D18/D17)"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "Stream partition OK? (every in-scope action is BC)"
+    },
+    {
+      "ref": "C27",
+      "style": "S_DEFAULT",
+      "formula": "IF(C19=C18,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "MYP masters as % of gated $"
+    },
+    {
+      "ref": "C28",
+      "style": "S_PCT",
+      "formula": "IF(D15=0,0,D20/D15)"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "POP Source Audit"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Confirmation approach (risk-weighted)"
+    },
+    {
+      "ref": "B12",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Coverage (gated corpus, incl. MYP masters)"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Risk ratios + partition"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 17,
+  "formula_refs_by_sheet": {
+    "POP Corpus": [
+      "C15",
+      "D15",
+      "C16",
+      "D16",
+      "C17",
+      "D17",
+      "C18",
+      "D18",
+      "C19",
+      "D19",
+      "C20",
+      "D20",
+      "C21",
+      "D21"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

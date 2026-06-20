@@ -1,0 +1,1449 @@
+{
+  "recipient_name": "BAY MARINE BOATWORKS, INC.",
+  "recipient_uei": "LAN8Y54MJ244",
+  "query": "VENDOR_UEI:\"LAN8Y54MJ244\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 3,
+  "distinct_piids": 2,
+  "sum_obligated_amount": 1193729.79,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912P717P0020",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P717P0020",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "BAY MARINE BOATWORKS, INC.",
+      "vendor_uei": "LAN8Y54MJ244",
+      "this_obligated": 8375.0,
+      "total_obligated": 8375.0,
+      "base_and_exercised": 8375.0,
+      "base_and_all_options": 8375.0,
+      "total_base_and_all_options": 8375.0,
+      "signed_date": "2017-05-12 00:00:00",
+      "effective_date": "2017-05-12 00:00:00",
+      "current_completion_date": "2017-07-11 00:00:00",
+      "ultimate_completion_date": "2017-07-11 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W075 ENDIST SAN FRAN",
+      "contracting_office_id": "W912P7",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "4940",
+      "psc_desc": "MISCELLANEOUS MAINTENANCE AND REPAIR SHOP SPECIALIZED EQUIPMENT",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "NOT COMPETED",
+      "solicitation_procedures": "ONLY ONE SOURCE",
+      "number_of_offers": "1",
+      "description": "WILDCAT HAMILTON JET REPAIRS IGF::CL::IGF",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P717P0020",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-05-12 00:00:00",
+          "effectiveDate": "2017-05-12 00:00:00",
+          "currentCompletionDate": "2017-07-11 00:00:00",
+          "ultimateCompletionDate": "2017-07-11 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "8375.00",
+          "baseAndExercisedOptionsValue": "8375.00",
+          "baseAndAllOptionsValue": "8375.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "8375.00",
+          "totalBaseAndExercisedOptionsValue": "8375.00",
+          "totalBaseAndAllOptionsValue": "8375.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W075 ENDIST SAN FRAN",
+            "@country": "USA",
+            "#text": "W912P7"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "W912P7",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "descriptionOfContractRequirement": "WILDCAT HAMILTON JET REPAIRS IGF::CL::IGF",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS MAINTENANCE AND REPAIR SHOP SPECIALIZED EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "4940"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "BAY MARINE BOATWORKS, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "true",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "310 W CUTTING BLVD",
+              "city": "RICHMOND",
+              "state": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "ZIPCode": {
+                "@city": "RICHMOND",
+                "#text": "948042018"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5102370140",
+              "faxNo": "5102372253",
+              "congressionalDistrictCode": "11",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "94804",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LAN8Y54MJ244",
+                "UEILegalBusinessName": "BAY MARINE BOATWORKS, INC.",
+                "ultimateParentUEI": "NQELRXR7L3J6",
+                "ultimateParentUEIName": "BAY SHIP & YACHT CO."
+              },
+              "cageCode": "38DZ3"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2005-04-06 00:00:00",
+              "renewalDate": "2017-08-04 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "CALIFORNIA",
+              "#text": "CA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "SAN FRANCISCO",
+            "@city": "SAN FRANCISCO",
+            "#text": "941031398"
+          },
+          "placeOfPerformanceCongressionalDistrict": "12"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "NOT COMPETED",
+            "#text": "C"
+          },
+          "solicitationProcedures": {
+            "@description": "ONLY ONE SOURCE",
+            "#text": "SSS"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "reasonNotCompeted": {
+            "@description": "FOLLOW-ON CONTRACT (FAR 6.302-1(A)(2)(II/III))",
+            "#text": "FOC"
+          },
+          "numberOfOffersReceived": "1",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ERIK.MEYER.W912P7@USACE.ARMY.MIL",
+          "createdDate": "2017-05-11 13:20:02",
+          "lastModifiedBy": "FPDS_CLOSEOUT",
+          "lastModifiedDate": "2019-08-23 20:06:33",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SHIRLEY.A.TURNBO.W912P7@USACE.ARMY.MIL",
+          "approvedDate": "2017-05-12 20:40:20",
+          "closedBy": "FPDS_CLOSEOUT",
+          "closedDate": "2019-08-23 20:06:33",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "LAN8Y54MJ244"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P720P0013",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P720P0013",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "BAY MARINE BOATWORKS, INC.",
+      "vendor_uei": "LAN8Y54MJ244",
+      "this_obligated": 1011091.39,
+      "total_obligated": 1185354.79,
+      "base_and_exercised": 1011091.39,
+      "base_and_all_options": 1027991.39,
+      "total_base_and_all_options": 1189834.79,
+      "signed_date": "2020-05-29 00:00:00",
+      "effective_date": "2020-05-29 00:00:00",
+      "current_completion_date": "2020-09-30 00:00:00",
+      "ultimate_completion_date": "2020-09-30 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W075 ENDIST SAN FRAN",
+      "contracting_office_id": "W912P7",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W075 ENDIST SAN FRAN",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "1",
+      "description": "RANDY S. CUMMINGS DRYDOCLK SERVICE",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P720P0013",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2020-05-29 00:00:00",
+          "effectiveDate": "2020-05-29 00:00:00",
+          "currentCompletionDate": "2020-09-30 00:00:00",
+          "ultimateCompletionDate": "2020-09-30 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1011091.39",
+          "baseAndExercisedOptionsValue": "1011091.39",
+          "baseAndAllOptionsValue": "1027991.39"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1185354.79",
+          "totalBaseAndExercisedOptionsValue": "1185354.79",
+          "totalBaseAndAllOptionsValue": "1189834.79"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W075 ENDIST SAN FRAN",
+            "@country": "USA",
+            "#text": "W912P7"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W075 ENDIST SAN FRAN",
+            "#text": "W912P7"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P720T0001",
+          "descriptionOfContractRequirement": "RANDY S. CUMMINGS DRYDOCLK SERVICE",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "BAY MARINE BOATWORKS, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "true",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "310 W CUTTING BLVD",
+              "city": "RICHMOND",
+              "state": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "ZIPCode": {
+                "@city": "RICHMOND",
+                "#text": "948042018"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5102370140",
+              "faxNo": "5102372253",
+              "congressionalDistrictCode": "11",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "94804",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LAN8Y54MJ244",
+                "UEILegalBusinessName": "BAY MARINE BOATWORKS, INC.",
+                "ultimateParentUEI": "NQELRXR7L3J6",
+                "ultimateParentUEIName": "BAY SHIP & YACHT CO."
+              },
+              "cageCode": "38DZ3"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2005-04-06 00:00:00",
+              "renewalDate": "2021-05-12 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "CALIFORNIA",
+              "#text": "CA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "SAN FRANCISCO",
+            "@city": "SAN FRANCISCO",
+            "#text": "941026195"
+          },
+          "placeOfPerformanceCongressionalDistrict": "12"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "1",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "JAMES.NEAL.W912P7@USACE.ARMY.MIL",
+          "createdDate": "2020-04-29 20:00:41",
+          "lastModifiedBy": "DOD_CLOSEOUT",
+          "lastModifiedDate": "2021-12-29 13:22:46",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "M.C.F.W912P7@USACE.ARMY.MIL",
+          "approvedDate": "2020-05-29 17:58:01",
+          "closedBy": "DOD_CLOSEOUT",
+          "closedDate": "2021-12-29 13:22:46",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2019-11-04 00:00:00",
+            "genericString02": "LAN8Y54MJ244"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912P720P0013",
+      "referenced_idv_piid": null,
+      "full_piid": "W912P720P0013",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "BAY MARINE BOATWORKS, INC.",
+      "vendor_uei": "LAN8Y54MJ244",
+      "this_obligated": 174263.4,
+      "total_obligated": 1185354.79,
+      "base_and_exercised": 174263.4,
+      "base_and_all_options": 161843.4,
+      "total_base_and_all_options": 1189834.79,
+      "signed_date": "2020-09-29 00:00:00",
+      "effective_date": "2020-05-29 00:00:00",
+      "current_completion_date": "2021-03-31 00:00:00",
+      "ultimate_completion_date": "2021-03-31 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W075 ENDIST SAN FRAN",
+      "contracting_office_id": "W912P7",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "1",
+      "description": "RANDY CUMMING DRYDOCK-OPTION CLINS",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912P720P0013",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2020-09-29 00:00:00",
+          "effectiveDate": "2020-05-29 00:00:00",
+          "currentCompletionDate": "2021-03-31 00:00:00",
+          "ultimateCompletionDate": "2021-03-31 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "174263.40",
+          "baseAndExercisedOptionsValue": "174263.40",
+          "baseAndAllOptionsValue": "161843.40"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1185354.79",
+          "totalBaseAndExercisedOptionsValue": "1185354.79",
+          "totalBaseAndAllOptionsValue": "1189834.79"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W075 ENDIST SAN FRAN",
+            "@country": "USA",
+            "#text": "W912P7"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "EXERCISE AN OPTION",
+            "#text": "G"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W912P720T0001",
+          "descriptionOfContractRequirement": "RANDY CUMMING DRYDOCK-OPTION CLINS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "BAY MARINE BOATWORKS, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "true",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "310 W CUTTING BLVD",
+              "city": "RICHMOND",
+              "state": {
+                "@name": "CALIFORNIA",
+                "#text": "CA"
+              },
+              "ZIPCode": {
+                "@city": "RICHMOND",
+                "#text": "948042018"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5102370140",
+              "faxNo": "5102372253",
+              "congressionalDistrictCode": "11",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "94804",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "LAN8Y54MJ244",
+                "UEILegalBusinessName": "BAY MARINE BOATWORKS, INC.",
+                "ultimateParentUEI": "NQELRXR7L3J6",
+                "ultimateParentUEIName": "BAY SHIP & YACHT CO."
+              },
+              "cageCode": "38DZ3"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2005-04-06 00:00:00",
+              "renewalDate": "2021-05-12 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "CALIFORNIA",
+              "#text": "CA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "SAN FRANCISCO",
+            "@city": "SAN FRANCISCO",
+            "#text": "941026195"
+          },
+          "placeOfPerformanceCongressionalDistrict": "12"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "1",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "M.C.F.W912P7@USACE.ARMY.MIL",
+          "createdDate": "2020-09-29 18:24:14",
+          "lastModifiedBy": "M.C.F.W912P7@USACE.ARMY.MIL",
+          "lastModifiedDate": "2020-09-29 18:24:17",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "M.C.F.W912P7@USACE.ARMY.MIL",
+          "approvedDate": "2020-09-29 18:24:17",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2019-11-04 00:00:00",
+            "genericString02": "LAN8Y54MJ244"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

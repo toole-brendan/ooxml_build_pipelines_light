@@ -1,0 +1,4126 @@
+{
+  "slide_name": "s04_body_ecosystem_map",
+  "generated_at": "2026-06-06T19:11:02.706744+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 21,
+      "cxnSp": 24
+    },
+    "total_shapes": 45,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "ThesisStrip",
+      "y_emu": 1371600,
+      "y_in": 1.5
+    },
+    "bottom_most_body": {
+      "sp_id": 70,
+      "name": "Legend",
+      "bottom_emu": 5511600,
+      "bottom_in": 6.028
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 5930000,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Market Definition",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / Supplier Layer",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Market Definition / Supplier Layer"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 62448,
+        "avail_h_in": 0.068,
+        "wrapped_lines": 1,
+        "est_height_emu": 127000,
+        "est_height_in": 0.139,
+        "fits": false,
+        "overflow_emu": 64552,
+        "overflow_in": 0.071,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 127000,
+            "para_h_in": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1376172,
+        "avail_w_in": 1.505,
+        "avail_h_emu": 271712,
+        "avail_h_in": 0.297,
+        "wrapped_lines": 1,
+        "est_height_emu": 152400,
+        "est_height_in": 0.167,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          }
+        ]
+      }
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Supplier Layer | The opportunity sits between Navy budget authority and prime-yard construction, in component work yards buy out rather than self-perform.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Supplier Layer | The opportunity sits between Navy budget authority and prime-yard construction, in component work yards buy out rather than self-perform."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11190922,
+        "avail_w_in": 12.239,
+        "avail_h_emu": 548640,
+        "avail_h_in": 0.6,
+        "wrapped_lines": 2,
+        "est_height_emu": 508000,
+        "est_height_in": 0.556,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 20.0,
+            "lines": 2,
+            "para_h_emu": 508000,
+            "para_h_in": 0.556
+          }
+        ]
+      }
+    },
+    {
+      "z": 4,
+      "kind": "cxnSp",
+      "sp_id": 100,
+      "name": "FundDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2208079,
+        "y": 2431600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 2208079,
+        "y_abs": 2431600,
+        "x_in": 2.415,
+        "y_in": 2.659,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 2208079,
+        "bottom_emu": 2476600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 5,
+      "kind": "cxnSp",
+      "sp_id": 101,
+      "name": "FundSplit",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1315579,
+        "y": 2476600,
+        "cx": 1785000,
+        "cy": 0,
+        "x_abs": 1315579,
+        "y_abs": 2476600,
+        "x_in": 1.439,
+        "y_in": 2.708,
+        "cx_in": 1.952,
+        "cy_in": 0.0,
+        "right_emu": 3100579,
+        "bottom_emu": 2476600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 6,
+      "kind": "cxnSp",
+      "sp_id": 102,
+      "name": "ToPrimeL",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1315579,
+        "y": 2476600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 1315579,
+        "y_abs": 2476600,
+        "x_in": 1.439,
+        "y_in": 2.708,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 1315579,
+        "bottom_emu": 2521600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 7,
+      "kind": "cxnSp",
+      "sp_id": 103,
+      "name": "ToPrimeR",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3100579,
+        "y": 2476600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 3100579,
+        "y_abs": 2476600,
+        "x_in": 3.391,
+        "y_in": 2.708,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 3100579,
+        "bottom_emu": 2521600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 8,
+      "kind": "cxnSp",
+      "sp_id": 104,
+      "name": "PrimeLDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1315579,
+        "y": 2901600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 1315579,
+        "y_abs": 2901600,
+        "x_in": 1.439,
+        "y_in": 3.173,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 1315579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 9,
+      "kind": "cxnSp",
+      "sp_id": 105,
+      "name": "PrimeRDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3100579,
+        "y": 2901600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 3100579,
+        "y_abs": 2901600,
+        "x_in": 3.391,
+        "y_in": 3.173,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 3100579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 10,
+      "kind": "cxnSp",
+      "sp_id": 106,
+      "name": "PrimeMerge",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1315579,
+        "y": 2946600,
+        "cx": 1785000,
+        "cy": 0,
+        "x_abs": 1315579,
+        "y_abs": 2946600,
+        "x_in": 1.439,
+        "y_in": 3.222,
+        "cx_in": 1.952,
+        "cy_in": 0.0,
+        "right_emu": 3100579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 11,
+      "kind": "cxnSp",
+      "sp_id": 107,
+      "name": "ToInScope",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2208079,
+        "y": 2946600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 2208079,
+        "y_abs": 2946600,
+        "x_in": 2.415,
+        "y_in": 3.222,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 2208079,
+        "bottom_emu": 2991600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 12,
+      "kind": "cxnSp",
+      "sp_id": 108,
+      "name": "ToChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2208079,
+        "y": 3431600,
+        "cx": 0,
+        "cy": 900000,
+        "x_abs": 2208079,
+        "y_abs": 3431600,
+        "x_in": 2.415,
+        "y_in": 3.753,
+        "cx_in": 0.0,
+        "cy_in": 0.984,
+        "right_emu": 2208079,
+        "bottom_emu": 4331600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 13,
+      "kind": "cxnSp",
+      "sp_id": 109,
+      "name": "ContextElbow",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1280579,
+        "y": 3501600,
+        "cx": 927500,
+        "cy": 0,
+        "x_abs": 1280579,
+        "y_abs": 3501600,
+        "x_in": 1.4,
+        "y_in": 3.829,
+        "cx_in": 1.014,
+        "cy_in": 0.0,
+        "right_emu": 2208079,
+        "bottom_emu": 3501600,
+        "rot_deg": null,
+        "flip_h": true,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": "dash",
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 14,
+      "kind": "cxnSp",
+      "sp_id": 110,
+      "name": "ContextDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1280579,
+        "y": 3501600,
+        "cx": 0,
+        "cy": 110000,
+        "x_abs": 1280579,
+        "y_abs": 3501600,
+        "x_in": 1.4,
+        "y_in": 3.829,
+        "cx_in": 0.0,
+        "cy_in": 0.12,
+        "right_emu": 1280579,
+        "bottom_emu": 3611600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": "dash",
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 15,
+      "kind": "cxnSp",
+      "sp_id": 120,
+      "name": "FundDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5998079,
+        "y": 2431600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 5998079,
+        "y_abs": 2431600,
+        "x_in": 6.56,
+        "y_in": 2.659,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 5998079,
+        "bottom_emu": 2476600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 16,
+      "kind": "cxnSp",
+      "sp_id": 121,
+      "name": "FundSplit",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5105579,
+        "y": 2476600,
+        "cx": 1785000,
+        "cy": 0,
+        "x_abs": 5105579,
+        "y_abs": 2476600,
+        "x_in": 5.584,
+        "y_in": 2.708,
+        "cx_in": 1.952,
+        "cy_in": 0.0,
+        "right_emu": 6890579,
+        "bottom_emu": 2476600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 17,
+      "kind": "cxnSp",
+      "sp_id": 122,
+      "name": "ToPrimeL",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5105579,
+        "y": 2476600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 5105579,
+        "y_abs": 2476600,
+        "x_in": 5.584,
+        "y_in": 2.708,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 5105579,
+        "bottom_emu": 2521600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 18,
+      "kind": "cxnSp",
+      "sp_id": 123,
+      "name": "ToPrimeR",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6890579,
+        "y": 2476600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 6890579,
+        "y_abs": 2476600,
+        "x_in": 7.536,
+        "y_in": 2.708,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 6890579,
+        "bottom_emu": 2521600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 19,
+      "kind": "cxnSp",
+      "sp_id": 124,
+      "name": "PrimeLDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5105579,
+        "y": 2901600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 5105579,
+        "y_abs": 2901600,
+        "x_in": 5.584,
+        "y_in": 3.173,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 5105579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 20,
+      "kind": "cxnSp",
+      "sp_id": 125,
+      "name": "PrimeRDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6890579,
+        "y": 2901600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 6890579,
+        "y_abs": 2901600,
+        "x_in": 7.536,
+        "y_in": 3.173,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 6890579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 21,
+      "kind": "cxnSp",
+      "sp_id": 126,
+      "name": "PrimeMerge",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5105579,
+        "y": 2946600,
+        "cx": 1785000,
+        "cy": 0,
+        "x_abs": 5105579,
+        "y_abs": 2946600,
+        "x_in": 5.584,
+        "y_in": 3.222,
+        "cx_in": 1.952,
+        "cy_in": 0.0,
+        "right_emu": 6890579,
+        "bottom_emu": 2946600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 22,
+      "kind": "cxnSp",
+      "sp_id": 127,
+      "name": "ToInScope",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5998079,
+        "y": 2946600,
+        "cx": 0,
+        "cy": 45000,
+        "x_abs": 5998079,
+        "y_abs": 2946600,
+        "x_in": 6.56,
+        "y_in": 3.222,
+        "cx_in": 0.0,
+        "cy_in": 0.049,
+        "right_emu": 5998079,
+        "bottom_emu": 2991600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 23,
+      "kind": "cxnSp",
+      "sp_id": 128,
+      "name": "ToChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5998079,
+        "y": 3431600,
+        "cx": 0,
+        "cy": 900000,
+        "x_abs": 5998079,
+        "y_abs": 3431600,
+        "x_in": 6.56,
+        "y_in": 3.753,
+        "cx_in": 0.0,
+        "cy_in": 0.984,
+        "right_emu": 5998079,
+        "bottom_emu": 4331600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 24,
+      "kind": "cxnSp",
+      "sp_id": 129,
+      "name": "ContextElbow",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5998079,
+        "y": 3501600,
+        "cx": 927500,
+        "cy": 0,
+        "x_abs": 5998079,
+        "y_abs": 3501600,
+        "x_in": 6.56,
+        "y_in": 3.829,
+        "cx_in": 1.014,
+        "cy_in": 0.0,
+        "right_emu": 6925579,
+        "bottom_emu": 3501600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": "dash",
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 25,
+      "kind": "cxnSp",
+      "sp_id": 130,
+      "name": "ContextDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6925579,
+        "y": 3501600,
+        "cx": 0,
+        "cy": 110000,
+        "x_abs": 6925579,
+        "y_abs": 3501600,
+        "x_in": 7.574,
+        "y_in": 3.829,
+        "cx_in": 0.0,
+        "cy_in": 0.12,
+        "right_emu": 6925579,
+        "bottom_emu": 3611600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": "dash",
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 26,
+      "kind": "sp",
+      "sp_id": 10,
+      "name": "ThesisStrip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1371600,
+        "cx": 7300000,
+        "cy": 340000,
+        "x_abs": 453079,
+        "y_abs": 1371600,
+        "x_in": 0.495,
+        "y_in": 1.5,
+        "cx_in": 7.983,
+        "cy_in": 0.372,
+        "right_emu": 7753079,
+        "bottom_emu": 1711600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 160000,
+          "r_ins": 160000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Supplier-addressable component work sits inside Navy new-construction funding, not total ship cost.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Supplier-addressable component work sits inside Navy new-construction funding, not total ship cost."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 6980000,
+        "avail_w_in": 7.633,
+        "avail_h_emu": 260000,
+        "avail_h_in": 0.284,
+        "wrapped_lines": 1,
+        "est_height_emu": 160655,
+        "est_height_in": 0.176,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 160655,
+            "para_h_in": 0.176
+          }
+        ]
+      }
+    },
+    {
+      "z": 27,
+      "kind": "sp",
+      "sp_id": 11,
+      "name": "LaneHeader",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1761600,
+        "cx": 3510000,
+        "cy": 240000,
+        "x_abs": 453079,
+        "y_abs": 1761600,
+        "x_in": 0.495,
+        "y_in": 1.927,
+        "cx_in": 3.839,
+        "cy_in": 0.262,
+        "right_emu": 3963079,
+        "bottom_emu": 2001600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "b",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DDG",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DDG"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3510000,
+        "avail_w_in": 3.839,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 189864,
+        "est_height_in": 0.208,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 189864,
+            "para_h_in": 0.208
+          }
+        ]
+      }
+    },
+    {
+      "z": 28,
+      "kind": "cxnSp",
+      "sp_id": 12,
+      "name": "LaneRule",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2001600,
+        "cx": 3510000,
+        "cy": 0,
+        "x_abs": 453079,
+        "y_abs": 2001600,
+        "x_in": 0.495,
+        "y_in": 2.189,
+        "cx_in": 3.839,
+        "cy_in": 0.0,
+        "right_emu": 3963079,
+        "bottom_emu": 2001600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 29,
+      "kind": "sp",
+      "sp_id": 13,
+      "name": "LaneHeader",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4243079,
+        "y": 1761600,
+        "cx": 3510000,
+        "cy": 240000,
+        "x_abs": 4243079,
+        "y_abs": 1761600,
+        "x_in": 4.64,
+        "y_in": 1.927,
+        "cx_in": 3.839,
+        "cy_in": 0.262,
+        "right_emu": 7753079,
+        "bottom_emu": 2001600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "b",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SUBMARINE",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SUBMARINE"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3510000,
+        "avail_w_in": 3.839,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 189864,
+        "est_height_in": 0.208,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 189864,
+            "para_h_in": 0.208
+          }
+        ]
+      }
+    },
+    {
+      "z": 30,
+      "kind": "cxnSp",
+      "sp_id": 14,
+      "name": "LaneRule",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4243079,
+        "y": 2001600,
+        "cx": 3510000,
+        "cy": 0,
+        "x_abs": 4243079,
+        "y_abs": 2001600,
+        "x_in": 4.64,
+        "y_in": 2.189,
+        "cx_in": 3.839,
+        "cy_in": 0.0,
+        "right_emu": 7753079,
+        "bottom_emu": 2001600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 31,
+      "kind": "sp",
+      "sp_id": 20,
+      "name": "FundingNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2071600,
+        "cx": 3510000,
+        "cy": 360000,
+        "x_abs": 453079,
+        "y_abs": 2071600,
+        "x_in": 0.495,
+        "y_in": 2.266,
+        "cx_in": 3.839,
+        "cy_in": 0.394,
+        "right_emu": 3963079,
+        "bottom_emu": 2431600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Navy SCN funding",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Line item 2122",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": false,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Navy SCN funding\nLine item 2122"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3330000,
+        "avail_w_in": 3.642,
+        "avail_h_emu": 280000,
+        "avail_h_in": 0.306,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 32,
+      "kind": "sp",
+      "sp_id": 21,
+      "name": "PrimeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2521600,
+        "cx": 1725000,
+        "cy": 380000,
+        "x_abs": 453079,
+        "y_abs": 2521600,
+        "x_in": 0.495,
+        "y_in": 2.758,
+        "cx_in": 1.886,
+        "cy_in": 0.416,
+        "right_emu": 2178079,
+        "bottom_emu": 2901600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 50000,
+          "r_ins": 50000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "GD Bath Iron Works",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[prime yard]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "GD Bath Iron Works\n[prime yard]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1625000,
+        "avail_w_in": 1.777,
+        "avail_h_emu": 320000,
+        "avail_h_in": 0.35,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 33,
+      "kind": "sp",
+      "sp_id": 22,
+      "name": "PrimeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2238079,
+        "y": 2521600,
+        "cx": 1725000,
+        "cy": 380000,
+        "x_abs": 2238079,
+        "y_abs": 2521600,
+        "x_in": 2.448,
+        "y_in": 2.758,
+        "cx_in": 1.886,
+        "cy_in": 0.416,
+        "right_emu": 3963079,
+        "bottom_emu": 2901600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 50000,
+          "r_ins": 50000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "HII Ingalls",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[prime yard]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "HII Ingalls\n[prime yard]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1625000,
+        "avail_w_in": 1.777,
+        "avail_h_emu": 320000,
+        "avail_h_in": 0.35,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 34,
+      "kind": "sp",
+      "sp_id": 23,
+      "name": "InScopeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2991600,
+        "cx": 3510000,
+        "cy": 440000,
+        "x_abs": 453079,
+        "y_abs": 2991600,
+        "x_in": 0.495,
+        "y_in": 3.272,
+        "cx_in": 3.839,
+        "cy_in": 0.481,
+        "right_emu": 3963079,
+        "bottom_emu": 3431600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Yard-side non-GFE component suppliers",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[in scope]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Yard-side non-GFE component suppliers\n[in scope]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3330000,
+        "avail_w_in": 3.642,
+        "avail_h_emu": 360000,
+        "avail_h_in": 0.394,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 35,
+      "kind": "sp",
+      "sp_id": 40,
+      "name": "FundingNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4243079,
+        "y": 2071600,
+        "cx": 3510000,
+        "cy": 360000,
+        "x_abs": 4243079,
+        "y_abs": 2071600,
+        "x_in": 4.64,
+        "y_in": 2.266,
+        "cx_in": 3.839,
+        "cy_in": 0.394,
+        "right_emu": 7753079,
+        "bottom_emu": 2431600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Navy SCN funding",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Virginia and Columbia",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": false,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Navy SCN funding\nVirginia and Columbia"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3330000,
+        "avail_w_in": 3.642,
+        "avail_h_emu": 280000,
+        "avail_h_in": 0.306,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 36,
+      "kind": "sp",
+      "sp_id": 41,
+      "name": "PrimeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4243079,
+        "y": 2521600,
+        "cx": 1725000,
+        "cy": 380000,
+        "x_abs": 4243079,
+        "y_abs": 2521600,
+        "x_in": 4.64,
+        "y_in": 2.758,
+        "cx_in": 1.886,
+        "cy_in": 0.416,
+        "right_emu": 5968079,
+        "bottom_emu": 2901600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 50000,
+          "r_ins": 50000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "GDEB",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[prime construction]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "GDEB\n[prime construction]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1625000,
+        "avail_w_in": 1.777,
+        "avail_h_emu": 320000,
+        "avail_h_in": 0.35,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 37,
+      "kind": "sp",
+      "sp_id": 42,
+      "name": "PrimeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6028079,
+        "y": 2521600,
+        "cx": 1725000,
+        "cy": 380000,
+        "x_abs": 6028079,
+        "y_abs": 2521600,
+        "x_in": 6.592,
+        "y_in": 2.758,
+        "cx_in": 1.886,
+        "cy_in": 0.416,
+        "right_emu": 7753079,
+        "bottom_emu": 2901600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 50000,
+          "r_ins": 50000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "HII Newport News",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[team-build context]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "HII Newport News\n[team-build context]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1625000,
+        "avail_w_in": 1.777,
+        "avail_h_emu": 320000,
+        "avail_h_in": 0.35,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 38,
+      "kind": "sp",
+      "sp_id": 43,
+      "name": "InScopeNode",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4243079,
+        "y": 2991600,
+        "cx": 3510000,
+        "cy": 440000,
+        "x_abs": 4243079,
+        "y_abs": 2991600,
+        "x_in": 4.64,
+        "y_in": 3.272,
+        "cx_in": 3.839,
+        "cy_in": 0.481,
+        "right_emu": 7753079,
+        "bottom_emu": 3431600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Non-nuclear supplier component layer",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "[in scope]",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Non-nuclear supplier component layer\n[in scope]"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3330000,
+        "avail_w_in": 3.642,
+        "avail_h_emu": 360000,
+        "avail_h_in": 0.394,
+        "wrapped_lines": 2,
+        "est_height_emu": 231140,
+        "est_height_in": 0.253,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 39,
+      "kind": "sp",
+      "sp_id": 50,
+      "name": "UnifyingSupplierChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 4331600,
+        "cx": 7300000,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 4331600,
+        "x_in": 0.495,
+        "y_in": 4.737,
+        "cx_in": 7.983,
+        "cy_in": 0.591,
+        "right_emu": 7753079,
+        "bottom_emu": 4871600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "3D5972",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 160000,
+          "r_ins": 160000,
+          "t_ins": 50000,
+          "b_ins": 50000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Distributed supplier work",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Structural/pre-outfit, machining, castings/forgings, piping/valves/pumps, electrical/power, HVAC, coatings/insulation",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Distributed supplier work\nStructural/pre-outfit, machining, castings/forgings, piping/valves/pumps, electrical/power, HVAC, coatings/insulation"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 6980000,
+        "avail_w_in": 7.633,
+        "avail_h_emu": 440000,
+        "avail_h_in": 0.481,
+        "wrapped_lines": 2,
+        "est_height_emu": 250952,
+        "est_height_in": 0.274,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 132080,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 118872,
+            "para_h_in": 0.13
+          }
+        ]
+      }
+    },
+    {
+      "z": 40,
+      "kind": "sp",
+      "sp_id": 55,
+      "name": "DefinitionGuardrail",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 4911600,
+        "cx": 7300000,
+        "cy": 330000,
+        "x_abs": 453079,
+        "y_abs": 4911600,
+        "x_in": 0.495,
+        "y_in": 5.371,
+        "cx_in": 7.983,
+        "cy_in": 0.361,
+        "right_emu": 7753079,
+        "bottom_emu": 5241600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Electrical and power",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              },
+              {
+                "text": " means ship power, distribution, and generation; combat and mission electronics leave the boundary before bucket assignment.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Electrical and power means ship power, distribution, and generation; combat and mission electronics leave the boundary before bucket assignment."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 7300000,
+        "avail_w_in": 7.983,
+        "avail_h_emu": 330000,
+        "avail_h_in": 0.361,
+        "wrapped_lines": 2,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 41,
+      "kind": "sp",
+      "sp_id": 60,
+      "name": "ExclusionTag",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 533079,
+        "y": 3611600,
+        "cx": 1495000,
+        "cy": 600000,
+        "x_abs": 533079,
+        "y_abs": 3611600,
+        "x_in": 0.583,
+        "y_in": 3.95,
+        "cx_in": 1.635,
+        "cy_in": 0.656,
+        "right_emu": 2028079,
+        "bottom_emu": 4211600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "D9D9D9",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 55000,
+          "r_ins": 55000,
+          "t_ins": 26000,
+          "b_ins": 26000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Excluded and context",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "GFE; weapons and sensors; sustainment/depot; FFATA-visible evidence floor",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Excluded and context\nGFE; weapons and sensors; sustainment/depot; FFATA-visible evidence floor"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1385000,
+        "avail_w_in": 1.515,
+        "avail_h_emu": 548000,
+        "avail_h_in": 0.599,
+        "wrapped_lines": 5,
+        "est_height_emu": 514350,
+        "est_height_in": 0.562,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 107950,
+            "para_h_in": 0.118
+          },
+          {
+            "font_pt": 8.0,
+            "lines": 4,
+            "para_h_emu": 406400,
+            "para_h_in": 0.444
+          }
+        ]
+      }
+    },
+    {
+      "z": 42,
+      "kind": "sp",
+      "sp_id": 61,
+      "name": "ExclusionTag",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6178079,
+        "y": 3611600,
+        "cx": 1495000,
+        "cy": 600000,
+        "x_abs": 6178079,
+        "y_abs": 3611600,
+        "x_in": 6.756,
+        "y_in": 3.95,
+        "cx_in": 1.635,
+        "cy_in": 0.656,
+        "right_emu": 7673079,
+        "bottom_emu": 4211600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "D9D9D9",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 55000,
+          "r_ins": 55000,
+          "t_ins": 26000,
+          "b_ins": 26000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Excluded and context",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "GFE/GFP; nuclear reactor plant; SIB capacity funding; depot/sustainment",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Excluded and context\nGFE/GFP; nuclear reactor plant; SIB capacity funding; depot/sustainment"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1385000,
+        "avail_w_in": 1.515,
+        "avail_h_emu": 548000,
+        "avail_h_in": 0.599,
+        "wrapped_lines": 4,
+        "est_height_emu": 412750,
+        "est_height_in": 0.451,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 107950,
+            "para_h_in": 0.118
+          },
+          {
+            "font_pt": 8.0,
+            "lines": 3,
+            "para_h_emu": 304800,
+            "para_h_in": 0.333
+          }
+        ]
+      }
+    },
+    {
+      "z": 43,
+      "kind": "sp",
+      "sp_id": 70,
+      "name": "Legend",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5271600,
+        "cx": 11282362,
+        "cy": 240000,
+        "x_abs": 453079,
+        "y_abs": 5271600,
+        "x_in": 0.495,
+        "y_in": 5.765,
+        "cx_in": 12.339,
+        "cy_in": 0.262,
+        "right_emu": 11735441,
+        "bottom_emu": 5511600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Blue = counted supplier layer; gray = excluded or context only; outline = prime or team-build layer.",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Blue = counted supplier layer; gray = excluded or context only; outline = prime or team-build layer."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11282362,
+        "avail_w_in": 12.339,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 124142,
+        "est_height_in": 0.136,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 44,
+      "kind": "sp",
+      "sp_id": 80,
+      "name": "Commentary",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 8113079,
+        "y": 1761600,
+        "cx": 3622362,
+        "cy": 3110000,
+        "x_abs": 8113079,
+        "y_abs": 1761600,
+        "x_in": 8.873,
+        "y_in": 1.927,
+        "cx_in": 3.961,
+        "cy_in": 3.401,
+        "right_emu": 11735441,
+        "bottom_emu": 4871600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 137160,
+          "r_ins": 100000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The primes differ, but the serviceable cut is the same.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DDG dollars run through Bath Iron Works and Ingalls; submarine dollars run through Electric Boat and Newport News. In both lanes, the counted layer is supplier component work outside GFE, sustainment, and yard self-perform.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Visible subawards prove the layer, not its full size.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "FFATA-visible filings provide supplier names and work-type cues; first-tier visibility thins below the first tier and differs by yard.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "The primes differ, but the serviceable cut is the same.\nDDG dollars run through Bath Iron Works and Ingalls; submarine dollars run through Electric Boat and Newport News. In both lanes, the counted layer is supplier component work outside GFE, sustainment, and yard self-perform.\nVisible subawards prove the layer, not its full size.\nFFATA-visible filings provide supplier names and work-type cues; first-tier visibility thins below the first tier and differs by yard."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3385202,
+        "avail_w_in": 3.702,
+        "avail_h_emu": 3050000,
+        "avail_h_in": 3.336,
+        "wrapped_lines": 12,
+        "est_height_emu": 1752599,
+        "est_height_in": 1.917,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 2,
+            "para_h_emu": 321310,
+            "para_h_in": 0.351
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 5,
+            "para_h_emu": 693737,
+            "para_h_in": 0.759
+          },
+          {
+            "font_pt": 11.0,
+            "lines": 2,
+            "para_h_emu": 321310,
+            "para_h_in": 0.351
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 3,
+            "para_h_emu": 416242,
+            "para_h_in": 0.455
+          }
+        ]
+      }
+    },
+    {
+      "z": 45,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5930000,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 5930000,
+        "x_in": 0.495,
+        "y_in": 6.485,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6470000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: (1) Navy SCN shipbuilding budget justification and line-item structure, FY2022\u2013FY2027; (2) prime-yard place-of-performance award corpus; (3) FFATA/FSRS first-tier subaward records",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: (1) Navy SCN shipbuilding budget justification and line-item structure, FY2022\u2013FY2027; (2) prime-yard place-of-performance award corpus; (3) FFATA/FSRS first-tier subaward records"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 448560,
+        "avail_h_in": 0.491,
+        "wrapped_lines": 1,
+        "est_height_emu": 101600,
+        "est_height_in": 0.111,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 1,
+            "para_h_emu": 101600,
+            "para_h_in": 0.111
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "source": "file",
+  "name": "Private Addressable",
+  "tab_name": "Private Addressable",
+  "sheet_index": 8,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 4,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "52.0"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "16.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "16.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "90.0"
+    }
+  ],
+  "n_rows": 24,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "2",
+      "n_cells": 1
+    },
+    {
+      "r": "3",
+      "n_cells": 4
+    },
+    {
+      "r": "4",
+      "n_cells": 1
+    },
+    {
+      "r": "5",
+      "n_cells": 3
+    },
+    {
+      "r": "6",
+      "n_cells": 3
+    },
+    {
+      "r": "7",
+      "n_cells": 3
+    },
+    {
+      "r": "8",
+      "n_cells": 3
+    },
+    {
+      "r": "10",
+      "n_cells": 1
+    },
+    {
+      "r": "11",
+      "n_cells": 3
+    },
+    {
+      "r": "12",
+      "n_cells": 3
+    },
+    {
+      "r": "13",
+      "n_cells": 3
+    },
+    {
+      "r": "14",
+      "n_cells": 3
+    },
+    {
+      "r": "15",
+      "n_cells": 3
+    },
+    {
+      "r": "16",
+      "n_cells": 3
+    },
+    {
+      "r": "17",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "n_cells": 1
+    },
+    {
+      "r": "25",
+      "n_cells": 2
+    },
+    {
+      "r": "26",
+      "n_cells": 2
+    },
+    {
+      "r": "27",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 61,
+  "cells": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "value": "Private-Addressable TAM Convergence (plan \u00a72.4, formula-driven)"
+    },
+    {
+      "ref": "A2",
+      "style": "S_DEFAULT",
+      "value": "Two independent derivations of private-addressable TAM. Every $ cell is a SUMIFS or named-range reference - click to see source. Both axes MUST converge in the $7-8B range. $ stored raw, displayed in $M via trailing-comma scaling."
+    },
+    {
+      "ref": "A3",
+      "style": "S_BOLD",
+      "value": "Step"
+    },
+    {
+      "ref": "B3",
+      "style": "S_BOLD",
+      "value": "Bottom-Up ($M)"
+    },
+    {
+      "ref": "C3",
+      "style": "S_BOLD",
+      "value": "Top-Down ($M)"
+    },
+    {
+      "ref": "D3",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A4",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Derivation A: From Bottom-Up ($9B FPDS universe)"
+    },
+    {
+      "ref": "A5",
+      "style": "S_DEFAULT",
+      "value": "FPDS 65-PSC MRO universe FY25"
+    },
+    {
+      "ref": "B5",
+      "style": "S_NUM",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC"
+    },
+    {
+      "ref": "D5",
+      "style": "S_DEFAULT",
+      "value": "Services sheet Navy + USCG TAM named ranges."
+    },
+    {
+      "ref": "A6",
+      "style": "S_DEFAULT",
+      "value": "  - Captive SUPSHIP complex OH (PSC 1905 MRO to HII/GD/Fluor)"
+    },
+    {
+      "ref": "B6",
+      "style": "S_NUM",
+      "formula": "-((SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*HUNTINGTON*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*ELECTRIC BOAT*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*GENERAL DYNAMICS*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*FLUOR*\"))/1000000)"
+    },
+    {
+      "ref": "D6",
+      "style": "S_DEFAULT",
+      "value": "SUMIFS over PSC1905Classified [Bucket=\"MRO*\"] filtered by captive parents (Huntington Ingalls, Electric Boat, General Dynamics, Fluor)."
+    },
+    {
+      "ref": "A7",
+      "style": "S_DEFAULT",
+      "value": "  - FMS (out of addressable scope)"
+    },
+    {
+      "ref": "B7",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate (~$0.1B, \u00a72.4)."
+    },
+    {
+      "ref": "A8",
+      "style": "S_BOLD",
+      "formula": " Private-addressable from bottom-up"
+    },
+    {
+      "ref": "B8",
+      "style": "S_NUM_TOTAL",
+      "formula": "B5+B6+B7"
+    },
+    {
+      "ref": "D8",
+      "style": "S_DEFAULT",
+      "value": "Expected: $7-8B range."
+    },
+    {
+      "ref": "A10",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Derivation B: From Top-Down (OP-5 + MSC + SCN + OPN/WPN est + USCG)"
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "OP-5 Navy 1B4B total"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM",
+      "formula": "OP5_TOTAL_FY25/1000"
+    },
+    {
+      "ref": "D11",
+      "style": "S_DEFAULT",
+      "value": "Navy ship maintenance SAG total."
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "+ MSC M&R (FY25 1B1B transfer-out)"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM",
+      "formula": "MSC_MR_FY25_1B1B_TRANSFER/1000"
+    },
+    {
+      "ref": "D12",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 4467."
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "+ SCN CVN RCOH LI 2086"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM",
+      "formula": "SCN_CVN_RCOH_LI2086_FY25/1000"
+    },
+    {
+      "ref": "D13",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book LI 2086 FY25 TOA."
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "+ OPN LI 1000 ship maintenance (private contracted)"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM",
+      "formula": "OPN_LI1000_FY25/1000"
+    },
+    {
+      "ref": "D14",
+      "style": "S_DEFAULT",
+      "value": "OPN_BA1_Book line 21287 (P-5 row); $2,392.190M FY25 enacted. PL 116-93 (2020) private contracted CONUS ship maintenance at CPF/FFC. Replaces prior $500M plug."
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "+ WPN combat-systems sustainment"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "D15",
+      "style": "S_DEFAULT",
+      "value": "(plan estimate ~$500M - WPN P-40 exhibits do not isolate shipboard-installation cost from missile/torpedo procurement; genuinely not source-pinnable)"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "+ USCG ISVS floor (LOW CONF)"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "D16",
+      "style": "S_DEFAULT",
+      "value": "USCG_ISVS_FY25_FLOOR; actual likely $300-500M."
+    },
+    {
+      "ref": "A17",
+      "style": "S_BOLD",
+      "formula": " Total top-down"
+    },
+    {
+      "ref": "C17",
+      "style": "S_NUM_TOTAL",
+      "formula": "C11+C12+C13+C14+C15+C16"
+    },
+    {
+      "ref": "D17",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate: ~$16-17B."
+    },
+    {
+      "ref": "A19",
+      "style": "S_DEFAULT",
+      "value": "  - Public NSY (not addressable)"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "-OP5_PUBLIC_NSY_FY25/1000"
+    },
+    {
+      "ref": "D19",
+      "style": "S_DEFAULT",
+      "value": "OP-5 4 public NSY rows; federal civilian workforce."
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "  - Captive SUPSHIP complex OH (same as A)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM",
+      "formula": "B6"
+    },
+    {
+      "ref": "D20",
+      "style": "S_DEFAULT",
+      "value": "Same SUMIFS as Derivation A captive row above."
+    },
+    {
+      "ref": "A21",
+      "style": "S_DEFAULT",
+      "value": "  - FMS"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "D21",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate."
+    },
+    {
+      "ref": "A22",
+      "style": "S_BOLD",
+      "formula": " Private-addressable from top-down"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_TOTAL",
+      "formula": "C17+C19+C20+C21"
+    },
+    {
+      "ref": "D22",
+      "style": "S_DEFAULT",
+      "value": "Expected: $7-8B range."
+    },
+    {
+      "ref": "A24",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Convergence (target: both within $500M)"
+    },
+    {
+      "ref": "A25",
+      "style": "S_BOLD",
+      "value": "A (bottom-up)"
+    },
+    {
+      "ref": "B25",
+      "style": "S_NUM_TOTAL",
+      "formula": "B8"
+    },
+    {
+      "ref": "A26",
+      "style": "S_BOLD",
+      "value": "B (top-down)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM_TOTAL",
+      "formula": "C22"
+    },
+    {
+      "ref": "A27",
+      "style": "S_BOLD",
+      "value": "Delta (A - B)"
+    },
+    {
+      "ref": "B27",
+      "style": "S_NUM_TOTAL",
+      "formula": "B8-C22"
+    },
+    {
+      "ref": "D27",
+      "style": "S_DEFAULT",
+      "value": "Convergence goal: abs(delta) within $500M. Current result: roughly $700M apart - CLOSE but not PASS; likely the OPN/WPN top-down plan estimates are underweight relative to what the bottom-up naturally captures in J010/K058/K020/N020 etc."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "text": "Private-Addressable TAM Convergence (plan \u00a72.4, formula-driven)"
+    },
+    {
+      "ref": "A4",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Derivation A: From Bottom-Up ($9B FPDS universe)"
+    },
+    {
+      "ref": "A10",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Derivation B: From Top-Down (OP-5 + MSC + SCN + OPN/WPN est + USCG)"
+    },
+    {
+      "ref": "A24",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Convergence (target: both within $500M)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "B7",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 18,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

@@ -1,0 +1,2400 @@
+{
+  "recipient_name": "LINK-BELT CRANES, L.P., LLLP",
+  "recipient_uei": "SWBHW9MD79J9",
+  "query": "VENDOR_UEI:\"SWBHW9MD79J9\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 5,
+  "distinct_piids": 2,
+  "sum_obligated_amount": 2537500.0,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912BU17P0078",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU17P0078",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+      "vendor_uei": "SWBHW9MD79J9",
+      "this_obligated": 8000.0,
+      "total_obligated": 8000.0,
+      "base_and_exercised": 8000.0,
+      "base_and_all_options": 8000.0,
+      "total_base_and_all_options": 8000.0,
+      "signed_date": "2017-08-01 00:00:00",
+      "effective_date": "2017-08-01 00:00:00",
+      "current_completion_date": "2017-09-15 00:00:00",
+      "ultimate_completion_date": "2017-09-15 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "541380",
+      "naics_desc": "TESTING LABORATORIES",
+      "psc": "H135",
+      "psc_desc": "QUALITY CONTROL- SERVICE AND TRADE EQUIPMENT",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "NOT COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "1",
+      "description": "IGF::OT::IGF 3182 LINK-BELT CRANE STUDY",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU17P0078",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-08-01 00:00:00",
+          "effectiveDate": "2017-08-01 00:00:00",
+          "currentCompletionDate": "2017-09-15 00:00:00",
+          "ultimateCompletionDate": "2017-09-15 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "8000.00",
+          "baseAndExercisedOptionsValue": "8000.00",
+          "baseAndAllOptionsValue": "8000.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "8000.00",
+          "totalBaseAndExercisedOptionsValue": "8000.00",
+          "totalBaseAndAllOptionsValue": "8000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "W912BU",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "descriptionOfContractRequirement": "IGF::OT::IGF 3182 LINK-BELT CRANE STUDY",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "QUALITY CONTROL- SERVICE AND TRADE EQUIPMENT",
+            "@productOrServiceType": "SERVICE",
+            "#text": "H135"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "TESTING LABORATORIES",
+            "#text": "541380"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "DELAWARE",
+                "#text": "DE"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2651 PALUMBO DR",
+              "city": "LEXINGTON",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LEXINGTON",
+                "#text": "405091233"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "8592646402",
+              "faxNo": "8592646319",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40509",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "SWBHW9MD79J9",
+                "UEILegalBusinessName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+                "ultimateParentUEI": "XA68KDK7TUY8",
+                "ultimateParentUEIName": "SUMITOMO HEAVY INDUSTRIES  LTD."
+              },
+              "cageCode": "2Y614"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2001-09-09 00:00:00",
+              "renewalDate": "2018-05-22 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "FAYETTE",
+            "@city": "LEXINGTON",
+            "#text": "405023095"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "NOT COMPETED UNDER SAP",
+            "#text": "G"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "reasonNotCompeted": {
+            "@description": "SAP NON-COMPETITION (FAR 13)",
+            "#text": "SP2"
+          },
+          "numberOfOffersReceived": "1",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "HELENA.R.DINOFA.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2017-07-24 18:13:12",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "LINDA.M.DOBBS.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2017-08-01 10:53:09",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "SWBHW9MD79J9"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU15C0028",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU15C0028",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+      "vendor_uei": "SWBHW9MD79J9",
+      "this_obligated": 0.0,
+      "total_obligated": 2529500.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 2529500.0,
+      "signed_date": "2016-05-27 00:00:00",
+      "effective_date": "2016-05-13 00:00:00",
+      "current_completion_date": "2016-07-25 00:00:00",
+      "ultimate_completion_date": "2016-07-25 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "423830",
+      "naics_desc": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "4",
+      "description": "BIG ISLAND CRAWLER CRANE",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU15C0028",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2016-05-27 00:00:00",
+          "effectiveDate": "2016-05-13 00:00:00",
+          "currentCompletionDate": "2016-07-25 00:00:00",
+          "ultimateCompletionDate": "2016-07-25 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "2529500.00",
+          "totalBaseAndExercisedOptionsValue": "2529500.00",
+          "totalBaseAndAllOptionsValue": "2529500.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU15R0010",
+          "costAccountingStandardsClause": {
+            "@description": "YES - CAS CLAUSE INCLUDED",
+            "#text": "Y"
+          },
+          "descriptionOfContractRequirement": "BIG ISLAND CRAWLER CRANE",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+            "#text": "423830"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "DELAWARE",
+                "#text": "DE"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2651 PALUMBO DR",
+              "city": "LEXINGTON",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LEXINGTON",
+                "#text": "405091233"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "8592646402",
+              "faxNo": "8592646319",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40509",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "SWBHW9MD79J9",
+                "UEILegalBusinessName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+                "ultimateParentUEI": "XA68KDK7TUY8",
+                "ultimateParentUEIName": "SUMITOMO HEAVY INDUSTRIES  LTD."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2001-09-09 00:00:00",
+              "renewalDate": "2016-06-22 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "FAYETTE",
+            "@city": "LEXINGTON",
+            "#text": "405091233"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2016-05-27 14:04:23",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2016-05-27 14:04:25",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "SWBHW9MD79J9"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU17P0078",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU17P0078",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+      "vendor_uei": "SWBHW9MD79J9",
+      "this_obligated": 0.0,
+      "total_obligated": 8000.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 8000.0,
+      "signed_date": "2017-09-14 00:00:00",
+      "effective_date": "2017-09-14 00:00:00",
+      "current_completion_date": "2017-12-14 00:00:00",
+      "ultimate_completion_date": "2017-12-14 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "541380",
+      "naics_desc": "TESTING LABORATORIES",
+      "psc": "H135",
+      "psc_desc": "QUALITY CONTROL- SERVICE AND TRADE EQUIPMENT",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "NOT COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "1",
+      "description": "IGF::OT::IGF TIME EXTENSION FOR LINK-BELT CRANE STUDY",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU17P0078",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-09-14 00:00:00",
+          "effectiveDate": "2017-09-14 00:00:00",
+          "currentCompletionDate": "2017-12-14 00:00:00",
+          "ultimateCompletionDate": "2017-12-14 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "8000.00",
+          "totalBaseAndExercisedOptionsValue": "8000.00",
+          "totalBaseAndAllOptionsValue": "8000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "W912BU",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "descriptionOfContractRequirement": "IGF::OT::IGF TIME EXTENSION FOR LINK-BELT CRANE STUDY",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "QUALITY CONTROL- SERVICE AND TRADE EQUIPMENT",
+            "@productOrServiceType": "SERVICE",
+            "#text": "H135"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "TESTING LABORATORIES",
+            "#text": "541380"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "DELAWARE",
+                "#text": "DE"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2651 PALUMBO DR",
+              "city": "LEXINGTON",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LEXINGTON",
+                "#text": "405091233"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "8592646402",
+              "faxNo": "8592646319",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40509",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "SWBHW9MD79J9",
+                "UEILegalBusinessName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+                "ultimateParentUEI": "XA68KDK7TUY8",
+                "ultimateParentUEIName": "SUMITOMO HEAVY INDUSTRIES  LTD."
+              },
+              "cageCode": "2Y614"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2001-09-09 00:00:00",
+              "renewalDate": "2018-05-22 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "FAYETTE",
+            "@city": "LEXINGTON",
+            "#text": "405023095"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "NOT COMPETED UNDER SAP",
+            "#text": "G"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "reasonNotCompeted": {
+            "@description": "SAP NON-COMPETITION (FAR 13)",
+            "#text": "SP2"
+          },
+          "numberOfOffersReceived": "1",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "LINDA.M.DOBBS.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2017-09-14 09:56:07",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "LINDA.M.DOBBS.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2017-09-14 09:56:11",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "SWBHW9MD79J9"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU15C0028",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU15C0028",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+      "vendor_uei": "SWBHW9MD79J9",
+      "this_obligated": 0.0,
+      "total_obligated": 2529500.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 2529500.0,
+      "signed_date": "2015-07-30 00:00:00",
+      "effective_date": "2015-07-21 00:00:00",
+      "current_completion_date": "2016-07-16 00:00:00",
+      "ultimate_completion_date": "2016-07-16 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "423830",
+      "naics_desc": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "4",
+      "description": "NOTICE TO PROCEED FOR BIG ISLAND CRAWLER CRANE",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU15C0028",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-07-30 00:00:00",
+          "effectiveDate": "2015-07-21 00:00:00",
+          "currentCompletionDate": "2016-07-16 00:00:00",
+          "ultimateCompletionDate": "2016-07-16 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "2529500.00",
+          "totalBaseAndExercisedOptionsValue": "2529500.00",
+          "totalBaseAndAllOptionsValue": "2529500.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU15R0010",
+          "costAccountingStandardsClause": {
+            "@description": "YES - CAS CLAUSE INCLUDED",
+            "#text": "Y"
+          },
+          "descriptionOfContractRequirement": "NOTICE TO PROCEED FOR BIG ISLAND CRAWLER CRANE",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+            "#text": "423830"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "DELAWARE",
+                "#text": "DE"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2651 PALUMBO DR",
+              "city": "LEXINGTON",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LEXINGTON",
+                "#text": "405091233"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "8592646402",
+              "faxNo": "8592646319",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40509",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "SWBHW9MD79J9",
+                "UEILegalBusinessName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+                "ultimateParentUEI": "XA68KDK7TUY8",
+                "ultimateParentUEIName": "SUMITOMO HEAVY INDUSTRIES  LTD."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2001-09-09 00:00:00",
+              "renewalDate": "2016-06-22 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "FAYETTE",
+            "@city": "LEXINGTON",
+            "#text": "405091233"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2015-07-30 16:02:01",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2015-07-30 16:02:05",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "SWBHW9MD79J9"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU15C0028",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU15C0028",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+      "vendor_uei": "SWBHW9MD79J9",
+      "this_obligated": 2529500.0,
+      "total_obligated": 2529500.0,
+      "base_and_exercised": 2529500.0,
+      "base_and_all_options": 2529500.0,
+      "total_base_and_all_options": 2529500.0,
+      "signed_date": "2015-06-25 00:00:00",
+      "effective_date": "2015-06-25 00:00:00",
+      "current_completion_date": "2016-06-24 00:00:00",
+      "ultimate_completion_date": "2016-06-24 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "423830",
+      "naics_desc": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "4",
+      "description": "BIG ISLAND CRAWLER CRANE",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU15C0028",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2015-06-25 00:00:00",
+          "effectiveDate": "2015-06-25 00:00:00",
+          "currentCompletionDate": "2016-06-24 00:00:00",
+          "ultimateCompletionDate": "2016-06-24 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "2529500.00",
+          "baseAndExercisedOptionsValue": "2529500.00",
+          "baseAndAllOptionsValue": "2529500.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "2529500.00",
+          "totalBaseAndExercisedOptionsValue": "2529500.00",
+          "totalBaseAndAllOptionsValue": "2529500.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU15R0010",
+          "costAccountingStandardsClause": {
+            "@description": "YES - CAS CLAUSE INCLUDED",
+            "#text": "Y"
+          },
+          "descriptionOfContractRequirement": "BIG ISLAND CRAWLER CRANE",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "INDUSTRIAL MACHINERY AND EQUIPMENT MERCHANT WHOLESALERS",
+            "#text": "423830"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "DELAWARE",
+                "#text": "DE"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2651 PALUMBO DR",
+              "city": "LEXINGTON",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LEXINGTON",
+                "#text": "405091233"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "8592646402",
+              "faxNo": "8592646319",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40509",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "SWBHW9MD79J9",
+                "UEILegalBusinessName": "LINK-BELT CONSTRUCTION EQUIPMENT COMPANY, L.P., LLLP",
+                "ultimateParentUEI": "XA68KDK7TUY8",
+                "ultimateParentUEIName": "SUMITOMO HEAVY INDUSTRIES  LTD."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2001-09-09 00:00:00",
+              "renewalDate": "2016-06-22 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "FAYETTE",
+            "@city": "LEXINGTON",
+            "#text": "405091233"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "JUSTIN.CHUNG.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2015-06-25 10:45:09",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2021-02-25 09:43:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "ADRIANA.A.DUNAWAY.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2015-06-25 11:58:07",
+          "closedBy": "FPDSADMIN",
+          "closedDate": "2021-02-25 09:43:39",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "SWBHW9MD79J9"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

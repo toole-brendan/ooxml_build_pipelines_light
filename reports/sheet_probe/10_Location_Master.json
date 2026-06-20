@@ -1,0 +1,1217 @@
+{
+  "source": "file",
+  "name": "Location Master",
+  "tab_name": "Location Master",
+  "sheet_index": 10,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 6,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "34"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "30"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "12"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "26"
+    }
+  ],
+  "n_rows": 40,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 5
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "n_cells": 2
+    },
+    {
+      "r": "10",
+      "n_cells": 2
+    },
+    {
+      "r": "13",
+      "n_cells": 6
+    },
+    {
+      "r": "15",
+      "n_cells": 5
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "28",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "29",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "33",
+      "n_cells": 6
+    },
+    {
+      "r": "35",
+      "n_cells": 4
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "37",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "40",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "45",
+      "n_cells": 6
+    },
+    {
+      "r": "47",
+      "n_cells": 2
+    },
+    {
+      "r": "48",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "49",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "50",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "51",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 147,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Location Master"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Subaward geography (hint only)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_LEFT",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "US subaward $M"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "value": "5936.760487780001"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Foreign subaward $M"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "value": "202.43357513999996"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Top state by $M"
+    },
+    {
+      "ref": "C9",
+      "style": "S_DEFAULT",
+      "value": "California"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Prime-controlled-state $M"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM",
+      "value": "434.88123176"
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Top 15 states by subaward $ ($M lifetime)"
+    },
+    {
+      "ref": "C13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B15",
+      "style": "S_HEADER_LEFT",
+      "value": "State"
+    },
+    {
+      "ref": "C15",
+      "style": "S_HEADER_LEFT",
+      "value": "Name"
+    },
+    {
+      "ref": "D15",
+      "style": "S_HEADER_LEFT",
+      "value": "$M"
+    },
+    {
+      "ref": "E15",
+      "style": "S_HEADER_LEFT",
+      "value": "% of US"
+    },
+    {
+      "ref": "F15",
+      "style": "S_HEADER_LEFT",
+      "value": "Prime-controlled site"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "CA"
+    },
+    {
+      "ref": "C16",
+      "style": "S_DEFAULT",
+      "value": "California"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "1539.0387115700007"
+    },
+    {
+      "ref": "E16",
+      "style": "S_PCT_INPUT",
+      "value": "0.25923880788822434"
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "PA"
+    },
+    {
+      "ref": "C17",
+      "style": "S_DEFAULT",
+      "value": "Pennsylvania"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT",
+      "value": "759.5038889100001"
+    },
+    {
+      "ref": "E17",
+      "style": "S_PCT_INPUT",
+      "value": "0.12793237835235793"
+    },
+    {
+      "ref": "B18",
+      "style": "S_DEFAULT",
+      "value": "MA"
+    },
+    {
+      "ref": "C18",
+      "style": "S_DEFAULT",
+      "value": "Massachusetts"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM_INPUT",
+      "value": "578.5579855299998"
+    },
+    {
+      "ref": "E18",
+      "style": "S_PCT_INPUT",
+      "value": "0.09745348270675248"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "WI"
+    },
+    {
+      "ref": "C19",
+      "style": "S_DEFAULT",
+      "value": "Wisconsin"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "473.3480479499999"
+    },
+    {
+      "ref": "E19",
+      "style": "S_PCT_INPUT",
+      "value": "0.07973170703522928"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "NJ"
+    },
+    {
+      "ref": "C20",
+      "style": "S_DEFAULT",
+      "value": "New Jersey"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT",
+      "value": "301.23720686999974"
+    },
+    {
+      "ref": "E20",
+      "style": "S_PCT_INPUT",
+      "value": "0.050741007236194687"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "NY"
+    },
+    {
+      "ref": "C21",
+      "style": "S_DEFAULT",
+      "value": "New York"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "294.52872306"
+    },
+    {
+      "ref": "E21",
+      "style": "S_PCT_INPUT",
+      "value": "0.04961101659166587"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "IL"
+    },
+    {
+      "ref": "C22",
+      "style": "S_DEFAULT",
+      "value": "Illinois"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "219.83681841000006"
+    },
+    {
+      "ref": "E22",
+      "style": "S_PCT_INPUT",
+      "value": "0.0370297603992116"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "CT"
+    },
+    {
+      "ref": "C23",
+      "style": "S_DEFAULT",
+      "value": "Connecticut"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT",
+      "value": "196.27133448"
+    },
+    {
+      "ref": "E23",
+      "style": "S_PCT_INPUT",
+      "value": "0.033060342401213146"
+    },
+    {
+      "ref": "F23",
+      "style": "S_DEFAULT",
+      "value": "EB (Groton)"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "VA"
+    },
+    {
+      "ref": "C24",
+      "style": "S_DEFAULT",
+      "value": "Virginia"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "184.73829963999998"
+    },
+    {
+      "ref": "E24",
+      "style": "S_PCT_INPUT",
+      "value": "0.031117694577751313"
+    },
+    {
+      "ref": "F24",
+      "style": "S_DEFAULT",
+      "value": "HII-NNS (Newport News)"
+    },
+    {
+      "ref": "B25",
+      "style": "S_DEFAULT",
+      "value": "FL"
+    },
+    {
+      "ref": "C25",
+      "style": "S_DEFAULT",
+      "value": "Florida"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT",
+      "value": "159.43718345999997"
+    },
+    {
+      "ref": "E25",
+      "style": "S_PCT_INPUT",
+      "value": "0.026855923156775367"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "OH"
+    },
+    {
+      "ref": "C26",
+      "style": "S_DEFAULT",
+      "value": "Ohio"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "138.76447374999995"
+    },
+    {
+      "ref": "E26",
+      "style": "S_PCT_INPUT",
+      "value": "0.023373769926482192"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "SC"
+    },
+    {
+      "ref": "C27",
+      "style": "S_DEFAULT",
+      "value": "South Carolina"
+    },
+    {
+      "ref": "D27",
+      "style": "S_NUM_INPUT",
+      "value": "135.16790820000003"
+    },
+    {
+      "ref": "E27",
+      "style": "S_PCT_INPUT",
+      "value": "0.022767957117054736"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "TX"
+    },
+    {
+      "ref": "C28",
+      "style": "S_DEFAULT",
+      "value": "Texas"
+    },
+    {
+      "ref": "D28",
+      "style": "S_NUM_INPUT",
+      "value": "128.37614687000004"
+    },
+    {
+      "ref": "E28",
+      "style": "S_PCT_INPUT",
+      "value": "0.021623939037837984"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "NH"
+    },
+    {
+      "ref": "C29",
+      "style": "S_DEFAULT",
+      "value": "New Hampshire"
+    },
+    {
+      "ref": "D29",
+      "style": "S_NUM_INPUT",
+      "value": "117.28998714000004"
+    },
+    {
+      "ref": "E29",
+      "style": "S_PCT_INPUT",
+      "value": "0.01975656376595034"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "MI"
+    },
+    {
+      "ref": "C30",
+      "style": "S_DEFAULT",
+      "value": "Michigan"
+    },
+    {
+      "ref": "D30",
+      "style": "S_NUM_INPUT",
+      "value": "107.63751011"
+    },
+    {
+      "ref": "E30",
+      "style": "S_PCT_INPUT",
+      "value": "0.018130680921279695"
+    },
+    {
+      "ref": "A33",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B33",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Country distribution (foreign / FMS is excluded scope)"
+    },
+    {
+      "ref": "C33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B35",
+      "style": "S_HEADER_LEFT",
+      "value": "Code"
+    },
+    {
+      "ref": "C35",
+      "style": "S_HEADER_LEFT",
+      "value": "Country"
+    },
+    {
+      "ref": "D35",
+      "style": "S_HEADER_LEFT",
+      "value": "$M"
+    },
+    {
+      "ref": "E35",
+      "style": "S_HEADER_LEFT",
+      "value": "% of total"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "US"
+    },
+    {
+      "ref": "C36",
+      "style": "S_DEFAULT",
+      "value": "United States"
+    },
+    {
+      "ref": "D36",
+      "style": "S_NUM_INPUT",
+      "value": "5936.760487779991"
+    },
+    {
+      "ref": "E36",
+      "style": "S_PCT_INPUT",
+      "value": "0.9670260341886446"
+    },
+    {
+      "ref": "B37",
+      "style": "S_DEFAULT",
+      "value": "GB"
+    },
+    {
+      "ref": "C37",
+      "style": "S_DEFAULT",
+      "value": "United Kingdom"
+    },
+    {
+      "ref": "D37",
+      "style": "S_NUM_INPUT",
+      "value": "160.96134447999998"
+    },
+    {
+      "ref": "E37",
+      "style": "S_PCT_INPUT",
+      "value": "0.026218644146173444"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "CH"
+    },
+    {
+      "ref": "C38",
+      "style": "S_DEFAULT",
+      "value": "Switzerland"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "32.80170425999998"
+    },
+    {
+      "ref": "E38",
+      "style": "S_PCT_INPUT",
+      "value": "0.00534299843331528"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "CA"
+    },
+    {
+      "ref": "C39",
+      "style": "S_DEFAULT",
+      "value": "Canada"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "8.00011758"
+    },
+    {
+      "ref": "E39",
+      "style": "S_PCT_INPUT",
+      "value": "0.0013031217938393198"
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "DK"
+    },
+    {
+      "ref": "C40",
+      "style": "S_DEFAULT",
+      "value": "Denmark"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "0.5095565400000001"
+    },
+    {
+      "ref": "E40",
+      "style": "S_PCT_INPUT",
+      "value": "8.300055915770142e-05"
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "BR"
+    },
+    {
+      "ref": "C41",
+      "style": "S_DEFAULT",
+      "value": "Brazil"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "0.109202"
+    },
+    {
+      "ref": "E41",
+      "style": "S_PCT_INPUT",
+      "value": "1.7787676831974934e-05"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "CN"
+    },
+    {
+      "ref": "C42",
+      "style": "S_DEFAULT",
+      "value": "China"
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT",
+      "value": "0.05165028"
+    },
+    {
+      "ref": "E42",
+      "style": "S_PCT_INPUT",
+      "value": "8.413202037700943e-06"
+    },
+    {
+      "ref": "A45",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B45",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - Prime-controlled state flags"
+    },
+    {
+      "ref": "C45",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D45",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E45",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F45",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B47",
+      "style": "S_HEADER_LEFT",
+      "value": "State"
+    },
+    {
+      "ref": "C47",
+      "style": "S_HEADER_LEFT",
+      "value": "Site"
+    },
+    {
+      "ref": "B48",
+      "style": "S_DEFAULT",
+      "value": "CT"
+    },
+    {
+      "ref": "C48",
+      "style": "S_DEFAULT",
+      "value": "EB (Groton)"
+    },
+    {
+      "ref": "B49",
+      "style": "S_DEFAULT",
+      "value": "RI"
+    },
+    {
+      "ref": "C49",
+      "style": "S_DEFAULT",
+      "value": "EB (Quonset)"
+    },
+    {
+      "ref": "B50",
+      "style": "S_DEFAULT",
+      "value": "VA"
+    },
+    {
+      "ref": "C50",
+      "style": "S_DEFAULT",
+      "value": "HII-NNS (Newport News)"
+    },
+    {
+      "ref": "B51",
+      "style": "S_DEFAULT",
+      "value": "MS"
+    },
+    {
+      "ref": "C51",
+      "style": "S_DEFAULT",
+      "value": "HII-Ingalls"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Location Master"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Subaward geography (hint only)"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Top 15 states by subaward $ ($M lifetime)"
+    },
+    {
+      "ref": "B33",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Country distribution (foreign / FMS is excluded scope)"
+    },
+    {
+      "ref": "B45",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - Prime-controlled state flags"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "1539.0387115700007"
+    },
+    {
+      "ref": "E16",
+      "style": "S_PCT_INPUT",
+      "value": "0.25923880788822434"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT",
+      "value": "759.5038889100001"
+    },
+    {
+      "ref": "E17",
+      "style": "S_PCT_INPUT",
+      "value": "0.12793237835235793"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM_INPUT",
+      "value": "578.5579855299998"
+    },
+    {
+      "ref": "E18",
+      "style": "S_PCT_INPUT",
+      "value": "0.09745348270675248"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "473.3480479499999"
+    },
+    {
+      "ref": "E19",
+      "style": "S_PCT_INPUT",
+      "value": "0.07973170703522928"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT",
+      "value": "301.23720686999974"
+    },
+    {
+      "ref": "E20",
+      "style": "S_PCT_INPUT",
+      "value": "0.050741007236194687"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "294.52872306"
+    },
+    {
+      "ref": "E21",
+      "style": "S_PCT_INPUT",
+      "value": "0.04961101659166587"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "219.83681841000006"
+    },
+    {
+      "ref": "E22",
+      "style": "S_PCT_INPUT",
+      "value": "0.0370297603992116"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT",
+      "value": "196.27133448"
+    },
+    {
+      "ref": "E23",
+      "style": "S_PCT_INPUT",
+      "value": "0.033060342401213146"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "184.73829963999998"
+    },
+    {
+      "ref": "E24",
+      "style": "S_PCT_INPUT",
+      "value": "0.031117694577751313"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT",
+      "value": "159.43718345999997"
+    },
+    {
+      "ref": "E25",
+      "style": "S_PCT_INPUT",
+      "value": "0.026855923156775367"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "138.76447374999995"
+    },
+    {
+      "ref": "E26",
+      "style": "S_PCT_INPUT",
+      "value": "0.023373769926482192"
+    },
+    {
+      "ref": "D27",
+      "style": "S_NUM_INPUT",
+      "value": "135.16790820000003"
+    },
+    {
+      "ref": "E27",
+      "style": "S_PCT_INPUT",
+      "value": "0.022767957117054736"
+    },
+    {
+      "ref": "D28",
+      "style": "S_NUM_INPUT",
+      "value": "128.37614687000004"
+    },
+    {
+      "ref": "E28",
+      "style": "S_PCT_INPUT",
+      "value": "0.021623939037837984"
+    },
+    {
+      "ref": "D29",
+      "style": "S_NUM_INPUT",
+      "value": "117.28998714000004"
+    },
+    {
+      "ref": "E29",
+      "style": "S_PCT_INPUT",
+      "value": "0.01975656376595034"
+    },
+    {
+      "ref": "D30",
+      "style": "S_NUM_INPUT",
+      "value": "107.63751011"
+    },
+    {
+      "ref": "E30",
+      "style": "S_PCT_INPUT",
+      "value": "0.018130680921279695"
+    },
+    {
+      "ref": "D36",
+      "style": "S_NUM_INPUT",
+      "value": "5936.760487779991"
+    },
+    {
+      "ref": "E36",
+      "style": "S_PCT_INPUT",
+      "value": "0.9670260341886446"
+    },
+    {
+      "ref": "D37",
+      "style": "S_NUM_INPUT",
+      "value": "160.96134447999998"
+    },
+    {
+      "ref": "E37",
+      "style": "S_PCT_INPUT",
+      "value": "0.026218644146173444"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "32.80170425999998"
+    },
+    {
+      "ref": "E38",
+      "style": "S_PCT_INPUT",
+      "value": "0.00534299843331528"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "8.00011758"
+    },
+    {
+      "ref": "E39",
+      "style": "S_PCT_INPUT",
+      "value": "0.0013031217938393198"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "0.5095565400000001"
+    },
+    {
+      "ref": "E40",
+      "style": "S_PCT_INPUT",
+      "value": "8.300055915770142e-05"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "0.109202"
+    },
+    {
+      "ref": "E41",
+      "style": "S_PCT_INPUT",
+      "value": "1.7787676831974934e-05"
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT",
+      "value": "0.05165028"
+    },
+    {
+      "ref": "E42",
+      "style": "S_PCT_INPUT",
+      "value": "8.413202037700943e-06"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 0,
+  "formula_refs_by_sheet": {},
+  "tables": [
+    {
+      "name": "tbl_sub_location_states",
+      "displayName": "tbl_sub_location_states",
+      "ref": "B15:F30",
+      "headers": [
+        "State",
+        "Name",
+        "$M",
+        "% of US",
+        "Prime-controlled site"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    }
+  ],
+  "defined_names": {}
+}

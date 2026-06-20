@@ -1,0 +1,121 @@
+The project source files are the updated infrastructure / plumbing files for an OOXML-focused build pipeline that creates PowerPoint decks. Please study them before writing any slide code.
+
+Important files to understand:
+- style.py: canvas, BODY box, palette, point-size-bearing typography tokens, inset presets, locked chrome geometry.
+- slide_guide.md: house style rules for typography, color, fill, borders, sharp rectangles, no-fill commentary, charts, tables, and visual hierarchy.
+- slide_base_template.py: the canonical slide-authoring surface. Use its structure and imports.
+- slide_snippets.md: cookbook patterns for text boxes, rich text, no-fill commentary rails, charts, connector notes, in-shape hierarchy, tables, and shape-built visuals.
+- primitives.py: imported builders such as slide, breadcrumb, title_placeholder, prelim_chip, sources_line, run, paragraph, text_box, table, tcell, trow, and connector.
+- charts.py: native editable chart factories and graphic_frame helper.
+- text_metrics.py: row-height estimation for native tables.
+- lib.py and ooxml.py: build/package plumbing.
+- slide_probe.py: lint/probe expectations for rendered slide XML.
+
+Please also study the attached slide deck specs. These specs are the source of truth for slide content, intended visual read, object placement, typography, colors, fills, borders, geometry, sources, and implementation notes.
+
+Your task:
+Create one complete Python slide module per provided spec. The modules should work in the build pipeline described by the project source files.
+
+Important: do not create the full PowerPoint deck in this task. Do not modify the shared build pipeline. Do not add new shared helpers to deck_core. Write slide-local `_helper` functions inside each slide module when useful.
+
+Filename rule:
+Do not use order-dependent filenames such as `slide_XX.py`, `sXX_*.py`, or `body_slide_XX__*.py`.
+If a spec says `MODULE NAME body_slide_01__market_primer.py`, write the module as:
+`market_primer.py`.
+If a spec says `body_slide_05__methodology.py`, write:
+`methodology.py`.
+Use semantic snake_case filenames that can survive slide reordering.
+
+For each slide module:
+1. Start from the structure of slide_base_template.py.
+2. Use `LAYOUT = "slideLayout4"` unless the spec explicitly says otherwise.
+3. Set the chrome constants:
+   - `_SECTION`
+   - `_TOPIC`
+   - `_TAKEAWAY`
+   - `_SOURCES`
+4. Implement `_body() -> str`.
+5. Implement `render() -> str` using the canonical chrome pattern:
+   breadcrumb + prelim_chip + title_placeholder + _body() + sources_line.
+6. Export `CHARTS = [...]` only if the slide uses native editable charts.
+7. Keep all body objects inside BODY unless the spec explicitly says a chrome object is locked outside body.
+8. Use unique body shape IDs. Chrome uses 2, 3, 4, and 9999, so body shapes should start at 10 or 100.
+9. Use document order as paint order: connectors/background structures first, cards next, labels/badges/overlays last.
+
+Use the enhanced spec as the implementation contract:
+- Preserve the slide’s purpose, core finding, facts, numbers, sources, suggested on-slide text, and visual read.
+- Follow the object-level style plan unless there is a concrete implementation conflict.
+- Do not invent new facts, new sources, new numbers, or new analytical conclusions.
+- If the spec is internally inconsistent, make the smallest reasonable implementation assumption and note it in a short module comment.
+- If text must be shortened to fit, preserve the meaning and use the spec’s hierarchy.
+- Do not redesign the slide into a generic card grid if the spec calls for a system map, boundary matrix, process rail, timeline, or shape-built exhibit.
+
+Typography rules:
+- Use the point-size-bearing tokens from style.py:
+  SOURCES_8PT, FINEPRINT_8_5PT, LABEL_9PT, CONNECTOR_NOTE_8_5PT,
+  DENSE_BODY_10PT, CHART_TITLE_10PT, MESSAGE_11PT, BODY_12PT,
+  CAP_12PT, EXHIBIT_HEADER_13PT, VALUE_14PT, BADGE_16PT,
+  RIBBON_KPI_18PT, ANSWER_KPI_24PT, HERO_32PT.
+- Do not use old vague aliases like `SZ_BODY`, `SZ_LABEL`, `SZ_MESSAGE`, `SZ_CAP`, or `SZ_BADGE` in new modules.
+- Every body-shape text run should pass both `size=...` and `font=FONT`.
+- Keep `bold=True`, `italic=True`, and ALL CAPS explicit at the run/call site.
+- If no default token fits a specific element, use a raw size with a nearby comment, e.g. `size=1150  # 11.5pt tight axis label`.
+
+Color, fill, border, and geometry rules:
+- Use only the palette tokens from style.py:
+  BLUE_1 through BLUE_5, GRAY_1 through GRAY_5, DK, WHITE, BLACK, PRELIM, or None.
+- Filled shapes are semantic objects. A filled shape should normally have a 1pt BLACK border. Focal or anchor objects may use a 1.5pt BLACK border.
+- No-fill / no-border text is preferred for labels, chart titles, axis ticks, captions, legends, connector notes, and longer commentary rails.
+- No-fill plus thin rule is allowed for axes, brackets, containers, separators, and location strips.
+- Use sharp rectangles, `prst="rect"`, for normal cards, panels, bands, bars, chips, ledgers, rails, and matrix cells.
+- Do not use rounded rectangles for ordinary slide objects. Rounded geometry is only for explicitly allowed tags/dots/chevrons.
+
+No-fill commentary:
+- Preserve no-fill commentary when the spec calls for it.
+- Longer interpretive commentary should often be no-fill / no-border bullets with bold parent or lead-in text followed by regular explanatory text.
+- Do not convert every explanatory note into a filled card.
+- Use filled shapes only when the note is itself a semantic object: answer, warning, scope boundary, method guardrail, unit caveat, evidence chip, or focal callout.
+
+Charts:
+- Use native editable charts only when the spec calls for them or when the chart grammar clearly fits.
+- Prefer an external no-fill chart title using `CHART_TITLE_10PT`, italic, DK, no fill, no border.
+- Do not rely on native chart titles unless there is a specific reason.
+- If using native charts, define `CHARTS` and place the chart using `graphic_frame(...)` with the correct `rId`, following slide_snippets.md.
+
+Tables:
+- Use native OOXML tables only when the spec calls for them or when exact cell alignment matters.
+- Otherwise prefer shape-built ledgers, matrices, and panels.
+- If using a native table, use `text_metrics.estimate_row_heights(...)` when row wrapping is plausible.
+- Table text should use explicit size and font, usually `DENSE_BODY_10PT`, `LABEL_9PT`, or `FINEPRINT_8_5PT`.
+
+Connectors and flow diagrams:
+- Place connectors behind cards in paint order.
+- Specify stroke color and width based on the spec.
+- Connector notes should use `CONNECTOR_NOTE_8_5PT`, italic, DK, no fill, no border unless the spec says otherwise.
+- Use arrowheads only when the direction needs to be read and the span is long enough.
+
+Output requirements:
+- Provide each complete slide module as a separate Python code block.
+- Put the intended filename immediately above each code block.
+- The code must be complete, not pseudocode. Do not use ellipses.
+- Include necessary imports from `deck_core.primitives`, `deck_core.style`, and `deck_core.charts` if needed.
+- Keep helper functions slide-local and `_`-prefixed.
+- Do not output a prose-only design explanation instead of code.
+
+After the code blocks, provide a short implementation checklist for each module:
+- filename;
+- whether it uses native charts;
+- whether it uses native tables;
+- any assumptions made;
+- any likely lint issues to check with slide_probe.
+
+Preferred self-check before finalizing:
+- Does the module import only available pipeline helpers?
+- Does every body run pass `size=` and `font=FONT`?
+- Are all body shapes inside BODY?
+- Are fills on-palette?
+- Are normal objects sharp rectangles?
+- Are filled objects bordered appropriately?
+- Are labels/captions/commentary no-fill/no-border where appropriate?
+- Are shape IDs unique?
+- Does render() return a complete slide XML string?

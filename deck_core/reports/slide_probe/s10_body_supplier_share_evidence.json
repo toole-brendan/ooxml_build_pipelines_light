@@ -1,0 +1,3338 @@
+{
+  "slide_name": "s10_body_supplier_share_evidence",
+  "generated_at": "2026-06-06T16:09:23.167230+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 8,
+      "graphicFrame.table": 1
+    },
+    "total_shapes": 9,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "ShareBadge",
+      "y_emu": 1371600,
+      "y_in": 1.5
+    },
+    "bottom_most_body": {
+      "sp_id": 40,
+      "name": "FocalCallout",
+      "bottom_emu": 5830000,
+      "bottom_in": 6.376
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 5930000,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sizing Methodology",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / Supplier Share",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sizing Methodology / Supplier Share"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 62448,
+        "avail_h_in": 0.068,
+        "wrapped_lines": 1,
+        "est_height_emu": 127000,
+        "est_height_in": 0.139,
+        "fits": false,
+        "overflow_emu": 64552,
+        "overflow_in": 0.071,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 127000,
+            "para_h_in": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1376172,
+        "avail_w_in": 1.505,
+        "avail_h_emu": 271712,
+        "avail_h_in": 0.297,
+        "wrapped_lines": 1,
+        "est_height_emu": 152400,
+        "est_height_in": 0.167,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          }
+        ]
+      }
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Supplier Share | Strict inputs hold TAM conservative, but DDG and submarine solve different evidence problems.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Supplier Share | Strict inputs hold TAM conservative, but DDG and submarine solve different evidence problems."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11190922,
+        "avail_w_in": 12.239,
+        "avail_h_emu": 548640,
+        "avail_h_in": 0.6,
+        "wrapped_lines": 2,
+        "est_height_emu": 508000,
+        "est_height_in": 0.556,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 20.0,
+            "lines": 2,
+            "para_h_emu": 508000,
+            "para_h_in": 0.556
+          }
+        ]
+      }
+    },
+    {
+      "z": 4,
+      "kind": "sp",
+      "sp_id": 10,
+      "name": "ShareBadge",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1371600,
+        "cx": 3475000,
+        "cy": 980000,
+        "x_abs": 453079,
+        "y_abs": 1371600,
+        "x_in": 0.495,
+        "y_in": 1.5,
+        "cx_in": 3.8,
+        "cy_in": 1.072,
+        "right_emu": 3928079,
+        "bottom_emu": 2351600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "6E91B1",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DDG APPLIED BC SUPPLIER SHARE",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "12.5%",
+                "font": "Arial",
+                "size_pt": 18.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "MYP-corrected non-GFE BC stream",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DDG APPLIED BC SUPPLIER SHARE\n12.5%\nMYP-corrected non-GFE BC stream"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3246400,
+        "avail_w_in": 3.55,
+        "avail_h_emu": 827600,
+        "avail_h_in": 0.905,
+        "wrapped_lines": 3,
+        "est_height_emu": 562292,
+        "est_height_in": 0.615,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 175260,
+            "para_h_in": 0.192
+          },
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 5,
+      "kind": "sp",
+      "sp_id": 11,
+      "name": "ShareBadge",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4128079,
+        "y": 1371600,
+        "cx": 3475000,
+        "cy": 980000,
+        "x_abs": 4128079,
+        "y_abs": 1371600,
+        "x_in": 4.515,
+        "y_in": 1.5,
+        "cx_in": 3.8,
+        "cy_in": 1.072,
+        "right_emu": 7603079,
+        "bottom_emu": 2351600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "3D5972",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SUBMARINE APPLIED BC SUPPLIER SHARE",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "35.0%",
+                "font": "Arial",
+                "size_pt": 18.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Strict non-nuclear Basic Construction view",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SUBMARINE APPLIED BC SUPPLIER SHARE\n35.0%\nStrict non-nuclear Basic Construction view"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3246400,
+        "avail_w_in": 3.55,
+        "avail_h_emu": 827600,
+        "avail_h_in": 0.905,
+        "wrapped_lines": 3,
+        "est_height_emu": 562292,
+        "est_height_in": 0.615,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 175260,
+            "para_h_in": 0.192
+          },
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 6,
+      "kind": "graphicFrame.table",
+      "sp_id": 20,
+      "name": "SupplierShareMethodTable",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2501600,
+        "cx": 7150000,
+        "cy": 2718400,
+        "x_abs": 453079,
+        "y_abs": 2501600,
+        "x_in": 0.495,
+        "y_in": 2.736,
+        "cx_in": 7.819,
+        "cy_in": 2.973,
+        "right_emu": 7603079,
+        "bottom_emu": 5220000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": {
+        "grid_cols_emu": [
+          900000,
+          1150000,
+          1700000,
+          2000000,
+          1400000
+        ],
+        "row_heights_emu": [
+          380000,
+          584600,
+          584600,
+          584600,
+          584600
+        ],
+        "cells": [
+          {
+            "row": 0,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "PROGRAM",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "PROGRAM"
+            }
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "EVIDENCE ISSUE",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "EVIDENCE ISSUE"
+            }
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "APPLIED VALUE",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "APPLIED VALUE"
+            }
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "BROADER EVIDENCE VIEWS",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "BROADER EVIDENCE VIEWS"
+            }
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "FEEDS HEADLINE TAM",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "FEEDS HEADLINE TAM"
+            }
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 2,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "DDG",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "DDG"
+            }
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "MYP redaction",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "MYP redaction"
+            }
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "12.5% BC supplier share",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "12.5% BC supplier share"
+            }
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Restored $14.58B multiyear masters; corrected outside-yards POP ~32.8%",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Restored $14.58B multiyear masters; corrected outside-yards POP ~32.8%"
+            }
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "12.5% on the non-GFE BC stream",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "12.5% on the non-GFE BC stream"
+            }
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": true,
+            "fill": {
+              "kind": "unset",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": null,
+            "mar_r": null,
+            "mar_t": null,
+            "mar_b": null,
+            "anchor": null,
+            "text_body": {
+              "body_pr": {
+                "anchor": null,
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": null,
+                  "ln_spc_pct": null,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": []
+                }
+              ],
+              "plain_text": ""
+            }
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "AP/LLTM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "AP/LLTM"
+            }
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "85% supplier-share input on 80% ship-construction share",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "85% supplier-share input on 80% ship-construction share"
+            }
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Assumption-driven filtered stream",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Assumption-driven filtered stream"
+            }
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Additive filtered stream, $208M per year",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Additive filtered stream, $208M per year"
+            }
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 2,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Submarine",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Submarine"
+            }
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "POP breadth",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "POP breadth"
+            }
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "35.0% BC supplier share",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "35.0% BC supplier share"
+            }
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "All-gated POP anchor ~51.8%; AP/LLTM reference ~48.5%",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "All-gated POP anchor ~51.8%; AP/LLTM reference ~48.5%"
+            }
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "35.0% on non-nuclear BC",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "35.0% on non-nuclear BC"
+            }
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": true,
+            "fill": {
+              "kind": "unset",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "unset",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": null,
+            "mar_r": null,
+            "mar_t": null,
+            "mar_b": null,
+            "anchor": null,
+            "text_body": {
+              "body_pr": {
+                "anchor": null,
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": null,
+                  "ln_spc_pct": null,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": []
+                }
+              ],
+              "plain_text": ""
+            }
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "AP/LLTM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "AP/LLTM"
+            }
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "$0 additive base",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "$0 additive base"
+            }
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Gross AP is large supplier evidence",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Gross AP is large supplier evidence"
+            }
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not additive under the current boundary",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not additive under the current boundary"
+            }
+          }
+        ]
+      },
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": "http://schemas.openxmlformats.org/drawingml/2006/table",
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 7,
+      "kind": "sp",
+      "sp_id": 30,
+      "name": "Commentary",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 7883079,
+        "y": 2501600,
+        "cx": 3852362,
+        "cy": 2718400,
+        "x_abs": 7883079,
+        "y_abs": 2501600,
+        "x_in": 8.621,
+        "y_in": 2.736,
+        "cx_in": 4.213,
+        "cy_in": 2.973,
+        "right_emu": 11735441,
+        "bottom_emu": 5220000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 137160,
+          "r_ins": 137160,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DDG supplier-share evidence starts with a redaction correction.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The model restores $14.58B of redacted multiyear masters to correct the outside-yards POP read; the applied BC supplier share remains 12.5%.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Submarine supplier-share evidence is broad but deliberately constrained.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The 35.0% input is a strict non-nuclear, yard-excluded view; broader POP anchors near 51.8% and 48.5% stay sensitivity.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Only the applied shares feed headline TAM.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Broader POP views support the audit record, but 12.5% for DDG and 35.0% for submarine are the TAM bridge inputs.",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DDG supplier-share evidence starts with a redaction correction.\nThe model restores $14.58B of redacted multiyear masters to correct the outside-yards POP read; the applied BC supplier share remains 12.5%.\nSubmarine supplier-share evidence is broad but deliberately constrained.\nThe 35.0% input is a strict non-nuclear, yard-excluded view; broader POP anchors near 51.8% and 48.5% stay sensitivity.\nOnly the applied shares feed headline TAM.\nBroader POP views support the audit record, but 12.5% for DDG and 35.0% for submarine are the TAM bridge inputs."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3578042,
+        "avail_w_in": 3.913,
+        "avail_h_emu": 2658400,
+        "avail_h_in": 2.907,
+        "wrapped_lines": 13,
+        "est_height_emu": 1803716,
+        "est_height_in": 1.973,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.5,
+            "lines": 2,
+            "para_h_emu": 277495,
+            "para_h_in": 0.303
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 3,
+            "para_h_emu": 416242,
+            "para_h_in": 0.455
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 2,
+            "para_h_emu": 277495,
+            "para_h_in": 0.303
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 3,
+            "para_h_emu": 416242,
+            "para_h_in": 0.455
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 1,
+            "para_h_emu": 138747,
+            "para_h_in": 0.152
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 2,
+            "para_h_emu": 277495,
+            "para_h_in": 0.303
+          }
+        ]
+      }
+    },
+    {
+      "z": 8,
+      "kind": "sp",
+      "sp_id": 40,
+      "name": "FocalCallout",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5370000,
+        "cx": 11282362,
+        "cy": 460000,
+        "x_abs": 453079,
+        "y_abs": 5370000,
+        "x_in": 0.495,
+        "y_in": 5.873,
+        "cx_in": 12.339,
+        "cy_in": 0.503,
+        "right_emu": 11735441,
+        "bottom_emu": 5830000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "263746",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The two programs' shares are inputs to separate models; ",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              },
+              {
+                "text": "a single blended supplier-share percentage would mislead.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "The two programs' shares are inputs to separate models; a single blended supplier-share percentage would mislead."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11053762,
+        "avail_w_in": 12.089,
+        "avail_h_emu": 307600,
+        "avail_h_in": 0.336,
+        "wrapped_lines": 1,
+        "est_height_emu": 160655,
+        "est_height_in": 0.176,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 160655,
+            "para_h_in": 0.176
+          }
+        ]
+      }
+    },
+    {
+      "z": 9,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5930000,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 5930000,
+        "x_in": 0.495,
+        "y_in": 6.485,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6470000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: (1) DDG MYP redaction correction and outside-yards place-of-performance evidence; (2) submarine coefficient and AP/LLTM boundary evidence; (3) Navy SCN and P-5c Basic Construction budget justification, FY2022\u2013FY2027",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: (1) DDG MYP redaction correction and outside-yards place-of-performance evidence; (2) submarine coefficient and AP/LLTM boundary evidence; (3) Navy SCN and P-5c Basic Construction budget justification, FY2022\u2013FY2027"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 448560,
+        "avail_h_in": 0.491,
+        "wrapped_lines": 2,
+        "est_height_emu": 203200,
+        "est_height_in": 0.222,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 203200,
+            "para_h_in": 0.222
+          }
+        ]
+      }
+    }
+  ]
+}

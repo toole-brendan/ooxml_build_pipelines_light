@@ -1,0 +1,73 @@
+{
+  "label": "psc:1940",
+  "filters": {
+    "agencies": [
+      {
+        "type": "awarding",
+        "tier": "subtier",
+        "name": "Department of the Army"
+      }
+    ],
+    "psc_codes": [
+      "1940"
+    ]
+  },
+  "award_type_group": "idv",
+  "record_count": 2,
+  "results": [
+    {
+      "internal_id": 351819792,
+      "Award ID": "W912EP24A0003",
+      "Recipient Name": "LAMB'S YACHT CENTER OPERATING COMPANY, LLC",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Funding Agency": "Corps of Engineers - Civil Works",
+      "Funding Sub Agency": "U.S. Army Corps of Engineers - Civil Program Financing Only",
+      "Award Amount": 0.0,
+      "Description": "5 YEAR BPA MERCURY BOAT REPAIR",
+      "Contract Award Type": "BPA",
+      "Start Date": "2023-10-11",
+      "End Date": null,
+      "NAICS": {
+        "code": "336611",
+        "description": "SHIP BUILDING AND REPAIRING"
+      },
+      "PSC": {
+        "code": "1940",
+        "description": "SMALL CRAFT"
+      },
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_IDV_W912EP24A0003_9700",
+      "_matched_query": "psc:1940",
+      "_award_type_group": "idv"
+    },
+    {
+      "internal_id": 351819791,
+      "Award ID": "W912EP24A0002",
+      "Recipient Name": "KAMACK MARINE, LLC",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Funding Agency": "Department of Defense",
+      "Funding Sub Agency": "Department of the Army",
+      "Award Amount": 0.0,
+      "Description": "BPA MERCURY ENGINE REPAIR",
+      "Contract Award Type": "BPA",
+      "Start Date": "2023-10-11",
+      "End Date": null,
+      "NAICS": {
+        "code": "336611",
+        "description": "SHIP BUILDING AND REPAIRING"
+      },
+      "PSC": {
+        "code": "1940",
+        "description": "SMALL CRAFT"
+      },
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_IDV_W912EP24A0002_9700",
+      "_matched_query": "psc:1940",
+      "_award_type_group": "idv"
+    }
+  ]
+}

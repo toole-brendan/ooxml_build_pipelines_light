@@ -1,0 +1,236 @@
+# sheet_probe: AP Bridge
+
+- source: `file`
+- tab name: `AP Bridge`
+- tab color: `FF7B1F3A`
+- gridlines shown: `0`
+- columns: 12 · rows: 26 · cells: 175 · formulas: 3
+
+## Banners
+- `B2` S_TITLE_SHEET — AP Bridge
+- `B4` S_TITLE_SECTION — §1 - Resource summary ($M, FY27 PB; P-1/P-10 view)
+- `B16` S_TITLE_SECTION — §2 - TAM-base derivation
+- `B24` S_TITLE_SECTION — §3 - Line-level classification (DDG P-10 structure)
+- `B34` S_TITLE_SECTION — §4 - Caveats
+
+## Formula dependencies (referenced sheet → cells)
+- **Assumptions** (3): C19, C20, C21
+
+## Hardcoded inputs (70)
+- `C7` S_NUM_INPUT = 117822.879
+- `D7` S_NUM_INPUT = 7858.814
+- `E7` S_NUM_INPUT = 306.125
+- `F7` S_NUM_INPUT = 4256.914
+- `G7` S_NUM_INPUT = 4026.201
+- `H7` S_NUM_INPUT = 4209.44
+- `I7` S_NUM_INPUT = 6613.151
+- `J7` S_NUM_INPUT = 6964.218
+- `K7` S_NUM_INPUT = 15080.837
+- `L7` S_NUM_INPUT = 167138.579
+- `C8` S_NUM_INPUT = 3340.411
+- `D8` S_NUM_INPUT = 83.224
+- `E8` S_NUM_INPUT = 1750.0
+- `F8` S_NUM_INPUT = None
+- `G8` S_NUM_INPUT = 1758.004
+- `H8` S_NUM_INPUT = None
+- `I8` S_NUM_INPUT = None
+- `J8` S_NUM_INPUT = None
+- `K8` S_NUM_INPUT = None
+- `L8` S_NUM_INPUT = 6931.639
+- `C9` S_NUM_INPUT = 3826.3
+- `D9` S_NUM_INPUT = None
+- `E9` S_NUM_INPUT = None
+- `F9` S_NUM_INPUT = None
+- `G9` S_NUM_INPUT = None
+- `H9` S_NUM_INPUT = None
+- `I9` S_NUM_INPUT = None
+- `J9` S_NUM_INPUT = None
+- `K9` S_NUM_INPUT = None
+- `L9` S_NUM_INPUT = 3826.3
+- `C10` S_NUM_INPUT = 2910.85
+- `D10` S_NUM_INPUT = 2.659
+- `E10` S_NUM_INPUT = 65.021
+- `F10` S_NUM_INPUT = 1023.521
+- `G10` S_NUM_INPUT = None
+- `H10` S_NUM_INPUT = 502.271
+- `I10` S_NUM_INPUT = 502.271
+- `J10` S_NUM_INPUT = 502.305
+- `K10` S_NUM_INPUT = 1001.157
+- `L10` S_NUM_INPUT = 6510.055
+
+## Cells
+- `B2` S_TITLE_SHEET: AP Bridge
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `J2` S_TITLE_SHEET: 
+- `K2` S_TITLE_SHEET: 
+- `L2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Resource summary ($M, FY27 PB; P-1/P-10 view)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `J4` S_TITLE_SECTION: 
+- `K4` S_TITLE_SECTION: 
+- `L4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Row Label
+- `C6` S_HEADER_CENTER: Prior
+- `D6` S_HEADER_CENTER: FY25
+- `E6` S_HEADER_CENTER: FY26
+- `F6` S_HEADER_CENTER: FY27
+- `G6` S_HEADER_CENTER: FY28
+- `H6` S_HEADER_CENTER: FY29
+- `I6` S_HEADER_CENTER: FY30
+- `J6` S_HEADER_CENTER: FY31
+- `K6` S_HEADER_CENTER: ToCompl
+- `L6` S_HEADER_CENTER: Total
+- `B7` S_BOLD: Gross / Weapon System Cost
+- `C7` S_NUM_INPUT: 117822.879
+- `D7` S_NUM_INPUT: 7858.814
+- `E7` S_NUM_INPUT: 306.125
+- `F7` S_NUM_INPUT: 4256.914
+- `G7` S_NUM_INPUT: 4026.201
+- `H7` S_NUM_INPUT: 4209.44
+- `I7` S_NUM_INPUT: 6613.151
+- `J7` S_NUM_INPUT: 6964.218
+- `K7` S_NUM_INPUT: 15080.837
+- `L7` S_NUM_INPUT: 167138.579
+- `B8` S_BOLD: Plus CY Advance Procurement (AP)
+- `C8` S_NUM_INPUT: 3340.411
+- `D8` S_NUM_INPUT: 83.224
+- `E8` S_NUM_INPUT: 1750.0
+- `F8` S_NUM_INPUT: 
+- `G8` S_NUM_INPUT: 1758.004
+- `H8` S_NUM_INPUT: 
+- `I8` S_NUM_INPUT: 
+- `J8` S_NUM_INPUT: 
+- `K8` S_NUM_INPUT: 
+- `L8` S_NUM_INPUT: 6931.639
+- `B9` S_BOLD: Plus EOQ (Economic Order Qty)
+- `C9` S_NUM_INPUT: 3826.3
+- `D9` S_NUM_INPUT: 
+- `E9` S_NUM_INPUT: 
+- `F9` S_NUM_INPUT: 
+- `G9` S_NUM_INPUT: 
+- `H9` S_NUM_INPUT: 
+- `I9` S_NUM_INPUT: 
+- `J9` S_NUM_INPUT: 
+- `K9` S_NUM_INPUT: 
+- `L9` S_NUM_INPUT: 3826.3
+- `B10` S_BOLD: Less PY Advance Procurement
+- `C10` S_NUM_INPUT: 2910.85
+- `D10` S_NUM_INPUT: 2.659
+- `E10` S_NUM_INPUT: 65.021
+- `F10` S_NUM_INPUT: 1023.521
+- `G10` S_NUM_INPUT: 
+- `H10` S_NUM_INPUT: 502.271
+- `I10` S_NUM_INPUT: 502.271
+- `J10` S_NUM_INPUT: 502.305
+- `K10` S_NUM_INPUT: 1001.157
+- `L10` S_NUM_INPUT: 6510.055
+- `B11` S_BOLD: Less EOQ
+- `C11` S_NUM_INPUT: 2150.761
+- `D11` S_NUM_INPUT: 1587.636
+- `E11` S_NUM_INPUT: 230.331
+- `F11` S_NUM_INPUT: 279.155
+- `G11` S_NUM_INPUT: 
+- `H11` S_NUM_INPUT: 
+- `I11` S_NUM_INPUT: 
+- `J11` S_NUM_INPUT: 
+- `K11` S_NUM_INPUT: 
+- `L11` S_NUM_INPUT: 4247.883
+- `B12` S_BOLD: Net Procurement (P-1)
+- `C12` S_NUM_INPUT: 106913.494
+- `D12` S_NUM_INPUT: 6268.519
+- `E12` S_NUM_INPUT: 10.773
+- `F12` S_NUM_INPUT: 2954.238
+- `G12` S_NUM_INPUT: 4026.201
+- `H12` S_NUM_INPUT: 3707.169
+- `I12` S_NUM_INPUT: 6110.88
+- `J12` S_NUM_INPUT: 6461.913
+- `K12` S_NUM_INPUT: 14079.68
+- `L12` S_NUM_INPUT: 150532.867
+- `B13` S_BOLD: Total Obligation Authority (TOA)
+- `C13` S_NUM_INPUT: 116656.338
+- `D13` S_NUM_INPUT: 8268.628
+- `E13` S_NUM_INPUT: 1942.268
+- `F13` S_NUM_INPUT: 3132.462
+- `G13` S_NUM_INPUT: 6124.325
+- `H13` S_NUM_INPUT: 3993.544
+- `I13` S_NUM_INPUT: 6375.629
+- `J13` S_NUM_INPUT: 6565.705
+- `K13` S_NUM_INPUT: 14079.68
+- `L13` S_NUM_INPUT: 167138.579
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SECTION: §2 - TAM-base derivation
+- `C16` S_TITLE_SECTION: 
+- `D16` S_TITLE_SECTION: 
+- `E16` S_TITLE_SECTION: 
+- `F16` S_TITLE_SECTION: 
+- `G16` S_TITLE_SECTION: 
+- `H16` S_TITLE_SECTION: 
+- `I16` S_TITLE_SECTION: 
+- `J16` S_TITLE_SECTION: 
+- `K16` S_TITLE_SECTION: 
+- `L16` S_TITLE_SECTION: 
+- `B18` S_HEADER_LEFT: Step
+- `C18` S_HEADER_CENTER: Value $M
+- `B19` S_BOLD: CY Advance Procurement, in-window (FY25-27)
+- `C19` S_NUM: =N('Assumptions'!C24)+N('Assumptions'!D24)+N('Assumptions'!E24)+N('Assumptions'!F24)+N('Assumptions'!G24)+N('Assumptions'!H24)
+- `B20` S_LABEL_INDENT_1: x ship-construction share = non-GFE AP base
+- `C20` S_NUM: =C19*'Assumptions'!C37
+- `B21` S_TOTAL: x AP/LLTM supplier coeff = AP/LLTM stream TAM
+- `C21` S_NUM_TOTAL: =C20*'Assumptions'!C38
+- `A24` S_DEFAULT: x
+- `B24` S_TITLE_SECTION: §3 - Line-level classification (DDG P-10 structure)
+- `C24` S_TITLE_SECTION: 
+- `D24` S_TITLE_SECTION: 
+- `E24` S_TITLE_SECTION: 
+- `F24` S_TITLE_SECTION: 
+- `G24` S_TITLE_SECTION: 
+- `H24` S_TITLE_SECTION: 
+- `I24` S_TITLE_SECTION: 
+- `J24` S_TITLE_SECTION: 
+- `K24` S_TITLE_SECTION: 
+- `L24` S_TITLE_SECTION: 
+- `B26` S_HEADER_LEFT: AP / EOQ line
+- `C26` S_HEADER_LEFT: TAM treatment
+- `D26` S_HEADER_LEFT: Rationale
+- `B27` S_DEFAULT: Ship Construction EOQ
+- `C27` S_BOLD: INCLUDE
+- `D27` S_DEFAULT: new-construction supplier material (ship-construction share)
+- `B28` S_DEFAULT: AWS EOQ (Aegis Weapon System)
+- `C28` S_BOLD: EXCLUDE
+- `D28` S_DEFAULT: GFE-controlled combat system (default out)
+- `B29` S_DEFAULT: Other GFE / CBSP AP
+- `C29` S_BOLD: EXCLUDE
+- `D29` S_DEFAULT: Navy-furnished equipment
+- `B30` S_DEFAULT: VLS / weapons / ordnance AP
+- `C30` S_BOLD: EXCLUDE
+- `D30` S_DEFAULT: WPN/OPN appropriation; not SCN ship construction
+- `B31` S_DEFAULT: Power Conversion Modules
+- `C31` S_BOLD: IN BC ALREADY
+- `D31` S_DEFAULT: moved GFE -> Basic Construction in FY23 (no re-add)
+- `A34` S_DEFAULT: x
+- `B34` S_TITLE_SECTION: §4 - Caveats
+- `C34` S_TITLE_SECTION: 
+- `D34` S_TITLE_SECTION: 
+- `E34` S_TITLE_SECTION: 
+- `F34` S_TITLE_SECTION: 
+- `G34` S_TITLE_SECTION: 
+- `H34` S_TITLE_SECTION: 
+- `I34` S_TITLE_SECTION: 
+- `J34` S_TITLE_SECTION: 
+- `K34` S_TITLE_SECTION: 
+- `L34` S_TITLE_SECTION: 
+- `B36` S_DEFAULT: Ship-Construction vs AWS/Other-GFE split is set on Inputs; P-10 line-items don't parse cleanly.
+- `B37` S_DEFAULT: No double-count: P-5c BC is net of prior-yr AP, so CY AP is additive (PY-AP-credit in TAM stream bases = 0).

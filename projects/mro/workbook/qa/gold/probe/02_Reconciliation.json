@@ -1,0 +1,2803 @@
+{
+  "source": "file",
+  "name": "Reconciliation",
+  "tab_name": "Reconciliation",
+  "sheet_index": 2,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 8,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "14.0"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "14.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "60.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "16.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "16.0"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "16.0"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "32.0"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "70.0"
+    }
+  ],
+  "n_rows": 65,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "2",
+      "n_cells": 1
+    },
+    {
+      "r": "3",
+      "n_cells": 1
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "5",
+      "n_cells": 5
+    },
+    {
+      "r": "6",
+      "n_cells": 5
+    },
+    {
+      "r": "7",
+      "n_cells": 5
+    },
+    {
+      "r": "8",
+      "n_cells": 5
+    },
+    {
+      "r": "9",
+      "n_cells": 5
+    },
+    {
+      "r": "10",
+      "n_cells": 5
+    },
+    {
+      "r": "11",
+      "n_cells": 5
+    },
+    {
+      "r": "12",
+      "n_cells": 5
+    },
+    {
+      "r": "13",
+      "n_cells": 5
+    },
+    {
+      "r": "14",
+      "n_cells": 5
+    },
+    {
+      "r": "15",
+      "n_cells": 5
+    },
+    {
+      "r": "16",
+      "n_cells": 5
+    },
+    {
+      "r": "17",
+      "n_cells": 5
+    },
+    {
+      "r": "18",
+      "n_cells": 5
+    },
+    {
+      "r": "19",
+      "n_cells": 5
+    },
+    {
+      "r": "20",
+      "n_cells": 5
+    },
+    {
+      "r": "21",
+      "n_cells": 5
+    },
+    {
+      "r": "22",
+      "n_cells": 5
+    },
+    {
+      "r": "23",
+      "n_cells": 5
+    },
+    {
+      "r": "26",
+      "n_cells": 8
+    },
+    {
+      "r": "27",
+      "n_cells": 1
+    },
+    {
+      "r": "28",
+      "n_cells": 6
+    },
+    {
+      "r": "29",
+      "n_cells": 6
+    },
+    {
+      "r": "30",
+      "n_cells": 6
+    },
+    {
+      "r": "31",
+      "n_cells": 6
+    },
+    {
+      "r": "32",
+      "n_cells": 6
+    },
+    {
+      "r": "33",
+      "n_cells": 6
+    },
+    {
+      "r": "34",
+      "n_cells": 6
+    },
+    {
+      "r": "35",
+      "n_cells": 6
+    },
+    {
+      "r": "36",
+      "n_cells": 6
+    },
+    {
+      "r": "37",
+      "n_cells": 6
+    },
+    {
+      "r": "38",
+      "n_cells": 6
+    },
+    {
+      "r": "39",
+      "n_cells": 6
+    },
+    {
+      "r": "40",
+      "n_cells": 6
+    },
+    {
+      "r": "41",
+      "n_cells": 8
+    },
+    {
+      "r": "42",
+      "n_cells": 1
+    },
+    {
+      "r": "43",
+      "n_cells": 8
+    },
+    {
+      "r": "44",
+      "n_cells": 8
+    },
+    {
+      "r": "45",
+      "n_cells": 8
+    },
+    {
+      "r": "46",
+      "n_cells": 8
+    },
+    {
+      "r": "47",
+      "n_cells": 8
+    },
+    {
+      "r": "48",
+      "n_cells": 8
+    },
+    {
+      "r": "49",
+      "n_cells": 8
+    },
+    {
+      "r": "50",
+      "n_cells": 8
+    },
+    {
+      "r": "51",
+      "n_cells": 8
+    },
+    {
+      "r": "52",
+      "n_cells": 8
+    },
+    {
+      "r": "53",
+      "n_cells": 1
+    },
+    {
+      "r": "54",
+      "n_cells": 8
+    },
+    {
+      "r": "55",
+      "n_cells": 8
+    },
+    {
+      "r": "56",
+      "n_cells": 8
+    },
+    {
+      "r": "57",
+      "n_cells": 8
+    },
+    {
+      "r": "58",
+      "n_cells": 8
+    },
+    {
+      "r": "59",
+      "n_cells": 8
+    },
+    {
+      "r": "60",
+      "n_cells": 8
+    },
+    {
+      "r": "61",
+      "n_cells": 1
+    },
+    {
+      "r": "62",
+      "n_cells": 8
+    },
+    {
+      "r": "63",
+      "n_cells": 8
+    },
+    {
+      "r": "64",
+      "n_cells": 8
+    },
+    {
+      "r": "65",
+      "n_cells": 8
+    },
+    {
+      "r": "66",
+      "n_cells": 1
+    },
+    {
+      "r": "67",
+      "n_cells": 6
+    }
+  ],
+  "n_cells": 376,
+  "cells": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "value": "Reconciliation - Budget Authority vs FPDS Awards ($ in Thousands unless noted)"
+    },
+    {
+      "ref": "A2",
+      "style": "S_DEFAULT",
+      "value": "Deck evidence anchors (PSC 1905 embedded MRO, public shipyard NWCF, HII Mission Technologies financials) at top; TAS-attribution and budget-book anchors below. FY25 Enacted cells with a defined name are referenced from presentation sheets via formulas like =OMN_1B4B_TOTAL_FY25/1000 ($K -> $M)."
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "value": "Deck Evidence Anchors (values in $M unless noted)"
+    },
+    {
+      "ref": "A4",
+      "style": "S_BOLD",
+      "value": "Anchor"
+    },
+    {
+      "ref": "B4",
+      "style": "S_BOLD",
+      "value": "Line"
+    },
+    {
+      "ref": "C4",
+      "style": "S_BOLD",
+      "value": "Value ($M)"
+    },
+    {
+      "ref": "D4",
+      "style": "S_BOLD",
+      "value": "Deck slide"
+    },
+    {
+      "ref": "E4",
+      "style": "S_BOLD",
+      "value": "Source / note"
+    },
+    {
+      "ref": "A5",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO (total)"
+    },
+    {
+      "ref": "B5",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_EMBEDDED"
+    },
+    {
+      "ref": "C5",
+      "style": "S_NUM_INPUT",
+      "value": "1904"
+    },
+    {
+      "ref": "D5",
+      "style": "S_DEFAULT",
+      "value": "S20 Scope Reconciliation"
+    },
+    {
+      "ref": "E5",
+      "style": "S_DEFAULT",
+      "value": "Classifier-locked Central from workbook_build.psc_1905_classifier across 201 PSC 1905 PIIDs. Tier 0: USAspending /awards/funding/ TAS (OMN/OPN/RDTE funding on a PSC 1905 award is a definitive MRO signal - O&M dollars cannot fund new construction). Tier 1-5: strong/soft MRO keywords + POP length + newbuild hull override. Central = strong + TAS-confirmed + probable. Bounds: $1,553M / $1,904M / $2,057M."
+    },
+    {
+      "ref": "A6",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Submarines"
+    },
+    {
+      "ref": "B6",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_SUBS"
+    },
+    {
+      "ref": "C6",
+      "style": "S_NUM_INPUT",
+      "value": "1255"
+    },
+    {
+      "ref": "D6",
+      "style": "S_DEFAULT",
+      "value": "S20 Scope Reconciliation"
+    },
+    {
+      "ref": "E6",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO within PSC 1905 attributed to submarine hulls (dominated by Electric Boat SSN Seam Split Repairs $831M + USS Boise SSN-764 Engineered Overhaul $424M)."
+    },
+    {
+      "ref": "A7",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Aircraft Carriers"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_CARRIERS"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "337"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "S20 Scope Reconciliation"
+    },
+    {
+      "ref": "E7",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO within PSC 1905 attributed to aircraft carriers (CVN-68 class inactivation + CVN-69 Eisenhower FY25 PIA + CVN-74/75 Refueling Complex Overhaul support)."
+    },
+    {
+      "ref": "A8",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Surface Combatants"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_SURFCOMBS"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "119"
+    },
+    {
+      "ref": "D8",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E8",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO within PSC 1905 attributed to surface combatants (DDG 1000 BYMP, DDG modernization and cross-class support work)."
+    },
+    {
+      "ref": "A9",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Unclassified vessels"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_UNCL"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "193"
+    },
+    {
+      "ref": "D9",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E9",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO within PSC 1905 that could not be attributed to a specific vessel supergroup (general SUPSHIP support, labor support, cross-class mods)."
+    },
+    {
+      "ref": "A10",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - SSN"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_SSN"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1255"
+    },
+    {
+      "ref": "D10",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E10",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO attributed to SSN (Virginia-class attack subs). Electric Boat SHT Seam Split Repairs + USS Boise SSN-764 Engineered Overhaul."
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - CVN"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_CVN"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "337"
+    },
+    {
+      "ref": "D11",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E11",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO attributed to CVN (Nimitz/Ford-class carriers). CVN-68 inactivation + USS Eisenhower FY25 PIA + CVN-74/75 RCOH support at HII Newport News."
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - DDG"
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_DDG"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "77"
+    },
+    {
+      "ref": "D12",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E12",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO attributed to DDG (Arleigh Burke destroyers). DDG modernization / availability support routed through the shipbuilding PSC."
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - LCS"
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_LCS"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "41"
+    },
+    {
+      "ref": "D13",
+      "style": "S_DEFAULT",
+      "value": "S09 TAM Composition"
+    },
+    {
+      "ref": "E13",
+      "style": "S_DEFAULT",
+      "value": "Embedded MRO attributed to LCS (Littoral Combat Ship). Sustainment task orders routed through PSC 1905."
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Tier 0 TAS-confirmed subset"
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_TIER0"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "235"
+    },
+    {
+      "ref": "D14",
+      "style": "S_DEFAULT",
+      "value": "S20 Scope Reconciliation"
+    },
+    {
+      "ref": "E14",
+      "style": "S_DEFAULT",
+      "value": "Subset of embedded MRO that received OMN / OPN / RDT&E funding on PSC 1905 awards (definitive MRO signal via USAspending /awards/funding/ TAS pull). Appropriation attribution for this subset is known; the remainder imputes to SCN 017-1611."
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - General Dynamics"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_GD"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "965"
+    },
+    {
+      "ref": "D15",
+      "style": "S_DEFAULT",
+      "value": "S17 Prime Landscape TAM"
+    },
+    {
+      "ref": "E15",
+      "style": "S_DEFAULT",
+      "value": "Per-parent rollup of embedded PSC 1905 MRO (Central basis). GD share driven by Electric Boat SHT Seam Split Repairs + New England Maintenance + Nuclear Regional Maintenance Dept work."
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Huntington Ingalls Industries"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_HII"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM_INPUT",
+      "value": "872"
+    },
+    {
+      "ref": "D16",
+      "style": "S_DEFAULT",
+      "value": "S17 Prime Landscape TAM"
+    },
+    {
+      "ref": "E16",
+      "style": "S_DEFAULT",
+      "value": "Per-parent rollup of embedded PSC 1905 MRO (Central basis). HII share driven by HII Newport News USS Boise EOH, CVN 68 inactivation, USS Eisenhower FY25 PIA."
+    },
+    {
+      "ref": "A17",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - BAE Systems"
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_BAE"
+    },
+    {
+      "ref": "C17",
+      "style": "S_NUM_INPUT",
+      "value": "48"
+    },
+    {
+      "ref": "D17",
+      "style": "S_DEFAULT",
+      "value": "S17 Prime Landscape TAM"
+    },
+    {
+      "ref": "E17",
+      "style": "S_DEFAULT",
+      "value": "Per-parent rollup of embedded PSC 1905 MRO (Central basis). BAE exposure in PSC 1905 is small; dominant BAE MRO share comes from J998 / J999 services-PSC work (captured in Awards)."
+    },
+    {
+      "ref": "A18",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 embedded MRO - Other primes"
+    },
+    {
+      "ref": "B18",
+      "style": "S_DEFAULT",
+      "value": "PSC1905_MRO_OTHER_PRIMES"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM_INPUT",
+      "value": "20"
+    },
+    {
+      "ref": "D18",
+      "style": "S_DEFAULT",
+      "value": "S17 Prime Landscape TAM"
+    },
+    {
+      "ref": "E18",
+      "style": "S_DEFAULT",
+      "value": "Per-parent rollup residual (Lockheed Martin, Mills Marine, PCSI, Jered, etc.). Small; used to keep Slide 15 Prime Landscape rollup reconciled with PSC1905_MRO_EMBEDDED total."
+    },
+    {
+      "ref": "A19",
+      "style": "S_DEFAULT",
+      "value": "Reconciled FPDS-visible MRO TAM"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "RECONCILED_MRO_TAM"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC+PSC1905_MRO_EMBEDDED"
+    },
+    {
+      "ref": "D19",
+      "style": "S_DEFAULT",
+      "value": "S05 TAM Sizing Approach / deck-wide"
+    },
+    {
+      "ref": "E19",
+      "style": "S_DEFAULT",
+      "value": "Services MRO TAM ($7,067M across 68 J/K/N/M/H/L PSCs) plus embedded PSC 1905 MRO ($1,904M Central). Replaces the prior $7,067M services-only headline deck-wide."
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "Public naval shipyard NWCF"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "PUBLIC_SHIPYARD_NWCF"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT",
+      "value": "7500"
+    },
+    {
+      "ref": "D20",
+      "style": "S_DEFAULT",
+      "value": "S20 Scope Reconciliation"
+    },
+    {
+      "ref": "E20",
+      "style": "S_DEFAULT",
+      "value": "FY25 OMN 1B4B Ship Depot Maintenance total minus \"Ship Maintenance By Contract\" cost element; approximates public-yard labor reimbursed through NWCF. $12-15B all-in including mission funding customer orders."
+    },
+    {
+      "ref": "A21",
+      "style": "S_DEFAULT",
+      "value": "HII Mission Technologies FY25 revenue"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "HII_MT_FY25_REV"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "3044"
+    },
+    {
+      "ref": "D21",
+      "style": "S_DEFAULT",
+      "value": "S17 / S18 HII Mission Technologies"
+    },
+    {
+      "ref": "E21",
+      "style": "S_DEFAULT",
+      "value": "FY2025 10-K segment revenue."
+    },
+    {
+      "ref": "A22",
+      "style": "S_DEFAULT",
+      "value": "HII Mission Technologies FY25 OI"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "HII_MT_FY25_OI"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT",
+      "value": "153"
+    },
+    {
+      "ref": "D22",
+      "style": "S_DEFAULT",
+      "value": "S18 HII Mission Technologies Financials"
+    },
+    {
+      "ref": "E22",
+      "style": "S_DEFAULT",
+      "value": "FY2025 10-K segment operating income (~5.0% margin on $3.04B)."
+    },
+    {
+      "ref": "A23",
+      "style": "S_DEFAULT",
+      "value": "HII Mission Technologies FY25 service revenue mix"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "HII_MT_FY25_SVC_MIX_PCT"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT",
+      "value": "91"
+    },
+    {
+      "ref": "D23",
+      "style": "S_DEFAULT",
+      "value": "S17 HII Mission Technologies Overview"
+    },
+    {
+      "ref": "E23",
+      "style": "S_DEFAULT",
+      "value": "Services share of segment revenue (%); cleanest pure-services public comp to BuildCo in the Navy MRO comp set."
+    },
+    {
+      "ref": "A26",
+      "style": "S_BOLD",
+      "value": "Appropriation"
+    },
+    {
+      "ref": "B26",
+      "style": "S_BOLD",
+      "value": "Line"
+    },
+    {
+      "ref": "C26",
+      "style": "S_BOLD",
+      "value": "Line Item"
+    },
+    {
+      "ref": "D26",
+      "style": "S_BOLD",
+      "value": "FY24 Actuals $K"
+    },
+    {
+      "ref": "E26",
+      "style": "S_BOLD",
+      "value": "FY25 Enacted $K"
+    },
+    {
+      "ref": "F26",
+      "style": "S_BOLD",
+      "value": "FY26 Request $K"
+    },
+    {
+      "ref": "G26",
+      "style": "S_BOLD",
+      "value": "Source"
+    },
+    {
+      "ref": "H26",
+      "style": "S_BOLD",
+      "value": "Description"
+    },
+    {
+      "ref": "A27",
+      "style": "S_TITLE_SECTION",
+      "value": "FY2025 MRO-PSC Appropriation Attribution - measured via Treasury TAS (bottom-up)"
+    },
+    {
+      "ref": "A28",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "TAS OMN"
+    },
+    {
+      "ref": "C28",
+      "style": "S_DEFAULT",
+      "value": "OMN - Operation & Maintenance, Navy (017-1804)"
+    },
+    {
+      "ref": "E28",
+      "style": "S_NUM_INPUT",
+      "value": "2761054"
+    },
+    {
+      "ref": "G28",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H28",
+      "style": "S_DEFAULT",
+      "value": "Primary Navy operating funds on MRO PSCs; funds N-series installs, M2 husbanding, L-series tech rep (all OMN-dominant buckets)"
+    },
+    {
+      "ref": "A29",
+      "style": "S_DEFAULT",
+      "value": "OPN"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "TAS OPN"
+    },
+    {
+      "ref": "C29",
+      "style": "S_DEFAULT",
+      "value": "OPN - Other Procurement, Navy (017-1810)"
+    },
+    {
+      "ref": "E29",
+      "style": "S_NUM_INPUT",
+      "value": "2587836"
+    },
+    {
+      "ref": "G29",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H29",
+      "style": "S_DEFAULT",
+      "value": "Modernization procurement; J998/J999 Depot Ship Repair is 70% OPN - DSRAs/DPIAs funded as mod installs, not O&M contract maintenance"
+    },
+    {
+      "ref": "A30",
+      "style": "S_DEFAULT",
+      "value": "OPN"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "TAS OPN BA-7"
+    },
+    {
+      "ref": "C30",
+      "style": "S_DEFAULT",
+      "value": "  of which BA-7 Personnel & Command Support Equip (PA 0007)"
+    },
+    {
+      "ref": "E30",
+      "style": "S_NUM_INPUT",
+      "value": "1591498"
+    },
+    {
+      "ref": "G30",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "H30",
+      "style": "S_DEFAULT",
+      "value": "Installation + modernization electronics / C4ISR / combat system integration equipment"
+    },
+    {
+      "ref": "A31",
+      "style": "S_DEFAULT",
+      "value": "OPN"
+    },
+    {
+      "ref": "B31",
+      "style": "S_DEFAULT",
+      "value": "TAS OPN BA-8"
+    },
+    {
+      "ref": "C31",
+      "style": "S_DEFAULT",
+      "value": "  of which BA-8 Spares & Repair Parts (PA 0008)"
+    },
+    {
+      "ref": "E31",
+      "style": "S_NUM_INPUT",
+      "value": "824996"
+    },
+    {
+      "ref": "G31",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "H31",
+      "style": "S_DEFAULT",
+      "value": "Spares / consumable repair parts procurement directed at MRO PSC contract actions"
+    },
+    {
+      "ref": "A32",
+      "style": "S_DEFAULT",
+      "value": "OPN"
+    },
+    {
+      "ref": "B32",
+      "style": "S_DEFAULT",
+      "value": "TAS OPN Other"
+    },
+    {
+      "ref": "C32",
+      "style": "S_DEFAULT",
+      "value": "  of which other BAs (BA-1 Ships Support + Undistributed + other)"
+    },
+    {
+      "ref": "E32",
+      "style": "S_NUM_INPUT",
+      "value": "171342"
+    },
+    {
+      "ref": "G32",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "H32",
+      "style": "S_DEFAULT",
+      "value": "BA-1 Ships Support Equipment + undistributed + pre-FY21 optional rows + residual"
+    },
+    {
+      "ref": "A33",
+      "style": "S_DEFAULT",
+      "value": "RDT&E DW"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "TAS RDTE-DW"
+    },
+    {
+      "ref": "C33",
+      "style": "S_DEFAULT",
+      "value": "RDT&E, Defense-Wide (097-0400)"
+    },
+    {
+      "ref": "E33",
+      "style": "S_NUM_INPUT",
+      "value": "780443"
+    },
+    {
+      "ref": "G33",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H33",
+      "style": "S_DEFAULT",
+      "value": "Strategic Systems Programs - Draper MK7 Trident sustainment ($318M), other SMDC/SSP work; 31% of J-series Equip Maint bucket"
+    },
+    {
+      "ref": "A34",
+      "style": "S_DEFAULT",
+      "value": "Defense-Wide"
+    },
+    {
+      "ref": "B34",
+      "style": "S_DEFAULT",
+      "value": "TAS DW other"
+    },
+    {
+      "ref": "C34",
+      "style": "S_DEFAULT",
+      "value": "Defense-Wide - other (097-* excl. 0400)"
+    },
+    {
+      "ref": "E34",
+      "style": "S_NUM_INPUT",
+      "value": "311924"
+    },
+    {
+      "ref": "G34",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H34",
+      "style": "S_DEFAULT",
+      "value": "Joint-program O&M + Procurement Defense-Wide + DWCF"
+    },
+    {
+      "ref": "A35",
+      "style": "S_DEFAULT",
+      "value": "Navy misc"
+    },
+    {
+      "ref": "B35",
+      "style": "S_DEFAULT",
+      "value": "TAS Navy other"
+    },
+    {
+      "ref": "C35",
+      "style": "S_DEFAULT",
+      "value": "Navy - other appropriations (017-* excl. 1804/1810/1611)"
+    },
+    {
+      "ref": "E35",
+      "style": "S_NUM_INPUT",
+      "value": "298533"
+    },
+    {
+      "ref": "G35",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H35",
+      "style": "S_DEFAULT",
+      "value": "APN, WPN, MPN, and other small Navy appropriations that land on MRO PSCs"
+    },
+    {
+      "ref": "A36",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "TAS SCN"
+    },
+    {
+      "ref": "C36",
+      "style": "S_DEFAULT",
+      "value": "SCN - Shipbuilding & Conversion, Navy (017-1611)"
+    },
+    {
+      "ref": "E36",
+      "style": "S_NUM_INPUT",
+      "value": "40064"
+    },
+    {
+      "ref": "G36",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H36",
+      "style": "S_DEFAULT",
+      "value": "PDA/PSA warranty work on newbuild LCS/DDG/LPD; minimal RCOH spillover (most RCOH stays on PSC 1905)"
+    },
+    {
+      "ref": "A37",
+      "style": "S_DEFAULT",
+      "value": "Air Force"
+    },
+    {
+      "ref": "B37",
+      "style": "S_DEFAULT",
+      "value": "TAS Air Force"
+    },
+    {
+      "ref": "C37",
+      "style": "S_DEFAULT",
+      "value": "Air Force - O&M + Procurement (057-*)"
+    },
+    {
+      "ref": "E37",
+      "style": "S_NUM_INPUT",
+      "value": "164294"
+    },
+    {
+      "ref": "G37",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H37",
+      "style": "S_DEFAULT",
+      "value": "Cross-service Air Force funding on Navy MRO PSCs (joint-program K-series mod work)"
+    },
+    {
+      "ref": "A38",
+      "style": "S_DEFAULT",
+      "value": "USCG"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "TAS USCG"
+    },
+    {
+      "ref": "C38",
+      "style": "S_DEFAULT",
+      "value": "USCG - OE / AC&I (070-*)"
+    },
+    {
+      "ref": "E38",
+      "style": "S_NUM_INPUT",
+      "value": "320102"
+    },
+    {
+      "ref": "G38",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H38",
+      "style": "S_DEFAULT",
+      "value": "Coast Guard cutter sustainment contract flow; larger than USCG ISVS alone ($120M) because it includes routine OE depot work"
+    },
+    {
+      "ref": "A39",
+      "style": "S_DEFAULT",
+      "value": "Army"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "TAS Army"
+    },
+    {
+      "ref": "C39",
+      "style": "S_DEFAULT",
+      "value": "Army - O&M + RDTE (021-*)"
+    },
+    {
+      "ref": "E39",
+      "style": "S_NUM_INPUT",
+      "value": "128814"
+    },
+    {
+      "ref": "G39",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H39",
+      "style": "S_DEFAULT",
+      "value": "USACE dredge maintenance + cross-service Army RDTE"
+    },
+    {
+      "ref": "A40",
+      "style": "S_DEFAULT",
+      "value": "Other agency"
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "TAS Other agency"
+    },
+    {
+      "ref": "C40",
+      "style": "S_DEFAULT",
+      "value": "Other federal agencies (non-DoD, non-USCG)"
+    },
+    {
+      "ref": "E40",
+      "style": "S_NUM_INPUT",
+      "value": "12921"
+    },
+    {
+      "ref": "G40",
+      "style": "S_DEFAULT",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "H40",
+      "style": "S_DEFAULT",
+      "value": "Small cross-federal flows"
+    },
+    {
+      "ref": "A41",
+      "style": "S_DEFAULT",
+      "value": "Total"
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "TAS Total"
+    },
+    {
+      "ref": "C41",
+      "style": "S_DEFAULT",
+      "value": "MRO-PSC FY25 Total (sum of appropriation rows)"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM",
+      "formula": "D28+D29+D33+D34+D35+D36+D37+D38+D39+D40"
+    },
+    {
+      "ref": "E41",
+      "style": "S_NUM",
+      "formula": "E28+E29+E33+E34+E35+E36+E37+E38+E39+E40"
+    },
+    {
+      "ref": "F41",
+      "style": "S_NUM",
+      "formula": "F28+F29+F33+F34+F35+F36+F37+F38+F39+F40"
+    },
+    {
+      "ref": "G41",
+      "style": "S_DEFAULT",
+      "value": "SUM of 10 appropriation rows above"
+    },
+    {
+      "ref": "H41",
+      "style": "S_DEFAULT",
+      "value": "Pre-exclusion MRO-PSC universe; Services sheet TAM is ~$339M smaller (shore-base exclusions applied there but not in TAS rollup)"
+    },
+    {
+      "ref": "A42",
+      "style": "S_TITLE_SECTION",
+      "value": "OMN BA-1 Operating Forces - Ship Operations appropriation"
+    },
+    {
+      "ref": "A43",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B43",
+      "style": "S_DEFAULT",
+      "value": "1B1B"
+    },
+    {
+      "ref": "C43",
+      "style": "S_DEFAULT",
+      "value": "Mission and Other Ship Operations (SAG total)"
+    },
+    {
+      "ref": "D43",
+      "style": "S_NUM_INPUT",
+      "value": "7460169"
+    },
+    {
+      "ref": "E43",
+      "style": "S_NUM_INPUT",
+      "value": "7258014"
+    },
+    {
+      "ref": "F43",
+      "style": "S_NUM_INPUT",
+      "value": "5350073"
+    },
+    {
+      "ref": "G43",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 619"
+    },
+    {
+      "ref": "H43",
+      "style": "S_DEFAULT",
+      "value": "Fleet operations, ship movement, crew training (MSC M&R transfers to 1B4B in FY26)"
+    },
+    {
+      "ref": "A44",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B44",
+      "style": "S_DEFAULT",
+      "value": "1B1B-928"
+    },
+    {
+      "ref": "C44",
+      "style": "S_DEFAULT",
+      "value": "  of which CE 928 Ship Maintenance By Contract"
+    },
+    {
+      "ref": "D44",
+      "style": "S_NUM_INPUT",
+      "value": "2663"
+    },
+    {
+      "ref": "E44",
+      "style": "S_NUM_INPUT",
+      "value": "1746"
+    },
+    {
+      "ref": "F44",
+      "style": "S_NUM_INPUT",
+      "value": "20"
+    },
+    {
+      "ref": "G44",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 4770"
+    },
+    {
+      "ref": "H44",
+      "style": "S_DEFAULT",
+      "value": "Private-contractor slice within 1B1B (negligible)"
+    },
+    {
+      "ref": "A45",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B45",
+      "style": "S_DEFAULT",
+      "value": "1B2B"
+    },
+    {
+      "ref": "C45",
+      "style": "S_DEFAULT",
+      "value": "Ship Operational Support and Training (SAG total)"
+    },
+    {
+      "ref": "D45",
+      "style": "S_NUM_INPUT",
+      "value": "1372331"
+    },
+    {
+      "ref": "E45",
+      "style": "S_NUM_INPUT",
+      "value": "1536668"
+    },
+    {
+      "ref": "F45",
+      "style": "S_NUM_INPUT",
+      "value": "1719580"
+    },
+    {
+      "ref": "G45",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 620"
+    },
+    {
+      "ref": "H45",
+      "style": "S_DEFAULT",
+      "value": "Pre-planning, engineering, submarine + carrier operational support"
+    },
+    {
+      "ref": "A46",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B46",
+      "style": "S_DEFAULT",
+      "value": "1B2B-928"
+    },
+    {
+      "ref": "C46",
+      "style": "S_DEFAULT",
+      "value": "  of which CE 928 Ship Maintenance By Contract"
+    },
+    {
+      "ref": "D46",
+      "style": "S_NUM_INPUT",
+      "value": "28630"
+    },
+    {
+      "ref": "E46",
+      "style": "S_NUM_INPUT",
+      "value": "24621"
+    },
+    {
+      "ref": "F46",
+      "style": "S_NUM_INPUT",
+      "value": "8562"
+    },
+    {
+      "ref": "G46",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 5255"
+    },
+    {
+      "ref": "H46",
+      "style": "S_DEFAULT",
+      "value": "Private-contractor slice within 1B2B"
+    },
+    {
+      "ref": "A47",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B47",
+      "style": "S_DEFAULT",
+      "value": "1B4B"
+    },
+    {
+      "ref": "C47",
+      "style": "S_DEFAULT",
+      "value": "Ship Maintenance (SAG total)"
+    },
+    {
+      "ref": "D47",
+      "style": "S_NUM_INPUT",
+      "value": "11502495"
+    },
+    {
+      "ref": "E47",
+      "style": "S_NUM_INPUT",
+      "value": "11763594"
+    },
+    {
+      "ref": "F47",
+      "style": "S_NUM_INPUT",
+      "value": "13803188"
+    },
+    {
+      "ref": "G47",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 6714"
+    },
+    {
+      "ref": "H47",
+      "style": "S_DEFAULT",
+      "value": "All Navy ship depot maintenance O&M,N customer budget"
+    },
+    {
+      "ref": "A48",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B48",
+      "style": "S_DEFAULT",
+      "value": "1B4B-928"
+    },
+    {
+      "ref": "C48",
+      "style": "S_DEFAULT",
+      "value": "  of which CE 928 Ship Maintenance By Contract"
+    },
+    {
+      "ref": "D48",
+      "style": "S_NUM_INPUT",
+      "value": "1769659"
+    },
+    {
+      "ref": "E48",
+      "style": "S_NUM_INPUT",
+      "value": "2228255"
+    },
+    {
+      "ref": "F48",
+      "style": "S_NUM_INPUT",
+      "value": "3971574"
+    },
+    {
+      "ref": "G48",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 6698"
+    },
+    {
+      "ref": "H48",
+      "style": "S_DEFAULT",
+      "value": "Private-contractor slice within 1B4B (primary MRO contract bucket)"
+    },
+    {
+      "ref": "A49",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B49",
+      "style": "S_DEFAULT",
+      "value": "1B5B"
+    },
+    {
+      "ref": "C49",
+      "style": "S_DEFAULT",
+      "value": "Ship Depot Operations Support (SAG total)"
+    },
+    {
+      "ref": "D49",
+      "style": "S_NUM_INPUT",
+      "value": "2714238"
+    },
+    {
+      "ref": "E49",
+      "style": "S_NUM_INPUT",
+      "value": "2671812"
+    },
+    {
+      "ref": "F49",
+      "style": "S_NUM_INPUT",
+      "value": "2760878"
+    },
+    {
+      "ref": "G49",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 622"
+    },
+    {
+      "ref": "H49",
+      "style": "S_DEFAULT",
+      "value": "Depot labor, facilities, LCS single-crew support, SUPSHIP"
+    },
+    {
+      "ref": "A50",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B50",
+      "style": "S_DEFAULT",
+      "value": "1B5B-928"
+    },
+    {
+      "ref": "C50",
+      "style": "S_DEFAULT",
+      "value": "  of which CE 928 Ship Maintenance By Contract"
+    },
+    {
+      "ref": "D50",
+      "style": "S_NUM_INPUT",
+      "value": "119929"
+    },
+    {
+      "ref": "E50",
+      "style": "S_NUM_INPUT",
+      "value": "141550"
+    },
+    {
+      "ref": "F50",
+      "style": "S_NUM_INPUT",
+      "value": "186695"
+    },
+    {
+      "ref": "G50",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 7217"
+    },
+    {
+      "ref": "H50",
+      "style": "S_DEFAULT",
+      "value": "Private-contractor slice within 1B5B"
+    },
+    {
+      "ref": "A51",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B51",
+      "style": "S_DEFAULT",
+      "value": "BA-1 total"
+    },
+    {
+      "ref": "C51",
+      "style": "S_DEFAULT",
+      "value": "Ship Operations BA-1 grand total (SUM of 4 SAG totals)"
+    },
+    {
+      "ref": "D51",
+      "style": "S_NUM",
+      "formula": "D43+D45+D47+D49"
+    },
+    {
+      "ref": "E51",
+      "style": "S_NUM",
+      "formula": "E43+E45+E47+E49"
+    },
+    {
+      "ref": "F51",
+      "style": "S_NUM",
+      "formula": "F43+F45+F47+F49"
+    },
+    {
+      "ref": "G51",
+      "style": "S_DEFAULT",
+      "value": "Sum of 4 SAGs above"
+    },
+    {
+      "ref": "H51",
+      "style": "S_DEFAULT",
+      "value": "Top-down Ship Ops funding across all 4 SAGs (incl. public-yard labor cross-charged via NWCF rates)"
+    },
+    {
+      "ref": "A52",
+      "style": "S_DEFAULT",
+      "value": "OMN"
+    },
+    {
+      "ref": "B52",
+      "style": "S_DEFAULT",
+      "value": "BA-1 928"
+    },
+    {
+      "ref": "C52",
+      "style": "S_DEFAULT",
+      "value": "CE 928 Ship Maintenance By Contract - summed across SAGs"
+    },
+    {
+      "ref": "D52",
+      "style": "S_NUM",
+      "formula": "D44+D46+D48+D50"
+    },
+    {
+      "ref": "E52",
+      "style": "S_NUM",
+      "formula": "E44+E46+E48+E50"
+    },
+    {
+      "ref": "F52",
+      "style": "S_NUM",
+      "formula": "F44+F46+F48+F50"
+    },
+    {
+      "ref": "G52",
+      "style": "S_DEFAULT",
+      "value": "Sum of 4 CE 928 rows above"
+    },
+    {
+      "ref": "H52",
+      "style": "S_DEFAULT",
+      "value": "Total private-contractor slice across all 4 Ship Ops SAGs"
+    },
+    {
+      "ref": "A53",
+      "style": "S_TITLE_SECTION",
+      "value": "SCN Capital Ships - 1611N Detail, Exhibit P-1"
+    },
+    {
+      "ref": "A54",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B54",
+      "style": "S_DEFAULT",
+      "value": "LI 1045 SFF"
+    },
+    {
+      "ref": "C54",
+      "style": "S_DEFAULT",
+      "value": "Columbia Class - Subsequent Full Funding (construction)"
+    },
+    {
+      "ref": "D54",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E54",
+      "style": "S_NUM_INPUT",
+      "value": "3364835"
+    },
+    {
+      "ref": "F54",
+      "style": "S_NUM_INPUT",
+      "value": "3928828"
+    },
+    {
+      "ref": "G54",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book line 227"
+    },
+    {
+      "ref": "H54",
+      "style": "S_DEFAULT",
+      "value": "Base construction authority for SSBN Columbia (Electric Boat + HII NNS)"
+    },
+    {
+      "ref": "A55",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B55",
+      "style": "S_DEFAULT",
+      "value": "LI 1045 AP"
+    },
+    {
+      "ref": "C55",
+      "style": "S_DEFAULT",
+      "value": "Columbia Class - Advance Procurement (CY)"
+    },
+    {
+      "ref": "D55",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E55",
+      "style": "S_NUM_INPUT",
+      "value": "6215939"
+    },
+    {
+      "ref": "F55",
+      "style": "S_NUM_INPUT",
+      "value": "5065766"
+    },
+    {
+      "ref": "G55",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book line 231"
+    },
+    {
+      "ref": "H55",
+      "style": "S_DEFAULT",
+      "value": "Concurrent AP for future Columbia hulls"
+    },
+    {
+      "ref": "A56",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B56",
+      "style": "S_DEFAULT",
+      "value": "LI 1045"
+    },
+    {
+      "ref": "C56",
+      "style": "S_DEFAULT",
+      "value": "Columbia Class - BA-01 rollup (SFF + AP)"
+    },
+    {
+      "ref": "D56",
+      "style": "S_NUM",
+      "formula": "D54+D55"
+    },
+    {
+      "ref": "E56",
+      "style": "S_NUM",
+      "formula": "E54+E55"
+    },
+    {
+      "ref": "F56",
+      "style": "S_NUM",
+      "formula": "F54+F55"
+    },
+    {
+      "ref": "G56",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book line 270 (BA-01 program total)"
+    },
+    {
+      "ref": "H56",
+      "style": "S_DEFAULT",
+      "value": "Program-level BA-01 authority = construction + concurrent AP"
+    },
+    {
+      "ref": "A57",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B57",
+      "style": "S_DEFAULT",
+      "value": "LI 2013"
+    },
+    {
+      "ref": "C57",
+      "style": "S_DEFAULT",
+      "value": "Virginia Class Submarine (parent aggregate)"
+    },
+    {
+      "ref": "D57",
+      "style": "S_NUM_INPUT",
+      "value": "7298145"
+    },
+    {
+      "ref": "E57",
+      "style": "S_NUM_INPUT",
+      "value": "9599908"
+    },
+    {
+      "ref": "F57",
+      "style": "S_NUM_INPUT",
+      "value": "816705"
+    },
+    {
+      "ref": "G57",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book parent aggregate line 310+SFF+CPY"
+    },
+    {
+      "ref": "H57",
+      "style": "S_DEFAULT",
+      "value": "SSN Block V/VI construction + SFF + Completion PY adjustments"
+    },
+    {
+      "ref": "A58",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B58",
+      "style": "S_DEFAULT",
+      "value": "LI 2086"
+    },
+    {
+      "ref": "C58",
+      "style": "S_DEFAULT",
+      "value": "CVN Refueling Overhauls (net FY execution)"
+    },
+    {
+      "ref": "D58",
+      "style": "S_NUM_INPUT",
+      "value": "42422"
+    },
+    {
+      "ref": "E58",
+      "style": "S_NUM_INPUT",
+      "value": "1480314"
+    },
+    {
+      "ref": "F58",
+      "style": "S_NUM_INPUT",
+      "value": "1779011"
+    },
+    {
+      "ref": "G58",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book lines 357-362 (net of AP/SFF)"
+    },
+    {
+      "ref": "H58",
+      "style": "S_DEFAULT",
+      "value": "Single-year RCOH execution authority (CVN-74 Stennis); not standing multi-ship program total"
+    },
+    {
+      "ref": "A59",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B59",
+      "style": "S_DEFAULT",
+      "value": "LI 2001"
+    },
+    {
+      "ref": "C59",
+      "style": "S_DEFAULT",
+      "value": "Carrier Replacement Program - CVN-80 (parent)"
+    },
+    {
+      "ref": "D59",
+      "style": "S_NUM_INPUT",
+      "value": "1729021"
+    },
+    {
+      "ref": "E59",
+      "style": "S_NUM_INPUT",
+      "value": "1359124"
+    },
+    {
+      "ref": "F59",
+      "style": "S_NUM_INPUT",
+      "value": "1046700"
+    },
+    {
+      "ref": "G59",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book lines 280-281 (SFF + Completion PY)"
+    },
+    {
+      "ref": "H59",
+      "style": "S_DEFAULT",
+      "value": "CVN-80 USS Enterprise construction (HII Newport News)"
+    },
+    {
+      "ref": "A60",
+      "style": "S_DEFAULT",
+      "value": "SCN"
+    },
+    {
+      "ref": "B60",
+      "style": "S_DEFAULT",
+      "value": "LI 2004"
+    },
+    {
+      "ref": "C60",
+      "style": "S_DEFAULT",
+      "value": "CVN-81"
+    },
+    {
+      "ref": "D60",
+      "style": "S_NUM_INPUT",
+      "value": "800492"
+    },
+    {
+      "ref": "E60",
+      "style": "S_NUM_INPUT",
+      "value": "674930"
+    },
+    {
+      "ref": "F60",
+      "style": "S_NUM_INPUT",
+      "value": "1622935"
+    },
+    {
+      "ref": "G60",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book line 307 (SFF for FY 2020)"
+    },
+    {
+      "ref": "H60",
+      "style": "S_DEFAULT",
+      "value": "CVN-81 USS Doris Miller construction (HII Newport News)"
+    },
+    {
+      "ref": "A61",
+      "style": "S_TITLE_SECTION",
+      "value": "USCG Cutter Sustainment - PC&I In-Service Vessel Sustainment"
+    },
+    {
+      "ref": "A62",
+      "style": "S_DEFAULT",
+      "value": "USCG PC&I"
+    },
+    {
+      "ref": "B62",
+      "style": "S_DEFAULT",
+      "value": "ISVS total"
+    },
+    {
+      "ref": "C62",
+      "style": "S_DEFAULT",
+      "value": "In-Service Vessel Sustainment (PPA total)"
+    },
+    {
+      "ref": "D62",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "E62",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "F62",
+      "style": "S_NUM_INPUT",
+      "value": "152000"
+    },
+    {
+      "ref": "G62",
+      "style": "S_DEFAULT",
+      "value": "USCG_Justification line 128 / 2133"
+    },
+    {
+      "ref": "H62",
+      "style": "S_DEFAULT",
+      "value": "Coast Guard cutter SLEP / MMA umbrella line (PC&I capital, not OE)"
+    },
+    {
+      "ref": "A63",
+      "style": "S_DEFAULT",
+      "value": "USCG PC&I"
+    },
+    {
+      "ref": "B63",
+      "style": "S_DEFAULT",
+      "value": "ISVS 47MLB"
+    },
+    {
+      "ref": "C63",
+      "style": "S_DEFAULT",
+      "value": "  47-Foot Motor Lifeboat SLEP"
+    },
+    {
+      "ref": "D63",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "E63",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "F63",
+      "style": "S_NUM_INPUT",
+      "value": "45000"
+    },
+    {
+      "ref": "G63",
+      "style": "S_DEFAULT",
+      "value": "USCG_Justification line 2378"
+    },
+    {
+      "ref": "H63",
+      "style": "S_DEFAULT",
+      "value": "20-year service-life extension for 47-ft motor lifeboat fleet"
+    },
+    {
+      "ref": "A64",
+      "style": "S_DEFAULT",
+      "value": "USCG PC&I"
+    },
+    {
+      "ref": "B64",
+      "style": "S_DEFAULT",
+      "value": "ISVS WMEC"
+    },
+    {
+      "ref": "C64",
+      "style": "S_DEFAULT",
+      "value": "  270-foot Medium Endurance Cutter (WMEC) SLEP"
+    },
+    {
+      "ref": "D64",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "E64",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "F64",
+      "style": "S_NUM_INPUT",
+      "value": "76000"
+    },
+    {
+      "ref": "G64",
+      "style": "S_DEFAULT",
+      "value": "USCG_Justification"
+    },
+    {
+      "ref": "H64",
+      "style": "S_DEFAULT",
+      "value": "270-ft Famous Class cutter SLEP production"
+    },
+    {
+      "ref": "A65",
+      "style": "S_DEFAULT",
+      "value": "USCG PC&I"
+    },
+    {
+      "ref": "B65",
+      "style": "S_DEFAULT",
+      "value": "ISVS Healy"
+    },
+    {
+      "ref": "C65",
+      "style": "S_DEFAULT",
+      "value": "  CGC Healy SLEP"
+    },
+    {
+      "ref": "D65",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "E65",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "F65",
+      "style": "S_NUM_INPUT",
+      "value": "11000"
+    },
+    {
+      "ref": "G65",
+      "style": "S_DEFAULT",
+      "value": "USCG_Justification"
+    },
+    {
+      "ref": "H65",
+      "style": "S_DEFAULT",
+      "value": "Medium polar icebreaker SLEP (detail design + procurement)"
+    },
+    {
+      "ref": "A66",
+      "style": "S_TITLE_SECTION",
+      "value": "NWCF Memo - Navy Working Capital Fund (no defined name)"
+    },
+    {
+      "ref": "A67",
+      "style": "S_DEFAULT",
+      "value": "NWCF"
+    },
+    {
+      "ref": "B67",
+      "style": "S_DEFAULT",
+      "value": "NWCF"
+    },
+    {
+      "ref": "C67",
+      "style": "S_DEFAULT",
+      "value": "Navy-wide NWCF Budget Authority (memo)"
+    },
+    {
+      "ref": "F67",
+      "style": "S_NUM_INPUT",
+      "value": "40300000"
+    },
+    {
+      "ref": "G67",
+      "style": "S_DEFAULT",
+      "value": "NWCF_Book"
+    },
+    {
+      "ref": "H67",
+      "style": "S_DEFAULT",
+      "value": "Navy-wide revolving fund; no clean public-shipyard-only line published. Public-yard workload is cross-charged into OMN via NWCF customer rates."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "text": "Reconciliation - Budget Authority vs FPDS Awards ($ in Thousands unless noted)"
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "text": "Deck Evidence Anchors (values in $M unless noted)"
+    },
+    {
+      "ref": "A27",
+      "style": "S_TITLE_SECTION",
+      "text": "FY2025 MRO-PSC Appropriation Attribution - measured via Treasury TAS (bottom-up)"
+    },
+    {
+      "ref": "A42",
+      "style": "S_TITLE_SECTION",
+      "text": "OMN BA-1 Operating Forces - Ship Operations appropriation"
+    },
+    {
+      "ref": "A53",
+      "style": "S_TITLE_SECTION",
+      "text": "SCN Capital Ships - 1611N Detail, Exhibit P-1"
+    },
+    {
+      "ref": "A61",
+      "style": "S_TITLE_SECTION",
+      "text": "USCG Cutter Sustainment - PC&I In-Service Vessel Sustainment"
+    },
+    {
+      "ref": "A66",
+      "style": "S_TITLE_SECTION",
+      "text": "NWCF Memo - Navy Working Capital Fund (no defined name)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C5",
+      "style": "S_NUM_INPUT",
+      "value": "1904"
+    },
+    {
+      "ref": "C6",
+      "style": "S_NUM_INPUT",
+      "value": "1255"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "337"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "119"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "193"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1255"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "337"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "77"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "41"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "235"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "965"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM_INPUT",
+      "value": "872"
+    },
+    {
+      "ref": "C17",
+      "style": "S_NUM_INPUT",
+      "value": "48"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM_INPUT",
+      "value": "20"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT",
+      "value": "7500"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "3044"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT",
+      "value": "153"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT",
+      "value": "91"
+    },
+    {
+      "ref": "E28",
+      "style": "S_NUM_INPUT",
+      "value": "2761054"
+    },
+    {
+      "ref": "E29",
+      "style": "S_NUM_INPUT",
+      "value": "2587836"
+    },
+    {
+      "ref": "E30",
+      "style": "S_NUM_INPUT",
+      "value": "1591498"
+    },
+    {
+      "ref": "E31",
+      "style": "S_NUM_INPUT",
+      "value": "824996"
+    },
+    {
+      "ref": "E32",
+      "style": "S_NUM_INPUT",
+      "value": "171342"
+    },
+    {
+      "ref": "E33",
+      "style": "S_NUM_INPUT",
+      "value": "780443"
+    },
+    {
+      "ref": "E34",
+      "style": "S_NUM_INPUT",
+      "value": "311924"
+    },
+    {
+      "ref": "E35",
+      "style": "S_NUM_INPUT",
+      "value": "298533"
+    },
+    {
+      "ref": "E36",
+      "style": "S_NUM_INPUT",
+      "value": "40064"
+    },
+    {
+      "ref": "E37",
+      "style": "S_NUM_INPUT",
+      "value": "164294"
+    },
+    {
+      "ref": "E38",
+      "style": "S_NUM_INPUT",
+      "value": "320102"
+    },
+    {
+      "ref": "E39",
+      "style": "S_NUM_INPUT",
+      "value": "128814"
+    },
+    {
+      "ref": "E40",
+      "style": "S_NUM_INPUT",
+      "value": "12921"
+    },
+    {
+      "ref": "D43",
+      "style": "S_NUM_INPUT",
+      "value": "7460169"
+    },
+    {
+      "ref": "E43",
+      "style": "S_NUM_INPUT",
+      "value": "7258014"
+    },
+    {
+      "ref": "F43",
+      "style": "S_NUM_INPUT",
+      "value": "5350073"
+    },
+    {
+      "ref": "D44",
+      "style": "S_NUM_INPUT",
+      "value": "2663"
+    },
+    {
+      "ref": "E44",
+      "style": "S_NUM_INPUT",
+      "value": "1746"
+    },
+    {
+      "ref": "F44",
+      "style": "S_NUM_INPUT",
+      "value": "20"
+    },
+    {
+      "ref": "D45",
+      "style": "S_NUM_INPUT",
+      "value": "1372331"
+    },
+    {
+      "ref": "E45",
+      "style": "S_NUM_INPUT",
+      "value": "1536668"
+    },
+    {
+      "ref": "F45",
+      "style": "S_NUM_INPUT",
+      "value": "1719580"
+    },
+    {
+      "ref": "D46",
+      "style": "S_NUM_INPUT",
+      "value": "28630"
+    },
+    {
+      "ref": "E46",
+      "style": "S_NUM_INPUT",
+      "value": "24621"
+    },
+    {
+      "ref": "F46",
+      "style": "S_NUM_INPUT",
+      "value": "8562"
+    },
+    {
+      "ref": "D47",
+      "style": "S_NUM_INPUT",
+      "value": "11502495"
+    },
+    {
+      "ref": "E47",
+      "style": "S_NUM_INPUT",
+      "value": "11763594"
+    },
+    {
+      "ref": "F47",
+      "style": "S_NUM_INPUT",
+      "value": "13803188"
+    },
+    {
+      "ref": "D48",
+      "style": "S_NUM_INPUT",
+      "value": "1769659"
+    },
+    {
+      "ref": "E48",
+      "style": "S_NUM_INPUT",
+      "value": "2228255"
+    },
+    {
+      "ref": "F48",
+      "style": "S_NUM_INPUT",
+      "value": "3971574"
+    },
+    {
+      "ref": "D49",
+      "style": "S_NUM_INPUT",
+      "value": "2714238"
+    },
+    {
+      "ref": "E49",
+      "style": "S_NUM_INPUT",
+      "value": "2671812"
+    },
+    {
+      "ref": "F49",
+      "style": "S_NUM_INPUT",
+      "value": "2760878"
+    },
+    {
+      "ref": "D50",
+      "style": "S_NUM_INPUT",
+      "value": "119929"
+    },
+    {
+      "ref": "E50",
+      "style": "S_NUM_INPUT",
+      "value": "141550"
+    },
+    {
+      "ref": "F50",
+      "style": "S_NUM_INPUT",
+      "value": "186695"
+    },
+    {
+      "ref": "D54",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E54",
+      "style": "S_NUM_INPUT",
+      "value": "3364835"
+    },
+    {
+      "ref": "F54",
+      "style": "S_NUM_INPUT",
+      "value": "3928828"
+    },
+    {
+      "ref": "D55",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E55",
+      "style": "S_NUM_INPUT",
+      "value": "6215939"
+    },
+    {
+      "ref": "F55",
+      "style": "S_NUM_INPUT",
+      "value": "5065766"
+    },
+    {
+      "ref": "D57",
+      "style": "S_NUM_INPUT",
+      "value": "7298145"
+    },
+    {
+      "ref": "E57",
+      "style": "S_NUM_INPUT",
+      "value": "9599908"
+    },
+    {
+      "ref": "F57",
+      "style": "S_NUM_INPUT",
+      "value": "816705"
+    },
+    {
+      "ref": "D58",
+      "style": "S_NUM_INPUT",
+      "value": "42422"
+    },
+    {
+      "ref": "E58",
+      "style": "S_NUM_INPUT",
+      "value": "1480314"
+    },
+    {
+      "ref": "F58",
+      "style": "S_NUM_INPUT",
+      "value": "1779011"
+    },
+    {
+      "ref": "D59",
+      "style": "S_NUM_INPUT",
+      "value": "1729021"
+    },
+    {
+      "ref": "E59",
+      "style": "S_NUM_INPUT",
+      "value": "1359124"
+    },
+    {
+      "ref": "F59",
+      "style": "S_NUM_INPUT",
+      "value": "1046700"
+    },
+    {
+      "ref": "D60",
+      "style": "S_NUM_INPUT",
+      "value": "800492"
+    },
+    {
+      "ref": "E60",
+      "style": "S_NUM_INPUT",
+      "value": "674930"
+    },
+    {
+      "ref": "F60",
+      "style": "S_NUM_INPUT",
+      "value": "1622935"
+    },
+    {
+      "ref": "D62",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "E62",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "F62",
+      "style": "S_NUM_INPUT",
+      "value": "152000"
+    },
+    {
+      "ref": "D63",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "E63",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "F63",
+      "style": "S_NUM_INPUT",
+      "value": "45000"
+    },
+    {
+      "ref": "D64",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "E64",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "F64",
+      "style": "S_NUM_INPUT",
+      "value": "76000"
+    },
+    {
+      "ref": "D65",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "E65",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "F65",
+      "style": "S_NUM_INPUT",
+      "value": "11000"
+    },
+    {
+      "ref": "F67",
+      "style": "S_NUM_INPUT",
+      "value": "40300000"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [
+    {
+      "ref": "E5",
+      "value": "Classifier-locked Central from workbook_build.psc_1905_classifier across 201 PSC 1905 PIIDs. Tier 0: USAspending /awards/funding/ TAS (OMN/OPN/RDTE funding on a PSC 1905 award is a definitive MRO signal - O&M dollars cannot fund new construction). Tier 1-5: strong/soft MRO keywords + POP length + newbuild hull override. Central = strong + TAS-confirmed + probable. Bounds: $1,553M / $1,904M / $2,057M."
+    },
+    {
+      "ref": "E14",
+      "value": "Subset of embedded MRO that received OMN / OPN / RDT&E funding on PSC 1905 awards (definitive MRO signal via USAspending /awards/funding/ TAS pull). Appropriation attribution for this subset is known; the remainder imputes to SCN 017-1611."
+    },
+    {
+      "ref": "G28",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G29",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G30",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "G31",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "G32",
+      "value": "USAspending /awards/funding/ PA split (classify_opn_pa_split)"
+    },
+    {
+      "ref": "G33",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G34",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G35",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G36",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G37",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G38",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G39",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    },
+    {
+      "ref": "G40",
+      "value": "USAspending /awards/funding/ + PSC imputation"
+    }
+  ],
+  "n_formulas": 13,
+  "formula_refs_by_sheet": {},
+  "tables": [
+    {
+      "name": "BudgetAnchors",
+      "displayName": "BudgetAnchors",
+      "ref": "A26:H67",
+      "headers": [
+        "Appropriation",
+        "Line",
+        "Line Item",
+        "FY24 Actuals $K",
+        "FY25 Enacted $K",
+        "FY26 Request $K",
+        "Source",
+        "Description"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    }
+  ],
+  "defined_names": {
+    "PSC1905_MRO_EMBEDDED": "Reconciliation!$C$5",
+    "PSC1905_MRO_SUBS": "Reconciliation!$C$6",
+    "PSC1905_MRO_CARRIERS": "Reconciliation!$C$7",
+    "PSC1905_MRO_SURFCOMBS": "Reconciliation!$C$8",
+    "PSC1905_MRO_UNCL": "Reconciliation!$C$9",
+    "PSC1905_MRO_SSN": "Reconciliation!$C$10",
+    "PSC1905_MRO_CVN": "Reconciliation!$C$11",
+    "PSC1905_MRO_DDG": "Reconciliation!$C$12",
+    "PSC1905_MRO_LCS": "Reconciliation!$C$13",
+    "PSC1905_MRO_TIER0": "Reconciliation!$C$14",
+    "PSC1905_MRO_GD": "Reconciliation!$C$15",
+    "PSC1905_MRO_HII": "Reconciliation!$C$16",
+    "PSC1905_MRO_BAE": "Reconciliation!$C$17",
+    "PSC1905_MRO_OTHER_PRIMES": "Reconciliation!$C$18",
+    "RECONCILED_MRO_TAM": "Reconciliation!$C$19",
+    "PUBLIC_SHIPYARD_NWCF": "Reconciliation!$C$20",
+    "HII_MT_FY25_REV": "Reconciliation!$C$21",
+    "HII_MT_FY25_OI": "Reconciliation!$C$22",
+    "HII_MT_FY25_SVC_MIX_PCT": "Reconciliation!$C$23",
+    "MRO_TAS_OMN_FY25": "Reconciliation!$E$28",
+    "MRO_TAS_OPN_FY25": "Reconciliation!$E$29",
+    "MRO_TAS_OPN_BA7_FY25": "Reconciliation!$E$30",
+    "MRO_TAS_OPN_BA8_FY25": "Reconciliation!$E$31",
+    "MRO_TAS_OPN_BAOTHER_FY25": "Reconciliation!$E$32",
+    "MRO_TAS_RDTE_DW_FY25": "Reconciliation!$E$33",
+    "MRO_TAS_DW_OTHER_FY25": "Reconciliation!$E$34",
+    "MRO_TAS_NAVY_OTHER_FY25": "Reconciliation!$E$35",
+    "MRO_TAS_SCN_FY25": "Reconciliation!$E$36",
+    "MRO_TAS_AIR_FORCE_FY25": "Reconciliation!$E$37",
+    "MRO_TAS_USCG_FY25": "Reconciliation!$E$38",
+    "MRO_TAS_ARMY_FY25": "Reconciliation!$E$39",
+    "MRO_TAS_OTHER_AGENCY_FY25": "Reconciliation!$E$40",
+    "MRO_TAS_TOTAL_FY25": "Reconciliation!$E$41",
+    "OMN_1B1B_TOTAL_FY25": "Reconciliation!$E$43",
+    "OMN_1B1B_CONTRACT_FY25": "Reconciliation!$E$44",
+    "OMN_1B2B_TOTAL_FY25": "Reconciliation!$E$45",
+    "OMN_1B2B_CONTRACT_FY25": "Reconciliation!$E$46",
+    "OMN_1B4B_TOTAL_FY25": "Reconciliation!$E$47",
+    "OMN_1B4B_CONTRACT_FY25": "Reconciliation!$E$48",
+    "OMN_1B5B_TOTAL_FY25": "Reconciliation!$E$49",
+    "OMN_1B5B_CONTRACT_FY25": "Reconciliation!$E$50",
+    "OMN_SHIPOPS_BA1_TOTAL_FY25": "Reconciliation!$E$51",
+    "OMN_SHIPOPS_BA1_CONTRACT_FY25": "Reconciliation!$E$52",
+    "SCN_COLUMBIA_FY25": "Reconciliation!$E$56",
+    "SCN_VIRGINIA_FY25": "Reconciliation!$E$57",
+    "SCN_CVN_RCOH_FY25": "Reconciliation!$E$58",
+    "SCN_CVN_REPL_FY25": "Reconciliation!$E$59",
+    "SCN_CVN81_FY25": "Reconciliation!$E$60",
+    "USCG_ISVS_TOTAL_FY25": "Reconciliation!$E$62",
+    "USCG_ISVS_47MLB_FY25": "Reconciliation!$E$63",
+    "USCG_ISVS_WMEC_FY25": "Reconciliation!$E$64",
+    "USCG_ISVS_HEALY_FY25": "Reconciliation!$E$65"
+  }
+}

@@ -1,0 +1,333 @@
+================================================================================
+WHAT WE CAN ACTUALLY TRACE IN PUBLIC PROCUREMENT DATA
+================================================================================
+
+Based on live pulls against FPDS Atom Feed and USAspending API (April 2026).
+Not theoretical — every claim below was verified by querying the APIs and
+examining the records that came back.
+
+
+================================================================================
+1. THE TWO SOURCES AND WHAT EACH GIVES YOU
+================================================================================
+
+FPDS ATOM FEED (fpds.gov)
+  - No auth required. Public XML feed.
+  - The authoritative upstream system for all federal contract actions.
+  - Searchable by description text, agency, vendor, NAICS, PSC, date, dollar
+    range, and ~30 other fields.
+  - Returns individual contract actions (award + every modification).
+  - Includes Other Transaction (OT) awards as dedicated record types.
+  - 10 records per page, paginated. No hard rate limit.
+  - Key field: DESCRIPTION_OF_REQUIREMENT — the only reliable way to search
+    by what a contract is actually for.
+
+USASPENDING API (api.usaspending.gov)
+  - No auth required. JSON REST API.
+  - Derived FROM FPDS. When they conflict, FPDS wins.
+  - Easier to query for aggregated views and trend data.
+  - Has subaward data (first-tier subs on contracts >$30K).
+  - Keywords match ALL fields, not just descriptions — produces massive false
+    positives. Must post-filter by description.
+  - Cannot mix award type groups in one call (contracts vs IDVs vs grants).
+  - OT awards have no dedicated type code — unreliable for OTA searches.
+  - Subaward descriptions are often generic ("DIRECT MATERIAL EXPENSE",
+    "REPAIR RENTALS") with no system-level detail.
+
+
+================================================================================
+2. WHAT WE CAN TRACE — BY CATEGORY
+================================================================================
+
+------------------------------------------------------------------------------
+A. COMBAT SYSTEM MODERNIZATION — Fully traceable per system, per ship
+------------------------------------------------------------------------------
+
+What's visible:
+  - Every major combat system upgrade has its own contract vehicle and PIID.
+  - Descriptions name the specific system AND the specific hull.
+  - Obligations are cumulative on the latest modification.
+
+What we found (FY18+, 612 MRO contracts pulled):
+  - Aegis modernization (LM): $479M — per-ship MMSP-CRs (DDG-82, DDG-95, etc.)
+  - SEWIP Block 2 (LM): $572M + $169M across multiple vehicles
+  - SEWIP Block 3 (NG): $182M + $115M
+  - SQQ-89 ASW (LM): $636M + $604M
+  - CEC (Raytheon): $416M design agent, $189M production
+  - SPY-1 OEM services (Raytheon): $53M
+  - SEWIP Block 1B3 (GDMS): $57M
+
+  These are all SWBS 4xx (Command & Surveillance) or 7xx (Armament).
+  Each one names the system in the description. Many name the hull.
+
+How to pull:
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"Aegis" DESCRIPTION_OF_REQUIREMENT:"modernization"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"SEWIP"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"SQQ-89"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"cooperative engagement"
+  etc.
+
+
+------------------------------------------------------------------------------
+B. MODERNIZATION INSTALLATION LABOR — Traceable per ship, per alteration
+------------------------------------------------------------------------------
+
+What's visible:
+  - DDG Modernization Backfit (DDGM BF) task orders are per-ship, per-alteration.
+  - Descriptions include numbered Ship Alteration (SA) and Machinery Alteration
+    (MA) codes: SA-71615K, SA-98313, MA-513, MA-84365, SA-83335.
+  - Each SA/MA maps to a specific system modification in Navy planning docs.
+  - Installation contractors: GDIT, Delphinus, HII Fleet Support, Serco,
+    Epsilon Systems, L3 Unidyne, QED Systems, Prism Maritime.
+
+What we found:
+  - ~950 FPDS records for "ship alteration" across all Navy ships
+  - ~30 for "machinery alteration"
+  - ~50 for DDG + backfit
+  - Per-ship costs: $8-15M per hull per DDGM BF cycle
+
+Examples:
+  N6449823F3112 — GDIT — $13M — DDG-92 core alteration install
+  N6449824F3059 — GDIT — $13M — DDG-97 core alteration install
+  N6449824F3063 — Delphinus — $9M — DDG-97 monitoring system alteration
+  N6449822F3144 — Serco — $895K — SA-98313 VDR installations, East Coast DDGs
+
+How to pull:
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"backfit"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"alteration"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"ship alteration" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"machinery alteration"
+
+
+------------------------------------------------------------------------------
+C. COMPONENT-LEVEL REPAIR/OVERHAUL — Traceable per system
+------------------------------------------------------------------------------
+
+What's visible:
+  - System-specific repair contracts exist OUTSIDE depot availabilities.
+  - Descriptions name the system being repaired, often the hull number.
+  - These are procured on dedicated contract vehicles or IDIQs, not bundled
+    into whole-ship availabilities.
+
+What we found:
+
+  PROPULSION (SWBS 2xx) — ~390 FPDS records for LM2500 alone:
+    GE Aerospace: $223M — LM2500 production/support
+    Air New Zealand Engineering: $130M — LM2500 power turbine overhaul
+    MTU Maintenance: $73M — LM2500 gas generator assembly overhaul
+    Turkish Aerospace (TUSAS): $33M — LM2500 overhaul
+    RWG (Repair & Overhauls): $21M — gas turbine repair
+    Rolls-Royce: ~$2-3M per MT30 engine repair
+    Wartsila: overhaul kits, ~$100-228K each
+    Defense Maritime Solutions: shaft seal repair
+
+  ELECTRIC PLANT (SWBS 3xx):
+    HII: $81M — SSDG crankcase pressure testing material
+    BAE Systems SD: $40M — ship service power work
+    Fincantieri Marine Systems: $2-3M — SSDG repair
+    Fairbanks Morse: $27-67K per SSDG repair task order
+
+  COMMAND & SURVEILLANCE (SWBS 4xx) — repair, not modernization:
+    Raytheon: $15M — DDG-79 SPY-1D transmitter suite repair
+    Raytheon: $7M — DDG-102 repair and refurbishment
+    Teledyne Wireless: $1.9M — traveling wave tube repair
+    Shepherd Electric: $1K — SPY-1 depot test equipment
+
+  ARMAMENT (SWBS 7xx):
+    Laurel Technologies: $70M — VLS programmable power supply
+    Various: CIWS repair, torpedo system components
+
+How to pull:
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"LM2500"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"gas turbine" DESCRIPTION_OF_REQUIREMENT:"repair"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"ship service diesel generator"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"repair"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"overhaul"
+
+
+------------------------------------------------------------------------------
+D. DEPOT AVAILABILITIES — Traceable per hull, NOT per system
+------------------------------------------------------------------------------
+
+What's visible:
+  - Each depot availability (DMP, SRA, DSRA, CMAV) is a separate contract
+    that names the specific ship(s).
+  - Total obligation per hull per availability is visible.
+  - The performing shipyard is visible.
+  - Modification descriptions sometimes reference RCCS work item codes
+    (e.g., "RCCS 1182G, 1185G, 1189G") and broad work categories
+    (e.g., "SEWIP NOTE M LANGUAGE", "TYCOM BASE WORK ITEMS").
+
+What's NOT visible:
+  - Per-system cost breakdown within an availability. A DDG DMP costs
+    $100-215M per hull — but how much went to hull preservation vs.
+    valve overhauls vs. pipe repairs vs. electrical work is not in the data.
+  - This breakdown exists only in TYCOM repair packages (internal Navy),
+    contractor bid breakdowns (proprietary), and VAMOSC (not public).
+
+What we found — per-hull DDG depot costs (FY20-25):
+    DDG-82 (Lassen):    $129M DMP — BAE Jacksonville
+    DDG-86:             $102M CMAV — Pacific Ship Repair
+    DDG-87 (Mason):     $126M DMP — Metro Machine
+    DDG-88 (Preble):    $113M DMP — BAE San Diego
+    DDG-89 (Mustin):    $115M DMP — BAE San Diego
+    DDG-91 (Pinckney):  $121M DMP — NASSCO
+    DDG-93 + DDG-95:    $432M DMP (2 ships) — NASSCO
+    DDG-100 (Kidd):     $143M DMP — Vigor
+
+  Plus CMAV records (~2,460 results Navy-wide) at $3-25M per availability.
+
+What subawards show:
+  - USAspending subawards under depot contracts are generic:
+    "REPAIR RENTALS" (United Rentals), "DIRECT MATERIAL EXPENSE",
+    "DIRECT EQUIPMENT RENTAL", crane services.
+  - Vendor names are mildly informative: Alfa Laval = heat exchangers,
+    Evoqua Water = water treatment, Defense Maritime Solutions = marine work.
+  - But no SWBS coding, no system-level descriptions.
+  - BAE Norfolk MSMO reported ZERO subawards.
+
+How to pull:
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"depot modernization period"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"DSRA" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"SRA" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  FPDS: DESCRIPTION_OF_REQUIREMENT:"CMAV" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  FPDS: PRODUCT_OR_SERVICE_CODE:"J998" DESCRIPTION_OF_REQUIREMENT:"DDG"
+
+
+------------------------------------------------------------------------------
+E. LIFECYCLE ENGINEERING / CSEA — Traceable per program
+------------------------------------------------------------------------------
+
+What's visible:
+  - Combat System Engineering Agent (CSEA) and Production Support
+    Engineering Agent (PSEA) contracts are per-program.
+  - These are the long-term engineering support contracts that maintain
+    combat system baselines.
+
+What we found:
+  - Aegis CSEA (LM): N0002413C5116 — $1,813M
+  - SSDS CSEA (LM): N0002419C5603 — $381M
+  - SSDS PSEA (Raytheon): N0002414C5128 — $358M
+  - CEC Design Agent (Raytheon): N0002419C5200 — $416M
+  - SEWIP engineering support (SAIC): N0016418F3006 — $32M
+
+
+================================================================================
+3. WHAT SWBS/ESWBS CODES DO AND DON'T DO
+================================================================================
+
+ESWBS (Expanded Ship Work Breakdown Structure) is a 5-digit Navy taxonomy
+with ~1,963 codes covering every system on a ship. We have the full code
+list in docs/ESWBS_potential_codes.xls.
+
+Key finding: SWBS/ESWBS codes are NOT a field in FPDS or USAspending.
+Only 2 FPDS records across all Navy contracts reference "SWBS" or "ESWBS"
+in their descriptions (one NOAA ship, one 2008 carrier review).
+
+Where SWBS codes DO appear:
+  - HII subaward data in USAspending — HII codes its newbuild subawards
+    to SWBS. This is HII's internal practice, not a federal standard.
+    BIW reports almost no subawards (0-24 vs HII's 2,355).
+  - Internal Navy cost estimation and work planning (VAMOSC, TYCOM packages).
+  - Contract descriptions implicitly — "LM2500 GAS GENERATOR OVERHAUL" maps
+    to SWBS 234 (Gas Turbines), but the code itself isn't in the record.
+
+Practical implication:
+  You can MAP public procurement data to SWBS groups using regex on
+  descriptions (we demonstrated this with ~612 contracts). But you can't
+  SEARCH by SWBS code. The mapping is inferential, not structural.
+
+
+================================================================================
+4. WHAT YOU CAN BUILD WITH THIS DATA
+================================================================================
+
+DEFINITELY BUILDABLE:
+  - Per-system modernization spending (FY trend, per ship, per contractor)
+  - Per-hull depot availability cost profile (average DMP cost, by yard,
+    by availability type)
+  - Competitive landscape by system (who has the Aegis mod contract vs.
+    SEWIP vs. CEC vs. propulsion overhaul)
+  - Module-level MRO spending for propulsion, electric, and combat systems
+    using description-based categorization
+  - SA/MA alteration tracking — which alterations are being installed on
+    which hulls, by which contractors
+  - Total addressable MRO market by SWBS group (with the caveat that
+    depot availability work is whole-ship)
+
+NOT BUILDABLE FROM PUBLIC DATA:
+  - Per-system cost breakdown WITHIN depot availabilities
+  - Subcontractor spending below first tier
+  - Classified system costs (SPECTRAL/SIGINT, some EW)
+  - OTA awards through consortia where the performing company is hidden
+  - VAMOSC-level cost visibility (per-system O&S costs)
+
+BUILDABLE WITH CAVEATS:
+  - Total DDG MRO market size — you can sum the traceable portion (~61%
+    of what we pulled) and the whole-ship depot portion, but there's
+    overlap between modernization hardware (OPN-funded) and depot
+    availabilities (OMN-funded) that install the same hardware.
+    The hardware procurement and the installation labor are on different
+    contracts, which is a feature (you can see both) but also a risk
+    (double-counting if you're not careful).
+
+
+================================================================================
+5. PRACTICAL QUERY PATTERNS THAT WORK
+================================================================================
+
+HIGH PRECISION (description-level, FPDS):
+  DESCRIPTION_OF_REQUIREMENT:"exact system name" CONTRACTING_AGENCY_ID:"1700"
+  Examples: "LM2500", "SEWIP", "SQQ-89", "Aegis", "SPY-1"
+  Result: Almost all records are relevant. False positive rate <5%.
+
+MEDIUM PRECISION (DDG + action verb, FPDS):
+  DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"repair"
+  DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"modernization"
+  Result: Good coverage but includes non-MRO (construction mods that mention
+  systems, pier repair, facility work). Needs post-filtering.
+
+LOW PRECISION (broad keywords, USAspending):
+  keywords: ["DDG maintenance"]
+  Result: Matches across all fields. High false positive rate. Use only
+  for directional market sizing, never for contract-level analysis.
+
+AVAILABILITY TRACKING (per-hull depot, FPDS):
+  DESCRIPTION_OF_REQUIREMENT:"depot modernization period"
+  DESCRIPTION_OF_REQUIREMENT:"DSRA" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  DESCRIPTION_OF_REQUIREMENT:"CMAV" DESCRIPTION_OF_REQUIREMENT:"DDG"
+  Result: Clean per-hull depot cost data. Cannot decompose by system.
+
+CONTRACT VEHICLE DEEP DIVE (FPDS):
+  PIID:"N0002420C5101" (specific contract, all mods)
+  Result: Full modification history showing obligation growth over time.
+  Good for tracking a specific program's spending trajectory.
+
+SUBAWARD ANALYSIS (USAspending):
+  POST /api/v2/subawards/ with award_id = internal award ID
+  Result: First-tier subs. Useful for newbuild (HII subawards are SWBS-coded).
+  Useless for depot maintenance (generic descriptions, or zero reported).
+
+
+================================================================================
+6. KEY NUMBERS FROM OUR PULL
+================================================================================
+
+612 unique DDG MRO contracts (FY18+, construction filtered out):
+
+  By SWBS group:
+    4xx Command & Surveillance:     $5.6B   206 contracts   TRACEABLE
+    2xx Propulsion Plant:           $542M   133 contracts   TRACEABLE
+    7xx Armament:                   $126M     7 contracts   TRACEABLE
+    3xx Electric Plant:             $126M    18 contracts   TRACEABLE
+    Modernization Labor (DDGM BF):  $122M    27 contracts   TRACEABLE
+    6xx Outfit & Furnishings:       $735K     2 contracts   TRACEABLE
+    5xx Auxiliary Systems:           $123K     1 contract    TRACEABLE
+    Whole-Ship Depot:              $1.6B   121 contracts   PER-HULL ONLY
+    Unclassified:                  $2.4B    97 contracts   NEEDS REVIEW
+
+  The $2.4B unclassified is dominated by the USS Fitzgerald collision
+  repair ($2.2B) — a one-off catastrophic event, not routine MRO.
+
+  Excluding Fitzgerald: routine MRO is ~$8.3B across FY18+, of which
+  ~78% is traceable to a specific system or module.

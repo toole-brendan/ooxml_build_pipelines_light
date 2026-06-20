@@ -1,0 +1,3942 @@
+{
+  "source": "file",
+  "name": "AP Bridge",
+  "tab_name": "AP Bridge",
+  "sheet_index": 7,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 15,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "34"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "9"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "9"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "9"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "9"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "9"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "9"
+    },
+    {
+      "min": "9",
+      "max": "9",
+      "width": "9"
+    },
+    {
+      "min": "10",
+      "max": "10",
+      "width": "9"
+    },
+    {
+      "min": "11",
+      "max": "11",
+      "width": "9"
+    },
+    {
+      "min": "12",
+      "max": "12",
+      "width": "9"
+    },
+    {
+      "min": "13",
+      "max": "13",
+      "width": "9"
+    },
+    {
+      "min": "14",
+      "max": "14",
+      "width": "9"
+    },
+    {
+      "min": "15",
+      "max": "15",
+      "width": "12"
+    }
+  ],
+  "n_rows": 56,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 14
+    },
+    {
+      "r": "4",
+      "n_cells": 14
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "n_cells": 2
+    },
+    {
+      "r": "10",
+      "n_cells": 2
+    },
+    {
+      "r": "11",
+      "n_cells": 2
+    },
+    {
+      "r": "14",
+      "n_cells": 15
+    },
+    {
+      "r": "16",
+      "n_cells": 14
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "27",
+      "n_cells": 14
+    },
+    {
+      "r": "30",
+      "n_cells": 15
+    },
+    {
+      "r": "32",
+      "n_cells": 14
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "34",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "35",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "37",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "40",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 14
+    },
+    {
+      "r": "43",
+      "n_cells": 14
+    },
+    {
+      "r": "46",
+      "n_cells": 15
+    },
+    {
+      "r": "48",
+      "n_cells": 3
+    },
+    {
+      "r": "49",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "50",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "51",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "52",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "53",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "54",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "55",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "56",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "59",
+      "n_cells": 15
+    },
+    {
+      "r": "61",
+      "n_cells": 3
+    },
+    {
+      "r": "62",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "63",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "64",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "65",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "66",
+      "n_cells": 3
+    },
+    {
+      "r": "69",
+      "n_cells": 15
+    },
+    {
+      "r": "71",
+      "n_cells": 2
+    },
+    {
+      "r": "72",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "73",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 502,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "AP Bridge"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "I2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "J2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "K2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "L2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "M2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "N2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "O2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - P-10 -> TAM bridge ($M, FY22-27)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Step"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "P-10 gross AP top-line"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "'AP Bridge'!C62"
+    },
+    {
+      "ref": "B8",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less GFE / design / weapons"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "formula": "'AP Bridge'!C63"
+    },
+    {
+      "ref": "B9",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less already inside P-5c BC"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM",
+      "formula": "'AP Bridge'!C64"
+    },
+    {
+      "ref": "B10",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less un-itemized overlap"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM",
+      "formula": "'AP Bridge'!C65"
+    },
+    {
+      "ref": "B11",
+      "style": "S_BOLD",
+      "value": "AP/LLTM additive base"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM",
+      "formula": "'AP Bridge'!C66"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Virginia (LI 2013) P-10 AP buckets ($M, FY20-31)"
+    },
+    {
+      "ref": "C14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B16",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C16",
+      "style": "S_HEADER_CENTER",
+      "value": "2020"
+    },
+    {
+      "ref": "D16",
+      "style": "S_HEADER_CENTER",
+      "value": "2021"
+    },
+    {
+      "ref": "E16",
+      "style": "S_HEADER_CENTER",
+      "value": "2022"
+    },
+    {
+      "ref": "F16",
+      "style": "S_HEADER_CENTER",
+      "value": "2023"
+    },
+    {
+      "ref": "G16",
+      "style": "S_HEADER_CENTER",
+      "value": "2024"
+    },
+    {
+      "ref": "H16",
+      "style": "S_HEADER_CENTER",
+      "value": "2025"
+    },
+    {
+      "ref": "I16",
+      "style": "S_HEADER_CENTER",
+      "value": "2026"
+    },
+    {
+      "ref": "J16",
+      "style": "S_HEADER_CENTER",
+      "value": "2027"
+    },
+    {
+      "ref": "K16",
+      "style": "S_HEADER_CENTER",
+      "value": "2028"
+    },
+    {
+      "ref": "L16",
+      "style": "S_HEADER_CENTER",
+      "value": "2029"
+    },
+    {
+      "ref": "M16",
+      "style": "S_HEADER_CENTER",
+      "value": "2030"
+    },
+    {
+      "ref": "N16",
+      "style": "S_HEADER_CENTER",
+      "value": "2031"
+    },
+    {
+      "ref": "O16",
+      "style": "S_HEADER_CENTER",
+      "value": "Total"
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "Plans / SIB"
+    },
+    {
+      "ref": "C17",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E17",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F17",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G17",
+      "style": "S_NUM_INPUT",
+      "value": "200.0"
+    },
+    {
+      "ref": "H17",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I17",
+      "style": "S_NUM_INPUT",
+      "value": "130.0"
+    },
+    {
+      "ref": "J17",
+      "style": "S_NUM_INPUT",
+      "value": "1768.17"
+    },
+    {
+      "ref": "K17",
+      "style": "S_NUM_INPUT",
+      "value": "1943.72"
+    },
+    {
+      "ref": "L17",
+      "style": "S_NUM_INPUT",
+      "value": "1602.69"
+    },
+    {
+      "ref": "M17",
+      "style": "S_NUM_INPUT",
+      "value": "285.0"
+    },
+    {
+      "ref": "N17",
+      "style": "S_NUM_INPUT",
+      "value": "214.0"
+    },
+    {
+      "ref": "O17",
+      "style": "S_NUM",
+      "formula": "SUM(C17:N17)"
+    },
+    {
+      "ref": "B18",
+      "style": "S_DEFAULT",
+      "value": "EOQ"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM_INPUT",
+      "value": "881.964"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM_INPUT",
+      "value": "427.42"
+    },
+    {
+      "ref": "E18",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F18",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G18",
+      "style": "S_NUM_INPUT",
+      "value": "1360.037"
+    },
+    {
+      "ref": "H18",
+      "style": "S_NUM_INPUT",
+      "value": "1298.349"
+    },
+    {
+      "ref": "I18",
+      "style": "S_NUM_INPUT",
+      "value": "707.862"
+    },
+    {
+      "ref": "J18",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K18",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L18",
+      "style": "S_NUM_INPUT",
+      "value": "1501.595"
+    },
+    {
+      "ref": "M18",
+      "style": "S_NUM_INPUT",
+      "value": "1433.476"
+    },
+    {
+      "ref": "N18",
+      "style": "S_NUM_INPUT",
+      "value": "781.536"
+    },
+    {
+      "ref": "O18",
+      "style": "S_NUM",
+      "formula": "SUM(C18:N18)"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "Nuclear plant LLTM"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM_INPUT",
+      "value": "1246.83"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "883.115"
+    },
+    {
+      "ref": "E19",
+      "style": "S_NUM_INPUT",
+      "value": "1121.47"
+    },
+    {
+      "ref": "F19",
+      "style": "S_NUM_INPUT",
+      "value": "1004.95"
+    },
+    {
+      "ref": "G19",
+      "style": "S_NUM_INPUT",
+      "value": "1035.07"
+    },
+    {
+      "ref": "H19",
+      "style": "S_NUM_INPUT",
+      "value": "1273.09"
+    },
+    {
+      "ref": "I19",
+      "style": "S_NUM_INPUT",
+      "value": "1336.59"
+    },
+    {
+      "ref": "J19",
+      "style": "S_NUM_INPUT",
+      "value": "1403.49"
+    },
+    {
+      "ref": "K19",
+      "style": "S_NUM_INPUT",
+      "value": "1473.6"
+    },
+    {
+      "ref": "L19",
+      "style": "S_NUM_INPUT",
+      "value": "1547.4"
+    },
+    {
+      "ref": "M19",
+      "style": "S_NUM_INPUT",
+      "value": "1624.8"
+    },
+    {
+      "ref": "N19",
+      "style": "S_NUM_INPUT",
+      "value": "1706.17"
+    },
+    {
+      "ref": "O19",
+      "style": "S_NUM",
+      "formula": "SUM(C19:N19)"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "Propulsor LLTM"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E20",
+      "style": "S_NUM_INPUT",
+      "value": "47.214"
+    },
+    {
+      "ref": "F20",
+      "style": "S_NUM_INPUT",
+      "value": "48.538"
+    },
+    {
+      "ref": "G20",
+      "style": "S_NUM_INPUT",
+      "value": "49.508"
+    },
+    {
+      "ref": "H20",
+      "style": "S_NUM_INPUT",
+      "value": "50.498"
+    },
+    {
+      "ref": "I20",
+      "style": "S_NUM_INPUT",
+      "value": "51.508"
+    },
+    {
+      "ref": "J20",
+      "style": "S_NUM_INPUT",
+      "value": "52.538"
+    },
+    {
+      "ref": "K20",
+      "style": "S_NUM_INPUT",
+      "value": "53.589"
+    },
+    {
+      "ref": "L20",
+      "style": "S_NUM_INPUT",
+      "value": "54.662"
+    },
+    {
+      "ref": "M20",
+      "style": "S_NUM_INPUT",
+      "value": "55.755"
+    },
+    {
+      "ref": "N20",
+      "style": "S_NUM_INPUT",
+      "value": "56.87"
+    },
+    {
+      "ref": "O20",
+      "style": "S_NUM",
+      "formula": "SUM(C20:N20)"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "Electronics LLTM"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "29.94"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "30.54"
+    },
+    {
+      "ref": "E21",
+      "style": "S_NUM_INPUT",
+      "value": "31.15"
+    },
+    {
+      "ref": "F21",
+      "style": "S_NUM_INPUT",
+      "value": "31.774"
+    },
+    {
+      "ref": "G21",
+      "style": "S_NUM_INPUT",
+      "value": "32.408"
+    },
+    {
+      "ref": "H21",
+      "style": "S_NUM_INPUT",
+      "value": "33.056"
+    },
+    {
+      "ref": "I21",
+      "style": "S_NUM_INPUT",
+      "value": "33.718"
+    },
+    {
+      "ref": "J21",
+      "style": "S_NUM_INPUT",
+      "value": "34.392"
+    },
+    {
+      "ref": "K21",
+      "style": "S_NUM_INPUT",
+      "value": "35.08"
+    },
+    {
+      "ref": "L21",
+      "style": "S_NUM_INPUT",
+      "value": "35.783"
+    },
+    {
+      "ref": "M21",
+      "style": "S_NUM_INPUT",
+      "value": "36.497"
+    },
+    {
+      "ref": "N21",
+      "style": "S_NUM_INPUT",
+      "value": "37.227"
+    },
+    {
+      "ref": "O21",
+      "style": "S_NUM",
+      "formula": "SUM(C21:N21)"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "HM&E LLTM"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N22",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O22",
+      "style": "S_NUM",
+      "formula": "SUM(C22:N22)"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "Ordnance LLTM"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N23",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O23",
+      "style": "S_NUM",
+      "formula": "SUM(C23:N23)"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "Missile compartment LLTM"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N24",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O24",
+      "style": "S_NUM",
+      "formula": "SUM(C24:N24)"
+    },
+    {
+      "ref": "B25",
+      "style": "S_DEFAULT",
+      "value": "Shipbuilder-procured LLTM"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N25",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O25",
+      "style": "S_NUM",
+      "formula": "SUM(C25:N25)"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "Shipbuilder-procured LLTM (CFE)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM_INPUT",
+      "value": "542.963"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "542.188"
+    },
+    {
+      "ref": "E26",
+      "style": "S_NUM_INPUT",
+      "value": "533.556"
+    },
+    {
+      "ref": "F26",
+      "style": "S_NUM_INPUT",
+      "value": "723.879"
+    },
+    {
+      "ref": "G26",
+      "style": "S_NUM_INPUT",
+      "value": "681.759"
+    },
+    {
+      "ref": "H26",
+      "style": "S_NUM_INPUT",
+      "value": "1065.31"
+    },
+    {
+      "ref": "I26",
+      "style": "S_NUM_INPUT",
+      "value": "867.138"
+    },
+    {
+      "ref": "J26",
+      "style": "S_NUM_INPUT",
+      "value": "885.028"
+    },
+    {
+      "ref": "K26",
+      "style": "S_NUM_INPUT",
+      "value": "979.344"
+    },
+    {
+      "ref": "L26",
+      "style": "S_NUM_INPUT",
+      "value": "959.318"
+    },
+    {
+      "ref": "M26",
+      "style": "S_NUM_INPUT",
+      "value": "878.146"
+    },
+    {
+      "ref": "N26",
+      "style": "S_NUM_INPUT",
+      "value": "895.709"
+    },
+    {
+      "ref": "O26",
+      "style": "S_NUM",
+      "formula": "SUM(C26:N26)"
+    },
+    {
+      "ref": "B27",
+      "style": "S_TOTAL",
+      "value": "Class total"
+    },
+    {
+      "ref": "C27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C17:C26)"
+    },
+    {
+      "ref": "D27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D17:D26)"
+    },
+    {
+      "ref": "E27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(E17:E26)"
+    },
+    {
+      "ref": "F27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(F17:F26)"
+    },
+    {
+      "ref": "G27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(G17:G26)"
+    },
+    {
+      "ref": "H27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(H17:H26)"
+    },
+    {
+      "ref": "I27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(I17:I26)"
+    },
+    {
+      "ref": "J27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(J17:J26)"
+    },
+    {
+      "ref": "K27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(K17:K26)"
+    },
+    {
+      "ref": "L27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(L17:L26)"
+    },
+    {
+      "ref": "M27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(M17:M26)"
+    },
+    {
+      "ref": "N27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(N17:N26)"
+    },
+    {
+      "ref": "O27",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(O17:O26)"
+    },
+    {
+      "ref": "A30",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B30",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Columbia (LI 1045) P-10 AP buckets ($M, FY20-31)"
+    },
+    {
+      "ref": "C30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O30",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B32",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C32",
+      "style": "S_HEADER_CENTER",
+      "value": "2020"
+    },
+    {
+      "ref": "D32",
+      "style": "S_HEADER_CENTER",
+      "value": "2021"
+    },
+    {
+      "ref": "E32",
+      "style": "S_HEADER_CENTER",
+      "value": "2022"
+    },
+    {
+      "ref": "F32",
+      "style": "S_HEADER_CENTER",
+      "value": "2023"
+    },
+    {
+      "ref": "G32",
+      "style": "S_HEADER_CENTER",
+      "value": "2024"
+    },
+    {
+      "ref": "H32",
+      "style": "S_HEADER_CENTER",
+      "value": "2025"
+    },
+    {
+      "ref": "I32",
+      "style": "S_HEADER_CENTER",
+      "value": "2026"
+    },
+    {
+      "ref": "J32",
+      "style": "S_HEADER_CENTER",
+      "value": "2027"
+    },
+    {
+      "ref": "K32",
+      "style": "S_HEADER_CENTER",
+      "value": "2028"
+    },
+    {
+      "ref": "L32",
+      "style": "S_HEADER_CENTER",
+      "value": "2029"
+    },
+    {
+      "ref": "M32",
+      "style": "S_HEADER_CENTER",
+      "value": "2030"
+    },
+    {
+      "ref": "N32",
+      "style": "S_HEADER_CENTER",
+      "value": "2031"
+    },
+    {
+      "ref": "O32",
+      "style": "S_HEADER_CENTER",
+      "value": "Total"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "Plans / SIB"
+    },
+    {
+      "ref": "C33",
+      "style": "S_NUM_INPUT",
+      "value": "872.662"
+    },
+    {
+      "ref": "D33",
+      "style": "S_NUM_INPUT",
+      "value": "85.0"
+    },
+    {
+      "ref": "E33",
+      "style": "S_NUM_INPUT",
+      "value": "110.0"
+    },
+    {
+      "ref": "F33",
+      "style": "S_NUM_INPUT",
+      "value": "541.0"
+    },
+    {
+      "ref": "G33",
+      "style": "S_NUM_INPUT",
+      "value": "2355.0"
+    },
+    {
+      "ref": "H33",
+      "style": "S_NUM_INPUT",
+      "value": "2077.189"
+    },
+    {
+      "ref": "I33",
+      "style": "S_NUM_INPUT",
+      "value": "1692.249"
+    },
+    {
+      "ref": "J33",
+      "style": "S_NUM_INPUT",
+      "value": "809.679"
+    },
+    {
+      "ref": "K33",
+      "style": "S_NUM_INPUT",
+      "value": "1018.316"
+    },
+    {
+      "ref": "L33",
+      "style": "S_NUM_INPUT",
+      "value": "709.136"
+    },
+    {
+      "ref": "M33",
+      "style": "S_NUM_INPUT",
+      "value": "624.179"
+    },
+    {
+      "ref": "N33",
+      "style": "S_NUM_INPUT",
+      "value": "631.272"
+    },
+    {
+      "ref": "O33",
+      "style": "S_NUM",
+      "formula": "SUM(C33:N33)"
+    },
+    {
+      "ref": "B34",
+      "style": "S_DEFAULT",
+      "value": "EOQ"
+    },
+    {
+      "ref": "C34",
+      "style": "S_NUM_INPUT",
+      "value": "77.793"
+    },
+    {
+      "ref": "D34",
+      "style": "S_NUM_INPUT",
+      "value": "79.705"
+    },
+    {
+      "ref": "E34",
+      "style": "S_NUM_INPUT",
+      "value": "176.23"
+    },
+    {
+      "ref": "F34",
+      "style": "S_NUM_INPUT",
+      "value": "141.512"
+    },
+    {
+      "ref": "G34",
+      "style": "S_NUM_INPUT",
+      "value": "778.925"
+    },
+    {
+      "ref": "H34",
+      "style": "S_NUM_INPUT",
+      "value": "494.301"
+    },
+    {
+      "ref": "I34",
+      "style": "S_NUM_INPUT",
+      "value": "382.154"
+    },
+    {
+      "ref": "J34",
+      "style": "S_NUM_INPUT",
+      "value": "178.331"
+    },
+    {
+      "ref": "K34",
+      "style": "S_NUM_INPUT",
+      "value": "191.647"
+    },
+    {
+      "ref": "L34",
+      "style": "S_NUM_INPUT",
+      "value": "18.57"
+    },
+    {
+      "ref": "M34",
+      "style": "S_NUM_INPUT",
+      "value": "1017.969"
+    },
+    {
+      "ref": "N34",
+      "style": "S_NUM_INPUT",
+      "value": "695.466"
+    },
+    {
+      "ref": "O34",
+      "style": "S_NUM",
+      "formula": "SUM(C34:N34)"
+    },
+    {
+      "ref": "B35",
+      "style": "S_DEFAULT",
+      "value": "Nuclear plant LLTM"
+    },
+    {
+      "ref": "C35",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D35",
+      "style": "S_NUM_INPUT",
+      "value": "816.737"
+    },
+    {
+      "ref": "E35",
+      "style": "S_NUM_INPUT",
+      "value": "797.262"
+    },
+    {
+      "ref": "F35",
+      "style": "S_NUM_INPUT",
+      "value": "772.686"
+    },
+    {
+      "ref": "G35",
+      "style": "S_NUM_INPUT",
+      "value": "1272.405"
+    },
+    {
+      "ref": "H35",
+      "style": "S_NUM_INPUT",
+      "value": "1526.697"
+    },
+    {
+      "ref": "I35",
+      "style": "S_NUM_INPUT",
+      "value": "1440.528"
+    },
+    {
+      "ref": "J35",
+      "style": "S_NUM_INPUT",
+      "value": "1490.144"
+    },
+    {
+      "ref": "K35",
+      "style": "S_NUM_INPUT",
+      "value": "1544.116"
+    },
+    {
+      "ref": "L35",
+      "style": "S_NUM_INPUT",
+      "value": "1602.529"
+    },
+    {
+      "ref": "M35",
+      "style": "S_NUM_INPUT",
+      "value": "1665.462"
+    },
+    {
+      "ref": "N35",
+      "style": "S_NUM_INPUT",
+      "value": "1777.679"
+    },
+    {
+      "ref": "O35",
+      "style": "S_NUM",
+      "formula": "SUM(C35:N35)"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "Propulsor LLTM"
+    },
+    {
+      "ref": "C36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N36",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O36",
+      "style": "S_NUM",
+      "formula": "SUM(C36:N36)"
+    },
+    {
+      "ref": "B37",
+      "style": "S_DEFAULT",
+      "value": "Electronics LLTM"
+    },
+    {
+      "ref": "C37",
+      "style": "S_NUM_INPUT",
+      "value": "36.39"
+    },
+    {
+      "ref": "D37",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E37",
+      "style": "S_NUM_INPUT",
+      "value": "8.097"
+    },
+    {
+      "ref": "F37",
+      "style": "S_NUM_INPUT",
+      "value": "26.587"
+    },
+    {
+      "ref": "G37",
+      "style": "S_NUM_INPUT",
+      "value": "8.43"
+    },
+    {
+      "ref": "H37",
+      "style": "S_NUM_INPUT",
+      "value": "129.354"
+    },
+    {
+      "ref": "I37",
+      "style": "S_NUM_INPUT",
+      "value": "110.601"
+    },
+    {
+      "ref": "J37",
+      "style": "S_NUM_INPUT",
+      "value": "81.76"
+    },
+    {
+      "ref": "K37",
+      "style": "S_NUM_INPUT",
+      "value": "83.395"
+    },
+    {
+      "ref": "L37",
+      "style": "S_NUM_INPUT",
+      "value": "85.063"
+    },
+    {
+      "ref": "M37",
+      "style": "S_NUM_INPUT",
+      "value": "86.765"
+    },
+    {
+      "ref": "N37",
+      "style": "S_NUM_INPUT",
+      "value": "88.499"
+    },
+    {
+      "ref": "O37",
+      "style": "S_NUM",
+      "formula": "SUM(C37:N37)"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "HM&E LLTM"
+    },
+    {
+      "ref": "C38",
+      "style": "S_NUM_INPUT",
+      "value": "41.948"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "3.1"
+    },
+    {
+      "ref": "E38",
+      "style": "S_NUM_INPUT",
+      "value": "42.857"
+    },
+    {
+      "ref": "F38",
+      "style": "S_NUM_INPUT",
+      "value": "86.285"
+    },
+    {
+      "ref": "G38",
+      "style": "S_NUM_INPUT",
+      "value": "66.824"
+    },
+    {
+      "ref": "H38",
+      "style": "S_NUM_INPUT",
+      "value": "75.475"
+    },
+    {
+      "ref": "I38",
+      "style": "S_NUM_INPUT",
+      "value": "86.202"
+    },
+    {
+      "ref": "J38",
+      "style": "S_NUM_INPUT",
+      "value": "74.393"
+    },
+    {
+      "ref": "K38",
+      "style": "S_NUM_INPUT",
+      "value": "119.156"
+    },
+    {
+      "ref": "L38",
+      "style": "S_NUM_INPUT",
+      "value": "78.284"
+    },
+    {
+      "ref": "M38",
+      "style": "S_NUM_INPUT",
+      "value": "79.138"
+    },
+    {
+      "ref": "N38",
+      "style": "S_NUM_INPUT",
+      "value": "80.929"
+    },
+    {
+      "ref": "O38",
+      "style": "S_NUM",
+      "formula": "SUM(C38:N38)"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "Ordnance LLTM"
+    },
+    {
+      "ref": "C39",
+      "style": "S_NUM_INPUT",
+      "value": "93.73"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "6.324"
+    },
+    {
+      "ref": "E39",
+      "style": "S_NUM_INPUT",
+      "value": "123.597"
+    },
+    {
+      "ref": "F39",
+      "style": "S_NUM_INPUT",
+      "value": "208.688"
+    },
+    {
+      "ref": "G39",
+      "style": "S_NUM_INPUT",
+      "value": "168.772"
+    },
+    {
+      "ref": "H39",
+      "style": "S_NUM_INPUT",
+      "value": "217.702"
+    },
+    {
+      "ref": "I39",
+      "style": "S_NUM_INPUT",
+      "value": "232.551"
+    },
+    {
+      "ref": "J39",
+      "style": "S_NUM_INPUT",
+      "value": "255.312"
+    },
+    {
+      "ref": "K39",
+      "style": "S_NUM_INPUT",
+      "value": "277.555"
+    },
+    {
+      "ref": "L39",
+      "style": "S_NUM_INPUT",
+      "value": "222.425"
+    },
+    {
+      "ref": "M39",
+      "style": "S_NUM_INPUT",
+      "value": "279.101"
+    },
+    {
+      "ref": "N39",
+      "style": "S_NUM_INPUT",
+      "value": "172.641"
+    },
+    {
+      "ref": "O39",
+      "style": "S_NUM",
+      "formula": "SUM(C39:N39)"
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "Missile compartment LLTM"
+    },
+    {
+      "ref": "C40",
+      "style": "S_NUM_INPUT",
+      "value": "83.747"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "86.288"
+    },
+    {
+      "ref": "E40",
+      "style": "S_NUM_INPUT",
+      "value": "177.391"
+    },
+    {
+      "ref": "F40",
+      "style": "S_NUM_INPUT",
+      "value": "221.311"
+    },
+    {
+      "ref": "G40",
+      "style": "S_NUM_INPUT",
+      "value": "174.136"
+    },
+    {
+      "ref": "H40",
+      "style": "S_NUM_INPUT",
+      "value": "216.261"
+    },
+    {
+      "ref": "I40",
+      "style": "S_NUM_INPUT",
+      "value": "261.29"
+    },
+    {
+      "ref": "J40",
+      "style": "S_NUM_INPUT",
+      "value": "297.347"
+    },
+    {
+      "ref": "K40",
+      "style": "S_NUM_INPUT",
+      "value": "301.02"
+    },
+    {
+      "ref": "L40",
+      "style": "S_NUM_INPUT",
+      "value": "309.689"
+    },
+    {
+      "ref": "M40",
+      "style": "S_NUM_INPUT",
+      "value": "320.267"
+    },
+    {
+      "ref": "N40",
+      "style": "S_NUM_INPUT",
+      "value": "271.046"
+    },
+    {
+      "ref": "O40",
+      "style": "S_NUM",
+      "formula": "SUM(C40:N40)"
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "Shipbuilder-procured LLTM"
+    },
+    {
+      "ref": "C41",
+      "style": "S_NUM_INPUT",
+      "value": "614.657"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "176.021"
+    },
+    {
+      "ref": "E41",
+      "style": "S_NUM_INPUT",
+      "value": "338.546"
+    },
+    {
+      "ref": "F41",
+      "style": "S_NUM_INPUT",
+      "value": "780.484"
+    },
+    {
+      "ref": "G41",
+      "style": "S_NUM_INPUT",
+      "value": "521.242"
+    },
+    {
+      "ref": "H41",
+      "style": "S_NUM_INPUT",
+      "value": "1478.96"
+    },
+    {
+      "ref": "I41",
+      "style": "S_NUM_INPUT",
+      "value": "1145.191"
+    },
+    {
+      "ref": "J41",
+      "style": "S_NUM_INPUT",
+      "value": "1576.376"
+    },
+    {
+      "ref": "K41",
+      "style": "S_NUM_INPUT",
+      "value": "1828.24"
+    },
+    {
+      "ref": "L41",
+      "style": "S_NUM_INPUT",
+      "value": "1890.927"
+    },
+    {
+      "ref": "M41",
+      "style": "S_NUM_INPUT",
+      "value": "2005.869"
+    },
+    {
+      "ref": "N41",
+      "style": "S_NUM_INPUT",
+      "value": "1999.211"
+    },
+    {
+      "ref": "O41",
+      "style": "S_NUM",
+      "formula": "SUM(C41:N41)"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "Shipbuilder-procured LLTM (CFE)"
+    },
+    {
+      "ref": "C42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "E42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "F42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "G42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "H42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "I42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "J42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "K42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "L42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "M42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "N42",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "O42",
+      "style": "S_NUM",
+      "formula": "SUM(C42:N42)"
+    },
+    {
+      "ref": "B43",
+      "style": "S_TOTAL",
+      "value": "Class total"
+    },
+    {
+      "ref": "C43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C33:C42)"
+    },
+    {
+      "ref": "D43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D33:D42)"
+    },
+    {
+      "ref": "E43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(E33:E42)"
+    },
+    {
+      "ref": "F43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(F33:F42)"
+    },
+    {
+      "ref": "G43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(G33:G42)"
+    },
+    {
+      "ref": "H43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(H33:H42)"
+    },
+    {
+      "ref": "I43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(I33:I42)"
+    },
+    {
+      "ref": "J43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(J33:J42)"
+    },
+    {
+      "ref": "K43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(K33:K42)"
+    },
+    {
+      "ref": "L43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(L33:L42)"
+    },
+    {
+      "ref": "M43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(M33:M42)"
+    },
+    {
+      "ref": "N43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(N33:N42)"
+    },
+    {
+      "ref": "O43",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(O33:O42)"
+    },
+    {
+      "ref": "A46",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B46",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - P-10 bucket -> TAM treatment (AP/LLTM base = 0)"
+    },
+    {
+      "ref": "C46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O46",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B48",
+      "style": "S_HEADER_LEFT",
+      "value": "P-10 bucket"
+    },
+    {
+      "ref": "C48",
+      "style": "S_HEADER_LEFT",
+      "value": "TAM treatment"
+    },
+    {
+      "ref": "D48",
+      "style": "S_HEADER_LEFT",
+      "value": "Rationale"
+    },
+    {
+      "ref": "B49",
+      "style": "S_DEFAULT",
+      "value": "Nuclear plant LLTM"
+    },
+    {
+      "ref": "C49",
+      "style": "S_BOLD",
+      "value": "EXCL GFE"
+    },
+    {
+      "ref": "D49",
+      "style": "S_DEFAULT",
+      "value": "BPMI naval reactor - GFE"
+    },
+    {
+      "ref": "B50",
+      "style": "S_DEFAULT",
+      "value": "Electronics LLTM"
+    },
+    {
+      "ref": "C50",
+      "style": "S_BOLD",
+      "value": "EXCL GFE"
+    },
+    {
+      "ref": "D50",
+      "style": "S_DEFAULT",
+      "value": "combat-system electronics - Navy-furnished"
+    },
+    {
+      "ref": "B51",
+      "style": "S_DEFAULT",
+      "value": "Ordnance LLTM"
+    },
+    {
+      "ref": "C51",
+      "style": "S_BOLD",
+      "value": "EXCL wpn"
+    },
+    {
+      "ref": "D51",
+      "style": "S_DEFAULT",
+      "value": "WPN/OPN ordnance, not SCN"
+    },
+    {
+      "ref": "B52",
+      "style": "S_DEFAULT",
+      "value": "Missile compartment LLTM"
+    },
+    {
+      "ref": "C52",
+      "style": "S_BOLD",
+      "value": "EXCL GFE"
+    },
+    {
+      "ref": "D52",
+      "style": "S_DEFAULT",
+      "value": "CMC / tubes - GFE / industrial base"
+    },
+    {
+      "ref": "B53",
+      "style": "S_DEFAULT",
+      "value": "Plans / SIB"
+    },
+    {
+      "ref": "C53",
+      "style": "S_BOLD",
+      "value": "EXCL des"
+    },
+    {
+      "ref": "D53",
+      "style": "S_DEFAULT",
+      "value": "lead-yard design - Plan Costs"
+    },
+    {
+      "ref": "B54",
+      "style": "S_DEFAULT",
+      "value": "Shipbuilder-procured (+CFE)"
+    },
+    {
+      "ref": "C54",
+      "style": "S_BOLD",
+      "value": "IN BC"
+    },
+    {
+      "ref": "D54",
+      "style": "S_DEFAULT",
+      "value": "direct material inside BC"
+    },
+    {
+      "ref": "B55",
+      "style": "S_DEFAULT",
+      "value": "EOQ"
+    },
+    {
+      "ref": "C55",
+      "style": "S_BOLD",
+      "value": "IN BC"
+    },
+    {
+      "ref": "D55",
+      "style": "S_DEFAULT",
+      "value": "economic-order-quantity - inside BC"
+    },
+    {
+      "ref": "B56",
+      "style": "S_DEFAULT",
+      "value": "HM&E / Propulsor LLTM"
+    },
+    {
+      "ref": "C56",
+      "style": "S_BOLD",
+      "value": "IN BC"
+    },
+    {
+      "ref": "D56",
+      "style": "S_DEFAULT",
+      "value": "HM&E / propulsor material inside BC"
+    },
+    {
+      "ref": "A59",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B59",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a75 - P-10 -> TAM reconciliation bridge ($M, FY22-27)"
+    },
+    {
+      "ref": "C59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O59",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B61",
+      "style": "S_HEADER_LEFT",
+      "value": "Step"
+    },
+    {
+      "ref": "C61",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "D61",
+      "style": "S_HEADER_LEFT",
+      "value": "Rationale"
+    },
+    {
+      "ref": "B62",
+      "style": "S_BOLD",
+      "value": "P-10 gross AP top-line (FY22-27)"
+    },
+    {
+      "ref": "C62",
+      "style": "S_NUM",
+      "formula": "N('Assumptions'!C32)+N('Assumptions'!D32)+N('Assumptions'!E32)+N('Assumptions'!F32)+N('Assumptions'!G32)+N('Assumptions'!H32)+N('Assumptions'!C33)+N('Assumptions'!D33)+N('Assumptions'!E33)+N('Assumptions'!F33)+N('Assumptions'!G33)+N('Assumptions'!H33)"
+    },
+    {
+      "ref": "D62",
+      "style": "S_DEFAULT",
+      "value": "authoritative AP total, Va+Col"
+    },
+    {
+      "ref": "B63",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less GFE / design / weapons"
+    },
+    {
+      "ref": "C63",
+      "style": "S_NUM",
+      "formula": "-(SUM(E19:J19)+SUM(E35:J35)+SUM(E21:J21)+SUM(E37:J37)+SUM(E23:J23)+SUM(E39:J39)+SUM(E24:J24)+SUM(E40:J40)+SUM(E17:J17)+SUM(E33:J33))"
+    },
+    {
+      "ref": "D63",
+      "style": "S_DEFAULT",
+      "value": "nuclear+electronics+ordnance+missile+Plans"
+    },
+    {
+      "ref": "B64",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less already inside P-5c BC"
+    },
+    {
+      "ref": "C64",
+      "style": "S_NUM",
+      "formula": "-(SUM(E20:J20)+SUM(E36:J36)+SUM(E22:J22)+SUM(E38:J38)+SUM(E25:J25)+SUM(E41:J41)+SUM(E26:J26)+SUM(E42:J42)+SUM(E18:J18)+SUM(E34:J34))"
+    },
+    {
+      "ref": "D64",
+      "style": "S_DEFAULT",
+      "value": "shipbuilder+CFE+EOQ+HM&E+propulsor"
+    },
+    {
+      "ref": "B65",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less un-itemized overlap"
+    },
+    {
+      "ref": "C65",
+      "style": "S_NUM",
+      "formula": "-(C62+C63+C64)"
+    },
+    {
+      "ref": "D65",
+      "style": "S_DEFAULT",
+      "value": "early-Va top-line over named detail"
+    },
+    {
+      "ref": "B66",
+      "style": "S_TOTAL",
+      "value": "= AP/LLTM additive base = 0"
+    },
+    {
+      "ref": "C66",
+      "style": "S_NUM_TOTAL",
+      "formula": "C62+C63+C64+C65"
+    },
+    {
+      "ref": "D66",
+      "style": "S_BORDER_TOP",
+      "value": "confirmed $0"
+    },
+    {
+      "ref": "A69",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B69",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a76 - Reconciliation checks"
+    },
+    {
+      "ref": "C69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "N69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "O69",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B71",
+      "style": "S_HEADER_LEFT",
+      "value": "Check"
+    },
+    {
+      "ref": "C71",
+      "style": "S_HEADER_LEFT",
+      "value": "Status"
+    },
+    {
+      "ref": "B72",
+      "style": "S_DEFAULT",
+      "value": "Bridge nets to the additive base"
+    },
+    {
+      "ref": "C72",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS('AP Bridge'!C66-('AP Bridge'!C62+'AP Bridge'!C63+'AP Bridge'!C64+'AP Bridge'!C65))<0.5,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B73",
+      "style": "S_DEFAULT",
+      "value": "AP/LLTM additive base = 0"
+    },
+    {
+      "ref": "C73",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS('AP Bridge'!C66)<0.5,\"OK\",\"FAIL\")"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "AP Bridge"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - P-10 -> TAM bridge ($M, FY22-27)"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Virginia (LI 2013) P-10 AP buckets ($M, FY20-31)"
+    },
+    {
+      "ref": "B30",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Columbia (LI 1045) P-10 AP buckets ($M, FY20-31)"
+    },
+    {
+      "ref": "B46",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - P-10 bucket -> TAM treatment (AP/LLTM base = 0)"
+    },
+    {
+      "ref": "B59",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a75 - P-10 -> TAM reconciliation bridge ($M, FY22-27)"
+    },
+    {
+      "ref": "B69",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a76 - Reconciliation checks"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C17",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E17",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F17",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G17",
+      "style": "S_NUM_INPUT",
+      "value": "200.0"
+    },
+    {
+      "ref": "H17",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I17",
+      "style": "S_NUM_INPUT",
+      "value": "130.0"
+    },
+    {
+      "ref": "J17",
+      "style": "S_NUM_INPUT",
+      "value": "1768.17"
+    },
+    {
+      "ref": "K17",
+      "style": "S_NUM_INPUT",
+      "value": "1943.72"
+    },
+    {
+      "ref": "L17",
+      "style": "S_NUM_INPUT",
+      "value": "1602.69"
+    },
+    {
+      "ref": "M17",
+      "style": "S_NUM_INPUT",
+      "value": "285.0"
+    },
+    {
+      "ref": "N17",
+      "style": "S_NUM_INPUT",
+      "value": "214.0"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM_INPUT",
+      "value": "881.964"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM_INPUT",
+      "value": "427.42"
+    },
+    {
+      "ref": "E18",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F18",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G18",
+      "style": "S_NUM_INPUT",
+      "value": "1360.037"
+    },
+    {
+      "ref": "H18",
+      "style": "S_NUM_INPUT",
+      "value": "1298.349"
+    },
+    {
+      "ref": "I18",
+      "style": "S_NUM_INPUT",
+      "value": "707.862"
+    },
+    {
+      "ref": "J18",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K18",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L18",
+      "style": "S_NUM_INPUT",
+      "value": "1501.595"
+    },
+    {
+      "ref": "M18",
+      "style": "S_NUM_INPUT",
+      "value": "1433.476"
+    },
+    {
+      "ref": "N18",
+      "style": "S_NUM_INPUT",
+      "value": "781.536"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM_INPUT",
+      "value": "1246.83"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "883.115"
+    },
+    {
+      "ref": "E19",
+      "style": "S_NUM_INPUT",
+      "value": "1121.47"
+    },
+    {
+      "ref": "F19",
+      "style": "S_NUM_INPUT",
+      "value": "1004.95"
+    },
+    {
+      "ref": "G19",
+      "style": "S_NUM_INPUT",
+      "value": "1035.07"
+    },
+    {
+      "ref": "H19",
+      "style": "S_NUM_INPUT",
+      "value": "1273.09"
+    },
+    {
+      "ref": "I19",
+      "style": "S_NUM_INPUT",
+      "value": "1336.59"
+    },
+    {
+      "ref": "J19",
+      "style": "S_NUM_INPUT",
+      "value": "1403.49"
+    },
+    {
+      "ref": "K19",
+      "style": "S_NUM_INPUT",
+      "value": "1473.6"
+    },
+    {
+      "ref": "L19",
+      "style": "S_NUM_INPUT",
+      "value": "1547.4"
+    },
+    {
+      "ref": "M19",
+      "style": "S_NUM_INPUT",
+      "value": "1624.8"
+    },
+    {
+      "ref": "N19",
+      "style": "S_NUM_INPUT",
+      "value": "1706.17"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E20",
+      "style": "S_NUM_INPUT",
+      "value": "47.214"
+    },
+    {
+      "ref": "F20",
+      "style": "S_NUM_INPUT",
+      "value": "48.538"
+    },
+    {
+      "ref": "G20",
+      "style": "S_NUM_INPUT",
+      "value": "49.508"
+    },
+    {
+      "ref": "H20",
+      "style": "S_NUM_INPUT",
+      "value": "50.498"
+    },
+    {
+      "ref": "I20",
+      "style": "S_NUM_INPUT",
+      "value": "51.508"
+    },
+    {
+      "ref": "J20",
+      "style": "S_NUM_INPUT",
+      "value": "52.538"
+    },
+    {
+      "ref": "K20",
+      "style": "S_NUM_INPUT",
+      "value": "53.589"
+    },
+    {
+      "ref": "L20",
+      "style": "S_NUM_INPUT",
+      "value": "54.662"
+    },
+    {
+      "ref": "M20",
+      "style": "S_NUM_INPUT",
+      "value": "55.755"
+    },
+    {
+      "ref": "N20",
+      "style": "S_NUM_INPUT",
+      "value": "56.87"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "29.94"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "30.54"
+    },
+    {
+      "ref": "E21",
+      "style": "S_NUM_INPUT",
+      "value": "31.15"
+    },
+    {
+      "ref": "F21",
+      "style": "S_NUM_INPUT",
+      "value": "31.774"
+    },
+    {
+      "ref": "G21",
+      "style": "S_NUM_INPUT",
+      "value": "32.408"
+    },
+    {
+      "ref": "H21",
+      "style": "S_NUM_INPUT",
+      "value": "33.056"
+    },
+    {
+      "ref": "I21",
+      "style": "S_NUM_INPUT",
+      "value": "33.718"
+    },
+    {
+      "ref": "J21",
+      "style": "S_NUM_INPUT",
+      "value": "34.392"
+    },
+    {
+      "ref": "K21",
+      "style": "S_NUM_INPUT",
+      "value": "35.08"
+    },
+    {
+      "ref": "L21",
+      "style": "S_NUM_INPUT",
+      "value": "35.783"
+    },
+    {
+      "ref": "M21",
+      "style": "S_NUM_INPUT",
+      "value": "36.497"
+    },
+    {
+      "ref": "N21",
+      "style": "S_NUM_INPUT",
+      "value": "37.227"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N22",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N23",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N24",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N25",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM_INPUT",
+      "value": "542.963"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "542.188"
+    },
+    {
+      "ref": "E26",
+      "style": "S_NUM_INPUT",
+      "value": "533.556"
+    },
+    {
+      "ref": "F26",
+      "style": "S_NUM_INPUT",
+      "value": "723.879"
+    },
+    {
+      "ref": "G26",
+      "style": "S_NUM_INPUT",
+      "value": "681.759"
+    },
+    {
+      "ref": "H26",
+      "style": "S_NUM_INPUT",
+      "value": "1065.31"
+    },
+    {
+      "ref": "I26",
+      "style": "S_NUM_INPUT",
+      "value": "867.138"
+    },
+    {
+      "ref": "J26",
+      "style": "S_NUM_INPUT",
+      "value": "885.028"
+    },
+    {
+      "ref": "K26",
+      "style": "S_NUM_INPUT",
+      "value": "979.344"
+    },
+    {
+      "ref": "L26",
+      "style": "S_NUM_INPUT",
+      "value": "959.318"
+    },
+    {
+      "ref": "M26",
+      "style": "S_NUM_INPUT",
+      "value": "878.146"
+    },
+    {
+      "ref": "N26",
+      "style": "S_NUM_INPUT",
+      "value": "895.709"
+    },
+    {
+      "ref": "C33",
+      "style": "S_NUM_INPUT",
+      "value": "872.662"
+    },
+    {
+      "ref": "D33",
+      "style": "S_NUM_INPUT",
+      "value": "85.0"
+    },
+    {
+      "ref": "E33",
+      "style": "S_NUM_INPUT",
+      "value": "110.0"
+    },
+    {
+      "ref": "F33",
+      "style": "S_NUM_INPUT",
+      "value": "541.0"
+    },
+    {
+      "ref": "G33",
+      "style": "S_NUM_INPUT",
+      "value": "2355.0"
+    },
+    {
+      "ref": "H33",
+      "style": "S_NUM_INPUT",
+      "value": "2077.189"
+    },
+    {
+      "ref": "I33",
+      "style": "S_NUM_INPUT",
+      "value": "1692.249"
+    },
+    {
+      "ref": "J33",
+      "style": "S_NUM_INPUT",
+      "value": "809.679"
+    },
+    {
+      "ref": "K33",
+      "style": "S_NUM_INPUT",
+      "value": "1018.316"
+    },
+    {
+      "ref": "L33",
+      "style": "S_NUM_INPUT",
+      "value": "709.136"
+    },
+    {
+      "ref": "M33",
+      "style": "S_NUM_INPUT",
+      "value": "624.179"
+    },
+    {
+      "ref": "N33",
+      "style": "S_NUM_INPUT",
+      "value": "631.272"
+    },
+    {
+      "ref": "C34",
+      "style": "S_NUM_INPUT",
+      "value": "77.793"
+    },
+    {
+      "ref": "D34",
+      "style": "S_NUM_INPUT",
+      "value": "79.705"
+    },
+    {
+      "ref": "E34",
+      "style": "S_NUM_INPUT",
+      "value": "176.23"
+    },
+    {
+      "ref": "F34",
+      "style": "S_NUM_INPUT",
+      "value": "141.512"
+    },
+    {
+      "ref": "G34",
+      "style": "S_NUM_INPUT",
+      "value": "778.925"
+    },
+    {
+      "ref": "H34",
+      "style": "S_NUM_INPUT",
+      "value": "494.301"
+    },
+    {
+      "ref": "I34",
+      "style": "S_NUM_INPUT",
+      "value": "382.154"
+    },
+    {
+      "ref": "J34",
+      "style": "S_NUM_INPUT",
+      "value": "178.331"
+    },
+    {
+      "ref": "K34",
+      "style": "S_NUM_INPUT",
+      "value": "191.647"
+    },
+    {
+      "ref": "L34",
+      "style": "S_NUM_INPUT",
+      "value": "18.57"
+    },
+    {
+      "ref": "M34",
+      "style": "S_NUM_INPUT",
+      "value": "1017.969"
+    },
+    {
+      "ref": "N34",
+      "style": "S_NUM_INPUT",
+      "value": "695.466"
+    },
+    {
+      "ref": "C35",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D35",
+      "style": "S_NUM_INPUT",
+      "value": "816.737"
+    },
+    {
+      "ref": "E35",
+      "style": "S_NUM_INPUT",
+      "value": "797.262"
+    },
+    {
+      "ref": "F35",
+      "style": "S_NUM_INPUT",
+      "value": "772.686"
+    },
+    {
+      "ref": "G35",
+      "style": "S_NUM_INPUT",
+      "value": "1272.405"
+    },
+    {
+      "ref": "H35",
+      "style": "S_NUM_INPUT",
+      "value": "1526.697"
+    },
+    {
+      "ref": "I35",
+      "style": "S_NUM_INPUT",
+      "value": "1440.528"
+    },
+    {
+      "ref": "J35",
+      "style": "S_NUM_INPUT",
+      "value": "1490.144"
+    },
+    {
+      "ref": "K35",
+      "style": "S_NUM_INPUT",
+      "value": "1544.116"
+    },
+    {
+      "ref": "L35",
+      "style": "S_NUM_INPUT",
+      "value": "1602.529"
+    },
+    {
+      "ref": "M35",
+      "style": "S_NUM_INPUT",
+      "value": "1665.462"
+    },
+    {
+      "ref": "N35",
+      "style": "S_NUM_INPUT",
+      "value": "1777.679"
+    },
+    {
+      "ref": "C36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N36",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C37",
+      "style": "S_NUM_INPUT",
+      "value": "36.39"
+    },
+    {
+      "ref": "D37",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E37",
+      "style": "S_NUM_INPUT",
+      "value": "8.097"
+    },
+    {
+      "ref": "F37",
+      "style": "S_NUM_INPUT",
+      "value": "26.587"
+    },
+    {
+      "ref": "G37",
+      "style": "S_NUM_INPUT",
+      "value": "8.43"
+    },
+    {
+      "ref": "H37",
+      "style": "S_NUM_INPUT",
+      "value": "129.354"
+    },
+    {
+      "ref": "I37",
+      "style": "S_NUM_INPUT",
+      "value": "110.601"
+    },
+    {
+      "ref": "J37",
+      "style": "S_NUM_INPUT",
+      "value": "81.76"
+    },
+    {
+      "ref": "K37",
+      "style": "S_NUM_INPUT",
+      "value": "83.395"
+    },
+    {
+      "ref": "L37",
+      "style": "S_NUM_INPUT",
+      "value": "85.063"
+    },
+    {
+      "ref": "M37",
+      "style": "S_NUM_INPUT",
+      "value": "86.765"
+    },
+    {
+      "ref": "N37",
+      "style": "S_NUM_INPUT",
+      "value": "88.499"
+    },
+    {
+      "ref": "C38",
+      "style": "S_NUM_INPUT",
+      "value": "41.948"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "3.1"
+    },
+    {
+      "ref": "E38",
+      "style": "S_NUM_INPUT",
+      "value": "42.857"
+    },
+    {
+      "ref": "F38",
+      "style": "S_NUM_INPUT",
+      "value": "86.285"
+    },
+    {
+      "ref": "G38",
+      "style": "S_NUM_INPUT",
+      "value": "66.824"
+    },
+    {
+      "ref": "H38",
+      "style": "S_NUM_INPUT",
+      "value": "75.475"
+    },
+    {
+      "ref": "I38",
+      "style": "S_NUM_INPUT",
+      "value": "86.202"
+    },
+    {
+      "ref": "J38",
+      "style": "S_NUM_INPUT",
+      "value": "74.393"
+    },
+    {
+      "ref": "K38",
+      "style": "S_NUM_INPUT",
+      "value": "119.156"
+    },
+    {
+      "ref": "L38",
+      "style": "S_NUM_INPUT",
+      "value": "78.284"
+    },
+    {
+      "ref": "M38",
+      "style": "S_NUM_INPUT",
+      "value": "79.138"
+    },
+    {
+      "ref": "N38",
+      "style": "S_NUM_INPUT",
+      "value": "80.929"
+    },
+    {
+      "ref": "C39",
+      "style": "S_NUM_INPUT",
+      "value": "93.73"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "6.324"
+    },
+    {
+      "ref": "E39",
+      "style": "S_NUM_INPUT",
+      "value": "123.597"
+    },
+    {
+      "ref": "F39",
+      "style": "S_NUM_INPUT",
+      "value": "208.688"
+    },
+    {
+      "ref": "G39",
+      "style": "S_NUM_INPUT",
+      "value": "168.772"
+    },
+    {
+      "ref": "H39",
+      "style": "S_NUM_INPUT",
+      "value": "217.702"
+    },
+    {
+      "ref": "I39",
+      "style": "S_NUM_INPUT",
+      "value": "232.551"
+    },
+    {
+      "ref": "J39",
+      "style": "S_NUM_INPUT",
+      "value": "255.312"
+    },
+    {
+      "ref": "K39",
+      "style": "S_NUM_INPUT",
+      "value": "277.555"
+    },
+    {
+      "ref": "L39",
+      "style": "S_NUM_INPUT",
+      "value": "222.425"
+    },
+    {
+      "ref": "M39",
+      "style": "S_NUM_INPUT",
+      "value": "279.101"
+    },
+    {
+      "ref": "N39",
+      "style": "S_NUM_INPUT",
+      "value": "172.641"
+    },
+    {
+      "ref": "C40",
+      "style": "S_NUM_INPUT",
+      "value": "83.747"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "86.288"
+    },
+    {
+      "ref": "E40",
+      "style": "S_NUM_INPUT",
+      "value": "177.391"
+    },
+    {
+      "ref": "F40",
+      "style": "S_NUM_INPUT",
+      "value": "221.311"
+    },
+    {
+      "ref": "G40",
+      "style": "S_NUM_INPUT",
+      "value": "174.136"
+    },
+    {
+      "ref": "H40",
+      "style": "S_NUM_INPUT",
+      "value": "216.261"
+    },
+    {
+      "ref": "I40",
+      "style": "S_NUM_INPUT",
+      "value": "261.29"
+    },
+    {
+      "ref": "J40",
+      "style": "S_NUM_INPUT",
+      "value": "297.347"
+    },
+    {
+      "ref": "K40",
+      "style": "S_NUM_INPUT",
+      "value": "301.02"
+    },
+    {
+      "ref": "L40",
+      "style": "S_NUM_INPUT",
+      "value": "309.689"
+    },
+    {
+      "ref": "M40",
+      "style": "S_NUM_INPUT",
+      "value": "320.267"
+    },
+    {
+      "ref": "N40",
+      "style": "S_NUM_INPUT",
+      "value": "271.046"
+    },
+    {
+      "ref": "C41",
+      "style": "S_NUM_INPUT",
+      "value": "614.657"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "176.021"
+    },
+    {
+      "ref": "E41",
+      "style": "S_NUM_INPUT",
+      "value": "338.546"
+    },
+    {
+      "ref": "F41",
+      "style": "S_NUM_INPUT",
+      "value": "780.484"
+    },
+    {
+      "ref": "G41",
+      "style": "S_NUM_INPUT",
+      "value": "521.242"
+    },
+    {
+      "ref": "H41",
+      "style": "S_NUM_INPUT",
+      "value": "1478.96"
+    },
+    {
+      "ref": "I41",
+      "style": "S_NUM_INPUT",
+      "value": "1145.191"
+    },
+    {
+      "ref": "J41",
+      "style": "S_NUM_INPUT",
+      "value": "1576.376"
+    },
+    {
+      "ref": "K41",
+      "style": "S_NUM_INPUT",
+      "value": "1828.24"
+    },
+    {
+      "ref": "L41",
+      "style": "S_NUM_INPUT",
+      "value": "1890.927"
+    },
+    {
+      "ref": "M41",
+      "style": "S_NUM_INPUT",
+      "value": "2005.869"
+    },
+    {
+      "ref": "N41",
+      "style": "S_NUM_INPUT",
+      "value": "1999.211"
+    },
+    {
+      "ref": "C42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "E42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "F42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "G42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "H42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "I42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "J42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "K42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "L42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "M42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "N42",
+      "style": "S_NUM_INPUT",
+      "value": null
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 58,
+  "formula_refs_by_sheet": {
+    "AP Bridge": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C72",
+      "C73"
+    ],
+    "Assumptions": [
+      "C62"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

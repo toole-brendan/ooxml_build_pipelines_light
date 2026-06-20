@@ -1,0 +1,2789 @@
+{
+  "recipient_name": "EVERETT SHIP REPAIR, LLC",
+  "recipient_uei": "G1W7ESJQW8L1",
+  "query": "VENDOR_UEI:\"G1W7ESJQW8L1\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 6,
+  "distinct_piids": 3,
+  "sum_obligated_amount": 5337139.88,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W9127N22F0062",
+      "referenced_idv_piid": "W9127N22G0002",
+      "full_piid": "W9127N22G0002/W9127N22F0062",
+      "mod_number": "P00003",
+      "transaction_number": "0",
+      "vendor_name": "EVERETT SHIP REPAIR, LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 240453.88,
+      "total_obligated": 5337139.88,
+      "base_and_exercised": 240453.88,
+      "base_and_all_options": 240453.88,
+      "total_base_and_all_options": 5337139.88,
+      "signed_date": "2023-03-06 00:00:00",
+      "effective_date": "2022-09-12 00:00:00",
+      "current_completion_date": "2023-03-07 00:00:00",
+      "ultimate_completion_date": "2023-03-07 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "3",
+      "description": "YAQUINA SHIP REPAIR AND OVERHAUL",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22F0062",
+            "modNumber": "P00003",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22G0002",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2023-03-06 00:00:00",
+          "effectiveDate": "2022-09-12 00:00:00",
+          "currentCompletionDate": "2023-03-07 00:00:00",
+          "ultimateCompletionDate": "2023-03-07 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "240453.88",
+          "baseAndExercisedOptionsValue": "240453.88",
+          "baseAndAllOptionsValue": "240453.88"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5337139.88",
+          "totalBaseAndExercisedOptionsValue": "5337139.88",
+          "totalBaseAndAllOptionsValue": "5337139.88"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "FUNDING ONLY ACTION",
+            "#text": "C"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W9127N22B0014",
+          "descriptionOfContractRequirement": "YAQUINA SHIP REPAIR AND OVERHAUL",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT & ENVIRONMENTALLY PREFERABLE",
+            "#text": "L"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2730 FEDERAL AVE",
+              "city": "EVERETT",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "EVERETT",
+                "#text": "982013411"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98201",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR, LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR  LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2023-05-26 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WASHINGTON",
+              "#text": "WA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ISLAND",
+            "@city": "FREELAND",
+            "#text": "982499782"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "3",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "INDIVIDUAL SUBCONTRACT PLAN",
+            "#text": "F"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2023-03-06 18:22:08",
+          "lastModifiedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "lastModifiedDate": "2023-03-06 18:22:13",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2023-03-06 18:22:13",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2022-08-08 00:00:00",
+            "genericString02": "G1W7ESJQW8L1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W9127N22F0062",
+      "referenced_idv_piid": "W9127N22G0002",
+      "full_piid": "W9127N22G0002/W9127N22F0062",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "EVERETT SHIP REPAIR, LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 4338487.0,
+      "total_obligated": 5337139.88,
+      "base_and_exercised": 4338487.0,
+      "base_and_all_options": 4338487.0,
+      "total_base_and_all_options": 5337139.88,
+      "signed_date": "2022-09-12 00:00:00",
+      "effective_date": "2022-09-12 00:00:00",
+      "current_completion_date": "2023-02-23 00:00:00",
+      "ultimate_completion_date": "2023-02-23 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "3",
+      "description": "YAQUINA SHIP REPAIR AND OVERHAUL",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22F0062",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22G0002",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2022-09-12 00:00:00",
+          "effectiveDate": "2022-09-12 00:00:00",
+          "currentCompletionDate": "2023-02-23 00:00:00",
+          "ultimateCompletionDate": "2023-02-23 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "4338487.00",
+          "baseAndExercisedOptionsValue": "4338487.00",
+          "baseAndAllOptionsValue": "4338487.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5337139.88",
+          "totalBaseAndExercisedOptionsValue": "5337139.88",
+          "totalBaseAndAllOptionsValue": "5337139.88"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W9127N22B0014",
+          "descriptionOfContractRequirement": "YAQUINA SHIP REPAIR AND OVERHAUL",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT & ENVIRONMENTALLY PREFERABLE",
+            "#text": "L"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2730 FEDERAL AVE",
+              "city": "EVERETT",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "EVERETT",
+                "#text": "982013411"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98201",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR, LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR  LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2023-05-26 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WASHINGTON",
+              "#text": "WA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ISLAND",
+            "@city": "FREELAND",
+            "#text": "982499782"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "3",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "INDIVIDUAL SUBCONTRACT PLAN",
+            "#text": "F"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2022-08-16 12:40:11",
+          "lastModifiedBy": "DOD_CLOSEOUT",
+          "lastModifiedDate": "2023-09-29 13:49:40",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "PATRICK.COLLINS.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2022-09-12 18:21:19",
+          "closedBy": "DOD_CLOSEOUT",
+          "closedDate": "2023-09-29 13:49:40",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2022-08-08 00:00:00",
+            "genericString02": "G1W7ESJQW8L1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W9127N22G0002",
+      "referenced_idv_piid": null,
+      "full_piid": "W9127N22G0002",
+      "mod_number": "0",
+      "transaction_number": null,
+      "vendor_name": "EVERETT SHIP REPAIR, LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 0.0,
+      "signed_date": "2022-08-15 00:00:00",
+      "effective_date": "2022-08-15 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "BOA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "MASTER SHIP REPAIR AGREEMENT FOR REPAIR OF ESSAYONS & YAQUINA",
+      "raw": {
+        "@version": "1.5",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22G0002",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2022-08-15 00:00:00",
+          "effectiveDate": "2022-08-15 00:00:00",
+          "lastDateToOrder": "2025-08-10 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "0.00",
+          "totalEstimatedOrderValue": "0"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "0.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY",
+          "typeOfFeeForUseOfService": {
+            "@description": "NO FEE",
+            "#text": "NO"
+          }
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MASTER SHIP REPAIR AGREEMENT FOR REPAIR OF ESSAYONS & YAQUINA",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2730 FEDERAL AVE",
+              "city": "EVERETT",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "EVERETT",
+                "#text": "982013411"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98201",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR, LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR  LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2023-05-26 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {},
+        "transactionInformation": {
+          "createdBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2022-08-11 18:33:56",
+          "lastModifiedBy": "MITCHELL.J.JOHNSON.W9127N@USACE.ARMY.MIL",
+          "lastModifiedDate": "2022-08-15 18:25:29",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "MITCHELL.J.JOHNSON.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2022-08-15 18:25:29",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "G1W7ESJQW8L1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W9127N25G0001",
+      "referenced_idv_piid": null,
+      "full_piid": "W9127N25G0001",
+      "mod_number": "0",
+      "transaction_number": null,
+      "vendor_name": "EVERETT SHIP REPAIR LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 0.0,
+      "signed_date": "2025-09-29 00:00:00",
+      "effective_date": "2025-09-29 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "BOA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "MASTER SHIP REPAIR AGREEMENT WITH EVERETT SHIP REPAIR",
+      "raw": {
+        "@version": "1.5",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N25G0001",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-09-29 00:00:00",
+          "effectiveDate": "2025-09-29 00:00:00",
+          "lastDateToOrder": "2028-09-22 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "0.00",
+          "totalEstimatedOrderValue": "0"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "0.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+            "#text": "960102"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY",
+          "typeOfFeeForUseOfService": {
+            "@description": "NO FEE",
+            "#text": "NO"
+          }
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MASTER SHIP REPAIR AGREEMENT WITH EVERETT SHIP REPAIR",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "EMPLOYMENT ELIGIBILITY VERIFICATION (52.222-54)",
+              "#text": "E"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "5400 S CAMERON ROAD 0.0",
+              "city": "FREELAND",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "FREELAND",
+                "#text": "982499782"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98249",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2026-03-10 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {},
+        "transactionInformation": {
+          "createdBy": "JULIA.B.HENRY.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2025-09-17 10:36:06",
+          "lastModifiedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-09-29 13:22:46",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2025-09-29 13:22:46",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "G1W7ESJQW8L1"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W9127N22F0062",
+      "referenced_idv_piid": "W9127N22G0002",
+      "full_piid": "W9127N22G0002/W9127N22F0062",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "EVERETT SHIP REPAIR, LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 452818.0,
+      "total_obligated": 5337139.88,
+      "base_and_exercised": 452818.0,
+      "base_and_all_options": 452818.0,
+      "total_base_and_all_options": 5337139.88,
+      "signed_date": "2023-01-11 00:00:00",
+      "effective_date": "2022-09-12 00:00:00",
+      "current_completion_date": "2023-02-23 00:00:00",
+      "ultimate_completion_date": "2023-02-23 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "3",
+      "description": "YAQUINA SHIP REPAIR AND OVERHAUL",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22F0062",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22G0002",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2023-01-11 00:00:00",
+          "effectiveDate": "2022-09-12 00:00:00",
+          "currentCompletionDate": "2023-02-23 00:00:00",
+          "ultimateCompletionDate": "2023-02-23 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "452818.00",
+          "baseAndExercisedOptionsValue": "452818.00",
+          "baseAndAllOptionsValue": "452818.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5337139.88",
+          "totalBaseAndExercisedOptionsValue": "5337139.88",
+          "totalBaseAndAllOptionsValue": "5337139.88"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W9127N22B0014",
+          "descriptionOfContractRequirement": "YAQUINA SHIP REPAIR AND OVERHAUL",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT & ENVIRONMENTALLY PREFERABLE",
+            "#text": "L"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2730 FEDERAL AVE",
+              "city": "EVERETT",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "EVERETT",
+                "#text": "982013411"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98201",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR, LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR  LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2023-05-26 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WASHINGTON",
+              "#text": "WA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ISLAND",
+            "@city": "FREELAND",
+            "#text": "982499782"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "3",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "INDIVIDUAL SUBCONTRACT PLAN",
+            "#text": "F"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2023-01-11 18:34:31",
+          "lastModifiedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "lastModifiedDate": "2023-01-11 18:34:35",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2023-01-11 18:34:35",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2022-08-08 00:00:00",
+            "genericString02": "G1W7ESJQW8L1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W9127N22F0062",
+      "referenced_idv_piid": "W9127N22G0002",
+      "full_piid": "W9127N22G0002/W9127N22F0062",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "EVERETT SHIP REPAIR, LLC",
+      "vendor_uei": "G1W7ESJQW8L1",
+      "this_obligated": 305381.0,
+      "total_obligated": 5337139.88,
+      "base_and_exercised": 305381.0,
+      "base_and_all_options": 305381.0,
+      "total_base_and_all_options": 5337139.88,
+      "signed_date": "2023-02-06 00:00:00",
+      "effective_date": "2022-09-12 00:00:00",
+      "current_completion_date": "2023-02-23 00:00:00",
+      "ultimate_completion_date": "2023-02-23 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W071 ENDIST PORTLAND",
+      "contracting_office_id": "W9127N",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J999",
+      "psc_desc": "NON-NUCLEAR SHIP REPAIR (WEST)",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "3",
+      "description": "YAQUINA SHIP REPAIR AND OVERHAUL",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22F0062",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9127N22G0002",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2023-02-06 00:00:00",
+          "effectiveDate": "2022-09-12 00:00:00",
+          "currentCompletionDate": "2023-02-23 00:00:00",
+          "ultimateCompletionDate": "2023-02-23 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "305381.00",
+          "baseAndExercisedOptionsValue": "305381.00",
+          "baseAndAllOptionsValue": "305381.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5337139.88",
+          "totalBaseAndExercisedOptionsValue": "5337139.88",
+          "totalBaseAndAllOptionsValue": "5337139.88"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W071 ENDIST PORTLAND",
+            "@country": "USA",
+            "#text": "W9127N"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "966501",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "FUNDING ONLY ACTION",
+            "#text": "C"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W9127N22B0014",
+          "descriptionOfContractRequirement": "YAQUINA SHIP REPAIR AND OVERHAUL",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BOA",
+            "#text": "D"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "NON-NUCLEAR SHIP REPAIR (WEST)",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J999"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SHIPS",
+            "#text": "A3"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT & ENVIRONMENTALLY PREFERABLE",
+            "#text": "L"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EVERETT SHIP REPAIR, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "true",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "2730 FEDERAL AVE",
+              "city": "EVERETT",
+              "state": {
+                "@name": "WASHINGTON",
+                "#text": "WA"
+              },
+              "ZIPCode": {
+                "@city": "EVERETT",
+                "#text": "982013411"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3609295221",
+              "congressionalDistrictCode": "02"
+            },
+            "vendorAlternateSiteCode": "98201",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "G1W7ESJQW8L1",
+                "UEILegalBusinessName": "EVERETT SHIP REPAIR, LLC",
+                "ultimateParentUEI": "G1W7ESJQW8L1",
+                "ultimateParentUEIName": "EVERETT SHIP REPAIR  LLC"
+              },
+              "cageCode": "8HJT6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2019-11-27 00:00:00",
+              "renewalDate": "2023-05-26 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "OTHER THAN SMALL BUSINESS",
+            "#text": "O"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WASHINGTON",
+              "#text": "WA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "ISLAND",
+            "@city": "FREELAND",
+            "#text": "982499782"
+          },
+          "placeOfPerformanceCongressionalDistrict": "02"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION",
+            "#text": "A"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "NO SET ASIDE USED.",
+            "#text": "NONE"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "3",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "INDIVIDUAL SUBCONTRACT PLAN",
+            "#text": "F"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "createdDate": "2023-02-06 16:49:51",
+          "lastModifiedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "lastModifiedDate": "2023-02-06 16:49:55",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "BRANDON.M.LASICH.W9127N@USACE.ARMY.MIL",
+          "approvedDate": "2023-02-06 16:49:55",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2022-08-08 00:00:00",
+            "genericString02": "G1W7ESJQW8L1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

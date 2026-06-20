@@ -1,0 +1,957 @@
+{
+  "recipient_name": "D & D PRODUCTS INCORPORATED",
+  "recipient_uei": "V7Y6SJAC8QN7",
+  "query": "VENDOR_UEI:\"V7Y6SJAC8QN7\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 2,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1275469.64,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W9123724P0001",
+      "referenced_idv_piid": null,
+      "full_piid": "W9123724P0001",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "D & D PRODUCTS INCORPORATED",
+      "vendor_uei": "V7Y6SJAC8QN7",
+      "this_obligated": 1273030.0,
+      "total_obligated": 1275469.64,
+      "base_and_exercised": 1273030.0,
+      "base_and_all_options": 1273030.0,
+      "total_base_and_all_options": 1275469.64,
+      "signed_date": "2023-11-28 00:00:00",
+      "effective_date": "2023-11-28 00:00:00",
+      "current_completion_date": "2025-06-30 00:00:00",
+      "ultimate_completion_date": "2025-06-30 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST HUNTINGTON",
+      "contracting_office_id": "W91237",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1940",
+      "psc_desc": "SMALL CRAFT",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "1",
+      "description": "FABRICATION AND DELIVERY OF A TRASH HUNTER VESSEL, TRAILER, AND ACCOMPANYING PARTS FOR FISHTRAP LAKE, SHELBIANA, KENTUCKY. US ARMY CORPS OF ENGINEERS, HUNTINGTON DISTRICT",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9123724P0001",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2023-11-28 00:00:00",
+          "effectiveDate": "2023-11-28 00:00:00",
+          "currentCompletionDate": "2025-06-30 00:00:00",
+          "ultimateCompletionDate": "2025-06-30 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1273030.00",
+          "baseAndExercisedOptionsValue": "1273030.00",
+          "baseAndAllOptionsValue": "1273030.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1275469.64",
+          "totalBaseAndExercisedOptionsValue": "1275469.64",
+          "totalBaseAndAllOptionsValue": "1275469.64"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST HUNTINGTON",
+            "@country": "USA",
+            "#text": "W91237"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+            "#text": "960102"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "solicitationID": "W9123723Q0060",
+          "descriptionOfContractRequirement": "FABRICATION AND DELIVERY OF A TRASH HUNTER VESSEL, TRAILER, AND ACCOMPANYING PARTS FOR FISHTRAP LAKE, SHELBIANA, KENTUCKY. US ARMY CORPS OF ENGINEERS, HUNTINGTON DISTRICT",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SMALL CRAFT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1940"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "D & D PRODUCTS INCORPORATED",
+            "vendorAlternateName": "DYNATEK MANIERRE",
+            "vendorLegalOrganizationName": "D & D PRODUCTS INCORPORATED"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "true",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WISCONSIN",
+                "#text": "WI"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "200 N HARRISON ST",
+              "city": "NORTH PRAIRIE",
+              "state": {
+                "@name": "WISCONSIN",
+                "#text": "WI"
+              },
+              "ZIPCode": {
+                "@city": "NORTH PRAIRIE",
+                "#text": "531539718"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2623922162",
+              "faxNo": "2623922984",
+              "congressionalDistrictCode": "01",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "53153",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "V7Y6SJAC8QN7",
+                "UEILegalBusinessName": "D & D PRODUCTS INCORPORATED",
+                "ultimateParentUEI": "V7Y6SJAC8QN7",
+                "ultimateParentUEIName": "D & D PRODUCTS INCORPORATED"
+              },
+              "cageCode": "081E4"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2000-02-15 00:00:00",
+              "renewalDate": "2024-01-04 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WISCONSIN",
+              "#text": "WI"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "WAUKESHA",
+            "@city": "NORTH PRAIRIE",
+            "#text": "531530022"
+          },
+          "placeOfPerformanceCongressionalDistrict": "05"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "1",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "JAMES.M.HOLSTEIN.W91237@USACE.ARMY.MIL",
+          "createdDate": "2023-11-16 14:28:16",
+          "lastModifiedBy": "DOD_CLOSEOUT",
+          "lastModifiedDate": "2025-12-13 13:05:32",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "CYNTHIA.A.OXLEY.W91237@USACE.ARMY.MIL",
+          "approvedDate": "2023-11-28 10:37:55",
+          "closedBy": "DOD_CLOSEOUT",
+          "closedDate": "2025-12-13 13:05:32",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "V7Y6SJAC8QN7",
+            "genericString06": "O"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W9123724P0001",
+      "referenced_idv_piid": null,
+      "full_piid": "W9123724P0001",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "D & D PRODUCTS INCORPORATED",
+      "vendor_uei": "V7Y6SJAC8QN7",
+      "this_obligated": 2439.64,
+      "total_obligated": 1275469.64,
+      "base_and_exercised": 2439.64,
+      "base_and_all_options": 2439.64,
+      "total_base_and_all_options": 1275469.64,
+      "signed_date": "2025-04-02 00:00:00",
+      "effective_date": "2023-11-28 00:00:00",
+      "current_completion_date": "2025-10-31 00:00:00",
+      "ultimate_completion_date": "2025-12-01 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W072 ENDIST HUNTINGTON",
+      "contracting_office_id": "W91237",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1940",
+      "psc_desc": "SMALL CRAFT",
+      "contract_action_type": "PURCHASE ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "1",
+      "description": "MODIFICATION TO EXTEND THE DELIVERY DATE FROM 30 JUNE 2025 TO 31 OCTOBER 2025 AND TO MODIFY THE SPARE PARTS LIST IN THE STATEMENT OF WORK FOR A TRASH HUNTER VESSEL FOR FISHTRAP LAKE, SHELBIANA, KY, US ARMY CORPS OF ENGINEERS, HUNTINGTON DISTRICT.",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9123724P0001",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-04-02 00:00:00",
+          "effectiveDate": "2023-11-28 00:00:00",
+          "currentCompletionDate": "2025-10-31 00:00:00",
+          "ultimateCompletionDate": "2025-12-01 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "2439.64",
+          "baseAndExercisedOptionsValue": "2439.64",
+          "baseAndAllOptionsValue": "2439.64"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1275469.64",
+          "totalBaseAndExercisedOptionsValue": "1275469.64",
+          "totalBaseAndAllOptionsValue": "1275469.64"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W072 ENDIST HUNTINGTON",
+            "@country": "USA",
+            "#text": "W91237"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "ARMY CORPS OF ENGINEERS CIVIL WORKS",
+            "#text": "960102"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "PURCHASE ORDER",
+            "#text": "B"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "solicitationID": "W9123723Q0060",
+          "descriptionOfContractRequirement": "MODIFICATION TO EXTEND THE DELIVERY DATE FROM 30 JUNE 2025 TO 31 OCTOBER 2025 AND TO MODIFY THE SPARE PARTS LIST IN THE STATEMENT OF WORK FOR A TRASH HUNTER VESSEL FOR FISHTRAP LAKE, SHELBIANA, KY, US ARMY CORPS OF ENGINEERS, HUNTINGTON DISTRICT.",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SMALL CRAFT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1940"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "ENERGY EFFICIENT",
+            "#text": "D"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "D & D PRODUCTS INCORPORATED",
+            "vendorAlternateName": "DYNATEK MANIERRE",
+            "vendorLegalOrganizationName": "D & D PRODUCTS INCORPORATED"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "true",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "WISCONSIN",
+                "#text": "WI"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "200 N HARRISON ST",
+              "city": "NORTH PRAIRIE",
+              "state": {
+                "@name": "WISCONSIN",
+                "#text": "WI"
+              },
+              "ZIPCode": {
+                "@city": "NORTH PRAIRIE",
+                "#text": "531539718"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2623922162",
+              "faxNo": "2623922984",
+              "congressionalDistrictCode": "05",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "53153",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "V7Y6SJAC8QN7",
+                "UEILegalBusinessName": "D & D PRODUCTS INCORPORATED",
+                "ultimateParentUEI": "V7Y6SJAC8QN7",
+                "ultimateParentUEIName": "D & D PRODUCTS INCORPORATED"
+              },
+              "cageCode": "081E4"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2000-02-15 00:00:00",
+              "renewalDate": "2024-01-04 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "WISCONSIN",
+              "#text": "WI"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "WAUKESHA",
+            "@city": "NORTH PRAIRIE",
+            "#text": "531530022"
+          },
+          "placeOfPerformanceCongressionalDistrict": "05"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "1",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PHILIP.S.DAVIS.W91237@USACE.ARMY.MIL",
+          "createdDate": "2025-04-02 10:10:00",
+          "lastModifiedBy": "PHILIP.S.DAVIS.W91237@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-04-02 10:10:03",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "PHILIP.S.DAVIS.W91237@USACE.ARMY.MIL",
+          "approvedDate": "2025-04-02 10:10:03",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "V7Y6SJAC8QN7",
+            "genericString06": "O"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    }
+  ]
+}

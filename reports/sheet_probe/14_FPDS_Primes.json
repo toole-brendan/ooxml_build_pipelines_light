@@ -1,0 +1,1510 @@
+{
+  "source": "file",
+  "name": "FPDS Primes",
+  "tab_name": "FPDS Primes",
+  "sheet_index": 14,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 13,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "8"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "12"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "12"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "12"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "12"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "12"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    },
+    {
+      "min": "9",
+      "max": "9",
+      "width": "12"
+    },
+    {
+      "min": "10",
+      "max": "10",
+      "width": "12"
+    },
+    {
+      "min": "11",
+      "max": "11",
+      "width": "12"
+    },
+    {
+      "min": "12",
+      "max": "12",
+      "width": "12"
+    },
+    {
+      "min": "13",
+      "max": "13",
+      "width": "12"
+    }
+  ],
+  "n_rows": 16,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 12
+    },
+    {
+      "r": "4",
+      "n_cells": 13
+    },
+    {
+      "r": "6",
+      "n_cells": 12
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "12",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "14",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 12
+    },
+    {
+      "r": "16",
+      "n_cells": 12
+    },
+    {
+      "r": "19",
+      "n_cells": 13
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 1
+    }
+  ],
+  "n_cells": 171,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "FPDS Primes"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "I2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "J2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "K2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "L2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "M2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Annual obligations ($M by FY x vendor group; de-capped)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "FY"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "GD-BIW"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_CENTER",
+      "value": "HII-Ingalls"
+    },
+    {
+      "ref": "E6",
+      "style": "S_HEADER_CENTER",
+      "value": "Rolls-Royce"
+    },
+    {
+      "ref": "F6",
+      "style": "S_HEADER_CENTER",
+      "value": "GE-Propulsion"
+    },
+    {
+      "ref": "G6",
+      "style": "S_HEADER_CENTER",
+      "value": "LM-Aegis"
+    },
+    {
+      "ref": "H6",
+      "style": "S_HEADER_CENTER",
+      "value": "Raytheon"
+    },
+    {
+      "ref": "I6",
+      "style": "S_HEADER_CENTER",
+      "value": "BAE-Guns/VLS"
+    },
+    {
+      "ref": "J6",
+      "style": "S_HEADER_CENTER",
+      "value": "NG"
+    },
+    {
+      "ref": "K6",
+      "style": "S_HEADER_CENTER",
+      "value": "GD-MissionSys"
+    },
+    {
+      "ref": "L6",
+      "style": "S_HEADER_CENTER",
+      "value": "DRS"
+    },
+    {
+      "ref": "M6",
+      "style": "S_HEADER_CENTER",
+      "value": "L3Harris"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "2018"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "451.08"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "1737.3"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "489.98"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "797.93"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "145.58"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "9.03"
+    },
+    {
+      "ref": "I7",
+      "style": "S_NUM_INPUT",
+      "value": "374.95"
+    },
+    {
+      "ref": "J7",
+      "style": "S_NUM_INPUT",
+      "value": "15.52"
+    },
+    {
+      "ref": "K7",
+      "style": "S_NUM_INPUT",
+      "value": "233.92"
+    },
+    {
+      "ref": "L7",
+      "style": "S_NUM_INPUT",
+      "value": "336.82"
+    },
+    {
+      "ref": "M7",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "2019"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "2372.75"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "-10.68"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "627.29"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "1344.93"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "724.87"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT",
+      "value": "633.86"
+    },
+    {
+      "ref": "I8",
+      "style": "S_NUM_INPUT",
+      "value": "343.54"
+    },
+    {
+      "ref": "J8",
+      "style": "S_NUM_INPUT",
+      "value": "28.57"
+    },
+    {
+      "ref": "K8",
+      "style": "S_NUM_INPUT",
+      "value": "245.08"
+    },
+    {
+      "ref": "L8",
+      "style": "S_NUM_INPUT",
+      "value": "236.0"
+    },
+    {
+      "ref": "M8",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "2020"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "1677.47"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "968.53"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "639.54"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "1028.16"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "488.48"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT",
+      "value": "53.76"
+    },
+    {
+      "ref": "I9",
+      "style": "S_NUM_INPUT",
+      "value": "373.68"
+    },
+    {
+      "ref": "J9",
+      "style": "S_NUM_INPUT",
+      "value": "21.67"
+    },
+    {
+      "ref": "K9",
+      "style": "S_NUM_INPUT",
+      "value": "330.83"
+    },
+    {
+      "ref": "L9",
+      "style": "S_NUM_INPUT",
+      "value": "330.22"
+    },
+    {
+      "ref": "M9",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "2021"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1047.81"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "659.6"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "627.54"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1122.96"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": "415.94"
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "78.74"
+    },
+    {
+      "ref": "I10",
+      "style": "S_NUM_INPUT",
+      "value": "367.71"
+    },
+    {
+      "ref": "J10",
+      "style": "S_NUM_INPUT",
+      "value": "6.3"
+    },
+    {
+      "ref": "K10",
+      "style": "S_NUM_INPUT",
+      "value": "367.22"
+    },
+    {
+      "ref": "L10",
+      "style": "S_NUM_INPUT",
+      "value": "221.55"
+    },
+    {
+      "ref": "M10",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "2022"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "1254.62"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "909.82"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "627.14"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "766.0"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": "146.25"
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT",
+      "value": "462.59"
+    },
+    {
+      "ref": "I11",
+      "style": "S_NUM_INPUT",
+      "value": "309.58"
+    },
+    {
+      "ref": "J11",
+      "style": "S_NUM_INPUT",
+      "value": "3.87"
+    },
+    {
+      "ref": "K11",
+      "style": "S_NUM_INPUT",
+      "value": "403.28"
+    },
+    {
+      "ref": "L11",
+      "style": "S_NUM_INPUT",
+      "value": "214.11"
+    },
+    {
+      "ref": "M11",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "2023"
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "2122.43"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "3247.32"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "532.12"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "1077.32"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "69.41"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "49.73"
+    },
+    {
+      "ref": "I12",
+      "style": "S_NUM_INPUT",
+      "value": "310.47"
+    },
+    {
+      "ref": "J12",
+      "style": "S_NUM_INPUT",
+      "value": "0.24"
+    },
+    {
+      "ref": "K12",
+      "style": "S_NUM_INPUT",
+      "value": "266.55"
+    },
+    {
+      "ref": "L12",
+      "style": "S_NUM_INPUT",
+      "value": "252.68"
+    },
+    {
+      "ref": "M12",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "2024"
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "2082.13"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "1466.45"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "420.35"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "805.03"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "83.69"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "65.33"
+    },
+    {
+      "ref": "I13",
+      "style": "S_NUM_INPUT",
+      "value": "372.71"
+    },
+    {
+      "ref": "J13",
+      "style": "S_NUM_INPUT",
+      "value": "1.35"
+    },
+    {
+      "ref": "K13",
+      "style": "S_NUM_INPUT",
+      "value": "343.47"
+    },
+    {
+      "ref": "L13",
+      "style": "S_NUM_INPUT",
+      "value": "241.8"
+    },
+    {
+      "ref": "M13",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "2025"
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "2370.32"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "2803.11"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "770.05"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "701.6"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT",
+      "value": "107.29"
+    },
+    {
+      "ref": "H14",
+      "style": "S_NUM_INPUT",
+      "value": "789.78"
+    },
+    {
+      "ref": "I14",
+      "style": "S_NUM_INPUT",
+      "value": "237.44"
+    },
+    {
+      "ref": "J14",
+      "style": "S_NUM_INPUT",
+      "value": "0.64"
+    },
+    {
+      "ref": "K14",
+      "style": "S_NUM_INPUT",
+      "value": "615.0"
+    },
+    {
+      "ref": "L14",
+      "style": "S_NUM_INPUT",
+      "value": "139.42"
+    },
+    {
+      "ref": "M14",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "2026"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "196.29"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "112.97"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "162.25"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "937.94"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "22.55"
+    },
+    {
+      "ref": "H15",
+      "style": "S_NUM_INPUT",
+      "value": "10.88"
+    },
+    {
+      "ref": "I15",
+      "style": "S_NUM_INPUT",
+      "value": "78.28"
+    },
+    {
+      "ref": "J15",
+      "style": "S_NUM_INPUT",
+      "value": "0.99"
+    },
+    {
+      "ref": "K15",
+      "style": "S_NUM_INPUT",
+      "value": "182.39"
+    },
+    {
+      "ref": "L15",
+      "style": "S_NUM_INPUT",
+      "value": "15.23"
+    },
+    {
+      "ref": "M15",
+      "style": "S_NUM_INPUT"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TOTAL",
+      "value": "Total"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C7:C15)"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D7:D15)"
+    },
+    {
+      "ref": "E16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(E7:E15)"
+    },
+    {
+      "ref": "F16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(F7:F15)"
+    },
+    {
+      "ref": "G16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(G7:G15)"
+    },
+    {
+      "ref": "H16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(H7:H15)"
+    },
+    {
+      "ref": "I16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(I7:I15)"
+    },
+    {
+      "ref": "J16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(J7:J15)"
+    },
+    {
+      "ref": "K16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(K7:K15)"
+    },
+    {
+      "ref": "L16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(L7:L15)"
+    },
+    {
+      "ref": "M16",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(M7:M15)"
+    },
+    {
+      "ref": "A19",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B19",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Use in model"
+    },
+    {
+      "ref": "C19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "J19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "K19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "L19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "M19",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "De-capped prime pulls size obligations and MYP reconstruction; not a direct SAM bucket source."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "FPDS Primes"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Annual obligations ($M by FY x vendor group; de-capped)"
+    },
+    {
+      "ref": "B19",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Use in model"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "451.08"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "1737.3"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "489.98"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "797.93"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "145.58"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_INPUT",
+      "value": "9.03"
+    },
+    {
+      "ref": "I7",
+      "style": "S_NUM_INPUT",
+      "value": "374.95"
+    },
+    {
+      "ref": "J7",
+      "style": "S_NUM_INPUT",
+      "value": "15.52"
+    },
+    {
+      "ref": "K7",
+      "style": "S_NUM_INPUT",
+      "value": "233.92"
+    },
+    {
+      "ref": "L7",
+      "style": "S_NUM_INPUT",
+      "value": "336.82"
+    },
+    {
+      "ref": "M7",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "2372.75"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "-10.68"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "627.29"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "1344.93"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "724.87"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_INPUT",
+      "value": "633.86"
+    },
+    {
+      "ref": "I8",
+      "style": "S_NUM_INPUT",
+      "value": "343.54"
+    },
+    {
+      "ref": "J8",
+      "style": "S_NUM_INPUT",
+      "value": "28.57"
+    },
+    {
+      "ref": "K8",
+      "style": "S_NUM_INPUT",
+      "value": "245.08"
+    },
+    {
+      "ref": "L8",
+      "style": "S_NUM_INPUT",
+      "value": "236.0"
+    },
+    {
+      "ref": "M8",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "1677.47"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "968.53"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "639.54"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "1028.16"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "488.48"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_INPUT",
+      "value": "53.76"
+    },
+    {
+      "ref": "I9",
+      "style": "S_NUM_INPUT",
+      "value": "373.68"
+    },
+    {
+      "ref": "J9",
+      "style": "S_NUM_INPUT",
+      "value": "21.67"
+    },
+    {
+      "ref": "K9",
+      "style": "S_NUM_INPUT",
+      "value": "330.83"
+    },
+    {
+      "ref": "L9",
+      "style": "S_NUM_INPUT",
+      "value": "330.22"
+    },
+    {
+      "ref": "M9",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "1047.81"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "659.6"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "627.54"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "1122.96"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": "415.94"
+    },
+    {
+      "ref": "H10",
+      "style": "S_NUM_INPUT",
+      "value": "78.74"
+    },
+    {
+      "ref": "I10",
+      "style": "S_NUM_INPUT",
+      "value": "367.71"
+    },
+    {
+      "ref": "J10",
+      "style": "S_NUM_INPUT",
+      "value": "6.3"
+    },
+    {
+      "ref": "K10",
+      "style": "S_NUM_INPUT",
+      "value": "367.22"
+    },
+    {
+      "ref": "L10",
+      "style": "S_NUM_INPUT",
+      "value": "221.55"
+    },
+    {
+      "ref": "M10",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM_INPUT",
+      "value": "1254.62"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "909.82"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "627.14"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "766.0"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": "146.25"
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_INPUT",
+      "value": "462.59"
+    },
+    {
+      "ref": "I11",
+      "style": "S_NUM_INPUT",
+      "value": "309.58"
+    },
+    {
+      "ref": "J11",
+      "style": "S_NUM_INPUT",
+      "value": "3.87"
+    },
+    {
+      "ref": "K11",
+      "style": "S_NUM_INPUT",
+      "value": "403.28"
+    },
+    {
+      "ref": "L11",
+      "style": "S_NUM_INPUT",
+      "value": "214.11"
+    },
+    {
+      "ref": "M11",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C12",
+      "style": "S_NUM_INPUT",
+      "value": "2122.43"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "3247.32"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "532.12"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "1077.32"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "69.41"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_INPUT",
+      "value": "49.73"
+    },
+    {
+      "ref": "I12",
+      "style": "S_NUM_INPUT",
+      "value": "310.47"
+    },
+    {
+      "ref": "J12",
+      "style": "S_NUM_INPUT",
+      "value": "0.24"
+    },
+    {
+      "ref": "K12",
+      "style": "S_NUM_INPUT",
+      "value": "266.55"
+    },
+    {
+      "ref": "L12",
+      "style": "S_NUM_INPUT",
+      "value": "252.68"
+    },
+    {
+      "ref": "M12",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C13",
+      "style": "S_NUM_INPUT",
+      "value": "2082.13"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "1466.45"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "420.35"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "805.03"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "83.69"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_INPUT",
+      "value": "65.33"
+    },
+    {
+      "ref": "I13",
+      "style": "S_NUM_INPUT",
+      "value": "372.71"
+    },
+    {
+      "ref": "J13",
+      "style": "S_NUM_INPUT",
+      "value": "1.35"
+    },
+    {
+      "ref": "K13",
+      "style": "S_NUM_INPUT",
+      "value": "343.47"
+    },
+    {
+      "ref": "L13",
+      "style": "S_NUM_INPUT",
+      "value": "241.8"
+    },
+    {
+      "ref": "M13",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C14",
+      "style": "S_NUM_INPUT",
+      "value": "2370.32"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "2803.11"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "770.05"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "701.6"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT",
+      "value": "107.29"
+    },
+    {
+      "ref": "H14",
+      "style": "S_NUM_INPUT",
+      "value": "789.78"
+    },
+    {
+      "ref": "I14",
+      "style": "S_NUM_INPUT",
+      "value": "237.44"
+    },
+    {
+      "ref": "J14",
+      "style": "S_NUM_INPUT",
+      "value": "0.64"
+    },
+    {
+      "ref": "K14",
+      "style": "S_NUM_INPUT",
+      "value": "615.0"
+    },
+    {
+      "ref": "L14",
+      "style": "S_NUM_INPUT",
+      "value": "139.42"
+    },
+    {
+      "ref": "M14",
+      "style": "S_NUM_INPUT",
+      "value": null
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "196.29"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "112.97"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "162.25"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "937.94"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "22.55"
+    },
+    {
+      "ref": "H15",
+      "style": "S_NUM_INPUT",
+      "value": "10.88"
+    },
+    {
+      "ref": "I15",
+      "style": "S_NUM_INPUT",
+      "value": "78.28"
+    },
+    {
+      "ref": "J15",
+      "style": "S_NUM_INPUT",
+      "value": "0.99"
+    },
+    {
+      "ref": "K15",
+      "style": "S_NUM_INPUT",
+      "value": "182.39"
+    },
+    {
+      "ref": "L15",
+      "style": "S_NUM_INPUT",
+      "value": "15.23"
+    },
+    {
+      "ref": "M15",
+      "style": "S_NUM_INPUT",
+      "value": null
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 11,
+  "formula_refs_by_sheet": {},
+  "tables": [
+    {
+      "name": "tbl_ddg_fpds_primes",
+      "displayName": "tbl_ddg_fpds_primes",
+      "ref": "B6:M15",
+      "headers": [
+        "FY",
+        "GD-BIW",
+        "HII-Ingalls",
+        "Rolls-Royce",
+        "GE-Propulsion",
+        "LM-Aegis",
+        "Raytheon",
+        "BAE-Guns/VLS",
+        "NG",
+        "GD-MissionSys",
+        "DRS",
+        "L3Harris"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    }
+  ],
+  "defined_names": {}
+}

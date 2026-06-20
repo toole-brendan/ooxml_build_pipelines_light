@@ -1,0 +1,635 @@
+{
+  "source": "file",
+  "name": "Source Index",
+  "tab_name": "Source Index",
+  "sheet_index": 16,
+  "tab_color": "FF1F3A5F",
+  "gridlines_shown": "0",
+  "n_cols": 4,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "38"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "16"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "40"
+    }
+  ],
+  "n_rows": 27,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 3
+    },
+    {
+      "r": "4",
+      "n_cells": 4
+    },
+    {
+      "r": "6",
+      "n_cells": 3
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "12",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "16",
+      "n_cells": 4
+    },
+    {
+      "r": "18",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "n_cells": 4
+    },
+    {
+      "r": "26",
+      "n_cells": 3
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "28",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "29",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "33",
+      "n_cells": 4
+    },
+    {
+      "r": "35",
+      "n_cells": 3
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "37",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 82,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Source Index"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Data sources (extracted)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Source"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_LEFT",
+      "value": "Retrieved"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_LEFT",
+      "value": "Location"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "dod_announcement_pop.csv"
+    },
+    {
+      "ref": "C7",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "extracted/ (DoD/DoW announcements)"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "dod_action_pop_by_worktype.csv"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D8",
+      "style": "S_DEFAULT",
+      "value": "extracted/"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "entity_naics_lookup.csv"
+    },
+    {
+      "ref": "C9",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D9",
+      "style": "S_DEFAULT",
+      "value": "extracted/ (USAspending + SAM.gov)"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "nc_records_long.csv"
+    },
+    {
+      "ref": "C10",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D10",
+      "style": "S_DEFAULT",
+      "value": "extracted/ (FFATA subawards)"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "subaward_top_recipients.csv"
+    },
+    {
+      "ref": "C11",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D11",
+      "style": "S_DEFAULT",
+      "value": "extracted/"
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "nc_geo_by_state.csv / nc_geo_by_country.csv"
+    },
+    {
+      "ref": "C12",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D12",
+      "style": "S_DEFAULT",
+      "value": "extracted/"
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "nc_scope_summary.json"
+    },
+    {
+      "ref": "C13",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D13",
+      "style": "S_DEFAULT",
+      "value": "extracted/"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Budget exhibits (SCN P-5c / P-10 / TOA)"
+    },
+    {
+      "ref": "C16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D16",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B18",
+      "style": "S_HEADER_LEFT",
+      "value": "Source"
+    },
+    {
+      "ref": "C18",
+      "style": "S_HEADER_LEFT",
+      "value": "Retrieved"
+    },
+    {
+      "ref": "D18",
+      "style": "S_HEADER_LEFT",
+      "value": "Location"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "SCN P-5c (Basic Construction)"
+    },
+    {
+      "ref": "C19",
+      "style": "S_DEFAULT",
+      "value": "FY22-FY27 PB"
+    },
+    {
+      "ref": "D19",
+      "style": "S_DEFAULT",
+      "value": "budget_books/SCN_Book_FY{22..27}"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "SCN P-10 (Advance Procurement)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_DEFAULT",
+      "value": "FY22-FY27 PB"
+    },
+    {
+      "ref": "D20",
+      "style": "S_DEFAULT",
+      "value": "budget_books/SCN_Book_FY{22..27}"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "SCN per-FY actual TOA"
+    },
+    {
+      "ref": "C21",
+      "style": "S_DEFAULT",
+      "value": "FY22-FY27"
+    },
+    {
+      "ref": "D21",
+      "style": "S_DEFAULT",
+      "value": "extracted/scn_per_fy_actual_toa.csv"
+    },
+    {
+      "ref": "A24",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Methodology + reference docs"
+    },
+    {
+      "ref": "C24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D24",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B26",
+      "style": "S_HEADER_LEFT",
+      "value": "Source"
+    },
+    {
+      "ref": "C26",
+      "style": "S_HEADER_LEFT",
+      "value": "Retrieved"
+    },
+    {
+      "ref": "D26",
+      "style": "S_HEADER_LEFT",
+      "value": "Location"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "METHODOLOGY (POP / subaward / budget)"
+    },
+    {
+      "ref": "C27",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D27",
+      "style": "S_DEFAULT",
+      "value": "docs/distributed_shipbuilding_implementation_plan.md"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "Implementation plan"
+    },
+    {
+      "ref": "C28",
+      "style": "S_DEFAULT",
+      "value": "2026-05-29"
+    },
+    {
+      "ref": "D28",
+      "style": "S_DEFAULT",
+      "value": "docs/distributed_shipbuilding_implementation_plan.md"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "BPMI reconciliation"
+    },
+    {
+      "ref": "C29",
+      "style": "S_DEFAULT",
+      "value": "2026-05-29"
+    },
+    {
+      "ref": "D29",
+      "style": "S_DEFAULT",
+      "value": "docs/distributed_shipbuilding_sub_phase3_BPMI_reconciliation.md"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "deck_specs.md"
+    },
+    {
+      "ref": "C30",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D30",
+      "style": "S_DEFAULT",
+      "value": "docs/distributed_shipbuilding_deck_specs.md"
+    },
+    {
+      "ref": "A33",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B33",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - Refresh control"
+    },
+    {
+      "ref": "C33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D33",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B35",
+      "style": "S_HEADER_LEFT",
+      "value": "Area"
+    },
+    {
+      "ref": "C35",
+      "style": "S_HEADER_LEFT",
+      "value": "Last refreshed"
+    },
+    {
+      "ref": "D35",
+      "style": "S_HEADER_LEFT",
+      "value": "Source path"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "POP corpus"
+    },
+    {
+      "ref": "C36",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D36",
+      "style": "S_DEFAULT",
+      "value": "extracted/dod_announcement_pop.csv"
+    },
+    {
+      "ref": "B37",
+      "style": "S_DEFAULT",
+      "value": "Subaward vendors"
+    },
+    {
+      "ref": "C37",
+      "style": "S_DEFAULT",
+      "value": "2026-05"
+    },
+    {
+      "ref": "D37",
+      "style": "S_DEFAULT",
+      "value": "extracted/entity_naics_lookup.csv"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "Budget exhibits"
+    },
+    {
+      "ref": "C38",
+      "style": "S_DEFAULT",
+      "value": "FY22-27 PB"
+    },
+    {
+      "ref": "D38",
+      "style": "S_DEFAULT",
+      "value": "budget_books/"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Source Index"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Data sources (extracted)"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Budget exhibits (SCN P-5c / P-10 / TOA)"
+    },
+    {
+      "ref": "B24",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Methodology + reference docs"
+    },
+    {
+      "ref": "B33",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - Refresh control"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [],
+  "placeholders": [
+    {
+      "ref": "D9",
+      "value": "extracted/ (USAspending + SAM.gov)"
+    }
+  ],
+  "n_formulas": 0,
+  "formula_refs_by_sheet": {},
+  "tables": [
+    {
+      "name": "tbl_sub_source_index_data",
+      "displayName": "tbl_sub_source_index_data",
+      "ref": "B6:D13",
+      "headers": [
+        "Source",
+        "Retrieved",
+        "Location"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    },
+    {
+      "name": "tbl_sub_source_index_budget",
+      "displayName": "tbl_sub_source_index_budget",
+      "ref": "B18:D21",
+      "headers": [
+        "Source",
+        "Retrieved",
+        "Location"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    },
+    {
+      "name": "tbl_sub_source_index_docs",
+      "displayName": "tbl_sub_source_index_docs",
+      "ref": "B26:D30",
+      "headers": [
+        "Source",
+        "Retrieved",
+        "Location"
+      ],
+      "style": "WorkbookCore_NoFormatTable"
+    }
+  ],
+  "defined_names": {}
+}

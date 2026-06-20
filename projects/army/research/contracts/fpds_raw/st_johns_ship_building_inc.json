@@ -1,0 +1,4033 @@
+{
+  "recipient_name": "ST JOHNS SHIP BUILDING INC",
+  "recipient_uei": "WJG3K6KR1AA1",
+  "query": "VENDOR_UEI:\"WJG3K6KR1AA1\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 9,
+  "distinct_piids": 3,
+  "sum_obligated_amount": 5195549.91,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W912BU24C0023",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU24C0023",
+      "mod_number": "P00001",
+      "transaction_number": "0",
+      "vendor_name": "ST JOHNS SHIP BUILDING INC",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 27674.8,
+      "total_obligated": 5180522.95,
+      "base_and_exercised": 27674.8,
+      "base_and_all_options": 27674.8,
+      "total_base_and_all_options": 5180522.95,
+      "signed_date": "2025-08-12 00:00:00",
+      "effective_date": "2024-09-25 00:00:00",
+      "current_completion_date": "2026-01-12 00:00:00",
+      "ultimate_completion_date": "2026-01-12 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SF ENDIST PHILADELPHIA CW",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1935",
+      "psc_desc": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "6",
+      "description": "TWO 2-STACK STOP LOG BARGES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU24C0023",
+            "modNumber": "P00001",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-08-12 00:00:00",
+          "effectiveDate": "2024-09-25 00:00:00",
+          "currentCompletionDate": "2026-01-12 00:00:00",
+          "ultimateCompletionDate": "2026-01-12 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "27674.80",
+          "baseAndExercisedOptionsValue": "27674.80",
+          "baseAndAllOptionsValue": "27674.80"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5180522.95",
+          "totalBaseAndExercisedOptionsValue": "5180522.95",
+          "totalBaseAndAllOptionsValue": "5180522.95"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SF ENDIST PHILADELPHIA CW",
+            "#text": "W25PHS"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU24B0021",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "TWO 2-STACK STOP LOG BARGES",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1935"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST JOHNS SHIP BUILDING INC",
+            "vendorAlternateName": "ST JOHNS SHIP BUILDING INC",
+            "vendorLegalOrganizationName": "ST JOHNS SHIP BUILDING INC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "true",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2514082252",
+              "congressionalDistrictCode": "06"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST JOHNS SHIP BUILDING INC",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST JOHNS SHIP BUILDING INC"
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2025-08-06 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "FLORIDA",
+              "#text": "FL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PUTNAM",
+            "@city": "PALATKA",
+            "#text": "321778485"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "6",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "DOMENIC.L.SESTITO.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2025-08-12 14:37:42",
+          "lastModifiedBy": "DOMENIC.L.SESTITO.W912BU@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-08-12 14:37:45",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "DOMENIC.L.SESTITO.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2025-08-12 14:37:45",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2024-06-10 00:00:00",
+            "genericString02": "WJG3K6KR1AA1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W912EP17A0009",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EP17A0009",
+      "mod_number": "0",
+      "transaction_number": null,
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 3000000.0,
+      "total_base_and_all_options": 3000000.0,
+      "signed_date": "2017-02-06 00:00:00",
+      "effective_date": "2017-02-06 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST JACKSNVLLE",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "IGF::CL::IGF VESSEL REPAIRS",
+      "raw": {
+        "@version": "1.4",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-02-06 00:00:00",
+          "effectiveDate": "2017-02-06 00:00:00",
+          "lastDateToOrder": "2022-02-05 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "3000000.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "3000000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "#text": "W912EP"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY",
+          "individualOrderLimit": "200000"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA",
+            "@part8OrPart13": "PART13",
+            "#text": "E"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "IGF::CL::IGF VESSEL REPAIRS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST. JOHNS SHIP BUILDING  INC."
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2017-01-19 17:19:14",
+          "lastModifiedBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-09-11 08:59:35",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "CARLA.A.ECHOLS.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2017-02-06 11:01:37",
+          "closedBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "closedDate": "2025-09-11 08:59:35",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU24C0023",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU24C0023",
+      "mod_number": "P00002",
+      "transaction_number": "0",
+      "vendor_name": "ST JOHNS SHIP BUILDING INC",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 25538.15,
+      "total_obligated": 5180522.95,
+      "base_and_exercised": 25538.15,
+      "base_and_all_options": 25538.15,
+      "total_base_and_all_options": 5180522.95,
+      "signed_date": "2025-09-30 00:00:00",
+      "effective_date": "2024-09-25 00:00:00",
+      "current_completion_date": "2026-01-26 00:00:00",
+      "ultimate_completion_date": "2026-01-26 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SF ENDIST PHILADELPHIA CW",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1935",
+      "psc_desc": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "6",
+      "description": "TWO 2-STACK STOP LOG BARGES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU24C0023",
+            "modNumber": "P00002",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-09-30 00:00:00",
+          "effectiveDate": "2024-09-25 00:00:00",
+          "currentCompletionDate": "2026-01-26 00:00:00",
+          "ultimateCompletionDate": "2026-01-26 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "25538.15",
+          "baseAndExercisedOptionsValue": "25538.15",
+          "baseAndAllOptionsValue": "25538.15"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5180522.95",
+          "totalBaseAndExercisedOptionsValue": "5180522.95",
+          "totalBaseAndAllOptionsValue": "5180522.95"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SF ENDIST PHILADELPHIA CW",
+            "#text": "W25PHS"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CHANGE ORDER",
+            "#text": "D"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU24B0021",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "TWO 2-STACK STOP LOG BARGES",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1935"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST JOHNS SHIP BUILDING INC",
+            "vendorAlternateName": "ST JOHNS SHIP BUILDING INC",
+            "vendorLegalOrganizationName": "ST JOHNS SHIP BUILDING INC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "true",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2514082252",
+              "congressionalDistrictCode": "06"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST JOHNS SHIP BUILDING INC",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST JOHNS SHIP BUILDING INC"
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2025-08-06 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "FLORIDA",
+              "#text": "FL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PUTNAM",
+            "@city": "PALATKA",
+            "#text": "321778485"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "6",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2025-09-30 12:34:12",
+          "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-09-30 12:34:16",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2025-09-30 12:34:16",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2024-06-10 00:00:00",
+            "genericString02": "WJG3K6KR1AA1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W912BU24C0023",
+      "referenced_idv_piid": null,
+      "full_piid": "W912BU24C0023",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "ST JOHNS SHIP BUILDING INC",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 5127310.0,
+      "total_obligated": 5127310.0,
+      "base_and_exercised": 5127310.0,
+      "base_and_all_options": 5127310.0,
+      "total_base_and_all_options": 5127310.0,
+      "signed_date": "2024-09-25 00:00:00",
+      "effective_date": "2024-09-25 00:00:00",
+      "current_completion_date": "2025-12-23 00:00:00",
+      "ultimate_completion_date": "2025-12-23 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W2SD ENDIST PHILADELPHIA",
+      "contracting_office_id": "W912BU",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W2SD ENDIST PHILADELPHIA",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "1935",
+      "psc_desc": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SEALED BID",
+      "number_of_offers": "6",
+      "description": "TWO 2-STACK STOP LOG BARGES",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912BU24C0023",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2024-09-25 00:00:00",
+          "effectiveDate": "2024-09-25 00:00:00",
+          "currentCompletionDate": "2025-12-23 00:00:00",
+          "ultimateCompletionDate": "2025-12-23 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "5127310.00",
+          "baseAndExercisedOptionsValue": "5127310.00",
+          "baseAndAllOptionsValue": "5127310.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "5127310.00",
+          "totalBaseAndExercisedOptionsValue": "5127310.00",
+          "totalBaseAndAllOptionsValue": "5127310.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "@country": "USA",
+            "#text": "W912BU"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W2SD ENDIST PHILADELPHIA",
+            "#text": "W912BU"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W912BU24B0021",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "TWO 2-STACK STOP LOG BARGES",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "BARGES AND LIGHTERS, SPECIAL PURPOSE",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "1935"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST JOHNS SHIP BUILDING INC",
+            "vendorAlternateName": "ST JOHNS SHIP BUILDING INC",
+            "vendorLegalOrganizationName": "ST JOHNS SHIP BUILDING INC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "true",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "2514082252",
+              "congressionalDistrictCode": "06"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST JOHNS SHIP BUILDING INC",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST JOHNS SHIP BUILDING INC"
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2025-08-06 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "FLORIDA",
+              "#text": "FL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PUTNAM",
+            "@city": "PALATKA",
+            "#text": "321778485"
+          },
+          "placeOfPerformanceCongressionalDistrict": "06"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SEALED BID",
+            "#text": "SB"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "6",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "createdDate": "2024-09-11 11:17:15",
+          "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "lastModifiedDate": "2024-09-25 08:45:54",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+          "approvedDate": "2024-09-25 08:45:54",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2024-06-10 00:00:00",
+            "genericString02": "WJG3K6KR1AA1",
+            "genericString06": "O"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W912EP17A0009",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EP17A0009",
+      "mod_number": "P00003",
+      "transaction_number": null,
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 3000000.0,
+      "signed_date": "2025-09-11 00:00:00",
+      "effective_date": "2017-02-06 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST JACKSNVLLE",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "MOD TO CLOSEOUT MASTER BPA",
+      "raw": {
+        "@version": "1.5",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "P00003"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2025-09-11 00:00:00",
+          "effectiveDate": "2017-02-06 00:00:00",
+          "lastDateToOrder": "2022-02-05 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "0.00",
+          "totalEstimatedOrderValue": "0"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "3000000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "#text": "W912EP"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA",
+            "@part8OrPart13": "PART13",
+            "#text": "E"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "reasonForModification": {
+            "@description": "CLOSE OUT",
+            "#text": "K"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD TO CLOSEOUT MASTER BPA",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "06",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST JOHNS SHIP BUILDING INC"
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2025-09-11 08:59:33",
+          "lastModifiedBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "lastModifiedDate": "2025-09-11 08:59:36",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2025-09-11 08:59:36",
+          "closedBy": "MANUELA.D.VOICU.W912EP@USACE.ARMY.MIL",
+          "closedDate": "2025-09-11 08:59:35",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "false",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W912EP17A0009",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EP17A0009",
+      "mod_number": "P00002",
+      "transaction_number": null,
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 3000000.0,
+      "signed_date": "2019-10-21 00:00:00",
+      "effective_date": "2019-10-21 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST JACKSNVLLE",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "MOD TO CORRECT THE MASTER BPA CALL LIMIT",
+      "raw": {
+        "@version": "1.5",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "P00002"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-10-21 00:00:00",
+          "effectiveDate": "2019-10-21 00:00:00",
+          "lastDateToOrder": "2022-02-05 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "0.00",
+          "totalEstimatedOrderValue": "0"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "3000000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "#text": "W912EP"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY",
+          "individualOrderLimit": "300000"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA",
+            "@part8OrPart13": "PART13",
+            "#text": "E"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD TO CORRECT THE MASTER BPA CALL LIMIT",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST. JOHNS SHIP BUILDING  INC."
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "GERALD.L.GARVEY.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2019-10-21 16:27:41",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-09-25 11:55:34",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "GERALD.L.GARVEY.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2019-10-21 16:27:44",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "0001",
+      "referenced_idv_piid": "W912EP17A0009",
+      "full_piid": "W912EP17A0009/0001",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 15297.56,
+      "total_obligated": 15026.96,
+      "base_and_exercised": 15297.56,
+      "base_and_all_options": 15297.56,
+      "total_base_and_all_options": 15026.96,
+      "signed_date": "2017-05-11 00:00:00",
+      "effective_date": "2017-05-11 00:00:00",
+      "current_completion_date": "2017-06-12 00:00:00",
+      "ultimate_completion_date": "2017-06-12 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+      "funding_office": null,
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA CALL",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "4",
+      "description": "IGF::CL::IGF SB-48 ELECTRICAL SYSTEM REPLACEMENT",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "0001",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-05-11 00:00:00",
+          "effectiveDate": "2017-05-11 00:00:00",
+          "currentCompletionDate": "2017-06-12 00:00:00",
+          "ultimateCompletionDate": "2017-06-12 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "15297.56",
+          "baseAndExercisedOptionsValue": "15297.56",
+          "baseAndAllOptionsValue": "15297.56"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "15026.96",
+          "totalBaseAndExercisedOptionsValue": "15026.96",
+          "totalBaseAndAllOptionsValue": "15026.96"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "96CE"
+          },
+          "fundingRequestingOfficeID": "W912EP",
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA CALL",
+            "@part8OrPart13": "PART13",
+            "#text": "A"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "descriptionOfContractRequirement": "IGF::CL::IGF SB-48 ELECTRICAL SYSTEM REPLACEMENT",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "referencedIDVPart8OrPart13": "PART13",
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BPA",
+            "#text": "E"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 AND FAR 52.223-9 INCLUDED",
+            "#text": "B"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST. JOHNS SHIP BUILDING  INC."
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "FLORIDA",
+              "#text": "FL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PUTNAM",
+            "@city": "PALATKA",
+            "#text": "321778485"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {},
+        "transactionInformation": {
+          "createdBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2017-05-11 18:19:03",
+          "lastModifiedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "lastModifiedDate": "2019-03-25 13:05:54",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2017-05-11 18:27:43",
+          "closedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "closedDate": "2019-03-25 13:05:54",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "0001",
+      "referenced_idv_piid": "W912EP17A0009",
+      "full_piid": "W912EP17A0009/0001",
+      "mod_number": "1",
+      "transaction_number": "0",
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": -270.6,
+      "total_obligated": 15026.96,
+      "base_and_exercised": -270.6,
+      "base_and_all_options": -270.6,
+      "total_base_and_all_options": 15026.96,
+      "signed_date": "2019-03-25 00:00:00",
+      "effective_date": "2019-02-27 00:00:00",
+      "current_completion_date": "2017-06-12 00:00:00",
+      "ultimate_completion_date": "2017-06-12 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST JACKSNVLLE",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA CALL",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "COMPETED UNDER SAP",
+      "solicitation_procedures": "SIMPLIFIED ACQUISITION",
+      "number_of_offers": "4",
+      "description": "SB-48 ELECTRICAL SYSTEM REPLACEMENT",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "0001",
+            "modNumber": "1",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-03-25 00:00:00",
+          "effectiveDate": "2019-02-27 00:00:00",
+          "currentCompletionDate": "2017-06-12 00:00:00",
+          "ultimateCompletionDate": "2017-06-12 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "-270.60",
+          "baseAndExercisedOptionsValue": "-270.60",
+          "baseAndAllOptionsValue": "-270.60"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "15026.96",
+          "totalBaseAndExercisedOptionsValue": "15026.96",
+          "totalBaseAndAllOptionsValue": "15026.96"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "#text": "W912EP"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA CALL",
+            "@part8OrPart13": "PART13",
+            "#text": "A"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "CLOSE OUT",
+            "#text": "K"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "descriptionOfContractRequirement": "SB-48 ELECTRICAL SYSTEM REPLACEMENT",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CRITICAL FUNCTIONS",
+            "#text": "CT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "96",
+                "mainAccountCode": "4902"
+              }
+            }
+          },
+          "referencedIDVPart8OrPart13": "PART13",
+          "referencedIDVMultipleOrSingle": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          },
+          "referencedIDVType": {
+            "@description": "BPA",
+            "#text": "E"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "claimantProgramCode": {
+            "@description": "SERVICES",
+            "#text": "S1"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 AND FAR 52.223-9 INCLUDED",
+            "#text": "B"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST. JOHNS SHIP BUILDING  INC."
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "FLORIDA",
+              "#text": "FL"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PUTNAM",
+            "@city": "PALATKA",
+            "#text": "321778485"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "COMPETED UNDER SAP",
+            "#text": "F"
+          },
+          "solicitationProcedures": {
+            "@description": "SIMPLIFIED ACQUISITION",
+            "#text": "SP1"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "4",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {},
+        "transactionInformation": {
+          "createdBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2019-03-25 13:02:31",
+          "lastModifiedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "lastModifiedDate": "2019-03-25 13:05:54",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2019-03-25 13:05:54",
+          "closedBy": "JESSE.LUGO.W912EP@USACE.ARMY.MIL",
+          "closedDate": "2019-03-25 13:05:54",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "IDV",
+      "piid": "W912EP17A0009",
+      "referenced_idv_piid": null,
+      "full_piid": "W912EP17A0009",
+      "mod_number": "P00001",
+      "transaction_number": null,
+      "vendor_name": "ST. JOHNS SHIP BUILDING, INC.",
+      "vendor_uei": "WJG3K6KR1AA1",
+      "this_obligated": 0.0,
+      "total_obligated": 0.0,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 3000000.0,
+      "signed_date": "2019-10-21 00:00:00",
+      "effective_date": "2019-10-21 00:00:00",
+      "current_completion_date": null,
+      "ultimate_completion_date": null,
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W074 ENDIST JACKSNVLLE",
+      "contracting_office_id": "W912EP",
+      "funding_agency": "DEPT OF THE ARMY",
+      "funding_office": "W074 ENDIST JACKSNVLLE",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "J019",
+      "psc_desc": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+      "contract_action_type": "BPA",
+      "pricing_type": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+      "extent_competed": null,
+      "solicitation_procedures": null,
+      "number_of_offers": null,
+      "description": "MOD TO INCREASE CALL LIMITS",
+      "raw": {
+        "@version": "1.5",
+        "contractID": {
+          "IDVID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W912EP17A0009",
+            "modNumber": "P00001"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2019-10-21 00:00:00",
+          "effectiveDate": "2019-10-21 00:00:00",
+          "lastDateToOrder": "2022-02-05 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndAllOptionsValue": "0.00",
+          "totalEstimatedOrderValue": "0"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "0.00",
+          "totalBaseAndAllOptionsValue": "3000000.00"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "@country": "USA",
+            "#text": "W912EP"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "W074 ENDIST JACKSNVLLE",
+            "#text": "W912EP"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "whoCanUse": "ONLY MY AGENCY",
+          "individualOrderLimit": "200000"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "BPA",
+            "@part8OrPart13": "PART13",
+            "#text": "E"
+          },
+          "typeOfContractPricing": {
+            "@description": "ORDER DEPENDENT (IDV ALLOWS PRICING ARRANGEMENT TO BE DETERMINED SEPARATELY FOR EACH ORDER)",
+            "#text": "1"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD TO INCREASE CALL LIMITS",
+          "inherentlyGovernmentalFunction": {
+            "@description": "CLOSELY ASSOCIATED",
+            "#text": "CL"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "UNKNOWN",
+            "#text": "U"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multipleOrSingleAwardIDC": {
+            "@description": "SINGLE AWARD",
+            "#text": "S"
+          }
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIPS, SMALL CRAFT, PONTOONS, AND FLOATING DOCKS",
+            "@productOrServiceType": "SERVICE",
+            "#text": "J019"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "ST. JOHNS SHIP BUILDING, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "560 STOKES LANDING RD",
+              "city": "PALATKA",
+              "state": {
+                "@name": "FLORIDA",
+                "#text": "FL"
+              },
+              "ZIPCode": {
+                "@city": "PALATKA",
+                "#text": "321778485"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "3863286054",
+              "faxNo": "3863286046",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "32177",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "WJG3K6KR1AA1",
+                "UEILegalBusinessName": "ST. JOHNS SHIP BUILDING, INC.",
+                "ultimateParentUEI": "WJG3K6KR1AA1",
+                "ultimateParentUEIName": "ST. JOHNS SHIP BUILDING  INC."
+              },
+              "cageCode": "5DEL6"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2009-03-25 00:00:00",
+              "renewalDate": "2017-07-07 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "competition": {
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "GERALD.L.GARVEY.W912EP@USACE.ARMY.MIL",
+          "createdDate": "2019-10-21 16:09:43",
+          "lastModifiedBy": "FPDSADMIN",
+          "lastModifiedDate": "2020-09-25 11:55:34",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "GERALD.L.GARVEY.W912EP@USACE.ARMY.MIL",
+          "approvedDate": "2019-10-21 16:09:47",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "WJG3K6KR1AA1"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

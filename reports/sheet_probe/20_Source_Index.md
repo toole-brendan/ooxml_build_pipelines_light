@@ -1,0 +1,141 @@
+# sheet_probe: Source Index
+
+- source: `file`
+- tab name: `Source Index`
+- tab color: `FF1F3A5F`
+- gridlines shown: `0`
+- columns: 6 · rows: 29 · cells: 124 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — Source Index
+- `B4` S_TITLE_SECTION — §1 - Extracted datasets and their consuming tabs
+- `B26` S_TITLE_SECTION — §2 - Consumers by model area
+
+## Native tables
+- `tbl_ddg_source_index` ref `B6:F23` [Dataset (extracted/), Rows, Key fields, Consumed by (tab), Retrieval] style WorkbookCore_NoFormatTable
+
+## Cells
+- `B2` S_TITLE_SHEET: Source Index
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Extracted datasets and their consuming tabs
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Dataset (extracted/)
+- `C6` S_HEADER_LEFT: Rows
+- `D6` S_HEADER_LEFT: Key fields
+- `E6` S_HEADER_LEFT: Consumed by (tab)
+- `F6` S_HEADER_LEFT: Retrieval
+- `B7` S_DEFAULT: scn_li_cost_categories.csv
+- `C7` S_DEFAULT: 16
+- `D7` S_DEFAULT: LI, cost category, FY values
+- `E7` S_DEFAULT: SCN Budget
+- `F7` S_DEFAULT: FY27 PB
+- `B8` S_DEFAULT: scn_li_production_schedule.csv
+- `C8` S_DEFAULT: 31
+- `D8` S_DEFAULT: ship, shipbuilder, FY, award/start/delivery
+- `E8` S_DEFAULT: Production Schedule
+- `F8` S_DEFAULT: FY27 PB
+- `B9` S_DEFAULT: scn_li_resource_summary.csv
+- `C9` S_DEFAULT: 21
+- `D9` S_DEFAULT: row label, prior/FY/to-complete/total
+- `E9` S_DEFAULT: AP Bridge / TAM Build
+- `F9` S_DEFAULT: FY27 PB
+- `B10` S_DEFAULT: dod_announcement_pop.csv
+- `C10` S_DEFAULT: 860
+- `D10` S_DEFAULT: piid, amount, prime, pop_*_pct, work_type, gate
+- `E10` S_DEFAULT: POP Corpus
+- `F10` S_DEFAULT: CY22-26
+- `B11` S_DEFAULT: dod_action_pop_by_worktype.csv
+- `C11` S_DEFAULT: 36
+- `D11` S_DEFAULT: program, work_type, n, $, pop_*_pct_w
+- `E11` S_DEFAULT: POP Corpus
+- `F11` S_DEFAULT: CY22-26
+- `B12` S_DEFAULT: nc_records_long.csv
+- `C12` S_DEFAULT: 22,867
+- `D12` S_DEFAULT: piid, fy, subAwardAmount, sub_name, description
+- `E12` S_DEFAULT: SAM Build / Entities
+- `F12` S_DEFAULT: FY17-26
+- `B13` S_DEFAULT: nc_annual_by_piid.csv
+- `C13` S_DEFAULT: 16
+- `D13` S_DEFAULT: FY x PIID ($M + count)
+- `E13` S_DEFAULT: SAM Build
+- `F13` S_DEFAULT: FY17-26
+- `B14` S_DEFAULT: nc_annual_by_vendor.csv
+- `C14` S_DEFAULT: 4,323
+- `D14` S_DEFAULT: fy, uei, vendor, amount_M
+- `E14` S_DEFAULT: Vendors
+- `F14` S_DEFAULT: FY17-26
+- `B15` S_DEFAULT: nc_lifetime_vendors.csv
+- `C15` S_DEFAULT: 1,555
+- `D15` S_DEFAULT: rank, uei, vendor, amount_M_lifetime, piids
+- `E15` S_DEFAULT: Vendors / Entities / Locations
+- `F15` S_DEFAULT: 2026
+- `B16` S_DEFAULT: entity_naics_lookup.csv
+- `C16` S_DEFAULT: 151
+- `D16` S_DEFAULT: uei, vendor, primary_naics, naics_4digit, country
+- `E16` S_DEFAULT: Entities
+- `F16` S_DEFAULT: 2026
+- `B17` S_DEFAULT: fpds_annual_by_prime.csv
+- `C17` S_DEFAULT: 10
+- `D17` S_DEFAULT: FY x vendor-group ($M + piid_count)
+- `E17` S_DEFAULT: FPDS Primes
+- `F17` S_DEFAULT: FY17-26
+- `B18` S_DEFAULT: fpds_raw_v2/ (BIW, Rolls-Royce JSON)
+- `C18` S_DEFAULT: 33,798
+- `D18` S_DEFAULT: obligatedAmount, piid, dates
+- `E18` S_DEFAULT: FPDS Primes / TAM Build
+- `F18` S_DEFAULT: 2026
+- `B19` S_DEFAULT: nc_scope_summary.json + _discovered_piids.csv
+- `C19` S_DEFAULT: 397 / 118
+- `D19` S_DEFAULT: piid, group, class, label
+- `E19` S_DEFAULT: Scope Exclusions
+- `F19` S_DEFAULT: 2026
+- `B20` S_DEFAULT: cost_funnel_summary.csv
+- `C20` S_DEFAULT: 13 / 106
+- `D20` S_DEFAULT: LI, FY, basic_construction_$M, band
+- `E20` S_DEFAULT: SCN Budget
+- `F20` S_DEFAULT: FY27 PB
+- `B21` S_DEFAULT: sam_subaward_annual_by_prime.csv
+- `C21` S_DEFAULT: 16
+- `D21` S_DEFAULT: FY x PIID ($M + count)
+- `E21` S_DEFAULT: SAM Build
+- `F21` S_DEFAULT: FY17-26
+- `B22` S_DEFAULT: exec_quotes_outsourcing.csv
+- `C22` S_DEFAULT: 241
+- `D22` S_DEFAULT: company, fy, speaker, matched_phrase
+- `E22` S_DEFAULT: References
+- `F22` S_DEFAULT: FY19-26
+- `B23` S_DEFAULT: edgar_research/ (HII, GD filings)
+- `C23` S_DEFAULT: n/a
+- `D23` S_DEFAULT: segment revenue, backlog
+- `E23` S_DEFAULT: References
+- `F23` S_DEFAULT: FY19-25
+- `A26` S_DEFAULT: x
+- `B26` S_TITLE_SECTION: §2 - Consumers by model area
+- `C26` S_TITLE_SECTION: 
+- `D26` S_TITLE_SECTION: 
+- `E26` S_TITLE_SECTION: 
+- `F26` S_TITLE_SECTION: 
+- `B28` S_HEADER_LEFT: Model area
+- `C28` S_HEADER_LEFT: Primary datasets
+- `D28` S_HEADER_LEFT: 
+- `E28` S_HEADER_LEFT: 
+- `F28` S_HEADER_LEFT: 
+- `B29` S_DEFAULT: Budget
+- `C29` S_DEFAULT: scn_li_cost_categories, scn_li_resource_summary, cost_funnel_summary
+- `B30` S_DEFAULT: POP
+- `C30` S_DEFAULT: dod_announcement_pop, dod_action_pop_by_worktype
+- `B31` S_DEFAULT: Suppliers
+- `C31` S_DEFAULT: entity_naics_lookup, nc_lifetime_vendors, fpds_annual_by_prime, fpds_raw_v2
+- `B32` S_DEFAULT: SAM
+- `C32` S_DEFAULT: nc_records_long, nc_annual_by_piid, sam_subaward_annual_by_prime
+- `B33` S_DEFAULT: Validation
+- `C33` S_DEFAULT: nc_scope_summary, _discovered_piids
+- `B34` S_DEFAULT: References
+- `C34` S_DEFAULT: exec_quotes_outsourcing, edgar_research

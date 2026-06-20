@@ -1,0 +1,215 @@
+# sheet_probe: POP Source Audit
+
+- source: `file`
+- tab name: `POP Source Audit`
+- tab color: `FF6E6E6E`
+- gridlines shown: `0`
+- columns: 8 · rows: 38 · cells: 173 · formulas: 86
+
+## Banners
+- `B2` S_TITLE_SHEET — POP Source Audit
+- `B4` S_TITLE_SECTION — §1 - Confirmation & risk
+- `B15` S_TITLE_SECTION — §2 - Confirmation coverage (gated corpus)
+- `B27` S_TITLE_SUBSECTION — §2a - Risk ratios
+- `B35` S_TITLE_SUBSECTION — §2b - High-$ action register (top 10 by $, Tier-1 confirmed)
+
+## Formula dependencies (referenced sheet → cells)
+- **POP Corpus** (78): C18, D18, C19, D19, C20, D20, C21, D21, C22, D22, C23, D23 …
+- **POP Source Audit** (6): C7, C8, C9, C10, C11, C12
+
+## Cross-sheet links (20)
+- `E38` S_LINK_NUM = 'POP Corpus'!K18
+- `H38` S_LINK_NUM = 'POP Corpus'!J18
+- `E39` S_LINK_NUM = 'POP Corpus'!K23
+- `H39` S_LINK_NUM = 'POP Corpus'!J23
+- `E40` S_LINK_NUM = 'POP Corpus'!K24
+- `H40` S_LINK_NUM = 'POP Corpus'!J24
+- `E41` S_LINK_NUM = 'POP Corpus'!K31
+- `H41` S_LINK_NUM = 'POP Corpus'!J31
+- `E42` S_LINK_NUM = 'POP Corpus'!K37
+- `H42` S_LINK_NUM = 'POP Corpus'!J37
+- `E43` S_LINK_NUM = 'POP Corpus'!K40
+- `H43` S_LINK_NUM = 'POP Corpus'!J40
+- `E44` S_LINK_NUM = 'POP Corpus'!K41
+- `H44` S_LINK_NUM = 'POP Corpus'!J41
+- `E45` S_LINK_NUM = 'POP Corpus'!K42
+- `H45` S_LINK_NUM = 'POP Corpus'!J42
+- `E46` S_LINK_NUM = 'POP Corpus'!K45
+- `H46` S_LINK_NUM = 'POP Corpus'!J45
+- `E47` S_LINK_NUM = 'POP Corpus'!K50
+- `H47` S_LINK_NUM = 'POP Corpus'!J50
+
+## Cells
+- `B2` S_TITLE_SHEET: POP Source Audit
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: §1 - Confirmation & risk
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Measure
+- `C6` S_HEADER_CENTER: Value
+- `D6` S_HEADER_LEFT: Status / note
+- `B7` S_BOLD: Gated TAM corpus $M
+- `C7` S_NUM: ='POP Source Audit'!D18
+- `D7` S_DEFAULT: the gated POP pool
+- `B8` S_DEFAULT: In-scope non-GFE $M
+- `C8` S_NUM: ='POP Source Audit'!D20
+- `D8` S_DEFAULT: coefficient corpus
+- `B9` S_BOLD: Confirmation coverage
+- `C9` S_PCT: ='POP Source Audit'!C30
+- `D9` S_DEFAULT: % of in-scope $; target ~90%+
+- `B10` S_DEFAULT: Unparsed share (gated)
+- `C10` S_PCT: ='POP Source Audit'!C31
+- `D10` S_DEFAULT: >1-2% warrants review
+- `B11` S_DEFAULT: Largest-action concentration
+- `C11` S_PCT: ='POP Source Audit'!C32
+- `D11` S_DEFAULT: top action / gated pool
+- `B12` S_DEFAULT: Stream partition check
+- `C12` S_DEFAULT: ='POP Source Audit'!C33
+- `D12` S_DEFAULT: in-scope conf = BC + AP
+- `A15` S_DEFAULT: x
+- `B15` S_TITLE_SECTION: §2 - Confirmation coverage (gated corpus)
+- `C15` S_TITLE_SECTION: 
+- `D15` S_TITLE_SECTION: 
+- `E15` S_TITLE_SECTION: 
+- `F15` S_TITLE_SECTION: 
+- `G15` S_TITLE_SECTION: 
+- `H15` S_TITLE_SECTION: 
+- `B17` S_HEADER_LEFT: Metric
+- `C17` S_HEADER_CENTER: Actions
+- `D17` S_HEADER_CENTER: $M
+- `B18` S_BOLD: Gated TAM corpus
+- `C18` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674)
+- `D18` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)
+- `B19` S_LABEL_INDENT_1: less: GFE / excluded
+- `C19` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!I17:I674)
+- `D19` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!I17:I674*'POP Corpus'!K17:K674)
+- `B20` S_BOLD: In-scope (non-GFE)
+- `C20` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674))
+- `D20` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!K17:K674)
+- `B21` S_LABEL_INDENT_1: confirmed
+- `C21` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674)
+- `D21` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*'POP Corpus'!K17:K674)
+- `B22` S_LABEL_INDENT_1: unresolved
+- `C22` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*(1-'POP Corpus'!J17:J674))
+- `D22` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*(1-'POP Corpus'!J17:J674)*'POP Corpus'!K17:K674)
+- `B23` S_DEFAULT: BC stream (confirmed)
+- `C23` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="BC"))
+- `D23` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="BC")*'POP Corpus'!K17:K674)
+- `B24` S_DEFAULT: AP/LLTM (confirmed)
+- `C24` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="AP_LLTM"))
+- `D24` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674="AP_LLTM")*'POP Corpus'!K17:K674)
+- `B25` S_DEFAULT: Redacted / missing-$
+- `C25` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!K17:K674=0))
+- `D25` S_NUM: =SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!K17:K674=0)*'POP Corpus'!K17:K674)
+- `A27` S_DEFAULT: x
+- `B27` S_TITLE_SUBSECTION: §2a - Risk ratios
+- `C27` S_TITLE_SUBSECTION: 
+- `D27` S_TITLE_SUBSECTION: 
+- `E27` S_TITLE_SUBSECTION: 
+- `F27` S_TITLE_SUBSECTION: 
+- `G27` S_TITLE_SUBSECTION: 
+- `H27` S_TITLE_SUBSECTION: 
+- `B29` S_HEADER_LEFT: Ratio
+- `C29` S_HEADER_CENTER: Value
+- `B30` S_DEFAULT: Confirmation coverage
+- `C30` S_PCT: =D21/D20
+- `B31` S_DEFAULT: Unparsed share (gated)
+- `C31` S_PCT: =SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*(1-'POP Corpus'!L17:L674-'POP Corpus'!M17:M674-'POP Corpus'!N17:N674-'POP Corpus'!O17:O674))/D18
+- `B32` S_DEFAULT: Largest-action conc.
+- `C32` S_PCT: ='POP Corpus'!K18/D18
+- `B33` S_DEFAULT: Stream partition check
+- `C33` S_DEFAULT: =IF(ABS(D21-(D23+D24))<0.1,"OK","FAIL")
+- `A35` S_DEFAULT: x
+- `B35` S_TITLE_SUBSECTION: §2b - High-$ action register (top 10 by $, Tier-1 confirmed)
+- `C35` S_TITLE_SUBSECTION: 
+- `D35` S_TITLE_SUBSECTION: 
+- `E35` S_TITLE_SUBSECTION: 
+- `F35` S_TITLE_SUBSECTION: 
+- `G35` S_TITLE_SUBSECTION: 
+- `H35` S_TITLE_SUBSECTION: 
+- `B37` S_HEADER_CENTER: Rank
+- `C37` S_HEADER_LEFT: PIID
+- `D37` S_HEADER_LEFT: Program
+- `E37` S_HEADER_CENTER: $M
+- `F37` S_HEADER_LEFT: Stream
+- `G37` S_HEADER_LEFT: Scope Class
+- `H37` S_HEADER_CENTER: Conf
+- `B38` S_DEFAULT: 1
+- `C38` S_DEFAULT: ='POP Corpus'!C18
+- `D38` S_DEFAULT: ='POP Corpus'!D18
+- `E38` S_LINK_NUM: ='POP Corpus'!K18
+- `F38` S_DEFAULT: ='POP Corpus'!G18
+- `G38` S_DEFAULT: ='POP Corpus'!F18
+- `H38` S_LINK_NUM: ='POP Corpus'!J18
+- `B39` S_DEFAULT: 2
+- `C39` S_DEFAULT: ='POP Corpus'!C23
+- `D39` S_DEFAULT: ='POP Corpus'!D23
+- `E39` S_LINK_NUM: ='POP Corpus'!K23
+- `F39` S_DEFAULT: ='POP Corpus'!G23
+- `G39` S_DEFAULT: ='POP Corpus'!F23
+- `H39` S_LINK_NUM: ='POP Corpus'!J23
+- `B40` S_DEFAULT: 3
+- `C40` S_DEFAULT: ='POP Corpus'!C24
+- `D40` S_DEFAULT: ='POP Corpus'!D24
+- `E40` S_LINK_NUM: ='POP Corpus'!K24
+- `F40` S_DEFAULT: ='POP Corpus'!G24
+- `G40` S_DEFAULT: ='POP Corpus'!F24
+- `H40` S_LINK_NUM: ='POP Corpus'!J24
+- `B41` S_DEFAULT: 4
+- `C41` S_DEFAULT: ='POP Corpus'!C31
+- `D41` S_DEFAULT: ='POP Corpus'!D31
+- `E41` S_LINK_NUM: ='POP Corpus'!K31
+- `F41` S_DEFAULT: ='POP Corpus'!G31
+- `G41` S_DEFAULT: ='POP Corpus'!F31
+- `H41` S_LINK_NUM: ='POP Corpus'!J31
+- `B42` S_DEFAULT: 5
+- `C42` S_DEFAULT: ='POP Corpus'!C37
+- `D42` S_DEFAULT: ='POP Corpus'!D37
+- `E42` S_LINK_NUM: ='POP Corpus'!K37
+- `F42` S_DEFAULT: ='POP Corpus'!G37
+- `G42` S_DEFAULT: ='POP Corpus'!F37
+- `H42` S_LINK_NUM: ='POP Corpus'!J37
+- `B43` S_DEFAULT: 6
+- `C43` S_DEFAULT: ='POP Corpus'!C40
+- `D43` S_DEFAULT: ='POP Corpus'!D40
+- `E43` S_LINK_NUM: ='POP Corpus'!K40
+- `F43` S_DEFAULT: ='POP Corpus'!G40
+- `G43` S_DEFAULT: ='POP Corpus'!F40
+- `H43` S_LINK_NUM: ='POP Corpus'!J40
+- `B44` S_DEFAULT: 7
+- `C44` S_DEFAULT: ='POP Corpus'!C41
+- `D44` S_DEFAULT: ='POP Corpus'!D41
+- `E44` S_LINK_NUM: ='POP Corpus'!K41
+- `F44` S_DEFAULT: ='POP Corpus'!G41
+- `G44` S_DEFAULT: ='POP Corpus'!F41
+- `H44` S_LINK_NUM: ='POP Corpus'!J41
+- `B45` S_DEFAULT: 8
+- `C45` S_DEFAULT: ='POP Corpus'!C42
+- `D45` S_DEFAULT: ='POP Corpus'!D42
+- `E45` S_LINK_NUM: ='POP Corpus'!K42
+- `F45` S_DEFAULT: ='POP Corpus'!G42
+- `G45` S_DEFAULT: ='POP Corpus'!F42
+- `H45` S_LINK_NUM: ='POP Corpus'!J42
+- `B46` S_DEFAULT: 9
+- `C46` S_DEFAULT: ='POP Corpus'!C45
+- `D46` S_DEFAULT: ='POP Corpus'!D45
+- `E46` S_LINK_NUM: ='POP Corpus'!K45
+- `F46` S_DEFAULT: ='POP Corpus'!G45
+- `G46` S_DEFAULT: ='POP Corpus'!F45
+- `H46` S_LINK_NUM: ='POP Corpus'!J45
+- `B47` S_DEFAULT: 10
+- `C47` S_DEFAULT: ='POP Corpus'!C50
+- `D47` S_DEFAULT: ='POP Corpus'!D50
+- `E47` S_LINK_NUM: ='POP Corpus'!K50
+- `F47` S_DEFAULT: ='POP Corpus'!G50
+- `G47` S_DEFAULT: ='POP Corpus'!F50
+- `H47` S_LINK_NUM: ='POP Corpus'!J50

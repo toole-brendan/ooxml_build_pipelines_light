@@ -1,0 +1,446 @@
+================================================================================
+DDG-51 FLIGHT III — UNIFIED SYSTEM MODULE CROSSWALK
+================================================================================
+
+Two parallel procurement streams feed every DDG-51:
+
+  STREAM 1 — GFE (Government Furnished Equipment)
+    Navy buys directly from system OEMs → delivers to shipyard for installation.
+    Source: P-8a budget exhibit (per-ship cost) + USAspending (contract vehicles).
+
+  STREAM 2 — CFE (Contractor Furnished Equipment)
+    Shipyard (HII/BIW) buys from its own supply chain → installs during construction.
+    Source: USAspending subawards under prime construction contracts, coded to SWBS.
+
+All FY26 $ values in thousands ($K). GFE per-ship = P-8a FY26 / 2 ships.
+CFE per-ship = HII FY18-27 subaward total / ~10 hulls (approximate).
+
+Generated: 2026-04-14
+
+
+================================================================================
+STREAM 1: GFE MODULES — Navy-Procured, Per-Ship ($K)
+================================================================================
+
+ORDNANCE (per ship: ~$908K = $908M)
+-------------------------------------------------------------------------------
+Module                           $/Ship    Prime              Contract Vehicle
+-------------------------------------------------------------------------------
+AN/SPY-6(V)1 (AMDR) radar       346,438   Raytheon           N0002422C5500 ($3.27B)
+Aegis Weapon System MK-7        232,858   Lockheed Martin    N0002418C5105 ($390M), N0002411C5106 ($341M)
+VLS MK 41                       109,993   BAE Systems        N0002409C5394 ($78M DA)
+Misc. Ordnance                   89,010   Various            Multiple vehicles
+MK 45 Lightweight Gun             45,376   BAE Systems        (OPN separate procurement)
+MK 37 Tomahawk WCS               25,502   Raytheon           (OPN weapons procurement)
+SPQ-9B Radar                      16,462   Northrop Grumman   N0002419C5603 (in SSDS scope)
+Phalanx CIWS                      14,564   Raytheon           N0002424C5406 ($377M), N0002421C5406 ($400M)
+MK-38 Gun Weapon System           11,516   BAE Systems        (small arms procurement)
+MK 160 Gun Fire Control            5,784   (integrated)       (part of MK 45 vehicle)
+Electro-Optical System             5,562   Various            (EO/IR procurement)
+MK 32 Torpedo Tubes (SVTT)        5,256   (integrated)       (ordnance procurement)
+
+ELECTRONICS (per ship: ~$475K = $475M)
+-------------------------------------------------------------------------------
+Module                           $/Ship    Prime              Contract Vehicle
+-------------------------------------------------------------------------------
+AN/SLQ-32 SEWIP V(7)            123,638   LM (Blk 2) /      N0002420C5503 ($783M)
+                                           NG (Blk 3)         N0002415C5319 ($189M)
+EXCOMM                            97,080   Various            (exterior comms procurement)
+AN/SQQ-89 ASW combat system      88,708   L3/GD/Raytheon     (multi-vendor ASW)
+Misc. Electronics                 47,158   Various            Multiple vehicles
+SPECTRAL                          33,625   (classified)       (SIGINT — limited visibility)
+USQ-82(V) GEDMS                   24,322   (data mgmt)        —
+AN/UPX-29(V) IFF/TACAN           12,257   Raytheon           (ID systems procurement)
+SRQ-4 LAMPS III                   10,162   Raytheon           (helo data link)
+CEC                               10,036   Raytheon           N0002419C5200 ($416M), +2 vehicles
+Navigation System                  6,754   Northrop Grumman   N0002419C4101 ($113M bridge/nav)
+MIDS                               5,831   L3Harris           (multi-platform terminal)
+SLQ-25 Nixie                       4,768   GD/Ultra           (torpedo countermeasure)
+NGSSR                               4,034   (radar)            —
+MK 53 NULKA                        3,820   BAE (Australia)    (expendable decoy)
+TSA Antenna                         3,291   —                  —
+
+HM&E (per ship: ~$77K = $77M)
+-------------------------------------------------------------------------------
+Module                           $/Ship    Prime              Contract Vehicle
+-------------------------------------------------------------------------------
+Misc. HM&E                       26,306   Various            —
+Integrated Bridge Nav System      13,488   Northrop Grumman   N0002419C4101 ($113M)
+STC 3 IVCS                       13,120   (integrated)       —
+Machinery Control System          10,378   Lockheed Martin    N0002409C4201 ($58M)
+Cyber BDC                          7,206   (cyber)            —
+WSN-12 Navigator                   6,518   Northrop Grumman   (ring laser gyro)
+
+                     ----------------------------------------
+                      GFE TOTAL PER SHIP:  ~$1,460M ($K)
+                      = Ordnance $908M + Elec $475M + HM&E $77M
+                     ----------------------------------------
+
+
+================================================================================
+STREAM 2: CFE MODULES — Shipyard-Procured, Per-Ship ($K)
+================================================================================
+
+Based on HII subawards FY18-27 (~10 hulls). Coded to Navy SWBS standard.
+NOTE: These are COMPONENT costs subcontracted out. They exclude HII's own labor,
+materials, and overhead — which make up the majority of the ship construction cost.
+
+SWBS 2xx — PROPULSION PLANT (per ship: ~$39,096K = $39M)
+-------------------------------------------------------------------------------
+SWBS   System                         $/Ship    Top Vendor
+-------------------------------------------------------------------------------
+234    Gas Turbines (LM2500)           19,588    GE Aerospace ($196M total)
+241    Reduction Gears                  8,153    Timken Gears ($82M total)
+245    Clutches & Couplings             3,892    Rolls-Royce ($39M total)
+262    Shafting                         2,493    Circor Naval ($8M), Ellwood Forge
+259    Special Purpose Systems          2,561    Peerless Mfg ($10M total)
+244    Bearings                         2,005    American Metal Bearing ($16M)
+256    Propulsion Aux                     403    Howell Labs ($4M total)
+
+SWBS 3xx — ELECTRIC PLANT (per ship: ~$45,213K = $45M)
+-------------------------------------------------------------------------------
+324    Switchboards/Panels/Distribn    20,839    DRS Naval Power ($83M), L3Harris ($57M)
+310    Ship Service Generators         17,602    Rolls-Royce ($173M total)
+314    Emergency/Standby Power          5,649    Espey Mfg ($26M total)
+302    Main Power Generation              978    Ward Leonard ($6M total)
+351    Lighting Distribution              146    Bogue Systems ($1M total)
+
+SWBS 4xx — COMMAND & SURVEILLANCE (per ship: ~$2,920K = $3M)
+-------------------------------------------------------------------------------
+475    Degaussing/Deperming             1,704    EMS Development ($14M total)
+436    Information Processing             719    Meggitt Safety ($7M total)
+433    Interior Communications            240    Dynalec ($2M total)
+451    Navigation Aids                    195    Northrop Grumman ($2M total)
+431    Data Display                        61    Dynalec ($1M total)
+
+SWBS 5xx — AUXILIARY SYSTEMS (per ship: ~$62,232K = $62M)
+-------------------------------------------------------------------------------
+516    HVAC / Air Conditioning         19,822    York/Johnson Controls ($105M total)
+561    Steering/Rudder                  9,413    Northrop Grumman ($94M total)
+555    Distilling / Water Treatment     5,764    Engineered Coil ($36M total)
+551    Fuel / Lube Oil Service          3,856    RIX Industries ($17M total)
+541    Firemain / Damage Control        3,205    Alfa Laval ($21M total)
+532    Fresh Water / Potable            2,860    Maxim Evaporators ($25M total)
+512    (Ventilation fans)               2,745    Howden North America ($12M total)
+593    Pollution Control                2,576    Facet Oklahoma ($9M total)
+531    Hydraulic Systems                2,217    Parker Hannifin ($22M total)
+505    (Piping/valves)                  2,166    Morpac Industries ($15M total)
+503    Compressed Air                   2,035    Dover Pumps ($12M total)
+571    (Heat exchangers)                1,464    Entwistle Company ($14M total)
+583    Boats/Davits/Handling            1,150    Appleton Marine ($8M total)
+582    Deck Coverings                   1,129    Entwistle Company ($9M total)
+581    (Anchor/mooring)                   957    Lake Shore Systems ($8M total)
+504    (Instrumentation)                  788    Setra Systems ($5M total)
+521    (Sea water systems)                 81    Air & Liquid Systems ($1M total)
+529    (Misc aux)                           4    Megator ($0M total)
+
+SWBS 6xx — OUTFIT & FURNISHINGS (per ship: ~$1,642K = $2M)
+-------------------------------------------------------------------------------
+624    Insulation/Lagging               1,553    ADI Technologies ($16M total)
+633    Misc Furnishings                    89    Evoqua Water ($1M total)
+
+SWBS 7xx — ARMAMENT (per ship: ~$814K = $1M)
+-------------------------------------------------------------------------------
+730    Weapons Handling                   700    Lake Shore Systems ($4M total)
+712    Ammo Stowage                       114    Lake Shore Systems ($1M total)
+
+                     ----------------------------------------
+                      CFE TOTAL PER SHIP:  ~$152M ($K)
+                      = Propulsion $39M + Electric $45M
+                        + C&S $3M + Aux $62M + O&F $2M
+                        + Armament $1M
+
+                      NOTE: This is ~8% of total ship cost.
+                      The other 92% is HII labor, in-house
+                      materials, overhead, and profit.
+                     ----------------------------------------
+
+
+================================================================================
+COMBINED VIEW: FULL DDG-51 FLIGHT III COST STRUCTURE (per ship, $K)
+================================================================================
+
+Component                                   Per Ship ($K)    Source
+-------------------------------------------------------------------------------
+P-5c Basic Construction (shipyard contract)   ~2,279,000     SCN 2122 (split 2 yards)
+  |-- Shipyard labor & in-house materials     ~2,127,000     (residual after CFE subs)
+  +-- CFE subcontracted components               152,000     SWBS-coded HII subawards
+        |-- Propulsion Plant (SWBS 2xx)            39,000     GE, Timken, Rolls-Royce
+        |-- Electric Plant (SWBS 3xx)              45,000     DRS, Rolls-Royce, L3Harris
+        |-- Auxiliary Systems (SWBS 5xx)           62,000     Johnson Controls, NG, Parker
+        |-- Command & Surveillance (SWBS 4xx)       3,000     EMS, Meggitt, Dynalec
+        |-- Outfit & Furnishings (SWBS 6xx)         2,000     ADI Technologies
+        +-- Armament (SWBS 7xx)                     1,000     Lake Shore Systems
+
+P-8a GFE (Navy-procured systems)              ~1,460,000     Multiple OPN/WPN/SCN lines
+  |-- Ordnance                                   908,000
+  |     |-- AN/SPY-6(V)1 radar                   346,000     Raytheon ($3.27B vehicle)
+  |     |-- Aegis Weapon System MK-7             233,000     Lockheed Martin (~$990M)
+  |     |-- VLS MK 41                            110,000     BAE Systems
+  |     |-- MK 45 Gun + MK 160 GFCS              51,000     BAE Systems
+  |     |-- MK 37 Tomahawk WCS                    26,000     Raytheon
+  |     |-- SPQ-9B Radar                          16,000     NG (via SSDS scope)
+  |     |-- Phalanx CIWS                          15,000     Raytheon ($377M+ vehicles)
+  |     |-- MK-38 Gun + EO + Torpedo Tubes        22,000     Various
+  |     +-- Misc. Ordnance                        89,000     Various
+  |-- Electronics                                475,000
+  |     |-- AN/SLQ-32 SEWIP V(7) (EW suite)     124,000     LM ($783M) + NG ($189M)
+  |     |-- EXCOMM (exterior comms)               97,000     Various
+  |     |-- AN/SQQ-89 ASW combat system           89,000     L3/GD/Raytheon
+  |     |-- SPECTRAL (SIGINT)                     34,000     (classified)
+  |     |-- USQ-82(V) GEDMS                       24,000     (data management)
+  |     |-- CEC                                   10,000     Raytheon ($957M)
+  |     |-- IFF/TACAN + LAMPS + Nav + MIDS        35,000     Raytheon, NG, L3Harris
+  |     |-- Nixie + NULKA + NGSSR + TSA           16,000     GD/Ultra, BAE, various
+  |     +-- Misc. Electronics                     47,000     Various
+  +-- HM&E                                       77,000
+        |-- Integrated Bridge Navigation          13,000     Northrop Grumman ($113M)
+        |-- Machinery Control System              10,000     Lockheed Martin ($58M)
+        |-- STC 3 IVCS + Cyber + WSN-12          27,000     Various
+        +-- Misc. HM&E                            26,000     Various
+
+P-5c Other Categories                           ~310,000     SCN 2122 (plan/chg/other)
+  |-- Plan Costs                                  88,000
+  |-- Change Orders                              137,000
+  +-- Other Cost                                  85,000
+                                              ----------
+ESTIMATED TOTAL PER DDG-51 FLIGHT III         ~$4,049,000 ($K) = ~$4.0B/ship
+
+
+================================================================================
+STREAM 3: MODERNIZATION — Per-Module Upgrade Costs (FY26, $K)
+================================================================================
+
+Modernization is GFE — same procurement model as newbuild. The Navy buys the
+hardware directly from the OEM (often on the SAME production vehicle as newbuild,
+e.g., SPY-6(V)4 backfit comes from the same Raytheon N0002422C5500 line as the
+(V)1 for new ships). Installation labor is contracted separately (GDIT, Delphinus,
+etc.) at $8-13M per ship per availability. These are upgrades to IN-SERVICE ships.
+
+OPN BA1 LINE 5 — DDG MOD ($636,256K FY26)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+SPY-6(V)4 Solid State Radar             337,068      Raytheon N0002422C5500 ($3.27B)
+DDG Modernization HM&E (aggregate)      168,026      GDIT/Delphinus per-ship task orders
+                                                       N6449823F3112 ($13M DDG-92)
+                                                       N6449824F3059 ($12M DDG-97)
+                                                       N6449824F3063 ($8M DDG-97 monitoring)
+AWS Upgrade                               51,902      Raytheon Aegis mod kits
+                                                       N0002424F5302 ($42M)
+                                                       N0002421F5314 ($36M MK 99)
+                                                       N0002423F5301 ($24M)
+Aggregated Items                          79,260      Various
+
+OPN BA2 — AN/SLQ-32 ELECTRONIC WARFARE ($244,259K FY26)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+SEWIP Block 3 — Electronic Attack (EA)  165,894      NG N0002415C5319 ($189M)
+                                                       NG N0002422C5520 ($80M design)
+SEWIP Block 2 — Electronic Support (ES)  64,386      LM N0002420C5503 ($783M)
+                                                       LM N0002416C5363 ($572M)
+SEWIP Block 1B3 — HGHS                   13,051      GDMS N0002416C5352 ($57M)
+                                                       GDMS N0002414C5341 ($17M LRIP)
+SEWIP Block 1 — SLQ-32 Improvements         928      (legacy maintenance)
+
+OPN BA2 — IN-SERVICE RADARS & SENSORS ($116,282K FY26)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+SPY-6 Family of Radars (FoR) O&S         82,765      Raytheon N0002425C5501 ($205M DA)
+SPY-1D/DV RM&A Improvements (ALPS)       33,517      (Aegis support scope)
+
+OPN BA4 — AEGIS SUPPORT EQUIPMENT ($187,988K FY26)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+SPY-1D/DV Radar Enhancements (ALPS)      96,370      (radar sustainment)
+Aegis Depot Maintenance Support           19,996      Raytheon/LM
+Aegis Support Equipment Installation      17,086      (installation labor)
+Aegis Ship Change Procurement             14,217      (baseline change kits)
+Aegis Training & Readiness Center          5,032      (training systems)
+SPY Wholeness                              8,020      (spares/parts)
+
+OPN BA5-8 — INITIAL SPARES ($40,822K FY26)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+DDG Mod (Initial Spares)                  23,948      Various
+AN/SLQ-32 (Initial Spares)               16,874      LM/NG/GDMS
+
+WPN — WEAPONS MODERNIZATION (DDG-relevant, $K)
+-------------------------------------------------------------------------------
+Module                                   FY26 ($K)    Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+Standard Missile (SM-2/3/6)              817,420      Raytheon production vehicles
+MK-54 Torpedo Mods                       113,513      GDMS/Ultra/ATI OTAs
+Standard Missiles Mods                    32,127      Raytheon
+CIWS Mods                                  8,122      Raytheon
+Surface Ship Torpedo Defense (SSTD)        4,789      GD/Ultra (SLQ-25 Nixie)
+
+LIFECYCLE ENGINEERING / COMBAT SYSTEM AGENTS
+-------------------------------------------------------------------------------
+Program                                  Obligation   Contract Vehicle / Prime
+-------------------------------------------------------------------------------
+Aegis CSEA (all baselines)               $1,813M     LM N0002413C5116
+SSDS CSEA                                  $381M     LM N0002419C5603
+SSDS PSEA                                  $358M     Raytheon N0002414C5128
+CEC Design Agent                           $416M     Raytheon N0002419C5200
+CEC follow-on                              $161M     Raytheon N0002425C5239
+L3Harris DDG Mod Backfit eng svc            $21M     L3Harris N6449821FBB05
+SEWIP Blk 2-4 engineering support           $32M     SAIC N0016418F3006
+
+                     ----------------------------------------
+                      MODERNIZATION TOTAL (FY26):
+                        OPN DDG Mod:        $636K
+                        OPN SEWIP:          $244K
+                        OPN Radars/Sensors: $116K
+                        OPN Aegis Support:  $188K
+                        OPN Spares:          $41K
+                        WPN (DDG-relevant): $976K
+                                          --------
+                        ~$2,201M FY26 modernization/weapons
+                     ----------------------------------------
+
+
+================================================================================
+STREAM 4: DEPOT MAINTENANCE — Whole-Ship Availabilities (FY26, $K)
+================================================================================
+
+Depot maintenance is procured as whole-ship availabilities under umbrella MSMO
+(Multi-Ship Multi-Option) contracts. Per-module cost breakdown is NOT visible
+in public procurement data — each availability is a single task order.
+
+MSMO UMBRELLA CONTRACTS (DDG-relevant)
+-------------------------------------------------------------------------------
+Vehicle                                  Prime              Obligation
+-------------------------------------------------------------------------------
+DDG Docker Norfolk MSMO                  BAE Norfolk        N0002410C4308 ($1,023M)
+DDG San Diego MSMO                       BAE San Diego      N0002411C4408 ($876M)
+CG San Diego MSMO                        BAE San Diego      N0002411C4400 ($819M)
+LSD Norfolk MSMO                         Metro Machine      N0002409C4416 ($705M)
+LHA/LHD San Diego MSMO                   NASSCO             N0002413C4404 ($654M)
+
+FY26 BUDGET LINES — DEPOT (OMN)
+-------------------------------------------------------------------------------
+Budget Line                              FY26 ($K)    Primes
+-------------------------------------------------------------------------------
+OMN DDG depot                            952,000      BAE / NASSCO / Continental /
+                                                       Vigor / MHI / Metro Machine
+OMN DDG modernization (HM&E alts)     1,282,612      Cross-vehicle alteration install
+
+NOTE: Within a DDG availability (SRA, CMAV, DSRA, DPIA), the work is bundled:
+hull preservation, valve overhauls, pipe repairs, electrical work, tank
+cleaning, painting, HM&E alterations — all in one contract price. The per-
+system breakdown exists only in:
+  - TYCOM repair/mod packages (internal Navy planning docs)
+  - Contractor bid breakdowns (proprietary)
+  - VAMOSC database (Navy cost visibility system — not public)
+
+                     ----------------------------------------
+                      DEPOT TOTAL (FY26):
+                        DDG depot:          $952M
+                        DDG mod (HM&E):   $1,283M
+                                          --------
+                        ~$2,235M FY26 depot maintenance
+                     ----------------------------------------
+
+
+================================================================================
+CONTRACT VEHICLE REFERENCE
+================================================================================
+
+GFE System                  PIID(s)                         Obligation
+-------------------------------------------------------------------------------
+AN/SPY-6(V) Production      N0002422C5500                   $3,266M
+AN/SPY-6(V) FoR DA          N0002425C5501                   $205M
+AN/SLQ-32(V)6 (SEWIP Blk2)  N0002420C5503                   $783M
+SEWIP Block 2 (older)       N0002416C5363                   $572M
+SEWIP Block 3 Pre-design    N0002415C5319                   $189M
+SEWIP Block 3 Design Agent  N0002422C5520                   $80M
+SEWIP Block 1B3             N0002416C5352 + N0002414C5341   $74M
+CEC Design Agent            N0002419C5200                   $416M
+CEC Production              N0002413C5212                   $380M
+CEC Follow-on               N0002425C5239                   $161M
+SSDS CSEA                   N0002419C5603                   $381M
+SSDS PSEA                   N0002414C5128                   $358M
+CIWS FY24 Production        N0002424C5406                   $377M
+CIWS FY21 Production        N0002421C5406                   $400M
+CIWS Blk1 Baseline 2        N0002407C5444                   $781M
+Aegis AWS (Japan J7)        N0002418C5105                   $390M
+Aegis AWS/ACS               N0002411C5106                   $341M
+Aegis MK7                   N0002406C5120                   $259M
+Bridge/Nav System            N0002419C4101                   $113M
+AMDR PCM (Flight III)       N0002414C4200                   $92M
+Machinery Control           N0002409C4201                   $58M
+MK 41 VLS Design Agent      N0002409C5394                   $78M
+
+DDG Construction Primes:
+  HII FY23-27 MYP           N0002423C2307                   $6,947M
+  HII FY18-22 MYP           N0002418C2307                   $6,722M
+  BIW FY23-27 MYP           N0002423C2305                   $5,027M
+  BIW FY18-22 MYP           N0002418C2305                   $5,338M
+  BIW Lead Yard FY18-22     N0002418C2313                   $303M
+  BIW Lead Yard FY24+       N0002424C2313                   $186M
+
+Modernization — Per-Module:
+  Aegis Mod Kits (FY24)     N0002424F5302                   $42M
+  MK 99 Aegis Mod Kits      N0002421F5314                   $36M
+  Aegis Mod Kits (FY23)     N0002423F5301                   $24M
+  Aegis CSEA (all BLs)      N0002413C5116                   $1,813M
+  DDGM BF Core Alt (DDG-92) N6449823F3112 (GDIT)            $13M
+  DDGM BF Core Alt (DDG-97) N6449824F3059 (GDIT)            $12M
+  DDGM BF Monitor (DDG-97)  N6449824F3063 (Delphinus)       $8M
+  DDG Mod Backfit Eng Svc    N6449821FBB05 (L3Harris)        $21M
+  SEWIP Blk 2-4 Eng Support N0016418F3006 (SAIC)            $32M
+  CIWS/SeaRAM/RAM PBL       N0038319F0VP0 (Raytheon)        $185M
+
+Depot Maintenance — MSMO Umbrella Vehicles:
+  DDG Docker Norfolk MSMO   N0002410C4308 (BAE Norfolk)     $1,023M
+  DDG San Diego MSMO        N0002411C4408 (BAE San Diego)   $876M
+  CG San Diego MSMO         N0002411C4400 (BAE San Diego)   $819M
+  LSD Norfolk MSMO          N0002409C4416 (Metro Machine)   $705M
+  LHA/LHD San Diego MSMO    N0002413C4404 (NASSCO)          $654M
+
+
+================================================================================
+NOTES AND CAVEATS
+================================================================================
+
+1. GFE $/ship is from P-8a FY26 budget (2 ships planned). These are budget
+   estimates, not actuals. Actual obligations may differ.
+
+2. CFE $/ship is averaged across ~10 HII hulls (FY18-27). Per-hull costs vary
+   significantly by Flight (IIA vs III) and hull number (learning curve).
+
+3. BIW CFE data is almost entirely missing (0-24 subawards reported vs HII's
+   2,355). The CFE figures represent HII's supply chain only.
+
+4. The CFE total ($152M/ship) covers only SWBS-coded subcontracts. HII also
+   has subawards WITHOUT SWBS codes (outsourced structural work, capex items)
+   totaling ~$50-80M across FY18-27, which are not included here.
+
+5. CIWS, RAM, Standard Missile, and other weapons are multi-platform systems
+   (DDG, CG, LCS, LHA, FFG, allied navies). The contract vehicles above serve
+   ALL platforms, not just DDG. The P-8a per-ship figure is DDG-specific.
+
+6. HELIOS directed energy weapon (~$100M, Lockheed Martin) is not visible in
+   USAspending — likely procured via OTA through ATI consortium.
+
+7. "Misc. Ordnance" ($89M/ship) and "Misc. Electronics" ($47M/ship) are
+   aggregated P-8a categories. Breaking these further requires the classified
+   P-8a detail annexes.
+
+8. Modernization per-module costs come from OPN/WPN budget sublines. Each
+   system upgrade (SPY-6 backfit, SEWIP install, Aegis baseline upgrade) has
+   its own budget line AND contract vehicle, making it fully traceable.
+
+9. Depot maintenance per-module costs are NOT publicly available. MSMO
+   availabilities are single task orders covering all work. Per-system
+   breakdown exists only in TYCOM repair packages, contractor bids, and
+   the Navy's VAMOSC cost visibility database.
+
+10. The DDG Mod Backfit (DDGM BF) task orders ($8-13M per ship) cover
+    physical alteration installation labor — the system hardware is procured
+    separately on the OPN production vehicles above.

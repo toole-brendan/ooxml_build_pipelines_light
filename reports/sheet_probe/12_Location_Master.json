@@ -1,0 +1,365 @@
+{
+  "source": "file",
+  "name": "Location Master",
+  "tab_name": "Location Master",
+  "sheet_index": 12,
+  "tab_color": "FF7B1F3A",
+  "gridlines_shown": "0",
+  "n_cols": 5,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "18"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "18"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "30"
+    }
+  ],
+  "n_rows": 14,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 4
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "6",
+      "n_cells": 4
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "11",
+      "n_cells": 5
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "14",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "17",
+      "n_cells": 5
+    },
+    {
+      "r": "19",
+      "n_cells": 4
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "n_cells": 4
+    }
+  ],
+  "n_cells": 47,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Location Master"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Prime sites"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "State"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_LEFT",
+      "value": "Name"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_LEFT",
+      "value": "Prime-controlled site"
+    },
+    {
+      "ref": "E6",
+      "style": "S_HEADER_LEFT",
+      "value": "Role"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "ME"
+    },
+    {
+      "ref": "C7",
+      "style": "S_DEFAULT",
+      "value": "Maine"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "GD Bath Iron Works (BIW)"
+    },
+    {
+      "ref": "E7",
+      "style": "S_DEFAULT",
+      "value": "final-assembly yard"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "MS"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "Mississippi"
+    },
+    {
+      "ref": "D8",
+      "style": "S_DEFAULT",
+      "value": "HII Ingalls Shipbuilding"
+    },
+    {
+      "ref": "E8",
+      "style": "S_DEFAULT",
+      "value": "final-assembly yard"
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B11",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Location principle"
+    },
+    {
+      "ref": "C11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "Vendor location is context, not a scope test; scope is set per award action."
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "BIW (Maine) + Ingalls (Mississippi) are prime-controlled final-assembly sites; work there is not addressable."
+    },
+    {
+      "ref": "A17",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B17",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Domestic / foreign split (foreign / FMS is excluded scope)"
+    },
+    {
+      "ref": "C17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B19",
+      "style": "S_HEADER_LEFT",
+      "value": "Origin"
+    },
+    {
+      "ref": "C19",
+      "style": "S_HEADER_CENTER",
+      "value": "$M lifetime"
+    },
+    {
+      "ref": "D19",
+      "style": "S_HEADER_CENTER",
+      "value": "% of total"
+    },
+    {
+      "ref": "E19",
+      "style": "S_HEADER_LEFT"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "Domestic (US)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT",
+      "value": "8612.0"
+    },
+    {
+      "ref": "D20",
+      "style": "S_PCT",
+      "formula": "C20/C22"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "Foreign"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "2589.9"
+    },
+    {
+      "ref": "D21",
+      "style": "S_PCT",
+      "formula": "C21/C22"
+    },
+    {
+      "ref": "B22",
+      "style": "S_TOTAL",
+      "value": "Total"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C20:C21)"
+    },
+    {
+      "ref": "D22",
+      "style": "S_PCT_TOTAL",
+      "formula": "SUM(D20:D21)"
+    },
+    {
+      "ref": "E22",
+      "style": "S_BORDER_TOP"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Location Master"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Prime sites"
+    },
+    {
+      "ref": "B11",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Location principle"
+    },
+    {
+      "ref": "B17",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Domestic / foreign split (foreign / FMS is excluded scope)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C20",
+      "style": "S_NUM_INPUT",
+      "value": "8612.0"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM_INPUT",
+      "value": "2589.9"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 4,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

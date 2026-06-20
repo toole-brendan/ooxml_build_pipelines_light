@@ -1,0 +1,6568 @@
+{
+  "slide_name": "s18_appendix_definitions_terminology",
+  "generated_at": "2026-06-06T15:30:47.526514+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 4,
+      "graphicFrame.table": 1
+    },
+    "total_shapes": 5,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "DefinitionsGlossary",
+      "y_emu": 1371600,
+      "y_in": 1.5
+    },
+    "bottom_most_body": {
+      "sp_id": 10,
+      "name": "DefinitionsGlossary",
+      "bottom_emu": 5478761,
+      "bottom_in": 5.992
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 5930000,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Appendix",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / Definitions",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Appendix / Definitions"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Definitions and Terminology | Plain-language terms keep the model boundary and shipbuilding vocabulary consistent.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Definitions and Terminology | Plain-language terms keep the model boundary and shipbuilding vocabulary consistent."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 4,
+      "kind": "graphicFrame.table",
+      "sp_id": 10,
+      "name": "DefinitionsGlossary",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1371600,
+        "cx": 11282362,
+        "cy": 4107161,
+        "x_abs": 453079,
+        "y_abs": 1371600,
+        "x_in": 0.495,
+        "y_in": 1.5,
+        "cx_in": 12.339,
+        "cy_in": 4.492,
+        "right_emu": 11735441,
+        "bottom_emu": 5478761,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": {
+        "grid_cols_emu": [
+          2950000,
+          3600000,
+          2300000,
+          2432362
+        ],
+        "row_heights_emu": [
+          220979,
+          220979,
+          220979,
+          220979,
+          350518,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979,
+          220979
+        ],
+        "cells": [
+          {
+            "row": 0,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "TERM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "TERM"
+            }
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "PLAIN-ENGLISH MEANING",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "PLAIN-ENGLISH MEANING"
+            }
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "USED FOR",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "USED FOR"
+            }
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "GUARDRAIL",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "GUARDRAIL"
+            }
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "TAM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "TAM"
+            }
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Supplier opportunity inside selected new-construction boundary",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Supplier opportunity inside selected new-construction boundary"
+            }
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Headline, shown annualized",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Headline, shown annualized"
+            }
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not total ship cost",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not total ship cost"
+            }
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "SAM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "SAM"
+            }
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Scenario cut of TAM by work-type bucket",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Scenario cut of TAM by work-type bucket"
+            }
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Serviceable sizing",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Serviceable sizing"
+            }
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Scenarios overlap; do not add",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Scenarios overlap; do not add"
+            }
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Basic Construction",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Basic Construction"
+            }
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "P-5c construction budget base",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "P-5c construction budget base"
+            }
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Budget base for supplier share",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Budget base for supplier share"
+            }
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not total ship cost",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not total ship cost"
+            }
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "AP/LLTM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "AP/LLTM"
+            }
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Advance procurement and long-lead-time material",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Advance procurement and long-lead-time material"
+            }
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Additive for DDG after filtering; reference-only for submarine",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Additive for DDG after filtering; reference-only for submarine"
+            }
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Additive only where the boundary allows",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Additive only where the boundary allows"
+            }
+          },
+          {
+            "row": 5,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Supplier share",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Supplier share"
+            }
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Share of a budget base estimated as supplier work",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Share of a budget base estimated as supplier work"
+            }
+          },
+          {
+            "row": 5,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Converts budget base to TAM",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Converts budget base to TAM"
+            }
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Applied value, not broader POP evidence",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Applied value, not broader POP evidence"
+            }
+          },
+          {
+            "row": 6,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "FFATA/FSRS",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "FFATA/FSRS"
+            }
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "First-tier subaward reporting",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "First-tier subaward reporting"
+            }
+          },
+          {
+            "row": 6,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Supplier names and work-type evidence",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Supplier names and work-type evidence"
+            }
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Names and evidence, not full supplier flow",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Names and evidence, not full supplier flow"
+            }
+          },
+          {
+            "row": 7,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "POP",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "POP"
+            }
+          },
+          {
+            "row": 7,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Place-of-performance evidence",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Place-of-performance evidence"
+            }
+          },
+          {
+            "row": 7,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Where work is performed",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Where work is performed"
+            }
+          },
+          {
+            "row": 7,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Evidence and sensitivity, not applied share",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Evidence and sensitivity, not applied share"
+            }
+          },
+          {
+            "row": 8,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "GFE/GFP",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "GFE/GFP"
+            }
+          },
+          {
+            "row": 8,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Government-furnished equipment and property",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Government-furnished equipment and property"
+            }
+          },
+          {
+            "row": 8,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded scope",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded scope"
+            }
+          },
+          {
+            "row": 8,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Outside modeled component opportunity",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Outside modeled component opportunity"
+            }
+          },
+          {
+            "row": 9,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "SIB",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "SIB"
+            }
+          },
+          {
+            "row": 9,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Submarine industrial-base capacity funding",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Submarine industrial-base capacity funding"
+            }
+          },
+          {
+            "row": 9,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Context",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Context"
+            }
+          },
+          {
+            "row": 9,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not current component delivery",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not current component delivery"
+            }
+          },
+          {
+            "row": 10,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Electrical (work-type bucket)",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Electrical (work-type bucket)"
+            }
+          },
+          {
+            "row": 10,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Ship power, distribution, and generation",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Ship power, distribution, and generation"
+            }
+          },
+          {
+            "row": 10,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Largest physical bucket",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Largest physical bucket"
+            }
+          },
+          {
+            "row": 10,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not combat or mission electronics",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not combat or mission electronics"
+            }
+          },
+          {
+            "row": 11,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Mission systems",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Mission systems"
+            }
+          },
+          {
+            "row": 11,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Combat and electronics systems",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Combat and electronics systems"
+            }
+          },
+          {
+            "row": 11,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded before bucket assignment",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded before bucket assignment"
+            }
+          },
+          {
+            "row": 11,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Different market, not GFE",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Different market, not GFE"
+            }
+          },
+          {
+            "row": 12,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Modular (scenario)",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Modular (scenario)"
+            }
+          },
+          {
+            "row": 12,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Entity-flagged module-assembly work",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Entity-flagged module-assembly work"
+            }
+          },
+          {
+            "row": 12,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Distributed-build SAM cut",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Distributed-build SAM cut"
+            }
+          },
+          {
+            "row": 12,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not a structural-and-coatings bucket union",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not a structural-and-coatings bucket union"
+            }
+          },
+          {
+            "row": 13,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Structural unit; outfitted unit; DDG unit",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Structural unit; outfitted unit; DDG unit"
+            }
+          },
+          {
+            "row": 13,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "HII language for partner-built DDG sections",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "HII language for partner-built DDG sections"
+            }
+          },
+          {
+            "row": 13,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "DDG physical sections",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "DDG physical sections"
+            }
+          },
+          {
+            "row": 13,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Default DDG term, not module",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Default DDG term, not module"
+            }
+          },
+          {
+            "row": 14,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Module",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Module"
+            }
+          },
+          {
+            "row": 14,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Submarine structural-section language",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Submarine structural-section language"
+            }
+          },
+          {
+            "row": 14,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Submarine physical sections",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Submarine physical sections"
+            }
+          },
+          {
+            "row": 14,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Rare in DDG; not the DDG default",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Rare in DDG; not the DDG default"
+            }
+          },
+          {
+            "row": 15,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Block",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Block"
+            }
+          },
+          {
+            "row": 15,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Virginia procurement tranche",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Virginia procurement tranche"
+            }
+          },
+          {
+            "row": 15,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Procurement grouping",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Procurement grouping"
+            }
+          },
+          {
+            "row": 15,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not a physical section",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not a physical section"
+            }
+          },
+          {
+            "row": 16,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Grand block",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Grand block"
+            }
+          },
+          {
+            "row": 16,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Eastern and USNI language",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Eastern and USNI language"
+            }
+          },
+          {
+            "row": 16,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Outside HII default vocabulary",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Outside HII default vocabulary"
+            }
+          },
+          {
+            "row": 16,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Not HII default",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Not HII default"
+            }
+          },
+          {
+            "row": 17,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Mission module",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Mission module"
+            }
+          },
+          {
+            "row": 17,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "LCS swappable-payload language",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "LCS swappable-payload language"
+            }
+          },
+          {
+            "row": 17,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "LCS payloads",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "LCS payloads"
+            }
+          },
+          {
+            "row": 17,
+            "col": 3,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Avoid for DDG and submarine structural work",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Avoid for DDG and submarine structural work"
+            }
+          }
+        ]
+      },
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": "http://schemas.openxmlformats.org/drawingml/2006/table",
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 5,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5930000,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 5930000,
+        "x_in": 0.495,
+        "y_in": 6.485,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6470000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: (1) DDG and submarine appendix definitions and model-boundary scope; (2) FFATA/FSRS subaward records and the operating-entity supplier registry; (3) HII and Navy shipbuilding terminology references",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: (1) DDG and submarine appendix definitions and model-boundary scope; (2) FFATA/FSRS subaward records and the operating-entity supplier registry; (3) HII and Navy shipbuilding terminology references"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+# sheet_probe: Source Index
+
+- source: `file`
+- tab name: `Source Index`
+- tab color: `FF1F3A5F`
+- gridlines shown: `0`
+- columns: 4 · rows: 27 · cells: 82 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — Source Index
+- `B4` S_TITLE_SECTION — §1 - Data sources (extracted)
+- `B16` S_TITLE_SECTION — §2 - Budget exhibits (SCN P-5c / P-10 / TOA)
+- `B24` S_TITLE_SECTION — §3 - Methodology + reference docs
+- `B33` S_TITLE_SECTION — §4 - Refresh control
+
+## Native tables
+- `tbl_sub_source_index_data` ref `B6:D13` [Source, Retrieved, Location] style WorkbookCore_NoFormatTable
+- `tbl_sub_source_index_budget` ref `B18:D21` [Source, Retrieved, Location] style WorkbookCore_NoFormatTable
+- `tbl_sub_source_index_docs` ref `B26:D30` [Source, Retrieved, Location] style WorkbookCore_NoFormatTable
+
+## Placeholders (1)
+- `D9` — extracted/ (USAspending + SAM.gov)
+
+## Cells
+- `B2` S_TITLE_SHEET: Source Index
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Data sources (extracted)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Source
+- `C6` S_HEADER_LEFT: Retrieved
+- `D6` S_HEADER_LEFT: Location
+- `B7` S_DEFAULT: dod_announcement_pop.csv
+- `C7` S_DEFAULT: 2026-05
+- `D7` S_DEFAULT: extracted/ (DoD/DoW announcements)
+- `B8` S_DEFAULT: dod_action_pop_by_worktype.csv
+- `C8` S_DEFAULT: 2026-05
+- `D8` S_DEFAULT: extracted/
+- `B9` S_DEFAULT: entity_naics_lookup.csv
+- `C9` S_DEFAULT: 2026-05
+- `D9` S_DEFAULT: extracted/ (USAspending + SAM.gov)
+- `B10` S_DEFAULT: nc_records_long.csv
+- `C10` S_DEFAULT: 2026-05
+- `D10` S_DEFAULT: extracted/ (FFATA subawards)
+- `B11` S_DEFAULT: subaward_top_recipients.csv
+- `C11` S_DEFAULT: 2026-05
+- `D11` S_DEFAULT: extracted/
+- `B12` S_DEFAULT: nc_geo_by_state.csv / nc_geo_by_country.csv
+- `C12` S_DEFAULT: 2026-05
+- `D12` S_DEFAULT: extracted/
+- `B13` S_DEFAULT: nc_scope_summary.json
+- `C13` S_DEFAULT: 2026-05
+- `D13` S_DEFAULT: extracted/
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SECTION: §2 - Budget exhibits (SCN P-5c / P-10 / TOA)
+- `C16` S_TITLE_SECTION: 
+- `D16` S_TITLE_SECTION: 
+- `B18` S_HEADER_LEFT: Source
+- `C18` S_HEADER_LEFT: Retrieved
+- `D18` S_HEADER_LEFT: Location
+- `B19` S_DEFAULT: SCN P-5c (Basic Construction)
+- `C19` S_DEFAULT: FY22-FY27 PB
+- `D19` S_DEFAULT: budget_books/SCN_Book_FY{22..27}
+- `B20` S_DEFAULT: SCN P-10 (Advance Procurement)
+- `C20` S_DEFAULT: FY22-FY27 PB
+- `D20` S_DEFAULT: budget_books/SCN_Book_FY{22..27}
+- `B21` S_DEFAULT: SCN per-FY actual TOA
+- `C21` S_DEFAULT: FY22-FY27
+- `D21` S_DEFAULT: extracted/scn_per_fy_actual_toa.csv
+- `A24` S_DEFAULT: x
+- `B24` S_TITLE_SECTION: §3 - Methodology + reference docs
+- `C24` S_TITLE_SECTION: 
+- `D24` S_TITLE_SECTION: 
+- `B26` S_HEADER_LEFT: Source
+- `C26` S_HEADER_LEFT: Retrieved
+- `D26` S_HEADER_LEFT: Location
+- `B27` S_DEFAULT: METHODOLOGY (POP / subaward / budget)
+- `C27` S_DEFAULT: 2026-05
+- `D27` S_DEFAULT: docs/distributed_shipbuilding_implementation_plan.md
+- `B28` S_DEFAULT: Implementation plan
+- `C28` S_DEFAULT: 2026-05-29
+- `D28` S_DEFAULT: docs/distributed_shipbuilding_implementation_plan.md
+- `B29` S_DEFAULT: BPMI reconciliation
+- `C29` S_DEFAULT: 2026-05-29
+- `D29` S_DEFAULT: docs/distributed_shipbuilding_sub_phase3_BPMI_reconciliation.md
+- `B30` S_DEFAULT: deck_specs.md
+- `C30` S_DEFAULT: 2026-05
+- `D30` S_DEFAULT: docs/distributed_shipbuilding_deck_specs.md
+- `A33` S_DEFAULT: x
+- `B33` S_TITLE_SECTION: §4 - Refresh control
+- `C33` S_TITLE_SECTION: 
+- `D33` S_TITLE_SECTION: 
+- `B35` S_HEADER_LEFT: Area
+- `C35` S_HEADER_LEFT: Last refreshed
+- `D35` S_HEADER_LEFT: Source path
+- `B36` S_DEFAULT: POP corpus
+- `C36` S_DEFAULT: 2026-05
+- `D36` S_DEFAULT: extracted/dod_announcement_pop.csv
+- `B37` S_DEFAULT: Subaward vendors
+- `C37` S_DEFAULT: 2026-05
+- `D37` S_DEFAULT: extracted/entity_naics_lookup.csv
+- `B38` S_DEFAULT: Budget exhibits
+- `C38` S_DEFAULT: FY22-27 PB
+- `D38` S_DEFAULT: budget_books/

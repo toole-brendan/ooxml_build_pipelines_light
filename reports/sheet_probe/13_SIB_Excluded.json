@@ -1,0 +1,364 @@
+{
+  "source": "file",
+  "name": "SIB Excluded",
+  "tab_name": "SIB Excluded",
+  "sheet_index": 13,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 6,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "16"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "40"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "14"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "16"
+    }
+  ],
+  "n_rows": 12,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 5
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "n_cells": 2
+    },
+    {
+      "r": "11",
+      "n_cells": 6
+    },
+    {
+      "r": "13",
+      "n_cells": 5
+    },
+    {
+      "r": "14",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "17",
+      "n_cells": 5
+    }
+  ],
+  "n_cells": 47,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "SIB Excluded"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - SIB exclusion"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Total SIB exclusion $M"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "'SIB Excluded'!D17"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Number of SIB entities"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "3"
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B11",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - SIB exclusion (capacity grants, not construction outsourcing)"
+    },
+    {
+      "ref": "C11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F11",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B13",
+      "style": "S_HEADER_LEFT",
+      "value": "UEI"
+    },
+    {
+      "ref": "C13",
+      "style": "S_HEADER_LEFT",
+      "value": "Display name"
+    },
+    {
+      "ref": "D13",
+      "style": "S_HEADER_CENTER",
+      "value": "Total $M"
+    },
+    {
+      "ref": "E13",
+      "style": "S_HEADER_CENTER",
+      "value": "Action count"
+    },
+    {
+      "ref": "F13",
+      "style": "S_HEADER_CENTER",
+      "value": "% of SIB total"
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "F8PEZKXES8B1"
+    },
+    {
+      "ref": "C14",
+      "style": "S_DEFAULT",
+      "value": "BlueForge Alliance"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "4173.27"
+    },
+    {
+      "ref": "E14",
+      "style": "S_DEFAULT",
+      "value": "8"
+    },
+    {
+      "ref": "F14",
+      "style": "S_PCT",
+      "formula": "D14/D17"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "QLJZVM6XKR71"
+    },
+    {
+      "ref": "C15",
+      "style": "S_DEFAULT",
+      "value": "Training Modernization Group, Inc."
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "77.03"
+    },
+    {
+      "ref": "E15",
+      "style": "S_DEFAULT",
+      "value": "7"
+    },
+    {
+      "ref": "F15",
+      "style": "S_PCT",
+      "formula": "D15/D17"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "TCM3R4JPRKY4"
+    },
+    {
+      "ref": "C16",
+      "style": "S_DEFAULT",
+      "value": "Institute for Advanced Learning and Research"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "1.502999109999763"
+    },
+    {
+      "ref": "E16",
+      "style": "S_DEFAULT",
+      "value": "1"
+    },
+    {
+      "ref": "F16",
+      "style": "S_PCT",
+      "formula": "D16/D17"
+    },
+    {
+      "ref": "B17",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "C17",
+      "style": "S_TOTAL",
+      "value": "Total (SIB exclusion)"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D14:D16)"
+    },
+    {
+      "ref": "E17",
+      "style": "S_BORDER_TOP",
+      "formula": "SUM(E14:E16)"
+    },
+    {
+      "ref": "F17",
+      "style": "S_PCT_TOTAL",
+      "formula": "SUM(F14:F16)"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "SIB Excluded"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - SIB exclusion"
+    },
+    {
+      "ref": "B11",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - SIB exclusion (capacity grants, not construction outsourcing)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "4173.27"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "77.03"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "1.502999109999763"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 7,
+  "formula_refs_by_sheet": {
+    "SIB Excluded": [
+      "C7"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

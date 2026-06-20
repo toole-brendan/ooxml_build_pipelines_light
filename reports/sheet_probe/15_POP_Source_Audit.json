@@ -1,0 +1,1290 @@
+{
+  "source": "file",
+  "name": "POP Source Audit",
+  "tab_name": "POP Source Audit",
+  "sheet_index": 15,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 8,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "34"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "14"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "30"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "14"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "14"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    }
+  ],
+  "n_rows": 38,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 7
+    },
+    {
+      "r": "4",
+      "n_cells": 7
+    },
+    {
+      "r": "6",
+      "n_cells": 3
+    },
+    {
+      "r": "7",
+      "n_cells": 3
+    },
+    {
+      "r": "8",
+      "n_cells": 3
+    },
+    {
+      "r": "9",
+      "n_cells": 3
+    },
+    {
+      "r": "10",
+      "n_cells": 3
+    },
+    {
+      "r": "11",
+      "n_cells": 3
+    },
+    {
+      "r": "12",
+      "n_cells": 3
+    },
+    {
+      "r": "15",
+      "n_cells": 8
+    },
+    {
+      "r": "17",
+      "n_cells": 3
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "27",
+      "n_cells": 8
+    },
+    {
+      "r": "29",
+      "n_cells": 2
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "31",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "32",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "35",
+      "n_cells": 8
+    },
+    {
+      "r": "37",
+      "n_cells": 7
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "40",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "43",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "44",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "45",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "46",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "47",
+      "outlineLevel": "1",
+      "n_cells": 7
+    }
+  ],
+  "n_cells": 173,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "POP Source Audit"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Confirmation & risk"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "D6",
+      "style": "S_HEADER_LEFT",
+      "value": "Status / note"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Gated TAM corpus $M"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "'POP Source Audit'!D18"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "the gated POP pool"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "In-scope non-GFE $M"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "formula": "'POP Source Audit'!D20"
+    },
+    {
+      "ref": "D8",
+      "style": "S_DEFAULT",
+      "value": "coefficient corpus"
+    },
+    {
+      "ref": "B9",
+      "style": "S_BOLD",
+      "value": "Confirmation coverage"
+    },
+    {
+      "ref": "C9",
+      "style": "S_PCT",
+      "formula": "'POP Source Audit'!C30"
+    },
+    {
+      "ref": "D9",
+      "style": "S_DEFAULT",
+      "value": "% of in-scope $; target ~90%+"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Unparsed share (gated)"
+    },
+    {
+      "ref": "C10",
+      "style": "S_PCT",
+      "formula": "'POP Source Audit'!C31"
+    },
+    {
+      "ref": "D10",
+      "style": "S_DEFAULT",
+      "value": ">1-2% warrants review"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "Largest-action concentration"
+    },
+    {
+      "ref": "C11",
+      "style": "S_PCT",
+      "formula": "'POP Source Audit'!C32"
+    },
+    {
+      "ref": "D11",
+      "style": "S_DEFAULT",
+      "value": "top action / gated pool"
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "Stream partition check"
+    },
+    {
+      "ref": "C12",
+      "style": "S_DEFAULT",
+      "formula": "'POP Source Audit'!C33"
+    },
+    {
+      "ref": "D12",
+      "style": "S_DEFAULT",
+      "value": "in-scope conf = BC + AP"
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B15",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Confirmation coverage (gated corpus)"
+    },
+    {
+      "ref": "C15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H15",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B17",
+      "style": "S_HEADER_LEFT",
+      "value": "Metric"
+    },
+    {
+      "ref": "C17",
+      "style": "S_HEADER_CENTER",
+      "value": "Actions"
+    },
+    {
+      "ref": "D17",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B18",
+      "style": "S_BOLD",
+      "value": "Gated TAM corpus"
+    },
+    {
+      "ref": "C18",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674)"
+    },
+    {
+      "ref": "D18",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B19",
+      "style": "S_LABEL_INDENT_1",
+      "value": "less: GFE / excluded"
+    },
+    {
+      "ref": "C19",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!I17:I674)"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!I17:I674*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B20",
+      "style": "S_BOLD",
+      "value": "In-scope (non-GFE)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674))"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B21",
+      "style": "S_LABEL_INDENT_1",
+      "value": "confirmed"
+    },
+    {
+      "ref": "C21",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674)"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B22",
+      "style": "S_LABEL_INDENT_1",
+      "value": "unresolved"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*(1-'POP Corpus'!J17:J674))"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*(1-'POP Corpus'!J17:J674)*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "BC stream (confirmed)"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674=\"BC\"))"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674=\"BC\")*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "AP/LLTM (confirmed)"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674=\"AP_LLTM\"))"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*(1-'POP Corpus'!I17:I674)*'POP Corpus'!J17:J674*('POP Corpus'!G17:G674=\"AP_LLTM\")*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "B25",
+      "style": "S_DEFAULT",
+      "value": "Redacted / missing-$"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!K17:K674=0))"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!K17:K674=0)*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "A27",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B27",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72a - Risk ratios"
+    },
+    {
+      "ref": "C27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H27",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B29",
+      "style": "S_HEADER_LEFT",
+      "value": "Ratio"
+    },
+    {
+      "ref": "C29",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "Confirmation coverage"
+    },
+    {
+      "ref": "C30",
+      "style": "S_PCT",
+      "formula": "D21/D20"
+    },
+    {
+      "ref": "B31",
+      "style": "S_DEFAULT",
+      "value": "Unparsed share (gated)"
+    },
+    {
+      "ref": "C31",
+      "style": "S_PCT",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*(1-'POP Corpus'!L17:L674-'POP Corpus'!M17:M674-'POP Corpus'!N17:N674-'POP Corpus'!O17:O674))/D18"
+    },
+    {
+      "ref": "B32",
+      "style": "S_DEFAULT",
+      "value": "Largest-action conc."
+    },
+    {
+      "ref": "C32",
+      "style": "S_PCT",
+      "formula": "'POP Corpus'!K18/D18"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "Stream partition check"
+    },
+    {
+      "ref": "C33",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS(D21-(D23+D24))<0.1,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "A35",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B35",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72b - High-$ action register (top 10 by $, Tier-1 confirmed)"
+    },
+    {
+      "ref": "C35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B37",
+      "style": "S_HEADER_CENTER",
+      "value": "Rank"
+    },
+    {
+      "ref": "C37",
+      "style": "S_HEADER_LEFT",
+      "value": "PIID"
+    },
+    {
+      "ref": "D37",
+      "style": "S_HEADER_LEFT",
+      "value": "Program"
+    },
+    {
+      "ref": "E37",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "F37",
+      "style": "S_HEADER_LEFT",
+      "value": "Stream"
+    },
+    {
+      "ref": "G37",
+      "style": "S_HEADER_LEFT",
+      "value": "Scope Class"
+    },
+    {
+      "ref": "H37",
+      "style": "S_HEADER_CENTER",
+      "value": "Conf"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "1"
+    },
+    {
+      "ref": "C38",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C18"
+    },
+    {
+      "ref": "D38",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D18"
+    },
+    {
+      "ref": "E38",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K18"
+    },
+    {
+      "ref": "F38",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G18"
+    },
+    {
+      "ref": "G38",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F18"
+    },
+    {
+      "ref": "H38",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J18"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "2"
+    },
+    {
+      "ref": "C39",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C23"
+    },
+    {
+      "ref": "D39",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D23"
+    },
+    {
+      "ref": "E39",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K23"
+    },
+    {
+      "ref": "F39",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G23"
+    },
+    {
+      "ref": "G39",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F23"
+    },
+    {
+      "ref": "H39",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J23"
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "3"
+    },
+    {
+      "ref": "C40",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C24"
+    },
+    {
+      "ref": "D40",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D24"
+    },
+    {
+      "ref": "E40",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K24"
+    },
+    {
+      "ref": "F40",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G24"
+    },
+    {
+      "ref": "G40",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F24"
+    },
+    {
+      "ref": "H40",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J24"
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "4"
+    },
+    {
+      "ref": "C41",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C31"
+    },
+    {
+      "ref": "D41",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D31"
+    },
+    {
+      "ref": "E41",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K31"
+    },
+    {
+      "ref": "F41",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G31"
+    },
+    {
+      "ref": "G41",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F31"
+    },
+    {
+      "ref": "H41",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J31"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "5"
+    },
+    {
+      "ref": "C42",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C37"
+    },
+    {
+      "ref": "D42",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D37"
+    },
+    {
+      "ref": "E42",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K37"
+    },
+    {
+      "ref": "F42",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G37"
+    },
+    {
+      "ref": "G42",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F37"
+    },
+    {
+      "ref": "H42",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J37"
+    },
+    {
+      "ref": "B43",
+      "style": "S_DEFAULT",
+      "value": "6"
+    },
+    {
+      "ref": "C43",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C40"
+    },
+    {
+      "ref": "D43",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D40"
+    },
+    {
+      "ref": "E43",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K40"
+    },
+    {
+      "ref": "F43",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G40"
+    },
+    {
+      "ref": "G43",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F40"
+    },
+    {
+      "ref": "H43",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J40"
+    },
+    {
+      "ref": "B44",
+      "style": "S_DEFAULT",
+      "value": "7"
+    },
+    {
+      "ref": "C44",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C41"
+    },
+    {
+      "ref": "D44",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D41"
+    },
+    {
+      "ref": "E44",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K41"
+    },
+    {
+      "ref": "F44",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G41"
+    },
+    {
+      "ref": "G44",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F41"
+    },
+    {
+      "ref": "H44",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J41"
+    },
+    {
+      "ref": "B45",
+      "style": "S_DEFAULT",
+      "value": "8"
+    },
+    {
+      "ref": "C45",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C42"
+    },
+    {
+      "ref": "D45",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D42"
+    },
+    {
+      "ref": "E45",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K42"
+    },
+    {
+      "ref": "F45",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G42"
+    },
+    {
+      "ref": "G45",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F42"
+    },
+    {
+      "ref": "H45",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J42"
+    },
+    {
+      "ref": "B46",
+      "style": "S_DEFAULT",
+      "value": "9"
+    },
+    {
+      "ref": "C46",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C45"
+    },
+    {
+      "ref": "D46",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D45"
+    },
+    {
+      "ref": "E46",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K45"
+    },
+    {
+      "ref": "F46",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G45"
+    },
+    {
+      "ref": "G46",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F45"
+    },
+    {
+      "ref": "H46",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J45"
+    },
+    {
+      "ref": "B47",
+      "style": "S_DEFAULT",
+      "value": "10"
+    },
+    {
+      "ref": "C47",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!C50"
+    },
+    {
+      "ref": "D47",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!D50"
+    },
+    {
+      "ref": "E47",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K50"
+    },
+    {
+      "ref": "F47",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!G50"
+    },
+    {
+      "ref": "G47",
+      "style": "S_DEFAULT",
+      "formula": "'POP Corpus'!F50"
+    },
+    {
+      "ref": "H47",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J50"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "POP Source Audit"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Confirmation & risk"
+    },
+    {
+      "ref": "B15",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Confirmation coverage (gated corpus)"
+    },
+    {
+      "ref": "B27",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72a - Risk ratios"
+    },
+    {
+      "ref": "B35",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72b - High-$ action register (top 10 by $, Tier-1 confirmed)"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [
+    {
+      "ref": "E38",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K18"
+    },
+    {
+      "ref": "H38",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J18"
+    },
+    {
+      "ref": "E39",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K23"
+    },
+    {
+      "ref": "H39",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J23"
+    },
+    {
+      "ref": "E40",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K24"
+    },
+    {
+      "ref": "H40",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J24"
+    },
+    {
+      "ref": "E41",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K31"
+    },
+    {
+      "ref": "H41",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J31"
+    },
+    {
+      "ref": "E42",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K37"
+    },
+    {
+      "ref": "H42",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J37"
+    },
+    {
+      "ref": "E43",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K40"
+    },
+    {
+      "ref": "H43",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J40"
+    },
+    {
+      "ref": "E44",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K41"
+    },
+    {
+      "ref": "H44",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J41"
+    },
+    {
+      "ref": "E45",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K42"
+    },
+    {
+      "ref": "H45",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J42"
+    },
+    {
+      "ref": "E46",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K45"
+    },
+    {
+      "ref": "H46",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J45"
+    },
+    {
+      "ref": "E47",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!K50"
+    },
+    {
+      "ref": "H47",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Corpus'!J50"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 86,
+  "formula_refs_by_sheet": {
+    "POP Corpus": [
+      "C18",
+      "D18",
+      "C19",
+      "D19",
+      "C20",
+      "D20",
+      "C21",
+      "D21",
+      "C22",
+      "D22",
+      "C23",
+      "D23",
+      "C24",
+      "D24",
+      "C25",
+      "D25",
+      "C31",
+      "C32",
+      "C38",
+      "D38",
+      "E38",
+      "F38",
+      "G38",
+      "H38",
+      "C39",
+      "D39",
+      "E39",
+      "F39",
+      "G39",
+      "H39",
+      "C40",
+      "D40",
+      "E40",
+      "F40",
+      "G40",
+      "H40",
+      "C41",
+      "D41",
+      "E41",
+      "F41",
+      "G41",
+      "H41",
+      "C42",
+      "D42",
+      "E42",
+      "F42",
+      "G42",
+      "H42",
+      "C43",
+      "D43",
+      "E43",
+      "F43",
+      "G43",
+      "H43",
+      "C44",
+      "D44",
+      "E44",
+      "F44",
+      "G44",
+      "H44",
+      "C45",
+      "D45",
+      "E45",
+      "F45",
+      "G45",
+      "H45",
+      "C46",
+      "D46",
+      "E46",
+      "F46",
+      "G46",
+      "H46",
+      "C47",
+      "D47",
+      "E47",
+      "F47",
+      "G47",
+      "H47"
+    ],
+    "POP Source Audit": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

@@ -1,0 +1,770 @@
+{
+  "source": "file",
+  "name": "TAM Bridge",
+  "tab_name": "TAM Bridge",
+  "sheet_index": 7,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 9,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "5.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "42.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "15.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "32.0"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "15.0"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "32.0"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "16.0"
+    },
+    {
+      "min": "9",
+      "max": "9",
+      "width": "48"
+    }
+  ],
+  "n_rows": 16,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 8
+    },
+    {
+      "r": "4",
+      "n_cells": 9
+    },
+    {
+      "r": "6",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 5
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "12",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "13",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "14",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "17",
+      "n_cells": 9
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 8
+    },
+    {
+      "r": "22",
+      "n_cells": 9
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 115,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "TAM Bridge"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "I2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Top-down vs bottom-up bridge"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_BOLD",
+      "value": "#"
+    },
+    {
+      "ref": "C6",
+      "style": "S_BOLD",
+      "value": "Bridge Component"
+    },
+    {
+      "ref": "D6",
+      "style": "S_BOLD",
+      "value": "Top-Down ($M)"
+    },
+    {
+      "ref": "E6",
+      "style": "S_BOLD",
+      "value": "Top-Down Source"
+    },
+    {
+      "ref": "F6",
+      "style": "S_BOLD",
+      "value": "Bottom-Up ($M)"
+    },
+    {
+      "ref": "G6",
+      "style": "S_BOLD",
+      "value": "Bottom-Up Source"
+    },
+    {
+      "ref": "H6",
+      "style": "S_BOLD",
+      "value": "Gap ($M, TD-BU)"
+    },
+    {
+      "ref": "I6",
+      "style": "S_BOLD",
+      "value": "Gap Explanation"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "1"
+    },
+    {
+      "ref": "C7",
+      "style": "S_DEFAULT",
+      "value": "Navy private-yard ship maintenance (1B4B non-NSY)"
+    },
+    {
+      "ref": "D7",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_PRIVATE_FY25/1000"
+    },
+    {
+      "ref": "E7",
+      "style": "S_DEFAULT",
+      "value": "OP-5 Table IV 11 private avail cats"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SWRMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MARMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SERMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NW RMC / Puget Sound\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"Pearl Harbor RMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SRF-JRMC Yokosuka\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"FDRMC Naples\")/1000000"
+    },
+    {
+      "ref": "G7",
+      "style": "S_DEFAULT",
+      "value": "FPDS 7 canonical RMC / FDNF buyers"
+    },
+    {
+      "ref": "H7",
+      "style": "S_NUM_TOTAL",
+      "formula": "D7-F7"
+    },
+    {
+      "ref": "I7",
+      "style": "S_DEFAULT",
+      "value": "Primary reconciliation test (plan \u00a76.5). Gap should be within +/-10%. Drivers: FY25 Current vs FPDS actual timing; FDNF scope boundary; trade PSCs not at RMC buyers."
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "2"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "Navy Public NSY (NNSY/PNSY/PSNSY/PHNSY)"
+    },
+    {
+      "ref": "D8",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_PUBLIC_NSY_FY25/1000"
+    },
+    {
+      "ref": "E8",
+      "style": "S_DEFAULT",
+      "value": "OP-5 Table IV 4 public NSY rows"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "G8",
+      "style": "S_DEFAULT",
+      "value": "FPDS sees $0 (federal civilian workforce)"
+    },
+    {
+      "ref": "H8",
+      "style": "S_NUM_TOTAL",
+      "formula": "D8-F8"
+    },
+    {
+      "ref": "I8",
+      "style": "S_DEFAULT",
+      "value": "STRUCTURAL GAP. FPDS captures contract awards only; public NSY labor is intramural federal workforce, invisible by construction. NOT addressable by BuildCo."
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "3"
+    },
+    {
+      "ref": "C9",
+      "style": "S_DEFAULT",
+      "value": "MSC M&R (FY25 1B1B transfer-out; FY26 -> 1B4B)"
+    },
+    {
+      "ref": "D9",
+      "style": "S_LINK_NUM",
+      "formula": "MSC_MR_FY25_1B1B_TRANSFER/1000"
+    },
+    {
+      "ref": "E9",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 4467"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MSC HQ\")/1000000"
+    },
+    {
+      "ref": "G9",
+      "style": "S_DEFAULT",
+      "value": "FPDS Canonical Office = MSC HQ"
+    },
+    {
+      "ref": "H9",
+      "style": "S_NUM_TOTAL",
+      "formula": "D9-F9"
+    },
+    {
+      "ref": "I9",
+      "style": "S_DEFAULT",
+      "value": "FY25 MSC M&R executes out of 1B1B; transfers to 1B4B in FY26. Should reconcile within +/-15%. Note: MSC category split not source-explicit for FY25."
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "4"
+    },
+    {
+      "ref": "C10",
+      "style": "S_DEFAULT",
+      "value": "FDNF private MSRA (Yokosuka / Rota / Bahrain / Sigonella)"
+    },
+    {
+      "ref": "E10",
+      "style": "S_DEFAULT",
+      "value": "Already inside 1B4B private (Row 1)"
+    },
+    {
+      "ref": "G10",
+      "style": "S_DEFAULT",
+      "value": "Already inside FPDS RMC bucket (Row 1)"
+    },
+    {
+      "ref": "I10",
+      "style": "S_DEFAULT",
+      "value": "MEMO ROW - not double-counted. FDNF MSRA is captured in the OP-5 private subtotal and in the FPDS SRF-JRMC / FDRMC canonical buyers within Row 1. Split-out here for narrative clarity only."
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "5"
+    },
+    {
+      "ref": "C11",
+      "style": "S_DEFAULT",
+      "value": "SCN CVN RCOH (LI 2086) + embedded complex OH"
+    },
+    {
+      "ref": "D11",
+      "style": "S_LINK_NUM",
+      "formula": "SCN_CVN_RCOH_LI2086_FY25/1000"
+    },
+    {
+      "ref": "E11",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book LI 2086 FY25 TOA"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM",
+      "formula": "SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\")/1000000"
+    },
+    {
+      "ref": "G11",
+      "style": "S_DEFAULT",
+      "value": "PSC1905Classified MRO-bucket sum"
+    },
+    {
+      "ref": "H11",
+      "style": "S_NUM_TOTAL",
+      "formula": "D11-F11"
+    },
+    {
+      "ref": "I11",
+      "style": "S_DEFAULT",
+      "value": "Multi-year incremental funding vs single-FY FPDS obligation - mismatch expected. PSC1905 MRO-bucket includes more than just CVN RCOH (nuclear overhauls, SSN inactivations)."
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "6"
+    },
+    {
+      "ref": "C12",
+      "style": "S_DEFAULT",
+      "value": "OPN LI 1000 ship maintenance (private contracted)"
+    },
+    {
+      "ref": "D12",
+      "style": "S_LINK_NUM",
+      "formula": "OPN_LI1000_FY25/1000"
+    },
+    {
+      "ref": "E12",
+      "style": "S_DEFAULT",
+      "value": "OPN_BA1_Book line 21287 (P-5 row); P-40 line 21193"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "G12",
+      "style": "S_DEFAULT",
+      "value": "Captured within FPDS 65 PSCs; not separable from OMN-funded"
+    },
+    {
+      "ref": "H12",
+      "style": "S_NUM_TOTAL",
+      "formula": "D12-F12"
+    },
+    {
+      "ref": "I12",
+      "style": "S_DEFAULT",
+      "value": "SOURCED. Distinct OPN appropriation (1810N) established by PL 116-93 (Consolidated Appropriations Act, 2020) for private contracted CONUS surface + submarine maintenance at CPF / FFC. Same avail vocabulary as OMN 1B4B (OH, SRA, PIA, P-MA, RA/TA, CIA, DPIA, DSRA, SCO -- defined OPN_BA1_Book lines 21217-21268). FY25 enacted $2,392.190M -- replaces prior $500M plug (4.8x underweight). No double-count vs OMN 1B4B: 1810N OPN is parallel funding stream to 1804N OMN."
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "7"
+    },
+    {
+      "ref": "C13",
+      "style": "S_DEFAULT",
+      "value": "WPN combat-systems sustainment"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "E13",
+      "style": "S_DEFAULT",
+      "value": "(plan estimate ~$500M \u2014 no clean WPN ship-MRO line item)"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "G13",
+      "style": "S_DEFAULT",
+      "value": "Captured in J010/J012/J014/N010 etc.; not isolable"
+    },
+    {
+      "ref": "H13",
+      "style": "S_NUM_TOTAL",
+      "formula": "D13-F13"
+    },
+    {
+      "ref": "I13",
+      "style": "S_DEFAULT",
+      "value": "PLAN ESTIMATE - genuinely not source-pinnable. WPN_Book P-40 exhibits structure WPN as missile/torpedo procurement (BA01 Ballistic Missiles $1.80B, BA02 Other Missiles $3.40B, BA03 Torpedoes $0.74B, BA04 Other Weapons $0.17B, BA06 Spares $0.24B FY25). Mods lines (Trident II Mods $1.79B, Tomahawk Mods $0.30B, etc.) are weapons-system-level sustainment, not ship depot work. Shipboard installation flows under separate (typically OMN) contracts and is not isolable from WPN P-40s. The $500M plug is a judgment estimate of WPN $ that flows to FPDS combat-systems-related MRO PSCs."
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "8"
+    },
+    {
+      "ref": "C14",
+      "style": "S_DEFAULT",
+      "value": "USCG cutter MRO (LOW CONFIDENCE)"
+    },
+    {
+      "ref": "D14",
+      "style": "S_LINK_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "E14",
+      "style": "S_DEFAULT",
+      "value": "USCG ISVS PPA floor only"
+    },
+    {
+      "ref": "F14",
+      "style": "S_LINK_NUM",
+      "formula": "CG_TAM_SVC"
+    },
+    {
+      "ref": "G14",
+      "style": "S_DEFAULT",
+      "value": "Services sheet USCG TAM named range"
+    },
+    {
+      "ref": "H14",
+      "style": "S_NUM_TOTAL",
+      "formula": "D14-F14"
+    },
+    {
+      "ref": "I14",
+      "style": "S_DEFAULT",
+      "value": "CONFIDENCE = LOW on top-down. USCG has no OP-5 Table IV equivalent. ISVS $120M is PC&I floor; actual USCG cutter MRO believed $300-500M but not source-pinned. Bottom-up FPDS is the better anchor here (flip vs Navy pattern)."
+    },
+    {
+      "ref": "A17",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B17",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Grand totals"
+    },
+    {
+      "ref": "C17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I17",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B19",
+      "style": "S_BOLD",
+      "value": "T"
+    },
+    {
+      "ref": "C19",
+      "style": "S_BOLD",
+      "value": "TOTAL TOP-DOWN (Narrative B sum)"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_TOTAL",
+      "formula": "D7+D8+D9+D11+D12+D13+D14"
+    },
+    {
+      "ref": "E19",
+      "style": "S_BOLD",
+      "value": "Sum of sourced + estimate rows"
+    },
+    {
+      "ref": "F19",
+      "style": "S_NUM_TOTAL",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC"
+    },
+    {
+      "ref": "G19",
+      "style": "S_BOLD",
+      "value": "Services sheet NAVY+CG TAM"
+    },
+    {
+      "ref": "H19",
+      "style": "S_NUM_TOTAL",
+      "formula": "D19-F19"
+    },
+    {
+      "ref": "I19",
+      "style": "S_DEFAULT",
+      "value": "Top-down minus bottom-up = total gap. Dominant component: Public NSY $7.5B (Row 2) structural."
+    },
+    {
+      "ref": "A22",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B22",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Private-addressable drop-through"
+    },
+    {
+      "ref": "C22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "I22",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "C24",
+      "style": "S_BOLD",
+      "value": "Top-down minus Public NSY (primary non-addressable)"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_TOTAL",
+      "formula": "D19-OP5_PUBLIC_NSY_FY25/1000"
+    },
+    {
+      "ref": "I24",
+      "style": "S_DEFAULT",
+      "value": "Starting point for top-down private-addressable derivation. Further subtract captive SUPSHIP complex OH + FMS on Private Addressable sheet."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "TAM Bridge"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Top-down vs bottom-up bridge"
+    },
+    {
+      "ref": "B17",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Grand totals"
+    },
+    {
+      "ref": "B22",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Private-addressable drop-through"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    }
+  ],
+  "green_links": [
+    {
+      "ref": "D7",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_PRIVATE_FY25/1000"
+    },
+    {
+      "ref": "D8",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_PUBLIC_NSY_FY25/1000"
+    },
+    {
+      "ref": "D9",
+      "style": "S_LINK_NUM",
+      "formula": "MSC_MR_FY25_1B1B_TRANSFER/1000"
+    },
+    {
+      "ref": "D11",
+      "style": "S_LINK_NUM",
+      "formula": "SCN_CVN_RCOH_LI2086_FY25/1000"
+    },
+    {
+      "ref": "D12",
+      "style": "S_LINK_NUM",
+      "formula": "OPN_LI1000_FY25/1000"
+    },
+    {
+      "ref": "D14",
+      "style": "S_LINK_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "F14",
+      "style": "S_LINK_NUM",
+      "formula": "CG_TAM_SVC"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 21,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

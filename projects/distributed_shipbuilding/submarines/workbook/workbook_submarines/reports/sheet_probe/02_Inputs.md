@@ -1,0 +1,135 @@
+# sheet_probe: Inputs
+
+- source: `file`
+- tab name: `Inputs`
+- tab color: `FFB8860B`
+- gridlines shown: `0`
+- columns: 8 · rows: 18 · cells: 92 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — Inputs
+- `B4` S_TITLE_SECTION — Run settings
+- `B12` S_TITLE_SECTION — AP/LLTM additive base ($M) - CONFIRMED 0 (Phase-3 reconciliation complete; editable for a hypothetical)
+- `B18` S_TITLE_SUBSECTION — Reference: real P-10 gross Advance Procurement ($M) - OVERLAPS BC, do not headline
+
+## Hardcoded inputs (26)
+- `C7` S_NUM_INPUT = 2022
+- `C8` S_NUM_INPUT = 2027
+- `C15` S_NUM_INPUT = 0
+- `D15` S_NUM_INPUT = 0
+- `E15` S_NUM_INPUT = 0
+- `F15` S_NUM_INPUT = 0
+- `G15` S_NUM_INPUT = 0
+- `H15` S_NUM_INPUT = 0
+- `C16` S_NUM_INPUT = 0
+- `D16` S_NUM_INPUT = 0
+- `E16` S_NUM_INPUT = 0
+- `F16` S_NUM_INPUT = 0
+- `G16` S_NUM_INPUT = 0
+- `H16` S_NUM_INPUT = 0
+- `C21` S_NUM_INPUT = 2105.407
+- `D21` S_NUM_INPUT = 2025.651
+- `E21` S_NUM_INPUT = 3358.782
+- `F21` S_NUM_INPUT = 3720.303
+- `G21` S_NUM_INPUT = 3126.816
+- `H21` S_NUM_INPUT = 4143.618
+- `C22` S_NUM_INPUT = 1773.98
+- `D22` S_NUM_INPUT = 2778.553
+- `E22` S_NUM_INPUT = 5345.734
+- `F22` S_NUM_INPUT = 6215.939
+- `G22` S_NUM_INPUT = 5350.766
+- `H22` S_NUM_INPUT = 4763.342
+
+## Cells
+- `B2` S_TITLE_SHEET: Inputs
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: Run settings
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `B5` S_HEADER_LEFT: Setting
+- `C5` S_HEADER_LEFT: Value
+- `D5` S_HEADER_LEFT: Note
+- `B6` S_DEFAULT: Program
+- `C6` S_DEFAULT: Submarine
+- `D6` S_DEFAULT: Virginia (LI 2013) + Columbia (LI 1045)
+- `B7` S_DEFAULT: FY range start
+- `C7` S_NUM_INPUT: 2022
+- `D7` S_DEFAULT: first substantive FY
+- `B8` S_DEFAULT: FY range end
+- `C8` S_NUM_INPUT: 2027
+- `D8` S_DEFAULT: last substantive FY
+- `B9` S_DEFAULT: Units
+- `C9` S_DEFAULT: Nominal $M
+- `D9` S_DEFAULT: nominal/real toggle (real = Phase 4)
+- `B10` S_DEFAULT: Scenario
+- `C10` S_DEFAULT: Base
+- `D10` S_DEFAULT: SAM scenario selector (Target_Scenarios)
+- `A12` S_DEFAULT: x
+- `B12` S_TITLE_SECTION: AP/LLTM additive base ($M) - CONFIRMED 0 (Phase-3 reconciliation complete; editable for a hypothetical)
+- `C12` S_TITLE_SECTION: 
+- `D12` S_TITLE_SECTION: 
+- `E12` S_TITLE_SECTION: 
+- `F12` S_TITLE_SECTION: 
+- `G12` S_TITLE_SECTION: 
+- `H12` S_TITLE_SECTION: 
+- `B13` S_DEFAULT: P-10 is extracted but NOT additive to P-5c BC: supplier LLTM is already inside BC (adding P-10 would double-count ~$10-20B). Confirmed 0; see the LLTM AP reconciliation bridge.
+- `B14` S_HEADER_LEFT: Class
+- `C14` S_HEADER_LEFT: 2022
+- `D14` S_HEADER_LEFT: 2023
+- `E14` S_HEADER_LEFT: 2024
+- `F14` S_HEADER_LEFT: 2025
+- `G14` S_HEADER_LEFT: 2026
+- `H14` S_HEADER_LEFT: 2027
+- `B15` S_BOLD: Virginia (LI 2013)
+- `C15` S_NUM_INPUT: 0
+- `D15` S_NUM_INPUT: 0
+- `E15` S_NUM_INPUT: 0
+- `F15` S_NUM_INPUT: 0
+- `G15` S_NUM_INPUT: 0
+- `H15` S_NUM_INPUT: 0
+- `B16` S_BOLD: Columbia (LI 1045)
+- `C16` S_NUM_INPUT: 0
+- `D16` S_NUM_INPUT: 0
+- `E16` S_NUM_INPUT: 0
+- `F16` S_NUM_INPUT: 0
+- `G16` S_NUM_INPUT: 0
+- `H16` S_NUM_INPUT: 0
+- `A18` S_DEFAULT: x
+- `B18` S_TITLE_SUBSECTION: Reference: real P-10 gross Advance Procurement ($M) - OVERLAPS BC, do not headline
+- `C18` S_TITLE_SUBSECTION: 
+- `D18` S_TITLE_SUBSECTION: 
+- `E18` S_TITLE_SUBSECTION: 
+- `F18` S_TITLE_SUBSECTION: 
+- `G18` S_TITLE_SUBSECTION: 
+- `H18` S_TITLE_SUBSECTION: 
+- `B20` S_HEADER_LEFT: Class
+- `C20` S_HEADER_LEFT: 2022
+- `D20` S_HEADER_LEFT: 2023
+- `E20` S_HEADER_LEFT: 2024
+- `F20` S_HEADER_LEFT: 2025
+- `G20` S_HEADER_LEFT: 2026
+- `H20` S_HEADER_LEFT: 2027
+- `B21` S_BOLD: Virginia (LI 2013)
+- `C21` S_NUM_INPUT: 2105.407
+- `D21` S_NUM_INPUT: 2025.651
+- `E21` S_NUM_INPUT: 3358.782
+- `F21` S_NUM_INPUT: 3720.303
+- `G21` S_NUM_INPUT: 3126.816
+- `H21` S_NUM_INPUT: 4143.618
+- `B22` S_BOLD: Columbia (LI 1045)
+- `C22` S_NUM_INPUT: 1773.98
+- `D22` S_NUM_INPUT: 2778.553
+- `E22` S_NUM_INPUT: 5345.734
+- `F22` S_NUM_INPUT: 6215.939
+- `G22` S_NUM_INPUT: 5350.766
+- `H22` S_NUM_INPUT: 4763.342

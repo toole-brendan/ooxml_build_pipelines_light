@@ -1,0 +1,1763 @@
+# sheet_probe: Vendor_Buckets
+
+- source: `file`
+- tab name: `Vendor_Buckets`
+- tab color: `FF7B1F3A`
+- gridlines shown: `0`
+- columns: 10 · rows: 223 · cells: 1666 · formulas: 64
+
+## Banners
+- `B2` S_TITLE_SHEET — Vendor_Buckets
+- `B4` S_TITLE_SECTION — At a glance - supplier-addressable subaward base
+- `B9` S_TITLE_SECTION — Entity_Master - subaward vendor classification (role + bucket drive the observed SAM bucket shares)
+- `B165` S_TITLE_SECTION — Location_Master - subaward geography (HINT only; the award-action scope controls)
+- `B171` S_TITLE_SUBSECTION — Top 15 states by subaward $ ($M lifetime, with prime-controlled flag)
+- `B189` S_TITLE_SUBSECTION — Country distribution (foreign = supplier-addressable, not prime)
+- `B200` S_TITLE_SECTION — Worktype_Evidence - top vendors per bucket (links to Entity_Master)
+- `B201` S_TITLE_SUBSECTION — Structural fab / pre-outfit  -  top 3 vendors by subaward $
+- `B207` S_TITLE_SUBSECTION — Machining  -  top 3 vendors by subaward $
+- `B213` S_TITLE_SUBSECTION — Castings & forgings  -  top 3 vendors by subaward $
+- `B219` S_TITLE_SUBSECTION — Piping / valves / pumps  -  top 3 vendors by subaward $
+- `B225` S_TITLE_SUBSECTION — Electrical / power  -  top 3 vendors by subaward $
+- `B231` S_TITLE_SUBSECTION — HVAC / ventilation  -  top 3 vendors by subaward $
+- `B237` S_TITLE_SUBSECTION — Coatings / insulation  -  top 3 vendors by subaward $
+
+## Native tables
+- `tbl_sub_entity_master` ref `B12:J162` [Vendor, UEI, Country, NAICS-4, NAICS desc, $M, Role, Bucket, Basis] style TableStyleLight1
+- `tbl_sub_location_states` ref `B172:F187` [State, Name, $M, % of US, Prime-controlled site] style TableStyleLight1
+
+## Formula dependencies (referenced sheet → cells)
+- **Vendor_Buckets** (64): C6, C203, D203, E203, C204, D204, E204, C205, D205, E205, C209, D209 …
+
+## Hardcoded inputs (194)
+- `G13` S_NUM_INPUT = 1426.6223
+- `G14` S_NUM_INPUT = 490.6476
+- `G15` S_NUM_INPUT = 197.9923
+- `G16` S_NUM_INPUT = 197.5328
+- `G17` S_NUM_INPUT = 188.5239
+- `G18` S_NUM_INPUT = 162.9164
+- `G19` S_NUM_INPUT = 141.9053
+- `G20` S_NUM_INPUT = 110.835
+- `G21` S_NUM_INPUT = 89.1203
+- `G22` S_NUM_INPUT = 87.5554
+- `G23` S_NUM_INPUT = 83.9819
+- `G24` S_NUM_INPUT = 82.6028
+- `G25` S_NUM_INPUT = 74.7044
+- `G26` S_NUM_INPUT = 74.0757
+- `G27` S_NUM_INPUT = 71.4569
+- `G28` S_NUM_INPUT = 68.8453
+- `G29` S_NUM_INPUT = 64.9453
+- `G30` S_NUM_INPUT = 58.7196
+- `G31` S_NUM_INPUT = 57.2668
+- `G32` S_NUM_INPUT = 52.9554
+- `G33` S_NUM_INPUT = 52.277
+- `G34` S_NUM_INPUT = 51.7972
+- `G35` S_NUM_INPUT = 51.2006
+- `G36` S_NUM_INPUT = 48.9201
+- `G37` S_NUM_INPUT = 48.1286
+- `G38` S_NUM_INPUT = 44.2596
+- `G39` S_NUM_INPUT = 38.8756
+- `G40` S_NUM_INPUT = 38.8644
+- `G41` S_NUM_INPUT = 37.7465
+- `G42` S_NUM_INPUT = 37.0961
+- `G43` S_NUM_INPUT = 36.5339
+- `G44` S_NUM_INPUT = 36.2654
+- `G45` S_NUM_INPUT = 33.9556
+- `G46` S_NUM_INPUT = 33.8862
+- `G47` S_NUM_INPUT = 32.8948
+- `G48` S_NUM_INPUT = 32.8017
+- `G49` S_NUM_INPUT = 31.6148
+- `G50` S_NUM_INPUT = 31.1098
+- `G51` S_NUM_INPUT = 30.2209
+- `G52` S_NUM_INPUT = 28.9666
+
+## Cross-sheet links (21)
+- `D203` S_LINK_NUM = 'Vendor_Buckets'!G18
+- `D204` S_LINK_NUM = 'Vendor_Buckets'!G19
+- `D205` S_LINK_NUM = 'Vendor_Buckets'!G21
+- `D209` S_LINK_NUM = 'Vendor_Buckets'!G35
+- `D210` S_LINK_NUM = 'Vendor_Buckets'!G46
+- `D211` S_LINK_NUM = 'Vendor_Buckets'!G62
+- `D215` S_LINK_NUM = 'Vendor_Buckets'!G16
+- `D216` S_LINK_NUM = 'Vendor_Buckets'!G89
+- `D217` S_LINK_NUM = 'Vendor_Buckets'!G90
+- `D221` S_LINK_NUM = 'Vendor_Buckets'!G15
+- `D222` S_LINK_NUM = 'Vendor_Buckets'!G20
+- `D223` S_LINK_NUM = 'Vendor_Buckets'!G25
+- `D227` S_LINK_NUM = 'Vendor_Buckets'!G13
+- `D228` S_LINK_NUM = 'Vendor_Buckets'!G14
+- `D229` S_LINK_NUM = 'Vendor_Buckets'!G38
+- `D233` S_LINK_NUM = 'Vendor_Buckets'!G30
+- `D234` S_LINK_NUM = 'Vendor_Buckets'!G49
+- `D235` S_LINK_NUM = 'Vendor_Buckets'!G87
+- `D239` S_LINK_NUM = 'Vendor_Buckets'!G27
+- `D240` S_LINK_NUM = 'Vendor_Buckets'!G31
+- `D241` S_LINK_NUM = 'Vendor_Buckets'!G53
+
+## Cells
+- `B2` S_TITLE_SHEET: Vendor_Buckets
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `J2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: At a glance - supplier-addressable subaward base
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `J4` S_TITLE_SECTION: 
+- `B5` S_HEADER_LEFT: Measure
+- `C5` S_HEADER_LEFT: $M
+- `D5` S_HEADER_LEFT: Note
+- `B6` S_BOLD: Supplier-addressable subaward total $M
+- `C6` S_NUM: =SUMPRODUCT(('Vendor_Buckets'!H13:H162="supplier")*'Vendor_Buckets'!G13:G162)
+- `D6` S_DEFAULT: observed addressable base (vendor detail + bucket evidence below)
+- `A9` S_DEFAULT: x
+- `B9` S_TITLE_SECTION: Entity_Master - subaward vendor classification (role + bucket drive the observed SAM bucket shares)
+- `C9` S_TITLE_SECTION: 
+- `D9` S_TITLE_SECTION: 
+- `E9` S_TITLE_SECTION: 
+- `F9` S_TITLE_SECTION: 
+- `G9` S_TITLE_SECTION: 
+- `H9` S_TITLE_SECTION: 
+- `I9` S_TITLE_SECTION: 
+- `J9` S_TITLE_SECTION: 
+- `B12` S_HEADER_LEFT: Vendor
+- `C12` S_HEADER_LEFT: UEI
+- `D12` S_HEADER_LEFT: Country
+- `E12` S_HEADER_LEFT: NAICS-4
+- `F12` S_HEADER_LEFT: NAICS desc
+- `G12` S_HEADER_LEFT: $M
+- `H12` S_HEADER_LEFT: Role
+- `I12` S_HEADER_LEFT: Bucket
+- `J12` S_HEADER_LEFT: Basis
+- `B13` S_DEFAULT: NORTHROP GRUMMAN CORPORATION
+- `C13` S_DEFAULT: NKVZLJL93QT6
+- `D13` S_DEFAULT: USA
+- `E13` S_DEFAULT: 3364
+- `F13` S_DEFAULT: Other Aircraft Parts and Auxiliary Equipment Manufacturing
+- `G13` S_NUM_INPUT: 1426.6223
+- `H13` S_DEFAULT: supplier
+- `I13` S_DEFAULT: electrical
+- `J13` S_DEFAULT: naics4
+- `B14` S_DEFAULT: LEONARDO SPA
+- `C14` S_DEFAULT: W8PTMRME1496
+- `D14` S_DEFAULT: ITA
+- `E14` S_DEFAULT: 3364
+- `F14` S_DEFAULT: Aircraft Manufacturing
+- `G14` S_NUM_INPUT: 490.6476
+- `H14` S_DEFAULT: supplier
+- `I14` S_DEFAULT: electrical
+- `J14` S_DEFAULT: naics4
+- `B15` S_DEFAULT: CURTISS-WRIGHT ELECTRO-MECHANICAL CORPORATION
+- `C15` S_DEFAULT: WYDAKCJ5K219
+- `D15` S_DEFAULT: USA
+- `E15` S_DEFAULT: 3339
+- `F15` S_DEFAULT: Measuring, Dispensing, and Other Pumping Equipment Manufacturing
+- `G15` S_NUM_INPUT: 197.9923
+- `H15` S_DEFAULT: supplier
+- `I15` S_DEFAULT: piping
+- `J15` S_DEFAULT: naics4
+- `B16` S_DEFAULT: SCOT FORGE COMPANY
+- `C16` S_DEFAULT: N1PJDANWUJ61
+- `D16` S_DEFAULT: USA
+- `E16` S_DEFAULT: 3321
+- `F16` S_DEFAULT: Iron and Steel Forging
+- `G16` S_NUM_INPUT: 197.5328
+- `H16` S_DEFAULT: supplier
+- `I16` S_DEFAULT: castings
+- `J16` S_DEFAULT: naics4
+- `B17` S_DEFAULT: ESCO TECHNOLOGIES INC.
+- `C17` S_DEFAULT: SFBKRA9THBA3
+- `D17` S_DEFAULT: USA
+- `E17` S_DEFAULT: 5511
+- `F17` S_DEFAULT: Corporate, Subsidiary, and Regional Managing Offices
+- `G17` S_NUM_INPUT: 188.5239
+- `H17` S_DEFAULT: supplier
+- `I17` S_DEFAULT: unbucketed
+- `J17` S_DEFAULT: holding-co (parent unknown)
+- `B18` S_DEFAULT: DC FABRICATORS INC
+- `C18` S_DEFAULT: E8LNMDLEKM35
+- `D18` S_DEFAULT: USA
+- `E18` S_DEFAULT: 3323
+- `F18` S_DEFAULT: Fabricated Structural Metal Manufacturing
+- `G18` S_NUM_INPUT: 162.9164
+- `H18` S_DEFAULT: supplier
+- `I18` S_DEFAULT: structural
+- `J18` S_DEFAULT: naics4
+- `B19` S_DEFAULT: RHOADS METAL FABRICATIONS, INC.
+- `C19` S_DEFAULT: KENVPMBVBT39
+- `D19` S_DEFAULT: -
+- `E19` S_DEFAULT: -
+- `F19` S_DEFAULT: -
+- `G19` S_NUM_INPUT: 141.9053
+- `H19` S_DEFAULT: supplier
+- `I19` S_DEFAULT: structural
+- `J19` S_DEFAULT: vendor-override
+- `B20` S_DEFAULT: CURTISS-WRIGHT CORPORATION
+- `C20` S_DEFAULT: PF8PJNVEPTJ1
+- `D20` S_DEFAULT: USA
+- `E20` S_DEFAULT: 3329
+- `F20` S_DEFAULT: Industrial Valve Manufacturing
+- `G20` S_NUM_INPUT: 110.835
+- `H20` S_DEFAULT: supplier
+- `I20` S_DEFAULT: piping
+- `J20` S_DEFAULT: naics4
+- `B21` S_DEFAULT: THE GRAHAM CORPORATION
+- `C21` S_DEFAULT: F2LEAK3EK9R3
+- `D21` S_DEFAULT: USA
+- `E21` S_DEFAULT: 3366
+- `F21` S_DEFAULT: Ship Building and Repairing
+- `G21` S_NUM_INPUT: 89.1203
+- `H21` S_DEFAULT: supplier
+- `I21` S_DEFAULT: structural
+- `J21` S_DEFAULT: naics4
+- `B22` S_DEFAULT: AUSTAL USA, LLC
+- `C22` S_DEFAULT: UCWYBGRA11H1
+- `D22` S_DEFAULT: -
+- `E22` S_DEFAULT: -
+- `F22` S_DEFAULT: -
+- `G22` S_NUM_INPUT: 87.5554
+- `H22` S_DEFAULT: supplier
+- `I22` S_DEFAULT: structural
+- `J22` S_DEFAULT: vendor-override
+- `B23` S_DEFAULT: ROSYTH ROYAL DOCKYARD LIMITED
+- `C23` S_DEFAULT: LSMBJZFLN8L9
+- `D23` S_DEFAULT: GBR
+- `E23` S_DEFAULT: 3366
+- `F23` S_DEFAULT: Ship Building and Repairing
+- `G23` S_NUM_INPUT: 83.9819
+- `H23` S_DEFAULT: supplier
+- `I23` S_DEFAULT: structural
+- `J23` S_DEFAULT: naics4
+- `B24` S_DEFAULT: W INTERNATIONAL, LLC
+- `C24` S_DEFAULT: XQW8RJNNAXX8
+- `D24` S_DEFAULT: USA
+- `E24` S_DEFAULT: 3369
+- `F24` S_DEFAULT: Military Armored Vehicle, Tank, and Tank Component Manufacturing
+- `G24` S_NUM_INPUT: 82.6028
+- `H24` S_DEFAULT: supplier
+- `I24` S_DEFAULT: structural
+- `J24` S_DEFAULT: naics4
+- `B25` S_DEFAULT: CURTISS-WRIGHT FLOW CONTROL CORPORATION
+- `C25` S_DEFAULT: J9V9SJL4CW97
+- `D25` S_DEFAULT: -
+- `E25` S_DEFAULT: -
+- `F25` S_DEFAULT: -
+- `G25` S_NUM_INPUT: 74.7044
+- `H25` S_DEFAULT: supplier
+- `I25` S_DEFAULT: piping
+- `J25` S_DEFAULT: vendor-override
+- `B26` S_DEFAULT: W INTERNATIONAL SC, LLC
+- `C26` S_DEFAULT: Y6X3BDLEPNJ6
+- `D26` S_DEFAULT: USA
+- `E26` S_DEFAULT: 3366
+- `F26` S_DEFAULT: Ship Building and Repairing
+- `G26` S_NUM_INPUT: 74.0757
+- `H26` S_DEFAULT: supplier
+- `I26` S_DEFAULT: structural
+- `J26` S_DEFAULT: naics4
+- `B27` S_DEFAULT: OIL STATES INTERNATIONAL, INC.
+- `C27` S_DEFAULT: XFMBL7A963X9
+- `D27` S_DEFAULT: -
+- `E27` S_DEFAULT: -
+- `F27` S_DEFAULT: -
+- `G27` S_NUM_INPUT: 71.4569
+- `H27` S_DEFAULT: supplier
+- `I27` S_DEFAULT: coatings
+- `J27` S_DEFAULT: vendor-override
+- `B28` S_DEFAULT: PRECISION CUSTOM COMPONENTS, LLC
+- `C28` S_DEFAULT: YD1GK53355R5
+- `D28` S_DEFAULT: USA
+- `E28` S_DEFAULT: 3323
+- `F28` S_DEFAULT: Plate Work Manufacturing
+- `G28` S_NUM_INPUT: 68.8453
+- `H28` S_DEFAULT: supplier
+- `I28` S_DEFAULT: structural
+- `J28` S_DEFAULT: naics4
+- `B29` S_DEFAULT: GOODRICH CORP
+- `C29` S_DEFAULT: EGAVSJTA2D81
+- `D29` S_DEFAULT: -
+- `E29` S_DEFAULT: -
+- `F29` S_DEFAULT: -
+- `G29` S_NUM_INPUT: 64.9453
+- `H29` S_DEFAULT: supplier
+- `I29` S_DEFAULT: unbucketed
+- `J29` S_DEFAULT: vendor-override
+- `B30` S_DEFAULT: JOHNSON CONTROLS NAVY SYSTEMS, LLC
+- `C30` S_DEFAULT: SLD5KEGGLLZ3
+- `D30` S_DEFAULT: USA
+- `E30` S_DEFAULT: 3334
+- `F30` S_DEFAULT: Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing
+- `G30` S_NUM_INPUT: 58.7196
+- `H30` S_DEFAULT: supplier
+- `I30` S_DEFAULT: hvac
+- `J30` S_DEFAULT: naics4
+- `B31` S_DEFAULT: GLOBE COMPOSITE SOLUTIONS, LLC
+- `C31` S_DEFAULT: FLDEFFBLR5P3
+- `D31` S_DEFAULT: USA
+- `E31` S_DEFAULT: 3252
+- `F31` S_DEFAULT: Synthetic Rubber Manufacturing
+- `G31` S_NUM_INPUT: 57.2668
+- `H31` S_DEFAULT: supplier
+- `I31` S_DEFAULT: coatings
+- `J31` S_DEFAULT: naics4
+- `B32` S_DEFAULT: CIRCOR INTERNATIONAL, INC.
+- `C32` S_DEFAULT: U45EH8WMNF55
+- `D32` S_DEFAULT: -
+- `E32` S_DEFAULT: -
+- `F32` S_DEFAULT: -
+- `G32` S_NUM_INPUT: 52.9554
+- `H32` S_DEFAULT: supplier
+- `I32` S_DEFAULT: piping
+- `J32` S_DEFAULT: vendor-override
+- `B33` S_DEFAULT: L3HARRIS TECHNOLOGIES, INC.
+- `C33` S_DEFAULT: SJULQDJ8NZU7
+- `D33` S_DEFAULT: USA
+- `E33` S_DEFAULT: 3345
+- `F33` S_DEFAULT: Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing
+- `G33` S_NUM_INPUT: 52.277
+- `H33` S_DEFAULT: supplier
+- `I33` S_DEFAULT: unbucketed
+- `J33` S_DEFAULT: vendor-override
+- `B34` S_DEFAULT: BWX TECHNOLOGIES, INC.
+- `C34` S_DEFAULT: CMT4S6G76QB5
+- `D34` S_DEFAULT: -
+- `E34` S_DEFAULT: -
+- `F34` S_DEFAULT: -
+- `G34` S_NUM_INPUT: 51.7972
+- `H34` S_DEFAULT: supplier
+- `I34` S_DEFAULT: unbucketed
+- `J34` S_DEFAULT: vendor-override
+- `B35` S_DEFAULT: ADVANCE MFG.CO., INC.
+- `C35` S_DEFAULT: MMCKJNNMSG23
+- `D35` S_DEFAULT: USA
+- `E35` S_DEFAULT: 3327
+- `F35` S_DEFAULT: Machine Shops
+- `G35` S_NUM_INPUT: 51.2006
+- `H35` S_DEFAULT: supplier
+- `I35` S_DEFAULT: machining
+- `J35` S_DEFAULT: naics4
+- `B36` S_DEFAULT: PEGASUS STEEL, LLC
+- `C36` S_DEFAULT: TZVRTYNM3MN3
+- `D36` S_DEFAULT: USA
+- `E36` S_DEFAULT: 3323
+- `F36` S_DEFAULT: Plate Work Manufacturing
+- `G36` S_NUM_INPUT: 48.9201
+- `H36` S_DEFAULT: supplier
+- `I36` S_DEFAULT: structural
+- `J36` S_DEFAULT: naics4
+- `B37` S_DEFAULT: PORTLAND VALVE LLC
+- `C37` S_DEFAULT: JEP5GQGFPUL9
+- `D37` S_DEFAULT: USA
+- `E37` S_DEFAULT: 3329
+- `F37` S_DEFAULT: Industrial Valve Manufacturing
+- `G37` S_NUM_INPUT: 48.1286
+- `H37` S_DEFAULT: supplier
+- `I37` S_DEFAULT: piping
+- `J37` S_DEFAULT: naics4
+- `B38` S_DEFAULT: TELEDYNE TECHNOLOGIES INCORPORATED
+- `C38` S_DEFAULT: SQ2DSCE69F15
+- `D38` S_DEFAULT: USA
+- `E38` S_DEFAULT: 3344
+- `F38` S_DEFAULT: Other Electronic Component Manufacturing
+- `G38` S_NUM_INPUT: 44.2596
+- `H38` S_DEFAULT: supplier
+- `I38` S_DEFAULT: electrical
+- `J38` S_DEFAULT: naics4
+- `B39` S_DEFAULT: MAROTTA CONTROLS, INC.
+- `C39` S_DEFAULT: Q35JL9GFCAK3
+- `D39` S_DEFAULT: USA
+- `E39` S_DEFAULT: 3329
+- `F39` S_DEFAULT: Fluid Power Valve and Hose Fitting Manufacturing
+- `G39` S_NUM_INPUT: 38.8756
+- `H39` S_DEFAULT: supplier
+- `I39` S_DEFAULT: piping
+- `J39` S_DEFAULT: naics4
+- `B40` S_DEFAULT: ULTRA ELECTRONICS HOLDINGS PLC
+- `C40` S_DEFAULT: SCWYXXK1EM13
+- `D40` S_DEFAULT: -
+- `E40` S_DEFAULT: -
+- `F40` S_DEFAULT: -
+- `G40` S_NUM_INPUT: 38.8644
+- `H40` S_DEFAULT: gfe_mib
+- `I40` S_DEFAULT: -
+- `J40` S_DEFAULT: GFE/MIB name
+- `B41` S_DEFAULT: CIRCOR PUMPS NORTH AMERICA LLC
+- `C41` S_DEFAULT: GU5YDKH7GPF1
+- `D41` S_DEFAULT: -
+- `E41` S_DEFAULT: -
+- `F41` S_DEFAULT: -
+- `G41` S_NUM_INPUT: 37.7465
+- `H41` S_DEFAULT: supplier
+- `I41` S_DEFAULT: piping
+- `J41` S_DEFAULT: vendor-override
+- `B42` S_DEFAULT: ALLARD NAZARIAN GROUP, INC.
+- `C42` S_DEFAULT: NEGFNA8YS723
+- `D42` S_DEFAULT: USA
+- `E42` S_DEFAULT: 3399
+- `F42` S_DEFAULT: All Other Miscellaneous Manufacturing
+- `G42` S_NUM_INPUT: 37.0961
+- `H42` S_DEFAULT: supplier
+- `I42` S_DEFAULT: unbucketed
+- `J42` S_DEFAULT: residual
+- `B43` S_DEFAULT: HUNT VALVE COMPANY, INC.
+- `C43` S_DEFAULT: HG5LNJAG4LU8
+- `D43` S_DEFAULT: -
+- `E43` S_DEFAULT: -
+- `F43` S_DEFAULT: -
+- `G43` S_NUM_INPUT: 36.5339
+- `H43` S_DEFAULT: supplier
+- `I43` S_DEFAULT: piping
+- `J43` S_DEFAULT: vendor-override
+- `B44` S_DEFAULT: KME AMERICA MARINE TUBE & FITTING, LLC
+- `C44` S_DEFAULT: DK14KTLXA9M5
+- `D44` S_DEFAULT: USA
+- `E44` S_DEFAULT: 3329
+- `F44` S_DEFAULT: Other Metal Valve and Pipe Fitting Manufacturing
+- `G44` S_NUM_INPUT: 36.2654
+- `H44` S_DEFAULT: supplier
+- `I44` S_DEFAULT: piping
+- `J44` S_DEFAULT: naics4
+- `B45` S_DEFAULT: CP INDUSTRIES HOLDINGS, INC
+- `C45` S_DEFAULT: RM4TFABVLPX4
+- `D45` S_DEFAULT: -
+- `E45` S_DEFAULT: -
+- `F45` S_DEFAULT: -
+- `G45` S_NUM_INPUT: 33.9556
+- `H45` S_DEFAULT: supplier
+- `I45` S_DEFAULT: structural
+- `J45` S_DEFAULT: vendor-override
+- `B46` S_DEFAULT: B. & F. MACHINE CO., INC.
+- `C46` S_DEFAULT: K3XPS1HXNBF3
+- `D46` S_DEFAULT: USA
+- `E46` S_DEFAULT: 3327
+- `F46` S_DEFAULT: Machine Shops
+- `G46` S_NUM_INPUT: 33.8862
+- `H46` S_DEFAULT: supplier
+- `I46` S_DEFAULT: machining
+- `J46` S_DEFAULT: naics4
+- `B47` S_DEFAULT: CUSTOM ALLOY CORPORATION
+- `C47` S_DEFAULT: N79NY6FRL2F3
+- `D47` S_DEFAULT: USA
+- `E47` S_DEFAULT: 3329
+- `F47` S_DEFAULT: Fabricated Pipe and Pipe Fitting Manufacturing
+- `G47` S_NUM_INPUT: 32.8948
+- `H47` S_DEFAULT: supplier
+- `I47` S_DEFAULT: piping
+- `J47` S_DEFAULT: naics4
+- `B48` S_DEFAULT: APCO TECHNOLOGIES SA
+- `C48` S_DEFAULT: FK17Z7DJWLL1
+- `D48` S_DEFAULT: CHE
+- `E48` S_DEFAULT: -
+- `F48` S_DEFAULT: -
+- `G48` S_NUM_INPUT: 32.8017
+- `H48` S_DEFAULT: supplier
+- `I48` S_DEFAULT: unbucketed
+- `J48` S_DEFAULT: vendor-override
+- `B49` S_DEFAULT: CEPEDA ASSOCIATES, INC.
+- `C49` S_DEFAULT: LJRBXLTGXN57
+- `D49` S_DEFAULT: USA
+- `E49` S_DEFAULT: 3334
+- `F49` S_DEFAULT: Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing
+- `G49` S_NUM_INPUT: 31.6148
+- `H49` S_DEFAULT: supplier
+- `I49` S_DEFAULT: hvac
+- `J49` S_DEFAULT: naics4
+- `B50` S_DEFAULT: HANSOME ENERGY SYSTEMS, INC.
+- `C50` S_DEFAULT: UHXFGP3DCRK7
+- `D50` S_DEFAULT: -
+- `E50` S_DEFAULT: -
+- `F50` S_DEFAULT: -
+- `G50` S_NUM_INPUT: 31.1098
+- `H50` S_DEFAULT: supplier
+- `I50` S_DEFAULT: unbucketed
+- `J50` S_DEFAULT: residual
+- `B51` S_DEFAULT: C. H. POWELL COMPANY
+- `C51` S_DEFAULT: JG6AMW7E23Z6
+- `D51` S_DEFAULT: USA
+- `E51` S_DEFAULT: 4885
+- `F51` S_DEFAULT: Freight Transportation Arrangement
+- `G51` S_NUM_INPUT: 30.2209
+- `H51` S_DEFAULT: service
+- `I51` S_DEFAULT: -
+- `J51` S_DEFAULT: service NAICS
+- `B52` S_DEFAULT: BAE SYSTEMS LAND & ARMAMENTS L.P.
+- `C52` S_DEFAULT: HPDLRXR4FYX5
+- `D52` S_DEFAULT: -
+- `E52` S_DEFAULT: -
+- `F52` S_DEFAULT: -
+- `G52` S_NUM_INPUT: 28.9666
+- `H52` S_DEFAULT: prime
+- `I52` S_DEFAULT: -
+- `J52` S_DEFAULT: prime/co-prime name
+- `B53` S_DEFAULT: OIL STATES INDUSTRIES, INC.
+- `C53` S_DEFAULT: G9HKMXL5L973
+- `D53` S_DEFAULT: USA
+- `E53` S_DEFAULT: 3262
+- `F53` S_DEFAULT: Rubber Product Manufacturing for Mechanical Use
+- `G53` S_NUM_INPUT: 28.9276
+- `H53` S_DEFAULT: supplier
+- `I53` S_DEFAULT: coatings
+- `J53` S_DEFAULT: vendor-override
+- `B54` S_DEFAULT: EURO MACHINERY SPECIALISTS, INC
+- `C54` S_DEFAULT: GJNEBDUDNTA1
+- `D54` S_DEFAULT: USA
+- `E54` S_DEFAULT: 8113
+- `F54` S_DEFAULT: Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance
+- `G54` S_NUM_INPUT: 28.1247
+- `H54` S_DEFAULT: service
+- `I54` S_DEFAULT: -
+- `J54` S_DEFAULT: service NAICS
+- `B55` S_DEFAULT: GOODWIN STEEL CASTINGS LIMITED
+- `C55` S_DEFAULT: RA8BS6AS7V54
+- `D55` S_DEFAULT: -
+- `E55` S_DEFAULT: -
+- `F55` S_DEFAULT: -
+- `G55` S_NUM_INPUT: 27.5618
+- `H55` S_DEFAULT: supplier
+- `I55` S_DEFAULT: unbucketed
+- `J55` S_DEFAULT: residual
+- `B56` S_DEFAULT: MW JONES & COMPANY INC
+- `C56` S_DEFAULT: K294P4QJHFU9
+- `D56` S_DEFAULT: USA
+- `E56` S_DEFAULT: 5416
+- `F56` S_DEFAULT: Administrative Management and General Management Consulting Services
+- `G56` S_NUM_INPUT: 26.7188
+- `H56` S_DEFAULT: service
+- `I56` S_DEFAULT: -
+- `J56` S_DEFAULT: service NAICS
+- `B57` S_DEFAULT: TAYLOR FORGE ENGINEERED SYSTEMS, INC.
+- `C57` S_DEFAULT: WN1PJNXJJ831
+- `D57` S_DEFAULT: USA
+- `E57` S_DEFAULT: 3329
+- `F57` S_DEFAULT: Fabricated Pipe and Pipe Fitting Manufacturing
+- `G57` S_NUM_INPUT: 26.0522
+- `H57` S_DEFAULT: supplier
+- `I57` S_DEFAULT: piping
+- `J57` S_DEFAULT: naics4
+- `B58` S_DEFAULT: THE AMERICAN TANK & FABRICATING COMPANY
+- `C58` S_DEFAULT: PUG1H9MFJD63
+- `D58` S_DEFAULT: USA
+- `E58` S_DEFAULT: 3323
+- `F58` S_DEFAULT: Plate Work Manufacturing
+- `G58` S_NUM_INPUT: 25.0953
+- `H58` S_DEFAULT: supplier
+- `I58` S_DEFAULT: structural
+- `J58` S_DEFAULT: naics4
+- `B59` S_DEFAULT: TELEDYNE TECHNOLOGIES INCORPORATED
+- `C59` S_DEFAULT: PAH8M4BJACA5
+- `D59` S_DEFAULT: USA
+- `E59` S_DEFAULT: 3344
+- `F59` S_DEFAULT: Electronic Connector Manufacturing
+- `G59` S_NUM_INPUT: 24.9922
+- `H59` S_DEFAULT: supplier
+- `I59` S_DEFAULT: electrical
+- `J59` S_DEFAULT: naics4
+- `B60` S_DEFAULT: MOOG INC.
+- `C60` S_DEFAULT: WJ45NXW2TVD7
+- `D60` S_DEFAULT: USA
+- `E60` S_DEFAULT: 3339
+- `F60` S_DEFAULT: Fluid Power Cylinder and Actuator Manufacturing
+- `G60` S_NUM_INPUT: 24.7255
+- `H60` S_DEFAULT: supplier
+- `I60` S_DEFAULT: piping
+- `J60` S_DEFAULT: naics4
+- `B61` S_DEFAULT: AMERICAN STEEL AND ALUMINUM LLC
+- `C61` S_DEFAULT: KTSAL8YX2QQ5
+- `D61` S_DEFAULT: -
+- `E61` S_DEFAULT: -
+- `F61` S_DEFAULT: -
+- `G61` S_NUM_INPUT: 24.1948
+- `H61` S_DEFAULT: supplier
+- `I61` S_DEFAULT: unbucketed
+- `J61` S_DEFAULT: residual
+- `B62` S_DEFAULT: WAUKESHA BEARINGS CORPORATION
+- `C62` S_DEFAULT: F76KN7T9YP64
+- `D62` S_DEFAULT: USA
+- `E62` S_DEFAULT: 3336
+- `F62` S_DEFAULT: Mechanical Power Transmission Equipment Manufacturing
+- `G62` S_NUM_INPUT: 22.2548
+- `H62` S_DEFAULT: supplier
+- `I62` S_DEFAULT: machining
+- `J62` S_DEFAULT: naics4
+- `B63` S_DEFAULT: PLAINVILLE ELECTRICAL PRODUCTS COMPANY, THE
+- `C63` S_DEFAULT: WVW5FMYALEL6
+- `D63` S_DEFAULT: USA
+- `E63` S_DEFAULT: 3353
+- `F63` S_DEFAULT: Switchgear and Switchboard Apparatus Manufacturing
+- `G63` S_NUM_INPUT: 20.8008
+- `H63` S_DEFAULT: supplier
+- `I63` S_DEFAULT: electrical
+- `J63` S_DEFAULT: naics4
+- `B64` S_DEFAULT: LOCKHEED MARTIN CORPORATION
+- `C64` S_DEFAULT: H11HD5VHGHN3
+- `D64` S_DEFAULT: USA
+- `E64` S_DEFAULT: 3345
+- `F64` S_DEFAULT: Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing
+- `G64` S_NUM_INPUT: 19.8465
+- `H64` S_DEFAULT: gfe_mib
+- `I64` S_DEFAULT: -
+- `J64` S_DEFAULT: GFE/MIB name
+- `B65` S_DEFAULT: CATERPILLAR INC
+- `C65` S_DEFAULT: D77VA4G9VJG8
+- `D65` S_DEFAULT: -
+- `E65` S_DEFAULT: -
+- `F65` S_DEFAULT: -
+- `G65` S_NUM_INPUT: 19.5156
+- `H65` S_DEFAULT: supplier
+- `I65` S_DEFAULT: unbucketed
+- `J65` S_DEFAULT: residual
+- `B66` S_DEFAULT: CRAFT MACHINE WORKS, INC.
+- `C66` S_DEFAULT: CW48SQ7KJX68
+- `D66` S_DEFAULT: USA
+- `E66` S_DEFAULT: 3366
+- `F66` S_DEFAULT: Ship Building and Repairing
+- `G66` S_NUM_INPUT: 19.481
+- `H66` S_DEFAULT: supplier
+- `I66` S_DEFAULT: structural
+- `J66` S_DEFAULT: naics4
+- `B67` S_DEFAULT: PARKER-HANNIFIN CORPORATION
+- `C67` S_DEFAULT: W138B61KN3Q7
+- `D67` S_DEFAULT: USA
+- `E67` S_DEFAULT: 5511
+- `F67` S_DEFAULT: Corporate, Subsidiary, and Regional Managing Offices
+- `G67` S_NUM_INPUT: 18.4145
+- `H67` S_DEFAULT: supplier
+- `I67` S_DEFAULT: unbucketed
+- `J67` S_DEFAULT: holding-co (parent unknown)
+- `B68` S_DEFAULT: DELTAK MANUFACTURING, INC.
+- `C68` S_DEFAULT: C256E427Q518
+- `D68` S_DEFAULT: USA
+- `E68` S_DEFAULT: 3323
+- `F68` S_DEFAULT: Ornamental and Architectural Metal Work Manufacturing
+- `G68` S_NUM_INPUT: 18.0422
+- `H68` S_DEFAULT: supplier
+- `I68` S_DEFAULT: structural
+- `J68` S_DEFAULT: naics4
+- `B69` S_DEFAULT: HAMILL MANUFACTURING COMPANY
+- `C69` S_DEFAULT: E84NNWLU6RK3
+- `D69` S_DEFAULT: USA
+- `E69` S_DEFAULT: 3327
+- `F69` S_DEFAULT: Machine Shops
+- `G69` S_NUM_INPUT: 16.1264
+- `H69` S_DEFAULT: supplier
+- `I69` S_DEFAULT: machining
+- `J69` S_DEFAULT: naics4
+- `B70` S_DEFAULT: ESPEY MFG. & ELECTRONICS CORP.
+- `C70` S_DEFAULT: Z89SS59265U9
+- `D70` S_DEFAULT: USA
+- `E70` S_DEFAULT: 3359
+- `F70` S_DEFAULT: All Other Miscellaneous Electrical Equipment and Component Manufacturing
+- `G70` S_NUM_INPUT: 15.7233
+- `H70` S_DEFAULT: supplier
+- `I70` S_DEFAULT: electrical
+- `J70` S_DEFAULT: naics4
+- `B71` S_DEFAULT: HUNTINGTON INGALLS INDUSTRIES, INC.
+- `C71` S_DEFAULT: WMXDDH6HJNA5
+- `D71` S_DEFAULT: USA
+- `E71` S_DEFAULT: 3366
+- `F71` S_DEFAULT: Ship Building and Repairing
+- `G71` S_NUM_INPUT: 15.5742
+- `H71` S_DEFAULT: co_prime
+- `I71` S_DEFAULT: -
+- `J71` S_DEFAULT: prime/co-prime name
+- `B72` S_DEFAULT: COLLINS & JEWELL COMPANY, INC.
+- `C72` S_DEFAULT: TY25RCEB5FF3
+- `D72` S_DEFAULT: USA
+- `E72` S_DEFAULT: 3329
+- `F72` S_DEFAULT: All Other Miscellaneous Fabricated Metal Product Manufacturing
+- `G72` S_NUM_INPUT: 15.5645
+- `H72` S_DEFAULT: supplier
+- `I72` S_DEFAULT: piping
+- `J72` S_DEFAULT: naics4
+- `B73` S_DEFAULT: BABCOCK INTERNATIONAL GROUP PLC
+- `C73` S_DEFAULT: TJLYWEFN1YR8
+- `D73` S_DEFAULT: -
+- `E73` S_DEFAULT: -
+- `F73` S_DEFAULT: -
+- `G73` S_NUM_INPUT: 15.4162
+- `H73` S_DEFAULT: supplier
+- `I73` S_DEFAULT: unbucketed
+- `J73` S_DEFAULT: residual
+- `B74` S_DEFAULT: CUNICO CORPORATION
+- `C74` S_DEFAULT: RLXQHCXFT513
+- `D74` S_DEFAULT: USA
+- `E74` S_DEFAULT: 3329
+- `F74` S_DEFAULT: Fabricated Pipe and Pipe Fitting Manufacturing
+- `G74` S_NUM_INPUT: 15.2381
+- `H74` S_DEFAULT: supplier
+- `I74` S_DEFAULT: piping
+- `J74` S_DEFAULT: naics4
+- `B75` S_DEFAULT: L-3 COMMUNICATIONS HOLDINGS, INC.
+- `C75` S_DEFAULT: DTZJAQF8NZA1
+- `D75` S_DEFAULT: -
+- `E75` S_DEFAULT: -
+- `F75` S_DEFAULT: -
+- `G75` S_NUM_INPUT: 15.1753
+- `H75` S_DEFAULT: supplier
+- `I75` S_DEFAULT: unbucketed
+- `J75` S_DEFAULT: residual
+- `B76` S_DEFAULT: FLUID CONDITIONING PRODUCTS, INC.
+- `C76` S_DEFAULT: FMC8BKMNMKF2
+- `D76` S_DEFAULT: USA
+- `E76` S_DEFAULT: 3399
+- `F76` S_DEFAULT: All Other Miscellaneous Manufacturing
+- `G76` S_NUM_INPUT: 15.1682
+- `H76` S_DEFAULT: supplier
+- `I76` S_DEFAULT: unbucketed
+- `J76` S_DEFAULT: residual
+- `B77` S_DEFAULT: BEAST CODE LLC
+- `C77` S_DEFAULT: DA1PDLWQ7BH4
+- `D77` S_DEFAULT: USA
+- `E77` S_DEFAULT: 5132
+- `F77` S_DEFAULT: Software Publishers
+- `G77` S_NUM_INPUT: 15.1317
+- `H77` S_DEFAULT: service
+- `I77` S_DEFAULT: -
+- `J77` S_DEFAULT: service NAICS
+- `B78` S_DEFAULT: JAMESTOWN METAL MARINE SALES, INC.
+- `C78` S_DEFAULT: QNEXJLA47BM4
+- `D78` S_DEFAULT: USA
+- `E78` S_DEFAULT: 3366
+- `F78` S_DEFAULT: Ship Building and Repairing
+- `G78` S_NUM_INPUT: 14.2324
+- `H78` S_DEFAULT: supplier
+- `I78` S_DEFAULT: structural
+- `J78` S_DEFAULT: naics4
+- `B79` S_DEFAULT: OCEANEERING INTERNATIONAL INC
+- `C79` S_DEFAULT: CU6NGN3UKFA6
+- `D79` S_DEFAULT: -
+- `E79` S_DEFAULT: -
+- `F79` S_DEFAULT: -
+- `G79` S_NUM_INPUT: 14.2286
+- `H79` S_DEFAULT: supplier
+- `I79` S_DEFAULT: unbucketed
+- `J79` S_DEFAULT: residual
+- `B80` S_DEFAULT: MERRILL TECHNOLOGIES GROUP, LLC
+- `C80` S_DEFAULT: GE4GA2B9JYF9
+- `D80` S_DEFAULT: USA
+- `E80` S_DEFAULT: 3329
+- `F80` S_DEFAULT: All Other Miscellaneous Fabricated Metal Product Manufacturing
+- `G80` S_NUM_INPUT: 14.097
+- `H80` S_DEFAULT: supplier
+- `I80` S_DEFAULT: piping
+- `J80` S_DEFAULT: naics4
+- `B81` S_DEFAULT: L3HARRIS MARITIME POWER & ENERGY SOLUTIONS, INC.
+- `C81` S_DEFAULT: CFXRGJSB9UB6
+- `D81` S_DEFAULT: USA
+- `E81` S_DEFAULT: 3353
+- `F81` S_DEFAULT: Switchgear and Switchboard Apparatus Manufacturing
+- `G81` S_NUM_INPUT: 14.0656
+- `H81` S_DEFAULT: supplier
+- `I81` S_DEFAULT: unbucketed
+- `J81` S_DEFAULT: vendor-override
+- `B82` S_DEFAULT: TRIDENT MARITIME SYSTEMS - CAC, LLC
+- `C82` S_DEFAULT: WESDY4U81NP8
+- `D82` S_DEFAULT: USA
+- `E82` S_DEFAULT: 3329
+- `F82` S_DEFAULT: Fabricated Pipe and Pipe Fitting Manufacturing
+- `G82` S_NUM_INPUT: 13.6026
+- `H82` S_DEFAULT: supplier
+- `I82` S_DEFAULT: piping
+- `J82` S_DEFAULT: naics4
+- `B83` S_DEFAULT: HUNT VALVE COMPANY, INC.
+- `C83` S_DEFAULT: FBJ9NCJE2J56
+- `D83` S_DEFAULT: -
+- `E83` S_DEFAULT: -
+- `F83` S_DEFAULT: -
+- `G83` S_NUM_INPUT: 13.5563
+- `H83` S_DEFAULT: supplier
+- `I83` S_DEFAULT: piping
+- `J83` S_DEFAULT: vendor-override
+- `B84` S_DEFAULT: GENERAL ATOMICS
+- `C84` S_DEFAULT: NGTNPRCG6BE1
+- `D84` S_DEFAULT: -
+- `E84` S_DEFAULT: -
+- `F84` S_DEFAULT: -
+- `G84` S_NUM_INPUT: 13.5381
+- `H84` S_DEFAULT: supplier
+- `I84` S_DEFAULT: unbucketed
+- `J84` S_DEFAULT: residual
+- `B85` S_DEFAULT: LEHIGH HEAVY FORGE CORP
+- `C85` S_DEFAULT: CDVZLNCU7Z44
+- `D85` S_DEFAULT: -
+- `E85` S_DEFAULT: -
+- `F85` S_DEFAULT: -
+- `G85` S_NUM_INPUT: 13.513
+- `H85` S_DEFAULT: supplier
+- `I85` S_DEFAULT: unbucketed
+- `J85` S_DEFAULT: residual
+- `B86` S_DEFAULT: RIX INDUSTRIES
+- `C86` S_DEFAULT: V1MQFNQB56Z5
+- `D86` S_DEFAULT: USA
+- `E86` S_DEFAULT: 3339
+- `F86` S_DEFAULT: Air and Gas Compressor Manufacturing
+- `G86` S_NUM_INPUT: 12.3193
+- `H86` S_DEFAULT: supplier
+- `I86` S_DEFAULT: piping
+- `J86` S_DEFAULT: naics4
+- `B87` S_DEFAULT: COLFAX CORPORATION
+- `C87` S_DEFAULT: L8T4R3N7ACL6
+- `D87` S_DEFAULT: USA
+- `E87` S_DEFAULT: 3334
+- `F87` S_DEFAULT: Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing
+- `G87` S_NUM_INPUT: 12.0003
+- `H87` S_DEFAULT: supplier
+- `I87` S_DEFAULT: hvac
+- `J87` S_DEFAULT: naics4
+- `B88` S_DEFAULT: LAG INTERNATIONAL S.A.
+- `C88` S_DEFAULT: SHDVJS6DKEX1
+- `D88` S_DEFAULT: -
+- `E88` S_DEFAULT: -
+- `F88` S_DEFAULT: -
+- `G88` S_NUM_INPUT: 11.9169
+- `H88` S_DEFAULT: supplier
+- `I88` S_DEFAULT: unbucketed
+- `J88` S_DEFAULT: residual
+- `B89` S_DEFAULT: D. W. CLARK, INC.
+- `C89` S_DEFAULT: MKDGDE6K34N5
+- `D89` S_DEFAULT: USA
+- `E89` S_DEFAULT: 3315
+- `F89` S_DEFAULT: Steel Foundries (except Investment)
+- `G89` S_NUM_INPUT: 11.4072
+- `H89` S_DEFAULT: supplier
+- `I89` S_DEFAULT: castings
+- `J89` S_DEFAULT: naics4
+- `B90` S_DEFAULT: METALTEK INTERNATIONAL, INC.
+- `C90` S_DEFAULT: JK4WJKLD44G9
+- `D90` S_DEFAULT: USA
+- `E90` S_DEFAULT: 3315
+- `F90` S_DEFAULT: Other Nonferrous Metal Foundries (except Die-Casting)
+- `G90` S_NUM_INPUT: 11.2477
+- `H90` S_DEFAULT: supplier
+- `I90` S_DEFAULT: castings
+- `J90` S_DEFAULT: naics4
+- `B91` S_DEFAULT: WARTSILA OYJ ABP
+- `C91` S_DEFAULT: GCWKULHML2S3
+- `D91` S_DEFAULT: -
+- `E91` S_DEFAULT: -
+- `F91` S_DEFAULT: -
+- `G91` S_NUM_INPUT: 11.1551
+- `H91` S_DEFAULT: supplier
+- `I91` S_DEFAULT: unbucketed
+- `J91` S_DEFAULT: residual
+- `B92` S_DEFAULT: ARCLINE INVESTMENT MANAGEMENT LP
+- `C92` S_DEFAULT: MENSE2ENG8J6
+- `D92` S_DEFAULT: -
+- `E92` S_DEFAULT: -
+- `F92` S_DEFAULT: -
+- `G92` S_NUM_INPUT: 10.8716
+- `H92` S_DEFAULT: supplier
+- `I92` S_DEFAULT: unbucketed
+- `J92` S_DEFAULT: residual
+- `B93` S_DEFAULT: TECHPRECISION CORPORATION
+- `C93` S_DEFAULT: MF1LU8RPCMB8
+- `D93` S_DEFAULT: USA
+- `E93` S_DEFAULT: 3323
+- `F93` S_DEFAULT: Plate Work Manufacturing
+- `G93` S_NUM_INPUT: 10.803
+- `H93` S_DEFAULT: supplier
+- `I93` S_DEFAULT: structural
+- `J93` S_DEFAULT: naics4
+- `B94` S_DEFAULT: KOIKE ARONSON, INC.
+- `C94` S_DEFAULT: R769GJRQF618
+- `D94` S_DEFAULT: -
+- `E94` S_DEFAULT: -
+- `F94` S_DEFAULT: -
+- `G94` S_NUM_INPUT: 10.5683
+- `H94` S_DEFAULT: supplier
+- `I94` S_DEFAULT: unbucketed
+- `J94` S_DEFAULT: residual
+- `B95` S_DEFAULT: AGI UK ACQUISITION LIMITED
+- `C95` S_DEFAULT: KDNEW5AC1X41
+- `D95` S_DEFAULT: -
+- `E95` S_DEFAULT: -
+- `F95` S_DEFAULT: -
+- `G95` S_NUM_INPUT: 10.4884
+- `H95` S_DEFAULT: supplier
+- `I95` S_DEFAULT: unbucketed
+- `J95` S_DEFAULT: residual
+- `B96` S_DEFAULT: FAIRLEAD INTEGRATED, LLC
+- `C96` S_DEFAULT: DXM3GSLGH2Z5
+- `D96` S_DEFAULT: USA
+- `E96` S_DEFAULT: 3366
+- `F96` S_DEFAULT: Ship Building and Repairing
+- `G96` S_NUM_INPUT: 10.2623
+- `H96` S_DEFAULT: supplier
+- `I96` S_DEFAULT: structural
+- `J96` S_DEFAULT: naics4
+- `B97` S_DEFAULT: SEEMANN COMPOSITES, LLC
+- `C97` S_DEFAULT: WXRTZLL25AE5
+- `D97` S_DEFAULT: USA
+- `E97` S_DEFAULT: 3259
+- `F97` S_DEFAULT: Custom Compounding of Purchased Resins
+- `G97` S_NUM_INPUT: 10.002
+- `H97` S_DEFAULT: supplier
+- `I97` S_DEFAULT: coatings
+- `J97` S_DEFAULT: naics4
+- `B98` S_DEFAULT: SARGENT AEROSPACE & DEFENSE, LLC
+- `C98` S_DEFAULT: KAG7VEFLUZQ4
+- `D98` S_DEFAULT: -
+- `E98` S_DEFAULT: -
+- `F98` S_DEFAULT: -
+- `G98` S_NUM_INPUT: 9.8485
+- `H98` S_DEFAULT: supplier
+- `I98` S_DEFAULT: unbucketed
+- `J98` S_DEFAULT: residual
+- `B99` S_DEFAULT: PRL INDUSTRIES INC
+- `C99` S_DEFAULT: CXK2Y51KDBW1
+- `D99` S_DEFAULT: USA
+- `E99` S_DEFAULT: 3315
+- `F99` S_DEFAULT: Steel Foundries (except Investment)
+- `G99` S_NUM_INPUT: 9.8158
+- `H99` S_DEFAULT: supplier
+- `I99` S_DEFAULT: castings
+- `J99` S_DEFAULT: naics4
+- `B100` S_DEFAULT: AMMCON CORP.
+- `C100` S_DEFAULT: W3KUJLTCRLV1
+- `D100` S_DEFAULT: USA
+- `E100` S_DEFAULT: 3329
+- `F100` S_DEFAULT: Other Metal Valve and Pipe Fitting Manufacturing
+- `G100` S_NUM_INPUT: 9.249
+- `H100` S_DEFAULT: supplier
+- `I100` S_DEFAULT: piping
+- `J100` S_DEFAULT: naics4
+- `B101` S_DEFAULT: FOSTER-MILLER, INC.
+- `C101` S_DEFAULT: XDF1FRDG8KK4
+- `D101` S_DEFAULT: USA
+- `E101` S_DEFAULT: 3364
+- `F101` S_DEFAULT: Other Aircraft Parts and Auxiliary Equipment Manufacturing
+- `G101` S_NUM_INPUT: 9.165
+- `H101` S_DEFAULT: supplier
+- `I101` S_DEFAULT: electrical
+- `J101` S_DEFAULT: naics4
+- `B102` S_DEFAULT: GENERAL TOOL COMPANY
+- `C102` S_DEFAULT: FWF8QBPCGLG3
+- `D102` S_DEFAULT: USA
+- `E102` S_DEFAULT: 3364
+- `F102` S_DEFAULT: Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing
+- `G102` S_NUM_INPUT: 9.1239
+- `H102` S_DEFAULT: supplier
+- `I102` S_DEFAULT: electrical
+- `J102` S_DEFAULT: naics4
+- `B103` S_DEFAULT: MOOG INC.
+- `C103` S_DEFAULT: L4ZMKLM4MPL3
+- `D103` S_DEFAULT: USA
+- `E103` S_DEFAULT: 3364
+- `F103` S_DEFAULT: Other Aircraft Parts and Auxiliary Equipment Manufacturing
+- `G103` S_NUM_INPUT: 8.9572
+- `H103` S_DEFAULT: supplier
+- `I103` S_DEFAULT: electrical
+- `J103` S_DEFAULT: naics4
+- `B104` S_DEFAULT: KSARIA CORPORATION
+- `C104` S_DEFAULT: NTREK31GP8N3
+- `D104` S_DEFAULT: USA
+- `E104` S_DEFAULT: 3344
+- `F104` S_DEFAULT: Electronic Connector Manufacturing
+- `G104` S_NUM_INPUT: 8.878
+- `H104` S_DEFAULT: supplier
+- `I104` S_DEFAULT: electrical
+- `J104` S_DEFAULT: naics4
+- `B105` S_DEFAULT: ULTRA ELECTRONICS HOLDINGS PLC
+- `C105` S_DEFAULT: F42BKS7EHCL8
+- `D105` S_DEFAULT: USA
+- `E105` S_DEFAULT: 3344
+- `F105` S_DEFAULT: Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing
+- `G105` S_NUM_INPUT: 8.825
+- `H105` S_DEFAULT: gfe_mib
+- `I105` S_DEFAULT: -
+- `J105` S_DEFAULT: GFE/MIB name
+- `B106` S_DEFAULT: L3HARRIS TECHNOLOGIES, INC.
+- `C106` S_DEFAULT: WPP2ABN6UCF5
+- `D106` S_DEFAULT: USA
+- `E106` S_DEFAULT: 3342
+- `F106` S_DEFAULT: Other Communications Equipment Manufacturing
+- `G106` S_NUM_INPUT: 8.6136
+- `H106` S_DEFAULT: supplier
+- `I106` S_DEFAULT: unbucketed
+- `J106` S_DEFAULT: vendor-override
+- `B107` S_DEFAULT: MILWAUKEE VALVE COMPANY, LLC
+- `C107` S_DEFAULT: CE3HF8PLAFD3
+- `D107` S_DEFAULT: USA
+- `E107` S_DEFAULT: 3329
+- `F107` S_DEFAULT: Industrial Valve Manufacturing
+- `G107` S_NUM_INPUT: 8.486
+- `H107` S_DEFAULT: supplier
+- `I107` S_DEFAULT: piping
+- `J107` S_DEFAULT: naics4
+- `B108` S_DEFAULT: CURTISS-WRIGHT ELECTRO-MECHANICAL CORP
+- `C108` S_DEFAULT: VXHFDAKS2LZ6
+- `D108` S_DEFAULT: USA
+- `E108` S_DEFAULT: 3336
+- `F108` S_DEFAULT: Turbine and Turbine Generator Set Units Manufacturing
+- `G108` S_NUM_INPUT: 8.3257
+- `H108` S_DEFAULT: supplier
+- `I108` S_DEFAULT: machining
+- `J108` S_DEFAULT: naics4
+- `B109` S_DEFAULT: AMPHENOL CORPORATION
+- `C109` S_DEFAULT: CT5WNUADNZ44
+- `D109` S_DEFAULT: USA
+- `E109` S_DEFAULT: 5511
+- `F109` S_DEFAULT: Corporate, Subsidiary, and Regional Managing Offices
+- `G109` S_NUM_INPUT: 8.2696
+- `H109` S_DEFAULT: supplier
+- `I109` S_DEFAULT: unbucketed
+- `J109` S_DEFAULT: holding-co (parent unknown)
+- `B110` S_DEFAULT: LANDSTAR SYSTEM, INC.
+- `C110` S_DEFAULT: J3C4WKJZZKN5
+- `D110` S_DEFAULT: -
+- `E110` S_DEFAULT: -
+- `F110` S_DEFAULT: -
+- `G110` S_NUM_INPUT: 8.1402
+- `H110` S_DEFAULT: supplier
+- `I110` S_DEFAULT: unbucketed
+- `J110` S_DEFAULT: residual
+- `B111` S_DEFAULT: BRANTNER AND ASSOCIATES, INC.
+- `C111` S_DEFAULT: RXA2JHPN9JD3
+- `D111` S_DEFAULT: -
+- `E111` S_DEFAULT: -
+- `F111` S_DEFAULT: -
+- `G111` S_NUM_INPUT: 8.1016
+- `H111` S_DEFAULT: supplier
+- `I111` S_DEFAULT: unbucketed
+- `J111` S_DEFAULT: residual
+- `B112` S_DEFAULT: WARD LEONARD CT LLC
+- `C112` S_DEFAULT: MKXMUFJJYLY5
+- `D112` S_DEFAULT: USA
+- `E112` S_DEFAULT: 3353
+- `F112` S_DEFAULT: Motor and Generator Manufacturing
+- `G112` S_NUM_INPUT: 7.9309
+- `H112` S_DEFAULT: supplier
+- `I112` S_DEFAULT: electrical
+- `J112` S_DEFAULT: naics4
+- `B113` S_DEFAULT: CITADEL CAPITAL CORPORATION
+- `C113` S_DEFAULT: VDSCUPC2H3K7
+- `D113` S_DEFAULT: -
+- `E113` S_DEFAULT: -
+- `F113` S_DEFAULT: -
+- `G113` S_NUM_INPUT: 7.8153
+- `H113` S_DEFAULT: supplier
+- `I113` S_DEFAULT: unbucketed
+- `J113` S_DEFAULT: residual
+- `B114` S_DEFAULT: HUTCHINSON AEROSPACE & INDUSTRY, INC.
+- `C114` S_DEFAULT: ZVFUENFF77T1
+- `D114` S_DEFAULT: -
+- `E114` S_DEFAULT: -
+- `F114` S_DEFAULT: -
+- `G114` S_NUM_INPUT: 7.7968
+- `H114` S_DEFAULT: supplier
+- `I114` S_DEFAULT: unbucketed
+- `J114` S_DEFAULT: residual
+- `B115` S_DEFAULT: RHOADS INDUSTRIES, INC.
+- `C115` S_DEFAULT: LPY6KXBKHMK8
+- `D115` S_DEFAULT: USA
+- `E115` S_DEFAULT: 3366
+- `F115` S_DEFAULT: Ship Building and Repairing
+- `G115` S_NUM_INPUT: 7.7534
+- `H115` S_DEFAULT: supplier
+- `I115` S_DEFAULT: structural
+- `J115` S_DEFAULT: naics4
+- `B116` S_DEFAULT: A/Z CORPORATION
+- `C116` S_DEFAULT: QCFDU4MA1444
+- `D116` S_DEFAULT: USA
+- `E116` S_DEFAULT: 2362
+- `F116` S_DEFAULT: Industrial Building Construction
+- `G116` S_NUM_INPUT: 7.7209
+- `H116` S_DEFAULT: service
+- `I116` S_DEFAULT: -
+- `J116` S_DEFAULT: service NAICS
+- `B117` S_DEFAULT: COLONNA'S SHIP YARD, INCORPORATED
+- `C117` S_DEFAULT: JSAXGRLNEJ63
+- `D117` S_DEFAULT: USA
+- `E117` S_DEFAULT: 3366
+- `F117` S_DEFAULT: Ship Building and Repairing
+- `G117` S_NUM_INPUT: 7.6393
+- `H117` S_DEFAULT: supplier
+- `I117` S_DEFAULT: structural
+- `J117` S_DEFAULT: naics4
+- `B118` S_DEFAULT: GUILL TOOL & ENGINEERING CO, INC.
+- `C118` S_DEFAULT: NVPEBL51CSF8
+- `D118` S_DEFAULT: USA
+- `E118` S_DEFAULT: 3327
+- `F118` S_DEFAULT: Machine Shops
+- `G118` S_NUM_INPUT: 7.599
+- `H118` S_DEFAULT: supplier
+- `I118` S_DEFAULT: machining
+- `J118` S_DEFAULT: naics4
+- `B119` S_DEFAULT: THE H R HILLERY COMPANY
+- `C119` S_DEFAULT: ZFQBUPK552C3
+- `D119` S_DEFAULT: USA
+- `E119` S_DEFAULT: 3323
+- `F119` S_DEFAULT: Fabricated Structural Metal Manufacturing
+- `G119` S_NUM_INPUT: 7.3617
+- `H119` S_DEFAULT: supplier
+- `I119` S_DEFAULT: structural
+- `J119` S_DEFAULT: naics4
+- `B120` S_DEFAULT: GRAYCLIFF PARTNERS LP
+- `C120` S_DEFAULT: G319AMB56SW5
+- `D120` S_DEFAULT: USA
+- `E120` S_DEFAULT: 3329
+- `F120` S_DEFAULT: All Other Miscellaneous Fabricated Metal Product Manufacturing
+- `G120` S_NUM_INPUT: 7.3241
+- `H120` S_DEFAULT: supplier
+- `I120` S_DEFAULT: piping
+- `J120` S_DEFAULT: naics4
+- `B121` S_DEFAULT: YOUNG ENGINEERING & MANUFACTURING, INC.
+- `C121` S_DEFAULT: LG88NCWJ3A95
+- `D121` S_DEFAULT: USA
+- `E121` S_DEFAULT: 3324
+- `F121` S_DEFAULT: Metal Tank (Heavy Gauge) Manufacturing
+- `G121` S_NUM_INPUT: 7.2724
+- `H121` S_DEFAULT: supplier
+- `I121` S_DEFAULT: structural
+- `J121` S_DEFAULT: naics4
+- `B122` S_DEFAULT: BAKER SHEET METAL CORPORATION
+- `C122` S_DEFAULT: RYRLL49HWN65
+- `D122` S_DEFAULT: USA
+- `E122` S_DEFAULT: 3323
+- `F122` S_DEFAULT: Sheet Metal Work Manufacturing
+- `G122` S_NUM_INPUT: 7.0863
+- `H122` S_DEFAULT: supplier
+- `I122` S_DEFAULT: structural
+- `J122` S_DEFAULT: naics4
+- `B123` S_DEFAULT: SOPHEON CORPORATION
+- `C123` S_DEFAULT: NSWQJBEZZD83
+- `D123` S_DEFAULT: USA
+- `E123` S_DEFAULT: 5132
+- `F123` S_DEFAULT: Software Publishers
+- `G123` S_NUM_INPUT: 6.9044
+- `H123` S_DEFAULT: service
+- `I123` S_DEFAULT: -
+- `J123` S_DEFAULT: service NAICS
+- `B124` S_DEFAULT: TOTAL SA
+- `C124` S_DEFAULT: E86GJS762JJ5
+- `D124` S_DEFAULT: FRA
+- `E124` S_DEFAULT: 4247
+- `F124` S_DEFAULT: Petroleum Bulk Stations and Terminals
+- `G124` S_NUM_INPUT: 6.8713
+- `H124` S_DEFAULT: service
+- `I124` S_DEFAULT: -
+- `J124` S_DEFAULT: service NAICS
+- `B125` S_DEFAULT: CP INDUSTRIES HOLDINGS, INC
+- `C125` S_DEFAULT: PBC2VH3ND3D4
+- `D125` S_DEFAULT: -
+- `E125` S_DEFAULT: -
+- `F125` S_DEFAULT: -
+- `G125` S_NUM_INPUT: 6.8546
+- `H125` S_DEFAULT: supplier
+- `I125` S_DEFAULT: structural
+- `J125` S_DEFAULT: vendor-override
+- `B126` S_DEFAULT: SHEFFIELD FORGEMASTERS ENGINEERING LIMITED
+- `C126` S_DEFAULT: LPWJLN5JQPW4
+- `D126` S_DEFAULT: -
+- `E126` S_DEFAULT: -
+- `F126` S_DEFAULT: -
+- `G126` S_NUM_INPUT: 6.8091
+- `H126` S_DEFAULT: supplier
+- `I126` S_DEFAULT: unbucketed
+- `J126` S_DEFAULT: residual
+- `B127` S_DEFAULT: C. & C. METALS ENGINEERING, INC.
+- `C127` S_DEFAULT: WAJ6RKYZTYL3
+- `D127` S_DEFAULT: USA
+- `E127` S_DEFAULT: 3327
+- `F127` S_DEFAULT: Machine Shops
+- `G127` S_NUM_INPUT: 6.6181
+- `H127` S_DEFAULT: supplier
+- `I127` S_DEFAULT: machining
+- `J127` S_DEFAULT: naics4
+- `B128` S_DEFAULT: EMERSON AUTOMATION SOLUTIONS FINAL CONTROL US LP
+- `C128` S_DEFAULT: HSV2N9ACRTJ6
+- `D128` S_DEFAULT: USA
+- `E128` S_DEFAULT: 3329
+- `F128` S_DEFAULT: Industrial Valve Manufacturing
+- `G128` S_NUM_INPUT: 6.6039
+- `H128` S_DEFAULT: supplier
+- `I128` S_DEFAULT: piping
+- `J128` S_DEFAULT: naics4
+- `B129` S_DEFAULT: HUNTINGTON INGALLS INDUSTRIES, INC
+- `C129` S_DEFAULT: F9SDJAZFTLG6
+- `D129` S_DEFAULT: USA
+- `E129` S_DEFAULT: 3366
+- `F129` S_DEFAULT: Ship Building and Repairing
+- `G129` S_NUM_INPUT: 6.2779
+- `H129` S_DEFAULT: co_prime
+- `I129` S_DEFAULT: -
+- `J129` S_DEFAULT: prime/co-prime name
+- `B130` S_DEFAULT: JAL ENTERPRISES, INC.
+- `C130` S_DEFAULT: U4MMR7DR2DR7
+- `D130` S_DEFAULT: USA
+- `E130` S_DEFAULT: 3366
+- `F130` S_DEFAULT: Ship Building and Repairing
+- `G130` S_NUM_INPUT: 6.1652
+- `H130` S_DEFAULT: supplier
+- `I130` S_DEFAULT: structural
+- `J130` S_DEFAULT: naics4
+- `B131` S_DEFAULT: AMERICAN INDUSTRIAL ACQUISITION CORPORATION
+- `C131` S_DEFAULT: DNV6ZJNJPLW8
+- `D131` S_DEFAULT: USA
+- `E131` S_DEFAULT: 5511
+- `F131` S_DEFAULT: Offices of Other Holding Companies
+- `G131` S_NUM_INPUT: 6.022
+- `H131` S_DEFAULT: supplier
+- `I131` S_DEFAULT: unbucketed
+- `J131` S_DEFAULT: holding-co (parent unknown)
+- `B132` S_DEFAULT: WAUKESHA BEARINGS CORPORATION
+- `C132` S_DEFAULT: Z43PV7K61YL4
+- `D132` S_DEFAULT: -
+- `E132` S_DEFAULT: -
+- `F132` S_DEFAULT: -
+- `G132` S_NUM_INPUT: 6.0168
+- `H132` S_DEFAULT: supplier
+- `I132` S_DEFAULT: unbucketed
+- `J132` S_DEFAULT: residual
+- `B133` S_DEFAULT: D K MACHINE INC
+- `C133` S_DEFAULT: FR7WWCCNBQZ6
+- `D133` S_DEFAULT: USA
+- `E133` S_DEFAULT: 3329
+- `F133` S_DEFAULT: All Other Miscellaneous Fabricated Metal Product Manufacturing
+- `G133` S_NUM_INPUT: 5.9575
+- `H133` S_DEFAULT: supplier
+- `I133` S_DEFAULT: piping
+- `J133` S_DEFAULT: naics4
+- `B134` S_DEFAULT: LENAPE FORGED PRODUCTS CORP.
+- `C134` S_DEFAULT: GR2CKSBB4MB5
+- `D134` S_DEFAULT: USA
+- `E134` S_DEFAULT: 3321
+- `F134` S_DEFAULT: Nonferrous Forging
+- `G134` S_NUM_INPUT: 5.9332
+- `H134` S_DEFAULT: supplier
+- `I134` S_DEFAULT: castings
+- `J134` S_DEFAULT: naics4
+- `B135` S_DEFAULT: GP STRATEGIES CORPORATION
+- `C135` S_DEFAULT: GLRVV6FC6DB3
+- `D135` S_DEFAULT: USA
+- `E135` S_DEFAULT: 6114
+- `F135` S_DEFAULT: Professional and Management Development Training
+- `G135` S_NUM_INPUT: 5.8987
+- `H135` S_DEFAULT: service
+- `I135` S_DEFAULT: -
+- `J135` S_DEFAULT: service NAICS
+- `B136` S_DEFAULT: MICRO PRECISION, LLC
+- `C136` S_DEFAULT: E2P8AAJA2LK5
+- `D136` S_DEFAULT: USA
+- `E136` S_DEFAULT: 3327
+- `F136` S_DEFAULT: Precision Turned Product Manufacturing
+- `G136` S_NUM_INPUT: 5.8632
+- `H136` S_DEFAULT: supplier
+- `I136` S_DEFAULT: machining
+- `J136` S_DEFAULT: naics4
+- `B137` S_DEFAULT: TRIDENT MARITIME SYSTEMS UK LIMITED
+- `C137` S_DEFAULT: E9DKKLZNCQS9
+- `D137` S_DEFAULT: GBR
+- `E137` S_DEFAULT: 3344
+- `F137` S_DEFAULT: Other Electronic Component Manufacturing
+- `G137` S_NUM_INPUT: 5.7874
+- `H137` S_DEFAULT: supplier
+- `I137` S_DEFAULT: electrical
+- `J137` S_DEFAULT: naics4
+- `B138` S_DEFAULT: CARLTON NATIONAL RESOURCES INC
+- `C138` S_DEFAULT: M98JCJ2U7RD8
+- `D138` S_DEFAULT: USA
+- `E138` S_DEFAULT: 5413
+- `F138` S_DEFAULT: Engineering Services
+- `G138` S_NUM_INPUT: 5.7229
+- `H138` S_DEFAULT: service
+- `I138` S_DEFAULT: -
+- `J138` S_DEFAULT: service NAICS
+- `B139` S_DEFAULT: ARTCRAFT FABRICATORS INC
+- `C139` S_DEFAULT: QZ9GLUKS1MS9
+- `D139` S_DEFAULT: USA
+- `E139` S_DEFAULT: 3327
+- `F139` S_DEFAULT: Machine Shops
+- `G139` S_NUM_INPUT: 5.5757
+- `H139` S_DEFAULT: supplier
+- `I139` S_DEFAULT: machining
+- `J139` S_DEFAULT: naics4
+- `B140` S_DEFAULT: GLOBAL EXECUTIVE SOLUTIONS, LLC
+- `C140` S_DEFAULT: HYNSUU4GPWA9
+- `D140` S_DEFAULT: USA
+- `E140` S_DEFAULT: 5416
+- `F140` S_DEFAULT: Administrative Management and General Management Consulting Services
+- `G140` S_NUM_INPUT: 5.4754
+- `H140` S_DEFAULT: service
+- `I140` S_DEFAULT: -
+- `J140` S_DEFAULT: service NAICS
+- `B141` S_DEFAULT: CURTISS-WRIGHT ELECTRO-MECHANICAL CORP
+- `C141` S_DEFAULT: HLQLWMV97J37
+- `D141` S_DEFAULT: USA
+- `E141` S_DEFAULT: 3366
+- `F141` S_DEFAULT: Ship Building and Repairing
+- `G141` S_NUM_INPUT: 5.4421
+- `H141` S_DEFAULT: supplier
+- `I141` S_DEFAULT: structural
+- `J141` S_DEFAULT: naics4
+- `B142` S_DEFAULT: CIRCOR PUMPS NORTH AMERICA LLC
+- `C142` S_DEFAULT: N9UNRN3F79J1
+- `D142` S_DEFAULT: -
+- `E142` S_DEFAULT: -
+- `F142` S_DEFAULT: -
+- `G142` S_NUM_INPUT: 5.2948
+- `H142` S_DEFAULT: supplier
+- `I142` S_DEFAULT: piping
+- `J142` S_DEFAULT: vendor-override
+- `B143` S_DEFAULT: EVEREST KANTO CYLINDER LIMITED
+- `C143` S_DEFAULT: C8TMP34LW2L6
+- `D143` S_DEFAULT: -
+- `E143` S_DEFAULT: -
+- `F143` S_DEFAULT: -
+- `G143` S_NUM_INPUT: 5.2511
+- `H143` S_DEFAULT: supplier
+- `I143` S_DEFAULT: unbucketed
+- `J143` S_DEFAULT: residual
+- `B144` S_DEFAULT: CLEVELAND-CLIFFS INC.
+- `C144` S_DEFAULT: EVP4KM37YU23
+- `D144` S_DEFAULT: USA
+- `E144` S_DEFAULT: -
+- `F144` S_DEFAULT: -
+- `G144` S_NUM_INPUT: 5.1337
+- `H144` S_DEFAULT: supplier
+- `I144` S_DEFAULT: unbucketed
+- `J144` S_DEFAULT: residual
+- `B145` S_DEFAULT: SHERBURN ELECTRONICS INC.
+- `C145` S_DEFAULT: HQYTCMF5RGE4
+- `D145` S_DEFAULT: USA
+- `E145` S_DEFAULT: 4236
+- `F145` S_DEFAULT: Other Electronic Parts and Equipment Merchant Wholesalers
+- `G145` S_NUM_INPUT: 5.1244
+- `H145` S_DEFAULT: service
+- `I145` S_DEFAULT: -
+- `J145` S_DEFAULT: service NAICS
+- `B146` S_DEFAULT: PROGENY SYSTEMS CORPORATION
+- `C146` S_DEFAULT: MU3CM1145E44
+- `D146` S_DEFAULT: USA
+- `E146` S_DEFAULT: 5417
+- `F146` S_DEFAULT: Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)
+- `G146` S_NUM_INPUT: 5.0926
+- `H146` S_DEFAULT: service
+- `I146` S_DEFAULT: -
+- `J146` S_DEFAULT: service NAICS
+- `B147` S_DEFAULT: MELLINGER ENGINEERING, INCORPORATED
+- `C147` S_DEFAULT: E86EYMJR23D1
+- `D147` S_DEFAULT: USA
+- `E147` S_DEFAULT: 3329
+- `F147` S_DEFAULT: Industrial Valve Manufacturing
+- `G147` S_NUM_INPUT: 4.9502
+- `H147` S_DEFAULT: supplier
+- `I147` S_DEFAULT: piping
+- `J147` S_DEFAULT: naics4
+- `B148` S_DEFAULT: BAE SYSTEMS HOLDINGS INC.
+- `C148` S_DEFAULT: PNQKKYEK31E3
+- `D148` S_DEFAULT: -
+- `E148` S_DEFAULT: -
+- `F148` S_DEFAULT: -
+- `G148` S_NUM_INPUT: 4.8858
+- `H148` S_DEFAULT: supplier
+- `I148` S_DEFAULT: unbucketed
+- `J148` S_DEFAULT: residual
+- `B149` S_DEFAULT: SCHLUMBERGER N.V.
+- `C149` S_DEFAULT: W1LDBNHD4EM7
+- `D149` S_DEFAULT: -
+- `E149` S_DEFAULT: -
+- `F149` S_DEFAULT: -
+- `G149` S_NUM_INPUT: 4.6285
+- `H149` S_DEFAULT: supplier
+- `I149` S_DEFAULT: unbucketed
+- `J149` S_DEFAULT: residual
+- `B150` S_DEFAULT: TIM BRIERE
+- `C150` S_DEFAULT: QB7EKDNK2E83
+- `D150` S_DEFAULT: USA
+- `E150` S_DEFAULT: 3327
+- `F150` S_DEFAULT: Machine Shops
+- `G150` S_NUM_INPUT: 4.6268
+- `H150` S_DEFAULT: supplier
+- `I150` S_DEFAULT: machining
+- `J150` S_DEFAULT: naics4
+- `B151` S_DEFAULT: AQUA-CHEM, INC.
+- `C151` S_DEFAULT: E3YNKWRANZ18
+- `D151` S_DEFAULT: USA
+- `E151` S_DEFAULT: 3324
+- `F151` S_DEFAULT: Power Boiler and Heat Exchanger Manufacturing
+- `G151` S_NUM_INPUT: 4.5858
+- `H151` S_DEFAULT: supplier
+- `I151` S_DEFAULT: structural
+- `J151` S_DEFAULT: naics4
+- `B152` S_DEFAULT: PENNSYLVANIA MACHINE WORKS, LLC
+- `C152` S_DEFAULT: XTYYPELG5MQ7
+- `D152` S_DEFAULT: -
+- `E152` S_DEFAULT: -
+- `F152` S_DEFAULT: -
+- `G152` S_NUM_INPUT: 4.5773
+- `H152` S_DEFAULT: supplier
+- `I152` S_DEFAULT: unbucketed
+- `J152` S_DEFAULT: residual
+- `B153` S_DEFAULT: HTP MEDS, LLC
+- `C153` S_DEFAULT: FH39KDCYBK21
+- `D153` S_DEFAULT: -
+- `E153` S_DEFAULT: -
+- `F153` S_DEFAULT: -
+- `G153` S_NUM_INPUT: 4.4774
+- `H153` S_DEFAULT: supplier
+- `I153` S_DEFAULT: unbucketed
+- `J153` S_DEFAULT: residual
+- `B154` S_DEFAULT: DYNAMIC PRECISION GROUP, INC.
+- `C154` S_DEFAULT: FFXKK2MMEM97
+- `D154` S_DEFAULT: -
+- `E154` S_DEFAULT: -
+- `F154` S_DEFAULT: -
+- `G154` S_NUM_INPUT: 4.4189
+- `H154` S_DEFAULT: supplier
+- `I154` S_DEFAULT: unbucketed
+- `J154` S_DEFAULT: residual
+- `B155` S_DEFAULT: ELMA ELECTRONIC AG
+- `C155` S_DEFAULT: XLKTN1TLGB75
+- `D155` S_DEFAULT: -
+- `E155` S_DEFAULT: -
+- `F155` S_DEFAULT: -
+- `G155` S_NUM_INPUT: 4.3803
+- `H155` S_DEFAULT: supplier
+- `I155` S_DEFAULT: unbucketed
+- `J155` S_DEFAULT: residual
+- `B156` S_DEFAULT: B N L INDUSTRIES INC
+- `C156` S_DEFAULT: PJRYS7EFXQD9
+- `D156` S_DEFAULT: USA
+- `E156` S_DEFAULT: 3329
+- `F156` S_DEFAULT: Industrial Valve Manufacturing
+- `G156` S_NUM_INPUT: 4.3773
+- `H156` S_DEFAULT: supplier
+- `I156` S_DEFAULT: piping
+- `J156` S_DEFAULT: naics4
+- `B157` S_DEFAULT: STRYTEN ENERGY LLC
+- `C157` S_DEFAULT: H8CSTCGGDD87
+- `D157` S_DEFAULT: USA
+- `E157` S_DEFAULT: 3359
+- `F157` S_DEFAULT: Battery Manufacturing
+- `G157` S_NUM_INPUT: 4.3645
+- `H157` S_DEFAULT: supplier
+- `I157` S_DEFAULT: electrical
+- `J157` S_DEFAULT: naics4
+- `B158` S_DEFAULT: LEIDOS HOLDINGS, INC.
+- `C158` S_DEFAULT: ZL41ERXMPAR3
+- `D158` S_DEFAULT: USA
+- `E158` S_DEFAULT: 5417
+- `F158` S_DEFAULT: Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)
+- `G158` S_NUM_INPUT: 4.3428
+- `H158` S_DEFAULT: service
+- `I158` S_DEFAULT: -
+- `J158` S_DEFAULT: service NAICS
+- `B159` S_DEFAULT: TRILOGIC SYSTEMS CORPORATION
+- `C159` S_DEFAULT: K6LKL4BYZGZ6
+- `D159` S_DEFAULT: USA
+- `E159` S_DEFAULT: 5415
+- `F159` S_DEFAULT: Other Computer Related Services
+- `G159` S_NUM_INPUT: 4.3206
+- `H159` S_DEFAULT: service
+- `I159` S_DEFAULT: -
+- `J159` S_DEFAULT: service NAICS
+- `B160` S_DEFAULT: L3HARRIS MARITIME SERVICES INC
+- `C160` S_DEFAULT: PNE9R5EJMWK8
+- `D160` S_DEFAULT: -
+- `E160` S_DEFAULT: -
+- `F160` S_DEFAULT: -
+- `G160` S_NUM_INPUT: 4.2738
+- `H160` S_DEFAULT: supplier
+- `I160` S_DEFAULT: unbucketed
+- `J160` S_DEFAULT: vendor-override
+- `B161` S_DEFAULT: QINETIQ GROUP PLC
+- `C161` S_DEFAULT: LL4CVJVLBGN1
+- `D161` S_DEFAULT: -
+- `E161` S_DEFAULT: -
+- `F161` S_DEFAULT: -
+- `G161` S_NUM_INPUT: 4.2713
+- `H161` S_DEFAULT: supplier
+- `I161` S_DEFAULT: unbucketed
+- `J161` S_DEFAULT: residual
+- `B162` S_DEFAULT: TIOGA PIPE INC
+- `C162` S_DEFAULT: D1L2HV3GLLY3
+- `D162` S_DEFAULT: USA
+- `E162` S_DEFAULT: 4235
+- `F162` S_DEFAULT: Metal Service Centers and Other Metal Merchant Wholesalers
+- `G162` S_NUM_INPUT: 4.2425
+- `H162` S_DEFAULT: supplier
+- `I162` S_DEFAULT: piping
+- `J162` S_DEFAULT: vendor-override
+- `A165` S_DEFAULT: x
+- `B165` S_TITLE_SECTION: Location_Master - subaward geography (HINT only; the award-action scope controls)
+- `C165` S_TITLE_SECTION: 
+- `D165` S_TITLE_SECTION: 
+- `E165` S_TITLE_SECTION: 
+- `F165` S_TITLE_SECTION: 
+- `B167` S_DEFAULT: Prime-controlled states (final-assembly yard or major prime site):
+- `B168` S_DEFAULT:   CT/RI = Electric Boat (Groton/Quonset) ; VA = HII-Newport News ; MS = HII-Ingalls
+- `B169` S_DEFAULT: Subaward $ landing in a prime-controlled state is distributed-view, not necessarily addressable.
+- `A171` S_DEFAULT: x
+- `B171` S_TITLE_SUBSECTION: Top 15 states by subaward $ ($M lifetime, with prime-controlled flag)
+- `C171` S_TITLE_SUBSECTION: 
+- `D171` S_TITLE_SUBSECTION: 
+- `E171` S_TITLE_SUBSECTION: 
+- `F171` S_TITLE_SUBSECTION: 
+- `B172` S_HEADER_LEFT: State
+- `C172` S_HEADER_LEFT: Name
+- `D172` S_HEADER_LEFT: $M
+- `E172` S_HEADER_LEFT: % of US
+- `F172` S_HEADER_LEFT: Prime-controlled site
+- `B173` S_DEFAULT: CA
+- `C173` S_DEFAULT: California
+- `D173` S_NUM_INPUT: 1539.0387115700007
+- `E173` S_PCT_INPUT: 0.25923880788822434
+- `B174` S_DEFAULT: PA
+- `C174` S_DEFAULT: Pennsylvania
+- `D174` S_NUM_INPUT: 759.5038889100001
+- `E174` S_PCT_INPUT: 0.12793237835235793
+- `B175` S_DEFAULT: MA
+- `C175` S_DEFAULT: Massachusetts
+- `D175` S_NUM_INPUT: 578.5579855299998
+- `E175` S_PCT_INPUT: 0.09745348270675248
+- `B176` S_DEFAULT: WI
+- `C176` S_DEFAULT: Wisconsin
+- `D176` S_NUM_INPUT: 473.3480479499999
+- `E176` S_PCT_INPUT: 0.07973170703522928
+- `B177` S_DEFAULT: NJ
+- `C177` S_DEFAULT: New Jersey
+- `D177` S_NUM_INPUT: 301.23720686999974
+- `E177` S_PCT_INPUT: 0.050741007236194687
+- `B178` S_DEFAULT: NY
+- `C178` S_DEFAULT: New York
+- `D178` S_NUM_INPUT: 294.52872306
+- `E178` S_PCT_INPUT: 0.04961101659166587
+- `B179` S_DEFAULT: IL
+- `C179` S_DEFAULT: Illinois
+- `D179` S_NUM_INPUT: 219.83681841000006
+- `E179` S_PCT_INPUT: 0.0370297603992116
+- `B180` S_DEFAULT: CT
+- `C180` S_DEFAULT: Connecticut
+- `D180` S_NUM_INPUT: 196.27133448
+- `E180` S_PCT_INPUT: 0.033060342401213146
+- `F180` S_DEFAULT: EB (Groton)
+- `B181` S_DEFAULT: VA
+- `C181` S_DEFAULT: Virginia
+- `D181` S_NUM_INPUT: 184.73829963999998
+- `E181` S_PCT_INPUT: 0.031117694577751313
+- `F181` S_DEFAULT: HII-NNS (Newport News)
+- `B182` S_DEFAULT: FL
+- `C182` S_DEFAULT: Florida
+- `D182` S_NUM_INPUT: 159.43718345999997
+- `E182` S_PCT_INPUT: 0.026855923156775367
+- `B183` S_DEFAULT: OH
+- `C183` S_DEFAULT: Ohio
+- `D183` S_NUM_INPUT: 138.76447374999995
+- `E183` S_PCT_INPUT: 0.023373769926482192
+- `B184` S_DEFAULT: SC
+- `C184` S_DEFAULT: South Carolina
+- `D184` S_NUM_INPUT: 135.16790820000003
+- `E184` S_PCT_INPUT: 0.022767957117054736
+- `B185` S_DEFAULT: TX
+- `C185` S_DEFAULT: Texas
+- `D185` S_NUM_INPUT: 128.37614687000004
+- `E185` S_PCT_INPUT: 0.021623939037837984
+- `B186` S_DEFAULT: NH
+- `C186` S_DEFAULT: New Hampshire
+- `D186` S_NUM_INPUT: 117.28998714000004
+- `E186` S_PCT_INPUT: 0.01975656376595034
+- `B187` S_DEFAULT: MI
+- `C187` S_DEFAULT: Michigan
+- `D187` S_NUM_INPUT: 107.63751011
+- `E187` S_PCT_INPUT: 0.018130680921279695
+- `A189` S_DEFAULT: x
+- `B189` S_TITLE_SUBSECTION: Country distribution (foreign = supplier-addressable, not prime)
+- `C189` S_TITLE_SUBSECTION: 
+- `D189` S_TITLE_SUBSECTION: 
+- `E189` S_TITLE_SUBSECTION: 
+- `F189` S_TITLE_SUBSECTION: 
+- `B190` S_HEADER_LEFT: Code
+- `C190` S_HEADER_LEFT: Country
+- `D190` S_HEADER_LEFT: $M
+- `E190` S_HEADER_LEFT: % of total
+- `F190` S_HEADER_LEFT: 
+- `B191` S_DEFAULT: US
+- `C191` S_DEFAULT: United States
+- `D191` S_NUM_INPUT: 5936.760487779991
+- `E191` S_PCT_INPUT: 0.9670260341886446
+- `B192` S_DEFAULT: GB
+- `C192` S_DEFAULT: United Kingdom
+- `D192` S_NUM_INPUT: 160.96134447999998
+- `E192` S_PCT_INPUT: 0.026218644146173444
+- `B193` S_DEFAULT: CH
+- `C193` S_DEFAULT: Switzerland
+- `D193` S_NUM_INPUT: 32.80170425999998
+- `E193` S_PCT_INPUT: 0.00534299843331528
+- `B194` S_DEFAULT: CA
+- `C194` S_DEFAULT: Canada
+- `D194` S_NUM_INPUT: 8.00011758
+- `E194` S_PCT_INPUT: 0.0013031217938393198
+- `B195` S_DEFAULT: DK
+- `C195` S_DEFAULT: Denmark
+- `D195` S_NUM_INPUT: 0.5095565400000001
+- `E195` S_PCT_INPUT: 8.300055915770142e-05
+- `B196` S_DEFAULT: BR
+- `C196` S_DEFAULT: Brazil
+- `D196` S_NUM_INPUT: 0.109202
+- `E196` S_PCT_INPUT: 1.7787676831974934e-05
+- `B197` S_DEFAULT: CN
+- `C197` S_DEFAULT: China
+- `D197` S_NUM_INPUT: 0.05165028
+- `E197` S_PCT_INPUT: 8.413202037700943e-06
+- `A200` S_DEFAULT: x
+- `B200` S_TITLE_SECTION: Worktype_Evidence - top vendors per bucket (links to Entity_Master)
+- `C200` S_TITLE_SECTION: 
+- `D200` S_TITLE_SECTION: 
+- `E200` S_TITLE_SECTION: 
+- `A201` S_DEFAULT: x
+- `B201` S_TITLE_SUBSECTION: Structural fab / pre-outfit  -  top 3 vendors by subaward $
+- `C201` S_TITLE_SUBSECTION: 
+- `D201` S_TITLE_SUBSECTION: 
+- `E201` S_TITLE_SUBSECTION: 
+- `B202` S_HEADER_LEFT: Rank
+- `C202` S_HEADER_LEFT: Vendor
+- `D202` S_HEADER_LEFT: $M
+- `E202` S_HEADER_LEFT: NAICS desc
+- `B203` S_DEFAULT: 1
+- `C203` S_DEFAULT: ='Vendor_Buckets'!B18
+- `D203` S_LINK_NUM: ='Vendor_Buckets'!G18
+- `E203` S_DEFAULT: ='Vendor_Buckets'!F18
+- `B204` S_DEFAULT: 2
+- `C204` S_DEFAULT: ='Vendor_Buckets'!B19
+- `D204` S_LINK_NUM: ='Vendor_Buckets'!G19
+- `E204` S_DEFAULT: ='Vendor_Buckets'!F19
+- `B205` S_DEFAULT: 3
+- `C205` S_DEFAULT: ='Vendor_Buckets'!B21
+- `D205` S_LINK_NUM: ='Vendor_Buckets'!G21
+- `E205` S_DEFAULT: ='Vendor_Buckets'!F21
+- `A207` S_DEFAULT: x
+- `B207` S_TITLE_SUBSECTION: Machining  -  top 3 vendors by subaward $
+- `C207` S_TITLE_SUBSECTION: 
+- `D207` S_TITLE_SUBSECTION: 
+- `E207` S_TITLE_SUBSECTION: 
+- `B208` S_HEADER_LEFT: Rank
+- `C208` S_HEADER_LEFT: Vendor
+- `D208` S_HEADER_LEFT: $M
+- `E208` S_HEADER_LEFT: NAICS desc
+- `B209` S_DEFAULT: 1
+- `C209` S_DEFAULT: ='Vendor_Buckets'!B35
+- `D209` S_LINK_NUM: ='Vendor_Buckets'!G35
+- `E209` S_DEFAULT: ='Vendor_Buckets'!F35
+- `B210` S_DEFAULT: 2
+- `C210` S_DEFAULT: ='Vendor_Buckets'!B46
+- `D210` S_LINK_NUM: ='Vendor_Buckets'!G46
+- `E210` S_DEFAULT: ='Vendor_Buckets'!F46
+- `B211` S_DEFAULT: 3
+- `C211` S_DEFAULT: ='Vendor_Buckets'!B62
+- `D211` S_LINK_NUM: ='Vendor_Buckets'!G62
+- `E211` S_DEFAULT: ='Vendor_Buckets'!F62
+- `A213` S_DEFAULT: x
+- `B213` S_TITLE_SUBSECTION: Castings & forgings  -  top 3 vendors by subaward $
+- `C213` S_TITLE_SUBSECTION: 
+- `D213` S_TITLE_SUBSECTION: 
+- `E213` S_TITLE_SUBSECTION: 
+- `B214` S_HEADER_LEFT: Rank
+- `C214` S_HEADER_LEFT: Vendor
+- `D214` S_HEADER_LEFT: $M
+- `E214` S_HEADER_LEFT: NAICS desc
+- `B215` S_DEFAULT: 1
+- `C215` S_DEFAULT: ='Vendor_Buckets'!B16
+- `D215` S_LINK_NUM: ='Vendor_Buckets'!G16
+- `E215` S_DEFAULT: ='Vendor_Buckets'!F16
+- `B216` S_DEFAULT: 2
+- `C216` S_DEFAULT: ='Vendor_Buckets'!B89
+- `D216` S_LINK_NUM: ='Vendor_Buckets'!G89
+- `E216` S_DEFAULT: ='Vendor_Buckets'!F89
+- `B217` S_DEFAULT: 3
+- `C217` S_DEFAULT: ='Vendor_Buckets'!B90
+- `D217` S_LINK_NUM: ='Vendor_Buckets'!G90
+- `E217` S_DEFAULT: ='Vendor_Buckets'!F90
+- `A219` S_DEFAULT: x
+- `B219` S_TITLE_SUBSECTION: Piping / valves / pumps  -  top 3 vendors by subaward $
+- `C219` S_TITLE_SUBSECTION: 
+- `D219` S_TITLE_SUBSECTION: 
+- `E219` S_TITLE_SUBSECTION: 
+- `B220` S_HEADER_LEFT: Rank
+- `C220` S_HEADER_LEFT: Vendor
+- `D220` S_HEADER_LEFT: $M
+- `E220` S_HEADER_LEFT: NAICS desc
+- `B221` S_DEFAULT: 1
+- `C221` S_DEFAULT: ='Vendor_Buckets'!B15
+- `D221` S_LINK_NUM: ='Vendor_Buckets'!G15
+- `E221` S_DEFAULT: ='Vendor_Buckets'!F15
+- `B222` S_DEFAULT: 2
+- `C222` S_DEFAULT: ='Vendor_Buckets'!B20
+- `D222` S_LINK_NUM: ='Vendor_Buckets'!G20
+- `E222` S_DEFAULT: ='Vendor_Buckets'!F20
+- `B223` S_DEFAULT: 3
+- `C223` S_DEFAULT: ='Vendor_Buckets'!B25
+- `D223` S_LINK_NUM: ='Vendor_Buckets'!G25
+- `E223` S_DEFAULT: ='Vendor_Buckets'!F25
+- `A225` S_DEFAULT: x
+- `B225` S_TITLE_SUBSECTION: Electrical / power  -  top 3 vendors by subaward $
+- `C225` S_TITLE_SUBSECTION: 
+- `D225` S_TITLE_SUBSECTION: 
+- `E225` S_TITLE_SUBSECTION: 
+- `B226` S_HEADER_LEFT: Rank
+- `C226` S_HEADER_LEFT: Vendor
+- `D226` S_HEADER_LEFT: $M
+- `E226` S_HEADER_LEFT: NAICS desc
+- `B227` S_DEFAULT: 1
+- `C227` S_DEFAULT: ='Vendor_Buckets'!B13
+- `D227` S_LINK_NUM: ='Vendor_Buckets'!G13
+- `E227` S_DEFAULT: ='Vendor_Buckets'!F13
+- `B228` S_DEFAULT: 2
+- `C228` S_DEFAULT: ='Vendor_Buckets'!B14
+- `D228` S_LINK_NUM: ='Vendor_Buckets'!G14
+- `E228` S_DEFAULT: ='Vendor_Buckets'!F14
+- `B229` S_DEFAULT: 3
+- `C229` S_DEFAULT: ='Vendor_Buckets'!B38
+- `D229` S_LINK_NUM: ='Vendor_Buckets'!G38
+- `E229` S_DEFAULT: ='Vendor_Buckets'!F38
+- `A231` S_DEFAULT: x
+- `B231` S_TITLE_SUBSECTION: HVAC / ventilation  -  top 3 vendors by subaward $
+- `C231` S_TITLE_SUBSECTION: 
+- `D231` S_TITLE_SUBSECTION: 
+- `E231` S_TITLE_SUBSECTION: 
+- `B232` S_HEADER_LEFT: Rank
+- `C232` S_HEADER_LEFT: Vendor
+- `D232` S_HEADER_LEFT: $M
+- `E232` S_HEADER_LEFT: NAICS desc
+- `B233` S_DEFAULT: 1
+- `C233` S_DEFAULT: ='Vendor_Buckets'!B30
+- `D233` S_LINK_NUM: ='Vendor_Buckets'!G30
+- `E233` S_DEFAULT: ='Vendor_Buckets'!F30
+- `B234` S_DEFAULT: 2
+- `C234` S_DEFAULT: ='Vendor_Buckets'!B49
+- `D234` S_LINK_NUM: ='Vendor_Buckets'!G49
+- `E234` S_DEFAULT: ='Vendor_Buckets'!F49
+- `B235` S_DEFAULT: 3
+- `C235` S_DEFAULT: ='Vendor_Buckets'!B87
+- `D235` S_LINK_NUM: ='Vendor_Buckets'!G87
+- `E235` S_DEFAULT: ='Vendor_Buckets'!F87
+- `A237` S_DEFAULT: x
+- `B237` S_TITLE_SUBSECTION: Coatings / insulation  -  top 3 vendors by subaward $
+- `C237` S_TITLE_SUBSECTION: 
+- `D237` S_TITLE_SUBSECTION: 
+- `E237` S_TITLE_SUBSECTION: 
+- `B238` S_HEADER_LEFT: Rank
+- `C238` S_HEADER_LEFT: Vendor
+- `D238` S_HEADER_LEFT: $M
+- `E238` S_HEADER_LEFT: NAICS desc
+- `B239` S_DEFAULT: 1
+- `C239` S_DEFAULT: ='Vendor_Buckets'!B27
+- `D239` S_LINK_NUM: ='Vendor_Buckets'!G27
+- `E239` S_DEFAULT: ='Vendor_Buckets'!F27
+- `B240` S_DEFAULT: 2
+- `C240` S_DEFAULT: ='Vendor_Buckets'!B31
+- `D240` S_LINK_NUM: ='Vendor_Buckets'!G31
+- `E240` S_DEFAULT: ='Vendor_Buckets'!F31
+- `B241` S_DEFAULT: 3
+- `C241` S_DEFAULT: ='Vendor_Buckets'!B53
+- `D241` S_LINK_NUM: ='Vendor_Buckets'!G53
+- `E241` S_DEFAULT: ='Vendor_Buckets'!F53

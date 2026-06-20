@@ -1,0 +1,4441 @@
+{
+  "recipient_name": "INTEGRATED CONSULTING SERVICES, INC.",
+  "recipient_uei": "VXLGD89DGXW7",
+  "query": "VENDOR_UEI:\"VXLGD89DGXW7\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 9,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1229686.86,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00005",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2017-12-20 00:00:00",
+      "effective_date": "2017-12-20 12:12:00",
+      "current_completion_date": "2018-02-13 12:02:00",
+      "ultimate_completion_date": "2018-02-13 12:02:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "CHANGED WAWF CLAUSE TO ALLOW FOR INVOICE COMBO 2 IN 1",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00005",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-12-20 00:00:00",
+          "effectiveDate": "2017-12-20 12:12:00",
+          "currentCompletionDate": "2018-02-13 12:02:00",
+          "ultimateCompletionDate": "2018-02-13 12:02:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CHANGED WAWF CLAUSE TO ALLOW FOR INVOICE COMBO 2 IN 1",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "CALIFORNIA",
+              "#text": "CA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "VENTURA",
+            "@city": "PORT HUENEME",
+            "#text": "930411107"
+          },
+          "placeOfPerformanceCongressionalDistrict": "26"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2017-12-19 15:10:38",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2017-12-20 14:57:14",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2017-12-20 14:57:14",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00002",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2017-02-27 00:00:00",
+      "effective_date": "2017-02-27 12:02:00",
+      "current_completion_date": "2018-02-13 12:02:00",
+      "ultimate_completion_date": "2018-02-13 12:02:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "THE PURPOSE OF THIS MODIFICATION TO CONTRACT W15QKN-17-C-0014 IS TO CHANGE THE PRIMARY TECHNICAL POINT OF CONTRACT (TPOC), DESIGNATE WAWF POC, CHANGE IN SCHEDULE FOR THE DELIVERY OF THE OBRP KITS, AND CHANGE SECTION 3.1.2.2 OF THE STATEMENT OF WORK (SOW).",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00002",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-02-27 00:00:00",
+          "effectiveDate": "2017-02-27 12:02:00",
+          "currentCompletionDate": "2018-02-13 12:02:00",
+          "ultimateCompletionDate": "2018-02-13 12:02:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "THE PURPOSE OF THIS MODIFICATION TO CONTRACT W15QKN-17-C-0014 IS TO CHANGE THE PRIMARY TECHNICAL POINT OF CONTRACT (TPOC), DESIGNATE WAWF POC, CHANGE IN SCHEDULE FOR THE DELIVERY OF THE OBRP KITS, AND CHANGE SECTION 3.1.2.2 OF THE STATEMENT OF WORK (SOW).",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "401 INDUSTRY RD #600",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402081692"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "6314358300",
+              "faxNo": "6314358458",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "CALIFORNIA",
+              "#text": "CA"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "VENTURA",
+            "@city": "PORT HUENEME CBC BASE",
+            "#text": "930434307"
+          },
+          "placeOfPerformanceCongressionalDistrict": "26"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2017-02-27 10:55:58",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2017-02-27 14:39:39",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2017-02-27 14:39:39"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00007",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2018-01-11 00:00:00",
+      "effective_date": "2018-01-11 00:00:00",
+      "current_completion_date": "2018-03-31 00:00:00",
+      "ultimate_completion_date": "2018-03-31 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "DELIVERY DATE FOR CLIN 0001 \"GUN COMPUTER SYSTEM CABINET MK119\" IS HEREBY CHANGED:\nA. DEL REL CODE 001\nFROM: JANUARY 14, 2018; QTY 1\nTO: MARCH 31, 2018; QTY 2\nB. DEL REL CODE 002\nFROM: FEBRUARY 13, 2018; QTY 1\nTO: \"DELETED\"; TO INCORPORATE TWO (2) \"GUN COMPUTER SYSTEM CABINET MK119\" ILLUSTRATED UNDER CLIN 0001 OF THIS CONTRACT ARE DELIVERED\nON MARCH 31, 2018.",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00007",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-01-11 00:00:00",
+          "effectiveDate": "2018-01-11 00:00:00",
+          "currentCompletionDate": "2018-03-31 00:00:00",
+          "ultimateCompletionDate": "2018-03-31 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "DELIVERY DATE FOR CLIN 0001 \"GUN COMPUTER SYSTEM CABINET MK119\" IS HEREBY CHANGED:\nA. DEL REL CODE 001\nFROM: JANUARY 14, 2018; QTY 1\nTO: MARCH 31, 2018; QTY 2\nB. DEL REL CODE 002\nFROM: FEBRUARY 13, 2018; QTY 1\nTO: \"DELETED\"; TO INCORPORATE TWO (2) \"GUN COMPUTER SYSTEM CABINET MK119\" ILLUSTRATED UNDER CLIN 0001 OF THIS CONTRACT ARE DELIVERED\nON MARCH 31, 2018.",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402081692"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "SYSORIG.W15QKN@SA2100",
+          "createdDate": "2018-01-24 10:49:05",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2018-01-24 11:04:42",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2018-01-24 11:04:42",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00004",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2017-10-30 00:00:00",
+      "effective_date": "2017-10-30 00:00:00",
+      "current_completion_date": "2018-02-13 00:00:00",
+      "ultimate_completion_date": "2018-02-13 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "MOD TO CHANGE ADDRESS FROM: INTEGRATED CONSULTING SERVICES, INC.\n130 ROCHESTER DR\nLOUISVILLE, KY 40214-2600",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00004",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-10-30 00:00:00",
+          "effectiveDate": "2017-10-30 00:00:00",
+          "currentCompletionDate": "2018-02-13 00:00:00",
+          "ultimateCompletionDate": "2018-02-13 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "OTHER ADMINISTRATIVE ACTION",
+            "#text": "M"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD TO CHANGE ADDRESS FROM: INTEGRATED CONSULTING SERVICES, INC.\n130 ROCHESTER DR\nLOUISVILLE, KY 40214-2600",
+          "GFE-GFP": {
+            "@description": "Transaction does not use GFE/GFP",
+            "#text": "N"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402992450"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "TINA.PITTENGER@SU2100.JM",
+          "createdDate": "2017-11-02 10:04:58",
+          "lastModifiedBy": "TINA.PITTENGER@SU2100.JM",
+          "lastModifiedDate": "2017-11-02 10:05:54",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "TINA.PITTENGER@SU2100.JM",
+          "approvedDate": "2017-11-02 10:05:54",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00001",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2017-01-10 00:00:00",
+      "effective_date": "2017-01-10 12:01:00",
+      "current_completion_date": "2018-02-13 12:02:00",
+      "ultimate_completion_date": "2018-02-13 12:02:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "CHANGE PAY OFFICE FROM HQ0304 TO PAY OFFICE N68732 UNDER THE ONE PAY LEGACY SYSTEM.",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00001",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-01-10 00:00:00",
+          "effectiveDate": "2017-01-10 12:01:00",
+          "currentCompletionDate": "2018-02-13 12:02:00",
+          "ultimateCompletionDate": "2018-02-13 12:02:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CHANGE PAY OFFICE FROM HQ0304 TO PAY OFFICE N68732 UNDER THE ONE PAY LEGACY SYSTEM.",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "401 INDUSTRY RD #600",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402081692"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "6314358300",
+              "faxNo": "6314358458",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402142600"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2016-12-22 14:13:15",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2017-01-10 17:29:59",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2017-01-10 17:29:59"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00003",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2017-06-13 00:00:00",
+      "effective_date": "2017-06-13 12:06:00",
+      "current_completion_date": "2018-02-13 12:02:00",
+      "ultimate_completion_date": "2018-02-13 12:02:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "MOD TO CHANGE ADDRESS FROM: INTEGRATED CONSULTING SERVICES, INC.\n130 ROCHESTER DR\nLOUISVILLE, KY 40214-2600\n\nTO: INTEGRATED CONSULTING SERVICES, INC.\n11400 DECIMAL DR STE 1001  \nLOUISVILLE,  KY 40299-2450",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00003",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2017-06-13 00:00:00",
+          "effectiveDate": "2017-06-13 12:06:00",
+          "currentCompletionDate": "2018-02-13 12:02:00",
+          "ultimateCompletionDate": "2018-02-13 12:02:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "ENTITY ADDRESS CHANGE",
+            "#text": "W"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "MOD TO CHANGE ADDRESS FROM: INTEGRATED CONSULTING SERVICES, INC.\n130 ROCHESTER DR\nLOUISVILLE, KY 40214-2600\n\nTO: INTEGRATED CONSULTING SERVICES, INC.\n11400 DECIMAL DR STE 1001  \nLOUISVILLE,  KY 40299-2450",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402992450"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2017-06-12 10:33:11",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2021-11-01 14:45:30",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2017-06-13 15:53:32",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00006",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2018-01-09 00:00:00",
+      "effective_date": "2018-01-09 00:00:00",
+      "current_completion_date": "2018-02-13 00:00:00",
+      "ultimate_completion_date": "2018-02-13 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "CHANGE THE WAWF CLAUSE \"PAY OFFICIAL DODAAC\" FROM (HQ0304) TO (HQ0337).",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00006",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-01-09 00:00:00",
+          "effectiveDate": "2018-01-09 00:00:00",
+          "currentCompletionDate": "2018-02-13 00:00:00",
+          "ultimateCompletionDate": "2018-02-13 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "CHANGE THE WAWF CLAUSE \"PAY OFFICIAL DODAAC\" FROM (HQ0304) TO (HQ0337).",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402081692"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "SYSORIG.W15QKN@SA2100",
+          "createdDate": "2018-01-24 10:43:23",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2018-01-24 11:02:13",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2018-01-24 11:02:13",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "P00008",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 0.0,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 0.0,
+      "base_and_all_options": 0.0,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2018-08-01 00:00:00",
+      "effective_date": "2018-08-01 12:08:00",
+      "current_completion_date": "2018-08-31 12:08:00",
+      "ultimate_completion_date": "2018-08-31 12:08:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "DELIVERY DATE CLIN 0001 CHANGE TO JULY 11 2018",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "P00008",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2018-08-01 00:00:00",
+          "effectiveDate": "2018-08-01 12:08:00",
+          "currentCompletionDate": "2018-08-31 12:08:00",
+          "ultimateCompletionDate": "2018-08-31 12:08:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "0.00",
+          "baseAndExercisedOptionsValue": "0.00",
+          "baseAndAllOptionsValue": "0.00"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "reasonForModification": {
+            "@description": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+            "#text": "B"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "DELIVERY DATE CLIN 0001 CHANGE TO JULY 11 2018",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "11400 DECIMAL DR STE 1001",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402992450"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "5023645317",
+              "congressionalDistrictCode": "04",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              },
+              "cageCode": "048D0"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402142600"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2018-05-08 12:12:33",
+          "lastModifiedBy": "SYSORIG.W15QKN@SA2100",
+          "lastModifiedDate": "2018-08-27 09:26:08",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2018-08-27 09:26:08",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    },
+    {
+      "record_type": "award",
+      "piid": "W15QKN17C0014",
+      "referenced_idv_piid": null,
+      "full_piid": "W15QKN17C0014",
+      "mod_number": "0",
+      "transaction_number": "1",
+      "vendor_name": "INTEGRATED CONSULTING SERVICES, INC.",
+      "vendor_uei": "VXLGD89DGXW7",
+      "this_obligated": 1229686.86,
+      "total_obligated": 1229686.86,
+      "base_and_exercised": 1229686.86,
+      "base_and_all_options": 1229686.86,
+      "total_base_and_all_options": 1229686.86,
+      "signed_date": "2016-12-15 00:00:00",
+      "effective_date": "2016-12-15 12:12:00",
+      "current_completion_date": "2018-02-13 12:02:00",
+      "ultimate_completion_date": "2018-02-13 12:02:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W6QK ACC-PICA",
+      "contracting_office_id": "W15QKN",
+      "funding_agency": "DEPT OF THE NAVY",
+      "funding_office": "NAVSEA HQ",
+      "naics": "334511",
+      "naics_desc": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+      "psc": "2090",
+      "psc_desc": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+      "contract_action_type": "DEFINITIVE CONTRACT",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "NEGOTIATED PROPOSAL/QUOTE",
+      "number_of_offers": "2",
+      "description": "ACQUISITION OF GUN COMPUTER SYSTEM CABINETS (GCSC) MK119",
+      "raw": {
+        "@version": "1.4",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W15QKN17C0014",
+            "modNumber": "0",
+            "transactionNumber": "1"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2016-12-15 00:00:00",
+          "effectiveDate": "2016-12-15 12:12:00",
+          "currentCompletionDate": "2018-02-13 12:02:00",
+          "ultimateCompletionDate": "2018-02-13 12:02:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1229686.86",
+          "baseAndExercisedOptionsValue": "1229686.86",
+          "baseAndAllOptionsValue": "1229686.86"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1229686.86",
+          "totalBaseAndExercisedOptionsValue": "1229686.86",
+          "totalBaseAndAllOptionsValue": "1229686.86"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W6QK ACC-PICA",
+            "@country": "USA",
+            "#text": "W15QKN"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE NAVY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "1700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NAVSEA HQ",
+            "#text": "N00024"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DEFINITIVE CONTRACT",
+            "#text": "D"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "nationalInterestActionCode": {
+            "@description": "NONE",
+            "#text": "NONE"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "solicitationID": "W15QKN16Q0057",
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "ACQUISITION OF GUN COMPUTER SYSTEM CABINETS (GCSC) MK119",
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "seaTransportation": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfTreasuryAccounts": {
+            "treasuryAccount": {
+              "treasuryAccountSymbol": {
+                "agencyIdentifier": "17",
+                "mainAccountCode": "1507"
+              }
+            }
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "laborStandards": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "listOfAdditionalReportingValues": {},
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT",
+            "@productOrServiceType": "PRODUCT",
+            "#text": "2090"
+          },
+          "contractBundling": {
+            "@description": "NOT A BUNDLED REQUIREMENT",
+            "#text": "D"
+          },
+          "claimantProgramCode": {
+            "@description": "ALL OTHERS NOT IDENTIFIABLE TO ANY OTHER PROCUREMENT PROGRAM",
+            "#text": "C9E"
+          },
+          "principalNAICSCode": {
+            "@description": "SEARCH, DETECTION, NAVIGATION, GUIDANCE, AERONAUTICAL, AND NAUTICAL SYSTEM AND INSTRUMENT MANUFACTURING",
+            "#text": "334511"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED",
+            "#text": "C"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "NOT REQUIRED",
+            "#text": "E"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "MFG IN U.S.",
+            "#text": "D"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "INTEGRATED CONSULTING SERVICES, INC.",
+            "vendorAlternateName": "INTEGRATED COMBAT SYSTEMS",
+            "vendorLegalOrganizationName": "INTEGRATED CONSULTING SERVICES, INC."
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "false",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "false",
+              "minorityOwned": {
+                "isMinorityOwned": "false",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "false",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "false",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "true",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "false",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "true",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "CORPORATE NOT TAX EXEMPT"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "false"
+            },
+            "vendorLocation": {
+              "streetAddress": "401 INDUSTRY RD #600",
+              "city": "LOUISVILLE",
+              "state": {
+                "@name": "KENTUCKY",
+                "#text": "KY"
+              },
+              "ZIPCode": {
+                "@city": "LOUISVILLE",
+                "#text": "402081692"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "6314358300",
+              "faxNo": "6314358458",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "D&B"
+            },
+            "vendorAlternateSiteCode": "40208",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "VXLGD89DGXW7",
+                "UEILegalBusinessName": "INTEGRATED CONSULTING SERVICES, INC.",
+                "ultimateParentUEI": "EQB8L144P6S4",
+                "ultimateParentUEIName": "ORBIT INTERNATIONAL CORP."
+              }
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2002-04-22 00:00:00",
+              "renewalDate": "2017-05-05 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "KENTUCKY",
+              "#text": "KY"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "JEFFERSON",
+            "@city": "LOUISVILLE",
+            "#text": "402142600"
+          },
+          "placeOfPerformanceCongressionalDistrict": "03"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "NEGOTIATED PROPOSAL/QUOTE",
+            "#text": "NP"
+          },
+          "typeOfSetAside": {
+            "@description": "SMALL BUSINESS SET ASIDE - TOTAL",
+            "#text": "SBA"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "numberOfOffersReceived": "2",
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL ITEM",
+            "#text": "A"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "A76Action": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "priceEvaluationPercentDifference": "0.00"
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "PADDS.W15QKN@CS.ARMY.MIL",
+          "createdDate": "2016-11-22 10:39:09",
+          "lastModifiedBy": "DOD_CLOSEOUT",
+          "lastModifiedDate": "2023-04-12 15:08:31",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "SYSORIG.W15QKN@SA2100",
+          "approvedDate": "2016-12-15 13:21:06",
+          "closedBy": "DOD_CLOSEOUT",
+          "closedDate": "2023-04-12 15:08:31",
+          "closedStatus": "Y"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString02": "VXLGD89DGXW7"
+          },
+          "genericBooleans": {}
+        }
+      }
+    }
+  ]
+}

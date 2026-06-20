@@ -1,0 +1,4219 @@
+{
+  "slide_name": "outsourcing_ceiling_method_v3",
+  "generated_at": "2026-06-16T21:06:59.098714+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 18,
+      "cxnSp": 7,
+      "graphicFrame.table": 1
+    },
+    "total_shapes": 26,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "Framer",
+      "y_emu": 1380000,
+      "y_in": 1.509
+    },
+    "bottom_most_body": {
+      "sp_id": 60,
+      "name": "Guard1",
+      "bottom_emu": 5380000,
+      "bottom_in": 5.884
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 6085448,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Executive Summary",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / Supplier TAM and SAM",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Executive Summary / Supplier TAM and SAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 62448,
+        "avail_h_in": 0.068,
+        "wrapped_lines": 1,
+        "est_height_emu": 127000,
+        "est_height_in": 0.139,
+        "fits": false,
+        "overflow_emu": 64552,
+        "overflow_in": 0.071,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 127000,
+            "para_h_in": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1376172,
+        "avail_w_in": 1.505,
+        "avail_h_emu": 271712,
+        "avail_h_in": 0.297,
+        "wrapped_lines": 1,
+        "est_height_emu": 152400,
+        "est_height_in": 0.167,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          }
+        ]
+      }
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Outsourcing Ceiling | The maximum supplier share is built from the must-stay core and a material pass-through dial.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Outsourcing Ceiling | The maximum supplier share is built from the must-stay core and a material pass-through dial."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11190922,
+        "avail_w_in": 12.239,
+        "avail_h_emu": 548640,
+        "avail_h_in": 0.6,
+        "wrapped_lines": 2,
+        "est_height_emu": 508000,
+        "est_height_in": 0.556,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 20.0,
+            "lines": 2,
+            "para_h_emu": 508000,
+            "para_h_in": 0.556
+          }
+        ]
+      }
+    },
+    {
+      "z": 4,
+      "kind": "sp",
+      "sp_id": 10,
+      "name": "Framer",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1380000,
+        "cx": 11282362,
+        "cy": 300000,
+        "x_abs": 453079,
+        "y_abs": 1380000,
+        "x_in": 0.495,
+        "y_in": 1.509,
+        "cx_in": 12.339,
+        "cy_in": 0.328,
+        "right_emu": 11735441,
+        "bottom_emu": 1680000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "No budget line splits must-stay assembly from outsourceable work. ",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              },
+              {
+                "text": "Published place-of-performance (POP) sets today's floor, so the ceiling is built from Basic Construction, labor share, movable hours, and material pass-through.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "No budget line splits must-stay assembly from outsourceable work. Published place-of-performance (POP) sets today's floor, so the ceiling is built from Basic Construction, labor share, movable hours, and material pass-through."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11282362,
+        "avail_w_in": 12.339,
+        "avail_h_emu": 300000,
+        "avail_h_in": 0.328,
+        "wrapped_lines": 2,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 5,
+      "kind": "sp",
+      "sp_id": 20,
+      "name": "Box1",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1800000,
+        "cx": 1590000,
+        "cy": 960000,
+        "x_abs": 453079,
+        "y_abs": 1800000,
+        "x_in": 0.495,
+        "y_in": 1.969,
+        "cx_in": 1.739,
+        "cy_in": 1.05,
+        "right_emu": 2043079,
+        "bottom_emu": 2760000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "1.  Addressable base",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "FY22\u201327 Basic Construction",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Excludes GFE and non-BC cost",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "1.  Addressable base\nFY22\u201327 Basic Construction\nExcludes GFE and non-BC cost"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1361400,
+        "avail_w_in": 1.489,
+        "avail_h_emu": 807600,
+        "avail_h_in": 0.883,
+        "wrapped_lines": 5,
+        "est_height_emu": 628013,
+        "est_height_in": 0.687,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 2,
+            "para_h_emu": 248284,
+            "para_h_in": 0.272
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 2,
+            "para_h_emu": 248284,
+            "para_h_in": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "z": 6,
+      "kind": "sp",
+      "sp_id": 21,
+      "name": "Box2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2423079,
+        "y": 1800000,
+        "cx": 1590000,
+        "cy": 960000,
+        "x_abs": 2423079,
+        "y_abs": 1800000,
+        "x_in": 2.65,
+        "y_in": 1.969,
+        "cx_in": 1.739,
+        "cy_in": 1.05,
+        "right_emu": 4013079,
+        "bottom_emu": 2760000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "2.  Labor mechanics",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "h = movable labor-hour share",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "L = labor share of BC",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "2.  Labor mechanics\nh = movable labor-hour share\nL = labor share of BC"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1361400,
+        "avail_w_in": 1.489,
+        "avail_h_emu": 807600,
+        "avail_h_in": 0.883,
+        "wrapped_lines": 4,
+        "est_height_emu": 503871,
+        "est_height_in": 0.551,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 2,
+            "para_h_emu": 248284,
+            "para_h_in": 0.272
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 7,
+      "kind": "sp",
+      "sp_id": 22,
+      "name": "Box3",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4393079,
+        "y": 1800000,
+        "cx": 1590000,
+        "cy": 960000,
+        "x_abs": 4393079,
+        "y_abs": 1800000,
+        "x_in": 4.804,
+        "y_in": 1.969,
+        "cx_in": 1.739,
+        "cy_in": 1.05,
+        "right_emu": 5983079,
+        "bottom_emu": 2760000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "6E91B1",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "3.  Must-stay core",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Core = L \u00d7 (1 \u2212 h)",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Final assembly, integration, test",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "3.  Must-stay core\nCore = L \u00d7 (1 \u2212 h)\nFinal assembly, integration, test"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1361400,
+        "avail_w_in": 1.489,
+        "avail_h_emu": 807600,
+        "avail_h_in": 0.883,
+        "wrapped_lines": 4,
+        "est_height_emu": 503871,
+        "est_height_in": 0.551,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 2,
+            "para_h_emu": 248284,
+            "para_h_in": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "z": 8,
+      "kind": "sp",
+      "sp_id": 23,
+      "name": "Box4",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6363079,
+        "y": 1800000,
+        "cx": 1590000,
+        "cy": 960000,
+        "x_abs": 6363079,
+        "y_abs": 1800000,
+        "x_in": 6.959,
+        "y_in": 1.969,
+        "cx_in": 1.739,
+        "cy_in": 1.05,
+        "right_emu": 7953079,
+        "bottom_emu": 2760000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "3D5972",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "4.  Structural ceiling",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Ceiling = 1 \u2212 core",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Maximum outsourceable share",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "4.  Structural ceiling\nCeiling = 1 \u2212 core\nMaximum outsourceable share"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1361400,
+        "avail_w_in": 1.489,
+        "avail_h_emu": 807600,
+        "avail_h_in": 0.883,
+        "wrapped_lines": 4,
+        "est_height_emu": 503871,
+        "est_height_in": 0.551,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 2,
+            "para_h_emu": 248284,
+            "para_h_in": 0.272
+          }
+        ]
+      }
+    },
+    {
+      "z": 9,
+      "kind": "cxnSp",
+      "sp_id": 30,
+      "name": "Step1to2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 2083079,
+        "y": 2280000,
+        "cx": 300000,
+        "cy": 0,
+        "x_abs": 2083079,
+        "y_abs": 2280000,
+        "x_in": 2.278,
+        "y_in": 2.493,
+        "cx_in": 0.328,
+        "cy_in": 0.0,
+        "right_emu": 2383079,
+        "bottom_emu": 2280000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 10,
+      "kind": "cxnSp",
+      "sp_id": 31,
+      "name": "Step2to3",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4053079,
+        "y": 2280000,
+        "cx": 300000,
+        "cy": 0,
+        "x_abs": 4053079,
+        "y_abs": 2280000,
+        "x_in": 4.433,
+        "y_in": 2.493,
+        "cx_in": 0.328,
+        "cy_in": 0.0,
+        "right_emu": 4353079,
+        "bottom_emu": 2280000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 11,
+      "kind": "cxnSp",
+      "sp_id": 32,
+      "name": "Step3to4",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6023079,
+        "y": 2280000,
+        "cx": 300000,
+        "cy": 0,
+        "x_abs": 6023079,
+        "y_abs": 2280000,
+        "x_in": 6.587,
+        "y_in": 2.493,
+        "cx_in": 0.328,
+        "cy_in": 0.0,
+        "right_emu": 6323079,
+        "bottom_emu": 2280000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 12,
+      "kind": "cxnSp",
+      "sp_id": 33,
+      "name": "DialDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 7158079,
+        "y": 2790000,
+        "cx": 0,
+        "cy": 300000,
+        "x_abs": 7158079,
+        "y_abs": 2790000,
+        "x_in": 7.828,
+        "y_in": 3.051,
+        "cx_in": 0.0,
+        "cy_in": 0.328,
+        "right_emu": 7158079,
+        "bottom_emu": 3090000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 13,
+      "kind": "sp",
+      "sp_id": 34,
+      "name": "BridgeFormula",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 3090000,
+        "cx": 7500000,
+        "cy": 420000,
+        "x_abs": 453079,
+        "y_abs": 3090000,
+        "x_in": 0.495,
+        "y_in": 3.379,
+        "cx_in": 8.202,
+        "cy_in": 0.459,
+        "right_emu": 7953079,
+        "bottom_emu": 3510000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Dollarized supplier share = hL + p(1 \u2212 L)",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "p sets how much non-labor material travels with outsourced packages.",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Dollarized supplier share = hL + p(1 \u2212 L)\np sets how much non-labor material travels with outsourced packages."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 7271400,
+        "avail_w_in": 7.952,
+        "avail_h_emu": 340000,
+        "avail_h_in": 0.372,
+        "wrapped_lines": 2,
+        "est_height_emu": 284797,
+        "est_height_in": 0.311,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 160655,
+            "para_h_in": 0.176
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 14,
+      "kind": "sp",
+      "sp_id": 40,
+      "name": "Read1",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 3690000,
+        "cx": 2366666,
+        "cy": 1140000,
+        "x_abs": 453079,
+        "y_abs": 3690000,
+        "x_in": 0.495,
+        "y_in": 4.035,
+        "cx_in": 2.588,
+        "cy_in": 1.247,
+        "right_emu": 2819745,
+        "bottom_emu": 4830000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "p = 0",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "~25%",
+                "font": "Arial",
+                "size_pt": 18.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Movable labor only",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "p = 0\n~25%\nMovable labor only"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2138066,
+        "avail_w_in": 2.338,
+        "avail_h_emu": 987600,
+        "avail_h_in": 1.08,
+        "wrapped_lines": 3,
+        "est_height_emu": 518477,
+        "est_height_in": 0.567,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 15,
+      "kind": "cxnSp",
+      "sp_id": 37,
+      "name": "Tick1",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1636412,
+        "y": 3510000,
+        "cx": 0,
+        "cy": 180000,
+        "x_abs": 1636412,
+        "y_abs": 3510000,
+        "x_in": 1.79,
+        "y_in": 3.839,
+        "cx_in": 0.0,
+        "cy_in": 0.197,
+        "right_emu": 1636412,
+        "bottom_emu": 3690000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 16,
+      "kind": "sp",
+      "sp_id": 41,
+      "name": "Read2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3019745,
+        "y": 3690000,
+        "cx": 2366666,
+        "cy": 1140000,
+        "x_abs": 3019745,
+        "y_abs": 3690000,
+        "x_in": 3.302,
+        "y_in": 4.035,
+        "cx_in": 2.588,
+        "cy_in": 1.247,
+        "right_emu": 5386411,
+        "bottom_emu": 4830000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "p = 50%",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "~51%",
+                "font": "Arial",
+                "size_pt": 18.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Selected working case",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "p = 50%\n~51%\nSelected working case"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2138066,
+        "avail_w_in": 2.338,
+        "avail_h_emu": 987600,
+        "avail_h_in": 1.08,
+        "wrapped_lines": 3,
+        "est_height_emu": 518477,
+        "est_height_in": 0.567,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 17,
+      "kind": "cxnSp",
+      "sp_id": 38,
+      "name": "Tick2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4203078,
+        "y": 3510000,
+        "cx": 0,
+        "cy": 180000,
+        "x_abs": 4203078,
+        "y_abs": 3510000,
+        "x_in": 4.597,
+        "y_in": 3.839,
+        "cx_in": 0.0,
+        "cy_in": 0.197,
+        "right_emu": 4203078,
+        "bottom_emu": 3690000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 18,
+      "kind": "sp",
+      "sp_id": 42,
+      "name": "Read3",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 5586411,
+        "y": 3690000,
+        "cx": 2366666,
+        "cy": 1140000,
+        "x_abs": 5586411,
+        "y_abs": 3690000,
+        "x_in": 6.109,
+        "y_in": 4.035,
+        "cx_in": 2.588,
+        "cy_in": 1.247,
+        "right_emu": 7953077,
+        "bottom_emu": 4830000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "3D5972",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 114300,
+          "r_ins": 114300,
+          "t_ins": 76200,
+          "b_ins": 76200,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "p = 100%",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "~76%",
+                "font": "Arial",
+                "size_pt": 18.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Material-inclusive ceiling",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "p = 100%\n~76%\nMaterial-inclusive ceiling"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2138066,
+        "avail_w_in": 2.338,
+        "avail_h_emu": 987600,
+        "avail_h_in": 1.08,
+        "wrapped_lines": 3,
+        "est_height_emu": 518477,
+        "est_height_in": 0.567,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          },
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 19,
+      "kind": "cxnSp",
+      "sp_id": 39,
+      "name": "Tick3",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6769744,
+        "y": 3510000,
+        "cx": 0,
+        "cy": 180000,
+        "x_abs": 6769744,
+        "y_abs": 3510000,
+        "x_in": 7.403,
+        "y_in": 3.839,
+        "cx_in": 0.0,
+        "cy_in": 0.197,
+        "right_emu": 6769744,
+        "bottom_emu": 3690000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 6350,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 20,
+      "kind": "sp",
+      "sp_id": 50,
+      "name": "LedgerCaption",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 8133079,
+        "y": 1800000,
+        "cx": 3602362,
+        "cy": 380000,
+        "x_abs": 8133079,
+        "y_abs": 1800000,
+        "x_in": 8.894,
+        "y_in": 1.969,
+        "cx_in": 3.94,
+        "cy_in": 0.416,
+        "right_emu": 11735441,
+        "bottom_emu": 2180000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Key levers and basis. ",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              },
+              {
+                "text": "Each input is sourced, derived, or an explicit assumption.",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Key levers and basis. Each input is sourced, derived, or an explicit assumption."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3602362,
+        "avail_w_in": 3.94,
+        "avail_h_emu": 380000,
+        "avail_h_in": 0.416,
+        "wrapped_lines": 2,
+        "est_height_emu": 292100,
+        "est_height_in": 0.319,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 2,
+            "para_h_emu": 292100,
+            "para_h_in": 0.319
+          }
+        ]
+      }
+    },
+    {
+      "z": 21,
+      "kind": "graphicFrame.table",
+      "sp_id": 51,
+      "name": "LeverLedger",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 8133079,
+        "y": 2240000,
+        "cx": 3602362,
+        "cy": 1737360,
+        "x_abs": 8133079,
+        "y_abs": 2240000,
+        "x_in": 8.894,
+        "y_in": 2.45,
+        "cx_in": 3.94,
+        "cy_in": 1.9,
+        "right_emu": 11735441,
+        "bottom_emu": 3977360,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": {
+        "grid_cols_emu": [
+          520000,
+          1700000,
+          1382362
+        ],
+        "row_heights_emu": [
+          274320,
+          365760,
+          365760,
+          365760,
+          365760
+        ],
+        "cells": [
+          {
+            "row": 0,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Lever",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Lever"
+            }
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Basis",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Basis"
+            }
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Role in estimate",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Role in estimate"
+            }
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "h",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "h"
+            }
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Sourced for submarines; DDG-51 judgment",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Sourced for submarines; DDG-51 judgment"
+            }
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Movable labor-hour share",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Movable labor-hour share"
+            }
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "L",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "L"
+            }
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Sourced total-cost anchor, rebased to BC",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Sourced total-cost anchor, rebased to BC"
+            }
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Labor share of Basic Construction",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Labor share of Basic Construction"
+            }
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "p",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "p"
+            }
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Scenario input",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Scenario input"
+            }
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "646464",
+              "w_emu": 6350,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Material pass-through share",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Material pass-through share"
+            }
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "POP",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "POP"
+            }
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Announced place-of-performance",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Announced place-of-performance"
+            }
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 115.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Current floor",
+                      "font": "Arial",
+                      "size_pt": 9.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Current floor"
+            }
+          }
+        ]
+      },
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": "http://schemas.openxmlformats.org/drawingml/2006/table",
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 22,
+      "kind": "sp",
+      "sp_id": 52,
+      "name": "RailNote",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 8133079,
+        "y": 4097360,
+        "cx": 3602362,
+        "cy": 560000,
+        "x_abs": 8133079,
+        "y_abs": 4097360,
+        "x_in": 8.894,
+        "y_in": 4.481,
+        "cx_in": 3.94,
+        "cy_in": 0.612,
+        "right_emu": 11735441,
+        "bottom_emu": 4657360,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "L starts from a total-cost labor anchor and is rebased to Basic Construction. p moves the dollarized supplier share, so the estimate is read as a range, not a single point.",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "L starts from a total-cost labor anchor and is rebased to Basic Construction. p moves the dollarized supplier share, so the estimate is read as a range, not a single point."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3602362,
+        "avail_w_in": 3.94,
+        "avail_h_emu": 560000,
+        "avail_h_in": 0.612,
+        "wrapped_lines": 3,
+        "est_height_emu": 372427,
+        "est_height_in": 0.407,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 3,
+            "para_h_emu": 372427,
+            "para_h_in": 0.407
+          }
+        ]
+      }
+    },
+    {
+      "z": 23,
+      "kind": "sp",
+      "sp_id": 60,
+      "name": "Guard1",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 4960000,
+        "cx": 3627454,
+        "cy": 420000,
+        "x_abs": 453079,
+        "y_abs": 4960000,
+        "x_in": 0.495,
+        "y_in": 5.424,
+        "cx_in": 3.967,
+        "cy_in": 0.459,
+        "right_emu": 4080533,
+        "bottom_emu": 5380000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "p = 100% is the upper bound; p = 50% is the working case",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "p = 100% is the upper bound; p = 50% is the working case"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3536014,
+        "avail_w_in": 3.867,
+        "avail_h_emu": 401712,
+        "avail_h_in": 0.439,
+        "wrapped_lines": 1,
+        "est_height_emu": 131445,
+        "est_height_in": 0.144,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          }
+        ]
+      }
+    },
+    {
+      "z": 24,
+      "kind": "sp",
+      "sp_id": 61,
+      "name": "Guard2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4280533,
+        "y": 4960000,
+        "cx": 3627454,
+        "cy": 420000,
+        "x_abs": 4280533,
+        "y_abs": 4960000,
+        "x_in": 4.681,
+        "y_in": 5.424,
+        "cx_in": 3.967,
+        "cy_in": 0.459,
+        "right_emu": 7907987,
+        "bottom_emu": 5380000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DDG-51 h and L are explicit assumptions",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DDG-51 h and L are explicit assumptions"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3536014,
+        "avail_w_in": 3.867,
+        "avail_h_emu": 401712,
+        "avail_h_in": 0.439,
+        "wrapped_lines": 1,
+        "est_height_emu": 131445,
+        "est_height_in": 0.144,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          }
+        ]
+      }
+    },
+    {
+      "z": 25,
+      "kind": "sp",
+      "sp_id": 62,
+      "name": "Guard3",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 8107987,
+        "y": 4960000,
+        "cx": 3627454,
+        "cy": 420000,
+        "x_abs": 8107987,
+        "y_abs": 4960000,
+        "x_in": 8.867,
+        "y_in": 5.424,
+        "cx_in": 3.967,
+        "cy_in": 0.459,
+        "right_emu": 11735441,
+        "bottom_emu": 5380000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "POP sets today's floor, not the ceiling",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "POP sets today's floor, not the ceiling"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 3536014,
+        "avail_w_in": 3.867,
+        "avail_h_emu": 401712,
+        "avail_h_in": 0.439,
+        "wrapped_lines": 1,
+        "est_height_emu": 131445,
+        "est_height_in": 0.144,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 131445,
+            "para_h_in": 0.144
+          }
+        ]
+      }
+    },
+    {
+      "z": 26,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 6085448,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 6085448,
+        "x_in": 0.495,
+        "y_in": 6.655,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6625448,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: Defense News, \"Defense firms outsource sub, carrier construction amid labor woes\" (M. Eckstein, Oct 2022); O'Rourke (CRS), State of U.S. Shipbuilding, House Armed Services Committee testimony (Mar 2025), cross-checked against the CBO Shipbuilding Composite Index (Apr 2024); DoD FMR 7000.14-R Vol 2B Ch 4, Exhibit P-5 ship cost element categories (Nov 2017); DoD contract award announcements (announced place-of-performance): Virginia Block V (2019), Columbia Build I (2020), DDG-51 FY23\u201327 multiyear (2023)",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: Defense News, \"Defense firms outsource sub, carrier construction amid labor woes\" (M. Eckstein, Oct 2022); O'Rourke (CRS), State of U.S. Shipbuilding, House Armed Services Committee testimony (Mar 2025), cross-checked against the CBO Shipbuilding Composite Index (Apr 2024); DoD FMR 7000.14-R Vol 2B Ch 4, Exhibit P-5 ship cost element categories (Nov 2017); DoD contract award announcements (announced place-of-performance): Virginia Block V (2019), Columbia Build I (2020), DDG-51 FY23\u201327 multiyear (2023)"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 448560,
+        "avail_h_in": 0.491,
+        "wrapped_lines": 3,
+        "est_height_emu": 304800,
+        "est_height_in": 0.333,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 3,
+            "para_h_emu": 304800,
+            "para_h_in": 0.333
+          }
+        ]
+      }
+    }
+  ],
+  "table_fit": [
+    {
+      "name": "LeverLedger",
+      "sp_id": 51,
+      "authored": [
+        274320,
+        365760,
+        365760,
+        365760,
+        365760
+      ],
+      "required": [
+        274320,
+        365760,
+        365760,
+        365760,
+        365760
+      ],
+      "overflow_rows": [],
+      "authored_total": 1737360,
+      "required_total": 1737360,
+      "frame_y": 2240000,
+      "honest_bottom": 3977360,
+      "fits_body": true
+    }
+  ]
+}

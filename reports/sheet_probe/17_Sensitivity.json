@@ -1,0 +1,582 @@
+{
+  "source": "file",
+  "name": "Sensitivity",
+  "tab_name": "Sensitivity",
+  "sheet_index": 17,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 3,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "14"
+    }
+  ],
+  "n_rows": 30,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 2
+    },
+    {
+      "r": "4",
+      "n_cells": 3
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "12",
+      "n_cells": 3
+    },
+    {
+      "r": "14",
+      "n_cells": 2
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "20",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "n_cells": 2
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "29",
+      "n_cells": 3
+    },
+    {
+      "r": "31",
+      "n_cells": 2
+    },
+    {
+      "r": "32",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "34",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "35",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "38",
+      "n_cells": 3
+    },
+    {
+      "r": "40",
+      "n_cells": 2
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "43",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "44",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 63,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Sensitivity"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Coefficient ladder (BC coeff vs all-gated outside-yards POP)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Coefficient"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "BC supplier coeff (applied, MYP-corrected)"
+    },
+    {
+      "ref": "C7",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C42"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Outside-yards POP, MYP-corrected"
+    },
+    {
+      "ref": "C8",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C52"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Outside-yards POP, disclosed (artifact)"
+    },
+    {
+      "ref": "C9",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C51"
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B12",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - MYP swing"
+    },
+    {
+      "ref": "C12",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B14",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C14",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B15",
+      "style": "S_BOLD",
+      "value": "Outside-yards swing (disclosed - corrected)"
+    },
+    {
+      "ref": "C15",
+      "style": "S_PCT",
+      "formula": "C9-C8"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "MYP masters $M (reconstructed)"
+    },
+    {
+      "ref": "C16",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Source Audit'!D20"
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "Masters as % of gated corpus $"
+    },
+    {
+      "ref": "C17",
+      "style": "S_PCT",
+      "formula": "C16/'POP Source Audit'!D15"
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B20",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - TAM sensitivity (MYP adjustment effect: corrected vs disclosed-only coeff)"
+    },
+    {
+      "ref": "C20",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B22",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C22",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B23",
+      "style": "S_BOLD",
+      "value": "Portfolio TAM (applied, MYP-corrected)"
+    },
+    {
+      "ref": "C23",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I114"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "Portfolio TAM (disclosed-only BC coeff)"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM",
+      "formula": "C23*('TAM Build'!C45/'TAM Build'!C42)"
+    },
+    {
+      "ref": "B25",
+      "style": "S_BOLD",
+      "value": "MYP adjustment uplift on TAM"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM",
+      "formula": "C23-C24"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "Memo: masters' embedded content @ 42% band"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM",
+      "formula": "'POP Source Audit'!D20*0.42"
+    },
+    {
+      "ref": "A29",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B29",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - AP/LLTM stream"
+    },
+    {
+      "ref": "C29",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B31",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C31",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B32",
+      "style": "S_DEFAULT",
+      "value": "Ship-construction share of CY AP"
+    },
+    {
+      "ref": "C32",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C37"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "AP/LLTM supplier coefficient"
+    },
+    {
+      "ref": "C33",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C38"
+    },
+    {
+      "ref": "B34",
+      "style": "S_BOLD",
+      "value": "AP/LLTM stream TAM ($M)"
+    },
+    {
+      "ref": "C34",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I113"
+    },
+    {
+      "ref": "B35",
+      "style": "S_DEFAULT",
+      "value": "AP/LLTM share of portfolio TAM"
+    },
+    {
+      "ref": "C35",
+      "style": "S_PCT",
+      "formula": "N('TAM Build'!I113)/('TAM Build'!I112+N('TAM Build'!I113))"
+    },
+    {
+      "ref": "A38",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B38",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a75 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)"
+    },
+    {
+      "ref": "C38",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B40",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C40",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B41",
+      "style": "S_BOLD",
+      "value": "Physical supplier base (VLS launch-control OUT - base case)"
+    },
+    {
+      "ref": "C41",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*'Entity Master'!G7:G2162)-SUMPRODUCT(('Entity Master'!H7:H2162=\"supplier\")*('Entity Master'!I7:I2162=\"unbucketed\")*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "+ VLS launch-control (Leonardo DRS Training&Control + Laurel; mission_systems)"
+    },
+    {
+      "ref": "C42",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT(('Entity Master'!L7:L2162=1)*'Entity Master'!G7:G2162)"
+    },
+    {
+      "ref": "B43",
+      "style": "S_BOLD",
+      "value": "= Physical supplier base (VLS launch-control IN - sensitivity)"
+    },
+    {
+      "ref": "C43",
+      "style": "S_NUM",
+      "formula": "C41+C42"
+    },
+    {
+      "ref": "B44",
+      "style": "S_DEFAULT",
+      "value": "VLS uplift as % of base"
+    },
+    {
+      "ref": "C44",
+      "style": "S_PCT",
+      "formula": "C42/C41"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Sensitivity"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Coefficient ladder (BC coeff vs all-gated outside-yards POP)"
+    },
+    {
+      "ref": "B12",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - MYP swing"
+    },
+    {
+      "ref": "B20",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - TAM sensitivity (MYP adjustment effect: corrected vs disclosed-only coeff)"
+    },
+    {
+      "ref": "B29",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - AP/LLTM stream"
+    },
+    {
+      "ref": "B38",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a75 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [
+    {
+      "ref": "C7",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C42"
+    },
+    {
+      "ref": "C8",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C52"
+    },
+    {
+      "ref": "C9",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C51"
+    },
+    {
+      "ref": "C16",
+      "style": "S_LINK_NUM",
+      "formula": "'POP Source Audit'!D20"
+    },
+    {
+      "ref": "C23",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I114"
+    },
+    {
+      "ref": "C32",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C37"
+    },
+    {
+      "ref": "C33",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C38"
+    },
+    {
+      "ref": "C34",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!I113"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 18,
+  "formula_refs_by_sheet": {
+    "Assumptions": [
+      "C32",
+      "C33"
+    ],
+    "Entity Master": [
+      "C41",
+      "C42"
+    ],
+    "POP Source Audit": [
+      "C16",
+      "C17",
+      "C26"
+    ],
+    "TAM Build": [
+      "C7",
+      "C8",
+      "C9",
+      "C23",
+      "C24",
+      "C34",
+      "C35"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

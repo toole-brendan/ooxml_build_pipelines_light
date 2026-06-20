@@ -1,0 +1,23 @@
+# ─── Secrets — never commit ───
+.env
+.env.*
+*.env
+
+# ─── Python bytecode / build junk ───
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ─── OS / editor cruft ───
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Virtualenvs & tool caches ───
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/

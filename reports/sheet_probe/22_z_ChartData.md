@@ -1,0 +1,249 @@
+# sheet_probe: z_ChartData
+
+- source: `file`
+- tab name: `z_ChartData`
+- tab color: `FF404040`
+- gridlines shown: `0`
+- columns: 10 · rows: 43 · cells: 222 · formulas: 58
+
+## Banners
+- `B2` S_TITLE_SHEET — z_ChartData
+- `B4` S_TITLE_SECTION — §1 - Cost funnel (waterfall)
+- `B10` S_TITLE_SECTION — §2 - MYP POP distribution (stacked column)
+- `B20` S_TITLE_SECTION — §3 - MYP outside-yards split (stacked column)
+- `B26` S_TITLE_SECTION — §4 - Annual TAM build (waterfall)
+- `B32` S_TITLE_SECTION — §5 - TAM by fiscal year (stacked column)
+- `B39` S_TITLE_SECTION — §6 - Work-type allocation (ranked column)
+- `B45` S_TITLE_SECTION — §7 - SAM scenarios (ranked column)
+- `B51` S_TITLE_SECTION — §8 - Supplier landscape (bar)
+- `B66` S_TITLE_SECTION — §9 - FFATA visibility gap (column)
+
+## Formula dependencies (referenced sheet → cells)
+- **Entity Master** (20): B54, C54, B55, C55, B56, C56, B57, C57, B58, C58, B59, C59 …
+- **SAM Build** (13): C42, D42, E42, F42, G42, H42, I42, J42, C48, D48, E48, F48 …
+- **SCN Budget** (3): C7, D7, E7
+- **TAM Build** (30): C13, C14, C15, C16, C17, C23, D23, C29, D29, F29, C35, D35 …
+
+## Cells
+- `B2` S_TITLE_SHEET: z_ChartData
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `J2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Cost funnel (waterfall)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `J4` S_TITLE_SECTION: 
+- `B6` S_PASTE_HEADER_TL: 
+- `C6` S_PASTE_HEADER_T: Total ship
+- `D6` S_PASTE_HEADER_T: Less GFE
+- `E6` S_PASTE_HEADER_T: Less other
+- `F6` S_PASTE_HEADER_TR: Basic Construction
+- `B7` S_PASTE_LABEL_BL: 
+- `C7` S_PASTE_VAL_B_M: ='SCN Budget'!E7
+- `D7` S_PASTE_VAL_B_M: =-'SCN Budget'!E13
+- `E7` S_PASTE_VAL_B_M: =-('SCN Budget'!E7-'SCN Budget'!E13-'SCN Budget'!E15)
+- `F7` S_PASTE_VAL_BR_M: e
+- `A10` S_DEFAULT: x
+- `B10` S_TITLE_SECTION: §2 - MYP POP distribution (stacked column)
+- `C10` S_TITLE_SECTION: 
+- `D10` S_TITLE_SECTION: 
+- `E10` S_TITLE_SECTION: 
+- `F10` S_TITLE_SECTION: 
+- `G10` S_TITLE_SECTION: 
+- `H10` S_TITLE_SECTION: 
+- `I10` S_TITLE_SECTION: 
+- `J10` S_TITLE_SECTION: 
+- `B12` S_PASTE_HEADER_TL: 
+- `C12` S_PASTE_HEADER_TR: POP share
+- `B13` S_PASTE_LABEL_L: BIW site
+- `C13` S_PASTE_VAL_R_P: ='TAM Build'!C59
+- `B14` S_PASTE_LABEL_L: Ingalls site
+- `C14` S_PASTE_VAL_R_P: ='TAM Build'!C60
+- `B15` S_PASTE_LABEL_L: Other-US supplier
+- `C15` S_PASTE_VAL_R_P: ='TAM Build'!C61
+- `B16` S_PASTE_LABEL_L: Foreign
+- `C16` S_PASTE_VAL_R_P: ='TAM Build'!C62
+- `B17` S_PASTE_LABEL_BL: Unparsed
+- `C17` S_PASTE_VAL_BR_P: ='TAM Build'!C63
+- `A20` S_DEFAULT: x
+- `B20` S_TITLE_SECTION: §3 - MYP outside-yards split (stacked column)
+- `C20` S_TITLE_SECTION: 
+- `D20` S_TITLE_SECTION: 
+- `E20` S_TITLE_SECTION: 
+- `F20` S_TITLE_SECTION: 
+- `G20` S_TITLE_SECTION: 
+- `H20` S_TITLE_SECTION: 
+- `I20` S_TITLE_SECTION: 
+- `J20` S_TITLE_SECTION: 
+- `B22` S_PASTE_HEADER_TL: 
+- `C22` S_PASTE_HEADER_T: MYP-corrected
+- `D22` S_PASTE_HEADER_TR: Disclosed artifact
+- `B23` S_PASTE_LABEL_BL: Outside-yards share
+- `C23` S_PASTE_VAL_B_P: ='TAM Build'!C52
+- `D23` S_PASTE_VAL_BR_P: ='TAM Build'!C51
+- `A26` S_DEFAULT: x
+- `B26` S_TITLE_SECTION: §4 - Annual TAM build (waterfall)
+- `C26` S_TITLE_SECTION: 
+- `D26` S_TITLE_SECTION: 
+- `E26` S_TITLE_SECTION: 
+- `F26` S_TITLE_SECTION: 
+- `G26` S_TITLE_SECTION: 
+- `H26` S_TITLE_SECTION: 
+- `I26` S_TITLE_SECTION: 
+- `J26` S_TITLE_SECTION: 
+- `B28` S_PASTE_HEADER_TL: 
+- `C28` S_PASTE_HEADER_T: BC base
+- `D28` S_PASTE_HEADER_T: Less non-supplier
+- `E28` S_PASTE_HEADER_T: BC stream
+- `F28` S_PASTE_HEADER_T: AP/LLTM
+- `G28` S_PASTE_HEADER_TR: Portfolio TAM
+- `B29` S_PASTE_LABEL_BL: 
+- `C29` S_PASTE_VAL_B_M: ='TAM Build'!C141/'TAM Build'!C132
+- `D29` S_PASTE_VAL_B_M: =-'TAM Build'!C142/'TAM Build'!C132
+- `E29` S_PASTE_VAL_B_M: e
+- `F29` S_PASTE_VAL_B_M: ='TAM Build'!I113/'TAM Build'!C132
+- `G29` S_PASTE_VAL_BR_M: e
+- `A32` S_DEFAULT: x
+- `B32` S_TITLE_SECTION: §5 - TAM by fiscal year (stacked column)
+- `C32` S_TITLE_SECTION: 
+- `D32` S_TITLE_SECTION: 
+- `E32` S_TITLE_SECTION: 
+- `F32` S_TITLE_SECTION: 
+- `G32` S_TITLE_SECTION: 
+- `H32` S_TITLE_SECTION: 
+- `I32` S_TITLE_SECTION: 
+- `J32` S_TITLE_SECTION: 
+- `B34` S_PASTE_HEADER_TL: 
+- `C34` S_PASTE_HEADER_T: FY22
+- `D34` S_PASTE_HEADER_T: FY23
+- `E34` S_PASTE_HEADER_T: FY24
+- `F34` S_PASTE_HEADER_T: FY25
+- `G34` S_PASTE_HEADER_T: FY26
+- `H34` S_PASTE_HEADER_TR: FY27
+- `B35` S_PASTE_LABEL_L: BC stream
+- `C35` S_PASTE_VAL_INT_M: ='TAM Build'!C112
+- `D35` S_PASTE_VAL_INT_M: ='TAM Build'!D112
+- `E35` S_PASTE_VAL_INT_M: ='TAM Build'!E112
+- `F35` S_PASTE_VAL_INT_M: ='TAM Build'!F112
+- `G35` S_PASTE_VAL_INT_M: ='TAM Build'!G112
+- `H35` S_PASTE_VAL_R_M: ='TAM Build'!H112
+- `B36` S_PASTE_LABEL_BL: AP/LLTM stream
+- `C36` S_PASTE_VAL_B_M: ='TAM Build'!C113
+- `D36` S_PASTE_VAL_B_M: ='TAM Build'!D113
+- `E36` S_PASTE_VAL_B_M: ='TAM Build'!E113
+- `F36` S_PASTE_VAL_B_M: ='TAM Build'!F113
+- `G36` S_PASTE_VAL_B_M: ='TAM Build'!G113
+- `H36` S_PASTE_VAL_BR_M: ='TAM Build'!H113
+- `A39` S_DEFAULT: x
+- `B39` S_TITLE_SECTION: §6 - Work-type allocation (ranked column)
+- `C39` S_TITLE_SECTION: 
+- `D39` S_TITLE_SECTION: 
+- `E39` S_TITLE_SECTION: 
+- `F39` S_TITLE_SECTION: 
+- `G39` S_TITLE_SECTION: 
+- `H39` S_TITLE_SECTION: 
+- `I39` S_TITLE_SECTION: 
+- `J39` S_TITLE_SECTION: 
+- `B41` S_PASTE_HEADER_TL: 
+- `C41` S_PASTE_HEADER_T: Unbucketed
+- `D41` S_PASTE_HEADER_T: Electrical/power
+- `E41` S_PASTE_HEADER_T: Structural
+- `F41` S_PASTE_HEADER_T: Machining
+- `G41` S_PASTE_HEADER_T: Piping/valves
+- `H41` S_PASTE_HEADER_T: HVAC
+- `I41` S_PASTE_HEADER_T: Coatings
+- `J41` S_PASTE_HEADER_TR: Castings
+- `B42` S_PASTE_LABEL_BL: 
+- `C42` S_PASTE_VAL_B_M: ='SAM Build'!C60/'TAM Build'!C132
+- `D42` S_PASTE_VAL_B_M: ='SAM Build'!C57/'TAM Build'!C132
+- `E42` S_PASTE_VAL_B_M: ='SAM Build'!C53/'TAM Build'!C132
+- `F42` S_PASTE_VAL_B_M: ='SAM Build'!C54/'TAM Build'!C132
+- `G42` S_PASTE_VAL_B_M: ='SAM Build'!C56/'TAM Build'!C132
+- `H42` S_PASTE_VAL_B_M: ='SAM Build'!C58/'TAM Build'!C132
+- `I42` S_PASTE_VAL_B_M: ='SAM Build'!C59/'TAM Build'!C132
+- `J42` S_PASTE_VAL_BR_M: ='SAM Build'!C55/'TAM Build'!C132
+- `A45` S_DEFAULT: x
+- `B45` S_TITLE_SECTION: §7 - SAM scenarios (ranked column)
+- `C45` S_TITLE_SECTION: 
+- `D45` S_TITLE_SECTION: 
+- `E45` S_TITLE_SECTION: 
+- `F45` S_TITLE_SECTION: 
+- `G45` S_TITLE_SECTION: 
+- `H45` S_TITLE_SECTION: 
+- `I45` S_TITLE_SECTION: 
+- `J45` S_TITLE_SECTION: 
+- `B47` S_PASTE_HEADER_TL: 
+- `C47` S_PASTE_HEADER_T: Broad components
+- `D47` S_PASTE_HEADER_T: Metal components
+- `E47` S_PASTE_HEADER_T: Electrical/power
+- `F47` S_PASTE_HEADER_T: Modular assy
+- `G47` S_PASTE_HEADER_TR: HM&E
+- `B48` S_PASTE_LABEL_BL: 
+- `C48` S_PASTE_VAL_B_M: ='SAM Build'!E73
+- `D48` S_PASTE_VAL_B_M: ='SAM Build'!E69
+- `E48` S_PASTE_VAL_B_M: ='SAM Build'!E71
+- `F48` S_PASTE_VAL_B_M: ='SAM Build'!E72
+- `G48` S_PASTE_VAL_BR_M: ='SAM Build'!E70
+- `A51` S_DEFAULT: x
+- `B51` S_TITLE_SECTION: §8 - Supplier landscape (bar)
+- `C51` S_TITLE_SECTION: 
+- `D51` S_TITLE_SECTION: 
+- `E51` S_TITLE_SECTION: 
+- `F51` S_TITLE_SECTION: 
+- `G51` S_TITLE_SECTION: 
+- `H51` S_TITLE_SECTION: 
+- `I51` S_TITLE_SECTION: 
+- `J51` S_TITLE_SECTION: 
+- `B53` S_PASTE_HEADER_TL: 
+- `C53` S_PASTE_HEADER_TR: Visible flow
+- `B54` S_PASTE_LABEL_L: ='Entity Master'!B9
+- `C54` S_PASTE_VAL_R_M: ='Entity Master'!G9
+- `B55` S_PASTE_LABEL_L: ='Entity Master'!B12
+- `C55` S_PASTE_VAL_R_M: ='Entity Master'!G12
+- `B56` S_PASTE_LABEL_L: ='Entity Master'!B13
+- `C56` S_PASTE_VAL_R_M: ='Entity Master'!G13
+- `B57` S_PASTE_LABEL_L: ='Entity Master'!B14
+- `C57` S_PASTE_VAL_R_M: ='Entity Master'!G14
+- `B58` S_PASTE_LABEL_L: ='Entity Master'!B16
+- `C58` S_PASTE_VAL_R_M: ='Entity Master'!G16
+- `B59` S_PASTE_LABEL_L: ='Entity Master'!B20
+- `C59` S_PASTE_VAL_R_M: ='Entity Master'!G20
+- `B60` S_PASTE_LABEL_L: ='Entity Master'!B22
+- `C60` S_PASTE_VAL_R_M: ='Entity Master'!G22
+- `B61` S_PASTE_LABEL_L: ='Entity Master'!B23
+- `C61` S_PASTE_VAL_R_M: ='Entity Master'!G23
+- `B62` S_PASTE_LABEL_L: ='Entity Master'!B25
+- `C62` S_PASTE_VAL_R_M: ='Entity Master'!G25
+- `B63` S_PASTE_LABEL_BL: ='Entity Master'!B29
+- `C63` S_PASTE_VAL_BR_M: ='Entity Master'!G29
+- `A66` S_DEFAULT: x
+- `B66` S_TITLE_SECTION: §9 - FFATA visibility gap (column)
+- `C66` S_TITLE_SECTION: 
+- `D66` S_TITLE_SECTION: 
+- `E66` S_TITLE_SECTION: 
+- `F66` S_TITLE_SECTION: 
+- `G66` S_TITLE_SECTION: 
+- `H66` S_TITLE_SECTION: 
+- `I66` S_TITLE_SECTION: 
+- `J66` S_TITLE_SECTION: 
+- `B68` S_PASTE_HEADER_TL: 
+- `C68` S_PASTE_HEADER_T: Visible flow
+- `D68` S_PASTE_HEADER_T: Outsourcing low
+- `E68` S_PASTE_HEADER_T: Outsourcing mid
+- `F68` S_PASTE_HEADER_TR: Outsourcing high
+- `B69` S_PASTE_LABEL_BL: 
+- `C69` S_PASTE_VAL_B_M: 2728.6
+- `D69` S_PASTE_VAL_B_M: 11311.4
+- `E69` S_PASTE_VAL_B_M: 13573.7
+- `F69` S_PASTE_VAL_BR_M: 16159.2

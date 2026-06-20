@@ -1,0 +1,5593 @@
+{
+  "slide_name": "s04_appendix_sam_build",
+  "generated_at": "2026-06-08T03:17:31.999996+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 23,
+      "cxnSp": 5,
+      "graphicFrame.table": 1
+    },
+    "total_shapes": 29,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "Qualifier",
+      "y_emu": 1371600,
+      "y_in": 1.5
+    },
+    "bottom_most_body": {
+      "sp_id": 60,
+      "name": "InterpretationCard",
+      "bottom_emu": 5870000,
+      "bottom_in": 6.42
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 5930000,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Methodology",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / SAM Build",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Methodology / SAM Build"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 62448,
+        "avail_h_in": 0.068,
+        "wrapped_lines": 1,
+        "est_height_emu": 127000,
+        "est_height_in": 0.139,
+        "fits": false,
+        "overflow_emu": 64552,
+        "overflow_in": 0.071,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 127000,
+            "para_h_in": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1376172,
+        "avail_w_in": 1.505,
+        "avail_h_emu": 271712,
+        "avail_h_in": 0.297,
+        "wrapped_lines": 1,
+        "est_height_emu": 152400,
+        "est_height_in": 0.167,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          }
+        ]
+      }
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SAM Build | ASV-addressable SAM is limited by vessel and role suitability, then de-duplicated on the SAM side.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SAM Build | ASV-addressable SAM is limited by vessel and role suitability, then de-duplicated on the SAM side."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11190922,
+        "avail_w_in": 12.239,
+        "avail_h_emu": 548640,
+        "avail_h_in": 0.6,
+        "wrapped_lines": 2,
+        "est_height_emu": 508000,
+        "est_height_in": 0.556,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 20.0,
+            "lines": 2,
+            "para_h_emu": 508000,
+            "para_h_in": 0.556
+          }
+        ]
+      }
+    },
+    {
+      "z": 4,
+      "kind": "cxnSp",
+      "sp_id": 80,
+      "name": "SamToSidecarH1",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3203079,
+        "y": 4660800,
+        "cx": 150000,
+        "cy": 0,
+        "x_abs": 3203079,
+        "y_abs": 4660800,
+        "x_in": 3.503,
+        "y_in": 5.097,
+        "cx_in": 0.164,
+        "cy_in": 0.0,
+        "right_emu": 3353079,
+        "bottom_emu": 4660800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 5,
+      "kind": "cxnSp",
+      "sp_id": 81,
+      "name": "SamToSidecarV",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3353079,
+        "y": 3832166,
+        "cx": 0,
+        "cy": 828634,
+        "x_abs": 3353079,
+        "y_abs": 3832166,
+        "x_in": 3.667,
+        "y_in": 4.191,
+        "cx_in": 0.0,
+        "cy_in": 0.906,
+        "right_emu": 3353079,
+        "bottom_emu": 4660800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": true
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 6,
+      "kind": "cxnSp",
+      "sp_id": 82,
+      "name": "SamToSidecarH2",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3353079,
+        "y": 3832166,
+        "cx": 150000,
+        "cy": 0,
+        "x_abs": 3353079,
+        "y_abs": 3832166,
+        "x_in": 3.667,
+        "y_in": 4.191,
+        "cx_in": 0.164,
+        "cy_in": 0.0,
+        "right_emu": 3503079,
+        "bottom_emu": 3832166,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 7,
+      "kind": "sp",
+      "sp_id": 20,
+      "name": "RailCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1661600,
+        "cx": 2750000,
+        "cy": 820000,
+        "x_abs": 453079,
+        "y_abs": 1661600,
+        "x_in": 0.495,
+        "y_in": 1.817,
+        "cx_in": 3.007,
+        "cy_in": 0.897,
+        "right_emu": 3203079,
+        "bottom_emu": 2481600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ANNUAL VALUE",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Contract annual TAM",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Event annual value",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Europe modeled spend",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "ANNUAL VALUE\nContract annual TAM\nEvent annual value\nEurope modeled spend"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2550000,
+        "avail_w_in": 2.789,
+        "avail_h_emu": 740000,
+        "avail_h_in": 0.809,
+        "wrapped_lines": 4,
+        "est_height_emu": 501777,
+        "est_height_in": 0.549,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 158496,
+            "para_h_in": 0.173
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "z": 8,
+      "kind": "sp",
+      "sp_id": 21,
+      "name": "RailOperator",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2481600,
+        "cx": 2750000,
+        "cy": 240000,
+        "x_abs": 453079,
+        "y_abs": 2481600,
+        "x_in": 0.495,
+        "y_in": 2.714,
+        "cx_in": 3.007,
+        "cy_in": 0.262,
+        "right_emu": 3203079,
+        "bottom_emu": 2721600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7",
+                "font": "Arial",
+                "size_pt": 16.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "\u00d7"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2750000,
+        "avail_w_in": 3.007,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 233679,
+        "est_height_in": 0.256,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 16.0,
+            "lines": 1,
+            "para_h_emu": 233679,
+            "para_h_in": 0.256
+          }
+        ]
+      }
+    },
+    {
+      "z": 9,
+      "kind": "sp",
+      "sp_id": 22,
+      "name": "RailCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 2721600,
+        "cx": 2750000,
+        "cy": 480000,
+        "x_abs": 453079,
+        "y_abs": 2721600,
+        "x_in": 0.495,
+        "y_in": 2.976,
+        "cx_in": 3.007,
+        "cy_in": 0.525,
+        "right_emu": 3203079,
+        "bottom_emu": 3201600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "VESSEL SHARE",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Vessel-related fraction",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "VESSEL SHARE\nVessel-related fraction"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2550000,
+        "avail_w_in": 2.789,
+        "avail_h_emu": 400000,
+        "avail_h_in": 0.437,
+        "wrapped_lines": 2,
+        "est_height_emu": 272923,
+        "est_height_in": 0.298,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 158496,
+            "para_h_in": 0.173
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "z": 10,
+      "kind": "sp",
+      "sp_id": 23,
+      "name": "RailOperator",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 3201600,
+        "cx": 2750000,
+        "cy": 240000,
+        "x_abs": 453079,
+        "y_abs": 3201600,
+        "x_in": 0.495,
+        "y_in": 3.501,
+        "cx_in": 3.007,
+        "cy_in": 0.262,
+        "right_emu": 3203079,
+        "bottom_emu": 3441600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7",
+                "font": "Arial",
+                "size_pt": 16.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "\u00d7"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2750000,
+        "avail_w_in": 3.007,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 233679,
+        "est_height_in": 0.256,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 16.0,
+            "lines": 1,
+            "para_h_emu": 233679,
+            "para_h_in": 0.256
+          }
+        ]
+      }
+    },
+    {
+      "z": 11,
+      "kind": "sp",
+      "sp_id": 24,
+      "name": "RailCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 3441600,
+        "cx": 2750000,
+        "cy": 480000,
+        "x_abs": 453079,
+        "y_abs": 3441600,
+        "x_in": 0.495,
+        "y_in": 3.764,
+        "cx_in": 3.007,
+        "cy_in": 0.525,
+        "right_emu": 3203079,
+        "bottom_emu": 3921600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "6E91B1",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ROLE SHARE",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ASV-suitable fraction",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "ROLE SHARE\nASV-suitable fraction"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2550000,
+        "avail_w_in": 2.789,
+        "avail_h_emu": 400000,
+        "avail_h_in": 0.437,
+        "wrapped_lines": 2,
+        "est_height_emu": 272923,
+        "est_height_in": 0.298,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 158496,
+            "para_h_in": 0.173
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "z": 12,
+      "kind": "sp",
+      "sp_id": 25,
+      "name": "RailOperator",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 3921600,
+        "cx": 2750000,
+        "cy": 240000,
+        "x_abs": 453079,
+        "y_abs": 3921600,
+        "x_in": 0.495,
+        "y_in": 4.289,
+        "cx_in": 3.007,
+        "cy_in": 0.262,
+        "right_emu": 3203079,
+        "bottom_emu": 4161600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "=",
+                "font": "Arial",
+                "size_pt": 16.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "="
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2750000,
+        "avail_w_in": 3.007,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 233679,
+        "est_height_in": 0.256,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 16.0,
+            "lines": 1,
+            "para_h_emu": 233679,
+            "para_h_in": 0.256
+          }
+        ]
+      }
+    },
+    {
+      "z": 13,
+      "kind": "sp",
+      "sp_id": 26,
+      "name": "RailCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 4161600,
+        "cx": 2750000,
+        "cy": 998400,
+        "x_abs": 453079,
+        "y_abs": 4161600,
+        "x_in": 0.495,
+        "y_in": 4.551,
+        "cx_in": 3.007,
+        "cy_in": 1.092,
+        "right_emu": 3203079,
+        "bottom_emu": 5160000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "263746",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 40000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ASV-ADDRESSABLE SAM",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Current addressable annual value",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "ASV-ADDRESSABLE SAM\nCurrent addressable annual value"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2550000,
+        "avail_w_in": 2.789,
+        "avail_h_emu": 918400,
+        "avail_h_in": 1.004,
+        "wrapped_lines": 2,
+        "est_height_emu": 286131,
+        "est_height_in": 0.313,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 171704,
+            "para_h_in": 0.188
+          },
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 114427,
+            "para_h_in": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "z": 14,
+      "kind": "sp",
+      "sp_id": 29,
+      "name": "StreamCap",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 1661600,
+        "cx": 2650000,
+        "cy": 240000,
+        "x_abs": 3503079,
+        "y_abs": 1661600,
+        "x_in": 3.831,
+        "y_in": 1.817,
+        "cx_in": 2.898,
+        "cy_in": 0.262,
+        "right_emu": 6153079,
+        "bottom_emu": 1901600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "263746",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 80000,
+          "r_ins": 80000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SAME FILTER BY STREAM",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SAME FILTER BY STREAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2490000,
+        "avail_w_in": 2.723,
+        "avail_h_emu": 200000,
+        "avail_h_in": 0.219,
+        "wrapped_lines": 1,
+        "est_height_emu": 146050,
+        "est_height_in": 0.16,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 146050,
+            "para_h_in": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "z": 15,
+      "kind": "sp",
+      "sp_id": 30,
+      "name": "StreamChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 1966600,
+        "cx": 2650000,
+        "cy": 380000,
+        "x_abs": 3503079,
+        "y_abs": 1966600,
+        "x_in": 3.831,
+        "y_in": 2.151,
+        "cx_in": 2.898,
+        "cy_in": 0.416,
+        "right_emu": 6153079,
+        "bottom_emu": 2346600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 70000,
+          "r_ins": 70000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Contract SAM",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= annual TAM \u00d7 vessel share \u00d7 role share",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Contract SAM\n= annual TAM \u00d7 vessel share \u00d7 role share"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2510000,
+        "avail_w_in": 2.745,
+        "avail_h_emu": 340000,
+        "avail_h_in": 0.372,
+        "wrapped_lines": 2,
+        "est_height_emu": 221818,
+        "est_height_in": 0.243,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 114300,
+            "para_h_in": 0.125
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 1,
+            "para_h_emu": 107518,
+            "para_h_in": 0.118
+          }
+        ]
+      }
+    },
+    {
+      "z": 16,
+      "kind": "sp",
+      "sp_id": 31,
+      "name": "StreamChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 2411600,
+        "cx": 2650000,
+        "cy": 380000,
+        "x_abs": 3503079,
+        "y_abs": 2411600,
+        "x_in": 3.831,
+        "y_in": 2.637,
+        "cx_in": 2.898,
+        "cy_in": 0.416,
+        "right_emu": 6153079,
+        "bottom_emu": 2791600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 70000,
+          "r_ins": 70000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Event SAM",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= events \u00d7 per-event cost \u00d7 vessel share \u00d7 role share",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Event SAM\n= events \u00d7 per-event cost \u00d7 vessel share \u00d7 role share"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2510000,
+        "avail_w_in": 2.745,
+        "avail_h_emu": 340000,
+        "avail_h_in": 0.372,
+        "wrapped_lines": 3,
+        "est_height_emu": 329336,
+        "est_height_in": 0.36,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 114300,
+            "para_h_in": 0.125
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 2,
+            "para_h_emu": 215036,
+            "para_h_in": 0.235
+          }
+        ]
+      }
+    },
+    {
+      "z": 17,
+      "kind": "sp",
+      "sp_id": 32,
+      "name": "StreamChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 2856600,
+        "cx": 2650000,
+        "cy": 380000,
+        "x_abs": 3503079,
+        "y_abs": 2856600,
+        "x_in": 3.831,
+        "y_in": 3.124,
+        "cx_in": 2.898,
+        "cy_in": 0.416,
+        "right_emu": 6153079,
+        "bottom_emu": 3236600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 70000,
+          "r_ins": 70000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Europe SAM",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= modeled spend \u00d7 vessel share \u00d7 role share",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Europe SAM\n= modeled spend \u00d7 vessel share \u00d7 role share"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2510000,
+        "avail_w_in": 2.745,
+        "avail_h_emu": 340000,
+        "avail_h_in": 0.372,
+        "wrapped_lines": 2,
+        "est_height_emu": 221818,
+        "est_height_in": 0.243,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 114300,
+            "para_h_in": 0.125
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 1,
+            "para_h_emu": 107518,
+            "para_h_in": 0.118
+          }
+        ]
+      }
+    },
+    {
+      "z": 18,
+      "kind": "sp",
+      "sp_id": 40,
+      "name": "OverlapSidecar",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 3356600,
+        "cx": 2650000,
+        "cy": 1803400,
+        "x_abs": 3503079,
+        "y_abs": 3356600,
+        "x_in": 3.831,
+        "y_in": 3.671,
+        "cx_in": 2.898,
+        "cy_in": 1.972,
+        "right_emu": 6153079,
+        "bottom_emu": 5160000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2467120,
+        "avail_w_in": 2.698,
+        "avail_h_emu": 1711960,
+        "avail_h_in": 1.872,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 19,
+      "kind": "sp",
+      "sp_id": 41,
+      "name": "OverlapCap",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 3356600,
+        "cx": 2650000,
+        "cy": 210000,
+        "x_abs": 3503079,
+        "y_abs": 3356600,
+        "x_in": 3.831,
+        "y_in": 3.671,
+        "cx_in": 2.898,
+        "cy_in": 0.23,
+        "right_emu": 6153079,
+        "bottom_emu": 3566600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "263746",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 80000,
+          "r_ins": 80000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DE-DUPLICATION RULE",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DE-DUPLICATION RULE"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2490000,
+        "avail_w_in": 2.723,
+        "avail_h_emu": 170000,
+        "avail_h_in": 0.186,
+        "wrapped_lines": 1,
+        "est_height_emu": 146050,
+        "est_height_in": 0.16,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 146050,
+            "para_h_in": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "z": 20,
+      "kind": "sp",
+      "sp_id": 42,
+      "name": "OverlapBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 3566600,
+        "cx": 2650000,
+        "cy": 531133,
+        "x_abs": 3503079,
+        "y_abs": 3566600,
+        "x_in": 3.831,
+        "y_in": 3.9,
+        "cx_in": 2.898,
+        "cy_in": 0.581,
+        "right_emu": 6153079,
+        "bottom_emu": 4097733,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "U.S. SAM",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= contract SAM + event SAM \u2212 Pacific MRIS overlap",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "U.S. SAM\n= contract SAM + event SAM \u2212 Pacific MRIS overlap"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2470000,
+        "avail_w_in": 2.701,
+        "avail_h_emu": 499133,
+        "avail_h_in": 0.546,
+        "wrapped_lines": 3,
+        "est_height_emu": 329361,
+        "est_height_in": 0.36,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 110109,
+            "para_h_in": 0.12
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 2,
+            "para_h_emu": 219252,
+            "para_h_in": 0.24
+          }
+        ]
+      }
+    },
+    {
+      "z": 21,
+      "kind": "sp",
+      "sp_id": 43,
+      "name": "OverlapBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 4097733,
+        "cx": 2650000,
+        "cy": 531133,
+        "x_abs": 3503079,
+        "y_abs": 4097733,
+        "x_in": 3.831,
+        "y_in": 4.481,
+        "cx_in": 2.898,
+        "cy_in": 0.581,
+        "right_emu": 6153079,
+        "bottom_emu": 4628866,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Overlap amount",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= 10% \u00d7 Pacific_MRIS-tagged event SAM",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Overlap amount\n= 10% \u00d7 Pacific_MRIS-tagged event SAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2470000,
+        "avail_w_in": 2.701,
+        "avail_h_emu": 499133,
+        "avail_h_in": 0.546,
+        "wrapped_lines": 2,
+        "est_height_emu": 219735,
+        "est_height_in": 0.24,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 110109,
+            "para_h_in": 0.12
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 1,
+            "para_h_emu": 109626,
+            "para_h_in": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "z": 22,
+      "kind": "cxnSp",
+      "sp_id": 46,
+      "name": "OverlapDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3583079,
+        "y": 4097733,
+        "cx": 2490000,
+        "cy": 0,
+        "x_abs": 3583079,
+        "y_abs": 4097733,
+        "x_in": 3.919,
+        "y_in": 4.481,
+        "cx_in": 2.723,
+        "cy_in": 0.0,
+        "right_emu": 6073079,
+        "bottom_emu": 4097733,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 23,
+      "kind": "sp",
+      "sp_id": 44,
+      "name": "OverlapBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3503079,
+        "y": 4628866,
+        "cx": 2650000,
+        "cy": 531133,
+        "x_abs": 3503079,
+        "y_abs": 4628866,
+        "x_in": 3.831,
+        "y_in": 5.062,
+        "cx_in": 2.898,
+        "cy_in": 0.581,
+        "right_emu": 6153079,
+        "bottom_emu": 5159999,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 90000,
+          "r_ins": 90000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 102.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Applied to SAM, not TAM",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Double-count risk is between SAM-side pools",
+                "font": "Arial",
+                "size_pt": 8.3,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Applied to SAM, not TAM\nDouble-count risk is between SAM-side pools"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2470000,
+        "avail_w_in": 2.701,
+        "avail_h_emu": 499133,
+        "avail_h_in": 0.546,
+        "wrapped_lines": 2,
+        "est_height_emu": 219735,
+        "est_height_in": 0.24,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 110109,
+            "para_h_in": 0.12
+          },
+          {
+            "font_pt": 8.3,
+            "lines": 1,
+            "para_h_emu": 109626,
+            "para_h_in": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "z": 24,
+      "kind": "cxnSp",
+      "sp_id": 47,
+      "name": "OverlapDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3583079,
+        "y": 4628866,
+        "cx": 2490000,
+        "cy": 0,
+        "x_abs": 3583079,
+        "y_abs": 4628866,
+        "x_in": 3.919,
+        "y_in": 5.062,
+        "cx_in": 2.723,
+        "cy_in": 0.0,
+        "right_emu": 6073079,
+        "bottom_emu": 4628866,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 25,
+      "kind": "graphicFrame.table",
+      "sp_id": 50,
+      "name": "TreatmentCrosswalk",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6453079,
+        "y": 1661600,
+        "cx": 5282362,
+        "cy": 3032758,
+        "x_abs": 6453079,
+        "y_abs": 1661600,
+        "x_in": 7.057,
+        "y_in": 1.817,
+        "cx_in": 5.777,
+        "cy_in": 3.317,
+        "right_emu": 11735441,
+        "bottom_emu": 4694358,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": {
+        "grid_cols_emu": [
+          1950000,
+          1110000,
+          2222362
+        ],
+        "row_heights_emu": [
+          350518,
+          335280,
+          335280,
+          335280,
+          335280,
+          335280,
+          335280,
+          335280,
+          335280
+        ],
+        "cells": [
+          {
+            "row": 0,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "263746",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "ACTIVITY / ROLE",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "FFFFFF"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "ACTIVITY / ROLE"
+            }
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "263746",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "CURRENT SAM TREATMENT",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "FFFFFF"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "CURRENT SAM TREATMENT"
+            }
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "263746",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 19050,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "WHY",
+                      "font": "Arial",
+                      "size_pt": 8.5,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "FFFFFF"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "WHY"
+            }
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Vessel-hosted telemetry / comms relay",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Vessel-hosted telemetry / comms relay"
+            }
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Counted",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Counted"
+            }
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Surface vessel can host or relay instrumentation payloads",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Surface vessel can host or relay instrumentation payloads"
+            }
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Splash, debris, impact monitoring",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Splash, debris, impact monitoring"
+            }
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Counted",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Counted"
+            }
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Observation and local sensing can be positioned near event areas",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Observation and local sensing can be positioned near event areas"
+            }
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Environmental sensing",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Environmental sensing"
+            }
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "E2E9EF",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Counted",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Counted"
+            }
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Persistent metocean and local sensing are ASV-suitable",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Persistent metocean and local sensing are ASV-suitable"
+            }
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Range clearance / hazard patrol",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Range clearance / hazard patrol"
+            }
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "F2F2F2",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Discounted",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Discounted"
+            }
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Monitoring role is suitable; authority and enforcement do not transfer",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Monitoring role is suitable; authority and enforcement do not transfer"
+            }
+          },
+          {
+            "row": 5,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Full MRIS replacement",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Full MRIS replacement"
+            }
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "D9D9D9",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded"
+            }
+          },
+          {
+            "row": 5,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Current SAM does not assume replacement of major crewed range ships",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Current SAM does not assume replacement of major crewed range ships"
+            }
+          },
+          {
+            "row": 6,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "SBX replacement",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "SBX replacement"
+            }
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "D9D9D9",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded"
+            }
+          },
+          {
+            "row": 6,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Current SAM does not assume replacement of SBX platform",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Current SAM does not assume replacement of SBX platform"
+            }
+          },
+          {
+            "row": 7,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Flight termination authority",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Flight termination authority"
+            }
+          },
+          {
+            "row": 7,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "D9D9D9",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded"
+            }
+          },
+          {
+            "row": 7,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "solid",
+              "color": "000000",
+              "w_emu": 12700,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Safety authority is not treated as ASV-addressable",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Safety authority is not treated as ASV-addressable"
+            }
+          },
+          {
+            "row": 8,
+            "col": 0,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Coercive enforcement / boarding",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Coercive enforcement / boarding"
+            }
+          },
+          {
+            "row": 8,
+            "col": 1,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "solid",
+              "value": "D9D9D9",
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "ctr",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Excluded",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": true,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Excluded"
+            }
+          },
+          {
+            "row": 8,
+            "col": 2,
+            "grid_span": 1,
+            "row_span": 1,
+            "h_merge": false,
+            "v_merge": false,
+            "fill": {
+              "kind": "none",
+              "value": null,
+              "blip_embed_rid": null,
+              "blip_link_rid": null
+            },
+            "border_left": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_right": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_top": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "border_bottom": {
+              "kind": "none",
+              "color": null,
+              "w_emu": null,
+              "dash": null,
+              "head_end": null,
+              "tail_end": null
+            },
+            "mar_l": 45720,
+            "mar_r": 45720,
+            "mar_t": 45720,
+            "mar_b": 45720,
+            "anchor": "ctr",
+            "text_body": {
+              "body_pr": {
+                "anchor": "ctr",
+                "wrap": null,
+                "l_ins": 91440,
+                "r_ins": 91440,
+                "t_ins": 45720,
+                "b_ins": 45720,
+                "rot": null
+              },
+              "paragraphs": [
+                {
+                  "algn": "l",
+                  "ln_spc_pct": 100.0,
+                  "ln_spc_pts": null,
+                  "bullet_char": null,
+                  "bullet_autonum": null,
+                  "level": 0,
+                  "runs": [
+                    {
+                      "text": "Enforcement and boarding are not assumed ASV roles",
+                      "font": "Arial",
+                      "size_pt": 8.0,
+                      "bold": false,
+                      "italic": null,
+                      "underline": null,
+                      "color": "000000"
+                    }
+                  ]
+                }
+              ],
+              "plain_text": "Enforcement and boarding are not assumed ASV roles"
+            }
+          }
+        ]
+      },
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": "http://schemas.openxmlformats.org/drawingml/2006/table",
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 26,
+      "kind": "sp",
+      "sp_id": 10,
+      "name": "Qualifier",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1371600,
+        "cx": 11282362,
+        "cy": 220000,
+        "x_abs": 453079,
+        "y_abs": 1371600,
+        "x_in": 0.495,
+        "y_in": 1.5,
+        "cx_in": 12.339,
+        "cy_in": 0.241,
+        "right_emu": 11735441,
+        "bottom_emu": 1591600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SAM method only; capture share and future upside are outside current sizing",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SAM method only; capture share and future upside are outside current sizing"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11282362,
+        "avail_w_in": 12.339,
+        "avail_h_emu": 220000,
+        "avail_h_in": 0.241,
+        "wrapped_lines": 1,
+        "est_height_emu": 124142,
+        "est_height_in": 0.136,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 27,
+      "kind": "sp",
+      "sp_id": 60,
+      "name": "InterpretationCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5250000,
+        "cx": 5500000,
+        "cy": 620000,
+        "x_abs": 453079,
+        "y_abs": 5250000,
+        "x_in": 0.495,
+        "y_in": 5.741,
+        "cx_in": 6.015,
+        "cy_in": 0.678,
+        "right_emu": 5953079,
+        "bottom_emu": 5870000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 140000,
+          "r_ins": 140000,
+          "t_ins": 50000,
+          "b_ins": 50000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "SAM is a suitability filter, not a penetration rate.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 108.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Rows must pass both gates: vessel-related work and ASV-suitable role.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "SAM is a suitability filter, not a penetration rate.\nRows must pass both gates: vessel-related work and ASV-suitable role."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 5220000,
+        "avail_w_in": 5.709,
+        "avail_h_emu": 520000,
+        "avail_h_in": 0.569,
+        "wrapped_lines": 2,
+        "est_height_emu": 271526,
+        "est_height_in": 0.297,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 148082,
+            "para_h_in": 0.162
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 123444,
+            "para_h_in": 0.135
+          }
+        ]
+      }
+    },
+    {
+      "z": 28,
+      "kind": "sp",
+      "sp_id": 61,
+      "name": "InterpretationCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6253079,
+        "y": 5250000,
+        "cx": 5482362,
+        "cy": 620000,
+        "x_abs": 6253079,
+        "y_abs": 5250000,
+        "x_in": 6.838,
+        "y_in": 5.741,
+        "cx_in": 5.996,
+        "cy_in": 0.678,
+        "right_emu": 11735441,
+        "bottom_emu": 5870000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 140000,
+          "r_ins": 140000,
+          "t_ins": 50000,
+          "b_ins": 50000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The treatment logic is conservative by design.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 108.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sensing, relay, monitoring, and patrol-like support count; platform replacement, safety authority, and enforcement do not.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "The treatment logic is conservative by design.\nSensing, relay, monitoring, and patrol-like support count; platform replacement, safety authority, and enforcement do not."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 5202362,
+        "avail_w_in": 5.689,
+        "avail_h_emu": 520000,
+        "avail_h_in": 0.569,
+        "wrapped_lines": 3,
+        "est_height_emu": 394970,
+        "est_height_in": 0.432,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 148082,
+            "para_h_in": 0.162
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 246888,
+            "para_h_in": 0.27
+          }
+        ]
+      }
+    },
+    {
+      "z": 29,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5930000,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 5930000,
+        "x_in": 0.495,
+        "y_in": 6.485,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6470000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: (1) USAspending.gov / FPDS award records; (2) DOT&E FY2025 Annual Report, NAVAIR VX-30, NASA Wallops, Point Mugu Sea Range EIS / OEIS, and SEC EDGAR vessel-rate filings; (3) QinetiQ FY25 Annual Report, U.K. MOD LTPA / MSCA releases, DGA EM, CNES / CSG, FMV, And\u00f8ya Space, SaxaVord, and company analysis",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: (1) USAspending.gov / FPDS award records; (2) DOT&E FY2025 Annual Report, NAVAIR VX-30, NASA Wallops, Point Mugu Sea Range EIS / OEIS, and SEC EDGAR vessel-rate filings; (3) QinetiQ FY25 Annual Report, U.K. MOD LTPA / MSCA releases, DGA EM, CNES / CSG, FMV, And\u00f8ya Space, SaxaVord, and company analysis"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 448560,
+        "avail_h_in": 0.491,
+        "wrapped_lines": 2,
+        "est_height_emu": 203200,
+        "est_height_in": 0.222,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 203200,
+            "para_h_in": 0.222
+          }
+        ]
+      }
+    }
+  ],
+  "table_fit": [
+    {
+      "name": "TreatmentCrosswalk",
+      "sp_id": 50,
+      "authored": [
+        350518,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280
+      ],
+      "required": [
+        350518,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280,
+        335280
+      ],
+      "overflow_rows": [],
+      "authored_total": 3032758,
+      "required_total": 3032758,
+      "frame_y": 1661600,
+      "honest_bottom": 4694358,
+      "fits_body": true
+    }
+  ]
+}

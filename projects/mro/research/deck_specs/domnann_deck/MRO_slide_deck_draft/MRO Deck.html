@@ -1,0 +1,2037 @@
+<!DOCTYPE html><html lang="en"><head>
+
+
+<meta charset="utf-8">
+<title>Saronic / Port Alpha MRO Entry — Due Diligence Deck</title>
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --navy-900: #1f2d44;
+    --navy-800: #243650;
+    --navy-700: #2c4262;
+    --navy-600: #36527a;
+    --slate-500: #6f8197;
+    --slate-400: #8a9bb0;
+    --slate-300: #b6c2d1;
+    --slate-200: #d6dde6;
+    --slate-100: #e7ecf2;
+    --lightblue-100: #dbe6f1;
+    --lightblue-200: #c5d6e6;
+    --lightblue-300: #a8c0d6;
+    --lightblue-400: #7fa0bf;
+    --bg: #ffffff;
+    --ink: #2a3340;
+    --ink-soft: #4b5666;
+    --rule: #c9d2dc;
+    --rule-soft: #e3e8ee;
+  }
+
+  html, body { margin: 0; background: #000; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--ink); }
+
+  /* Slide canvas */
+  section.slide {
+    background: #ffffff;
+    color: var(--ink);
+    padding: 64px 72px 48px 72px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  /* Title */
+  .slide-title {
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--navy-900);
+    line-height: 1.25;
+    letter-spacing: -0.005em;
+    padding-bottom: 18px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .slide-title .pipe {
+    color: var(--slate-400);
+    font-weight: 400;
+    margin: 0 12px;
+  }
+  .slide-title .topic { font-weight: 400; }
+  .slide-title .assertion { font-weight: 400; color: #2a3340; }
+
+  .slide-subtitle {
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 400;
+    line-height: 1.35;
+  }
+
+  /* Body grid */
+  .body {
+    flex: 1;
+    display: grid;
+    gap: 48px;
+    min-height: 0;
+  }
+  .body.two-col-equal { grid-template-columns: 1fr 1fr; }
+  .body.left-right { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+  .body.left-right-wide { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+
+  /* Footer */
+  .footer {
+    margin-top: 22px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule-soft);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--slate-500);
+    line-height: 1.5;
+  }
+  .footnotes {
+    font-size: 14px;
+    color: var(--slate-500);
+    line-height: 1.45;
+    margin-top: 12px;
+  }
+  .footnotes p { margin: 2px 0; }
+
+  /* Tables */
+  table.note-table { width: 100%; border-collapse: collapse; font-size: 22px; }
+  table.note-table thead th {
+    text-align: left;
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 14px 12px 0;
+    border-bottom: 1px solid var(--navy-800);
+  }
+  table.note-table tbody td {
+    vertical-align: top;
+    padding: 14px 14px 14px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    color: var(--ink);
+    line-height: 1.45;
+  }
+  table.note-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--navy-900);
+    width: 30%;
+    padding-right: 18px;
+  }
+  table.note-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Generic data table */
+  table.data-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  table.data-table thead th {
+    text-align: left;
+    color: var(--navy-900);
+    font-weight: 600;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--navy-800);
+    background: transparent;
+    font-size: 16px;
+  }
+  table.data-table thead th.num { text-align: right; }
+  table.data-table tbody td {
+    padding: 3px 10px;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+    line-height: 1.2;
+  }
+  table.data-table tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  table.data-table tbody tr.subhead td {
+    background: var(--lightblue-100);
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--lightblue-200);
+  }
+  table.data-table tbody tr.total td {
+    font-weight: 600;
+    color: var(--navy-900);
+    border-top: 1px solid var(--navy-800);
+    border-bottom: none;
+  }
+  table.data-table tbody tr.sub td { font-style: italic; color: var(--ink-soft); }
+  table.data-table tbody tr.sub td:first-child { padding-left: 26px; }
+
+  /* Funnel (Slide 2) */
+  .funnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 4px;
+  }
+  .funnel-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .funnel-box {
+    width: 78%;
+    padding: 18px 22px;
+    text-align: center;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  .funnel-box .big {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--navy-900);
+    line-height: 1.15;
+  }
+  .funnel-box .sub {
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    line-height: 1.35;
+  }
+  .funnel-box.tier1 { background: var(--lightblue-100); }
+  .funnel-box.tier2 { background: var(--lightblue-200); }
+  .funnel-box.tier3 { background: var(--navy-800); }
+  .funnel-box.tier3 .big, .funnel-box.tier3 .sub { color: #ffffff; }
+  .funnel-box.terminal { background: var(--navy-900); padding: 22px; }
+  .funnel-box.terminal .big { color: #ffffff; font-size: 32px; }
+
+  .funnel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 78%;
+    padding: 8px 0;
+  }
+  .funnel-arrow .arrow {
+    color: var(--slate-500);
+    font-size: 26px;
+    line-height: 1;
+  }
+  .funnel-arrow .label {
+    font-size: 18px;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  /* Two column text (slide 1) */
+  .text-col h3 {
+    font-size: 30px;
+    color: var(--navy-900);
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--navy-800);
+  }
+  .text-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .text-col li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 22px;
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .text-col li:last-child { margin-bottom: 0; }
+  .text-col li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--slate-500);
+  }
+  .col-divider {
+    border-left: 1px solid var(--rule);
+  }
+
+  /* Waterfall chart (Slide 3) */
+  .waterfall {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .waterfall .chart-area {
+    position: relative;
+    padding: 4px 8px 12px 8px;
+    min-height: 0;
+    flex: 1;
+  }
+  .waterfall svg { width: 100%; height: 100%; display: block; }
+  .waterfall .slide-subtitle { margin-bottom: 2px; }
+
+  /* Callout */
+  .callout {
+    background: var(--lightblue-100);
+    border: 1px solid var(--lightblue-200);
+    padding: 10px 12px;
+    font-size: 13.5px;
+    font-style: italic;
+    color: var(--navy-900);
+    line-height: 1.45;
+    margin-top: 10px;
+  }
+  .callout .lead { font-style: normal; font-weight: 600; }
+
+  /* Section labels */
+  .section-band {
+    background: var(--lightblue-100);
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 6px 10px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .scroll-stack > * + * { margin-top: 14px; }
+
+  /* Helper */
+  .muted { color: var(--slate-500); }
+  .dim { color: var(--slate-400); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* Slide 4 — 100% stacked single column */
+  .stack-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .stack-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 14px;
+    align-items: center;
+  }
+  .stack-legend .sw {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: -2px;
+  }
+  .stack-chart-area {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
+    margin-top: 4px;
+  }
+  .stack-yaxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 560px;
+    padding-right: 8px;
+    border-right: 1px solid #c9d2dc;
+    font-size: 12px;
+    color: var(--slate-500);
+    font-variant-numeric: tabular-nums;
+  }
+  .stack-yaxis .ylabel { line-height: 1; }
+  .stack-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .stack-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-900);
+    margin-bottom: 6px;
+  }
+  .stack-bar {
+    width: 170px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c9d2dc;
+    border-bottom: 2px solid var(--navy-900);
+  }
+  .stack-seg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 14px;
+    position: relative;
+    overflow: visible;
+    min-height: 0;
+  }
+  .stack-seg .seg-label {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: absolute;
+    left: 186px;
+    color: var(--ink);
+  }
+  .stack-seg .seg-label.big { font-size: 15px; }
+  .stack-axis {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-style: italic;
+    text-align: center;
+    width: 170px;
+  }
+  .stack-ytitle {
+    font-size: 11px;
+    color: var(--slate-500);
+    margin-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .right-stack {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .seg-table td.seg-name {
+    font-weight: 600;
+    color: var(--navy-900);
+    white-space: nowrap;
+  }
+  .seg-table td.seg-name .sw {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: -1px;
+  }
+
+  /* =========================================================
+     Mekko / Marimekko chart (slides 5, 6, 8)
+     ========================================================= */
+  .mekko {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+  .mekko-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 6px;
+    align-items: center;
+    line-height: 1.3;
+  }
+  .mekko-legend .sw {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: -2px;
+  }
+  .mekko-chart-area {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-height: 0;
+    margin-top: 26px;
+  }
+  .mekko-yaxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 6px 22px 0;
+    font-size: 13px;
+    color: var(--slate-500);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    width: 40px;
+  }
+  .mekko-cols {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+    border-left: 1px solid var(--rule);
+    border-bottom: 2px solid var(--navy-900);
+    position: relative;
+  }
+  .mekko-col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 2px solid #ffffff;
+  }
+  .mekko-col:last-child { border-right: none; }
+  .mekko-col-total {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy-900);
+    line-height: 1;
+    white-space: nowrap;
+    overflow: visible;
+  }
+  .mekko-col.narrow .mekko-col-total {
+    font-size: 11px;
+    top: -16px;
+  }
+  .mekko-col.vnarrow .mekko-col-total {
+    display: none;
+  }
+  .mekko-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    min-height: 0;
+  }
+  .mekko-seg:first-child { border-top: none; }
+  .mekko-seg .mlabel {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+  }
+  .mekko-xlabels {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    padding-left: 40px;
+  }
+  .mekko-xlabel {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink);
+    padding: 4px 4px 0 4px;
+    box-sizing: border-box;
+    border-right: 2px solid transparent;
+    line-height: 1.25;
+  }
+  .mekko-xlabel .xtitle { font-weight: 600; color: var(--navy-900); }
+  .mekko-xlabel .xval { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+  /* Dark / light seg text by segment fill class */
+  .seg-dark { color: #ffffff; }
+  .seg-light { color: var(--navy-900); }
+
+  /* =========================================================
+     Pareto combo chart (slide 7)
+     ========================================================= */
+  .pareto {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+  .pareto-chart {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+  }
+  .pareto-chart svg { width: 100%; height: 100%; display: block; }
+
+  /* =========================================================
+     Callout - non-italic variant (slide 6)
+     ========================================================= */
+  .callout.plain {
+    font-style: normal;
+  }
+  .callout.plain .lead { font-style: normal; }
+
+  /* Right-margin callout stack (slide 6) */
+  .callout-column { display: flex; flex-direction: column; gap: 16px; min-height: 0; }
+  .callout-column .callout { margin-top: 0; }
+
+  /* =========================================================
+     Slide 5 right block (Tier-1 roster + Entry structure)
+     ========================================================= */
+  .entry-block {
+    margin-top: 14px;
+  }
+  .entry-block .entry-band {
+    background: var(--lightblue-100);
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--lightblue-200);
+  }
+  .entry-steps {
+    list-style: none;
+    padding: 10px 14px 6px 14px;
+    margin: 0;
+    border: 1px solid var(--rule-soft);
+    border-top: none;
+    background: #fafbfd;
+  }
+  .entry-steps li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--ink);
+    line-height: 1.4;
+    padding: 6px 0;
+  }
+  .entry-steps .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--navy-900);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-variant-numeric: tabular-nums;
+  }
+  .entry-steps .step-title { font-weight: 600; color: var(--navy-900); }
+
+  /* Slide 7 right table - rank table */
+  .rank-table td .pct { color: var(--ink-soft); font-variant-numeric: tabular-nums; margin-left: 4px; }
+
+  /* =========================================================
+     Slide 9 - Dual stacked columns (Approp by TAS + OPN drill)
+     ========================================================= */
+  .dual-stack {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+  .dual-stack-area {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 0;
+    margin-top: 26px;
+    padding-left: 40px;
+    position: relative;
+  }
+  .dual-stack-yaxis {
+    position: absolute;
+    left: 0; top: 0; bottom: 56px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-align: right;
+    padding-right: 6px;
+  }
+  .dual-stack-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    position: relative;
+  }
+  .dual-stack-col.narrow { flex: 0.55 1 0; }
+  .dual-stack-col .col-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy-900);
+    text-align: center;
+    margin-bottom: 6px;
+    line-height: 1.25;
+  }
+  .dual-stack-col .col-title .sub {
+    display: block;
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 12px;
+  }
+  .dual-stack-col .bar-wrap {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .dual-stack-col .bar {
+    width: 62%;
+    min-width: 120px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .dual-stack-col .bar-total {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy-900);
+  }
+  .dual-stack-col .seg {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-top: 1px solid #ffffff;
+    line-height: 1.15;
+    overflow: hidden;
+  }
+  .dual-stack-col .seg:first-child { border-top: none; }
+  .dual-stack-col .seg .lbl {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .dual-stack-col .seg .lbl .pct {
+    font-weight: 400;
+    opacity: 0.85;
+    margin-left: 6px;
+  }
+  .dual-stack-col .seg.on-dark { color: #ffffff; }
+  .dual-stack-col .seg.on-light { color: var(--ink); }
+  .dual-stack-xlabel {
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    padding: 4px 8px;
+  }
+  .dual-stack-xlabel .xt { font-weight: 600; color: var(--navy-900); display: block; font-size: 13px; }
+
+  .bracket-link {
+    position: relative;
+    align-self: center;
+    width: 58px;
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy-900);
+  }
+  .bracket-link svg { width: 100%; height: 100%; overflow: visible; }
+
+  /* Slide 9 takeaway column */
+  .takeaway-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 0;
+  }
+  .takeaway-col .tk {
+    background: #ffffff;
+    border: 1px solid var(--rule-soft);
+    border-left: 4px solid var(--navy-900);
+    padding: 10px 14px;
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.35;
+  }
+  .takeaway-col .tk .tk-title {
+    display: block;
+    font-weight: 700;
+    color: var(--navy-900);
+    font-size: 14.5px;
+    margin-bottom: 2px;
+  }
+
+  /* =========================================================
+     Slide 10 - Combination chart (columns + reference line)
+     ========================================================= */
+  .combo {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+  .combo-chart {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+  }
+  .combo-chart svg { width: 100%; height: 100%; display: block; }
+</style>
+<style id="deck-stage-print-page">@page { size: 1920px 1080px; margin: 0; } @media print { html, body { margin: 0 !important; padding: 0 !important; background: none !important; overflow: visible !important; height: auto !important; } * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }</style></head>
+<body data-cc-id="cc-1" style="font-family: Arial; cursor: crosshair;">
+
+<deck-stage width="1920" height="1080">
+
+<!-- ============================================================== -->
+<!-- SLIDE 1 — Research Context & Approach                          -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Research Context &amp; Approach" data-screen-label="01 Research Context &amp; Approach" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="0" data-deck-active="">
+  <div class="slide-title">
+    <span class="topic">Research Context &amp; Approach</span><span class="pipe">|</span><span class="assertion">Sizing U.S. Navy and Coast Guard MRO contracting activity to support the new shipyard's business-line decision</span>
+  </div>
+
+  <div class="body two-col-equal">
+    <div class="text-col">
+      <h3>Context</h3>
+      <ul>
+        <li>Saronic is finalizing dimensions for a new U.S. shipyard.</li>
+        <li>Candidate sites under evaluation: Gulf Coast (Brownsville, TX) and California.</li>
+        <li>Leadership is deciding whether to include U.S. Navy and U.S. Coast Guard MRO contracting among the yard's business lines.</li>
+        <li>This research effort quantifies the MRO market and characterizes its structure so the business-line decision can be informed by FY2025 market data rather than planning assumptions.</li>
+      </ul>
+    </div>
+
+    <div class="text-col col-divider" style="padding-left: 48px;">
+      <h3>Objectives</h3>
+      <ul>
+        <li>Size the FY2025 U.S. Navy and U.S. Coast Guard MRO contracting market (TAM) using FPDS contract obligations.</li>
+        <li>Decompose TAM by work segment, vessel category, prime contractor, Regional Maintenance Center (RMC) geography, and funding appropriation.</li>
+        <li>Identify the structural characteristics of the largest segment (depot ship repair) and its entry structure.</li>
+        <li>Reconcile the TAM against adjacent ship-dollar pools (newbuild, reactor procurement, public-yard labor) that are outside MRO scope but potentially relevant context.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 2 — TAM & Scope                                          -->
+<!-- ============================================================== -->
+<section class="slide" data-label="TAM &amp; Scope" data-screen-label="02 TAM &amp; Scope" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="1">
+  <div class="slide-title">
+    <span class="topic">TAM &amp; Scope</span><span class="pipe">|</span><span class="assertion">FY2025 Navy and Coast Guard MRO TAM totaled $7.1B</span>
+  </div>
+
+  <div class="body left-right" style="align-items: center;">
+    <!-- LEFT: filter funnel -->
+    <div>
+      <div class="funnel">
+        <div class="funnel-row">
+          <div class="funnel-box tier1">
+            <div class="big">2,539 Active PSCs</div>
+            <div class="sub">Every federal contract-action code category</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">
+          <span class="arrow">↓</span>
+          <span class="label">USN / USCG only, Services codes only</span>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-box tier2">
+            <div class="big">~1,800 Services-class PSCs</div>
+            <div class="sub">Services-only codes (J, K, N, H, L, M families); products excluded</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">
+          <span class="arrow">↓</span>
+          <span class="label">MRO codes only</span>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-box tier3">
+            <div class="big">65 Ship MRO PSCs</div>
+            <div class="sub">Navy + USCG ship repair, modification, overhaul and husbanding codes</div>
+          </div>
+        </div>
+        <div class="funnel-arrow">
+          <span class="arrow">↓</span>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-box terminal">
+            <div class="big">FY2025 MRO TAM = $7.1B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Note / Detail table -->
+    <div>
+      <table class="note-table">
+        <thead>
+          <tr><th style="width: 30%;">Note</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PSC</td>
+            <td>A 4-character Product and Service Code assigned by the contracting officer at the buying command to every federal contract action.</td>
+          </tr>
+          <tr>
+            <td>Awards data vs. budget materials</td>
+            <td>FPDS obligations capture executed contract-level spend, attributing dollars to vendor, work type, and hull program. Navy and Coast Guard budget exhibits report planned maintenance at the program level, with no contractor attribution and no PSC-level work-type detail.</td>
+          </tr>
+          <tr>
+            <td>In scope</td>
+            <td>All U.S. Navy and U.S. Coast Guard vessel types.<br><br>Work types: depot ship repair, equipment maintenance, modification, installation, QC and inspection, OEM technical representation, and husbanding services.</td>
+          </tr>
+          <tr>
+            <td>Out of scope</td>
+            <td>In-house labor at the four public naval shipyards (Portsmouth, Norfolk, Puget Sound, and Pearl Harbor); RCOH and reactor-plant sustainment (bundled under shipbuilding PSCs); newbuild and product procurement.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">Source: FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, 65 services PSCs, post-exclusions). Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 3 — TAM Derivation (waterfall)                           -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Addressable vs Adjacent Spend" data-screen-label="03 Addressable vs Adjacent Spend" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="2">
+  <div class="slide-title">
+    <span class="topic">Addressable vs Adjacent Spend</span><span class="pipe">|</span><span class="assertion">The $7.1B MRO TAM is the addressable slice of a much larger FY2025 Navy and Coast Guard ship-dollar pool; ~$38B newbuild, ~$9.5B implied public-yard labor, and ~$1.9B reactor product sit adjacent to but outside the MRO scope</span>
+  </div>
+
+  <div class="body left-right-wide" style="grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 28px;">
+    <!-- LEFT: waterfall -->
+    <div class="waterfall">
+      <div class="slide-subtitle">FY2025 Navy + USCG ship-dollar pools bridged to addressable MRO TAM ($M)</div>
+      <div class="chart-area">
+        <svg viewBox="0 40 800 600" preserveAspectRatio="xMidYMid meet">
+          <!-- y-axis baseline -->
+          <line x1="50" y1="600" x2="780" y2="600" stroke="#c9d2dc" stroke-width="1"></line>
+          <!-- y-axis vertical -->
+          <line x1="50" y1="60" x2="50" y2="600" stroke="#c9d2dc" stroke-width="1"></line>
+          <!-- y gridlines (light) -->
+          <g stroke="#eef1f5" stroke-width="1">
+            <line x1="50" y1="60" x2="780" y2="60"></line>
+            <line x1="50" y1="195" x2="780" y2="195"></line>
+            <line x1="50" y1="330" x2="780" y2="330"></line>
+            <line x1="50" y1="465" x2="780" y2="465"></line>
+          </g>
+          <!-- y-axis labels ($M, scale 0..60,000) -->
+          <g font-family="Helvetica" font-size="10" fill="#6f8197" text-anchor="end">
+            <text x="46" y="604">0</text>
+            <text x="46" y="469">15,000</text>
+            <text x="46" y="334">30,000</text>
+            <text x="46" y="199">45,000</text>
+            <text x="46" y="64">60,000</text>
+          </g>
+
+          <!-- Bars (scale: (600-60)/60000 = 0.009 px / $M) -->
+          <!-- Bar 1: starting anchor 56,577 -->
+          <g>
+            <rect x="80" y="90.81" width="80" height="509.19" fill="#1f2d44"></rect>
+            <text x="120" y="80" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#6f8197">56,577</text>
+            <text x="120" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">FY25 Navy + USCG</text>
+            <text x="120" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">ship-dollar pool</text>
+          </g>
+
+          <!-- Bar 2: -38,100 PSC 1905 Newbuild (top 90.81, bottom 433.71) -->
+          <g>
+            <line x1="160" y1="90.81" x2="200" y2="90.81" stroke="#8a9bb0" stroke-dasharray="3,2" stroke-width="1"></line>
+            <rect x="200" y="90.81" width="80" height="342.9" fill="#6f8197"></rect>
+            <text x="240" y="267" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#ffffff">-38,100</text>
+            <text x="240" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">PSC 1905</text>
+            <text x="240" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">Newbuild</text>
+          </g>
+
+          <!-- Bar 3: -1,875 PSC 4470 Nuclear Reactors (top 433.71, bottom 450.585) -->
+          <g>
+            <line x1="280" y1="433.71" x2="320" y2="433.71" stroke="#8a9bb0" stroke-dasharray="3,2" stroke-width="1"></line>
+            <rect x="320" y="433.71" width="80" height="16.875" fill="#6f8197"></rect>
+            <text x="360" y="428" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">-1,875</text>
+            <text x="360" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">PSC 4470</text>
+            <text x="360" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">Nuclear Reactors</text>
+          </g>
+
+          <!-- Bar 4: -9,535 implied public-yard labor (top 450.585, bottom 536.4) -->
+          <g>
+            <line x1="400" y1="450.585" x2="440" y2="450.585" stroke="#8a9bb0" stroke-dasharray="3,2" stroke-width="1"></line>
+            <rect x="440" y="450.585" width="80" height="85.815" fill="#6f8197"></rect>
+            <text x="480" y="497" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#ffffff">-9,535</text>
+            <text x="480" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">Implied public-yard</text>
+            <text x="480" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">labor (OMN 1B4B)</text>
+          </g>
+
+          <!-- Bar 5: Nuclear MRO PSCs ~0 (flat at 536.4) -->
+          <g>
+            <line x1="520" y1="536.4" x2="560" y2="536.4" stroke="#8a9bb0" stroke-dasharray="3,2" stroke-width="1"></line>
+            <rect x="560" y="534.9" width="80" height="2" fill="#6f8197"></rect>
+            <text x="600" y="529" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">~0</text>
+            <text x="600" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">Nuclear MRO PSCs</text>
+            <text x="600" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">(J044 / K044 / N044)</text>
+          </g>
+
+          <!-- Bar 6: ending anchor 7,067 (height 63.6, top 536.4) -->
+          <g>
+            <line x1="640" y1="536.4" x2="680" y2="536.4" stroke="#8a9bb0" stroke-dasharray="3,2" stroke-width="1"></line>
+            <rect x="680" y="536.4" width="80" height="63.6" fill="#1f2d44"></rect>
+            <text x="720" y="526" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="700" fill="#1f2d44">7,067</text>
+            <text x="720" y="616" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">FY25 MRO TAM</text>
+            <text x="720" y="630" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#2a3340">(addressable)</text>
+          </g>
+
+          <!-- y-axis title -->
+          <text x="14" y="55" font-family="Helvetica" font-size="11" fill="#6f8197">$M</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: budget anchors table -->
+    <div style="align-self: center;">
+      <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width:52%;">Line Item</th>
+              <th class="num" style="width:16%;">FY25 $M</th>
+              <th style="width:32%;">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="subhead"><td colspan="3">OMN — Ship Maintenance (SAG 1B4B)</td></tr>
+            <tr><td>Total 1B4B Ship Maintenance</td><td class="num">11,764</td><td>OMN PB Vol 1, p. 153</td></tr>
+            <tr class="sub"><td>of which Ship Maintenance By Contract (CE 928)</td><td class="num">2,228</td><td>OMN PB Vol 1, p. 178 (OP-32 L928)</td></tr>
+            <tr><td>Implied non-contract (public-yard labor + supt.)</td><td class="num">9,535</td><td>Computed (1B4B minus CE 928)</td></tr>
+
+            <tr class="subhead"><td colspan="3">SCN — Nuclear-Platform Line Items</td></tr>
+            <tr><td>LI 1045 Columbia Class (construction + CY AP)</td><td class="num">9,581</td><td>SCN P-40, pp. 31 + 57</td></tr>
+            <tr><td>LI 2013 Virginia Class (construction + CY AP)</td><td class="num">13,221</td><td>SCN P-40, pp. 155 + 171</td></tr>
+            <tr><td>LI 2086 CVN Refueling Overhauls (FY25 net)</td><td class="num">1,480</td><td>SCN P-40, p. 175</td></tr>
+            <tr><td>LI 2001 Carrier Replacement (CVN-80)</td><td class="num">1,359</td><td>SCN P-40, p. 73</td></tr>
+            <tr><td>LI 2004 CVN-81</td><td class="num">675</td><td>SCN P-40, p. 117</td></tr>
+            <tr class="total"><td>SCN nuclear-platform subtotal</td><td class="num">26,316</td><td>Sum</td></tr>
+
+            <tr class="subhead"><td colspan="3">Nuclear MRO PSC Emptiness (J044 / K044 / N044)</td></tr>
+            <tr><td>Nuclear Maintenance / Modification / Installation</td><td class="num">~0</td><td>Bundled under shipbuilding PSCs</td></tr>
+          </tbody>
+        </table>
+
+      <div class="callout">
+        <span class="lead">Note:</span> PSC 1905 is not purely newbuild. Individual depot events on nuclear-platform hulls (e.g., the $424M HII USS Boise SSN-764 Engineered Overhaul at Newport News) are coded as shipbuilding rather than J998/J999. The Services MRO TAM on Slide 2 therefore undercounts private-sector sub and carrier depot work that is bundled under the newbuild PSC.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) Public-yard labor implied: OMN 1B4B total ($11,764M) minus Ship Maintenance By Contract CE 928 ($2,228M). (2) The four public naval shipyards (Portsmouth, Norfolk, Puget Sound, Pearl Harbor) are NWCF activities — payroll generates no FPDS record. (3) J044/K044/N044 ~$0 because reactor work is contracted under ship-level PSC 1905 and PSC 4470, not standalone service PSCs.<br>Sources: FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, Awards master post-exclusions); FY2026 President's Budget exhibits (OMN Vol 1 SAG 1B4B OP-5, SCN P-1). Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 4 — TAM Composition                                       -->
+<!-- ============================================================== -->
+<section class="slide" data-label="TAM Composition" data-screen-label="04 TAM Composition" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="3">
+  <div class="slide-title">
+    <span class="topic">TAM Composition</span><span class="pipe">|</span><span class="assertion">Depot ship repair drove ~68% of FY2025 MRO TAM; ~62% of hull spend concentrated on surface combatants, amphibious warfare ships, and submarines</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: Mekko chart, vessel category × work segment -->
+    <div class="mekko">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 MRO TAM by Vessel Type × Work Segment ($M)</div>
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Depot Ship Repair</span>
+        <span><span class="sw" style="background:#36527a"></span>HM&amp;E</span>
+        <span><span class="sw" style="background:#6f8197"></span>Combat Systems</span>
+        <span><span class="sw" style="background:#a8c0d6"></span>Port &amp; Technical Services</span>
+        <span><span class="sw" style="background:#dbe6f1"></span>Electronics &amp; C4ISR</span>
+      </div>
+
+      <div class="mekko-chart-area">
+        <div class="mekko-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+        <div class="mekko-cols">
+          <!-- Ordering: smallest (top) -> biggest (bottom). -->
+          <!-- Surface Combatants 30% -->
+          <div class="mekko-col" style="flex: 0 0 30%;">
+            <div class="mekko-col-total">$2,120M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 3%;  background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 6%;  background:#6f8197;"><span class="mlabel">Combat</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 6%;  background:#36527a;"><span class="mlabel">HM&amp;E</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 85%; background:#1f2d44;"><span class="mlabel">Depot — 85%</span></div>
+          </div>
+          <!-- Amphibious Warfare Ships 20% -->
+          <div class="mekko-col" style="flex: 0 0 20%;">
+            <div class="mekko-col-total">$1,440M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 2%;  background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 5%;  background:#36527a;"><span class="mlabel">HM&amp;E</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 93%; background:#1f2d44;"><span class="mlabel">Depot — 93%</span></div>
+          </div>
+          <!-- Submarines 12% -->
+          <div class="mekko-col" style="flex: 0 0 12%;">
+            <div class="mekko-col-total">$838M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#a8c0d6;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 19%; background:#36527a;"><span class="mlabel">HM&amp;E 19%</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 22%; background:#6f8197;"><span class="mlabel">Combat 22%</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 53%; background:#1f2d44;"><span class="mlabel">Depot 53%</span></div>
+          </div>
+          <!-- Combat Logistics Ships 11% -->
+          <div class="mekko-col" style="flex: 0 0 11%;">
+            <div class="mekko-col-total">$770M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#a8c0d6;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 11%; background:#36527a;"><span class="mlabel">HM&amp;E</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 83%; background:#1f2d44;"><span class="mlabel">Depot 83%</span></div>
+          </div>
+          <!-- Aircraft Carriers 6% -->
+          <div class="mekko-col narrow" style="flex: 0 0 6%;">
+            <div class="mekko-col-total">$422M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#a8c0d6;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 8%;  background:#36527a;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 86%; background:#1f2d44;"><span class="mlabel">Depot</span></div>
+          </div>
+          <!-- Other 21% -->
+          <div class="mekko-col" style="flex: 0 0 21%;">
+            <div class="mekko-col-total">$1,474M</div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 1%;  background:#6f8197;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 11%; background:#a8c0d6;"><span class="mlabel">Port</span></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 14%; background:#dbe6f1;"><span class="mlabel">C4ISR</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 33%; background:#36527a;"><span class="mlabel">HM&amp;E 33%</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 40%; background:#1f2d44;"><span class="mlabel">Depot 40%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mekko-xlabels">
+        <div class="mekko-xlabel" style="flex: 0 0 30%;"><div class="xtitle">Surface Combatants</div><div class="xval">$2,120M (30%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 20%;"><div class="xtitle">Amphibious Warfare</div><div class="xval">$1,440M (20%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 12%;"><div class="xtitle">Submarines</div><div class="xval">$838M (12%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 11%;"><div class="xtitle">Combat Logistics</div><div class="xval">$770M (11%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 6%;"><div class="xtitle">Carriers</div><div class="xval">$422M (6%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 21%;"><div class="xtitle">Other</div><div class="xval">$1,474M (21%)</div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: work-segment totals + coverage table + submarine caveat callout -->
+    <div class="right-stack" style="align-self: center;">
+      <table class="data-table seg-table">
+        <thead>
+          <tr>
+            <th style="width:26%;">Work Segment</th>
+            <th class="num" style="width:12%;">$M</th>
+            <th class="num" style="width:8%;">%</th>
+            <th>Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#1f2d44"></span>Depot Ship Repair</td>
+            <td class="num">4,781</td>
+            <td class="num">68%</td>
+            <td>Whole-ship availabilities at Pacific / Atlantic RMCs via MAC-MO IDIQ.</td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#36527a"></span>HM&amp;E</td>
+            <td class="num">938</td>
+            <td class="num">13%</td>
+            <td>Propulsion accessories, pumps / valves, HVAC, diesel, structure.</td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#6f8197"></span>Combat Systems</td>
+            <td class="num">585</td>
+            <td class="num">8%</td>
+            <td>Weapons, fire control, VLS, Trident II sustainment, launch gear.</td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#a8c0d6"></span>Port &amp; Technical</td>
+            <td class="num">431</td>
+            <td class="num">6%</td>
+            <td>QC / inspection, OEM tech rep, husbanding, shipyard support.</td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#dbe6f1"></span>Electronics &amp; C4ISR</td>
+            <td class="num">333</td>
+            <td class="num">5%</td>
+            <td>Afloat radar / sonar / radio / network, navigation.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="lead">Submarine spend is structurally understated.</span> An estimated ~$4–6B of annual nuclear depot work is performed in-house at the four public naval shipyards (Portsmouth, Norfolk, Puget Sound, Pearl Harbor) and does not generate FPDS contract records. Only private-sector OEM and specialty work is captured in the $838M submarine figure shown here. See Slide 3 for full scope reconciliation.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) Segment totals sum to $7,068M; TAM headline reports $7,067M — figures may not sum to headline due to rounding. (2) Nuclear Propulsion Sustainment PSCs (J044/K044/N044) appear at ~$0 in FY25 because reactor work is contracted under ship-level shipbuilding codes at HII Newport News, Fluor Marine Propulsion, and Bechtel — not standalone services PSCs.<br>Source: FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, 65 services PSCs, post-exclusions). Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 5 — Depot Ship Repair Deep Dive                          -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Depot Ship Repair Deep Dive" data-screen-label="05 Depot Ship Repair Deep Dive" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="4">
+  <div class="slide-title">
+    <span class="topic">Depot Ship Repair Deep Dive</span><span class="pipe">|</span><span class="assertion">Six CONUS Tier-1 yards captured ~60% of the $4.9B FY2025 depot segment; 65% of depot $ is full-ship availabilities awarded through a three-tier MSRA / MAC-MO prime structure</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: Mekko chart -->
+    <div class="mekko">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 J998 / J999 depot obligations — IDV scope group × contractor tier ($M)</div>
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Tier 1 CONUS Complex</span>
+        <span><span class="sw" style="background:#6f8197"></span>Tier 2 Regional</span>
+        <span><span class="sw" style="background:#7fa0bf"></span>Tier 3 Technical Services</span>
+        <span><span class="sw" style="background:#dbe6f1"></span>Tier 4 FDNF Foreign Yard</span>
+        <span><span class="sw" style="background:#b6c2d1"></span>Other</span>
+      </div>
+
+      <div class="mekko-chart-area">
+        <div class="mekko-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+        <div class="mekko-cols">
+          <!-- Column 1: Full-Ship Availability (65%) — ordered smallest (top) -> biggest (bottom) -->
+          <div class="mekko-col" style="flex: 0 0 65%;">
+            <div class="mekko-col-total">$3,258M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 3%;  background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 3%;  background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 6%;  background:#6f8197;"><span class="mlabel">T2 6%</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 88%; background:#1f2d44;"><span class="mlabel">Tier 1 — ~88%</span></div>
+          </div>
+          <!-- Column 2: MSC Availability (11%) -->
+          <div class="mekko-col" style="flex: 0 0 11%;">
+            <div class="mekko-col-total">$551M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 4%; background:#dbe6f1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 8%; background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 18%; background:#6f8197;"><span class="mlabel">T2</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 70%; background:#1f2d44;"><span class="mlabel">T1</span></div>
+          </div>
+          <!-- Column 3: FDNF Foreign MSRA (10%) — 100% Tier 4 -->
+          <div class="mekko-col" style="flex: 0 0 10%;">
+            <div class="mekko-col-total">$513M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 100%; background:#dbe6f1;"><span class="mlabel">Tier 4</span></div>
+          </div>
+          <!-- Column 4: Other/Support (6%) -->
+          <div class="mekko-col narrow" style="flex: 0 0 6%;">
+            <div class="mekko-col-total">$306M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 7%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 28%; background:#6f8197;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 30%; background:#1f2d44;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 35%; background:#7fa0bf;"></div>
+          </div>
+          <!-- Column 5: USCG Cutter (3%) -->
+          <div class="mekko-col vnarrow" style="flex: 0 0 3%;">
+            <div class="mekko-col-total">$144M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 15%; background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 35%; background:#6f8197;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 50%; background:#1f2d44;"></div>
+          </div>
+          <!-- Column 6: Trade IDIQ (2%) -->
+          <div class="mekko-col vnarrow" style="flex: 0 0 2%;">
+            <div class="mekko-col-total">$123M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 20%; background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 25%; background:#1f2d44;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 55%; background:#6f8197;"></div>
+          </div>
+          <!-- Column 7: Planning & Engr (2%) -->
+          <div class="mekko-col vnarrow" style="flex: 0 0 3%;">
+            <div class="mekko-col-total">$108M</div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 10%; background:#1f2d44;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 18%; background:#6f8197;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 72%; background:#7fa0bf;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mekko-xlabels">
+        <div class="mekko-xlabel" style="flex: 0 0 65%;"><div class="xtitle">Full-Ship Availability</div><div class="xval">CNO Avails / DSRAs / DPIAs / LCS Maint · $3,258M (65%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 11%;"><div class="xtitle">MSC Availability</div><div class="xval">$551M (11%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 10%;"><div class="xtitle">FDNF Foreign MSRA</div><div class="xval">$513M (10%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 6%;"><div class="xtitle">Other / Support</div><div class="xval">$306M (6%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 3%;"><div class="xtitle">USCG</div><div class="xval">$144M</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 2%;"><div class="xtitle">Trade</div><div class="xval">$123M</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 3%;"><div class="xtitle">P&amp;E</div><div class="xval">$108M</div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: entry structure + callout (Tier-1 roster moved to Slide 8 Prime Landscape — Depot) -->
+    <div class="right-stack" style="align-self: center;">
+      <div class="entry-block">
+        <div class="entry-band">Three-tier entry structure</div>
+        <ol class="entry-steps">
+          <li><span class="num">1</span><span><span class="step-title">MSRA pre-qualification</span> — yard + workforce + safety credentials</span></li>
+          <li><span class="num">2</span><span><span class="step-title">MAC-MO IDIQ capture</span> — multi-award pool, fixed by RMC</span></li>
+          <li><span class="num">3</span><span><span class="step-title">Fixed-price task orders</span> — awarded against third-party planner specs</span></li>
+        </ol>
+      </div>
+
+      <div class="callout">
+        <span class="lead">Note:</span> Entry requires qualification at all three levels AND a physical yard footprint aligned with one RMC region. The three-tier structure drives Tier-1 CONUS concentration — six primes hold ~58% of the $4.9B segment (see Slide 8 for the prime-by-prime Pareto and RMC map). Trade-specific IDIQs (HM&amp;E, surface coatings, insulation, pipe lagging) sum to less than 3% of depot $.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) $4.9B in-scope TAM = $5.0B gross J998/J999 obligations less $85M FMS carve-out. (2) Contractor tiers: T1 = CONUS full-ship MSRA holders; T2 = regional yards; T3 = technical services (engineering, QA, trade specialties); T4 = FDNF foreign yards (Hanwha Ocean, Navantia, Sumitomo, UniThai, Mitsubishi, Samsung, Seatrium). (3) IDV scope taxonomy generated via LLM classification of 360 parent IDV descriptions + 471 residual no-IDV awards, applied to each J998/J999 award.<br>Source: FPDS FY2025 contract obligations on PSCs J998 + J999 (U.S. Navy + U.S. Coast Guard), classifier-enriched. Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 6 — Geographic Context                                    -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Geographic Context" data-screen-label="06 Geographic Context" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="5">
+  <div class="slide-title">
+    <span class="topic">Geographic Context</span><span class="pipe">|</span><span class="assertion">FY2025 depot $ concentrates on the West Coast (SWRMC $1.6B) and East Coast (MARMC $1.0B); no established RMC anchor sits on the Gulf Coast</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: Mekko (RMC × Tier) -->
+    <div class="mekko">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 J998 / J999 depot obligations by RMC region × contractor tier ($M)</div>
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Tier 1 CONUS Complex</span>
+        <span><span class="sw" style="background:#6f8197"></span>Tier 2 Regional</span>
+        <span><span class="sw" style="background:#7fa0bf"></span>Tier 3 Technical Services</span>
+        <span><span class="sw" style="background:#dbe6f1"></span>Tier 4 FDNF Foreign Yard</span>
+        <span><span class="sw" style="background:#b6c2d1"></span>Other</span>
+      </div>
+
+      <div class="mekko-chart-area">
+        <div class="mekko-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+        <div class="mekko-cols">
+          <!-- Ordering: smallest (top) -> biggest (bottom). -->
+          <!-- SWRMC 33% -->
+          <div class="mekko-col" style="flex: 0 0 33%;">
+            <div class="mekko-col-total">$1,584M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 2%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 7%;  background:#7fa0bf;"><span class="mlabel">T3</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 19%; background:#6f8197;"><span class="mlabel">T2 19%</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 72%; background:#1f2d44;"><span class="mlabel">Tier 1 — 72%</span></div>
+          </div>
+          <!-- MARMC 21% -->
+          <div class="mekko-col" style="flex: 0 0 21%;">
+            <div class="mekko-col-total">$1,022M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 3%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 11%; background:#7fa0bf;"><span class="mlabel">T3</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 20%; background:#6f8197;"><span class="mlabel">T2</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 66%; background:#1f2d44;"><span class="mlabel">Tier 1 — 66%</span></div>
+          </div>
+          <!-- Other 14% -->
+          <div class="mekko-col" style="flex: 0 0 14%;">
+            <div class="mekko-col-total">$688M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 7%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 10%; background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 22%; background:#6f8197;"><span class="mlabel">T2</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 61%; background:#1f2d44;"><span class="mlabel">T1</span></div>
+          </div>
+          <!-- SERMC 11% -->
+          <div class="mekko-col" style="flex: 0 0 11%;">
+            <div class="mekko-col-total">$540M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 4%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 9%;  background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 22%; background:#6f8197;"><span class="mlabel">T2</span></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 65%; background:#1f2d44;"><span class="mlabel">T1</span></div>
+          </div>
+          <!-- FDNF 11% — 100% Tier 4 -->
+          <div class="mekko-col" style="flex: 0 0 11%;">
+            <div class="mekko-col-total">$510M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 100%; background:#dbe6f1;"><span class="mlabel">Tier 4</span></div>
+          </div>
+          <!-- NW RMC 9% -->
+          <div class="mekko-col" style="flex: 0 0 9%;">
+            <div class="mekko-col-total">$430M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 2%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 7%;  background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 14%; background:#6f8197;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 77%; background:#1f2d44;"><span class="mlabel">T1</span></div>
+          </div>
+          <!-- USCG SFLC 3% -->
+          <div class="mekko-col vnarrow" style="flex: 0 0 3%;">
+            <div class="mekko-col-total">$148M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 2%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 10%; background:#7fa0bf;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 24%; background:#6f8197;"></div>
+            <div class="mekko-seg seg-dark" style="flex: 0 0 64%; background:#1f2d44;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mekko-xlabels">
+        <div class="mekko-xlabel" style="flex: 0 0 33%;"><div class="xtitle">SWRMC</div><div class="xval">San Diego, CA · $1,584M (33%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 21%;"><div class="xtitle">MARMC</div><div class="xval">Norfolk, VA · $1,022M (21%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 14%;"><div class="xtitle">Other</div><div class="xval">$688M (14%)</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 11%;"><div class="xtitle">SERMC</div><div class="xval">Mayport · $540M</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 11%;"><div class="xtitle">FDNF</div><div class="xval">Overseas · $510M</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 9%;"><div class="xtitle">NW RMC</div><div class="xval">$430M</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 3%;"><div class="xtitle">USCG</div><div class="xval">$148M</div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: RMC roster + candidate-site proximity + callout -->
+    <div class="right-stack">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:14%;">RMC</th>
+            <th style="width:26%;">Geography</th>
+            <th>Tier-1 primes in region</th>
+            <th style="width:26%;">Major fleet homeports</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>SWRMC</strong></td><td>San Diego, CA</td><td>BAE San Diego; GD NASSCO; HII Continental Maritime + MHI</td><td>San Diego (largest Pacific Fleet concentration)</td></tr>
+          <tr><td><strong>MARMC</strong></td><td>Norfolk, VA</td><td>BAE Norfolk; HII Metro Machine + MHI</td><td>Norfolk (largest Atlantic Fleet concentration)</td></tr>
+          <tr><td><strong>SERMC</strong></td><td>Mayport, FL + Charleston, SC</td><td>Detyens; NASSCO Mayport; BAE Jacksonville</td><td>Mayport; Kings Bay (SSBN); Charleston (CG)</td></tr>
+          <tr><td><strong>NW RMC</strong></td><td>Bremerton / Everett, WA + Portland, OR</td><td>Vigor Seattle + Portland</td><td>Bremerton; Everett (Pacific Fleet North)</td></tr>
+          <tr><td><strong>FDNF</strong></td><td>Yokosuka JP + Naples IT + Bahrain</td><td>Hanwha Ocean (KR); Navantia (ES); Sumitomo / Mitsubishi / UniThai</td><td>Forward-deployed (JP, EUCOM, 5th Fleet)</td></tr>
+          <tr><td><strong>USCG SFLC</strong></td><td>Baltimore, MD (HQ)</td><td>Tier-2 / 3 distributed across product lines</td><td>USCG homeports nationwide</td></tr>
+        </tbody>
+      </table>
+
+      <div class="entry-block">
+        <div class="entry-band">Candidate site proximity (for reference)</div>
+        <table class="data-table" style="margin-top:2px;">
+          <thead>
+            <tr>
+              <th style="width:30%;">Candidate site</th>
+              <th style="width:30%;">Nearest active RMC</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Gulf Coast</strong><br><span class="muted" style="font-size:14px;">Brownsville, TX</span></td><td>SERMC (Mayport) · ~1,100 nm</td><td>Outside any established RMC footprint</td></tr>
+            <tr><td><strong>California</strong><br><span class="muted" style="font-size:14px;">Site TBD</span></td><td>SWRMC (San Diego) or NW RMC</td><td>Within or adjacent to $1.6B SWRMC or $430M NW RMC pools</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <span class="lead">Note:</span> FY25 depot $ concentrates at locations where the Navy already homeports major surface-combatant and amphibious squadrons (San Diego, Norfolk, Mayport, Bremerton / Everett). The candidate Gulf Coast site does not sit within an established RMC footprint; the California candidate would sit within or adjacent to SWRMC's $1.6B annual depot pool (or NW RMC's $430M) depending on specific location.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) RMC $ and tier composition drawn from the Depot Ship Repair RMC × Tier crosstab (J998/J999 only, FY2025 post-FMS). Non-depot Services MRO $ ($2.3B) is not allocated to RMCs — those segments are not organized around the RMC structure. (2) FDNF = Forward Deployed Naval Forces; Navy MSRAs with Japanese, Korean, Spanish, and Italian yards cover forward-deployed hulls. Tier 4 is 100% of FDNF $ by construction. (3) Brownsville, TX to Mayport, FL is approximately 1,100 nautical miles along the Gulf and Atlantic coast.<br>Source: FPDS FY2025 contract obligations on PSCs J998 + J999 (U.S. Navy + U.S. Coast Guard), classifier-enriched with RMC geography tags. Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 7 — Prime Landscape — Total MRO                           -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Prime Landscape — Total MRO" data-screen-label="07 Prime Landscape — Total MRO" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="6">
+  <div class="slide-title">
+    <span class="topic">Prime Landscape — Total MRO</span><span class="pipe">|</span><span class="assertion">BAE, General Dynamics, and HII collectively captured ~36% of the FY2025 MRO TAM; the top 10 primes captured ~57%</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: Pareto combo chart -->
+    <div class="pareto">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 MRO Obligations by Contractor — Top 10 ($M) with cumulative share (%)</div>
+
+      <div class="pareto-chart">
+        <svg viewBox="0 0 840 630" preserveAspectRatio="xMidYMid meet">
+          <!-- Layout: plot area x=70..800, y=30..548 (baseline). Plot scaled 1.4x vertically from y=30 anchor. -->
+          <!-- Gridlines -->
+          <g stroke="#eef1f5" stroke-width="1">
+            <line x1="70" y1="30"    x2="800" y2="30"/>
+            <line x1="70" y1="133.6" x2="800" y2="133.6"/>
+            <line x1="70" y1="237.2" x2="800" y2="237.2"/>
+            <line x1="70" y1="340.8" x2="800" y2="340.8"/>
+            <line x1="70" y1="444.4" x2="800" y2="444.4"/>
+          </g>
+          <!-- Baseline -->
+          <line x1="70" y1="548" x2="800" y2="548" stroke="#1f2d44" stroke-width="1.5"/>
+          <line x1="70" y1="30"  x2="70"  y2="548" stroke="#c9d2dc" stroke-width="1"/>
+
+          <!-- Left y-axis labels ($M, 0..1100) -->
+          <g font-family="Helvetica" font-size="11" fill="#6f8197" text-anchor="end">
+            <text x="64" y="552">0</text>
+            <text x="64" y="448">275</text>
+            <text x="64" y="345">550</text>
+            <text x="64" y="241">825</text>
+            <text x="64" y="138">1,100</text>
+          </g>
+          <text x="34" y="26" font-family="Helvetica" font-size="11" fill="#6f8197">$M</text>
+
+          <!-- Bars: scale $M to px. h($M) = (548-30) * $M/1100 = 0.4709 * $M
+               Bar heights (1.4x of prior): BAE 505.4, GD 442.4, HII 243.6, Vigor 207.2,
+               Draper 149.8, Detyens 106.4, Epsilon 70, ECR 67.2, Lockheed 61.6, SCA 53.2. -->
+
+          <!-- Bar 1 BAE -->
+          <rect x="106.5" y="42.6"  width="48" height="505.4" fill="#6f8197"/>
+          <text x="130.5" y="34"    text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">1,073</text>
+          <!-- Bar 2 GD -->
+          <rect x="179.5" y="105.6" width="48" height="442.4" fill="#6f8197"/>
+          <text x="203.5" y="98"    text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">939</text>
+          <!-- Bar 3 HII -->
+          <rect x="252.5" y="304.4" width="48" height="243.6" fill="#6f8197"/>
+          <text x="276.5" y="296"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">516</text>
+          <!-- Bar 4 Vigor -->
+          <rect x="325.5" y="340.8" width="48" height="207.2" fill="#6f8197"/>
+          <text x="349.5" y="333"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">440</text>
+          <!-- Bar 5 Draper -->
+          <rect x="398.5" y="398.2" width="48" height="149.8" fill="#6f8197"/>
+          <text x="422.5" y="390"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">318</text>
+          <!-- Bar 6 Detyens -->
+          <rect x="471.5" y="441.6" width="48" height="106.4" fill="#6f8197"/>
+          <text x="495.5" y="434"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">225</text>
+          <!-- Bar 7 Epsilon -->
+          <rect x="544.5" y="478"   width="48" height="70" fill="#6f8197"/>
+          <text x="568.5" y="470"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">149</text>
+          <!-- Bar 8 East Coast Repair -->
+          <rect x="617.5" y="480.8" width="48" height="67.2" fill="#6f8197"/>
+          <text x="641.5" y="473"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">142</text>
+          <!-- Bar 9 Lockheed -->
+          <rect x="690.5" y="486.4" width="48" height="61.6" fill="#6f8197"/>
+          <text x="714.5" y="478"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">132</text>
+          <!-- Bar 10 SCA -->
+          <rect x="763.5" y="494.8" width="48" height="53.2" fill="#6f8197"/>
+          <text x="787.5" y="487"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">112</text>
+
+          <!-- Cumulative line: 1.4x rescaled y values anchored at 30 -->
+          <polyline points="130.5,469.2 203.5,400.4 276.5,362.5 349.5,330.4 422.5,307.1 495.5,290.5 568.5,279.6 641.5,269.3 714.5,259.5 787.5,251.2"
+                    fill="none" stroke="#1f2d44" stroke-width="2.5"/>
+          <!-- dots -->
+          <g fill="#1f2d44">
+            <circle cx="130.5" cy="469.2" r="3.5"/>
+            <circle cx="203.5" cy="400.4" r="3.5"/>
+            <circle cx="276.5" cy="362.5" r="3.5"/>
+            <circle cx="349.5" cy="330.4" r="3.5"/>
+            <circle cx="422.5" cy="307.1" r="3.5"/>
+            <circle cx="495.5" cy="290.5" r="3.5"/>
+            <circle cx="568.5" cy="279.6" r="3.5"/>
+            <circle cx="641.5" cy="269.3" r="3.5"/>
+            <circle cx="714.5" cy="259.5" r="3.5"/>
+            <circle cx="787.5" cy="251.2" r="3.5"/>
+          </g>
+
+          <!-- Callouts on cumulative line -->
+          <g font-family="Helvetica" font-size="11" fill="#1f2d44" font-weight="700">
+            <line x1="276.5" y1="362.5" x2="300" y2="338" stroke="#1f2d44" stroke-width="0.75"/>
+            <rect x="298" y="318" width="78" height="20" fill="#ffffff" stroke="#1f2d44" stroke-width="0.75"/>
+            <text x="337" y="332" text-anchor="middle">Top 3 = 36%</text>
+
+            <line x1="787.5" y1="251.2" x2="760" y2="219" stroke="#1f2d44" stroke-width="0.75"/>
+            <rect x="688" y="198" width="82" height="20" fill="#ffffff" stroke="#1f2d44" stroke-width="0.75"/>
+            <text x="729" y="212" text-anchor="middle">Top 10 = 57%</text>
+          </g>
+
+          <!-- X-axis labels (below new baseline y=548) -->
+          <g font-family="Helvetica" font-size="11" fill="#2a3340" text-anchor="middle">
+            <text x="130.5" y="566"><tspan font-weight="700">BAE</tspan></text>
+            <text x="130.5" y="580">#1</text>
+            <text x="203.5" y="566"><tspan font-weight="700">GD</tspan></text>
+            <text x="203.5" y="580">#2</text>
+            <text x="276.5" y="566"><tspan font-weight="700">HII</tspan></text>
+            <text x="276.5" y="580">#3</text>
+            <text x="349.5" y="566"><tspan font-weight="700">Vigor</tspan></text>
+            <text x="349.5" y="580">#4</text>
+            <text x="422.5" y="566"><tspan font-weight="700">Draper</tspan></text>
+            <text x="422.5" y="580">#5</text>
+            <text x="495.5" y="566"><tspan font-weight="700">Detyens</tspan></text>
+            <text x="495.5" y="580">#6</text>
+            <text x="568.5" y="566"><tspan font-weight="700">Epsilon</tspan></text>
+            <text x="568.5" y="580">#7</text>
+            <text x="641.5" y="566"><tspan font-weight="700">E. Coast Rep.</tspan></text>
+            <text x="641.5" y="580">#8</text>
+            <text x="714.5" y="566"><tspan font-weight="700">Lockheed</tspan></text>
+            <text x="714.5" y="580">#9</text>
+            <text x="787.5" y="566"><tspan font-weight="700">S.C.A.</tspan></text>
+            <text x="787.5" y="580">#10</text>
+          </g>
+
+          <!-- Legend (below x-axis labels) -->
+          <g font-family="Helvetica" font-size="12" fill="#2a3340">
+            <rect x="86"  y="598" width="14" height="10" fill="#6f8197"/>
+            <text x="106" y="607">FY25 $M (obligations, left axis)</text>
+            <line x1="290" y1="603" x2="314" y2="603" stroke="#1f2d44" stroke-width="2.5"/>
+            <circle cx="302" cy="603" r="3" fill="#1f2d44"/>
+            <text x="320" y="607">Cumulative % of TAM (right axis)</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: Top-3 primes by work segment -->
+    <div class="right-stack" style="align-self: center;">
+      <table class="data-table rank-table">
+        <thead>
+          <tr>
+            <th style="width:38%;">Work Segment</th>
+            <th>#1</th>
+            <th>#2</th>
+            <th>#3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#1f2d44"></span>Depot Ship Repair</td>
+            <td><strong>BAE</strong><span class="pct">22%</span></td>
+            <td><strong>GD</strong><span class="pct">18%</span></td>
+            <td><strong>HII</strong><span class="pct">10%</span></td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#36527a"></span>HM&amp;E</td>
+            <td><strong>Global PCCI</strong><span class="pct">7%</span></td>
+            <td><strong>Oceaneering</strong><span class="pct">6%</span></td>
+            <td><strong>HII</strong><span class="pct">6%</span></td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#6f8197"></span>Combat Systems</td>
+            <td><strong>Draper</strong><span class="pct">54%</span></td>
+            <td><strong>Lockheed</strong><span class="pct">22%</span></td>
+            <td><strong>Leidos</strong><span class="pct">10%</span></td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#dbe6f1"></span>Electronics &amp; C4ISR</td>
+            <td><strong>Amentum</strong><span class="pct">15%</span></td>
+            <td><strong>L3</strong><span class="pct">15%</span></td>
+            <td><strong>SAIC</strong><span class="pct">15%</span></td>
+          </tr>
+          <tr>
+            <td class="seg-name"><span class="sw" style="background:#a8c0d6"></span>Port &amp; Technical</td>
+            <td><strong>S.C.A.</strong><span class="pct">26%</span></td>
+            <td><strong>Waypoint</strong><span class="pct">9%</span></td>
+            <td><strong>Fairlead</strong><span class="pct">6%</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="lead">Note:</span> HII Mission Technologies posted a ~5.0% OI margin in 2025 ($3.0B revenue / $153M OI). At ~91% service revenue mix, it is the cleanest pure-services proxy in public comps for the FPDS MRO obligations captured here.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) BAE includes San Diego, Norfolk, and Jacksonville ship repair operations. (2) GD includes NASSCO, Electric Boat, Continental Maritime, and Mission Systems. (3) HII includes Newport News, Ingalls, Metro Machine, and Marine Hydraulics International. Cumulative % computed against the $7,067M Services TAM (Slide 2 denominator).<br>Sources: FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, 65 services PSCs, post-exclusions); SEC 10-K filings (HII, GD, BWXT), FY2025. Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 8 — Prime Landscape — Depot                               -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Prime Landscape — Depot" data-screen-label="08 Prime Landscape — Depot" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="7">
+  <div class="slide-title">
+    <span class="topic">Prime Landscape — Depot</span><span class="pipe">|</span><span class="assertion">Six CONUS Tier-1 yards captured ~58% of the $4.9B FY2025 depot segment; adding FDNF Tier-4 MSRA yards brings the top 10 to ~70% — depot concentration is regional, not national</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: Pareto combo chart, scoped to $4.9B depot -->
+    <div class="pareto">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 J998 / J999 depot obligations by prime — Top 10 ($M) with cumulative share of $4.9B depot TAM (%)</div>
+
+      <div class="pareto-chart">
+        <svg viewBox="0 0 840 630" preserveAspectRatio="xMidYMid meet">
+          <!-- Layout: plot area x=70..800, y=30..548 (baseline). Scale: h($M) = 518 * $M/1100 = 0.4709 px/$M. -->
+          <!-- Gridlines -->
+          <g stroke="#eef1f5" stroke-width="1">
+            <line x1="70" y1="30"    x2="800" y2="30"/>
+            <line x1="70" y1="133.6" x2="800" y2="133.6"/>
+            <line x1="70" y1="237.2" x2="800" y2="237.2"/>
+            <line x1="70" y1="340.8" x2="800" y2="340.8"/>
+            <line x1="70" y1="444.4" x2="800" y2="444.4"/>
+          </g>
+          <!-- Baseline -->
+          <line x1="70" y1="548" x2="800" y2="548" stroke="#1f2d44" stroke-width="1.5"/>
+          <line x1="70" y1="30"  x2="70"  y2="548" stroke="#c9d2dc" stroke-width="1"/>
+
+          <!-- Left y-axis labels ($M, 0..1100) -->
+          <g font-family="Helvetica" font-size="11" fill="#6f8197" text-anchor="end">
+            <text x="64" y="552">0</text>
+            <text x="64" y="448">275</text>
+            <text x="64" y="345">550</text>
+            <text x="64" y="241">825</text>
+            <text x="64" y="138">1,100</text>
+          </g>
+          <text x="34" y="26" font-family="Helvetica" font-size="11" fill="#6f8197">$M</text>
+
+          <!-- Bars (Pareto ordered descending) -->
+          <!-- Bar 1 BAE 1,073 (Tier 1) -->
+          <rect x="106.5" y="42.6"  width="48" height="505.4" fill="#1f2d44"/>
+          <text x="130.5" y="34"    text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">1,073</text>
+          <!-- Bar 2 GD (NASSCO + CM) 640 (Tier 1) -->
+          <rect x="179.5" y="246.6" width="48" height="301.4" fill="#1f2d44"/>
+          <text x="203.5" y="239"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">640</text>
+          <!-- Bar 3 Vigor 440 (Tier 1) -->
+          <rect x="252.5" y="340.8" width="48" height="207.2" fill="#1f2d44"/>
+          <text x="276.5" y="333"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">440</text>
+          <!-- Bar 4 HII 390 (Tier 1) -->
+          <rect x="325.5" y="364.4" width="48" height="183.6" fill="#1f2d44"/>
+          <text x="349.5" y="357"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">390</text>
+          <!-- Bar 5 Detyens 225 (Tier 1) -->
+          <rect x="398.5" y="442"   width="48" height="106" fill="#1f2d44"/>
+          <text x="422.5" y="434"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">225</text>
+          <!-- Bar 6 Hanwha Ocean 175 (Tier 4 FDNF) -->
+          <rect x="471.5" y="465.6" width="48" height="82.4" fill="#dbe6f1" stroke="#1f2d44" stroke-width="0.5"/>
+          <text x="495.5" y="458"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">175</text>
+          <!-- Bar 7 Navantia 155 (Tier 4 FDNF) -->
+          <rect x="544.5" y="475"   width="48" height="73" fill="#dbe6f1" stroke="#1f2d44" stroke-width="0.5"/>
+          <text x="568.5" y="467"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">155</text>
+          <!-- Bar 8 East Coast Repair 142 (Tier 2) -->
+          <rect x="617.5" y="481.1" width="48" height="66.9" fill="#6f8197"/>
+          <text x="641.5" y="473"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">142</text>
+          <!-- Bar 9 NASSCO Mayport 100 (Tier 1 regional) -->
+          <rect x="690.5" y="500.9" width="48" height="47.1" fill="#1f2d44"/>
+          <text x="714.5" y="493"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">100</text>
+          <!-- Bar 10 Epsilon Systems 95 (Tier 2) -->
+          <rect x="763.5" y="503.3" width="48" height="44.7" fill="#6f8197"/>
+          <text x="787.5" y="496"   text-anchor="middle" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44">95</text>
+
+          <!-- Cumulative line (mapped to 0..100% over y=548..30) -->
+          <polyline points="130.5,435.1 203.5,367.7 276.5,321.1 349.5,280.2 422.5,256.4 495.5,237.7 568.5,221.7 641.5,206.6 714.5,196.3 787.5,186.4"
+                    fill="none" stroke="#1f2d44" stroke-width="2.5"/>
+          <!-- dots -->
+          <g fill="#1f2d44">
+            <circle cx="130.5" cy="435.1" r="3.5"/>
+            <circle cx="203.5" cy="367.7" r="3.5"/>
+            <circle cx="276.5" cy="321.1" r="3.5"/>
+            <circle cx="349.5" cy="280.2" r="3.5"/>
+            <circle cx="422.5" cy="256.4" r="3.5"/>
+            <circle cx="495.5" cy="237.7" r="3.5"/>
+            <circle cx="568.5" cy="221.7" r="3.5"/>
+            <circle cx="641.5" cy="206.6" r="3.5"/>
+            <circle cx="714.5" cy="196.3" r="3.5"/>
+            <circle cx="787.5" cy="186.4" r="3.5"/>
+          </g>
+
+          <!-- Callouts on cumulative line -->
+          <g font-family="Helvetica" font-size="11" fill="#1f2d44" font-weight="700">
+            <!-- Tier-1 CONUS 6 primes ~58% anchor at Detyens (rank 5) -->
+            <line x1="422.5" y1="256.4" x2="460" y2="228" stroke="#1f2d44" stroke-width="0.75"/>
+            <rect x="376" y="208" width="170" height="20" fill="#ffffff" stroke="#1f2d44" stroke-width="0.75"/>
+            <text x="461" y="222" text-anchor="middle">Tier-1 CONUS 6 = 58%</text>
+
+            <!-- Top 10 ~70% anchor at Epsilon (rank 10) -->
+            <line x1="787.5" y1="186.4" x2="760" y2="158" stroke="#1f2d44" stroke-width="0.75"/>
+            <rect x="688" y="138" width="82" height="20" fill="#ffffff" stroke="#1f2d44" stroke-width="0.75"/>
+            <text x="729" y="152" text-anchor="middle">Top 10 = 70%</text>
+          </g>
+
+          <!-- X-axis labels -->
+          <g font-family="Helvetica" font-size="11" fill="#2a3340" text-anchor="middle">
+            <text x="130.5" y="566"><tspan font-weight="700">BAE</tspan></text>
+            <text x="130.5" y="580">T1</text>
+            <text x="203.5" y="566"><tspan font-weight="700">GD</tspan></text>
+            <text x="203.5" y="580">T1</text>
+            <text x="276.5" y="566"><tspan font-weight="700">Vigor</tspan></text>
+            <text x="276.5" y="580">T1</text>
+            <text x="349.5" y="566"><tspan font-weight="700">HII</tspan></text>
+            <text x="349.5" y="580">T1</text>
+            <text x="422.5" y="566"><tspan font-weight="700">Detyens</tspan></text>
+            <text x="422.5" y="580">T1</text>
+            <text x="495.5" y="566"><tspan font-weight="700">Hanwha</tspan></text>
+            <text x="495.5" y="580">T4 FDNF</text>
+            <text x="568.5" y="566"><tspan font-weight="700">Navantia</tspan></text>
+            <text x="568.5" y="580">T4 FDNF</text>
+            <text x="641.5" y="566"><tspan font-weight="700">E. Coast Rep.</tspan></text>
+            <text x="641.5" y="580">T2</text>
+            <text x="714.5" y="566"><tspan font-weight="700">NASSCO MP</tspan></text>
+            <text x="714.5" y="580">T1</text>
+            <text x="787.5" y="566"><tspan font-weight="700">Epsilon</tspan></text>
+            <text x="787.5" y="580">T2</text>
+          </g>
+
+          <!-- Legend -->
+          <g font-family="Helvetica" font-size="12" fill="#2a3340">
+            <rect x="86"  y="598" width="14" height="10" fill="#1f2d44"/>
+            <text x="106" y="607">Tier 1 CONUS</text>
+            <rect x="210" y="598" width="14" height="10" fill="#6f8197"/>
+            <text x="230" y="607">Tier 2 Regional</text>
+            <rect x="340" y="598" width="14" height="10" fill="#dbe6f1" stroke="#1f2d44" stroke-width="0.5"/>
+            <text x="360" y="607">Tier 4 FDNF</text>
+            <line x1="470" y1="603" x2="494" y2="603" stroke="#1f2d44" stroke-width="2.5"/>
+            <circle cx="482" cy="603" r="3" fill="#1f2d44"/>
+            <text x="500" y="607">Cumulative % of $4.9B depot TAM</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: Depot prime × RMC crosstab -->
+    <div class="right-stack" style="align-self: center;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:30%;">Depot Prime</th>
+            <th class="num">SWRMC</th>
+            <th class="num">MARMC</th>
+            <th class="num">SERMC</th>
+            <th class="num">NW RMC</th>
+            <th class="num">FDNF</th>
+            <th class="num">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>BAE Ship Repair</strong></td><td class="num">~500</td><td class="num">~330</td><td class="num">~240</td><td class="num">—</td><td class="num">—</td><td class="num">1,073</td></tr>
+          <tr><td><strong>GD</strong> <span class="muted" style="font-size:13px;">(NASSCO + CM)</span></td><td class="num">640</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">640</td></tr>
+          <tr><td><strong>Vigor</strong></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">440</td><td class="num">—</td><td class="num">440</td></tr>
+          <tr><td><strong>HII</strong> <span class="muted" style="font-size:13px;">(CM + MM + MHI)</span></td><td class="num">~200</td><td class="num">~190</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">390</td></tr>
+          <tr><td><strong>Detyens</strong></td><td class="num">—</td><td class="num">—</td><td class="num">225</td><td class="num">—</td><td class="num">—</td><td class="num">225</td></tr>
+          <tr><td><strong>Hanwha Ocean</strong></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">~175</td><td class="num">~175</td></tr>
+          <tr><td><strong>Navantia</strong></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">~155</td><td class="num">~155</td></tr>
+          <tr><td><strong>East Coast Repair</strong></td><td class="num">—</td><td class="num">~142</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">~142</td></tr>
+          <tr><td><strong>NASSCO Mayport</strong></td><td class="num">—</td><td class="num">—</td><td class="num">100</td><td class="num">—</td><td class="num">—</td><td class="num">100</td></tr>
+          <tr><td><strong>Epsilon Systems</strong></td><td class="num">—</td><td class="num">~95</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">~95</td></tr>
+          <tr class="total"><td>Top 10 subtotal</td><td class="num">~1,340</td><td class="num">~757</td><td class="num">~565</td><td class="num">440</td><td class="num">~330</td><td class="num">~3,435</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="lead">Note:</span> Every Tier-1 CONUS depot prime's footprint maps to a single RMC region (or, for BAE and HII, a small set of coastal RMCs). No Tier-1 prime operates on the Gulf Coast. FDNF Tier-4 capacity is foreign, not a CONUS entry path. A new CONUS yard competing for depot $ would enter SWRMC, MARMC, SERMC, or NW RMC against the primes listed above -- not against an unstaffed region.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) Depot $ by prime figures are drawn from the Depot Ship Repair workbook sheet (J998/J999 only, post-FMS carve-out). Intra-prime RMC splits (BAE, HII) are approximate and snap to the workbook crosstab at final paste time. (2) FDNF Tier-4 primes (Hanwha Ocean, Navantia, Sumitomo, Mitsubishi, UniThai, Seatrium) hold MSRA capacity at Yokosuka, Naples, and Bahrain; figures shown are the two largest. (3) Cumulative % computed against the $4,923M in-scope depot TAM.<br>Source: FPDS FY2025 contract obligations on PSCs J998 + J999 (U.S. Navy + U.S. Coast Guard), classifier-enriched. Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 9 — Appropriation Sourcing (Appendix)                     -->
+<!-- ============================================================== -->
+<section class="slide" data-label="Appropriation Sourcing" data-screen-label="09 Appropriation Sourcing" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="8">
+  <div class="slide-title">
+    <span class="topic">Appropriation Sourcing</span><span class="pipe">|</span><span class="assertion">The $7.4B FY2025 MRO-PSC universe is funded across ~10 federal appropriations; OMN and OPN each carry ~35-37%, with Defense-Wide RDT&amp;E a surprising 11%</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: dual stacked columns -->
+    <div class="dual-stack">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 MRO-PSC obligations by Treasury appropriation ($M, TAS-attributed); OPN drilled to Budget Activity</div>
+
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Navy-direct (OMN / OPN / Navy-other)</span>
+        <span><span class="sw" style="background:#6f8197"></span>Defense-Wide (RDT&amp;E-DW + DW-other)</span>
+        <span><span class="sw" style="background:#dbe6f1"></span>Other agencies (USCG, AF, Army, SCN)</span>
+      </div>
+
+      <div class="dual-stack-area">
+        <div class="dual-stack-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+
+        <!-- Column 1: appropriation stack -->
+        <div class="dual-stack-col">
+          <div class="col-title">MRO-PSC universe by appropriation <span class="sub">TAS Total $7,400M</span></div>
+          <div class="bar-wrap">
+            <div class="bar">
+              <!-- Ordering: smallest (top) -> biggest (bottom). -->
+              <div class="seg on-light" style="flex:0 0 4.0%; background:#bcd0e3;"><span class="lbl">Navy other &nbsp; $295M <span class="pct">4%</span></span></div>
+              <div class="seg on-light" style="flex:0 0 4.2%; background:#a8c0d6;"><span class="lbl">DW other &nbsp; $307M <span class="pct">4%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 4.3%;  background:#8597ab;"><span class="lbl">USCG &nbsp; $320M <span class="pct">4%</span></span></div>
+              <div class="seg on-light" style="flex:0 0 4.7%; background:#dbe6f1;"><span class="lbl">AF / Army / SCN / other &nbsp; $349M <span class="pct">5%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 10.5%; background:#6f8197;"><span class="lbl">RDT&amp;E, Defense-Wide &nbsp; $780M <span class="pct">11%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 35.0%; background:#36527a;"><span class="lbl">OPN &nbsp; $2,588M <span class="pct">35%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 37.3%; background:#1f2d44;"><span class="lbl">OMN &nbsp; $2,761M <span class="pct">37%</span></span></div>
+            </div>
+          </div>
+          <div class="dual-stack-xlabel"><span class="xt">MRO-PSC universe</span>$7,400M (TAS Total)</div>
+        </div>
+
+        <!-- Bracket link -->
+        <div class="bracket-link" aria-hidden="true">
+          <svg viewBox="0 0 58 400" preserveAspectRatio="none">
+            <!-- Connect OPN segment (roughly 37.3..72.3% down of col1) to full height of col2 -->
+            <path d="M 0 111 C 20 111, 20 10, 58 10 M 0 251 C 20 251, 20 390, 58 390" stroke="#36527a" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+
+        <!-- Column 2: OPN drill -->
+        <div class="dual-stack-col narrow">
+          <div class="col-title">OPN by Budget Activity <span class="sub">OPN Total $2,588M</span></div>
+          <div class="bar-wrap">
+            <div class="bar">
+              <!-- Ordering: smallest (top) -> biggest (bottom). -->
+              <div class="seg on-light" style="flex:0 0 6.6%;  background:#a8c0d6;"><span class="lbl">Other BAs &nbsp; $171M <span class="pct">7%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 31.9%; background:#36527a;"><span class="lbl">BA-8 Spares &amp; Repair Parts &nbsp; $825M <span class="pct">32%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 61.5%; background:#1f2d44;"><span class="lbl">BA-7 Personnel &amp; Cmd Support Equip &nbsp; $1,591M <span class="pct">62%</span></span></div>
+            </div>
+          </div>
+          <div class="dual-stack-xlabel"><span class="xt">OPN drill</span>Budget Activity breakdown</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: takeaway callouts -->
+    <div class="right-stack">
+      <div class="takeaway-col">
+        <div class="tk">
+          <span class="tk-title">OMN + OPN = 72% of MRO $</span>
+          Navy sustainment drives the market. The appropriation story is a Navy story, not a DoD-wide one.
+        </div>
+        <div class="tk">
+          <span class="tk-title">OPN splits 62% Command Support Equip / 32% Spares</span>
+          BA-7 funds installation / modernization electronics, C4ISR, and combat-system integration. BA-8 is spares and consumables. Depot availabilities (DSRAs, DPIAs, CNO avails) are funded through BA-7 — not through OMN CE-928 contract maintenance.
+        </div>
+        <div class="tk">
+          <span class="tk-title">RDT&amp;E Defense-Wide = $780M (11%)</span>
+          Almost entirely Trident II / SSP / SMDC sustainment on J-series PSCs. Draper MK7 Trident ($318M FY25) is the single-largest MRO PIID.
+        </div>
+        <div class="tk">
+          <span class="tk-title">SCN on MRO PSCs = ~$40M</span>
+          De minimis. Nuclear-platform MRO bundles under PSC 1905 shipbuilding, not onto MRO PSCs — see Slide 3 for the full scope reconciliation.
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="lead">Note:</span> Reconciling FPDS FY25 MRO $ to OMN cost-element 928 Ship Maintenance By Contract ($2.4B across BA-1 Ship Operations) alone leaves a naive $4.7B gap. The gap disappears once OPN, RDT&amp;E-DW, USCG, and the other appropriation colors are included — FPDS MRO obligations tie to the full appropriation stack by construction.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) 49% of FY25 MRO $ directly TAS-attributed from Treasury File C (USAspending funding endpoint); 51% imputed via per-PSC-bucket appropriation ratios from the directly-classified peer sample. Rollup totals are stable across the direct + imputed split. (2) $7,400M TAS Total is the pre-exclusion MRO-PSC universe, ~$333M larger than the $7,067M Services TAM (Slide 2) which applies shore-base and FMS exclusions. Per-appropriation ratios are approximately preserved across the exclusion.<br>Source: USAspending /awards/funding/ joined to FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, 65 services PSCs). Data as of April 2026.</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 10 — TAM Framing (Appendix)                              -->
+<!-- ============================================================== -->
+<section class="slide" data-label="TAM Framing" data-screen-label="10 TAM Framing" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="9">
+  <div class="slide-title">
+    <span class="topic">TAM Framing</span><span class="pipe">|</span><span class="assertion">The $7.1B FY25 contracting-market TAM apportions to a ~$3.3-3.8B range of FY25-delivered contractor revenue under period-of-performance sensitivity; the deck presents Frame A (contracting activity) by industry convention</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: combination chart — columns + horizontal reference line -->
+    <div class="combo">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 Services MRO TAM under alternative period-of-performance apportionment methods ($M)</div>
+
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Frame A — contracting activity (industry convention)</span>
+        <span><span class="sw" style="background:#6f8197"></span>Frame B — revenue earned (POP-apportioned, sensitivity)</span>
+        <span><span class="sw" style="background:#1f2d44; width:22px; height:2px; vertical-align: middle;"></span>Central Frame B estimate ~$3.5B (49% of Frame A)</span>
+      </div>
+
+      <div class="combo-chart">
+        <svg viewBox="0 0 840 480" preserveAspectRatio="xMidYMid meet">
+          <!-- Plot area: x=70..800, y=30..400. Scale: 0..8000 $M -> 370px. h($M) = 370 * $M / 8000 -->
+          <!-- Gridlines -->
+          <g stroke="#eef1f5" stroke-width="1">
+            <line x1="70" y1="30"  x2="800" y2="30"/>
+            <line x1="70" y1="122" x2="800" y2="122"/>
+            <line x1="70" y1="215" x2="800" y2="215"/>
+            <line x1="70" y1="307" x2="800" y2="307"/>
+          </g>
+          <!-- Axes -->
+          <line x1="70" y1="400" x2="800" y2="400" stroke="#1f2d44" stroke-width="1.5"/>
+          <line x1="70" y1="30"  x2="70"  y2="400" stroke="#c9d2dc" stroke-width="1"/>
+
+          <!-- Left y-axis labels -->
+          <g font-family="Helvetica" font-size="11" fill="#6f8197" text-anchor="end">
+            <text x="64" y="404">0</text>
+            <text x="64" y="311">2,000</text>
+            <text x="64" y="219">4,000</text>
+            <text x="64" y="126">6,000</text>
+            <text x="64" y="34">8,000</text>
+          </g>
+          <text x="34" y="22" font-family="Helvetica" font-size="11" fill="#6f8197">$M</text>
+
+          <!-- Reference line at $3,500M -> y = 400 - 370*3500/8000 = 400 - 161.9 = 238.1 -->
+          <line x1="70" y1="238.1" x2="800" y2="238.1" stroke="#1f2d44" stroke-width="1.5" stroke-dasharray="6 5"/>
+          <!-- ref-line callout placed in the empty strip between Frame A and M2 bars (x=191..241) is too tight; place above top-right of chart -->
+          <rect x="540" y="18" width="258" height="20" fill="#ffffff" stroke="#1f2d44" stroke-width="0.75"/>
+          <text x="669" y="32" font-family="Helvetica" font-size="12" font-weight="700" fill="#1f2d44" text-anchor="middle">- - -  Central Frame B ~$3,500M (49%)</text>
+
+          <!-- 5 columns across 70..800 = 730px / 5 slots = 146px each; bar width 96, centered. -->
+          <!-- Heights:
+               Frame A 7067 -> 326.8 -> top y = 73.2
+               M2 3747      -> 173.3 -> top y = 226.7
+               M3 3499      -> 161.8 -> top y = 238.2
+               M1 3354      -> 155.1 -> top y = 244.9
+               M4 3266      -> 151.1 -> top y = 248.9 -->
+
+          <!-- Bar 1: Frame A -->
+          <rect x="95"  y="73.2"  width="96" height="326.8" fill="#1f2d44"/>
+          <text x="143" y="64" font-family="Helvetica" font-size="15" font-weight="700" fill="#1f2d44" text-anchor="middle">$7,067M</text>
+          <text x="143" y="50" font-family="Helvetica" font-size="11" fill="#6f8197" text-anchor="middle">100% of Frame A</text>
+
+          <!-- Bar 2: M2 12-mo POP cap — label INSIDE bar (white) -->
+          <rect x="241" y="226.7" width="96" height="173.3" fill="#6f8197"/>
+          <text x="289" y="260" font-family="Helvetica" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">$3,747M</text>
+          <text x="289" y="278" font-family="Helvetica" font-size="11" fill="#dbe6f1" text-anchor="middle">53% of Frame A</text>
+
+          <!-- Bar 3: M3 18-mo POP cap — label INSIDE bar -->
+          <rect x="387" y="238.2" width="96" height="161.8" fill="#6f8197"/>
+          <text x="435" y="272" font-family="Helvetica" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">$3,499M</text>
+          <text x="435" y="290" font-family="Helvetica" font-size="11" fill="#dbe6f1" text-anchor="middle">49% of Frame A</text>
+
+          <!-- Bar 4: M1 Pure Linear — primary Frame B, label INSIDE -->
+          <rect x="533" y="244.9" width="96" height="155.1" fill="#6f8197" stroke="#1f2d44" stroke-width="2"/>
+          <text x="581" y="278" font-family="Helvetica" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">$3,354M</text>
+          <text x="581" y="296" font-family="Helvetica" font-size="11" fill="#dbe6f1" text-anchor="middle">48% · primary</text>
+
+          <!-- Bar 5: M4 Front-loaded — label INSIDE -->
+          <rect x="679" y="248.9" width="96" height="151.1" fill="#6f8197"/>
+          <text x="727" y="282" font-family="Helvetica" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">$3,266M</text>
+          <text x="727" y="300" font-family="Helvetica" font-size="11" fill="#dbe6f1" text-anchor="middle">46% of Frame A</text>
+
+          <!-- X-axis labels -->
+          <g font-family="Helvetica" font-size="12" fill="#2a3340" text-anchor="middle">
+            <text x="143" y="418"><tspan font-weight="700">Frame A</tspan></text>
+            <text x="143" y="433">No apportionment</text>
+
+            <text x="289" y="418"><tspan font-weight="700">M2</tspan></text>
+            <text x="289" y="433">12-mo POP cap</text>
+
+            <text x="435" y="418"><tspan font-weight="700">M3</tspan></text>
+            <text x="435" y="433">18-mo POP cap</text>
+
+            <text x="581" y="418"><tspan font-weight="700">M1</tspan></text>
+            <text x="581" y="433">Pure linear (primary)</text>
+
+            <text x="727" y="418"><tspan font-weight="700">M4</tspan></text>
+            <text x="727" y="433">Front-loaded 60/40</text>
+          </g>
+
+          <!-- Bracket showing Frame B range over M2..M4 -->
+          <g stroke="#1f2d44" stroke-width="1" fill="none">
+            <line x1="241" y1="210" x2="775" y2="210"/>
+            <line x1="241" y1="210" x2="241" y2="220"/>
+            <line x1="775" y1="210" x2="775" y2="220"/>
+          </g>
+          <rect x="400" y="196" width="216" height="20" fill="#ffffff"/>
+          <text x="508" y="210" font-family="Helvetica" font-size="11.5" font-weight="700" fill="#1f2d44" text-anchor="middle">Frame B range: $3.27B – $3.75B</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- RIGHT: segment apportionment table + callout -->
+    <div class="right-stack">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:42%;">Work Segment</th>
+            <th class="num">Frame A $M</th>
+            <th class="num">Frame B M1 $M</th>
+            <th class="num">Apport %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Port &amp; Technical Services</strong></td><td class="num">431</td><td class="num">307</td><td class="num">71.3%</td></tr>
+          <tr><td><strong>Depot Ship Repair</strong></td><td class="num">4,781</td><td class="num">2,468</td><td class="num">51.6%</td></tr>
+          <tr><td><strong>HM&amp;E</strong></td><td class="num">938</td><td class="num">363</td><td class="num">38.7%</td></tr>
+          <tr><td><strong>Electronics &amp; C4ISR</strong></td><td class="num">333</td><td class="num">105</td><td class="num">31.4%</td></tr>
+          <tr><td><strong>Combat Systems Sustainment</strong></td><td class="num">585</td><td class="num">112</td><td class="num">19.1%</td></tr>
+          <tr class="total"><td>Total</td><td class="num">7,067</td><td class="num">3,354</td><td class="num">47.5%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="entry-block">
+        <div class="entry-band">Reading the segment table</div>
+        <ul style="margin:8px 0 0 0; padding-left: 18px; font-size: 14px; color: var(--ink); line-height: 1.4;">
+          <li><strong>Combat Systems apportions at only 19%</strong> — Trident II / AEGIS integration runs on 5–10 year POPs (Draper MK7 LE2 alone is $318M, POP FY24 → FY29).</li>
+          <li><strong>Port &amp; Technical apportions at 71%</strong> — husbanding and QC work is short-cycle and POP aligns with FY25.</li>
+          <li>Depot Ship Repair sits near the blended average at ~52%.</li>
+        </ul>
+      </div>
+
+      <div class="callout">
+        <span class="lead">Note:</span> Frame A (contracting activity) is the industry convention for federal contracting TAM in PE / M&amp;A / sell-side diligence. Frame B (revenue earned) is closer to a contractor's reported P&amp;L but is not how federal markets are typically sized. This deck stays on Frame A; readers modeling a specific contractor can multiply the relevant segment $ by the apportionment rate above for a first-order Frame B estimate.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Notes: (1) FY25 window: 2024-10-01 to 2025-09-30. POP apportionment uses start_date / end_date fields on FPDS award rows (100% populated in the MRO dataset). (2) M1 Pure Linear is the primary Frame B estimate; M2–M4 are bounds. Range holds across any reasonable apportionment assumption. (3) True Frame B would require contractor-side billing / earned-value data unavailable in federal sources — POP apportionment is a directional sensitivity, not a substitute.<br>Source: FPDS FY2025 contract obligations (U.S. Navy + U.S. Coast Guard, 65 services PSCs, post-exclusions). Period-of-performance dates per FPDS. Data as of April 2026.</div>
+</section>
+
+</deck-stage>
+
+
+
+</body></html>

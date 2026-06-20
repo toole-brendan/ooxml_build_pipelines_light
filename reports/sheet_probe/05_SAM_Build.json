@@ -1,0 +1,2981 @@
+{
+  "source": "file",
+  "name": "SAM Build",
+  "tab_name": "SAM Build",
+  "sheet_index": 5,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 8,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "22"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "14"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "14"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "12"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "12"
+    }
+  ],
+  "n_rows": 88,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 7
+    },
+    {
+      "r": "4",
+      "n_cells": 7
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "n_cells": 2
+    },
+    {
+      "r": "10",
+      "n_cells": 2
+    },
+    {
+      "r": "11",
+      "n_cells": 2
+    },
+    {
+      "r": "14",
+      "n_cells": 8
+    },
+    {
+      "r": "16",
+      "n_cells": 6
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 6
+    },
+    {
+      "r": "26",
+      "n_cells": 8
+    },
+    {
+      "r": "28",
+      "n_cells": 3
+    },
+    {
+      "r": "29",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "31",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "32",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "34",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "35",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "36",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "37",
+      "n_cells": 3
+    },
+    {
+      "r": "39",
+      "n_cells": 8
+    },
+    {
+      "r": "41",
+      "n_cells": 2
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "43",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "44",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "45",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "46",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "47",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "48",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "49",
+      "n_cells": 2
+    },
+    {
+      "r": "52",
+      "n_cells": 8
+    },
+    {
+      "r": "54",
+      "n_cells": 4
+    },
+    {
+      "r": "55",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "56",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "57",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "58",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "59",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "60",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "61",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "62",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "63",
+      "n_cells": 4
+    },
+    {
+      "r": "66",
+      "n_cells": 8
+    },
+    {
+      "r": "68",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "70",
+      "n_cells": 8
+    },
+    {
+      "r": "72",
+      "n_cells": 3
+    },
+    {
+      "r": "73",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "74",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "75",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "76",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "77",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "78",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "79",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "80",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "81",
+      "n_cells": 3
+    },
+    {
+      "r": "84",
+      "n_cells": 8
+    },
+    {
+      "r": "86",
+      "n_cells": 4
+    },
+    {
+      "r": "87",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "88",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "89",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "90",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "91",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "94",
+      "n_cells": 8
+    },
+    {
+      "r": "96",
+      "n_cells": 4
+    },
+    {
+      "r": "97",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "100",
+      "n_cells": 8
+    },
+    {
+      "r": "102",
+      "n_cells": 7
+    },
+    {
+      "r": "103",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "104",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "105",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "106",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "107",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "108",
+      "outlineLevel": "1",
+      "n_cells": 7
+    },
+    {
+      "r": "111",
+      "n_cells": 8
+    },
+    {
+      "r": "113",
+      "n_cells": 2
+    },
+    {
+      "r": "114",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "115",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "116",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "117",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "118",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 365,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "SAM Build"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "F2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "G2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "H2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - SAM scenario menu"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_LEFT",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Broad component-mfg SAM (avg annual FY22-27)"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C91"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Broad component-mfg SAM (FY22-27 cumulative)"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!D91"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Broad SAM as % of TAM"
+    },
+    {
+      "ref": "C9",
+      "style": "S_PCT",
+      "formula": "'SAM Build'!E91"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Selected SAM scenario"
+    },
+    {
+      "ref": "C10",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C11"
+    },
+    {
+      "ref": "B11",
+      "style": "S_BOLD",
+      "value": "Selected SAM (avg annual)"
+    },
+    {
+      "ref": "C11",
+      "style": "S_NUM",
+      "formula": "'SAM Build'!C97"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Scenario matrix"
+    },
+    {
+      "ref": "C14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B16",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C16",
+      "style": "S_HEADER_CENTER",
+      "value": "Metal"
+    },
+    {
+      "ref": "D16",
+      "style": "S_HEADER_CENTER",
+      "value": "HM&E"
+    },
+    {
+      "ref": "E16",
+      "style": "S_HEADER_CENTER",
+      "value": "Electrical"
+    },
+    {
+      "ref": "F16",
+      "style": "S_HEADER_CENTER",
+      "value": "Modular"
+    },
+    {
+      "ref": "G16",
+      "style": "S_HEADER_CENTER",
+      "value": "Broad"
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C46"
+    },
+    {
+      "ref": "D17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D46"
+    },
+    {
+      "ref": "E17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E46"
+    },
+    {
+      "ref": "F17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F46"
+    },
+    {
+      "ref": "G17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G46"
+    },
+    {
+      "ref": "B18",
+      "style": "S_DEFAULT",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C47"
+    },
+    {
+      "ref": "D18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D47"
+    },
+    {
+      "ref": "E18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E47"
+    },
+    {
+      "ref": "F18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F47"
+    },
+    {
+      "ref": "G18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G47"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C48"
+    },
+    {
+      "ref": "D19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D48"
+    },
+    {
+      "ref": "E19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E48"
+    },
+    {
+      "ref": "F19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F48"
+    },
+    {
+      "ref": "G19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G48"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C49"
+    },
+    {
+      "ref": "D20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D49"
+    },
+    {
+      "ref": "E20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E49"
+    },
+    {
+      "ref": "F20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F49"
+    },
+    {
+      "ref": "G20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G49"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C50"
+    },
+    {
+      "ref": "D21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D50"
+    },
+    {
+      "ref": "E21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E50"
+    },
+    {
+      "ref": "F21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F50"
+    },
+    {
+      "ref": "G21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G50"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C51"
+    },
+    {
+      "ref": "D22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D51"
+    },
+    {
+      "ref": "E22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E51"
+    },
+    {
+      "ref": "F22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F51"
+    },
+    {
+      "ref": "G22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G51"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C52"
+    },
+    {
+      "ref": "D23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D52"
+    },
+    {
+      "ref": "E23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E52"
+    },
+    {
+      "ref": "F23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F52"
+    },
+    {
+      "ref": "G23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G52"
+    },
+    {
+      "ref": "A26",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B26",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Observed bucket shares"
+    },
+    {
+      "ref": "C26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H26",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B28",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C28",
+      "style": "S_HEADER_CENTER",
+      "value": "Observed $M"
+    },
+    {
+      "ref": "D28",
+      "style": "S_HEADER_CENTER",
+      "value": "Observed %"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C29",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C965"
+    },
+    {
+      "ref": "D29",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D965"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C30",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C966"
+    },
+    {
+      "ref": "D30",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D966"
+    },
+    {
+      "ref": "B31",
+      "style": "S_DEFAULT",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C31",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C967"
+    },
+    {
+      "ref": "D31",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D967"
+    },
+    {
+      "ref": "B32",
+      "style": "S_DEFAULT",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C32",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C968"
+    },
+    {
+      "ref": "D32",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D968"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C33",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C969"
+    },
+    {
+      "ref": "D33",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D969"
+    },
+    {
+      "ref": "B34",
+      "style": "S_DEFAULT",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C34",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C970"
+    },
+    {
+      "ref": "D34",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D970"
+    },
+    {
+      "ref": "B35",
+      "style": "S_DEFAULT",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C35",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C971"
+    },
+    {
+      "ref": "D35",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D971"
+    },
+    {
+      "ref": "B36",
+      "style": "S_DEFAULT",
+      "value": "Unbucketed / ambiguous"
+    },
+    {
+      "ref": "C36",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C972"
+    },
+    {
+      "ref": "D36",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D972"
+    },
+    {
+      "ref": "B37",
+      "style": "S_TOTAL",
+      "value": "Supplier-addressable total"
+    },
+    {
+      "ref": "C37",
+      "style": "S_LINK_NUM_TOTAL",
+      "formula": "'Entity Master'!C973"
+    },
+    {
+      "ref": "D37",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "A39",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B39",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a73a - Excluded roles (not supplier-addressable)"
+    },
+    {
+      "ref": "C39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H39",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B41",
+      "style": "S_HEADER_LEFT",
+      "value": "Role"
+    },
+    {
+      "ref": "C41",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "Mission systems (combat/electronics)"
+    },
+    {
+      "ref": "C42",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C952"
+    },
+    {
+      "ref": "B43",
+      "style": "S_DEFAULT",
+      "value": "Service / non-component / IT"
+    },
+    {
+      "ref": "C43",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C953"
+    },
+    {
+      "ref": "B44",
+      "style": "S_DEFAULT",
+      "value": "Holding / parent unknown"
+    },
+    {
+      "ref": "C44",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C954"
+    },
+    {
+      "ref": "B45",
+      "style": "S_DEFAULT",
+      "value": "Foreign / FMS"
+    },
+    {
+      "ref": "C45",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C955"
+    },
+    {
+      "ref": "B46",
+      "style": "S_DEFAULT",
+      "value": "Prime yard (final assembly)"
+    },
+    {
+      "ref": "C46",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C956"
+    },
+    {
+      "ref": "B47",
+      "style": "S_DEFAULT",
+      "value": "Co-prime yard"
+    },
+    {
+      "ref": "C47",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C957"
+    },
+    {
+      "ref": "B48",
+      "style": "S_DEFAULT",
+      "value": "GFE / SIB (Navy-directed, BlueForge)"
+    },
+    {
+      "ref": "C48",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C958"
+    },
+    {
+      "ref": "B49",
+      "style": "S_TOTAL",
+      "value": "Grand total (all recipients)"
+    },
+    {
+      "ref": "C49",
+      "style": "S_LINK_NUM_TOTAL",
+      "formula": "'Entity Master'!C959"
+    },
+    {
+      "ref": "A52",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B52",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - Modeled bucket shares"
+    },
+    {
+      "ref": "C52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H52",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B54",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C54",
+      "style": "S_HEADER_CENTER",
+      "value": "Observed share"
+    },
+    {
+      "ref": "D54",
+      "style": "S_HEADER_CENTER",
+      "value": "Adjustment"
+    },
+    {
+      "ref": "E54",
+      "style": "S_HEADER_CENTER",
+      "value": "Modeled share"
+    },
+    {
+      "ref": "B55",
+      "style": "S_DEFAULT",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C58"
+    },
+    {
+      "ref": "D55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D58"
+    },
+    {
+      "ref": "E55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E58"
+    },
+    {
+      "ref": "B56",
+      "style": "S_DEFAULT",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C59"
+    },
+    {
+      "ref": "D56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D59"
+    },
+    {
+      "ref": "E56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E59"
+    },
+    {
+      "ref": "B57",
+      "style": "S_DEFAULT",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C60"
+    },
+    {
+      "ref": "D57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D60"
+    },
+    {
+      "ref": "E57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E60"
+    },
+    {
+      "ref": "B58",
+      "style": "S_DEFAULT",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C61"
+    },
+    {
+      "ref": "D58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D61"
+    },
+    {
+      "ref": "E58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E61"
+    },
+    {
+      "ref": "B59",
+      "style": "S_DEFAULT",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C62"
+    },
+    {
+      "ref": "D59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D62"
+    },
+    {
+      "ref": "E59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E62"
+    },
+    {
+      "ref": "B60",
+      "style": "S_DEFAULT",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C63"
+    },
+    {
+      "ref": "D60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D63"
+    },
+    {
+      "ref": "E60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E63"
+    },
+    {
+      "ref": "B61",
+      "style": "S_DEFAULT",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C64"
+    },
+    {
+      "ref": "D61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D64"
+    },
+    {
+      "ref": "E61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E64"
+    },
+    {
+      "ref": "B62",
+      "style": "S_DEFAULT",
+      "value": "Unbucketed / ambiguous"
+    },
+    {
+      "ref": "E62",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E65"
+    },
+    {
+      "ref": "B63",
+      "style": "S_TOTAL",
+      "value": "Total modeled share"
+    },
+    {
+      "ref": "C63",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "D63",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "E63",
+      "style": "S_LINK_PCT_TOTAL",
+      "formula": "'Assumptions'!E66"
+    },
+    {
+      "ref": "A66",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B66",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a75 - TAM bucket allocation"
+    },
+    {
+      "ref": "C66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H66",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B68",
+      "style": "S_BOLD",
+      "value": "Portfolio TAM (Va + Col, both streams, FY22-27)"
+    },
+    {
+      "ref": "C68",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119+'TAM Build'!D119+'TAM Build'!E119+'TAM Build'!F119+'TAM Build'!G119+'TAM Build'!H119"
+    },
+    {
+      "ref": "A70",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B70",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a75a - TAM by work-type bucket"
+    },
+    {
+      "ref": "C70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "E70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "F70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "G70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "H70",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B72",
+      "style": "S_HEADER_LEFT",
+      "value": "Bucket"
+    },
+    {
+      "ref": "C72",
+      "style": "S_HEADER_CENTER",
+      "value": "Bucket TAM $M"
+    },
+    {
+      "ref": "D72",
+      "style": "S_HEADER_CENTER",
+      "value": "Modeled share"
+    },
+    {
+      "ref": "B73",
+      "style": "S_DEFAULT",
+      "value": "Structural fabrication & modules"
+    },
+    {
+      "ref": "C73",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E58"
+    },
+    {
+      "ref": "D73",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E58"
+    },
+    {
+      "ref": "B74",
+      "style": "S_DEFAULT",
+      "value": "Machining / mechanical / propulsion"
+    },
+    {
+      "ref": "C74",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E59"
+    },
+    {
+      "ref": "D74",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E59"
+    },
+    {
+      "ref": "B75",
+      "style": "S_DEFAULT",
+      "value": "Castings & forgings"
+    },
+    {
+      "ref": "C75",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E60"
+    },
+    {
+      "ref": "D75",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E60"
+    },
+    {
+      "ref": "B76",
+      "style": "S_DEFAULT",
+      "value": "Piping / fluid handling"
+    },
+    {
+      "ref": "C76",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E61"
+    },
+    {
+      "ref": "D76",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E61"
+    },
+    {
+      "ref": "B77",
+      "style": "S_DEFAULT",
+      "value": "Electrical power / distribution / generation"
+    },
+    {
+      "ref": "C77",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E62"
+    },
+    {
+      "ref": "D77",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E62"
+    },
+    {
+      "ref": "B78",
+      "style": "S_DEFAULT",
+      "value": "HVAC / ventilation / chilled water"
+    },
+    {
+      "ref": "C78",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E63"
+    },
+    {
+      "ref": "D78",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E63"
+    },
+    {
+      "ref": "B79",
+      "style": "S_DEFAULT",
+      "value": "Coatings / insulation / decking"
+    },
+    {
+      "ref": "C79",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E64"
+    },
+    {
+      "ref": "D79",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E64"
+    },
+    {
+      "ref": "B80",
+      "style": "S_DEFAULT",
+      "value": "Unbucketed / ambiguous (not in scenario SAM)"
+    },
+    {
+      "ref": "C80",
+      "style": "S_NUM",
+      "formula": "$C$68*'Assumptions'!E65"
+    },
+    {
+      "ref": "D80",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E65"
+    },
+    {
+      "ref": "B81",
+      "style": "S_TOTAL",
+      "value": "Total (7 buckets + unbucketed = TAM)"
+    },
+    {
+      "ref": "C81",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(C73:C80)"
+    },
+    {
+      "ref": "D81",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "A84",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B84",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a76 - Scenario SAM"
+    },
+    {
+      "ref": "C84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H84",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B86",
+      "style": "S_HEADER_LEFT",
+      "value": "Scenario"
+    },
+    {
+      "ref": "C86",
+      "style": "S_HEADER_CENTER",
+      "value": "Avg annual $M"
+    },
+    {
+      "ref": "D86",
+      "style": "S_HEADER_CENTER",
+      "value": "Cumulative SAM $M"
+    },
+    {
+      "ref": "E86",
+      "style": "S_HEADER_CENTER",
+      "value": "% of TAM"
+    },
+    {
+      "ref": "B87",
+      "style": "S_DEFAULT",
+      "value": "Metal components"
+    },
+    {
+      "ref": "C87",
+      "style": "S_NUM",
+      "formula": "D87/'TAM Build'!C126"
+    },
+    {
+      "ref": "D87",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C73:C79,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E87",
+      "style": "S_PCT",
+      "formula": "D87/$C$68"
+    },
+    {
+      "ref": "B88",
+      "style": "S_DEFAULT",
+      "value": "HM&E components"
+    },
+    {
+      "ref": "C88",
+      "style": "S_NUM",
+      "formula": "D88/'TAM Build'!C126"
+    },
+    {
+      "ref": "D88",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C73:C79,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "E88",
+      "style": "S_PCT",
+      "formula": "D88/$C$68"
+    },
+    {
+      "ref": "B89",
+      "style": "S_DEFAULT",
+      "value": "Electrical / power"
+    },
+    {
+      "ref": "C89",
+      "style": "S_NUM",
+      "formula": "D89/'TAM Build'!C126"
+    },
+    {
+      "ref": "D89",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C73:C79,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "E89",
+      "style": "S_PCT",
+      "formula": "D89/$C$68"
+    },
+    {
+      "ref": "B90",
+      "style": "S_DEFAULT",
+      "value": "Modular assemblies"
+    },
+    {
+      "ref": "C90",
+      "style": "S_NUM",
+      "formula": "D90/'TAM Build'!C126"
+    },
+    {
+      "ref": "D90",
+      "style": "S_NUM",
+      "formula": "$C$68*'Entity Master'!D979"
+    },
+    {
+      "ref": "E90",
+      "style": "S_PCT",
+      "formula": "D90/$C$68"
+    },
+    {
+      "ref": "B91",
+      "style": "S_DEFAULT",
+      "value": "Broad component mfg"
+    },
+    {
+      "ref": "C91",
+      "style": "S_NUM",
+      "formula": "D91/'TAM Build'!C126"
+    },
+    {
+      "ref": "D91",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('SAM Build'!C73:C79,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "E91",
+      "style": "S_PCT",
+      "formula": "D91/$C$68"
+    },
+    {
+      "ref": "A94",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B94",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a77 - Selected scenario"
+    },
+    {
+      "ref": "C94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H94",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B96",
+      "style": "S_HEADER_LEFT",
+      "value": "Selected scenario"
+    },
+    {
+      "ref": "C96",
+      "style": "S_HEADER_CENTER",
+      "value": "Avg annual $M"
+    },
+    {
+      "ref": "D96",
+      "style": "S_HEADER_CENTER",
+      "value": "Cumulative SAM $M"
+    },
+    {
+      "ref": "E96",
+      "style": "S_HEADER_CENTER",
+      "value": "% of TAM"
+    },
+    {
+      "ref": "B97",
+      "style": "S_DEFAULT",
+      "formula": "'Assumptions'!C11"
+    },
+    {
+      "ref": "C97",
+      "style": "S_NUM",
+      "formula": "INDEX(C87:C91,MATCH('Assumptions'!C11,B87:B91,0))"
+    },
+    {
+      "ref": "D97",
+      "style": "S_NUM",
+      "formula": "INDEX(D87:D91,MATCH('Assumptions'!C11,B87:B91,0))"
+    },
+    {
+      "ref": "E97",
+      "style": "S_PCT",
+      "formula": "INDEX(E87:E91,MATCH('Assumptions'!C11,B87:B91,0))"
+    },
+    {
+      "ref": "A100",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B100",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a78 - Annual SAM by fiscal year"
+    },
+    {
+      "ref": "C100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H100",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B102",
+      "style": "S_HEADER_LEFT",
+      "value": "Fiscal year"
+    },
+    {
+      "ref": "C102",
+      "style": "S_HEADER_CENTER",
+      "value": "Annual TAM $M"
+    },
+    {
+      "ref": "D102",
+      "style": "S_HEADER_CENTER",
+      "value": "Metal"
+    },
+    {
+      "ref": "E102",
+      "style": "S_HEADER_CENTER",
+      "value": "HM&E"
+    },
+    {
+      "ref": "F102",
+      "style": "S_HEADER_CENTER",
+      "value": "Electrical"
+    },
+    {
+      "ref": "G102",
+      "style": "S_HEADER_CENTER",
+      "value": "Modular"
+    },
+    {
+      "ref": "H102",
+      "style": "S_HEADER_CENTER",
+      "value": "Broad"
+    },
+    {
+      "ref": "B103",
+      "style": "S_DEFAULT",
+      "value": "FY2022"
+    },
+    {
+      "ref": "C103",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!C119"
+    },
+    {
+      "ref": "D103",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E103",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F103",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G103",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H103",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!C119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "B104",
+      "style": "S_DEFAULT",
+      "value": "FY2023"
+    },
+    {
+      "ref": "C104",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!D119"
+    },
+    {
+      "ref": "D104",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E104",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F104",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G104",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H104",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!D119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "B105",
+      "style": "S_DEFAULT",
+      "value": "FY2024"
+    },
+    {
+      "ref": "C105",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!E119"
+    },
+    {
+      "ref": "D105",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E105",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F105",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G105",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H105",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!E119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "B106",
+      "style": "S_DEFAULT",
+      "value": "FY2025"
+    },
+    {
+      "ref": "C106",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!F119"
+    },
+    {
+      "ref": "D106",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E106",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F106",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G106",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H106",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!F119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "B107",
+      "style": "S_DEFAULT",
+      "value": "FY2026"
+    },
+    {
+      "ref": "C107",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!G119"
+    },
+    {
+      "ref": "D107",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E107",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F107",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G107",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H107",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!G119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "B108",
+      "style": "S_DEFAULT",
+      "value": "FY2027"
+    },
+    {
+      "ref": "C108",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!H119"
+    },
+    {
+      "ref": "D108",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!C46:C52)"
+    },
+    {
+      "ref": "E108",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!D46:D52)"
+    },
+    {
+      "ref": "F108",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!E46:E52)"
+    },
+    {
+      "ref": "G108",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H119*'Entity Master'!D979"
+    },
+    {
+      "ref": "H108",
+      "style": "S_NUM",
+      "formula": "'TAM Build'!H119*SUMPRODUCT('Assumptions'!E58:E64,'Assumptions'!G46:G52)"
+    },
+    {
+      "ref": "A111",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B111",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a79 - SAM checks"
+    },
+    {
+      "ref": "C111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "F111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "G111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "H111",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B113",
+      "style": "S_HEADER_LEFT",
+      "value": "Check"
+    },
+    {
+      "ref": "C113",
+      "style": "S_HEADER_LEFT",
+      "value": "Status"
+    },
+    {
+      "ref": "B114",
+      "style": "S_DEFAULT",
+      "value": "Modeled shares sum to 100%"
+    },
+    {
+      "ref": "C114",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS('Assumptions'!E66-1)<0.001,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B115",
+      "style": "S_DEFAULT",
+      "value": "Bucketed TAM = portfolio TAM"
+    },
+    {
+      "ref": "C115",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS('SAM Build'!C81-'SAM Build'!C68)<0.5,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B116",
+      "style": "S_DEFAULT",
+      "value": "Broad SAM = TAM - unbucketed"
+    },
+    {
+      "ref": "C116",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS('SAM Build'!D91-('SAM Build'!C68-'SAM Build'!C80))<0.5,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B117",
+      "style": "S_DEFAULT",
+      "value": "Broad SAM <= TAM"
+    },
+    {
+      "ref": "C117",
+      "style": "S_DEFAULT",
+      "formula": "IF('SAM Build'!D91<='SAM Build'!C68+0.5,\"OK\",\"FAIL\")"
+    },
+    {
+      "ref": "B118",
+      "style": "S_DEFAULT",
+      "value": "Annual broad SAM sums to cumulative"
+    },
+    {
+      "ref": "C118",
+      "style": "S_DEFAULT",
+      "formula": "IF(ABS(SUM(H103:H108)-'SAM Build'!D91)<0.5,\"OK\",\"FAIL\")"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "SAM Build"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - SAM scenario menu"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Scenario matrix"
+    },
+    {
+      "ref": "B26",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Observed bucket shares"
+    },
+    {
+      "ref": "B39",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a73a - Excluded roles (not supplier-addressable)"
+    },
+    {
+      "ref": "B52",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - Modeled bucket shares"
+    },
+    {
+      "ref": "B66",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a75 - TAM bucket allocation"
+    },
+    {
+      "ref": "B70",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a75a - TAM by work-type bucket"
+    },
+    {
+      "ref": "B84",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a76 - Scenario SAM"
+    },
+    {
+      "ref": "B94",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a77 - Selected scenario"
+    },
+    {
+      "ref": "B100",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a78 - Annual SAM by fiscal year"
+    },
+    {
+      "ref": "B111",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a79 - SAM checks"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [
+    {
+      "ref": "C10",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C11"
+    },
+    {
+      "ref": "C17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C46"
+    },
+    {
+      "ref": "D17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D46"
+    },
+    {
+      "ref": "E17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E46"
+    },
+    {
+      "ref": "F17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F46"
+    },
+    {
+      "ref": "G17",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G46"
+    },
+    {
+      "ref": "C18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C47"
+    },
+    {
+      "ref": "D18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D47"
+    },
+    {
+      "ref": "E18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E47"
+    },
+    {
+      "ref": "F18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F47"
+    },
+    {
+      "ref": "G18",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G47"
+    },
+    {
+      "ref": "C19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C48"
+    },
+    {
+      "ref": "D19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D48"
+    },
+    {
+      "ref": "E19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E48"
+    },
+    {
+      "ref": "F19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F48"
+    },
+    {
+      "ref": "G19",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G48"
+    },
+    {
+      "ref": "C20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C49"
+    },
+    {
+      "ref": "D20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D49"
+    },
+    {
+      "ref": "E20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E49"
+    },
+    {
+      "ref": "F20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F49"
+    },
+    {
+      "ref": "G20",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G49"
+    },
+    {
+      "ref": "C21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C50"
+    },
+    {
+      "ref": "D21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D50"
+    },
+    {
+      "ref": "E21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E50"
+    },
+    {
+      "ref": "F21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F50"
+    },
+    {
+      "ref": "G21",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G50"
+    },
+    {
+      "ref": "C22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C51"
+    },
+    {
+      "ref": "D22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D51"
+    },
+    {
+      "ref": "E22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E51"
+    },
+    {
+      "ref": "F22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F51"
+    },
+    {
+      "ref": "G22",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G51"
+    },
+    {
+      "ref": "C23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!C52"
+    },
+    {
+      "ref": "D23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!D52"
+    },
+    {
+      "ref": "E23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!E52"
+    },
+    {
+      "ref": "F23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!F52"
+    },
+    {
+      "ref": "G23",
+      "style": "S_LINK_NUM",
+      "formula": "'Assumptions'!G52"
+    },
+    {
+      "ref": "C29",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C965"
+    },
+    {
+      "ref": "D29",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D965"
+    },
+    {
+      "ref": "C30",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C966"
+    },
+    {
+      "ref": "D30",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D966"
+    },
+    {
+      "ref": "C31",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C967"
+    },
+    {
+      "ref": "D31",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D967"
+    },
+    {
+      "ref": "C32",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C968"
+    },
+    {
+      "ref": "D32",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D968"
+    },
+    {
+      "ref": "C33",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C969"
+    },
+    {
+      "ref": "D33",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D969"
+    },
+    {
+      "ref": "C34",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C970"
+    },
+    {
+      "ref": "D34",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D970"
+    },
+    {
+      "ref": "C35",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C971"
+    },
+    {
+      "ref": "D35",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D971"
+    },
+    {
+      "ref": "C36",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C972"
+    },
+    {
+      "ref": "D36",
+      "style": "S_LINK_PCT",
+      "formula": "'Entity Master'!D972"
+    },
+    {
+      "ref": "C37",
+      "style": "S_LINK_NUM_TOTAL",
+      "formula": "'Entity Master'!C973"
+    },
+    {
+      "ref": "C42",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C952"
+    },
+    {
+      "ref": "C43",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C953"
+    },
+    {
+      "ref": "C44",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C954"
+    },
+    {
+      "ref": "C45",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C955"
+    },
+    {
+      "ref": "C46",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C956"
+    },
+    {
+      "ref": "C47",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C957"
+    },
+    {
+      "ref": "C48",
+      "style": "S_LINK_NUM",
+      "formula": "'Entity Master'!C958"
+    },
+    {
+      "ref": "C49",
+      "style": "S_LINK_NUM_TOTAL",
+      "formula": "'Entity Master'!C959"
+    },
+    {
+      "ref": "C55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C58"
+    },
+    {
+      "ref": "D55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D58"
+    },
+    {
+      "ref": "E55",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E58"
+    },
+    {
+      "ref": "C56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C59"
+    },
+    {
+      "ref": "D56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D59"
+    },
+    {
+      "ref": "E56",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E59"
+    },
+    {
+      "ref": "C57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C60"
+    },
+    {
+      "ref": "D57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D60"
+    },
+    {
+      "ref": "E57",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E60"
+    },
+    {
+      "ref": "C58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C61"
+    },
+    {
+      "ref": "D58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D61"
+    },
+    {
+      "ref": "E58",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E61"
+    },
+    {
+      "ref": "C59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C62"
+    },
+    {
+      "ref": "D59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D62"
+    },
+    {
+      "ref": "E59",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E62"
+    },
+    {
+      "ref": "C60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C63"
+    },
+    {
+      "ref": "D60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D63"
+    },
+    {
+      "ref": "E60",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E63"
+    },
+    {
+      "ref": "C61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!C64"
+    },
+    {
+      "ref": "D61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!D64"
+    },
+    {
+      "ref": "E61",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E64"
+    },
+    {
+      "ref": "E62",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E65"
+    },
+    {
+      "ref": "E63",
+      "style": "S_LINK_PCT_TOTAL",
+      "formula": "'Assumptions'!E66"
+    },
+    {
+      "ref": "D73",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E58"
+    },
+    {
+      "ref": "D74",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E59"
+    },
+    {
+      "ref": "D75",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E60"
+    },
+    {
+      "ref": "D76",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E61"
+    },
+    {
+      "ref": "D77",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E62"
+    },
+    {
+      "ref": "D78",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E63"
+    },
+    {
+      "ref": "D79",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E64"
+    },
+    {
+      "ref": "D80",
+      "style": "S_LINK_PCT",
+      "formula": "'Assumptions'!E65"
+    },
+    {
+      "ref": "C103",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!C119"
+    },
+    {
+      "ref": "C104",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!D119"
+    },
+    {
+      "ref": "C105",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!E119"
+    },
+    {
+      "ref": "C106",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!F119"
+    },
+    {
+      "ref": "C107",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!G119"
+    },
+    {
+      "ref": "C108",
+      "style": "S_LINK_NUM",
+      "formula": "'TAM Build'!H119"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 166,
+  "formula_refs_by_sheet": {
+    "Assumptions": [
+      "C10",
+      "C17",
+      "D17",
+      "E17",
+      "F17",
+      "G17",
+      "C18",
+      "D18",
+      "E18",
+      "F18",
+      "G18",
+      "C19",
+      "D19",
+      "E19",
+      "F19",
+      "G19",
+      "C20",
+      "D20",
+      "E20",
+      "F20",
+      "G20",
+      "C21",
+      "D21",
+      "E21",
+      "F21",
+      "G21",
+      "C22",
+      "D22",
+      "E22",
+      "F22",
+      "G22",
+      "C23",
+      "D23",
+      "E23",
+      "F23",
+      "G23",
+      "C55",
+      "D55",
+      "E55",
+      "C56",
+      "D56",
+      "E56",
+      "C57",
+      "D57",
+      "E57",
+      "C58",
+      "D58",
+      "E58",
+      "C59",
+      "D59",
+      "E59",
+      "C60",
+      "D60",
+      "E60",
+      "C61",
+      "D61",
+      "E61",
+      "E62",
+      "E63",
+      "C73",
+      "D73",
+      "C74",
+      "D74",
+      "C75",
+      "D75",
+      "C76",
+      "D76",
+      "C77",
+      "D77",
+      "C78",
+      "D78",
+      "C79",
+      "D79",
+      "C80",
+      "D80",
+      "D87",
+      "D88",
+      "D89",
+      "D91",
+      "B97",
+      "C97",
+      "D97",
+      "E97",
+      "D103",
+      "E103",
+      "F103",
+      "H103",
+      "D104",
+      "E104",
+      "F104",
+      "H104",
+      "D105",
+      "E105",
+      "F105",
+      "H105",
+      "D106",
+      "E106",
+      "F106",
+      "H106",
+      "D107",
+      "E107",
+      "F107",
+      "H107",
+      "D108",
+      "E108",
+      "F108",
+      "H108",
+      "C114"
+    ],
+    "Entity Master": [
+      "C29",
+      "D29",
+      "C30",
+      "D30",
+      "C31",
+      "D31",
+      "C32",
+      "D32",
+      "C33",
+      "D33",
+      "C34",
+      "D34",
+      "C35",
+      "D35",
+      "C36",
+      "D36",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "D90",
+      "G103",
+      "G104",
+      "G105",
+      "G106",
+      "G107",
+      "G108"
+    ],
+    "SAM Build": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "D87",
+      "D88",
+      "D89",
+      "D91",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "TAM Build": [
+      "C68",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C103",
+      "D103",
+      "E103",
+      "F103",
+      "G103",
+      "H103",
+      "C104",
+      "D104",
+      "E104",
+      "F104",
+      "G104",
+      "H104",
+      "C105",
+      "D105",
+      "E105",
+      "F105",
+      "G105",
+      "H105",
+      "C106",
+      "D106",
+      "E106",
+      "F106",
+      "G106",
+      "H106",
+      "C107",
+      "D107",
+      "E107",
+      "F107",
+      "G107",
+      "H107",
+      "C108",
+      "D108",
+      "E108",
+      "F108",
+      "G108",
+      "H108"
+    ]
+  },
+  "tables": [],
+  "defined_names": {
+    "broad_sam_annual": "'SAM Build'!$C$91",
+    "broad_sam_cumulative": "'SAM Build'!$D$91",
+    "sam_broad": "'SAM Build'!$D$91"
+  }
+}

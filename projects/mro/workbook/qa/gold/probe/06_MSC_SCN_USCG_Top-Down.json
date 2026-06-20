@@ -1,0 +1,1071 @@
+{
+  "source": "file",
+  "name": "MSC SCN USCG Top-Down",
+  "tab_name": "MSC SCN USCG Top-Down",
+  "sheet_index": 6,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 7,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "14.0"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "55.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "14.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "14.0"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "10.0"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "80.0"
+    }
+  ],
+  "n_rows": 31,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "2",
+      "n_cells": 1
+    },
+    {
+      "r": "3",
+      "n_cells": 1
+    },
+    {
+      "r": "4",
+      "n_cells": 1
+    },
+    {
+      "r": "5",
+      "n_cells": 7
+    },
+    {
+      "r": "6",
+      "n_cells": 5
+    },
+    {
+      "r": "7",
+      "n_cells": 6
+    },
+    {
+      "r": "8",
+      "n_cells": 6
+    },
+    {
+      "r": "9",
+      "n_cells": 6
+    },
+    {
+      "r": "10",
+      "n_cells": 4
+    },
+    {
+      "r": "12",
+      "n_cells": 1
+    },
+    {
+      "r": "13",
+      "n_cells": 1
+    },
+    {
+      "r": "14",
+      "n_cells": 7
+    },
+    {
+      "r": "15",
+      "n_cells": 7
+    },
+    {
+      "r": "16",
+      "n_cells": 7
+    },
+    {
+      "r": "17",
+      "n_cells": 6
+    },
+    {
+      "r": "19",
+      "n_cells": 1
+    },
+    {
+      "r": "20",
+      "n_cells": 1
+    },
+    {
+      "r": "21",
+      "n_cells": 7
+    },
+    {
+      "r": "22",
+      "n_cells": 7
+    },
+    {
+      "r": "23",
+      "n_cells": 7
+    },
+    {
+      "r": "24",
+      "n_cells": 7
+    },
+    {
+      "r": "25",
+      "n_cells": 7
+    },
+    {
+      "r": "26",
+      "n_cells": 7
+    },
+    {
+      "r": "28",
+      "n_cells": 2
+    },
+    {
+      "r": "29",
+      "n_cells": 1
+    },
+    {
+      "r": "30",
+      "n_cells": 1
+    },
+    {
+      "r": "31",
+      "n_cells": 7
+    },
+    {
+      "r": "32",
+      "n_cells": 7
+    },
+    {
+      "r": "34",
+      "n_cells": 2
+    },
+    {
+      "r": "35",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 133,
+  "cells": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "value": "MSC / SCN / USCG / OPN LI 1000 Top-Down - Non-1B4B Maintenance Anchors ($ in Thousands unless noted)"
+    },
+    {
+      "ref": "A2",
+      "style": "S_DEFAULT",
+      "value": "Four banded sections: (1) MSC M&R with FY25 in 1B1B (transfer-out) and FY26 in 1B4B (post-transfer), (2) SCN CVN RCOH per-hull (LI 2086), (3) USCG maintenance with explicit confidence=low caveat, (4) OPN LI 1000 Ship Maintenance, Repair and Modernization (distinct appropriation, replaces prior $500M plug with sourced $2.39B). See budget_extracts/*.yaml for provenance. Named ranges registered for downstream sheets."
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "value": "Military Sealift Command (MSC) M&R"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "MSC Table IV (OP-5 1B4B, Page 9 of 29) + 1B1B transfer-out reconciliation. Lines 5637-5651. Confidence: high."
+    },
+    {
+      "ref": "A5",
+      "style": "S_BOLD",
+      "value": "Code"
+    },
+    {
+      "ref": "B5",
+      "style": "S_BOLD",
+      "value": "Category"
+    },
+    {
+      "ref": "C5",
+      "style": "S_BOLD",
+      "value": "FY24 $K"
+    },
+    {
+      "ref": "D5",
+      "style": "S_BOLD",
+      "value": "FY25 $K"
+    },
+    {
+      "ref": "E5",
+      "style": "S_BOLD",
+      "value": "FY26 $K"
+    },
+    {
+      "ref": "F5",
+      "style": "S_BOLD",
+      "value": "Source line"
+    },
+    {
+      "ref": "G5",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A6",
+      "style": "S_DEFAULT",
+      "value": "FY25_1B1B"
+    },
+    {
+      "ref": "B6",
+      "style": "S_DEFAULT",
+      "value": "FY25 MSC M&R anchor (1B1B transfer-out to 1B4B)"
+    },
+    {
+      "ref": "D6",
+      "style": "S_NUM_INPUT",
+      "value": "1239846"
+    },
+    {
+      "ref": "F6",
+      "style": "S_DEFAULT",
+      "value": "4467"
+    },
+    {
+      "ref": "G6",
+      "style": "S_DEFAULT",
+      "value": "MSC M&R executed out of 1B1B for FY25; transfers to 1B4B in FY26. Lump sum; FY25 per-category split not source-explicit."
+    },
+    {
+      "ref": "A7",
+      "style": "S_DEFAULT",
+      "value": "MTA"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "Mid-Term Availability"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "341925"
+    },
+    {
+      "ref": "F7",
+      "style": "S_DEFAULT",
+      "value": "5648"
+    },
+    {
+      "ref": "A8",
+      "style": "S_DEFAULT",
+      "value": "ROH"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Regular Overhaul"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "666329"
+    },
+    {
+      "ref": "F8",
+      "style": "S_DEFAULT",
+      "value": "5649"
+    },
+    {
+      "ref": "A9",
+      "style": "S_DEFAULT",
+      "value": "OTHER"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Other MSC Related Maintenance and Repair"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "575746"
+    },
+    {
+      "ref": "F9",
+      "style": "S_DEFAULT",
+      "value": "5650"
+    },
+    {
+      "ref": "B10",
+      "style": "S_BOLD",
+      "value": "MSC Table IV FY26 Total (post-transfer to 1B4B)"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_TOTAL",
+      "formula": "MSC_MR_FY26_MTA+MSC_MR_FY26_ROH+MSC_MR_FY26_OTHER"
+    },
+    {
+      "ref": "F10",
+      "style": "S_DEFAULT",
+      "value": "5651"
+    },
+    {
+      "ref": "G10",
+      "style": "S_DEFAULT",
+      "value": "Matches source TOTAL row (line 5651)"
+    },
+    {
+      "ref": "A12",
+      "style": "S_TITLE_SECTION",
+      "value": "SCN CVN Refueling Overhauls (LI 2086)"
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "LI 2086 CVN Refueling Overhauls - Exhibit P-40 Budget Line Item Justification. Lines 6850-7223. Confidence: medium (per-hull split partly derived from narrative)."
+    },
+    {
+      "ref": "A14",
+      "style": "S_BOLD",
+      "value": "Code"
+    },
+    {
+      "ref": "B14",
+      "style": "S_BOLD",
+      "value": "Category"
+    },
+    {
+      "ref": "C14",
+      "style": "S_BOLD",
+      "value": "FY24 $K"
+    },
+    {
+      "ref": "D14",
+      "style": "S_BOLD",
+      "value": "FY25 $K"
+    },
+    {
+      "ref": "E14",
+      "style": "S_BOLD",
+      "value": "FY26 $K"
+    },
+    {
+      "ref": "F14",
+      "style": "S_BOLD",
+      "value": "Source line"
+    },
+    {
+      "ref": "G14",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "CVN74"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "CVN 74 STENNIS RCOH"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "530868"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "1480314"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "483100"
+    },
+    {
+      "ref": "F15",
+      "style": "S_DEFAULT",
+      "value": "6880"
+    },
+    {
+      "ref": "G15",
+      "style": "S_DEFAULT",
+      "value": "CVN 74; Huntington Ingalls Industries - Newport News Shipbuilding"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "CVN75"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "CVN 75 TRUMAN RCOH"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E16",
+      "style": "S_NUM_INPUT",
+      "value": "1779011"
+    },
+    {
+      "ref": "F16",
+      "style": "S_DEFAULT",
+      "value": "6880"
+    },
+    {
+      "ref": "G16",
+      "style": "S_DEFAULT",
+      "value": "CVN 75; Huntington Ingalls Industries - Newport News Shipbuilding"
+    },
+    {
+      "ref": "A17",
+      "style": "S_BOLD",
+      "value": "LI_2086"
+    },
+    {
+      "ref": "B17",
+      "style": "S_BOLD",
+      "value": "LI 2086 Total CVN RCOH (both hulls)"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT_TOTAL",
+      "value": "1480314"
+    },
+    {
+      "ref": "E17",
+      "style": "S_NUM_INPUT_TOTAL",
+      "value": "2262111"
+    },
+    {
+      "ref": "F17",
+      "style": "S_DEFAULT",
+      "value": "6880"
+    },
+    {
+      "ref": "G17",
+      "style": "S_DEFAULT",
+      "value": "FY25 dominated by CVN 74 SFF; FY26 = CVN 74 CTC + CVN 75 SFF"
+    },
+    {
+      "ref": "A19",
+      "style": "S_TITLE_SECTION",
+      "value": "USCG Maintenance (confidence=LOW)"
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "PC&I Appropriation Summary + In-Service Vessel Sustainment (ISVS) PPA Vessels level II. NO Navy-equivalent OP-5 Table IV for USCG. Confidence: low. USCG publishes no OP-5 Table IV equivalent. The $120M ISVS line captures only the PC&I-funded portion of cutter sustainm..."
+    },
+    {
+      "ref": "A21",
+      "style": "S_BOLD",
+      "value": "Code"
+    },
+    {
+      "ref": "B21",
+      "style": "S_BOLD",
+      "value": "Category"
+    },
+    {
+      "ref": "C21",
+      "style": "S_BOLD",
+      "value": "FY24 $K"
+    },
+    {
+      "ref": "D21",
+      "style": "S_BOLD",
+      "value": "FY25 $K"
+    },
+    {
+      "ref": "E21",
+      "style": "S_BOLD",
+      "value": "FY26 $K"
+    },
+    {
+      "ref": "F21",
+      "style": "S_BOLD",
+      "value": "Source line"
+    },
+    {
+      "ref": "G21",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A22",
+      "style": "S_DEFAULT",
+      "value": "ISVS_TOTAL"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "In-Service Vessel Sustainment (PPA total)"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT",
+      "value": "152000"
+    },
+    {
+      "ref": "F22",
+      "style": "S_DEFAULT",
+      "value": "128"
+    },
+    {
+      "ref": "G22",
+      "style": "S_DEFAULT",
+      "value": "ISVS is the PC&I-funded umbrella for vessel sustainment. Matches existing USCG_ISVS_TOTAL_FY25 named range on the Reconciliation sheet (workbook_build"
+    },
+    {
+      "ref": "A23",
+      "style": "S_DEFAULT",
+      "value": "ISVS_47MLB"
+    },
+    {
+      "ref": "B23",
+      "style": "S_DEFAULT",
+      "value": "47-Foot Motor Lifeboat SLEP"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "E23",
+      "style": "S_NUM_INPUT",
+      "value": "45000"
+    },
+    {
+      "ref": "F23",
+      "style": "S_DEFAULT",
+      "value": "2378"
+    },
+    {
+      "ref": "G23",
+      "style": "S_DEFAULT",
+      "value": "20-year service-life extension for the 47-ft MLB fleet (107 of 117 boats scoped)."
+    },
+    {
+      "ref": "A24",
+      "style": "S_DEFAULT",
+      "value": "ISVS_WMEC"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "270-Foot Medium Endurance Cutter (WMEC) SLEP"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "E24",
+      "style": "S_NUM_INPUT",
+      "value": "76000"
+    },
+    {
+      "ref": "F24",
+      "style": "S_DEFAULT",
+      "value": "2420"
+    },
+    {
+      "ref": "G24",
+      "style": "S_DEFAULT",
+      "value": "Famous Class cutter SLEP production at Coast Guard Yard."
+    },
+    {
+      "ref": "A25",
+      "style": "S_DEFAULT",
+      "value": "ISVS_HEALY"
+    },
+    {
+      "ref": "B25",
+      "style": "S_DEFAULT",
+      "value": "CGC Healy SLEP"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "E25",
+      "style": "S_NUM_INPUT",
+      "value": "11000"
+    },
+    {
+      "ref": "F25",
+      "style": "S_DEFAULT",
+      "value": "2420"
+    },
+    {
+      "ref": "G25",
+      "style": "S_DEFAULT",
+      "value": "Medium polar icebreaker SLEP (detail design + long-lead procurement)."
+    },
+    {
+      "ref": "A26",
+      "style": "S_DEFAULT",
+      "value": "OS_SURFACE_AIR_SHORE"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "Surface, Air, and Shore Operations (O&S, memo)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM_INPUT",
+      "value": "3125281"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "3172908"
+    },
+    {
+      "ref": "E26",
+      "style": "S_NUM_INPUT",
+      "value": "3425335"
+    },
+    {
+      "ref": "F26",
+      "style": "S_DEFAULT",
+      "value": "124"
+    },
+    {
+      "ref": "G26",
+      "style": "S_DEFAULT",
+      "value": "MEMO ROW - NOT added to the USCG MRO total. This is the O&S Field Operations line that contains cutter operations, crew pay, fuel, and some maintenanc"
+    },
+    {
+      "ref": "A28",
+      "style": "S_BOLD",
+      "value": "CAVEAT"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "USCG top-down anchor is LOW CONFIDENCE. FY25 floor ($120M ISVS) vastly undercounts actual cutter MRO (~$279M in FPDS bottom-up). O&S and Yard revolving authority embed additional depot work not visible in any structured exhibit."
+    },
+    {
+      "ref": "A29",
+      "style": "S_TITLE_SECTION",
+      "value": "OPN LI 1000 - Ship Maintenance, Repair and Modernization (private contracted)"
+    },
+    {
+      "ref": "A30",
+      "style": "S_DEFAULT",
+      "value": "OPN BA01/BSA10 LI 1000 Ship Maintenance, Repair and Modernization -- Exhibit P-40 Budget Line Item Justification + Exhibit P-5 Cost Analysis. Lines 21184-21317. P-1 summary cite: lines 401-402. Confidence: high. Statutory authority: PL 116-93 (Consolidated Appropriations Act, 2020)."
+    },
+    {
+      "ref": "A31",
+      "style": "S_BOLD",
+      "value": "Code"
+    },
+    {
+      "ref": "B31",
+      "style": "S_BOLD",
+      "value": "Category"
+    },
+    {
+      "ref": "C31",
+      "style": "S_BOLD",
+      "value": "FY24 $K"
+    },
+    {
+      "ref": "D31",
+      "style": "S_BOLD",
+      "value": "FY25 $K"
+    },
+    {
+      "ref": "E31",
+      "style": "S_BOLD",
+      "value": "FY26 $K"
+    },
+    {
+      "ref": "F31",
+      "style": "S_BOLD",
+      "value": "Source line"
+    },
+    {
+      "ref": "G31",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A32",
+      "style": "S_DEFAULT",
+      "value": "LI1000"
+    },
+    {
+      "ref": "B32",
+      "style": "S_DEFAULT",
+      "value": "Ship Maintenance, Repair and Modernization (private contracted)"
+    },
+    {
+      "ref": "C32",
+      "style": "S_NUM_INPUT",
+      "value": "2839179"
+    },
+    {
+      "ref": "D32",
+      "style": "S_NUM_INPUT",
+      "value": "2392190"
+    },
+    {
+      "ref": "E32",
+      "style": "S_NUM_INPUT",
+      "value": "2392620"
+    },
+    {
+      "ref": "F32",
+      "style": "S_DEFAULT",
+      "value": "21287"
+    },
+    {
+      "ref": "G32",
+      "style": "S_DEFAULT",
+      "value": "P-1 line #26; OPN BA01/BSA10. Per-hull avail detail begins source line 21330+ (deferred)."
+    },
+    {
+      "ref": "A34",
+      "style": "S_BOLD",
+      "value": "CROSS-CHECK"
+    },
+    {
+      "ref": "B34",
+      "style": "S_DEFAULT",
+      "value": "FY25 enacted $2,392.190M sourced from four independent rows in OPN_BA1_Book.txt: Gross/Weapon System Cost (line 21193), Net Procurement P-1 (line 21195), Total Obligation Authority (line 21197), and Exhibit P-5 (line 21287) -- all four show identical $2,392.190M. Cross-tied to P-1 summary table line 402."
+    },
+    {
+      "ref": "A35",
+      "style": "S_BOLD",
+      "value": "NO DOUBLE-COUNT"
+    },
+    {
+      "ref": "B35",
+      "style": "S_DEFAULT",
+      "value": "Distinct from OMN 1B4B (1804N appropriation): OPN LI 1000 is 1810N, established as a parallel funding stream for private contracted ship maintenance. Both can be summed to top-down anchor without double-counting."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "text": "MSC / SCN / USCG / OPN LI 1000 Top-Down - Non-1B4B Maintenance Anchors ($ in Thousands unless noted)"
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "text": "Military Sealift Command (MSC) M&R"
+    },
+    {
+      "ref": "A12",
+      "style": "S_TITLE_SECTION",
+      "text": "SCN CVN Refueling Overhauls (LI 2086)"
+    },
+    {
+      "ref": "A19",
+      "style": "S_TITLE_SECTION",
+      "text": "USCG Maintenance (confidence=LOW)"
+    },
+    {
+      "ref": "A29",
+      "style": "S_TITLE_SECTION",
+      "text": "OPN LI 1000 - Ship Maintenance, Repair and Modernization (private contracted)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "D6",
+      "style": "S_NUM_INPUT",
+      "value": "1239846"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "341925"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "666329"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "575746"
+    },
+    {
+      "ref": "C15",
+      "style": "S_NUM_INPUT",
+      "value": "530868"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "1480314"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "483100"
+    },
+    {
+      "ref": "C16",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D16",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E16",
+      "style": "S_NUM_INPUT",
+      "value": "1779011"
+    },
+    {
+      "ref": "D17",
+      "style": "S_NUM_INPUT_TOTAL",
+      "value": "1480314"
+    },
+    {
+      "ref": "E17",
+      "style": "S_NUM_INPUT_TOTAL",
+      "value": "2262111"
+    },
+    {
+      "ref": "C22",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "120000"
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT",
+      "value": "152000"
+    },
+    {
+      "ref": "C23",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM_INPUT",
+      "value": "43000"
+    },
+    {
+      "ref": "E23",
+      "style": "S_NUM_INPUT",
+      "value": "45000"
+    },
+    {
+      "ref": "C24",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "46200"
+    },
+    {
+      "ref": "E24",
+      "style": "S_NUM_INPUT",
+      "value": "76000"
+    },
+    {
+      "ref": "C25",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_INPUT",
+      "value": "13000"
+    },
+    {
+      "ref": "E25",
+      "style": "S_NUM_INPUT",
+      "value": "11000"
+    },
+    {
+      "ref": "C26",
+      "style": "S_NUM_INPUT",
+      "value": "3125281"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "3172908"
+    },
+    {
+      "ref": "E26",
+      "style": "S_NUM_INPUT",
+      "value": "3425335"
+    },
+    {
+      "ref": "C32",
+      "style": "S_NUM_INPUT",
+      "value": "2839179"
+    },
+    {
+      "ref": "D32",
+      "style": "S_NUM_INPUT",
+      "value": "2392190"
+    },
+    {
+      "ref": "E32",
+      "style": "S_NUM_INPUT",
+      "value": "2392620"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 1,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {
+    "MSC_MR_FY25_1B1B_TRANSFER": "'MSC SCN USCG Top-Down'!$D$6",
+    "MSC_MR_FY26_MTA": "'MSC SCN USCG Top-Down'!$E$7",
+    "MSC_MR_FY26_ROH": "'MSC SCN USCG Top-Down'!$E$8",
+    "MSC_MR_FY26_OTHER": "'MSC SCN USCG Top-Down'!$E$9",
+    "MSC_MR_FY26_TOTAL": "'MSC SCN USCG Top-Down'!$E$10",
+    "SCN_CVN74_RCOH_FY25": "'MSC SCN USCG Top-Down'!$D$15",
+    "SCN_CVN74_RCOH_FY26": "'MSC SCN USCG Top-Down'!$E$15",
+    "SCN_CVN75_RCOH_FY26": "'MSC SCN USCG Top-Down'!$E$16",
+    "SCN_CVN_RCOH_LI2086_FY25": "'MSC SCN USCG Top-Down'!$D$17",
+    "SCN_CVN_RCOH_LI2086_FY26": "'MSC SCN USCG Top-Down'!$E$17",
+    "USCG_ISVS_FY25_FLOOR": "'MSC SCN USCG Top-Down'!$D$22",
+    "USCG_OS_MEMO_FY25": "'MSC SCN USCG Top-Down'!$D$26",
+    "OPN_LI1000_FY25": "'MSC SCN USCG Top-Down'!$D$32",
+    "OPN_LI1000_FY26": "'MSC SCN USCG Top-Down'!$E$32"
+  }
+}

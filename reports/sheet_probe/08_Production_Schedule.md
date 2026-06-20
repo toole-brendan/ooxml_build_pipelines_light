@@ -1,0 +1,258 @@
+# sheet_probe: Production Schedule
+
+- source: `file`
+- tab name: `Production Schedule`
+- tab color: `FF7B1F3A`
+- gridlines shown: `0`
+- columns: 7 · rows: 43 · cells: 231 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — Production Schedule
+- `B4` S_TITLE_SECTION — §1 - Hull schedule (hull -> yard -> FY)
+- `B39` S_TITLE_SECTION — §2 - Hull count by yard
+- `B47` S_TITLE_SECTION — §3 - Model window
+
+## Native tables
+- `tbl_ddg_production` ref `B6:G36` [Ship, Shipbuilder, FY, Contract award, Start construction, Delivery] style WorkbookCore_NoFormatTable
+
+## Placeholders (7)
+- `C31` — TBD
+- `C32` — TBD
+- `C33` — TBD
+- `C34` — TBD
+- `C35` — TBD
+- `C36` — TBD
+- `B44` — TBD
+
+## Cells
+- `B2` S_TITLE_SHEET: Production Schedule
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Hull schedule (hull -> yard -> FY)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Ship
+- `C6` S_HEADER_LEFT: Shipbuilder
+- `D6` S_HEADER_LEFT: FY
+- `E6` S_HEADER_LEFT: Contract award
+- `F6` S_HEADER_LEFT: Start construction
+- `G6` S_HEADER_LEFT: Delivery
+- `B7` S_DEFAULT: DDG 127
+- `C7` S_DEFAULT: Bath Iron Works
+- `D7` S_DEFAULT: 2016
+- `E7` S_DEFAULT: Sep 2017
+- `F7` S_DEFAULT: Apr 2019
+- `G7` S_DEFAULT: Sep 2026
+- `B8` S_DEFAULT: DDG 126
+- `C8` S_DEFAULT: Bath Iron Works
+- `D8` S_DEFAULT: 2017
+- `E8` S_DEFAULT: Jun 2013
+- `F8` S_DEFAULT: Mar 2020
+- `G8` S_DEFAULT: Sep 2027
+- `B9` S_DEFAULT: DDG 129
+- `C9` S_DEFAULT: Huntington Ingalls Industries
+- `D9` S_DEFAULT: 2018
+- `E9` S_DEFAULT: Sep 2018
+- `F9` S_DEFAULT: Jan 2021
+- `G9` S_DEFAULT: Aug 2027
+- `B10` S_DEFAULT: DDG 130
+- `C10` S_DEFAULT: Bath Iron Works
+- `D10` S_DEFAULT: 2019
+- `E10` S_DEFAULT: Sep 2018
+- `F10` S_DEFAULT: May 2021
+- `G10` S_DEFAULT: Nov 2028
+- `B11` S_DEFAULT: DDG 131
+- `C11` S_DEFAULT: Huntington Ingalls Industries
+- `D11` S_DEFAULT: 2019
+- `E11` S_DEFAULT: Sep 2018
+- `F11` S_DEFAULT: Nov 2021
+- `G11` S_DEFAULT: Nov 2028
+- `B12` S_DEFAULT: DDG 132
+- `C12` S_DEFAULT: Bath Iron Works
+- `D12` S_DEFAULT: 2019
+- `E12` S_DEFAULT: Dec 2018
+- `F12` S_DEFAULT: Feb 2022
+- `G12` S_DEFAULT: Sep 2029
+- `B13` S_DEFAULT: DDG 133
+- `C13` S_DEFAULT: Huntington Ingalls Industries
+- `D13` S_DEFAULT: 2020
+- `E13` S_DEFAULT: Sep 2018
+- `F13` S_DEFAULT: Dec 2022
+- `G13` S_DEFAULT: Feb 2030
+- `B14` S_DEFAULT: DDG 134
+- `C14` S_DEFAULT: Bath Iron Works
+- `D14` S_DEFAULT: 2020
+- `E14` S_DEFAULT: Sep 2018
+- `F14` S_DEFAULT: Nov 2023
+- `G14` S_DEFAULT: Oct 2030
+- `B15` S_DEFAULT: DDG 135
+- `C15` S_DEFAULT: Huntington Ingalls Industries
+- `D15` S_DEFAULT: 2020
+- `E15` S_DEFAULT: Jun 2020
+- `F15` S_DEFAULT: Nov 2023
+- `G15` S_DEFAULT: Feb 2031
+- `B16` S_DEFAULT: DDG 136
+- `C16` S_DEFAULT: Bath Iron Works
+- `D16` S_DEFAULT: 2021
+- `E16` S_DEFAULT: Sep 2018
+- `F16` S_DEFAULT: Apr 2024
+- `G16` S_DEFAULT: Jun 2031
+- `B17` S_DEFAULT: DDG 137
+- `C17` S_DEFAULT: Huntington Ingalls Industries
+- `D17` S_DEFAULT: 2021
+- `E17` S_DEFAULT: Sep 2018
+- `F17` S_DEFAULT: Mar 2026
+- `G17` S_DEFAULT: Feb 2032
+- `B18` S_DEFAULT: DDG 138
+- `C18` S_DEFAULT: Bath Iron Works
+- `D18` S_DEFAULT: 2022
+- `E18` S_DEFAULT: Sep 2018
+- `F18` S_DEFAULT: Mar 2025
+- `G18` S_DEFAULT: Oct 2032
+- `B19` S_DEFAULT: DDG 139
+- `C19` S_DEFAULT: Huntington Ingalls Industries
+- `D19` S_DEFAULT: 2022
+- `E19` S_DEFAULT: Sep 2018
+- `F19` S_DEFAULT: Sep 2027
+- `G19` S_DEFAULT: Aug 2033
+- `B20` S_DEFAULT: DDG 140
+- `C20` S_DEFAULT: Bath Iron Works
+- `D20` S_DEFAULT: 2023
+- `E20` S_DEFAULT: Aug 2023
+- `F20` S_DEFAULT: Jul 2026
+- `G20` S_DEFAULT: Dec 2033
+- `B21` S_DEFAULT: DDG 141
+- `C21` S_DEFAULT: Huntington Ingalls Industries
+- `D21` S_DEFAULT: 2023
+- `E21` S_DEFAULT: Aug 2023
+- `F21` S_DEFAULT: Sep 2028
+- `G21` S_DEFAULT: Aug 2034
+- `B22` S_DEFAULT: DDG 142
+- `C22` S_DEFAULT: Huntington Ingalls Industries
+- `D22` S_DEFAULT: 2023
+- `E22` S_DEFAULT: Aug 2023
+- `F22` S_DEFAULT: Sep 2029
+- `G22` S_DEFAULT: Aug 2035
+- `B23` S_DEFAULT: DDG 143
+- `C23` S_DEFAULT: Huntington Ingalls Industries
+- `D23` S_DEFAULT: 2024
+- `E23` S_DEFAULT: Aug 2023
+- `F23` S_DEFAULT: Sep 2030
+- `G23` S_DEFAULT: Aug 2036
+- `B24` S_DEFAULT: DDG 144
+- `C24` S_DEFAULT: Bath Iron Works
+- `D24` S_DEFAULT: 2024
+- `E24` S_DEFAULT: Aug 2023
+- `F24` S_DEFAULT: Aug 2027
+- `G24` S_DEFAULT: Jan 2035
+- `B25` S_DEFAULT: DDG 145
+- `C25` S_DEFAULT: Huntington Ingalls Industries
+- `D25` S_DEFAULT: 2025
+- `E25` S_DEFAULT: Aug 2023
+- `F25` S_DEFAULT: Sep 2031
+- `G25` S_DEFAULT: Aug 2037
+- `B26` S_DEFAULT: DDG 146
+- `C26` S_DEFAULT: Huntington Ingalls Industries
+- `D26` S_DEFAULT: 2025
+- `E26` S_DEFAULT: Aug 2023
+- `F26` S_DEFAULT: Sep 2032
+- `G26` S_DEFAULT: Aug 2038
+- `B27` S_DEFAULT: DDG 148
+- `C27` S_DEFAULT: Bath Iron Works
+- `D27` S_DEFAULT: 2025
+- `E27` S_DEFAULT: Jul 2025
+- `F27` S_DEFAULT: Aug 2028
+- `G27` S_DEFAULT: Nov 2035
+- `B28` S_DEFAULT: DDG 147
+- `C28` S_DEFAULT: Huntington Ingalls Industries
+- `D28` S_DEFAULT: 2026
+- `E28` S_DEFAULT: Aug 2023
+- `F28` S_DEFAULT: Sep 2033
+- `G28` S_DEFAULT: Aug 2039
+- `B29` S_DEFAULT: DDG 149
+- `C29` S_DEFAULT: Bath Iron Works
+- `D29` S_DEFAULT: 2026
+- `E29` S_DEFAULT: Aug 2023
+- `F29` S_DEFAULT: Aug 2029
+- `G29` S_DEFAULT: Sep 2036
+- `B30` S_DEFAULT: DDG 150
+- `C30` S_DEFAULT: Huntington Ingalls Industries
+- `D30` S_DEFAULT: 2027
+- `E30` S_DEFAULT: Aug 2023
+- `F30` S_DEFAULT: Sep 2034
+- `G30` S_DEFAULT: Aug 2040
+- `B31` S_DEFAULT: DDG 151
+- `C31` S_DEFAULT: TBD
+- `D31` S_DEFAULT: 2028
+- `E31` S_DEFAULT: Sep 2028
+- `F31` S_DEFAULT: Aug 2036
+- `G31` S_DEFAULT: Aug 2041
+- `B32` S_DEFAULT: DDG 152
+- `C32` S_DEFAULT: TBD
+- `D32` S_DEFAULT: 2029
+- `E32` S_DEFAULT: Sep 2028
+- `F32` S_DEFAULT: Aug 2037
+- `G32` S_DEFAULT: Aug 2042
+- `B33` S_DEFAULT: DDG 153
+- `C33` S_DEFAULT: TBD
+- `D33` S_DEFAULT: 2030
+- `E33` S_DEFAULT: Sep 2028
+- `F33` S_DEFAULT: Aug 2038
+- `G33` S_DEFAULT: Aug 2043
+- `B34` S_DEFAULT: DDG 154
+- `C34` S_DEFAULT: TBD
+- `D34` S_DEFAULT: 2030
+- `E34` S_DEFAULT: Sep 2028
+- `F34` S_DEFAULT: Aug 2038
+- `G34` S_DEFAULT: Aug 2043
+- `B35` S_DEFAULT: DDG 155
+- `C35` S_DEFAULT: TBD
+- `D35` S_DEFAULT: 2031
+- `E35` S_DEFAULT: Sep 2028
+- `F35` S_DEFAULT: Aug 2039
+- `G35` S_DEFAULT: Aug 2044
+- `B36` S_DEFAULT: DDG 156
+- `C36` S_DEFAULT: TBD
+- `D36` S_DEFAULT: 2031
+- `E36` S_DEFAULT: Sep 2028
+- `F36` S_DEFAULT: Aug 2039
+- `G36` S_DEFAULT: Aug 2044
+- `A39` S_DEFAULT: x
+- `B39` S_TITLE_SECTION: §2 - Hull count by yard
+- `C39` S_TITLE_SECTION: 
+- `D39` S_TITLE_SECTION: 
+- `E39` S_TITLE_SECTION: 
+- `F39` S_TITLE_SECTION: 
+- `G39` S_TITLE_SECTION: 
+- `B41` S_HEADER_LEFT: Yard
+- `C41` S_HEADER_LEFT: Hulls
+- `D41` S_HEADER_LEFT: 
+- `E41` S_HEADER_LEFT: 
+- `F41` S_HEADER_LEFT: 
+- `G41` S_HEADER_LEFT: 
+- `B42` S_DEFAULT: Huntington Ingalls Industries
+- `C42` S_DEFAULT: 13
+- `B43` S_DEFAULT: Bath Iron Works
+- `C43` S_DEFAULT: 11
+- `B44` S_DEFAULT: TBD
+- `C44` S_DEFAULT: 6
+- `A47` S_DEFAULT: x
+- `B47` S_TITLE_SECTION: §3 - Model window
+- `C47` S_TITLE_SECTION: 
+- `D47` S_TITLE_SECTION: 
+- `E47` S_TITLE_SECTION: 
+- `F47` S_TITLE_SECTION: 
+- `G47` S_TITLE_SECTION: 
+- `B49` S_HEADER_LEFT: Measure
+- `C49` S_HEADER_CENTER: Value
+- `B50` S_DEFAULT: Hulls in schedule (all FY)
+- `C50` S_DEFAULT: 30
+- `B51` S_BOLD: In-window hulls (award FY22-27)
+- `C51` S_DEFAULT: 13

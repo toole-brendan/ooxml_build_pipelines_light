@@ -1,0 +1,2253 @@
+================================================================================
+DIRECTORY RESTRUCTURE DUE DILIGENCE REPORT
+================================================================================
+Generated: 2026-06-03
+Purpose: Pre-cleanup inspection and safe restructure planning
+Status: READ-ONLY ANALYSIS - NO CHANGES IMPLEMENTED
+
+CRITICAL: This report documents findings only. No files were moved, deleted,
+          or modified during this analysis.
+
+================================================================================
+
+
+SECTION 1 — WORKSPACE BASELINE
+================================================================================
+
+Absolute Workspace Path:
+------------------------
+/c/Users/BrendanToole/OneDrive - Saronic/Documents/ooxml_build_pipelines
+
+Top-Level Tree (depth 3):
+-------------------------
+.
+├── .DS_Store                      [8 KB, macOS metadata artifact]
+├── .claude/                       [8 KB total]
+├── ddg/                           [433 MB, 3,015 files]
+│   ├── ddg_slides/                [21 .txt spec files]
+│   ├── deck/
+│   │   ├── deck_ddg/              [ACTIVE PIPELINE]
+│   │   └── _archive_old_deck_20260602/  [11 MB archive]
+│   ├── research/                  [412 MB, 2,626 files - MASSIVE]
+│   │   ├── bae_earnings_transcripts/
+│   │   ├── budget_books/
+│   │   ├── edgar_research/
+│   │   ├── extracted/
+│   │   ├── fpds_raw/
+│   │   ├── fpds_raw_v2/
+│   │   ├── gd_earnings_transcripts/
+│   │   ├── hii_earnings_transcripts/
+│   │   ├── image_assets/
+│   │   ├── lhx_earnings_transcripts/
+│   │   ├── lmt_earnings_transcripts/
+│   │   ├── logs/
+│   │   ├── news_research/
+│   │   ├── noc_earnings_transcripts/
+│   │   ├── pull_logs/
+│   │   ├── reference_prior_analysis/
+│   │   ├── research_primary_sources/
+│   │   ├── rtx_earnings_transcripts/
+│   │   ├── sam_entity_lookups/
+│   │   ├── sam_subawards/
+│   │   ├── scripts/                [27 Python scripts]
+│   │   ├── usaspending_subawards/
+│   │   └── wiki_ddg/
+│   └── workbook/
+│       ├── workbook_ddg/           [ACTIVE PIPELINE]
+│       └── extracted/
+├── deck_core/                     [6.1 MB, 110 files - CORE LIBRARY]
+│   ├── .claude/
+│   ├── assets/
+│   │   ├── embeddings/
+│   │   └── media/
+│   ├── template/
+│   │   ├── docMetadata/
+│   │   ├── docProps/
+│   │   └── ppt/
+│   ├── tools/
+│   ├── _docs/
+│   │   ├── intellisense/
+│   │   ├── open-xml-docs/
+│   │   └── xref/
+│   ├── _schema/                    [26 XSD schema files]
+│   └── __pycache__/
+├── directory_tree.txt             [37 KB, generated today]
+├── logs/                          [196 KB, 17 markdown files]
+├── prompt_enhance_specs.txt       [7 KB]
+├── prompt_write_ooxml.txt         [8 KB]
+├── submarine/                     [323 MB, 2,467 files]
+│   ├── .claude/
+│   ├── archived_logs/             [7 markdown files from May 28]
+│   ├── deck/
+│   │   ├── deck_sub/              [ACTIVE PIPELINE]
+│   │   ├── draft_slides/          [17 Python modules - STAGING]
+│   │   ├── submarine_slides/      [17 .txt spec files]
+│   │   └── _archive_old_deck_20260602/  [3.5 MB archive]
+│   ├── research/                  [310 MB, 2,086 files - MASSIVE]
+│   │   ├── budget_books/
+│   │   ├── deck/                  [UNEXPECTED - old deck structure inside research]
+│   │   │   ├── out/
+│   │   │   └── slides/
+│   │   ├── edgar_research/
+│   │   ├── fpds_raw/
+│   │   ├── hii_earnings_transcripts/
+│   │   ├── image_assets/
+│   │   ├── logs/
+│   │   ├── reference_prior_analysis/
+│   │   ├── research_primary_sources/
+│   │   ├── sam_entity_lookups/
+│   │   ├── sam_subawards/
+│   │   ├── sam_subawards_fullhistory/
+│   │   ├── scripts/                [57 Python scripts]
+│   │   ├── usaspending_subawards/
+│   │   └── wiki_submarines/
+│   └── workbook/
+│       ├── workbook_sub/           [ACTIVE PIPELINE]
+│       ├── extracted/
+│       └── _archive_old_pipeline_20260601/  [240 KB archive]
+├── transcript.txt                 [28 KB, Jun 1]
+├── transcript2.txt                [12 KB, Jun 1]
+└── workbook_core/                 [421 KB, 28 files - CORE LIBRARY]
+    ├── tools/
+    └── __pycache__/
+
+Size and File Count Summary:
+----------------------------
+ddg/                      433 MB    3,015 files
+  ├── research/           412 MB    2,626 files  (95% of ddg size)
+  ├── deck/               ~20 MB      265 files
+  │   └── _archive/        11 MB      225 files
+  └── workbook/            ~1 MB       98 files
+
+submarine/                323 MB    2,467 files
+  ├── research/           310 MB    2,086 files  (96% of submarine size)
+  ├── deck/               ~12 MB      225 files
+  │   └── _archive/       3.5 MB      111 files
+  └── workbook/           ~1 MB       140 files
+
+deck_core/                6.1 MB      110 files
+workbook_core/            421 KB       28 files
+logs/                     196 KB       17 files
+.claude/                    8 KB        1 file
+
+Total workspace size:     ~762 MB
+Total file count:        ~5,600 files
+
+Hidden Files and Artifacts:
+---------------------------
+- .DS_Store (root)                 [macOS filesystem metadata - safe to delete]
+- .claude/ (root, deck_core, submarine)  [Claude Code config - KEEP]
+- __pycache__/ (15 directories)    [Python bytecode cache - regenerates automatically]
+
+Symlinks:
+---------
+None found at depth 2
+
+Virtual Environments:
+--------------------
+None found (no venv/, .venv/, env/ directories)
+
+Local Config Files:
+------------------
+.claude/settings.local.json        [Claude Code local settings - KEEP]
+
+Free Disk Space:
+---------------
+Available: 282 GB (41% used on drive)
+Status: Ample space available, size reduction not urgent
+
+
+================================================================================
+SECTION 2 — ACTIVE BUILD ENTRY POINTS
+================================================================================
+
+Build Entry Point 1: ddg/deck/build_deck.py
+--------------------------------------------
+File Size: 635 bytes
+Last Modified: Jun 2, 2026 15:53
+
+Exact Imports:
+  import sys
+  from deck_ddg.lib import build
+
+Working Directory Assumptions:
+  - Must be run from ddg/deck/ directory
+  - Relies on Python being able to resolve "deck_ddg" package
+  - deck_ddg.__init__.py sets up sys.path to include parent directories
+
+Output Filename:
+  20260602_Distributed Shipbuilding DDG_vS.pptx
+
+Output Location:
+  ddg/deck/20260602_Distributed Shipbuilding DDG_vS.pptx
+
+Existing Output:
+  YES - 109 KB file exists, dated Jun 3, 2026 13:55
+  Running build WILL OVERWRITE existing output
+
+Hardcoded Paths (from deck_ddg/lib.py inspection):
+  PROJECT_ROOT = Path(__file__).resolve().parent.parent  # ddg/deck/
+  CORE_DIR = Path(__file__).resolve().parents[3]         # workspace root
+  OUT = PROJECT_ROOT / "20260602_Distributed Shipbuilding DDG_vS.pptx"
+  TEMPLATE = CORE_DIR / "deck_core" / "template"
+  ASSETS = CORE_DIR / "deck_core" / "assets"
+  IMAGES = PROJECT_ROOT / "images"  (optional, created on demand)
+
+Path Sensitivity:
+  MEDIUM - Uses relative path traversal (.parents[3])
+  Expects deck_ddg/ to be at: {workspace}/ddg/deck/deck_ddg/
+  Expects deck_core/ to be at: {workspace}/deck_core/
+
+sys.path Manipulation:
+  YES - deck_ddg/__init__.py modifies sys.path
+  Adds project root and core directories to sys.path for imports
+
+Safe to Validate in Copied Workspace:
+  YES - but paths must maintain same relative structure
+  Copy entire workspace root to preserve relative paths
+
+Dependencies:
+  - deck_core.lib.build_pptx
+  - deck_ddg.slides.SLIDE_RENDERS (16 slide modules)
+  - deck_core template and assets
+
+
+Build Entry Point 2: ddg/workbook/build_workbook.py
+---------------------------------------------------
+File Size: 461 bytes
+Last Modified: Jun 1, 2026 11:58
+
+Exact Imports:
+  import sys
+  from workbook_ddg.lib import build
+
+Working Directory Assumptions:
+  - Must be run from ddg/workbook/ directory
+  - Relies on Python being able to resolve "workbook_ddg" package
+  - workbook_ddg.__init__.py sets up sys.path to include parent directories
+
+Output Filename:
+  20260601_Distributed Shipbuilding DDG_v1.0.xlsx
+
+Output Location:
+  ddg/workbook/20260601_Distributed Shipbuilding DDG_v1.0.xlsx
+
+Existing Output:
+  YES - 282 KB file exists, dated Jun 2, 2026 17:49
+  Running build WILL OVERWRITE existing output
+
+Hardcoded Paths (from workbook_ddg/lib.py inspection):
+  PROJECT_ROOT = Path(__file__).resolve().parent.parent  # ddg/workbook/
+  OUT = PROJECT_ROOT / "20260601_Distributed Shipbuilding DDG_v1.0.xlsx"
+  EXTRACTED = PROJECT_ROOT / "extracted"
+
+Path Sensitivity:
+  LOW - Only uses parent.parent traversal
+  Expects workbook_ddg/ at: {workspace}/ddg/workbook/workbook_ddg/
+  Expects workbook_core/ to be importable (via sys.path)
+
+sys.path Manipulation:
+  YES - workbook_ddg/__init__.py modifies sys.path
+
+Safe to Validate in Copied Workspace:
+  YES - simpler path dependencies than deck pipeline
+
+Dependencies:
+  - workbook_core.lib.package_workbook
+  - workbook_ddg.sheets.SHEETS (26 sheet modules)
+  - extracted/ folder for CSV data (if used)
+
+
+Build Entry Point 3: submarine/deck/build_deck.py
+-------------------------------------------------
+File Size: 640 bytes
+Last Modified: Jun 2, 2026 15:52
+
+Exact Imports:
+  import sys
+  from deck_sub.lib import build
+
+Working Directory Assumptions:
+  - Must be run from submarine/deck/ directory
+  - Relies on Python being able to resolve "deck_sub" package
+  - deck_sub.__init__.py sets up sys.path to include parent directories
+
+Output Filename:
+  20260602_Distributed Shipbuilding Submarines_vS.pptx
+
+Output Location:
+  submarine/deck/20260602_Distributed Shipbuilding Submarines_vS.pptx
+
+Existing Output:
+  YES - 117 KB file exists, dated Jun 3, 2026 13:51
+  Running build WILL OVERWRITE existing output
+
+Hardcoded Paths:
+  Same pattern as ddg/deck/build_deck.py
+  PROJECT_ROOT = Path(__file__).resolve().parent.parent  # submarine/deck/
+  CORE_DIR = Path(__file__).resolve().parents[3]         # workspace root
+  OUT = PROJECT_ROOT / "20260602_Distributed Shipbuilding Submarines_vS.pptx"
+  TEMPLATE = CORE_DIR / "deck_core" / "template"
+  ASSETS = CORE_DIR / "deck_core" / "assets"
+
+Path Sensitivity:
+  MEDIUM - Uses relative path traversal (.parents[3])
+
+sys.path Manipulation:
+  YES - deck_sub.__init__.py modifies sys.path
+
+Safe to Validate in Copied Workspace:
+  YES - but paths must maintain same relative structure
+
+Dependencies:
+  - deck_core.lib.build_pptx
+  - deck_sub.slides.SLIDE_RENDERS (26 slide modules)
+  - deck_core template and assets
+
+
+Build Entry Point 4: submarine/workbook/build_workbook.py
+---------------------------------------------------------
+File Size: 463 bytes
+Last Modified: Jun 1, 2026 11:45
+
+Exact Imports:
+  import sys
+  from workbook_sub.lib import build
+
+Working Directory Assumptions:
+  - Must be run from submarine/workbook/ directory
+
+Output Filename:
+  20260601_Distributed Shipbuilding Submarines_v1.0.xlsx
+
+Output Location:
+  submarine/workbook/20260601_Distributed Shipbuilding Submarines_v1.0.xlsx
+
+Existing Output:
+  YES - 193 KB file exists, dated Jun 3, 2026 10:36
+  Running build WILL OVERWRITE existing output
+
+Hardcoded Paths:
+  Same pattern as ddg/workbook/build_workbook.py
+  PROJECT_ROOT = Path(__file__).resolve().parent.parent
+  OUT = PROJECT_ROOT / "20260601_Distributed Shipbuilding Submarines_v1.0.xlsx"
+  EXTRACTED = PROJECT_ROOT / "extracted"
+
+Path Sensitivity:
+  LOW - Only uses parent.parent traversal
+
+sys.path Manipulation:
+  YES - workbook_sub.__init__.py modifies sys.path
+
+Safe to Validate in Copied Workspace:
+  YES
+
+Dependencies:
+  - workbook_core.lib.package_workbook
+  - workbook_sub.sheets.SHEETS (23 sheet modules)
+
+
+Validation Safety Summary:
+-------------------------
+ALL FOUR BUILD SCRIPTS can be safely validated in a copied workspace IF:
+1. Entire workspace root is copied (preserves relative paths)
+2. Working directory is set to appropriate subdirectory before running
+3. User accepts that existing outputs WILL BE OVERWRITTEN
+
+Build Validation Command Template:
+  cd {workspace_copy}/ddg/deck && python build_deck.py
+  cd {workspace_copy}/ddg/workbook && python build_workbook.py
+  cd {workspace_copy}/submarine/deck && python build_deck.py
+  cd {workspace_copy}/submarine/workbook && python build_workbook.py
+
+
+================================================================================
+SECTION 3 — PYTHON IMPORT/REACHABILITY MAP
+================================================================================
+
+Core Library Import Analysis:
+-----------------------------
+
+deck_core imports:
+  Total "from deck_core" imports found: 167 occurrences
+
+  Importing modules:
+    - ddg/deck/deck_ddg/lib.py
+    - ddg/deck/deck_ddg/slides/*.py (16 slide modules)
+    - submarine/deck/deck_sub/lib.py
+    - submarine/deck/deck_sub/slides/*.py (26 slide modules)
+    - submarine/deck/draft_slides/*.py (17 draft slide modules)
+    - submarine/deck/draft_slides/__init__.py
+
+  Common import pattern:
+    from deck_core.primitives import (slide, paragraph, run, text_box, ...)
+    from deck_core.style import (BODY_X, BODY_Y, BODY_CX, FONT, PALETTE, ...)
+    from deck_core.charts import (column_chart, bar_chart, ...)
+    from deck_core.lib import build_pptx
+
+workbook_core imports:
+  Total "from workbook_core" imports found: 230 occurrences
+
+  Importing modules:
+    - ddg/workbook/workbook_ddg/lib.py
+    - ddg/workbook/workbook_ddg/sheets/*.py (26 sheet modules)
+    - submarine/workbook/workbook_sub/lib.py
+    - submarine/workbook/workbook_sub/sheets/*.py (23 sheet modules)
+    - workbook_core/tools/sheet_probe.py
+
+  Common import pattern:
+    from workbook_core.primitives import (r, c, sheet, row_props, ...)
+    from workbook_core.styles import (FONT, FILLS, BORDERS, NUM_FMT, ...)
+    from workbook_core.lib import package_workbook
+    from workbook_core.tables import table_region
+    from workbook_core.groups import group_rows
+
+Project-Specific Package Imports:
+---------------------------------
+
+deck_ddg imports:
+  Imported by: ddg/deck/build_deck.py
+  Pattern: "from deck_ddg.lib import build"
+  Reachable modules:
+    - ddg/deck/deck_ddg/__init__.py (sys.path setup)
+    - ddg/deck/deck_ddg/lib.py (build orchestration)
+    - ddg/deck/deck_ddg/slides/__init__.py (SLIDE_RENDERS registry)
+    - ddg/deck/deck_ddg/slides/*.py (16 slide modules)
+
+deck_sub imports:
+  Imported by: submarine/deck/build_deck.py
+  Pattern: "from deck_sub.lib import build"
+  Reachable modules:
+    - submarine/deck/deck_sub/__init__.py (sys.path setup)
+    - submarine/deck/deck_sub/lib.py (build orchestration)
+    - submarine/deck/deck_sub/slides/__init__.py (SLIDE_RENDERS registry)
+    - submarine/deck/deck_sub/slides/*.py (26 slide modules)
+
+workbook_ddg imports:
+  Imported by: ddg/workbook/build_workbook.py
+  Pattern: "from workbook_ddg.lib import build"
+  Reachable modules:
+    - ddg/workbook/workbook_ddg/__init__.py (sys.path setup)
+    - ddg/workbook/workbook_ddg/lib.py (build orchestration)
+    - ddg/workbook/workbook_ddg/sheets/__init__.py (SHEETS registry)
+    - ddg/workbook/workbook_ddg/sheets/*.py (26 sheet modules)
+
+workbook_sub imports:
+  Imported by: submarine/workbook/build_workbook.py
+  Pattern: "from workbook_sub.lib import build"
+  Reachable modules:
+    - submarine/workbook/workbook_sub/__init__.py (sys.path setup)
+    - submarine/workbook/workbook_sub/lib.py (build orchestration)
+    - submarine/workbook/workbook_sub/sheets/__init__.py (SHEETS registry)
+    - submarine/workbook/workbook_sub/sheets/*.py (23 sheet modules)
+
+draft_slides imports:
+  Imported by: submarine/deck/build_draft.py
+  Pattern: "import draft_slides" (then dynamic discovery)
+  Reachable modules:
+    - submarine/deck/draft_slides/__init__.py (sys.path setup)
+    - submarine/deck/draft_slides/_helpers.py
+    - submarine/deck/draft_slides/*.py (17 draft slide modules)
+
+STALE IMPORT DETECTED:
+----------------------
+File: submarine/research/build_workbook.py
+Import: "from workbook.lib import build"
+Status: STALE - imports "workbook.lib", not "workbook_sub.lib"
+Evidence: This is NOT the active build script
+Risk: HIGH CONFUSION - could be executed by mistake
+Recommendation: DELETE or move to _quarantine/
+
+Reachability Analysis:
+---------------------
+
+REACHABLE from main build scripts:
+  ✓ deck_core/*.py (all Python modules)
+  ✓ workbook_core/*.py (all Python modules)
+  ✓ ddg/deck/deck_ddg/lib.py
+  ✓ ddg/deck/deck_ddg/slides/*.py (16 modules)
+  ✓ ddg/workbook/workbook_ddg/lib.py
+  ✓ ddg/workbook/workbook_ddg/sheets/*.py (26 modules)
+  ✓ submarine/deck/deck_sub/lib.py
+  ✓ submarine/deck/deck_sub/slides/*.py (26 modules)
+  ✓ submarine/workbook/workbook_sub/lib.py
+  ✓ submarine/workbook/workbook_sub/sheets/*.py (23 modules)
+
+REACHABLE from build_draft.py:
+  ✓ submarine/deck/draft_slides/__init__.py
+  ✓ submarine/deck/draft_slides/_helpers.py
+  ✓ submarine/deck/draft_slides/*.py (17 modules)
+  Note: build_draft.py is a SECONDARY build script for preview/staging
+
+POTENTIALLY UNREACHABLE:
+  ? ddg/ddg_slides/*.txt (21 text spec files - NOT Python, not imported)
+  ? submarine/deck/submarine_slides/*.txt (17 text spec files - NOT Python)
+  ? ddg/research/scripts/*.py (27 scripts - standalone, not imported)
+  ? submarine/research/scripts/*.py (57 scripts - standalone, not imported)
+  ? submarine/research/deck/ (old deck structure - NOT imported)
+  ✗ submarine/research/build_workbook.py (STALE - wrong import)
+
+Duplicate/Versioned Module Names:
+---------------------------------
+submarine/deck/deck_sub/slides/executive_summary.py
+submarine/deck/deck_sub/slides/executive_summary_v2.py
+  → Both exist, v2 may be newer iteration or alternative version
+  → Check slides/__init__.py to see which is registered
+
+submarine/deck/draft_slides/executive_summary.py
+submarine/deck/draft_slides/executive_summary_v2.py
+  → Draft versions, may be experiments
+
+Files with "old", "draft", "v2" naming:
+  - executive_summary_v2.py (deck_sub and draft_slides)
+  - No other explicit version markers found in active modules
+
+
+================================================================================
+SECTION 4 — PATH REFERENCE SEARCH
+================================================================================
+
+This section searches all text-like files for references to key paths and
+modules to understand dependencies beyond Python imports.
+
+Search Results:
+--------------
+
+"deck_core" references:
+  deck_core/ooxml_cheat_sheet_pptx.md: Multiple self-references (expected)
+  deck_core/slide_guide.md: Documentation references (expected)
+  deck_core/slide_snippets.md: Documentation references (expected)
+  deck_core/readme.txt: Documentation self-reference (expected)
+  ddg/deck/deck_ddg/lib.py: "from deck_core.lib import build_pptx"
+  submarine/deck/deck_sub/lib.py: "from deck_core.lib import build_pptx"
+  submarine/deck/draft_slides/__init__.py: sys.path setup
+  All slide modules: "from deck_core.primitives import ..."
+
+  Archives contain old references:
+    ddg/deck/_archive_old_deck_20260602/: Multiple old-style references
+
+"workbook_core" references:
+  workbook_core/ooxml_cheat_sheet_xlsx.md: Self-references (expected)
+  ddg/workbook/workbook_ddg/lib.py: "from workbook_core.lib import ..."
+  submarine/workbook/workbook_sub/lib.py: "from workbook_core.lib import ..."
+  All sheet modules: "from workbook_core.primitives import ..."
+
+"ddg_slides" references:
+  NONE FOUND in Python code
+  Only in directory_tree.txt (this due diligence analysis)
+  Conclusion: ddg_slides/ folder NOT referenced by active code
+
+"submarine_slides" references:
+  NONE FOUND in Python code
+  logs/2026-06-02_sub_deck_spec_and_pipeline_buildout.md: Historical mention
+  Conclusion: submarine_slides/ folder NOT referenced by active code
+
+"draft_slides" references:
+  submarine/deck/build_draft.py: "import draft_slides"
+  submarine/deck/deck_sub/slides/__init__.py: Comment mentioning staging
+  logs/2026-06-02_sub_deck_spec_and_pipeline_buildout.md: Context
+  Conclusion: draft_slides/ IS actively used by build_draft.py
+
+"build_draft.py" references:
+  submarine/deck/build_draft.py: The file itself
+  logs/2026-06-02_sub_deck_spec_and_pipeline_buildout.md: Build log
+  submarine/deck/deck_sub/slides/__init__.py: Comment about preview
+  Conclusion: build_draft.py is a SECONDARY build script, actively used
+
+"build_workbook.py" references:
+  ddg/workbook/build_workbook.py: Active build script
+  submarine/workbook/build_workbook.py: Active build script
+  submarine/research/build_workbook.py: STALE version with wrong import
+  Conclusion: Two active versions, one stale version
+
+"_archive" references:
+  Only found in archive directories themselves
+  ddg/deck/_archive_old_deck_20260602/: Contains old code with old patterns
+  submarine/deck/_archive_old_deck_20260602/: Contains old code
+  submarine/workbook/_archive_old_pipeline_20260601/: Contains old code
+
+  Archive code references:
+    Old "extracted/" patterns in archived slide modules
+    Old "ddg_research_deck" package names
+
+  Conclusion: Archives NOT referenced by active code
+
+"extracted/" references:
+  ddg/workbook/workbook_ddg/lib.py: "EXTRACTED = PROJECT_ROOT / 'extracted'"
+  submarine/workbook/workbook_sub/lib.py: "EXTRACTED = PROJECT_ROOT / 'extracted'"
+  ddg/research/scripts/*.py: Output targets like "extracted/nc_annual_by_piid.csv"
+
+  Archived code: Multiple references to extracted data (old pattern)
+
+  Conclusion:
+    - workbook pipelines reference extracted/ for CSV data loading
+    - research scripts generate data INTO extracted/
+    - Pattern is ACTIVE and functional
+
+"research/" references:
+  All documentation and build scripts reference research as data source
+  No direct Python imports of research code
+  research/scripts/ are standalone data processing scripts
+  Conclusion: research/ folders are DATA SOURCES, not code dependencies
+
+"workbook.lib" (stale pattern):
+  submarine/research/build_workbook.py: "from workbook.lib import build"
+  This is the ONLY reference to the old "workbook.lib" pattern
+  Conclusion: STALE FILE confirmed
+
+
+================================================================================
+SECTION 5 — ACTIVE / SUPPORT / SPEC / DRAFT / ARCHIVE CLASSIFICATION
+================================================================================
+
+Root Level:
+----------
+.DS_Store                           → STALE_CANDIDATE (macOS artifact)
+.claude/                            → SUPPORT (config)
+directory_tree.txt                  → DOCUMENTATION (generated today)
+logs/                               → LOG_TRANSCRIPT
+prompt_enhance_specs.txt            → DOCUMENTATION (AI prompt templates)
+prompt_write_ooxml.txt              → DOCUMENTATION (AI prompt templates)
+transcript.txt                      → LOG_TRANSCRIPT
+transcript2.txt                     → LOG_TRANSCRIPT
+deck_core/                          → ACTIVE_CODE (core library)
+workbook_core/                      → ACTIVE_CODE (core library)
+ddg/                                → ACTIVE_CODE (project root)
+submarine/                          → ACTIVE_CODE (project root)
+
+DDG Project Structure:
+---------------------
+ddg/                                → ACTIVE_CODE
+  ├── ddg_slides/                   → SPEC (NOT imported, text specs only)
+  ├── deck/                         → ACTIVE_CODE
+  │   ├── build_deck.py             → ACTIVE_BUILD_ENTRY
+  │   ├── 20260602_...DDG_vS.pptx   → GENERATED_OUTPUT
+  │   ├── deck_ddg/                 → ACTIVE_CODE (pipeline package)
+  │   │   ├── __init__.py           → ACTIVE_CODE
+  │   │   ├── lib.py                → ACTIVE_CODE
+  │   │   └── slides/               → ACTIVE_CODE (16 slide modules)
+  │   └── _archive_old_deck_20260602/  → ARCHIVE (11 MB, Jun 2)
+  ├── workbook/                     → ACTIVE_CODE
+  │   ├── build_workbook.py         → ACTIVE_BUILD_ENTRY
+  │   ├── 20260601_...DDG_v1.0.xlsx → GENERATED_OUTPUT
+  │   ├── validate_workbook.py      → SUPPORT (validation tool)
+  │   ├── ooxml_cheat_sheet_excel.md → DOCUMENTATION (duplicate)
+  │   ├── workbook_ddg/             → ACTIVE_CODE (pipeline package)
+  │   │   ├── __init__.py           → ACTIVE_CODE
+  │   │   ├── lib.py                → ACTIVE_CODE
+  │   │   └── sheets/               → ACTIVE_CODE (26 sheet modules)
+  │   └── extracted/                → DEBUG_EXTRACTED (OOXML inspection)
+  ├── research/                     → RESEARCH_SOURCE (412 MB, 2,626 files)
+  │   ├── scripts/                  → SUPPORT (27 data processing scripts)
+  │   ├── extracted/                → RESEARCH_SOURCE (processed data)
+  │   ├── MANIFEST.md               → DOCUMENTATION
+  │   ├── METHODOLOGY.md            → DOCUMENTATION
+  │   ├── README.md                 → DOCUMENTATION
+  │   └── [all other subdirs]       → RESEARCH_SOURCE
+  ├── distributed_shipbuilding_overview_ddg.txt  → DOCUMENTATION
+  ├── project_handoff_ddg.txt       → DOCUMENTATION
+  ├── project_description_ddg.txt   → DOCUMENTATION
+  ├── refactor_deck_ddg.txt         → DOCUMENTATION
+  └── workbook_dev_transcript_*.txt → LOG_TRANSCRIPT (5 files)
+
+Submarine Project Structure:
+---------------------------
+submarine/                          → ACTIVE_CODE
+  ├── .claude/                      → SUPPORT (config)
+  ├── archived_logs/                → LOG_TRANSCRIPT (7 files, May 28)
+  ├── deck/                         → ACTIVE_CODE
+  │   ├── build_deck.py             → ACTIVE_BUILD_ENTRY
+  │   ├── build_draft.py            → ACTIVE_BUILD_ENTRY (secondary)
+  │   ├── 20260602_...Submarines_vS.pptx  → GENERATED_OUTPUT
+  │   ├── DRAFT_preview_...pptx     → GENERATED_OUTPUT (draft)
+  │   ├── deck_spec.txt             → SPEC
+  │   ├── deck_sub/                 → ACTIVE_CODE (pipeline package)
+  │   │   ├── __init__.py           → ACTIVE_CODE
+  │   │   ├── lib.py                → ACTIVE_CODE
+  │   │   └── slides/               → ACTIVE_CODE (26 slide modules)
+  │   ├── draft_slides/             → DRAFT (17 Python modules - staging)
+  │   │   ├── __init__.py           → ACTIVE_CODE (used by build_draft)
+  │   │   ├── _helpers.py           → ACTIVE_CODE (used by build_draft)
+  │   │   └── *.py                  → DRAFT (slide experiments)
+  │   ├── submarine_slides/         → SPEC (17 .txt files, NOT imported)
+  │   └── _archive_old_deck_20260602/  → ARCHIVE (3.5 MB, Jun 2)
+  ├── workbook/                     → ACTIVE_CODE
+  │   ├── build_workbook.py         → ACTIVE_BUILD_ENTRY
+  │   ├── 20260601_...Submarines_v1.0.xlsx → GENERATED_OUTPUT
+  │   ├── ooxml_cheat_sheet_excel.md → DOCUMENTATION (duplicate)
+  │   ├── workbook_sub/             → ACTIVE_CODE (pipeline package)
+  │   │   ├── __init__.py           → ACTIVE_CODE
+  │   │   ├── lib.py                → ACTIVE_CODE
+  │   │   └── sheets/               → ACTIVE_CODE (23 sheet modules)
+  │   ├── extracted/                → DEBUG_EXTRACTED (OOXML inspection)
+  │   └── _archive_old_pipeline_20260601/ → ARCHIVE (240 KB, Jun 1)
+  ├── research/                     → RESEARCH_SOURCE (310 MB, 2,086 files)
+  │   ├── build_workbook.py         → STALE_CANDIDATE (wrong import!)
+  │   ├── deck/                     → UNKNOWN_REVIEW_REQUIRED (old structure)
+  │   ├── scripts/                  → SUPPORT (57 data processing scripts)
+  │   ├── MANIFEST.md               → DOCUMENTATION
+  │   ├── README.md                 → DOCUMENTATION
+  │   └── [all other subdirs]       → RESEARCH_SOURCE
+  ├── distributed_shipbuilding_overview_sub.txt → DOCUMENTATION
+  ├── project_handoff_sub.txt       → DOCUMENTATION
+  ├── project_description_sub.txt   → DOCUMENTATION
+  ├── methodology_submarines.txt    → DOCUMENTATION
+  ├── refactor_deck_sub.txt         → DOCUMENTATION
+  └── workbook_dev_transcript_*.txt → LOG_TRANSCRIPT (7 files)
+
+Core Libraries:
+--------------
+deck_core/                          → ACTIVE_CODE (shared library)
+  ├── __init__.py                   → ACTIVE_CODE
+  ├── lib.py                        → ACTIVE_CODE
+  ├── ooxml.py                      → ACTIVE_CODE
+  ├── primitives.py                 → ACTIVE_CODE
+  ├── style.py                      → ACTIVE_CODE
+  ├── charts.py                     → ACTIVE_CODE
+  ├── text_metrics.py               → ACTIVE_CODE
+  ├── slide_base_template.py        → ACTIVE_CODE
+  ├── readme.txt                    → DOCUMENTATION (should be at root)
+  ├── slide_guide.md                → DOCUMENTATION
+  ├── slide_snippets.md             → DOCUMENTATION
+  ├── ooxml_cheat_sheet_pptx.md     → DOCUMENTATION
+  ├── tools/                        → SUPPORT (slide_probe.py)
+  ├── _docs/                        → DOCUMENTATION (OOXML reference)
+  ├── _schema/                      → DOCUMENTATION (XSD schemas)
+  ├── template/                     → ACTIVE_CODE (OOXML template structure)
+  ├── assets/                       → ACTIVE_CODE (embeddings, media)
+  └── __pycache__/                  → GENERATED_OUTPUT (Python bytecode)
+
+workbook_core/                      → ACTIVE_CODE (shared library)
+  ├── __init__.py                   → ACTIVE_CODE
+  ├── lib.py                        → ACTIVE_CODE
+  ├── ooxml.py                      → ACTIVE_CODE
+  ├── primitives.py                 → ACTIVE_CODE
+  ├── styles.py                     → ACTIVE_CODE
+  ├── tables.py                     → ACTIVE_CODE
+  ├── groups.py                     → ACTIVE_CODE
+  ├── notes.py                      → ACTIVE_CODE
+  ├── table_style_names.py          → ACTIVE_CODE
+  ├── sheet_base_template.py        → ACTIVE_CODE
+  ├── ooxml_cheat_sheet_xlsx.md     → DOCUMENTATION
+  ├── sheet_guide.md                → DOCUMENTATION
+  ├── sheet_snippets.md             → DOCUMENTATION
+  ├── tools/                        → SUPPORT (sheet_probe.py)
+  └── __pycache__/                  → GENERATED_OUTPUT (Python bytecode)
+
+Python Bytecode Cache:
+---------------------
+15 __pycache__/ directories total   → GENERATED_OUTPUT
+  Status: Auto-regenerated by Python, safe to delete
+  Size: Minimal (< 1 MB total across all)
+
+
+================================================================================
+SECTION 6 — DDG-SPECIFIC FINDINGS
+================================================================================
+
+Question: Is ddg/ddg_slides/ referenced by any code?
+Answer: NO
+Evidence:
+  - Grep search for "ddg_slides" in all Python files returned zero results
+  - Only reference is in directory_tree.txt (this analysis)
+  - Contains 21 .txt specification files, not Python modules
+  - NOT imported by build_deck.py or any slide modules
+Conclusion: ddg_slides/ is SPEC/DOCUMENTATION, not active code
+
+Question: Are ddg/ddg_slides/*.txt purely specs?
+Answer: YES
+Evidence:
+  - All 21 files have .txt extension
+  - Filenames follow pattern: body_slide_01__market_primer.txt
+  - Content would be text specifications, not executable code
+  - No Python module could import .txt files as code
+Conclusion: These are content specifications for slide development
+
+Question: Are DDG project-root docs referenced by code?
+Answer: NO (code references), but YES (human documentation)
+Evidence:
+  - distributed_shipbuilding_overview_ddg.txt: NO code references
+  - project_handoff_ddg.txt: NO code references
+  - project_description_ddg.txt: NO code references
+  - refactor_deck_ddg.txt: NO code references
+  - These appear to be handoff/context documentation
+Conclusion: Human documentation, not code dependencies
+
+Question: Are DDG workbook_dev_transcript_*.txt files referenced by code?
+Answer: NO
+Evidence:
+  - 5 transcript files (workbook_dev_transcript_1.txt through _5.txt)
+  - Dated May 29 - Jun 1
+  - No grep results for these filenames in code
+Conclusion: Development log transcripts, historical record only
+
+Question: Is ddg/deck/_archive_old_deck_20260602/ referenced anywhere?
+Answer: NO (by active code)
+Evidence:
+  - Grep for "_archive" in Python files: no active code references
+  - Directory name indicates June 2 archive date
+  - Contains 225 files, 11 MB
+  - Archive contains old "ddg_research_deck" package (old naming)
+Conclusion: Historical archive, safe to move/delete after validation
+
+Question: Is ddg/workbook/extracted/ regenerated or manually curated?
+Answer: REGENERATED (by research scripts)
+Evidence:
+  - ddg/research/scripts/aggregate_new_construction.py references:
+    "extracted/nc_annual_by_piid.csv"
+    "extracted/nc_annual_by_vendor.csv"
+    "extracted/nc_lifetime_vendors.csv"
+    "extracted/nc_records_long.csv"
+    "extracted/nc_scope_summary.json"
+  - Scripts appear to generate CSVs into extracted/
+  - workbook_ddg/lib.py: "EXTRACTED = PROJECT_ROOT / 'extracted'"
+  - Used for data loading, not OOXML debugging
+Clarification: This is DATA extracted/, not OOXML extracted/
+  The workbook/ ones are for OOXML inspection (manual)
+Conclusion:
+  - ddg/workbook/extracted/ = OOXML debugging (manual, safe to move)
+  - ddg/research/extracted/ = Processed data (generated by scripts)
+
+Question: Which DDG files are safe move candidates?
+Answer (with evidence):
+
+SAFE TO MOVE (not referenced by code):
+  ✓ ddg/ddg_slides/*.txt (21 spec files)
+     Evidence: No code references, pure specifications
+     Risk: LOW
+     Proposed: move to ddg/docs/specs/slides/ or ddg/specs/slides/
+
+  ✓ ddg/distributed_shipbuilding_overview_ddg.txt
+  ✓ ddg/project_handoff_ddg.txt
+  ✓ ddg/project_description_ddg.txt
+  ✓ ddg/refactor_deck_ddg.txt
+     Evidence: No code references, human documentation
+     Risk: LOW
+     Proposed: move to ddg/docs/
+
+  ✓ ddg/workbook_dev_transcript_*.txt (5 files)
+     Evidence: No code references, historical logs
+     Risk: LOW
+     Proposed: move to ddg/docs/transcripts/ or consolidate to logs/
+
+  ✓ ddg/workbook/ooxml_cheat_sheet_excel.md
+     Evidence: Duplicate of workbook_core/ooxml_cheat_sheet_xlsx.md
+     Risk: LOW
+     Proposed: DELETE (keep canonical version in workbook_core/)
+
+  ✓ ddg/workbook/extracted/ (OOXML debugging folder)
+     Evidence: Used for manual OOXML inspection, not code dependency
+     Risk: LOW
+     Proposed: move to ddg/docs/ooxml_inspection/ or DELETE
+
+SAFE TO DELETE AFTER VALIDATION:
+  ✓ ddg/deck/_archive_old_deck_20260602/ (11 MB)
+     Evidence: Archive dated Jun 2, recent refactor
+     Risk: MEDIUM (keep 30 days then delete)
+     Validation: Run current build successfully first
+
+Question: Which DDG files should NOT be touched?
+Answer (MUST NOT MOVE):
+
+DO NOT MOVE (active code dependencies):
+  ✗ ddg/deck/build_deck.py
+  ✗ ddg/deck/deck_ddg/ (entire package)
+  ✗ ddg/workbook/build_workbook.py
+  ✗ ddg/workbook/workbook_ddg/ (entire package)
+  ✗ ddg/deck/20260602_Distributed Shipbuilding DDG_vS.pptx (output)
+  ✗ ddg/workbook/20260601_Distributed Shipbuilding DDG_v1.0.xlsx (output)
+     Reason: Hardcoded paths in build scripts expect these locations
+
+DO NOT MOVE (data sources):
+  ✗ ddg/research/ (entire folder, 412 MB)
+  ✗ ddg/research/extracted/ (processed data used by workbook)
+     Reason: Research scripts generate data here, workbook reads from here
+
+
+================================================================================
+SECTION 7 — SUBMARINE-SPECIFIC FINDINGS
+================================================================================
+
+Question: Is submarine/deck/submarine_slides/ referenced by any code?
+Answer: NO
+Evidence:
+  - Grep search for "submarine_slides" in Python files: only found in logs
+  - logs/2026-06-02_sub_deck_spec_and_pipeline_buildout.md mentions it historically
+  - Contains 17 .txt specification files
+  - NOT imported by build_deck.py or any slide modules
+Conclusion: submarine_slides/ is SPEC/DOCUMENTATION, not active code
+
+Question: Is submarine/deck/build_draft.py still runnable or referenced?
+Answer: YES - ACTIVE SECONDARY BUILD SCRIPT
+Evidence:
+  - File dated Jun 2, 2026 16:58 (very recent)
+  - Imports: "import draft_slides" and "from deck_core.lib import build_pptx"
+  - Output: DRAFT_preview_Distributed Shipbuilding Submarines.pptx (97 KB, Jun 2)
+  - Output file EXISTS and is recent
+  - Referenced in logs/2026-06-02_sub_deck_spec_and_pipeline_buildout.md
+  - submarine/deck/deck_sub/slides/__init__.py has comment about draft workflow
+Conclusion: build_draft.py is ACTIVE and functional
+
+Question: Does build_draft.py import draft_slides/?
+Answer: YES
+Evidence:
+  - Line 22: "import draft_slides"
+  - Then uses pkgutil.iter_modules(draft_slides.__path__)
+  - Dynamically discovers and imports all modules in draft_slides/
+Conclusion: draft_slides/ is ACTIVE CODE for preview build
+
+Question: Are draft_slides/ still useful or obsolete?
+Answer: USEFUL - ACTIVE STAGING AREA
+Evidence:
+  - Used by build_draft.py (active script)
+  - Recent output: DRAFT_preview_...pptx dated Jun 2
+  - Log describes workflow: "draft_slides/ and previewed with build_draft.py"
+  - Purpose: staging/preview loop for work-in-progress slides
+  - Workflow: develop in draft_slides/, then promote to deck_sub/slides/
+Conclusion: draft_slides/ is intentional staging pattern, NOT obsolete
+
+Question: Are any deck_sub/slides/*.py files unused by the main build?
+Answer: UNKNOWN_REVIEW_REQUIRED - need to check slides/__init__.py
+Evidence needed:
+  - Must read submarine/deck/deck_sub/slides/__init__.py
+  - Look for SLIDE_RENDERS list
+  - Compare to 26 .py files in slides/
+  - Files found: executive_summary.py AND executive_summary_v2.py (potential duplicate)
+Recommendation:
+  - Read slides/__init__.py to verify which modules are registered
+  - executive_summary_v2.py may be alternate/newer version
+
+Question: Is submarine/research/build_workbook.py referenced anywhere?
+Answer: NO - STALE FILE
+Evidence:
+  - Grep search shows it exists but NOT referenced by other code
+  - Imports: "from workbook.lib import build" (WRONG - should be workbook_sub.lib)
+  - Active build is: submarine/workbook/build_workbook.py (correct import)
+  - Last modified: older than the active build script
+Conclusion: STALE FILE, DELETE immediately to avoid confusion
+
+Question: Confirm whether submarine/research/build_workbook.py imports stale workbook.lib
+Answer: CONFIRMED - imports "workbook.lib"
+Evidence:
+  - Line 7: "from workbook.lib import build"
+  - Should be: "from workbook_sub.lib import build"
+  - This is the ONLY file in workspace importing old "workbook.lib" pattern
+Risk: HIGH - could be run by mistake, will fail or produce wrong output
+Recommendation: DELETE or move to _quarantine/ immediately
+
+Question: Is submarine/archived_logs/ safe to consolidate into docs/logs/?
+Answer: YES - SAFE TO MOVE
+Evidence:
+  - Contains 7 markdown files dated May 28, 2026
+  - All session logs from earlier development work
+  - NO code references to archived_logs/
+  - Parallel to root-level logs/ folder
+Recommendation: Move to logs/ or submarine/docs/logs/ for consistency
+
+Question: Is submarine/workbook/_archive_old_pipeline_20260601/ referenced anywhere?
+Answer: NO
+Evidence:
+  - Grep for "_archive" shows no active code references
+  - Dated Jun 1 (one day before deck archives dated Jun 2)
+  - Size: 240 KB (smallest of the three archives)
+Conclusion: Historical archive, safe to move/delete after validation
+
+Question: Which submarine files are safe move candidates?
+Answer (with evidence):
+
+SAFE TO MOVE (not referenced by code):
+  ✓ submarine/deck/submarine_slides/*.txt (17 spec files)
+     Evidence: No code references, pure specifications
+     Risk: LOW
+     Proposed: move to submarine/docs/specs/slides/
+
+  ✓ submarine/deck/deck_spec.txt (55 KB)
+     Evidence: Specification document, not imported
+     Risk: LOW
+     Proposed: move to submarine/docs/specs/
+
+  ✓ submarine/archived_logs/*.md (7 files, May 28)
+     Evidence: No code references, historical logs
+     Risk: LOW
+     Proposed: consolidate into logs/ or submarine/docs/logs/
+
+  ✓ submarine/distributed_shipbuilding_overview_sub.txt
+  ✓ submarine/project_handoff_sub.txt
+  ✓ submarine/project_description_sub.txt
+  ✓ submarine/methodology_submarines.txt
+  ✓ submarine/refactor_deck_sub.txt
+     Evidence: No code references, human documentation
+     Risk: LOW
+     Proposed: move to submarine/docs/
+
+  ✓ submarine/workbook_dev_transcript_*.txt (7 files)
+     Evidence: No code references, historical logs
+     Risk: LOW
+     Proposed: move to submarine/docs/transcripts/ or consolidate to logs/
+
+  ✓ submarine/workbook/ooxml_cheat_sheet_excel.md
+     Evidence: Duplicate (different checksum than ddg version though)
+     Risk: LOW
+     Proposed: Compare with workbook_core canonical, keep if different
+
+  ✓ submarine/workbook/extracted/ (OOXML debugging folder)
+     Evidence: Manual OOXML inspection, not code dependency
+     Risk: LOW
+     Proposed: move to submarine/docs/ooxml_inspection/ or DELETE
+
+SAFE TO DELETE AFTER VALIDATION:
+  ✓ submarine/deck/_archive_old_deck_20260602/ (3.5 MB, Jun 2)
+  ✓ submarine/workbook/_archive_old_pipeline_20260601/ (240 KB, Jun 1)
+     Risk: MEDIUM (keep 30 days then delete)
+     Validation: Run current builds successfully first
+
+MUST DELETE (STALE CODE):
+  ✗✗✗ submarine/research/build_workbook.py
+     Evidence: Imports "workbook.lib" (WRONG), not "workbook_sub.lib"
+     Risk: HIGH CONFUSION - could be executed by mistake
+     Action: DELETE immediately or move to _quarantine/2026-06-03_stale/
+     Priority: URGENT
+
+Question: Which submarine files should NOT be touched?
+Answer (MUST NOT MOVE):
+
+DO NOT MOVE (active code dependencies):
+  ✗ submarine/deck/build_deck.py
+  ✗ submarine/deck/build_draft.py (ACTIVE secondary build)
+  ✗ submarine/deck/deck_sub/ (entire package)
+  ✗ submarine/deck/draft_slides/ (ACTIVE staging area)
+  ✗ submarine/workbook/build_workbook.py
+  ✗ submarine/workbook/workbook_sub/ (entire package)
+  ✗ submarine/deck/*.pptx (outputs)
+  ✗ submarine/workbook/*.xlsx (output)
+     Reason: Hardcoded paths in build scripts
+
+DO NOT MOVE (data sources):
+  ✗ submarine/research/ (entire folder except build_workbook.py)
+     Reason: Data source for analysis
+
+INVESTIGATE BEFORE MOVING:
+  ? submarine/research/deck/ (old deck structure inside research)
+     Evidence: Contains out/, slides/ subdirectories
+     Appears to be OLD deck build structure
+     NO active code references found
+     Risk: UNKNOWN
+     Recommendation: Inspect contents, likely safe to archive
+
+
+================================================================================
+SECTION 8 — RESEARCH FOLDERS
+================================================================================
+
+DDG Research (ddg/research/):
+-----------------------------
+Total Size: 412 MB
+Total Files: 2,626 files
+Percentage of ddg/: 95%
+
+Tree to Depth 3:
+  ddg/research/
+  ├── bae_earnings_transcripts/
+  │   └── _raw_html/
+  ├── budget_books/                   [12 PDFs, 58 MB]
+  ├── edgar_research/
+  │   ├── gd_10k_files/
+  │   │   ├── 2020/ 2021/ 2022/ 2023/ 2024/ 2025/
+  │   └── hii_10k_files/
+  │       ├── 2021/ 2022/ 2023/ 2024/ 2025/
+  ├── extracted/                      [Processed CSV/JSON data]
+  ├── fpds_raw/                       [Raw JSON contract data]
+  ├── fpds_raw_v2/                    [Updated contract data]
+  ├── gd_earnings_transcripts/
+  │   └── _raw_html/
+  ├── hii_earnings_transcripts/
+  │   └── _raw_html/
+  ├── image_assets/
+  │   └── ddg_subject_photos/
+  ├── lhx_earnings_transcripts/
+  │   └── _raw_html/
+  ├── lmt_earnings_transcripts/
+  │   └── _raw_html/
+  ├── logs/
+  ├── news_research/
+  │   └── round1/
+  ├── noc_earnings_transcripts/
+  │   └── _raw_html/
+  ├── pull_logs/
+  ├── reference_prior_analysis/
+  ├── research_primary_sources/
+  │   └── dod_announcement_pop/
+  ├── rtx_earnings_transcripts/
+  │   └── _raw_html/
+  ├── sam_entity_lookups/
+  ├── sam_subawards/
+  ├── scripts/                        [27 Python scripts]
+  ├── usaspending_subawards/
+  └── wiki_ddg/
+
+File Type Counts:
+  Python scripts:   27
+  PDF files:         7
+  CSV files:        37
+  JSON files:      ~400+ (estimated from fpds_raw, sam_subawards)
+  HTML files:      ~200+ (earnings transcripts)
+  Markdown files:   ~15
+  Text files:       ~50+
+
+Largest 25 Files:
+  1. 40.6 MB  fpds_raw_v2/gd_biw_navy_raw.json
+  2.  9.9 MB  budget_books/30_Year_Shipbuilding_Plan.pdf
+  3.  9.4 MB  sam_subawards/N0002418C5406_subawards.json
+  4.  7.6 MB  fpds_raw/gd_biw_navy_raw.json
+  5.  7.3 MB  sam_subawards/N0002418C2307_subawards.json
+  6.  6.2 MB  fpds_raw/drs_navy_ddg_raw.json
+  7.  6.2 MB  sam_subawards/M6785416C0006_subawards.json
+  8.  5.6 MB  budget_books/SCN_Book_FY27.pdf
+  9.  5.1 MB  sam_subawards/N0002414C5114_subawards.json
+ 10.  4.8 MB  fpds_raw_v2/rolls_royce_navy_ddg_raw.json
+ 11.  4.7 MB  extracted/nc_records_long.csv
+ 12.  4.7 MB  budget_books/SCN_Book_FY24.pdf
+ 13.  4.6 MB  budget_books/SCN_Book_FY25.pdf
+ 14.  4.4 MB  budget_books/SCN_Book_FY23.pdf
+ 15.  4.2 MB  budget_books/SCN_Book_FY26.pdf
+ 16.  4.0 MB  fpds_raw/rolls_royce_navy_ddg_raw.json
+ 17.  4.0 MB  edgar_research/gd_10k_files/2020/10k_main.htm
+ 18.  3.9 MB  budget_books/SCN_Book_FY22.pdf
+ 19.  3.5 MB  edgar_research/hii_10k_files/2021/10k_main.htm
+ 20.  3.5 MB  edgar_research/hii_10k_files/2022/10k_main.htm
+ 21.  3.5 MB  fpds_raw/bae_navy_ddg_raw.json
+ 22.  3.5 MB  edgar_research/gd_10k_files/2021/10k_main.htm
+ 23.  3.5 MB  fpds_raw/desc_ddg51_class_raw.json
+ 24.  3.3 MB  edgar_research/gd_10k_files/2022/10k_main.htm
+ 25.  3.1 MB  edgar_research/hii_10k_files/2024/10k_main.htm
+
+Size by File Type (estimated):
+  JSON files:       ~200 MB (contract and subaward data)
+  PDF files:         ~60 MB (budget books, reference docs)
+  HTML files:        ~80 MB (10-K filings, earnings transcripts)
+  CSV files:         ~50 MB (processed data)
+  Other:             ~20 MB (scripts, docs, images)
+
+Duplicate Filename Candidates:
+  (Not computed - would require filename-only comparison)
+  Observation: Many files follow naming patterns:
+    - {vendor}_earnings_transcripts/
+    - budget_books/SCN_Book_FY{XX}.pdf
+    - Unlikely to have actual duplicates due to structured naming
+
+Exact Duplicate Checksum Candidates:
+  (Not computed - would be expensive on 412 MB)
+  Recommendation: Run md5sum in separate pass if needed
+
+Scripts Inside Research:
+  ddg/research/scripts/ contains 27 Python scripts
+  Purpose: Data extraction, aggregation, processing
+  Examples from grep results:
+    - aggregate_annual_outsourcing.py
+    - aggregate_new_construction.py
+  These generate data into extracted/
+  Status: SUPPORT scripts, not imported by main build
+
+Build-Like Files:
+  NONE found (no build_*.py at ddg/research/ root)
+
+Generated Outputs:
+  ddg/research/extracted/
+    - nc_annual_by_piid.csv
+    - nc_annual_by_vendor.csv
+    - nc_lifetime_vendors.csv
+    - nc_records_long.csv
+    - nc_scope_summary.json
+  These ARE generated by research/scripts/
+  These ARE used by workbook build (via workbook_ddg/lib.py)
+
+Manifest/README Files:
+  FOUND:
+    - ddg/research/MANIFEST.md
+    - ddg/research/METHODOLOGY.md
+    - ddg/research/README.md
+
+  Recommendation: READ these files to understand required structure
+  Do NOT move research/ without consulting these docs
+
+
+Submarine Research (submarine/research/):
+-----------------------------------------
+Total Size: 310 MB
+Total Files: 2,086 files
+Percentage of submarine/: 96%
+
+Tree to Depth 3:
+  submarine/research/
+  ├── build_workbook.py               [STALE - DELETE]
+  ├── budget_books/                   [12 PDFs, same as DDG]
+  ├── deck/                           [OLD DECK STRUCTURE - investigate]
+  │   ├── out/
+  │   │   ├── preview/
+  │   │   └── rendered/
+  │   └── slides/
+  ├── edgar_research/
+  │   ├── gd_10k_files/
+  │   │   ├── 2021/ 2022/ 2023/ 2024/ 2025/
+  │   └── hii_10k_files/
+  │       ├── 2021/ 2022/ 2023/ 2024/ 2025/
+  ├── fpds_raw/
+  ├── hii_earnings_transcripts/
+  │   └── _raw_html/
+  ├── image_assets/
+  │   ├── brand_logos/
+  │   └── subject_photos/
+  ├── logs/
+  ├── reference_prior_analysis/
+  ├── research_primary_sources/
+  │   └── dod_announcement_pop/
+  │       ├── cache/
+  │       ├── cache_wayback/
+  │       └── newsapi_results/
+  ├── sam_entity_lookups/
+  ├── sam_subawards/
+  ├── sam_subawards_fullhistory/
+  ├── scripts/                        [57 Python scripts]
+  ├── usaspending_subawards/
+  └── wiki_submarines/
+      └── assets/
+
+File Type Counts:
+  Python scripts:   57 (+ 1 stale build_workbook.py)
+  PDF files:        12
+  CSV files:         8
+  JSON files:      ~300+ (estimated)
+  HTML files:      ~150+ (earnings transcripts)
+
+Largest 25 Files:
+  1. 14.6 MB  sam_subawards_fullhistory/N0002417C2100_subawards.json
+  2. 13.4 MB  sam_subawards_fullhistory/N0002417C2117_subawards.json
+  3. 11.3 MB  sam_subawards/N0002417C2100_subawards.json
+  4. 10.6 MB  sam_subawards/N0002417C2117_subawards.json
+  5.  9.9 MB  budget_books/30_Year_Shipbuilding_Plan.pdf
+  6.  9.0 MB  fpds_raw/hii_nns_navy_raw.json
+  7.  6.1 MB  fpds_raw/blueforge_navy_raw.json
+  8.  5.6 MB  budget_books/SCN_Book_FY27.pdf
+  9.  4.7 MB  fpds_raw/rolls_royce_navy_sub_raw.json
+ 10.  4.7 MB  budget_books/SCN_Book_FY24.pdf
+ 11.  4.6 MB  budget_books/SCN_Book_FY25.pdf
+ 12.  4.6 MB  fpds_raw/gdeb_navy_raw.json
+ 13.  4.4 MB  budget_books/SCN_Book_FY23.pdf
+ 14.  4.2 MB  budget_books/SCN_Book_FY26.pdf
+ 15.  4.2 MB  sam_subawards_fullhistory/N0002412C2115_subawards.json
+ 16.  4.1 MB  research_primary_sources/gao-24-107732.pdf
+ 17.  3.9 MB  fpds_raw/curtiss_wright_navy_raw.json
+ 18.  3.9 MB  budget_books/SCN_Book_FY22.pdf
+ 19.  3.5 MB  edgar_research/hii_10k_files/2021/10k_main.htm
+ 20.  3.5 MB  edgar_research/hii_10k_files/2022/10k_main.htm
+ 21.  3.5 MB  edgar_research/gd_10k_files/2021/10k_main.htm
+ 22.  3.4 MB  fpds_raw/bae_navy_sub_raw.json
+ 23.  3.3 MB  edgar_research/gd_10k_files/2022/10k_main.htm
+ 24.  3.3 MB  sam_subawards_fullhistory/N0002419C2125_subawards.json
+ 25.  3.3 MB  sam_subawards/N0002419C2125_subawards.json
+
+Observation: Largest files are subaward JSON data (14+ MB each)
+
+Scripts Inside Research:
+  submarine/research/scripts/ contains 57 Python scripts
+  More scripts than DDG (57 vs 27)
+  Purpose: Similar to DDG - data extraction and processing
+
+Build-Like Files:
+  submarine/research/build_workbook.py [STALE - imports wrong module]
+  Status: MUST DELETE
+
+Generated Outputs:
+  (Not explicitly documented, likely similar pattern to DDG)
+
+Manifest/README Files:
+  FOUND:
+    - submarine/research/MANIFEST.md
+    - submarine/research/README.md
+    - submarine/research/deck/README.md
+    - submarine/research/hii_earnings_transcripts/README.md
+    - submarine/research/research_primary_sources/dod_announcement_pop/README.md
+
+Anomalous Structure:
+  submarine/research/deck/
+    Contains: out/, slides/ subdirectories
+    Appears to be: OLD deck build structure
+    Status: UNKNOWN_REVIEW_REQUIRED
+    Recommendation: Inspect contents before cleanup decision
+
+
+Research Folder Commonalities:
+------------------------------
+Both projects share similar research structure:
+  - budget_books/ (identical PDFs)
+  - edgar_research/ (SEC 10-K filings)
+  - fpds_raw/ (Federal contract data)
+  - sam_subawards/ (subcontract data)
+  - earnings_transcripts/ (company earnings calls)
+  - scripts/ (data processing)
+  - research_primary_sources/
+  - reference_prior_analysis/
+
+Observation: Significant overlap in data sources
+Potential for consolidation: Budget books and some reference docs
+Risk: Projects may need separate copies for independence
+
+
+================================================================================
+SECTION 9 — DUPLICATE AND REDUNDANT DOCS
+================================================================================
+
+Exact Duplicate Files by Checksum:
+----------------------------------
+
+ooxml_cheat_sheet_pptx.md (deck_core):
+  9bcc56899094954f5de579d511624d10  deck_core/ooxml_cheat_sheet_pptx.md
+  9bcc56899094954f5de579d511624d10  ddg/deck/_archive_old_deck_20260602/ooxml_cheat_sheet_pptx.md
+  9bcc56899094954f5de579d511624d10  submarine/deck/_archive_old_deck_20260602/ooxml_cheat_sheet_pptx.md
+
+  Status: EXACT DUPLICATES
+  Canonical: deck_core/ooxml_cheat_sheet_pptx.md
+  Action: Archives can be deleted (duplicates inside archives okay)
+
+ooxml_cheat_sheet_xlsx.md (workbook_core):
+  db97b0595ec9dacfb5629826a9d00bd2  workbook_core/ooxml_cheat_sheet_xlsx.md
+  db97b0595ec9dacfb5629826a9d00bd2  ddg/workbook/ooxml_cheat_sheet_excel.md
+
+  Status: EXACT DUPLICATES
+  Canonical: workbook_core/ooxml_cheat_sheet_xlsx.md
+  Action: DELETE ddg/workbook/ooxml_cheat_sheet_excel.md
+
+ooxml_cheat_sheet_xlsx.md (submarine version):
+  7fda3fce858e6449fbc0b6d9b84cb4bc  submarine/workbook/ooxml_cheat_sheet_excel.md
+
+  Status: DIFFERENT CHECKSUM from canonical
+  Comparison needed: May have project-specific modifications
+  Action: COMPARE before deleting, keep if different content
+
+Near-Duplicate OOXML Cheat Sheets:
+----------------------------------
+Files named "ooxml_cheat_sheet_*" exist in multiple locations:
+  - deck_core/ooxml_cheat_sheet_pptx.md (CANONICAL for PowerPoint)
+  - workbook_core/ooxml_cheat_sheet_xlsx.md (CANONICAL for Excel)
+  - ddg/workbook/ooxml_cheat_sheet_excel.md (DUPLICATE - delete)
+  - submarine/workbook/ooxml_cheat_sheet_excel.md (DIFFERENT - review)
+  - Archives contain old copies (okay to delete with archives)
+
+Recommendation:
+  - Keep canonical versions in core libraries only
+  - Delete exact duplicates in project folders
+  - Review submarine version (different checksum)
+
+Project-Level Docs That Should Move:
+------------------------------------
+
+DDG Project:
+  distributed_shipbuilding_overview_ddg.txt      → ddg/docs/overview.txt
+  project_handoff_ddg.txt                        → ddg/docs/handoff.txt
+  project_description_ddg.txt                    → ddg/docs/description.txt
+  refactor_deck_ddg.txt                          → ddg/docs/refactor_notes.txt
+  workbook_dev_transcript_1.txt through _5.txt   → ddg/docs/transcripts/ or logs/
+
+  Rationale:
+    - All are documentation/context files
+    - Not referenced by code
+    - Cluttering project root
+    - Benefit from centralized docs/ folder
+
+Submarine Project:
+  distributed_shipbuilding_overview_sub.txt      → submarine/docs/overview.txt
+  project_handoff_sub.txt                        → submarine/docs/handoff.txt
+  project_description_sub.txt                    → submarine/docs/description.txt
+  methodology_submarines.txt                     → submarine/docs/methodology.txt
+  refactor_deck_sub.txt                          → submarine/docs/refactor_notes.txt
+  workbook_dev_transcript_1.txt through _7.txt   → submarine/docs/transcripts/ or logs/
+
+  Rationale: Same as DDG
+
+Root-Level Docs That Should Move:
+---------------------------------
+
+Workspace Root:
+  prompt_enhance_specs.txt                       → docs/prompts/enhance_specs.txt
+  prompt_write_ooxml.txt                         → docs/prompts/write_ooxml.txt
+  transcript.txt                                 → docs/transcripts/workspace_transcript_1.txt
+  transcript2.txt                                → docs/transcripts/workspace_transcript_2.txt
+
+  Rationale:
+    - Root level cluttered with supporting files
+    - AI prompt templates are documentation/tooling
+    - Transcripts are historical logs
+    - Centralize in docs/ structure
+
+  Alternative:
+    - Could consolidate transcripts into logs/ folder
+    - logs/ already exists and contains markdown logs
+
+Docs That Should Remain Where They Are:
+---------------------------------------
+
+deck_core/readme.txt:
+  Current location: deck_core/readme.txt
+  Status: SUBOPTIMAL but functional
+  Reason to keep: Core library documentation inside core library
+  Reason to move: Should be at workspace root for discoverability
+  Recommendation: COPY to root as README_deck_core.md, keep original
+
+deck_core/slide_guide.md, slide_snippets.md:
+  Status: KEEP in deck_core/
+  Reason: Referenced by slide developers, logical location with code
+
+workbook_core/sheet_guide.md, sheet_snippets.md:
+  Status: KEEP in workbook_core/
+  Reason: Referenced by sheet developers, logical location with code
+
+Research folder READMEs and MANIFESTs:
+  ddg/research/MANIFEST.md
+  ddg/research/METHODOLOGY.md
+  ddg/research/README.md
+  submarine/research/MANIFEST.md
+  submarine/research/README.md
+
+  Status: KEEP in research folders
+  Reason: Document structure of research data, must stay with data
+
+
+================================================================================
+SECTION 10 — STALE AND QUARANTINE CANDIDATES
+================================================================================
+
+NO FILES DELETED. This section lists candidates for quarantine with evidence.
+
+Proposed Quarantine Location: ./_quarantine/2026-06-03_pre_cleanup/
+
+Format: current_path | reason | evidence | risk | validation
+
+URGENT - MUST QUARANTINE:
+-------------------------
+
+submarine/research/build_workbook.py
+  Reason: STALE build script with wrong import
+  Evidence:
+    - Imports "from workbook.lib import build" (WRONG)
+    - Should import "from workbook_sub.lib import build"
+    - Active build is at submarine/workbook/build_workbook.py
+    - No code references this file
+    - Only occurrence of "workbook.lib" import in entire workspace
+  Risk: HIGH
+    - Could be executed by mistake
+    - Would fail or produce incorrect output
+    - Creates confusion about which build script to use
+  Validation After Quarantine:
+    - Verify active submarine/workbook/build_workbook.py still works
+    - Grep for "workbook.lib" should return zero results
+  Rollback Path:
+    ./_quarantine/2026-06-03_pre_cleanup/submarine/research/build_workbook.py
+
+HIGH PRIORITY - STALE ARTIFACTS:
+--------------------------------
+
+.DS_Store (workspace root)
+  Reason: macOS filesystem metadata artifact
+  Evidence:
+    - 8 KB file
+    - Standard macOS hidden file
+    - Not used by any code
+    - Regenerated automatically by macOS Finder
+  Risk: NONE
+  Validation: None needed (cosmetic)
+  Rollback: Not needed
+
+MEDIUM PRIORITY - EXACT DUPLICATES:
+-----------------------------------
+
+ddg/workbook/ooxml_cheat_sheet_excel.md
+  Reason: Exact duplicate of canonical version
+  Evidence:
+    - Checksum: db97b0595ec9dacfb5629826a9d00bd2
+    - Matches: workbook_core/ooxml_cheat_sheet_xlsx.md
+    - No code imports this file
+    - Canonical version is in workbook_core/
+  Risk: LOW
+    - Not referenced by code
+    - Human documentation only
+  Validation: None needed (duplicate confirmed)
+  Rollback Path:
+    ./_quarantine/2026-06-03_pre_cleanup/ddg/workbook/ooxml_cheat_sheet_excel.md
+
+MEDIUM PRIORITY - ARCHIVES (after 30-day retention):
+----------------------------------------------------
+
+ddg/deck/_archive_old_deck_20260602/
+  Reason: Archive from recent refactor (Jun 2)
+  Evidence:
+    - Size: 11 MB, 225 files
+    - Archive date: June 2, 2026 (today is June 3)
+    - Contains old "ddg_research_deck" package structure
+    - No active code references
+    - Build validated successfully with new structure
+  Risk: MEDIUM
+    - Very recent archive (1 day old)
+    - Refactor may still have bugs
+    - Rollback may be needed
+  Validation Before Quarantine:
+    - Run ddg/deck/build_deck.py successfully
+    - Verify output .pptx is valid
+    - Wait 30 days from archive date (until July 2, 2026)
+  Rollback Path:
+    ./_quarantine/2026-06-03_pre_cleanup/ddg/deck/_archive_old_deck_20260602/
+
+submarine/deck/_archive_old_deck_20260602/
+  Reason: Archive from recent refactor (Jun 2)
+  Evidence:
+    - Size: 3.5 MB, 111 files
+    - Archive date: June 2, 2026
+    - No active code references
+    - Build validated successfully
+  Risk: MEDIUM (same as ddg archive)
+  Validation Before Quarantine:
+    - Run submarine/deck/build_deck.py successfully
+    - Wait 30 days (until July 2, 2026)
+  Rollback Path:
+    ./_quarantine/2026-06-03_pre_cleanup/submarine/deck/_archive_old_deck_20260602/
+
+submarine/workbook/_archive_old_pipeline_20260601/
+  Reason: Archive from workbook refactor (Jun 1)
+  Evidence:
+    - Size: 240 KB
+    - Archive date: June 1, 2026 (2 days old)
+    - No active code references
+    - Build validated successfully
+  Risk: MEDIUM
+  Validation Before Quarantine:
+    - Run submarine/workbook/build_workbook.py successfully
+    - Wait 30 days (until July 1, 2026)
+  Rollback Path:
+    ./_quarantine/2026-06-03_pre_cleanup/submarine/workbook/_archive_old_pipeline_20260601/
+
+LOW PRIORITY - PYTHON BYTECODE:
+-------------------------------
+
+All __pycache__/ directories (15 total)
+  Reason: Auto-generated Python bytecode cache
+  Evidence:
+    - Created automatically by Python interpreter
+    - Regenerates on next import
+    - Size: < 1 MB total
+    - No code dependencies
+  Risk: NONE
+    - Automatically recreated
+    - No data loss possible
+  Validation: None needed
+  Recommendation: Can delete immediately, will regenerate
+  Alternative: Add to .gitignore, leave in place
+
+INVESTIGATE BEFORE QUARANTINE:
+------------------------------
+
+submarine/research/deck/
+  Reason: Old deck structure inside research folder
+  Evidence:
+    - Contains out/, slides/ subdirectories
+    - Appears to be old build output location
+    - Has README.md (should read first)
+    - No active code references found
+  Risk: UNKNOWN
+    - May contain historical reference materials
+    - README.md may explain purpose
+  Validation Needed:
+    - Read submarine/research/deck/README.md
+    - Check if out/ contains important reference outputs
+    - Verify slides/ are old versions (not source of truth)
+  Recommendation: REVIEW before quarantine decision
+
+
+================================================================================
+SECTION 11 — PROPOSED TARGET STRUCTURE
+================================================================================
+
+Design Principle: CONSERVATIVE - Keep Active Build Paths Stable
+
+The proposed structure maintains all active code in current locations and
+organizes supporting files into standard directories. This minimizes risk
+while improving discoverability and maintainability.
+
+CORE LIBRARIES (NO CHANGES):
+----------------------------
+deck_core/              [KEEP EXACTLY AS IS]
+workbook_core/          [KEEP EXACTLY AS IS]
+
+Reason: Core libraries are working, paths are baked into build scripts.
+        Moving these would require updating relative path calculations.
+
+WORKSPACE ROOT (MINIMAL CHANGES):
+---------------------------------
+/
+├── README.md                       [NEW - copy from deck_core/readme.txt]
+├── .gitignore                      [NEW - add __pycache__, .DS_Store, etc.]
+├── .DS_Store                       [DELETE or add to .gitignore]
+├── directory_tree.txt              [KEEP - living documentation]
+├── .claude/                        [KEEP]
+├── deck_core/                      [NO CHANGE]
+├── workbook_core/                  [NO CHANGE]
+├── ddg/                            [RESTRUCTURE - see below]
+├── submarine/                      [RESTRUCTURE - see below]
+├── logs/                           [CONSOLIDATE - add project transcripts]
+└── docs/                           [NEW - workspace-level documentation]
+    ├── prompts/
+    │   ├── enhance_specs.txt
+    │   └── write_ooxml.txt
+    └── transcripts/
+        ├── workspace_transcript_1.txt
+        └── workspace_transcript_2.txt
+
+PROJECT STRUCTURE (DDG):
+-----------------------
+ddg/
+├── deck/                           [NO CHANGE to active code]
+│   ├── build_deck.py               [KEEP]
+│   ├── 20260602_...DDG_vS.pptx     [KEEP]
+│   └── deck_ddg/                   [KEEP - entire package]
+├── workbook/                       [NO CHANGE to active code]
+│   ├── build_workbook.py           [KEEP]
+│   ├── 20260601_...DDG_v1.0.xlsx   [KEEP]
+│   ├── validate_workbook.py        [KEEP]
+│   └── workbook_ddg/               [KEEP - entire package]
+├── research/                       [NO CHANGE]
+│   └── [all subdirectories]        [KEEP]
+└── docs/                           [NEW - consolidate docs here]
+    ├── overview.txt                [MOVE FROM: distributed_shipbuilding_overview_ddg.txt]
+    ├── handoff.txt                 [MOVE FROM: project_handoff_ddg.txt]
+    ├── description.txt             [MOVE FROM: project_description_ddg.txt]
+    ├── refactor_notes.txt          [MOVE FROM: refactor_deck_ddg.txt]
+    ├── specs/
+    │   └── slides/                 [MOVE FROM: ddg_slides/]
+    │       └── *.txt               [21 slide spec files]
+    └── transcripts/
+        └── workbook_dev_*.txt      [MOVE FROM: root, or consolidate to workspace logs/]
+
+PROJECT STRUCTURE (SUBMARINE):
+-----------------------------
+submarine/
+├── .claude/                        [KEEP]
+├── deck/                           [NO CHANGE to active code]
+│   ├── build_deck.py               [KEEP]
+│   ├── build_draft.py              [KEEP - active secondary build]
+│   ├── 20260602_...Submarines_vS.pptx  [KEEP]
+│   ├── DRAFT_preview_...pptx       [KEEP]
+│   ├── deck_sub/                   [KEEP - entire package]
+│   └── draft_slides/               [KEEP - active staging area]
+├── workbook/                       [NO CHANGE to active code]
+│   ├── build_workbook.py           [KEEP]
+│   ├── 20260601_...Submarines_v1.0.xlsx  [KEEP]
+│   └── workbook_sub/               [KEEP - entire package]
+├── research/                       [MINIMAL CHANGE]
+│   ├── build_workbook.py           [DELETE or move to _quarantine/]
+│   └── [all other subdirectories]  [KEEP]
+└── docs/                           [NEW - consolidate docs here]
+    ├── overview.txt                [MOVE FROM: distributed_shipbuilding_overview_sub.txt]
+    ├── handoff.txt                 [MOVE FROM: project_handoff_sub.txt]
+    ├── description.txt             [MOVE FROM: project_description_sub.txt]
+    ├── methodology.txt             [MOVE FROM: methodology_submarines.txt]
+    ├── refactor_notes.txt          [MOVE FROM: refactor_deck_sub.txt]
+    ├── logs/                       [MOVE FROM: archived_logs/]
+    │   └── *.md                    [7 archived session logs]
+    ├── specs/
+    │   ├── deck_spec.txt           [MOVE FROM: deck/deck_spec.txt]
+    │   └── slides/                 [MOVE FROM: deck/submarine_slides/]
+    │       └── *.txt               [17 slide spec files]
+    └── transcripts/
+        └── workbook_dev_*.txt      [MOVE FROM: root, or consolidate to workspace logs/]
+
+QUARANTINE STRUCTURE:
+--------------------
+_quarantine/
+└── 2026-06-03_pre_cleanup/
+    ├── .DS_Store                   [Immediate]
+    ├── ddg/
+    │   ├── workbook/
+    │   │   └── ooxml_cheat_sheet_excel.md  [Duplicate]
+    │   └── deck/
+    │       └── _archive_old_deck_20260602/  [After 30 days]
+    └── submarine/
+        ├── research/
+        │   └── build_workbook.py   [STALE - immediate]
+        ├── deck/
+        │   └── _archive_old_deck_20260602/  [After 30 days]
+        └── workbook/
+            └── _archive_old_pipeline_20260601/  [After 30 days]
+
+ALTERNATIVE CONSOLIDATION (Optional):
+-------------------------------------
+If projects need shared documentation/specs:
+  /docs/
+  ├── shared/
+  │   ├── ooxml_guides/
+  │   └── methodology/
+  ├── ddg/
+  │   └── [project-specific docs]
+  └── submarine/
+      └── [project-specific docs]
+
+Reason NOT recommended: Projects may diverge, shared structure adds complexity
+
+FILES DELETED FROM ACTIVE STRUCTURE:
+------------------------------------
+- Exact duplicates (ooxml_cheat_sheet_excel.md)
+- Stale build scripts (submarine/research/build_workbook.py)
+- macOS artifacts (.DS_Store)
+- Archives after 30-day retention
+- __pycache__/ directories (optional, regenerate automatically)
+
+FILES THAT MOVE (with paths intact in new location):
+---------------------------------------------------
+- Project documentation to docs/ folders
+- Transcripts to docs/transcripts/ or logs/
+- Spec files to docs/specs/
+
+UNCHANGED (absolute requirement):
+---------------------------------
+✓ deck_core/ (entire directory)
+✓ workbook_core/ (entire directory)
+✓ {project}/deck/build_deck.py
+✓ {project}/deck/deck_{project}/ (entire package)
+✓ {project}/workbook/build_workbook.py
+✓ {project}/workbook/workbook_{project}/ (entire package)
+✓ {project}/research/ (data sources)
+✓ All .pptx and .xlsx output files
+✓ submarine/deck/build_draft.py
+✓ submarine/deck/draft_slides/
+
+
+================================================================================
+SECTION 12 — PROPOSED MOVE MANIFEST
+================================================================================
+
+Format: action | current_path | proposed_path | classification | reason | evidence | risk | validation | rollback
+
+Legend:
+  MOVE     = Relocate file, update references if needed
+  COPY     = Duplicate file to new location, keep original
+  QUARANTINE = Move to _quarantine/ for review/deletion
+  LEAVE    = No action, keep in current location
+  REVIEW   = Manual inspection needed before decision
+  DELETE   = Remove file (via quarantine first)
+
+URGENT ACTIONS (DO FIRST):
+--------------------------
+
+QUARANTINE | submarine/research/build_workbook.py | _quarantine/2026-06-03_pre_cleanup/submarine/research/build_workbook.py | STALE_CANDIDATE | Imports wrong module (workbook.lib not workbook_sub.lib) | Only file with "workbook.lib" import, active build at submarine/workbook/ | HIGH | Verify active build works after quarantine | Restore from _quarantine/ if needed
+
+QUARANTINE | .DS_Store | _quarantine/2026-06-03_pre_cleanup/.DS_Store | STALE_CANDIDATE | macOS filesystem artifact | Not used by code, regenerates automatically | NONE | None needed | Restore if user wants it (cosmetic only)
+
+CLEANUP ACTIONS (SAFE):
+-----------------------
+
+DELETE | ddg/workbook/ooxml_cheat_sheet_excel.md | [delete via quarantine] | DOCUMENTATION | Exact duplicate of workbook_core/ooxml_cheat_sheet_xlsx.md | Matching checksum: db97b0595ec9dacfb5629826a9d00bd2 | LOW | None needed, not referenced by code | _quarantine/2026-06-03_pre_cleanup/ddg/workbook/ooxml_cheat_sheet_excel.md
+
+REVIEW | submarine/workbook/ooxml_cheat_sheet_excel.md | [compare then delete or keep] | DOCUMENTATION | Different checksum from canonical, may have modifications | Checksum: 7fda3fce858e6449fbc0b6d9b84cb4bc (different) | LOW | Compare content with canonical, keep if meaningfully different | N/A - review before action
+
+REORGANIZATION MOVES (DDG DOCS):
+--------------------------------
+
+MOVE | ddg/distributed_shipbuilding_overview_ddg.txt | ddg/docs/overview.txt | DOCUMENTATION | Project documentation, not code | No code references, human doc | LOW | None needed | Reverse path
+
+MOVE | ddg/project_handoff_ddg.txt | ddg/docs/handoff.txt | DOCUMENTATION | Handoff documentation | No code references | LOW | None needed | Reverse path
+
+MOVE | ddg/project_description_ddg.txt | ddg/docs/description.txt | DOCUMENTATION | Project description | No code references | LOW | None needed | Reverse path
+
+MOVE | ddg/refactor_deck_ddg.txt | ddg/docs/refactor_notes.txt | DOCUMENTATION | Refactor notes | No code references | LOW | None needed | Reverse path
+
+MOVE | ddg/workbook_dev_transcript_1.txt | logs/ddg_workbook_dev_transcript_1.txt | LOG_TRANSCRIPT | Development transcript | No code references, historical log | LOW | None needed | Reverse path
+MOVE | ddg/workbook_dev_transcript_2.txt | logs/ddg_workbook_dev_transcript_2.txt | LOG_TRANSCRIPT | Development transcript | No code references, historical log | LOW | None needed | Reverse path
+MOVE | ddg/workbook_dev_transcript_3.txt | logs/ddg_workbook_dev_transcript_3.txt | LOG_TRANSCRIPT | Development transcript | No code references, historical log | LOW | None needed | Reverse path
+MOVE | ddg/workbook_dev_transcript_4.txt | logs/ddg_workbook_dev_transcript_4.txt | LOG_TRANSCRIPT | Development transcript | No code references, historical log | LOW | None needed | Reverse path
+MOVE | ddg/workbook_dev_transcript_5.txt | logs/ddg_workbook_dev_transcript_5.txt | LOG_TRANSCRIPT | Development transcript | No code references, historical log | LOW | None needed | Reverse path
+
+MOVE | ddg/ddg_slides/ | ddg/docs/specs/slides/ | SPEC | Slide content specifications | 21 .txt files, not imported by code | LOW | None needed | Reverse path
+
+REORGANIZATION MOVES (SUBMARINE DOCS):
+--------------------------------------
+
+MOVE | submarine/distributed_shipbuilding_overview_sub.txt | submarine/docs/overview.txt | DOCUMENTATION | Project documentation | No code references | LOW | None needed | Reverse path
+
+MOVE | submarine/project_handoff_sub.txt | submarine/docs/handoff.txt | DOCUMENTATION | Handoff documentation | No code references | LOW | None needed | Reverse path
+
+MOVE | submarine/project_description_sub.txt | submarine/docs/description.txt | DOCUMENTATION | Project description | No code references | LOW | None needed | Reverse path
+
+MOVE | submarine/methodology_submarines.txt | submarine/docs/methodology.txt | DOCUMENTATION | Methodology document | No code references | LOW | None needed | Reverse path
+
+MOVE | submarine/refactor_deck_sub.txt | submarine/docs/refactor_notes.txt | DOCUMENTATION | Refactor notes | No code references | LOW | None needed | Reverse path
+
+MOVE | submarine/archived_logs/ | submarine/docs/logs/ | LOG_TRANSCRIPT | Archived session logs | 7 .md files dated May 28, no code refs | LOW | None needed | Reverse path
+
+MOVE | submarine/deck/deck_spec.txt | submarine/docs/specs/deck_spec.txt | SPEC | Deck specification | 55 KB spec doc, not imported | LOW | None needed | Reverse path
+
+MOVE | submarine/deck/submarine_slides/ | submarine/docs/specs/slides/ | SPEC | Slide content specifications | 17 .txt files, not imported by code | LOW | None needed | Reverse path
+
+MOVE | submarine/workbook_dev_transcript_1.txt | logs/submarine_workbook_dev_transcript_1.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_2.txt | logs/submarine_workbook_dev_transcript_2.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_3.txt | logs/submarine_workbook_dev_transcript_3.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_4.txt | logs/submarine_workbook_dev_transcript_4.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_5.txt | logs/submarine_workbook_dev_transcript_5.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_6.txt | logs/submarine_workbook_dev_transcript_6.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+MOVE | submarine/workbook_dev_transcript_7.txt | logs/submarine_workbook_dev_transcript_7.txt | LOG_TRANSCRIPT | Development transcript | No code references | LOW | None needed | Reverse path
+
+REORGANIZATION MOVES (WORKSPACE ROOT):
+--------------------------------------
+
+MOVE | prompt_enhance_specs.txt | docs/prompts/enhance_specs.txt | DOCUMENTATION | AI prompt template | No code references | LOW | None needed | Reverse path
+
+MOVE | prompt_write_ooxml.txt | docs/prompts/write_ooxml.txt | DOCUMENTATION | AI prompt template | No code references | LOW | None needed | Reverse path
+
+MOVE | transcript.txt | logs/workspace_transcript_1.txt | LOG_TRANSCRIPT | Workspace transcript | No code references, dated Jun 1 | LOW | None needed | Reverse path
+
+MOVE | transcript2.txt | logs/workspace_transcript_2.txt | LOG_TRANSCRIPT | Workspace transcript | No code references, dated Jun 1 | LOW | None needed | Reverse path
+
+DOCUMENTATION COPY (not move):
+------------------------------
+
+COPY | deck_core/readme.txt | README_deck_core.md | DOCUMENTATION | Core library documentation for discoverability | Important context, should be visible at root | NONE | None needed | Just delete copy, original remains
+
+DELAYED ACTIONS (AFTER 30 DAYS):
+--------------------------------
+
+QUARANTINE | ddg/deck/_archive_old_deck_20260602/ | _quarantine/2026-07-02_archives/ddg/deck/_archive_old_deck_20260602/ | ARCHIVE | Archive from Jun 2 refactor | 11 MB, 225 files, no active code refs | MEDIUM | Run ddg/deck/build_deck.py successfully before quarantine | Restore from _quarantine/ if issues
+
+QUARANTINE | submarine/deck/_archive_old_deck_20260602/ | _quarantine/2026-07-02_archives/submarine/deck/_archive_old_deck_20260602/ | ARCHIVE | Archive from Jun 2 refactor | 3.5 MB, 111 files, no active code refs | MEDIUM | Run submarine/deck/build_deck.py successfully | Restore from _quarantine/ if issues
+
+QUARANTINE | submarine/workbook/_archive_old_pipeline_20260601/ | _quarantine/2026-07-02_archives/submarine/workbook/_archive_old_pipeline_20260601/ | ARCHIVE | Archive from Jun 1 refactor | 240 KB, no active code refs | MEDIUM | Run submarine/workbook/build_workbook.py successfully | Restore from _quarantine/ if issues
+
+FILES TO INVESTIGATE:
+--------------------
+
+REVIEW | submarine/research/deck/ | [TBD after review] | UNKNOWN_REVIEW_REQUIRED | Old deck structure in research | Contains out/, slides/, README.md | UNKNOWN | Read README.md, inspect contents before decision | N/A until reviewed
+
+LEAVE | ddg/workbook/extracted/ | [no change] | DEBUG_EXTRACTED | OOXML inspection folder | Used for manual debugging, not code dep | LOW | Could move to docs/ooxml_inspection/ | N/A
+
+LEAVE | submarine/workbook/extracted/ | [no change] | DEBUG_EXTRACTED | OOXML inspection folder | Used for manual debugging, not code dep | LOW | Could move to docs/ooxml_inspection/ | N/A
+
+MUST NOT MOVE (CRITICAL):
+-------------------------
+
+LEAVE | deck_core/ | [no change] | ACTIVE_CODE | Core PowerPoint library | All deck builds depend on this location | CRITICAL | N/A - never move | N/A
+
+LEAVE | workbook_core/ | [no change] | ACTIVE_CODE | Core Excel library | All workbook builds depend on this location | CRITICAL | N/A - never move | N/A
+
+LEAVE | ddg/deck/build_deck.py | [no change] | ACTIVE_BUILD_ENTRY | DDG deck build script | Active build entry point with hardcoded paths | CRITICAL | N/A - never move | N/A
+
+LEAVE | ddg/deck/deck_ddg/ | [no change] | ACTIVE_CODE | DDG deck pipeline package | Imported by build_deck.py | CRITICAL | N/A - never move | N/A
+
+LEAVE | ddg/workbook/build_workbook.py | [no change] | ACTIVE_BUILD_ENTRY | DDG workbook build script | Active build entry point | CRITICAL | N/A - never move | N/A
+
+LEAVE | ddg/workbook/workbook_ddg/ | [no change] | ACTIVE_CODE | DDG workbook pipeline package | Imported by build_workbook.py | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/deck/build_deck.py | [no change] | ACTIVE_BUILD_ENTRY | Submarine deck build script | Active build entry point | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/deck/build_draft.py | [no change] | ACTIVE_BUILD_ENTRY | Submarine draft build script | Secondary build for staging | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/deck/deck_sub/ | [no change] | ACTIVE_CODE | Submarine deck pipeline package | Imported by build_deck.py | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/deck/draft_slides/ | [no change] | DRAFT | Staging area for slides | Imported by build_draft.py | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/workbook/build_workbook.py | [no change] | ACTIVE_BUILD_ENTRY | Submarine workbook build script | Active build entry point | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/workbook/workbook_sub/ | [no change] | ACTIVE_CODE | Submarine workbook pipeline package | Imported by build_workbook.py | CRITICAL | N/A - never move | N/A
+
+LEAVE | ddg/research/ | [no change] | RESEARCH_SOURCE | DDG research data | 412 MB data source, scripts generate into extracted/ | CRITICAL | N/A - never move | N/A
+
+LEAVE | submarine/research/ | [no change except build_workbook.py] | RESEARCH_SOURCE | Submarine research data | 310 MB data source | CRITICAL | N/A - never move (except stale build script) | N/A
+
+MOVE SUMMARY:
+------------
+Total actions: 43 entries
+  - QUARANTINE: 5 (2 urgent, 3 after 30 days)
+  - DELETE: 1 (via quarantine)
+  - MOVE: 31 (documentation reorganization)
+  - COPY: 1 (readme for discoverability)
+  - REVIEW: 3 (manual inspection needed)
+  - LEAVE: 18 (critical active code)
+
+Risk Distribution:
+  - NONE: 2 actions
+  - LOW: 33 actions
+  - MEDIUM: 3 actions (all delayed archives)
+  - HIGH: 1 action (stale build script - urgent)
+  - CRITICAL: 0 actions proposed
+  - UNKNOWN: 3 actions (need review)
+
+
+================================================================================
+SECTION 13 — VALIDATION PLAN
+================================================================================
+
+PRE-CLEANUP CHECKS:
+------------------
+
+1. Baseline Build Validation:
+   □ cd ddg/deck && python build_deck.py
+     Expected: Success, generates 20260602_Distributed Shipbuilding DDG_vS.pptx
+
+   □ cd ddg/workbook && python build_workbook.py
+     Expected: Success, generates 20260601_Distributed Shipbuilding DDG_v1.0.xlsx
+
+   □ cd submarine/deck && python build_deck.py
+     Expected: Success, generates 20260602_Distributed Shipbuilding Submarines_vS.pptx
+
+   □ cd submarine/workbook && python build_workbook.py
+     Expected: Success, generates 20260601_Distributed Shipbuilding Submarines_v1.0.xlsx
+
+   □ cd submarine/deck && python build_draft.py
+     Expected: Success, generates DRAFT_preview_Distributed Shipbuilding Submarines.pptx
+
+2. Output File Inspection:
+   □ Open each .pptx in PowerPoint, verify slides render correctly
+   □ Open each .xlsx in Excel, verify sheets and formulas work
+   □ Check file sizes match expected (DDG: ~109 KB, Submarine: ~117 KB deck, 193-282 KB workbook)
+
+3. Python Import Validation:
+   □ python -c "import deck_core; import workbook_core; print('Core imports OK')"
+   □ cd ddg/deck && python -c "import deck_ddg; print('DDG deck OK')"
+   □ cd ddg/workbook && python -c "import workbook_ddg; print('DDG workbook OK')"
+   □ cd submarine/deck && python -c "import deck_sub; print('Sub deck OK')"
+   □ cd submarine/workbook && python -c "import workbook_sub; print('Sub workbook OK')"
+
+4. Grep Validation (before cleanup):
+   □ grep -r "workbook\.lib" --include="*.py" .
+     Expected: 1 result (submarine/research/build_workbook.py - to be deleted)
+
+   □ grep -r "deck\.lib" --include="*.py" .
+     Expected: 0 results
+
+   □ grep -r "from deck_core" --include="*.py" . | wc -l
+     Expected: 167 occurrences (baseline for comparison)
+
+   □ grep -r "from workbook_core" --include="*.py" . | wc -l
+     Expected: 230 occurrences (baseline for comparison)
+
+5. Create Backup:
+   □ Copy entire workspace to backup location before ANY changes
+   □ Recommended: tar -czf ../ooxml_build_pipelines_backup_2026-06-03.tar.gz .
+   □ Verify backup: tar -tzf ../ooxml_build_pipelines_backup_2026-06-03.tar.gz | head
+
+
+BATCH-BY-BATCH VALIDATION:
+--------------------------
+
+Execute cleanup in phases, validating after each batch:
+
+BATCH 1: URGENT STALE FILE REMOVAL
+  Actions:
+    1. mkdir -p _quarantine/2026-06-03_pre_cleanup/submarine/research
+    2. mv submarine/research/build_workbook.py _quarantine/2026-06-03_pre_cleanup/submarine/research/
+    3. rm .DS_Store (or mv to quarantine)
+
+  Validation:
+    □ grep -r "workbook\.lib" --include="*.py" .
+      Expected: 0 results
+    □ cd submarine/workbook && python build_workbook.py
+      Expected: Success (unaffected by removal)
+    □ ls -la submarine/research/build_workbook.py
+      Expected: No such file or directory
+
+  Rollback if needed:
+    mv _quarantine/2026-06-03_pre_cleanup/submarine/research/build_workbook.py submarine/research/
+
+BATCH 2: DUPLICATE DOCUMENTATION REMOVAL
+  Actions:
+    1. Compare submarine/workbook/ooxml_cheat_sheet_excel.md with canonical
+    2. If identical: mv ddg/workbook/ooxml_cheat_sheet_excel.md _quarantine/
+    3. If submarine version different: compare content, decide keep/delete
+
+  Validation:
+    □ No code references these files (already verified)
+    □ Canonical versions still exist in core libraries
+
+  Rollback:
+    Restore from _quarantine/ if needed
+
+BATCH 3: DDG DOCUMENTATION REORGANIZATION
+  Actions:
+    1. mkdir -p ddg/docs/specs/slides ddg/docs/transcripts
+    2. mv ddg/distributed_shipbuilding_overview_ddg.txt ddg/docs/overview.txt
+    3. mv ddg/project_handoff_ddg.txt ddg/docs/handoff.txt
+    4. mv ddg/project_description_ddg.txt ddg/docs/description.txt
+    5. mv ddg/refactor_deck_ddg.txt ddg/docs/refactor_notes.txt
+    6. mv ddg/ddg_slides/* ddg/docs/specs/slides/
+    7. rmdir ddg/ddg_slides
+    8. mv ddg/workbook_dev_transcript_*.txt logs/ (or ddg/docs/transcripts/)
+
+  Validation:
+    □ cd ddg/deck && python build_deck.py
+      Expected: Success (no code references moved files)
+    □ cd ddg/workbook && python build_workbook.py
+      Expected: Success
+    □ Verify all moved files exist in new locations
+    □ No dangling empty directories except intended
+
+  Rollback:
+    Reverse all mv commands (documented in manifest)
+
+BATCH 4: SUBMARINE DOCUMENTATION REORGANIZATION
+  Actions:
+    1. mkdir -p submarine/docs/specs/slides submarine/docs/logs submarine/docs/transcripts
+    2. mv submarine/distributed_shipbuilding_overview_sub.txt submarine/docs/overview.txt
+    3. mv submarine/project_handoff_sub.txt submarine/docs/handoff.txt
+    4. mv submarine/project_description_sub.txt submarine/docs/description.txt
+    5. mv submarine/methodology_submarines.txt submarine/docs/methodology.txt
+    6. mv submarine/refactor_deck_sub.txt submarine/docs/refactor_notes.txt
+    7. mv submarine/archived_logs/* submarine/docs/logs/
+    8. rmdir submarine/archived_logs
+    9. mv submarine/deck/deck_spec.txt submarine/docs/specs/
+   10. mv submarine/deck/submarine_slides/* submarine/docs/specs/slides/
+   11. rmdir submarine/deck/submarine_slides
+   12. mv submarine/workbook_dev_transcript_*.txt logs/ (or submarine/docs/transcripts/)
+
+  Validation:
+    □ cd submarine/deck && python build_deck.py
+      Expected: Success
+    □ cd submarine/deck && python build_draft.py
+      Expected: Success (draft_slides/ NOT moved - still active)
+    □ cd submarine/workbook && python build_workbook.py
+      Expected: Success
+    □ Verify all moved files exist in new locations
+
+  Rollback:
+    Reverse all mv commands
+
+BATCH 5: WORKSPACE ROOT REORGANIZATION
+  Actions:
+    1. mkdir -p docs/prompts docs/transcripts
+    2. mv prompt_enhance_specs.txt docs/prompts/enhance_specs.txt
+    3. mv prompt_write_ooxml.txt docs/prompts/write_ooxml.txt
+    4. mv transcript.txt logs/workspace_transcript_1.txt
+    5. mv transcript2.txt logs/workspace_transcript_2.txt
+    6. cp deck_core/readme.txt README_deck_core.md (optional - copy not move)
+
+  Validation:
+    □ All four main builds still work (no code dependencies on moved files)
+    □ Verify moved files exist in new locations
+
+  Rollback:
+    Reverse all mv commands, delete copy
+
+BATCH 6: __pycache__ CLEANUP (OPTIONAL)
+  Actions:
+    1. find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null
+       OR
+    2. Add __pycache__/ to .gitignore and leave in place
+
+  Validation:
+    □ Run any Python import (e.g., import deck_core)
+      Expected: __pycache__/ regenerates automatically
+
+  Rollback:
+    Not needed - regenerates automatically
+
+
+POST-CLEANUP CHECKS:
+-------------------
+
+1. Final Build Validation (ALL FOUR BUILDS):
+   □ cd ddg/deck && python build_deck.py
+   □ cd ddg/workbook && python build_workbook.py
+   □ cd submarine/deck && python build_deck.py
+   □ cd submarine/workbook && python build_workbook.py
+   □ cd submarine/deck && python build_draft.py
+
+   All must succeed with same output files as pre-cleanup
+
+2. Output File Comparison:
+   □ Compare file sizes (should be identical or within 1%)
+   □ Open outputs in Office apps (visual inspection)
+   □ Run any validation scripts if they exist (validate_workbook.py)
+
+3. Python Import Validation (post-cleanup):
+   □ python -c "import deck_core; import workbook_core"
+   □ All project package imports (deck_ddg, deck_sub, workbook_ddg, workbook_sub)
+
+   Expected: Same results as pre-cleanup
+
+4. Grep Validation (verify no broken references):
+   □ grep -r "ddg_slides" --include="*.py" .
+     Expected: 0 results (folder moved, wasn't imported)
+
+   □ grep -r "submarine_slides" --include="*.py" .
+     Expected: 0 results (folder moved, wasn't imported)
+
+   □ grep -r "workbook\.lib" --include="*.py" .
+     Expected: 0 results (stale file removed)
+
+   □ grep -r "from deck_core" --include="*.py" . | wc -l
+     Expected: 167 (same as baseline)
+
+   □ grep -r "from workbook_core" --include="*.py" . | wc -l
+     Expected: 230 (same as baseline)
+
+5. Directory Structure Verification:
+   □ All active code in expected locations (deck_core/, workbook_core/, deck_ddg/, etc.)
+   □ New docs/ directories created
+   □ Documentation consolidated in docs/
+   □ No unintended empty directories
+   □ Quarantine directory contains expected files
+
+6. Git Status Check (if using version control):
+   □ git status
+     Review: Moved files show as renamed (not deleted+added)
+   □ git diff --summary
+     Review: Only expected files affected
+
+7. Research Folder Integrity:
+   □ Verify ddg/research/extracted/ still contains CSV files
+   □ Verify submarine/research/ intact (except deleted build_workbook.py)
+   □ Spot-check a few research scripts can still find their data
+
+
+VALIDATION WITHOUT OVERWRITING OUTPUTS:
+---------------------------------------
+
+To validate builds without overwriting current outputs:
+
+Option 1: Copy outputs before build
+  cp ddg/deck/20260602_Distributed\ Shipbuilding\ DDG_vS.pptx /tmp/ddg_deck_backup.pptx
+  cd ddg/deck && python build_deck.py
+  diff /tmp/ddg_deck_backup.pptx ddg/deck/20260602_Distributed\ Shipbuilding\ DDG_vS.pptx
+  (Binary files will differ, but similar size indicates success)
+
+Option 2: Modify build scripts to use different output names
+  (NOT recommended - requires code changes)
+
+Option 3: Test in copied workspace
+  cp -r /path/to/workspace /tmp/workspace_test
+  cd /tmp/workspace_test
+  Run all builds
+  Compare outputs
+  (Preferred for paranoid validation)
+
+Option 4: Check build script dry-run (if supported)
+  (Not available in current scripts - would need modification)
+
+Recommendation: Use Option 1 (backup outputs) or Option 3 (copy workspace)
+
+
+ROLLBACK METHOD:
+---------------
+
+If ANY batch fails validation:
+
+1. STOP immediately - do not proceed to next batch
+
+2. Identify what failed:
+   - Build error? (check error message for path issues)
+   - Import error? (verify active code wasn't moved)
+   - Output error? (compare file sizes and content)
+
+3. Rollback current batch:
+   - Use reverse mv commands from manifest
+   - Restore from _quarantine/ if files were deleted
+   - Verify rollback: re-run failed validation step
+
+4. If rollback doesn't fix issue:
+   - Restore from full workspace backup
+   - Investigate why move caused failure
+   - Update this due diligence report with findings
+
+5. Full Workspace Rollback:
+   cd /path/to/parent/directory
+   rm -rf ooxml_build_pipelines
+   tar -xzf ooxml_build_pipelines_backup_2026-06-03.tar.gz
+   cd ooxml_build_pipelines
+   Run pre-cleanup validation checks
+   Expected: All pass (return to known-good state)
+
+
+DELAYED ARCHIVE CLEANUP (AFTER 30 DAYS):
+----------------------------------------
+
+Recommended Date: July 2, 2026 (30 days from archive creation)
+
+Pre-Archive-Cleanup Validation:
+  1. Verify builds have worked for 30 consecutive days
+  2. No rollbacks or issues in that period
+  3. Output quality is stable
+
+Archive Cleanup Procedure:
+  1. mkdir -p _quarantine/2026-07-02_archives
+  2. mv ddg/deck/_archive_old_deck_20260602/ _quarantine/2026-07-02_archives/
+  3. mv submarine/deck/_archive_old_deck_20260602/ _quarantine/2026-07-02_archives/
+  4. mv submarine/workbook/_archive_old_pipeline_20260601/ _quarantine/2026-07-02_archives/
+
+Post-Archive-Cleanup Validation:
+  □ All four main builds work
+  □ No references to archive paths in error messages
+
+Final Archive Deletion:
+  After another 30 days (August 2, 2026):
+    rm -rf _quarantine/2026-07-02_archives/
+
+  Only delete if no issues in 60 days total
+
+
+SUCCESS CRITERIA:
+----------------
+
+Cleanup is successful if ALL of the following are true:
+
+✓ All four main build scripts execute without errors
+✓ All five outputs (.pptx and .xlsx files) generate successfully
+✓ Output file sizes within 5% of pre-cleanup baseline
+✓ PowerPoint and Excel can open all outputs without errors
+✓ No import errors when loading deck_core, workbook_core, or project packages
+✓ Grep validation shows expected import counts (167 deck_core, 230 workbook_core)
+✓ No stale "workbook.lib" or "deck.lib" imports remain
+✓ Documentation files successfully moved to docs/ folders
+✓ No broken symbolic links or dangling references
+✓ Research folders intact and functional
+✓ All moved files exist in new locations
+✓ Full workspace backup created and verified
+
+
+FAILURE INDICATORS:
+------------------
+
+Abort and rollback if ANY of these occur:
+
+✗ Any build script fails with ImportError or ModuleNotFoundError
+✗ Any build script fails with FileNotFoundError for templates/assets
+✗ Output file is 0 bytes or significantly different size from baseline
+✗ Output file won't open in PowerPoint/Excel or shows errors
+✗ Import statement for core library fails
+✗ Grep shows unexpected import patterns after cleanup
+✗ Research scripts can't find extracted/ data
+✗ Any active code file is missing after move
+✗ Validation step takes >10 seconds longer than baseline (indicates path issues)
+
+
+MONITORING AFTER CLEANUP:
+-------------------------
+
+For 30 days after cleanup:
+  - Track build success rate (should remain 100%)
+  - Monitor build times (should be stable)
+  - Note any user reports of missing files
+  - Check for any path-related errors in logs
+
+If any issues arise:
+  - Investigate immediately
+  - Rollback affected batch if needed
+  - Update this due diligence report
+  - Delay archive deletion until stable
+
+
+================================================================================
+END OF DUE DILIGENCE REPORT
+================================================================================
+
+Report Status: COMPLETE - READ-ONLY ANALYSIS
+Next Steps: Review this report, then implement cleanup in batches with validation
+Backup Required: YES - full workspace backup before ANY changes
+Estimated Cleanup Time: 2-3 hours (with validation)
+Risk Level: LOW for documented moves, MEDIUM for archives (wait 30 days)
+
+Generated: 2026-06-03
+Analyst: Claude Code (Sonnet 4.5)
+Report Location: _cleanup/due_diligence/restructure_due_diligence_2026-06-03.txt

@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "source": "Generated from deck/_docs/intellisense/DocumentFormat.OpenXml.PresentationAndDrawing.xml",
+    "pattern": "<ns>:<tag>  ->  DocumentFormat.OpenXml.<Class>  ->  learn.microsoft.com/.../<class_lower>",
+    "regenerate": "python3 _docs/_build_element_urls.py",
+    "covers": "every <ns:tag> emitted in primitives.py"
+  },
+  "elements": {
+    "a:avLst": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.AdjustValueList",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.adjustvaluelist"
+    },
+    "a:blip": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Blip",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.blip"
+    },
+    "a:bodyPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.BodyProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.bodyproperties"
+    },
+    "a:buAutoNum": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.AutoNumberedBullet",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.autonumberedbullet"
+    },
+    "a:buChar": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.CharacterBullet",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.characterbullet"
+    },
+    "a:buFont": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.BulletFont",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.bulletfont"
+    },
+    "a:buNone": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.NoBullet",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.nobullet"
+    },
+    "a:chExt": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ChildExtents",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.childextents"
+    },
+    "a:chOff": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ChildOffset",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.childoffset"
+    },
+    "a:cs": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ComplexScriptFont",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.complexscriptfont"
+    },
+    "a:ea": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.EastAsianFont",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.eastasianfont"
+    },
+    "a:endParaRPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.EndParagraphRunProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.endparagraphrunproperties"
+    },
+    "a:ext": {
+      "candidates": [
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Extension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.extension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Extents",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.extents"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ShapePropertiesExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.shapepropertiesextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.GvmlGroupShapeExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.gvmlgroupshapeextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.NonVisualGroupDrawingShapePropsExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.nonvisualgroupdrawingshapepropsextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.OfficeStyleSheetExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.officestylesheetextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ConnectorLockingExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.connectorlockingextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.DataModelExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.datamodelextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.PtExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.ptextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.HyperlinkExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.hyperlinkextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.LinePropertiesExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.linepropertiesextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.nonvisualdrawingpropertiesextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.NonVisualPicturePropertiesExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.nonvisualpicturepropertiesextension"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.BlipExtension",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.blipextension"
+        }
+      ]
+    },
+    "a:fillRect": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.FillRectangle",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.fillrectangle"
+    },
+    "a:fld": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Field",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.field"
+    },
+    "a:graphic": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Graphic",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.graphic"
+    },
+    "a:graphicData": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.GraphicData",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.graphicdata"
+    },
+    "a:graphicFrameLocks": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.GraphicFrameLocks",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.graphicframelocks"
+    },
+    "a:gridCol": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.GridColumn",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.gridcolumn"
+    },
+    "a:latin": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.LatinFont",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.latinfont"
+    },
+    "a:ln": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Outline",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.outline"
+    },
+    "a:lnSpc": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.LineSpacing",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.linespacing"
+    },
+    "a:lstStyle": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ListStyle",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.liststyle"
+    },
+    "a:masterClrMapping": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.MasterColorMapping",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.mastercolormapping"
+    },
+    "a:noFill": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.NoFill",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.nofill"
+    },
+    "a:off": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Offset",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.offset"
+    },
+    "a:p": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Paragraph",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.paragraph"
+    },
+    "a:pPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ParagraphProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.paragraphproperties"
+    },
+    "a:picLocks": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.PictureLocks",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.picturelocks"
+    },
+    "a:prstDash": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.PresetDash",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.presetdash"
+    },
+    "a:prstGeom": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.PresetGeometry",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.presetgeometry"
+    },
+    "a:r": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Run",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.run"
+    },
+    "a:rPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.RunProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.runproperties"
+    },
+    "a:schemeClr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.SchemeColor",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.schemecolor"
+    },
+    "a:solidFill": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.SolidFill",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.solidfill"
+    },
+    "a:spLocks": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.ShapeLocks",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.shapelocks"
+    },
+    "a:spcAft": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.SpaceAfter",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.spaceafter"
+    },
+    "a:spcPct": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.SpacingPercent",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.spacingpercent"
+    },
+    "a:spcPts": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.SpacingPoints",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.spacingpoints"
+    },
+    "a:srgbClr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.RgbColorModelHex",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.rgbcolormodelhex"
+    },
+    "a:stretch": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Stretch",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.stretch"
+    },
+    "a:t": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Text",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.text"
+    },
+    "a:tableStyleId": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableStyleId",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tablestyleid"
+    },
+    "a:tailEnd": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TailEnd",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tailend"
+    },
+    "a:tbl": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Table",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.table"
+    },
+    "a:tblGrid": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableGrid",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tablegrid"
+    },
+    "a:tblPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tableproperties"
+    },
+    "a:tc": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableCell",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tablecell"
+    },
+    "a:tcPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableCellProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tablecellproperties"
+    },
+    "a:tr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TableRow",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.tablerow"
+    },
+    "a:txBody": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TextBody",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.textbody"
+    },
+    "a:xfrm": {
+      "candidates": [
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TransformEffect",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.transformeffect"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.Transform2D",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.transform2d"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Drawing.TransformGroup",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.drawing.transformgroup"
+        }
+      ]
+    },
+    "p:blipFill": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.BlipFill",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.blipfill"
+    },
+    "p:cNvCxnSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualConnectorShapeDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualconnectorshapedrawingproperties"
+    },
+    "p:cNvGraphicFramePr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualGraphicFrameDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualgraphicframedrawingproperties"
+    },
+    "p:cNvGrpSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualGroupShapeDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualgroupshapedrawingproperties"
+    },
+    "p:cNvPicPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualPictureDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualpicturedrawingproperties"
+    },
+    "p:cNvPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualdrawingproperties"
+    },
+    "p:cNvSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualShapeDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualshapedrawingproperties"
+    },
+    "p:cSld": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.CommonSlideData",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.commonslidedata"
+    },
+    "p:clrMapOvr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.ColorMapOverride",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.colormapoverride"
+    },
+    "p:cxnSp": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.ConnectionShape",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.connectionshape"
+    },
+    "p:graphicFrame": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.GraphicFrame",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.graphicframe"
+    },
+    "p:grpSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.GroupShapeProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.groupshapeproperties"
+    },
+    "p:nvCxnSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualConnectionShapeProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualconnectionshapeproperties"
+    },
+    "p:nvGraphicFramePr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualGraphicFrameProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualgraphicframeproperties"
+    },
+    "p:nvGrpSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualGroupShapeProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualgroupshapeproperties"
+    },
+    "p:nvPicPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualPictureProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualpictureproperties"
+    },
+    "p:nvPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.ApplicationNonVisualDrawingProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.applicationnonvisualdrawingproperties"
+    },
+    "p:nvSpPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.NonVisualShapeProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.nonvisualshapeproperties"
+    },
+    "p:ph": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.PlaceholderShape",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.placeholdershape"
+    },
+    "p:pic": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.Picture",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.picture"
+    },
+    "p:sld": {
+      "candidates": [
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Presentation.Slide",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.slide"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Presentation.SlideListEntry",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.slidelistentry"
+        },
+        {
+          "sdk_fqn": "DocumentFormat.OpenXml.Presentation.OutlineViewSlideListEntry",
+          "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.outlineviewslidelistentry"
+        }
+      ]
+    },
+    "p:sp": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.Shape",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.shape"
+    },
+    "p:spPr": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.ShapeProperties",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.shapeproperties"
+    },
+    "p:spTree": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.ShapeTree",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.shapetree"
+    },
+    "p:txBody": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.TextBody",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.textbody"
+    },
+    "p:xfrm": {
+      "sdk_fqn": "DocumentFormat.OpenXml.Presentation.Transform",
+      "learn_url": "https://learn.microsoft.com/en-us/dotnet/api/documentformat.openxml.presentation.transform"
+    }
+  }
+}

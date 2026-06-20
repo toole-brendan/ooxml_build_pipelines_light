@@ -1,0 +1,117 @@
+<section class="slide" data-label="TAM Sizing Approach" data-screen-label="03 TAM Sizing Approach" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="2">
+
+  <!-- Chrome: breadcrumb + institutional seals (scope pill dropped deck-wide per resolution 7) -->
+  <div class="chrome-top">
+    <div class="breadcrumb">Market Sizing / Scope</div>
+    <div class="chrome-top__right">
+      <span class="seal-block">
+        <img class="seal" src="assets/usn-crest.jpg" alt="U.S. Navy">
+        <img class="seal" src="assets/uscg-crest.png" alt="U.S. Coast Guard">
+      </span>
+    </div>
+  </div>
+
+  <div class="slide-title">
+    <span class="topic">TAM Sizing Approach</span><span class="pipe">|</span><span class="assertion">Filtering FPDS contract-award data from 2,539 federal PSCs down to 65 ship-MRO services codes sizes the FY2025 Navy and Coast Guard MRO contracting TAM at $7.1B</span>
+  </div>
+
+  <div class="body left-right-wide" style="align-items: start;">
+
+    <!-- LEFT: approach-flow diagram (numbered step column + horizontal
+         input / operator / output stages per row). Mirrors the manager's TCV
+         approach-flow template but uses filter operations (AND / equals)
+         rather than arithmetic. Navy-hero rule: only the terminal $7.1B
+         output stage is navy. -->
+    <div>
+      <div class="approach-flow">
+
+        <!-- Row 1: filter federal PSCs to USN/USCG services-class codes (arrow operator - set narrowing) -->
+        <div class="narrative-step">
+          <div class="step-num">1</div>
+          <div class="step-text">Filter federal PSCs to USN / USCG services-class codes</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-stage">
+            <span class="stage-label">Input</span>
+            <span class="stage-value">2,539 PSCs</span>
+            <span class="stage-sub">All federal contract-action codes</span>
+          </div>
+          <span class="flow-op">-&gt;</span>
+          <div class="flow-stage">
+            <span class="stage-value">USN / USCG services-class codes</span>
+            <span class="stage-sub">J, K, N, H, L, M families</span>
+          </div>
+          <span class="flow-op">-&gt;</span>
+          <div class="flow-stage">
+            <span class="stage-label">Output</span>
+            <span class="stage-value">~1,800 Services PSCs</span>
+          </div>
+        </div>
+
+        <!-- Row 2: filter to ship MRO codes (arrow operator - set narrowing) -->
+        <div class="narrative-step">
+          <div class="step-num">2</div>
+          <div class="step-text">Filter to ship MRO codes</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-stage">
+            <span class="stage-label">Input</span>
+            <span class="stage-value">~1,800 Services PSCs</span>
+          </div>
+          <span class="flow-op">-&gt;</span>
+          <div class="flow-stage">
+            <span class="stage-value">Ship MRO codes</span>
+            <span class="stage-sub">Repair, modification, overhaul, husbanding</span>
+          </div>
+          <span class="flow-op">-&gt;</span>
+          <div class="flow-stage">
+            <span class="stage-label">Output</span>
+            <span class="stage-value">65 Ship MRO PSCs</span>
+          </div>
+        </div>
+
+        <!-- Row 3: apply FY2025 obligations (arithmetic - x / = operators) -->
+        <div class="narrative-step">
+          <div class="step-num">3</div>
+          <div class="step-text">Apply FY2025 obligations to size the MRO TAM</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-stage">
+            <span class="stage-label">Input</span>
+            <span class="stage-value">65 Ship MRO PSCs</span>
+          </div>
+          <span class="flow-op">x</span>
+          <div class="flow-stage">
+            <span class="stage-value">FY2025 obligations</span>
+            <span class="stage-sub">FPDS Atom Feed, post-FMS carve-out</span>
+          </div>
+          <span class="flow-op">=</span>
+          <div class="flow-stage terminal">
+            <span class="stage-label">FY2025 MRO TAM</span>
+            <span class="stage-value">$7.1B</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: single PSC definition callout (~25-30% slide width).
+         Awards-vs-budget-materials and in-scope/out-of-scope definitions moved
+         to methodology appendix. -->
+    <div style="align-self: start; max-width: 360px;">
+      <div style="border: 1px solid var(--rule-soft); background: #ffffff;">
+        <div style="background: var(--navy-900); color: #ffffff; font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 12px;">
+          What is a PSC?
+        </div>
+        <div style="padding: 14px 14px; font-size: 15px; line-height: 1.5; color: var(--ink);">
+          A 4-character Product and Service Code assigned by the contracting officer at the buying command to every federal contract action.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Note: Nuclear-MRO PSC scope addressed on Slide 4. Detailed in-scope and out-of-scope definitions are provided in the methodology appendix.<br>
+    Source: FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, 65 services PSCs, post-exclusions). Data as of April 2026.
+  </div>
+</section>

@@ -1,0 +1,113 @@
+The project source files are the updated infrastructure / plumbing files for an OOXML-focused build pipeline that creates PowerPoint decks. Please study them before doing anything else.
+
+Important files to understand:
+- deck_core/style.py: canvas, BODY box, palette, point-size-bearing typography tokens, inset presets, locked chrome geometry.
+- deck_core/slide_guide.md: house style rules for typography, color, fill, borders, sharp rectangles, no-fill commentary, charts, tables, and visual hierarchy.
+- deck_core/slide_base_template.py: the slide-authoring surface that future slide modules will start from.
+- deck_core/slide_snippets.md: cookbook patterns for text boxes, rich text, no-fill commentary rails, charts, connector notes, in-shape hierarchy, tables, and shape-built visuals.
+- deck_core/primitives.py, charts.py, text_metrics.py, lib.py, ooxml.py, and slide_probe.py: understand the available builders and constraints, but do not write slide code in this task.
+
+Please also study the attached .txt files. These are the slide specs:
+- one consolidated deck spec based on my research; and
+- individual spec sheets for each body slide.
+
+Your task is NOT to create PowerPoint slides and NOT to write Python slide modules yet.
+
+Your task is to enhance the first five individual body-slide spec sheets so they are ready for a later AI agent to implement in the OOXML pipeline.
+
+For each of the first five individual body-slide spec sheets, regenerate the spec as a complete, self-contained .txt-style spec. Preserve the slide’s research content, facts, numbers, sources, purpose, core finding, suggested text, and intended visual logic. Do not invent new facts or change the analytical conclusion unless the existing spec is internally inconsistent; if something is ambiguous, mark it as an implementation assumption or open question.
+
+For each regenerated spec, add a detailed object-level design annotation that maps the slide plan to the updated build pipeline’s style system.
+
+Specifically, for every planned object on the slide, annotate:
+
+1. Object role
+   Examples: hero equation, answer card, method card, process step, equation banner, chart title, chart frame, table, axis label, connector, connector note, guardrail note, no-fill commentary rail, sources line.
+
+2. Fill and text color
+   Use the exact palette tokens from style.py:
+   BLUE_1, BLUE_2, BLUE_3, BLUE_4, BLUE_5,
+   GRAY_1, GRAY_2, GRAY_3, GRAY_4, GRAY_5,
+   DK, WHITE, BLACK, PRELIM, or None.
+   Explain the semantic reason for the fill: answer, boundary, method, evidence, caveat, neutral context, residual, out-of-scope, label, commentary, etc.
+
+3. Border and shape geometry
+   Specify whether the shape is:
+   - filled plus 1pt black border;
+   - filled plus 1.5pt black border for a focal or anchor object;
+   - no-fill and no-border for labels, captions, commentary, legends, chart titles, or tick labels;
+   - no-fill plus thin rule for axis, bracket, connector, container, or separator.
+   Assume normal cards, panels, bars, chips, rails, ledgers, and bands are sharp rectangles, prst="rect". Rounded corners should not be used unless the pipeline guidance explicitly allows the object type.
+
+4. Typography
+   For every planned text run, specify the typography token, size, and treatment.
+   Use the point-size-bearing tokens from the updated style.py, such as:
+   SOURCES_8PT, FINEPRINT_8_5PT, LABEL_9PT, CONNECTOR_NOTE_8_5PT,
+   DENSE_BODY_10PT, CHART_TITLE_10PT, MESSAGE_11PT, BODY_12PT,
+   CAP_12PT, EXHIBIT_HEADER_13PT, VALUE_14PT, BADGE_16PT,
+   RIBBON_KPI_18PT, ANSWER_KPI_24PT, HERO_32PT.
+   Keep bold, italic, and ALL CAPS explicit. For example:
+   “CAP_12PT, bold, ALL CAPS, WHITE”
+   “FINEPRINT_8_5PT, italic, DK”
+   “MESSAGE_11PT, bold, DK”
+   “CHART_TITLE_10PT, italic, DK, no fill”
+   If none of the default tokens fit a specific text element, you may specify a raw size with a comment, e.g. “size=1150, 11.5pt, tight axis label.”
+
+5. In-shape hierarchy
+   Where a shape contains multiple hierarchy levels, specify the internal run ladder. For example:
+   - cap plus subline;
+   - value plus qualifier;
+   - bold label prefix plus regular value;
+   - section label plus bullets;
+   - badge plus evidence sentence.
+   Do not describe a whole shape as “10pt text” if it actually needs multiple text levels.
+
+6. No-fill commentary
+   Preserve and use the pipeline’s no-fill commentary style where appropriate. Longer interpretation text should often be no-fill / no-border, using bullets with bold parent or lead-in text followed by regular explanatory text. Do not convert every explanatory note into a filled card. Use filled shapes only when the note is itself a semantic object, such as a warning, scope boundary, unit caveat, method guardrail, or focal answer.
+
+7. Charts, tables, and shape-built exhibits
+   If a chart is planned, specify whether it should be native editable chart or shape-built.
+   Prefer an external no-fill chart title using CHART_TITLE_10PT italic, not a native chart title, unless the spec has a reason to keep the title inside the native chart.
+   If a table is planned, specify header/body sizes, fill/border treatment, and whether text_metrics row-height estimation will likely be needed.
+   If a visual is shape-built, specify the direct labels, axis labels, connector notes, and line weights.
+
+8. Connectors and flow diagrams
+   For tree, process, logic, or flow slides, specify connector style:
+   - stroke color;
+   - stroke width;
+   - solid or dashed;
+   - arrowhead or no arrowhead;
+   - whether the connector sits behind cards.
+   Connector annotations should use CONNECTOR_NOTE_8_5PT, italic, DK, no fill, no border, unless another treatment is justified.
+
+Output format for each regenerated spec:
+
+BODY SLIDE XX / DECK SLIDE YY
+MODULE NAME
+SLIDE TYPE
+TITLE
+PURPOSE
+CORE FINDING TO LAND
+KEY VALUES FROM WORKBOOK OR RESEARCH
+CANVAS AND CHROME
+VISUAL READ
+LAYOUT
+ASCII WIREFRAME, if present or useful
+OBJECT PLACEMENT
+OBJECT-LEVEL STYLE PLAN
+    Use a table with columns:
+    Object / Role / Fill / Border and geometry / Typography / Notes
+TYPOGRAPHY PLAN
+    List planned text runs or text groups with:
+    text or text type / token / point size / bold / italic / caps / color / fill context
+COLOR, FILL, BORDER, AND SHAPE-GEOMETRY PLAN
+    Summarize palette usage and no-fill usage.
+CHART, TABLE, CONNECTOR, OR SHAPE-BUILT EXHIBIT NOTES
+SUGGESTED ON-SLIDE TEXT
+SOURCES
+IMPLEMENTATION NOTES FOR THE FUTURE SLIDE-CODING AGENT
+OPEN QUESTIONS OR ASSUMPTIONS
+
+Process only the first five individual body-slide spec sheets in this pass. Do not process the consolidated deck spec except as context for ordering, terminology, and consistency. If there is any ambiguity about which files are the first five individual body-slide specs, infer the order from deck slide number, body slide number, or filename, and state the ordering you used.
+
+Keep the regenerated specs concise enough to be useful to a coding agent, but detailed enough that the later implementation agent does not have to guess typography, fills, borders, or no-fill commentary treatment.

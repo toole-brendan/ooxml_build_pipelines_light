@@ -1,0 +1,367 @@
+# sheet_probe: SAM Build
+
+- source: `file`
+- tab name: `SAM Build`
+- tab color: `FF34406B`
+- gridlines shown: `0`
+- columns: 9 · rows: 65 · cells: 321 · formulas: 127
+
+## Banners
+- `B2` S_TITLE_SHEET — SAM Build
+- `B4` S_TITLE_SECTION — §1 - SAM scenario menu
+- `B14` S_TITLE_SECTION — §2 - Supplier-addressable shares
+- `B16` S_TITLE_SUBSECTION — §2a - Observed bucket shares (subaward $) + Inputs adjustment; residual explicit
+- `B30` S_TITLE_SUBSECTION — §2b - Excluded from the addressable base (audit - not supplier-addressable)
+- `B43` S_TITLE_SECTION — §3 - Bucket allocation
+- `B45` S_TITLE_SUBSECTION — §3a - Portfolio TAM basis (cumulative FY22-FY27)
+- `B50` S_TITLE_SUBSECTION — §3b - TAM by work-type bucket
+- `B64` S_TITLE_SECTION — §4 - Scenario calculation
+- `B66` S_TITLE_SUBSECTION — §4a - SAM by leadership scenario (subset of TAM, no haircut)
+- `B76` S_TITLE_SUBSECTION — §4b - Residual explanation
+- `B81` S_TITLE_SECTION — §5 - Annual SAM by fiscal year
+- `B91` S_TITLE_SUBSECTION — §5b - Annual tie-out (per-FY annual broad SAM sums to cumulative broad SAM)
+
+## Defined names
+- `broad_sam_annual` → `'SAM Build'!$E$73`
+- `broad_sam_cumulative` → `'SAM Build'!$C$73`
+- `sam_broad` → `'SAM Build'!$C$73`
+
+## Formula dependencies (referenced sheet → cells)
+- **Assumptions** (7): E19, E20, E21, E22, E23, E24, E25
+- **Entity Master** (24): C19, C20, C21, C22, C23, C24, C25, C26, C27, C33, C34, C35 …
+- **SAM Build** (71): C7, D7, E7, C8, D8, E8, C9, D9, E9, C10, D10, E10 …
+- **Scenarios** (28): C69, C70, C71, C73, C84, D84, E84, F84, G84, H84, C85, D85 …
+- **TAM Build** (36): C47, E69, E70, E71, E72, E73, C84, D84, E84, F84, G84, H84 …
+
+## Cross-sheet links (8)
+- `E19` S_LINK_PCT = 'Assumptions'!C44
+- `E20` S_LINK_PCT = 'Assumptions'!C45
+- `E21` S_LINK_PCT = 'Assumptions'!C46
+- `E22` S_LINK_PCT = 'Assumptions'!C47
+- `E23` S_LINK_PCT = 'Assumptions'!C48
+- `E24` S_LINK_PCT = 'Assumptions'!C49
+- `E25` S_LINK_PCT = 'Assumptions'!C50
+- `C47` S_LINK_NUM = 'TAM Build'!I114
+
+## Cells
+- `B2` S_TITLE_SHEET: SAM Build
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: §1 - SAM scenario menu
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Scenario
+- `C6` S_HEADER_CENTER: SAM $M
+- `D6` S_HEADER_CENTER: % of TAM
+- `E6` S_HEADER_CENTER: SAM $M/yr
+- `B7` S_DEFAULT: Metal components
+- `C7` S_NUM: ='SAM Build'!C69
+- `D7` S_PCT: ='SAM Build'!D69
+- `E7` S_NUM: ='SAM Build'!E69
+- `B8` S_DEFAULT: HM&E components
+- `C8` S_NUM: ='SAM Build'!C70
+- `D8` S_PCT: ='SAM Build'!D70
+- `E8` S_NUM: ='SAM Build'!E70
+- `B9` S_DEFAULT: Electrical / power
+- `C9` S_NUM: ='SAM Build'!C71
+- `D9` S_PCT: ='SAM Build'!D71
+- `E9` S_NUM: ='SAM Build'!E71
+- `B10` S_DEFAULT: Modular assemblies
+- `C10` S_NUM: ='SAM Build'!C72
+- `D10` S_PCT: ='SAM Build'!D72
+- `E10` S_NUM: ='SAM Build'!E72
+- `B11` S_DEFAULT: Broad component mfg
+- `C11` S_NUM: ='SAM Build'!C73
+- `D11` S_PCT: ='SAM Build'!D73
+- `E11` S_NUM: ='SAM Build'!E73
+- `A14` S_DEFAULT: x
+- `B14` S_TITLE_SECTION: §2 - Supplier-addressable shares
+- `C14` S_TITLE_SECTION: 
+- `D14` S_TITLE_SECTION: 
+- `E14` S_TITLE_SECTION: 
+- `F14` S_TITLE_SECTION: 
+- `G14` S_TITLE_SECTION: 
+- `H14` S_TITLE_SECTION: 
+- `I14` S_TITLE_SECTION: 
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SUBSECTION: §2a - Observed bucket shares (subaward $) + Inputs adjustment; residual explicit
+- `C16` S_TITLE_SUBSECTION: 
+- `D16` S_TITLE_SUBSECTION: 
+- `E16` S_TITLE_SUBSECTION: 
+- `F16` S_TITLE_SUBSECTION: 
+- `G16` S_TITLE_SUBSECTION: 
+- `H16` S_TITLE_SUBSECTION: 
+- `I16` S_TITLE_SUBSECTION: 
+- `B18` S_HEADER_LEFT: Bucket
+- `C18` S_HEADER_CENTER: Observed $M
+- `D18` S_HEADER_CENTER: Observed %
+- `E18` S_HEADER_CENTER: Adj +/- (Inputs)
+- `F18` S_HEADER_CENTER: Modeled %
+- `B19` S_LABEL_INDENT_1: Structural fabrication & modules
+- `C19` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="structural")*'Entity Master'!G7:G2162)
+- `D19` S_PCT: =C19/$C$27
+- `E19` S_LINK_PCT: ='Assumptions'!C44
+- `F19` S_PCT: =D19+E19
+- `B20` S_LABEL_INDENT_1: Machining / mechanical / propulsion
+- `C20` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="machining")*'Entity Master'!G7:G2162)
+- `D20` S_PCT: =C20/$C$27
+- `E20` S_LINK_PCT: ='Assumptions'!C45
+- `F20` S_PCT: =D20+E20
+- `B21` S_LABEL_INDENT_1: Castings & forgings
+- `C21` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="castings")*'Entity Master'!G7:G2162)
+- `D21` S_PCT: =C21/$C$27
+- `E21` S_LINK_PCT: ='Assumptions'!C46
+- `F21` S_PCT: =D21+E21
+- `B22` S_LABEL_INDENT_1: Piping / fluid handling
+- `C22` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="piping")*'Entity Master'!G7:G2162)
+- `D22` S_PCT: =C22/$C$27
+- `E22` S_LINK_PCT: ='Assumptions'!C47
+- `F22` S_PCT: =D22+E22
+- `B23` S_LABEL_INDENT_1: Electrical power / distribution / generation
+- `C23` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="electrical")*'Entity Master'!G7:G2162)
+- `D23` S_PCT: =C23/$C$27
+- `E23` S_LINK_PCT: ='Assumptions'!C48
+- `F23` S_PCT: =D23+E23
+- `B24` S_LABEL_INDENT_1: HVAC / ventilation / chilled water
+- `C24` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="hvac")*'Entity Master'!G7:G2162)
+- `D24` S_PCT: =C24/$C$27
+- `E24` S_LINK_PCT: ='Assumptions'!C49
+- `F24` S_PCT: =D24+E24
+- `B25` S_LABEL_INDENT_1: Coatings / insulation / decking
+- `C25` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="coatings")*'Entity Master'!G7:G2162)
+- `D25` S_PCT: =C25/$C$27
+- `E25` S_LINK_PCT: ='Assumptions'!C50
+- `F25` S_PCT: =D25+E25
+- `B26` S_LABEL_INDENT_1: Unbucketed / ambiguous (not in scenario SAM)
+- `C26` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!I7:I2162="unbucketed")*'Entity Master'!G7:G2162)
+- `D26` S_PCT: =C26/$C$27
+- `F26` S_PCT: =1-SUM(F19:F25)
+- `B27` S_TOTAL: Supplier-addressable total
+- `C27` S_NUM_TOTAL: =SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*'Entity Master'!G7:G2162)
+- `D27` S_PCT_TOTAL: =C27/$C$27
+- `E27` S_BORDER_TOP: 
+- `F27` S_PCT_TOTAL: =SUM(F19:F26)
+- `A30` S_DEFAULT: x
+- `B30` S_TITLE_SUBSECTION: §2b - Excluded from the addressable base (audit - not supplier-addressable)
+- `C30` S_TITLE_SUBSECTION: 
+- `D30` S_TITLE_SUBSECTION: 
+- `E30` S_TITLE_SUBSECTION: 
+- `F30` S_TITLE_SUBSECTION: 
+- `G30` S_TITLE_SUBSECTION: 
+- `H30` S_TITLE_SUBSECTION: 
+- `I30` S_TITLE_SUBSECTION: 
+- `B32` S_HEADER_LEFT: Role
+- `C32` S_HEADER_CENTER: $M
+- `D32` S_HEADER_LEFT: 
+- `E32` S_HEADER_LEFT: 
+- `F32` S_HEADER_LEFT: 
+- `B33` S_LABEL_INDENT_1: Mission systems (combat/electronics - VLS, radar, EW)
+- `C33` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="mission_systems")*'Entity Master'!G7:G2162)
+- `B34` S_LABEL_INDENT_1: Service / non-component / IT
+- `C34` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="service")*'Entity Master'!G7:G2162)
+- `B35` S_LABEL_INDENT_1: Holding / parent unknown
+- `C35` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="holding")*'Entity Master'!G7:G2162)
+- `B36` S_LABEL_INDENT_1: Foreign / FMS
+- `C36` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="foreign_fms")*'Entity Master'!G7:G2162)
+- `B37` S_LABEL_INDENT_1: Prime yard (Bath Iron Works)
+- `C37` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="prime")*'Entity Master'!G7:G2162)
+- `B38` S_LABEL_INDENT_1: Co-prime yard (HII Ingalls)
+- `C38` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="co_prime")*'Entity Master'!G7:G2162)
+- `B39` S_LABEL_INDENT_1: GFE / Navy-directed (Aegis/SPY-6/weapons)
+- `C39` S_NUM: =SUMPRODUCT(('Entity Master'!H7:H2162="gfe_mib")*'Entity Master'!G7:G2162)
+- `B40` S_TOTAL: Grand total (all recipients)
+- `C40` S_NUM_TOTAL: =SUMPRODUCT('Entity Master'!G7:G2162)
+- `D40` S_BORDER_TOP: 
+- `E40` S_BORDER_TOP: 
+- `F40` S_BORDER_TOP: 
+- `A43` S_DEFAULT: x
+- `B43` S_TITLE_SECTION: §3 - Bucket allocation
+- `C43` S_TITLE_SECTION: 
+- `D43` S_TITLE_SECTION: 
+- `E43` S_TITLE_SECTION: 
+- `F43` S_TITLE_SECTION: 
+- `G43` S_TITLE_SECTION: 
+- `H43` S_TITLE_SECTION: 
+- `I43` S_TITLE_SECTION: 
+- `A45` S_DEFAULT: x
+- `B45` S_TITLE_SUBSECTION: §3a - Portfolio TAM basis (cumulative FY22-FY27)
+- `C45` S_TITLE_SUBSECTION: 
+- `D45` S_TITLE_SUBSECTION: 
+- `E45` S_TITLE_SUBSECTION: 
+- `F45` S_TITLE_SUBSECTION: 
+- `G45` S_TITLE_SUBSECTION: 
+- `H45` S_TITLE_SUBSECTION: 
+- `I45` S_TITLE_SUBSECTION: 
+- `B47` S_BOLD: Portfolio TAM (DDG-51, both streams), FY22-27
+- `C47` S_LINK_NUM: ='TAM Build'!I114
+- `A50` S_DEFAULT: x
+- `B50` S_TITLE_SUBSECTION: §3b - TAM by work-type bucket
+- `C50` S_TITLE_SUBSECTION: 
+- `D50` S_TITLE_SUBSECTION: 
+- `E50` S_TITLE_SUBSECTION: 
+- `F50` S_TITLE_SUBSECTION: 
+- `G50` S_TITLE_SUBSECTION: 
+- `H50` S_TITLE_SUBSECTION: 
+- `I50` S_TITLE_SUBSECTION: 
+- `B52` S_HEADER_LEFT: Bucket
+- `C52` S_HEADER_CENTER: Bucket TAM $M
+- `D52` S_HEADER_CENTER: Modeled share
+- `B53` S_LABEL_INDENT_1: Structural fabrication & modules
+- `C53` S_NUM: =$C$47*'SAM Build'!F19
+- `D53` S_PCT: ='SAM Build'!F19
+- `B54` S_LABEL_INDENT_1: Machining / mechanical / propulsion
+- `C54` S_NUM: =$C$47*'SAM Build'!F20
+- `D54` S_PCT: ='SAM Build'!F20
+- `B55` S_LABEL_INDENT_1: Castings & forgings
+- `C55` S_NUM: =$C$47*'SAM Build'!F21
+- `D55` S_PCT: ='SAM Build'!F21
+- `B56` S_LABEL_INDENT_1: Piping / fluid handling
+- `C56` S_NUM: =$C$47*'SAM Build'!F22
+- `D56` S_PCT: ='SAM Build'!F22
+- `B57` S_LABEL_INDENT_1: Electrical power / distribution / generation
+- `C57` S_NUM: =$C$47*'SAM Build'!F23
+- `D57` S_PCT: ='SAM Build'!F23
+- `B58` S_LABEL_INDENT_1: HVAC / ventilation / chilled water
+- `C58` S_NUM: =$C$47*'SAM Build'!F24
+- `D58` S_PCT: ='SAM Build'!F24
+- `B59` S_LABEL_INDENT_1: Coatings / insulation / decking
+- `C59` S_NUM: =$C$47*'SAM Build'!F25
+- `D59` S_PCT: ='SAM Build'!F25
+- `B60` S_LABEL_INDENT_1: Unbucketed / ambiguous (not in scenario SAM)
+- `C60` S_NUM: =$C$47*'SAM Build'!F26
+- `D60` S_PCT: ='SAM Build'!F26
+- `B61` S_TOTAL: Total (7 buckets + unbucketed = TAM)
+- `C61` S_NUM_TOTAL: =SUM(C53:C60)
+- `D61` S_PCT_TOTAL: =SUM(D53:D60)
+- `A64` S_DEFAULT: x
+- `B64` S_TITLE_SECTION: §4 - Scenario calculation
+- `C64` S_TITLE_SECTION: 
+- `D64` S_TITLE_SECTION: 
+- `E64` S_TITLE_SECTION: 
+- `F64` S_TITLE_SECTION: 
+- `G64` S_TITLE_SECTION: 
+- `H64` S_TITLE_SECTION: 
+- `I64` S_TITLE_SECTION: 
+- `A66` S_DEFAULT: x
+- `B66` S_TITLE_SUBSECTION: §4a - SAM by leadership scenario (subset of TAM, no haircut)
+- `C66` S_TITLE_SUBSECTION: 
+- `D66` S_TITLE_SUBSECTION: 
+- `E66` S_TITLE_SUBSECTION: 
+- `F66` S_TITLE_SUBSECTION: 
+- `G66` S_TITLE_SUBSECTION: 
+- `H66` S_TITLE_SUBSECTION: 
+- `I66` S_TITLE_SUBSECTION: 
+- `B68` S_HEADER_LEFT: Scenario
+- `C68` S_HEADER_CENTER: SAM $M
+- `D68` S_HEADER_CENTER: % of TAM
+- `E68` S_HEADER_CENTER: SAM $M/yr
+- `B69` S_DEFAULT: Metal components
+- `C69` S_NUM: =SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!C7:C13)
+- `D69` S_PCT: =C69/'SAM Build'!C47
+- `E69` S_NUM: =C69/'TAM Build'!C132
+- `B70` S_DEFAULT: HM&E components
+- `C70` S_NUM: =SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!D7:D13)
+- `D70` S_PCT: =C70/'SAM Build'!C47
+- `E70` S_NUM: =C70/'TAM Build'!C132
+- `B71` S_DEFAULT: Electrical / power
+- `C71` S_NUM: =SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!E7:E13)
+- `D71` S_PCT: =C71/'SAM Build'!C47
+- `E71` S_NUM: =C71/'TAM Build'!C132
+- `B72` S_DEFAULT: Modular assemblies
+- `C72` S_NUM: ='SAM Build'!C47*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `D72` S_PCT: =C72/'SAM Build'!C47
+- `E72` S_NUM: =C72/'TAM Build'!C132
+- `B73` S_DEFAULT: Broad component mfg
+- `C73` S_NUM: =SUMPRODUCT('SAM Build'!C53:C59,'Scenarios'!G7:G13)
+- `D73` S_PCT: =C73/'SAM Build'!C47
+- `E73` S_NUM: =C73/'TAM Build'!C132
+- `A76` S_DEFAULT: x
+- `B76` S_TITLE_SUBSECTION: §4b - Residual explanation
+- `C76` S_TITLE_SUBSECTION: 
+- `D76` S_TITLE_SUBSECTION: 
+- `E76` S_TITLE_SUBSECTION: 
+- `F76` S_TITLE_SUBSECTION: 
+- `G76` S_TITLE_SUBSECTION: 
+- `H76` S_TITLE_SUBSECTION: 
+- `I76` S_TITLE_SUBSECTION: 
+- `B78` S_DEFAULT: Broad SAM = TAM - unbucketed residual.
+- `A81` S_DEFAULT: x
+- `B81` S_TITLE_SECTION: §5 - Annual SAM by fiscal year
+- `C81` S_TITLE_SECTION: 
+- `D81` S_TITLE_SECTION: 
+- `E81` S_TITLE_SECTION: 
+- `F81` S_TITLE_SECTION: 
+- `G81` S_TITLE_SECTION: 
+- `H81` S_TITLE_SECTION: 
+- `I81` S_TITLE_SECTION: 
+- `B83` S_HEADER_LEFT: Scenario
+- `C83` S_HEADER_CENTER: 2022
+- `D83` S_HEADER_CENTER: 2023
+- `E83` S_HEADER_CENTER: 2024
+- `F83` S_HEADER_CENTER: 2025
+- `G83` S_HEADER_CENTER: 2026
+- `H83` S_HEADER_CENTER: 2027
+- `I83` S_HEADER_CENTER: FY22-27
+- `B84` S_DEFAULT: Metal components
+- `C84` S_NUM: ='TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `D84` S_NUM: ='TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `E84` S_NUM: ='TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `F84` S_NUM: ='TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `G84` S_NUM: ='TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `H84` S_NUM: ='TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!C7:C13)
+- `I84` S_NUM: =SUM(C84:H84)
+- `B85` S_DEFAULT: HM&E components
+- `C85` S_NUM: ='TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `D85` S_NUM: ='TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `E85` S_NUM: ='TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `F85` S_NUM: ='TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `G85` S_NUM: ='TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `H85` S_NUM: ='TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!D7:D13)
+- `I85` S_NUM: =SUM(C85:H85)
+- `B86` S_DEFAULT: Electrical / power
+- `C86` S_NUM: ='TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `D86` S_NUM: ='TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `E86` S_NUM: ='TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `F86` S_NUM: ='TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `G86` S_NUM: ='TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `H86` S_NUM: ='TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!E7:E13)
+- `I86` S_NUM: =SUM(C86:H86)
+- `B87` S_DEFAULT: Modular assemblies
+- `C87` S_NUM: ='TAM Build'!C114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `D87` S_NUM: ='TAM Build'!D114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `E87` S_NUM: ='TAM Build'!E114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `F87` S_NUM: ='TAM Build'!F114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `G87` S_NUM: ='TAM Build'!G114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `H87` S_NUM: ='TAM Build'!H114*SUMPRODUCT(('Entity Master'!H7:H2162="supplier")*('Entity Master'!K7:K2162=1)*'Entity Master'!G7:G2162)/'SAM Build'!C27
+- `I87` S_NUM: =SUM(C87:H87)
+- `B88` S_DEFAULT: Broad component mfg
+- `C88` S_NUM: ='TAM Build'!C114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `D88` S_NUM: ='TAM Build'!D114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `E88` S_NUM: ='TAM Build'!E114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `F88` S_NUM: ='TAM Build'!F114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `G88` S_NUM: ='TAM Build'!G114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `H88` S_NUM: ='TAM Build'!H114*SUMPRODUCT('SAM Build'!F19:F25,'Scenarios'!G7:G13)
+- `I88` S_NUM: =SUM(C88:H88)
+- `A91` S_DEFAULT: x
+- `B91` S_TITLE_SUBSECTION: §5b - Annual tie-out (per-FY annual broad SAM sums to cumulative broad SAM)
+- `C91` S_TITLE_SUBSECTION: 
+- `D91` S_TITLE_SUBSECTION: 
+- `E91` S_TITLE_SUBSECTION: 
+- `F91` S_TITLE_SUBSECTION: 
+- `G91` S_TITLE_SUBSECTION: 
+- `H91` S_TITLE_SUBSECTION: 
+- `I91` S_TITLE_SUBSECTION: 
+- `B93` S_HEADER_LEFT: Check
+- `C93` S_HEADER_CENTER: Value
+- `B94` S_DEFAULT: Annual broad SAM FY22-27 (sum)
+- `C94` S_NUM: =I88

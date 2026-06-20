@@ -1,0 +1,471 @@
+# sheet_probe: TAM Build
+
+- source: `file`
+- tab name: `TAM Build`
+- tab color: `FF34406B`
+- gridlines shown: `0`
+- columns: 9 · rows: 91 · cells: 392 · formulas: 98
+
+## Banners
+- `B2` S_TITLE_SHEET — TAM Build
+- `B4` S_TITLE_SECTION — §1 - Headline TAM
+- `B17` S_TITLE_SECTION — §2 - Normalized budget (stream bases)
+- `B19` S_TITLE_SUBSECTION — §2a - Stream include-in-TAM toggles (1 = include)
+- `B26` S_TITLE_SUBSECTION — §2b - DDG-51 (LI 2122) stream bases ($M, FY22-FY27)
+- `B37` S_TITLE_SECTION — §3 - Supplier coefficients
+- `B39` S_TITLE_SUBSECTION — §3a - Per-stream supplier coefficients (feed TAM; $-weighted, gated, non-GFE)
+- `B48` S_TITLE_SUBSECTION — §3b - MYP correction - outside-yards POP
+- `B56` S_TITLE_SUBSECTION — §3c - All-gated POP shares (dollar-weighted, MYP-corrected)
+- `B66` S_TITLE_SUBSECTION — §3d - Distributed-production view (appendix - broader than commercial TAM)
+- `B73` S_TITLE_SUBSECTION — §3e - Anchor regression - MYP-corrected outside-yards near ~33%
+- `B82` S_TITLE_SECTION — §4 - MYP correction
+- `B84` S_TITLE_SUBSECTION — §4a - MYP master awards ($-redacted; reconstructed POP)
+- `B92` S_TITLE_SUBSECTION — §4b - Outside-yards POP - disclosed artifact vs MYP-corrected
+- `B100` S_TITLE_SUBSECTION — §4c - Guardrail
+- `B107` S_TITLE_SECTION — §5 - TAM by fiscal year
+- `B109` S_TITLE_SUBSECTION — §5a - TAM by FY ($M)
+- `B117` S_TITLE_SUBSECTION — §5b - Coefficients applied (live links to §3)
+- `B124` S_TITLE_SUBSECTION — §5c - Portfolio TAM (DDG-51, FY22-FY27)
+- `B129` S_TITLE_SUBSECTION — §5d - Average-annual and per-hull views (FY22-FY27)
+- `B139` S_TITLE_SUBSECTION — §5e - TAM bridge components (BC base to supplier TAM)
+
+## Defined names
+- `portfolio_tam_annual` → `'TAM Build'!$C$133`
+- `portfolio_tam_cumulative` → `'TAM Build'!$I$114`
+- `fiscal_year_count` → `'TAM Build'!$C$132`
+- `portfolio_tam` → `'TAM Build'!$I$114`
+- `portfolio_bc_tam` → `'TAM Build'!$I$112`
+- `portfolio_ap_tam` → `'TAM Build'!$I$113`
+- `bc_supplier_coeff` → `'TAM Build'!$C$42`
+
+## Formula dependencies (referenced sheet → cells)
+- **Assumptions** (30): C22, C23, C30, D30, E30, F30, G30, H30, C32, D32, E32, F32 …
+- **POP Corpus** (9): C42, C44, C45, C51, C52, C59, C60, C61, C62
+- **SCN Budget** (6): C29, D29, E29, F29, G29, H29
+- **TAM Build** (25): C7, C8, C9, C10, C11, C12, C13, C14, C95, C96, C112, D112 …
+
+## Hardcoded inputs (7)
+- `C31` S_NUM_INPUT = 0
+- `D31` S_NUM_INPUT = 0
+- `E31` S_NUM_INPUT = 0
+- `F31` S_NUM_INPUT = 0
+- `G31` S_NUM_INPUT = 0
+- `H31` S_NUM_INPUT = 0
+- `C76` S_PCT_INPUT = 0.33
+
+## Cross-sheet links (21)
+- `C22` S_LINK_NUM = 'Assumptions'!C17
+- `C23` S_LINK_NUM = 'Assumptions'!C18
+- `C29` S_LINK_NUM = 'SCN Budget'!C15
+- `D29` S_LINK_NUM = 'SCN Budget'!D15
+- `E29` S_LINK_NUM = 'SCN Budget'!E15
+- `F29` S_LINK_NUM = 'SCN Budget'!F15
+- `G29` S_LINK_NUM = 'SCN Budget'!G15
+- `H29` S_LINK_NUM = 'SCN Budget'!H15
+- `C30` S_LINK_NUM = 'Assumptions'!C24
+- `D30` S_LINK_NUM = 'Assumptions'!D24
+- `E30` S_LINK_NUM = 'Assumptions'!E24
+- `F30` S_LINK_NUM = 'Assumptions'!F24
+- `G30` S_LINK_NUM = 'Assumptions'!G24
+- `H30` S_LINK_NUM = 'Assumptions'!H24
+- `C43` S_LINK_PCT = 'Assumptions'!C38
+- `D87` S_LINK_NUM = 'Assumptions'!D30
+- `E87` S_LINK_PCT = 'Assumptions'!E30
+- `F87` S_LINK_PCT = 'Assumptions'!F30
+- `D88` S_LINK_NUM = 'Assumptions'!D31
+- `E88` S_LINK_PCT = 'Assumptions'!E31
+- `F88` S_LINK_PCT = 'Assumptions'!F31
+
+## Cells
+- `B2` S_TITLE_SHEET: TAM Build
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: §1 - Headline TAM
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Measure
+- `C6` S_HEADER_CENTER: Value
+- `B7` S_BOLD: Portfolio TAM (FY22-27, both streams) $M
+- `C7` S_NUM: ='TAM Build'!I114
+- `B8` S_DEFAULT: BC-stream TAM $M
+- `C8` S_NUM: ='TAM Build'!I112
+- `B9` S_DEFAULT: AP/LLTM-stream TAM $M
+- `C9` S_NUM: ='TAM Build'!I113
+- `B10` S_BOLD: Average annual TAM $M/yr
+- `C10` S_NUM: ='TAM Build'!C133
+- `B11` S_DEFAULT: Supplier TAM per in-window hull $M
+- `C11` S_NUM: ='TAM Build'!C135
+- `B12` S_DEFAULT: BC TAM per in-window hull $M
+- `C12` S_NUM: ='TAM Build'!C136
+- `B13` S_DEFAULT: Applied BC supplier coefficient
+- `C13` S_PCT: ='TAM Build'!C42
+- `B14` S_DEFAULT: AP/LLTM supplier coefficient
+- `C14` S_PCT: ='TAM Build'!C43
+- `A17` S_DEFAULT: x
+- `B17` S_TITLE_SECTION: §2 - Normalized budget (stream bases)
+- `C17` S_TITLE_SECTION: 
+- `D17` S_TITLE_SECTION: 
+- `E17` S_TITLE_SECTION: 
+- `F17` S_TITLE_SECTION: 
+- `G17` S_TITLE_SECTION: 
+- `H17` S_TITLE_SECTION: 
+- `I17` S_TITLE_SECTION: 
+- `A19` S_DEFAULT: x
+- `B19` S_TITLE_SUBSECTION: §2a - Stream include-in-TAM toggles (1 = include)
+- `C19` S_TITLE_SUBSECTION: 
+- `D19` S_TITLE_SUBSECTION: 
+- `E19` S_TITLE_SUBSECTION: 
+- `F19` S_TITLE_SUBSECTION: 
+- `G19` S_TITLE_SUBSECTION: 
+- `H19` S_TITLE_SUBSECTION: 
+- `I19` S_TITLE_SUBSECTION: 
+- `B21` S_HEADER_LEFT: Toggle
+- `C21` S_HEADER_CENTER: Value
+- `B22` S_DEFAULT: Include BC stream
+- `C22` S_LINK_NUM: ='Assumptions'!C17
+- `B23` S_DEFAULT: Include AP/LLTM stream
+- `C23` S_LINK_NUM: ='Assumptions'!C18
+- `A26` S_DEFAULT: x
+- `B26` S_TITLE_SUBSECTION: §2b - DDG-51 (LI 2122) stream bases ($M, FY22-FY27)
+- `C26` S_TITLE_SUBSECTION: 
+- `D26` S_TITLE_SUBSECTION: 
+- `E26` S_TITLE_SUBSECTION: 
+- `F26` S_TITLE_SUBSECTION: 
+- `G26` S_TITLE_SUBSECTION: 
+- `H26` S_TITLE_SUBSECTION: 
+- `I26` S_TITLE_SUBSECTION: 
+- `B28` S_HEADER_LEFT: Metric
+- `C28` S_HEADER_CENTER: 2022
+- `D28` S_HEADER_CENTER: 2023
+- `E28` S_HEADER_CENTER: 2024
+- `F28` S_HEADER_CENTER: 2025
+- `G28` S_HEADER_CENTER: 2026
+- `H28` S_HEADER_CENTER: 2027
+- `B29` S_BOLD: BC base (P-5c Basic Construction)
+- `C29` S_LINK_NUM: ='SCN Budget'!C15
+- `D29` S_LINK_NUM: ='SCN Budget'!D15
+- `E29` S_LINK_NUM: ='SCN Budget'!E15
+- `F29` S_LINK_NUM: ='SCN Budget'!F15
+- `G29` S_LINK_NUM: ='SCN Budget'!G15
+- `H29` S_LINK_NUM: ='SCN Budget'!H15
+- `B30` S_BOLD: AP/LLTM base (CY Advance Procurement)
+- `C30` S_LINK_NUM: ='Assumptions'!C24
+- `D30` S_LINK_NUM: ='Assumptions'!D24
+- `E30` S_LINK_NUM: ='Assumptions'!E24
+- `F30` S_LINK_NUM: ='Assumptions'!F24
+- `G30` S_LINK_NUM: ='Assumptions'!G24
+- `H30` S_LINK_NUM: ='Assumptions'!H24
+- `B31` S_DEFAULT: Less: prior-yr AP credit
+- `C31` S_NUM_INPUT: 0
+- `D31` S_NUM_INPUT: 0
+- `E31` S_NUM_INPUT: 0
+- `F31` S_NUM_INPUT: 0
+- `G31` S_NUM_INPUT: 0
+- `H31` S_NUM_INPUT: 0
+- `B32` S_DEFAULT: BC base in TAM
+- `C32` S_NUM: =IF(C29=0,"",'Assumptions'!C17*C29)
+- `D32` S_NUM: =IF(D29=0,"",'Assumptions'!C17*D29)
+- `E32` S_NUM: =IF(E29=0,"",'Assumptions'!C17*E29)
+- `F32` S_NUM: =IF(F29=0,"",'Assumptions'!C17*F29)
+- `G32` S_NUM: =IF(G29=0,"",'Assumptions'!C17*G29)
+- `H32` S_NUM: =IF(H29=0,"",'Assumptions'!C17*H29)
+- `B33` S_DEFAULT: AP/LLTM base in TAM (x ship-constr share)
+- `C33` S_NUM: =IF(C30=0,"",'Assumptions'!C18*'Assumptions'!C37*(C30-C31))
+- `D33` S_NUM: =IF(D30=0,"",'Assumptions'!C18*'Assumptions'!C37*(D30-D31))
+- `E33` S_NUM: =IF(E30=0,"",'Assumptions'!C18*'Assumptions'!C37*(E30-E31))
+- `F33` S_NUM: =IF(F30=0,"",'Assumptions'!C18*'Assumptions'!C37*(F30-F31))
+- `G33` S_NUM: =IF(G30=0,"",'Assumptions'!C18*'Assumptions'!C37*(G30-G31))
+- `H33` S_NUM: =IF(H30=0,"",'Assumptions'!C18*'Assumptions'!C37*(H30-H31))
+- `B34` S_BOLD: TAM base (BC + AP/LLTM)
+- `C34` S_NUM: =N(C32)+N(C33)
+- `D34` S_NUM: =N(D32)+N(D33)
+- `E34` S_NUM: =N(E32)+N(E33)
+- `F34` S_NUM: =N(F32)+N(F33)
+- `G34` S_NUM: =N(G32)+N(G33)
+- `H34` S_NUM: =N(H32)+N(H33)
+- `A37` S_DEFAULT: x
+- `B37` S_TITLE_SECTION: §3 - Supplier coefficients
+- `C37` S_TITLE_SECTION: 
+- `D37` S_TITLE_SECTION: 
+- `E37` S_TITLE_SECTION: 
+- `F37` S_TITLE_SECTION: 
+- `G37` S_TITLE_SECTION: 
+- `H37` S_TITLE_SECTION: 
+- `I37` S_TITLE_SECTION: 
+- `A39` S_DEFAULT: x
+- `B39` S_TITLE_SUBSECTION: §3a - Per-stream supplier coefficients (feed TAM; $-weighted, gated, non-GFE)
+- `C39` S_TITLE_SUBSECTION: 
+- `D39` S_TITLE_SUBSECTION: 
+- `E39` S_TITLE_SUBSECTION: 
+- `F39` S_TITLE_SUBSECTION: 
+- `G39` S_TITLE_SUBSECTION: 
+- `H39` S_TITLE_SUBSECTION: 
+- `I39` S_TITLE_SUBSECTION: 
+- `B41` S_HEADER_LEFT: Coefficient
+- `C41` S_HEADER_CENTER: Value
+- `B42` S_BOLD: BC stream coefficient (MYP-corrected)
+- `C42` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*'POP Corpus'!M7:M160*('POP Corpus'!P7:P160+'POP Corpus'!Q7:Q160))/SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*'POP Corpus'!M7:M160))
+- `B43` S_BOLD: AP/LLTM stream coefficient (assumption)
+- `C43` S_LINK_PCT: ='Assumptions'!C38
+- `B44` S_DEFAULT: Total weighted (corpus, display)
+- `C44` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*'POP Corpus'!M7:M160*('POP Corpus'!P7:P160+'POP Corpus'!Q7:Q160))/SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*'POP Corpus'!M7:M160))
+- `B45` S_DEFAULT: BC stream, disclosed-only (masters excluded)
+- `C45` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160*('POP Corpus'!P7:P160+'POP Corpus'!Q7:Q160))/SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!J7:J160)*'POP Corpus'!K7:K160*('POP Corpus'!H7:H160="BC")*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160))
+- `A48` S_DEFAULT: x
+- `B48` S_TITLE_SUBSECTION: §3b - MYP correction - outside-yards POP
+- `C48` S_TITLE_SUBSECTION: 
+- `D48` S_TITLE_SUBSECTION: 
+- `E48` S_TITLE_SUBSECTION: 
+- `F48` S_TITLE_SUBSECTION: 
+- `G48` S_TITLE_SUBSECTION: 
+- `H48` S_TITLE_SUBSECTION: 
+- `I48` S_TITLE_SUBSECTION: 
+- `B50` S_HEADER_LEFT: Measure
+- `C50` S_HEADER_CENTER: Value
+- `B51` S_BOLD: Outside-yards, disclosed-only (artifact)
+- `C51` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160*('POP Corpus'!P7:P160+'POP Corpus'!Q7:Q160))/SUMPRODUCT('POP Corpus'!I7:I160*(1-'POP Corpus'!L7:L160)*'POP Corpus'!M7:M160))
+- `B52` S_BOLD: Outside-yards, MYP-corrected
+- `C52` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160*('POP Corpus'!P7:P160+'POP Corpus'!Q7:Q160))/SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160))
+- `B53` S_DEFAULT: Swing (disclosed - corrected)
+- `C53` S_PCT: =C51-C52
+- `A56` S_DEFAULT: x
+- `B56` S_TITLE_SUBSECTION: §3c - All-gated POP shares (dollar-weighted, MYP-corrected)
+- `C56` S_TITLE_SUBSECTION: 
+- `D56` S_TITLE_SUBSECTION: 
+- `E56` S_TITLE_SUBSECTION: 
+- `F56` S_TITLE_SUBSECTION: 
+- `G56` S_TITLE_SUBSECTION: 
+- `H56` S_TITLE_SUBSECTION: 
+- `I56` S_TITLE_SUBSECTION: 
+- `B58` S_HEADER_LEFT: POP class
+- `C58` S_HEADER_CENTER: Share
+- `B59` S_DEFAULT: BIW site %
+- `C59` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160*'POP Corpus'!N7:N160)/SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160))
+- `B60` S_DEFAULT: Ingalls site %
+- `C60` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160*'POP Corpus'!O7:O160)/SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160))
+- `B61` S_DEFAULT: Other-US supplier %
+- `C61` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160*'POP Corpus'!P7:P160)/SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160))
+- `B62` S_DEFAULT: Foreign %
+- `C62` S_PCT: =IF(SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160)=0,"",SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160*'POP Corpus'!Q7:Q160)/SUMPRODUCT('POP Corpus'!I7:I160*'POP Corpus'!M7:M160))
+- `B63` S_DEFAULT: Unparsed %
+- `C63` S_PCT: =1-C59-C60-C61-C62
+- `A66` S_DEFAULT: x
+- `B66` S_TITLE_SUBSECTION: §3d - Distributed-production view (appendix - broader than commercial TAM)
+- `C66` S_TITLE_SUBSECTION: 
+- `D66` S_TITLE_SUBSECTION: 
+- `E66` S_TITLE_SUBSECTION: 
+- `F66` S_TITLE_SUBSECTION: 
+- `G66` S_TITLE_SUBSECTION: 
+- `H66` S_TITLE_SUBSECTION: 
+- `I66` S_TITLE_SUBSECTION: 
+- `B68` S_HEADER_LEFT: Coefficient
+- `C68` S_HEADER_CENTER: Value
+- `B69` S_BOLD: Distributed (away from BIW)
+- `C69` S_PCT: =C60+C61+C62
+- `B70` S_BOLD: Outside both yards (other + foreign)
+- `C70` S_PCT: =C61+C62
+- `A73` S_DEFAULT: x
+- `B73` S_TITLE_SUBSECTION: §3e - Anchor regression - MYP-corrected outside-yards near ~33%
+- `C73` S_TITLE_SUBSECTION: 
+- `D73` S_TITLE_SUBSECTION: 
+- `E73` S_TITLE_SUBSECTION: 
+- `F73` S_TITLE_SUBSECTION: 
+- `G73` S_TITLE_SUBSECTION: 
+- `H73` S_TITLE_SUBSECTION: 
+- `I73` S_TITLE_SUBSECTION: 
+- `B75` S_HEADER_LEFT: Check
+- `C75` S_HEADER_CENTER: Value
+- `B76` S_DEFAULT: Target (methodology)
+- `C76` S_PCT_INPUT: 0.33
+- `B77` S_DEFAULT: Computed corrected outside-yards
+- `C77` S_PCT: =C52
+- `B78` S_DEFAULT: Delta
+- `C78` S_PCT: =C77-C76
+- `B79` S_DEFAULT: Anchor OK?
+- `C79` S_DEFAULT: =IF(ABS(C78)<0.05,"OK","REVIEW")
+- `A82` S_DEFAULT: x
+- `B82` S_TITLE_SECTION: §4 - MYP correction
+- `C82` S_TITLE_SECTION: 
+- `D82` S_TITLE_SECTION: 
+- `E82` S_TITLE_SECTION: 
+- `F82` S_TITLE_SECTION: 
+- `G82` S_TITLE_SECTION: 
+- `H82` S_TITLE_SECTION: 
+- `I82` S_TITLE_SECTION: 
+- `A84` S_DEFAULT: x
+- `B84` S_TITLE_SUBSECTION: §4a - MYP master awards ($-redacted; reconstructed POP)
+- `C84` S_TITLE_SUBSECTION: 
+- `D84` S_TITLE_SUBSECTION: 
+- `E84` S_TITLE_SUBSECTION: 
+- `F84` S_TITLE_SUBSECTION: 
+- `G84` S_TITLE_SUBSECTION: 
+- `H84` S_TITLE_SUBSECTION: 
+- `I84` S_TITLE_SUBSECTION: 
+- `B86` S_HEADER_LEFT: Master
+- `C86` S_HEADER_LEFT: PIID
+- `D86` S_HEADER_CENTER: Master $M
+- `E86` S_HEADER_CENTER: BIW %
+- `F86` S_HEADER_CENTER: Ingalls %
+- `G86` S_HEADER_CENTER: Other-US + Foreign %
+- `B87` S_BOLD: BIW MYP
+- `C87` S_DEFAULT: N00024-23-C-2305
+- `D87` S_LINK_NUM: ='Assumptions'!D30
+- `E87` S_LINK_PCT: ='Assumptions'!E30
+- `F87` S_LINK_PCT: ='Assumptions'!F30
+- `G87` S_PCT: =N('Assumptions'!G30)+N('Assumptions'!H30)
+- `B88` S_BOLD: Ingalls MYP
+- `C88` S_DEFAULT: N00024-23-C-2307
+- `D88` S_LINK_NUM: ='Assumptions'!D31
+- `E88` S_LINK_PCT: ='Assumptions'!E31
+- `F88` S_LINK_PCT: ='Assumptions'!F31
+- `G88` S_PCT: =N('Assumptions'!G31)+N('Assumptions'!H31)
+- `B89` S_BOLD: Combined master $M
+- `D89` S_NUM: =N('Assumptions'!D30)+N('Assumptions'!D31)
+- `A92` S_DEFAULT: x
+- `B92` S_TITLE_SUBSECTION: §4b - Outside-yards POP - disclosed artifact vs MYP-corrected
+- `C92` S_TITLE_SUBSECTION: 
+- `D92` S_TITLE_SUBSECTION: 
+- `E92` S_TITLE_SUBSECTION: 
+- `F92` S_TITLE_SUBSECTION: 
+- `G92` S_TITLE_SUBSECTION: 
+- `H92` S_TITLE_SUBSECTION: 
+- `I92` S_TITLE_SUBSECTION: 
+- `B94` S_HEADER_LEFT: Measure
+- `C94` S_HEADER_CENTER: Value
+- `B95` S_BOLD: Disclosed-only (artifact)
+- `C95` S_PCT: ='TAM Build'!C51
+- `B96` S_BOLD: MYP-corrected
+- `C96` S_PCT: ='TAM Build'!C52
+- `B97` S_DEFAULT: Swing (artifact - corrected)
+- `C97` S_PCT: =C95-C96
+- `A100` S_DEFAULT: x
+- `B100` S_TITLE_SUBSECTION: §4c - Guardrail
+- `C100` S_TITLE_SUBSECTION: 
+- `D100` S_TITLE_SUBSECTION: 
+- `E100` S_TITLE_SUBSECTION: 
+- `F100` S_TITLE_SUBSECTION: 
+- `G100` S_TITLE_SUBSECTION: 
+- `H100` S_TITLE_SUBSECTION: 
+- `I100` S_TITLE_SUBSECTION: 
+- `B102` S_DEFAULT: Travel the POP-coefficient numbers together: disclosed artifact -> MYP-corrected outside-yards -> applied BC coefficient.
+- `B103` S_DEFAULT: Recovery basis: FPDS obligatedAmount + trade-press totals (USNI / Defense Daily).
+- `B104` S_DEFAULT: Per-hull allocation within a master PIID is not disclosed; POP weights are the analytical reconstruction.
+- `A107` S_DEFAULT: x
+- `B107` S_TITLE_SECTION: §5 - TAM by fiscal year
+- `C107` S_TITLE_SECTION: 
+- `D107` S_TITLE_SECTION: 
+- `E107` S_TITLE_SECTION: 
+- `F107` S_TITLE_SECTION: 
+- `G107` S_TITLE_SECTION: 
+- `H107` S_TITLE_SECTION: 
+- `I107` S_TITLE_SECTION: 
+- `A109` S_DEFAULT: x
+- `B109` S_TITLE_SUBSECTION: §5a - TAM by FY ($M)
+- `C109` S_TITLE_SUBSECTION: 
+- `D109` S_TITLE_SUBSECTION: 
+- `E109` S_TITLE_SUBSECTION: 
+- `F109` S_TITLE_SUBSECTION: 
+- `G109` S_TITLE_SUBSECTION: 
+- `H109` S_TITLE_SUBSECTION: 
+- `I109` S_TITLE_SUBSECTION: 
+- `B111` S_HEADER_LEFT: Stream
+- `C111` S_HEADER_CENTER: 2022
+- `D111` S_HEADER_CENTER: 2023
+- `E111` S_HEADER_CENTER: 2024
+- `F111` S_HEADER_CENTER: 2025
+- `G111` S_HEADER_CENTER: 2026
+- `H111` S_HEADER_CENTER: 2027
+- `I111` S_HEADER_CENTER: FY22-27
+- `B112` S_LABEL_INDENT_1: BC stream (MYP-corrected)
+- `C112` S_NUM: =IF(N('TAM Build'!C32)=0,"",N('TAM Build'!C32)*N('TAM Build'!C42))
+- `D112` S_NUM: =IF(N('TAM Build'!D32)=0,"",N('TAM Build'!D32)*N('TAM Build'!C42))
+- `E112` S_NUM: =IF(N('TAM Build'!E32)=0,"",N('TAM Build'!E32)*N('TAM Build'!C42))
+- `F112` S_NUM: =IF(N('TAM Build'!F32)=0,"",N('TAM Build'!F32)*N('TAM Build'!C42))
+- `G112` S_NUM: =IF(N('TAM Build'!G32)=0,"",N('TAM Build'!G32)*N('TAM Build'!C42))
+- `H112` S_NUM: =IF(N('TAM Build'!H32)=0,"",N('TAM Build'!H32)*N('TAM Build'!C42))
+- `I112` S_NUM: =SUM(C112:H112)
+- `B113` S_LABEL_INDENT_1: AP/LLTM stream (CY AP x share x coeff)
+- `C113` S_NUM: =IF(N('TAM Build'!C33)=0,"",N('TAM Build'!C33)*N('TAM Build'!C43))
+- `D113` S_NUM: =IF(N('TAM Build'!D33)=0,"",N('TAM Build'!D33)*N('TAM Build'!C43))
+- `E113` S_NUM: =IF(N('TAM Build'!E33)=0,"",N('TAM Build'!E33)*N('TAM Build'!C43))
+- `F113` S_NUM: =IF(N('TAM Build'!F33)=0,"",N('TAM Build'!F33)*N('TAM Build'!C43))
+- `G113` S_NUM: =IF(N('TAM Build'!G33)=0,"",N('TAM Build'!G33)*N('TAM Build'!C43))
+- `H113` S_NUM: =IF(N('TAM Build'!H33)=0,"",N('TAM Build'!H33)*N('TAM Build'!C43))
+- `I113` S_NUM: =SUM(C113:H113)
+- `B114` S_TOTAL: TAM (BC + AP/LLTM)
+- `C114` S_NUM_TOTAL: =N(C112)+N(C113)
+- `D114` S_NUM_TOTAL: =N(D112)+N(D113)
+- `E114` S_NUM_TOTAL: =N(E112)+N(E113)
+- `F114` S_NUM_TOTAL: =N(F112)+N(F113)
+- `G114` S_NUM_TOTAL: =N(G112)+N(G113)
+- `H114` S_NUM_TOTAL: =N(H112)+N(H113)
+- `I114` S_NUM_TOTAL: =SUM(C114:H114)
+- `A117` S_DEFAULT: x
+- `B117` S_TITLE_SUBSECTION: §5b - Coefficients applied (live links to §3)
+- `C117` S_TITLE_SUBSECTION: 
+- `D117` S_TITLE_SUBSECTION: 
+- `E117` S_TITLE_SUBSECTION: 
+- `F117` S_TITLE_SUBSECTION: 
+- `G117` S_TITLE_SUBSECTION: 
+- `H117` S_TITLE_SUBSECTION: 
+- `I117` S_TITLE_SUBSECTION: 
+- `B119` S_HEADER_LEFT: Coefficient
+- `C119` S_HEADER_CENTER: Value
+- `B120` S_DEFAULT: BC supplier coefficient
+- `C120` S_PCT: ='TAM Build'!C42
+- `B121` S_DEFAULT: AP/LLTM supplier coefficient
+- `C121` S_PCT: ='TAM Build'!C43
+- `B124` S_TITLE_SUBSECTION: §5c - Portfolio TAM (DDG-51, FY22-FY27)
+- `C124` S_TITLE_SUBSECTION: 
+- `D124` S_TITLE_SUBSECTION: 
+- `E124` S_TITLE_SUBSECTION: 
+- `F124` S_TITLE_SUBSECTION: 
+- `G124` S_TITLE_SUBSECTION: 
+- `H124` S_TITLE_SUBSECTION: 
+- `I124` S_TITLE_SUBSECTION: 
+- `B126` S_TOTAL: Portfolio TAM ($M)
+- `C126` S_NUM_TOTAL: =I114
+- `A129` S_DEFAULT: x
+- `B129` S_TITLE_SUBSECTION: §5d - Average-annual and per-hull views (FY22-FY27)
+- `C129` S_TITLE_SUBSECTION: 
+- `D129` S_TITLE_SUBSECTION: 
+- `E129` S_TITLE_SUBSECTION: 
+- `F129` S_TITLE_SUBSECTION: 
+- `G129` S_TITLE_SUBSECTION: 
+- `H129` S_TITLE_SUBSECTION: 
+- `I129` S_TITLE_SUBSECTION: 
+- `B131` S_HEADER_LEFT: View
+- `C131` S_HEADER_CENTER: Value
+- `B132` S_DEFAULT: Years in window (n)
+- `C132` S_DEFAULT: 6
+- `B133` S_BOLD: Average annual TAM ($M/yr)
+- `C133` S_NUM: =I114/C132
+- `B134` S_DEFAULT: In-window hulls (award FY22-27)
+- `C134` S_DEFAULT: 13
+- `B135` S_BOLD: Supplier TAM per hull ($M)
+- `C135` S_NUM: =I114/C134
+- `B136` S_DEFAULT: BC TAM per hull ($M)
+- `C136` S_NUM: =I112/C134
+- `A139` S_DEFAULT: x
+- `B139` S_TITLE_SUBSECTION: §5e - TAM bridge components (BC base to supplier TAM)
+- `C139` S_TITLE_SUBSECTION: 
+- `D139` S_TITLE_SUBSECTION: 
+- `E139` S_TITLE_SUBSECTION: 
+- `F139` S_TITLE_SUBSECTION: 
+- `G139` S_TITLE_SUBSECTION: 
+- `H139` S_TITLE_SUBSECTION: 
+- `I139` S_TITLE_SUBSECTION: 
+- `B141` S_BOLD: BC construction base ($M)
+- `C141` S_NUM: =N('TAM Build'!C32)+N('TAM Build'!D32)+N('TAM Build'!E32)+N('TAM Build'!F32)+N('TAM Build'!G32)+N('TAM Build'!H32)
+- `B142` S_DEFAULT: POP removal: prime, co-prime, GFE ($M)
+- `C142` S_NUM: =C141-I112

@@ -1,0 +1,203 @@
+================================================================================
+MRO DECK v1.5 - SLIDE TEXT (Slides 3, 4, 10 -- defensibility / reconciliation)
+Source: /deck/MRO_DECK_v1.5_RECONCILIATION_SPEC.md
+
+Format: Each `# BLOCK` header precedes a copy-paste unit for a PowerPoint
+        text placeholder. Each paragraph = one bullet. Tabs indicate
+        sub-bullet indent. Pipe-delimited tables are for readability;
+        build manually in PPT.
+
+Charts: Source numbers live on the Deck Data v2 workbook sheet, blocks
+        under the matching slide header.
+================================================================================
+
+
+================================================================================
+SLIDE 03 - SCOPE RECONCILIATION
+================================================================================
+
+# BREADCRUMB
+Commercial Strategy / Defense Demand Drivers
+
+# TITLE
+Scope Reconciliation
+
+# LEDE
+The $7.1B MRO TAM is measured from FPDS contract awards -- budget materials reconcile adjacent scope
+
+# LHS CHART SUBTITLE
+FY2025 Navy and USCG ship-related activity by FPDS visibility x MRO scope ($M)
+
+# LHS CHART -- 2x2 MATRIX
+
+Row headers (y-axis): Ship MRO activity / Ship spending, non-MRO (by PSC)
+Column headers (x-axis): FPDS-visible (private contract) / Not FPDS-visible (in-house / NWCF)
+
+Top-left cell (HIGHLIGHTED -- hero fill):
+	$7,067M FY2025 MRO TAM
+	68 Services PSCs, Navy + USCG, post-exclusions
+	(deck focus)
+
+Top-right cell:
+	Public-yard labor + customer orders
+	~$7.5B FY25 OMN RRN transfers to the 4 public naval shipyards
+	Civilian federal workforce (not uniformed personnel)
+	Total activity ~$12-15B with SCN and OPN added; no FPDS record
+
+Bottom-left cell:
+	$38,100M Newbuild (PSC 1905) -- includes ~$1.5-2.0B embedded MRO
+	$1,875M Reactor components (PSC 4470)
+
+Bottom-right cell:
+	Not measured
+	In-house ship-design and RDT&E at warfare centers / SYSCOMs
+
+# RHS CALLOUT CARDS (header line, body line, blank between cards)
+
+Why awards-first, not budget-first
+Awards tag vendor, PSC, vessel, and period at the transaction level; budget books do not. Budget-first sizing would mix in civilian federal payroll and miss OPN-funded MRO (see Slide 4).
+
+Public-yard activity is a budget-side story
+FY25 OMN transferred $7.5B to the 4 public shipyards via RRN customer orders; total activity ~$12-15B with SCN and OPN ship-alt work. Civilian federal workforce executes -- no FPDS record. This is where the "submarine MRO looks understated" story lives.
+
+PSC 1905 embedded MRO -- ~$1.5-2.0B quantified
+PSC 1905 is predominantly ship construction but contains material MRO. The $1.5-2.0B range tracks the FPDS footprint of OPN BA-01 L1000 Ship Maintenance ($2.4B FY26 request). Top FY25 items: EB $831M SSN hull treatment, HII $424M Boise EOH. Not double-counted into the $7.1B TAM -- sits adjacent, and is why the TAM is a floor on sub / carrier activity.
+
+# FOOTER NOTES
+(1) Public-yard cell: OMN OP-5 SAG 1B4B p. 8 of 29 (FY2026 PB, Navy) -- Norfolk $1,790M, Portsmouth $1,468M, Puget Sound $2,741M, Pearl Harbor $1,486M (sum $7,485M). Total public-yard activity bounded at $12-15B with SCN (CVN RCOH / SSN EOH) and OPN ship-alt work added. Method: docs/methodology/public_naval_shipyard_revenue.md.
+(2) PSC 1905 embedded MRO: ~$1.5-2.0B (midpoint $1.7B, 4.4% of PSC 1905). Conservative $1,565M, central $1,660M, upper $1,949M. Top items: EB $831M SSN hull treatment, HII $424M Boise EOH, HII $97M+$28M CVN-68 inactivation, Metro Machine $45M Eisenhower PIA. Approximates the FPDS footprint of OPN BA-01 L1000 Ship Maintenance ($2.4B FY26 request). Method: docs/methodology/psc_1905_mro_share.md.
+(3) Exclusions: $1,702M applied to the raw $8,769M MRO-PSC FPDS universe -- cross-platform engineering IDIQs ($500M), aviation MRO ($376M), shore-base facilities ($323M), non-Navy contracting ($224M), LLM-flagged non-ship-MRO ($151M), FMS ($86M), inactive-vessel maintenance ($42M). Method: docs/methodology/mro_tam_exclusions.md.
+
+# SOURCE
+FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, Awards master, post-exclusions); FY2026 President's Budget -- OMN Vol 1 SAG 1B4B OP-5, OPN Vol 1 P-40 BA-01 BSA-10 LI 1000, SCN P-1 LI 2086. Data as of April 2026.
+
+
+================================================================================
+SLIDE 04 - APPROPRIATION SOURCING
+================================================================================
+
+# BREADCRUMB
+Commercial Strategy / Defense Demand Drivers
+
+# TITLE
+Appropriation Sourcing
+
+# LEDE
+OPN funds 35% of MRO, nearly matching OMN -- MRO is not a single-appropriation market
+
+# LHS CHART SUBTITLE
+FY2025 MRO TAM obligations by Treasury appropriation -- OPN drilled to Budget Activity ($M, TAS-attributed)
+
+# LHS CHART -- LEGEND
+Navy-direct (OMN / OPN / Navy-other)
+Defense-Wide (RDT&E-DW + DW-other)
+Other agencies (USCG, AF, Army, SCN)
+
+# LHS CHART -- TWO 100%-STACKED COLUMNS SIDE-BY-SIDE
+
+Column 1 (MRO TAM by appropriation, Total $7,067M):
+OMN: $2,638M (37.3%)
+OPN: $2,470M (34.9%)
+RDT&E, Defense-Wide: $745M (10.5%)
+AF / Army / SCN / other: $333M (4.7%)
+USCG: $306M (4.3%)
+DW other: $293M (4.1%)
+Navy other: $282M (4.0%)
+
+Column 2 (OPN by Budget Activity, OPN Total $2,470M):
+BA-7 Personnel and Cmd Support Equip: $1,519M (61.5%)
+BA-8 Spares and Repair Parts: $788M (31.9%)
+Other BAs: $163M (6.6%)
+
+# RHS CALLOUT CARDS (header line, body line, blank between cards)
+
+OPN funds ~35% of MRO -- a multi-appropriation market
+A procurement appropriation -- OPN -- funds nearly as much MRO as OMN. OMN OP-5 SAG 1B4B shows 44 of 68 FY24 availabilities as OMN-funded, 24 as OPN-funded. A budget-first methodology would have to know which OPN BAs to include; awards tagging sidesteps this.
+
+49% of MRO dollars directly TAS-attributed; 51% imputed
+Direct attribution via USAspending /awards/funding/ (Treasury File C). Gaps filled by PSC-bucket peer averages. Rollup totals stable across the split.
+
+Navy OMN + OPN = 72% of MRO
+MRO is a Navy story, not DoD-wide. USCG = 4%; other DoD + defense-wide = ~13% combined. But "Navy" here means both OMN (maintenance) and OPN (procurement) -- not just OMN.
+
+OPN concentrates in BA-7 Equipment (62%) and BA-8 Spares (32%)
+BA-7 funds equipment installs and C4ISR integration during availabilities -- the hardest bucket for budget-first to find. The separate OPN BA-01 L1000 Ship Maintenance program ($2.4B FY26) codes to PSC 1905, not MRO PSCs (see Slide 3).
+
+RDT&E Defense-Wide = 11%
+Almost entirely Trident II, SSP, and SMDC sustainment on J-series PSCs. Draper MK7 Trident ($318M FY2025) is the largest single MRO PIID.
+
+SCN ~$40M on MRO PSCs
+De minimis. Nuclear-platform MRO bundles under PSC 1905 shipbuilding, not MRO PSCs -- see Slide 3.
+
+# FOOTER NOTES
+(1) Direct TAS attribution via USAspending /awards/funding/ (Treasury File C); imputed via per-PSC-bucket appropriation ratios from directly-classified peers. Rollup totals stable across split.
+(2) OPN BA-01 L1000 Ship Maintenance per OPN Vol 1 P-40 BA-01 BSA-10; OMN / OPN availability co-funding per OMN Vol 1 OP-5 SAG 1B4B. Method: docs/methodology/METHODOLOGY_AVAILABILITY_FUNDING_APPROPRIATIONS.md.
+(3) All figures on a post-exclusion ($7,067M) basis. $1.7B of exclusions (Slide 3 note 3) treated proportionally across appropriations. The $7.4B TAS-attributed pre-exclusion universe differs from the $8.77B raw MRO-PSC FPDS universe by ~$1.4B (PSC-bucket-imputed portion, not excluded).
+
+# SOURCE
+USAspending /awards/funding/ joined to FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, 68 services PSCs, post-exclusions). Data as of April 2026.
+
+
+================================================================================
+SLIDE 10 - TAM FRAMING  (APPENDIX)
+================================================================================
+
+# BREADCRUMB
+Appendix / TAM Framing
+
+# TITLE
+TAM Framing
+
+# LEDE
+The $7.1B contracting TAM apportions to a ~$3.3-3.8B range of FY2025-delivered contractor revenue
+
+# TOP STRIP -- Obligations x Apportionment = Revenue
+
+Obligations
+$7,067M Frame A (FPDS FY2025 MRO TAM, this deck's primary number)
+
+Apportionment
+Share of each award's period-of-performance landing inside FY2025
+
+Revenue
+$3.27B - $3.75B Frame B range (POP-apportioned contractor revenue)
+
+# LHS CHART SUBTITLE
+FY2025 Services MRO TAM by period-of-performance apportionment method ($M)
+
+# LHS CHART -- LEGEND
+Frame A -- contract obligations (deck primary)
+Frame B -- revenue earned approximation, POP-apportioned (sensitivity)
+Central Frame B estimate ~$3.5B (49% of Frame A)
+
+# LHS CHART -- BARS
+Frame A (No apportionment): $7,067M -- 100%
+M2 (12-mo POP cap): $3,747M -- 53%
+M3 (18-mo POP cap): $3,499M -- 49%
+M1 (Pure linear, primary Frame B): $3,354M -- 48%
+M4 (Front-loaded 60 / 40): $3,266M -- 46%
+
+# LHS CHART -- FRAME B RANGE CALLOUT
+$3.27B - $3.75B
+
+# RHS TABLE -- SEGMENT APPORTIONMENT
+
+Work Segment | Frame A $M | Frame B M1 $M | Apport %
+Port & Technical Services | 431 | 307 | 71.3%
+Depot Ship Repair | 4,781 | 2,468 | 51.6%
+HM&E | 938 | 363 | 38.7%
+Electronics & C4ISR | 333 | 105 | 31.4%
+Combat Systems Sustainment | 585 | 112 | 19.1%
+Total | 7,067 | 3,354 | 47.5%
+
+# RHS CALLOUT -- FRAME A vs FRAME B NOTE
+
+Frame A = the flow of contract dollars the market will transact -- the right number for market-entry, capability-build, and acquisition decisions. Frame B approximates existing-contractor revenue -- the right number for modeling specific public comps. This deck stays on Frame A. For single-contractor modeling, multiply the relevant segment $ by that segment's apportionment rate (above), not the blended 47.5% -- the 19-71% spread makes the blended rate unsafe for single-segment use.
+
+# FOOTER NOTES
+(1) FY2025 window: 2024-10-01 to 2025-09-30. POP apportionment uses start_date and end_date on FPDS award rows (100% populated).
+(2) POP is the contract window, not the delivery window. Short-POP segments (depot availabilities) deliver in weeks / months; Frame B linear undercounts. Long-POP segments (combat-systems engineering) can span 5+ years; linear is reasonable. Segment-level calibration pending.
+(3) M1 Pure Linear is primary; M2-M4 bound the range.
+
+# SOURCE
+FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, 68 services PSCs, post-exclusions). Period-of-performance dates per FPDS. Data as of April 2026.

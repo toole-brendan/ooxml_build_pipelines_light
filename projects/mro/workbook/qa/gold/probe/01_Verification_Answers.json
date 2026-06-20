@@ -1,0 +1,1230 @@
+{
+  "source": "file",
+  "name": "Verification Answers",
+  "tab_name": "Verification Answers",
+  "sheet_index": 1,
+  "tab_color": "FF6A4C93",
+  "gridlines_shown": "0",
+  "n_cols": 5,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "50.0"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "14.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "10.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "28.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "90.0"
+    }
+  ],
+  "n_rows": 57,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "2",
+      "n_cells": 1
+    },
+    {
+      "r": "3",
+      "n_cells": 1
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "5",
+      "n_cells": 4
+    },
+    {
+      "r": "6",
+      "n_cells": 5
+    },
+    {
+      "r": "7",
+      "n_cells": 4
+    },
+    {
+      "r": "9",
+      "n_cells": 1
+    },
+    {
+      "r": "10",
+      "n_cells": 5
+    },
+    {
+      "r": "11",
+      "n_cells": 3
+    },
+    {
+      "r": "12",
+      "n_cells": 3
+    },
+    {
+      "r": "13",
+      "n_cells": 3
+    },
+    {
+      "r": "14",
+      "n_cells": 3
+    },
+    {
+      "r": "15",
+      "n_cells": 3
+    },
+    {
+      "r": "16",
+      "n_cells": 3
+    },
+    {
+      "r": "17",
+      "n_cells": 3
+    },
+    {
+      "r": "18",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "n_cells": 3
+    },
+    {
+      "r": "23",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "n_cells": 3
+    },
+    {
+      "r": "25",
+      "n_cells": 3
+    },
+    {
+      "r": "26",
+      "n_cells": 3
+    },
+    {
+      "r": "27",
+      "n_cells": 5
+    },
+    {
+      "r": "28",
+      "n_cells": 2
+    },
+    {
+      "r": "30",
+      "n_cells": 1
+    },
+    {
+      "r": "31",
+      "n_cells": 5
+    },
+    {
+      "r": "32",
+      "n_cells": 3
+    },
+    {
+      "r": "33",
+      "n_cells": 3
+    },
+    {
+      "r": "34",
+      "n_cells": 3
+    },
+    {
+      "r": "35",
+      "n_cells": 3
+    },
+    {
+      "r": "36",
+      "n_cells": 3
+    },
+    {
+      "r": "37",
+      "n_cells": 3
+    },
+    {
+      "r": "38",
+      "n_cells": 3
+    },
+    {
+      "r": "39",
+      "n_cells": 3
+    },
+    {
+      "r": "40",
+      "n_cells": 3
+    },
+    {
+      "r": "41",
+      "n_cells": 3
+    },
+    {
+      "r": "42",
+      "n_cells": 5
+    },
+    {
+      "r": "44",
+      "n_cells": 1
+    },
+    {
+      "r": "45",
+      "n_cells": 5
+    },
+    {
+      "r": "46",
+      "n_cells": 4
+    },
+    {
+      "r": "47",
+      "n_cells": 3
+    },
+    {
+      "r": "49",
+      "n_cells": 1
+    },
+    {
+      "r": "50",
+      "n_cells": 5
+    },
+    {
+      "r": "51",
+      "n_cells": 4
+    },
+    {
+      "r": "52",
+      "n_cells": 4
+    },
+    {
+      "r": "53",
+      "n_cells": 5
+    },
+    {
+      "r": "55",
+      "n_cells": 1
+    },
+    {
+      "r": "56",
+      "n_cells": 5
+    },
+    {
+      "r": "57",
+      "n_cells": 4
+    },
+    {
+      "r": "58",
+      "n_cells": 3
+    },
+    {
+      "r": "59",
+      "n_cells": 3
+    },
+    {
+      "r": "60",
+      "n_cells": 3
+    },
+    {
+      "r": "61",
+      "n_cells": 5
+    },
+    {
+      "r": "62",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 182,
+  "cells": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "value": "Verification Answers - Plan Sections 6.1-6.6 (formula-driven)"
+    },
+    {
+      "ref": "A2",
+      "style": "S_DEFAULT",
+      "value": "Six verification items. Every $ / % cell is a SUMIFS formula or named-range reference - click any cell to see its source. Ranked lists (6.2 / 6.3) keep Python pre-sort for row order but cell values are live formulas. Dollars display in $M via trailing-comma scaling; underlying store is raw $."
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "value": "6.1  Navy vs USCG share of FY25 MRO TAM"
+    },
+    {
+      "ref": "A4",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B4",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C4",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D4",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E4",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A5",
+      "style": "S_DEFAULT",
+      "value": "Navy MRO FY25"
+    },
+    {
+      "ref": "B5",
+      "style": "S_NUM_TOTAL",
+      "formula": "NAVY_TAM_SVC"
+    },
+    {
+      "ref": "C5",
+      "style": "S_PCT",
+      "formula": "NAVY_TAM_SVC/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "E5",
+      "style": "S_DEFAULT",
+      "value": "NAVY_TAM_SVC named range from Services sheet."
+    },
+    {
+      "ref": "A6",
+      "style": "S_DEFAULT",
+      "value": "USCG MRO FY25"
+    },
+    {
+      "ref": "B6",
+      "style": "S_NUM_TOTAL",
+      "formula": "CG_TAM_SVC"
+    },
+    {
+      "ref": "C6",
+      "style": "S_PCT",
+      "formula": "CG_TAM_SVC/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "D6",
+      "style": "S_DEFAULT",
+      "value": "10-20% expected"
+    },
+    {
+      "ref": "E6",
+      "style": "S_DEFAULT",
+      "value": "Plan expected 10-20%; actual falls below. Most USCG cutter MRO lives in O&S Surface/Air/Shore Ops + Yard Fund revolving authority, not the 65 MRO PSCs."
+    },
+    {
+      "ref": "A7",
+      "style": "S_BOLD",
+      "value": "TOTAL MRO (65 PSCs)"
+    },
+    {
+      "ref": "B7",
+      "style": "S_NUM_TOTAL",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC"
+    },
+    {
+      "ref": "C7",
+      "style": "S_PCT_INPUT",
+      "value": "1"
+    },
+    {
+      "ref": "D7",
+      "style": "S_DEFAULT",
+      "value": "~$9.0B (plan)"
+    },
+    {
+      "ref": "A9",
+      "style": "S_TITLE_SECTION",
+      "value": "6.2  Top 15 PSCs by FY25 $ (MRO universe)"
+    },
+    {
+      "ref": "A10",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B10",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C10",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D10",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E10",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "# 1  J999  Non-Nuclear Ship Repair (West)"
+    },
+    {
+      "ref": "B11",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J999\")/1000000"
+    },
+    {
+      "ref": "C11",
+      "style": "S_PCT",
+      "formula": "B11/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "# 2  J998  Non-Nuclear Ship Repair (East)"
+    },
+    {
+      "ref": "B12",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J998\")/1000000"
+    },
+    {
+      "ref": "C12",
+      "style": "S_PCT",
+      "formula": "B12/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "# 3  J059  Maint/Repair - Electrical/Electronic Equ"
+    },
+    {
+      "ref": "B13",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J059\")/1000000"
+    },
+    {
+      "ref": "C13",
+      "style": "S_PCT",
+      "formula": "B13/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "# 4  J019  Maint/Repair - Ships, Small Craft, Ponto"
+    },
+    {
+      "ref": "B14",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J019\")/1000000"
+    },
+    {
+      "ref": "C14",
+      "style": "S_PCT",
+      "formula": "B14/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "# 5  J014  Maint/Repair - Guided Missiles"
+    },
+    {
+      "ref": "B15",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J014\")/1000000"
+    },
+    {
+      "ref": "C15",
+      "style": "S_PCT",
+      "formula": "B15/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "# 6  K058  Modification - Comm/Detection Equipment"
+    },
+    {
+      "ref": "B16",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"K058\")/1000000"
+    },
+    {
+      "ref": "C16",
+      "style": "S_PCT",
+      "formula": "B16/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A17",
+      "style": "S_DEFAULT",
+      "value": "# 7  J020  Maint/Repair - Ship and Marine Equipment"
+    },
+    {
+      "ref": "B17",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J020\")/1000000"
+    },
+    {
+      "ref": "C17",
+      "style": "S_PCT",
+      "formula": "B17/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A18",
+      "style": "S_DEFAULT",
+      "value": "# 8  M2CA  Husbanding - Management/Integration Serv"
+    },
+    {
+      "ref": "B18",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"M2CA\")/1000000"
+    },
+    {
+      "ref": "C18",
+      "style": "S_PCT",
+      "formula": "B18/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A19",
+      "style": "S_DEFAULT",
+      "value": "# 9  J036  Maint/Repair - Special Industry Machiner"
+    },
+    {
+      "ref": "B19",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J036\")/1000000"
+    },
+    {
+      "ref": "C19",
+      "style": "S_PCT",
+      "formula": "B19/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "#10  K012  Modification - Fire Control Equipment"
+    },
+    {
+      "ref": "B20",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"K012\")/1000000"
+    },
+    {
+      "ref": "C20",
+      "style": "S_PCT",
+      "formula": "B20/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A21",
+      "style": "S_DEFAULT",
+      "value": "#11  K010  Modification - Weapons"
+    },
+    {
+      "ref": "B21",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"K010\")/1000000"
+    },
+    {
+      "ref": "C21",
+      "style": "S_PCT",
+      "formula": "B21/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A22",
+      "style": "S_DEFAULT",
+      "value": "#12  N020  Installation - Ship and Marine Equipment"
+    },
+    {
+      "ref": "B22",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"N020\")/1000000"
+    },
+    {
+      "ref": "C22",
+      "style": "S_PCT",
+      "formula": "B22/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A23",
+      "style": "S_DEFAULT",
+      "value": "#13  J063  Maint/Repair - Alarm/Signal/Security"
+    },
+    {
+      "ref": "B23",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J063\")/1000000"
+    },
+    {
+      "ref": "C23",
+      "style": "S_PCT",
+      "formula": "B23/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A24",
+      "style": "S_DEFAULT",
+      "value": "#14  N019  Installation - Ships, Small Craft, Ponto"
+    },
+    {
+      "ref": "B24",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"N019\")/1000000"
+    },
+    {
+      "ref": "C24",
+      "style": "S_PCT",
+      "formula": "B24/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A25",
+      "style": "S_DEFAULT",
+      "value": "#15  J058  Maint/Repair - Comm/Detection Equipment"
+    },
+    {
+      "ref": "B25",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[PSC],\"J058\")/1000000"
+    },
+    {
+      "ref": "C25",
+      "style": "S_PCT",
+      "formula": "B25/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A26",
+      "style": "S_BOLD",
+      "value": "Top 15 PSC subtotal"
+    },
+    {
+      "ref": "B26",
+      "style": "S_NUM_TOTAL",
+      "formula": "B11+B12+B13+B14+B15+B16+B17+B18+B19+B20+B21+B22+B23+B24+B25"
+    },
+    {
+      "ref": "C26",
+      "style": "S_PCT_TOTAL",
+      "formula": "B26/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A27",
+      "style": "S_BOLD",
+      "value": "Depot (J998 + J999) subtotal"
+    },
+    {
+      "ref": "B27",
+      "style": "S_NUM_TOTAL",
+      "formula": "B11+B12"
+    },
+    {
+      "ref": "C27",
+      "style": "S_PCT",
+      "formula": "B27/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "D27",
+      "style": "S_DEFAULT",
+      "value": "35-45% expected"
+    },
+    {
+      "ref": "E27",
+      "style": "S_DEFAULT",
+      "value": "Plan expected 35-45%. Higher depot concentration = fewer but larger availabilities; RMC / BuildCo competitive field focused on J998/J999 multi-ship IDIQs."
+    },
+    {
+      "ref": "A28",
+      "style": "S_BOLD",
+      "value": "Grand total (all 65 MRO PSCs)"
+    },
+    {
+      "ref": "B28",
+      "style": "S_NUM_TOTAL",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC"
+    },
+    {
+      "ref": "A30",
+      "style": "S_TITLE_SECTION",
+      "value": "6.3  Top 10 contracting offices (canonical-alias rollup)"
+    },
+    {
+      "ref": "A31",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B31",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C31",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D31",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E31",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A32",
+      "style": "S_DEFAULT",
+      "value": "# 1  SWRMC"
+    },
+    {
+      "ref": "B32",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SWRMC\")/1000000"
+    },
+    {
+      "ref": "C32",
+      "style": "S_PCT",
+      "formula": "B32/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A33",
+      "style": "S_DEFAULT",
+      "value": "# 2  MARMC"
+    },
+    {
+      "ref": "B33",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MARMC\")/1000000"
+    },
+    {
+      "ref": "C33",
+      "style": "S_PCT",
+      "formula": "B33/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A34",
+      "style": "S_DEFAULT",
+      "value": "# 3  NAVSUP FLC"
+    },
+    {
+      "ref": "B34",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NAVSUP FLC\")/1000000"
+    },
+    {
+      "ref": "C34",
+      "style": "S_PCT",
+      "formula": "B34/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A35",
+      "style": "S_DEFAULT",
+      "value": "# 4  NAVSEA HQ"
+    },
+    {
+      "ref": "B35",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NAVSEA HQ\")/1000000"
+    },
+    {
+      "ref": "C35",
+      "style": "S_PCT",
+      "formula": "B35/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A36",
+      "style": "S_DEFAULT",
+      "value": "# 5  MSC HQ"
+    },
+    {
+      "ref": "B36",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MSC HQ\")/1000000"
+    },
+    {
+      "ref": "C36",
+      "style": "S_PCT",
+      "formula": "B36/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A37",
+      "style": "S_DEFAULT",
+      "value": "# 6  NW RMC / Puget Sound"
+    },
+    {
+      "ref": "B37",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NW RMC / Puget Sound\")/1000000"
+    },
+    {
+      "ref": "C37",
+      "style": "S_PCT",
+      "formula": "B37/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A38",
+      "style": "S_DEFAULT",
+      "value": "# 7  NIWC Atlantic"
+    },
+    {
+      "ref": "B38",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NIWC Atlantic\")/1000000"
+    },
+    {
+      "ref": "C38",
+      "style": "S_PCT",
+      "formula": "B38/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A39",
+      "style": "S_DEFAULT",
+      "value": "# 8  Strategic Systems Programs"
+    },
+    {
+      "ref": "B39",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"Strategic Systems Programs\")/1000000"
+    },
+    {
+      "ref": "C39",
+      "style": "S_PCT",
+      "formula": "B39/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A40",
+      "style": "S_DEFAULT",
+      "value": "# 9  NIWC Pacific"
+    },
+    {
+      "ref": "B40",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NIWC Pacific\")/1000000"
+    },
+    {
+      "ref": "C40",
+      "style": "S_PCT",
+      "formula": "B40/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A41",
+      "style": "S_DEFAULT",
+      "value": "#10  NAVAL AIR WARFARE CENTER AIR DIV"
+    },
+    {
+      "ref": "B41",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NAVAL AIR WARFARE CENTER AIR DIV\")/1000000"
+    },
+    {
+      "ref": "C41",
+      "style": "S_PCT",
+      "formula": "B41/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "A42",
+      "style": "S_BOLD",
+      "value": "5 RMCs + NAVSEA HQ + SFLC subtotal"
+    },
+    {
+      "ref": "B42",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NAVSEA HQ\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SWRMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MARMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NW RMC / Puget Sound\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SERMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"USCG SFLC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"Pearl Harbor RMC\")/1000000"
+    },
+    {
+      "ref": "C42",
+      "style": "S_PCT_TOTAL",
+      "formula": "B42/(NAVY_TAM_SVC+CG_TAM_SVC)"
+    },
+    {
+      "ref": "D42",
+      "style": "S_DEFAULT",
+      "value": "70%+ expected"
+    },
+    {
+      "ref": "E42",
+      "style": "S_DEFAULT",
+      "value": "Target: SWRMC+MARMC+SERMC+NW+PHRMC+NAVSEA HQ+USCG SFLC >= 70% of MRO $. BELOW target implies additional buyer aliases need to be added to taxonomies.yaml:contracting_office_aliases."
+    },
+    {
+      "ref": "A44",
+      "style": "S_TITLE_SECTION",
+      "value": "6.4  Does USCG Justification have an OP-5 Table IV equivalent?"
+    },
+    {
+      "ref": "A45",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B45",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C45",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D45",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E45",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A46",
+      "style": "S_DEFAULT",
+      "value": "Verdict (structural scan result)"
+    },
+    {
+      "ref": "B46",
+      "style": "S_BOLD",
+      "value": "NO"
+    },
+    {
+      "ref": "D46",
+      "style": "S_DEFAULT",
+      "value": "Aggregate table expected"
+    },
+    {
+      "ref": "E46",
+      "style": "S_DEFAULT",
+      "value": "USCG organizes by Appropriation x PPA, not maintenance-category. Closest anchor is In-Service Vessel Sustainment (ISVS) at $120M FY25 -- PC&I-funded sustainment umbrella (see MSC SCN USCG Top-Down sheet). Majority of cutter maintenance embedded in O&S Surface/Air/Shore Ops ($3.17B memo) with no depot-maintenance subtotal published. Confidence on top-down USCG: LOW."
+    },
+    {
+      "ref": "A47",
+      "style": "S_DEFAULT",
+      "value": "USCG ISVS floor (from MSC SCN USCG Top-Down)"
+    },
+    {
+      "ref": "B47",
+      "style": "S_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "E47",
+      "style": "S_DEFAULT",
+      "value": "Source-explicit top-down USCG floor; actual USCG cutter MRO likely $300-500M (from FPDS bottom-up)."
+    },
+    {
+      "ref": "A49",
+      "style": "S_TITLE_SECTION",
+      "value": "6.5  OP-5 private side vs FPDS RMC-aggregated (CRITICAL TEST)"
+    },
+    {
+      "ref": "A50",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B50",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C50",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D50",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E50",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A51",
+      "style": "S_DEFAULT",
+      "value": "Top-down: OP-5 private side (FY25 Current)"
+    },
+    {
+      "ref": "B51",
+      "style": "S_NUM",
+      "formula": "OP5_PRIVATE_FY25/1000"
+    },
+    {
+      "ref": "D51",
+      "style": "S_DEFAULT",
+      "value": "Source: op5_navy_top_down sheet"
+    },
+    {
+      "ref": "E51",
+      "style": "S_DEFAULT",
+      "value": "Sum of 11 private avail categories (OH / SRA / SIA / PIA / PMA / CIA / SCO / ERATA / ORATA / CM / IL)."
+    },
+    {
+      "ref": "A52",
+      "style": "S_DEFAULT",
+      "value": "Bottom-up: FPDS RMC-aggregated private-yard"
+    },
+    {
+      "ref": "B52",
+      "style": "S_NUM",
+      "formula": "SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SWRMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"MARMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SERMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"NW RMC / Puget Sound\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"Pearl Harbor RMC\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"SRF-JRMC Yokosuka\")/1000000+SUMIFS(Awards[FY2025 Obligation],Awards[Is MRO],\"Y\",Awards[Canonical Office],\"FDRMC Naples\")/1000000"
+    },
+    {
+      "ref": "D52",
+      "style": "S_DEFAULT",
+      "value": "OP-5 private within +/-10%"
+    },
+    {
+      "ref": "E52",
+      "style": "S_DEFAULT",
+      "value": "Sum over canonical buyers: SWRMC, MARMC, SERMC, NW RMC / Puget Sound, Pearl Harbor RMC, SRF-JRMC Yokosuka, FDRMC Naples."
+    },
+    {
+      "ref": "A53",
+      "style": "S_BOLD",
+      "value": "Gap (top-down minus bottom-up)"
+    },
+    {
+      "ref": "B53",
+      "style": "S_NUM_TOTAL",
+      "formula": "B51-B52"
+    },
+    {
+      "ref": "C53",
+      "style": "S_PCT_TOTAL",
+      "formula": "(B51-B52)/B51"
+    },
+    {
+      "ref": "D53",
+      "style": "S_DEFAULT",
+      "value": "+/-10% target"
+    },
+    {
+      "ref": "E53",
+      "style": "S_DEFAULT",
+      "value": "Plausible drivers: FY25 Current Budget (forecast) vs FPDS actual execution timing drift; FDNF MSRA scope boundary; OPN/WPN dollars on MRO PSCs beyond OMN 1B4B."
+    },
+    {
+      "ref": "A55",
+      "style": "S_TITLE_SECTION",
+      "value": "6.6  PSC 1905 captive share (HII / GDEB / Fluor)"
+    },
+    {
+      "ref": "A56",
+      "style": "S_BOLD",
+      "value": "Item"
+    },
+    {
+      "ref": "B56",
+      "style": "S_BOLD",
+      "value": "$M"
+    },
+    {
+      "ref": "C56",
+      "style": "S_BOLD",
+      "value": "%"
+    },
+    {
+      "ref": "D56",
+      "style": "S_BOLD",
+      "value": "Benchmark / Expected"
+    },
+    {
+      "ref": "E56",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "A57",
+      "style": "S_DEFAULT",
+      "value": "PSC 1905 MRO (all buckets: strong + TAS + probable)"
+    },
+    {
+      "ref": "B57",
+      "style": "S_NUM",
+      "formula": "SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\")/1000000"
+    },
+    {
+      "ref": "D57",
+      "style": "S_DEFAULT",
+      "value": "Classifier central bucket"
+    },
+    {
+      "ref": "E57",
+      "style": "S_DEFAULT",
+      "value": "Uses MRO* wildcard to match MRO (strong) + MRO (TAS-confirmed) + MRO (probable) + MRO (POP-only)."
+    },
+    {
+      "ref": "A58",
+      "style": "S_DEFAULT",
+      "value": "  HII (Huntington Ingalls / Newport News)"
+    },
+    {
+      "ref": "B58",
+      "style": "S_NUM",
+      "formula": "SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*HUNTINGTON*\")/1000000"
+    },
+    {
+      "ref": "C58",
+      "style": "S_PCT",
+      "formula": "B58/B57"
+    },
+    {
+      "ref": "A59",
+      "style": "S_DEFAULT",
+      "value": "  GD (Electric Boat / General Dynamics)"
+    },
+    {
+      "ref": "B59",
+      "style": "S_NUM",
+      "formula": "SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*ELECTRIC BOAT*\")/1000000+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*GENERAL DYNAMICS*\")/1000000"
+    },
+    {
+      "ref": "C59",
+      "style": "S_PCT",
+      "formula": "B59/B57"
+    },
+    {
+      "ref": "A60",
+      "style": "S_DEFAULT",
+      "value": "  Fluor"
+    },
+    {
+      "ref": "B60",
+      "style": "S_NUM",
+      "formula": "SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*FLUOR*\")/1000000"
+    },
+    {
+      "ref": "C60",
+      "style": "S_PCT",
+      "formula": "B60/B57"
+    },
+    {
+      "ref": "A61",
+      "style": "S_BOLD",
+      "value": "Captive subtotal (HII + GD + Fluor)"
+    },
+    {
+      "ref": "B61",
+      "style": "S_NUM_TOTAL",
+      "formula": "B58+B59+B60"
+    },
+    {
+      "ref": "C61",
+      "style": "S_PCT_TOTAL",
+      "formula": "B61/B57"
+    },
+    {
+      "ref": "D61",
+      "style": "S_DEFAULT",
+      "value": "90%+ expected"
+    },
+    {
+      "ref": "E61",
+      "style": "S_DEFAULT",
+      "value": "Used in private_addressable subtraction. See Private Addressable sheet for the downstream convergence math."
+    },
+    {
+      "ref": "A62",
+      "style": "S_DEFAULT",
+      "value": "Other primes (not HII / GD / Fluor)"
+    },
+    {
+      "ref": "B62",
+      "style": "S_NUM",
+      "formula": "B57-B61"
+    },
+    {
+      "ref": "C62",
+      "style": "S_PCT",
+      "formula": "B62/B57"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "text": "Verification Answers - Plan Sections 6.1-6.6 (formula-driven)"
+    },
+    {
+      "ref": "A3",
+      "style": "S_TITLE_SECTION",
+      "text": "6.1  Navy vs USCG share of FY25 MRO TAM"
+    },
+    {
+      "ref": "A9",
+      "style": "S_TITLE_SECTION",
+      "text": "6.2  Top 15 PSCs by FY25 $ (MRO universe)"
+    },
+    {
+      "ref": "A30",
+      "style": "S_TITLE_SECTION",
+      "text": "6.3  Top 10 contracting offices (canonical-alias rollup)"
+    },
+    {
+      "ref": "A44",
+      "style": "S_TITLE_SECTION",
+      "text": "6.4  Does USCG Justification have an OP-5 Table IV equivalent?"
+    },
+    {
+      "ref": "A49",
+      "style": "S_TITLE_SECTION",
+      "text": "6.5  OP-5 private side vs FPDS RMC-aggregated (CRITICAL TEST)"
+    },
+    {
+      "ref": "A55",
+      "style": "S_TITLE_SECTION",
+      "text": "6.6  PSC 1905 captive share (HII / GDEB / Fluor)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C7",
+      "style": "S_PCT_INPUT",
+      "value": "1"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 78,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

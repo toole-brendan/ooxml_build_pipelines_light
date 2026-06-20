@@ -1,0 +1,32 @@
+{
+  "award_id": "CONT_AWD_0006_9700_W9123711D0018_9700",
+  "count": 2,
+  "results": [
+    {
+      "id": "CONT_TX_9700_9700_0006_0_W9123711D0018_0",
+      "type": "C",
+      "type_description": "DELIVERY ORDER",
+      "action_date": "2013-07-01",
+      "action_type": null,
+      "action_type_description": null,
+      "modification_number": "0",
+      "description": "GUARANTEED AMOUNT FOR OPTION PERIOD TWO - THIS GUARANTEED AMOUNT WILL BE DEOBLIGATED WHEN TASK ORDERS HAVE BEEN ISSUED DURING OPTION PERIOD TWO THAT EXCEED THE $10,000.00 GUARANTEED AMOUNT.",
+      "federal_action_obligation": 10000.0,
+      "face_value_loan_guarantee": 0.0,
+      "original_loan_subsidy_cost": 0.0
+    },
+    {
+      "id": "CONT_TX_9700_9700_0006_1_W9123711D0018_0",
+      "type": "C",
+      "type_description": "DELIVERY ORDER",
+      "action_date": "2015-08-02",
+      "action_type": "M",
+      "action_type_description": "OTHER ADMINISTRATIVE ACTION",
+      "modification_number": "1",
+      "description": "IGF::OT::IGF DEOBLIGATE GUARANTEED AMOUNT FOR OPTION 2 FOR THE FABRICATION OF LOCK AND DAM EQUIPMENT FOR MARIETTA REPAIR STATION, MARIETTA, OH.",
+      "federal_action_obligation": -10000.0,
+      "face_value_loan_guarantee": 0.0,
+      "original_loan_subsidy_cost": 0.0
+    }
+  ]
+}

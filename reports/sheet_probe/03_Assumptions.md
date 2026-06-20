@@ -1,0 +1,306 @@
+# sheet_probe: Assumptions
+
+- source: `file`
+- tab name: `Assumptions`
+- tab color: `FFB8860B`
+- gridlines shown: `0`
+- columns: 8 · rows: 47 · cells: 228 · formulas: 27
+
+## Banners
+- `B2` S_TITLE_SHEET — Assumptions
+- `B4` S_TITLE_SECTION — §1 - Run settings
+- `B14` S_TITLE_SECTION — §2 - Stream controls
+- `B22` S_TITLE_SECTION — §3 - AP/LLTM additive base ($M, confirmed 0)
+- `B29` S_TITLE_SUBSECTION — §3a - P-10 gross AP reference ($M, overlaps BC)
+- `B36` S_TITLE_SECTION — §4 - Scenario selector
+- `B42` S_TITLE_SECTION — §5 - Target scenario matrix (1 = targets bucket)
+- `B55` S_TITLE_SECTION — §6 - Bucket share adjustments (modeled = observed + adjustment)
+
+## Formula dependencies (referenced sheet → cells)
+- **Entity Master** (8): C58, C59, C60, C61, C62, C63, C64, C65
+- **SAM Build** (3): C39, D39, E39
+
+## Hardcoded inputs (68)
+- `C17` S_NUM_INPUT = 1
+- `C18` S_NUM_INPUT = 1
+- `C25` S_NUM_INPUT = 0
+- `D25` S_NUM_INPUT = 0
+- `E25` S_NUM_INPUT = 0
+- `F25` S_NUM_INPUT = 0
+- `G25` S_NUM_INPUT = 0
+- `H25` S_NUM_INPUT = 0
+- `C26` S_NUM_INPUT = 0
+- `D26` S_NUM_INPUT = 0
+- `E26` S_NUM_INPUT = 0
+- `F26` S_NUM_INPUT = 0
+- `G26` S_NUM_INPUT = 0
+- `H26` S_NUM_INPUT = 0
+- `C32` S_NUM_INPUT = 2105.407
+- `D32` S_NUM_INPUT = 2025.651
+- `E32` S_NUM_INPUT = 3358.782
+- `F32` S_NUM_INPUT = 3720.303
+- `G32` S_NUM_INPUT = 3126.816
+- `H32` S_NUM_INPUT = 4143.618
+- `C33` S_NUM_INPUT = 1773.98
+- `D33` S_NUM_INPUT = 2778.553
+- `E33` S_NUM_INPUT = 5345.734
+- `F33` S_NUM_INPUT = 6215.939
+- `G33` S_NUM_INPUT = 5350.766
+- `H33` S_NUM_INPUT = 4763.342
+- `C46` S_NUM_INPUT = 1
+- `D46` S_NUM_INPUT = 0
+- `E46` S_NUM_INPUT = 0
+- `F46` S_NUM_INPUT = 0
+- `G46` S_NUM_INPUT = 1
+- `C47` S_NUM_INPUT = 1
+- `D47` S_NUM_INPUT = 1
+- `E47` S_NUM_INPUT = 0
+- `F47` S_NUM_INPUT = 0
+- `G47` S_NUM_INPUT = 1
+- `C48` S_NUM_INPUT = 1
+- `D48` S_NUM_INPUT = 0
+- `E48` S_NUM_INPUT = 0
+- `F48` S_NUM_INPUT = 0
+
+## Cross-sheet links (11)
+- `C39` S_LINK_NUM = 'SAM Build'!D97
+- `D39` S_LINK_PCT = 'SAM Build'!E97
+- `E39` S_LINK_NUM = 'SAM Build'!C97
+- `C58` S_LINK_PCT = 'Entity Master'!D965
+- `C59` S_LINK_PCT = 'Entity Master'!D966
+- `C60` S_LINK_PCT = 'Entity Master'!D967
+- `C61` S_LINK_PCT = 'Entity Master'!D968
+- `C62` S_LINK_PCT = 'Entity Master'!D969
+- `C63` S_LINK_PCT = 'Entity Master'!D970
+- `C64` S_LINK_PCT = 'Entity Master'!D971
+- `C65` S_LINK_PCT = 'Entity Master'!D972
+
+## Cells
+- `B2` S_TITLE_SHEET: Assumptions
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Run settings
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Setting
+- `C6` S_HEADER_LEFT: Value
+- `B7` S_DEFAULT: Program
+- `C7` S_DEFAULT: Submarine
+- `B8` S_DEFAULT: FY range start
+- `C8` S_DEFAULT: 2022
+- `B9` S_DEFAULT: FY range end
+- `C9` S_DEFAULT: 2027
+- `B10` S_DEFAULT: Units
+- `C10` S_DEFAULT: Nominal $M
+- `B11` S_DEFAULT: Default SAM scenario
+- `C11` S_DEFAULT: Broad component mfg
+- `A14` S_DEFAULT: x
+- `B14` S_TITLE_SECTION: §2 - Stream controls
+- `C14` S_TITLE_SECTION: 
+- `D14` S_TITLE_SECTION: 
+- `E14` S_TITLE_SECTION: 
+- `F14` S_TITLE_SECTION: 
+- `G14` S_TITLE_SECTION: 
+- `H14` S_TITLE_SECTION: 
+- `B16` S_HEADER_LEFT: Control
+- `C16` S_HEADER_LEFT: Value
+- `B17` S_DEFAULT: Include BC stream
+- `C17` S_NUM_INPUT: 1
+- `B18` S_DEFAULT: Include AP/LLTM stream
+- `C18` S_NUM_INPUT: 1
+- `B19` S_DEFAULT: Prior-year AP credit treatment
+- `C19` S_DEFAULT: none (credits = 0)
+- `A22` S_DEFAULT: x
+- `B22` S_TITLE_SECTION: §3 - AP/LLTM additive base ($M, confirmed 0)
+- `C22` S_TITLE_SECTION: 
+- `D22` S_TITLE_SECTION: 
+- `E22` S_TITLE_SECTION: 
+- `F22` S_TITLE_SECTION: 
+- `G22` S_TITLE_SECTION: 
+- `H22` S_TITLE_SECTION: 
+- `B24` S_HEADER_LEFT: Class
+- `C24` S_HEADER_CENTER: 2022
+- `D24` S_HEADER_CENTER: 2023
+- `E24` S_HEADER_CENTER: 2024
+- `F24` S_HEADER_CENTER: 2025
+- `G24` S_HEADER_CENTER: 2026
+- `H24` S_HEADER_CENTER: 2027
+- `B25` S_BOLD: Virginia (LI 2013)
+- `C25` S_NUM_INPUT: 0
+- `D25` S_NUM_INPUT: 0
+- `E25` S_NUM_INPUT: 0
+- `F25` S_NUM_INPUT: 0
+- `G25` S_NUM_INPUT: 0
+- `H25` S_NUM_INPUT: 0
+- `B26` S_BOLD: Columbia (LI 1045)
+- `C26` S_NUM_INPUT: 0
+- `D26` S_NUM_INPUT: 0
+- `E26` S_NUM_INPUT: 0
+- `F26` S_NUM_INPUT: 0
+- `G26` S_NUM_INPUT: 0
+- `H26` S_NUM_INPUT: 0
+- `B27` S_TOTAL: Total (Va + Col)
+- `C27` S_NUM_TOTAL: =N(C25)+N(C26)
+- `D27` S_NUM_TOTAL: =N(D25)+N(D26)
+- `E27` S_NUM_TOTAL: =N(E25)+N(E26)
+- `F27` S_NUM_TOTAL: =N(F25)+N(F26)
+- `G27` S_NUM_TOTAL: =N(G25)+N(G26)
+- `H27` S_NUM_TOTAL: =N(H25)+N(H26)
+- `A29` S_DEFAULT: x
+- `B29` S_TITLE_SUBSECTION: §3a - P-10 gross AP reference ($M, overlaps BC)
+- `C29` S_TITLE_SUBSECTION: 
+- `D29` S_TITLE_SUBSECTION: 
+- `E29` S_TITLE_SUBSECTION: 
+- `F29` S_TITLE_SUBSECTION: 
+- `G29` S_TITLE_SUBSECTION: 
+- `H29` S_TITLE_SUBSECTION: 
+- `B31` S_HEADER_LEFT: Class
+- `C31` S_HEADER_CENTER: 2022
+- `D31` S_HEADER_CENTER: 2023
+- `E31` S_HEADER_CENTER: 2024
+- `F31` S_HEADER_CENTER: 2025
+- `G31` S_HEADER_CENTER: 2026
+- `H31` S_HEADER_CENTER: 2027
+- `B32` S_BOLD: Virginia (LI 2013)
+- `C32` S_NUM_INPUT: 2105.407
+- `D32` S_NUM_INPUT: 2025.651
+- `E32` S_NUM_INPUT: 3358.782
+- `F32` S_NUM_INPUT: 3720.303
+- `G32` S_NUM_INPUT: 3126.816
+- `H32` S_NUM_INPUT: 4143.618
+- `B33` S_BOLD: Columbia (LI 1045)
+- `C33` S_NUM_INPUT: 1773.98
+- `D33` S_NUM_INPUT: 2778.553
+- `E33` S_NUM_INPUT: 5345.734
+- `F33` S_NUM_INPUT: 6215.939
+- `G33` S_NUM_INPUT: 5350.766
+- `H33` S_NUM_INPUT: 4763.342
+- `A36` S_DEFAULT: x
+- `B36` S_TITLE_SECTION: §4 - Scenario selector
+- `C36` S_TITLE_SECTION: 
+- `D36` S_TITLE_SECTION: 
+- `E36` S_TITLE_SECTION: 
+- `F36` S_TITLE_SECTION: 
+- `G36` S_TITLE_SECTION: 
+- `H36` S_TITLE_SECTION: 
+- `B38` S_HEADER_LEFT: Selected scenario
+- `C38` S_HEADER_CENTER: Cumulative SAM $M
+- `D38` S_HEADER_CENTER: % of TAM
+- `E38` S_HEADER_CENTER: Avg annual SAM $M
+- `B39` S_DEFAULT: =C11
+- `C39` S_LINK_NUM: ='SAM Build'!D97
+- `D39` S_LINK_PCT: ='SAM Build'!E97
+- `E39` S_LINK_NUM: ='SAM Build'!C97
+- `A42` S_DEFAULT: x
+- `B42` S_TITLE_SECTION: §5 - Target scenario matrix (1 = targets bucket)
+- `C42` S_TITLE_SECTION: 
+- `D42` S_TITLE_SECTION: 
+- `E42` S_TITLE_SECTION: 
+- `F42` S_TITLE_SECTION: 
+- `G42` S_TITLE_SECTION: 
+- `H42` S_TITLE_SECTION: 
+- `B44` S_DEFAULT: Scenario key:  Metal = Metal components   ·   HM&E = HM&E components   ·   Electrical = Electrical / power   ·   Modular = Modular assemblies   ·   Broad = Broad component mfg
+- `B45` S_HEADER_LEFT: Bucket
+- `C45` S_HEADER_CENTER: Metal
+- `D45` S_HEADER_CENTER: HM&E
+- `E45` S_HEADER_CENTER: Electrical
+- `F45` S_HEADER_CENTER: Modular
+- `G45` S_HEADER_CENTER: Broad
+- `B46` S_DEFAULT: Structural fabrication & modules
+- `C46` S_NUM_INPUT: 1
+- `D46` S_NUM_INPUT: 0
+- `E46` S_NUM_INPUT: 0
+- `F46` S_NUM_INPUT: 0
+- `G46` S_NUM_INPUT: 1
+- `B47` S_DEFAULT: Machining / mechanical / propulsion
+- `C47` S_NUM_INPUT: 1
+- `D47` S_NUM_INPUT: 1
+- `E47` S_NUM_INPUT: 0
+- `F47` S_NUM_INPUT: 0
+- `G47` S_NUM_INPUT: 1
+- `B48` S_DEFAULT: Castings & forgings
+- `C48` S_NUM_INPUT: 1
+- `D48` S_NUM_INPUT: 0
+- `E48` S_NUM_INPUT: 0
+- `F48` S_NUM_INPUT: 0
+- `G48` S_NUM_INPUT: 1
+- `B49` S_DEFAULT: Piping / fluid handling
+- `C49` S_NUM_INPUT: 0
+- `D49` S_NUM_INPUT: 1
+- `E49` S_NUM_INPUT: 0
+- `F49` S_NUM_INPUT: 0
+- `G49` S_NUM_INPUT: 1
+- `B50` S_DEFAULT: Electrical power / distribution / generation
+- `C50` S_NUM_INPUT: 0
+- `D50` S_NUM_INPUT: 1
+- `E50` S_NUM_INPUT: 1
+- `F50` S_NUM_INPUT: 0
+- `G50` S_NUM_INPUT: 1
+- `B51` S_DEFAULT: HVAC / ventilation / chilled water
+- `C51` S_NUM_INPUT: 0
+- `D51` S_NUM_INPUT: 1
+- `E51` S_NUM_INPUT: 0
+- `F51` S_NUM_INPUT: 0
+- `G51` S_NUM_INPUT: 1
+- `B52` S_DEFAULT: Coatings / insulation / decking
+- `C52` S_NUM_INPUT: 0
+- `D52` S_NUM_INPUT: 0
+- `E52` S_NUM_INPUT: 0
+- `F52` S_NUM_INPUT: 0
+- `G52` S_NUM_INPUT: 1
+- `A55` S_DEFAULT: x
+- `B55` S_TITLE_SECTION: §6 - Bucket share adjustments (modeled = observed + adjustment)
+- `C55` S_TITLE_SECTION: 
+- `D55` S_TITLE_SECTION: 
+- `E55` S_TITLE_SECTION: 
+- `F55` S_TITLE_SECTION: 
+- `G55` S_TITLE_SECTION: 
+- `H55` S_TITLE_SECTION: 
+- `B57` S_HEADER_LEFT: Bucket
+- `C57` S_HEADER_CENTER: Observed share
+- `D57` S_HEADER_CENTER: Adjustment
+- `E57` S_HEADER_CENTER: Modeled share
+- `B58` S_DEFAULT: Structural fabrication & modules
+- `C58` S_LINK_PCT: ='Entity Master'!D965
+- `D58` S_PCT_INPUT: 0
+- `E58` S_PCT: =C58+D58
+- `B59` S_DEFAULT: Machining / mechanical / propulsion
+- `C59` S_LINK_PCT: ='Entity Master'!D966
+- `D59` S_PCT_INPUT: 0
+- `E59` S_PCT: =C59+D59
+- `B60` S_DEFAULT: Castings & forgings
+- `C60` S_LINK_PCT: ='Entity Master'!D967
+- `D60` S_PCT_INPUT: 0
+- `E60` S_PCT: =C60+D60
+- `B61` S_DEFAULT: Piping / fluid handling
+- `C61` S_LINK_PCT: ='Entity Master'!D968
+- `D61` S_PCT_INPUT: 0
+- `E61` S_PCT: =C61+D61
+- `B62` S_DEFAULT: Electrical power / distribution / generation
+- `C62` S_LINK_PCT: ='Entity Master'!D969
+- `D62` S_PCT_INPUT: 0
+- `E62` S_PCT: =C62+D62
+- `B63` S_DEFAULT: HVAC / ventilation / chilled water
+- `C63` S_LINK_PCT: ='Entity Master'!D970
+- `D63` S_PCT_INPUT: 0
+- `E63` S_PCT: =C63+D63
+- `B64` S_DEFAULT: Coatings / insulation / decking
+- `C64` S_LINK_PCT: ='Entity Master'!D971
+- `D64` S_PCT_INPUT: 0
+- `E64` S_PCT: =C64+D64
+- `B65` S_DEFAULT: Unbucketed / ambiguous
+- `C65` S_LINK_PCT: ='Entity Master'!D972
+- `E65` S_PCT: =1-SUM(E58:E64)
+- `B66` S_TOTAL: Total modeled share
+- `C66` S_BORDER_TOP: 
+- `D66` S_BORDER_TOP: 
+- `E66` S_PCT_TOTAL: =SUM(E58:E65)

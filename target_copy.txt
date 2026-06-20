@@ -1,0 +1,173 @@
+DECK STYLE SYSTEM — copy, exhibits, color, and type
+
+The deck speaks as an analyst stating conclusions, not a narrator walking
+through an analysis. One system governs every visible object: titles, labels,
+commentary, captions, callouts, notes, charts, tables, shapes, color, and type.
+Lead with the point; use layout, hierarchy, fill, and borders to make the
+answer easy to read.
+
+
+STRUCTURE
+
+Commentary — interprets the exhibit, it does not restate it. Active-voice,
+evidence-based readings of what a chart or table means: the trend, the
+contrast, the implication behind the numbers — each point tied to a figure or
+named specific. The common form is a bold finding sentence followed by
+non-bold sentences, usually bulleted, that carry the evidence. The bold lines,
+read alone, are the takeaways.
+
+Titles — "Topic | Finding.". Topic is a Title Case noun phrase; Finding carries
+the real claim in full — capitalized at the first word after the pipe, sentence
+case thereafter — long enough to state the conclusion, short enough to stay
+within two lines. - "Finding" also needs to be sentence and ends with "." period.
+
+Section dividers — the subtitle previews the shape of the answer, stated
+qualitatively: no hard numbers, no agenda list, no terminal period. State the
+answer where there is one; frame the inquiry where there isn't. If a section
+has no crisp conclusion yet, drop the subtitle rather than force a claim.
+
+
+CHART SLIDES
+
+Chart slides pair a measured exhibit with its reading: the chart carries the
+quantitative shape, the commentary states the market-sizing implication. A
+units caption sits above the chart; the commentary lives outside it.
+
+Chart types — pick by the sizing question:
+- Waterfall — builds or bridges a total from signed parts.
+- Single-series column — compares levels, rankings, rates, or cadence.
+- Clustered column — compares values that must not be summed, including
+  nested ones (SAM against TAM).
+- Stacked column — mutually exclusive parts of a total, across periods or
+  categories.
+- 100% column — mix when the absolute total is secondary.
+- Marimekko — size and mix together, where tile area represents value.
+
+Layout (for chart slides) — three patterns:
+- Pattern A, chart left and commentary right. Chart ~7.7 in by ~3.7 in;
+  commentary in one right-side box (Commentary or CommentaryBody), ~4.2 in
+  by ~3.4 in, 3–4 finding paragraphs, ~100–140 words. An optional strip
+  under the chart carries one evidence, anchor, or implication line.
+- Pattern B, full-width chart (~12.5 in) with commentary below as
+  cards or table, maybe ~4.0 in by ~1.2 in: a bold mini-title
+  and one ~50-word paragraph.
+- Pattern C, chart left and commentary right AND below.
+
+Commentary register:
+- In terms of styling - usually a no-fill shape with black font text following this pattern -> bolded "parent" sentence + few bulleted, non-bolded supporting sentences (+ newline of empty text / space and then repeat -> bolded "parent" sentence, etc.)
+
+
+TABLES
+
+Layout
+- Table-only slides: full-width table under the title, usually ~12.0–12.5 in
+  wide.
+- Table plus commentary: follows same layouts as chart pages - Patterns A/B/C.
+
+Copy
+- Round consistently in deck notation: $M, $B, %, ~, ranges.
+- Order rows and columns by logic: size, priority, chronology, build sequence,
+  scenario progression, or implication.
+- Separate totals, subtotals, and scenario rows visibly.
+
+Build
+- Use horizontal rules only; no vertical borders. Default to a ½ pt gray #5 (646464)
+  rule between body rows, a 1 pt rule under the header, and no rule under the last row.
+  Step a body-row rule up to 1 pt black where heavier separation reads better.
+- Default to an unfilled header carried by its rule; reserve a dark header for
+  the primary table on a page.
+- Keep heavy black borders to one object family per slide.
+- Use ghost rows or columns as invisible gutters: merged where needed,
+  near-zero padding, no visible border or fill, usually under ~0.1 in.
+- Use color only through the fill rules: usually the "column headers" or "row headers", thin ghost columns (if they're being used - as an "accent" sometimes if "row headers" are used), highlighted rows, or key cells. 
+- Size rows to content so evidence grids read even, not ragged. 
+- Internal alignment in cells can vary but should be carefully considered for each table individually.
+- Also important to keep in mind how font size for table cells compares to row height (will the row look massive compared to the font size?)
+
+Commentary is optional for simple lookup tables and required when the table
+carries a sizing implication. 
+- In terms of styling - usually a no-fill shape with black font text following this pattern -> bolded "parent" sentence + few bulleted, non-bolded supporting sentences (+ newline of empty text / space and then repeat -> bolded "parent" sentence, etc.)
+
+
+COLOR AND FILLS
+
+Color is a hierarchy system, not decoration. Use only the house text colors and
+the blue/gray ramps; do not introduce one-off colors.
+
+Palette
+- Text: BLACK 000000 for default body text; WHITE FFFFFF on dark fills;
+  BLACK 000000 for borders and draft chip text.
+- Blue ramp: E2E9EF, B6C8D8, 6E91B1, 3D5972, 263746.
+- Gray ramp: F2F2F2, D9D9D9, BFBFBF, 7F7F7F, 646464.
+- If a slide calls for a placeholder to be used (an image or a chart there is not data for yet) this pale-yellow should be used - FFFFCC - in a rectangle shape with 1 pt black borders - the purpose of the placeholder can be written in the body of the shape / middle-aligned with italicized font. 
+
+Fill logic
+- Use fill only when the object has semantic weight: answer/KPI, denominator,
+  evidence chip, method badge, unit caveat, program or row identity, focal
+  warning.
+- Fill across successive shapes can also "ramp" in "intensity" / darkness across palette - or in table's column headers for example
+- Keep structural and interpretive text no-fill and usually no-border:
+  commentary, legend bullets, method notes, axis labels, captions, row labels,
+  divider labels, and explanatory bullets.
+- Dark fills use white text. Blue flips to white at the third step; gray flips
+  to white at the darkest step.
+
+Borders
+- Every shape with any fill color or shade carries a 1 pt black border.
+- A no-fill shape usually carries no border (usually bulleted commentary or can be used as caption or chart titles or table titles), but can also have 1 pt 
+- Tables follow the same fill logic, but with horizontal rules only as described
+  under TABLES.
+
+Connector lines - typically black + can be solid or dashed + should have arrows at one end most of the time - weight is typically ¼-½ pt for flow / leader / divider lines, stepping to 1 pt for emphasis (a non-black line is allowed but should be defined in a legend; caption text is also encouraged on connector lines)
+Divider lines can also be used, but not excessively.
+
+TYPOGRAPHY
+
+Use Arial throughout. Type size signals hierarchy; bold carries structure or
+value; italic marks qualifiers, captions, subtitles, and connector notes. ALL
+CAPS is explicit text, used sparingly for caps and headers.
+
+Core scale
+- 8 pt: sources, footnotes, caveats, tiny axis ticks.
+- 8.5 pt: fine print, dense sublines, unit notes, chip bodies, qualifiers.
+- 9 pt: row, column, bar, segment, and map labels.
+- 10 pt: dense body text, ledgers, rails, compact callouts, chart titles.
+- 11 pt: message strips, readouts, concise finding sentences.
+- 12 pt: default body text; bold/ALL CAPS for card caps, strip caps, and
+  in-shape headers.
+- 13 pt: exhibit headers, bold and used sparingly.
+- 14 pt: compact numeric values inside bars, chips, or small KPI cells.
+- 16 pt: badges, row identities, gates, compact anchors.
+- 18 pt: ribbon KPIs and high-emphasis strip values.
+- 24 pt: answer-card KPI values.
+- 32 pt: the one true hero headline on a content slide.
+
+In-shape hierarchy
+- Cap + subline: 12 pt bold/ALL CAPS plus 9 pt italic.
+- Value + qualifier: 18 pt bold plus 8.5 pt italic.
+- Label prefix + value: 8.5 pt bold prefix plus 11 pt value.
+- Section + bullets: 10 pt bold label plus 9 pt bullets.
+- Map or flow box: 9 pt bold title plus 8.5 pt body.
+- Connector note: 8.5 pt italic, no fill, no border.
+
+Chrome sizes (locked by the layout, not part of the scale above)
+- Content-slide title "Topic | Finding.": 20 pt.
+- Cover and divider title: 28 pt; subtitle: 20 pt italic.
+- Preliminary chip 12 pt; sources 8 pt.
+
+
+TEXT MECHANICS
+
+- In rendered slide text, no em dashes; en dashes only for number ranges.
+- Keep natural and domain slashes (Virginia/Columbia, AP/LLTM, GFE/GFP,
+  FFATA/FSRS, castings/forgings)
+- Avoid "+", "x", and "->" as separators — use "and" or restructure. (UNLESS FOR LIKE A FORMULA OR TO SHOW A TYPE OF "FLOW" - JUST DON'T WANT "SHORTHAND" FOR REAL SENTENCES)
+- Keep $XXM, $XXB, ~, %, and program acronyms; no double spaces.
+- No meta, hype, or process talk — don't narrate the deck ("this chart shows",
+  "as we can see"), describe what a section does, or reach for hype adjectives
+  ("robust", "comprehensive", "deep-dive", "leverage"); show the result.
+- No self-reference or role labels in body, commentary, or exhibit text (no
+  "Summary:", "(internal)", "this exhibit") - the dedicated bottom Note / Source
+  footnote line is the exception and does carry those labels.
+- No build-process leakage — version tags, phase markers, status notes never
+  reach a rendered string.

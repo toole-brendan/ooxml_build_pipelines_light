@@ -1,0 +1,403 @@
+================================================================================
+QUERYING FEDERAL PROCUREMENT DATA — WHAT ACTUALLY WORKS
+================================================================================
+
+Lessons from building a DDG-51 MRO spending pull against live FPDS and
+USAspending APIs. This is the practical playbook — what to do, what not
+to do, and what the data actually looks like when it comes back.
+
+Supersedes the older federal_procurement_data_guide.txt, which covers
+API mechanics in more detail. This doc focuses on judgment calls.
+
+Last updated: 2026-04-14
+
+
+================================================================================
+1. USE FPDS, NOT USASPENDING, FOR ANYTHING THAT MATTERS
+================================================================================
+
+USAspending is derived from FPDS. It loses data in the translation.
+
+The critical difference: FPDS lets you search DESCRIPTION_OF_REQUIREMENT
+as a dedicated field. USAspending's "keywords" parameter matches across
+ALL fields — recipient name, agency name, address, everything. A search
+for "vessel" will match a company with "vessel" in its name that builds
+furniture for the Army.
+
+In practice:
+  - FPDS description search: ~5% false positive rate
+  - USAspending keyword search: ~40-80% false positive rate
+
+Use USAspending for exactly two things:
+  1. Subaward data (FPDS doesn't have it)
+  2. Looking up internal award IDs for subaward queries
+
+Use FPDS for everything else.
+
+
+================================================================================
+2. HOW TO QUERY FPDS
+================================================================================
+
+Base URL (no auth needed):
+  https://www.fpds.gov/ezsearch/FEEDS/ATOM?FEEDNAME=PUBLIC&q={query}&start={offset}
+
+Query syntax — field:value pairs, space-separated (implicit AND):
+  DESCRIPTION_OF_REQUIREMENT:"exact phrase" CONTRACTING_AGENCY_ID:"1700"
+
+Always URL-encode the q= parameter. In Python:
+  from urllib import parse
+  q = 'DESCRIPTION_OF_REQUIREMENT:"LM2500" CONTRACTING_AGENCY_ID:"1700"'
+  url = f"{BASE}&{parse.urlencode({'q': q})}&start=0"
+
+The fields that matter:
+  DESCRIPTION_OF_REQUIREMENT   — The money field. Search by what the contract is FOR.
+  CONTRACTING_AGENCY_ID        — "1700" = Navy. "9700" = all DoD.
+  SIGNED_DATE                  — Date range: [2020/01/01,] means "2020 onward"
+  OBLIGATED_AMOUNT             — Dollar range: [1000000,] means ">$1M"
+  PRODUCT_OR_SERVICE_CODE      — "J998" = ship repair. Useful for filtering.
+  PIID                         — Specific contract ID lookup.
+  PRINCIPAL_NAICS_CODE         — "336611" = shipbuilding.
+
+Pagination: 10 records per page. Increment start= by 10.
+Check for <link rel="next"> to know if there are more pages.
+
+Rate limiting: No hard limit, but be polite. 0.4s between pages, 1s pause
+every 5 pages. Set a User-Agent header.
+
+Python example that works:
+
+  from urllib.request import urlopen, Request
+  from urllib import parse
+  from xml.etree.ElementTree import fromstring
+
+  NS = {"a": "http://www.w3.org/2005/Atom", "ns1": "https://www.fpds.gov/FPDS"}
+  BASE = "https://www.fpds.gov/ezsearch/FEEDS/ATOM?FEEDNAME=PUBLIC"
+
+  q = 'DESCRIPTION_OF_REQUIREMENT:"DDG" DESCRIPTION_OF_REQUIREMENT:"repair" CONTRACTING_AGENCY_ID:"1700" SIGNED_DATE:[2020/01/01,]'
+  url = f"{BASE}&{parse.urlencode({'q': q})}&start=0"
+
+  req = Request(url, headers={"User-Agent": "YourProject/1.0"})
+  with urlopen(req, timeout=45) as resp:
+      root = fromstring(resp.read().decode("utf-8"))
+
+  for entry in root.findall("a:entry", NS):
+      content = entry.find("a:content", NS)
+      award = content.find(".//ns1:award", NS)
+      if award is None:
+          award = content.find(".//ns1:OtherTransactionAward", NS)
+      if award is None:
+          continue
+      desc = award.find(".//ns1:descriptionOfContractRequirement", NS)
+      vendor = award.find(".//ns1:vendorName", NS)
+      piid = award.find(".//ns1:PIID", NS)
+      obl = award.find(".//ns1:totalObligatedAmount", NS)
+      print(f"{piid.text} | {vendor.text} | ${obl.text} | {desc.text[:100]}")
+
+
+================================================================================
+3. WHAT THE DATA ACTUALLY LOOKS LIKE
+================================================================================
+
+Every FPDS record is a single contract ACTION — either an initial award or
+a modification to an existing award. Key concept: the same contract (PIID)
+will appear many times, once per modification.
+
+Each record has two sets of dollar fields:
+  obligatedAmount              — dollars obligated in THIS action only
+  totalObligatedAmount         — cumulative obligations across ALL mods
+
+When you want "how much has been spent on this contract":
+  Use totalObligatedAmount from the LATEST modification.
+
+When you want "how much was added this year":
+  Use obligatedAmount from individual mods in that date range.
+
+NEVER sum totalObligatedAmount across modifications of the same PIID.
+A contract with 7 mods each showing $196M total is $196M, not $1.37B.
+This mistake will inflate your numbers by 5-10x.
+
+Record types in the XML:
+  <ns1:award>                    — Standard FAR contract
+  <ns1:OtherTransactionAward>    — OT award (10 USC 4022)
+  <ns1:OtherTransactionIDV>      — OT umbrella vehicle
+Check for all three. OT records have fields that standard awards don't
+(typeOfAgreement, consortiumFlag, etc.).
+
+Descriptions are truncated at ~250 characters. Contracts that list 10
+alteration codes will only show the first 3-4. There is no way around
+this in the API.
+
+
+================================================================================
+4. SEARCH STRATEGY — HIGH PRECISION FIRST, THEN BROADEN
+================================================================================
+
+Start narrow and widen. Every broad search produces garbage that takes
+longer to clean than a targeted search takes to run.
+
+TIER 1 — System-specific names (highest precision):
+  "LM2500"                    — Gets exactly LM2500 gas turbine contracts
+  "SEWIP"                     — Gets exactly SEWIP EW contracts
+  "SQQ-89"                    — Gets exactly ASW combat system contracts
+  "Aegis" + "modernization"   — Aegis upgrade contracts specifically
+
+  These return almost zero false positives. Start here.
+
+TIER 2 — Ship class + action verb (medium precision):
+  "DDG" + "repair"            — DDG repair contracts, ~300 results
+  "DDG" + "modernization"     — DDG modernization, ~240 results
+  "DDG" + "alteration"        — DDG alterations, ~120 results
+  "DDG" + "overhaul"          — DDG overhaul, ~40 results
+
+  These include some noise: construction mods that mention a system,
+  facility/pier work, non-MRO items. Needs post-filtering.
+
+TIER 3 — Broad category searches (low precision, high coverage):
+  PRODUCT_OR_SERVICE_CODE:"J998"  — All ship repair contracts
+  PRINCIPAL_NAICS_CODE:"336611"   — All shipbuilding NAICS
+  "ship alteration"               — All Navy ship alterations (~950 results)
+
+  These catch things the targeted searches miss but require aggressive
+  post-filtering. Use them to find contracts you didn't know to look for,
+  then add those terms to your Tier 1 searches.
+
+OVERLAPPING SEARCHES ARE FINE. The same PIID appearing in three different
+searches is expected. Deduplication handles it. The alternative — trying to
+construct one perfect query — misses things.
+
+
+================================================================================
+5. THE THREE THINGS THAT WILL RUIN YOUR DATA
+================================================================================
+
+PROBLEM 1: Construction contracts leaking into MRO results.
+
+  A DDG construction MYP (N0002418C2307, $6.7B) has hundreds of modifications.
+  One mod says "UPDATE GFI FOR REPAIR STATION CONSOLE" — contains "repair."
+  Another says "ICP-3790 DDG 125 PT-038 - UPDATE SLQ-32" — contains "SLQ-32."
+  Your searches for "DDG repair" and "SLQ-32" both pick it up.
+
+  This is the #1 source of inflated numbers. A single construction contract
+  can add $3-7 BILLION of false spending to your MRO analysis.
+
+  How to fix:
+    - Maintain a list of known construction PIIDs and exclude them.
+    - Filter by PSC code (J998 = ship repair, C1AZ = ship construction).
+    - Flag any contract >$500M that mentions "construct" in the description.
+    - Check the PIID pattern: Navy construction contracts under NAVSEA often
+      have serial numbers in the 2xxx range (e.g., N00024xxC2307).
+
+PROBLEM 2: Modification descriptions don't represent the whole contract.
+
+  When you deduplicate to one record per PIID, you keep the latest mod.
+  The latest mod's description might say "DEOBLIGATE EXCESS FUNDING" or
+  "UPDATE LIQUIDATION RATES" — administrative actions that tell you nothing
+  about what the contract is for.
+
+  But the totalObligatedAmount on that mod is correct — it's cumulative.
+  So you have the right dollars but the wrong description.
+
+  How to fix:
+    - When categorizing, check descriptions across MULTIPLE mods per PIID,
+      not just the latest one. Use the most informative description.
+    - Or: keep the first mod's description (the initial award), which
+      usually has the most descriptive text, but use the latest mod's
+      dollar fields.
+
+PROBLEM 3: Non-DDG contracts appearing in system-specific searches.
+
+  Searching for "LM2500" returns gas turbine contracts for DDGs, LCSs,
+  FFGs, and foreign navies. Searching for "SEWIP" returns DDG AND CG
+  contracts. "Ship service diesel generator" returns DDG, LCS, MCM, etc.
+
+  How to fix:
+    - Post-filter for "DDG" in the description if you only want DDGs.
+    - But be careful: some DDG-relevant contracts don't say "DDG" in the
+      description (e.g., "LM2500 GAS GENERATOR ASSEMBLY OVERHAUL" doesn't
+      mention the ship class). You'll lose some legitimate records.
+    - Best approach: keep everything, tag DDG-specific vs. multi-platform,
+      and let the analysis handle the distinction.
+
+
+================================================================================
+6. DEDUPLICATION — THE RULES
+================================================================================
+
+After pulling from multiple overlapping searches:
+
+  1. Group all records by PIID.
+  2. Within each PIID, sort by signed_date descending.
+  3. Keep ONE record per PIID: use the latest mod's dollar fields,
+     but scan ALL mods' descriptions for categorization.
+  4. Track which searches found each PIID (useful for coverage analysis).
+
+For dollar aggregation:
+  - Use totalObligatedAmount from the kept record.
+  - NEVER sum obligatedAmount across mods — that double-counts.
+  - NEVER sum totalObligatedAmount across mods — that's the same
+    cumulative number repeated N times.
+
+For vendor names:
+  - Normalize: strip INC, LLC, CORP, CORPORATION, LTD, L.P., etc.
+  - Uppercase for comparison.
+  - Watch for acquisitions: "L-3 UNIDYNE" became "L3HARRIS" mid-contract.
+
+
+================================================================================
+7. CATEGORIZATION — REGEX ON DESCRIPTIONS
+================================================================================
+
+FPDS has no "system type" or "SWBS code" field. You categorize by pattern-
+matching the description. This is inferential, not structural.
+
+What works:
+  - Specific system designators: SPY-1, SPY-6, SQQ-89, SLQ-32, LM2500
+  - Program names: SEWIP, Aegis, CEC, SSDS
+  - Component names: gas turbine, diesel generator, HVAC, valve, propeller
+  - Alteration codes: SA-94979K, MA-513, ORDALT-83135
+
+What doesn't work:
+  - Word boundary issues: \bSPY.?1\b won't match "SPY-1D" because the D
+    breaks the word boundary after "1". Use SPY.?1\w* instead.
+  - Abbreviation collisions: "CEC" could match non-defense contexts.
+    Combine with agency filter.
+  - Generic descriptions: "ENGINEERING SERVICES" or "SUPPLY PROCUREMENT"
+    are uncategorizable. Accept ~10-15% unclassified as a cost of doing
+    business with this data.
+
+Priority order for multi-match:
+  If a description mentions both a specific system AND a whole-ship
+  availability, the system match wins — "SEWIP NOTE M LANGUAGE" inside
+  a DMP contract means SEWIP cost is traceable even though the contract
+  is a bundled availability.
+
+
+================================================================================
+8. GFE vs CFE — NOT LABELED, INFERRED FROM STRUCTURE
+================================================================================
+
+There is no GFE/CFE field in any federal procurement database. The
+distinction is structural:
+
+  GFE pattern:
+    - Prime contract in FPDS between Navy and system OEM
+    - Contracting agency: NAVSEA HQ
+    - Vendor: Raytheon, Lockheed Martin, Northrop Grumman, etc.
+    - PSC: System-specific (fire control radar, EW equipment)
+    - Description names the system
+    - Visible as: standalone FPDS contract
+
+  CFE pattern:
+    - Subaward under a construction/maintenance prime in USAspending
+    - Prime vendor: HII, BIW, BAE, NASSCO
+    - Subvendor: component supplier (GE Aerospace, Johnson Controls, etc.)
+    - Description often generic ("DIRECT MATERIAL EXPENSE")
+    - HII codes subawards to SWBS (internal practice, not standard)
+    - Visible as: USAspending subaward record
+
+For MRO, same pattern:
+  - System upgrades procured by the Navy directly = GFE-like (visible)
+  - Components the shipyard buys during an availability = CFE-like (mostly invisible)
+
+Some FPDS mods explicitly reference the GFE handoff:
+  "UPDATE GFI FOR REPAIR STATION CONSOLE" — GFI = Gov Furnished Information
+  "TRANSFERS ACCOUNTABILITY FOR GFP" — GFP = Gov Furnished Property
+
+
+================================================================================
+9. USASPENDING SUBAWARDS — WHEN THEY HELP AND WHEN THEY DON'T
+================================================================================
+
+Endpoint: POST /api/v2/subawards/
+  Body: {"page": 1, "limit": 20, "sort": "subaward_number", "order": "desc",
+         "award_id": "CONT_AWD_{piid}_{agency}_-NONE-_-NONE-"}
+
+To get the award_id, first search spending_by_award for the PIID and grab
+generated_internal_id from the result.
+
+WHEN SUBAWARDS HELP:
+  - Newbuild construction (HII): 2,355 subawards across FY18-27, many
+    coded to SWBS. This is how the DDG-51 CFE analysis was built.
+  - Large service contracts: sometimes have identifiable subcontractors.
+
+WHEN SUBAWARDS ARE USELESS:
+  - Depot maintenance: descriptions are "REPAIR RENTALS", "DIRECT MATERIAL
+    EXPENSE", "DIRECT EQUIPMENT RENTAL". No system detail.
+  - BIW: reports almost zero subawards (0-24 vs HII's 2,355).
+  - BAE Norfolk MSMO: ZERO subawards reported.
+  - Small contracts: below $30K reporting threshold.
+
+Vendor names in subawards are occasionally informative even when descriptions
+aren't: Alfa Laval = heat exchangers, Evoqua Water = water treatment,
+Fairbanks Morse = diesel generators. But this is a weak signal.
+
+
+================================================================================
+10. WHAT YOU CAN'T SEE
+================================================================================
+
+No combination of public API queries will show you:
+
+  - Per-system costs inside a depot availability (DMP, SRA, DSRA, CMAV).
+    These are single contracts covering all work. The breakdown is in
+    VAMOSC (Navy internal) and contractor bids (proprietary).
+
+  - Subcontractor spending below first tier. A company doing $500M/year
+    as a sub-to-a-sub is invisible.
+
+  - Classified programs. If a system is classified, its procurement data
+    is excluded from public databases entirely.
+
+  - OTAs through consortia where the performing company isn't named.
+    The FPDS record may list ATI or NSTXL as the vendor. Consortium
+    member fields exist in FPDS v1.5.3+ but aren't always populated.
+
+  - Work the shipyard does with its own labor. HII's in-house structural
+    welding, outfitting, painting — none of this appears anywhere.
+    It's the ~92% of construction cost that ISN'T subcontracted.
+
+  - Full alteration code lists. SA/MA codes appear in truncated FPDS
+    descriptions. The complete DDG-51 alteration catalog is in NAVSEA's
+    Ship Alteration Record (SAR) database, not public.
+
+
+================================================================================
+11. PRACTICAL WORKFLOW
+================================================================================
+
+For any new domain (ship class, system, program):
+
+  STEP 1: Read the budget justification documents (PB books).
+    These tell you the program names, budget lines, and approximate
+    dollar amounts. They're your ground truth for what SHOULD exist
+    in the procurement data.
+
+  STEP 2: Run Tier 1 FPDS searches (system-specific names).
+    Pull everything. Deduplicate by PIID. This is your high-confidence
+    baseline — almost no false positives.
+
+  STEP 3: Run Tier 2 FPDS searches (ship class + action verbs).
+    Pull, deduplicate, merge with Tier 1. Post-filter for relevance.
+    This catches things you didn't know to search for in Tier 1.
+
+  STEP 4: Filter out construction contracts.
+    Known construction PIIDs, PSC codes, description patterns.
+    This is where most people's numbers go wrong.
+
+  STEP 5: Categorize by system/SWBS using description regex.
+    Accept 10-15% unclassified. Review the unclassified list manually
+    to find patterns you missed and add them to your regex.
+
+  STEP 6: Validate against budget documents.
+    Your FPDS totals should be in the same ballpark as the PB book
+    numbers. If they're 3x higher, you have construction contamination.
+    If they're 3x lower, you're missing search terms.
+
+  STEP 7: Pull subawards for specific contracts of interest.
+    Only worth doing for large primes where you expect subcontracting
+    (construction, large IDIQ vehicles). Skip for depot maintenance.
+
+Save everything to JSON as you go. Never re-fetch data you already have.
+FPDS is slow (10 records per page) and you don't want to re-pull 300
+pages because your script crashed at page 250.

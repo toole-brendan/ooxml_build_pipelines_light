@@ -1,0 +1,768 @@
+================================================================================
+OOXML BUILD PIPELINES - DIRECTORY STRUCTURE ANALYSIS
+================================================================================
+
+PURPOSE:
+--------
+Multi-project workspace for OOXML document generation across various subjects.
+Houses projects that programmatically generate PowerPoint presentations and
+Excel workbooks using raw OOXML (Office Open XML) manipulation.
+
+CORE ARCHITECTURE:
+------------------
+Two shared build pipelines used by all projects:
+  1. deck_core/     - Raw OOXML PowerPoint (.pptx) generation engine
+  2. workbook_core/ - Raw OOXML Excel (.xlsx) generation engine
+
+CURRENT PROJECTS:
+-----------------
+  • DDG        - US Navy destroyer shipbuilding market analysis
+  • Submarine  - US Navy submarine shipbuilding market analysis
+
+SCALABILITY DESIGN:
+-------------------
+Workspace is architected to support many future projects across diverse domains.
+Each new project would follow this standard pattern:
+  - {project_name}/deck/          - PowerPoint build (imports deck_core)
+  - {project_name}/workbook/      - Excel build (imports workbook_core)
+  - {project_name}/research/      - Source data and reference materials
+  - Build scripts that orchestrate pipeline with project-specific modules
+
+Example for a new project called "carrier":
+  - carrier/deck/build_deck.py           → imports deck_carrier.lib
+  - carrier/deck/deck_carrier/slides/    → Python slide modules
+  - carrier/workbook/build_workbook.py   → imports workbook_carrier.lib
+  - carrier/workbook/workbook_carrier/sheets/ → Python sheet modules
+
+KEY CONCEPTS:
+-------------
+  ACTIVE PIPELINE   = Folders/files imported by build_*.py scripts (MUST NOT MOVE)
+  SPECS/DRAFTS      = Text specifications, experimental drafts (can be relocated)
+  ARCHIVE           = Historical versions with _archive_* naming
+  CORE              = Shared libraries used by all projects
+  SUPPORT           = Logs, configs, tooling
+
+STATUS AS OF: June 3, 2026
+Recent intensive development (June 1-3) indicates active refactoring phase.
+
+================================================================================
+
+
+ooxml_build_pipelines/                               [ROOT]
+│   Files: 12 total (5 files, 7 directories)
+│   Modified: May 21, 2026 → June 3, 2026
+│   Purpose: Parent workspace for multi-project OOXML document generation
+│   Status: ROOT
+│
+├── transcript.txt                                   (28 KB, Jun 1 16:31)
+│   Purpose: Session transcript from earlier development work
+│   Status: SUPPORT
+│
+├── transcript2.txt                                  (12 KB, Jun 1 16:56)
+│   Purpose: Session transcript from earlier development work
+│   Status: SUPPORT
+│
+├── prompt_enhance_specs.txt                         (7 KB, Jun 2 22:10)
+│   Purpose: AI prompt template for enhancing specifications
+│   Status: SUPPORT
+│
+├── prompt_write_ooxml.txt                           (8 KB, Jun 2 22:32)
+│   Purpose: AI prompt template for OOXML code generation
+│   Status: SUPPORT
+│
+├── .DS_Store                                        (8 KB, Jun 1 09:53)
+│   Purpose: macOS filesystem metadata (can be deleted)
+│   Status: ARTIFACT
+│
+│
+├─┬ .claude/                                         (8 KB total)
+│ │ Files: 1
+│ │ Modified: Jun 3, 2026
+│ │ Purpose: Claude Code configuration directory
+│ │ Status: SUPPORT
+│ │
+│ └── settings.local.json
+│     Purpose: Local Claude Code settings (not committed to version control)
+│
+│
+├─┬ logs/                                            (196 KB total, 17 files)
+│ │ Files: 17 markdown files
+│ │ Modified: Jun 1 12:32 → Jun 2 17:09
+│ │ Purpose: Development session logs documenting refactoring and buildout work
+│ │ Status: SUPPORT
+│ │
+│ ├── 2026-06-01_deck_core_option_b_refactor.md
+│ ├── 2026-06-01_deck_core_refactor_decision.md
+│ ├── 2026-06-01_deck_core_refactor_from_option_a_complete.md
+│ ├── 2026-06-01_workbook_core_buildout_and_rationalization.md
+│ ├── 2026-06-01_workbook_core_development.md
+│ ├── 2026-06-01_workbook_core_group_mechanism_buildout.md
+│ ├── 2026-06-02_core_tree_restructure.md
+│ ├── 2026-06-02_ddg_workbook_ddg_restructure_after_core_tree_change.md
+│ ├── 2026-06-02_ddg_workbook_refactor.md
+│ ├── 2026-06-02_ddg_workbook_restructure_after_core_tree_change.md
+│ ├── 2026-06-02_ddg_workbook_restructure_complete.md
+│ ├── 2026-06-02_sub_deck_spec_and_pipeline_buildout.md
+│ ├── 2026-06-02_sub_workbook_refactor_and_group_mechanism.md
+│ ├── 2026-06-02_submarine_workbook_refactor.md
+│ ├── 2026-06-02_submarine_workbook_restructure_after_core_tree_change.md
+│ ├── 2026-06-02_submarine_workbook_restructure_and_validation.md
+│ └── 2026-06-02_workbook_core_revisions.md
+│     Purpose: Chronological record of core pipeline and project refactoring
+│
+│
+├─┬ deck_core/                                       (6.1 MB total, 110 files)
+│ │ Files: 110 total (11 Python modules, 13 compiled, 26 schemas, docs, assets)
+│ │ Modified: Jun 1 → Jun 3, 2026
+│ │ Purpose: **CORE PIPELINE** - Shared PowerPoint OOXML generation engine
+│ │ Status: CORE (LOCKED - used by all deck projects)
+│ │
+│ │ CRITICAL FILES:
+│ │ ---------------
+│ ├── lib.py                 - Package orchestration, pptx zip assembly
+│ ├── ooxml.py               - OOXML namespace and XML writing utilities
+│ ├── primitives.py          - Core OOXML builders (slide, text_box, table, etc.)
+│ ├── style.py               - Design system tokens (geometry, palette, typography)
+│ ├── charts.py              - Native PowerPoint chart factories
+│ ├── text_metrics.py        - Row height estimation for wrapping text
+│ ├── slide_base_template.py - Starter template for new slides
+│ │
+│ │ DOCUMENTATION:
+│ │ --------------
+│ ├── readme.txt             - **KEY CONTEXT** - Pipeline philosophy and workflow
+│ ├── slide_guide.md         - Style rules and construction conventions
+│ ├── slide_snippets.md      - Recipe cookbook for common patterns
+│ ├── ooxml_cheat_sheet_pptx.md - OOXML reference for PowerPoint
+│ │
+│ │ TOOLS:
+│ │ ------
+│ ├─┬ tools/
+│ │ └── slide_probe.py       - Read-only OOXML inspector and lint tool
+│ │
+│ │ SCHEMAS:
+│ │ --------
+│ ├─┬ _schema/               (26 XSD files)
+│ │ ├── pml.xsd              - PresentationML schema
+│ │ ├── dml-*.xsd            - DrawingML schemas
+│ │ ├── sml.xsd              - SpreadsheetML schema
+│ │ ├── wml.xsd              - WordprocessingML schema
+│ │ ├── vml-*.xsd            - VectorML schemas
+│ │ └── shared-*.xsd         - Shared Office schemas
+│ │     Purpose: Office Open XML schema definitions for validation
+│ │
+│ │ DOCUMENTATION:
+│ │ --------------
+│ ├─┬ _docs/                 (24 files)
+│ │ ├── Open XML reference materials
+│ │ ├── Intellisense JSON files
+│ │ └── Cross-reference data
+│ │     Purpose: OOXML API documentation and IntelliSense support
+│ │
+│ │ ASSETS:
+│ │ -------
+│ ├─┬ assets/
+│ │ ├── embeddings/          - Binary assets for embedding
+│ │ └── media/               - Image files for slides
+│ │
+│ │ TEMPLATE:
+│ │ ---------
+│ ├─┬ template/              - Complete OOXML package structure template
+│ │ ├─┬ ppt/
+│ │ │ ├── slides/            - Slide XML storage
+│ │ │ ├── slideLayouts/      - Layout masters
+│ │ │ ├── slideMasters/      - Theme masters
+│ │ │ ├── charts/            - Chart part storage
+│ │ │ ├── embeddings/        - Embedded workbook storage
+│ │ │ ├── media/             - Media file storage
+│ │ │ ├── _rels/             - Relationship files
+│ │ │ ├── presentation.xml   - Presentation manifest
+│ │ │ └── presentation.xml.rels - Presentation relationships
+│ │ ├── docMetadata/         - Core document metadata
+│ │ ├── docProps/            - Document properties
+│ │ └── [Content_Types].xml - MIME type manifest
+│ │     Purpose: Base template structure for generated .pptx files
+│ │
+│ └─┬ __pycache__/           (13 compiled Python files)
+│   └── *.cpython-314.pyc    - Python bytecode cache
+│
+│
+├─┬ workbook_core/                                   (421 KB total, 28 files)
+│ │ Files: 28 total (12 Python modules, 10 compiled, docs)
+│ │ Modified: Jun 1 → Jun 2, 2026
+│ │ Purpose: **CORE PIPELINE** - Shared Excel OOXML generation engine
+│ │ Status: CORE (LOCKED - used by all workbook projects)
+│ │
+│ │ CRITICAL FILES:
+│ │ ---------------
+│ ├── lib.py                 - Package orchestration, xlsx zip assembly
+│ ├── ooxml.py               - OOXML namespace and XML writing utilities
+│ ├── primitives.py          - Core OOXML builders (cell, row, column, etc.)
+│ ├── sheet_base_template.py - Starter template for new sheets
+│ ├── styles.py              - Style definitions (fonts, fills, borders, numFmt)
+│ ├── tables.py              - Native Excel table engine
+│ ├── groups.py              - Row/column grouping and outlining
+│ ├── notes.py               - Cell comment/note utilities
+│ ├── table_style_names.py   - Predefined Excel table style catalog
+│ │
+│ │ DOCUMENTATION:
+│ │ --------------
+│ ├── ooxml_cheat_sheet_xlsx.md - OOXML reference for Excel
+│ ├── sheet_guide.md         - Sheet authoring conventions
+│ ├── sheet_snippets.md      - Recipe cookbook for common patterns
+│ │
+│ │ TOOLS:
+│ │ ------
+│ ├─┬ tools/
+│ │ └── sheet_probe.py       - Read-only OOXML inspector for sheets
+│ │
+│ └─┬ __pycache__/           (10 compiled Python files)
+│   └── *.cpython-314.pyc    - Python bytecode cache
+│
+│
+├─┬ ddg/                                             (433 MB total, 3,015 files)
+│ │ Files: 3,015 total across deck/, workbook/, research/, and root
+│ │ Modified: May 21 → Jun 3, 2026
+│ │ Purpose: **PROJECT** - US Navy destroyer (DDG) shipbuilding market analysis
+│ │ Status: ACTIVE PROJECT
+│ │
+│ │ ROOT LEVEL FILES:
+│ │ ------------------
+│ ├── distributed_shipbuilding_overview_ddg.txt   (10 KB, Jun 2)
+│ ├── project_handoff_ddg.txt                     (7 KB, Jun 2)
+│ ├── project_description_ddg.txt                 (5 KB, Jun 2)
+│ ├── refactor_deck_ddg.txt                       (2 KB, Jun 2)
+│ ├── workbook_dev_transcript_1.txt               (56 KB, May 29)
+│ ├── workbook_dev_transcript_2.txt               (35 KB, May 29)
+│ ├── workbook_dev_transcript_3.txt               (58 KB, May 30)
+│ ├── workbook_dev_transcript_4.txt               (45 KB, May 31)
+│ └── workbook_dev_transcript_5.txt               (10 KB, Jun 1)
+│     Purpose: Project documentation, handoff guides, development transcripts
+│     Status: SUPPORT
+│ │
+│ ├─┬ ddg_slides/                                  (21 .txt files, Jun 2)
+│ │ │ Files: 21 text specification files
+│ │ │ Purpose: **SPECS** - Text specifications for slide content (NOT Python)
+│ │ │ Status: SPECS/DRAFTS (NOT imported by pipeline)
+│ │ │
+│ │ ├── body_slide_01__market_primer.txt
+│ │ ├── body_slide_02__executive_summary.txt
+│ │ ├── body_slide_03__scope.txt
+│ │ ├── body_slide_04__cost_funnel.txt
+│ │ ├── body_slide_05__myp_redaction.txt
+│ │ ├── body_slide_06__tam_methodology.txt
+│ │ ├── body_slide_07__annual_tam_build.txt
+│ │ ├── body_slide_08__tam_timing.txt
+│ │ ├── body_slide_09__sam_taxonomy.txt
+│ │ ├── body_slide_10__work_type_allocation.txt
+│ │ ├── body_slide_11__sam_scenarios.txt
+│ │ ├── body_slide_12__supplier_landscape.txt
+│ │ ├── body_slide_13__ffata_visibility_gap.txt
+│ │ ├── body_slide_14__market_direction.txt
+│ │ ├── body_slide_15__implications.txt
+│ │ ├── appendix_slide_01__definitions_scope.txt
+│ │ ├── appendix_slide_02__tam_calculation.txt
+│ │ ├── appendix_slide_03__myp_correction.txt
+│ │ ├── appendix_slide_04__ap_lltm_sensitivity.txt
+│ │ ├── appendix_slide_05__ffata_limitations.txt
+│ │ └── appendix_slide_06__bucket_rules.txt
+│ │     Notes: These are content specifications, not executable Python modules
+│ │            The actual slide generators are in deck/deck_ddg/slides/*.py
+│ │
+│ ├─┬ deck/                                         (265 files, ~20 MB)
+│ │ │ Files: 265 total (build script, pipeline folder, archive)
+│ │ │ Modified: Jun 2 15:52 → Jun 3 13:55
+│ │ │ Purpose: PowerPoint deck generation for DDG project
+│ │ │ Status: ACTIVE PIPELINE
+│ │ │
+│ │ ├── 20260602_Distributed Shipbuilding DDG_vS.pptx  (109 KB, Jun 3 13:55)
+│ │ │   Purpose: **OUTPUT** - Final generated PowerPoint presentation
+│ │ │   Status: DELIVERABLE
+│ │ │
+│ │ ├── build_deck.py                               (635 bytes, Jun 2 15:53)
+│ │ │   Purpose: **BUILD SCRIPT** - Launches deck_ddg pipeline
+│ │ │   Imports: from deck_ddg.lib import build
+│ │ │   Status: ★ ACTIVE PIPELINE ENTRY POINT (this is the REAL build file)
+│ │ │   Output: 20260602_Distributed Shipbuilding DDG_vS.pptx
+│ │ │
+│ │ ├─┬ deck_ddg/                                   (38 files)
+│ │ │ │ Purpose: **ACTIVE PIPELINE PACKAGE** - DDG-specific PowerPoint pipeline
+│ │ │ │ Status: ACTIVE PIPELINE (imported by build_deck.py)
+│ │ │ │
+│ │ │ ├── __init__.py
+│ │ │ ├── lib.py              - Pipeline binding, imports deck_core
+│ │ │ │
+│ │ │ ├─┬ slides/              (17 Python modules)
+│ │ │ │ │ Purpose: **ACTIVE SLIDE GENERATORS** - Python modules that emit slide OOXML
+│ │ │ │ │ Status: ACTIVE PIPELINE (imported by pipeline)
+│ │ │ │ │
+│ │ │ │ ├── __init__.py
+│ │ │ │ ├── annual_tam_build.py
+│ │ │ │ ├── ap_lltm_sensitivity.py
+│ │ │ │ ├── bucket_rules_supplier_evidence.py
+│ │ │ │ ├── cost_funnel.py
+│ │ │ │ ├── definitions_scope.py
+│ │ │ │ ├── executive_summary.py
+│ │ │ │ ├── ffata_limitations.py
+│ │ │ │ ├── market_primer.py
+│ │ │ │ ├── myp_correction.py
+│ │ │ │ ├── myp_redaction.py
+│ │ │ │ ├── sam_scenarios.py
+│ │ │ │ ├── sam_taxonomy.py
+│ │ │ │ ├── scope.py
+│ │ │ │ ├── supplier_landscape.py
+│ │ │ │ ├── tam_methodology.py
+│ │ │ │ ├── tam_timing.py
+│ │ │ │ └── work_type_allocation.py
+│ │ │ │     Notes: These are the REAL slide generators (not the .txt specs above)
+│ │ │ │            Each .py file contains render() function that returns OOXML
+│ │ │ │
+│ │ │ └─┬ __pycache__/
+│ │ │   └── *.cpython-314.pyc
+│ │ │
+│ │ └─┬ _archive_old_deck_20260602/                 (225 files, 11 MB)
+│ │   │ Purpose: **ARCHIVE** - Previous deck pipeline version
+│ │   │ Status: ARCHIVE (can be deleted after validation period)
+│ │   │
+│ │   ├── Previous version of build scripts and pipeline
+│ │   ├── Old slide modules
+│ │   └── Historical deck outputs
+│ │       Notes: Archived on Jun 2 during refactor, preserved for rollback safety
+│ │
+│ ├─┬ workbook/                                     (98 files, ~376 KB)
+│ │ │ Files: 98 total (build scripts, pipeline folder, extracted OOXML)
+│ │ │ Modified: May 29 → Jun 2, 2026
+│ │ │ Purpose: Excel workbook generation for DDG project
+│ │ │ Status: ACTIVE PIPELINE
+│ │ │
+│ │ ├── 20260601_Distributed Shipbuilding DDG_v1.0.xlsx  (282 KB, Jun 2 17:49)
+│ │ │   Purpose: **OUTPUT** - Final generated Excel workbook
+│ │ │   Status: DELIVERABLE
+│ │ │
+│ │ ├── build_workbook.py                          (461 bytes, Jun 1 11:58)
+│ │ │   Purpose: **BUILD SCRIPT** - Launches workbook_ddg pipeline
+│ │ │   Imports: from workbook_ddg.lib import build
+│ │ │   Status: ★ ACTIVE PIPELINE ENTRY POINT (this is the REAL build file)
+│ │ │   Output: 20260601_Distributed Shipbuilding DDG_v1.0.xlsx
+│ │ │
+│ │ ├── validate_workbook.py                       (2.5 KB, May 29 09:01)
+│ │ │   Purpose: Validation/inspection tool for generated workbook
+│ │ │   Status: SUPPORT TOOL
+│ │ │
+│ │ ├── ooxml_cheat_sheet_excel.md                 (65 KB, May 29 09:01)
+│ │ │   Purpose: OOXML reference documentation (duplicate of workbook_core)
+│ │ │   Status: SUPPORT (redundant - could be removed)
+│ │ │
+│ │ ├─┬ workbook_ddg/                              (78 files)
+│ │ │ │ Purpose: **ACTIVE PIPELINE PACKAGE** - DDG-specific Excel pipeline
+│ │ │ │ Status: ACTIVE PIPELINE (imported by build_workbook.py)
+│ │ │ │
+│ │ │ ├── __init__.py
+│ │ │ ├── lib.py              - Pipeline binding, imports workbook_core
+│ │ │ │
+│ │ │ ├─┬ sheets/              (27 Python modules)
+│ │ │ │ │ Purpose: **ACTIVE SHEET GENERATORS** - Python modules that emit sheet OOXML
+│ │ │ │ │ Status: ACTIVE PIPELINE (imported by pipeline)
+│ │ │ │ │
+│ │ │ │ ├── __init__.py
+│ │ │ │ ├── addressable_market_model.py
+│ │ │ │ ├── anchor_assumptions.py
+│ │ │ │ ├── annual_tam_bridge.py
+│ │ │ │ ├── ap_allocations.py
+│ │ │ │ ├── average_cost_per_vendor_table.py
+│ │ │ │ ├── bucket_tam_scenario_b.py
+│ │ │ │ ├── bucket_taxonomy.py
+│ │ │ │ ├── cost_funnel.py
+│ │ │ │ ├── data_coverage_calcs.py
+│ │ │ │ ├── definitions.py
+│ │ │ │ ├── ffy_raw.py
+│ │ │ │ ├── ffym1_raw.py
+│ │ │ │ ├── lltm_allocations.py
+│ │ │ │ ├── myp_redaction_tieout.py
+│ │ │ │ ├── panel_anchor_ships.py
+│ │ │ │ ├── panel_buckets_taxonomy.py
+│ │ │ │ ├── panel_dod_raw_ffy.py
+│ │ │ │ ├── panel_dod_raw_ffym1.py
+│ │ │ │ ├── panel_public_contracts.py
+│ │ │ │ ├── panel_tam_build_and_checks.py
+│ │ │ │ ├── panel_tam_build_detail.py
+│ │ │ │ ├── qa_checks.py
+│ │ │ │ ├── qa_reconciliation.py
+│ │ │ │ ├── sam_scenario_a.py
+│ │ │ │ ├── tam_annual_flow_input.py
+│ │ │ │ ├── tam_panel_shipyard_detail.py
+│ │ │ │ └── work_type_taxonomy.py
+│ │ │ │     Notes: These generate Excel sheets with tables, formulas, styling
+│ │ │ │
+│ │ │ └─┬ __pycache__/
+│ │ │   └── *.cpython-314.pyc
+│ │ │
+│ │ └─┬ extracted/
+│ │   │ Purpose: Extracted OOXML components for inspection/reference
+│ │   │ Status: SUPPORT (debugging/reference material)
+│ │   │
+│ │   └── Unzipped .xlsx OOXML files for manual inspection
+│ │
+│ └─┬ research/                                     (2,626 files, 412 MB)
+│   │ Files: 2,626 total (MASSIVE - majority of ddg/ size)
+│   │ Modified: May 21 → Jun 3, 2026
+│   │ Purpose: Source data, budget books, specifications, reference materials
+│   │ Status: ACTIVE DATA SOURCE
+│   │
+│   │ SAMPLE FILES (first 5 at root level):
+│   │ ----------------------------------------
+│   ├── DECK_SPEC.md
+│   ├── DECK_SPEC_v3.md
+│   ├── DOD_ANNOUNCEMENT_HOWTO.md
+│   ├── MANIFEST.md
+│   └── METHODOLOGY.md
+│   │
+│   └── [... 2,621 more files ...]
+│       Notes: Further contents OUT OF SCOPE for this tree diagram
+│              Contains extensive DoD budget PDFs, contract data, methodology docs
+│              Consumes 412 MB (95% of ddg/ directory size)
+│
+│
+└─┬ submarine/                                       (323 MB total, 2,467 files)
+  │ Files: 2,467 total across deck/, workbook/, research/, and root
+  │ Modified: May 21 → Jun 3, 2026
+  │ Purpose: **PROJECT** - US Navy submarine shipbuilding market analysis
+  │ Status: ACTIVE PROJECT
+  │
+  │ ROOT LEVEL FILES:
+  │ ------------------
+  ├── distributed_shipbuilding_overview_sub.txt    (13 KB, Jun 2)
+  ├── project_handoff_sub.txt                      (6 KB, Jun 2)
+  ├── project_description_sub.txt                  (4 KB, Jun 2)
+  ├── methodology_submarines.txt                   (15 KB, May 28)
+  ├── refactor_deck_sub.txt                        (2 KB, Jun 2)
+  ├── workbook_dev_transcript_1.txt                (49 KB, May 27)
+  ├── workbook_dev_transcript_2.txt                (41 KB, May 27)
+  ├── workbook_dev_transcript_3.txt                (36 KB, May 28)
+  ├── workbook_dev_transcript_4.txt                (30 KB, May 28)
+  ├── workbook_dev_transcript_5.txt                (25 KB, May 28)
+  ├── workbook_dev_transcript_6.txt                (19 KB, May 28)
+  └── workbook_dev_transcript_7.txt                (4 KB, May 28)
+      Purpose: Project documentation, handoff guides, development transcripts
+      Status: SUPPORT
+  │
+  ├─┬ archived_logs/                                (7 .md files, May 28)
+  │ │ Files: 7 markdown session logs
+  │ │ Purpose: Historical development logs from earlier build phases
+  │ │ Status: ARCHIVE
+  │ │
+  │ ├── 2026-05-28_sub_deck_expansion.md
+  │ ├── 2026-05-28_sub_deck_styling_review.md
+  │ ├── 2026-05-28_sub_methodology_and_sources_deck.md
+  │ ├── 2026-05-28_sub_workbook_body_review.md
+  │ ├── 2026-05-28_sub_workbook_group_mechanism.md
+  │ ├── 2026-05-28_sub_workbook_qa_sheets.md
+  │ └── 2026-05-28_sub_workbook_review_1.md
+  │     Notes: Older than root logs/, could potentially be consolidated
+  │
+  ├─┬ deck/                                          (225 files, ~10 MB)
+  │ │ Files: 225 total (build scripts, pipeline folder, archives, specs)
+  │ │ Modified: May 28 → Jun 3, 2026
+  │ │ Purpose: PowerPoint deck generation for Submarine project
+  │ │ Status: ACTIVE PIPELINE (with spec/draft clutter)
+  │ │
+  │ ├── 20260602_Distributed Shipbuilding Submarines_vS.pptx  (117 KB, Jun 3 13:51)
+  │ │   Purpose: **OUTPUT** - Final generated PowerPoint presentation
+  │ │   Status: DELIVERABLE
+  │ │
+  │ ├── DRAFT_preview_Distributed Shipbuilding Submarines.pptx  (97 KB, Jun 2 16:58)
+  │ │   Purpose: Draft/preview version of presentation
+  │ │   Status: DRAFT (possibly superseded by main output)
+  │ │
+  │ ├── build_deck.py                                (640 bytes, Jun 2 15:52)
+  │ │   Purpose: **BUILD SCRIPT** - Launches deck_sub pipeline
+  │ │   Imports: from deck_sub.lib import build
+  │ │   Status: ★ ACTIVE PIPELINE ENTRY POINT (this is the REAL build file)
+  │ │   Output: 20260602_Distributed Shipbuilding Submarines_vS.pptx
+  │ │
+  │ ├── build_draft.py                               (2.1 KB, Jun 2 16:58)
+  │ │   Purpose: Alternate build script for draft/preview deck
+  │ │   Status: SPECS/DRAFTS (experimental build path - NOT the main build)
+  │ │   Output: DRAFT_preview_Distributed Shipbuilding Submarines.pptx
+  │ │
+  │ ├── deck_spec.txt                                (55 KB, Jun 2 16:06)
+  │ │   Purpose: Deck content specification document
+  │ │   Status: SPECS/DRAFTS
+  │ │
+  │ ├─┬ deck_sub/                                    (60 files)
+  │ │ │ Purpose: **ACTIVE PIPELINE PACKAGE** - Submarine-specific PowerPoint pipeline
+  │ │ │ Status: ACTIVE PIPELINE (imported by build_deck.py)
+  │ │ │
+  │ │ ├── __init__.py
+  │ │ ├── lib.py              - Pipeline binding, imports deck_core
+  │ │ │
+  │ │ ├─┬ slides/              (27 Python modules)
+  │ │ │ │ Purpose: **ACTIVE SLIDE GENERATORS** - Python modules that emit slide OOXML
+  │ │ │ │ Status: ACTIVE PIPELINE (imported by pipeline)
+  │ │ │ │
+  │ │ │ ├── __init__.py
+  │ │ │ ├── annual_cadence.py
+  │ │ │ ├── ap_and_lltm.py
+  │ │ │ ├── ap_and_lltm_detail.py
+  │ │ │ ├── basic_construction.py
+  │ │ │ ├── coefficient_evidence.py
+  │ │ │ ├── coefficient_sensitivity.py
+  │ │ │ ├── data_limitations_and_unseen_layer.py
+  │ │ │ ├── data_limits.py
+  │ │ │ ├── demand_backdrop.py
+  │ │ │ ├── executive_summary.py
+  │ │ │ ├── executive_summary_v2.py
+  │ │ │ ├── market_primer.py
+  │ │ │ ├── methodology.py
+  │ │ │ ├── sam_scenarios.py
+  │ │ │ ├── sib_exclusion.py
+  │ │ │ ├── sizing_boundary.py
+  │ │ │ ├── supplier_landscape.py
+  │ │ │ ├── tam_bridge.py
+  │ │ │ ├── visible_suppliers.py
+  │ │ │ ├── work_type_taxonomy.py
+  │ │ │ └── [...remaining slide modules]
+  │ │ │     Notes: More slides than DDG (27 vs 17)
+  │ │ │
+  │ │ └─┬ __pycache__/
+  │ │   └── *.cpython-314.pyc
+  │ │
+  │ ├─┬ submarine_slides/                            (17 .txt files, Jun 2)
+  │ │ │ Purpose: **SPECS** - Text specifications for submarine slide content
+  │ │ │ Status: SPECS/DRAFTS (NOT imported by pipeline)
+  │ │ │
+  │ │ ├── body_slide_01__market_primer.txt
+  │ │ ├── body_slide_02__sizing_boundary.txt
+  │ │ ├── body_slide_03__executive_summary.txt
+  │ │ ├── body_slide_04__demand_backdrop.txt
+  │ │ ├── body_slide_05__methodology.txt
+  │ │ ├── body_slide_06__basic_construction.txt
+  │ │ ├── body_slide_07__tam_bridge.txt
+  │ │ ├── body_slide_08__annual_cadence.txt
+  │ │ ├── body_slide_09__coefficient_evidence.txt
+  │ │ ├── body_slide_10__ap_and_lltm.txt
+  │ │ ├── body_slide_11__work_type_taxonomy.txt
+  │ │ ├── body_slide_12__bucket_tam.txt
+  │ │ ├── body_slide_13__sam_scenarios.txt
+  │ │ ├── body_slide_14__visible_suppliers.txt
+  │ │ ├── body_slide_15__sib_exclusion.txt
+  │ │ ├── body_slide_16__data_limits.txt
+  │ │ └── body_slide_17__implications.txt
+  │ │     Notes: Parallel to ddg_slides/ pattern - text specs not code
+  │ │
+  │ ├─┬ draft_slides/                                (17 .py files, Jun 2)
+  │ │ │ Purpose: **SPECS/DRAFTS** - Experimental/draft slide implementations
+  │ │ │ Status: SPECS/DRAFTS (NOT imported by main build_deck.py)
+  │ │ │
+  │ │ ├── __init__.py
+  │ │ ├── _helpers.py
+  │ │ ├── annual_cadence.py
+  │ │ ├── ap_lltm.py
+  │ │ ├── basic_construction.py
+  │ │ ├── bucket_tam.py
+  │ │ ├── coefficient_evidence.py
+  │ │ ├── cover.py
+  │ │ ├── demand_backdrop.py
+  │ │ ├── executive_summary.py
+  │ │ ├── executive_summary_v2.py
+  │ │ ├── market_primer.py
+  │ │ ├── sam_scenarios.py
+  │ │ ├── sib_exclusion.py
+  │ │ ├── sizing_boundary.py
+  │ │ └── tam_bridge.py
+  │ │     Notes: Likely used by build_draft.py, separate from main pipeline
+  │ │            Some overlap with deck_sub/slides/ (experimental versions?)
+  │ │
+  │ └─┬ _archive_old_deck_20260602/                  (111 files, 3.5 MB)
+  │   │ Purpose: **ARCHIVE** - Previous deck pipeline version
+  │   │ Status: ARCHIVE (can be deleted after validation period)
+  │   │
+  │   ├── Previous version of build scripts and pipeline
+  │   ├── Old slide modules
+  │   └── Historical deck outputs
+  │       Notes: Archived on Jun 2 during refactor (same date as DDG archive)
+  │
+  ├─┬ workbook/                                      (140 files, ~320 KB)
+  │ │ Files: 140 total (build script, pipeline folder, archive, extracted OOXML)
+  │ │ Modified: May 28 → Jun 3, 2026
+  │ │ Purpose: Excel workbook generation for Submarine project
+  │ │ Status: ACTIVE PIPELINE
+  │ │
+  │ ├── 20260601_Distributed Shipbuilding Submarines_v1.0.xlsx  (193 KB, Jun 3 10:36)
+  │ │   Purpose: **OUTPUT** - Final generated Excel workbook
+  │ │   Status: DELIVERABLE
+  │ │
+  │ ├── build_workbook.py                           (463 bytes, Jun 1 11:45)
+  │ │   Purpose: **BUILD SCRIPT** - Launches workbook_sub pipeline
+  │ │   Imports: from workbook_sub.lib import build
+  │ │   Status: ★ ACTIVE PIPELINE ENTRY POINT (this is the REAL build file)
+  │ │   Output: 20260601_Distributed Shipbuilding Submarines_v1.0.xlsx
+  │ │
+  │ ├── ooxml_cheat_sheet_excel.md                  (63 KB, May 28 10:43)
+  │ │   Purpose: OOXML reference documentation (duplicate of workbook_core)
+  │ │   Status: SUPPORT (redundant - could be removed)
+  │ │
+  │ ├─┬ workbook_sub/                                (72 files)
+  │ │ │ Purpose: **ACTIVE PIPELINE PACKAGE** - Submarine-specific Excel pipeline
+  │ │ │ Status: ACTIVE PIPELINE (imported by build_workbook.py)
+  │ │ │
+  │ │ ├── __init__.py
+  │ │ ├── lib.py              - Pipeline binding, imports workbook_core
+  │ │ │
+  │ │ ├─┬ sheets/              (24 Python modules)
+  │ │ │ │ Purpose: **ACTIVE SHEET GENERATORS** - Python modules that emit sheet OOXML
+  │ │ │ │ Status: ACTIVE PIPELINE (imported by pipeline)
+  │ │ │ │
+  │ │ │ ├── __init__.py
+  │ │ │ ├── addressable_market_model.py
+  │ │ │ ├── anchor_assumptions.py
+  │ │ │ ├── annual_tam_bridge.py
+  │ │ │ ├── ap_allocations.py
+  │ │ │ ├── average_cost_per_vendor_table.py
+  │ │ │ ├── bucket_tam_scenario_b.py
+  │ │ │ ├── bucket_taxonomy.py
+  │ │ │ ├── cost_funnel.py
+  │ │ │ ├── data_coverage_calcs.py
+  │ │ │ ├── definitions.py
+  │ │ │ ├── ffy_raw.py
+  │ │ │ ├── ffym1_raw.py
+  │ │ │ ├── lltm_allocations.py
+  │ │ │ ├── myp_redaction_tieout.py
+  │ │ │ ├── panel_anchor_ships.py
+  │ │ │ ├── [...additional sheet modules similar to ddg]
+  │ │ │     Notes: Similar structure to workbook_ddg (24 vs 27 sheets)
+  │ │ │
+  │ │ └─┬ __pycache__/
+  │ │   └── *.cpython-314.pyc
+  │ │
+  │ ├─┬ _archive_old_pipeline_20260601/              (~archive, Jun 1)
+  │ │ │ Purpose: **ARCHIVE** - Previous workbook pipeline version
+  │ │ │ Status: ARCHIVE (can be deleted after validation period)
+  │ │ │
+  │ │ └── Archived Jun 1 (one day before deck archive - earlier refactor)
+  │ │
+  │ └─┬ extracted/
+  │   │ Purpose: Extracted OOXML components for inspection/reference
+  │   │ Status: SUPPORT (debugging/reference material)
+  │   │
+  │   └── Unzipped .xlsx OOXML files for manual inspection
+  │
+  └─┬ research/                                      (2,086 files, 310 MB)
+    │ Files: 2,086 total (MASSIVE - majority of submarine/ size)
+    │ Modified: May 21 → Jun 3, 2026
+    │ Purpose: Source data, budget books, specifications, reference materials
+    │ Status: ACTIVE DATA SOURCE
+    │
+    │ SAMPLE FILES (first 5 at root level):
+    │ ----------------------------------------
+    ├── build_workbook.py         [!! OLD/STALE - imports "workbook.lib", NOT "workbook_sub.lib"]
+    │                             [!! This is NOT the real build file used by the pipeline]
+    ├── DECK_BUILD_SPEC.md
+    ├── DOD_ANNOUNCEMENT_HOWTO.md
+    ├── MANIFEST.md
+    └── README.md
+    │
+    └── [... 2,081 more files ...]
+        Notes: Further contents OUT OF SCOPE for this tree diagram
+               Contains extensive DoD budget PDFs, contract data, methodology docs
+               Consumes 310 MB (96% of submarine/ directory size)
+               ANOMALY: Contains OLD build_workbook.py that imports "workbook.lib"
+                        The REAL build file is at submarine/workbook/build_workbook.py
+
+
+================================================================================
+ORGANIZATIONAL FINDINGS & RECOMMENDATIONS FOR CLEANUP AGENT
+================================================================================
+
+STRUCTURAL PATTERNS:
+--------------------
+1. ✓ GOOD: Core pipelines (deck_core/, workbook_core/) cleanly separated
+2. ✓ GOOD: Each project follows deck/ + workbook/ pattern
+3. ✓ GOOD: Clear _archive_* naming convention for historical versions
+4. ✗ ISSUE: .txt spec files scattered (ddg_slides/, submarine_slides/, draft_slides/)
+5. ✗ ISSUE: Documentation duplicated (ooxml_cheat_sheet in multiple locations)
+6. ✗ ISSUE: Development transcripts at multiple levels (root, project root)
+7. ✗ ISSUE: Logs split between logs/ and submarine/archived_logs/
+
+ACTIVE VS INACTIVE CLARITY:
+---------------------------
+ACTIVE PIPELINE FOLDERS (must not move):
+  - deck_core/
+  - workbook_core/
+  - {project}/deck/deck_{project}/slides/*.py
+  - {project}/workbook/workbook_{project}/sheets/*.py
+  - {project}/deck/build_deck.py
+  - {project}/workbook/build_workbook.py
+
+SPECS/DRAFTS (can be relocated/consolidated):
+  - ddg/ddg_slides/*.txt
+  - submarine/deck/submarine_slides/*.txt
+  - submarine/deck/draft_slides/*.py
+  - submarine/deck/deck_spec.txt
+  - submarine/deck/build_draft.py
+
+ARCHIVES (can be deleted after validation):
+  - ddg/deck/_archive_old_deck_20260602/
+  - submarine/deck/_archive_old_deck_20260602/
+  - submarine/workbook/_archive_old_pipeline_20260601/
+
+MISPLACEMENTS & STALE FILES:
+----------------------------
+1. deck_core/readme.txt → Should be at root or in top-level docs/
+2. submarine/research/build_workbook.py → OLD/STALE file (imports "workbook.lib")
+   - The REAL build file is submarine/workbook/build_workbook.py (imports "workbook_sub.lib")
+   - This stale file should be deleted to avoid confusion
+3. Duplicate ooxml_cheat_sheet_excel.md in both project workbook folders
+
+REAL BUILD FILE FLOW:
+---------------------
+DDG Project:
+  ★ ddg/deck/build_deck.py → imports deck_ddg.lib → loads deck_ddg/slides/*.py
+  ★ ddg/workbook/build_workbook.py → imports workbook_ddg.lib → loads workbook_ddg/sheets/*.py
+
+Submarine Project:
+  ★ submarine/deck/build_deck.py → imports deck_sub.lib → loads deck_sub/slides/*.py
+  ★ submarine/workbook/build_workbook.py → imports workbook_sub.lib → loads workbook_sub/sheets/*.py
+  ✗ submarine/research/build_workbook.py → STALE (imports old "workbook.lib", NOT used)
+
+Both deck pipelines:
+  - Import deck_core for shared OOXML primitives, styles, chart factories
+  - Generate .pptx files at {project}/deck/*.pptx
+
+Both workbook pipelines:
+  - Import workbook_core for shared OOXML primitives, styles, table engine
+  - Generate .xlsx files at {project}/workbook/*.xlsx
+
+SCALABILITY CONCERNS:
+---------------------
+For future projects, establish:
+1. Standard project template structure
+2. Clear separation of specs/ vs active pipelines
+3. Centralized documentation (avoid per-project duplication)
+4. Consistent archive policy (when to delete vs preserve)
+5. Research/ folder size limits or organization strategy
+
+SIZE HOTSPOTS:
+--------------
+Total workspace: ~756 MB
+  - ddg/research:       412 MB (54%)
+  - submarine/research: 310 MB (41%)
+  - Archives:            14.5 MB (2%)
+  - Core + active code:  20 MB (3%)
+
+Note: 95%+ of size is research data, not code
+      Cleanup focus should be organizational structure, not size reduction
+
+RECENT REFACTORING EVIDENCE:
+----------------------------
+Jun 1-2, 2026 major refactor:
+  - Archives created (Jun 1-2)
+  - Core restructure (per logs/2026-06-02_core_tree_restructure.md)
+  - Both projects updated to new structure
+  → Likely still in stabilization phase, archives may be needed short-term
+
+================================================================================
+END OF DIRECTORY TREE ANALYSIS
+================================================================================
+Generated: June 3, 2026
+Tree represents state after major June 1-2 refactoring effort
+Intended audience: AI cleanup agent drafting standardization plan

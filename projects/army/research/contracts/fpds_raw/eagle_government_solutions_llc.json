@@ -1,0 +1,513 @@
+{
+  "recipient_name": "EAGLE GOVERNMENT SOLUTIONS, LLC",
+  "recipient_uei": "J3ZDWPC6TLA3",
+  "query": "VENDOR_UEI:\"J3ZDWPC6TLA3\" CONTRACTING_AGENCY_ID:\"2100\" SIGNED_DATE:[2015/01/01,2026/12/31]",
+  "key_field": "VENDOR_UEI",
+  "record_count": 1,
+  "distinct_piids": 1,
+  "sum_obligated_amount": 1219335.96,
+  "records": [
+    {
+      "record_type": "award",
+      "piid": "W9133L26FA018",
+      "referenced_idv_piid": "47QRCA25DA283",
+      "full_piid": "47QRCA25DA283/W9133L26FA018",
+      "mod_number": "0",
+      "transaction_number": "0",
+      "vendor_name": "EAGLE GOVERNMENT SOLUTIONS, LLC",
+      "vendor_uei": "J3ZDWPC6TLA3",
+      "this_obligated": 1219335.96,
+      "total_obligated": 1219335.96,
+      "base_and_exercised": 1219335.96,
+      "base_and_all_options": 7082238.4,
+      "total_base_and_all_options": 7082238.4,
+      "signed_date": "2026-03-11 00:00:00",
+      "effective_date": "2026-03-22 00:00:00",
+      "current_completion_date": "2027-03-21 00:00:00",
+      "ultimate_completion_date": "2031-09-22 00:00:00",
+      "contracting_agency": "DEPT OF THE ARMY",
+      "contracting_office": "W39L USA NG READINESS CENTER",
+      "contracting_office_id": "W9133L",
+      "funding_agency": "DEPT OF THE AIR FORCE",
+      "funding_office": "NGB CCY",
+      "naics": "336611",
+      "naics_desc": "SHIP BUILDING AND REPAIRING",
+      "psc": "R799",
+      "psc_desc": "SUPPORT- MANAGEMENT: OTHER",
+      "contract_action_type": "DELIVERY ORDER",
+      "pricing_type": "FIRM FIXED PRICE",
+      "extent_competed": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+      "solicitation_procedures": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+      "number_of_offers": "31",
+      "description": "ACQUISITION AND CONTRACT MANAGEMENT SUPPORT SERVICES, WHICH WILL SERVE AS A SINGLE FOCAL POINT TO COORDINATE AND MANAGE ACQUISITION PROGRAMS ACROSS ANG READINESS CENTER (ANGRC) DIRECTORATES.",
+      "raw": {
+        "@version": "1.5",
+        "awardID": {
+          "awardContractID": {
+            "agencyID": {
+              "@name": "DEPT OF DEFENSE",
+              "#text": "9700"
+            },
+            "PIID": "W9133L26FA018",
+            "modNumber": "0",
+            "transactionNumber": "0"
+          },
+          "referencedIDVID": {
+            "agencyID": {
+              "@name": "FEDERAL ACQUISITION SERVICE",
+              "#text": "4732"
+            },
+            "PIID": "47QRCA25DA283",
+            "modNumber": "0"
+          }
+        },
+        "relevantContractDates": {
+          "signedDate": "2026-03-11 00:00:00",
+          "effectiveDate": "2026-03-22 00:00:00",
+          "currentCompletionDate": "2027-03-21 00:00:00",
+          "ultimateCompletionDate": "2031-09-22 00:00:00"
+        },
+        "dollarValues": {
+          "obligatedAmount": "1219335.96",
+          "baseAndExercisedOptionsValue": "1219335.96",
+          "baseAndAllOptionsValue": "7082238.40"
+        },
+        "totalDollarValues": {
+          "totalObligatedAmount": "1219335.96",
+          "totalBaseAndExercisedOptionsValue": "1219335.96",
+          "totalBaseAndAllOptionsValue": "7082238.40"
+        },
+        "purchaserInformation": {
+          "contractingOfficeAgencyID": {
+            "@name": "DEPT OF THE ARMY",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "2100"
+          },
+          "contractingOfficeID": {
+            "@name": "W39L USA NG READINESS CENTER",
+            "@country": "USA",
+            "#text": "W9133L"
+          },
+          "fundingRequestingAgencyID": {
+            "@name": "DEPT OF THE AIR FORCE",
+            "@departmentID": "9700",
+            "@departmentName": "DEPT OF DEFENSE",
+            "#text": "5700"
+          },
+          "fundingRequestingOfficeID": {
+            "@name": "NGB CCY",
+            "#text": "F9WFCY"
+          },
+          "foreignFunding": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "contractMarketingData": {
+          "feePaidForUseOfService": "0.00"
+        },
+        "contractData": {
+          "contractActionType": {
+            "@description": "DELIVERY ORDER",
+            "#text": "C"
+          },
+          "typeOfContractPricing": {
+            "@description": "FIRM FIXED PRICE",
+            "#text": "J"
+          },
+          "costOrPricingData": {
+            "@description": "No",
+            "#text": "N"
+          },
+          "costAccountingStandardsClause": {
+            "@description": "NOT APPLICABLE EXEMPT FROM CAS",
+            "#text": "X"
+          },
+          "descriptionOfContractRequirement": "ACQUISITION AND CONTRACT MANAGEMENT SUPPORT SERVICES, WHICH WILL SERVE AS A SINGLE FOCAL POINT TO COORDINATE AND MANAGE ACQUISITION PROGRAMS ACROSS ANG READINESS CENTER (ANGRC) DIRECTORATES.",
+          "inherentlyGovernmentalFunction": {
+            "@description": "OTHER FUNCTIONS",
+            "#text": "OT"
+          },
+          "GFE-GFP": {
+            "@description": "Transaction uses GFE/GFP",
+            "#text": "Y"
+          },
+          "undefinitizedAction": {
+            "@description": "NO",
+            "#text": "X"
+          },
+          "consolidatedContract": {
+            "@description": "NOT CONSOLIDATED",
+            "#text": "D"
+          },
+          "performanceBasedServiceContract": {
+            "@description": "YES - SERVICE WHERE PBA IS USED.",
+            "#text": "Y"
+          },
+          "multiYearContract": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "contingencyHumanitarianPeacekeepingOperation": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "referencedIDVMultipleOrSingle": {
+            "@description": "MULTIPLE AWARD",
+            "#text": "M"
+          },
+          "referencedIDVType": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "contractFinancing": {
+            "@description": "NOT APPLICABLE",
+            "#text": "Z"
+          },
+          "purchaseCardAsPaymentMethod": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "numberOfActions": "1"
+        },
+        "legislativeMandates": {
+          "ClingerCohenAct": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "materialsSuppliesArticlesEquipment": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "laborStandards": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "constructionWageRateRequirements": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          },
+          "listOfAdditionalReportingValues": {
+            "additionalReportingValue": {
+              "@description": "NONE OF THE ABOVE",
+              "#text": "NONE"
+            }
+          },
+          "interagencyContractingAuthority": {
+            "@description": "NOT APPLICABLE",
+            "#text": "X"
+          }
+        },
+        "productOrServiceInformation": {
+          "productOrServiceCode": {
+            "@description": "SUPPORT- MANAGEMENT: OTHER",
+            "@productOrServiceType": "SERVICE",
+            "#text": "R799"
+          },
+          "contractBundling": {
+            "@description": "NOT BUNDLED",
+            "#text": "H"
+          },
+          "principalNAICSCode": {
+            "@description": "SHIP BUILDING AND REPAIRING",
+            "#text": "336611"
+          },
+          "recoveredMaterialClauses": {
+            "@description": "FAR 52.223-4 & BIO-BASED & ENERGY EFFICIENT",
+            "#text": "J"
+          },
+          "manufacturingOrganizationType": {
+            "@description": "U.S. OWNED BUSINESS",
+            "#text": "A"
+          },
+          "systemEquipmentCode": {
+            "@description": "NONE",
+            "#text": "000"
+          },
+          "informationTechnologyCommercialItemCategory": {
+            "@description": "NOT IT PRODUCTS OR SERVICES",
+            "#text": "Z"
+          },
+          "useOfEPADesignatedProducts": {
+            "@description": "MEETS REQUIREMENTS",
+            "#text": "A"
+          },
+          "countryOfOrigin": {
+            "@name": "UNITED STATES",
+            "#text": "USA"
+          },
+          "placeOfManufacture": {
+            "@description": "NOT A MANUFACTURED END PRODUCT",
+            "#text": "C"
+          }
+        },
+        "vendor": {
+          "vendorHeader": {
+            "vendorName": "EAGLE GOVERNMENT SOLUTIONS, LLC"
+          },
+          "vendorSiteDetails": {
+            "vendorSocioEconomicIndicators": {
+              "isAlaskanNativeOwnedCorporationOrFirm": "false",
+              "isAmericanIndianOwned": "false",
+              "isIndianTribe": "false",
+              "isNativeHawaiianOwnedOrganizationOrFirm": "false",
+              "isTriballyOwnedFirm": "false",
+              "isSmallBusiness": "true",
+              "isVeteranOwned": "false",
+              "isServiceRelatedDisabledVeteranOwnedBusiness": "false",
+              "isWomenOwned": "true",
+              "minorityOwned": {
+                "isMinorityOwned": "true",
+                "isSubContinentAsianAmericanOwnedBusiness": "false",
+                "isAsianPacificAmericanOwnedBusiness": "true",
+                "isBlackAmericanOwnedBusiness": "false",
+                "isHispanicAmericanOwnedBusiness": "false",
+                "isNativeAmericanOwnedBusiness": "false",
+                "isOtherMinorityOwned": "false"
+              },
+              "isVerySmallBusiness": "false",
+              "isWomenOwnedSmallBusiness": "true",
+              "isEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false",
+              "isJointVentureWomenOwnedSmallBusiness": "false",
+              "isJointVentureEconomicallyDisadvantagedWomenOwnedSmallBusiness": "false"
+            },
+            "vendorBusinessTypes": {
+              "isCommunityDevelopedCorporationOwnedFirm": "false",
+              "isLaborSurplusAreaFirm": "false",
+              "federalGovernment": {
+                "isFederalGovernment": "false",
+                "isFederallyFundedResearchAndDevelopmentCorp": "false",
+                "isFederalGovernmentAgency": "false"
+              },
+              "isStateGovernment": "false",
+              "localGovernment": {
+                "isLocalGovernment": "false",
+                "isCityLocalGovernment": "false",
+                "isCountyLocalGovernment": "false",
+                "isInterMunicipalLocalGovernment": "false",
+                "isLocalGovernmentOwned": "false",
+                "isMunicipalityLocalGovernment": "false",
+                "isSchoolDistrictLocalGovernment": "false",
+                "isTownshipLocalGovernment": "false"
+              },
+              "isTribalGovernment": "false",
+              "isForeignGovernment": "false",
+              "businessOrOrganizationType": {
+                "isCorporateEntityNotTaxExempt": "false",
+                "isCorporateEntityTaxExempt": "false",
+                "isPartnershipOrLimitedLiabilityPartnership": "true",
+                "isSolePropreitorship": "false",
+                "isSmallAgriculturalCooperative": "false",
+                "isInternationalOrganization": "false",
+                "isUSGovernmentEntity": "false"
+              }
+            },
+            "vendorLineOfBusiness": {
+              "isCommunityDevelopmentCorporation": "false",
+              "isDomesticShelter": "false",
+              "isEducationalInstitution": "false",
+              "isFoundation": "false",
+              "isHospital": "false",
+              "isManufacturerOfGoods": "false",
+              "isVeterinaryHospital": "false",
+              "isHispanicServicingInstitution": "false"
+            },
+            "vendorRelationshipWithFederalGovernment": {
+              "receivesContracts": "false",
+              "receivesGrants": "false",
+              "receivesContractsAndGrants": "true"
+            },
+            "typeOfGovernmentEntity": {
+              "isAirportAuthority": "false",
+              "isCouncilOfGovernments": "false",
+              "isHousingAuthoritiesPublicOrTribal": "false",
+              "isInterstateEntity": "false",
+              "isPlanningCommission": "false",
+              "isPortAuthority": "false",
+              "isTransitAuthority": "false"
+            },
+            "vendorOrganizationFactors": {
+              "isSubchapterSCorporation": "false",
+              "isLimitedLiabilityCorporation": "false",
+              "isForeignOwnedAndLocated": "false",
+              "profitStructure": {
+                "isForProfitOrganization": "true",
+                "isNonprofitOrganization": "false",
+                "isOtherNotForProfitOrganization": "false"
+              },
+              "isShelteredWorkshop": "false",
+              "stateOfIncorporation": {
+                "@name": "MARYLAND",
+                "#text": "MD"
+              },
+              "countryOfIncorporation": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "organizationalType": "PARTNERSHIP"
+            },
+            "typeOfEducationalEntity": {
+              "is1862LandGrantCollege": "false",
+              "is1890LandGrantCollege": "false",
+              "is1994LandGrantCollege": "false",
+              "isHistoricallyBlackCollegeOrUniversity": "false",
+              "isMinorityInstitution": "false",
+              "isPrivateUniversityOrCollege": "false",
+              "isSchoolOfForestry": "false",
+              "isStateControlledInstitutionofHigherLearning": "false",
+              "isTribalCollege": "false",
+              "isVeterinaryCollege": "false",
+              "isAlaskanNativeServicingInstitution": "false",
+              "isNativeHawaiianServicingInstitution": "false"
+            },
+            "vendorCertifications": {
+              "isDOTCertifiedDisadvantagedBusinessEnterprise": "false",
+              "isSelfCertifiedSmallDisadvantagedBusiness": "true",
+              "isSBACertifiedSmallDisadvantagedBusiness": "false",
+              "isSBACertified8AProgramParticipant": "false",
+              "isSelfCertifiedHUBZoneJointVenture": "false",
+              "isSBACertifiedHUBZone": "false",
+              "isSBACertified8AJointVenture": "true"
+            },
+            "vendorLocation": {
+              "streetAddress": "5021 LINDERA CT",
+              "city": "ELLICOTT CITY",
+              "state": {
+                "@name": "MARYLAND",
+                "#text": "MD"
+              },
+              "ZIPCode": {
+                "@city": "ELLICOTT CITY",
+                "#text": "210426018"
+              },
+              "countryCode": {
+                "@name": "UNITED STATES",
+                "#text": "USA"
+              },
+              "phoneNo": "6072064243",
+              "congressionalDistrictCode": "03",
+              "entityDataSource": "E&Y"
+            },
+            "vendorAlternateSiteCode": "21042",
+            "entityIdentifiers": {
+              "vendorUEIInformation": {
+                "UEI": "J3ZDWPC6TLA3",
+                "UEILegalBusinessName": "EAGLE GOVERNMENT SOLUTIONS, LLC",
+                "ultimateParentUEI": "J3ZDWPC6TLA3",
+                "ultimateParentUEIName": "EAGLE GOVERNMENT SOLUTIONS  LLC"
+              },
+              "cageCode": "9P0C9"
+            },
+            "ccrRegistrationDetails": {
+              "registrationDate": "2023-09-07 00:00:00",
+              "renewalDate": "2025-08-15 00:00:00"
+            }
+          },
+          "contractingOfficerBusinessSizeDetermination": {
+            "@description": "SMALL BUSINESS",
+            "#text": "S"
+          }
+        },
+        "placeOfPerformance": {
+          "principalPlaceOfPerformance": {
+            "stateCode": {
+              "@name": "MARYLAND",
+              "#text": "MD"
+            },
+            "countryCode": {
+              "@name": "UNITED STATES",
+              "#text": "USA"
+            }
+          },
+          "placeOfPerformanceZIPCode": {
+            "@county": "PRINCE GEORGES",
+            "@city": "JB ANDREWS",
+            "#text": "207625627"
+          },
+          "placeOfPerformanceCongressionalDistrict": "05"
+        },
+        "competition": {
+          "extentCompeted": {
+            "@description": "FULL AND OPEN COMPETITION AFTER EXCLUSION OF SOURCES",
+            "#text": "D"
+          },
+          "solicitationProcedures": {
+            "@description": "SUBJECT TO MULTIPLE AWARD FAIR OPPORTUNITY",
+            "#text": "MAFO"
+          },
+          "idvTypeOfSetAside": {
+            "@description": "8A COMPETED",
+            "#text": "8A"
+          },
+          "typeOfSetAsideSource": {
+            "@description": "IDC",
+            "#text": "B"
+          },
+          "evaluatedPreference": {
+            "@description": "NO PREFERENCE USED",
+            "#text": "NONE"
+          },
+          "statutoryExceptionToFairOpportunity": {
+            "@description": "FAIR OPPORTUNITY GIVEN",
+            "#text": "FAIR"
+          },
+          "idvNumberOfOffersReceived": "632",
+          "numberOfOffersReceived": "31",
+          "numberOfOffersSource": {
+            "@description": "This Action",
+            "#text": "F"
+          },
+          "commercialItemAcquisitionProcedures": {
+            "@description": "COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED",
+            "#text": "D"
+          },
+          "commercialItemTestProgram": {
+            "@description": "NO",
+            "#text": "N"
+          },
+          "fedBizOpps": {
+            "@description": "YES",
+            "#text": "Y"
+          },
+          "localAreaSetAside": {
+            "@description": "NO",
+            "#text": "N"
+          }
+        },
+        "preferencePrograms": {
+          "subcontractPlan": {
+            "@description": "PLAN NOT REQUIRED",
+            "#text": "B"
+          }
+        },
+        "transactionInformation": {
+          "createdBy": "DERRICK.CASH.4@ACWS",
+          "createdDate": "2026-02-26 13:07:23",
+          "lastModifiedBy": "JONATHAN.R.LEHMANN.MIL@ACWS",
+          "lastModifiedDate": "2026-03-12 08:59:47",
+          "status": {
+            "@description": "FINAL",
+            "#text": "F"
+          },
+          "approvedBy": "JONATHAN.R.LEHMANN.MIL@ACWS",
+          "approvedDate": "2026-03-12 08:59:47",
+          "closedStatus": "N"
+        },
+        "genericTags": {
+          "genericStrings": {
+            "genericString01": "2025-10-20 00:00:00",
+            "genericString02": "J3ZDWPC6TLA3",
+            "genericString06": "TO"
+          },
+          "genericBooleans": {
+            "genericBoolean01": "true",
+            "genericBoolean02": "false",
+            "genericBoolean03": "false",
+            "genericBoolean04": "false"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+# sheet_probe: Worktype Evidence
+
+- source: `file`
+- tab name: `Worktype Evidence`
+- tab color: `FF7B1F3A`
+- gridlines shown: `0`
+- columns: 6 · rows: 60 · cells: 295 · formulas: 140
+
+## Banners
+- `B2` S_TITLE_SHEET — Worktype Evidence
+- `B4` S_TITLE_SECTION — §1 - Supplier $ + top vendor per bucket
+- `B17` S_TITLE_SECTION — §2 - Top vendors per bucket (links to Entity Master)
+- `B19` S_TITLE_SUBSECTION — §2a - Structural fabrication & modules (top 3 by subaward $)
+- `B26` S_TITLE_SUBSECTION — §2b - Machining / mechanical / propulsion (top 3 by subaward $)
+- `B33` S_TITLE_SUBSECTION — §2c - Castings & forgings (top 3 by subaward $)
+- `B40` S_TITLE_SUBSECTION — §2d - Piping / fluid handling (top 3 by subaward $)
+- `B47` S_TITLE_SUBSECTION — §2e - Electrical power / distribution / generation (top 3 by subaward $)
+- `B54` S_TITLE_SUBSECTION — §2f - HVAC / ventilation / chilled water (top 3 by subaward $)
+- `B61` S_TITLE_SUBSECTION — §2g - Coatings / insulation / decking (top 3 by subaward $)
+- `B68` S_TITLE_SUBSECTION — §2h - Unbucketed watchlist (top 10 supplier $, no clean bucket)
+
+## Formula dependencies (referenced sheet → cells)
+- **Entity Master** (140): C7, D7, C8, D8, C9, D9, C10, D10, C11, D11, C12, D12 …
+
+## Cross-sheet links (39)
+- `C7` S_LINK_NUM = 'Entity Master'!C965
+- `C8` S_LINK_NUM = 'Entity Master'!C966
+- `C9` S_LINK_NUM = 'Entity Master'!C967
+- `C10` S_LINK_NUM = 'Entity Master'!C968
+- `C11` S_LINK_NUM = 'Entity Master'!C969
+- `C12` S_LINK_NUM = 'Entity Master'!C970
+- `C13` S_LINK_NUM = 'Entity Master'!C971
+- `C14` S_LINK_NUM = 'Entity Master'!C972
+- `D22` S_LINK_NUM = 'Entity Master'!G21
+- `D23` S_LINK_NUM = 'Entity Master'!G22
+- `D24` S_LINK_NUM = 'Entity Master'!G24
+- `D29` S_LINK_NUM = 'Entity Master'!G36
+- `D30` S_LINK_NUM = 'Entity Master'!G58
+- `D31` S_LINK_NUM = 'Entity Master'!G60
+- `D36` S_LINK_NUM = 'Entity Master'!G20
+- `D37` S_LINK_NUM = 'Entity Master'!G87
+- `D38` S_LINK_NUM = 'Entity Master'!G102
+- `D43` S_LINK_NUM = 'Entity Master'!G19
+- `D44` S_LINK_NUM = 'Entity Master'!G27
+- `D45` S_LINK_NUM = 'Entity Master'!G28
+- `D50` S_LINK_NUM = 'Entity Master'!G17
+- `D51` S_LINK_NUM = 'Entity Master'!G18
+- `D52` S_LINK_NUM = 'Entity Master'!G35
+- `D57` S_LINK_NUM = 'Entity Master'!G31
+- `D58` S_LINK_NUM = 'Entity Master'!G53
+- `D59` S_LINK_NUM = 'Entity Master'!G169
+- `D64` S_LINK_NUM = 'Entity Master'!G23
+- `D65` S_LINK_NUM = 'Entity Master'!G32
+- `D66` S_LINK_NUM = 'Entity Master'!G34
+- `D71` S_LINK_NUM = 'Entity Master'!G33
+- `D72` S_LINK_NUM = 'Entity Master'!G61
+- `D73` S_LINK_NUM = 'Entity Master'!G74
+- `D74` S_LINK_NUM = 'Entity Master'!G81
+- `D75` S_LINK_NUM = 'Entity Master'!G90
+- `D76` S_LINK_NUM = 'Entity Master'!G96
+- `D77` S_LINK_NUM = 'Entity Master'!G97
+- `D78` S_LINK_NUM = 'Entity Master'!G100
+- `D79` S_LINK_NUM = 'Entity Master'!G105
+- `D80` S_LINK_NUM = 'Entity Master'!G106
+
+## Cells
+- `B2` S_TITLE_SHEET: Worktype Evidence
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: §1 - Supplier $ + top vendor per bucket
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Bucket
+- `C6` S_HEADER_CENTER: Supplier $M
+- `D6` S_HEADER_LEFT: Top vendor
+- `E6` S_HEADER_CENTER: Evidence count
+- `B7` S_DEFAULT: Structural fabrication & modules
+- `C7` S_LINK_NUM: ='Entity Master'!C965
+- `D7` S_DEFAULT: ='Entity Master'!B21
+- `E7` S_DEFAULT: 41
+- `B8` S_DEFAULT: Machining / mechanical / propulsion
+- `C8` S_LINK_NUM: ='Entity Master'!C966
+- `D8` S_DEFAULT: ='Entity Master'!B36
+- `E8` S_DEFAULT: 21
+- `B9` S_DEFAULT: Castings & forgings
+- `C9` S_LINK_NUM: ='Entity Master'!C967
+- `D9` S_DEFAULT: ='Entity Master'!B20
+- `E9` S_DEFAULT: 10
+- `B10` S_DEFAULT: Piping / fluid handling
+- `C10` S_LINK_NUM: ='Entity Master'!C968
+- `D10` S_DEFAULT: ='Entity Master'!B19
+- `E10` S_DEFAULT: 58
+- `B11` S_DEFAULT: Electrical power / distribution / generation
+- `C11` S_LINK_NUM: ='Entity Master'!C969
+- `D11` S_DEFAULT: ='Entity Master'!B17
+- `E11` S_DEFAULT: 19
+- `B12` S_DEFAULT: HVAC / ventilation / chilled water
+- `C12` S_LINK_NUM: ='Entity Master'!C970
+- `D12` S_DEFAULT: ='Entity Master'!B31
+- `E12` S_DEFAULT: 6
+- `B13` S_DEFAULT: Coatings / insulation / decking
+- `C13` S_LINK_NUM: ='Entity Master'!C971
+- `D13` S_DEFAULT: ='Entity Master'!B23
+- `E13` S_DEFAULT: 8
+- `B14` S_DEFAULT: Unbucketed / ambiguous
+- `C14` S_LINK_NUM: ='Entity Master'!C972
+- `D14` S_DEFAULT: ='Entity Master'!B33
+- `E14` S_DEFAULT: 688
+- `A17` S_DEFAULT: x
+- `B17` S_TITLE_SECTION: §2 - Top vendors per bucket (links to Entity Master)
+- `C17` S_TITLE_SECTION: 
+- `D17` S_TITLE_SECTION: 
+- `E17` S_TITLE_SECTION: 
+- `F17` S_TITLE_SECTION: 
+- `A19` S_DEFAULT: x
+- `B19` S_TITLE_SUBSECTION: §2a - Structural fabrication & modules (top 3 by subaward $)
+- `C19` S_TITLE_SUBSECTION: 
+- `D19` S_TITLE_SUBSECTION: 
+- `E19` S_TITLE_SUBSECTION: 
+- `F19` S_TITLE_SUBSECTION: 
+- `B21` S_HEADER_CENTER: Rank
+- `C21` S_HEADER_LEFT: Vendor
+- `D21` S_HEADER_CENTER: $M
+- `E21` S_HEADER_LEFT: NAICS desc
+- `F21` S_HEADER_LEFT: Class rule
+- `B22` S_DEFAULT: 1
+- `C22` S_DEFAULT: ='Entity Master'!B21
+- `D22` S_LINK_NUM: ='Entity Master'!G21
+- `E22` S_DEFAULT: ='Entity Master'!F21
+- `F22` S_DEFAULT: ='Entity Master'!J21
+- `B23` S_DEFAULT: 2
+- `C23` S_DEFAULT: ='Entity Master'!B22
+- `D23` S_LINK_NUM: ='Entity Master'!G22
+- `E23` S_DEFAULT: ='Entity Master'!F22
+- `F23` S_DEFAULT: ='Entity Master'!J22
+- `B24` S_DEFAULT: 3
+- `C24` S_DEFAULT: ='Entity Master'!B24
+- `D24` S_LINK_NUM: ='Entity Master'!G24
+- `E24` S_DEFAULT: ='Entity Master'!F24
+- `F24` S_DEFAULT: ='Entity Master'!J24
+- `A26` S_DEFAULT: x
+- `B26` S_TITLE_SUBSECTION: §2b - Machining / mechanical / propulsion (top 3 by subaward $)
+- `C26` S_TITLE_SUBSECTION: 
+- `D26` S_TITLE_SUBSECTION: 
+- `E26` S_TITLE_SUBSECTION: 
+- `F26` S_TITLE_SUBSECTION: 
+- `B28` S_HEADER_CENTER: Rank
+- `C28` S_HEADER_LEFT: Vendor
+- `D28` S_HEADER_CENTER: $M
+- `E28` S_HEADER_LEFT: NAICS desc
+- `F28` S_HEADER_LEFT: Class rule
+- `B29` S_DEFAULT: 1
+- `C29` S_DEFAULT: ='Entity Master'!B36
+- `D29` S_LINK_NUM: ='Entity Master'!G36
+- `E29` S_DEFAULT: ='Entity Master'!F36
+- `F29` S_DEFAULT: ='Entity Master'!J36
+- `B30` S_DEFAULT: 2
+- `C30` S_DEFAULT: ='Entity Master'!B58
+- `D30` S_LINK_NUM: ='Entity Master'!G58
+- `E30` S_DEFAULT: ='Entity Master'!F58
+- `F30` S_DEFAULT: ='Entity Master'!J58
+- `B31` S_DEFAULT: 3
+- `C31` S_DEFAULT: ='Entity Master'!B60
+- `D31` S_LINK_NUM: ='Entity Master'!G60
+- `E31` S_DEFAULT: ='Entity Master'!F60
+- `F31` S_DEFAULT: ='Entity Master'!J60
+- `A33` S_DEFAULT: x
+- `B33` S_TITLE_SUBSECTION: §2c - Castings & forgings (top 3 by subaward $)
+- `C33` S_TITLE_SUBSECTION: 
+- `D33` S_TITLE_SUBSECTION: 
+- `E33` S_TITLE_SUBSECTION: 
+- `F33` S_TITLE_SUBSECTION: 
+- `B35` S_HEADER_CENTER: Rank
+- `C35` S_HEADER_LEFT: Vendor
+- `D35` S_HEADER_CENTER: $M
+- `E35` S_HEADER_LEFT: NAICS desc
+- `F35` S_HEADER_LEFT: Class rule
+- `B36` S_DEFAULT: 1
+- `C36` S_DEFAULT: ='Entity Master'!B20
+- `D36` S_LINK_NUM: ='Entity Master'!G20
+- `E36` S_DEFAULT: ='Entity Master'!F20
+- `F36` S_DEFAULT: ='Entity Master'!J20
+- `B37` S_DEFAULT: 2
+- `C37` S_DEFAULT: ='Entity Master'!B87
+- `D37` S_LINK_NUM: ='Entity Master'!G87
+- `E37` S_DEFAULT: ='Entity Master'!F87
+- `F37` S_DEFAULT: ='Entity Master'!J87
+- `B38` S_DEFAULT: 3
+- `C38` S_DEFAULT: ='Entity Master'!B102
+- `D38` S_LINK_NUM: ='Entity Master'!G102
+- `E38` S_DEFAULT: ='Entity Master'!F102
+- `F38` S_DEFAULT: ='Entity Master'!J102
+- `A40` S_DEFAULT: x
+- `B40` S_TITLE_SUBSECTION: §2d - Piping / fluid handling (top 3 by subaward $)
+- `C40` S_TITLE_SUBSECTION: 
+- `D40` S_TITLE_SUBSECTION: 
+- `E40` S_TITLE_SUBSECTION: 
+- `F40` S_TITLE_SUBSECTION: 
+- `B42` S_HEADER_CENTER: Rank
+- `C42` S_HEADER_LEFT: Vendor
+- `D42` S_HEADER_CENTER: $M
+- `E42` S_HEADER_LEFT: NAICS desc
+- `F42` S_HEADER_LEFT: Class rule
+- `B43` S_DEFAULT: 1
+- `C43` S_DEFAULT: ='Entity Master'!B19
+- `D43` S_LINK_NUM: ='Entity Master'!G19
+- `E43` S_DEFAULT: ='Entity Master'!F19
+- `F43` S_DEFAULT: ='Entity Master'!J19
+- `B44` S_DEFAULT: 2
+- `C44` S_DEFAULT: ='Entity Master'!B27
+- `D44` S_LINK_NUM: ='Entity Master'!G27
+- `E44` S_DEFAULT: ='Entity Master'!F27
+- `F44` S_DEFAULT: ='Entity Master'!J27
+- `B45` S_DEFAULT: 3
+- `C45` S_DEFAULT: ='Entity Master'!B28
+- `D45` S_LINK_NUM: ='Entity Master'!G28
+- `E45` S_DEFAULT: ='Entity Master'!F28
+- `F45` S_DEFAULT: ='Entity Master'!J28
+- `A47` S_DEFAULT: x
+- `B47` S_TITLE_SUBSECTION: §2e - Electrical power / distribution / generation (top 3 by subaward $)
+- `C47` S_TITLE_SUBSECTION: 
+- `D47` S_TITLE_SUBSECTION: 
+- `E47` S_TITLE_SUBSECTION: 
+- `F47` S_TITLE_SUBSECTION: 
+- `B49` S_HEADER_CENTER: Rank
+- `C49` S_HEADER_LEFT: Vendor
+- `D49` S_HEADER_CENTER: $M
+- `E49` S_HEADER_LEFT: NAICS desc
+- `F49` S_HEADER_LEFT: Class rule
+- `B50` S_DEFAULT: 1
+- `C50` S_DEFAULT: ='Entity Master'!B17
+- `D50` S_LINK_NUM: ='Entity Master'!G17
+- `E50` S_DEFAULT: ='Entity Master'!F17
+- `F50` S_DEFAULT: ='Entity Master'!J17
+- `B51` S_DEFAULT: 2
+- `C51` S_DEFAULT: ='Entity Master'!B18
+- `D51` S_LINK_NUM: ='Entity Master'!G18
+- `E51` S_DEFAULT: ='Entity Master'!F18
+- `F51` S_DEFAULT: ='Entity Master'!J18
+- `B52` S_DEFAULT: 3
+- `C52` S_DEFAULT: ='Entity Master'!B35
+- `D52` S_LINK_NUM: ='Entity Master'!G35
+- `E52` S_DEFAULT: ='Entity Master'!F35
+- `F52` S_DEFAULT: ='Entity Master'!J35
+- `A54` S_DEFAULT: x
+- `B54` S_TITLE_SUBSECTION: §2f - HVAC / ventilation / chilled water (top 3 by subaward $)
+- `C54` S_TITLE_SUBSECTION: 
+- `D54` S_TITLE_SUBSECTION: 
+- `E54` S_TITLE_SUBSECTION: 
+- `F54` S_TITLE_SUBSECTION: 
+- `B56` S_HEADER_CENTER: Rank
+- `C56` S_HEADER_LEFT: Vendor
+- `D56` S_HEADER_CENTER: $M
+- `E56` S_HEADER_LEFT: NAICS desc
+- `F56` S_HEADER_LEFT: Class rule
+- `B57` S_DEFAULT: 1
+- `C57` S_DEFAULT: ='Entity Master'!B31
+- `D57` S_LINK_NUM: ='Entity Master'!G31
+- `E57` S_DEFAULT: ='Entity Master'!F31
+- `F57` S_DEFAULT: ='Entity Master'!J31
+- `B58` S_DEFAULT: 2
+- `C58` S_DEFAULT: ='Entity Master'!B53
+- `D58` S_LINK_NUM: ='Entity Master'!G53
+- `E58` S_DEFAULT: ='Entity Master'!F53
+- `F58` S_DEFAULT: ='Entity Master'!J53
+- `B59` S_DEFAULT: 3
+- `C59` S_DEFAULT: ='Entity Master'!B169
+- `D59` S_LINK_NUM: ='Entity Master'!G169
+- `E59` S_DEFAULT: ='Entity Master'!F169
+- `F59` S_DEFAULT: ='Entity Master'!J169
+- `A61` S_DEFAULT: x
+- `B61` S_TITLE_SUBSECTION: §2g - Coatings / insulation / decking (top 3 by subaward $)
+- `C61` S_TITLE_SUBSECTION: 
+- `D61` S_TITLE_SUBSECTION: 
+- `E61` S_TITLE_SUBSECTION: 
+- `F61` S_TITLE_SUBSECTION: 
+- `B63` S_HEADER_CENTER: Rank
+- `C63` S_HEADER_LEFT: Vendor
+- `D63` S_HEADER_CENTER: $M
+- `E63` S_HEADER_LEFT: NAICS desc
+- `F63` S_HEADER_LEFT: Class rule
+- `B64` S_DEFAULT: 1
+- `C64` S_DEFAULT: ='Entity Master'!B23
+- `D64` S_LINK_NUM: ='Entity Master'!G23
+- `E64` S_DEFAULT: ='Entity Master'!F23
+- `F64` S_DEFAULT: ='Entity Master'!J23
+- `B65` S_DEFAULT: 2
+- `C65` S_DEFAULT: ='Entity Master'!B32
+- `D65` S_LINK_NUM: ='Entity Master'!G32
+- `E65` S_DEFAULT: ='Entity Master'!F32
+- `F65` S_DEFAULT: ='Entity Master'!J32
+- `B66` S_DEFAULT: 3
+- `C66` S_DEFAULT: ='Entity Master'!B34
+- `D66` S_LINK_NUM: ='Entity Master'!G34
+- `E66` S_DEFAULT: ='Entity Master'!F34
+- `F66` S_DEFAULT: ='Entity Master'!J34
+- `A68` S_DEFAULT: x
+- `B68` S_TITLE_SUBSECTION: §2h - Unbucketed watchlist (top 10 supplier $, no clean bucket)
+- `C68` S_TITLE_SUBSECTION: 
+- `D68` S_TITLE_SUBSECTION: 
+- `E68` S_TITLE_SUBSECTION: 
+- `F68` S_TITLE_SUBSECTION: 
+- `B70` S_HEADER_CENTER: Rank
+- `C70` S_HEADER_LEFT: Vendor
+- `D70` S_HEADER_CENTER: $M
+- `E70` S_HEADER_LEFT: NAICS desc
+- `F70` S_HEADER_LEFT: Why unbucketed
+- `B71` S_DEFAULT: 1
+- `C71` S_DEFAULT: ='Entity Master'!B33
+- `D71` S_LINK_NUM: ='Entity Master'!G33
+- `E71` S_DEFAULT: ='Entity Master'!F33
+- `F71` S_DEFAULT: ='Entity Master'!J33
+- `B72` S_DEFAULT: 2
+- `C72` S_DEFAULT: ='Entity Master'!B61
+- `D72` S_LINK_NUM: ='Entity Master'!G61
+- `E72` S_DEFAULT: ='Entity Master'!F61
+- `F72` S_DEFAULT: ='Entity Master'!J61
+- `B73` S_DEFAULT: 3
+- `C73` S_DEFAULT: ='Entity Master'!B74
+- `D73` S_LINK_NUM: ='Entity Master'!G74
+- `E73` S_DEFAULT: ='Entity Master'!F74
+- `F73` S_DEFAULT: ='Entity Master'!J74
+- `B74` S_DEFAULT: 4
+- `C74` S_DEFAULT: ='Entity Master'!B81
+- `D74` S_LINK_NUM: ='Entity Master'!G81
+- `E74` S_DEFAULT: ='Entity Master'!F81
+- `F74` S_DEFAULT: ='Entity Master'!J81
+- `B75` S_DEFAULT: 5
+- `C75` S_DEFAULT: ='Entity Master'!B90
+- `D75` S_LINK_NUM: ='Entity Master'!G90
+- `E75` S_DEFAULT: ='Entity Master'!F90
+- `F75` S_DEFAULT: ='Entity Master'!J90
+- `B76` S_DEFAULT: 6
+- `C76` S_DEFAULT: ='Entity Master'!B96
+- `D76` S_LINK_NUM: ='Entity Master'!G96
+- `E76` S_DEFAULT: ='Entity Master'!F96
+- `F76` S_DEFAULT: ='Entity Master'!J96
+- `B77` S_DEFAULT: 7
+- `C77` S_DEFAULT: ='Entity Master'!B97
+- `D77` S_LINK_NUM: ='Entity Master'!G97
+- `E77` S_DEFAULT: ='Entity Master'!F97
+- `F77` S_DEFAULT: ='Entity Master'!J97
+- `B78` S_DEFAULT: 8
+- `C78` S_DEFAULT: ='Entity Master'!B100
+- `D78` S_LINK_NUM: ='Entity Master'!G100
+- `E78` S_DEFAULT: ='Entity Master'!F100
+- `F78` S_DEFAULT: ='Entity Master'!J100
+- `B79` S_DEFAULT: 9
+- `C79` S_DEFAULT: ='Entity Master'!B105
+- `D79` S_LINK_NUM: ='Entity Master'!G105
+- `E79` S_DEFAULT: ='Entity Master'!F105
+- `F79` S_DEFAULT: ='Entity Master'!J105
+- `B80` S_DEFAULT: 10
+- `C80` S_DEFAULT: ='Entity Master'!B106
+- `D80` S_LINK_NUM: ='Entity Master'!G106
+- `E80` S_DEFAULT: ='Entity Master'!F106
+- `F80` S_DEFAULT: ='Entity Master'!J106

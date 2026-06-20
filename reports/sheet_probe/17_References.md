@@ -1,0 +1,560 @@
+# sheet_probe: References
+
+- source: `file`
+- tab name: `References`
+- tab color: `FF1F3A5F`
+- gridlines shown: `0`
+- columns: 10 · rows: 63 · cells: 514 · formulas: 0
+
+## Banners
+- `B2` S_TITLE_SHEET — References
+- `B4` S_TITLE_SECTION — §1 - Industry-baseline primary-source claims (anchors the 50/60/65% band)
+- `B39` S_TITLE_SECTION — §2 - Executive commentary on make/buy (strategy signal, not sizing)
+- `B65` S_TITLE_SECTION — §3 - Citation completeness
+
+## Native tables
+- `tbl_sub_references_claims` ref `B6:J36` [Claim ID, Label, Value, Unit, Source ID, Date, Source title, Source URL, Quoted text] style WorkbookCore_NoFormatTable
+- `tbl_sub_references_exec` ref `B41:I62` [Quote ID, Date, Speaker, Role, Company, Topic, Quote, Source URL] style WorkbookCore_NoFormatTable
+
+## Hardcoded inputs (22)
+- `D7` S_NUM_INPUT = 70
+- `D8` S_NUM_INPUT = 16000
+- `D9` S_NUM_INPUT = 9800
+- `D10` S_NUM_INPUT = 10000
+- `D11` S_NUM_INPUT = 5800
+- `D12` S_NUM_INPUT = 12600
+- `D13` S_NUM_INPUT = -70
+- `D16` S_NUM_INPUT = 5000
+- `D17` S_NUM_INPUT = 1.3
+- `D18` S_NUM_INPUT = 2.33
+- `D19` S_NUM_INPUT = 126400
+- `D21` S_NUM_INPUT = 16121
+- `D22` S_NUM_INPUT = 10688
+- `D23` S_NUM_INPUT = 10543
+- `D24` S_NUM_INPUT = 17
+- `D25` S_NUM_INPUT = 96
+- `D27` S_NUM_INPUT = 57
+- `D30` S_NUM_INPUT = 30
+- `D31` S_NUM_INPUT = 3000
+- `D33` S_NUM_INPUT = 65000
+- `D34` S_NUM_INPUT = 30000
+- `D36` S_NUM_INPUT = 2027
+
+## Placeholders (1)
+- `C11` — Total DOD shipbuilding industrial base spending FY14-FY23
+
+## Cells
+- `B2` S_TITLE_SHEET: References
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `J2` S_TITLE_SHEET: 
+- `A4` S_DEFAULT: x
+- `B4` S_TITLE_SECTION: §1 - Industry-baseline primary-source claims (anchors the 50/60/65% band)
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `J4` S_TITLE_SECTION: 
+- `B6` S_HEADER_LEFT: Claim ID
+- `C6` S_HEADER_LEFT: Label
+- `D6` S_HEADER_CENTER: Value
+- `E6` S_HEADER_LEFT: Unit
+- `F6` S_HEADER_LEFT: Source ID
+- `G6` S_HEADER_LEFT: Date
+- `H6` S_HEADER_LEFT: Source title
+- `I6` S_HEADER_LEFT: Source URL
+- `J6` S_HEADER_LEFT: Quoted text
+- `B7` S_DEFAULT: 01
+- `C7` S_DEFAULT: Sole-source critical suppliers
+- `D7` S_NUM_INPUT: 70
+- `E7` S_DEFAULT: percent
+- `F7` S_DEFAULT: CRS-RL32418
+- `G7` S_DEFAULT: 2026-01-26
+- `H7` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project: Background and Issues for Congress (R. O'Rourke)
+- `I7` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J7` S_DEFAULT: About 70% of the critical suppliers for the construction of submarines are sole-source suppliers.
+- `B8` S_DEFAULT: 02
+- `C8` S_DEFAULT: Total submarine suppliers
+- `D8` S_NUM_INPUT: 16000
+- `E8` S_DEFAULT: count
+- `F8` S_DEFAULT: CRS-RL32418
+- `G8` S_DEFAULT: 2026-01-26
+- `H8` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project
+- `I8` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J8` S_DEFAULT: In addition to GD/EB and HII/NNS, the submarine construction industrial base includes about 16,000 suppliers in all 50 states.
+- `B9` S_DEFAULT: 03
+- `C9` S_DEFAULT: Submarine industrial base investment FY-FY28
+- `D9` S_NUM_INPUT: 9800
+- `E9` S_DEFAULT: USD millions
+- `F9` S_DEFAULT: CRS-RL32418
+- `G9` S_DEFAULT: 2026-01-26
+- `H9` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project
+- `I9` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J9` S_DEFAULT: The estimated total amount of funding appropriated through FY2024, requested for FY2025, and programmed for FY2026-FY2028 for the submarine construction industrial base is about $9.8 billion.
+- `B10` S_DEFAULT: 04
+- `C10` S_DEFAULT: Total DOD submarine industrial base investment
+- `D10` S_NUM_INPUT: 10000
+- `E10` S_DEFAULT: USD millions
+- `F10` S_DEFAULT: GAO-26-109068
+- `G10` S_DEFAULT: 2026-04-22
+- `H10` S_DEFAULT: Navy and Coast Guard Shipbuilding: A Disciplined Strategy-Driven Approach Is Needed (Oakley testimony)
+- `I10` S_DEFAULT: https://www.gao.gov/products/gao-26-109068
+- `J10` S_DEFAULT: DOD does not know how much funding it expects to need-beyond the more than $10 billion DOD already invested-to solve submarine industrial base challenges.
+- `B11` S_DEFAULT: 05
+- `C11` S_DEFAULT: Total DOD shipbuilding industrial base spending FY14-FY23
+- `D11` S_NUM_INPUT: 5800
+- `E11` S_DEFAULT: USD millions
+- `F11` S_DEFAULT: GAO-25-106286
+- `G11` S_DEFAULT: 2025-02-27
+- `H11` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I11` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J11` S_DEFAULT: DOD spent over $5.8 billion on the shipbuilding industrial base from fiscal years 2014 through 2023.
+- `B12` S_DEFAULT: 06
+- `C12` S_DEFAULT: Planned additional shipbuilding IB spend FY through FY28
+- `D12` S_NUM_INPUT: 12600
+- `E12` S_DEFAULT: USD millions
+- `F12` S_DEFAULT: GAO-25-106286
+- `G12` S_DEFAULT: 2025-02-27
+- `H12` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I12` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J12` S_DEFAULT: It plans to spend an additional $12.6 billion through fiscal year 2028.
+- `B13` S_DEFAULT: 07
+- `C13` S_DEFAULT: Supplier base size vs historical
+- `D13` S_NUM_INPUT: -70
+- `E13` S_DEFAULT: percent (atrophy)
+- `F13` S_DEFAULT: GAO-21-257
+- `G13` S_DEFAULT: 2021-01-14
+- `H13` S_DEFAULT: Columbia Class Submarine: Delivery Hinges on Timely and Quality Materials from an Atrophied Supplier Base
+- `I13` S_DEFAULT: https://www.gao.gov/products/gao-21-257
+- `J13` S_DEFAULT: They plan to rely on materials produced by a supplier base that is roughly 70 percent smaller than in previous shipbuilding booms.
+- `B14` S_DEFAULT: 08
+- `C14` S_DEFAULT: Shipbuilders expanding outsourcing
+- `D14` S_DEFAULT: N/A
+- `E14` S_DEFAULT: qualitative
+- `F14` S_DEFAULT: GAO-21-257
+- `G14` S_DEFAULT: 2021-01-14
+- `H14` S_DEFAULT: Columbia Class Submarine: Delivery Hinges on Timely and Quality Materials from an Atrophied Supplier Base
+- `I14` S_DEFAULT: https://www.gao.gov/products/gao-21-257
+- `J14` S_DEFAULT: As the shipbuilders expand outsourcing to suppliers, quality assurance oversight at supplier facilities will be critical for avoiding further delays.
+- `B15` S_DEFAULT: 09
+- `C15` S_DEFAULT: Outsourcing trend due to capacity
+- `D15` S_DEFAULT: N/A
+- `E15` S_DEFAULT: qualitative
+- `F15` S_DEFAULT: GAO-25-106286
+- `G15` S_DEFAULT: 2025-02-27
+- `H15` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I15` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J15` S_DEFAULT: Two of the shipbuilders we spoke with are already outsourcing work that would normally be done at their shipyards to their suppliers to overcome constrained physical space, with plans to expand the volume of material they are outsourcing.
+- `B16` S_DEFAULT: 10
+- `C16` S_DEFAULT: Va per-boat cost at 2/yr rate
+- `D16` S_NUM_INPUT: 5000
+- `E16` S_DEFAULT: USD millions
+- `F16` S_DEFAULT: CRS-RL32418
+- `G16` S_DEFAULT: 2026-01-26
+- `H16` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project
+- `I16` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J16` S_DEFAULT: When procured at a rate of two per year, they have an estimated procurement cost under the Navy's FY2026 budget submission of about $5.0 billion each.
+- `B17` S_DEFAULT: 11
+- `C17` S_DEFAULT: Va actual production rate
+- `D17` S_NUM_INPUT: 1.3
+- `E17` S_DEFAULT: boats per year
+- `F17` S_DEFAULT: Breaking-Defense-Raven-2024
+- `G17` S_DEFAULT: 2024-04
+- `H17` S_DEFAULT: Invest in the US industrial base to support our Navy and AUKUS (Erik Raven op-ed)
+- `I17` S_DEFAULT: https://breakingdefense.com/2024/04/invest-in-the-us-industrial-base-to-support-our-navy-and-aukus-raven/
+- `J17` S_DEFAULT: Where we should be delivering two Virginia-class submarines a year, we are currently only on pace to deliver 1.3.
+- `B18` S_DEFAULT: 12
+- `C18` S_DEFAULT: Va production target after AUKUS
+- `D18` S_NUM_INPUT: 2.33
+- `E18` S_DEFAULT: boats per year
+- `F18` S_DEFAULT: CRS-RL32418
+- `G18` S_DEFAULT: 2026-01-26
+- `H18` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project
+- `I18` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J18` S_DEFAULT: increasing the Virginia-class production rate to 2.0 boats per year, and subsequently to 2.33 boats per year, the rate the Navy states will be needed to not only execute the two-per-year procurement rate, but also build replacement SSNs for the three to five Virginia-class boats that are to be sold to Australia.
+- `B19` S_DEFAULT: 13
+- `C19` S_DEFAULT: Col 12-ship program total cost
+- `D19` S_NUM_INPUT: 126400
+- `E19` S_DEFAULT: USD millions
+- `F19` S_DEFAULT: CRS-R41129
+- `G19` S_DEFAULT: 2025-12-04
+- `H19` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program: Background and Issues for Congress (R. O'Rourke)
+- `I19` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J19` S_DEFAULT: The Navy's FY2025 budget submission estimates the total procurement cost of the 12-ship class at $126.4 billion in then-year dollars, an increase of 15.2% over the figure in the FY2021 budget submission of $109.8 billion.
+- `B20` S_DEFAULT: 14
+- `C20` S_DEFAULT: Col 12-ship total per CBO
+- `D20` S_DEFAULT: ~146
+- `E20` S_DEFAULT: USD billions (~16% > Navy)
+- `F20` S_DEFAULT: CRS-R41129
+- `G20` S_DEFAULT: 2025-12-04
+- `H20` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I20` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J20` S_DEFAULT: CBO's estimate for a program of 12 ships is 16 percent higher than the Navy's.
+- `B21` S_DEFAULT: 15
+- `C21` S_DEFAULT: Col 1st boat (SSBN-826) cost
+- `D21` S_NUM_INPUT: 16121
+- `E21` S_DEFAULT: USD millions
+- `F21` S_DEFAULT: CRS-R41129
+- `G21` S_DEFAULT: 2025-12-04
+- `H21` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I21` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J21` S_DEFAULT: First boat (SSBN-826): $16,121.3 million.
+- `B22` S_DEFAULT: 16
+- `C22` S_DEFAULT: Col 2nd boat (SSBN-827) cost
+- `D22` S_NUM_INPUT: 10688
+- `E22` S_DEFAULT: USD millions
+- `F22` S_DEFAULT: CRS-R41129
+- `G22` S_DEFAULT: 2025-12-04
+- `H22` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I22` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J22` S_DEFAULT: Second boat (SSBN-827): $10,688.5 million.
+- `B23` S_DEFAULT: 17
+- `C23` S_DEFAULT: Col 3rd boat (SSBN-828) cost
+- `D23` S_NUM_INPUT: 10543
+- `E23` S_DEFAULT: USD millions
+- `F23` S_DEFAULT: CRS-R41129
+- `G23` S_DEFAULT: 2025-12-04
+- `H23` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I23` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J23` S_DEFAULT: Third boat (SSBN-828): $10,543.7 million.
+- `B24` S_DEFAULT: 18
+- `C24` S_DEFAULT: Col 1st boat delay
+- `D24` S_NUM_INPUT: 17
+- `E24` S_DEFAULT: months
+- `F24` S_DEFAULT: CRS-R41129
+- `G24` S_DEFAULT: 2025-12-04
+- `H24` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I24` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J24` S_DEFAULT: The Navy's FY2026 budget submission updated the estimated delay in the delivery of the first Columbia-class boat to 17 months.
+- `B25` S_DEFAULT: 19
+- `C25` S_DEFAULT: Col 1st boat build duration actual
+- `D25` S_NUM_INPUT: 96
+- `E25` S_DEFAULT: months
+- `F25` S_DEFAULT: CRS-R41129
+- `G25` S_DEFAULT: 2025-12-04
+- `H25` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I25` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J25` S_DEFAULT: currently tracking to a 96-month build instead of the 84-month contract timeline.
+- `B26` S_DEFAULT: 20
+- `C26` S_DEFAULT: Specific delay attribution NG turbine generator
+- `D26` S_DEFAULT: N/A
+- `E26` S_DEFAULT: qualitative
+- `F26` S_DEFAULT: CRS-R41129
+- `G26` S_DEFAULT: 2025-12-04
+- `H26` S_DEFAULT: Navy Columbia (SSBN-826) Class Ballistic Missile Submarine Program
+- `I26` S_DEFAULT: https://www.congress.gov/crs-product/R41129
+- `J26` S_DEFAULT: One of the most significant challenges...is actually the late delivery of the turbine generator...by subcontractor Northrop Grumman.
+- `B27` S_DEFAULT: 21
+- `C27` S_DEFAULT: Trade workers <5 years experience
+- `D27` S_NUM_INPUT: 57
+- `E27` S_DEFAULT: percent
+- `F27` S_DEFAULT: GAO-25-106286
+- `G27` S_DEFAULT: 2025-02-27
+- `H27` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I27` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J27` S_DEFAULT: A shipbuilder we spoke with noted that they already have a high percentage of trade workers with fewer than 5 years of experience-at 57 percent.
+- `B28` S_DEFAULT: 22
+- `C28` S_DEFAULT: BlueForge Alliance role
+- `D28` S_DEFAULT: N/A
+- `E28` S_DEFAULT: qualitative
+- `F28` S_DEFAULT: GAO-25-106286
+- `G28` S_DEFAULT: 2025-02-27
+- `H28` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I28` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J28` S_DEFAULT: BlueForge Alliance, a nonprofit integrator, has supported the use of submarine supplier development funding for the shipbuilders.
+- `B29` S_DEFAULT: 23
+- `C29` S_DEFAULT: Maritime Industrial Base Program Office established
+- `D29` S_DEFAULT: N/A
+- `E29` S_DEFAULT: event
+- `F29` S_DEFAULT: GAO-25-106286
+- `G29` S_DEFAULT: 2025-02-27
+- `H29` S_DEFAULT: Shipbuilding and Repair: Navy Needs a Strategic Approach for Private Sector Industrial Base Investments
+- `I29` S_DEFAULT: https://www.gao.gov/products/gao-25-106286
+- `J29` S_DEFAULT: The Navy released a memorandum in June 2024...directed the establishment of a Maritime Industrial Base Program Office...began operating in September 2024.
+- `B30` S_DEFAULT: 24
+- `C30` S_DEFAULT: Va Block VI LLTM contract place-of-performance
+- `D30` S_NUM_INPUT: 30
+- `E30` S_DEFAULT: percent at Sunnyvale CA
+- `F30` S_DEFAULT: Naval-Technology-2024
+- `G30` S_DEFAULT: 2024
+- `H30` S_DEFAULT: GDEB awarded $2.3bn contract modification for Virginia-class submarines
+- `I30` S_DEFAULT: https://www.naval-technology.com/news/gdeb-virginia-class-submarines-contract/
+- `J30` S_DEFAULT: The bulk of the work will take place in Sunnyvale, California, accounting for 30% of the effort, with other significant sites including Chesapeake in Virginia, Minneapolis in Minnesota, York in Pennsylvania and Tucson in Arizona, each contributing between 3 and 4%.
+- `B31` S_DEFAULT: 25
+- `C31` S_DEFAULT: AUKUS Australian contribution to US submarine industrial base
+- `D31` S_NUM_INPUT: 3000
+- `E31` S_DEFAULT: USD millions
+- `F31` S_DEFAULT: CRS-RL32418
+- `G31` S_DEFAULT: 2026-01-26
+- `H31` S_DEFAULT: Navy Virginia-Class Submarine Program and AUKUS Submarine (Pillar 1) Project
+- `I31` S_DEFAULT: https://www.congress.gov/crs-product/RL32418
+- `J31` S_DEFAULT: Australia is to invest at least $3 billion in its own industrial base to establish an Australian capacity for building and maintaining SSNs. In addition to that $3 billion…Australia is to make a $3 billion contribution to the U.S. submarine industrial base.
+- `B32` S_DEFAULT: 26
+- `C32` S_DEFAULT: Make/buy ratio for submarine prime contract
+- `D32` S_DEFAULT: NOT FOUND
+- `E32` S_DEFAULT: placeholder
+- `F32` S_DEFAULT: N/A
+- `G32` S_DEFAULT: N/A
+- `H32` S_DEFAULT: No primary-source statement located
+- `I32` S_DEFAULT: N/A
+- `J32` S_DEFAULT: None of the GAO/CRS/CBO reports we reviewed explicitly states the make/buy ratio for the Virginia or Columbia prime contracts. Industry analyst consensus places complex-shipbuilding purchased+subbed content at 50-65 percent of contract value; our deck uses ~60 percent as a working baseline derived from this synthesis plus the supporting evidence in claims 01, 02, 07, 08, 09.
+- `B33` S_DEFAULT: 27
+- `C33` S_DEFAULT: FY27 shipbuilding budget request
+- `D33` S_NUM_INPUT: 65000
+- `E33` S_DEFAULT: USD millions
+- `F33` S_DEFAULT: GAO-26-109068
+- `G33` S_DEFAULT: 2026-04-22
+- `H33` S_DEFAULT: Navy and Coast Guard Shipbuilding: A Disciplined Strategy-Driven Approach Is Needed
+- `I33` S_DEFAULT: https://www.gao.gov/products/gao-26-109068
+- `J33` S_DEFAULT: The President's Budget for fiscal year 2027-released in April 2026-requested over $65 billion in shipbuilding funding, in part to support recently announced plans for the Golden Fleet.
+- `B34` S_DEFAULT: 28
+- `C34` S_DEFAULT: One Big Beautiful Bill Act shipbuilding funds
+- `D34` S_NUM_INPUT: 30000
+- `E34` S_DEFAULT: USD millions
+- `F34` S_DEFAULT: GAO-26-109068
+- `G34` S_DEFAULT: 2026-04-22
+- `H34` S_DEFAULT: Navy and Coast Guard Shipbuilding: A Disciplined Strategy-Driven Approach Is Needed
+- `I34` S_DEFAULT: https://www.gao.gov/products/gao-26-109068
+- `J34` S_DEFAULT: The Navy and the Coast Guard collectively received over $30 billion to help procure ships under Public Law 119-21, commonly known as the One Big Beautiful Bill Act.
+- `B35` S_DEFAULT: 29
+- `C35` S_DEFAULT: America's Maritime Action Plan
+- `D35` S_DEFAULT: N/A
+- `E35` S_DEFAULT: event
+- `F35` S_DEFAULT: GAO-26-109068
+- `G35` S_DEFAULT: 2026-04-22
+- `H35` S_DEFAULT: Navy and Coast Guard Shipbuilding: A Disciplined Strategy-Driven Approach Is Needed
+- `I35` S_DEFAULT: https://www.gao.gov/products/gao-26-109068
+- `J35` S_DEFAULT: America's Maritime Action Plan by the White House in February 2026. This plan sets out the common challenges faced by the maritime industrial base across government and commercial shipbuilding.
+- `B36` S_DEFAULT: 30
+- `C36` S_DEFAULT: Ohio class begins retiring
+- `D36` S_NUM_INPUT: 2027
+- `E36` S_DEFAULT: year
+- `F36` S_DEFAULT: GAO-24-107732
+- `G36` S_DEFAULT: 2024-09-30
+- `H36` S_DEFAULT: Columbia Class Submarine: Overcoming Persistent Challenges Requires Yet Undemonstrated Performance and Better-Informed Supplier Investments
+- `I36` S_DEFAULT: https://www.gao.gov/products/gao-24-107732
+- `J36` S_DEFAULT: As Ohio class submarines begin to retire in 2027, the lead Columbia class submarine must be ready for its first patrol in fiscal year 2031 to avoid a gap in deterrence requirements.
+- `A39` S_DEFAULT: x
+- `B39` S_TITLE_SECTION: §2 - Executive commentary on make/buy (strategy signal, not sizing)
+- `C39` S_TITLE_SECTION: 
+- `D39` S_TITLE_SECTION: 
+- `E39` S_TITLE_SECTION: 
+- `F39` S_TITLE_SECTION: 
+- `G39` S_TITLE_SECTION: 
+- `H39` S_TITLE_SECTION: 
+- `I39` S_TITLE_SECTION: 
+- `J39` S_TITLE_SECTION: 
+- `B41` S_HEADER_LEFT: Quote ID
+- `C41` S_HEADER_LEFT: Date
+- `D41` S_HEADER_LEFT: Speaker
+- `E41` S_HEADER_LEFT: Role
+- `F41` S_HEADER_LEFT: Company
+- `G41` S_HEADER_LEFT: Topic
+- `H41` S_HEADER_LEFT: Quote
+- `I41` S_HEADER_LEFT: Source URL
+- `B42` S_DEFAULT: EXEC-01
+- `C42` S_DEFAULT: 2024-11
+- `D42` S_DEFAULT: Chris Kastner
+- `E42` S_DEFAULT: CEO
+- `F42` S_DEFAULT: HII
+- `G42` S_DEFAULT: Outsourcing trajectory (direction)
+- `H42` S_DEFAULT: Yes I think there's going to be a greater percentage of our work outsourced going forward. There is a premium related to that... we will increase the industrial base and increase outsourced partners on our future contracting activity... which means you're going to outsource more, which means it costs more. So we will outsource more.
+- `I42` S_DEFAULT: HII FY2024 Q3 earnings call (Insider Monkey transcript)
+- `B43` S_DEFAULT: EXEC-02
+- `C43` S_DEFAULT: 2025-02
+- `D43` S_DEFAULT: Chris Kastner
+- `E43` S_DEFAULT: CEO
+- `F43` S_DEFAULT: HII
+- `G43` S_DEFAULT: 30% outsourcing increase is "a material number"
+- `H43` S_DEFAULT: Yeah. It's a material number. And the good news is we're outsourcing with partners that we already do outsource work with.
+- `I43` S_DEFAULT: HII FY2024 Q4 earnings call (Insider Monkey transcript) - in response to Myles Walton (Wolfe Research) saying ""a move to increase it as much as you're talking about
+- `B44` S_DEFAULT: EXEC-03
+- `C44` S_DEFAULT: 2025-02
+- `D44` S_DEFAULT: Tom Stiehle
+- `E44` S_DEFAULT: CFO
+- `F44` S_DEFAULT: HII
+- `G44` S_DEFAULT: Outsourcing tied to 20% throughput increase
+- `H44` S_DEFAULT: We anticipate that, you know, we'll be able to execute that work. And be a significant piece of the list that we talked about, about 20% more earn throughput.
+- `I44` S_DEFAULT: HII FY2024 Q4 earnings call
+- `B45` S_DEFAULT: EXEC-04
+- `C45` S_DEFAULT: 2025-02
+- `D45` S_DEFAULT: Chris Kastner
+- `E45` S_DEFAULT: CEO
+- `F45` S_DEFAULT: HII
+- `G45` S_DEFAULT: Anti-vertical-integration stance
+- `H45` S_DEFAULT: We have a lot of outsource partners, and I'd rather develop outsource partners and have an arms-length relationship. I really don't want to vertically integrate.
+- `I45` S_DEFAULT: HII FY2024 Q4 earnings call
+- `B46` S_DEFAULT: EXEC-05
+- `C46` S_DEFAULT: 2025-05
+- `D46` S_DEFAULT: Myles Walton
+- `E46` S_DEFAULT: Analyst
+- `F46` S_DEFAULT: Wolfe Research
+- `G46` S_DEFAULT: Outsourcing magnitude (analyst Q)
+- `H46` S_DEFAULT: Regarding the 35% increase in outsourcing, can you comment on where you are with respect to that and sort of how the performance quality is looking from what you're outsourcing?
+- `I46` S_DEFAULT: HII FY2025 Q1 earnings call (Insider Monkey transcript)
+- `B47` S_DEFAULT: EXEC-06
+- `C47` S_DEFAULT: 2025-05
+- `D47` S_DEFAULT: Chris Kastner
+- `E47` S_DEFAULT: CEO
+- `F47` S_DEFAULT: HII
+- `G47` S_DEFAULT: Outsourcing execution at scale
+- `H47` S_DEFAULT: We are on schedule in both yards in outsourcing for the year and the quality looks good. So, we're going to continue it. We need to. The industrial base is expanding. We need to take advantage of it.
+- `I47` S_DEFAULT: HII FY2025 Q1 earnings call
+- `B48` S_DEFAULT: EXEC-07
+- `C48` S_DEFAULT: 2025-Q3
+- `D48` S_DEFAULT: HII Press
+- `E48` S_DEFAULT: Earnings release
+- `F48` S_DEFAULT: HII
+- `G48` S_DEFAULT: Outsourcing as revenue driver
+- `H48` S_DEFAULT: Shipbuilding Sales - $2.4 billion in shipbuilding revenue for Q3 2025, up 18% year-over-year, boosted by higher throughput, material receipts, and accelerated outsourcing.
+- `I48` S_DEFAULT: HII FY2025 Q3 earnings highlights (Motley Fool)
+- `B49` S_DEFAULT: EXEC-08
+- `C49` S_DEFAULT: 2026-05-05
+- `D49` S_DEFAULT: Chris Kastner / HII Q1 2026
+- `E49` S_DEFAULT: CEO
+- `F49` S_DEFAULT: HII
+- `G49` S_DEFAULT: 30% YoY growth in outsourcing hours (OFFICIAL 2026 GUIDANCE)
+- `H49` S_DEFAULT: We are on track to grow our outsourcing hours year-over-year by 30%, and we will continue to identify capacity expansion opportunities to meet customer program demand requirements.
+- `I49` S_DEFAULT: HII FY2026 Q1 earnings call (May 5 2026; sourced via Investing.com / Motley Fool)
+- `B50` S_DEFAULT: EXEC-09
+- `C50` S_DEFAULT: 2026-05-05
+- `D50` S_DEFAULT: HII Q1 2026 highlights
+- `E50` S_DEFAULT: Press release
+- `F50` S_DEFAULT: HII
+- `G50` S_DEFAULT: Outsourcing as a formal operational initiative
+- `H50` S_DEFAULT: Outsourcing Hours - Expected to grow by 30% year over year, supporting capacity expansion.
+- `I50` S_DEFAULT: HII FY2026 Q1 earnings highlights (Motley Fool transcript bullet point)
+- `B51` S_DEFAULT: EXEC-10
+- `C51` S_DEFAULT: 2026-05-05
+- `D51` S_DEFAULT: Chris Kastner
+- `E51` S_DEFAULT: CEO
+- `F51` S_DEFAULT: HII
+- `G51` S_DEFAULT: Distributed shipbuilding strategy
+- `H51` S_DEFAULT: Leveraging our distributed shipbuilding strategy [...]
+- `I51` S_DEFAULT: HII FY2026 Q1 earnings call
+- `B52` S_DEFAULT: EXEC-11
+- `C52` S_DEFAULT: 2026-01-28
+- `D52` S_DEFAULT: Phebe Novakovic
+- `E52` S_DEFAULT: CEO
+- `F52` S_DEFAULT: General Dynamics (parent of EB)
+- `G52` S_DEFAULT: Supply chain is the gating item
+- `H52` S_DEFAULT: The supply chain remains the gating item, and we have seen significant improvement in some areas, but we still have some suppliers and parts of the supply chain that are at risk.
+- `I52` S_DEFAULT: GD FY2025 Q4 earnings call (Motley Fool transcript)
+- `B53` S_DEFAULT: EXEC-12
+- `C53` S_DEFAULT: 2026-01-28
+- `D53` S_DEFAULT: Phebe Novakovic
+- `E53` S_DEFAULT: CEO
+- `F53` S_DEFAULT: General Dynamics
+- `G53` S_DEFAULT: Sole-source bottleneck
+- `H53` S_DEFAULT: Sole source suppliers where they are bottlenecks (identified as key constraint).
+- `I53` S_DEFAULT: GD FY2025 Q4 earnings call (Motley Fool)
+- `B54` S_DEFAULT: EXEC-13
+- `C54` S_DEFAULT: 2026-01-28
+- `D54` S_DEFAULT: Phebe Novakovic
+- `E54` S_DEFAULT: CEO
+- `F54` S_DEFAULT: General Dynamics
+- `G54` S_DEFAULT: Capital allocation tilt to EB
+- `H54` S_DEFAULT: Half at least of the CapEx for this coming year is at Electric Boat.
+- `I54` S_DEFAULT: GD FY2025 Q4 earnings call
+- `B55` S_DEFAULT: EXEC-14
+- `C55` S_DEFAULT: 2026-04-29
+- `D55` S_DEFAULT: Danny Deep
+- `E55` S_DEFAULT: President/COO
+- `F55` S_DEFAULT: General Dynamics
+- `G55` S_DEFAULT: Single-source supplier bottlenecks
+- `H55` S_DEFAULT: We still see some areas in the supply chain where we need to get the cadence up, and those problems tend to be where we have complex components or complex systems where there are just single sources of supply.
+- `I55` S_DEFAULT: GD FY2026 Q1 earnings call (Motley Fool / Globe and Mail)
+- `B56` S_DEFAULT: EXEC-15
+- `C56` S_DEFAULT: 2026-04-29
+- `D56` S_DEFAULT: Danny Deep
+- `E56` S_DEFAULT: President/COO
+- `F56` S_DEFAULT: General Dynamics
+- `G56` S_DEFAULT: Columbia progress
+- `H56` S_DEFAULT: At Electric Boat on the Columbia program, we have seen a 29% increase in the number of hours earned as compared to first quarter 2025.
+- `I56` S_DEFAULT: GD FY2026 Q1 earnings call
+- `B57` S_DEFAULT: EXEC-16
+- `C57` S_DEFAULT: 2026-04-29
+- `D57` S_DEFAULT: Danny Deep
+- `E57` S_DEFAULT: President/COO
+- `F57` S_DEFAULT: General Dynamics
+- `G57` S_DEFAULT: Sequence critical material throughput
+- `H57` S_DEFAULT: For sequence critical material, we have seen a 52% increase in the number of items received as compared to this time period last year.
+- `I57` S_DEFAULT: GD FY2026 Q1 earnings call
+- `B58` S_DEFAULT: EXEC-17
+- `C58` S_DEFAULT: 2025-Q3
+- `D58` S_DEFAULT: Phebe Novakovic
+- `E58` S_DEFAULT: CEO
+- `F58` S_DEFAULT: General Dynamics
+- `G58` S_DEFAULT: EB tonnage growth
+- `H58` S_DEFAULT: Electric Boat was up 13% in submarine tonnage produced over the prior year.
+- `I58` S_DEFAULT: GD FY2025 Q3 earnings call (Investing.com summary)
+- `B59` S_DEFAULT: EXEC-18
+- `C59` S_DEFAULT: 2026-05-12
+- `D59` S_DEFAULT: US Navy
+- `E59` S_DEFAULT: Official policy
+- `F59` S_DEFAULT: Department of the Navy
+- `G59` S_DEFAULT: Distributed shipbuilding: 10% → 50% (5x target)
+- `H59` S_DEFAULT: Currently only 10% of shipbuilding occurs at distributed sites. The Navy aims to increase this to 50% to enhance flexibility, reduce legacy shipyard dependency, and accelerate delivery timelines.
+- `I59` S_DEFAULT: Navy Times reporting on US Navy FY27 Shipbuilding Plan / "Golden Fleet" announcement (May 12, 2026)
+- `B60` S_DEFAULT: EXEC-19
+- `C60` S_DEFAULT: 2026-05-12
+- `D60` S_DEFAULT: US Navy FY27 Plan
+- `E60` S_DEFAULT: Official policy
+- `F60` S_DEFAULT: Department of the Navy
+- `G60` S_DEFAULT: Overseas/allied shipbuilding
+- `H60` S_DEFAULT: While American shipbuilding remains the priority, the Navy will evaluate overseas options and whether allied and partner shipbuilding can supplement domestic production if U.S. industry cannot meet required timelines.
+- `I60` S_DEFAULT: US Navy FY27 Shipbuilding Plan (Navy Times May 12 2026)
+- `B61` S_DEFAULT: EXEC-20
+- `C61` S_DEFAULT: 2026-05-13
+- `D61` S_DEFAULT: US Navy ""Golden Fleet"" Plan
+- `E61` S_DEFAULT: Official policy
+- `F61` S_DEFAULT: Department of the Navy
+- `G61` S_DEFAULT: Sub IB investment plus distributed manufacturing
+- `H61` S_DEFAULT: To invest more than $6.2 billion specifically to expand and stabilize the submarine industrial base through workforce development, supplier expansion, distributed shipbuilding, advanced manufacturing technologies, and productivity modernization programs.
+- `I61` S_DEFAULT: Army Recognition / Defense Post coverage of Navy 30-year plan (May 12-13, 2026)
+- `B62` S_DEFAULT: EXEC-21
+- `C62` S_DEFAULT: 2026-05-06
+- `D62` S_DEFAULT: AML3D / BlueForge
+- `E62` S_DEFAULT: Press release
+- `F62` S_DEFAULT: AML3D
+- `G62` S_DEFAULT: BlueForge concrete supplier example
+- `H62` S_DEFAULT: AML3D received a ~AU$2.61 million order from BlueForge Alliance for five replacement components for US Navy submarines, utilising ARCEMY 3D metal printing.
+- `I62` S_DEFAULT: Small Caps reporting on AML3D contract (May 6, 2026)
+- `A65` S_DEFAULT: x
+- `B65` S_TITLE_SECTION: §3 - Citation completeness
+- `C65` S_TITLE_SECTION: 
+- `D65` S_TITLE_SECTION: 
+- `E65` S_TITLE_SECTION: 
+- `F65` S_TITLE_SECTION: 
+- `G65` S_TITLE_SECTION: 
+- `H65` S_TITLE_SECTION: 
+- `I65` S_TITLE_SECTION: 
+- `J65` S_TITLE_SECTION: 
+- `B67` S_HEADER_LEFT: Citation family
+- `C67` S_HEADER_CENTER: Count
+- `D67` S_HEADER_CENTER: Missing URL count
+- `E67` S_HEADER_LEFT: Notes
+- `B68` S_DEFAULT: Primary-source claims
+- `C68` S_DEFAULT: 30
+- `D68` S_DEFAULT: 0
+- `E68` S_DEFAULT: industry-baseline anchors
+- `B69` S_DEFAULT: Executive commentary
+- `C69` S_DEFAULT: 21
+- `D69` S_DEFAULT: 0
+- `E69` S_DEFAULT: strategy signal, not sizing
+- `B70` S_DEFAULT: Budget exhibits
+- `C70` S_DEFAULT: 3
+- `D70` S_DEFAULT: 0
+- `E70` S_DEFAULT: see Source Index
+- `B71` S_DEFAULT: Methodology documents
+- `C71` S_DEFAULT: 4
+- `D71` S_DEFAULT: 0
+- `E71` S_DEFAULT: see Source Index

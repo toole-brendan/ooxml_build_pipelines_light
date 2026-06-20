@@ -1,0 +1,793 @@
+# sheet_probe: Budget_Base
+
+- source: `file`
+- tab name: `Budget_Base`
+- tab color: `FF7B1F3A`
+- gridlines shown: `0`
+- columns: 15 · rows: 88 · cells: 718 · formulas: 77
+
+## Banners
+- `B2` S_TITLE_SHEET — Budget_Base
+- `B4` S_TITLE_SECTION — At a glance - budget base & AP/LLTM bridge
+- `B9` S_TITLE_SECTION — SCN Annual - P-5c per-FY cost-category breakdown ($M)
+- `B11` S_TITLE_SUBSECTION — Virginia (LI 2013) - SCN P-5c per FY ($M)
+- `B16` S_TITLE_SUBSECTION — Government-furnished equipment (GFE) components
+- `B27` S_TITLE_SUBSECTION — Derived ratios
+- `B31` S_TITLE_SUBSECTION — Columbia (LI 1045) - SCN P-5c per FY ($M)
+- `B36` S_TITLE_SUBSECTION — Government-furnished equipment (GFE) components
+- `B47` S_TITLE_SUBSECTION — Derived ratios
+- `B52` S_TITLE_SECTION — LLTM AP - P-10 advance-procurement buckets + AP->TAM bridge ($M)
+- `B54` S_TITLE_SUBSECTION — Virginia (LI 2013) - P-10 advance procurement buckets ($M, FY20-FY31)
+- `B69` S_TITLE_SUBSECTION — Columbia (LI 1045) - P-10 advance procurement buckets ($M, FY20-FY31)
+- `B84` S_TITLE_SUBSECTION — Phase-3 reconciliation: P-10 bucket -> TAM treatment (AP/LLTM base = 0, no double-count)
+- `B100` S_TITLE_SUBSECTION — P-10 -> TAM reconciliation bridge ($M, FY22-27): gross AP nets to $0 additive
+
+## Formula dependencies (referenced sheet → cells)
+- **Budget_Base** (2): C6, C7
+- **Inputs** (1): C102
+
+## Hardcoded inputs (360)
+- `C13` S_NUM_INPUT = 6915.757
+- `D13` S_NUM_INPUT = 7250.579
+- `E13` S_NUM_INPUT = 11377.643
+- `F13` S_NUM_INPUT = 9500.534
+- `G13` S_NUM_INPUT = 5389.109
+- `H13` S_NUM_INPUT = 11437.036
+- `C14` S_NUM_INPUT = 252.399
+- `D14` S_NUM_INPUT = 192.169
+- `E14` S_NUM_INPUT = 207.166
+- `F14` S_NUM_INPUT = 2595.816
+- `G14` S_NUM_INPUT = 219.603
+- `H14` S_NUM_INPUT = 223.443
+- `C17` S_NUM_INPUT = 1046.83
+- `D17` S_NUM_INPUT = 1083.115
+- `E17` S_NUM_INPUT = 1121.47
+- `F17` S_NUM_INPUT = 1004.95
+- `G17` S_NUM_INPUT = 1035.07
+- `H17` S_NUM_INPUT = 1273.09
+- `C18` S_NUM_INPUT = 540.536
+- `D18` S_NUM_INPUT = 551.346
+- `E18` S_NUM_INPUT = 562.372
+- `F18` S_NUM_INPUT = 313.264
+- `G18` S_NUM_INPUT = 598.515
+- `H18` S_NUM_INPUT = 624.898
+- `C19` S_NUM_INPUT = 139.293
+- `D19` S_NUM_INPUT = 141.566
+- `E19` S_NUM_INPUT = 144.189
+- `F19` S_NUM_INPUT = 98.937
+- `G19` S_NUM_INPUT = 150.015
+- `H19` S_NUM_INPUT = 153.016
+- `C20` S_NUM_INPUT = None
+- `D20` S_NUM_INPUT = None
+- `E20` S_NUM_INPUT = None
+- `F20` S_NUM_INPUT = None
+- `G20` S_NUM_INPUT = None
+- `H20` S_NUM_INPUT = None
+- `C21` S_NUM_INPUT = 67.806
+- `D21` S_NUM_INPUT = 69.162
+- `E21` S_NUM_INPUT = 70.546
+- `F21` S_NUM_INPUT = 35.978
+
+## Cross-sheet links (2)
+- `C6` S_LINK_NUM = 'Budget_Base'!C102
+- `C7` S_LINK_NUM = 'Budget_Base'!C106
+
+## Cells
+- `B2` S_TITLE_SHEET: Budget_Base
+- `C2` S_TITLE_SHEET: 
+- `D2` S_TITLE_SHEET: 
+- `E2` S_TITLE_SHEET: 
+- `F2` S_TITLE_SHEET: 
+- `G2` S_TITLE_SHEET: 
+- `H2` S_TITLE_SHEET: 
+- `I2` S_TITLE_SHEET: 
+- `J2` S_TITLE_SHEET: 
+- `K2` S_TITLE_SHEET: 
+- `L2` S_TITLE_SHEET: 
+- `M2` S_TITLE_SHEET: 
+- `N2` S_TITLE_SHEET: 
+- `O2` S_TITLE_SHEET: 
+- `B4` S_TITLE_SECTION: At a glance - budget base & AP/LLTM bridge
+- `C4` S_TITLE_SECTION: 
+- `D4` S_TITLE_SECTION: 
+- `E4` S_TITLE_SECTION: 
+- `F4` S_TITLE_SECTION: 
+- `G4` S_TITLE_SECTION: 
+- `H4` S_TITLE_SECTION: 
+- `I4` S_TITLE_SECTION: 
+- `J4` S_TITLE_SECTION: 
+- `K4` S_TITLE_SECTION: 
+- `L4` S_TITLE_SECTION: 
+- `M4` S_TITLE_SECTION: 
+- `N4` S_TITLE_SECTION: 
+- `O4` S_TITLE_SECTION: 
+- `B5` S_HEADER_LEFT: Measure
+- `C5` S_HEADER_LEFT: $M
+- `D5` S_HEADER_LEFT: Note
+- `B6` S_DEFAULT: P-10 gross Advance Procurement (FY22-27)
+- `C6` S_LINK_NUM: ='Budget_Base'!C102
+- `D6` S_DEFAULT: authoritative top-line; overlaps BC -> non-additive (detail below)
+- `B7` S_BOLD: AP/LLTM additive base (confirmed)
+- `C7` S_LINK_NUM: ='Budget_Base'!C106
+- `D7` S_DEFAULT: supplier LLTM already inside Basic Construction -> $0 (no double-count)
+- `A9` S_DEFAULT: x
+- `B9` S_TITLE_SECTION: SCN Annual - P-5c per-FY cost-category breakdown ($M)
+- `C9` S_TITLE_SECTION: 
+- `D9` S_TITLE_SECTION: 
+- `E9` S_TITLE_SECTION: 
+- `F9` S_TITLE_SECTION: 
+- `G9` S_TITLE_SECTION: 
+- `H9` S_TITLE_SECTION: 
+- `A11` S_DEFAULT: x
+- `B11` S_TITLE_SUBSECTION: Virginia (LI 2013) - SCN P-5c per FY ($M)
+- `C11` S_TITLE_SUBSECTION: 
+- `D11` S_TITLE_SUBSECTION: 
+- `E11` S_TITLE_SUBSECTION: 
+- `F11` S_TITLE_SUBSECTION: 
+- `G11` S_TITLE_SUBSECTION: 
+- `H11` S_TITLE_SUBSECTION: 
+- `B12` S_HEADER_LEFT: Metric
+- `C12` S_HEADER_LEFT: 2022
+- `D12` S_HEADER_LEFT: 2023
+- `E12` S_HEADER_LEFT: 2024
+- `F12` S_HEADER_LEFT: 2025
+- `G12` S_HEADER_LEFT: 2026
+- `H12` S_HEADER_LEFT: 2027
+- `B13` S_BOLD: Total Ship Estimate
+- `C13` S_NUM_INPUT: 6915.757
+- `D13` S_NUM_INPUT: 7250.579
+- `E13` S_NUM_INPUT: 11377.643
+- `F13` S_NUM_INPUT: 9500.534
+- `G13` S_NUM_INPUT: 5389.109
+- `H13` S_NUM_INPUT: 11437.036
+- `B14` S_BOLD: Plans Costs
+- `C14` S_NUM_INPUT: 252.399
+- `D14` S_NUM_INPUT: 192.169
+- `E14` S_NUM_INPUT: 207.166
+- `F14` S_NUM_INPUT: 2595.816
+- `G14` S_NUM_INPUT: 219.603
+- `H14` S_NUM_INPUT: 223.443
+- `A16` S_DEFAULT: x
+- `B16` S_TITLE_SUBSECTION: Government-furnished equipment (GFE) components
+- `C16` S_TITLE_SUBSECTION: 
+- `D16` S_TITLE_SUBSECTION: 
+- `E16` S_TITLE_SUBSECTION: 
+- `F16` S_TITLE_SUBSECTION: 
+- `G16` S_TITLE_SUBSECTION: 
+- `H16` S_TITLE_SUBSECTION: 
+- `B17` S_BOLD: Propulsion Equipment
+- `C17` S_NUM_INPUT: 1046.83
+- `D17` S_NUM_INPUT: 1083.115
+- `E17` S_NUM_INPUT: 1121.47
+- `F17` S_NUM_INPUT: 1004.95
+- `G17` S_NUM_INPUT: 1035.07
+- `H17` S_NUM_INPUT: 1273.09
+- `B18` S_BOLD: Electronics
+- `C18` S_NUM_INPUT: 540.536
+- `D18` S_NUM_INPUT: 551.346
+- `E18` S_NUM_INPUT: 562.372
+- `F18` S_NUM_INPUT: 313.264
+- `G18` S_NUM_INPUT: 598.515
+- `H18` S_NUM_INPUT: 624.898
+- `B19` S_BOLD: Hull, Mechanical, Electrical (HM&E)
+- `C19` S_NUM_INPUT: 139.293
+- `D19` S_NUM_INPUT: 141.566
+- `E19` S_NUM_INPUT: 144.189
+- `F19` S_NUM_INPUT: 98.937
+- `G19` S_NUM_INPUT: 150.015
+- `H19` S_NUM_INPUT: 153.016
+- `B20` S_BOLD: Ordnance
+- `C20` S_NUM_INPUT: 
+- `D20` S_NUM_INPUT: 
+- `E20` S_NUM_INPUT: 
+- `F20` S_NUM_INPUT: 
+- `G20` S_NUM_INPUT: 
+- `H20` S_NUM_INPUT: 
+- `B21` S_BOLD: Other Cost
+- `C21` S_NUM_INPUT: 67.806
+- `D21` S_NUM_INPUT: 69.162
+- `E21` S_NUM_INPUT: 70.546
+- `F21` S_NUM_INPUT: 35.978
+- `G21` S_NUM_INPUT: 73.395
+- `H21` S_NUM_INPUT: 74.863
+- `B22` S_BOLD: GFE Sum (from CSV; preserved per audit chain)
+- `C22` S_NUM_INPUT: 1587.366
+- `D22` S_NUM_INPUT: 1634.461
+- `E22` S_NUM_INPUT: 1683.842
+- `F22` S_NUM_INPUT: 1318.214
+- `G22` S_NUM_INPUT: 1633.585
+- `H22` S_NUM_INPUT: 1897.988
+- `B24` S_BOLD: Change Orders
+- `C24` S_NUM_INPUT: 95.212
+- `D24` S_NUM_INPUT: 102.067
+- `E24` S_NUM_INPUT: 185.118
+- `F24` S_NUM_INPUT: 108.705
+- `G24` S_NUM_INPUT: 159.052
+- `H24` S_NUM_INPUT: 181.415
+- `B25` S_BOLD: Basic Construction
+- `C25` S_NUM_INPUT: 4758.283
+- `D25` S_NUM_INPUT: 5095.448
+- `E25` S_NUM_INPUT: 9070.762
+- `F25` S_NUM_INPUT: 5326.544
+- `G25` S_NUM_INPUT: 3136.792
+- `H25` S_NUM_INPUT: 8889.31
+- `A27` S_DEFAULT: x
+- `B27` S_TITLE_SUBSECTION: Derived ratios
+- `C27` S_TITLE_SUBSECTION: 
+- `D27` S_TITLE_SUBSECTION: 
+- `E27` S_TITLE_SUBSECTION: 
+- `F27` S_TITLE_SUBSECTION: 
+- `G27` S_TITLE_SUBSECTION: 
+- `H27` S_TITLE_SUBSECTION: 
+- `B28` S_BOLD: BC % of Total
+- `C28` S_PCT: =IF(C13=0,"",C25/C13)
+- `D28` S_PCT: =IF(D13=0,"",D25/D13)
+- `E28` S_PCT: =IF(E13=0,"",E25/E13)
+- `F28` S_PCT: =IF(F13=0,"",F25/F13)
+- `G28` S_PCT: =IF(G13=0,"",G25/G13)
+- `H28` S_PCT: =IF(H13=0,"",H25/H13)
+- `B29` S_BOLD: GFE % of Total
+- `C29` S_PCT: =IF(C13=0,"",C22/C13)
+- `D29` S_PCT: =IF(D13=0,"",D22/D13)
+- `E29` S_PCT: =IF(E13=0,"",E22/E13)
+- `F29` S_PCT: =IF(F13=0,"",F22/F13)
+- `G29` S_PCT: =IF(G13=0,"",G22/G13)
+- `H29` S_PCT: =IF(H13=0,"",H22/H13)
+- `A31` S_DEFAULT: x
+- `B31` S_TITLE_SUBSECTION: Columbia (LI 1045) - SCN P-5c per FY ($M)
+- `C31` S_TITLE_SUBSECTION: 
+- `D31` S_TITLE_SUBSECTION: 
+- `E31` S_TITLE_SUBSECTION: 
+- `F31` S_TITLE_SUBSECTION: 
+- `G31` S_TITLE_SUBSECTION: 
+- `H31` S_TITLE_SUBSECTION: 
+- `B32` S_HEADER_LEFT: Metric
+- `C32` S_HEADER_LEFT: 2022
+- `D32` S_HEADER_LEFT: 2023
+- `E32` S_HEADER_LEFT: 2024
+- `F32` S_HEADER_LEFT: 2025
+- `G32` S_HEADER_LEFT: 2026
+- `H32` S_HEADER_LEFT: 2027
+- `B33` S_BOLD: Total Ship Estimate
+- `C33` S_NUM_INPUT: 
+- `D33` S_NUM_INPUT: 
+- `E33` S_NUM_INPUT: 10688.811
+- `F33` S_NUM_INPUT: 
+- `G33` S_NUM_INPUT: 10744.317
+- `H33` S_NUM_INPUT: 10486.369
+- `B34` S_BOLD: Plans Costs
+- `C34` S_NUM_INPUT: 
+- `D34` S_NUM_INPUT: 
+- `E34` S_NUM_INPUT: 1443.3
+- `F34` S_NUM_INPUT: 
+- `G34` S_NUM_INPUT: 1095.773
+- `H34` S_NUM_INPUT: 861.527
+- `A36` S_DEFAULT: x
+- `B36` S_TITLE_SUBSECTION: Government-furnished equipment (GFE) components
+- `C36` S_TITLE_SUBSECTION: 
+- `D36` S_TITLE_SUBSECTION: 
+- `E36` S_TITLE_SUBSECTION: 
+- `F36` S_TITLE_SUBSECTION: 
+- `G36` S_TITLE_SUBSECTION: 
+- `H36` S_TITLE_SUBSECTION: 
+- `B37` S_BOLD: Propulsion Equipment
+- `C37` S_NUM_INPUT: 
+- `D37` S_NUM_INPUT: 
+- `E37` S_NUM_INPUT: 1613.999
+- `F37` S_NUM_INPUT: 
+- `G37` S_NUM_INPUT: 1294.878
+- `H37` S_NUM_INPUT: 1541.973
+- `B38` S_BOLD: Electronics
+- `C38` S_NUM_INPUT: 
+- `D38` S_NUM_INPUT: 
+- `E38` S_NUM_INPUT: 349.701
+- `F38` S_NUM_INPUT: 
+- `G38` S_NUM_INPUT: 361.283
+- `H38` S_NUM_INPUT: 367.634
+- `B39` S_BOLD: Hull, Mechanical, Electrical (HM&E)
+- `C39` S_NUM_INPUT: 
+- `D39` S_NUM_INPUT: 
+- `E39` S_NUM_INPUT: 119.107
+- `F39` S_NUM_INPUT: 
+- `G39` S_NUM_INPUT: 102.496
+- `H39` S_NUM_INPUT: 101.71
+- `B40` S_BOLD: Ordnance
+- `C40` S_NUM_INPUT: 
+- `D40` S_NUM_INPUT: 
+- `E40` S_NUM_INPUT: 596.757
+- `F40` S_NUM_INPUT: 
+- `G40` S_NUM_INPUT: 468.84
+- `H40` S_NUM_INPUT: 512.585
+- `B41` S_BOLD: Other Cost
+- `C41` S_NUM_INPUT: 
+- `D41` S_NUM_INPUT: 
+- `E41` S_NUM_INPUT: 66.618
+- `F41` S_NUM_INPUT: 
+- `G41` S_NUM_INPUT: 43.887
+- `H41` S_NUM_INPUT: 40.078
+- `B42` S_BOLD: GFE Sum (from CSV; preserved per audit chain)
+- `C42` S_NUM_INPUT: 
+- `D42` S_NUM_INPUT: 
+- `E42` S_NUM_INPUT: 2560.457
+- `F42` S_NUM_INPUT: 
+- `G42` S_NUM_INPUT: 2125.001
+- `H42` S_NUM_INPUT: 2422.192
+- `B44` S_BOLD: Change Orders
+- `C44` S_NUM_INPUT: 
+- `D44` S_NUM_INPUT: 
+- `E44` S_NUM_INPUT: 143.242
+- `F44` S_NUM_INPUT: 
+- `G44` S_NUM_INPUT: 217.392
+- `H44` S_NUM_INPUT: 207.129
+- `B45` S_BOLD: Basic Construction
+- `C45` S_NUM_INPUT: 
+- `D45` S_NUM_INPUT: 
+- `E45` S_NUM_INPUT: 6356.087
+- `F45` S_NUM_INPUT: 
+- `G45` S_NUM_INPUT: 7159.768
+- `H45` S_NUM_INPUT: 6853.733
+- `A47` S_DEFAULT: x
+- `B47` S_TITLE_SUBSECTION: Derived ratios
+- `C47` S_TITLE_SUBSECTION: 
+- `D47` S_TITLE_SUBSECTION: 
+- `E47` S_TITLE_SUBSECTION: 
+- `F47` S_TITLE_SUBSECTION: 
+- `G47` S_TITLE_SUBSECTION: 
+- `H47` S_TITLE_SUBSECTION: 
+- `B48` S_BOLD: BC % of Total
+- `C48` S_PCT: =IF(C33=0,"",C45/C33)
+- `D48` S_PCT: =IF(D33=0,"",D45/D33)
+- `E48` S_PCT: =IF(E33=0,"",E45/E33)
+- `F48` S_PCT: =IF(F33=0,"",F45/F33)
+- `G48` S_PCT: =IF(G33=0,"",G45/G33)
+- `H48` S_PCT: =IF(H33=0,"",H45/H33)
+- `B49` S_BOLD: GFE % of Total
+- `C49` S_PCT: =IF(C33=0,"",C42/C33)
+- `D49` S_PCT: =IF(D33=0,"",D42/D33)
+- `E49` S_PCT: =IF(E33=0,"",E42/E33)
+- `F49` S_PCT: =IF(F33=0,"",F42/F33)
+- `G49` S_PCT: =IF(G33=0,"",G42/G33)
+- `H49` S_PCT: =IF(H33=0,"",H42/H33)
+- `A52` S_DEFAULT: x
+- `B52` S_TITLE_SECTION: LLTM AP - P-10 advance-procurement buckets + AP->TAM bridge ($M)
+- `C52` S_TITLE_SECTION: 
+- `D52` S_TITLE_SECTION: 
+- `E52` S_TITLE_SECTION: 
+- `F52` S_TITLE_SECTION: 
+- `G52` S_TITLE_SECTION: 
+- `H52` S_TITLE_SECTION: 
+- `I52` S_TITLE_SECTION: 
+- `J52` S_TITLE_SECTION: 
+- `K52` S_TITLE_SECTION: 
+- `L52` S_TITLE_SECTION: 
+- `M52` S_TITLE_SECTION: 
+- `N52` S_TITLE_SECTION: 
+- `O52` S_TITLE_SECTION: 
+- `A54` S_DEFAULT: x
+- `B54` S_TITLE_SUBSECTION: Virginia (LI 2013) - P-10 advance procurement buckets ($M, FY20-FY31)
+- `C54` S_TITLE_SUBSECTION: 
+- `D54` S_TITLE_SUBSECTION: 
+- `E54` S_TITLE_SUBSECTION: 
+- `F54` S_TITLE_SUBSECTION: 
+- `G54` S_TITLE_SUBSECTION: 
+- `H54` S_TITLE_SUBSECTION: 
+- `I54` S_TITLE_SUBSECTION: 
+- `J54` S_TITLE_SUBSECTION: 
+- `K54` S_TITLE_SUBSECTION: 
+- `L54` S_TITLE_SUBSECTION: 
+- `M54` S_TITLE_SUBSECTION: 
+- `N54` S_TITLE_SUBSECTION: 
+- `O54` S_TITLE_SUBSECTION: 
+- `B55` S_HEADER_LEFT: Bucket
+- `C55` S_HEADER_LEFT: 2020
+- `D55` S_HEADER_LEFT: 2021
+- `E55` S_HEADER_LEFT: 2022
+- `F55` S_HEADER_LEFT: 2023
+- `G55` S_HEADER_LEFT: 2024
+- `H55` S_HEADER_LEFT: 2025
+- `I55` S_HEADER_LEFT: 2026
+- `J55` S_HEADER_LEFT: 2027
+- `K55` S_HEADER_LEFT: 2028
+- `L55` S_HEADER_LEFT: 2029
+- `M55` S_HEADER_LEFT: 2030
+- `N55` S_HEADER_LEFT: 2031
+- `O55` S_HEADER_LEFT: Total
+- `B56` S_DEFAULT: Plans / SIB
+- `C56` S_NUM_INPUT: 
+- `D56` S_NUM_INPUT: 
+- `E56` S_NUM_INPUT: 
+- `F56` S_NUM_INPUT: 
+- `G56` S_NUM_INPUT: 200.0
+- `H56` S_NUM_INPUT: 
+- `I56` S_NUM_INPUT: 130.0
+- `J56` S_NUM_INPUT: 1768.17
+- `K56` S_NUM_INPUT: 1943.72
+- `L56` S_NUM_INPUT: 1602.69
+- `M56` S_NUM_INPUT: 285.0
+- `N56` S_NUM_INPUT: 214.0
+- `O56` S_NUM: =SUM(C56:N56)
+- `B57` S_DEFAULT: EOQ
+- `C57` S_NUM_INPUT: 881.964
+- `D57` S_NUM_INPUT: 427.42
+- `E57` S_NUM_INPUT: 
+- `F57` S_NUM_INPUT: 
+- `G57` S_NUM_INPUT: 1360.037
+- `H57` S_NUM_INPUT: 1298.349
+- `I57` S_NUM_INPUT: 707.862
+- `J57` S_NUM_INPUT: 
+- `K57` S_NUM_INPUT: 
+- `L57` S_NUM_INPUT: 1501.595
+- `M57` S_NUM_INPUT: 1433.476
+- `N57` S_NUM_INPUT: 781.536
+- `O57` S_NUM: =SUM(C57:N57)
+- `B58` S_DEFAULT: Nuclear plant LLTM
+- `C58` S_NUM_INPUT: 1246.83
+- `D58` S_NUM_INPUT: 883.115
+- `E58` S_NUM_INPUT: 1121.47
+- `F58` S_NUM_INPUT: 1004.95
+- `G58` S_NUM_INPUT: 1035.07
+- `H58` S_NUM_INPUT: 1273.09
+- `I58` S_NUM_INPUT: 1336.59
+- `J58` S_NUM_INPUT: 1403.49
+- `K58` S_NUM_INPUT: 1473.6
+- `L58` S_NUM_INPUT: 1547.4
+- `M58` S_NUM_INPUT: 1624.8
+- `N58` S_NUM_INPUT: 1706.17
+- `O58` S_NUM: =SUM(C58:N58)
+- `B59` S_DEFAULT: Propulsor LLTM
+- `C59` S_NUM_INPUT: 
+- `D59` S_NUM_INPUT: 
+- `E59` S_NUM_INPUT: 47.214
+- `F59` S_NUM_INPUT: 48.538
+- `G59` S_NUM_INPUT: 49.508
+- `H59` S_NUM_INPUT: 50.498
+- `I59` S_NUM_INPUT: 51.508
+- `J59` S_NUM_INPUT: 52.538
+- `K59` S_NUM_INPUT: 53.589
+- `L59` S_NUM_INPUT: 54.662
+- `M59` S_NUM_INPUT: 55.755
+- `N59` S_NUM_INPUT: 56.87
+- `O59` S_NUM: =SUM(C59:N59)
+- `B60` S_DEFAULT: Electronics LLTM
+- `C60` S_NUM_INPUT: 29.94
+- `D60` S_NUM_INPUT: 30.54
+- `E60` S_NUM_INPUT: 31.15
+- `F60` S_NUM_INPUT: 31.774
+- `G60` S_NUM_INPUT: 32.408
+- `H60` S_NUM_INPUT: 33.056
+- `I60` S_NUM_INPUT: 33.718
+- `J60` S_NUM_INPUT: 34.392
+- `K60` S_NUM_INPUT: 35.08
+- `L60` S_NUM_INPUT: 35.783
+- `M60` S_NUM_INPUT: 36.497
+- `N60` S_NUM_INPUT: 37.227
+- `O60` S_NUM: =SUM(C60:N60)
+- `B61` S_DEFAULT: HM&E LLTM
+- `C61` S_NUM_INPUT: 
+- `D61` S_NUM_INPUT: 
+- `E61` S_NUM_INPUT: 
+- `F61` S_NUM_INPUT: 
+- `G61` S_NUM_INPUT: 
+- `H61` S_NUM_INPUT: 
+- `I61` S_NUM_INPUT: 
+- `J61` S_NUM_INPUT: 
+- `K61` S_NUM_INPUT: 
+- `L61` S_NUM_INPUT: 
+- `M61` S_NUM_INPUT: 
+- `N61` S_NUM_INPUT: 
+- `O61` S_NUM: =SUM(C61:N61)
+- `B62` S_DEFAULT: Ordnance LLTM
+- `C62` S_NUM_INPUT: 
+- `D62` S_NUM_INPUT: 
+- `E62` S_NUM_INPUT: 
+- `F62` S_NUM_INPUT: 
+- `G62` S_NUM_INPUT: 
+- `H62` S_NUM_INPUT: 
+- `I62` S_NUM_INPUT: 
+- `J62` S_NUM_INPUT: 
+- `K62` S_NUM_INPUT: 
+- `L62` S_NUM_INPUT: 
+- `M62` S_NUM_INPUT: 
+- `N62` S_NUM_INPUT: 
+- `O62` S_NUM: =SUM(C62:N62)
+- `B63` S_DEFAULT: Missile compartment LLTM
+- `C63` S_NUM_INPUT: 
+- `D63` S_NUM_INPUT: 
+- `E63` S_NUM_INPUT: 
+- `F63` S_NUM_INPUT: 
+- `G63` S_NUM_INPUT: 
+- `H63` S_NUM_INPUT: 
+- `I63` S_NUM_INPUT: 
+- `J63` S_NUM_INPUT: 
+- `K63` S_NUM_INPUT: 
+- `L63` S_NUM_INPUT: 
+- `M63` S_NUM_INPUT: 
+- `N63` S_NUM_INPUT: 
+- `O63` S_NUM: =SUM(C63:N63)
+- `B64` S_DEFAULT: Shipbuilder-procured LLTM
+- `C64` S_NUM_INPUT: 
+- `D64` S_NUM_INPUT: 
+- `E64` S_NUM_INPUT: 
+- `F64` S_NUM_INPUT: 
+- `G64` S_NUM_INPUT: 
+- `H64` S_NUM_INPUT: 
+- `I64` S_NUM_INPUT: 
+- `J64` S_NUM_INPUT: 
+- `K64` S_NUM_INPUT: 
+- `L64` S_NUM_INPUT: 
+- `M64` S_NUM_INPUT: 
+- `N64` S_NUM_INPUT: 
+- `O64` S_NUM: =SUM(C64:N64)
+- `B65` S_DEFAULT: Shipbuilder-procured LLTM (CFE)
+- `C65` S_NUM_INPUT: 542.963
+- `D65` S_NUM_INPUT: 542.188
+- `E65` S_NUM_INPUT: 533.556
+- `F65` S_NUM_INPUT: 723.879
+- `G65` S_NUM_INPUT: 681.759
+- `H65` S_NUM_INPUT: 1065.31
+- `I65` S_NUM_INPUT: 867.138
+- `J65` S_NUM_INPUT: 885.028
+- `K65` S_NUM_INPUT: 979.344
+- `L65` S_NUM_INPUT: 959.318
+- `M65` S_NUM_INPUT: 878.146
+- `N65` S_NUM_INPUT: 895.709
+- `O65` S_NUM: =SUM(C65:N65)
+- `B66` S_TOTAL: Class total
+- `C66` S_NUM_TOTAL: =SUM(C56:C65)
+- `D66` S_NUM_TOTAL: =SUM(D56:D65)
+- `E66` S_NUM_TOTAL: =SUM(E56:E65)
+- `F66` S_NUM_TOTAL: =SUM(F56:F65)
+- `G66` S_NUM_TOTAL: =SUM(G56:G65)
+- `H66` S_NUM_TOTAL: =SUM(H56:H65)
+- `I66` S_NUM_TOTAL: =SUM(I56:I65)
+- `J66` S_NUM_TOTAL: =SUM(J56:J65)
+- `K66` S_NUM_TOTAL: =SUM(K56:K65)
+- `L66` S_NUM_TOTAL: =SUM(L56:L65)
+- `M66` S_NUM_TOTAL: =SUM(M56:M65)
+- `N66` S_NUM_TOTAL: =SUM(N56:N65)
+- `O66` S_NUM_TOTAL: =SUM(O56:O65)
+- `A69` S_DEFAULT: x
+- `B69` S_TITLE_SUBSECTION: Columbia (LI 1045) - P-10 advance procurement buckets ($M, FY20-FY31)
+- `C69` S_TITLE_SUBSECTION: 
+- `D69` S_TITLE_SUBSECTION: 
+- `E69` S_TITLE_SUBSECTION: 
+- `F69` S_TITLE_SUBSECTION: 
+- `G69` S_TITLE_SUBSECTION: 
+- `H69` S_TITLE_SUBSECTION: 
+- `I69` S_TITLE_SUBSECTION: 
+- `J69` S_TITLE_SUBSECTION: 
+- `K69` S_TITLE_SUBSECTION: 
+- `L69` S_TITLE_SUBSECTION: 
+- `M69` S_TITLE_SUBSECTION: 
+- `N69` S_TITLE_SUBSECTION: 
+- `O69` S_TITLE_SUBSECTION: 
+- `B70` S_HEADER_LEFT: Bucket
+- `C70` S_HEADER_LEFT: 2020
+- `D70` S_HEADER_LEFT: 2021
+- `E70` S_HEADER_LEFT: 2022
+- `F70` S_HEADER_LEFT: 2023
+- `G70` S_HEADER_LEFT: 2024
+- `H70` S_HEADER_LEFT: 2025
+- `I70` S_HEADER_LEFT: 2026
+- `J70` S_HEADER_LEFT: 2027
+- `K70` S_HEADER_LEFT: 2028
+- `L70` S_HEADER_LEFT: 2029
+- `M70` S_HEADER_LEFT: 2030
+- `N70` S_HEADER_LEFT: 2031
+- `O70` S_HEADER_LEFT: Total
+- `B71` S_DEFAULT: Plans / SIB
+- `C71` S_NUM_INPUT: 872.662
+- `D71` S_NUM_INPUT: 85.0
+- `E71` S_NUM_INPUT: 110.0
+- `F71` S_NUM_INPUT: 541.0
+- `G71` S_NUM_INPUT: 2355.0
+- `H71` S_NUM_INPUT: 2077.189
+- `I71` S_NUM_INPUT: 1692.249
+- `J71` S_NUM_INPUT: 809.679
+- `K71` S_NUM_INPUT: 1018.316
+- `L71` S_NUM_INPUT: 709.136
+- `M71` S_NUM_INPUT: 624.179
+- `N71` S_NUM_INPUT: 631.272
+- `O71` S_NUM: =SUM(C71:N71)
+- `B72` S_DEFAULT: EOQ
+- `C72` S_NUM_INPUT: 77.793
+- `D72` S_NUM_INPUT: 79.705
+- `E72` S_NUM_INPUT: 176.23
+- `F72` S_NUM_INPUT: 141.512
+- `G72` S_NUM_INPUT: 778.925
+- `H72` S_NUM_INPUT: 494.301
+- `I72` S_NUM_INPUT: 382.154
+- `J72` S_NUM_INPUT: 178.331
+- `K72` S_NUM_INPUT: 191.647
+- `L72` S_NUM_INPUT: 18.57
+- `M72` S_NUM_INPUT: 1017.969
+- `N72` S_NUM_INPUT: 695.466
+- `O72` S_NUM: =SUM(C72:N72)
+- `B73` S_DEFAULT: Nuclear plant LLTM
+- `C73` S_NUM_INPUT: 
+- `D73` S_NUM_INPUT: 816.737
+- `E73` S_NUM_INPUT: 797.262
+- `F73` S_NUM_INPUT: 772.686
+- `G73` S_NUM_INPUT: 1272.405
+- `H73` S_NUM_INPUT: 1526.697
+- `I73` S_NUM_INPUT: 1440.528
+- `J73` S_NUM_INPUT: 1490.144
+- `K73` S_NUM_INPUT: 1544.116
+- `L73` S_NUM_INPUT: 1602.529
+- `M73` S_NUM_INPUT: 1665.462
+- `N73` S_NUM_INPUT: 1777.679
+- `O73` S_NUM: =SUM(C73:N73)
+- `B74` S_DEFAULT: Propulsor LLTM
+- `C74` S_NUM_INPUT: 
+- `D74` S_NUM_INPUT: 
+- `E74` S_NUM_INPUT: 
+- `F74` S_NUM_INPUT: 
+- `G74` S_NUM_INPUT: 
+- `H74` S_NUM_INPUT: 
+- `I74` S_NUM_INPUT: 
+- `J74` S_NUM_INPUT: 
+- `K74` S_NUM_INPUT: 
+- `L74` S_NUM_INPUT: 
+- `M74` S_NUM_INPUT: 
+- `N74` S_NUM_INPUT: 
+- `O74` S_NUM: =SUM(C74:N74)
+- `B75` S_DEFAULT: Electronics LLTM
+- `C75` S_NUM_INPUT: 36.39
+- `D75` S_NUM_INPUT: 
+- `E75` S_NUM_INPUT: 8.097
+- `F75` S_NUM_INPUT: 26.587
+- `G75` S_NUM_INPUT: 8.43
+- `H75` S_NUM_INPUT: 129.354
+- `I75` S_NUM_INPUT: 110.601
+- `J75` S_NUM_INPUT: 81.76
+- `K75` S_NUM_INPUT: 83.395
+- `L75` S_NUM_INPUT: 85.063
+- `M75` S_NUM_INPUT: 86.765
+- `N75` S_NUM_INPUT: 88.499
+- `O75` S_NUM: =SUM(C75:N75)
+- `B76` S_DEFAULT: HM&E LLTM
+- `C76` S_NUM_INPUT: 41.948
+- `D76` S_NUM_INPUT: 3.1
+- `E76` S_NUM_INPUT: 42.857
+- `F76` S_NUM_INPUT: 86.285
+- `G76` S_NUM_INPUT: 66.824
+- `H76` S_NUM_INPUT: 75.475
+- `I76` S_NUM_INPUT: 86.202
+- `J76` S_NUM_INPUT: 74.393
+- `K76` S_NUM_INPUT: 119.156
+- `L76` S_NUM_INPUT: 78.284
+- `M76` S_NUM_INPUT: 79.138
+- `N76` S_NUM_INPUT: 80.929
+- `O76` S_NUM: =SUM(C76:N76)
+- `B77` S_DEFAULT: Ordnance LLTM
+- `C77` S_NUM_INPUT: 93.73
+- `D77` S_NUM_INPUT: 6.324
+- `E77` S_NUM_INPUT: 123.597
+- `F77` S_NUM_INPUT: 208.688
+- `G77` S_NUM_INPUT: 168.772
+- `H77` S_NUM_INPUT: 217.702
+- `I77` S_NUM_INPUT: 232.551
+- `J77` S_NUM_INPUT: 255.312
+- `K77` S_NUM_INPUT: 277.555
+- `L77` S_NUM_INPUT: 222.425
+- `M77` S_NUM_INPUT: 279.101
+- `N77` S_NUM_INPUT: 172.641
+- `O77` S_NUM: =SUM(C77:N77)
+- `B78` S_DEFAULT: Missile compartment LLTM
+- `C78` S_NUM_INPUT: 83.747
+- `D78` S_NUM_INPUT: 86.288
+- `E78` S_NUM_INPUT: 177.391
+- `F78` S_NUM_INPUT: 221.311
+- `G78` S_NUM_INPUT: 174.136
+- `H78` S_NUM_INPUT: 216.261
+- `I78` S_NUM_INPUT: 261.29
+- `J78` S_NUM_INPUT: 297.347
+- `K78` S_NUM_INPUT: 301.02
+- `L78` S_NUM_INPUT: 309.689
+- `M78` S_NUM_INPUT: 320.267
+- `N78` S_NUM_INPUT: 271.046
+- `O78` S_NUM: =SUM(C78:N78)
+- `B79` S_DEFAULT: Shipbuilder-procured LLTM
+- `C79` S_NUM_INPUT: 614.657
+- `D79` S_NUM_INPUT: 176.021
+- `E79` S_NUM_INPUT: 338.546
+- `F79` S_NUM_INPUT: 780.484
+- `G79` S_NUM_INPUT: 521.242
+- `H79` S_NUM_INPUT: 1478.96
+- `I79` S_NUM_INPUT: 1145.191
+- `J79` S_NUM_INPUT: 1576.376
+- `K79` S_NUM_INPUT: 1828.24
+- `L79` S_NUM_INPUT: 1890.927
+- `M79` S_NUM_INPUT: 2005.869
+- `N79` S_NUM_INPUT: 1999.211
+- `O79` S_NUM: =SUM(C79:N79)
+- `B80` S_DEFAULT: Shipbuilder-procured LLTM (CFE)
+- `C80` S_NUM_INPUT: 
+- `D80` S_NUM_INPUT: 
+- `E80` S_NUM_INPUT: 
+- `F80` S_NUM_INPUT: 
+- `G80` S_NUM_INPUT: 
+- `H80` S_NUM_INPUT: 
+- `I80` S_NUM_INPUT: 
+- `J80` S_NUM_INPUT: 
+- `K80` S_NUM_INPUT: 
+- `L80` S_NUM_INPUT: 
+- `M80` S_NUM_INPUT: 
+- `N80` S_NUM_INPUT: 
+- `O80` S_NUM: =SUM(C80:N80)
+- `B81` S_TOTAL: Class total
+- `C81` S_NUM_TOTAL: =SUM(C71:C80)
+- `D81` S_NUM_TOTAL: =SUM(D71:D80)
+- `E81` S_NUM_TOTAL: =SUM(E71:E80)
+- `F81` S_NUM_TOTAL: =SUM(F71:F80)
+- `G81` S_NUM_TOTAL: =SUM(G71:G80)
+- `H81` S_NUM_TOTAL: =SUM(H71:H80)
+- `I81` S_NUM_TOTAL: =SUM(I71:I80)
+- `J81` S_NUM_TOTAL: =SUM(J71:J80)
+- `K81` S_NUM_TOTAL: =SUM(K71:K80)
+- `L81` S_NUM_TOTAL: =SUM(L71:L80)
+- `M81` S_NUM_TOTAL: =SUM(M71:M80)
+- `N81` S_NUM_TOTAL: =SUM(N71:N80)
+- `O81` S_NUM_TOTAL: =SUM(O71:O80)
+- `A84` S_DEFAULT: x
+- `B84` S_TITLE_SUBSECTION: Phase-3 reconciliation: P-10 bucket -> TAM treatment (AP/LLTM base = 0, no double-count)
+- `C84` S_TITLE_SUBSECTION: 
+- `D84` S_TITLE_SUBSECTION: 
+- `E84` S_TITLE_SUBSECTION: 
+- `B85` S_HEADER_LEFT: P-10 bucket
+- `C85` S_HEADER_LEFT: TAM treatment
+- `D85` S_HEADER_LEFT: Basis
+- `E85` S_HEADER_LEFT: 
+- `B86` S_DEFAULT: Nuclear plant LLTM
+- `C86` S_BOLD: EXCLUDE (GFE)
+- `D86` S_DEFAULT: Bechtel BPMI naval reactor - a GFE line, not BC; also out of the BC POP corpus (Phase-3 fix)
+- `B87` S_DEFAULT: Electronics LLTM
+- `C87` S_BOLD: EXCLUDE (GFE)
+- `D87` S_DEFAULT: combat-system / sensor electronics - Navy-furnished
+- `B88` S_DEFAULT: Ordnance LLTM
+- `C88` S_BOLD: EXCLUDE (weapons)
+- `D88` S_DEFAULT: WPN/OPN-adjacent ordnance, not SCN ship construction
+- `B89` S_DEFAULT: Missile compartment LLTM
+- `C89` S_BOLD: EXCLUDE (GFE/IB)
+- `D89` S_DEFAULT: CMC / missile tubes - GFE / industrial-base, not addressable hull work
+- `B90` S_DEFAULT: Plans / SIB
+- `C90` S_BOLD: EXCLUDE (design)
+- `D90` S_DEFAULT: engineering / lead-yard design - the Plan Costs line, not Basic Construction
+- `B91` S_DEFAULT: Shipbuilder-procured LLTM (+CFE)
+- `C91` S_BOLD: IN BC ALREADY
+- `D91` S_DEFAULT: shipyard-procured material booked as direct material INSIDE Basic Construction
+- `B92` S_DEFAULT: EOQ
+- `C92` S_BOLD: IN BC ALREADY
+- `D92` S_DEFAULT: economic-order-quantity material - also inside Basic Construction
+- `B93` S_DEFAULT: HM&E LLTM / Propulsor LLTM
+- `C93` S_BOLD: IN BC ALREADY
+- `D93` S_DEFAULT: supplier-addressable HM&E / propulsor material inside Basic Construction
+- `B95` S_DEFAULT: Conclusion: the supplier-addressable LLTM (shipbuilder-procured + EOQ + HM&E + propulsor) is ALREADY
+- `B96` S_DEFAULT: inside the P-5c Basic Construction base, so wiring the P-10 AP as a separate stream would double-count the
+- `B97` S_DEFAULT: BC TAM. The AP/LLTM base is therefore 0 (confirmed, not a placeholder). BPMI naval-nuclear is GFE, so it is
+- `B98` S_DEFAULT: also excluded from the BC coefficient corpus for base<->corpus consistency (BC coeff 75.7% -> 35.0%; see Validation).
+- `A100` S_DEFAULT: x
+- `B100` S_TITLE_SUBSECTION: P-10 -> TAM reconciliation bridge ($M, FY22-27): gross AP nets to $0 additive
+- `C100` S_TITLE_SUBSECTION: 
+- `D100` S_TITLE_SUBSECTION: 
+- `E100` S_TITLE_SUBSECTION: 
+- `B101` S_HEADER_LEFT: Step
+- `C101` S_HEADER_LEFT: $M
+- `D101` S_HEADER_LEFT: Basis
+- `E101` S_HEADER_LEFT: 
+- `B102` S_BOLD: P-10 gross AP, top-line (FY22-27)
+- `C102` S_NUM: =N('Inputs'!C21)+N('Inputs'!D21)+N('Inputs'!E21)+N('Inputs'!F21)+N('Inputs'!G21)+N('Inputs'!H21)+N('Inputs'!C22)+N('Inputs'!D22)+N('Inputs'!E22)+N('Inputs'!F22)+N('Inputs'!G22)+N('Inputs'!H22)
+- `D102` S_DEFAULT: authoritative Advance Procurement total, Va+Col ($44.71B; ties Inputs + Sensitivity)
+- `B103` S_DEFAULT: less GFE / design / weapons
+- `C103` S_NUM: =-(SUM(E58:J58)+SUM(E73:J73)+SUM(E60:J60)+SUM(E75:J75)+SUM(E62:J62)+SUM(E77:J77)+SUM(E63:J63)+SUM(E78:J78)+SUM(E56:J56)+SUM(E71:J71))
+- `D103` S_DEFAULT: nuclear-plant + electronics + ordnance + missile-compartment + Plans/SIB (~-$27.3B)
+- `B104` S_DEFAULT: less already inside P-5c BC
+- `C104` S_NUM: =-(SUM(E59:J59)+SUM(E74:J74)+SUM(E61:J61)+SUM(E76:J76)+SUM(E64:J64)+SUM(E79:J79)+SUM(E65:J65)+SUM(E80:J80)+SUM(E57:J57)+SUM(E72:J72))
+- `D104` S_DEFAULT: shipbuilder-procured + CFE + EOQ + HM&E + propulsor - booked as direct material in BC (~-$16.8B)
+- `B105` S_DEFAULT: less un-itemized Va FY22-23 AP
+- `C105` S_NUM: =-(C102+C103+C104)
+- `D105` S_DEFAULT: top-line exceeds the named-bucket detail in early Virginia years (~-$0.6B); still P-10 AP that overlaps BC -> non-additive
+- `B106` S_TOTAL: = AP/LLTM additive base = 0
+- `C106` S_NUM_TOTAL: =C102+C103+C104+C105
+- `D106` S_DEFAULT: no outside-supplier AP that isn't GFE, already in BC, or un-itemized overlap -> confirmed $0
+- `B108` S_DEFAULT: Note: the ~$18.8B AP/LLTM POP corpus (POP_Corpus) is a different lens - the gated-POP denominator for the 48.5% reference coeff - not the P-10 gross above; both reconcile to $0 additive.

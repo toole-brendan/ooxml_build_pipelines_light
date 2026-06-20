@@ -1,0 +1,252 @@
+{
+  "schema_version": "deckspec/v1",
+  "project_id": "mro_market_sizing",
+  "version": "v001",
+  "parent_version": null,
+  "style": {
+    "visual_style_version": "visual_v2026_04_25",
+    "copy_style_version": ""
+  },
+  "deck": {
+    "title": "MRO Market Sizing — Surface Vessel Opportunities",
+    "audience": "Saronic leadership / strategy",
+    "deck_type": "market sizing + recommendation"
+  },
+  "slides": [
+    {
+      "slide_no": 1,
+      "spec_id": "cover",
+      "intent": "opening cover",
+      "template_id": "cover_hero",
+      "layout": null,
+      "placeholders": {
+        "title": "US Surface Vessel MRO Market Sizing",
+        "date": "April 2026"
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 2,
+      "spec_id": "overview",
+      "intent": "executive overview — context + objectives for MRO sizing",
+      "template_id": "overview_context_objectives",
+      "layout": null,
+      "placeholders": {
+        "title": "Overview",
+        "context_bullets": [
+          "ASV maker building Gulf yard",
+          "Surface MRO ~$9B adjacency",
+          "Incumbent yards saturated",
+          "ASV sustainment ramps",
+          "USCG demand steady-state"
+        ],
+        "objectives_bullets": [
+          "Size FY26 surface MRO TAM",
+          "Quantify yard SAM",
+          "Project TCV and ACV",
+          "Triangulate vessel volumes",
+          "Frame capture actions"
+        ]
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 3,
+      "spec_id": "archetypes",
+      "intent": "MRO archetype comparison — ASV vs NSV across 5 attributes",
+      "template_id": "attribute_rows_compare",
+      "layout": null,
+      "placeholders": {
+        "title": "MRO archetypes | Sizing covers ASV sustainment plus NSV MRO across Navy, USCG, and small commercial — bracketing total yard demand.",
+        "breadcrumb": "Market Sizing / Approach",
+        "attributes": [
+          "Definition",
+          "Customers",
+          "Service lines",
+          "Funding lines",
+          "Why we are sized for it"
+        ],
+        "options": [
+          "ASV MRO (own + partner)",
+          "NSV Navy MRO",
+          "NSV USCG + small commercial"
+        ],
+        "values": [
+          [
+            "Unmanned and optionally-manned hulls",
+            "Crewed surface combatants and auxiliaries",
+            "Cutters, patrol craft, workboats"
+          ],
+          [
+            "USV Sqn, MASC, allied fleets",
+            "NAVSEA SEA 21 RMCs, MSC",
+            "USCG SFLC, port operators"
+          ],
+          [
+            "CM/PM, battery refits, payload swaps",
+            "DSRA, SRA, RAV, modernization",
+            "DSRA, drydock, voyage repair"
+          ],
+          [
+            "OPN, RDT&E, emerging O&M",
+            "O&M-N CMM&R, SCN modernization",
+            "USCG AC&I, commercial capex"
+          ],
+          [
+            "OEM autonomy and parts authority",
+            "Greenfield capacity advantage",
+            "Gulf-Coast homeport adjacency"
+          ]
+        ],
+        "source": "Source: PB26 budget exhibits; CRS RL32665; USCG FY26 budget-in-brief; HII and Fincantieri 10-Ks"
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 4,
+      "spec_id": "tam",
+      "intent": "FY26 TAM hero by vessel-class segment",
+      "template_id": "chart_full_width",
+      "layout": null,
+      "placeholders": {
+        "title": "FY26 TAM | ~$8.5-10.4B across surface MRO, with NSV manned-capability accounting for ~95% and ASV sustainment the remaining ~5%.",
+        "breadcrumb": "Market Sizing / Findings",
+        "chart_type": "stacked_bar_horizontal",
+        "chart_description": "FY26 surface MRO TAM by vessel-class segment ($B): DDG/CG, FFG/LCS, auxiliaries, USCG cutters, small commercial, ASV",
+        "source": "Source: NVR; PB26 O&M-N exhibits; USCG FY26 budget; OBBBA USV appropriations"
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 5,
+      "spec_id": "sam",
+      "intent": "Yard-accessible SAM FY26-28 + commentary panel",
+      "template_id": "chart_left_rationale_right",
+      "layout": null,
+      "placeholders": {
+        "title": "Yard-accessible SAM | $1.5-2.0B p.a. is reachable from a single Gulf-Coast yard, growing as ASV sustainment ramps and NSV availabilities shift to overflow yards.",
+        "breadcrumb": "Market Sizing / Findings",
+        "chart_type": "stacked_column",
+        "chart_description": "Yard-accessible SAM by archetype, FY26-FY28 ($M): ASV MRO, NSV Navy, NSV USCG + commercial",
+        "rationale_bullets": [
+          {
+            "header": "Why SAM is well below TAM",
+            "bullets": [
+              "ASV fleet ~120 hulls FY26 grows to ~280 by FY28",
+              "Incumbent yards saturated through FY27",
+              "USCG plus commercial steady-state, 4-6% CAGR"
+            ]
+          },
+          {
+            "header": "What is excluded from SAM",
+            "bullets": [
+              "Nuclear-powered combatants and CVN RCOH",
+              "West-coast-homeported availabilities",
+              "Intermediate-maintenance-activity-only work"
+            ]
+          },
+          {
+            "header": "Yard capture rate (weighted)",
+            "bullets": [
+              "FY26 ~16% of TAM",
+              "FY27 ~18% of TAM",
+              "FY28 ~19% of TAM"
+            ]
+          }
+        ],
+        "conclusion_text": "Yard sized for FY28 SAM of ~$2.0B.",
+        "source": "Source: NAVSEA RMC backlog; HII and Fincantieri 10-Ks; Saronic yard model"
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 6,
+      "spec_id": "tcv_acv",
+      "intent": "Company TCV / ACV chart with implied-volume table below",
+      "template_id": "chart_top_table_bottom",
+      "layout": null,
+      "placeholders": {
+        "title": "Company TCV to ACV | TCV grows from ~$610M in FY26 to ~$1.06B in FY28; ACV ramps from ~$180M to ~$410M as the yard reaches steady-state throughput.",
+        "breadcrumb": "Market Sizing / Findings",
+        "chart_type": "stacked_column",
+        "chart_description": "Company TCV ($M) FY26-FY28 by archetype: ASV sustainment, NSV Navy availabilities, NSV USCG + commercial",
+        "table_headers": [
+          "Implied volumes through the yard",
+          "FY26",
+          "FY27",
+          "FY28"
+        ],
+        "table_rows": [
+          [
+            "ASV sustainment events",
+            "~110",
+            "~210",
+            "~340"
+          ],
+          [
+            "NSV availabilities",
+            "~22",
+            "~30",
+            "~36"
+          ],
+          [
+            "Modernization periods",
+            "~3",
+            "~6",
+            "~9"
+          ],
+          [
+            "Estimated ACV ($M)",
+            "~180",
+            "~300",
+            "~410"
+          ]
+        ],
+        "source": "Source: NAVSEA contract awards (FPDS-NG, FY24-26 YTD); RMC backlog reports; internal pricing model"
+      },
+      "primitives": []
+    },
+    {
+      "slide_no": 7,
+      "spec_id": "triangulation",
+      "intent": "Vessel triangulation cumulative chart + next-steps commentary",
+      "template_id": "chart_left_rationale_right",
+      "layout": null,
+      "placeholders": {
+        "title": "Vessel triangulation | Assumptions imply the yard touches ~88 NSV availabilities and ~660 ASV sustainment events through FY28.",
+        "breadcrumb": "Market Sizing / Findings",
+        "chart_type": "line_band",
+        "chart_description": "Cumulative vessel-touch events through end-of-FY: ASV sustainment, NSV availabilities, modernization periods",
+        "rationale_bullets": [
+          {
+            "header": "Capacity implications",
+            "bullets": [
+              "FY28 peak ~30 concurrent NSV availabilities",
+              "Supportable with 3 dry-docks plus 2 piers",
+              "ASV events drive ~30% of FTE hours by FY28"
+            ]
+          },
+          {
+            "header": "Margin drivers",
+            "bullets": [
+              "Modernization periods 3-5x revenue per event",
+              "Combat-systems integration bay required",
+              "ASV sustainment lower margin, higher volume"
+            ]
+          },
+          {
+            "header": "Sensitivity",
+            "bullets": [
+              "+/- 15% on NSV capture rate",
+              "Drives +/- ~$140M FY28 ACV",
+              "MARMC overflow award is the swing factor"
+            ]
+          }
+        ],
+        "conclusion_text": "Pursue MASC, lock ASV pricing, anchor with modernization.",
+        "source": "Source: NVR; FPDS-NG FY22-26 YTD; RMC backlog; Saronic yard and pricing model"
+      },
+      "primitives": []
+    }
+  ]
+}

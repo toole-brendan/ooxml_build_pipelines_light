@@ -1,0 +1,613 @@
+{
+  "source": "file",
+  "name": "Sensitivity",
+  "tab_name": "Sensitivity",
+  "sheet_index": 14,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 3,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "44"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "16"
+    }
+  ],
+  "n_rows": 34,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 2
+    },
+    {
+      "r": "4",
+      "n_cells": 2
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "n_cells": 2
+    },
+    {
+      "r": "10",
+      "n_cells": 2
+    },
+    {
+      "r": "13",
+      "n_cells": 3
+    },
+    {
+      "r": "15",
+      "n_cells": 2
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "21",
+      "n_cells": 3
+    },
+    {
+      "r": "23",
+      "n_cells": 2
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "29",
+      "n_cells": 3
+    },
+    {
+      "r": "31",
+      "n_cells": 2
+    },
+    {
+      "r": "32",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "33",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "34",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "37",
+      "n_cells": 3
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "40",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "44",
+      "n_cells": 3
+    },
+    {
+      "r": "46",
+      "n_cells": 2
+    },
+    {
+      "r": "47",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "48",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "49",
+      "outlineLevel": "1",
+      "n_cells": 2
+    }
+  ],
+  "n_cells": 68,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Sensitivity"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - The swings"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_BOLD",
+      "value": "Headline supplier coefficient"
+    },
+    {
+      "ref": "C7",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "AP/LLTM reference coefficient"
+    },
+    {
+      "ref": "C8",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C55"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Pre-boundary sensitivity TAM $M"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM",
+      "formula": "'Sensitivity'!C33"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Real P-10 gross AP $M (reference)"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM",
+      "formula": "'Sensitivity'!C34"
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Coefficient ladder (the swings that move TAM/SAM)"
+    },
+    {
+      "ref": "C13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B15",
+      "style": "S_HEADER_LEFT",
+      "value": "Variant"
+    },
+    {
+      "ref": "C15",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "All-gated POP anchor (not applied)"
+    },
+    {
+      "ref": "C16",
+      "style": "S_PCT",
+      "formula": "IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674)=0,\"\",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!K17:K674))"
+    },
+    {
+      "ref": "B17",
+      "style": "S_BOLD",
+      "value": "Headline coeff (non-nuclear)"
+    },
+    {
+      "ref": "C17",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    },
+    {
+      "ref": "B18",
+      "style": "S_BOLD",
+      "value": "AP/LLTM coeff (reference; base=0)"
+    },
+    {
+      "ref": "C18",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C55"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "BC - AP/LLTM delta"
+    },
+    {
+      "ref": "C19",
+      "style": "S_PCT",
+      "formula": "C17-C18"
+    },
+    {
+      "ref": "A21",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B21",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72a - Nuclear-boundary BPMI exclusion (applied)"
+    },
+    {
+      "ref": "C21",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B23",
+      "style": "S_HEADER_LEFT",
+      "value": "BC coefficient under each attribution"
+    },
+    {
+      "ref": "C23",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B24",
+      "style": "S_DEFAULT",
+      "value": "BC coeff incl. BPMI (sensitivity)"
+    },
+    {
+      "ref": "C24",
+      "style": "S_PCT",
+      "formula": "IF(SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!J17:J674*((1-'POP Corpus'!I17:I674)*('POP Corpus'!G17:G674=\"BC\")+('POP Corpus'!D17:D674=\"bpmi_nuclear\"))*'POP Corpus'!K17:K674)=0,\"\",SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!J17:J674*((1-'POP Corpus'!I17:I674)*('POP Corpus'!G17:G674=\"BC\")+('POP Corpus'!D17:D674=\"bpmi_nuclear\"))*'POP Corpus'!K17:K674*('POP Corpus'!N17:N674+'POP Corpus'!O17:O674))/SUMPRODUCT('POP Corpus'!H17:H674*'POP Corpus'!J17:J674*((1-'POP Corpus'!I17:I674)*('POP Corpus'!G17:G674=\"BC\")+('POP Corpus'!D17:D674=\"bpmi_nuclear\"))*'POP Corpus'!K17:K674))"
+    },
+    {
+      "ref": "B25",
+      "style": "S_BOLD",
+      "value": "Headline applied (BPMI excluded)"
+    },
+    {
+      "ref": "C25",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "BC swing (BPMI removal)"
+    },
+    {
+      "ref": "C26",
+      "style": "S_PCT",
+      "formula": "C24-C25"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "BPMI $ (now GFE-excluded)"
+    },
+    {
+      "ref": "C27",
+      "style": "S_NUM",
+      "formula": "SUMPRODUCT('POP Corpus'!H17:H674*('POP Corpus'!D17:D674=\"bpmi_nuclear\")*'POP Corpus'!K17:K674)"
+    },
+    {
+      "ref": "A29",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B29",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72b - TAM impact (headline vs pre-boundary sensitivity; AP base=0)"
+    },
+    {
+      "ref": "C29",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B31",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C31",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B32",
+      "style": "S_BOLD",
+      "value": "Headline non-nuclear supplier TAM (cum.)"
+    },
+    {
+      "ref": "C32",
+      "style": "S_NUM",
+      "formula": "N('TAM Build'!C117)+N('TAM Build'!D117)+N('TAM Build'!E117)+N('TAM Build'!F117)+N('TAM Build'!G117)+N('TAM Build'!H117)"
+    },
+    {
+      "ref": "B33",
+      "style": "S_DEFAULT",
+      "value": "Pre-boundary sensitivity TAM"
+    },
+    {
+      "ref": "C33",
+      "style": "S_NUM",
+      "formula": "C32*(C24/C25)"
+    },
+    {
+      "ref": "B34",
+      "style": "S_DEFAULT",
+      "value": "Real P-10 gross AP (FY22-27, ref)"
+    },
+    {
+      "ref": "C34",
+      "style": "S_NUM",
+      "formula": "N('Assumptions'!C32)+N('Assumptions'!D32)+N('Assumptions'!E32)+N('Assumptions'!F32)+N('Assumptions'!G32)+N('Assumptions'!H32)+N('Assumptions'!C33)+N('Assumptions'!D33)+N('Assumptions'!E33)+N('Assumptions'!F33)+N('Assumptions'!G33)+N('Assumptions'!H33)"
+    },
+    {
+      "ref": "A37",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B37",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Sensitivity guardrails"
+    },
+    {
+      "ref": "C37",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "Sensitivity values are not headline."
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "The BPMI-included coefficient (~75.7%) is not applied."
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "The AP/LLTM coefficient is reference-only while the additive base is zero."
+    },
+    {
+      "ref": "A44",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B44",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a74 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)"
+    },
+    {
+      "ref": "C44",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B46",
+      "style": "S_HEADER_LEFT",
+      "value": "Measure"
+    },
+    {
+      "ref": "C46",
+      "style": "S_HEADER_CENTER",
+      "value": "$M"
+    },
+    {
+      "ref": "B47",
+      "style": "S_BOLD",
+      "value": "Physical supplier base (VLS launch-control OUT - base case)"
+    },
+    {
+      "ref": "C47",
+      "style": "S_NUM",
+      "formula": "'Entity Master'!C973-'Entity Master'!C972"
+    },
+    {
+      "ref": "B48",
+      "style": "S_DEFAULT",
+      "value": "+ VLS launch-control boundary (mission_systems)"
+    },
+    {
+      "ref": "C48",
+      "style": "S_NUM",
+      "formula": "'Entity Master'!C980"
+    },
+    {
+      "ref": "B49",
+      "style": "S_BOLD",
+      "value": "= Physical supplier base (VLS launch-control IN - sensitivity)"
+    },
+    {
+      "ref": "C49",
+      "style": "S_NUM",
+      "formula": "C47+C48"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Sensitivity"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - The swings"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Coefficient ladder (the swings that move TAM/SAM)"
+    },
+    {
+      "ref": "B21",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72a - Nuclear-boundary BPMI exclusion (applied)"
+    },
+    {
+      "ref": "B29",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72b - TAM impact (headline vs pre-boundary sensitivity; AP base=0)"
+    },
+    {
+      "ref": "B37",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Sensitivity guardrails"
+    },
+    {
+      "ref": "B44",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a74 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)"
+    }
+  ],
+  "hardcoded_inputs": [],
+  "green_links": [
+    {
+      "ref": "C7",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    },
+    {
+      "ref": "C8",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C55"
+    },
+    {
+      "ref": "C17",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    },
+    {
+      "ref": "C18",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C55"
+    },
+    {
+      "ref": "C25",
+      "style": "S_LINK_PCT",
+      "formula": "'TAM Build'!C54"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 18,
+  "formula_refs_by_sheet": {
+    "Assumptions": [
+      "C34"
+    ],
+    "Entity Master": [
+      "C47",
+      "C48"
+    ],
+    "POP Corpus": [
+      "C16",
+      "C24",
+      "C27"
+    ],
+    "Sensitivity": [
+      "C9",
+      "C10"
+    ],
+    "TAM Build": [
+      "C7",
+      "C8",
+      "C17",
+      "C18",
+      "C25",
+      "C32"
+    ]
+  },
+  "tables": [],
+  "defined_names": {}
+}

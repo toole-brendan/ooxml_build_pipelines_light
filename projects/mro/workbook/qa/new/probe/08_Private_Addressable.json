@@ -1,0 +1,596 @@
+{
+  "source": "file",
+  "name": "Private Addressable",
+  "tab_name": "Private Addressable",
+  "sheet_index": 8,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 5,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "52.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "16.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "16.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "44"
+    }
+  ],
+  "n_rows": 24,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 4
+    },
+    {
+      "r": "4",
+      "n_cells": 5
+    },
+    {
+      "r": "6",
+      "outlineLevel": "1",
+      "n_cells": 4
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "13",
+      "n_cells": 5
+    },
+    {
+      "r": "15",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "16",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "17",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "18",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "21",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "22",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "23",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "24",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "25",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "28",
+      "n_cells": 5
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "31",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "32",
+      "outlineLevel": "1",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 75,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Private Addressable"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "E2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Derivation A: bottom-up ($9B FPDS universe)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_BOLD",
+      "value": "Step"
+    },
+    {
+      "ref": "C6",
+      "style": "S_BOLD",
+      "value": "Bottom-Up ($M)"
+    },
+    {
+      "ref": "D6",
+      "style": "S_BOLD",
+      "value": "Top-Down ($M)"
+    },
+    {
+      "ref": "E6",
+      "style": "S_BOLD",
+      "value": "Notes"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "FPDS 65-PSC MRO universe FY25"
+    },
+    {
+      "ref": "C7",
+      "style": "S_NUM",
+      "formula": "NAVY_TAM_SVC+CG_TAM_SVC"
+    },
+    {
+      "ref": "E7",
+      "style": "S_DEFAULT",
+      "value": "Services sheet Navy + USCG TAM named ranges."
+    },
+    {
+      "ref": "B8",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Captive SUPSHIP complex OH (PSC 1905 MRO to HII/GD/Fluor)"
+    },
+    {
+      "ref": "C8",
+      "style": "S_NUM",
+      "formula": "-((SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*HUNTINGTON*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*ELECTRIC BOAT*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*GENERAL DYNAMICS*\")+SUMIFS(PSC1905Classified[FY2025 Obligation],PSC1905Classified[Bucket],\"MRO*\",PSC1905Classified[Ultimate Parent],\"*FLUOR*\"))/1000000)"
+    },
+    {
+      "ref": "E8",
+      "style": "S_DEFAULT",
+      "value": "SUMIFS over PSC1905Classified [Bucket=\"MRO*\"] filtered by captive parents (Huntington Ingalls, Electric Boat, General Dynamics, Fluor)."
+    },
+    {
+      "ref": "B9",
+      "style": "S_LABEL_INDENT_1",
+      "value": "FMS (out of addressable scope)"
+    },
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "E9",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate (~$0.1B, \u00a72.4)."
+    },
+    {
+      "ref": "B10",
+      "style": "S_BOLD",
+      "value": "Private-addressable from bottom-up"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_TOTAL",
+      "formula": "C7+C8+C9"
+    },
+    {
+      "ref": "E10",
+      "style": "S_DEFAULT",
+      "value": "Expected: $7-8B range."
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Derivation B: top-down (OP-5 + MSC + SCN + OPN/WPN + USCG)"
+    },
+    {
+      "ref": "C13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E13",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "OP-5 Navy 1B4B total"
+    },
+    {
+      "ref": "D15",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_TOTAL_FY25/1000"
+    },
+    {
+      "ref": "E15",
+      "style": "S_DEFAULT",
+      "value": "Navy ship maintenance SAG total."
+    },
+    {
+      "ref": "B16",
+      "style": "S_DEFAULT",
+      "value": "+ MSC M&R (FY25 1B1B transfer-out)"
+    },
+    {
+      "ref": "D16",
+      "style": "S_LINK_NUM",
+      "formula": "MSC_MR_FY25_1B1B_TRANSFER/1000"
+    },
+    {
+      "ref": "E16",
+      "style": "S_DEFAULT",
+      "value": "OMN_Book line 4467."
+    },
+    {
+      "ref": "B17",
+      "style": "S_DEFAULT",
+      "value": "+ SCN CVN RCOH LI 2086"
+    },
+    {
+      "ref": "D17",
+      "style": "S_LINK_NUM",
+      "formula": "SCN_CVN_RCOH_LI2086_FY25/1000"
+    },
+    {
+      "ref": "E17",
+      "style": "S_DEFAULT",
+      "value": "SCN_Book LI 2086 FY25 TOA."
+    },
+    {
+      "ref": "B18",
+      "style": "S_DEFAULT",
+      "value": "+ OPN LI 1000 ship maintenance (private contracted)"
+    },
+    {
+      "ref": "D18",
+      "style": "S_LINK_NUM",
+      "formula": "OPN_LI1000_FY25/1000"
+    },
+    {
+      "ref": "E18",
+      "style": "S_DEFAULT",
+      "value": "OPN_BA1_Book line 21287 (P-5 row); $2,392.190M FY25 enacted. PL 116-93 (2020) private contracted CONUS ship maintenance at CPF/FFC. Replaces prior $500M plug."
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "+ WPN combat-systems sustainment"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "E19",
+      "style": "S_DEFAULT",
+      "value": "(plan estimate ~$500M \u2014 WPN P-40 exhibits do not isolate shipboard-installation cost from missile/torpedo procurement; genuinely not source-pinnable)"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "+ USCG ISVS floor (LOW CONF)"
+    },
+    {
+      "ref": "D20",
+      "style": "S_LINK_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "E20",
+      "style": "S_DEFAULT",
+      "value": "USCG_ISVS_FY25_FLOOR; actual likely $300-500M."
+    },
+    {
+      "ref": "B21",
+      "style": "S_BOLD",
+      "value": "Total top-down"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_TOTAL",
+      "formula": "D15+D16+D17+D18+D19+D20"
+    },
+    {
+      "ref": "E21",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate: ~$16-17B."
+    },
+    {
+      "ref": "B22",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Public NSY (not addressable)"
+    },
+    {
+      "ref": "D22",
+      "style": "S_LINK_NUM",
+      "formula": "-OP5_PUBLIC_NSY_FY25/1000"
+    },
+    {
+      "ref": "E22",
+      "style": "S_DEFAULT",
+      "value": "OP-5 4 public NSY rows; federal civilian workforce."
+    },
+    {
+      "ref": "B23",
+      "style": "S_LABEL_INDENT_1",
+      "value": "Captive SUPSHIP complex OH (same as A)"
+    },
+    {
+      "ref": "D23",
+      "style": "S_NUM",
+      "formula": "C8"
+    },
+    {
+      "ref": "E23",
+      "style": "S_DEFAULT",
+      "value": "Same SUMIFS as Derivation A captive row above."
+    },
+    {
+      "ref": "B24",
+      "style": "S_LABEL_INDENT_1",
+      "value": "FMS"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "E24",
+      "style": "S_DEFAULT",
+      "value": "Plan estimate."
+    },
+    {
+      "ref": "B25",
+      "style": "S_BOLD",
+      "value": "Private-addressable from top-down"
+    },
+    {
+      "ref": "D25",
+      "style": "S_NUM_TOTAL",
+      "formula": "D21+D22+D23+D24"
+    },
+    {
+      "ref": "E25",
+      "style": "S_DEFAULT",
+      "value": "Expected: $7-8B range."
+    },
+    {
+      "ref": "A28",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B28",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a73 - Convergence (target: both within $500M)"
+    },
+    {
+      "ref": "C28",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D28",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "E28",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B30",
+      "style": "S_BOLD",
+      "value": "A (bottom-up)"
+    },
+    {
+      "ref": "C30",
+      "style": "S_NUM_TOTAL",
+      "formula": "C10"
+    },
+    {
+      "ref": "B31",
+      "style": "S_BOLD",
+      "value": "B (top-down)"
+    },
+    {
+      "ref": "D31",
+      "style": "S_NUM_TOTAL",
+      "formula": "D25"
+    },
+    {
+      "ref": "B32",
+      "style": "S_BOLD",
+      "value": "Delta (A - B)"
+    },
+    {
+      "ref": "C32",
+      "style": "S_NUM_TOTAL",
+      "formula": "C10-D25"
+    },
+    {
+      "ref": "E32",
+      "style": "S_DEFAULT",
+      "value": "Convergence goal: abs(delta) within $500M. Current result: roughly $700M apart - CLOSE but not PASS; likely the OPN/WPN top-down plan estimates are underweight relative to what the bottom-up naturally captures in J010/K058/K020/N020 etc."
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Private Addressable"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Derivation A: bottom-up ($9B FPDS universe)"
+    },
+    {
+      "ref": "B13",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Derivation B: top-down (OP-5 + MSC + SCN + OPN/WPN + USCG)"
+    },
+    {
+      "ref": "B28",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a73 - Convergence (target: both within $500M)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C9",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "500"
+    },
+    {
+      "ref": "D24",
+      "style": "S_NUM_INPUT",
+      "value": "-100"
+    }
+  ],
+  "green_links": [
+    {
+      "ref": "D15",
+      "style": "S_LINK_NUM",
+      "formula": "OP5_TOTAL_FY25/1000"
+    },
+    {
+      "ref": "D16",
+      "style": "S_LINK_NUM",
+      "formula": "MSC_MR_FY25_1B1B_TRANSFER/1000"
+    },
+    {
+      "ref": "D17",
+      "style": "S_LINK_NUM",
+      "formula": "SCN_CVN_RCOH_LI2086_FY25/1000"
+    },
+    {
+      "ref": "D18",
+      "style": "S_LINK_NUM",
+      "formula": "OPN_LI1000_FY25/1000"
+    },
+    {
+      "ref": "D20",
+      "style": "S_LINK_NUM",
+      "formula": "USCG_ISVS_FY25_FLOOR/1000"
+    },
+    {
+      "ref": "D22",
+      "style": "S_LINK_NUM",
+      "formula": "-OP5_PUBLIC_NSY_FY25/1000"
+    }
+  ],
+  "placeholders": [],
+  "n_formulas": 15,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

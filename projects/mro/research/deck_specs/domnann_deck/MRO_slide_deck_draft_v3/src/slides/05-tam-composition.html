@@ -1,0 +1,160 @@
+<section class="slide" data-label="TAM Composition" data-screen-label="05 TAM Composition" data-om-validate="no_overflowing_text,no_overlapping_text,slide_sized_text" data-deck-slide="4">
+
+  <!-- Chrome: breadcrumb + institutional seals (scope pill dropped per revision 3) -->
+  <div class="chrome-top">
+    <div class="breadcrumb">Market Sizing / Structure</div>
+    <div class="chrome-top__right">
+      <span class="seal-block">
+        <img class="seal" src="assets/usn-crest.jpg" alt="U.S. Navy">
+        <img class="seal" src="assets/uscg-crest.png" alt="U.S. Coast Guard">
+      </span>
+    </div>
+  </div>
+
+  <div class="slide-title">
+    <span class="topic">TAM Composition</span><span class="pipe">|</span><span class="assertion">Depot ship repair drove ~68% of FY2025 MRO TAM with ~62% of hull spend on surface combatants, amphibious warfare ships, and submarines</span>
+  </div>
+
+  <div class="body left-right-wide">
+
+    <!-- LEFT: Mekko (vessel x work segment). Navy-hero rule: only Depot
+         series is navy; all other segments rendered in slate shades. The
+         4-chip legend is dropped on this slide (revision 1) because the
+         inline work-segment legend below already occupies the same
+         top-right real estate. -->
+    <div class="mekko">
+      <div class="visual-head">
+        <div class="slide-subtitle">FY2025 MRO TAM by vessel type x work segment ($M)</div>
+      </div>
+
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Depot Ship Repair</span>
+        <span><span class="sw" style="background:#6f8197"></span>Hull, Mechanical &amp; Electrical (HM&amp;E)</span>
+        <span><span class="sw" style="background:#8a9bb0"></span>Combat Systems Sustainment</span>
+        <span><span class="sw" style="background:#b6c2d1"></span>Port &amp; Technical Services</span>
+        <span><span class="sw" style="background:#d6dde6"></span>Electronics &amp; C4ISR Sustainment</span>
+      </div>
+
+      <div class="mekko-chart-area">
+        <div class="mekko-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+        <div class="mekko-cols">
+          <!-- Ordering within each column: smallest segment top -> biggest bottom. -->
+
+          <!-- Surface Combatants 30% -->
+          <div class="mekko-col" style="flex: 0 0 30%;">
+            <div class="mekko-col-total">$2,120M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 4%;  background:#d6dde6;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 6%;  background:#8a9bb0;"><span class="mlabel">6%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 6%;  background:#6f8197;"><span class="mlabel">6%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 84%; background:#1f2d44;"><span class="mlabel">85%</span></div>
+          </div>
+
+          <!-- Amphibious Warfare Ships 20% -->
+          <div class="mekko-col" style="flex: 0 0 20%;">
+            <div class="mekko-col-total">$1,440M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#d6dde6;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 5%;  background:#6f8197;"><span class="mlabel">5%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 93%; background:#1f2d44;"><span class="mlabel">93%</span></div>
+          </div>
+
+          <!-- Submarines 12% -->
+          <div class="mekko-col" style="flex: 0 0 12%;">
+            <div class="mekko-col-total">$838M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#d6dde6;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 19%; background:#6f8197;"><span class="mlabel">19%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 22%; background:#8a9bb0;"><span class="mlabel">22%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 53%; background:#1f2d44;"><span class="mlabel">53%</span></div>
+          </div>
+
+          <!-- Combat Logistics Ships 11% -->
+          <div class="mekko-col" style="flex: 0 0 11%;">
+            <div class="mekko-col-total">$770M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 11%; background:#6f8197;"><span class="mlabel">11%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 84%; background:#1f2d44;"><span class="mlabel">83%</span></div>
+          </div>
+
+          <!-- Aircraft Carriers 6% -->
+          <div class="mekko-col narrow" style="flex: 0 0 6%;">
+            <div class="mekko-col-total">$422M</div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 1%;  background:#b6c2d1;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 5%;  background:#d6dde6;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 8%;  background:#6f8197;"></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 86%; background:#1f2d44;"><span class="mlabel">86%</span></div>
+          </div>
+
+          <!-- Other 21% (dashed outline dropped per revision 6) -->
+          <div class="mekko-col" style="flex: 0 0 21%;">
+            <div class="mekko-col-total">$1,477M</div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 1%;  background:#8a9bb0;"></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 11%; background:#b6c2d1;"><span class="mlabel">11%</span></div>
+            <div class="mekko-seg seg-light" style="flex: 0 0 14%; background:#d6dde6;"><span class="mlabel">14%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 33%; background:#6f8197;"><span class="mlabel">33%</span></div>
+            <div class="mekko-seg seg-dark"  style="flex: 0 0 41%; background:#1f2d44;"><span class="mlabel">40%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mekko-xlabels">
+        <div class="mekko-xlabel" style="flex: 0 0 30%;"><div class="xtitle">Surface Combatants</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 20%;"><div class="xtitle">Amphibious Warfare</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 12%;"><div class="xtitle">Submarines</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 11%;"><div class="xtitle">Combat Logistics</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 6%;"><div class="xtitle">Carriers</div></div>
+        <div class="mekko-xlabel" style="flex: 0 0 21%;"><div class="xtitle">Other</div></div>
+      </div>
+
+      <!-- Summary-stat oval row (§4e-ii): Depot Ship Repair Size per vessel
+           category (the navy stack $M pulled out as an explicit number).
+           Values placeholder pending workbook snap; column sum reconciles
+           to the $4,781M Depot Ship Repair row on the RHS table. -->
+      <div class="oval-row">
+        <div class="oval-row__label">Depot Ship Repair Size:</div>
+        <div class="oval-row__cols">
+          <div class="oval-row__cell" style="flex: 0 0 30%;"><span class="oval">$1,800M</span></div>
+          <div class="oval-row__cell" style="flex: 0 0 20%;"><span class="oval">$1,339M</span></div>
+          <div class="oval-row__cell" style="flex: 0 0 12%;"><span class="oval">$444M</span></div>
+          <div class="oval-row__cell" style="flex: 0 0 11%;"><span class="oval">$639M</span></div>
+          <div class="oval-row__cell" style="flex: 0 0 6%;"><span class="oval">$363M</span></div>
+          <div class="oval-row__cell" style="flex: 0 0 21%;"><span class="oval">$196M</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: callout card stack (#10) - one card per work segment -->
+    <div class="right-stack" style="align-self: stretch; display: flex; flex-direction: column; gap: 12px;">
+
+      <div class="takeaway-col">
+        <div class="tk" style="border-left-color:#1f2d44;">
+          <span class="tk-title"><span class="sw" style="background:#1f2d44; display:inline-block; width:10px; height:10px; margin-right:6px; vertical-align:middle;"></span>Depot Ship Repair</span>
+          Whole-ship availabilities (DSRAs, SRAs, CMAVs, DPIAs) executed at private yards under RMC-administered MAC-MO IDIQ task orders.
+        </div>
+        <div class="tk" style="border-left-color:#6f8197;">
+          <span class="tk-title"><span class="sw" style="background:#6f8197; display:inline-block; width:10px; height:10px; margin-right:6px; vertical-align:middle;"></span>Hull, Mechanical &amp; Electrical (HM&amp;E)</span>
+          Ship mechanical and structural systems: propulsion accessories, pumps, valves, piping, HVAC, and diesel engines.
+        </div>
+        <div class="tk" style="border-left-color:#8a9bb0;">
+          <span class="tk-title"><span class="sw" style="background:#8a9bb0; display:inline-block; width:10px; height:10px; margin-right:6px; vertical-align:middle;"></span>Combat Systems Sustainment</span>
+          Ship-borne weapons and fire control: VLS, guided missiles, launch and arresting gear. Includes Trident II sustainment carried by Ohio-class SSBNs.
+        </div>
+        <div class="tk" style="border-left-color:#b6c2d1;">
+          <span class="tk-title"><span class="sw" style="background:#b6c2d1; display:inline-block; width:10px; height:10px; margin-right:6px; vertical-align:middle;"></span>Port &amp; Technical Services</span>
+          Husbanding (fuel, transport, port visits), QC and inspection, OEM technical representation, and shipyard operations support.
+        </div>
+        <div class="tk" style="border-left-color:#d6dde6;">
+          <span class="tk-title"><span class="sw" style="background:#d6dde6; display:inline-block; width:10px; height:10px; margin-right:6px; vertical-align:middle; border:1px solid #c9d2dc;"></span>Electronics &amp; C4ISR Sustainment</span>
+          Afloat electronics: radar, sonar, communications, navigation, alarms, and instrumentation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Note: (1) "Other" ($1,477M, 21% of TAM) rolls up USCG cutters and boats, mine countermeasure ships, expeditionary and seabasing ships, auxiliary ships, support and combatant craft, unmanned platforms, and unclassified PIIDs; (2) Segment detail sums to $7,068M against the $7,067M TAM headline, a $1M rounding delta; (3) Depot Ship Repair is FPDS PSCs J998 and J999; (4) Depot Ship Repair Size ovals are placeholder pending workbook snap.<br>
+    Source: FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, 65 services PSCs, post-exclusions). Data as of April 2026.
+  </div>
+</section>

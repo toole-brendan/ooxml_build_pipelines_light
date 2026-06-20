@@ -1,0 +1,4287 @@
+{
+  "slide_name": "s03_appendix_tam_build",
+  "generated_at": "2026-06-08T02:36:12.629569+00:00",
+  "canvas": {
+    "cx_emu": 12192000,
+    "cy_emu": 6858000,
+    "cx_in": 13.333,
+    "cy_in": 7.5,
+    "source": "defaults (12_192_000 \u00d7 6_858_000)",
+    "layout_target": null
+  },
+  "region_summary": {
+    "canvas_cx_emu": 12192000,
+    "canvas_cy_emu": 6858000,
+    "canvas_cx_in": 13.333,
+    "canvas_cy_in": 7.5,
+    "shape_count_by_kind": {
+      "sp": 28,
+      "cxnSp": 11
+    },
+    "total_shapes": 39,
+    "ole_count": 0,
+    "thinkcell_count": 0,
+    "top_most_body": {
+      "sp_id": 10,
+      "name": "Qualifier",
+      "y_emu": 1371600,
+      "y_in": 1.5
+    },
+    "bottom_most_body": {
+      "sp_id": 80,
+      "name": "Commentary",
+      "bottom_emu": 5870000,
+      "bottom_in": 6.42
+    },
+    "chrome": {
+      "Breadcrumb": {
+        "sp_id": 2,
+        "x_emu": 453079,
+        "y_emu": 263452,
+        "cx_emu": 11282362,
+        "cy_emu": 153888
+      },
+      "PrelimChip": {
+        "sp_id": 4,
+        "x_emu": 10267829,
+        "y_emu": 111556,
+        "cx_emu": 1467612,
+        "cy_emu": 290000
+      },
+      "Title": {
+        "sp_id": 3,
+        "x_emu": 453079,
+        "y_emu": 554500,
+        "cx_emu": 11282362,
+        "cy_emu": 640080
+      },
+      "Sources": {
+        "sp_id": 9999,
+        "x_emu": 453079,
+        "y_emu": 5930000,
+        "cx_emu": 11282362,
+        "cy_emu": 540000
+      }
+    }
+  },
+  "shapes": [
+    {
+      "z": 1,
+      "kind": "sp",
+      "sp_id": 2,
+      "name": "Breadcrumb",
+      "chrome_role": "Breadcrumb",
+      "ph_type": "body",
+      "ph_idx": "10",
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 263452,
+        "cx": 11282362,
+        "cy": 153888,
+        "x_abs": 453079,
+        "y_abs": 263452,
+        "x_in": 0.495,
+        "y_in": 0.288,
+        "cx_in": 12.339,
+        "cy_in": 0.168,
+        "right_emu": 11735441,
+        "bottom_emu": 417340,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Methodology",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              },
+              {
+                "text": " / TAM Build",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "44505C"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Methodology / TAM Build"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 62448,
+        "avail_h_in": 0.068,
+        "wrapped_lines": 1,
+        "est_height_emu": 127000,
+        "est_height_in": 0.139,
+        "fits": false,
+        "overflow_emu": 64552,
+        "overflow_in": 0.071,
+        "paragraphs": [
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 127000,
+            "para_h_in": 0.139
+          }
+        ]
+      }
+    },
+    {
+      "z": 2,
+      "kind": "sp",
+      "sp_id": 4,
+      "name": "PrelimChip",
+      "chrome_role": "PrelimChip",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 10267829,
+        "y": 111556,
+        "cx": 1467612,
+        "cy": 290000,
+        "x_abs": 10267829,
+        "y_abs": 111556,
+        "x_in": 11.229,
+        "y_in": 0.122,
+        "cx_in": 1.605,
+        "cy_in": 0.317,
+        "right_emu": 11735441,
+        "bottom_emu": 401556,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "FFFFCC",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 19050,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 45720,
+          "r_ins": 45720,
+          "t_ins": 9144,
+          "b_ins": 9144,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Preliminary",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Preliminary"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 1376172,
+        "avail_w_in": 1.505,
+        "avail_h_emu": 271712,
+        "avail_h_in": 0.297,
+        "wrapped_lines": 1,
+        "est_height_emu": 152400,
+        "est_height_in": 0.167,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          }
+        ]
+      }
+    },
+    {
+      "z": 3,
+      "kind": "sp",
+      "sp_id": 3,
+      "name": "Title",
+      "chrome_role": "Title",
+      "ph_type": "title",
+      "ph_idx": null,
+      "is_placeholder": true,
+      "geometry": {
+        "x": 453079,
+        "y": 554500,
+        "cx": 11282362,
+        "cy": 640080,
+        "x_abs": 453079,
+        "y_abs": 554500,
+        "x_in": 0.495,
+        "y_in": 0.606,
+        "cx_in": 12.339,
+        "cy_in": 0.7,
+        "right_emu": 11735441,
+        "bottom_emu": 1194580,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "unset",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": null,
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": null,
+          "wrap": null,
+          "l_ins": 91440,
+          "r_ins": 0,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "TAM Build | Source evidence is normalized into an annual TAM spend pool before ASV role-suitability filters apply.",
+                "font": "Arial",
+                "size_pt": 20.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "TAM Build | Source evidence is normalized into an annual TAM spend pool before ASV role-suitability filters apply."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11190922,
+        "avail_w_in": 12.239,
+        "avail_h_emu": 548640,
+        "avail_h_in": 0.6,
+        "wrapped_lines": 2,
+        "est_height_emu": 508000,
+        "est_height_in": 0.556,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 20.0,
+            "lines": 2,
+            "para_h_emu": 508000,
+            "para_h_in": 0.556
+          }
+        ]
+      }
+    },
+    {
+      "z": 4,
+      "kind": "cxnSp",
+      "sp_id": 60,
+      "name": "ContractsDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1851660,
+        "y": 3155800,
+        "cx": 0,
+        "cy": 120000,
+        "x_abs": 1851660,
+        "y_abs": 3155800,
+        "x_in": 2.025,
+        "y_in": 3.451,
+        "cx_in": 0.0,
+        "cy_in": 0.131,
+        "right_emu": 1851660,
+        "bottom_emu": 3275800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 5,
+      "kind": "cxnSp",
+      "sp_id": 61,
+      "name": "BudgetsDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1851660,
+        "y": 3275800,
+        "cx": 0,
+        "cy": 120000,
+        "x_abs": 1851660,
+        "y_abs": 3275800,
+        "x_in": 2.025,
+        "y_in": 3.582,
+        "cx_in": 0.0,
+        "cy_in": 0.131,
+        "right_emu": 1851660,
+        "bottom_emu": 3395800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": true
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 6,
+      "kind": "cxnSp",
+      "sp_id": 62,
+      "name": "UsSegDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4549140,
+        "y": 3155800,
+        "cx": 0,
+        "cy": 120000,
+        "x_abs": 4549140,
+        "y_abs": 3155800,
+        "x_in": 4.975,
+        "y_in": 3.451,
+        "cx_in": 0.0,
+        "cy_in": 0.131,
+        "right_emu": 4549140,
+        "bottom_emu": 3275800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 7,
+      "kind": "cxnSp",
+      "sp_id": 63,
+      "name": "EuropeDrop",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4549140,
+        "y": 3275800,
+        "cx": 0,
+        "cy": 120000,
+        "x_abs": 4549140,
+        "y_abs": 3275800,
+        "x_in": 4.975,
+        "y_in": 3.582,
+        "cx_in": 0.0,
+        "cy_in": 0.131,
+        "right_emu": 4549140,
+        "bottom_emu": 3395800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": true
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 8,
+      "kind": "cxnSp",
+      "sp_id": 64,
+      "name": "CollectorBar",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 1851660,
+        "y": 3275800,
+        "cx": 4183380,
+        "cy": 0,
+        "x_abs": 1851660,
+        "y_abs": 3275800,
+        "x_in": 2.025,
+        "y_in": 3.582,
+        "cx_in": 4.575,
+        "cy_in": 0.0,
+        "right_emu": 6035040,
+        "bottom_emu": 3275800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 9,
+      "kind": "cxnSp",
+      "sp_id": 65,
+      "name": "ConvergenceSpine",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6035040,
+        "y": 3075800,
+        "cx": 0,
+        "cy": 400000,
+        "x_abs": 6035040,
+        "y_abs": 3075800,
+        "x_in": 6.6,
+        "y_in": 3.364,
+        "cx_in": 0.0,
+        "cy_in": 0.437,
+        "right_emu": 6035040,
+        "bottom_emu": 3475800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 10,
+      "kind": "cxnSp",
+      "sp_id": 66,
+      "name": "ToRail",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6035040,
+        "y": 3275800,
+        "cx": 685800,
+        "cy": 0,
+        "x_abs": 6035040,
+        "y_abs": 3275800,
+        "x_in": 6.6,
+        "y_in": 3.582,
+        "cx_in": 0.75,
+        "cy_in": 0.0,
+        "right_emu": 6720840,
+        "bottom_emu": 3275800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 15875,
+        "dash": null,
+        "head_end": null,
+        "tail_end": {
+          "type": "triangle",
+          "w": "med",
+          "len_": "med"
+        }
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 11,
+      "kind": "sp",
+      "sp_id": 67,
+      "name": "SpineLabel",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6075040,
+        "y": 2995800,
+        "cx": 645800,
+        "cy": 220000,
+        "x_abs": 6075040,
+        "y_abs": 2995800,
+        "x_in": 6.644,
+        "y_in": 3.276,
+        "cx_in": 0.706,
+        "cy_in": 0.241,
+        "right_emu": 6720840,
+        "bottom_emu": 3215800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "b",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Normalize to annual $M",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Normalize to annual $M"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 645800,
+        "avail_w_in": 0.706,
+        "avail_h_emu": 220000,
+        "avail_h_in": 0.241,
+        "wrapped_lines": 2,
+        "est_height_emu": 233679,
+        "est_height_in": 0.256,
+        "fits": false,
+        "overflow_emu": 13679,
+        "overflow_in": 0.015,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 233679,
+            "para_h_in": 0.256
+          }
+        ]
+      }
+    },
+    {
+      "z": 12,
+      "kind": "sp",
+      "sp_id": 20,
+      "name": "EngineCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 640080,
+        "y": 1671600,
+        "cx": 2423160,
+        "cy": 1484200,
+        "x_abs": 640080,
+        "y_abs": 1671600,
+        "x_in": 0.7,
+        "y_in": 1.828,
+        "cx_in": 2.65,
+        "cy_in": 1.623,
+        "right_emu": 3063240,
+        "bottom_emu": 3155800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2240280,
+        "avail_w_in": 2.45,
+        "avail_h_emu": 1392760,
+        "avail_h_in": 1.523,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 13,
+      "kind": "sp",
+      "sp_id": 21,
+      "name": "EngineBody",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 640080,
+        "y": 1671600,
+        "cx": 2423160,
+        "cy": 1194200,
+        "x_abs": 640080,
+        "y_abs": 1671600,
+        "x_in": 0.7,
+        "y_in": 1.828,
+        "cx_in": 2.65,
+        "cy_in": 1.306,
+        "right_emu": 3063240,
+        "bottom_emu": 2865800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 60000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "CONTRACTS",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Reported value",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7 relevance",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7 maritime",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7 instrumentation",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00f7 years in PoP",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Recognized annual contract TAM",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "CONTRACTS\nReported value\n\u00d7 relevance\n\u00d7 maritime\n\u00d7 instrumentation\n\u00f7 years in PoP\nRecognized annual contract TAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2223160,
+        "avail_w_in": 2.431,
+        "avail_h_emu": 1094200,
+        "avail_h_in": 1.197,
+        "wrapped_lines": 7,
+        "est_height_emu": 868675,
+        "est_height_in": 0.95,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 132080,
+            "para_h_in": 0.144
+          }
+        ]
+      }
+    },
+    {
+      "z": 14,
+      "kind": "sp",
+      "sp_id": 22,
+      "name": "EngineCaveat",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 740080,
+        "y": 2875800,
+        "cx": 2223160,
+        "cy": 240000,
+        "x_abs": 740080,
+        "y_abs": 2875800,
+        "x_in": 0.809,
+        "y_in": 3.145,
+        "cx_in": 2.431,
+        "cy_in": 0.262,
+        "right_emu": 2963240,
+        "bottom_emu": 3115800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Annual rows are not re-divided",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Annual rows are not re-divided"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2223160,
+        "avail_w_in": 2.431,
+        "avail_h_emu": 240000,
+        "avail_h_in": 0.262,
+        "wrapped_lines": 1,
+        "est_height_emu": 101600,
+        "est_height_in": 0.111,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 1,
+            "para_h_emu": 101600,
+            "para_h_in": 0.111
+          }
+        ]
+      }
+    },
+    {
+      "z": 15,
+      "kind": "sp",
+      "sp_id": 30,
+      "name": "EngineCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 640080,
+        "y": 3395800,
+        "cx": 2423160,
+        "cy": 1484200,
+        "x_abs": 640080,
+        "y_abs": 3395800,
+        "x_in": 0.7,
+        "y_in": 3.714,
+        "cx_in": 2.65,
+        "cy_in": 1.623,
+        "right_emu": 3063240,
+        "bottom_emu": 4880000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "B6C8D8",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2240280,
+        "avail_w_in": 2.45,
+        "avail_h_emu": 1392760,
+        "avail_h_in": 1.523,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 16,
+      "kind": "sp",
+      "sp_id": 31,
+      "name": "EngineBody",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 640080,
+        "y": 3395800,
+        "cx": 2423160,
+        "cy": 1194200,
+        "x_abs": 640080,
+        "y_abs": 3395800,
+        "x_in": 0.7,
+        "y_in": 3.714,
+        "cx_in": 2.65,
+        "cy_in": 1.306,
+        "right_emu": 3063240,
+        "bottom_emu": 4590000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 60000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "BUDGETS",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "FY27 PB",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "\u00d7 maritime instrumentation share",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "PE maritime slice",
+                "font": "Arial",
+                "size_pt": 10.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "BUDGETS\nFY27 PB\n\u00d7 maritime instrumentation share\nPE maritime slice"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2223160,
+        "avail_w_in": 2.431,
+        "avail_h_emu": 1094200,
+        "avail_h_in": 1.197,
+        "wrapped_lines": 4,
+        "est_height_emu": 518158,
+        "est_height_in": 0.567,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 10.0,
+            "lines": 1,
+            "para_h_emu": 132080,
+            "para_h_in": 0.144
+          }
+        ]
+      }
+    },
+    {
+      "z": 17,
+      "kind": "sp",
+      "sp_id": 32,
+      "name": "EngineChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 740080,
+        "y": 4600000,
+        "cx": 2223160,
+        "cy": 240000,
+        "x_abs": 740080,
+        "y_abs": 4600000,
+        "x_in": 0.809,
+        "y_in": 5.031,
+        "cx_in": 2.431,
+        "cy_in": 0.262,
+        "right_emu": 2963240,
+        "bottom_emu": 4840000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 40000,
+          "r_ins": 40000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "NAVAIR rows; SBX / Pacific Collector anchors",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "NAVAIR rows; SBX / Pacific Collector anchors"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2143160,
+        "avail_w_in": 2.344,
+        "avail_h_emu": 208000,
+        "avail_h_in": 0.227,
+        "wrapped_lines": 2,
+        "est_height_emu": 203200,
+        "est_height_in": 0.222,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 203200,
+            "para_h_in": 0.222
+          }
+        ]
+      }
+    },
+    {
+      "z": 18,
+      "kind": "sp",
+      "sp_id": 40,
+      "name": "EngineCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3337560,
+        "y": 1671600,
+        "cx": 2423160,
+        "cy": 1484200,
+        "x_abs": 3337560,
+        "y_abs": 1671600,
+        "x_in": 3.65,
+        "y_in": 1.828,
+        "cx_in": 2.65,
+        "cy_in": 1.623,
+        "right_emu": 5760720,
+        "bottom_emu": 3155800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2240280,
+        "avail_w_in": 2.45,
+        "avail_h_emu": 1392760,
+        "avail_h_in": 1.523,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 19,
+      "kind": "sp",
+      "sp_id": 41,
+      "name": "EngineBody",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3337560,
+        "y": 1671600,
+        "cx": 2423160,
+        "cy": 1194200,
+        "x_abs": 3337560,
+        "y_abs": 1671600,
+        "x_in": 3.65,
+        "y_in": 1.828,
+        "cx_in": 2.65,
+        "cy_in": 1.306,
+        "right_emu": 5760720,
+        "bottom_emu": 2865800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 60000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "U.S. SEGMENTS",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "l",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Vessel-prime",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "l",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Telemetry and range support",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "l",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Allocated platform work",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "l",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Commercial and launch",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Bounded low / base / high inputs",
+                "font": "Arial",
+                "size_pt": 9.5,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "U.S. SEGMENTS\nVessel-prime\nTelemetry and range support\nAllocated platform work\nCommercial and launch\nBounded low / base / high inputs"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2223160,
+        "avail_w_in": 2.431,
+        "avail_h_emu": 1094200,
+        "avail_h_in": 1.197,
+        "wrapped_lines": 6,
+        "est_height_emu": 745232,
+        "est_height_in": 0.815,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 9.5,
+            "lines": 1,
+            "para_h_emu": 125476,
+            "para_h_in": 0.137
+          }
+        ]
+      }
+    },
+    {
+      "z": 20,
+      "kind": "sp",
+      "sp_id": 42,
+      "name": "EngineChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3437560,
+        "y": 2875800,
+        "cx": 2223160,
+        "cy": 240000,
+        "x_abs": 3437560,
+        "y_abs": 2875800,
+        "x_in": 3.759,
+        "y_in": 3.145,
+        "cx_in": 2.431,
+        "cy_in": 0.262,
+        "right_emu": 5660720,
+        "bottom_emu": 3115800,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "D9D9D9",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 40000,
+          "r_ins": 40000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "DWCF floor = cross-check only",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "DWCF floor = cross-check only"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2143160,
+        "avail_w_in": 2.344,
+        "avail_h_emu": 208000,
+        "avail_h_in": 0.227,
+        "wrapped_lines": 1,
+        "est_height_emu": 101600,
+        "est_height_in": 0.111,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 1,
+            "para_h_emu": 101600,
+            "para_h_in": 0.111
+          }
+        ]
+      }
+    },
+    {
+      "z": 21,
+      "kind": "sp",
+      "sp_id": 50,
+      "name": "EngineCard",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3337560,
+        "y": 3395800,
+        "cx": 2423160,
+        "cy": 1484200,
+        "x_abs": 3337560,
+        "y_abs": 3395800,
+        "x_in": 3.65,
+        "y_in": 3.714,
+        "cx_in": 2.65,
+        "cy_in": 1.623,
+        "right_emu": 5760720,
+        "bottom_emu": 4880000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "E2E9EF",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2240280,
+        "avail_w_in": 2.45,
+        "avail_h_emu": 1392760,
+        "avail_h_in": 1.523,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 22,
+      "kind": "sp",
+      "sp_id": 51,
+      "name": "EngineBody",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3337560,
+        "y": 3395800,
+        "cx": 2423160,
+        "cy": 1194200,
+        "x_abs": 3337560,
+        "y_abs": 3395800,
+        "x_in": 3.65,
+        "y_in": 3.714,
+        "cx_in": 2.65,
+        "cy_in": 1.306,
+        "right_emu": 5760720,
+        "bottom_emu": 4590000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 100000,
+          "r_ins": 100000,
+          "t_ins": 60000,
+          "b_ins": 40000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "EUROPE ANCHORS",
+                "font": "Arial",
+                "size_pt": 12.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Country / segment modeled annual spend",
+                "font": "Arial",
+                "size_pt": 9.2,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Europe TAM",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "EUROPE ANCHORS\nCountry / segment modeled annual spend\nEurope TAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 2223160,
+        "avail_w_in": 2.431,
+        "avail_h_emu": 1094200,
+        "avail_h_in": 1.197,
+        "wrapped_lines": 3,
+        "est_height_emu": 414527,
+        "est_height_in": 0.453,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 12.0,
+            "lines": 1,
+            "para_h_emu": 152400,
+            "para_h_in": 0.167
+          },
+          {
+            "font_pt": 9.2,
+            "lines": 1,
+            "para_h_emu": 116839,
+            "para_h_in": 0.128
+          },
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 145288,
+            "para_h_in": 0.159
+          }
+        ]
+      }
+    },
+    {
+      "z": 23,
+      "kind": "sp",
+      "sp_id": 52,
+      "name": "EngineChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 3437560,
+        "y": 4600000,
+        "cx": 1071580,
+        "cy": 240000,
+        "x_abs": 3437560,
+        "y_abs": 4600000,
+        "x_in": 3.759,
+        "y_in": 5.031,
+        "cx_in": 1.172,
+        "cy_in": 0.262,
+        "right_emu": 4509140,
+        "bottom_emu": 4840000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 40000,
+          "r_ins": 40000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Public-record floors",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Public-record floors"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 991580,
+        "avail_w_in": 1.084,
+        "avail_h_emu": 208000,
+        "avail_h_in": 0.227,
+        "wrapped_lines": 2,
+        "est_height_emu": 203200,
+        "est_height_in": 0.222,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 203200,
+            "para_h_in": 0.222
+          }
+        ]
+      }
+    },
+    {
+      "z": 24,
+      "kind": "sp",
+      "sp_id": 53,
+      "name": "EngineChip",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 4589140,
+        "y": 4600000,
+        "cx": 1071580,
+        "cy": 240000,
+        "x_abs": 4589140,
+        "y_abs": 4600000,
+        "x_in": 5.019,
+        "y_in": 5.031,
+        "cx_in": 1.172,
+        "cy_in": 0.262,
+        "right_emu": 5660720,
+        "bottom_emu": 4840000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 40000,
+          "r_ins": 40000,
+          "t_ins": 16000,
+          "b_ins": 16000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 100.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Modeled gap",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Modeled gap"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 991580,
+        "avail_w_in": 1.084,
+        "avail_h_emu": 208000,
+        "avail_h_in": 0.227,
+        "wrapped_lines": 1,
+        "est_height_emu": 101600,
+        "est_height_in": 0.111,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 1,
+            "para_h_emu": 101600,
+            "para_h_in": 0.111
+          }
+        ]
+      }
+    },
+    {
+      "z": 25,
+      "kind": "sp",
+      "sp_id": 70,
+      "name": "TamRail",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 1671600,
+        "cx": 5014601,
+        "cy": 3208400,
+        "x_abs": 6720840,
+        "y_abs": 1671600,
+        "x_in": 7.35,
+        "y_in": 1.828,
+        "cx_in": 5.484,
+        "cy_in": 3.509,
+        "right_emu": 11735441,
+        "bottom_emu": 4880000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "F2F2F2",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 12700,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": []
+          }
+        ],
+        "plain_text": ""
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4831721,
+        "avail_w_in": 5.284,
+        "avail_h_emu": 3116960,
+        "avail_h_in": 3.409,
+        "wrapped_lines": 1,
+        "est_height_emu": 262890,
+        "est_height_in": 0.287,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 18.0,
+            "lines": 1,
+            "para_h_emu": 262890,
+            "para_h_in": 0.287
+          }
+        ]
+      }
+    },
+    {
+      "z": 26,
+      "kind": "sp",
+      "sp_id": 71,
+      "name": "TamRailCap",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 1671600,
+        "cx": 5014601,
+        "cy": 360000,
+        "x_abs": 6720840,
+        "y_abs": 1671600,
+        "x_in": 7.35,
+        "y_in": 1.828,
+        "cx_in": 5.484,
+        "cy_in": 0.394,
+        "right_emu": 11735441,
+        "bottom_emu": 2031600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "solid",
+        "value": "263746",
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 120000,
+          "r_ins": 120000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "ctr",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ANNUAL TAM SPEND POOL",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "FFFFFF"
+              }
+            ]
+          }
+        ],
+        "plain_text": "ANNUAL TAM SPEND POOL"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4774601,
+        "avail_w_in": 5.222,
+        "avail_h_emu": 320000,
+        "avail_h_in": 0.35,
+        "wrapped_lines": 1,
+        "est_height_emu": 189864,
+        "est_height_in": 0.208,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 189864,
+            "para_h_in": 0.208
+          }
+        ]
+      }
+    },
+    {
+      "z": 27,
+      "kind": "sp",
+      "sp_id": 72,
+      "name": "UsTamBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 2031600,
+        "cx": 5014601,
+        "cy": 1000000,
+        "x_abs": 6720840,
+        "y_abs": 2031600,
+        "x_in": 7.35,
+        "y_in": 2.222,
+        "cx_in": 5.484,
+        "cy_in": 1.094,
+        "right_emu": 11735441,
+        "bottom_emu": 3031600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 130000,
+          "r_ins": 130000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "U.S. TAM",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 110.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= vessel-prime + telemetry/range-support + allocated work + NAVAIR + commercial / launch",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "U.S. TAM\n= vessel-prime + telemetry/range-support + allocated work + NAVAIR + commercial / launch"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4754601,
+        "avail_w_in": 5.2,
+        "avail_h_emu": 940000,
+        "avail_h_in": 1.028,
+        "wrapped_lines": 3,
+        "est_height_emu": 423164,
+        "est_height_in": 0.463,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 171704,
+            "para_h_in": 0.188
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 251460,
+            "para_h_in": 0.275
+          }
+        ]
+      }
+    },
+    {
+      "z": 28,
+      "kind": "sp",
+      "sp_id": 73,
+      "name": "EuTamBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 3031600,
+        "cx": 5014601,
+        "cy": 720000,
+        "x_abs": 6720840,
+        "y_abs": 3031600,
+        "x_in": 7.35,
+        "y_in": 3.315,
+        "cx_in": 5.484,
+        "cy_in": 0.787,
+        "right_emu": 11735441,
+        "bottom_emu": 3751600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 130000,
+          "r_ins": 130000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Europe TAM",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 110.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= sum of country / segment modeled annual spend",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Europe TAM\n= sum of country / segment modeled annual spend"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4754601,
+        "avail_w_in": 5.2,
+        "avail_h_emu": 660000,
+        "avail_h_in": 0.722,
+        "wrapped_lines": 2,
+        "est_height_emu": 297434,
+        "est_height_in": 0.325,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 171704,
+            "para_h_in": 0.188
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 125730,
+            "para_h_in": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "z": 29,
+      "kind": "sp",
+      "sp_id": 74,
+      "name": "TotalTamBand",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 3751600,
+        "cx": 5014601,
+        "cy": 620000,
+        "x_abs": 6720840,
+        "y_abs": 3751600,
+        "x_in": 7.35,
+        "y_in": 4.103,
+        "cx_in": 5.484,
+        "cy_in": 0.678,
+        "right_emu": 11735441,
+        "bottom_emu": 4371600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 130000,
+          "r_ins": 130000,
+          "t_ins": 30000,
+          "b_ins": 30000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Total TAM",
+                "font": "Arial",
+                "size_pt": 13.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 110.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "= U.S. TAM + Europe TAM",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Total TAM\n= U.S. TAM + Europe TAM"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4754601,
+        "avail_w_in": 5.2,
+        "avail_h_emu": 560000,
+        "avail_h_in": 0.612,
+        "wrapped_lines": 2,
+        "est_height_emu": 297434,
+        "est_height_in": 0.325,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 13.0,
+            "lines": 1,
+            "para_h_emu": 171704,
+            "para_h_in": 0.188
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 125730,
+            "para_h_in": 0.138
+          }
+        ]
+      }
+    },
+    {
+      "z": 30,
+      "kind": "sp",
+      "sp_id": 75,
+      "name": "TamRailQualifier",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6720840,
+        "y": 4371600,
+        "cx": 5014601,
+        "cy": 508400,
+        "x_abs": 6720840,
+        "y_abs": 4371600,
+        "x_in": 7.35,
+        "y_in": 4.781,
+        "cx_in": 5.484,
+        "cy_in": 0.556,
+        "right_emu": 11735441,
+        "bottom_emu": 4880000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 130000,
+          "r_ins": 130000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 104.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "ASV role suitability is not applied until SAM build",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "ASV role suitability is not applied until SAM build"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4754601,
+        "avail_w_in": 5.2,
+        "avail_h_emu": 468400,
+        "avail_h_in": 0.512,
+        "wrapped_lines": 1,
+        "est_height_emu": 112268,
+        "est_height_in": 0.123,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 112268,
+            "para_h_in": 0.123
+          }
+        ]
+      }
+    },
+    {
+      "z": 31,
+      "kind": "cxnSp",
+      "sp_id": 76,
+      "name": "TamRailDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6820840,
+        "y": 2031600,
+        "cx": 4814601,
+        "cy": 0,
+        "x_abs": 6820840,
+        "y_abs": 2031600,
+        "x_in": 7.459,
+        "y_in": 2.222,
+        "cx_in": 5.265,
+        "cy_in": 0.0,
+        "right_emu": 11635441,
+        "bottom_emu": 2031600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 32,
+      "kind": "cxnSp",
+      "sp_id": 77,
+      "name": "TamRailDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6820840,
+        "y": 3031600,
+        "cx": 4814601,
+        "cy": 0,
+        "x_abs": 6820840,
+        "y_abs": 3031600,
+        "x_in": 7.459,
+        "y_in": 3.315,
+        "cx_in": 5.265,
+        "cy_in": 0.0,
+        "right_emu": 11635441,
+        "bottom_emu": 3031600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 33,
+      "kind": "cxnSp",
+      "sp_id": 78,
+      "name": "TamRailDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6820840,
+        "y": 3751600,
+        "cx": 4814601,
+        "cy": 0,
+        "x_abs": 6820840,
+        "y_abs": 3751600,
+        "x_in": 7.459,
+        "y_in": 4.103,
+        "cx_in": 5.265,
+        "cy_in": 0.0,
+        "right_emu": 11635441,
+        "bottom_emu": 3751600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 34,
+      "kind": "cxnSp",
+      "sp_id": 79,
+      "name": "TamRailDivider",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6820840,
+        "y": 4371600,
+        "cx": 4814601,
+        "cy": 0,
+        "x_abs": 6820840,
+        "y_abs": 4371600,
+        "x_in": 7.459,
+        "y_in": 4.781,
+        "cx_in": 5.265,
+        "cy_in": 0.0,
+        "right_emu": 11635441,
+        "bottom_emu": 4371600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "unset",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "solid",
+        "color": "000000",
+        "w_emu": 9525,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "line",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": null,
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null
+    },
+    {
+      "z": 35,
+      "kind": "sp",
+      "sp_id": 10,
+      "name": "Qualifier",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 1371600,
+        "cx": 6300000,
+        "cy": 250000,
+        "x_abs": 453079,
+        "y_abs": 1371600,
+        "x_in": 0.495,
+        "y_in": 1.5,
+        "cx_in": 6.89,
+        "cy_in": 0.273,
+        "right_emu": 6753079,
+        "bottom_emu": 1621600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "TAM method only; SAM addressability starts on the next slide",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "TAM method only; SAM addressability starts on the next slide"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 6300000,
+        "avail_w_in": 6.89,
+        "avail_h_emu": 250000,
+        "avail_h_in": 0.273,
+        "wrapped_lines": 1,
+        "est_height_emu": 124142,
+        "est_height_in": 0.136,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 36,
+      "kind": "sp",
+      "sp_id": 11,
+      "name": "FormulaLegend",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 7000000,
+        "y": 1371600,
+        "cx": 4735441,
+        "cy": 250000,
+        "x_abs": 7000000,
+        "y_abs": 1371600,
+        "x_in": 7.655,
+        "y_in": 1.5,
+        "cx_in": 5.179,
+        "cy_in": 0.273,
+        "right_emu": 11735441,
+        "bottom_emu": 1621600,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "ctr",
+          "wrap": "square",
+          "l_ins": 0,
+          "r_ins": 0,
+          "t_ins": 0,
+          "b_ins": 0,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": "r",
+            "ln_spc_pct": 115.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Formula terms shown are model operations, not source categories",
+                "font": "Arial",
+                "size_pt": 8.5,
+                "bold": null,
+                "italic": true,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Formula terms shown are model operations, not source categories"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 4735441,
+        "avail_w_in": 5.179,
+        "avail_h_emu": 250000,
+        "avail_h_in": 0.273,
+        "wrapped_lines": 1,
+        "est_height_emu": 124142,
+        "est_height_in": 0.136,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.5,
+            "lines": 1,
+            "para_h_emu": 124142,
+            "para_h_in": 0.136
+          }
+        ]
+      }
+    },
+    {
+      "z": 37,
+      "kind": "sp",
+      "sp_id": 80,
+      "name": "Commentary",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 4970000,
+        "cx": 5500000,
+        "cy": 900000,
+        "x_abs": 453079,
+        "y_abs": 4970000,
+        "x_in": 0.495,
+        "y_in": 5.435,
+        "cx_in": 6.015,
+        "cy_in": 0.984,
+        "right_emu": 5953079,
+        "bottom_emu": 5870000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 110000,
+          "r_ins": 90000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "TAM is an annual spend pool, not a share assumption.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Contracts are filtered for relevance, maritime content, and instrumentation content before annualization.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Budget lines are sliced by maritime instrumentation share instead of counted at full program value.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "TAM is an annual spend pool, not a share assumption.\nContracts are filtered for relevance, maritime content, and instrumentation content before annualization.\nBudget lines are sliced by maritime instrumentation share instead of counted at full program value."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 5300000,
+        "avail_w_in": 5.796,
+        "avail_h_emu": 860000,
+        "avail_h_in": 0.941,
+        "wrapped_lines": 5,
+        "est_height_emu": 632714,
+        "est_height_in": 0.692,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 148082,
+            "para_h_in": 0.162
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 242316,
+            "para_h_in": 0.265
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 242316,
+            "para_h_in": 0.265
+          }
+        ]
+      }
+    },
+    {
+      "z": 38,
+      "kind": "sp",
+      "sp_id": 81,
+      "name": "Commentary",
+      "chrome_role": null,
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 6253079,
+        "y": 4970000,
+        "cx": 5482362,
+        "cy": 900000,
+        "x_abs": 6253079,
+        "y_abs": 4970000,
+        "x_in": 6.838,
+        "y_in": 5.435,
+        "cx_in": 5.996,
+        "cy_in": 0.984,
+        "right_emu": 11735441,
+        "bottom_emu": 5870000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 110000,
+          "r_ins": 90000,
+          "t_ins": 20000,
+          "b_ins": 20000,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "The build combines measured anchors with bounded model inputs.",
+                "font": "Arial",
+                "size_pt": 11.0,
+                "bold": true,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "U.S. TAM uses explicit segment inputs plus a calculated NAVAIR layer.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          },
+          {
+            "algn": null,
+            "ln_spc_pct": 106.0,
+            "ln_spc_pts": null,
+            "bullet_char": "\u2022",
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Europe TAM uses country / segment modeled annual spend, with public-record floors where available.",
+                "font": "Arial",
+                "size_pt": 9.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "000000"
+              }
+            ]
+          }
+        ],
+        "plain_text": "The build combines measured anchors with bounded model inputs.\nU.S. TAM uses explicit segment inputs plus a calculated NAVAIR layer.\nEurope TAM uses country / segment modeled annual spend, with public-record floors where available."
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 5282362,
+        "avail_w_in": 5.777,
+        "avail_h_emu": 860000,
+        "avail_h_in": 0.941,
+        "wrapped_lines": 4,
+        "est_height_emu": 511556,
+        "est_height_in": 0.559,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 11.0,
+            "lines": 1,
+            "para_h_emu": 148082,
+            "para_h_in": 0.162
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 1,
+            "para_h_emu": 121158,
+            "para_h_in": 0.133
+          },
+          {
+            "font_pt": 9.0,
+            "lines": 2,
+            "para_h_emu": 242316,
+            "para_h_in": 0.265
+          }
+        ]
+      }
+    },
+    {
+      "z": 39,
+      "kind": "sp",
+      "sp_id": 9999,
+      "name": "Sources",
+      "chrome_role": "Sources",
+      "ph_type": null,
+      "ph_idx": null,
+      "is_placeholder": false,
+      "geometry": {
+        "x": 453079,
+        "y": 5930000,
+        "cx": 11282362,
+        "cy": 540000,
+        "x_abs": 453079,
+        "y_abs": 5930000,
+        "x_in": 0.495,
+        "y_in": 6.485,
+        "cx_in": 12.339,
+        "cy_in": 0.591,
+        "right_emu": 11735441,
+        "bottom_emu": 6470000,
+        "rot_deg": null,
+        "flip_h": false,
+        "flip_v": false
+      },
+      "fill": {
+        "kind": "none",
+        "value": null,
+        "blip_embed_rid": null,
+        "blip_link_rid": null
+      },
+      "line": {
+        "kind": "none",
+        "color": null,
+        "w_emu": null,
+        "dash": null,
+        "head_end": null,
+        "tail_end": null
+      },
+      "prst": "rect",
+      "prst_avlst": null,
+      "custgeom": null,
+      "text_body": {
+        "body_pr": {
+          "anchor": "t",
+          "wrap": "square",
+          "l_ins": 91440,
+          "r_ins": 91440,
+          "t_ins": 45720,
+          "b_ins": 45720,
+          "rot": null
+        },
+        "paragraphs": [
+          {
+            "algn": null,
+            "ln_spc_pct": null,
+            "ln_spc_pts": null,
+            "bullet_char": null,
+            "bullet_autonum": null,
+            "level": 0,
+            "runs": [
+              {
+                "text": "Sources: (1) USAspending.gov / FPDS award records and SEC EDGAR filings; (2) DoD FY2027 Budget Justification Books and U.S. Treasury / DoD DWCF TAS 097-4930; (3) QinetiQ FY25 Annual Report, U.K. MOD LTPA / MSCA releases, DGA EM, CNES / CSG, FMV, And\u00f8ya Space, SaxaVord, and company analysis",
+                "font": "Arial",
+                "size_pt": 8.0,
+                "bold": null,
+                "italic": null,
+                "underline": null,
+                "color": "162029"
+              }
+            ]
+          }
+        ],
+        "plain_text": "Sources: (1) USAspending.gov / FPDS award records and SEC EDGAR filings; (2) DoD FY2027 Budget Justification Books and U.S. Treasury / DoD DWCF TAS 097-4930; (3) QinetiQ FY25 Annual Report, U.K. MOD LTPA / MSCA releases, DGA EM, CNES / CSG, FMV, And\u00f8ya Space, SaxaVord, and company analysis"
+      },
+      "table": null,
+      "chart": null,
+      "picture": null,
+      "ole": null,
+      "frame_uri": null,
+      "is_thinkcell": false,
+      "cxn_start": null,
+      "cxn_end": null,
+      "parent_group_id": null,
+      "group_scale_x": null,
+      "group_scale_y": null,
+      "raw_tag": null,
+      "text_estimate": {
+        "avail_w_emu": 11099482,
+        "avail_w_in": 12.139,
+        "avail_h_emu": 448560,
+        "avail_h_in": 0.491,
+        "wrapped_lines": 2,
+        "est_height_emu": 203200,
+        "est_height_in": 0.222,
+        "fits": true,
+        "overflow_emu": 0,
+        "overflow_in": 0.0,
+        "paragraphs": [
+          {
+            "font_pt": 8.0,
+            "lines": 2,
+            "para_h_emu": 203200,
+            "para_h_in": 0.222
+          }
+        ]
+      }
+    }
+  ],
+  "table_fit": []
+}

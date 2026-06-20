@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>v1.4 Mockup - Slide 04 Appropriation Sourcing</title>
+<link rel="stylesheet" href="deck.css">
+<style>
+  /* Standalone viewer (not part of final deck) */
+  html, body { margin: 0; padding: 0; background: #2a3340; font-family: Helvetica, Arial, sans-serif; }
+  .viewer { padding: 40px 0; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; }
+  .slide-frame {
+    width: 1280px;
+    height: 720px;
+    background: #ffffff;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  .mockup-banner {
+    position: absolute; top: 8px; right: 16px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #c9d2dc;
+    background: #1f2d44; padding: 4px 10px; border-radius: 3px; z-index: 10;
+  }
+
+  /* Tighten section padding + title for this mockup */
+  .slide-frame section.slide { padding: 28px 56px 24px 56px; }
+  .slide-frame .slide-title { font-size: 24px; line-height: 1.25; margin-bottom: 10px; }
+  .slide-frame .body { min-height: 0; overflow: hidden; flex: 1; }
+
+  /* Foreground disclosure strip */
+  .foreground-strip {
+    background: #fffbea;
+    border: 1px solid #d4af37;
+    border-radius: 3px;
+    padding: 7px 12px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #2a3340;
+  }
+  .foreground-strip .fg-label {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8a6d00;
+    background: #f5e6a8;
+    padding: 2px 7px;
+    border-radius: 2px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .foreground-strip strong { color: #1f2d44; }
+
+  /* Placeholder flag for numbers that need mechanical rebase */
+  .num-pending {
+    color: #8a6d00;
+    font-style: italic;
+    font-size: 9.5px;
+  }
+
+  /* Footer */
+  .slide-frame .footer { font-size: 10px; line-height: 1.4; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="viewer">
+<div class="slide-frame">
+<span class="mockup-banner">v1.4 MOCKUP</span>
+
+<section class="slide" style="position:absolute; inset:0;">
+
+  <div class="chrome-top">
+    <div class="breadcrumb">Market Sizing / Scope</div>
+    <div class="chrome-top__right">
+      <span class="seal-block">
+        <img class="seal" src="assets/usn-crest.jpg" alt="U.S. Navy">
+        <img class="seal" src="assets/uscg-crest.png" alt="U.S. Coast Guard">
+      </span>
+    </div>
+  </div>
+
+  <div class="slide-title">
+    <span class="topic">Appropriation Sourcing</span><span class="pipe">|</span><span class="assertion">The $7.1B MRO TAM is funded by ~10 federal appropriations, with Navy OMN and OPN together at 72%</span>
+  </div>
+
+  <div class="body left-right-wide">
+    <!-- LEFT: dual stacked columns -->
+    <div class="dual-stack">
+      <div class="slide-subtitle" style="margin-bottom:8px;">FY2025 MRO TAM obligations by Treasury appropriation - OPN drilled to Budget Activity ($M, TAS-attributed to the $7,067M basis)</div>
+
+      <!-- FOREGROUND DISCLOSURE STRIP - NEW in v1.4 -->
+      <div class="foreground-strip">
+        <span class="fg-label">Method</span>
+        <strong>49% of MRO $ are directly TAS-attributed</strong> via USAspending's /awards/funding/ endpoint (Treasury File C). The remaining 51% of $ are imputed by applying per-PSC-bucket appropriation ratios from the directly-classified peer sample. Rollup totals are stable across the direct / imputed split; per-award precision is lower for the imputed subset.
+      </div>
+
+      <div class="mekko-legend">
+        <span><span class="sw" style="background:#1f2d44"></span>Navy-direct (OMN / OPN / Navy-other)</span>
+        <span><span class="sw" style="background:#6f8197"></span>Defense-Wide (RDT&amp;E-DW + DW-other)</span>
+        <span><span class="sw" style="background:#dbe6f1"></span>Other agencies (USCG, AF, Army, SCN)</span>
+      </div>
+
+      <div class="dual-stack-area">
+        <div class="dual-stack-yaxis">
+          <span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span>
+        </div>
+
+        <!-- Column 1: appropriation stack (REBASED to $7,067M) -->
+        <div class="dual-stack-col">
+          <div class="col-title">MRO TAM by appropriation <span class="sub">Total $7,067M</span></div>
+          <div class="bar-wrap">
+            <div class="bar">
+              <!-- Ordering: smallest (top) -> biggest (bottom). -->
+              <div class="seg on-light" style="flex:0 0 4.0%; background:#bcd0e3;"><span class="lbl">Navy other &nbsp; $283M <span class="pct">4%</span></span></div>
+              <div class="seg on-light" style="flex:0 0 4.0%; background:#a8c0d6;"><span class="lbl">DW other &nbsp; $283M <span class="pct">4%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 4.0%;  background:#8597ab;"><span class="lbl">USCG &nbsp; $283M <span class="pct">4%</span></span></div>
+              <div class="seg on-light" style="flex:0 0 5.0%; background:#dbe6f1;"><span class="lbl">AF / Army / SCN / other &nbsp; $353M <span class="pct">5%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 11.0%; background:#6f8197;"><span class="lbl">RDT&amp;E, Defense-Wide &nbsp; $778M <span class="pct">11%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 35.0%; background:#36527a;"><span class="lbl">OPN &nbsp; $2,473M <span class="pct">35%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 37.0%; background:#1f2d44;"><span class="lbl">OMN &nbsp; $2,615M <span class="pct">37%</span></span></div>
+            </div>
+          </div>
+          <div class="dual-stack-xlabel"><span class="xt">MRO TAM</span>$7,067M (post-exclusions)</div>
+        </div>
+
+        <!-- Bracket link -->
+        <div class="bracket-link" aria-hidden="true">
+          <svg viewBox="0 0 58 400" preserveAspectRatio="none">
+            <path d="M 0 111 C 20 111, 20 10, 58 10 M 0 251 C 20 251, 20 390, 58 390" stroke="#36527a" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+
+        <!-- Column 2: OPN drill (REBASED to $2,473M) -->
+        <div class="dual-stack-col narrow">
+          <div class="col-title">OPN by Budget Activity <span class="sub">OPN Total $2,473M</span></div>
+          <div class="bar-wrap">
+            <div class="bar">
+              <!-- Ordering: smallest (top) -> biggest (bottom). -->
+              <div class="seg on-light" style="flex:0 0 7.0%;  background:#a8c0d6;"><span class="lbl">Other BAs &nbsp; $173M <span class="pct">7%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 32.0%; background:#36527a;"><span class="lbl">BA-8 Spares &amp; Repair Parts &nbsp; $791M <span class="pct">32%</span></span></div>
+              <div class="seg on-dark" style="flex:0 0 61.0%; background:#1f2d44;"><span class="lbl">BA-7 Personnel &amp; Cmd Support Equip &nbsp; $1,533M <span class="pct">62%</span></span></div>
+            </div>
+          </div>
+          <div class="dual-stack-xlabel"><span class="xt">OPN drill</span>Budget Activity breakdown</div>
+        </div>
+      </div>
+
+      <div class="num-pending" style="margin-top:6px;">Numbers shown: v1.3 ratios applied to $7,067M basis; 1-2 p.p. mechanical reconciliation pending (see v1.4 spec, Slide 4 research Priority 1)</div>
+    </div>
+
+    <!-- RIGHT: takeaway callouts -->
+    <div class="right-stack">
+      <div class="takeaway-col">
+        <div class="tk">
+          <span class="tk-title">Navy OMN and OPN drive 72% of MRO obligations</span>
+          Navy sustainment drives the market. The appropriation story is a Navy story, not a DoD-wide one. USCG is only 4% of obligations.
+        </div>
+        <div class="tk">
+          <span class="tk-title">OPN concentrates in Command Support Equipment (62%) and Spares (32%)</span>
+          BA-7 funds installation and modernization electronics, C4ISR, and combat-system integration. BA-8 is spares and consumables. Depot availabilities (DSRAs, DPIAs, CNO avails) are funded through BA-7, not through OMN CE-928 contract maintenance. <span class="num-pending">[source: pending - OPN P-5 or NAVSEA]</span>
+        </div>
+        <div class="tk">
+          <span class="tk-title">RDT&amp;E Defense-Wide contributes $778M (11%)</span>
+          Almost entirely Trident II, SSP, and SMDC sustainment on J-series PSCs. Draper MK7 Trident ($318M FY2025) is the single-largest MRO PIID.
+        </div>
+        <div class="tk">
+          <span class="tk-title">SCN contributes approximately $40M on MRO PSCs</span>
+          De minimis. Nuclear-platform MRO bundles under PSC 1905 shipbuilding rather than onto MRO PSCs; see Slide 3 for the full scope reconciliation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Note: (1) 49% of FY2025 MRO $ directly TAS-attributed from Treasury File C (USAspending /awards/funding/ endpoint); 51% imputed via per-PSC-bucket appropriation ratios from the directly-classified peer sample. Rollup totals are stable across the direct and imputed split; (2) OPN BA-7 depot-availability funding per [specific source: pending research]; (3) All figures on a post-exclusion ($7,067M) basis. Shore-base and FMS exclusions (~$333M) are treated proportionally across appropriations; see Slide 3.<br>Source: USAspending /awards/funding/ joined to FPDS FY2025 contract obligations (U.S. Navy and U.S. Coast Guard, 68 services PSCs, post-exclusions). Data as of April 2026.</div>
+
+</section>
+</div>
+</div>
+
+</body>
+</html>

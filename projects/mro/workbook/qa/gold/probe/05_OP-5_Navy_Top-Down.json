@@ -1,0 +1,1276 @@
+{
+  "source": "file",
+  "name": "OP-5 Navy Top-Down",
+  "tab_name": "OP-5 Navy Top-Down",
+  "sheet_index": 5,
+  "tab_color": "FF34406B",
+  "gridlines_shown": "0",
+  "n_cols": 8,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "10.0"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "50.0"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "14.0"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "14.0"
+    },
+    {
+      "min": "5",
+      "max": "5",
+      "width": "14.0"
+    },
+    {
+      "min": "6",
+      "max": "6",
+      "width": "14.0"
+    },
+    {
+      "min": "7",
+      "max": "7",
+      "width": "14.0"
+    },
+    {
+      "min": "8",
+      "max": "8",
+      "width": "10.0"
+    }
+  ],
+  "n_rows": 30,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 1
+    },
+    {
+      "r": "2",
+      "n_cells": 1
+    },
+    {
+      "r": "3",
+      "n_cells": 8
+    },
+    {
+      "r": "4",
+      "n_cells": 1
+    },
+    {
+      "r": "5",
+      "n_cells": 8
+    },
+    {
+      "r": "6",
+      "n_cells": 8
+    },
+    {
+      "r": "7",
+      "n_cells": 8
+    },
+    {
+      "r": "8",
+      "n_cells": 8
+    },
+    {
+      "r": "9",
+      "n_cells": 8
+    },
+    {
+      "r": "10",
+      "n_cells": 8
+    },
+    {
+      "r": "11",
+      "n_cells": 8
+    },
+    {
+      "r": "12",
+      "n_cells": 8
+    },
+    {
+      "r": "13",
+      "n_cells": 8
+    },
+    {
+      "r": "14",
+      "n_cells": 8
+    },
+    {
+      "r": "15",
+      "n_cells": 8
+    },
+    {
+      "r": "16",
+      "n_cells": 2
+    },
+    {
+      "r": "18",
+      "n_cells": 1
+    },
+    {
+      "r": "19",
+      "n_cells": 8
+    },
+    {
+      "r": "20",
+      "n_cells": 8
+    },
+    {
+      "r": "21",
+      "n_cells": 8
+    },
+    {
+      "r": "22",
+      "n_cells": 8
+    },
+    {
+      "r": "23",
+      "n_cells": 2
+    },
+    {
+      "r": "25",
+      "n_cells": 1
+    },
+    {
+      "r": "26",
+      "n_cells": 2
+    },
+    {
+      "r": "27",
+      "n_cells": 2
+    },
+    {
+      "r": "28",
+      "n_cells": 2
+    },
+    {
+      "r": "29",
+      "n_cells": 2
+    },
+    {
+      "r": "31",
+      "n_cells": 1
+    },
+    {
+      "r": "32",
+      "n_cells": 1
+    },
+    {
+      "r": "33",
+      "n_cells": 1
+    }
+  ],
+  "n_cells": 148,
+  "cells": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "value": "OP-5 Navy Top-Down - 1B4B Ship Maintenance by Availability Category ($ in Thousands)"
+    },
+    {
+      "ref": "A2",
+      "style": "S_DEFAULT",
+      "value": "Hand-curated from budget_material_sources/OMN_Book.txt lines 5596-5618 (OP-5 Exhibit, 1B4B Ship Maintenance, Table IV Performance Criteria and Evaluation Summary (Page 7 of 29)). PB cycle: PB26. Confidence: high. Row order matches source table; dollars in $K."
+    },
+    {
+      "ref": "A3",
+      "style": "S_BOLD",
+      "value": "Code"
+    },
+    {
+      "ref": "B3",
+      "style": "S_BOLD",
+      "value": "Availability Category"
+    },
+    {
+      "ref": "C3",
+      "style": "S_BOLD",
+      "value": "Side"
+    },
+    {
+      "ref": "D3",
+      "style": "S_BOLD",
+      "value": "FY24 PB $K"
+    },
+    {
+      "ref": "E3",
+      "style": "S_BOLD",
+      "value": "FY24 Actual $K"
+    },
+    {
+      "ref": "F3",
+      "style": "S_BOLD",
+      "value": "FY25 Current $K"
+    },
+    {
+      "ref": "G3",
+      "style": "S_BOLD",
+      "value": "FY26 PB $K"
+    },
+    {
+      "ref": "H3",
+      "style": "S_BOLD",
+      "value": "Source line"
+    },
+    {
+      "ref": "A4",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Private (contract-executable) avail categories"
+    },
+    {
+      "ref": "A5",
+      "style": "S_DEFAULT",
+      "value": "OH"
+    },
+    {
+      "ref": "B5",
+      "style": "S_DEFAULT",
+      "value": "Overhauls"
+    },
+    {
+      "ref": "C5",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D5",
+      "style": "S_NUM_INPUT",
+      "value": "329274"
+    },
+    {
+      "ref": "E5",
+      "style": "S_NUM_INPUT",
+      "value": "348149"
+    },
+    {
+      "ref": "F5",
+      "style": "S_NUM_INPUT",
+      "value": "250497"
+    },
+    {
+      "ref": "G5",
+      "style": "S_NUM_INPUT",
+      "value": "250312"
+    },
+    {
+      "ref": "H5",
+      "style": "S_DEFAULT",
+      "value": "5600"
+    },
+    {
+      "ref": "A6",
+      "style": "S_DEFAULT",
+      "value": "SRA"
+    },
+    {
+      "ref": "B6",
+      "style": "S_DEFAULT",
+      "value": "Selected Restricted Availability"
+    },
+    {
+      "ref": "C6",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D6",
+      "style": "S_NUM_INPUT",
+      "value": "717140"
+    },
+    {
+      "ref": "E6",
+      "style": "S_NUM_INPUT",
+      "value": "558575"
+    },
+    {
+      "ref": "F6",
+      "style": "S_NUM_INPUT",
+      "value": "384455"
+    },
+    {
+      "ref": "G6",
+      "style": "S_NUM_INPUT",
+      "value": "305424"
+    },
+    {
+      "ref": "H6",
+      "style": "S_DEFAULT",
+      "value": "5601"
+    },
+    {
+      "ref": "A7",
+      "style": "S_DEFAULT",
+      "value": "SIA"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "Surface Incremental Availability"
+    },
+    {
+      "ref": "C7",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "95837"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "89442"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "63660"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "104367"
+    },
+    {
+      "ref": "H7",
+      "style": "S_DEFAULT",
+      "value": "5602"
+    },
+    {
+      "ref": "A8",
+      "style": "S_DEFAULT",
+      "value": "PIA"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Planned Incremental Availability"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "99893"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "70962"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "322052"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "349822"
+    },
+    {
+      "ref": "H8",
+      "style": "S_DEFAULT",
+      "value": "5603"
+    },
+    {
+      "ref": "A9",
+      "style": "S_DEFAULT",
+      "value": "PMA"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Planned Maintenance Availability"
+    },
+    {
+      "ref": "C9",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "H9",
+      "style": "S_DEFAULT",
+      "value": "5604"
+    },
+    {
+      "ref": "A10",
+      "style": "S_DEFAULT",
+      "value": "CIA"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "Carrier Incremental Availability"
+    },
+    {
+      "ref": "C10",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "28204"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "9000"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "16251"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": "44947"
+    },
+    {
+      "ref": "H10",
+      "style": "S_DEFAULT",
+      "value": "5605"
+    },
+    {
+      "ref": "A11",
+      "style": "S_DEFAULT",
+      "value": "SCO"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "Service Craft Overhauls"
+    },
+    {
+      "ref": "C11",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "21554"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "16873"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "22924"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "H11",
+      "style": "S_DEFAULT",
+      "value": "5606"
+    },
+    {
+      "ref": "A12",
+      "style": "S_DEFAULT",
+      "value": "ERATA"
+    },
+    {
+      "ref": "B12",
+      "style": "S_DEFAULT",
+      "value": "Emergent Repair"
+    },
+    {
+      "ref": "C12",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "118950"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "238559"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "136225"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "139467"
+    },
+    {
+      "ref": "H12",
+      "style": "S_DEFAULT",
+      "value": "5607"
+    },
+    {
+      "ref": "A13",
+      "style": "S_DEFAULT",
+      "value": "ORATA"
+    },
+    {
+      "ref": "B13",
+      "style": "S_DEFAULT",
+      "value": "Miscellaneous RA/TA"
+    },
+    {
+      "ref": "C13",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "973522"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "902149"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "990461"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "1070896"
+    },
+    {
+      "ref": "H13",
+      "style": "S_DEFAULT",
+      "value": "5608"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "CM"
+    },
+    {
+      "ref": "B14",
+      "style": "S_DEFAULT",
+      "value": "Continuous Maintenance (CMAV)"
+    },
+    {
+      "ref": "C14",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "696548"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "792788"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "662899"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT",
+      "value": "650869"
+    },
+    {
+      "ref": "H14",
+      "style": "S_DEFAULT",
+      "value": "5609"
+    },
+    {
+      "ref": "A15",
+      "style": "S_DEFAULT",
+      "value": "IL"
+    },
+    {
+      "ref": "B15",
+      "style": "S_DEFAULT",
+      "value": "Non-depot / Intermediate Maintenance"
+    },
+    {
+      "ref": "C15",
+      "style": "S_DEFAULT",
+      "value": "private"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "1497600"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "1517398"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "1429333"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "1525270"
+    },
+    {
+      "ref": "H15",
+      "style": "S_DEFAULT",
+      "value": "5610"
+    },
+    {
+      "ref": "B16",
+      "style": "S_BOLD",
+      "value": "Private subtotal (FY25 Current)"
+    },
+    {
+      "ref": "F16",
+      "style": "S_NUM_TOTAL",
+      "formula": "OP5_OH_FY25+OP5_SRA_FY25+OP5_SIA_FY25+OP5_PIA_FY25+OP5_PMA_FY25+OP5_CIA_FY25+OP5_SCO_FY25+OP5_ERATA_FY25+OP5_ORATA_FY25+OP5_CM_FY25+OP5_IL_FY25"
+    },
+    {
+      "ref": "A18",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Public Naval Shipyards (federal civilian workforce)"
+    },
+    {
+      "ref": "A19",
+      "style": "S_DEFAULT",
+      "value": "NNSY"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "Norfolk Naval Shipyard"
+    },
+    {
+      "ref": "C19",
+      "style": "S_DEFAULT",
+      "value": "public_nsy"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "1635116"
+    },
+    {
+      "ref": "E19",
+      "style": "S_NUM_INPUT",
+      "value": "1702115"
+    },
+    {
+      "ref": "F19",
+      "style": "S_NUM_INPUT",
+      "value": "1789606"
+    },
+    {
+      "ref": "G19",
+      "style": "S_NUM_INPUT",
+      "value": "1775132"
+    },
+    {
+      "ref": "H19",
+      "style": "S_DEFAULT",
+      "value": "5614"
+    },
+    {
+      "ref": "A20",
+      "style": "S_DEFAULT",
+      "value": "PNSY"
+    },
+    {
+      "ref": "B20",
+      "style": "S_DEFAULT",
+      "value": "Portsmouth Naval Shipyard"
+    },
+    {
+      "ref": "C20",
+      "style": "S_DEFAULT",
+      "value": "public_nsy"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT",
+      "value": "1191581"
+    },
+    {
+      "ref": "E20",
+      "style": "S_NUM_INPUT",
+      "value": "1317076"
+    },
+    {
+      "ref": "F20",
+      "style": "S_NUM_INPUT",
+      "value": "1468055"
+    },
+    {
+      "ref": "G20",
+      "style": "S_NUM_INPUT",
+      "value": "1401503"
+    },
+    {
+      "ref": "H20",
+      "style": "S_DEFAULT",
+      "value": "5615"
+    },
+    {
+      "ref": "A21",
+      "style": "S_DEFAULT",
+      "value": "PSNSY"
+    },
+    {
+      "ref": "B21",
+      "style": "S_DEFAULT",
+      "value": "Puget Sound Naval Shipyard"
+    },
+    {
+      "ref": "C21",
+      "style": "S_DEFAULT",
+      "value": "public_nsy"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "2521756"
+    },
+    {
+      "ref": "E21",
+      "style": "S_NUM_INPUT",
+      "value": "2544027"
+    },
+    {
+      "ref": "F21",
+      "style": "S_NUM_INPUT",
+      "value": "2741203"
+    },
+    {
+      "ref": "G21",
+      "style": "S_NUM_INPUT",
+      "value": "2944801"
+    },
+    {
+      "ref": "H21",
+      "style": "S_DEFAULT",
+      "value": "5616"
+    },
+    {
+      "ref": "A22",
+      "style": "S_DEFAULT",
+      "value": "PHNSY"
+    },
+    {
+      "ref": "B22",
+      "style": "S_DEFAULT",
+      "value": "Pearl Harbor Naval Shipyard"
+    },
+    {
+      "ref": "C22",
+      "style": "S_DEFAULT",
+      "value": "public_nsy"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "1237273"
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT",
+      "value": "1394013"
+    },
+    {
+      "ref": "F22",
+      "style": "S_NUM_INPUT",
+      "value": "1485973"
+    },
+    {
+      "ref": "G22",
+      "style": "S_NUM_INPUT",
+      "value": "1656378"
+    },
+    {
+      "ref": "H22",
+      "style": "S_DEFAULT",
+      "value": "5617"
+    },
+    {
+      "ref": "B23",
+      "style": "S_BOLD",
+      "value": "Public NSY subtotal (FY25 Current)"
+    },
+    {
+      "ref": "F23",
+      "style": "S_NUM_TOTAL",
+      "formula": "OP5_NNSY_FY25+OP5_PNSY_FY25+OP5_PSNSY_FY25+OP5_PHNSY_FY25"
+    },
+    {
+      "ref": "A25",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Grand total + cross-checks"
+    },
+    {
+      "ref": "B26",
+      "style": "S_BOLD",
+      "value": "OP-5 Grand Total FY25 Current ($K)"
+    },
+    {
+      "ref": "F26",
+      "style": "S_NUM_TOTAL",
+      "formula": "OP5_PRIVATE_FY25+OP5_PUBLIC_NSY_FY25"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "Source TOTAL row (OMN_Book.txt line 5618)"
+    },
+    {
+      "ref": "F27",
+      "style": "S_NUM_INPUT",
+      "value": "11763594"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "Delta vs source TOTAL (must be 0)"
+    },
+    {
+      "ref": "F28",
+      "style": "S_NUM",
+      "formula": "F26-F27"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "Delta vs OMN_1B4B_TOTAL_FY25 named range (must be 0)"
+    },
+    {
+      "ref": "F29",
+      "style": "S_NUM",
+      "formula": "OP5_TOTAL_FY25-OMN_1B4B_TOTAL_FY25"
+    },
+    {
+      "ref": "A31",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "Source + confidence"
+    },
+    {
+      "ref": "A32",
+      "style": "S_DEFAULT",
+      "value": "Native Navy OP-5 exhibit with explicit numeric columns. Private avail categories (11) and public NSYs (4) are separated by an in-table \"Navy-wide Ship Maintenance Support (1B4B) - Transferred via RRN\" label (line 5611). Cross-check: sum of 15 rows FY25 Current Budget column equals $11,763,594K (line 5618 TOTAL row) and matches OMN_1B4B_TOTAL_FY25 named range on the Reconciliation sheet."
+    },
+    {
+      "ref": "A33",
+      "style": "S_DEFAULT",
+      "value": "fingerprint_sha256: bb11e478fc7e785f4040cb5ca20db2c498d2098b84dd11ad0cdaab1fb3123604"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "A1",
+      "style": "S_TITLE_SHEET",
+      "text": "OP-5 Navy Top-Down - 1B4B Ship Maintenance by Availability Category ($ in Thousands)"
+    },
+    {
+      "ref": "A4",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Private (contract-executable) avail categories"
+    },
+    {
+      "ref": "A18",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Public Naval Shipyards (federal civilian workforce)"
+    },
+    {
+      "ref": "A25",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Grand total + cross-checks"
+    },
+    {
+      "ref": "A31",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "Source + confidence"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "D5",
+      "style": "S_NUM_INPUT",
+      "value": "329274"
+    },
+    {
+      "ref": "E5",
+      "style": "S_NUM_INPUT",
+      "value": "348149"
+    },
+    {
+      "ref": "F5",
+      "style": "S_NUM_INPUT",
+      "value": "250497"
+    },
+    {
+      "ref": "G5",
+      "style": "S_NUM_INPUT",
+      "value": "250312"
+    },
+    {
+      "ref": "D6",
+      "style": "S_NUM_INPUT",
+      "value": "717140"
+    },
+    {
+      "ref": "E6",
+      "style": "S_NUM_INPUT",
+      "value": "558575"
+    },
+    {
+      "ref": "F6",
+      "style": "S_NUM_INPUT",
+      "value": "384455"
+    },
+    {
+      "ref": "G6",
+      "style": "S_NUM_INPUT",
+      "value": "305424"
+    },
+    {
+      "ref": "D7",
+      "style": "S_NUM_INPUT",
+      "value": "95837"
+    },
+    {
+      "ref": "E7",
+      "style": "S_NUM_INPUT",
+      "value": "89442"
+    },
+    {
+      "ref": "F7",
+      "style": "S_NUM_INPUT",
+      "value": "63660"
+    },
+    {
+      "ref": "G7",
+      "style": "S_NUM_INPUT",
+      "value": "104367"
+    },
+    {
+      "ref": "D8",
+      "style": "S_NUM_INPUT",
+      "value": "99893"
+    },
+    {
+      "ref": "E8",
+      "style": "S_NUM_INPUT",
+      "value": "70962"
+    },
+    {
+      "ref": "F8",
+      "style": "S_NUM_INPUT",
+      "value": "322052"
+    },
+    {
+      "ref": "G8",
+      "style": "S_NUM_INPUT",
+      "value": "349822"
+    },
+    {
+      "ref": "D9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "E9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "F9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "G9",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D10",
+      "style": "S_NUM_INPUT",
+      "value": "28204"
+    },
+    {
+      "ref": "E10",
+      "style": "S_NUM_INPUT",
+      "value": "9000"
+    },
+    {
+      "ref": "F10",
+      "style": "S_NUM_INPUT",
+      "value": "16251"
+    },
+    {
+      "ref": "G10",
+      "style": "S_NUM_INPUT",
+      "value": "44947"
+    },
+    {
+      "ref": "D11",
+      "style": "S_NUM_INPUT",
+      "value": "21554"
+    },
+    {
+      "ref": "E11",
+      "style": "S_NUM_INPUT",
+      "value": "16873"
+    },
+    {
+      "ref": "F11",
+      "style": "S_NUM_INPUT",
+      "value": "22924"
+    },
+    {
+      "ref": "G11",
+      "style": "S_NUM_INPUT",
+      "value": "0"
+    },
+    {
+      "ref": "D12",
+      "style": "S_NUM_INPUT",
+      "value": "118950"
+    },
+    {
+      "ref": "E12",
+      "style": "S_NUM_INPUT",
+      "value": "238559"
+    },
+    {
+      "ref": "F12",
+      "style": "S_NUM_INPUT",
+      "value": "136225"
+    },
+    {
+      "ref": "G12",
+      "style": "S_NUM_INPUT",
+      "value": "139467"
+    },
+    {
+      "ref": "D13",
+      "style": "S_NUM_INPUT",
+      "value": "973522"
+    },
+    {
+      "ref": "E13",
+      "style": "S_NUM_INPUT",
+      "value": "902149"
+    },
+    {
+      "ref": "F13",
+      "style": "S_NUM_INPUT",
+      "value": "990461"
+    },
+    {
+      "ref": "G13",
+      "style": "S_NUM_INPUT",
+      "value": "1070896"
+    },
+    {
+      "ref": "D14",
+      "style": "S_NUM_INPUT",
+      "value": "696548"
+    },
+    {
+      "ref": "E14",
+      "style": "S_NUM_INPUT",
+      "value": "792788"
+    },
+    {
+      "ref": "F14",
+      "style": "S_NUM_INPUT",
+      "value": "662899"
+    },
+    {
+      "ref": "G14",
+      "style": "S_NUM_INPUT",
+      "value": "650869"
+    },
+    {
+      "ref": "D15",
+      "style": "S_NUM_INPUT",
+      "value": "1497600"
+    },
+    {
+      "ref": "E15",
+      "style": "S_NUM_INPUT",
+      "value": "1517398"
+    },
+    {
+      "ref": "F15",
+      "style": "S_NUM_INPUT",
+      "value": "1429333"
+    },
+    {
+      "ref": "G15",
+      "style": "S_NUM_INPUT",
+      "value": "1525270"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "1635116"
+    },
+    {
+      "ref": "E19",
+      "style": "S_NUM_INPUT",
+      "value": "1702115"
+    },
+    {
+      "ref": "F19",
+      "style": "S_NUM_INPUT",
+      "value": "1789606"
+    },
+    {
+      "ref": "G19",
+      "style": "S_NUM_INPUT",
+      "value": "1775132"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_INPUT",
+      "value": "1191581"
+    },
+    {
+      "ref": "E20",
+      "style": "S_NUM_INPUT",
+      "value": "1317076"
+    },
+    {
+      "ref": "F20",
+      "style": "S_NUM_INPUT",
+      "value": "1468055"
+    },
+    {
+      "ref": "G20",
+      "style": "S_NUM_INPUT",
+      "value": "1401503"
+    },
+    {
+      "ref": "D21",
+      "style": "S_NUM_INPUT",
+      "value": "2521756"
+    },
+    {
+      "ref": "E21",
+      "style": "S_NUM_INPUT",
+      "value": "2544027"
+    },
+    {
+      "ref": "F21",
+      "style": "S_NUM_INPUT",
+      "value": "2741203"
+    },
+    {
+      "ref": "G21",
+      "style": "S_NUM_INPUT",
+      "value": "2944801"
+    },
+    {
+      "ref": "D22",
+      "style": "S_NUM_INPUT",
+      "value": "1237273"
+    },
+    {
+      "ref": "E22",
+      "style": "S_NUM_INPUT",
+      "value": "1394013"
+    },
+    {
+      "ref": "F22",
+      "style": "S_NUM_INPUT",
+      "value": "1485973"
+    },
+    {
+      "ref": "G22",
+      "style": "S_NUM_INPUT",
+      "value": "1656378"
+    },
+    {
+      "ref": "F27",
+      "style": "S_NUM_INPUT",
+      "value": "11763594"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 5,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {
+    "OP5_OH_FY25": "'OP-5 Navy Top-Down'!$F$5",
+    "OP5_SRA_FY25": "'OP-5 Navy Top-Down'!$F$6",
+    "OP5_SIA_FY25": "'OP-5 Navy Top-Down'!$F$7",
+    "OP5_PIA_FY25": "'OP-5 Navy Top-Down'!$F$8",
+    "OP5_PMA_FY25": "'OP-5 Navy Top-Down'!$F$9",
+    "OP5_CIA_FY25": "'OP-5 Navy Top-Down'!$F$10",
+    "OP5_SCO_FY25": "'OP-5 Navy Top-Down'!$F$11",
+    "OP5_ERATA_FY25": "'OP-5 Navy Top-Down'!$F$12",
+    "OP5_ORATA_FY25": "'OP-5 Navy Top-Down'!$F$13",
+    "OP5_CM_FY25": "'OP-5 Navy Top-Down'!$F$14",
+    "OP5_IL_FY25": "'OP-5 Navy Top-Down'!$F$15",
+    "OP5_PRIVATE_FY25": "'OP-5 Navy Top-Down'!$F$16",
+    "OP5_NNSY_FY25": "'OP-5 Navy Top-Down'!$F$19",
+    "OP5_PNSY_FY25": "'OP-5 Navy Top-Down'!$F$20",
+    "OP5_PSNSY_FY25": "'OP-5 Navy Top-Down'!$F$21",
+    "OP5_PHNSY_FY25": "'OP-5 Navy Top-Down'!$F$22",
+    "OP5_PUBLIC_NSY_FY25": "'OP-5 Navy Top-Down'!$F$23",
+    "OP5_TOTAL_FY25": "'OP-5 Navy Top-Down'!$F$26"
+  }
+}

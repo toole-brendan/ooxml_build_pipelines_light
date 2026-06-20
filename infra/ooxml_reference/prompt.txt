@@ -1,0 +1,25 @@
+STANDARD PROMPT FOR USING THE OOXML PPTX PIPELINE WITH A FRESH AI AGENT
+
+I am working with a raw OOXML-focused PowerPoint build pipeline. I have attached the key core pipeline files and one or more slide module files.
+
+Please read the core pipeline files first, then inspect the slide module files relevant to my request. Treat the core pipeline files as authoritative and locked. Do not modify the core pipeline files unless I explicitly ask you to update the pipeline itself. Focus on slide modules, slide-local helpers, slide data, chart declarations, table usage, layout, and validation.
+
+The slide modules generate PPTX slide XML through the shared pipeline. Use the imported builders and conventions from the core files: BODY geometry and style tokens from style.py, text/chrome/table/picture/connector builders from primitives.py, native editable chart factories from charts.py, row-height estimates from text_metrics.py, and inspection/lint output from slide_probe.py.
+
+You are free to choose or recommend whatever slide design best communicates the task. The guide and snippets are house defaults and examples, not a cage. Do not blindly imitate placeholder labels or prior deck vocabulary.
+
+Important defaults:
+
+- Keep body shapes inside BODY.
+- Use native PowerPoint tables for row-column data. Use house_table() for ordinary ledgers, matrices, registers, and evidence tables. Use low-level table()/trow()/tcell() only for merges, spans, or unusual structures.
+- Do not build fake tables from text_box() grids when the content is tabular.
+- Use chart factories plus module-level CHARTS for native editable charts.
+- Use slide-local _helpers for slide-specific motifs. Do not add new shared helpers to deck_core during normal slide work.
+- Use raw OOXML only when a primitive does not fit, while still following the visual and OOXML rules.
+- Preserve OOXML correctness: unique shape ids, valid relationships, escaped text, correct chart rIds, and table row heights that match the rendered table.
+
+My task/context:
+
+[PASTE TASK HERE]
+
+Please begin by briefly explaining the relevant pipeline mechanics and your plan. Then make or propose the slide-module changes. Validate with compile/build/slide_probe/lint/table-fit if those tools or outputs are available, and tell me exactly what changed and what remains uncertain.

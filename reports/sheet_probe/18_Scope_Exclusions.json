@@ -1,0 +1,813 @@
+{
+  "source": "file",
+  "name": "Scope Exclusions",
+  "tab_name": "Scope Exclusions",
+  "sheet_index": 18,
+  "tab_color": "FF6E6E6E",
+  "gridlines_shown": "0",
+  "n_cols": 4,
+  "cols": [
+    {
+      "min": "1",
+      "max": "1",
+      "width": "2.2109375"
+    },
+    {
+      "min": "2",
+      "max": "2",
+      "width": "24"
+    },
+    {
+      "min": "3",
+      "max": "3",
+      "width": "40"
+    },
+    {
+      "min": "4",
+      "max": "4",
+      "width": "16"
+    }
+  ],
+  "n_rows": 35,
+  "rows": [
+    {
+      "r": "1",
+      "n_cells": 0
+    },
+    {
+      "r": "2",
+      "n_cells": 3
+    },
+    {
+      "r": "4",
+      "n_cells": 4
+    },
+    {
+      "r": "6",
+      "n_cells": 2
+    },
+    {
+      "r": "7",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "8",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "9",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "10",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "11",
+      "outlineLevel": "1",
+      "n_cells": 2
+    },
+    {
+      "r": "14",
+      "n_cells": 4
+    },
+    {
+      "r": "16",
+      "n_cells": 4
+    },
+    {
+      "r": "18",
+      "n_cells": 3
+    },
+    {
+      "r": "19",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "20",
+      "n_cells": 3
+    },
+    {
+      "r": "23",
+      "n_cells": 4
+    },
+    {
+      "r": "25",
+      "n_cells": 3
+    },
+    {
+      "r": "26",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "27",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "28",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "29",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "30",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "31",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "32",
+      "n_cells": 3
+    },
+    {
+      "r": "35",
+      "n_cells": 4
+    },
+    {
+      "r": "37",
+      "n_cells": 3
+    },
+    {
+      "r": "38",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "39",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "40",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "41",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "42",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "43",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "44",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "45",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "46",
+      "outlineLevel": "1",
+      "n_cells": 3
+    },
+    {
+      "r": "47",
+      "n_cells": 3
+    }
+  ],
+  "n_cells": 101,
+  "cells": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "value": "Scope Exclusions"
+    },
+    {
+      "ref": "C2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "D2",
+      "style": "S_TITLE_SHEET"
+    },
+    {
+      "ref": "A4",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a71 - Cleanup summary (after removing 16 contaminant PIIDs)"
+    },
+    {
+      "ref": "C4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D4",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "B6",
+      "style": "S_HEADER_LEFT",
+      "value": "Metric"
+    },
+    {
+      "ref": "C6",
+      "style": "S_HEADER_CENTER",
+      "value": "Value"
+    },
+    {
+      "ref": "B7",
+      "style": "S_DEFAULT",
+      "value": "Records kept (in-scope)"
+    },
+    {
+      "ref": "C7",
+      "style": "S_DEFAULT",
+      "value": "15720"
+    },
+    {
+      "ref": "B8",
+      "style": "S_DEFAULT",
+      "value": "Records excluded (out-of-scope PIIDs)"
+    },
+    {
+      "ref": "C8",
+      "style": "S_DEFAULT",
+      "value": "6515"
+    },
+    {
+      "ref": "B9",
+      "style": "S_DEFAULT",
+      "value": "Records pre-clean (kept + excluded)"
+    },
+    {
+      "ref": "C9",
+      "style": "S_DEFAULT",
+      "formula": "C7+C8"
+    },
+    {
+      "ref": "B10",
+      "style": "S_DEFAULT",
+      "value": "In-scope dollars ($M)"
+    },
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "11201.9"
+    },
+    {
+      "ref": "B11",
+      "style": "S_DEFAULT",
+      "value": "Unique in-scope parent UEIs"
+    },
+    {
+      "ref": "C11",
+      "style": "S_DEFAULT",
+      "value": "1554"
+    },
+    {
+      "ref": "A14",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "value": "\u00a72 - Excluded PIIDs by class (FPDS obligated $M = size indicator)"
+    },
+    {
+      "ref": "C14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "D14",
+      "style": "S_TITLE_SECTION"
+    },
+    {
+      "ref": "A16",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72a - IVECO - Marine Corps Mk110 gun (not DDG) (1)"
+    },
+    {
+      "ref": "C16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D16",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B18",
+      "style": "S_HEADER_LEFT",
+      "value": "PIID"
+    },
+    {
+      "ref": "C18",
+      "style": "S_HEADER_LEFT",
+      "value": "Reason"
+    },
+    {
+      "ref": "D18",
+      "style": "S_HEADER_CENTER",
+      "value": "FPDS obligated $M"
+    },
+    {
+      "ref": "B19",
+      "style": "S_DEFAULT",
+      "value": "M6785416C0006"
+    },
+    {
+      "ref": "C19",
+      "style": "S_DEFAULT",
+      "value": "MARCORSYSCOM Mk110 gun (IVECO) - Marine Corps, not DDG"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "1108.35"
+    },
+    {
+      "ref": "B20",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "C20",
+      "style": "S_TOTAL",
+      "value": "Subtotal - IVECO"
+    },
+    {
+      "ref": "D20",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D19:D19)"
+    },
+    {
+      "ref": "A23",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B23",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72b - DDG-1000 / Zumwalt - out of class (LI 2119, closed) (6)"
+    },
+    {
+      "ref": "C23",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D23",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B25",
+      "style": "S_HEADER_LEFT",
+      "value": "PIID"
+    },
+    {
+      "ref": "C25",
+      "style": "S_HEADER_LEFT",
+      "value": "Reason"
+    },
+    {
+      "ref": "D25",
+      "style": "S_HEADER_CENTER",
+      "value": "FPDS obligated $M"
+    },
+    {
+      "ref": "B26",
+      "style": "S_DEFAULT",
+      "value": "N0002410C5126"
+    },
+    {
+      "ref": "C26",
+      "style": "S_DEFAULT",
+      "value": "DDG-1002 MSE - DDG-1000 out of class"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "1341.51"
+    },
+    {
+      "ref": "B27",
+      "style": "S_DEFAULT",
+      "value": "N0002413C5212"
+    },
+    {
+      "ref": "C27",
+      "style": "S_DEFAULT",
+      "value": "DDG-1000 opt year 4 - out of class"
+    },
+    {
+      "ref": "D27",
+      "style": "S_NUM_INPUT",
+      "value": "379.9"
+    },
+    {
+      "ref": "B28",
+      "style": "S_DEFAULT",
+      "value": "N0002417C5145"
+    },
+    {
+      "ref": "C28",
+      "style": "S_DEFAULT",
+      "value": "DDG-1000 MSE/TSCE - out of class"
+    },
+    {
+      "ref": "D28",
+      "style": "S_NUM_INPUT",
+      "value": "793.09"
+    },
+    {
+      "ref": "B29",
+      "style": "S_DEFAULT",
+      "value": "N0002422C2300"
+    },
+    {
+      "ref": "C29",
+      "style": "S_DEFAULT",
+      "value": "DDG-1002 Zumwalt CSA - out of class"
+    },
+    {
+      "ref": "D29",
+      "style": "S_NUM_INPUT",
+      "value": "305.55"
+    },
+    {
+      "ref": "B30",
+      "style": "S_DEFAULT",
+      "value": "N0002422C5522"
+    },
+    {
+      "ref": "C30",
+      "style": "S_DEFAULT",
+      "value": "DDG-1000 systems engineering - out of class"
+    },
+    {
+      "ref": "D30",
+      "style": "S_NUM_INPUT",
+      "value": "621.73"
+    },
+    {
+      "ref": "B31",
+      "style": "S_DEFAULT",
+      "value": "N0002423C2324"
+    },
+    {
+      "ref": "C31",
+      "style": "S_DEFAULT",
+      "value": "DDG-1000 Zumwalt BYMP - out of class"
+    },
+    {
+      "ref": "D31",
+      "style": "S_NUM_INPUT",
+      "value": "344.05"
+    },
+    {
+      "ref": "B32",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "C32",
+      "style": "S_TOTAL",
+      "value": "Subtotal - DDG-1000 / Zumwalt"
+    },
+    {
+      "ref": "D32",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D26:D31)"
+    },
+    {
+      "ref": "A35",
+      "style": "S_DEFAULT",
+      "value": "x"
+    },
+    {
+      "ref": "B35",
+      "style": "S_TITLE_SUBSECTION",
+      "value": "\u00a72c - WPN/OPN weapons - ESSM + CIWS, different appropriation (9)"
+    },
+    {
+      "ref": "C35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "D35",
+      "style": "S_TITLE_SUBSECTION"
+    },
+    {
+      "ref": "B37",
+      "style": "S_HEADER_LEFT",
+      "value": "PIID"
+    },
+    {
+      "ref": "C37",
+      "style": "S_HEADER_LEFT",
+      "value": "Reason"
+    },
+    {
+      "ref": "D37",
+      "style": "S_HEADER_CENTER",
+      "value": "FPDS obligated $M"
+    },
+    {
+      "ref": "B38",
+      "style": "S_DEFAULT",
+      "value": "N0002415C5420"
+    },
+    {
+      "ref": "C38",
+      "style": "S_DEFAULT",
+      "value": "ESSM Block 2 EMD - WPN/OPN weapon (also the Thales $4.2B artifact PIID)"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "533.31"
+    },
+    {
+      "ref": "B39",
+      "style": "S_DEFAULT",
+      "value": "N0002416C5433"
+    },
+    {
+      "ref": "C39",
+      "style": "S_DEFAULT",
+      "value": "ESSM design agent - WPN/OPN weapon"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "188.4"
+    },
+    {
+      "ref": "B40",
+      "style": "S_DEFAULT",
+      "value": "N0002418C5406"
+    },
+    {
+      "ref": "C40",
+      "style": "S_DEFAULT",
+      "value": "CIWS Mk15 Phalanx U&C - WPN/OPN weapon"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "261.94"
+    },
+    {
+      "ref": "B41",
+      "style": "S_DEFAULT",
+      "value": "N0002421C5408"
+    },
+    {
+      "ref": "C41",
+      "style": "S_DEFAULT",
+      "value": "ESSM Block 2 spares - WPN/OPN weapon"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "1391.8"
+    },
+    {
+      "ref": "B42",
+      "style": "S_DEFAULT",
+      "value": "N0002424C5406"
+    },
+    {
+      "ref": "C42",
+      "style": "S_DEFAULT",
+      "value": "CIWS FY25 production - WPN/OPN weapon"
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT",
+      "value": "377.34"
+    },
+    {
+      "ref": "B43",
+      "style": "S_DEFAULT",
+      "value": "N0002426C5434"
+    },
+    {
+      "ref": "C43",
+      "style": "S_DEFAULT",
+      "value": "ESSM CY26-30 design agent - WPN/OPN weapon"
+    },
+    {
+      "ref": "D43",
+      "style": "S_NUM_INPUT",
+      "value": "70.5"
+    },
+    {
+      "ref": "B44",
+      "style": "S_DEFAULT",
+      "value": "N0010418F0E40"
+    },
+    {
+      "ref": "C44",
+      "style": "S_DEFAULT",
+      "value": "CIWS PBL definitization - WPN/OPN weapon"
+    },
+    {
+      "ref": "D44",
+      "style": "S_NUM_INPUT",
+      "value": "79.46"
+    },
+    {
+      "ref": "B45",
+      "style": "S_DEFAULT",
+      "value": "N0038319F0VP0"
+    },
+    {
+      "ref": "C45",
+      "style": "S_DEFAULT",
+      "value": "CIWS PBL support - WPN/OPN weapon (sustainment)"
+    },
+    {
+      "ref": "D45",
+      "style": "S_NUM_INPUT",
+      "value": "184.87"
+    },
+    {
+      "ref": "B46",
+      "style": "S_DEFAULT",
+      "value": "N0038321F0ZM0"
+    },
+    {
+      "ref": "C46",
+      "style": "S_DEFAULT",
+      "value": "CIWS long-term contract - WPN/OPN weapon"
+    },
+    {
+      "ref": "D46",
+      "style": "S_NUM_INPUT",
+      "value": "62.6"
+    },
+    {
+      "ref": "B47",
+      "style": "S_BORDER_TOP"
+    },
+    {
+      "ref": "C47",
+      "style": "S_TOTAL",
+      "value": "Subtotal - WPN/OPN weapons"
+    },
+    {
+      "ref": "D47",
+      "style": "S_NUM_TOTAL",
+      "formula": "SUM(D38:D46)"
+    }
+  ],
+  "banners": [
+    {
+      "ref": "B2",
+      "style": "S_TITLE_SHEET",
+      "text": "Scope Exclusions"
+    },
+    {
+      "ref": "B4",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a71 - Cleanup summary (after removing 16 contaminant PIIDs)"
+    },
+    {
+      "ref": "B14",
+      "style": "S_TITLE_SECTION",
+      "text": "\u00a72 - Excluded PIIDs by class (FPDS obligated $M = size indicator)"
+    },
+    {
+      "ref": "B16",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72a - IVECO - Marine Corps Mk110 gun (not DDG) (1)"
+    },
+    {
+      "ref": "B23",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72b - DDG-1000 / Zumwalt - out of class (LI 2119, closed) (6)"
+    },
+    {
+      "ref": "B35",
+      "style": "S_TITLE_SUBSECTION",
+      "text": "\u00a72c - WPN/OPN weapons - ESSM + CIWS, different appropriation (9)"
+    }
+  ],
+  "hardcoded_inputs": [
+    {
+      "ref": "C10",
+      "style": "S_NUM_INPUT",
+      "value": "11201.9"
+    },
+    {
+      "ref": "D19",
+      "style": "S_NUM_INPUT",
+      "value": "1108.35"
+    },
+    {
+      "ref": "D26",
+      "style": "S_NUM_INPUT",
+      "value": "1341.51"
+    },
+    {
+      "ref": "D27",
+      "style": "S_NUM_INPUT",
+      "value": "379.9"
+    },
+    {
+      "ref": "D28",
+      "style": "S_NUM_INPUT",
+      "value": "793.09"
+    },
+    {
+      "ref": "D29",
+      "style": "S_NUM_INPUT",
+      "value": "305.55"
+    },
+    {
+      "ref": "D30",
+      "style": "S_NUM_INPUT",
+      "value": "621.73"
+    },
+    {
+      "ref": "D31",
+      "style": "S_NUM_INPUT",
+      "value": "344.05"
+    },
+    {
+      "ref": "D38",
+      "style": "S_NUM_INPUT",
+      "value": "533.31"
+    },
+    {
+      "ref": "D39",
+      "style": "S_NUM_INPUT",
+      "value": "188.4"
+    },
+    {
+      "ref": "D40",
+      "style": "S_NUM_INPUT",
+      "value": "261.94"
+    },
+    {
+      "ref": "D41",
+      "style": "S_NUM_INPUT",
+      "value": "1391.8"
+    },
+    {
+      "ref": "D42",
+      "style": "S_NUM_INPUT",
+      "value": "377.34"
+    },
+    {
+      "ref": "D43",
+      "style": "S_NUM_INPUT",
+      "value": "70.5"
+    },
+    {
+      "ref": "D44",
+      "style": "S_NUM_INPUT",
+      "value": "79.46"
+    },
+    {
+      "ref": "D45",
+      "style": "S_NUM_INPUT",
+      "value": "184.87"
+    },
+    {
+      "ref": "D46",
+      "style": "S_NUM_INPUT",
+      "value": "62.6"
+    }
+  ],
+  "green_links": [],
+  "placeholders": [],
+  "n_formulas": 4,
+  "formula_refs_by_sheet": {},
+  "tables": [],
+  "defined_names": {}
+}

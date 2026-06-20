@@ -1,0 +1,243 @@
+================================================================================
+DDG-51 MODERNIZATION / ALTERATION CODE REFERENCE
+================================================================================
+
+Compiled from FPDS contract descriptions (FY18+). These are the numbered
+alteration codes that appear in public procurement data for DDG-51 class
+modernization and backfit work.
+
+Generated: 2026-04-14
+
+================================================================================
+HOW THE ALTERATION SYSTEM WORKS
+================================================================================
+
+The Navy uses a layered numbering system for ship modifications:
+
+  SA  = Ship Alteration       — Physical modifications to ship systems.
+                                Numbered 5-digit codes with optional suffix
+                                (e.g., SA-94979K). The "K" suffix typically
+                                denotes a kit version. Each SA maps to a
+                                specific system change on a specific ship class.
+
+  MA  = Machinery Alteration  — Modifications specific to machinery/HM&E
+                                systems. Numbered 3-5 digits (e.g., MA-513).
+                                Subset of SAs focused on propulsion, electrical,
+                                and auxiliary machinery.
+
+  SCD = Ship Change Document  — The engineering/design document that defines
+                                the alteration. Each SA/MA has a corresponding
+                                SCD. Sometimes the SCD number maps directly
+                                (MA-513 = SCD-5013, SA-94979K = SCD-24979).
+
+  SWD = Software Designator   — Software changes that accompany hardware
+                                alterations (e.g., SWD-93908 paired with
+                                SA-86937 IBS tech refresh).
+
+  ORDALT = Ordnance Alteration — Modifications to weapons/ordnance systems
+                                 (e.g., ORDALT-83135 for CIWS cable upgrade).
+
+These codes are assigned by NAVSEA and tracked in the Ship Alteration
+Record (SAR) database. The codes themselves are NOT in FPDS as structured
+fields — they appear in free-text contract descriptions.
+
+The DDGM BF (DDG Modernization Backfit) program bundles multiple SAs into
+"core alteration" packages installed per ship during availabilities, typically
+5-10 alterations per hull per cycle.
+
+
+================================================================================
+ALTERATION CODES FOUND IN FPDS (DDG-RELATED)
+================================================================================
+
+SHIP ALTERATIONS (SA)
+--------------------------------------------------------------------------------
+Code          System / Description                    Ships Identified
+--------------------------------------------------------------------------------
+SA-71615K     DDGM BF core alteration                 DDG-90 (Chafee)
+SA-71726K     DDGM BF core alteration                 DDG-90 (Chafee)
+SA-75874      SSEE INC (Ship Signal Exploitation      DDG-105 (Dewey)
+              Equipment Increment)
+SA-77427K     DDGM BF core alteration                 DDG-90 (Chafee)
+SA-83335      DDGM BF alteration (with MA-84365)      DDGs (multiple)
+SA-84226K     DDGM BF core alteration                 DDG-90 (Chafee)
+SA-86937      IBS (Integrated Bridge System)           DDG-97 (Halsey),
+              Technology Refresh Hardware Upgrade       DDG-102 (Sampson),
+                                                       DDG-105 (Dewey),
+                                                       DDG-107 (Gravely),
+                                                       DDG-109 (Jason Dunham)
+SA-89686      Acoustic Device Countermeasures          DDGs (not specified)
+              Stowage
+SA-94979K     HM&E Condition System 2.0               DDG-60 (Paul Hamilton),
+              (paired with SCD-24979)                   DDG-61 (Ramage),
+                                                       DDG-63 (Stethem),
+                                                       DDG-82 (Lassen)
+SA-95228K     HM&E Condition System 2.0               LPD-19 (Mesa Verde)
+              (non-DDG but same alteration)
+SA-95676K     (unidentified system)                    DDG-113 (John Finn)
+SA-98313      VDR (Voyage Data Recorder)               East Coast DDGs
+              Installation                              (multiple)
+SA-98418K     (unidentified system)                    DDG-115 (Rafael Peralta)
+
+MACHINERY ALTERATIONS (MA)
+--------------------------------------------------------------------------------
+Code          System / Description                    Ships Identified
+--------------------------------------------------------------------------------
+MA-513        Prairie Masker Monitoring Upgrade        DDG-51 class (various)
+              (paired with SCD-5013)                    DDG-103, DDG-109
+MA-735        Machinery alteration                     LHD-5, LPD-21, LSD-51
+              (non-DDG but same AIT process)
+MA-745        Machinery alteration                     LHD-5
+MA-84365      DDGM BF alteration (with SA-83335)      DDGs (multiple)
+
+SHIP CHANGE DOCUMENTS (SCD)
+--------------------------------------------------------------------------------
+Code          System / Description                    Ships Identified
+--------------------------------------------------------------------------------
+SCD-4904      FADC Micronet Upgrade                    DDG class (multiple)
+SCD-5013      Prairie Masker Monitoring                DDG-51 class
+              (corresponds to MA-513)
+SCD-13591     Digital Voltage Regulator Upgrade         DDG class (multiple)
+SCD-24979     HM&E Condition System 2.0               DDG-61, DDG-63
+              (corresponds to SA-94979K)
+SCD-73707     (unidentified system)                    DDG-56
+SCD-95228     HM&E Condition System 2.0               LPD-19
+              (corresponds to SA-95228K)
+
+SOFTWARE DESIGNATORS (SWD)
+--------------------------------------------------------------------------------
+Code          System / Description                    Ships Identified
+--------------------------------------------------------------------------------
+SWD-93908     IBS Soft Support                         DDG-97, DDG-102,
+              (paired with SA-86937 hardware)           DDG-105, DDG-107,
+                                                       DDG-109
+SWD-93908R1   IBS Soft Support Rev 1                   DDG class (1 ship)
+
+ORDNANCE ALTERATIONS (ORDALT)
+--------------------------------------------------------------------------------
+Code          System / Description                    Ships Identified
+--------------------------------------------------------------------------------
+ORDALT-83135  Phalanx/CIWS Cable Reliability           DDG-55, DDG-82,
+              Improvement                               DDG-94, CVN-69
+ORDALT-83145  Phalanx/CIWS Cable Reliability           (paired with 83135)
+              (companion alteration)
+
+
+================================================================================
+CONTRACTORS PERFORMING ALTERATION INSTALLATION
+================================================================================
+
+DDG alteration installation is performed by Alteration Installation Teams
+(AITs) under task orders from NSWCPD (Naval Surface Warfare Center
+Philadelphia Division), Code 252 Technology Deployment Branch.
+
+Contractor               Role                          Example PIIDs
+--------------------------------------------------------------------------------
+GDIT                     DDGM BF core alterations,     N6449823F3112 (DDG-92)
+                         electrical/fiber/coax          N6449824F3059 (DDG-97)
+                         connections                    N6449820FBB19
+
+Delphinus Engineering    DDGM BF alteration install,   N6449822F3085 (DDG-90)
+                         monitoring systems             N6449824F3063 (DDG-97)
+                                                        N6449823F3073 (DDG-93)
+
+HII Fleet Support Group  DDGM BF alteration install,   N6449824F3006
+                         monitoring systems,            N6449822F3019
+                         weapons handling stowage       N6449819FFF25
+
+Serco Inc.               VDR installations (SA-98313), N6449822F3144
+                         IBS tech refresh,              N6449823F3044
+                         monitoring systems
+
+Epsilon Systems          Machinery alterations          N6449821F3093
+                         (MA-513 Prairie Masker)         N6449822F3029
+
+QED Systems              Ship alterations,              N6449824F3000
+                         HM&E Condition System          N6449819FFF10
+
+La Playa Inc.            Ship alterations,              N6449824F3027
+                         HM&E Condition System
+
+Continental Tide Defense  FADC/voltage regulator        N6449823F3087
+                         upgrades, IBS hardware
+
+L3 Unidyne / L3Harris    DDGM BF engineering services  N6449820FBB12
+                                                        N6449821FBB05
+
+Sumitomo Heavy Industries DDG alterations (FDNF Japan)  N6264924F0377
+                                                        N6264924F0704
+                                                        N6264922F1015
+
+Green Expert Technology   MCS (Machinery Control        N6449822F3091
+                         System) software/install
+
+Dignitas Technologies     ILS training for DDG/CG       N6449824F3095
+                         HM&E modernization
+
+Orbis Sibro              DDG MOD program oversight      N6449823F3019
+
+
+================================================================================
+WHAT THE CODES TELL US ABOUT SWBS MAPPING
+================================================================================
+
+Several alteration codes can be mapped to SWBS groups based on their
+descriptions:
+
+  SWBS 4xx (Command & Surveillance):
+    SA-75874    — SSEE (Ship Signal Exploitation Equipment)
+    SA-86937    — IBS (Integrated Bridge System) — technically nav/bridge
+    SWD-93908   — IBS software support
+    SA-98313    — VDR (Voyage Data Recorder)
+
+  SWBS 5xx (Auxiliary Systems):
+    SA-94979K   — HM&E Condition System 2.0
+    SCD-24979   — HM&E Condition System 2.0
+    SA-89686    — Acoustic Device Countermeasures Stowage
+
+  SWBS 2xx (Propulsion):
+    MA-513      — Prairie Masker Monitoring (air masking system for propulsion noise)
+    SCD-5013    — Prairie Masker Monitoring
+
+  SWBS 3xx (Electric Plant):
+    SCD-4904    — FADC Micronet Upgrade (fire alarm/damage control)
+    SCD-13591   — Digital Voltage Regulator
+
+  SWBS 7xx (Armament):
+    ORDALT-83135 — CIWS/Phalanx cable reliability
+    ORDALT-83145 — CIWS/Phalanx cable reliability
+
+  Cross-SWBS / unresolved:
+    SA-71615K, SA-71726K, SA-77427K, SA-84226K — DDGM BF "core" bundle,
+    likely spanning multiple SWBS groups (these are bundled installations)
+
+
+================================================================================
+LIMITATIONS
+================================================================================
+
+1. This list is INCOMPLETE. FPDS descriptions are truncated at ~250 characters.
+   Many contracts list 5-10 alterations but only the first few are visible.
+   The DDG-90 (Chafee) contract lists "SA 71615K SA 71726K SA 77427K SA 94979K
+   AND SA 84226K" — five codes visible. Other contracts installing 10+
+   alterations show only the first 2-3 before truncation.
+
+2. The SA/MA numbering system is a Navy-internal catalog. The full list of
+   DDG-51 class alterations (likely hundreds) is maintained in NAVSEA's Ship
+   Alteration Record (SAR) database, which is not public.
+
+3. What each code DOES is only partially visible from contract descriptions.
+   SA-86937 is identifiable as "IBS Technology Refresh" because the description
+   says so. SA-71615K is only identifiable as "DDGM BF core alteration" — the
+   specific system it modifies would require the SAR database or the SCD
+   engineering document.
+
+4. The SCD-to-SA mapping is not always visible. We can link MA-513 to SCD-5013
+   and SA-94979K to SCD-24979 because they appear together in descriptions.
+   Other mappings would require Navy planning documents.
+
+5. Alteration codes for combat system upgrades (Aegis baseline changes, SEWIP
+   block upgrades, SPY-6 backfit) are procured on their own dedicated contract
+   vehicles and typically don't use SA/MA numbering in the FPDS description —
+   they use program names instead (e.g., "AEGIS MODERNIZATION MMSP-CR FOR
+   DDG 82" rather than an SA code).
