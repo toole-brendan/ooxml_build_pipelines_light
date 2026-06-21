@@ -27,31 +27,12 @@ from workbook_master_tam.sheets.ddg.data_obbba_funding import (
     obbba_gross_cell as _obbba_gross, obbba_bc_base_cell as _obbba_bc,
 )
 from workbook_master_tam.sheets.ddg.validation_pop_source_audit import masters_dollar_cell, gated_dollar_cell
-from workbook_master_tam.sheets.ddg.data_entity_master import (
-    role_range as _erole, bucket_range as _ebkt, ent_dollar_range as _edol, vls_range as _evls,
-)
-from workbook_master_tam.sheets.ddg._taxonomy import UNBUCKETED
 from workbook_master_tam.sheets.ddg._layout import RowCursor
 
 _GROUP = "validation"
 _TAB = "DDG Sensitivity"
 _NCOLS = 2
 _Q = '"'
-
-
-def _sp(*m):
-    return f"SUMPRODUCT({'*'.join(m)})"
-
-
-def _vls_dollar():
-    return _sp(f"({_evls()}=1)", _edol())
-
-
-def _physical_base():
-    """Bucketed supplier $ = supplier-addressable - unbucketed supplier (residual)."""
-    sup = _sp(f"({_erole()}={_Q}supplier{_Q})", _edol())
-    unb = _sp(f"({_erole()}={_Q}supplier{_Q})", f"({_ebkt()}={_Q}{UNBUCKETED}{_Q})", _edol())
-    return f"{sup}-{unb}"
 
 
 def _make_sensitivity():
@@ -118,24 +99,9 @@ def _make_sensitivity():
                 styles=[S_DEFAULT, S_PCT], outline_level=1)
         c.blank(2)
 
-        # §5 VLS launch-control sensitivity (market-definition boundary)
-        c.banner("§5 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-        c.blank()
-        c.write(["Measure", "$M"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
-        r_base = c.write(["Physical supplier base (VLS launch-control OUT - base case)", f"={_physical_base()}"],
-                         styles=[S_BOLD, S_NUM], outline_level=1)
-        r_vls = c.write(["+ VLS launch-control (Leonardo DRS Training&Control + Laurel; mission_systems)",
-                         f"={_vls_dollar()}"], styles=[S_DEFAULT, S_NUM], outline_level=1)
-        c.write(["= Physical supplier base (VLS launch-control IN - sensitivity)", f"=C{r_base}+C{r_vls}"],
-                styles=[S_BOLD, S_NUM], outline_level=1)
-        c.write(["VLS uplift as % of base", f"=C{r_vls}/C{r_base}"],
-                styles=[S_DEFAULT, S_PCT], outline_level=1)
-        c.blank(2)
-
-        # §6 OBBBA BC-share sensitivity (the Sec. 20002(17) award has no BC/GFE
+        # §5 OBBBA BC-share sensitivity (the Sec. 20002(17) award has no BC/GFE
         # breakout; the applied share is the assumption under test)
-        c.banner("§6 - OBBBA BC-share sensitivity (Sec. 20002(17) BC/GFE split)",
+        c.banner("§5 - OBBBA BC-share sensitivity (Sec. 20002(17) BC/GFE split)",
                  n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
         c.blank()
         c.write(["Measure", "Value"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])

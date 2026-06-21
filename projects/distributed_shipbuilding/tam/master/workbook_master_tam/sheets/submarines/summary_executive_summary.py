@@ -30,15 +30,12 @@ from workbook_master_tam.sheets.submarines.model_outlook import (
     penetration_l6y_cell, outyear_low_avg_cell, outyear_high_avg_cell,
     tam_fy2225_avg_cell,
 )
-from workbook_master_tam.sheets.submarines.model_sam_build import (
-    sam_cell, sam_pct_cell, avg_annual_sam_cell, scenario_keys_ordered,
-)
 from workbook_master_tam.sheets.submarines.data_ap_bridge import (
     ap_bridge_gross_cell, ap_bridge_gfe_removed_cell, ap_bridge_in_bc_removed_cell,
     ap_bridge_residual_cell, ap_bridge_base_cell,
 )
 from workbook_master_tam.sheets.submarines.inputs_assumptions import (
-    scenario_name, obbba_bc_share_cell, obbba_spillover_cell,
+    obbba_bc_share_cell, obbba_spillover_cell,
 )
 from workbook_master_tam.sheets.submarines._layout import RowCursor
 
@@ -47,11 +44,6 @@ _TAB = "Sub Executive Summary"
 
 _bc_tam_sum = "+".join(f"N({tam_bc_total_cell(fy)})" for fy in FY_COLUMNS)
 _ap_tam_sum = "+".join(f"N({tam_ap_total_cell(fy)})" for fy in FY_COLUMNS)
-_INTERP = {"metal": "structural + castings + machining",
-           "hme": "machining + piping + electrical + HVAC",
-           "electrical": "electrical power / distribution / generation only",
-           "modular": "entity-flagged modular assemblers (registry, not a bucket union)",
-           "broad": "all seven buckets"}
 
 
 def _render_executive_summary() -> WorksheetSpec:
@@ -70,8 +62,6 @@ def _render_executive_summary() -> WorksheetSpec:
         ("Average annual portfolio TAM $M", avg_annual_tam_cell(), "TAM Build", S_BOLD),
         ("FY22-FY27 cumulative portfolio TAM $M", cumulative_tam_cell(), "TAM Build", S_BOLD),
         ("incl. OBBBA mandatory TAM $M (Sec. 20002(16), 1 boat)", cumulative_obbba_tam_cell(), "TAM Build", S_DEFAULT),
-        ("Average annual broad SAM $M", avg_annual_sam_cell("broad"), "SAM Build", S_BOLD),
-        ("FY22-FY27 cumulative broad SAM $M", sam_cell("broad"), "SAM Build", S_DEFAULT),
     ]:
         _nr[label] = c.write([label, f"={val}", src], styles=[lab, S_LINK_NUM, S_DEFAULT], outline_level=1)
     c.write(["Virginia BC coefficient (Block V announced POP)", f"={va_bc_supplier_coeff_cell()}", "TAM Build"],
@@ -162,17 +152,6 @@ def _render_executive_summary() -> WorksheetSpec:
     c.total(["Total (FY22-27)", f"={_bc_tam_sum}", f"={_ap_tam_sum}",
              f"={cumulative_obbba_tam_cell()}", f"={cumulative_tam_cell()}"],
             styles=[S_BOLD, S_NUM, S_NUM, S_LINK_NUM, S_LINK_NUM], n_cols=5)
-    c.blank(2)
-
-    # §4 SAM scenario menu
-    c.banner("§4 - SAM scenario menu", n_cols=n_cols, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Scenario", "Cumulative SAM $M", "% of TAM", "Avg annual SAM $M", "Interpretation"],
-            styles=[S_HEADER_LEFT, S_HEADER_CENTER, S_HEADER_CENTER, S_HEADER_CENTER, S_HEADER_LEFT])
-    for k in scenario_keys_ordered():
-        c.write([scenario_name(k), f"={sam_cell(k)}", f"={sam_pct_cell(k)}", f"={avg_annual_sam_cell(k)}",
-                 _INTERP.get(k, "")],
-                styles=[S_DEFAULT, S_LINK_NUM, S_LINK_PCT, S_LINK_NUM, S_DEFAULT], outline_level=1)
     c.blank(2)
 
     ws = worksheet(c.rows, cols=[40, 18, 18, 18, 30], tab_color=group_color(_GROUP), with_gutter=True)

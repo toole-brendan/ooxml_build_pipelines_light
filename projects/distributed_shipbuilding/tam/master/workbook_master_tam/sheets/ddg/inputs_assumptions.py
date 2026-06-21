@@ -32,7 +32,6 @@ from workbook_core.styles import (
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.notes import ExcelNote
 from workbook_core.groups import group_color
-from workbook_master_tam.sheets.ddg._taxonomy import BUCKETS, BUCKET_KEYS
 from workbook_master_tam.sheets.submarines.data_deflators import deflator_factor_cell
 from workbook_master_tam.sheets.ddg._layout import RowCursor
 
@@ -63,7 +62,6 @@ _MYP = {
     "ingalls18": ("Ingalls FY18-22 MYP master", "N00024-18-C-2307", 5104.669, 0, 91, 9, 0),
 }
 _MYP_COL = {"piid": 2, "master": 3, "biw": 4, "ingalls": 5, "other_us": 6, "foreign": 7}
-_SCENARIO_KEYS = ["metal", "hme", "electrical", "modular", "broad"]
 
 
 def _fy_col(fy: int) -> str:
@@ -89,7 +87,6 @@ def _dv_decimal(sqref: str, lo: float, hi: float) -> str:
 
 
 def _make_inputs():
-    _bucket_name = {k: name for k, name, _ in BUCKETS}
     P: dict = {}
     c = RowCursor(2)
     c.banner(_TAB, n_cols=_NCOLS, style=S_TITLE_SHEET)
@@ -107,8 +104,6 @@ def _make_inputs():
             styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
     c.write(["Units", "Constant FY2026 $M (then-year source retained)"],
             styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
-    P["sel_scen"] = c.write(["Selected SAM scenario", "broad"],
-                            styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
     c.blank(2)
 
     # §2 Stream toggles (moved here from TAM Build)
@@ -181,19 +176,8 @@ def _make_inputs():
         styles=[S_DEFAULT, S_PCT_INPUT], outline_level=1)
     c.blank(2)
 
-    # §6 Bucket adjustments (moved here from SAM Build)
-    c.banner("§6 - Bucket adjustments", n_cols=_NCOLS,
-             style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Bucket", "Adjustment +/-"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
-    P["adj"] = {}
-    for k in BUCKET_KEYS:
-        P["adj"][k] = c.write([_bucket_name[k], 0],
-                              styles=[S_DEFAULT, S_PCT_INPUT], outline_level=1)
-    c.blank(2)
-
-    # §7 Outlook outyear penetration bounds (Outlook §3 links here)
-    c.banner("§7 - Outlook outyear penetration bounds", n_cols=_NCOLS,
+    # §6 Outlook outyear penetration bounds (Outlook §3 links here)
+    c.banner("§6 - Outlook outyear penetration bounds", n_cols=_NCOLS,
              style=S_TITLE_SECTION, mark_collapsible=True)
     c.blank()
     c.write(["Knob", "Value"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
@@ -202,11 +186,9 @@ def _make_inputs():
         styles=[S_DEFAULT, S_PCT_INPUT], outline_level=1)
 
     _dvs = [
-        _dv_list(f"C{P['sel_scen']}", _SCENARIO_KEYS),
         _dv_whole(f"C{P['incl_bc']}:C{P['incl_obbba']}", 0, 1),
         _dv_decimal(f"E{P['myp']['biw']}:H{P['myp']['ingalls18']}", 0, 1),
         _dv_decimal(f"C{P['coeff']}:C{P['obbba_bc_share']}", 0, 1),
-        _dv_decimal(f"C{P['adj'][BUCKET_KEYS[0]]}:C{P['adj'][BUCKET_KEYS[-1]]}", -1, 1),
         _dv_decimal(f"C{P['intent_uplift']}", 0, 1),
     ]
 
@@ -277,14 +259,6 @@ def _make_inputs():
     def obbba_bc_share_cell() -> str:
         return f"'{_TAB}'!C{P['obbba_bc_share']}"
 
-    def bucket_adjustment_cell(bucket: str) -> str:
-        if bucket not in P["adj"]:
-            raise ValueError(f"Unknown bucket {bucket!r}")
-        return f"'{_TAB}'!C{P['adj'][bucket]}"
-
-    def selected_scenario_cell() -> str:
-        return f"'{_TAB}'!C{P['sel_scen']}"
-
     def outlook_intent_uplift_cell() -> str:
         return f"'{_TAB}'!C{P['intent_uplift']}"
 
@@ -293,7 +267,6 @@ def _make_inputs():
             ap_supplier_coeff_cell,
             include_bc_stream_cell, include_ap_lltm_stream_cell,
             include_obbba_stream_cell, obbba_bc_share_cell,
-            bucket_adjustment_cell, selected_scenario_cell,
             outlook_intent_uplift_cell)
 
 
@@ -301,5 +274,4 @@ def _make_inputs():
  ap_supplier_coeff_cell,
  include_bc_stream_cell, include_ap_lltm_stream_cell,
  include_obbba_stream_cell, obbba_bc_share_cell,
- bucket_adjustment_cell, selected_scenario_cell,
  outlook_intent_uplift_cell) = _make_inputs()

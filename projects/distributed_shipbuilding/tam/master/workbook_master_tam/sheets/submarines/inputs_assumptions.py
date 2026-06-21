@@ -1,14 +1,9 @@
 """inputs_assumptions - the "Assumptions" tab (one module = one sheet).
 
-The SINGLE edit surface for model behaviour. It owns the run settings, the stream
-include-toggles (moved here from the TAM model), the AP/LLTM additive base + gross
-reference, the OBBBA mandatory-overlay controls, the target-scenario inclusion
-matrix (moved here from the SAM model), the bucket-share adjustments, the
-default-scenario selector, and the Outlook outyear penetration bounds (§9,
-the intent uplift behind each class's high assumption). The bucket adjustments
-(§8) apply uniformly to BOTH class share vectors; the modeled per-class per-FY
-shares themselves are produced on SAM Build from the gated Worktype by FY
-evidence + these adjustments.
+The SINGLE edit surface for TAM model behaviour. It owns the run settings, the
+stream include-toggles, the AP/LLTM additive base + gross reference, the OBBBA
+mandatory-overlay controls, the class-vintage construction-master announced POP
+(the BC coefficients), and the Outlook outyear penetration bounds.
 
 Why the AP/LLTM additive base is held at 0: P-10 Advance Procurement is extracted but
 NOT additive to P-5c Basic Construction - supplier LLTM is already inside BC, so
@@ -18,32 +13,22 @@ only; see the LLTM AP reconciliation bridge.
 OBBBA mandatory controls (§4): the award dollars themselves live on the OBBBA
 Mandatory data sheet; this section holds the behaviour levers. The BC share
 bridges the Sec. 20002(16) gross award (no cost-category breakout) to a BC base
-(observed = Virginia FY26 P-5c BC % of Total, adjustable). The FY2027 execution
-spillover is 0 by default because the allocation plan is FY2026 budget authority
-with no FY2027 column - moving dollars into FY27 requires an explicit award/outlay
-profile, not a default.
-
-Layout: the body (positions that back the accessors) is built once at IMPORT time via
-a cursor, so cross-sheet accessors resolve regardless of render order. The only
-back-reference to SAM Build (the §4 selector display row) is built at RENDER time via
-a lazy import and spliced into the body, so there is no assumptions_controls <->
-sam_build import cycle.
+(observed = Virginia FY26 P-5c BC % of Total, adjustable).
 """
 from __future__ import annotations
 
 import csv
 
-from workbook_core.primitives import worksheet, banner_row, write_row, col_letter
+from workbook_core.primitives import worksheet, banner_row, col_letter
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER, S_NUM, S_NUM_INPUT, S_PCT,
-    S_PCT_INPUT, S_LINK_NUM, S_LINK_PCT, S_TITLE_SHEET, S_TITLE_SECTION,
+    S_PCT_INPUT, S_LINK_NUM, S_TITLE_SHEET, S_TITLE_SECTION,
     S_TITLE_SUBSECTION,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.notes import ExcelNote
 from workbook_core.groups import group_color
 from workbook_master_tam.sheets.submarines._bind import EXTRACTED
-from workbook_master_tam.sheets.submarines.taxonomy import BUCKETS, BUCKET_KEYS
 from workbook_master_tam.sheets.submarines.data_deflators import deflator_factor_cell
 from workbook_master_tam.sheets.submarines.data_scn_budget import scn_cell as _scn
 from workbook_master_tam.sheets.submarines._layout import RowCursor
@@ -54,24 +39,6 @@ _TAB = "Sub Assumptions"
 FY_COLUMNS = [2022, 2023, 2024, 2025, 2026, 2027]
 _FY_COL_INDEX = {fy: 2 + i for i, fy in enumerate(FY_COLUMNS)}   # B=label, C=FY22..
 _LI_LABEL = {2013: "Virginia (LI 2013)", 1045: "Columbia (LI 1045)"}
-_BUCKET_NAME = {k: name for k, name, _ in BUCKETS}
-
-# Target-scenario membership (moved from the former sam_sheets) - seeds the matrix.
-# NOTE: `modular` is ENTITY-driven - its SAM is computed in SAM Build from the registry
-# modular flag (per operating entity), NOT from a bucket union. The sentinel set keeps
-# its flag-matrix column all-zero; SAM Build special-cases it.
-_MODULAR_ENTITY = {"_entity"}
-SCENARIOS = [
-    ("metal", "Metal components", {"structural", "castings", "machining"}),
-    ("hme", "HM&E components", {"piping", "hvac", "machining", "electrical"}),
-    ("electrical", "Electrical / power", {"electrical"}),
-    ("modular", "Modular assemblies", _MODULAR_ENTITY),
-    ("broad", "Broad component mfg", set(BUCKET_KEYS)),
-]
-_SHORT = {"metal": "Metal", "hme": "HM&E", "electrical": "Electrical",
-          "modular": "Modular", "broad": "Broad"}
-SCENARIO_KEYS = [s[0] for s in SCENARIOS]
-_SCEN_COL = {k: 2 + i for i, k in enumerate(SCENARIO_KEYS)}      # Metal=C .. Broad=G
 
 
 def _fy_col(fy): return col_letter(_FY_COL_INDEX[fy])
@@ -108,11 +75,7 @@ _FY_HDR_7 = [S_HEADER_LEFT] + [S_HEADER_CENTER] * len(FY_COLUMNS)
 
 
 def _build_body(tab: str):
-    """Build the body at import time; capture every accessor-backing row in P.
-
-    Returns (rows_before_selector, selector_row, rows_after_selector, P, next_row).
-    The §4 selector data row is deferred (SAM Build links resolved lazily at render).
-    """
+    """Build the body at import time; capture every accessor-backing row in P."""
     P = {}
     c = RowCursor(4)
 
@@ -128,8 +91,6 @@ def _build_body(tab: str):
                           styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
     c.write(["Units", "Constant FY2026 $M (then-year source retained)"],
             styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
-    P["default_scen"] = c.write(["Default SAM scenario", "Broad component mfg"],
-                                styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
     c.blank(2)
 
     # §2 Stream controls
@@ -204,7 +165,7 @@ def _build_body(tab: str):
     P["obbba_bc_share"] = c.write(
         ["OBBBA BC share of award (Virginia FY26 P-5c)",
          f"={_scn(2013, 2026, 'bc_pct')}", 0, lambda r: f"=C{r}+D{r}"],
-        styles=[S_DEFAULT, S_LINK_PCT, S_PCT_INPUT, S_PCT], outline_level=1)
+        styles=[S_DEFAULT, S_LINK_NUM, S_PCT_INPUT, S_PCT], outline_level=1)
     c.blank(2)
 
     # §5 Construction-master announced POP (class-vintage BC coefficients)
@@ -238,45 +199,8 @@ def _build_body(tab: str):
     P["notes"].append((f"B{P['vintage']['va']}", _VM_NOTE))
     c.blank(2)
 
-    # §6 Scenario selector - banner + header at import; data row deferred to render
-    c.banner("§6 - Scenario selector", n_cols=7, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Selected scenario", "Cumulative SAM $M", "% of TAM", "Avg annual SAM $M"],
-            styles=[S_HEADER_LEFT, S_HEADER_CENTER, S_HEADER_CENTER, S_HEADER_CENTER])
-    rows_before = list(c.rows)
-    sel_row = c.at()
-    c.blank()          # reserve the selector data row
-    c.blank(2)         # gap before §5
-    c.rows = []        # subsequent rows belong to the 'after' bucket
-
-    # §7 Target scenario matrix
-    c.banner("§7 - Target scenario matrix (1 = targets bucket)", n_cols=7,
-             style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Scenario key:  " + "   ·   ".join(f"{_SHORT[k]} = {name}" for k, name, _s in SCENARIOS)],
-            styles=[S_DEFAULT])
-    c.write(["Bucket"] + [_SHORT[k] for k, _n, _s in SCENARIOS],
-            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * len(SCENARIOS))
-    P["matrix_first"] = c.at()
-    for k in BUCKET_KEYS:
-        flags = [(1 if k in s else 0) for _k, _n, s in SCENARIOS]
-        c.write([_BUCKET_NAME[k]] + flags,
-                styles=[S_DEFAULT] + [S_NUM_INPUT] * len(SCENARIOS), outline_level=1)
-    c.blank(2)
-
-    # §8 Bucket share adjustments (applied to both class vectors on SAM Build)
-    c.banner("§8 - Bucket share adjustments (applied to both class share vectors -> SAM Build)",
-             n_cols=7, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Bucket", "Adjustment"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
-    P["adj"] = {}
-    for k in BUCKET_KEYS:
-        P["adj"][k] = c.write([_BUCKET_NAME[k], 0],
-                              styles=[S_DEFAULT, S_PCT_INPUT], outline_level=1)
-    c.blank(2)
-
-    # §9 Outlook outyear penetration bounds (Outlook §3 links here; both classes)
-    c.banner("§9 - Outlook outyear penetration bounds", n_cols=7,
+    # §6 Outlook outyear penetration bounds (Outlook links here; both classes)
+    c.banner("§6 - Outlook outyear penetration bounds", n_cols=7,
              style=S_TITLE_SECTION, mark_collapsible=True)
     c.blank()
     c.write(["Knob", "Value"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
@@ -289,19 +213,18 @@ def _build_body(tab: str):
         "uplift). Basis: stated industry intent to grow outsourced manhours ~30% "
         "(HII statement; citation pending - swap in the source when confirmed)."))
 
-    return rows_before, sel_row, list(c.rows), P, c.at()
+    return list(c.rows), P, c.at()
 
 
 # ── Import-time layout pass ───────────────────────────────────────────────────
-_rows_before, _SEL_ROW, _rows_after, _P, _after_body = _build_body(_TAB)
+_BODY_ROWS, _P, _after_body = _build_body(_TAB)
 
 
-# ── Accessors (load-bearing; consumed by TAM Build / SAM Build / LLTM AP / QA) ─
+# ── Accessors (load-bearing; consumed by TAM Build / Outlook / OBBBA) ─────────
 
 def fy_range_start_cell(): return f"'{_TAB}'!C{_P['fy_start']}"
 def fy_range_end_cell(): return f"'{_TAB}'!C{_P['fy_end']}"
 def n_years_count_formula(): return f"'{_TAB}'!C{_P['fy_end']}-'{_TAB}'!C{_P['fy_start']}+1"
-def selected_sam_scenario_cell(): return f"'{_TAB}'!C{_P['default_scen']}"
 def include_bc_stream_cell(): return f"'{_TAB}'!C{_P['incl_bc']}"
 def include_ap_lltm_stream_cell(): return f"'{_TAB}'!C{_P['incl_ap']}"
 def include_obbba_stream_cell(): return f"'{_TAB}'!C{_P['incl_obbba']}"
@@ -335,41 +258,6 @@ def ap_gross_cell(li: int, fy: int) -> str:
     return f"'{_TAB}'!{_fy_col(fy)}{_P['ap_gross'][li]}"
 
 
-def scenario_keys(): return list(SCENARIO_KEYS)
-
-
-def scenario_name(k):
-    for key, name, _s in SCENARIOS:
-        if key == k:
-            return name
-    raise ValueError(f"Unknown scenario {k!r}")
-
-
-def _matrix_last(): return _P["matrix_first"] + len(BUCKET_KEYS) - 1
-
-
-def scenario_flag_range(k):
-    if k not in _SCEN_COL:
-        raise ValueError(f"Unknown scenario {k!r}")
-    c = col_letter(_SCEN_COL[k])
-    return f"'{_TAB}'!{c}{_P['matrix_first']}:{c}{_matrix_last()}"
-
-
-def scenario_flag_cell(k, bucket):
-    if k not in _SCEN_COL:
-        raise ValueError(f"Unknown scenario {k!r}")
-    if bucket not in BUCKET_KEYS:
-        raise ValueError(f"Unknown bucket {bucket!r}")
-    c = col_letter(_SCEN_COL[k])
-    return f"'{_TAB}'!{c}{_P['matrix_first'] + BUCKET_KEYS.index(bucket)}"
-
-
-def bucket_adjustment_cell(bucket):
-    if bucket not in _P["adj"]:
-        raise ValueError(f"Unknown bucket {bucket!r}")
-    return f"'{_TAB}'!C{_P['adj'][bucket]}"
-
-
 def outlook_intent_uplift_cell():
     return f"'{_TAB}'!C{_P['intent_uplift']}"
 
@@ -377,21 +265,11 @@ def outlook_intent_uplift_cell():
 # ── Render ───────────────────────────────────────────────────────────────────
 
 def _render_assumptions_controls() -> WorksheetSpec:
-    # Scenario selector display - lazy SAM Build link breaks the import cycle.
-    from workbook_master_tam.sheets.submarines import model_sam_build as _sam
-    sel = write_row(_SEL_ROW,
-                    [f"=C{_P['default_scen']}", f"={_sam.selected_sam_cell()}",
-                     f"={_sam.selected_sam_pct_cell()}", f"={_sam.selected_avg_annual_sam_cell()}"],
-                    styles=[S_DEFAULT, S_LINK_NUM, S_LINK_PCT, S_LINK_NUM],
-                    start_col=1, outline_level=1)
     title = banner_row(2, _TAB, n_cols=7, style=S_TITLE_SHEET, with_gutter=True)
-    rows = [title] + _rows_before + [sel] + _rows_after
+    rows = [title] + _BODY_ROWS
     # Data-validation dropdowns on the editable controls (Value column = C).
-    _ds, _ib, _ia, _io = _P["default_scen"], _P["incl_bc"], _P["incl_ap"], _P["incl_obbba"]
-    _scen_list = ",".join(scenario_name(k) for k in SCENARIO_KEYS).replace("&", "&amp;")
+    _ib, _ia, _io = _P["incl_bc"], _P["incl_ap"], _P["incl_obbba"]
     dvs = [
-        f'<dataValidation type="list" allowBlank="1" showInputMessage="1" showErrorMessage="1" '
-        f'sqref="C{_ds}"><formula1>"{_scen_list}"</formula1></dataValidation>',
         f'<dataValidation type="list" allowBlank="1" showInputMessage="1" showErrorMessage="1" '
         f'sqref="C{_ib}"><formula1>"0,1"</formula1></dataValidation>',
         f'<dataValidation type="list" allowBlank="1" showInputMessage="1" showErrorMessage="1" '

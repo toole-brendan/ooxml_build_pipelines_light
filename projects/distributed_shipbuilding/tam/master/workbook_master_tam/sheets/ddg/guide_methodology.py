@@ -20,9 +20,6 @@ from workbook_core.styles import (
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.notes import ExcelNote
 from workbook_core.groups import group_color
-from workbook_master_tam.sheets.ddg._taxonomy import (
-    BUCKETS, BUCKET_KEYS, UNBUCKETED, DESC_BUCKET, NAICS4_BUCKET,
-)
 from workbook_master_tam.sheets.ddg.model_tam_build import (
     bc_supplier_coeff_cell, ap_lltm_supplier_coeff_cell,
 )
@@ -48,7 +45,6 @@ def _render_methodology() -> WorksheetSpec:
     _dn = {}
     for term, defn, treat in [
         ("TAM", "non-GFE, non-MIB new-construction supplier opportunity", "BC base x coeff + AP/LLTM base x coeff"),
-        ("SAM", "portion of TAM in targeted work-type buckets", "scenario menu"),
         ("BC", "Basic Construction (P-5c)", "the headline TAM stream"),
         ("AP/LLTM/EOQ", "advance procurement / long-lead material / EOQ", "additive stream, supplier-addressable portion"),
         ("GFE", "government-furnished equipment / weapons", "excluded from TAM"),
@@ -56,8 +52,6 @@ def _render_methodology() -> WorksheetSpec:
         ("POP", "place of performance", "drives the supplier coefficient"),
         ("Supplier coefficient", "$-weighted supplier+foreign POP share", "applied to each stream base"),
         ("MYP correction", "redacted MYP masters folded back at reconstructed POP", "corrects the BC coefficient"),
-        ("Registry-led bucketing", "operating-entity UEI resolves role + bucket; NAICS-4 fallback", "primary signal (both books)"),
-        ("Worktype share gate", "bucket shares measured on yard-PIID subawards, FY2022-25 window", "GFE-chain prime records excluded"),
     ]:
         _dn[term] = c.write([term, defn, treat], styles=[S_BOLD, S_DEFAULT, S_DEFAULT], outline_level=1)
     c.blank(2)
@@ -75,13 +69,7 @@ def _render_methodology() -> WorksheetSpec:
     c.write(["AP/LLTM supplier coefficient", f"={ap_lltm_supplier_coeff_cell()}"],
             styles=[S_DEFAULT, S_LINK_PCT], outline_level=1)
     c.blank()
-    c.banner("§2b - SAM framework", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["SAM scenario = SUMPRODUCT(bucket TAM, scenario inclusion flag)"], styles=[S_DEFAULT])
-    c.write(["Bucket shares are measured per subaward FY on gated evidence: yard construction PIIDs only (GFE / combat-system prime chains excluded), FY2022-FY2025 reporting years -> Worktype by FY."], styles=[S_DEFAULT])
-    c.write(["Annual TAM is allocated at each FY's own share vector; FY2026-27 use the FY22-25 window vector (no subaward reporting yet)."], styles=[S_DEFAULT])
-    c.blank()
-    c.banner("§2c - MYP correction", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
+    c.banner("§2b - MYP correction", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
     c.blank()
     c.write(["BC coefficient is measured on the non-GFE BC corpus, with the two $-redacted MYP masters folded back at their announced POP ($ reconstructed from FPDS + trade press)."], styles=[S_DEFAULT])
     c.write(["POP figure", "Meaning"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
@@ -93,13 +81,13 @@ def _render_methodology() -> WorksheetSpec:
     ]:
         c.write([fig, mean], styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
     c.blank()
-    c.banner("§2d - Penetration & outyear outlook", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
+    c.banner("§2c - Penetration & outyear outlook", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
     c.blank()
     c.write(["Penetration = Outsourced BC TAM (both streams) / total ship spend (P-5c Total Ship Estimate + OBBBA gross), constant FY2026 $."], styles=[S_DEFAULT])
     c.write(["Window averages are ratios of sums; implied FY28-31 Outsourced BC = PB2027 FYDP gross x penetration, low = FY22-25 average, high = low x (1 + stated outsourcing-intent uplift, Assumptions §7)."], styles=[S_DEFAULT])
     c.write(["FYDP outyears are the PB2027 request, not appropriation; FY2030-FY2031 deflators are extrapolated (Deflators tab)."], styles=[S_DEFAULT])
     c.blank(2)
-    c.banner("§2e - Evidence basis by fiscal year", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
+    c.banner("§2d - Evidence basis by fiscal year", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
     c.blank()
     c.write(["FY", "Dollar basis", "Outsourced % basis"], styles=S_HEADER_LEFT)
     for fy, dollars, pct in [
@@ -129,10 +117,6 @@ def _render_methodology() -> WorksheetSpec:
         ("Remove GFE / non-addressable / dup AP", "budget base", "exclusion rules", "TAM Build"),
         ("Apply POP supplier coefficient", "in-scope base", "POP $-weighted share", "TAM Build"),
         ("Portfolio TAM", "BC + AP/LLTM streams", "base x coefficient", "TAM Build"),
-        ("Gate work-type share evidence", "FFATA subawards", "yard PIIDs, FY22-25 window", "Worktype by FY"),
-        ("Allocate TAM into buckets", "annual TAM", "x per-FY modeled bucket share", "SAM Build"),
-        ("Apply target scenario flags", "bucket TAM", "SUMPRODUCT with flags", "SAM Build"),
-        ("SAM scenario output", "scenario selection", "scenario menu", "SAM Build"),
         ("Penetration & outyear outlook", "TAM + ship spend + PB2027 FYDP gross", "TAM / spend; FYDP x penetration range", "Outlook"),
     ]:
         c.write([step, inp, method, tab], styles=S_DEFAULT, outline_level=1)
@@ -214,51 +198,6 @@ def _render_methodology() -> WorksheetSpec:
         c.write([item, ident, why], styles=[S_BOLD, S_DEFAULT, S_DEFAULT], outline_level=1)
     c.blank(2)
 
-    # §6 Bucket taxonomy
-    c.banner("§6 - Bucket taxonomy", n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Bucket key", "Display name", "Definition", "Typical evidence"], styles=S_HEADER_LEFT)
-    for k, name, defn in BUCKETS:
-        c.write([k, name, defn, "Worktype Evidence"], styles=S_DEFAULT, outline_level=1)
-    c.write([UNBUCKETED, "Unbucketed / ambiguous", "parent-unknown or no clean description / NAICS", "Worktype Evidence"],
-            styles=S_DEFAULT, outline_level=1)
-    c.blank()
-    c.banner("§6a - Governing signal: operating-entity resolution (registry)", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Step", "Method"], styles=S_HEADER_LEFT)
-    for step, method in [
-        ("Key", "each subaward's sub_entity_uei = the operating entity that received the dollars"),
-        ("Resolve", "SAM Entity API -> operating-entity legal name + primary NAICS"),
-        ("Adjudicate", "evidence registry assigns role + bucket per entity (signed dollars)"),
-        ("Why", "the prime's CLIN description and the parent brand are too coarse / misleading"),
-    ]:
-        c.write([step, method], styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
-    c.blank()
-    c.banner("§6b - NAICS-4 -> bucket (fallback for entities not in the registry)", n_cols=_NCOLS, style=S_TITLE_SUBSECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["NAICS-4", "Bucket"], styles=[S_HEADER_CENTER, S_HEADER_LEFT])
-    for code in sorted(NAICS4_BUCKET):
-        c.write([code, NAICS4_BUCKET[code]], styles=[S_DEFAULT, S_DEFAULT], outline_level=1)
-    c.blank(2)
-
-    # §7 Classification precedence
-    c.banner("§7 - Classification precedence (first match wins)", n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Priority", "Rule", "Result", "Example"],
-            styles=[S_HEADER_CENTER, S_HEADER_LEFT, S_HEADER_LEFT, S_HEADER_LEFT])
-    for pri, rule, result, ex in [
-        ("1", "Evidence registry (operating-entity UEI)", "role + bucket per registry", "Leonardo DRS Training&Control -> mission_systems"),
-        ("2", "Prime / co-prime yard name", "role=prime/co_prime", "Bath Iron Works, HII Ingalls"),
-        ("3", "GFE / Navy-directed name", "role=gfe_mib", "Lockheed Aegis, Raytheon SPY-6"),
-        ("4", "Vendor-name override", "bucket per override", "Curtiss-Wright -> piping"),
-        ("5", "NAICS-4 crosswalk (no 3364/3344)", "role=supplier, bucket per NAICS", "3329 -> piping"),
-        ("6", "Service / non-component NAICS", "role=service", "5416 mgmt, 5413 eng"),
-        ("7", "Holding (NAICS 5511)", "role=holding (excluded)", "parent-only holding co"),
-        ("8", "Foreign-flagged, no NAICS", "role=foreign_fms (excluded)", "foreign supplier / FMS"),
-        ("9", "Residual", "role=supplier, bucket=unbucketed", "blank NAICS, not in registry"),
-    ]:
-        c.write([pri, rule, result, ex], styles=[S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT], outline_level=1)
-
     # Native Excel Notes: one concise hover per definition, on the LAST column of the §1
     # table (D, Treatment) - the single home for the model's recurring caveats. Other
     # sheets carry the durable evidence in real cells, not notes.
@@ -267,9 +206,6 @@ def _render_methodology() -> WorksheetSpec:
                   "Opportunity ceiling, not a forecast: non-GFE, non-MIB new-construction "
                   "supplier $ away from BIW / Ingalls / GFE sites. ~$1,070M/yr (BC ~$897M + "
                   "AP/LLTM ~$174M)."),
-        ExcelNote(f"D{_dn['SAM']}",
-                  "Overlapping scenario cuts of TAM. Don't sum; broad = all seven buckets, "
-                  "excludes the ~21.1% unbucketed residual."),
         ExcelNote(f"D{_dn['AP/LLTM/EOQ']}",
                   "Additive stream: the P-10 'Ship Construction EOQ' line (FY25 $41.5M + "
                   "FY26 $1,000.0M then-year; PB2027 P-10, LI 2122) at a 1.00 supplier "

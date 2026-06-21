@@ -22,11 +22,6 @@ from workbook_master_tam.sheets.submarines.data_pop_corpus import (
     pop_dollar_range, pct_range,
 )
 from workbook_master_tam.sheets.submarines.inputs_assumptions import ap_gross_cell
-from workbook_master_tam.sheets.submarines.data_entity_master import (
-    addressable_total_cell as _addr, observed_bucket_dollar_cell as _bkt_dollar,
-    vls_boundary_dollar_cell as _vls_dollar,
-)
-from workbook_master_tam.sheets.submarines.taxonomy import UNBUCKETED
 from workbook_master_tam.sheets.submarines._layout import RowCursor
 
 _GROUP = "validation"
@@ -139,18 +134,6 @@ def _render_sensitivity() -> WorksheetSpec:
     ]:
         c.write([txt], styles=[S_DEFAULT], outline_level=1)
     c.blank(2)
-
-    # §4 VLS launch-control sensitivity (market-definition boundary; ~negligible on subs)
-    c.banner("§4 - VLS launch-control sensitivity (boundary launcher electronics: out vs in)",
-             n_cols=n_cols, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.blank()
-    c.write(["Measure", "$M"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
-    r_base = c.write(["Physical supplier base (VLS launch-control OUT - base case)",
-                      f"={_addr()}-{_bkt_dollar(UNBUCKETED)}"], styles=[S_BOLD, S_NUM], outline_level=1)
-    r_vls = c.write(["+ VLS launch-control boundary (mission_systems)", f"={_vls_dollar()}"],
-                    styles=[S_DEFAULT, S_NUM], outline_level=1)
-    c.write(["= Physical supplier base (VLS launch-control IN - sensitivity)", f"=C{r_base}+C{r_vls}"],
-            styles=[S_BOLD, S_NUM], outline_level=1)
 
     ws = worksheet(c.rows, cols=[44, 16], tab_color=group_color(_GROUP), with_gutter=True)
     return WorksheetSpec(ws)
