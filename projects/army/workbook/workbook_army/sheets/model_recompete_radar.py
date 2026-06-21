@@ -49,9 +49,7 @@ from workbook_army.sheets._text_input import S_TEXT_INPUT
 from workbook_army.sheets._italic import S_ITALIC
 from workbook_army.sheets._widths import header_styles
 from workbook_army.sheets._tabs import TAB_RECOMPETE_RADAR, AS_OF_ROW
-from workbook_army.sheets.data_contract_awards import awards_cols
-from workbook_army.sheets.data_award_actions import actions_cols
-from workbook_army.sheets.data_pipeline_events import pipeline_cols
+from workbook_army.sheets._radar_formulas import family_formulas
 
 _GROUP = "model"
 _TAB = TAB_RECOMPETE_RADAR
@@ -143,7 +141,14 @@ def _build_lineage(attrs):
             {k: v[0] for k, v in succ.items()})
 
 
-def _make_radar():
+def load_families():
+    """Watercraft family attributes + predecessor<->successor lineage maps.
+
+    Shared by the recompete RADAR and the recompete CALENDAR so the two never disagree
+    on which vehicle is a chain tail vs superseded. Attributes span the FULL relevant
+    universe BEFORE the materiality floor (a shown vehicle's pred/succ may be sub-floor);
+    start / end / pot are Excel date serials. Returns (attrs, pred_of, succ_of).
+    """
     headers, rows = load_table("contract_awards")
     ix = {h: i for i, h in enumerate(headers)}
     def g(row, c):
@@ -152,19 +157,14 @@ def _make_radar():
     def oblig(row):
         v = (g(row, "obligation_amount") or "").strip()
         return float(v) if v else 0.0
+    def ser(row, col):
+        return date_serial(g(row, col))
 
     fams = defaultdict(list)
     for row in rows:
-        piid = g(row, "piid")
-        key = g(row, "parent_idv_piid") or piid
+        key = g(row, "parent_idv_piid") or g(row, "piid")
         if key:
             fams[key].append(row)
-
-    # Family attributes over the FULL watercraft universe (BEFORE the floor): a shown
-    # vehicle's predecessor or successor may itself be a sub-$1M family, so lineage must
-    # see every relevant family, not just the ones the radar renders.
-    def ser(row, col):
-        return date_serial(g(row, col))
 
     attrs = {}
     for key, frows in fams.items():
@@ -175,6 +175,7 @@ def _make_radar():
         dom = max(frows, key=oblig)
         starts = [s for s in (ser(x, "pop_start_date") for x in frows) if s is not None]
         ends = [e for e in (ser(x, "pop_current_end_date") for x in frows) if e is not None]
+        pots = [p for p in (ser(x, "pop_potential_end_date") for x in frows) if p is not None]
         attrs[key] = {
             "key": key, "total": sum(oblig(x) for x in frows), "reason": reason,
             "incumbent": g(dom, "recipient_name"),
@@ -183,25 +184,18 @@ def _make_radar():
             "comp": g(dom, "extent_competed_description") or g(dom, "extent_competed"),
             "start": min(starts) if starts else None,
             "end": max(ends) if ends else None,
+            "pot": max(pots) if pots else None,
         }
-
-    # Predecessor -> successor chains (same incumbent UEI + PSC, temporal gap).
     pred_of, succ_of = _build_lineage(attrs)
+    return attrs, pred_of, succ_of
+
+
+def _make_radar():
+    attrs, pred_of, succ_of = load_families()
 
     # select watercraft-relevant families above the materiality floor; sort by $ desc
     selected = sorted((a for a in attrs.values() if a["total"] >= _MIN_OBLIG),
                       key=lambda d: -d["total"])
-
-    # ---- leaf ranges (live-formula keys) ----
-    AMT = actions_cols("amount")
-    A_PIID = actions_cols("piid")
-    A_PARENT = actions_cols("parent_idv_piid")
-    AW_PIID = awards_cols("piid")
-    AW_PARENT = awards_cols("parent_idv_piid")
-    AW_CUR = awards_cols("pop_current_end_date")
-    AW_POT = awards_cols("pop_potential_end_date")
-    PL_AWARDNO = pipeline_cols("award_number")
-    PL_DEADLINE = pipeline_cols("response_deadline")
 
     c = RowCursor(2)
     c.banner(_TAB, n_cols=_NCOLS, style=S_TITLE_SHEET)
@@ -222,27 +216,21 @@ def _make_radar():
                       _CL["Potential end"], _CL["Months to current end"])
     fam = lambda r: f"${FB}{r}"
     RW = _CL["Recompete window"]
-    # Lineage status for a chain TAIL (no successor): live off the window cell so it
+
+    # Family-keyed roll-ups (latest current / potential / parent end, vehicle type,
+    # task-order + action counts, obligations, the open-notice flag) are the LIVE
+    # formulas shared with the Recompete Calendar via _radar_formulas, so the two
+    # sheets compute every number off the same definition over the same leaves.
+    F = family_formulas(fam, ASOF)
+    cur_end_f, pot_end_f, parent_end_f = F["cur_end"], F["pot_end"], F["parent_end"]
+    vtype_f, tos_f, obl_f, acts_f, inmkt_f = (F["vtype"], F["tos"], F["obl"],
+                                              F["acts"], F["inmkt"])
+
+    # Within-row date math keys on THIS sheet's column letters, so it stays local.
+    # Lineage status for a chain TAIL (no successor) lives off the window cell so it
     # re-clocks with the As-of date. A SUPERSEDED row gets the static literal below.
     status_f = lambda r: (f'=IF(${RW}{r}="Expired","Overdue",'
                           f'IF(${RW}{r}="n/a","","Active"))')
-
-    def eff_end(rng):
-        def f(r):
-            m = (f"MAX(_xlfn.MAXIFS({rng},{AW_PIID},{fam(r)}),"
-                 f"_xlfn.MAXIFS({rng},{AW_PARENT},{fam(r)}))")
-            return f'=IF({m}=0,"",{m})'
-        return f
-    cur_end_f, pot_end_f = eff_end(AW_CUR), eff_end(AW_POT)
-    def parent_end_f(r):
-        m = f"_xlfn.MAXIFS({AW_CUR},{AW_PIID},{fam(r)})"
-        return f'=IF({m}=0,"",{m})'
-
-    vtype_f = lambda r: f'=IF(COUNTIFS({AW_PARENT},{fam(r)})>0,"IDV vehicle","Standalone")'
-    tos_f = lambda r: f'=COUNTIFS({AW_PARENT},{fam(r)})'
-    obl_f = lambda r: (f'=(SUMIFS({AMT},{A_PARENT},{fam(r)})'
-                       f'+SUMIFS({AMT},{A_PIID},{fam(r)}))/1000000')
-    acts_f = lambda r: f'=COUNTIFS({A_PARENT},{fam(r)})+COUNTIFS({A_PIID},{fam(r)})'
     months_f = lambda r: f'=IF(${CE}{r}="","",ROUND((${CE}{r}-{ASOF})/30.44,0))'
     head_f = lambda r: (f'=IF(OR(${CE}{r}="",${PE}{r}=""),"",'
                         f'ROUND((${PE}{r}-${CE}{r})/30.44,0))')
@@ -250,10 +238,6 @@ def _make_radar():
         f'=IF(${CE}{r}="","n/a",IF(${CE}{r}<{ASOF},"Expired",'
         f'IF(${MO}{r}<=12,"0-12 mo",IF(${MO}{r}<=24,"12-24 mo",'
         f'IF(${MO}{r}<=36,"24-36 mo","36+ mo")))))')
-    # In-market = an OPEN pipeline notice (response deadline >= As-of) references this
-    # vehicle by award_number. Closed/expired notices no longer count as live signal.
-    inmkt_f = lambda r: (f'=IF(COUNTIFS({PL_AWARDNO},{fam(r)},'
-                         f'{PL_DEADLINE},">="&{ASOF})>0,"Y","")')
 
     c.banner("§1 - Watercraft recompete radar", n_cols=_NCOLS,
              style=S_TITLE_SECTION, mark_collapsible=True)

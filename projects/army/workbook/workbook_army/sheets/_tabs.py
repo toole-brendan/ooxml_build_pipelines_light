@@ -6,6 +6,7 @@ cross-sheet accessor that quotes the tab in a formula range, so they live here o
 from __future__ import annotations
 
 TAB_RECOMPETE_RADAR = "Recompete Radar"
+TAB_RECOMPETE_CALENDAR = "Recompete Calendar"
 TAB_CONTRACT_AWARDS = "Contract Awards"
 TAB_AWARD_ACTIONS = "Award Actions"
 TAB_SUBAWARDS = "Subawards"

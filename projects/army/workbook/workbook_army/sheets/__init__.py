@@ -21,8 +21,9 @@ from . import (
     data_award_actions,
     data_subawards,
     data_pipeline_events,
-    # model (live-formula screens over the data leaves)
+    # model (live-formula screens over the data leaves; calendar imports from the radar)
     model_recompete_radar,
+    model_recompete_calendar,
 )
 
 
@@ -31,6 +32,7 @@ SHEETS = [
     summary_overview.OVERVIEW,
     # Model (live-formula screens; must precede the data block per groups order)
     model_recompete_radar.RECOMPETE_RADAR,
+    model_recompete_calendar.RECOMPETE_CALENDAR,
     # Data (raw contract evidence - one filterable native table per source pull)
     data_contract_awards.CONTRACT_AWARDS,
     data_award_actions.AWARD_ACTIONS,
