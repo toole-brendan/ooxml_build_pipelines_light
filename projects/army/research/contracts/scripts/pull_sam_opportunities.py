@@ -17,7 +17,13 @@ This API is the painful one (see SAM_GOV_HOWTO.md) — design around it, don't f
   * Resumable: existing per-(term,year) files are skipped.
 
 Run:  python3 pull_sam_opportunities.py             # full plan (SLOW: ~60s/call)
+      python3 pull_sam_opportunities.py active      # forward pipeline: last 12 mo, all terms (~12 calls)
       python3 pull_sam_opportunities.py smoke       # one call only (validate)
+
+`active` is the production mode for the recompete radar's pre-award half: it pulls a
+single trailing-12-months posted window for every title term (one <=1yr call each), so
+the leaf carries CURRENT notices. Open-vs-closed is NOT filtered here (faithful-raw
+invariant) - it is derived downstream against the radar's As-of date.
 """
 from __future__ import annotations
 
@@ -25,6 +31,7 @@ import json
 import os
 import sys
 import time
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -80,9 +87,22 @@ def main():
         logf.write(msg + "\n")
         logf.flush()
 
-    smoke = len(sys.argv) > 1 and sys.argv[1] == "smoke"
-    plan = [("watercraft", "01/01/2025", "12/31/2025")] if smoke else [
-        (t, frm, to) for t in TITLE_TERMS for (frm, to) in YEAR_WINDOWS]
+    mode = sys.argv[1] if len(sys.argv) > 1 else "full"
+    smoke = mode == "smoke"
+    if smoke:
+        plan = [("watercraft", "01/01/2025", "12/31/2025")]
+    elif mode == "active":
+        # forward pipeline: notices posted in the trailing 12 months (one <=1yr window
+        # per title term). Recent enough that anything still open is captured; closed-
+        # but-recent notices are kept too (an imminent-award signal) and flagged later.
+        # SAM rejects a span of exactly 1 year ("Date range must be null year(s)
+        # apart"), so stay strictly under: 363 days back through today.
+        today = date.today()
+        frm = (today - timedelta(days=363)).strftime("%m/%d/%Y")
+        to = today.strftime("%m/%d/%Y")
+        plan = [(t, frm, to) for t in TITLE_TERMS]
+    else:
+        plan = [(t, frm, to) for t in TITLE_TERMS for (frm, to) in YEAR_WINDOWS]
 
     log(f"=== SAM opportunities (Stage 5) {time.strftime('%Y-%m-%d %H:%M:%S')}")
     log(f"plan={len(plan)} calls (~60s each => ~{len(plan)} min). smoke={smoke}. resumable.")
@@ -90,7 +110,7 @@ def main():
     index, seen_ids = [], set()
     try:
         for i, (term, frm, to) in enumerate(plan, 1):
-            out_path = RAW / f"{slugify(term)}_{frm[-4:]}.json"
+            out_path = RAW / f"{slugify(term)}_{frm[-4:]}_{to[-4:]}.json"
             if out_path.exists():
                 try:
                     data = json.loads(out_path.read_text()).get("opportunities", [])

@@ -243,10 +243,19 @@ def main():
             })
 
     # ---- pipeline_events (SAM Stage 5) ----
+    # Scope gate (mirrors the awards' Army+USACE in_scope): the `active` Opportunities
+    # pull is title-only (agency-unrestricted), so drop non-Army/USACE departments here.
+    # The raw _opportunities_index.json keeps ALL notices for audit.
+    def _opp_in_scope(dep):
+        d = (dep or "").upper()
+        return ("ARMY" in d) or ("CORPS OF ENGINEERS" in d)
+
     pipe_rows = []
     oidx = EXTRACT / "_opportunities_index.json"
     if oidx.exists():
         for o in json.loads(oidx.read_text()):
+            if not _opp_in_scope(o.get("department")):
+                continue
             pipe_rows.append({
                 "notice_id": o.get("notice_id"), "title": o.get("title"),
                 "solicitation_number": o.get("solicitation_number"),
@@ -261,6 +270,14 @@ def main():
                 "extract_run_id": RUN_ID,
                 "row_hash": rhash(o.get("notice_id")),
             })
+    # Sort open-soonest-first: OPEN (deadline >= as-of, nearest first) -> no-deadline ->
+    # CLOSED (most-recently-closed first), so the live opportunities sit at the top.
+    _asof = RUN_ID[-10:]
+    _dl = lambda r: (r.get("response_deadline") or "")[:10]
+    pipe_rows = (sorted((r for r in pipe_rows if _dl(r) and _dl(r) >= _asof), key=_dl)
+                 + [r for r in pipe_rows if not _dl(r)]
+                 + sorted((r for r in pipe_rows if _dl(r) and _dl(r) < _asof),
+                          key=_dl, reverse=True))
 
     # ---- write ----
     award_cols = list(award_rows[0].keys()) if award_rows else []
@@ -292,7 +309,9 @@ def main():
           f"(per-mod vs award-level differ by deobligations / FPDS-wins reconciliation)")
     print(f"  contract_subawards.csv       {len(sub_rows):>6} first-tier subs   "
           f"sum=${sum(s['amount'] or 0 for s in sub_rows)/1e6:,.1f}M")
-    print(f"  contract_pipeline_events.csv {len(pipe_rows):>6} pre-award notices")
+    n_open = sum(1 for r in pipe_rows if _dl(r) and _dl(r) >= _asof)
+    print(f"  contract_pipeline_events.csv {len(pipe_rows):>6} Army/USACE notices "
+          f"({n_open} open vs as-of {_asof})")
     print(f"  -> {OUT}")
 
 

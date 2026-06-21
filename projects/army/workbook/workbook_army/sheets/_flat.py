@@ -84,7 +84,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     banner: str, widths=None, width_fn=None, intro=None,
                     int_cols=(), float_cols=(), date_cols=(), input_cols=(),
                     formula_cols=None, link_cols=(), note_from=None,
-                    note_from_verbatim=None, right_spacer=False):
+                    note_from_verbatim=None, right_spacer=False, derived_cols=None):
     """Build a single-table sheet from extracted/<csv_name>.csv.
 
     Returns (SheetEntry, cols) where cols(header) -> "'Tab'!$Col$first:$Col$last".
@@ -104,9 +104,16 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     right_spacer: when True, write a single-space cell one column right of the table on
     every DATA row (no header, not part of the table) to clip a long final text column
     so its overflow stops instead of running on across the empty grid.
+
+    derived_cols: optional [(header, type, fn), ...] of SYNTHETIC columns appended after
+    the CSV columns. They have no CSV source - each `fn(row)->"=..."` callable is a live
+    formula (resolved per row by the RowCursor), `type` is None (text) / "int" / "float"
+    / "date" (controls number format + centering). Use for a derived status column that
+    keys off another cell on the row (e.g. a deadline vs the As-of date).
     """
     note_from = dict(note_from or {})
     note_from_verbatim = dict(note_from_verbatim or {})
+    derived_cols = list(derived_cols or [])
     note_specs = ([(a, s, "url") for a, s in note_from.items()]
                   + [(a, s, "verbatim") for a, s in note_from_verbatim.items()])
     headers, rows = load_table(csv_name)
@@ -119,6 +126,8 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     src_orig = {src: headers.index(src) for src in drop}
     keep = [j for j, h in enumerate(headers) if h not in drop]
     headers = [headers[j] for j in keep]
+    base_ncols = len(headers)                      # CSV-sourced columns
+    headers = headers + [d[0] for d in derived_cols]
     ncols = len(headers)
     if widths is None:
         if width_fn is None:
@@ -131,6 +140,10 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     input_cols = set(input_cols)
     link_cols = set(link_cols)
     formula_cols = dict(formula_cols or {})
+    for _h, _t, _fn in derived_cols:               # register synthetic formula columns
+        formula_cols[_h] = _fn
+        (int_cols if _t == "int" else float_cols if _t == "float"
+         else date_cols if _t == "date" else set()).add(_h)
     numeric = int_cols | float_cols | date_cols   # centered headers
 
     def _type(h: str):
@@ -189,7 +202,8 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
 
     hdr = c.write(headers, styles=header_styles(headers, center_headers=numeric))
     for row in rows:
-        vals = [convert(j, row[keep[j]] if keep[j] < len(row) else "")
+        vals = [convert(j, row[keep[j]] if (j < base_ncols and keep[j] < len(row))
+                        else "")
                 for j in range(ncols)]
         rownum = c.write(vals + spacer_vals, styles=col_styles + spacer_sty,
                          outline_level=1)

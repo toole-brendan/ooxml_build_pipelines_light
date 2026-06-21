@@ -13,6 +13,13 @@ distinctly from the latest task-order end, and the soft judgment - recompete win
 override, a Confirmed/Strong/Inferred/Speculative confidence, a SEPARATE pursuit-access
 rating - left BLANK for the analyst, alongside the program / capability_node bridges.
 
+Lineage (build-time, deterministic): each family is chained to a predecessor / successor
+vehicle when another family shares its incumbent (UEI) and PSC and its period of
+performance abuts within an 18-month overlap / 30-month gap window. The derived Lineage
+status (Superseded / Overdue / Active) separates an expired vehicle whose work already
+moved to a live follow-on from a true overdue recompete - it does NOT touch the blank
+analyst Confidence column.
+
 Scope (build-time, deterministic + documented):
   - Watercraft-relevant: a family qualifies if ANY of its awards matches PSC 1905 /
     1915 / 1925 / 1930 / 1935 / 1940 / 1945 / 1990 / 2090, NAICS 336611 / 336612, a
@@ -41,7 +48,7 @@ from workbook_army.sheets._cuts import load_table, date_serial
 from workbook_army.sheets._text_input import S_TEXT_INPUT
 from workbook_army.sheets._italic import S_ITALIC
 from workbook_army.sheets._widths import header_styles
-from workbook_army.sheets._tabs import TAB_RECOMPETE_RADAR
+from workbook_army.sheets._tabs import TAB_RECOMPETE_RADAR, AS_OF_ROW
 from workbook_army.sheets.data_contract_awards import awards_cols
 from workbook_army.sheets.data_award_actions import actions_cols
 from workbook_army.sheets.data_pipeline_events import pipeline_cols
@@ -50,6 +57,8 @@ _GROUP = "model"
 _TAB = TAB_RECOMPETE_RADAR
 _AS_OF = "2026-06-20"            # default as-of; editable in-sheet (re-clocks all math)
 _MIN_OBLIG = 1_000_000.0        # materiality floor (lifetime obligations per family)
+_GAP_CAP_DAYS = 913             # 30 mo: max forward gap pred-end -> succ-start (beyond = lapsed)
+_OVERLAP_DAYS = 548             # 18 mo: max overlap (a successor IDV starts before option years end)
 
 # Deterministic watercraft-relevance rule (documented in the docstring + caption).
 _WC_PSC = {"1905", "1915", "1925", "1930", "1935", "1940", "1945", "1990", "2090"}
@@ -61,15 +70,16 @@ _WC_DESC = ["SHIP BUILD", "SHIP REPAIR", "BOAT", "VESSEL", "WATERCRAFT", "DREDG"
 
 _HEADERS = [
     "Family (vehicle PIID)", "Incumbent", "Relevance basis", "PSC", "NAICS",
-    "Last competition", "Vehicle type", "Task orders", "Obligated $M", "Actions",
+    "Last competition", "Predecessor vehicle", "Successor vehicle",
+    "Vehicle type", "Task orders", "Obligated $M", "Actions",
     "Current end", "Potential end", "Parent/vehicle end", "Months to current end",
-    "Option headroom (mo)", "Recompete window", "In-market notice",
+    "Option headroom (mo)", "Recompete window", "Lineage status", "In-market notice",
     "Window (analyst)", "Confidence", "Pursuit access", "program", "capability_node",
     "Notes",
 ]
 _NCOLS = len(_HEADERS)
-_COLS = [22, 34, 20, 8, 11, 26, 14, 11, 12, 10, 14, 14, 14, 12, 12, 16, 12,
-         16, 14, 14, 14, 16, 30]
+_COLS = [22, 34, 20, 8, 11, 26, 18, 18, 14, 11, 12, 10, 14, 14, 14, 12, 12, 16,
+         15, 12, 16, 14, 14, 14, 16, 30]
 assert len(_COLS) == _NCOLS, (len(_COLS), _NCOLS)
 _CENTER = {"Task orders", "Obligated $M", "Actions", "Current end", "Potential end",
            "Parent/vehicle end", "Months to current end", "Option headroom (mo)"}
@@ -97,6 +107,42 @@ def _wc_reason(g, row):
     return None
 
 
+def _build_lineage(attrs):
+    """Chain predecessor -> successor within (incumbent UEI, PSC) by temporal gap.
+
+    Edge A(earlier) -> B(later) when B starts within [-_OVERLAP_DAYS, _GAP_CAP_DAYS]
+    days of A's latest current-PoP end (negative gap = overlap); the closest-gap
+    candidate wins, which resolves concurrent overlapping IDVs. Returns (pred_of,
+    succ_of), each a key -> key map giving the other family's vehicle PIID.
+    """
+    groups = defaultdict(list)
+    for a in attrs.values():
+        if a["uei"] and a["psc"] and a["start"] is not None and a["end"] is not None:
+            groups[(a["uei"], a["psc"])].append(a)
+
+    succ = {}                                       # A.key -> (B.key, gap_days)
+    for members in groups.values():
+        members.sort(key=lambda a: (a["start"], a["end"]))
+        for i, A in enumerate(members):
+            best, best_gap = None, None
+            for B in members[i + 1:]:               # forward-only => A precedes B
+                gap = B["start"] - A["end"]
+                if -_OVERLAP_DAYS <= gap <= _GAP_CAP_DAYS:
+                    if best_gap is None or abs(gap) < abs(best_gap):
+                        best, best_gap = B, gap
+            if best is not None and (A["key"] not in succ
+                                     or abs(best_gap) < abs(succ[A["key"]][1])):
+                succ[A["key"]] = (best["key"], best_gap)
+
+    pred = {}                                       # B.key -> (A.key, gap_days)
+    for a_key, (b_key, gap) in succ.items():
+        if b_key not in pred or abs(gap) < abs(pred[b_key][1]):
+            pred[b_key] = (a_key, gap)
+
+    return ({k: v[0] for k, v in pred.items()},
+            {k: v[0] for k, v in succ.items()})
+
+
 def _make_radar():
     headers, rows = load_table("contract_awards")
     ix = {h: i for i, h in enumerate(headers)}
@@ -114,24 +160,37 @@ def _make_radar():
         if key:
             fams[key].append(row)
 
-    # select watercraft-relevant families above the materiality floor; sort by $ desc
-    selected = []
+    # Family attributes over the FULL watercraft universe (BEFORE the floor): a shown
+    # vehicle's predecessor or successor may itself be a sub-$1M family, so lineage must
+    # see every relevant family, not just the ones the radar renders.
+    def ser(row, col):
+        return date_serial(g(row, col))
+
+    attrs = {}
     for key, frows in fams.items():
         reason = next((r for r in (_wc_reason(g, x)
                        for x in sorted(frows, key=oblig, reverse=True)) if r), None)
         if reason is None:
             continue
-        total = sum(oblig(x) for x in frows)
-        if total < _MIN_OBLIG:
-            continue
         dom = max(frows, key=oblig)
-        selected.append({
-            "key": key, "total": total, "reason": reason,
+        starts = [s for s in (ser(x, "pop_start_date") for x in frows) if s is not None]
+        ends = [e for e in (ser(x, "pop_current_end_date") for x in frows) if e is not None]
+        attrs[key] = {
+            "key": key, "total": sum(oblig(x) for x in frows), "reason": reason,
             "incumbent": g(dom, "recipient_name"),
+            "uei": (g(dom, "recipient_uei") or "").strip(),
             "psc": g(dom, "psc_code"), "naics": g(dom, "naics_code"),
             "comp": g(dom, "extent_competed_description") or g(dom, "extent_competed"),
-        })
-    selected.sort(key=lambda d: -d["total"])
+            "start": min(starts) if starts else None,
+            "end": max(ends) if ends else None,
+        }
+
+    # Predecessor -> successor chains (same incumbent UEI + PSC, temporal gap).
+    pred_of, succ_of = _build_lineage(attrs)
+
+    # select watercraft-relevant families above the materiality floor; sort by $ desc
+    selected = sorted((a for a in attrs.values() if a["total"] >= _MIN_OBLIG),
+                      key=lambda d: -d["total"])
 
     # ---- leaf ranges (live-formula keys) ----
     AMT = actions_cols("amount")
@@ -142,6 +201,7 @@ def _make_radar():
     AW_CUR = awards_cols("pop_current_end_date")
     AW_POT = awards_cols("pop_potential_end_date")
     PL_AWARDNO = pipeline_cols("award_number")
+    PL_DEADLINE = pipeline_cols("response_deadline")
 
     c = RowCursor(2)
     c.banner(_TAB, n_cols=_NCOLS, style=S_TITLE_SHEET)
@@ -154,12 +214,18 @@ def _make_radar():
     asof_row = c.write(["As-of date", date_serial(_AS_OF),
                         "(edit to re-clock every expiry column)"],
                        styles=[S_BOLD, S_DATE_INPUT, S_ITALIC])
+    assert asof_row == AS_OF_ROW, (asof_row, AS_OF_ROW)  # keeps _tabs.AS_OF_CELL valid
     ASOF = f"'{_TAB}'!$C${asof_row}"
     c.blank(2)
 
     FB, CE, PE, MO = (_CL["Family (vehicle PIID)"], _CL["Current end"],
                       _CL["Potential end"], _CL["Months to current end"])
     fam = lambda r: f"${FB}{r}"
+    RW = _CL["Recompete window"]
+    # Lineage status for a chain TAIL (no successor): live off the window cell so it
+    # re-clocks with the As-of date. A SUPERSEDED row gets the static literal below.
+    status_f = lambda r: (f'=IF(${RW}{r}="Expired","Overdue",'
+                          f'IF(${RW}{r}="n/a","","Active"))')
 
     def eff_end(rng):
         def f(r):
@@ -184,20 +250,26 @@ def _make_radar():
         f'=IF(${CE}{r}="","n/a",IF(${CE}{r}<{ASOF},"Expired",'
         f'IF(${MO}{r}<=12,"0-12 mo",IF(${MO}{r}<=24,"12-24 mo",'
         f'IF(${MO}{r}<=36,"24-36 mo","36+ mo")))))')
-    inmkt_f = lambda r: f'=IF(COUNTIFS({PL_AWARDNO},{fam(r)})>0,"Y","")'
+    # In-market = an OPEN pipeline notice (response deadline >= As-of) references this
+    # vehicle by award_number. Closed/expired notices no longer count as live signal.
+    inmkt_f = lambda r: (f'=IF(COUNTIFS({PL_AWARDNO},{fam(r)},'
+                         f'{PL_DEADLINE},">="&{ASOF})>0,"Y","")')
 
     c.banner("§1 - Watercraft recompete radar", n_cols=_NCOLS,
              style=S_TITLE_SECTION, mark_collapsible=True)
     c.blank()
     hdr = c.write(_HEADERS, styles=header_styles(_HEADERS, center_headers=_CENTER))
     f = hdr + 1
-    styles = ([S_DEFAULT] * 7 + [S_INT, S_NUM, S_INT] + [S_DATE] * 3
-              + [S_INT, S_INT] + [S_DEFAULT, S_DEFAULT] + [S_TEXT_INPUT] * 6)
+    styles = ([S_DEFAULT] * 9 + [S_INT, S_NUM, S_INT] + [S_DATE] * 3
+              + [S_INT, S_INT] + [S_DEFAULT] * 3 + [S_TEXT_INPUT] * 6)
     for d in selected:
-        c.write([d["key"], d["incumbent"], d["reason"], d["psc"], d["naics"],
-                 d["comp"], vtype_f, tos_f, obl_f, acts_f,
+        k = d["key"]
+        succ = succ_of.get(k)
+        c.write([k, d["incumbent"], d["reason"], d["psc"], d["naics"],
+                 d["comp"], pred_of.get(k), succ, vtype_f, tos_f, obl_f, acts_f,
                  cur_end_f, pot_end_f, parent_end_f, months_f, head_f,
-                 window_f, inmkt_f, None, None, None, None, None, None],
+                 window_f, ("Superseded" if succ else status_f), inmkt_f,
+                 None, None, None, None, None, None],
                 styles=styles, outline_level=1)
     last = hdr + len(selected)
     table_ref = f"B{hdr}:{col_letter(_NCOLS)}{last}"
@@ -218,8 +290,16 @@ def _make_radar():
              "expiry, tracked distinctly from the task-order ends folded into Current "
              "end. Scope: watercraft-relevant families (PSC 19xx / NAICS 33661x / "
              "vessel-dredge descriptors / known primes) with >= $1.0M lifetime "
-             "obligations. In-market notice = a Pipeline Events notice references this "
-             "vehicle (sparse until Stage 5 runs full)."],
+             "obligations. In-market notice = an OPEN Pipeline Events notice (response "
+             "deadline >= As-of) references this vehicle by award_number. Lineage: "
+             "Predecessor / Successor "
+             "vehicle and Lineage status are DERIVED at build time by chaining families "
+             "with the same incumbent (UEI) and PSC whose periods of performance abut "
+             "within 18 mo overlap / 30 mo gap. Lineage status = Superseded (a later "
+             "same-incumbent vehicle exists, so the work already moved on), Overdue (a "
+             "chain tail that has already expired - validate as a true recompete) or "
+             "Active (a chain tail still running) - distinct from the blank analyst "
+             "Confidence column."],
             styles=[S_DEFAULT])
 
     def render() -> WorksheetSpec:

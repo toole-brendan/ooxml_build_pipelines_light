@@ -10,3 +10,10 @@ TAB_CONTRACT_AWARDS = "Contract Awards"
 TAB_AWARD_ACTIONS = "Award Actions"
 TAB_SUBAWARDS = "Subawards"
 TAB_PIPELINE = "Pipeline Events"
+
+# The editable As-of date cell on the Recompete Radar (column C of its as-of row).
+# Both the radar's own expiry clock AND the Pipeline Events "Open?" / days-to-deadline
+# columns key off this one cell, so the whole book re-clocks from a single edit. The
+# radar asserts its rendered row matches AS_OF_ROW so this address can't silently drift.
+AS_OF_ROW = 6
+AS_OF_CELL = f"'{TAB_RECOMPETE_RADAR}'!$C${AS_OF_ROW}"
