@@ -34,7 +34,7 @@ from workbook_award_classification_refactor.sheets._taxonomy import (
 _GROUP = "guide"
 _NCOLS = 3
 #       B code | C term | D definition
-_COLS = [7, 42, 86]
+_COLS = [8, 34, 58]
 
 
 def _legend(c: RowCursor, title: str, intro: str, term_header: str,
@@ -80,7 +80,7 @@ def _make_taxonomy():
         c.write([SWBS_HIERARCHY_NOTE], styles=[S_DEFAULT], outline_level=1)
 
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
-                       with_gutter=True)
+                       with_gutter=True, show_outline_symbols=True)
         return WorksheetSpec(ws)
 
     return SheetEntry(TAB_TAXONOMY, _GROUP, render)

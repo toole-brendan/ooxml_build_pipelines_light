@@ -22,6 +22,7 @@ from workbook_core.lib import (
     package_workbook,
     load_extracted_csv as _core_load_extracted_csv,
 )
+from workbook_core.primitives import set_normalize_dashes
 
 # ---------------------------------------------------------------------------
 # Pipeline bindings
@@ -46,9 +47,33 @@ def load_extracted_csv(name: str) -> tuple[list[str], list[list]]:
 def build() -> int:
     """Render every registered sheet and package into the output xlsx.
 
-    normalize_dashes stays OFF: the manual workbook's em/en dashes and curly
-    quotes are part of the reconstructed content and are preserved verbatim.
+    normalize_dashes is ON: visible literal em/en dashes render as hyphens so the
+    workbook reads in one ASCII-clean dash convention (formulas bypass this branch,
+    so any dash in a formula string must be fixed at the source - see the style
+    audit in tools/style_audit.py).
     """
+    # The flat sheets build their cell XML eagerly at import (make_flat_sheet runs at
+    # module top level), so the dash-normalization switch must be ON *before* the sheet
+    # modules are imported, not just when package_workbook renders the deferred sheets.
+    set_normalize_dashes(True)
     from workbook_award_classification_refactor.sheets import SHEETS
+    from workbook_award_classification_refactor.sheets._integrity import (
+        assert_universes_aligned,
+        assert_piids_in_manifest,
+        assert_duplicate_audit_recorded,
+        assert_archetype_codes_valid,
+        assert_naics_rationale_aligned,
+    )
+    # Build-stopping guards (fail loudly before anything is packaged):
+    #  - every transaction prime PIID is in the versioned scope manifest as include=Y, and
+    #    no out-of-scope (include=N) prime leaked through;
+    #  - program-vendor / transaction / dimension CSVs agree on the (Program x UEI) universe,
+    #    or a stale pull would silently drop rows to dash / D0 / P0;
+    #  - semantic duplicate-report candidates are accounted for by the adjudication log.
+    assert_piids_in_manifest()
+    assert_universes_aligned()
+    assert_duplicate_audit_recorded()
+    assert_archetype_codes_valid()
+    assert_naics_rationale_aligned()
     return package_workbook(OUT, SHEETS, title=_TITLE, creator=_CREATOR,
-                            app_name=_APP, normalize_dashes=False)
+                            app_name=_APP, normalize_dashes=True)

@@ -35,6 +35,37 @@ def load_table(name: str) -> tuple[list[str], list[list[str]]]:
     return grid[0], grid[1:]
 
 
+def load_headers(name: str) -> list[str]:
+    """Just the header row of extracted/<name>.csv (cheap - no data rows read). Lets a
+    module compute its own sheet's column letters at build time, before the post-build
+    cols accessor exists, without re-reading the whole (large) CSV."""
+    with (EXTRACTED / f"{name}.csv").open(encoding="utf-8", newline="") as fh:
+        return next(csv.reader(fh), [])
+
+
+def cy_bounds(stem: str, date_header: str = "Subaward Date") -> tuple[int | None, int | None]:
+    """(min, max) calendar year of a transaction CSV's date column; (None, None) if no dates."""
+    headers, rows = load_table(stem)
+    j = headers.index(date_header)
+    yrs = [int(r[j][:4]) for r in rows if j < len(r) and (r[j] or "").strip()[:4].isdigit()]
+    return (min(yrs), max(yrs)) if yrs else (None, None)
+
+
+def cy_span(stem: str, date_header: str = "Subaward Date") -> str:
+    """'CY<min>-<max>' calendar-year span of a transaction CSV's date column - so captions are
+    DATA-DERIVED and can't drift after a refresh/refilter (reviewer finding #7). '' if no dates."""
+    lo, hi = cy_bounds(stem, date_header)
+    return f"CY{lo}-{hi}" if lo is not None else ""
+
+
+def cy_span_union(stems: list[str], date_header: str = "Subaward Date") -> str:
+    """'CY<min>-<max>' across several transaction CSVs (e.g. all three programs)."""
+    bounds = [cy_bounds(s, date_header) for s in stems]
+    los = [lo for lo, _ in bounds if lo is not None]
+    his = [hi for _, hi in bounds if hi is not None]
+    return f"CY{min(los)}-{max(his)}" if los else ""
+
+
 def as_int(s):
     """'' / None -> None; '5' -> 5 (rank / count columns)."""
     s = (s or "").strip()

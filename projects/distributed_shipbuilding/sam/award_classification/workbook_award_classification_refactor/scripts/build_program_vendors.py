@@ -17,7 +17,8 @@ Column order (locked with the user):
     Subawardee UEI | Subawardee NAICS-6 (primary) | Subawardee NAICS-6 description |
     Parent UEI (blank) | Parent vendor name (raw as-reported) |
     Subawardee vendor name | Domestic or Foreign | Subaward $M | Subaward Actions |
-    First Subaward | Last Subaward | Capability Domain (D) | Capability Domain Basis |
+    First Subaward | Last Subaward | <=FY12 $M .. FY26 $M (per-FY Subaward $M split) |
+    Capability Domain (D) | Capability Domain Basis |
     Primary Output (P) | Primary Output Basis | Role / Description | Source URLs
 
 Run:
@@ -76,12 +77,22 @@ RESEARCH_RESULTS = {
 
 _NAICS6 = re.compile(r"^\d{6}$")
 
+# Per-FY Subaward $M split. These columns are rendered on the program-vendor sheets as
+# date-bounded SUMIFS formulas (the calendar Subaward Date -> federal FY conversion happens
+# in the formula, NOT in the raw data), so the values written here are blank placeholders -
+# they exist only so the columns are present on the sheet. Uniform axis: a <=FY12 open-below
+# catch-all (captures the lone pre-FY2013 DDG record) + FY2013..FY2026. Keep these header
+# strings IN SYNC with _FY_HEADERS in {ddg,virginia,columbia}_program_vendors.py.
+FY_COLUMNS = ["≤FY12 $M"] + [f"FY{y % 100} $M" for y in range(2013, 2027)]
+
 HEADERS = [
     "Subawardee UEI", "Subawardee NAICS-6 (Primary)", "Subawardee NAICS-6 Description",
     "Parent UEI", "Parent Vendor Name", "Subawardee Vendor Name",
     "Predominant Place of Performance (by records)", "Subaward $M",
     "Published Subaward Records",
     "First Subaward", "Last Subaward",
+    # Per-FY Subaward $M split (blank placeholders; rendered as SUMIFS formulas on the sheet).
+    *FY_COLUMNS,
     # The four archetype cells are placeholders here: the workbook renders them as
     # override-first formulas (Vendor Archetype Overrides -> NAICS-6 Archetype Map ->
     # unresolved), so the values written below are blank and ignored. The headers must
@@ -331,6 +342,7 @@ def build(program: str):
         rows.append([
             eu, code, desc, "", pname, name, domforeign,
             round(d["dol"], 6), d["n"], d["first"], d["last"],
+            *[""] * len(FY_COLUMNS),   # per-FY $M placeholders (SUMIFS formulas on the sheet)
             "", "", "", "", prose, url,
         ])
 

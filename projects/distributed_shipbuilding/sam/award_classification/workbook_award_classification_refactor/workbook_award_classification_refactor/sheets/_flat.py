@@ -46,7 +46,7 @@ from workbook_core.notes import ExcelNote
 from workbook_core.groups import group_color
 from workbook_award_classification_refactor.sheets._layout import RowCursor
 from workbook_award_classification_refactor.sheets._cuts import (
-    load_table, as_int, as_float, cell, date_serial,
+    load_table, load_headers, as_int, as_float, cell, date_serial,
 )
 from workbook_award_classification_refactor.sheets._widths import header_styles
 
@@ -58,58 +58,129 @@ _STYLE_BY_TYPE = {
 }
 
 
-def composite_lookup(ret_range: str, key_range: str, second_range: str,
-                     second_value: str, key_cell: str, empty: str = "-") -> str:
-    """A scalar two-criteria cross-sheet lookup (e.g. Subawardee UEI x Program),
-    returned as an OOXML formula string. Implemented with INDEX/MATCH over an
-    INDEX-coerced boolean array: ``MATCH(1, INDEX((keys=k)*(2nd=v), 0), 0)`` finds the
-    single row matching both criteria, and the outer INDEX returns that row's value.
-    The INDEX(...,0) coercion makes the array math evaluate WITHOUT Ctrl+Shift+Enter,
-    so the cell stores as an ordinary (non-spilling) formula -- portable to any Excel
-    and free of the dynamic-array metadata that would otherwise risk a repair-on-open.
+class Cols:
+    """Column accessor for a flat sheet's DATA region, returned by make_flat_sheet.
 
-    Yields ``empty`` (default the IB dash "-", per the workbook's zero/blank
-    convention) in BOTH degenerate cases: no row matches (IFERROR), or the matched
-    dimension cell is itself blank -- without the IF guard, INDEX of an empty cell
-    surfaces as 0 in these General-format text columns (Excel's empty-cell-as-zero
-    quirk), which is what was rendering missing NAICS codes / parents as "0"."""
-    idx = (f'INDEX({ret_range},MATCH(1,INDEX(({key_range}={key_cell})'
-           f'*({second_range}="{second_value}"),0),0))')
-    return f'=IFERROR(IF({idx}="","{empty}",{idx}),"{empty}")'
+    Back-compatible callable: ``cols(header)`` still yields the full absolute data
+    range ``'Tab'!$X$first:$X$last`` (the data_lane_vendors -> model_by_vendor
+    pattern). The extra methods let a consuming module reference this sheet
+    positionally WITHOUT hardcoding column letters in Python (the generated Excel is
+    still positional A1):
+      - ``letter(h)``        -> bare column letter, e.g. ``"M"``
+      - ``cell(h, row)``     -> single absolute cell, e.g. ``'Tab'!$M$5``
+      - ``range(h1, h2)``    -> multi-column data block, ``'Tab'!$M$first:$AA$last``
+      - ``row_span(h1, h2, r)`` -> same-sheet horizontal span on one row, ``M5:AA5``
+        (relative, no tab prefix - for an in-sheet =SUM(M5:AA5))
+    ``first`` / ``last`` expose the data row bounds.
+    """
+
+    __slots__ = ("_tab", "_headers", "first", "last")
+
+    def __init__(self, tab: str, headers: list, first: int, last: int):
+        self._tab = tab
+        self._headers = headers
+        self.first = first
+        self.last = last
+
+    def letter(self, header: str) -> str:
+        return col_letter(self._headers.index(header) + 1)   # +1 for the gutter (A)
+
+    def __call__(self, header: str) -> str:
+        c = self.letter(header)
+        return f"'{self._tab}'!${c}${self.first}:${c}${self.last}"
+
+    def cell(self, header: str, row: int) -> str:
+        return f"'{self._tab}'!${self.letter(header)}${row}"
+
+    def range(self, h1: str, h2: str) -> str:
+        return (f"'{self._tab}'!${self.letter(h1)}${self.first}"
+                f":${self.letter(h2)}${self.last}")
+
+    def row_span(self, h1: str, h2: str, row: int) -> str:
+        return f"{self.letter(h1)}{row}:{self.letter(h2)}{row}"
 
 
-def _override_inner(ov_ret: str, ov_key: str, ov_prog: str, prog_value: str,
-                    key_cell: str) -> str:
-    """The (UEI x Program) override lookup as a bare expression (no leading '='),
-    yielding "" when no override row matches - composable inside an IF()."""
-    ov = (f'INDEX({ov_ret},MATCH(1,INDEX(({ov_key}={key_cell})'
-          f'*({ov_prog}="{prog_value}"),0),0))')
-    return f'IFERROR(IF({ov}="","",{ov}),"")'
+def flat_header_letters(csv_name: str, *, note_from=None, note_from_verbatim=None,
+                        extra_cols=()) -> dict:
+    """{header: column letter} for the sheet make_flat_sheet WILL build from <csv_name>,
+    matching its column math: note-source columns dropped, extra_cols appended, gutter at
+    A (so the first data column is B). Lets a module reference its OWN columns by NAME at
+    build time (same-sheet self-references like the SWBS match-row or a Federal-FY column),
+    before the post-build cols accessor exists - so no column letter is hardcoded in Python.
+    Pass the SAME note_from / note_from_verbatim / extra_cols the make_flat_sheet call uses."""
+    headers = load_headers(csv_name)
+    drop = set((note_from or {}).values()) | set((note_from_verbatim or {}).values())
+    headers = [h for h in headers if h not in drop] + list(extra_cols)
+    return {h: col_letter(i + 1) for i, h in enumerate(headers)}   # +1 for the gutter (A)
 
 
-def override_then_map(ov_ret: str, ov_key: str, ov_prog: str, prog_value: str,
-                      key_cell: str, map_ret: str, map_key: str, naics_cell: str,
-                      default: str) -> str:
-    """Override-first archetype CODE as one OOXML formula:
-        IF a (UEI x Program) research override exists -> that code,
-        else IF the row's NAICS-6 (naics_cell) is in the crosswalk -> the mapped code,
-        else `default` (the unresolved code D0 / P0).
-    The override is the same composite (UEI x Program) INDEX/MATCH used for the
-    dimension lookups; the crosswalk is a single-key INDEX/MATCH on NAICS-6."""
-    ov = _override_inner(ov_ret, ov_key, ov_prog, prog_value, key_cell)
-    mp = f'INDEX({map_ret},MATCH({naics_cell},{map_key},0))'
-    return f'=IF({ov}<>"",{ov},IFERROR({mp},"{default}"))'
+# --- Supplier Master match-row helpers --------------------------------------------------
+# The Supplier Master carries one row per (Program x UEI) with a composite "Program|UEI" key.
+# A consuming row matches it ONCE (sm_match_row) and then INDEXes that row's columns, instead
+# of repeating a two-criteria array search for each attribute - one MATCH + N INDEX, not N
+# array MATCHes. Within the Supplier Master, the override-first archetype is resolved from two
+# one-per-row match-row helpers (override_or_map) rather than a long nested INDEX/MATCH.
+
+def sm_match_row(key_expr: str, sm_key_range: str) -> str:
+    """The Supplier Master MATCH done once per consuming row, on the composite 'Program|UEI'
+    key: 0 if not found (the build-time universe guard makes that impossible), else the matched
+    row index."""
+    return f"=IFERROR(MATCH({key_expr},{sm_key_range},0),0)"
 
 
-def override_then_map_basis(ov_ret: str, ov_key: str, ov_prog: str, prog_value: str,
-                            key_cell: str, map_key: str, naics_cell: str) -> str:
-    """The basis-tier label paired with override_then_map: 'Research override' when a
-    (UEI x Program) override exists, else 'NAICS-6 map' when the row's NAICS-6 is in the
-    crosswalk, else 'Unresolved'."""
-    ov = _override_inner(ov_ret, ov_key, ov_prog, prog_value, key_cell)
-    mapped = f'ISNUMBER(MATCH({naics_cell},{map_key},0))'
-    return (f'=IF({ov}<>"","Research override",'
-            f'IF({mapped},"NAICS-6 map","Unresolved"))')
+def sm_text(match_cell: str, ret_range: str, empty: str = "-") -> str:
+    """A dimension column resolved from the SM match-row: `empty` if unmatched OR the SM cell
+    is blank (so INDEX-of-blank never renders as 0), else the Supplier Master value."""
+    idx = f"INDEX({ret_range},{match_cell})"
+    return f'=IF({match_cell}=0,"{empty}",IF({idx}="","{empty}",{idx}))'
+
+
+def sm_value(match_cell: str, ret_range: str, default: str) -> str:
+    """A resolved code/label from the SM match-row (the SM column always carries a value, e.g.
+    the resolved D0 / P0), so no blank guard - just `default` when unmatched."""
+    return f'=IF({match_cell}=0,"{default}",INDEX({ret_range},{match_cell}))'
+
+
+def override_or_map(ov_match: str, ov_ret: str, naics_match: str, naics_ret: str,
+                    default: str) -> str:
+    """Override-first resolved archetype CODE (Supplier Master), AXIS-SPECIFIC: use the
+    (UEI x Program) override only when it matched AND this axis's override cell is non-blank
+    (an override row may set D but leave P blank - INDEX of a blank cell is numeric 0, not a
+    valid P code), else the NAICS-6 map if matched, else `default` (D0 / P0). The MATCHes are
+    hoisted to one per-row helper column each, so this stays a short IF/INDEX."""
+    ov_idx = f"INDEX({ov_ret},{ov_match})"
+    return (f'=IF(AND({ov_match}>0,{ov_idx}<>""),{ov_idx},'
+            f'IF({naics_match}>0,INDEX({naics_ret},{naics_match}),"{default}"))')
+
+
+def override_or_map_basis(ov_match: str, ov_ret: str, naics_match: str) -> str:
+    """The basis-tier label paired with override_or_map, AXIS-SPECIFIC (takes this axis's
+    override range so the override-cell-blank case falls through to the map): 'Research
+    override' / 'NAICS-6 map' / 'Unresolved'."""
+    ov_idx = f"INDEX({ov_ret},{ov_match})"
+    return (f'=IF(AND({ov_match}>0,{ov_idx}<>""),"Research override",'
+            f'IF({naics_match}>0,"NAICS-6 map","Unresolved"))')
+
+
+def swbs_match_row(builder_cell: str, code_cell: str, code_key: str,
+                   eligible: str = "HII-Ingalls") -> str:
+    """The crosswalk MATCH done ONCE per transaction: 0 for a non-HII-Ingalls (out-of-
+    scope) row or an HII row whose code is absent from the crosswalk, else the matched
+    row index. The three SWBS outputs then INDEX on this helper instead of each
+    repeating the same MATCH (3x -> 1x over the ~6.4k DDG transactions)."""
+    return (f'=IF({builder_cell}<>"{eligible}",0,'
+            f'IFERROR(MATCH({code_cell},{code_key},0),0))')
+
+
+def swbs_from_row(builder_cell: str, match_cell: str, ret_range: str,
+                  eligible: str = "HII-Ingalls", na: str = "", unmapped: str = "U00") -> str:
+    """An SWBS output column (subsystem / display / basis) resolved from the shared match-row
+    helper (swbs_match_row): `na` for a non-HII-Ingalls row, `unmapped` for an HII row whose
+    code did not match (match=0), else INDEX the crosswalk return column at the matched row -
+    the Builder-gated lookup, but driven off the one-per-row match so there is no second MATCH."""
+    idx = f"INDEX({ret_range},{match_cell})"
+    return (f'=IF({builder_cell}<>"{eligible}","{na}",'
+            f'IF({match_cell}=0,"{unmapped}",{idx}))')
 
 
 _NOTE_SPLIT = re.compile(r"[\s|;]+")
@@ -141,10 +212,17 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     banner: str, widths: list, intro=None, int_cols=(),
                     float_cols=(), date_cols=(), input_cols=(), formula_cols=None,
                     link_cols=(), note_from=None, note_from_verbatim=None,
-                    right_spacer=False):
+                    right_spacer=False, extra_cols=(), hidden_headers=(),
+                    display_headers=None):
     """Build a single-table sheet from extracted/<csv_name>.csv.
 
     Returns (SheetEntry, cols) where cols(header) -> "'Tab'!$Col$first:$Col$last".
+
+    extra_cols: optional list of column HEADERS appended after the CSV columns. They
+    live only in the rendered sheet (no CSV cell), so each MUST carry a formula in
+    formula_cols (and declare its type via int_cols/float_cols/date_cols). Use it to
+    push a derived measure or a match-row helper to the fact grain WITHOUT
+    regenerating the extracted CSV. `widths` must include these columns.
 
     intro: optional italic one-line orientation caption written immediately under
     the row-2 title banner (the Taxonomy-tab house pattern: title banner -> italic
@@ -168,6 +246,18 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     of the table). It is a fake spacer column whose only job is to clip a long final
     text column (e.g. Role / Description) so its overflow stops instead of running
     on across the empty grid.
+
+    hidden_headers: optional set of column HEADERS to hide from the reader. The
+    column stays in the grid (its width slot is emitted with hidden="1") so any
+    A1 formula that references it keeps working - used to tuck a formula-helper
+    column (a match-row index, a join key) out of sight without breaking the
+    lookups built on it.
+
+    display_headers: optional {canonical_header: shown_label} map. The header CELL
+    and the native-table column name render the shorter label, while the internal
+    `headers` list (formula lookups, the cols accessor, note anchors, CSV identity)
+    keeps the canonical name - so a visible header can be shortened without
+    re-pointing any formula. Aliased labels must stay unique within the sheet.
     """
     note_from = dict(note_from or {})
     note_from_verbatim = dict(note_from_verbatim or {})
@@ -186,6 +276,8 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     src_orig = {src: headers.index(src) for src in drop}
     keep = [j for j, h in enumerate(headers) if h not in drop]
     headers = [headers[j] for j in keep]
+    n_csv = len(headers)                    # columns sourced from the CSV (after drop)
+    headers = headers + list(extra_cols)    # sheet-only computed columns appended after
     ncols = len(headers)
     if len(widths) != ncols:
         raise ValueError(
@@ -193,7 +285,18 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     int_cols, float_cols, date_cols = set(int_cols), set(float_cols), set(date_cols)
     input_cols = set(input_cols)
     link_cols = set(link_cols)
+    hidden_headers = set(hidden_headers)
+    display_headers = dict(display_headers or {})
+    bad_hidden = hidden_headers - set(headers)
+    if bad_hidden:
+        raise ValueError(f"{csv_name}: hidden_headers not in columns: {sorted(bad_hidden)}")
+    bad_display = set(display_headers) - set(headers)
+    if bad_display:
+        raise ValueError(f"{csv_name}: display_headers not in columns: {sorted(bad_display)}")
     formula_cols = dict(formula_cols or {})
+    missing_fx = [h for h in extra_cols if h not in formula_cols]
+    if missing_fx:
+        raise ValueError(f"{csv_name}: extra_cols without a formula: {missing_fx}")
     numeric = int_cols | float_cols | date_cols   # centered headers
 
     def _type(h: str):
@@ -254,9 +357,15 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     spacer_vals = [" "] if right_spacer else []
     spacer_sty = [S_DEFAULT] if right_spacer else []
 
-    hdr = c.write(headers, styles=header_styles(headers, center_headers=numeric))
+    # Visible header labels: display alias where given, canonical name otherwise.
+    # `headers` (canonical) still drives every formula lookup / cols accessor;
+    # only the rendered cell + the native-table column name use the alias.
+    display = [display_headers.get(h, h) for h in headers]
+    hdr = c.write(display, styles=header_styles(headers, center_headers=numeric))
     for row in rows:
-        vals = [convert(j, row[keep[j]] if keep[j] < len(row) else "")
+        # CSV columns read their cell; extra (sheet-only) columns get "" and resolve to
+        # their formula in convert(). `j < n_csv` short-circuits before indexing keep[].
+        vals = [convert(j, row[keep[j]] if (j < n_csv and keep[j] < len(row)) else "")
                 for j in range(ncols)]
         rownum = c.write(vals + spacer_vals, styles=col_styles + spacer_sty,
                          outline_level=1)
@@ -270,15 +379,18 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     first, last = hdr + 1, hdr + len(rows)
     table_ref = f"B{hdr}:{col_letter(ncols)}{last}"
 
-    def cols(header: str) -> str:
-        col = col_letter(headers.index(header) + 1)   # +1 for the gutter (A)
-        return f"'{tab}'!${col}${first}:${col}${last}"
+    cols = Cols(tab, headers, first, last)
+
+    # Hidden formula-helper columns: keep their width slot but mark hidden so the
+    # reader never sees them while the A1 refs built on them stay valid.
+    cols_spec = [({"width": w, "hidden": True} if headers[i] in hidden_headers else w)
+                 for i, w in enumerate(widths)]
 
     def render() -> WorksheetSpec:
-        ws = worksheet(c.rows, cols=widths, tab_color=group_color(group),
-                       with_gutter=True)
+        ws = worksheet(c.rows, cols=cols_spec, tab_color=group_color(group),
+                       with_gutter=True, show_outline_symbols=True)
         return WorksheetSpec(ws, tables=[
-            ExcelTable(name=table_name, ref=table_ref, headers=headers)],
+            ExcelTable(name=table_name, ref=table_ref, headers=display)],
             notes=notes)
 
     return SheetEntry(tab, group, render), cols

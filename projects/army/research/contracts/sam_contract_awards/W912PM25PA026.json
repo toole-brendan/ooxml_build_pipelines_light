@@ -1,0 +1,4979 @@
+{
+  "piid": "W912PM25PA026",
+  "summary": {
+    "piid": "W912PM25PA026",
+    "recipient": "BAY DIESEL CORP",
+    "our_family_obligation": 689504.7,
+    "our_is_idv_family": false,
+    "note": null,
+    "cached": false,
+    "found": true,
+    "award_or_idv": "AWARD",
+    "n_records": "15",
+    "family_count": "16",
+    "family_total_dollars": 931731.74,
+    "ref_dos_base_count": null,
+    "ref_dos_total_count": null,
+    "ref_dos_total_dollars": null,
+    "sam_family_obligated": 931731.74,
+    "ordering_period_end": null,
+    "current_completion_date": "2026-04-01",
+    "ultimate_completion_date": "2026-04-01",
+    "pop_start_date": "2025-09-22",
+    "date_signed": "2026-03-02",
+    "ceiling_value": 705879.7,
+    "solicitation_id": null,
+    "contracting_office": "W912PM"
+  },
+  "raw": {
+    "piidAggregation": {
+      "awardFamilySummary": {
+        "count": "16",
+        "totalDollars": "931731.74"
+      }
+    },
+    "awardSummary": [
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "0",
+          "transactionNumber": "0"
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-09-17T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2025"
+          },
+          "dollars": {
+            "actionObligation": 497307.26,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 497307.26,
+            "baseAndAllOptionsValue": 547307.26,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 705879.7,
+            "totalBaseAndExercisedOptionsValue": 705879.7,
+            "totalBaseAndAllOptionsValue": 705879.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-09-17T11:43:16.000Z",
+            "lastModifiedBy": "DOD_CLOSEOUT",
+            "lastModifiedDate": "2026-06-18T12:53:36Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-09-17T08:27:27Z",
+            "closedBy": "DOD_CLOSEOUT",
+            "closedDate": "2026-06-18 12:53:36.000",
+            "closedStatus": "Y"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00005",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2026-03-02T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2026-04-01 00:00:00.000",
+            "ultimateCompletionDate": "2026-04-01 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 22160.0,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 22160,
+            "baseAndAllOptionsValue": 22160,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 689504.7,
+            "totalBaseAndExercisedOptionsValue": 689504.7,
+            "totalBaseAndAllOptionsValue": 689504.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2026-03-02T14:49:06.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2026-03-02T09:49:06Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2026-03-02T09:49:06Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00004",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2026-02-10T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2026-03-01 00:00:00.000",
+            "ultimateCompletionDate": "2026-03-01 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 6141.44,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 6141.44,
+            "baseAndAllOptionsValue": 6141.44,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 705879.7,
+            "totalBaseAndExercisedOptionsValue": 705879.7,
+            "totalBaseAndAllOptionsValue": 705879.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2026-02-10T16:12:33.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2026-02-10T11:12:34Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2026-02-10T11:12:34Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00002",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-11-19T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 5353.16,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 5353.16,
+            "baseAndAllOptionsValue": 5353.16,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 667344.7,
+            "totalBaseAndExercisedOptionsValue": 667344.7,
+            "totalBaseAndAllOptionsValue": 667344.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-11-19T18:04:58.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-11-19T13:04:59Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-11-19T13:04:59Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00002",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-11-19T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 5353.16,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 5353.16,
+            "baseAndAllOptionsValue": 5353.16,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 667344.7,
+            "totalBaseAndExercisedOptionsValue": 667344.7,
+            "totalBaseAndAllOptionsValue": 667344.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-11-19T18:04:58.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-11-19T13:04:59Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-11-19T13:04:59Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00004",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2026-02-10T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2026-03-01 00:00:00.000",
+            "ultimateCompletionDate": "2026-03-01 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 6141.44,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 6141.44,
+            "baseAndAllOptionsValue": 6141.44,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 667344.7,
+            "totalBaseAndExercisedOptionsValue": 667344.7,
+            "totalBaseAndAllOptionsValue": 667344.7
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2026-02-10T16:12:33.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2026-02-10T11:12:34Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2026-02-10T11:12:34Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00003",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "M",
+            "name": "OTHER ADMINISTRATIVE ACTION"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-12-16T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2026-03-01 00:00:00.000",
+            "ultimateCompletionDate": "2026-03-01 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 0,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 0,
+            "baseAndAllOptionsValue": 0,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 661203.26,
+            "totalBaseAndExercisedOptionsValue": 661203.26,
+            "totalBaseAndAllOptionsValue": 661203.26
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-12-16T14:17:01.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-12-16T09:17:01Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-12-16T09:17:01Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00002",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-11-19T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 5353.16,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 5353.16,
+            "baseAndAllOptionsValue": 5353.16,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 661203.26,
+            "totalBaseAndExercisedOptionsValue": 661203.26,
+            "totalBaseAndAllOptionsValue": 661203.26
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-11-19T18:04:58.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-11-19T13:04:59Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-11-19T13:04:59Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00001",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "G",
+            "name": "EXERCISE AN OPTION"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-10-23T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 158542.84,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 158542.84,
+            "baseAndAllOptionsValue": 108542.84,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 661203.26,
+            "totalBaseAndExercisedOptionsValue": 661203.26,
+            "totalBaseAndAllOptionsValue": 661203.26
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-10-23T20:37:24.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-10-23T16:37:24Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-10-23T16:37:24Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912PM25PA026",
+          "modificationNumber": "P00001",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "G",
+            "name": "EXERCISE AN OPTION"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationDate": "2025-09-02 00:00:00.000",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912PM",
+                "name": "W074 ENDIST WILMINGTON",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W81LJ8",
+                "name": "W074 ENDIST WILMINGTON"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "ROANOKE"
+            },
+            "county": {
+              "code": "770",
+              "name": "ROANOKE CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "240120001",
+            "congressionalDistrict": "06",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "D",
+              "name": "ENERGY EFFICIENT"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J020",
+              "name": "MAINT/REPAIR/REBUILD OF EQUIPMENT- SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "Y",
+              "name": "TRANSACTION USES GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "G",
+              "name": "NOT COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "SP2",
+              "name": "SAP NON-COMPETITION (FAR 13)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2025-10-23T00:00:00Z",
+            "periodOfPerformanceStartDate": "2025-09-22 00:00:00.000",
+            "currentCompletionDate": "2025-12-22 00:00:00.000",
+            "ultimateCompletionDate": "2025-12-22 00:00:00.000",
+            "fiscalYear": "2026"
+          },
+          "dollars": {
+            "actionObligation": 158542.84,
+            "baseDollarsObligated": 497307.26,
+            "baseAndExercisedOptionsValue": 158542.84,
+            "baseAndAllOptionsValue": 108542.84,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 661203.26,
+            "totalBaseAndExercisedOptionsValue": 661203.26,
+            "totalBaseAndAllOptionsValue": 661203.26
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "REBUILD (2) CUMMINS KTA50-M MAIN PROPULSION DIESEL ENGINES (MPDE)",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAY DIESEL CORP",
+              "awardeeAlternateName": "BAY POWER SOLUTIONS",
+              "legalBusinessName": "BAY DIESEL CORP",
+              "awardeeNameFromContract": "BAY DIESEL CORP"
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "YCJKD5MLGBE3",
+              "cageCode": "1DJD2",
+              "awardeeUltimateParentUniqueEntityId": "YCJKD5MLGBE3",
+              "awardeeUltimateParentName": "BAY DIESEL CORPORATION"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "3736 COOK BLVD",
+              "city": "CHESAPEAKE",
+              "state": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "zip": "233231604",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "03",
+              "phoneNumber": "7574850075",
+              "faxNumber": "7574850232",
+              "awardeeDataSource": "E&Y"
+            },
+            "awardeeAlternateSiteCode": "23323",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2001-12-13 00:00:00.000",
+              "renewalDate": "2026-01-02 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusiness": "YES",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "VA",
+                "name": "VIRGINIA"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "createdDate": "2025-10-23T20:37:24.000Z",
+            "lastModifiedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "lastModifiedDate": "2025-10-23T16:37:24Z",
+            "approvedBy": "ROS.M.SHOEMAKER.W912PM@USACE.ARMY.MIL",
+            "approvedDate": "2025-10-23T16:37:24Z",
+            "closedStatus": "N"
+          }
+        }
+      }
+    ],
+    "totalRecords": "15",
+    "limit": "10",
+    "offset": "1"
+  }
+}

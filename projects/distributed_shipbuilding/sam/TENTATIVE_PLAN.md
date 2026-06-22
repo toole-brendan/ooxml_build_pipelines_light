@@ -261,3 +261,50 @@ parallel; decide **Phase 4 (FY2026$)** and the **prime pull** separately.
 - Many domain shares are **1–2 contracts deep** — depth-flag before calling any lane contestable.
 - **Salvage from `award_analysis`:** `barrier_scores.csv` + `seeding_evidence.csv` (the technical-access gate)
   and the two honesty fixes — don't rebuild what you already paid for.
+
+---
+
+## ADDENDUM — 2026-06-21: Phase 1 built, validated against the prime data, then reverted
+
+*The plan above is left intact for the record. This addendum supersedes it on one specific question — the
+re-filing / cumulative-restatement dollar risk — which we investigated and resolved.*
+
+**Decision: Phase 1 (the instrument + observability layer) was implemented on a branch, then reverted. The dollar
+double-count concern it was built to address turned out to be footnote-level**, confirmed by pulling the submarine
+prime-contract obligations and cross-checking against USAspending. We are keeping the simple methodology (sum the
+report rows).
+
+### What we checked
+- **Quantified the spread.** Re-valuing every instrument under competing interpretations (sum-all vs cumulative vs
+  gross), the *credible* overstatement is ~2% (exact duplicates, near-certain) plus up to ~5–6% (monotonic
+  "cumulative-candidate" instruments), submarine-driven; DDG is stable within ±1.5%. **45% of all dollars sit in
+  single-report instruments with zero ambiguity.** (The −42% "cumulative = last filing" figure is an artifact of
+  correction ledgers ending on a negative, not a credible bound.)
+- **Pulled the 6 submarine prime contracts from USAspending** (open FPDS/USAspending, no API key — the
+  `Prime Contract Key` already is USAspending's award id). Two findings settle it:
+  1. **Subaward totals are ~9% of prime obligations** ($8.88B sub vs ~$95B obligated) — nowhere near the ceiling.
+     The data *under*-captures real subcontracting (first-tier only, $30k floor, much contract value is yard labor
+     / lower tiers); **over-counting is not the risk, under-capture is.**
+  2. **Our methodology matches the government portal.** For **5 of 6** submarine prime contracts, USAspending's own
+     published subaward total equals our naive row-sum **to the dollar** — i.e. "just sum the report rows" is
+     exactly what USAspending does. That **validates the current approach** and makes the $12.487B defensible as
+     the canonical public figure.
+
+### The one Columbia discrepancy — and why it validates our scope
+The only mismatch was Columbia contract **N0002417C2117**: USAspending **$7.75B** vs our **$3.50B** at nearly the
+same record count. The entire ~$4.25B gap is **BlueForge Alliance — $4.214B across just 7 records**, all under one
+subaward number (`1000042855`), classic cumulative snapshots ($1.56B, $1.40B, $600M …). **We correctly filter
+BlueForge / MIB out** (the maritime-industrial-base intermediary / pass-through, not a hull subcontractor), so
+**our number is the cleaner one and USAspending's is the inflated one here.** It is also a live example of the exact
+cumulative-restatement double-count debated above — sitting entirely in records we already exclude.
+
+### What we decided
+- **Keep summing the report rows.** It matches USAspending and sits far under the prime ceiling; residual ambiguity
+  is footnote-level.
+- **Do NOT build the instrument-collapse / dollar-reconstruction layer for the dollars** → Phase 1 reverted
+  (workbook back to the byte-identical 12-sheet baseline). An instrument layer can be rebuilt later *only if* Part B
+  cadence work needs honest counts — it is not needed for the dollar totals.
+- **Footnote, don't engineer.** Any headline "$X B" is labeled: *first-tier reported flow; matches USAspending;
+  under-captures true subcontracting; BlueForge/MIB excluded.* Drive "where to play" off **shares / counts /
+  rankings**, which are robust to the re-filing question.
+- This **closes Open decision #2** and the Phase-1 portions of the plan above.

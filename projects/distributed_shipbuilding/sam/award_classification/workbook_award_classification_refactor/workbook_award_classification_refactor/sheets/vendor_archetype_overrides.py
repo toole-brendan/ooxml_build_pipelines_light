@@ -12,26 +12,42 @@ Promoted accessor (imported by the program-vendor sheets, Phase 2):
 """
 from __future__ import annotations
 
-from workbook_award_classification_refactor.sheets._flat import make_flat_sheet
+from workbook_award_classification_refactor.sheets._flat import (
+    make_flat_sheet, flat_header_letters,
+)
 from workbook_award_classification_refactor.sheets._tabs import TAB_ARCHETYPE_OVERRIDES
 from workbook_award_classification_refactor.sheets._widths import (
-    W_PROGRAM, W_UEI, W_CONF,
+    W_PROGRAM, W_UEI, W_CONF, W_VENDOR,
 )
 
-# Program | Subawardee UEI | Capability Domain (D) | Primary Output (P)
-_WIDTHS = [W_PROGRAM, W_UEI, W_CONF, W_CONF]
+# Program | Subawardee UEI | Capability Domain (D) | Primary Output (P) | Key (Program|UEI)
+_WIDTHS = [W_PROGRAM, W_UEI, W_CONF, W_CONF, W_VENDOR]
+
+_NOTE_VERBATIM = {
+    "Capability Domain (D)": "Capability Domain Note",
+    "Primary Output (P)": "Primary Output Note",
+}
+# Composite "Program|UEI" join key (computed) so the Supplier Master can resolve its override
+# with a single MATCH instead of a two-criteria array search; letters resolved by name.
+_EXTRA = ["Key"]
+_L = flat_header_letters("vendor_archetype_overrides",
+                         note_from_verbatim=_NOTE_VERBATIM, extra_cols=_EXTRA)
+_KEY_FORMULA = {
+    "Key": lambda r: f'=${_L["Program"]}{r}&"|"&${_L["Subawardee UEI"]}{r}',
+}
 
 VENDOR_ARCHETYPE_OVERRIDES, overrides_cols = make_flat_sheet(
-    tab=TAB_ARCHETYPE_OVERRIDES, group="data",
+    tab=TAB_ARCHETYPE_OVERRIDES, group="inputs",
     csv_name="vendor_archetype_overrides", table_name="VendorArchetypeOverrides",
     banner="§1 - Hand-researched archetype overrides",
-    intro="One row per researched subawardee UEI x program: the hand-assigned Capability Domain and Primary Output that override the NAICS-6 default.",
+    intro="Researched domain and output overrides by program and supplier UEI.",
     widths=_WIDTHS,
     # leaf source values rendered blue: the UEI key + the two override codes.
     input_cols=["Subawardee UEI", "Capability Domain (D)", "Primary Output (P)"],
+    formula_cols=_KEY_FORMULA, extra_cols=_EXTRA,
+    # the composite "Program|UEI" join key is formula plumbing (Program + UEI are shown
+    # separately); keep it in the grid for the Supplier Master MATCH but hide it.
+    hidden_headers=_EXTRA,
     # per-axis research evidence folds into hover Notes (dropped from the visible table).
-    note_from_verbatim={
-        "Capability Domain (D)": "Capability Domain Note",
-        "Primary Output (P)": "Primary Output Note",
-    },
+    note_from_verbatim=_NOTE_VERBATIM,
 )

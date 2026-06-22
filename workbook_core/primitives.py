@@ -213,10 +213,52 @@ def filter_range(headers: list, data: list,
     return f"{col_letter(start_col)}{start_row}:{end_col}{end_row}"
 
 
+def cf_rule(sqref: str, dxf_id: int, formula: str, priority: int = 1) -> str:
+    """One <conditionalFormatting> block: apply differential format `dxf_id` to the cells
+    in `sqref` where the Excel expression `formula` (leading '=' optional) is TRUE. The
+    expression is evaluated relative to the top-left cell of `sqref` (use an absolute column
+    + relative row, e.g. "$M7", to test each row of a column). Pair with
+    worksheet(conditional_formatting=[...]) and the dxfs in styles.DXFS."""
+    expr = formula[1:] if formula.startswith("=") else formula
+    return (f'<conditionalFormatting sqref="{sqref}">'
+            f'<cfRule type="expression" dxfId="{dxf_id}" priority="{priority}">'
+            f'<formula>{xml_escape(expr)}</formula></cfRule>'
+            f'</conditionalFormatting>')
+
+
+def data_validation(sqref: str, *, kind: str, operator: str | None = None,
+                    formula1: str | None = None, formula2: str | None = None,
+                    allow_blank: bool = True, show_error: bool = True) -> str:
+    """One <dataValidation> element restricting what may be typed into `sqref`.
+
+    kind: "decimal" / "whole" / "date" / "list" / "textLength" (CT_DataValidation type).
+    operator: "between" / "greaterThanOrEqual" / ... (omit for a list). formula1/formula2
+    carry the bound(s); a list passes its members as formula1='"A,B,C"' (quotes included).
+    Pair with worksheet(data_validations=[...]); the parent <dataValidations count="N">
+    wrapper is added there. allow_blank keeps an empty cell legal (the honest default).
+    """
+    attrs = [f'type="{kind}"']
+    if operator:
+        attrs.append(f'operator="{operator}"')
+    attrs.append(f'allowBlank="{1 if allow_blank else 0}"')
+    if show_error:
+        attrs.append('showErrorMessage="1"')
+    attrs.append(f'sqref="{sqref}"')
+    inner = ""
+    if formula1 is not None:
+        inner += f'<formula1>{xml_escape(formula1)}</formula1>'
+    if formula2 is not None:
+        inner += f'<formula2>{xml_escape(formula2)}</formula2>'
+    head = " ".join(attrs)
+    return f'<dataValidation {head}>{inner}</dataValidation>' if inner else \
+           f'<dataValidation {head}/>'
+
+
 def banner_row(r: int, text: str, n_cols: int,
                *, style: int,
                with_gutter: bool = False,
-               mark_collapsible: bool = False) -> str:
+               mark_collapsible: bool = False,
+               outline_level: int = 0) -> str:
     """Render a full-width banner row. `style` is required (keyword-only).
 
     Legacy (with_gutter=False): `text` is placed in column A with `style`;
@@ -228,6 +270,10 @@ def banner_row(r: int, text: str, n_cols: int,
     the gutter. When mark_collapsible=True, a neutral-style lowercase 'x'
     is placed in column A. Banner text moves to column B; the banner fill
     spans columns B..n_cols.
+
+    outline_level: a banner can itself sit inside a deeper group and act as
+    the summary row for the rows below it (e.g. a §-section banner at level 1
+    summarising level-2 detail). Default 0 keeps banners outside any group.
 
     Use S_TITLE_SHEET / S_TITLE_SECTION / S_TITLE_SUBSECTION as `style`.
     """
@@ -242,7 +288,7 @@ def banner_row(r: int, text: str, n_cols: int,
         parts = [cell(cref(r, 0), value=text, style=style)]
         for i in range(1, n_cols):
             parts.append(cell(cref(r, i), value=None, style=style))
-    return row(r, parts)
+    return row(r, parts, outline_level=outline_level)
 
 
 def write_row(r: int, values: list, *, styles, start_col: int = 0,
@@ -357,18 +403,27 @@ def worksheet(rows_xml: list[str],
               auto_filter: str | None = None,
               with_gutter: bool = False,
               *,
+              show_outline_symbols: bool = False,
               conditional_formatting: list[str] | None = None,
               data_validations: list[str] | None = None,
               ext_lst: str | None = None,
               **_ignored) -> str:
     """Wrap row XML strings into a complete <worksheet>.
 
-    cols: list of column widths (Excel character units). None entries skipped.
+    cols: list of column specs (Excel character units). Each entry is a bare
+        width number, None (column skipped), or a {"width": w, "hidden": bool}
+        mapping - hidden columns stay in the grid (A1 refs/formula helpers keep
+        working) but are not shown to the reader.
     tab_color: 6-char hex (no leading '#'). Use groups.group_color(SHEET_GROUP).
     auto_filter: range like "A1:L27" - Excel adds filter dropdowns on row 1.
     with_gutter: prepend a 1.5-char-wide gutter column at column A and inject
         an empty row 1. Sheet modules using with_gutter must place content
         starting at column B (start_col=1) and row 2.
+    show_outline_symbols: gutter mode hides Excel's native outline +/- controls
+        by default (showOutlineSymbols="0") so the cosmetic gutter 'x' is the
+        only collapse cue. Set True to surface the real interactive controls
+        (the rows must carry a deliberate outlineLevel hierarchy). Opt-in per
+        sheet; no effect when with_gutter is False.
 
     Optional feature slots (emitted in the schema-required order; default off):
       conditional_formatting: list of complete <conditionalFormatting …> blocks.
@@ -391,10 +446,20 @@ def worksheet(rows_xml: list[str],
         final_cols = [2.2109375] + final_cols
     if final_cols:
         defs = []
-        for i, w in enumerate(final_cols, start=1):
+        for i, spec in enumerate(final_cols, start=1):
+            # A column spec is either a bare width (number / None) or a structured
+            # {"width": w, "hidden": bool} mapping - the latter lets a sheet keep a
+            # formula-helper column in the grid (so A1 refs stay valid) while hiding
+            # it from the reader. None still skips the column entirely.
+            if isinstance(spec, dict):
+                w, hidden = spec.get("width"), bool(spec.get("hidden"))
+            else:
+                w, hidden = spec, False
             if w is None:
                 continue
-            defs.append(f'<col min="{i}" max="{i}" width="{w}" customWidth="1"/>')
+            hidden_attr = ' hidden="1"' if hidden else ''
+            defs.append(
+                f'<col min="{i}" max="{i}" width="{w}" customWidth="1"{hidden_attr}/>')
         if defs:
             cols_xml = f'<cols>{"".join(defs)}</cols>'
 
@@ -408,7 +473,7 @@ def worksheet(rows_xml: list[str],
 
     view_attrs = 'showGridLines="0" workbookViewId="0"'
     if with_gutter:
-        view_attrs += ' showOutlineSymbols="0"'
+        view_attrs += f' showOutlineSymbols="{1 if show_outline_symbols else 0}"'
     views_xml = f'<sheetViews><sheetView {view_attrs}/></sheetViews>'
     fmt_xml = '<sheetFormatPr defaultRowHeight="10" customHeight="1"/>'
 

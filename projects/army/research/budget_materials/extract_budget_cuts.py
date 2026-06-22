@@ -478,10 +478,74 @@ def extract_p5(fy: int):
     return rows
 
 
+def _dedupe_p5(rows):
+    """Collapse P-5 parse artifacts (audit #6). Line item 9552ML5355's Recurring-Cost
+    subtotal block is emitted TWICE (an interleaved phantom), so the same identity
+    (row_hash = bli/fy/section/label/role/obs) appears with a real value and a 0.0 twin.
+    Three-step, faithful, never-silent cleanup:
+      1. drop exact whole-row duplicates;
+      2. for a same-row_hash group, fold a 0.0 'phantom' into its single non-zero twin;
+      3. where two DISTINCT non-zero values share an identity (a genuine parse ambiguity,
+         e.g. prior_years 192.784 vs 10.131), keep BOTH with a collision-safe row_hash
+         suffix and LOG it - never silently pick one.
+    Asserts row_hash is unique afterwards."""
+    H, TC, LI, FY_, EL, ROLE = 17, 11, 0, 1, 5, 7
+
+    def fnum(s):
+        if isinstance(s, (int, float)):
+            return float(s)
+        try:
+            return float((s or "").strip() or 0)
+        except (TypeError, ValueError):
+            return 0.0
+
+    seen, deduped, n_exact = set(), [], 0
+    for r in rows:                                   # 1) exact whole-row duplicates
+        t = tuple(r)
+        if t in seen:
+            n_exact += 1
+            continue
+        seen.add(t)
+        deduped.append(r)
+
+    groups = {}
+    for r in deduped:
+        groups.setdefault(r[H], []).append(r)
+    out, n_phantom, ambiguous = [], 0, []
+    for grp in groups.values():
+        if len(grp) == 1:
+            out.append(grp[0])
+            continue
+        nonzero = [r for r in grp if fnum(r[TC]) != 0]
+        if len({fnum(r[TC]) for r in nonzero}) <= 1:  # 2) one real value (+ 0.0 phantoms)
+            out.append(nonzero[0] if nonzero else grp[0])
+            n_phantom += len(grp) - 1
+        else:                                         # 3) genuine collision -> keep all + flag
+            for i, r in enumerate(sorted(grp, key=lambda x: -abs(fnum(x[TC])))):
+                rr = list(r)
+                if i:
+                    rr[H] = f"{r[H]}-{i + 1}"
+                out.append(rr)
+            g = grp[0]
+            ambiguous.append((g[LI], g[FY_], g[EL], g[ROLE],
+                              sorted({fnum(r[TC]) for r in nonzero}, reverse=True)))
+
+    print(f"  P-5 dedup: dropped {n_exact} exact-duplicate + {n_phantom} zero-phantom row(s)")
+    if ambiguous:
+        print(f"  P-5 WARNING: {len(ambiguous)} genuine value-collision(s) kept with a "
+              "collision-safe row_hash suffix (parse ambiguity - review the source PDF):")
+        for li, fy, el, role, vals in ambiguous:
+            print(f"    {li} FY{fy} {el} [{role}]: {vals}")
+    hh = [r[H] for r in out]
+    assert len(hh) == len(set(hh)), "P-5 row_hash not unique after dedup"
+    return out
+
+
 def build_p5_cost_elements():
     rows = []
     for fy in FYS:
         rows.extend(extract_p5(fy))
+    rows = _dedupe_p5(rows)
     header = ["line_item_id", "source_book_fy", "exhibit", "section", "is_subtotal",
               "cost_element", "observed_fy", "column_role", "amount_type", "unit_cost_k",
               "qty_each", "total_cost_m", "dollars_basis", "page", "source_id",

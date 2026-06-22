@@ -168,6 +168,49 @@ def _f(x):
         return 0.0
 
 
+# Columns that legitimately differ between two reports of the SAME subcontract action:
+# the FSRS report identity (Report ID + Report Number). Two rows identical on EVERY OTHER
+# field are a semantic-duplicate candidate (reviewer finding #2): the same action reported
+# twice. Flagged + logged, never silently deleted - only the prime can adjudicate.
+_DUP_IGNORE = {5, 6}   # 5 = Subaward Report ID, 6 = Subaward Report Number
+_RID, _RNO, _UEI, _VN, _DATE, _AMT, _PIID = 5, 6, 0, 1, 8, 10, 25
+
+
+def _dup_key(row):
+    return tuple(v for i, v in enumerate(row[:50]) if i not in _DUP_IGNORE)
+
+
+def find_duplicate_candidates(program: str, rows: list[list[str]]):
+    """Return (candidate_records, summary). Within each group of rows identical on all
+    non-report-ID fields, the first (earliest, by the existing UEI+date sort) is RETAINED
+    and the rest are duplicate CANDIDATES. Nothing is removed."""
+    groups: dict[tuple, list[list[str]]] = {}
+    for r in rows:
+        groups.setdefault(_dup_key(r), []).append(r)
+    candidates = []
+    cand_dol = 0.0
+    for g in groups.values():
+        if len(g) < 2:
+            continue
+        retained = g[0]
+        for r in g[1:]:
+            cand_dol += _f(r[_AMT])
+            candidates.append([
+                program, retained[_RID], r[_RID], r[_RNO], r[_UEI], r[_VN],
+                r[_PIID], r[_DATE], f"{_f(r[_AMT]) / 1e6:.6f}"])
+    gross_dol = sum(_f(r[_AMT]) for r in rows)
+    summary = {
+        "program": program,
+        "gross_rows": len(rows),
+        "gross_nominal_m": gross_dol / 1e6,
+        "candidate_rows": len(candidates),
+        "candidate_nominal_m": cand_dol / 1e6,
+        "net_rows": len(rows) - len(candidates),
+        "net_nominal_m": (gross_dol - cand_dol) / 1e6,
+    }
+    return candidates, summary
+
+
 def build(program: str):
     rows = []
     raw_all_dol = 0.0
@@ -211,8 +254,49 @@ def build(program: str):
     assert delta < 1e-4, f"SCOPE MISMATCH: corpus {corpus_dol} vs raw {raw_all_dol} (Δ{delta})"
     print(f"  reconcile Δ                     : {delta:.2e}  OK")
 
+    cands, summary = find_duplicate_candidates(program, rows)
+    print(f"  duplicate candidates            : {summary['candidate_rows']}  "
+          f"(${summary['candidate_nominal_m']:,.3f}M nominal)")
+    return cands, summary
+
+
+_CAND_HEADERS = ["Program", "Retained Report ID", "Candidate Report ID",
+                 "Candidate Report Number", "Subawardee UEI", "Subawardee Vendor Name",
+                 "Prime PIID", "Subaward Date", "Subaward Amount $M"]
+_AUDIT_HEADERS = ["Program", "Gross Rows", "Gross Nominal $M", "Duplicate-Candidate Rows",
+                  "Duplicate-Candidate Nominal $M", "Net Rows", "Net Nominal $M",
+                  "Candidate % of Gross"]
+
+
+def write_audit(results: list[tuple[list, dict]]) -> None:
+    """Emit the semantic-duplicate adjudication log + the per-program gross/net summary."""
+    all_cands = [c for cands, _ in results for c in cands]
+    with (EXTRACTED / "duplicate_candidates.csv").open("w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(_CAND_HEADERS)
+        w.writerows(all_cands)
+
+    rows_out = []
+    tot = {"gross_rows": 0, "gross_nominal_m": 0.0, "candidate_rows": 0,
+           "candidate_nominal_m": 0.0, "net_rows": 0, "net_nominal_m": 0.0}
+    for _, s in results:
+        for k in tot:
+            tot[k] += s[k]
+    for _, s in results + [(None, {"program": "TOTAL", **tot})]:
+        pct = (s["candidate_nominal_m"] / s["gross_nominal_m"] * 100
+               if s["gross_nominal_m"] else 0.0)
+        rows_out.append([s["program"], s["gross_rows"], f"{s['gross_nominal_m']:.3f}",
+                         s["candidate_rows"], f"{s['candidate_nominal_m']:.3f}",
+                         s["net_rows"], f"{s['net_nominal_m']:.3f}", f"{pct:.2f}%"])
+    with (EXTRACTED / "duplicate_audit.csv").open("w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(_AUDIT_HEADERS)
+        w.writerows(rows_out)
+    print(f"\n==== duplicate audit ====\nlog : {EXTRACTED / 'duplicate_candidates.csv'} "
+          f"({len(all_cands)} candidates)\nsummary: {EXTRACTED / 'duplicate_audit.csv'}")
+
 
 if __name__ == "__main__":
     progs = sys.argv[1:] or ["ddg", "virginia", "columbia"]
-    for p in progs:
-        build(p)
+    results = [build(p) for p in progs]
+    write_audit(results)

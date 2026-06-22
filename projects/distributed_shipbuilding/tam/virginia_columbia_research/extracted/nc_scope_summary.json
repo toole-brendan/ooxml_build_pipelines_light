@@ -74,6 +74,11 @@
       "prime": "RR",
       "class": "Virginia",
       "label": "Va Class Submarine Rotor"
+    },
+    "N0002420C2120": {
+      "prime": "GDEB",
+      "class": "Virginia",
+      "label": "Va Lead Yard Support & Design (added 2026-06-21)"
     }
   },
   "out_of_scope_piids": {
@@ -84,6 +89,18 @@
     "N0002419C2125": {
       "prime": "GDEB",
       "reason": "EXCLUDED: Va Tech Instructions / HPAD backfit \u2014 upgrades to existing boats"
+    },
+    "N0002414C2104": {
+      "prime": "GDEB",
+      "reason": "EXCLUDED: planning yard / eng support for ACTIVE nuclear submarines (DoD announcement; PoP=fleet bases Bangor/Norfolk/Kings Bay/Pearl) \u2014 sustainment, not new construction"
+    },
+    "N0002420C2114": {
+      "prime": "GDEB",
+      "reason": "EXCLUDED: Naval Reactors (PSC 4470) \u2014 reactor/GFE, parallels BPMI exclusion"
+    },
+    "N0002421C2103": {
+      "prime": "GDEB",
+      "reason": "EXCLUDED: R&D concept formulation for current+future submarine platforms \u2014 generic/cross-program design R&D, immaterial ($19M subs), no clean Virginia/Columbia class"
     }
   },
   "excluded_mib_ueis": {

@@ -27,7 +27,7 @@ from __future__ import annotations
 # ---------------------------------------------------------------------------
 
 GRAIN_INTRO = (
-    "Entity- and transaction-level classification legends."
+    "Domain, role, output and SWBS definitions."
 )
 
 # Axis register (name, the one question it answers, published?) - rendered by the
@@ -78,19 +78,19 @@ DOMAINS: list[tuple[str, str, str]] = [
 # Domain boundary tie-breaks (situation, rule) - rendered as a sub-table.
 DOMAIN_TIEBREAKS: list[tuple[str, str]] = [
     ("D2 vs D3 (turbine-generators)",
-     "Ship-service power generation -> D3; main propulsion drive -> D2."),
+     "Ship-service power generation to D3; main propulsion drive to D2."),
     ("D6 vs D7 vs D3 (electronics)",
-     "System-level sensing/combat/comms -> D6; component-level interconnect, cable, penetrators -> D7; ship-service power components -> D3. Classify by function and integration level."),
+     "System-level sensing/combat/comms to D6; component-level interconnect, cable, penetrators to D7; ship-service power components to D3. Classify by function and integration level."),
     ("D9 vs a system domain",
-     "Classify by the vendor's differentiating competence: the material/process itself -> D9; a complete functional system -> the system domain (a sonar-array maker -> D6; a composite-acoustic-parts maker -> D9)."),
+     "Classify by the vendor's differentiating competence: the material/process itself to D9; a complete functional system to the system domain (a sonar-array maker to D6; a composite-acoustic-parts maker to D9)."),
     ("D1 vs D4 (pressure boundaries)",
-     "Structural / pressure-vessel fabrication -> D1; functional fluid/pressure equipment (valves, pumps) -> D4."),
+     "Structural / pressure-vessel fabrication to D1; functional fluid/pressure equipment (valves, pumps) to D4."),
     ("D2 vs D3 (electric drive & power)",
-     "A firm whose output spans propulsion motors/drives (D2) and power generation, conversion, or distribution (D3) - e.g. an integrated electric-plant or motor-and-generator supplier (NAICS 335312) - is assigned by its dollar-dominant ship function, NEVER D0: propulsion-motor / electric-drive dominant -> D2; ship-service power dominant -> D3."),
+     "A firm whose output spans propulsion motors/drives (D2) and power generation, conversion, or distribution (D3) - e.g. an integrated electric-plant or motor-and-generator supplier (NAICS 335312) - is assigned by its dollar-dominant ship function, never D0: propulsion-motor / electric-drive dominant to D2; ship-service power dominant to D3."),
     ("Ordnance",
      "Naval guns, missile launch systems and tubes, and weapon-handling stay in D6; there is no separate ordnance domain - under the hull-builder scope the dedicated weapons GFE primes are out of scope, so standalone ordnance content is sparse."),
     ("Service firms",
-     "A service firm whose specialty maps unambiguously to one technical area keeps that area (a propulsion test house -> D2); a firm whose deliverable is general non-material support with no single technical area -> D11 Services (no longer D0)."),
+     "A service firm whose specialty maps unambiguously to one technical area keeps that area (a propulsion test house to D2); a firm whose deliverable is general non-material support with no single technical area to D11 Services (no longer D0)."),
     ("Pure distributors",
      "Assign the domain of the material handled and let Role R1 carry the pass-through signal; D0 only when even that is indeterminate."),
 ]
@@ -187,7 +187,7 @@ LATTICE_NOTE = (
     "The overlaps make this a QA check, not a 1:1 derivation: an output outside its "
     "role's expected set is a review flag, not an error. A build-to-print fabricator "
     "delivering a complete functional unit (R1 x P3) is a legitimate off-diagonal - "
-    "it just means 'verify the vendor does not actually own the design (-> R2).'"
+    "it just means 'verify the vendor does not actually own the design (revisit as R2).'"
 )
 
 # ---------------------------------------------------------------------------
@@ -195,7 +195,7 @@ LATTICE_NOTE = (
 # ---------------------------------------------------------------------------
 #
 # A different-grain COMPANION dimension, not a fourth entity archetype: it is
-# carried on the subaward TRANSACTION (one HII-DDG subaward -> one ship-system
+# carried on the subaward TRANSACTION (one HII-DDG subaward to one ship-system
 # application), where D / R / P are entity-level (UEI x Program). A UEI keeps one
 # Capability Domain / Role / Output while its transactions hit many SWBS groups.
 
@@ -226,7 +226,7 @@ SWBS_GROUPS: list[tuple[str, str, str]] = [
     ("900", "Ship Assembly & Support Services",
      "Ship assembly, production support, testing, trials, shipbuilder-support. Program/support activity, not an installed ship system."),
     ("X00", "Cross-Cutting Design & Construction Requirements",
-     "Requirements applied across systems rather than installed as one - e.g. 730 -> 7300 Noise & Vibration. Bounded by an explicit code list, not 'anything that spans systems'."),
+     "Requirements applied across systems rather than installed as one - e.g. 730 to 7300 Noise & Vibration. Bounded by an explicit code list, not 'anything that spans systems'."),
     ("L00", "Legacy / Unmapped SWBS Reference",
      "A plausible SWBS or product-structure reference that does not resolve against the current codebook (e.g. 351, pending validation)."),
     ("U00", "No SWBS Evidence",
@@ -234,7 +234,7 @@ SWBS_GROUPS: list[tuple[str, str, str]] = [
 ]
 
 SWBS_HIERARCHY_NOTE = (
-    "Hierarchy: SWBS major group -> 3-digit SWBS subsystem -> HII work-item code -> "
+    "Hierarchy: SWBS major group to 3-digit SWBS subsystem to HII work-item code to "
     "component text. The HII work-item code stays a drill-down and audit key, not the "
     "headline: it is finer than SWBS but proprietary to HII, so it is weaker for "
     "cross-prime / cross-program comparison."
@@ -255,7 +255,7 @@ SWBS_GUARDRAILS: list[str] = [
     "SWBS validates entity tags, it does not overwrite them: transaction evidence (HII code + component text, not the SWBS number itself) can flag a Capability Domain or Primary Output to revisit, but the published call stays the entity-level one.",
     "Present every cut as 'within mapped SWBS records' and show mapped-dollar coverage beside each FY / hull / PIID comparison; never treat unmapped records as zero system activity.",
     "Concentration measures (top-3 share, HHI) are within mapped dollars only - the uncoded long tail may hide alternate sources, so read them as an upper bound.",
-    "The observed HII -> SWBS crosswalk is locked as observed-in-this-pull (no one-to-many conflicts in the current data is a sample property); version it and re-validate on new pulls.",
+    "The HII-to-SWBS crosswalk is one-to-one in the observed data; treat that as a property of this sample, not a guarantee.",
     "Subaward amount is an award/report amount, not a unit price; negative-amount records are treated as adjustments, not procurement.",
-    "Three lookup exceptions are handled explicitly, not forced to the nearest headline: 436 via prefix-family (4361x); 730 -> 7300 Noise & Vibration (cross-cutting X00, not Armament); 351 kept Legacy until validated.",
+    "Three lookup exceptions are handled explicitly, not forced to the nearest headline: 436 via prefix-family (4361x); 730 to 7300 Noise & Vibration (cross-cutting X00, not Armament); 351 kept Legacy until validated.",
 ]

@@ -24,8 +24,10 @@ Three kinds of column live on these sheets:
     also named in `link_cols` instead renders GREEN (cross-sheet-link styles): use it
     for roll-ups that surface a value living on another sheet.
 
-Column TYPE is declared via int_cols / float_cols / date_cols (controls coercion +
-number format). A column with no type is text. `make_flat_sheet` returns
+Column TYPE is declared via int_cols / float_cols / date_cols / pct_cols (controls
+coercion + number format). A pct column is a fraction (0-1) coerced like a float but
+rendered with the italic percent styles (S_PCT / S_PCT_INPUT / S_LINK_PCT) so a stored
+0.85 reads "85.0%". A column with no type is text. `make_flat_sheet` returns
 (SheetEntry, cols): `cols(header)` gives the absolute range "'Tab'!$X$f:$X$l" of that
 column's data, so a derived sheet's live formulas can reference this sheet's leaf
 ranges (the data-leaf -> model pattern; here, the future recompete radar).
@@ -34,10 +36,10 @@ from __future__ import annotations
 
 import re
 
-from workbook_core.primitives import col_letter, worksheet
+from workbook_core.primitives import col_letter, worksheet, data_validation
 from workbook_core.styles import (
     S_DEFAULT, S_INT, S_INT_INPUT, S_NUM, S_NUM_INPUT, S_DATE, S_DATE_INPUT,
-    S_LINK_INT, S_LINK_NUM, S_DATE_LINK,
+    S_LINK_INT, S_LINK_NUM, S_DATE_LINK, S_PCT, S_PCT_INPUT, S_LINK_PCT,
     S_TITLE_SECTION, S_TITLE_SHEET,
 )
 from workbook_army.sheets._text_input import S_TEXT_INPUT
@@ -82,9 +84,11 @@ def _note_verbatim(raw: str) -> str:
 
 def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     banner: str, widths=None, width_fn=None, intro=None,
-                    int_cols=(), float_cols=(), date_cols=(), input_cols=(),
+                    int_cols=(), float_cols=(), date_cols=(), pct_cols=(),
+                    input_cols=(),
                     formula_cols=None, link_cols=(), note_from=None,
-                    note_from_verbatim=None, right_spacer=False, derived_cols=None):
+                    note_from_verbatim=None, right_spacer=False, derived_cols=None,
+                    header_labels=None, validations=()):
     """Build a single-table sheet from extracted/<csv_name>.csv.
 
     Returns (SheetEntry, cols) where cols(header) -> "'Tab'!$Col$first:$Col$last".
@@ -110,6 +114,11 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     formula (resolved per row by the RowCursor), `type` is None (text) / "int" / "float"
     / "date" (controls number format + centering). Use for a derived status column that
     keys off another cell on the row (e.g. a deadline vs the As-of date).
+
+    header_labels: optional {csv_header: display label} map. The CSV/machine column name
+    stays the lookup key (int_cols/input_cols/cols(...) all key off it) but the VISIBLE
+    header + table column name use the label - so an input/decision tab can read "Org ID"
+    while the data stays keyed on "org_id". Raw evidence tabs omit it and keep machine names.
     """
     note_from = dict(note_from or {})
     note_from_verbatim = dict(note_from_verbatim or {})
@@ -137,8 +146,11 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         raise ValueError(
             f"{csv_name}: {len(widths)} widths != {ncols} columns ({headers})")
     int_cols, float_cols, date_cols = set(int_cols), set(float_cols), set(date_cols)
+    pct_cols = set(pct_cols)
+    float_cols |= pct_cols            # pct coerces + centers like a float; styled as percent
     input_cols = set(input_cols)
     link_cols = set(link_cols)
+    header_labels = dict(header_labels or {})
     formula_cols = dict(formula_cols or {})
     for _h, _t, _fn in derived_cols:               # register synthetic formula columns
         formula_cols[_h] = _fn
@@ -156,6 +168,13 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         return None
 
     def _style(h: str) -> int:
+        if h in pct_cols:
+            # fraction rendered as a percent: green link / blue input / black derived
+            if h in link_cols:
+                return S_LINK_PCT
+            if h in input_cols and h not in formula_cols:
+                return S_PCT_INPUT
+            return S_PCT
         t = _type(h)
         if t is None:
             # text: blue when it is a hardcoded source key (input_cols), else black
@@ -170,6 +189,8 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         return derived             # typed leaf without an input flag -> black
 
     col_styles = [_style(h) for h in headers]
+    # Visible header labels (display only); all keying stays on the canonical CSV names.
+    display_headers = [header_labels.get(h, h) for h in headers]
 
     def convert(j: int, raw: str):
         h = headers[j]
@@ -200,7 +221,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     spacer_vals = [" "] if right_spacer else []
     spacer_sty = [S_DEFAULT] if right_spacer else []
 
-    hdr = c.write(headers, styles=header_styles(headers, center_headers=numeric))
+    hdr = c.write(display_headers, styles=header_styles(headers, center_headers=numeric))
     for row in rows:
         vals = [convert(j, row[keep[j]] if (j < base_ncols and keep[j] < len(row))
                         else "")
@@ -222,10 +243,15 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         return f"'{tab}'!${col}${first}:${col}${last}"
 
     def render() -> WorksheetSpec:
+        # Per-column data validations (sqref = the column's local data range B..last).
+        def _local(h: str) -> str:
+            cl = col_letter(headers.index(h) + 1)
+            return f"{cl}{first}:{cl}{last}"
+        dvs = [data_validation(_local(h), **spec) for h, spec in validations] or None
         ws = worksheet(c.rows, cols=widths, tab_color=group_color(group),
-                       with_gutter=True)
+                       with_gutter=True, data_validations=dvs)
         return WorksheetSpec(ws, tables=[
-            ExcelTable(name=table_name, ref=table_ref, headers=headers)],
+            ExcelTable(name=table_name, ref=table_ref, headers=display_headers)],
             notes=notes)
 
     return SheetEntry(tab, group, render), cols

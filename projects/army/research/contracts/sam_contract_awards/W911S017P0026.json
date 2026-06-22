@@ -1,0 +1,1522 @@
+{
+  "piid": "W911S017P0026",
+  "summary": {
+    "piid": "W911S017P0026",
+    "recipient": "INMARSAT INC.",
+    "our_family_obligation": 277085.55,
+    "our_is_idv_family": false,
+    "note": null,
+    "cached": false,
+    "found": true,
+    "award_or_idv": "AWARD",
+    "n_records": "3",
+    "family_count": "3",
+    "family_total_dollars": 277085.55,
+    "ref_dos_base_count": null,
+    "ref_dos_total_count": null,
+    "ref_dos_total_dollars": null,
+    "sam_family_obligated": 277085.55,
+    "ordering_period_end": null,
+    "current_completion_date": "2017-03-17",
+    "ultimate_completion_date": "2017-03-17",
+    "pop_start_date": "2017-03-15",
+    "date_signed": "2018-01-24",
+    "ceiling_value": 277085.55,
+    "solicitation_id": null,
+    "contracting_office": "W911S0"
+  },
+  "raw": {
+    "piidAggregation": {
+      "awardFamilySummary": {
+        "count": "3",
+        "totalDollars": "277085.55"
+      }
+    },
+    "awardSummary": [
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W911S017P0026",
+          "modificationNumber": "P00002",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "M",
+            "name": "OTHER ADMINISTRATIVE ACTION"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W911S0",
+                "name": "W6QM MICC-FDO FT EUSTIS",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W26R1P",
+                "name": "W3E9 US ARMY TNG SPT CNTR"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "FORT EUSTIS"
+            },
+            "county": {
+              "code": "700",
+              "name": "NEWPORT NEWS CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "236041111",
+            "congressionalDistrict": "03",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "PRODUCT",
+              "code": "2090",
+              "name": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "517410",
+                "name": "SATELLITE TELECOMMUNICATIONS"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "dodClaimantProgram": {
+              "code": "A7",
+              "name": "ELECTRONICS AND COMMUNICATION EQUIPMENT"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "C",
+              "name": "NOT COMPETED"
+            },
+            "solicitationProcedures": {
+              "code": "SSS",
+              "name": "ONLY ONE SOURCE"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "ONE",
+              "name": "ONLY ONE SOURCE - OTHER"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "a76Action": {
+              "code": "N",
+              "name": "NO"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2018-01-24T00:00:00Z",
+            "periodOfPerformanceStartDate": "2018-01-23 00:00:00.000",
+            "currentCompletionDate": "2017-03-15 00:00:00.000",
+            "ultimateCompletionDate": "2017-03-15 00:00:00.000",
+            "fiscalYear": "2018"
+          },
+          "dollars": {
+            "actionObligation": 0,
+            "baseDollarsObligated": 277085.55,
+            "baseAndExercisedOptionsValue": 0,
+            "baseAndAllOptionsValue": 0,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 277085.55,
+            "totalBaseAndExercisedOptionsValue": 277085.55,
+            "totalBaseAndAllOptionsValue": 277085.55
+          },
+          "treasuryAccount": {
+            "agencyIdentifier": "21",
+            "mainAccountCode": "2020"
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "UAC FLEET 77/INMARSAT FY 14 IGF::OT::IGF",
+            "useOfEpaDesignatedProducts": {
+              "code": "A",
+              "name": "MEETS REQUIREMENTS"
+            },
+            "placeOfManufacture": {
+              "code": "D",
+              "name": "MFG IN U.S."
+            },
+            "domesticOrForeignEntity": {
+              "code": "C",
+              "name": "FOREIGN-OWNED BUSINESS INCORPORATED IN THE U.S."
+            },
+            "seaTransportation": {
+              "code": "N",
+              "name": "NO"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL ITEM"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "N",
+              "name": "NO"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "O",
+                "name": "OTHER THAN SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "INMARSAT INC.",
+              "legalBusinessName": "INMARSAT INC.",
+              "awardeeNameFromContract": "INMARSAT INC."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "EM1DSJLMB8S6",
+              "cageCode": "1FZH7",
+              "awardeeUltimateParentUniqueEntityId": "LWDUPKA177P4",
+              "awardeeUltimateParentName": "INMARSAT INC."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "1101 CONNECTICUT AVE NW STE 1200",
+              "city": "WASHINGTON",
+              "state": {
+                "code": "DC",
+                "name": "DISTRICT OF COLUMBIA"
+              },
+              "zip": "200364344",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "00",
+              "phoneNumber": "2022485158",
+              "awardeeDataSource": "D&B"
+            },
+            "awardeeAlternateSiteCode": "20036",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2002-03-14 00:00:00.000",
+              "renewalDate": "2018-02-22 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "YES",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "DE",
+                "name": "DELAWARE"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "createdDate": "2018-01-24T16:00:21.000Z",
+            "lastModifiedBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "lastModifiedDate": "2018-01-24T11:00:25Z",
+            "approvedBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "approvedDate": "2018-01-24T11:00:25Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W911S017P0026",
+          "modificationNumber": "0",
+          "transactionNumber": "0"
+        },
+        "coreData": {
+          "coreVersionId": "1.4",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W911S0",
+                "name": "W6QM MICC-FDO FT EUSTIS",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W26AKG",
+                "name": "0007 TC BDE    TRANSPORTATION"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "FORT EUSTIS"
+            },
+            "county": {
+              "code": "700",
+              "name": "NEWPORT NEWS CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "236041111",
+            "congressionalDistrict": "03",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "PRODUCT",
+              "code": "2090",
+              "name": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "517410",
+                "name": "SATELLITE TELECOMMUNICATIONS"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "dodClaimantProgram": {
+              "code": "A7",
+              "name": "ELECTRONICS AND COMMUNICATION EQUIPMENT"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "C",
+              "name": "NOT COMPETED"
+            },
+            "solicitationProcedures": {
+              "code": "SSS",
+              "name": "ONLY ONE SOURCE"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "ONE",
+              "name": "ONLY ONE SOURCE-OTHER (FAR 6.302-1 OTHER)"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "a76Action": {
+              "code": "N",
+              "name": "NO"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2017-03-15T00:00:00Z",
+            "periodOfPerformanceStartDate": "2017-03-15 00:00:00.000",
+            "currentCompletionDate": "2017-03-17 00:00:00.000",
+            "ultimateCompletionDate": "2017-03-17 00:00:00.000",
+            "fiscalYear": "2017"
+          },
+          "dollars": {
+            "actionObligation": 277085.55,
+            "baseDollarsObligated": 277085.55,
+            "baseAndExercisedOptionsValue": 277085.55,
+            "baseAndAllOptionsValue": 277085.55,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 277085.55,
+            "totalBaseAndExercisedOptionsValue": 277085.55,
+            "totalBaseAndAllOptionsValue": 277085.55
+          },
+          "treasuryAccount": {
+            "agencyIdentifier": "21",
+            "mainAccountCode": "2020"
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "UAC FLEET 77/INMARSAT FY 14 IGF::OT::IGF",
+            "useOfEpaDesignatedProducts": {
+              "code": "A",
+              "name": "MEETS REQUIREMENTS"
+            },
+            "placeOfManufacture": {
+              "code": "D",
+              "name": "MFG IN U.S."
+            },
+            "domesticOrForeignEntity": {
+              "code": "C",
+              "name": "FOREIGN-OWNED BUSINESS INCORPORATED IN THE U.S."
+            },
+            "seaTransportation": {
+              "code": "N",
+              "name": "NO"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL ITEM"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "contractOpportunitiesNotice": {
+              "code": "N",
+              "name": "NO"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "O",
+                "name": "OTHER THAN SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "INMARSAT INC.",
+              "legalBusinessName": "INMARSAT INC.",
+              "awardeeNameFromContract": "INMARSAT INC."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "EM1DSJLMB8S6",
+              "cageCode": "1FZH7",
+              "awardeeUltimateParentUniqueEntityId": "LWDUPKA177P4",
+              "awardeeUltimateParentName": "INMARSAT INC."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "1101 CONNECTICUT AVE NW STE 1200",
+              "city": "WASHINGTON",
+              "state": {
+                "code": "DC",
+                "name": "DISTRICT OF COLUMBIA"
+              },
+              "zip": "200364344",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "00",
+              "phoneNumber": "2022485158",
+              "awardeeDataSource": "D&B"
+            },
+            "awardeeAlternateSiteCode": "20036",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2002-03-14 00:00:00.000",
+              "renewalDate": "2018-02-22 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "YES",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "DE",
+                "name": "DELAWARE"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.4",
+            "createdBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "createdDate": "2017-03-09T19:16:30.000Z",
+            "lastModifiedBy": "DOD_CLOSEOUT",
+            "lastModifiedDate": "2019-07-10T10:22:02Z",
+            "approvedBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "approvedDate": "2017-03-20T09:13:08Z",
+            "closedBy": "DOD_CLOSEOUT",
+            "closedDate": "2019-07-10 10:22:02.000",
+            "closedStatus": "Y"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W911S017P0026",
+          "modificationNumber": "P00001",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "M",
+            "name": "OTHER ADMINISTRATIVE ACTION"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W911S0",
+                "name": "W6QM MICC-FDO FT EUSTIS",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W26R1P",
+                "name": "W3E9 US ARMY TNG SPT CNTR"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "FORT EUSTIS"
+            },
+            "county": {
+              "code": "700",
+              "name": "NEWPORT NEWS CITY"
+            },
+            "state": {
+              "code": "VA",
+              "name": "VIRGINIA"
+            },
+            "zipCode": "236041111",
+            "congressionalDistrict": "03",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "PRODUCT",
+              "code": "2090",
+              "name": "MISCELLANEOUS SHIP AND MARINE EQUIPMENT"
+            },
+            "principalNaics": [
+              {
+                "code": "517410",
+                "name": "SATELLITE TELECOMMUNICATIONS"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "dodClaimantProgram": {
+              "code": "A7",
+              "name": "ELECTRONICS AND COMMUNICATION EQUIPMENT"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "C",
+              "name": "NOT COMPETED"
+            },
+            "solicitationProcedures": {
+              "code": "SSS",
+              "name": "ONLY ONE SOURCE"
+            },
+            "typeOfSetAside": {
+              "code": "NONE",
+              "name": "NO SET ASIDE USED."
+            },
+            "otherThanFullAndOpenCompetition": {
+              "code": "ONE",
+              "name": "ONLY ONE SOURCE - OTHER"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "a76Action": {
+              "code": "N",
+              "name": "NO"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2018-01-23T00:00:00Z",
+            "periodOfPerformanceStartDate": "2018-01-11 00:00:00.000",
+            "currentCompletionDate": "2017-03-15 00:00:00.000",
+            "ultimateCompletionDate": "2017-03-15 00:00:00.000",
+            "fiscalYear": "2018"
+          },
+          "dollars": {
+            "actionObligation": 0,
+            "baseDollarsObligated": 277085.55,
+            "baseAndExercisedOptionsValue": 0,
+            "baseAndAllOptionsValue": 0,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 277085.55,
+            "totalBaseAndExercisedOptionsValue": 277085.55,
+            "totalBaseAndAllOptionsValue": 277085.55
+          },
+          "treasuryAccount": {
+            "agencyIdentifier": "21",
+            "mainAccountCode": "2020"
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "UAC FLEET 77/INMARSAT FY 14 IGF::OT::IGF",
+            "useOfEpaDesignatedProducts": {
+              "code": "A",
+              "name": "MEETS REQUIREMENTS"
+            },
+            "placeOfManufacture": {
+              "code": "D",
+              "name": "MFG IN U.S."
+            },
+            "domesticOrForeignEntity": {
+              "code": "C",
+              "name": "FOREIGN-OWNED BUSINESS INCORPORATED IN THE U.S."
+            },
+            "seaTransportation": {
+              "code": "N",
+              "name": "NO"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL ITEM"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "1",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "N",
+              "name": "NO"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "O",
+                "name": "OTHER THAN SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "INMARSAT INC.",
+              "legalBusinessName": "INMARSAT INC.",
+              "awardeeNameFromContract": "INMARSAT INC."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "EM1DSJLMB8S6",
+              "cageCode": "1FZH7",
+              "awardeeUltimateParentUniqueEntityId": "LWDUPKA177P4",
+              "awardeeUltimateParentName": "INMARSAT INC."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "1101 CONNECTICUT AVE NW STE 1200",
+              "city": "WASHINGTON",
+              "state": {
+                "code": "DC",
+                "name": "DISTRICT OF COLUMBIA"
+              },
+              "zip": "200364344",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "00",
+              "phoneNumber": "2022485158",
+              "awardeeDataSource": "D&B"
+            },
+            "awardeeAlternateSiteCode": "20036",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2002-03-14 00:00:00.000",
+              "renewalDate": "2018-02-22 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "YES",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "DE",
+                "name": "DELAWARE"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "createdDate": "2018-01-23T19:56:46.000Z",
+            "lastModifiedBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "lastModifiedDate": "2018-01-23T14:56:54Z",
+            "approvedBy": "PATRICIA.D.PAIGE.W911S0@US.ARMY.MIL",
+            "approvedDate": "2018-01-23T14:56:54Z",
+            "closedStatus": "N"
+          }
+        }
+      }
+    ],
+    "totalRecords": "3",
+    "limit": "10",
+    "offset": "1"
+  }
+}

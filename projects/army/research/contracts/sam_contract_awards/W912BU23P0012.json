@@ -1,0 +1,4951 @@
+{
+  "piid": "W912BU23P0012",
+  "summary": {
+    "piid": "W912BU23P0012",
+    "recipient": "BAYONNE DRYDOCK & REPAIR CORP.",
+    "our_family_obligation": 3606570.32,
+    "our_is_idv_family": false,
+    "note": null,
+    "cached": false,
+    "found": true,
+    "award_or_idv": "AWARD",
+    "n_records": "14",
+    "family_count": "14",
+    "family_total_dollars": 3606570.32,
+    "ref_dos_base_count": null,
+    "ref_dos_total_count": null,
+    "ref_dos_total_dollars": null,
+    "sam_family_obligated": 3606570.32,
+    "ordering_period_end": null,
+    "current_completion_date": "2024-09-20",
+    "ultimate_completion_date": "2024-09-20",
+    "pop_start_date": "2023-02-24",
+    "date_signed": "2024-09-12",
+    "ceiling_value": 3606570.32,
+    "solicitation_id": "W912BU23R0015",
+    "contracting_office": "W912BU"
+  },
+  "raw": {
+    "piidAggregation": {
+      "awardFamilySummary": {
+        "count": "14",
+        "totalDollars": "3606570.32"
+      }
+    },
+    "awardSummary": [
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00008",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2024-04-08T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-04-25 00:00:00.000",
+            "ultimateCompletionDate": "2024-04-25 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 377040.4,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 377040.4,
+            "baseAndAllOptionsValue": 377040.4,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3119417.92,
+            "totalBaseAndExercisedOptionsValue": 3119417.92,
+            "totalBaseAndAllOptionsValue": 3119417.92
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS CR38-43",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2024-04-08T15:31:19.000Z",
+            "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2024-04-08T11:31:22Z",
+            "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2024-04-08T11:31:22Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00001",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2023-04-10T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2023-06-24 00:00:00.000",
+            "ultimateCompletionDate": "2023-06-24 00:00:00.000",
+            "fiscalYear": "2023"
+          },
+          "dollars": {
+            "actionObligation": 138033.04,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 138033.04,
+            "baseAndAllOptionsValue": 138033.04,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 1552011.03,
+            "totalBaseAndExercisedOptionsValue": 1552011.03,
+            "totalBaseAndAllOptionsValue": 1552011.03
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRY-DOCK & REPAIR CORP"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "10",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2023-04-10T13:27:25.000Z",
+            "lastModifiedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2023-04-10T09:27:29Z",
+            "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2023-04-10T09:27:29Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00006",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W25PHS",
+                "name": "W2SF ENDIST PHILADELPHIA CW"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2023-12-20T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-01-29 00:00:00.000",
+            "ultimateCompletionDate": "2024-01-29 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 283623.87,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 283623.87,
+            "baseAndAllOptionsValue": 283623.87,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3606570.32,
+            "totalBaseAndExercisedOptionsValue": 3606570.32,
+            "totalBaseAndAllOptionsValue": 3606570.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "BROOKE.L.PATTERSON.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2023-12-20T21:41:09.000Z",
+            "lastModifiedBy": "BROOKE.L.PATTERSON.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2023-12-20T16:41:12Z",
+            "approvedBy": "BROOKE.L.PATTERSON.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2023-12-20T16:41:12Z",
+            "closedBy": "DOD_CLOSEOUT",
+            "closedDate": "2025-08-14 11:20:07.000",
+            "closedStatus": "Y"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00011",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2024-08-28T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-08-09 00:00:00.000",
+            "ultimateCompletionDate": "2024-08-09 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 83584.4,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 83584.4,
+            "baseAndAllOptionsValue": 83584.4,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3412331.32,
+            "totalBaseAndExercisedOptionsValue": 3412331.32,
+            "totalBaseAndAllOptionsValue": 3412331.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS CR 50-53",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2024-08-28T16:10:02.000Z",
+            "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2024-08-28T12:10:05Z",
+            "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2024-08-28T12:10:05Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00005",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2023-09-29T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2023-10-20 00:00:00.000",
+            "ultimateCompletionDate": "2023-10-20 00:00:00.000",
+            "fiscalYear": "2023"
+          },
+          "dollars": {
+            "actionObligation": 142017.76,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 142017.76,
+            "baseAndAllOptionsValue": 142017.76,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 2224243.71,
+            "totalBaseAndExercisedOptionsValue": 2224243.71,
+            "totalBaseAndAllOptionsValue": 2224243.71
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRY-DOCK & REPAIR CORP"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "10",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2023-09-29T21:57:52.000Z",
+            "lastModifiedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2023-09-29T17:57:55Z",
+            "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2023-09-29T17:57:55Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "0",
+          "transactionNumber": "0"
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2023-02-24T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2023-06-01 00:00:00.000",
+            "ultimateCompletionDate": "2023-06-01 00:00:00.000",
+            "fiscalYear": "2023"
+          },
+          "dollars": {
+            "actionObligation": 1373573.39,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 1373573.39,
+            "baseAndAllOptionsValue": 1373573.39,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3606570.32,
+            "totalBaseAndExercisedOptionsValue": 3606570.32,
+            "totalBaseAndAllOptionsValue": 3606570.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRY-DOCK & REPAIR CORP"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "10",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "AMANDA.BELLNIER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2023-02-24T15:52:37.000Z",
+            "lastModifiedBy": "DOD_CLOSEOUT",
+            "lastModifiedDate": "2025-08-14T11:20:07Z",
+            "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2023-02-24T12:05:28Z",
+            "closedBy": "DOD_CLOSEOUT",
+            "closedDate": "2025-08-14 11:20:07.000",
+            "closedStatus": "Y"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00012",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2024-09-12T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-09-20 00:00:00.000",
+            "ultimateCompletionDate": "2024-09-20 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 163141.0,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 163141,
+            "baseAndAllOptionsValue": 163141,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3412331.32,
+            "totalBaseAndExercisedOptionsValue": 3412331.32,
+            "totalBaseAndAllOptionsValue": 3412331.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS CR 54-59",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2024-09-12T21:41:03.000Z",
+            "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2024-09-12T17:41:05Z",
+            "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2024-09-12T17:41:05Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00010",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2024-08-02T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-06-08 00:00:00.000",
+            "ultimateCompletionDate": "2024-06-08 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 46188.0,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 46188,
+            "baseAndAllOptionsValue": 46188,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3412331.32,
+            "totalBaseAndExercisedOptionsValue": 3412331.32,
+            "totalBaseAndAllOptionsValue": 3412331.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS CR 45-49",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2024-08-02T15:43:32.000Z",
+            "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2024-08-02T11:43:35Z",
+            "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2024-08-02T11:43:35Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00009",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "D",
+            "name": "CHANGE ORDER"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2024-06-07T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2024-06-08 00:00:00.000",
+            "ultimateCompletionDate": "2024-06-08 00:00:00.000",
+            "fiscalYear": "2024"
+          },
+          "dollars": {
+            "actionObligation": 162408.0,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 162408,
+            "baseAndAllOptionsValue": 162408,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 3249190.32,
+            "totalBaseAndExercisedOptionsValue": 3249190.32,
+            "totalBaseAndAllOptionsValue": 3249190.32
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "08",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2024-06-07T15:21:30.000Z",
+            "lastModifiedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2024-06-07T11:21:33Z",
+            "approvedBy": "MICHAEL.HUNTER.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2024-06-07T11:21:33Z",
+            "closedStatus": "N"
+          }
+        }
+      },
+      {
+        "contractId": {
+          "subtier": {
+            "code": "9700",
+            "name": "DEPT OF DEFENSE"
+          },
+          "piid": "W912BU23P0012",
+          "modificationNumber": "P00003",
+          "transactionNumber": "0",
+          "reasonForModification": {
+            "code": "B",
+            "name": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE"
+          }
+        },
+        "coreData": {
+          "coreVersionId": "1.5",
+          "solicitationId": "W912BU23R0015",
+          "awardOrIDV": "AWARD",
+          "awardOrIDVType": {
+            "code": "B",
+            "name": "PURCHASE ORDER"
+          },
+          "federalOrganization": {
+            "contractingInformation": {
+              "contractingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "contractingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "contractingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA",
+                "country": "USA"
+              }
+            },
+            "fundingInformation": {
+              "fundingDepartment": {
+                "code": "9700",
+                "name": "DEPT OF DEFENSE"
+              },
+              "fundingSubtier": {
+                "code": "2100",
+                "name": "DEPT OF THE ARMY"
+              },
+              "fundingOffice": {
+                "code": "W912BU",
+                "name": "W2SD ENDIST PHILADELPHIA"
+              },
+              "foreignFunding": {
+                "code": "X",
+                "name": "NOT APPLICABLE"
+              }
+            }
+          },
+          "acquisitionData": {
+            "typeOfContractPricing": {
+              "code": "J",
+              "name": "FIRM FIXED PRICE"
+            },
+            "programAcronym": "N/A",
+            "nationalInterestAction": {
+              "code": "NONE",
+              "name": "NONE"
+            },
+            "performanceBasedServiceContract": {
+              "code": "Y",
+              "name": "YES - SERVICE WHERE PBA IS USED."
+            },
+            "consolidatedContract": {
+              "code": "D",
+              "name": "NOT CONSOLIDATED"
+            },
+            "typeOfIdc": {
+              "code": "N/A"
+            },
+            "reasonForInterAgencyContracting": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "contractFinancing": {
+              "code": "Z",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "legislativeMandates": {
+            "clingerCohenAct": {
+              "code": "N",
+              "name": "NO"
+            },
+            "materialsSuppliesArticlesEquipment": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "laborStandards": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "constructionWageRateRequirements": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "interagencyContractingAuthority": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            }
+          },
+          "principalPlaceOfPerformance": {
+            "city": {
+              "name": "BAYONNE"
+            },
+            "county": {
+              "code": "17",
+              "name": "HUDSON"
+            },
+            "state": {
+              "code": "NJ",
+              "name": "NEW JERSEY"
+            },
+            "zipCode": "070020289",
+            "congressionalDistrict": "08",
+            "country": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "productOrServiceInformation": {
+            "recoveredMaterialClauses": {
+              "code": "C",
+              "name": "NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED"
+            },
+            "productOrService": {
+              "type": "SERVICE",
+              "code": "J998",
+              "name": "NON-NUCLEAR SHIP REPAIR (EAST)"
+            },
+            "principalNaics": [
+              {
+                "code": "336611",
+                "name": "SHIP BUILDING AND REPAIRING"
+              }
+            ],
+            "contractBundling": {
+              "code": "H",
+              "name": "NOT BUNDLED"
+            },
+            "dodAcquisitionProgram": {
+              "code": "000",
+              "name": "NONE"
+            },
+            "gfeGfp": {
+              "code": "N",
+              "name": "TRANSACTION DOES NOT USE GFE/GFP"
+            },
+            "informationTechnologyCommercialItemCategory": {
+              "code": "Z",
+              "name": "NOT IT PRODUCTS OR SERVICES"
+            },
+            "countryOfOrigin": {
+              "code": "USA",
+              "name": "UNITED STATES"
+            }
+          },
+          "competitionInformation": {
+            "extentCompeted": {
+              "code": "F",
+              "name": "COMPETED UNDER SAP"
+            },
+            "solicitationProcedures": {
+              "code": "SP1",
+              "name": "SIMPLIFIED ACQUISITION"
+            },
+            "typeOfSetAside": {
+              "code": "SBA",
+              "name": "SMALL BUSINESS SET ASIDE - TOTAL"
+            },
+            "localAreaSetAside": {
+              "code": "N",
+              "name": "NO"
+            },
+            "sourceSelectionProcess": {
+              "code": "O",
+              "name": "Other"
+            },
+            "preAwardSynopsisRequirement": {
+              "code": "N",
+              "name": "No"
+            },
+            "smallBusinessCompetitivenessDemonstrationProgram": {
+              "name": "NO"
+            }
+          },
+          "acquisitionMarketingData": {
+            "whoCanUse": {
+              "code": "N/A"
+            },
+            "emailAddress": "N/A"
+          }
+        },
+        "awardDetails": {
+          "dates": {
+            "dateSigned": "2023-06-29T00:00:00Z",
+            "periodOfPerformanceStartDate": "2023-02-24 00:00:00.000",
+            "currentCompletionDate": "2023-07-12 00:00:00.000",
+            "ultimateCompletionDate": "2023-07-12 00:00:00.000",
+            "fiscalYear": "2023"
+          },
+          "dollars": {
+            "actionObligation": 40404.6,
+            "baseDollarsObligated": 1373573.39,
+            "baseAndExercisedOptionsValue": 40404.6,
+            "baseAndAllOptionsValue": 40404.6,
+            "feePaidForUseOfService": 0
+          },
+          "totalContractDollars": {
+            "totalActionObligation": 1798602.08,
+            "totalBaseAndExercisedOptionsValue": 1798602.08,
+            "totalBaseAndAllOptionsValue": 1798602.08
+          },
+          "contractData": {
+            "purchaseCardAsPaymentMethod": {
+              "code": "N",
+              "name": "NO"
+            },
+            "undefinitizedAction": {
+              "code": "X",
+              "name": "NO"
+            },
+            "natureOfServices": {
+              "code": "OT",
+              "name": "OTHER FUNCTIONS"
+            },
+            "emergencyAcquisition": {
+              "code": "X",
+              "name": "NOT APPLICABLE"
+            },
+            "numberOfActions": "1"
+          },
+          "productOrServiceInformation": {
+            "descriptionOfContractRequirement": "HAYWARD DRY DOCK REPAIRS",
+            "useOfEpaDesignatedProducts": {
+              "code": "E",
+              "name": "NOT REQUIRED"
+            },
+            "placeOfManufacture": {
+              "code": "C",
+              "name": "NOT A MANUFACTURED END PRODUCT"
+            },
+            "domesticOrForeignEntity": {
+              "code": "A",
+              "name": "U.S. OWNED BUSINESS"
+            }
+          },
+          "competitionInformation": {
+            "commercialProductsAndServicesAcquisitionProcedures": {
+              "code": "A",
+              "name": "COMMERCIAL PRODUCTS/SERVICES"
+            },
+            "commercialItemTestProgram": {
+              "code": "N",
+              "name": "NO"
+            },
+            "evaluatedPreference": {
+              "code": "NONE",
+              "name": "NO PREFERENCE USED"
+            },
+            "numberOfOffersReceived": "3",
+            "typeOfSetAsideSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "numberOfOffersSource": {
+              "code": "F",
+              "name": "This Action"
+            },
+            "contractOpportunitiesNotice": {
+              "code": "Y",
+              "name": "YES"
+            },
+            "alternativeAdvertising": {
+              "code": "N",
+              "name": "NO"
+            },
+            "synopsisWaiverException": {
+              "code": "N",
+              "name": "NOT APPLICABLE."
+            }
+          },
+          "preferenceProgramsInformation": {
+            "contractingOfficerBusinessSizeDetermination": [
+              {
+                "code": "S",
+                "name": "SMALL BUSINESS"
+              }
+            ],
+            "subcontractPlan": {
+              "code": "B",
+              "name": "PLAN NOT REQUIRED"
+            }
+          },
+          "legislativeMandates": {
+            "additionalReporting": {
+              "code": "NONE",
+              "name": "NONE OF THE ABOVE"
+            }
+          },
+          "contractMarketingData": {
+            "typeOfFeeForUseOfService": {
+              "code": "N/A"
+            },
+            "orderingProcedure": "N/A"
+          },
+          "awardeeData": {
+            "awardeeHeader": {
+              "awardeeName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeAlternateName": "BDD",
+              "legalBusinessName": "BAYONNE DRYDOCK & REPAIR CORP.",
+              "awardeeNameFromContract": "BAYONNE DRYDOCK & REPAIR CORP."
+            },
+            "awardeeUEIInformation": {
+              "uniqueEntityId": "JQ8KFGG5RCL4",
+              "cageCode": "4MTD3",
+              "awardeeUltimateParentUniqueEntityId": "JQ8KFGG5RCL4",
+              "awardeeUltimateParentName": "BAYONNE DRY-DOCK & REPAIR CORP"
+            },
+            "awardeeLocation": {
+              "streetAddress1": "100 MILITARY OCEAN TERM ST",
+              "city": "BAYONNE",
+              "state": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "zip": "07002",
+              "country": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              },
+              "congressionalDistrict": "10",
+              "phoneNumber": "2018239295",
+              "faxNumber": "2018239298"
+            },
+            "awardeeAlternateSiteCode": "07002",
+            "awardeeRegistrationDetails": {
+              "registrationDate": "2007-01-16 00:00:00.000",
+              "renewalDate": "2024-01-11 00:00:00.000"
+            },
+            "awardeeBusinessTypes": {
+              "isUsFederalGovernment": {
+                "usFederalGovernment": "NO",
+                "federalAgency": "NO",
+                "federallyFundedResearchAndDevelopmentCorp": "NO"
+              },
+              "usStateGovernment": "NO",
+              "foreignGovernment": "NO",
+              "usTribalGovernment": "NO",
+              "communityDevelopmentCorporationOwnedConcern": "NO",
+              "isUsLocalGovernment": {
+                "usLocalGovernment": "NO",
+                "city": "NO",
+                "county": "NO",
+                "intermunicipal": "NO",
+                "localGovernmentOwned": "NO",
+                "municipality": "NO",
+                "schooldistrict": "NO",
+                "township": "NO"
+              },
+              "usGovernmentEntity": "NO",
+              "laborSurplusAreaFirm": "NO",
+              "businessOrOrganization": {
+                "corporateEntityNotTaxExempt": "YES",
+                "corporateEntityTaxExempt": "NO",
+                "partnershipOrLimitedLiabilityPartnership": "NO",
+                "soleProprietorship": "NO",
+                "smallAgriculturalCooperative": "NO",
+                "internationalOrganization": "NO"
+              }
+            },
+            "socioEconomicData": {
+              "alaskanNativeCorporationOwnedFirm": "NO",
+              "americanIndianOwned": "NO",
+              "indianTribeFederallyRecognized": "NO",
+              "nativeHawaiianOrganizationOwnedFirm": "NO",
+              "triballyOwnedFirm": "NO",
+              "veteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusiness": "NO",
+              "serviceDisabledVeteranOwnedBusinessJointVenture": "NO",
+              "isMinorityOwnedBusiness": {
+                "minorityOwnedBusiness": "NO",
+                "asianPacificAmericanOwned": "NO",
+                "blackAmericanOwned": "NO",
+                "hispanicAmericanOwned": "NO",
+                "nativeAmericanOwned": "NO",
+                "subcontinentAsianAsianIndianAmericanOwned": "NO",
+                "individualOrConcernOtherThanOneOfThePreceding": "NO"
+              },
+              "womenOwnedBusiness": "NO",
+              "womenOwnedSmallBusiness": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "womenOwnedSmallBusinessJointVenture": "NO",
+              "economicallyDisadvantagedWomenOwnedSmallBusinessJointVenture": "NO",
+              "emergingSmallBusiness": "NO",
+              "smallBusinessJointVenture": "NO",
+              "smallBusiness": "NO",
+              "VerySmallBusiness": "NO"
+            },
+            "lineOfBusiness": {
+              "communityDevelopmentCorporation": "NO",
+              "domesticShelter": "NO",
+              "educationalInstitution": "NO",
+              "foundation": "NO",
+              "hospital": "NO",
+              "manufacturerOfGoods": "NO",
+              "veterinaryHospital": "NO",
+              "hispanicServicingInstitution": "NO"
+            },
+            "relationshipWithFederalGovernment": {
+              "contracts": "NO",
+              "federalassistanceawards": "NO",
+              "allawards": "YES"
+            },
+            "otherGovernmentalEntities": {
+              "airportAuthority": "NO",
+              "councilOfGovernments": "NO",
+              "housingAuthoritiesPublicTribal": "NO",
+              "interstateEntity": "NO",
+              "planningCommission": "NO",
+              "portAuthority": "NO",
+              "transitAuthority": "NO"
+            },
+            "organizationFactors": {
+              "subchapterSCorporation": "NO",
+              "limitedLiabilityCorporation": "NO",
+              "foreignOwned": "NO",
+              "theAbilityOneProgram": "NO",
+              "profitStructure": {
+                "forProfitOrganization": "YES",
+                "nonProfitOrganization": "NO",
+                "otherNotForProfitOrganization": "NO"
+              },
+              "organizationType": "CORPORATE NOT TAX EXEMPT",
+              "stateOfIncorporation": {
+                "code": "NJ",
+                "name": "NEW JERSEY"
+              },
+              "countryOfIncorporation": {
+                "code": "USA",
+                "name": "UNITED STATES"
+              }
+            },
+            "educationalEntities": {
+              "historicallyBlackCollegeOrUniversity": "NO",
+              "minorityInstitution": "NO",
+              "privateUniversityOrCollege": "NO",
+              "schoolOfForestry": "NO",
+              "stateControlledInstitutionOfHigherLearning": "NO",
+              "tribalCollege": "NO",
+              "veterinaryCollege": "NO",
+              "alaskanNativeServicingInstitution": "NO",
+              "nativeHawaiianServicingInstitution": "NO",
+              "1862LandGrantCollege": "NO",
+              "1890LandGrantCollege": "NO",
+              "1994LandGrantCollege": "NO"
+            },
+            "certifications": {
+              "sbaCertified8aProgramParticipant": "NO",
+              "sbaCertified8aJointVenture": "NO",
+              "selfCertifiedHubZoneJointVenture": "NO",
+              "sbaCertifiedSmallDisadvantagedBusiness": "NO",
+              "sbaCertifiedHubZoneFirm": "NO",
+              "sbaCertifiedEconomicallyDisadvantagedWomenOwnedSmallBusiness": "NO",
+              "selfCertifiedSmallDisadvantagedBusiness": "NO",
+              "dotCertifiedDisadvantagedBusinessEnterprise": "NO",
+              "sbaCertifiedWomenOwnedSmallBusiness": "NO"
+            }
+          },
+          "transactionData": {
+            "status": {
+              "code": "F",
+              "name": "FINAL"
+            },
+            "version": "1.5",
+            "createdBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "createdDate": "2023-06-29T11:51:50.000Z",
+            "lastModifiedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "lastModifiedDate": "2023-06-29T07:51:54Z",
+            "approvedBy": "ROBERT.W.HUTCHEON.W912BU@USACE.ARMY.MIL",
+            "approvedDate": "2023-06-29T07:51:54Z",
+            "closedStatus": "N"
+          }
+        }
+      }
+    ],
+    "totalRecords": "14",
+    "limit": "10",
+    "offset": "1"
+  }
+}

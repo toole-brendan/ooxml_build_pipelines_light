@@ -29,18 +29,23 @@ REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
 TAXONOMY_PY = REPO / "projects/distributed_shipbuilding/tam/consolidated/workbook_consolidated/sheets/_taxonomy.py"
 REGISTRY_CSV = REPO / "projects/distributed_shipbuilding/sam/award_classification/supplier_bucketing/vendor_evidence_registry.csv"
 EXTRACTED = REPO / "projects/distributed_shipbuilding/sam/award_classification/corpus/extracted"
+# Versioned prime-contract scope manifest (workbook_award_classification_refactor). Every prime
+# flagged include=N is dropped from scope below, so out-of-scope primes (other-class /
+# design / lead-yard-support / ship-alteration / planning-yard) never reach the model.
+SCOPE_MANIFEST = REPO / ("projects/distributed_shipbuilding/sam/award_classification/"
+                         "workbook_award_classification_refactor/prime_contract_scope.csv")
 
 PROGRAMS = {
     "submarines": {
-        "fullhistory": REPO / "projects/distributed_shipbuilding/tam/submarines/research/sam_subawards_fullhistory",
-        "scope_json": REPO / "projects/distributed_shipbuilding/tam/submarines/extracted/nc_scope_summary.json",
-        "naics_csv": REPO / "projects/distributed_shipbuilding/tam/submarines/research/extracted/entity_naics_lookup.csv",
+        "fullhistory": REPO / "projects/distributed_shipbuilding/tam/virginia_columbia_research/research/sam_subawards_fullhistory",
+        "scope_json": REPO / "projects/distributed_shipbuilding/tam/virginia_columbia_research/extracted/nc_scope_summary.json",
+        "naics_csv": REPO / "projects/distributed_shipbuilding/tam/virginia_columbia_research/research/extracted/entity_naics_lookup.csv",
         "groups": None,                      # all in-scope PIIDs (GDEB shipbuilder-directed)
     },
     "ddg": {
-        "fullhistory": REPO / "projects/distributed_shipbuilding/tam/ddg/research/sam_subawards_fullhistory",
-        "scope_json": REPO / "projects/distributed_shipbuilding/tam/ddg/extracted/nc_scope_summary.json",
-        "naics_csv": REPO / "projects/distributed_shipbuilding/tam/ddg/research/extracted/entity_naics_lookup.csv",
+        "fullhistory": REPO / "projects/distributed_shipbuilding/tam/ddg_research/research/sam_subawards_fullhistory",
+        "scope_json": REPO / "projects/distributed_shipbuilding/tam/ddg_research/extracted/nc_scope_summary.json",
+        "naics_csv": REPO / "projects/distributed_shipbuilding/tam/ddg_research/research/extracted/entity_naics_lookup.csv",
         "groups": {"GD-BIW", "HII-Ingalls"},  # shipbuilder-directed only
     },
 }
@@ -147,15 +152,33 @@ def load_enrichment(program: str) -> dict[str, dict]:
     return enr
 
 
+def excluded_piids() -> set[str]:
+    """PIIDs flagged include=N in the prime-contract scope manifest. Empty if the manifest
+    is absent (defensive: other corpus consumers stay unaffected)."""
+    out: set[str] = set()
+    if not SCOPE_MANIFEST.exists():
+        return out
+    with SCOPE_MANIFEST.open(encoding="utf-8-sig", newline="") as fh:
+        for r in csv.DictReader(fh):
+            if (r.get("include") or "").strip().upper() == "N":
+                p = (r.get("piid") or "").strip()
+                if p:
+                    out.add(p)
+    return out
+
+
 def load_scope(program: str) -> tuple[dict[str, dict], set[str]]:
     """(in_scope_piids meta, excluded MIB UEI set), restricted to shipbuilder groups
-    for DDG."""
+    for DDG and to the manifest's include=Y primes."""
     cfg = PROGRAMS[program]
     with cfg["scope_json"].open(encoding="utf-8") as fh:
         scope = json.load(fh)
     piids = scope.get("in_scope_piids") or {}
     if cfg["groups"] is not None:
         piids = {p: v for p, v in piids.items() if v.get("group") in cfg["groups"]}
+    excl = excluded_piids()
+    if excl:
+        piids = {p: v for p, v in piids.items() if p not in excl}
     mib = set((scope.get("excluded_mib_ueis") or {}).keys())
     return piids, mib
 

@@ -2,7 +2,24 @@
 
 How to pull federal procurement data from SAM.gov's public APIs **correctly the first time**, written from production experience including every gotcha that cost us calls.
 
-Last updated: 2026-05-23 — adds the macOS IPv6 / Python urllib slowness diagnosis (see "Critical: Force IPv4 in Python on macOS" below), confirmed across submarine + DDG-51 destroyer outsourcing pulls.
+Last updated: 2026-06-21 — **the `piid` filter casing REVERSED** (see the ⚠ box directly below); also retains the 2026-05-23 macOS IPv6 / Python urllib slowness diagnosis (see "Critical: Force IPv4 in Python on macOS" below), confirmed across submarine + DDG-51 destroyer outsourcing pulls.
+
+> ## ⚠⚠ BREAKING CHANGE 2026-06-21: the `piid` filter is now case-SENSITIVE and wants UPPERCASE
+>
+> The subaward-search `piid` filter flipped casing semantics between 2026-05 and 2026-06.
+> **As of 2026-06-21, you MUST send the PIID in UPPERCASE, no dashes** (`N0002417C2100`):
+>
+> | form sent | result (2026-06-21) |
+> |---|---|
+> | `piid=N0002417C2100` (UPPERCASE, no dash) | **5687 records** ✅ |
+> | `piid=n0002417c2100` (lowercase, no dash) | **0 records** — filter is echoed in `nextPageLink` but matches nothing, **silently** |
+> | `piid=N00024-17-C-2100` / `n00024-17-c-2100` (dashed) | **HTTP 400 Bad Request** |
+>
+> This is the exact OPPOSITE of what the 2026-05 version of this guide said (lowercase).
+> The failure mode is nasty: lowercase returns a clean `200` with `totalRecords: 0`, so it
+> looks like "this prime has no subawards" rather than "your filter was mis-cased." If a PIID
+> you expect to have subs returns 0, **re-test in UPPERCASE before concluding the gap is real.**
+> Every code/table claim below that says "lowercase" is superseded by this box.
 
 Companion to the broader FPDS / USAspending / SAM.gov field guide at `reference_prior_analysis/federal_procurement_data_guide.txt`.
 
@@ -12,7 +29,7 @@ Companion to the broader FPDS / USAspending / SAM.gov field guide at `reference_
 
 1. **You probably want the Acquisition Subaward Reporting API**, not the Opportunities API, if you're trying to fill subaward visibility gaps. It returns first-tier subcontract records and is the upstream source for USAspending's `/api/v2/subawards/` endpoint.
 2. **Get an entity-role account** at sam.gov before pulling anything — the daily quota jumps from 10/day (personal) to 1,000/day (entity-role) or 10,000/day (federal system account).
-3. **The human-readable docs page lies about parameter casing.** Use the OpenAPI YAML spec as the source of truth. The subaward search filter is `piid` (lowercase), not `PIID` as the docs table claims.
+3. **The `piid` filter is case-sensitive and now wants UPPERCASE no-dash** (`N0002417C2100`) — see the ⚠ box above. (The 2026-05 guide said lowercase; that reversed on 2026-06-21. Dashed PIIDs now 400.) The filter name itself is lowercase `piid`, not `PIID`.
 4. **The production endpoint is `https://api.sam.gov/prod/…`.** The docs' example URLs drop `/prod/` and return 404 in production. Keep `/prod/`.
 5. **Python on macOS: force IPv4** (`socket.getaddrinfo` monkeypatch) or every request hangs ~225s on IPv6 SYN-retransmit. **This is the single biggest performance gotcha in this guide.** See section below.
 6. **SAM.gov subaward data is clean of revision-stacking dedup problems.** Every `subAwardReportId` is unique. Verified on 17,945+ records: zero collisions.
@@ -191,7 +208,7 @@ The human-readable docs page at `open.gsa.gov/api/acquisition-subaward-reporting
 | `pageSize` | string | no | Default '100', max **1,000** |
 | `status` | string | no | `Published` (default) or `Deleted`. Query each separately for full audit trail. |
 | `uniqueAwardKey` | string | no | Unique business key per prime contract |
-| **`piid`** | string | no | **LOWERCASE.** Prime contract PIID. The docs table showing 'PIID' uppercase is wrong. |
+| **`piid`** | string | no | **UPPERCASE, no dashes** as of 2026-06-21 (`N0002417C2100`) — case-SENSITIVE; lowercase silently returns 0, dashed returns HTTP 400. (The filter *name* is lowercase `piid`; its *value* must be uppercase. This reversed from the 2026-05 lowercase rule — see the ⚠ box at top.) |
 | `agencyId` | string | no | Awarding agency code (numeric string like "1700" for DON, "9700" for DoD) |
 | `referencedIDVPIID` | string | no | Parent IDV PIID (note: docs table inconsistently shows "referencedIdvPIID" mixed-case; actual example URL uses all-caps "IDV") |
 | `referencedIDVAgencyId` | string | no | Parent IDV agency code |
@@ -234,7 +251,7 @@ Real example:
 
 ### PIID format
 
-Use the **no-dash format**: `N0002417C2117`, not `N00024-17-C-2117`. SAM.gov stores PIIDs without dashes. Both formats are accepted on input.
+Use the **UPPERCASE no-dash format**: `N0002417C2117`, not `N00024-17-C-2117` and not `n0002417c2117`. SAM.gov stores PIIDs uppercase without dashes, and as of 2026-06-21 matches them **case-sensitively** — lowercase silently returns 0 records, and the dashed form now returns **HTTP 400** (it used to be accepted). See the ⚠ box at the top of this guide.
 
 PIIDs starting with `M67854` are MARCORSYSCOM (Marine Corps Systems Command) — they ARE under DON (1700) for FPDS contracting-agency purposes, but most aren't Navy ships. The vendor-name filter on FPDS will sometimes pull Marine Corps land-vehicle programs (AAV / ACV / JLTV at BAE Land & Armaments) into a "Navy" sweep — confirmed during 2026-05-23 DDG-51 discovery when `M6785416C0006` surfaced with IVECO Defence Vehicles as top sub. Filter by description or PIID prefix downstream.
 
@@ -497,7 +514,7 @@ def load_api_key(env_path=".env"):
 def call(api_key, piid, page=0, page_size=1000, status="Published"):
     params = {
         "api_key": api_key,
-        "piid": piid,           # NB: LOWERCASE per OpenAPI spec
+        "piid": piid.upper(),   # NB: UPPERCASE no-dash as of 2026-06-21 (was lowercase pre-2026-06; see ⚠ box at top)
         "pageNumber": page,
         "pageSize": page_size,
         "status": status,
@@ -621,3 +638,4 @@ When a vendor like "BAE SYSTEMS LAND & ARMAMENTS" or "ROLLS-ROYCE" surfaces in a
 
 - **2026-05-22** — Initial version, based on a working production pull of 17,945 first-tier subaward records across 42 submarine prime PIIDs (Va Block I-VI + Col Build I-II + BPMI reactor + Va GFE primes). Corrected the OPS quota figures and parameter casing claims in the older `federal_procurement_data_guide.txt`.
 - **2026-05-23** — Added the **macOS IPv6 / Python urllib slow-page diagnosis** (225s per page → 0.3-0.5s with `socket.getaddrinfo` AF_INET monkeypatch). Diagnosed during the DDG-51 outsourced-work pull when the same urllib code that ran "OK" in the submarine pull began consistently timing out. The fix is now the recommended default; the curl-subprocess workaround used in `pull_sam_entity_naics.py` is documented as an alternative. Added MARCORSYSCOM / NAVAIR PIID-prefix gotcha after Marine Corps land-vehicle contracts surfaced in a Navy-only sweep.
+- **2026-06-21** — **`piid` filter casing REVERSED to UPPERCASE no-dash** (case-sensitive; lowercase silently → 0 records, dashed → HTTP 400). Discovered while completing the Electric Boat submarine-prime denominator: a sweep written to the old lowercase rule returned `totalRecords: 0` for *every* PIID including masters known to have thousands of subs (`N0002417C2100` → 0 lowercase vs **5687** uppercase). Added the ⚠ breaking-change box at top and corrected the TL;DR, parameter table, PIID-format section, and code pattern. Lesson reinforced: **a 0-record response is ambiguous between "no subs" and "mis-cased filter" — always re-test in uppercase before declaring a reporting gap real.**

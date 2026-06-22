@@ -482,11 +482,22 @@ BORDER_TOP_FOR = {
 # table can get a banded default re-injected; see table_style_names.py).
 
 # dxfId=0: intentionally empty (no font/fill/border/numFmt). RESERVED for the
-# no-format table style — any future conditional-formatting dxf appends AFTER it
-# (dxfId=1, 2, …).
+# no-format table style — any conditional-formatting dxf appends AFTER it (dxfId=1, 2, …).
+def _dxf_bgfill(rgb: str) -> str:
+    """A differential format that sets only a solid background fill — for conditional-
+    formatting highlights. bgColor is the fill Excel paints on a matching cell."""
+    return f'<dxf><fill><patternFill><bgColor rgb="{rgb}"/></patternFill></fill></dxf>'
+
+
 DXFS = [
-    "<dxf/>",
+    "<dxf/>",                       # dxfId=0 - reserved empty (no-format table style)
+    _dxf_bgfill("FFF4CCCC"),        # dxfId=1 DXF_ANOMALY  - light red
+    _dxf_bgfill("FFFFF2CC"),        # dxfId=2 DXF_IMMINENT - light amber
+    _dxf_bgfill("FFFCE4D6"),        # dxfId=3 DXF_COVERAGE - light orange
+    _dxf_bgfill("FFE2EFDA"),        # dxfId=4 DXF_INMARKET - light green
 ]
+# Symbolic dxfId handles for sheet-module conditional formatting (see primitives.cf_rule).
+DXF_ANOMALY, DXF_IMMINENT, DXF_COVERAGE, DXF_INMARKET = 1, 2, 3, 4
 
 # The table-style element slots, all pointed at the empty dxfId=0. Stripe slots
 # carry size="1" (matches what Excel emits); moot here since the dxf is empty and

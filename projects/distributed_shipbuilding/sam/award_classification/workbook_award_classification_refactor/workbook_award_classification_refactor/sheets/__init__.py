@@ -1,65 +1,83 @@
 """Sheet registry - the tab order and grouping for the workbook.
 
-ONE module per rendered sheet (one file = one tab). Tab order = the order of
-SHEETS below. Each module exposes a single tables.SheetEntry; each declares its
-group (see workbook_core.groups), and the blocks below keep each group contiguous
-and in groups.SHEET_GROUPS order. This workbook uses guide -> model -> data;
-package_workbook() asserts that invariant at build time.
+ONE module per rendered sheet (one file = one tab). Tab order = the order of SHEETS
+below. Each module exposes a single tables.SheetEntry and declares its group (see
+workbook_core.groups); the blocks below keep each group contiguous and in
+groups.SHEET_GROUPS canonical order. package_workbook() asserts that at build time.
 
-Three layers:
-  - guide : the classification legend (Taxonomy) + method (Methodology).
-  - model : the three program-vendor sheets - entity-grain derived cuts whose
-            Subaward $M / Actions / First / Last columns are LIVE SUMIFS / COUNTIFS /
-            MINIFS / MAXIFS over the transaction leaf below.
-  - data  : the raw source pulls - one subaward-transaction fact sheet per program
-            (the formula spine; it also carries each transaction's domestic/foreign
-            flag + country) plus two per-UEI dimension sheets (NAICS index, parents).
+Reader-first layers (answer -> scope -> levers -> model -> evidence):
+  - summary : the reader-facing answer pages - Executive Summary, the Domain
+              Concentration "where to play" cut, and the Market Bridge estimate.
+  - guide   : scope & method - Taxonomy, Methodology, the HII Co-Build narrative.
+  - inputs  : the editable classification levers - the NAICS-6 archetype crosswalk
+              and the hand-researched (Program, UEI) overrides.
+  - model   : the derived cuts - the three program-vendor roll-ups (live SUMIFS /
+              COUNTIFS / MINIFS / MAXIFS over the transaction leaves + a single
+              Supplier Master match-row) plus the per-subsystem SWBS roll-up.
+  - data    : the source evidence - the Supplier Master dimension, the SWBS crosswalk,
+              the deflators, and the three raw subaward-transaction fact spines.
 
 Shared NON-sheet helpers (imported by the sheet modules; NOT registered here):
-  - _layout   : RowCursor - a local row cursor over the workbook_core primitives
-  - _tabs     : canonical tab names (one place to rename a worksheet)
-  - _widths   : column widths + header alignment
-  - _cuts     : raw-string access to the extracted per-sheet CSVs (+ date_serial)
-  - _flat     : shared single-table sheet builder for the flat tabs
-  - _taxonomy : the finalized 3-axis classification vocabulary (constants)
+  - _layout / _tabs / _widths / _cuts / _flat / _fiscal / _program_vendors / _taxonomy
+  - _integrity : the build-stopping (Program x UEI) universe guard (called from lib.build)
 """
 from __future__ import annotations
 
 from . import (
-    # guide (the classification legend + method + NAICS-6 crosswalk)
+    # summary (reader-facing answer pages)
+    executive_summary,
+    domain_concentration,
+    parent_concentration,
+    market_bridge,
+    # guide (scope & method)
     taxonomy,
     guide_methodology,
+    hii_co_build,
+    # inputs (editable classification levers)
     naics6_archetype_map,
-    # model (refactored program-vendor sheets - live roll-ups over the tx leaf)
+    vendor_archetype_overrides,
+    # model (derived program-vendor roll-ups + per-subsystem SWBS roll-up)
     ddg_program_vendors,
+    ddg_swbs_rollup,
     virginia_program_vendors,
     columbia_program_vendors,
-    # data (raw transaction fact sheets - the roll-up spine)
+    # data (source evidence: dimension + crosswalk + deflators + raw transaction spines)
+    supplier_master,
+    hii_swbs_crosswalk,
+    deflators,
     ddg_subaward_transactions,
     virginia_subaward_transactions,
     columbia_subaward_transactions,
-    # data (per-UEI dimension sheets + the hand-researched archetype overrides)
-    subawardee_uei_index,
-    subawardee_parents,
-    vendor_archetype_overrides,
+    # validation (audit / sensitivity trail)
+    duplicate_audit,
 )
 
 
 SHEETS: list = [
-    # --- Guide ---
+    # --- Summary (the answer pages) ---
+    executive_summary.EXECUTIVE_SUMMARY,
+    domain_concentration.DOMAIN_CONCENTRATION,
+    parent_concentration.PARENT_CONCENTRATION,
+    market_bridge.MARKET_BRIDGE,
+    # --- Guide (scope & method) ---
     taxonomy.TAXONOMY,
     guide_methodology.METHODOLOGY,
+    hii_co_build.HII_CO_BUILD,
+    # --- Inputs (editable classification levers) ---
     naics6_archetype_map.NAICS_ARCHETYPE_MAP,
-    # --- Model (derived program-vendor roll-ups) ---
+    vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
+    # --- Model (derived program-vendor roll-ups + per-subsystem SWBS roll-up) ---
     ddg_program_vendors.DDG_PROGRAM_VENDORS,
+    ddg_swbs_rollup.DDG_SWBS_ROLLUP,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,
     columbia_program_vendors.COLUMBIA_PROGRAM_VENDORS,
-    # --- Data (raw transaction fact spine) ---
+    # --- Data (source evidence: dimension + crosswalk + deflators + raw fact spines) ---
+    supplier_master.SUPPLIER_MASTER,
+    hii_swbs_crosswalk.HII_SWBS_CROSSWALK,
+    deflators.DEFLATORS,
     ddg_subaward_transactions.DDG_SUBAWARD_TX,
     virginia_subaward_transactions.VIRGINIA_SUBAWARD_TX,
     columbia_subaward_transactions.COLUMBIA_SUBAWARD_TX,
-    # --- Data (per-UEI dimensions + archetype overrides) ---
-    subawardee_uei_index.SUBAWARDEE_UEI_INDEX,
-    subawardee_parents.SUBAWARDEE_PARENTS,
-    vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
+    # --- Validation (audit / sensitivity trail) ---
+    duplicate_audit.DUPLICATE_AUDIT,
 ]

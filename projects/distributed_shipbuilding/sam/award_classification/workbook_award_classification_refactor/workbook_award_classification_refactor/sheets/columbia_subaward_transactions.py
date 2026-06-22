@@ -13,6 +13,9 @@ Promoted accessor (imported by columbia_program_vendors): `columbia_tx_cols(head
 from __future__ import annotations
 
 from workbook_award_classification_refactor.sheets._flat import make_flat_sheet
+from workbook_award_classification_refactor.sheets._fiscal import (
+    TX_EXTRA_COLS, TX_FED_FY, TX_FACTOR, TX_REAL, tx_fy_formulas,
+)
 from workbook_award_classification_refactor.sheets._tabs import TAB_COLUMBIA_TX
 from workbook_award_classification_refactor.sheets._widths import (
     W_UEI, W_VENDOR, W_REPORTID, W_UUID, W_SUBNUM, W_DATE, W_AMOUNT, W_TEXT,
@@ -31,18 +34,24 @@ _WIDTHS = [
     W_UEI, W_VENDOR, W_TEXT_WIDE, W_NAICS, W_NAICS_DESC,
     W_ORGCODE, W_NAME, W_ORGCODE, W_NAME, W_ORGCODE, W_NAME,
     W_ORGCODE, W_NAME, W_ORGCODE, W_NAME, W_ORGCODE, W_NAME,
+    W_CD, W_CD, W_AMOUNT,               # Federal FY | Deflator Factor | Subaward $ FY2026$
 ]
-assert len(_WIDTHS) == 50, len(_WIDTHS)
+assert len(_WIDTHS) == 53, len(_WIDTHS)
 
 _DATE_COLS = ["Subaward Date", "Submitted Date", "Base Award Date Signed"]
 _FLOAT_COLS = ["Subaward Amount $", "Total Contract Value $"]
+# Transaction-grain constant-FY2026$ columns (sheet-only; see _fiscal / _flat.extra_cols).
+_FY_FORMULAS = tx_fy_formulas(
+    "columbia_subaward_transactions", date_header="Subaward Date",
+    amount_header="Subaward Amount $", extra_cols=TX_EXTRA_COLS)
 
 COLUMBIA_SUBAWARD_TX, columbia_tx_cols = make_flat_sheet(
     tab=TAB_COLUMBIA_TX, group="data",
     csv_name="columbia_subaward_transactions", table_name="ColumbiaSubawardTx",
     banner="§1 - Columbia-class subaward transactions",
-    intro="The raw Columbia-class subaward pull, CY2016-2025 - one row per deduped FSRS published report; nominal dollars, with MIB/BlueForge UEIs already removed upstream.",
+    intro="Deduplicated Columbia first-tier subaward reports; nominal and constant FY2026$.",
     widths=_WIDTHS,
-    float_cols=_FLOAT_COLS, date_cols=_DATE_COLS,
-    input_cols=_FLOAT_COLS + _DATE_COLS,
+    int_cols=[TX_FED_FY], float_cols=_FLOAT_COLS + [TX_FACTOR, TX_REAL],
+    date_cols=_DATE_COLS, input_cols=_FLOAT_COLS + _DATE_COLS,
+    formula_cols=_FY_FORMULAS, extra_cols=TX_EXTRA_COLS,
 )

@@ -21,7 +21,7 @@ from __future__ import annotations
 
 from workbook_army.sheets.data_contract_awards import awards_cols
 from workbook_army.sheets.data_award_actions import actions_cols
-from workbook_army.sheets.data_pipeline_events import pipeline_cols
+from workbook_army.sheets.data_notice_links import notice_links_cols
 
 
 def family_formulas(fam, asof):
@@ -31,10 +31,19 @@ def family_formulas(fam, asof):
     A_PARENT = actions_cols("parent_idv_piid")
     AW_PIID = awards_cols("piid")
     AW_PARENT = awards_cols("parent_idv_piid")
+    AW_OBLIG = awards_cols("obligation_amount")
     AW_CUR = awards_cols("pop_current_end_date")
     AW_POT = awards_cols("pop_potential_end_date")
-    PL_AWARDNO = pipeline_cols("award_number")
-    PL_DEADLINE = pipeline_cols("response_deadline")
+    # The in-market signal is now a CONFIRMED notice<->family link on the Notice Links
+    # sheet, not the old award_number match (an open notice has no award number yet, so
+    # that COUNTIFS never fired). A same-PSC coincidence is a separate "related activity"
+    # flag on the Research Queue; only analyst_confirmed="Y" here counts as in-market.
+    # The link must ALSO still be open: response_deadline >= As-of (a confirmed notice
+    # whose deadline has passed is no longer "in-market"). No separate lifecycle column
+    # exists, so the deadline is the open-notice proxy - same test as Related activity.
+    NL_FAMILY = notice_links_cols("family_key")
+    NL_CONFIRMED = notice_links_cols("analyst_confirmed")
+    NL_DEADLINE = notice_links_cols("response_deadline")
 
     def eff_end(rng):
         # Family end = MAX of the per-PIID and per-parent MAXIFS, so a task order folds
@@ -57,7 +66,11 @@ def family_formulas(fam, asof):
         "tos": lambda r: f'=COUNTIFS({AW_PARENT},{fam(r)})',
         "obl": lambda r: (f'=(SUMIFS({AMT},{A_PARENT},{fam(r)})'
                           f'+SUMIFS({AMT},{A_PIID},{fam(r)}))/1000000'),
+        # Award-reported obligation (the cumulative award-level lens), distinct from the
+        # per-mod reconstruction above; the two and their ratio surface the coverage gap.
+        "obl_award": lambda r: (f'=(SUMIFS({AW_OBLIG},{AW_PIID},{fam(r)})'
+                                f'+SUMIFS({AW_OBLIG},{AW_PARENT},{fam(r)}))/1000000'),
         "acts": lambda r: f'=COUNTIFS({A_PARENT},{fam(r)})+COUNTIFS({A_PIID},{fam(r)})',
-        "inmkt": lambda r: (f'=IF(COUNTIFS({PL_AWARDNO},{fam(r)},'
-                            f'{PL_DEADLINE},">="&{asof})>0,"Y","")'),
+        "inmkt": lambda r: (f'=IF(COUNTIFS({NL_FAMILY},{fam(r)},'
+                            f'{NL_CONFIRMED},"Y",{NL_DEADLINE},">="&{asof})>0,"Y","")'),
     }

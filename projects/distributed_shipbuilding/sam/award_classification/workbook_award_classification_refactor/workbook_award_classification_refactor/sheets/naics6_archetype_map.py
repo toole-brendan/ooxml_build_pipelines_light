@@ -24,10 +24,10 @@ _WIDTHS = [W_NAICS, W_NAICS_DESC, W_CONF, W_CONF, W_CONF, W_CONF, W_CODE,
            W_DOMFOR, W_DOMFOR]
 
 NAICS_ARCHETYPE_MAP, naics_map_cols = make_flat_sheet(
-    tab=TAB_NAICS_MAP, group="guide",
+    tab=TAB_NAICS_MAP, group="inputs",
     csv_name="naics6_archetype_map", table_name="Naics6ArchetypeMap",
     banner="§1 - NAICS-6 to archetype crosswalk",
-    intro="One row per observed NAICS-6: the default Capability Domain, Operating Role (internal) and Primary Output used when a vendor has no research override.",
+    intro="Default domain, role and output by observed NAICS-6.",
     widths=_WIDTHS,
     # leaf source values rendered blue: the lookup key + the three classification codes.
     input_cols=["NAICS-6", "Capability Domain (D)",

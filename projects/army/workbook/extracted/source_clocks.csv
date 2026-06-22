@@ -1,0 +1,9 @@
+source,data_through_date,reporting_lag,note
+data_snapshot,2026-06-20,,Date the source data was pulled (a fixed fact about this build). The EDITABLE model clock is a separate live cell - Timing & Incumbent Screen $C$6 - which re-clocks every expiry column; see Overview > Model As-of date.
+budget_vintage,FY2022-FY2027 PB books,,Then-year $; 51-book corpus.
+usaspending_awards,2026-06-20,~1-2 wk,Discovery+detail snapshot date.
+usaspending_actions,2026-06-20,~1-2 wk,Per-mod transactions (sum-able).
+fpds_actions,2026-06-20,varies,Atom feed; authoritative per-mod obligations.
+sam_subawards,2026-06-20,6-18 mo,FFATA first-tier; lags primes.
+sam_opportunities,2026-06-20,n/a,Trailing-363-day active pull.
+sam_contract_awards,2026-06-20,DoD 90-day,"REVEALED only: DoD awards signed <90 days are EXCLUDED (non-federal key). Used for parent-IDV hydration + a third-lens family total, not as ground truth for obligations."

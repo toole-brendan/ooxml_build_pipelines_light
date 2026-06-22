@@ -42,8 +42,8 @@ W_COUNTRY    = 16    # country of performance / origin
 W_FY         = 10    # federal fiscal year
 
 # Names / terms
-W_VENDOR     = 34    # vendor name (long edge-case names clip)
-W_NAME       = 30    # normalized vendor / business-unit name
+W_VENDOR     = 31    # vendor name (long edge-case names clip)
+W_NAME       = 27    # normalized vendor / business-unit name
 W_TERM       = 30    # taxonomy term (capability domain / role / physical-form name)
 W_SUPTYPE    = 16    # supplier type (integrator/OEM, manufacturer, ...)
 
@@ -54,15 +54,15 @@ W_COUNT      = 13    # record-count column
 # Short-phrase categorical columns
 W_WORKTYPE   = 30    # work type / work-type id (the bucketed label)
 W_CATEGORY   = 28    # delivery / output / assignment category labels
-W_NAICS_DESC = 34    # NAICS description
+W_NAICS_DESC = 31    # NAICS description
 
 # Free text (no-wrap; sized to read the opening clause)
-W_TEXT       = 46    # general prose (basis, what-they-make, products)
-W_TEXT_WIDE  = 64    # long prose (definitions, role summaries, evidence notes)
+W_TEXT       = 35    # general prose (basis, what-they-make, products)
+W_TEXT_WIDE  = 42    # long prose (definitions, role summaries, evidence notes)
 W_URL        = 44    # source-URL list
 
 # Raw subaward-transaction fields (the faithful FSRS published-record pull)
-W_UUID       = 38    # subaward report number (UUID)
+W_UUID       = 31    # subaward report number (UUID)
 W_SUBNUM     = 18    # subaward number (810920-1 / PPC085=031)
 W_AMOUNT     = 16    # raw subaward amount in dollars
 W_TCV        = 18    # total prime contract value in dollars
@@ -74,7 +74,7 @@ W_CC         = 12    # country code
 W_ZIP        = 12    # zip
 W_BIZCODE    = 14    # joined business-type codes
 W_PAY        = 16    # joined top-pay salaries
-W_CONTRACTKEY= 42    # prime contract key (CONT_AWD_...)
+W_CONTRACTKEY= 34    # prime contract key (CONT_AWD_...)
 W_REFIDV     = 14    # referenced IDV agency id (blank field, kept)
 W_AWARDTYPE  = 14    # prime award type (AWARD)
 W_ORGCODE    = 12    # funding/contracting agency-office-dept codes
