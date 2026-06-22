@@ -20,11 +20,8 @@ BUDGET_FACTS, budget_facts_cols = make_flat_sheet(
     tab=TAB_BUDGET_FACTS, group="data",
     csv_name="budget_funding_facts", table_name="BudgetFacts",
     banner="§1 - Budget funding facts (tidy/long; P-40 / R-2 / R-2A)",
-    intro="Faithful funding facts from the FY22-27 President's Budget books - one row per "
-          "line-item x vintage x measure x year x column. amount is $M, then-year. NEVER "
-          "sum across amount_type or column_role (request / enacted / actual / outyear are "
-          "overlapping views, not additive); the Budget Market + Market Size sheets apply "
-          "the rules. Each row cites its exact page + source_id (-> Source Log).",
+    intro="Funding facts from the FY22-27 PB books, one row per line x vintage x measure x "
+          "year. Never sum across money types ($M, then-year).",
     width_fn=contract_width,
     float_cols=["amount"], int_cols=["page"], input_cols=["amount"],
 )

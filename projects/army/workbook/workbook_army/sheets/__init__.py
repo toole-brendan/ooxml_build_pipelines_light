@@ -28,6 +28,7 @@ from . import (
     model_market_size,
     model_recompete_radar,
     model_recompete_calendar,
+    model_timing_detail,
     # data (faithful raw contract pulls)
     data_contract_awards,
     data_award_actions,
@@ -62,6 +63,7 @@ SHEETS = [
     model_market_size.MARKET_SIZE,
     model_recompete_radar.RECOMPETE_RADAR,
     model_recompete_calendar.RECOMPETE_CALENDAR,
+    model_timing_detail.TIMING_DETAIL,
     # Data (raw contract evidence)
     data_contract_awards.CONTRACT_AWARDS,
     data_award_actions.AWARD_ACTIONS,

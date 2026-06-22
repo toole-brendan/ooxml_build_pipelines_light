@@ -21,9 +21,9 @@ from docx_core.lib import package_docx
 DOC_DIR = Path(__file__).resolve().parents[1]       # projects/distributed_shipbuilding/doc/
 PROJECT_DIR = Path(__file__).resolve().parents[1]   # projects/distributed_shipbuilding/  (build output lands here)
 
-OUT = PROJECT_DIR / "20260616_Outsourcing Ceiling_Methodology_vS.docx"
+OUT = PROJECT_DIR / "20260622_SIB Discussion Questions_vS.docx"
 
-_TITLE = "Outsourcing Ceiling - Plain-Language Methodology"
+_TITLE = "Submarine Industrial Base - Discussion Questions"
 _CREATOR = "doc_outsourced_ceiling build_outsourced_ceiling.py"
 _APP = "doc_outsourced_ceiling"
 

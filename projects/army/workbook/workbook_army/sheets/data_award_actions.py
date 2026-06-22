@@ -25,9 +25,8 @@ AWARD_ACTIONS, actions_cols = make_flat_sheet(
     tab=TAB_AWARD_ACTIONS, group="data",
     csv_name="contract_award_actions", table_name="AwardActions",
     banner="§1 - Award modifications (per-mod obligations)",
-    intro="The sum-able table - one row per modification, amount_type=obligation. "
-          "FPDS per-mod obligatedAmount wins; USAspending transactions fill the rest "
-          "(see source_system). Sum the Amount column to total obligations.",
+    intro="Sum-able obligations, one row per modification (amount_type=obligation). Sum the "
+          "Amount column for lifetime totals.",
     width_fn=contract_width,
     float_cols=_FLOAT, int_cols=_INT, date_cols=_DATE,
     input_cols=_FLOAT + _DATE,

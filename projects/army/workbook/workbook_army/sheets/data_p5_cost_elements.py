@@ -19,10 +19,8 @@ P5_COST_ELEMENTS, p5_cols = make_flat_sheet(
     tab=TAB_P5_COST, group="data",
     csv_name="budget_p5_cost_elements", table_name="P5CostElements",
     banner="§1 - P-5 cost elements (sub-line; child-grain evidence)",
-    intro="Budget-native P-5 cost-element decomposition of each P-1 line (faithful, not a "
-          "work-package model). total_cost_m is $M; is_subtotal rows are rollups - never sum "
-          "a subtotal with its components, and never sum a component into the parent P-1. "
-          "raw_context (the source line) is in the cell note for audit.",
+    intro="P-5 cost-element decomposition per P-1 line ($M). Subtotal rows are rollups - "
+          "never sum a subtotal with its components.",
     width_fn=contract_width,
     float_cols=["unit_cost_k", "qty_each", "total_cost_m"], int_cols=["page"],
     input_cols=["unit_cost_k", "qty_each", "total_cost_m"],

@@ -39,22 +39,21 @@ from collections import defaultdict
 
 from workbook_core.primitives import col_letter, worksheet, cf_rule
 from workbook_core.styles import (
-    S_BOLD, S_DATE, S_DATE_INPUT, S_DATE_LINK, S_DEFAULT, S_INT, S_LINK_NUM, S_NUM,
-    S_PCT, S_LINK_PCT,
+    S_BOLD, S_DATE_INPUT, S_DATE_LINK, S_DEFAULT, S_INT, S_LINK_NUM, S_NUM, S_LINK_PCT,
     S_TITLE_SECTION, S_TITLE_SHEET,
-    DXF_ANOMALY, DXF_IMMINENT, DXF_COVERAGE, DXF_INMARKET,
+    DXF_IMMINENT, DXF_COVERAGE, DXF_INMARKET,
 )
 from workbook_core.tables import ExcelTable, WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
 from workbook_army.sheets._layout import RowCursor
 from workbook_army.sheets._cuts import load_table, date_serial
-from workbook_army.sheets._text_input import S_TEXT_INPUT
 from workbook_army.sheets._italic import S_ITALIC
 from workbook_army.sheets._widths import header_styles
 from workbook_army.sheets._tabs import TAB_TIMING_SCREEN, AS_OF_ROW
 from workbook_army.sheets._radar_formulas import family_formulas
 from workbook_army.sheets.data_contract_families import families_cols
 from workbook_army.sheets.model_market_size import market_size_cols
+from workbook_army.sheets.input_recompete_reviews import recompete_reviews_cols
 from workbook_army.sheets._analyst import load_analyst_table, value as a_value, ANALYST_DIR
 from workbook_army.sheets import config as CFG
 
@@ -69,47 +68,25 @@ _OVERLAP_DAYS = CFG.OVERLAP_DAYS
 _WC_PSC, _WC_NAICS = CFG.WC_PSC, CFG.WC_NAICS
 _WC_PRIMES, _WC_DESC = CFG.WC_PRIMES, CFG.WC_DESC
 
+# The NARROW primary screen (audit #5): the decision-grade columns only. Cohort structure,
+# the four end-date lenses, reconciliation, lineage candidates, action counts and anomaly
+# detail move to the companion Timing Detail sheet; the per-family analyst judgment lives on
+# the Recompete Reviews input tab (linked here). Selected $M / Coverage / Decision date are
+# green links into Contract Families; Confidence / Pursuit access link Recompete Reviews.
 _HEADERS = [
     "Family (vehicle PIID)", "Incumbent", "Customer segment", "Saronic tier",
-    "Relevance basis", "PSC", "NAICS", "Last competition", "Predecessor vehicle",
-    "Successor vehicle",
-    "Vehicle type", "Agreement type", "Award structure", "Cohort", "Cohort role",
-    "Cohort size", "Task orders",
-    "Award-reported $M", "Recon. $M (actions)", "Coverage", "Materiality basis", "Actions",
-    "Effective decision date", "Date basis", "Date confidence",
-    "Current end", "Potential end", "Parent/vehicle end", "Latest task-order end",
-    "Months to decision", "Option headroom (mo)", "Decision window", "Anomaly flag",
-    "Lineage status", "In-market notice", "Opportunity", "Saronic priority score",
-    "Window (analyst)", "Confidence", "Pursuit access", "program", "capability_node",
-    "Notes",
+    "Selected $M", "Coverage", "Decision date", "Months to decision", "Decision window",
+    "Date confidence", "In-market notice", "Opportunity", "Saronic priority score",
+    "Confidence", "Pursuit access",
 ]
 _NCOLS = len(_HEADERS)
-_COLS = [22, 34, 30, 26, 18, 7, 9, 24, 18, 18,
-         13, 15, 16, 22, 18, 11, 11,
-         16, 17, 10, 16, 9,
-         16, 34, 13,
-         13, 13, 15, 16,
-         14, 12, 16, 34,
-         24, 13, 30, 14,
-         15, 14, 14, 14, 16, 30]
+_COLS = [22, 30, 26, 20, 12, 10, 15, 13, 14, 13, 13, 28, 14, 13, 14]
 assert len(_COLS) == _NCOLS, (len(_COLS), _NCOLS)
-_CENTER = {"Cohort size", "Task orders", "Award-reported $M", "Recon. $M (actions)",
-           "Coverage", "Actions", "Effective decision date", "Current end", "Potential end",
-           "Parent/vehicle end", "Latest task-order end", "Months to decision",
-           "Option headroom (mo)", "Saronic priority score"}
-# Per-column render style: green cross-sheet links for the classified decision/follow-on
-# dates and the opportunity-priority lookup; blue for the analyst inputs; black elsewhere
-# (typed numerics + baked classified facts). Default = black text (S_DEFAULT).
+_CENTER = {"Selected $M", "Coverage", "Decision date", "Months to decision",
+           "Saronic priority score"}
 _STYLE = {
-    "Cohort size": S_INT, "Task orders": S_INT, "Actions": S_INT,
-    "Award-reported $M": S_NUM, "Recon. $M (actions)": S_NUM, "Coverage": S_PCT,
-    "Effective decision date": S_DATE_LINK, "Latest task-order end": S_DATE_LINK,
-    "Current end": S_DATE, "Potential end": S_DATE, "Parent/vehicle end": S_DATE,
-    "Months to decision": S_INT, "Option headroom (mo)": S_INT,
-    "Saronic priority score": S_LINK_PCT,
-    "Opportunity": S_TEXT_INPUT, "Window (analyst)": S_TEXT_INPUT,
-    "Confidence": S_TEXT_INPUT, "Pursuit access": S_TEXT_INPUT, "program": S_TEXT_INPUT,
-    "capability_node": S_TEXT_INPUT, "Notes": S_TEXT_INPUT,
+    "Selected $M": S_LINK_NUM, "Coverage": S_LINK_PCT, "Decision date": S_DATE_LINK,
+    "Months to decision": S_INT, "Saronic priority score": S_LINK_PCT,
 }
 # within-row column letters (gutter mode: header i -> col_letter(i+1))
 _CL = {h: col_letter(i + 1) for i, h in enumerate(_HEADERS)}
@@ -334,11 +311,12 @@ def _load_families_legacy():
     return attrs, {}, {}            # no confirmed suppression without analyst review
 
 
-def _make_radar():
+def _screened():
+    """Select the screened watercraft families and rank them Saronic-FIRST: tier, then the
+    live commercial-priority score, then historical $ as the tie-break. Computed ONCE and
+    shared by both the primary screen and the Timing Detail sheet, so a reader can cross-
+    reference row N between them. Returns (sorted_selected, succ_of)."""
     attrs, pred_of, succ_of = load_families()
-    reviews = load_analyst_table("recompete_reviews", "family_key")
-    # Opportunity attribution + the relevance composite (review #6): rank within a Saronic
-    # tier by the live priority score, falling to historical $ when a family isn't attributed.
     attribution = load_analyst_table("award_opportunity_attribution", "family_key")
     opps = load_analyst_table("opportunities", "opportunity_id")
     sr = load_analyst_table("saronic_relevance", "opportunity_id")
@@ -373,88 +351,86 @@ def _make_radar():
                  * _num(ma, oid, "pursuit_access") * _num(ma, oid, "win_prob"))
         return round(score, 6), name
 
-    # select watercraft-relevant families above the floor; rank Saronic-FIRST: tier, then the
-    # commercial-priority score, then historical $ as the tie-break (review #5/#6). Rows are
-    # all present - USACE/MRO tiers just sort last and can be hidden via the table AutoFilter.
     selected = [a for a in attrs.values() if a["total"] >= _MIN_OBLIG]
     for a in selected:
         a["priority_score"], a["opp_name"] = priority_of(a["key"])
     selected.sort(key=lambda d: (_tier_rank(d["saronic_tier"]),
                                  -d["priority_score"], -d["total"]))
+    return selected, succ_of
+
+
+# Computed once at import; model_timing_detail imports these so the two sheets share order.
+SCREENED, SUCC_OF = _screened()
+
+
+def family_link_builder(fam):
+    """An INDEX/MATCH-by-family-key link builder into Contract Families (shared by the screen
+    + Timing Detail). _link(header) -> fn(row) -> a green-link formula resolving that family's
+    value, blank-safe; _link_millions(header) divides a raw-$ leaf by 1e6."""
+    fam_key = families_cols("family_key")
+
+    def _link(header):
+        rng = families_cols(header)
+
+        def f(r):
+            idx = f"INDEX({rng},MATCH({fam(r)},{fam_key},0))"
+            return f'=IF({idx}="","",{idx})'      # blank source -> blank, not 1899-12-30
+        return f
+
+    def _link_millions(header):
+        rng = families_cols(header)
+
+        def f(r):
+            idx = f"INDEX({rng},MATCH({fam(r)},{fam_key},0))"
+            return f'=IF({idx}="","",{idx}/1000000)'
+        return f
+
+    return _link, _link_millions
+
+
+def _make_screen():
+    selected, succ_of = SCREENED, SUCC_OF
 
     c = RowCursor(2)
     c.banner(_TAB, n_cols=_NCOLS, style=S_TITLE_SHEET)
-    c.write(["A contract/incumbent SCREEN (not yet an opportunity forecast): one row per "
-             "Army watercraft contract family, live over the Contract Awards / Award "
-             "Actions / Notice Links leaves, selected + reconciled from the canonical "
-             "contract_families table. Rows are ordered Saronic-FIRST (Core Army "
-             "ops+autonomy, then Adjacent MRO, then Peripheral USACE) and within a tier by "
-             "the commercial priority score. Effective decision date is the CLASSIFIED "
-             "recompete date (the IDV ordering-period end, NOT the conflated latest "
-             "task-order end), surfaced as a live link; every As-of clock re-points to it. "
-             "Agreement type / Cohort / Anomaly flag temper the read; count a multiple-award "
-             "cohort ONCE, not per vehicle. Opportunity + Saronic priority score / Window / "
-             "Confidence / Pursuit access / program / capability_node / Notes are ANALYST "
-             "inputs persisted in analyst/recompete_reviews.csv."],
-            styles=[S_ITALIC])
+    c.write(["One row per watercraft contract family: incumbent, decision timing and Saronic "
+             "priority. A screen, not a forecast."], styles=[S_ITALIC])
     c.blank(2)
     asof_row = c.write(["As-of date", date_serial(_AS_OF),
-                        "(edit to re-clock every expiry column; physical row order + summary "
-                        "counts are fixed at build time - re-run the build to re-sort)"],
+                        "edit to re-clock every timing column (row order is fixed at build)"],
                        styles=[S_BOLD, S_DATE_INPUT, S_ITALIC])
     assert asof_row == AS_OF_ROW, (asof_row, AS_OF_ROW)  # keeps _tabs.AS_OF_CELL valid
     ASOF = f"'{_TAB}'!$C${asof_row}"
     c.blank(2)
 
     FB = _CL["Family (vehicle PIID)"]
-    DD = _CL["Effective decision date"]
-    PE, MO = _CL["Potential end"], _CL["Months to decision"]
-    RW = _CL["Decision window"]
-    AR, RC = _CL["Award-reported $M"], _CL["Recon. $M (actions)"]
-    OPP = _CL["Opportunity"]
+    DD, MO, OPP = _CL["Decision date"], _CL["Months to decision"], _CL["Opportunity"]
     fam = lambda r: f"${FB}{r}"
+    inmkt_f = family_formulas(fam, ASOF)["inmkt"]
 
-    F = family_formulas(fam, ASOF)
-    cur_end_f, pot_end_f, parent_end_f = F["cur_end"], F["pot_end"], F["parent_end"]
-    vtype_f, tos_f, obl_f, acts_f, inmkt_f = (F["vtype"], F["tos"], F["obl"],
-                                              F["acts"], F["inmkt"])
-    obl_award_f = F["obl_award"]
-    coverage_f = lambda r: (f'=IF(${AR}{r}=0,"n/a",ROUND(${RC}{r}/${AR}{r},2))')
-
-    # Effective decision date + Latest task-order end are CLASSIFIED values on the Contract
-    # Families leaf (agreement-type/BOA/anomaly logic that is NOT honestly expressible in
-    # Excel), surfaced here as LIVE green INDEX/MATCH links. Every As-of clock below then
-    # re-points to the decision cell, so the whole timing read stays live off one edit.
-    FAM_KEY = families_cols("family_key")
-
-    def _fam_link(header):
-        rng = families_cols(header)
-
-        def f(r):
-            idx = f"INDEX({rng},MATCH({fam(r)},{FAM_KEY},0))"
-            return f'=IF({idx}="","",{idx})'      # blank source -> blank, not 1899-12-30
-        return f
-
-    eff_date_f = _fam_link("effective_decision_date")
-    latest_to_f = _fam_link("latest_task_order_end")
+    # Selected $M / Coverage / Decision date are green links into the Contract Families leaf.
+    _link, _link_millions = family_link_builder(fam)
+    selected_f = _link_millions("selected_measure")
+    coverage_f = _link("coverage_ratio")
+    decision_f = _link("effective_decision_date")
 
     # Saronic priority score: live lookup of the family's opportunity composite on Market
-    # Size, keyed by the Opportunity cell. Blank when unattributed (honest "not scored", 0).
-    MS_OPP = market_size_cols("Opportunity")
-    MS_PRIO = market_size_cols("Saronic priority")
+    # Size, keyed by the Opportunity cell. Blank when unattributed (honest "not scored").
+    MS_OPP, MS_PRIO = market_size_cols("Opportunity"), market_size_cols("Saronic priority")
     prio_link_f = lambda r: (f'=IF(${OPP}{r}="","",'
                              f'IFERROR(INDEX({MS_PRIO},MATCH(${OPP}{r},{MS_OPP},0)),""))')
 
-    # Lineage status for a chain TAIL (no CONFIRMED successor) re-clocks off the window
-    # cell. An expired, unreviewed tail is "Expired - successor unresolved", NOT a definitive
-    # "Overdue". A CONFIRMED-superseded row gets the static literal below.
-    status_f = lambda r: (f'=IF(${RW}{r}="Expired","Expired - successor unresolved",'
-                          f'IF(${RW}{r}="n/a","","Active"))')
+    # Confidence / Pursuit access link the Recompete Reviews input tab by family key (black
+    # derived text - the editable cells live there, not on this screen).
+    RR_KEY = recompete_reviews_cols("family_key")
+
+    def rev_link(col):
+        rng = recompete_reviews_cols(col)
+        return lambda r: f'=IFERROR(INDEX({rng},MATCH({fam(r)},{RR_KEY},0)),"")'
+
+    conf_f, pursuit_f = rev_link("confidence"), rev_link("pursuit_access")
+
     months_f = lambda r: f'=IF(${DD}{r}="","",ROUND((${DD}{r}-{ASOF})/30.44,0))'
-    # Option/performance headroom = months between the recompete decision and the latest
-    # potential end (the tail orders can still run after ordering authority closes).
-    head_f = lambda r: (f'=IF(OR(${DD}{r}="",${PE}{r}=""),"",'
-                        f'ROUND((${PE}{r}-${DD}{r})/30.44,0))')
     window_f = lambda r: (
         f'=IF(${DD}{r}="","n/a",IF(${DD}{r}<{ASOF},"Expired",'
         f'IF(${MO}{r}<=12,"0-12 mo",IF(${MO}{r}<=24,"12-24 mo",'
@@ -468,76 +444,38 @@ def _make_radar():
     styles = [_STYLE.get(h, S_DEFAULT) for h in _HEADERS]
     assert len(styles) == _NCOLS, (len(styles), _NCOLS)
     for d in selected:
-        k = d["key"]
-        lineage = "Superseded" if k in succ_of else status_f
-        c.write([k, d["incumbent"], d["segment"], d["saronic_tier"], d["reason"],
-                 d["psc"], d["naics"], d["comp"], d.get("cand_pred"), d.get("cand_succ"),
-                 vtype_f, d["agreement_type"], d["award_structure"], d["cohort_id"],
-                 d["cohort_role"], d["cohort_size"], tos_f,
-                 obl_award_f, obl_f, coverage_f, d["materiality_basis"], acts_f,
-                 eff_date_f, d["date_basis"], d["date_confidence"],
-                 cur_end_f, pot_end_f, parent_end_f, latest_to_f,
-                 months_f, head_f, window_f, d["date_anomaly"],
-                 lineage, inmkt_f, d["opp_name"], prio_link_f,
-                 a_value(reviews, k, "window_override"), a_value(reviews, k, "confidence"),
-                 a_value(reviews, k, "pursuit_access"), a_value(reviews, k, "program"),
-                 a_value(reviews, k, "capability_node"), a_value(reviews, k, "notes")],
+        c.write([d["key"], d["incumbent"], d["segment"], d["saronic_tier"],
+                 selected_f, coverage_f, decision_f, months_f, window_f,
+                 d["date_confidence"], inmkt_f, d["opp_name"], prio_link_f,
+                 conf_f, pursuit_f],
                 styles=styles, outline_level=1)
     last = hdr + len(selected)
     table_ref = f"B{hdr}:{col_letter(_NCOLS)}{last}"
 
+    SEL = _CL["Selected $M"]
     total_vals = [None] * _NCOLS
     total_vals[0] = f"Total - {len(selected)} vehicles screened"
-    total_vals[_HEADERS.index("Award-reported $M")] = f"=SUBTOTAL(109,{AR}{f}:{AR}{last})"
-    total_vals[_HEADERS.index("Recon. $M (actions)")] = f"=SUBTOTAL(109,{RC}{f}:{RC}{last})"
+    total_vals[_HEADERS.index("Selected $M")] = f"=SUBTOTAL(109,{SEL}{f}:{SEL}{last})"
     total_sty = [S_DEFAULT] * _NCOLS
     total_sty[0] = S_BOLD
-    total_sty[_HEADERS.index("Award-reported $M")] = S_NUM
-    total_sty[_HEADERS.index("Recon. $M (actions)")] = S_NUM
+    total_sty[_HEADERS.index("Selected $M")] = S_NUM
     c.total(total_vals, styles=total_sty, n_cols=_NCOLS)
 
     c.blank(2)
-    c.write(["MONEY: Award-reported $M = SUMIFS of award-level obligation; Recon. $M "
-             "(actions) = SUMIFS over Award Actions (the per-mod sum-able lens); Coverage "
-             "= Recon / Award-reported. The materiality floor + ranking use a SINGLE "
-             "selected measure (Materiality basis: 'action' when coverage is complete, "
-             "else 'award (fallback)') so no vehicle is selected on one basis and shown on "
-             "another. These are HISTORICAL OBLIGATIONS represented in screened families - "
-             "evidence of buying behaviour, NOT a TAM/SAM and NOT additive to budget. "
-             "SCOPE: watercraft-relevant families (PSC 19xx / NAICS 33661x / vessel "
-             "descriptors / known primes) with selected measure >= $1.0M; see Customer "
-             "segment for the Army-vs-USACE split, Saronic tier for the pursuit ordering "
-             "(Core -> Adjacent -> Peripheral). TIMING: Effective decision date is the "
-             "CLASSIFIED recompete date - the IDV ordering-period end (Agreement type / Date "
-             "basis / Date confidence record the rule), NOT the conflated latest task-order "
-             "end (shown separately as Latest task-order end). Decision window, Months to "
-             "decision and Option headroom all re-clock LIVE off it vs As-of; Current end / "
-             "Parent/vehicle end are the raw live MAXIFS beside it for provenance. Anomaly "
-             "flag marks implausible inputs (e.g. a 2050 BOA nominal end, a child order "
-             "running >5y past the vehicle end). COHORTS: Cohort / role / size group "
-             "co-awarded vehicles under one multiple-award requirement - count the cohort "
-             "ONCE, not each vehicle. LINEAGE: Predecessor / Successor vehicle are "
-             "evidence-scored candidates (analyst/lineage_edges.csv); Lineage status = "
-             "Superseded only when an analyst marks the successor Confirmed/Probable, else "
-             "'Expired - successor unresolved' (validate) / Active - distinct from the "
-             "analyst Confidence column. In-market notice = a CONFIRMED notice<->family link "
-             "on Notice Links (analyst_confirmed='Y'), NOT a same-PSC coincidence. RELEVANCE: "
-             "Opportunity (analyst attribution) + Saronic priority score (live from Market "
-             "Size) rank commercial fit, separate from historical $."],
-            styles=[S_DEFAULT])
+    c.write(["Selected $M, Coverage and Decision date link Contract Families; Months and "
+             "Decision window re-clock off As-of."], styles=[S_DEFAULT])
+    c.write(["Cohort, end-date lenses, reconciliation, lineage and anomalies: Timing Detail. "
+             "Per-family reviews: Recompete Reviews."], styles=[S_DEFAULT])
+    c.write(["Historical obligations, not TAM/SAM."], styles=[S_ITALIC])
 
-    # Conditional formatting over the data block (f..last): flag imminent decisions,
-    # anomalous dates, incomplete coverage and confirmed in-market notices (audit:
-    # presentation). Expressions are relative to each column's first data row.
-    MO, AN = _CL["Months to decision"], _CL["Anomaly flag"]
+    # Conditional formatting: imminent decision, incomplete coverage, confirmed in-market.
     CV, IM = _CL["Coverage"], _CL["In-market notice"]
     cfmt = [
-        cf_rule(f"${AN}${f}:${AN}${last}", DXF_ANOMALY, f'${AN}{f}<>""', priority=1),
         cf_rule(f"${MO}${f}:${MO}${last}", DXF_IMMINENT,
-                f'AND(${MO}{f}<>"",${MO}{f}>=0,${MO}{f}<=12)', priority=2),
+                f'AND(${MO}{f}<>"",${MO}{f}>=0,${MO}{f}<=12)', priority=1),
         cf_rule(f"${CV}${f}:${CV}${last}", DXF_COVERAGE,
-                f'AND(${CV}{f}<>"",${CV}{f}<1)', priority=3),
-        cf_rule(f"${IM}${f}:${IM}${last}", DXF_INMARKET, f'${IM}{f}="Y"', priority=4),
+                f'AND(${CV}{f}<>"",${CV}{f}<1)', priority=2),
+        cf_rule(f"${IM}${f}:${IM}${last}", DXF_INMARKET, f'${IM}{f}="Y"', priority=3),
     ]
 
     def render() -> WorksheetSpec:
@@ -549,4 +487,4 @@ def _make_radar():
     return SheetEntry(_TAB, _GROUP, render)
 
 
-RECOMPETE_RADAR = _make_radar()
+RECOMPETE_RADAR = _make_screen()

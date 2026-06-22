@@ -13,8 +13,8 @@ To add a page:
 """
 from __future__ import annotations
 
-from . import ceiling_methodology_explainer
+from . import sib_discussion_questions
 
 PAGES = [
-    ceiling_methodology_explainer,  # Outsourcing ceiling: plain-language prose explainer (portrait)
+    sib_discussion_questions,  # SIB meeting question set, by topic A-E (portrait)
 ]

@@ -13,6 +13,11 @@ __pycache__/
 Thumbs.db
 desktop.ini
 
+# ─── Microsoft Office lock/owner temp files (created while a doc is open) ───
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
 # ─── Virtualenvs & tool caches ───
 .venv/
 venv/

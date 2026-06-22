@@ -115,9 +115,9 @@ def _make_budget_market():
 
     c.blank(2)
     c.write(["Memo rows (float/rail < $5M; PE total) are excluded from the spine. Request "
-             "uses request_total, never base+oco+total. Funded $ is a demand signal - the "
-             "Saronic share is applied on Market Size; never added to contract obligations."],
-            styles=[S_DEFAULT])
+             "uses request_total, never base+oco+total."], styles=[S_DEFAULT])
+    c.write(["Funded $ is a demand signal - the Saronic share is applied on Market Size; "
+             "never added to contract obligations."], styles=[S_DEFAULT])
 
     def render() -> WorksheetSpec:
         # Styled range (not a native table): row order is part of the model and the §2 memo

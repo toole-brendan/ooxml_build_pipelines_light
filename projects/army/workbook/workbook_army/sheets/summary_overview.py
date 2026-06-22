@@ -30,7 +30,7 @@ from workbook_army.sheets import config as CFG
 _GROUP = "summary"
 _TAB = TAB_OVERVIEW
 _NCOLS = 3
-_COLS = [46, 18, 62]
+_COLS = [46, 18, 46]
 _FLOOR = "1000000"
 _EXTRACTED_DIR = ANALYST_DIR.parent / "extracted"
 

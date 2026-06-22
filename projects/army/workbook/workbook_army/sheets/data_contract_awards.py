@@ -31,9 +31,8 @@ CONTRACT_AWARDS, awards_cols = make_flat_sheet(
     tab=TAB_CONTRACT_AWARDS, group="data",
     csv_name="contract_awards", table_name="ContractAwards",
     banner="§1 - Prime contract awards",
-    intro="Raw Army + USACE prime-award register - one row per in-scope PIID. "
-          "Obligation, Current value and Ceiling are three DISTINCT money columns; "
-          "never summed across (the sum-able obligation stream is on Award Actions).",
+    intro="Raw Army + USACE prime-award register, one row per PIID. Obligation / Current "
+          "value / Ceiling are distinct money columns - never summed.",
     width_fn=contract_width,
     float_cols=_FLOAT, int_cols=_INT, date_cols=_DATE,
     input_cols=_FLOAT + _INT + _DATE,

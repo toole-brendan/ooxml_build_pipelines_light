@@ -43,12 +43,8 @@ PIPELINE_EVENTS, pipeline_cols = make_flat_sheet(
     tab=TAB_PIPELINE, group="data",
     csv_name="contract_pipeline_events", table_name="PipelineEvents",
     banner="§1 - Pre-award pipeline (one row per solicitation lifecycle)",
-    intro="Army + USACE watercraft SAM Opportunities, COLLAPSED to one row per "
-          "solicitation lifecycle (n_notices = amendments + award notice folded in; raw "
-          "per-notice records are kept in _opportunities_index.json). first_posted_date / "
-          "posted_date bracket the lifecycle; notice_type is the current stage. Sorted "
-          "soonest-deadline first; Open? and Days to deadline are LIVE vs the Timing & "
-          "Incumbent Screen As-of date. customer_segment splits Army watercraft from USACE.",
+    intro="Watercraft SAM notices, one row per solicitation lifecycle, soonest deadline "
+          "first. Open? + Days to deadline are live vs the screen As-of.",
     width_fn=contract_width,
     int_cols=_INT, date_cols=_DATE,
     input_cols=_DATE,

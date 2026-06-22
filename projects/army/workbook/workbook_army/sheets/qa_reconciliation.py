@@ -24,7 +24,7 @@ from workbook_army.sheets.data_contract_families import families_cols
 _GROUP = "validation"
 _TAB = TAB_QA
 _NCOLS = 3
-_COLS = [52, 16, 60]
+_COLS = [48, 16, 46]
 _FLOOR = "1000000"
 
 _SEGMENTS = [

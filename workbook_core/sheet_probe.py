@@ -73,6 +73,92 @@ def _style_maps():
 
 
 # ---------------------------------------------------------------------------
+# Signature-based style resolution (file mode): match a cellXf by what it IS
+# (numFmt + font + fill + border + alignment), not by its numeric index.
+# ---------------------------------------------------------------------------
+# Excel compacts and re-orders the style table when it opens + re-saves a workbook, so a
+# cell's s="5" in a round-tripped file may no longer be the engine's S_NUM_INPUT. Resolving
+# each cellXf to a SIGNATURE - the resolved definitions of the font / fill / border / numFmt
+# it references, which are index-independent - lets file mode label styles by identity.
+
+
+def _norm_elem(el) -> str:
+    """Canonical, attribute-order-independent string for an XML element + its children."""
+    tag = el.tag.split("}")[-1]
+    attrs = ",".join(f"{k}={v}" for k, v in sorted(el.attrib.items()))
+    kids = "".join(sorted(_norm_elem(c) for c in el))
+    return f"<{tag} {attrs}>{kids}</{tag}>"
+
+
+def _cellxf_signatures(styles_xml: str) -> list[tuple]:
+    """One signature per cellXf (in document order). Each resolves the xf's numFmtId / fontId
+    / fillId / borderId to the actual definition, so the signature survives a re-index."""
+    root = ET.fromstring(styles_xml)
+
+    def _kids(tag):
+        parent = root.find(f"a:{tag}", _NS)
+        return list(parent) if parent is not None else []
+
+    numfmts = {}
+    nf_parent = root.find("a:numFmts", _NS)
+    if nf_parent is not None:
+        for nf in nf_parent.findall("a:numFmt", _NS):
+            numfmts[nf.get("numFmtId")] = nf.get("formatCode")
+    fonts = [_norm_elem(e) for e in _kids("fonts")]
+    fills = [_norm_elem(e) for e in _kids("fills")]
+    borders = [_norm_elem(e) for e in _kids("borders")]
+
+    def _at(seq, i, kind):
+        return seq[i] if 0 <= i < len(seq) else f"#{kind}{i}"
+
+    sigs = []
+    cellxfs = root.find("a:cellXfs", _NS)
+    for xf in (cellxfs.findall("a:xf", _NS) if cellxfs is not None else []):
+        nfid = xf.get("numFmtId", "0")
+        align = xf.find("a:alignment", _NS)
+        sigs.append((
+            numfmts.get(nfid, nfid),                                  # numfmt code or builtin id
+            _at(fonts, int(xf.get("fontId", "0")), "font"),
+            _at(fills, int(xf.get("fillId", "0")), "fill"),
+            _at(borders, int(xf.get("borderId", "0")), "border"),
+            _norm_elem(align) if align is not None else "",
+        ))
+    return sigs
+
+
+def _canonical_sig_to_name() -> dict:
+    """signature -> S_* name, computed from the engine's own freshly-rendered styles.xml."""
+    from workbook_core.styles import build_styles_xml
+    idx_to_name, *_ = _style_maps()
+    out = {}
+    for idx, sig in enumerate(_cellxf_signatures(build_styles_xml())):
+        out.setdefault(sig, idx_to_name.get(idx, f"#{idx}"))
+    return out
+
+
+def _file_style_maps(file_styles_xml: str):
+    """(idx_to_name, inputs, links, titles) keyed by the FILE's cellXf indices, resolved by
+    signature against the canonical engine styles - so a round-tripped workbook is labelled
+    correctly even after Excel renumbered its style table."""
+    idx_to_name_c, inputs_c, links_c, titles_c = _style_maps()
+    name_inputs = {idx_to_name_c.get(i) for i in inputs_c}
+    name_links = {idx_to_name_c.get(i) for i in links_c}
+    name_titles = {idx_to_name_c.get(i) for i in titles_c}
+    sig_to_name = _canonical_sig_to_name()
+    idx_to_name, inputs, links, titles = {}, set(), set(), set()
+    for idx, sig in enumerate(_cellxf_signatures(file_styles_xml)):
+        name = sig_to_name.get(sig, f"#{idx}")
+        idx_to_name[idx] = name
+        if name in name_inputs:
+            inputs.add(idx)
+        if name in name_links:
+            links.add(idx)
+        if name in name_titles:
+            titles.add(idx)
+    return idx_to_name, inputs, links, titles
+
+
+# ---------------------------------------------------------------------------
 # Worksheet XML -> structured inventory
 # ---------------------------------------------------------------------------
 
@@ -131,9 +217,18 @@ def _referenced_sheets(formula: str) -> list[str]:
     return uniq
 
 
-def inspect_worksheet_xml(xml: str) -> dict:
-    """Parse one <worksheet> string into a structured inventory dict."""
-    idx_to_name, input_styles, link_styles, title_styles = _style_maps()
+def inspect_worksheet_xml(xml: str, style_maps=None) -> dict:
+    """Parse one <worksheet> string into a structured inventory dict.
+
+    style_maps: optional (idx_to_name, input_styles, link_styles, title_styles). File mode
+    passes maps resolved from the FILE's own styles.xml by signature, so a workbook Excel
+    opened + re-saved (which renumbers the style table) is still labelled by what each style
+    IS. Module mode omits it and uses the live workbook_core.styles indices.
+    """
+    if style_maps is None:
+        idx_to_name, input_styles, link_styles, title_styles = _style_maps()
+    else:
+        idx_to_name, input_styles, link_styles, title_styles = style_maps
     root = ET.fromstring(xml)
 
     tab_color = None
@@ -350,11 +445,17 @@ def probe_file(xlsx: Path, *, sheet: str | None = None) -> list[dict]:
                 idx = names.index(sheet) + 1
                 targets = [(idx, sheet)]
         all_dn = _xlsx_defined_names(zf)
+        # Resolve this file's style table by signature once, so cells are labelled by what
+        # each style IS even if Excel re-saved + renumbered the table.
+        try:
+            style_maps = _file_style_maps(zf.read("xl/styles.xml").decode("utf-8"))
+        except KeyError:
+            style_maps = None
         for i, nm in targets:
             xml = zf.read(f"xl/worksheets/sheet{i}.xml").decode("utf-8")
             rep = {"source": "file", "name": nm, "tab_name": nm,
                    "sheet_index": i}
-            rep.update(inspect_worksheet_xml(xml))
+            rep.update(inspect_worksheet_xml(xml, style_maps))
             rep["tables"] = _xlsx_sheet_tables(zf, i)
             # Defined names whose target references this sheet, or are scoped to
             # it (localSheetId is the zero-based sheet position).

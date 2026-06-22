@@ -18,8 +18,7 @@ DATA_FRESHNESS, source_clocks_cols = make_flat_sheet(
     tab=TAB_DATA_FRESHNESS, group="validation",
     csv_name="source_clocks", table_name="DataFreshness",
     banner="§1 - Source data-through dates + reporting lag",
-    intro="What each source can and cannot see. The EDITABLE model clock is the Timing & "
-          "Incumbent Screen $C$6 (live-linked on Overview); the data_snapshot row below is "
-          "the fixed pull date, and every other row is a data-through date with its known lag.",
+    intro="What each source can and cannot see. The editable model clock is the Timing "
+          "Screen As-of (live-linked on Overview); each row is a data-through date with its lag.",
     width_fn=contract_width,
 )
