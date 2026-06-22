@@ -10,6 +10,8 @@ from __future__ import annotations
 # decision-grade BD pipeline). The constant names follow the rename so a grep for the new
 # identity finds every reference.
 TAB_TIMING_SCREEN = "Timing & Incumbent Screen"   # <=31 chars (Excel tab limit)
+TAB_TIMING_DETAIL = "Timing Detail"               # the moved provenance columns
+TAB_RECOMPETE_REVIEWS = "Recompete Reviews"       # inputs-group per-family analyst judgment
 TAB_RESEARCH_QUEUE = "Recompete Research Queue"
 TAB_NOTICE_LINKS = "Notice Links"
 TAB_BUDGET_MARKET = "Budget Market"

@@ -21,6 +21,7 @@ from . import (
     scope_assumptions,
     # inputs (editable knobs + analyst reference)
     input_market_assumptions,
+    input_recompete_reviews,
     data_customer_map,
     # model (live-formula screens; must precede the data block per groups order)
     model_budget_market,
@@ -54,6 +55,7 @@ SHEETS = [
     scope_assumptions.SCOPE_ASSUMPTIONS,
     # Inputs (editable knobs first, then the analyst reference graph)
     input_market_assumptions.MARKET_ASSUMPTIONS,
+    input_recompete_reviews.RECOMPETE_REVIEWS,
     data_customer_map.CUSTOMER_MAP,
     # Model (decision models first, then the recompete timing screens)
     model_budget_market.BUDGET_MARKET,

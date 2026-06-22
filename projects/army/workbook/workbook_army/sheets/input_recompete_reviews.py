@@ -12,9 +12,13 @@ keyed on the canonical (machine) column names.
 """
 from __future__ import annotations
 
+import csv
+
+from workbook_army.sheets import _flat
 from workbook_army.sheets._flat import make_flat_sheet
 from workbook_army.sheets._tabs import TAB_RECOMPETE_REVIEWS
 from workbook_army.sheets._widths import contract_width
+from workbook_army.sheets._analyst import ANALYST_DIR
 from workbook_army.sheets._validate import (
     DV_DATE, DV_WHOLE_NONNEG, dv_list, CONFIDENCE, PURSUIT_ACCESS, WINDOW,
 )
@@ -41,12 +45,28 @@ _VALIDATIONS = [
     ("capture_lead_override_days", DV_WHOLE_NONNEG),
 ]
 
-RECOMPETE_REVIEWS, recompete_reviews_cols = make_flat_sheet(
-    tab=TAB_RECOMPETE_REVIEWS, group="inputs",
-    csv_name="recompete_reviews", table_name="RecompeteReviews",
-    banner="§1 - Recompete reviews (per family)",
-    intro="Analyst judgment per contract family; the Timing Screen and Research Queue link "
-          "to it. Blank until the analyst pass.",
-    width_fn=contract_width, header_labels=_LABELS,
-    date_cols=_DATE, int_cols=_INT, input_cols=_INPUT, validations=_VALIDATIONS,
-)
+# recompete_reviews.csv lives in workbook/analyst/, not extracted/ - point the flat builder's
+# loader at the analyst copy for this sheet (same trick as Customer Map / Notice Links).
+_orig = _flat.load_table
+
+
+def _load_analyst_csv(name):
+    with open(ANALYST_DIR / f"{name}.csv", newline="") as f:
+        rows = list(csv.reader(f))
+    return rows[0], rows[1:]
+
+
+_flat.load_table = lambda name: (_load_analyst_csv(name) if name == "recompete_reviews"
+                                 else _orig(name))
+try:
+    RECOMPETE_REVIEWS, recompete_reviews_cols = make_flat_sheet(
+        tab=TAB_RECOMPETE_REVIEWS, group="inputs",
+        csv_name="recompete_reviews", table_name="RecompeteReviews",
+        banner="§1 - Recompete reviews (per family)",
+        intro="Analyst judgment per contract family; the Timing Screen and Research Queue "
+              "link to it. Blank until the analyst pass.",
+        width_fn=contract_width, header_labels=_LABELS,
+        date_cols=_DATE, int_cols=_INT, input_cols=_INPUT, validations=_VALIDATIONS,
+    )
+finally:
+    _flat.load_table = _orig
