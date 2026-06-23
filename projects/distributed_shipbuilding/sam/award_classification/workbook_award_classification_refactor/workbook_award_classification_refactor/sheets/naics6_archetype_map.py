@@ -25,8 +25,9 @@ NAICS_ARCHETYPE_MAP, naics_map_cols = make_flat_sheet(
     banner="§1 - NAICS-6 to archetype crosswalk",
     intro="Default domain and output by observed NAICS-6.",
     widths=_WIDTHS,
-    # leaf source values rendered blue: the lookup key + the two classification codes.
+    # editable levers: the lookup key + the two classification codes, on a pale-yellow fill.
     input_cols=["NAICS-6", "Capability Domain (D)", "Primary Output (P)"],
+    input_fill=True,
     # per-axis rationale + caveat fold into hover Notes (dropped from the visible table).
     note_from_verbatim={
         "Capability Domain (D)": "D Rationale",

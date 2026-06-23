@@ -37,10 +37,11 @@ from workbook_core.primitives import col_letter, worksheet
 from workbook_core.styles import (
     S_DEFAULT, S_INT, S_INT_INPUT, S_NUM, S_NUM_INPUT, S_DATE, S_DATE_INPUT,
     S_LINK_INT, S_LINK_NUM, S_DATE_LINK,
-    S_TITLE_SECTION, S_TITLE_SHEET,
 )
 from workbook_award_classification_refactor.sheets._text_input import S_TEXT_INPUT
-from workbook_award_classification_refactor.sheets._italic import S_ITALIC
+from workbook_award_classification_refactor.sheets._inputfill import (
+    S_NUM_INPUT_FILL, S_INT_INPUT_FILL, S_DATE_INPUT_FILL, S_TEXT_INPUT_FILL,
+)
 from workbook_core.tables import ExcelTable, WorksheetSpec, SheetEntry
 from workbook_core.notes import ExcelNote
 from workbook_core.groups import group_color
@@ -55,6 +56,15 @@ _STYLE_BY_TYPE = {
     "int":   (S_INT, S_INT_INPUT, S_LINK_INT),
     "float": (S_NUM, S_NUM_INPUT, S_LINK_NUM),
     "date":  (S_DATE, S_DATE_INPUT, S_DATE_LINK),
+}
+
+# type key -> pale-yellow FILLED input style, used only when a sheet opts in via
+# input_fill=True (the curated INPUTS-group levers). Mirrors the blue input styles
+# above with the FFF2CC fill added (see _inputfill.py).
+_INPUT_FILL_BY_TYPE = {
+    "int":   S_INT_INPUT_FILL,
+    "float": S_NUM_INPUT_FILL,
+    "date":  S_DATE_INPUT_FILL,
 }
 
 
@@ -212,13 +222,20 @@ def _note_verbatim(raw: str) -> str:
 
 def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     banner: str, widths: list, intro=None, int_cols=(),
-                    float_cols=(), date_cols=(), input_cols=(), formula_cols=None,
-                    link_cols=(), note_from=None, note_from_verbatim=None,
-                    right_spacer=False, extra_cols=(), hidden_headers=(),
-                    display_headers=None, table=None):
+                    float_cols=(), date_cols=(), input_cols=(), input_fill=False,
+                    formula_cols=None, link_cols=(), note_from=None,
+                    note_from_verbatim=None, right_spacer=False, extra_cols=(),
+                    hidden_headers=(), display_headers=None, table=None):
     """Build a single-table sheet from extracted/<csv_name>.csv.
 
     Returns (SheetEntry, cols) where cols(header) -> "'Tab'!$Col$first:$Col$last".
+
+    input_fill: when True, the input_cols cells render on a pale-yellow fill (the
+    filled clones in _inputfill.py) instead of blue font alone - the "mark your
+    inputs" treatment, reserved for the curated INPUTS-group LEVER sheets (NAICS map,
+    overrides, crosswalk, deflators). Leave it OFF for the data-group source spines
+    and model-group identity keys: their input_cols are evidence leaves, not editable
+    levers, and filling thousands of rows would defeat the highlight.
 
     extra_cols: optional list of column HEADERS appended after the CSV columns. They
     live only in the rendered sheet (no CSV cell), so each MUST carry a formula in
@@ -316,15 +333,19 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     def _style(h: str) -> int:
         t = _type(h)
         if t is None:
-            # text: blue when it is a hardcoded source key (input_cols), else black
-            return S_TEXT_INPUT if h in input_cols else S_DEFAULT
+            # text: blue (or pale-yellow filled, when input_fill) for a hardcoded
+            # source key (input_cols), else black
+            if h in input_cols:
+                return S_TEXT_INPUT_FILL if input_fill else S_TEXT_INPUT
+            return S_DEFAULT
         derived, inp, link = _STYLE_BY_TYPE[t]
         if h in link_cols:
             return link             # cross-sheet link surfaced green (override)
         if h in formula_cols:
             return derived          # live aggregation -> black
         if h in input_cols:
-            return inp              # hardcoded source -> blue
+            # hardcoded source -> blue, or pale-yellow filled when the sheet opts in
+            return _INPUT_FILL_BY_TYPE[t] if input_fill else inp
         return derived             # typed leaf without an input flag -> black
 
     col_styles = [_style(h) for h in headers]
@@ -348,13 +369,13 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     notes: list[ExcelNote] = []
 
     c = RowCursor(2)
-    c.banner(tab, n_cols=ncols, style=S_TITLE_SHEET)
+    c.title(tab, ncols)
     if intro:
-        c.write([intro], styles=[S_ITALIC])
+        c.caption(intro)
         c.blank(2)
     else:
         c.blank()
-    c.banner(banner, n_cols=ncols, style=S_TITLE_SECTION, mark_collapsible=True)
+    c.section(banner, ncols)
     c.blank()
     # Fake spacer column (one cell right of the table) appended to data rows only -
     # no header cell, so the banner/header still span B..last and the table_ref does
@@ -372,8 +393,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         # their formula in convert(). `j < n_csv` short-circuits before indexing keep[].
         vals = [convert(j, row[keep[j]] if (j < n_csv and keep[j] < len(row)) else "")
                 for j in range(ncols)]
-        rownum = c.write(vals + spacer_vals, styles=col_styles + spacer_sty,
-                         outline_level=1)
+        rownum = c.write(vals + spacer_vals, styles=col_styles + spacer_sty)
         for anchor, src, mode in note_specs:
             j = src_orig[src]
             raw = row[j] if j < len(row) else ""

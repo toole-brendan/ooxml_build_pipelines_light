@@ -40,7 +40,6 @@ from __future__ import annotations
 from workbook_core.primitives import worksheet, col_letter
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_INT, S_NUM, S_PCT, S_LINK_INT, S_DATE_LINK,
-    S_TITLE_SHEET, S_TITLE_SECTION,
 )
 from workbook_core.tables import ExcelTable, WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -343,16 +342,15 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
     def render() -> WorksheetSpec:
         c = RowCursor(2)
         assert c.at() == 2
-        c.banner(TAB_SUBAWARD_ACTIVITY, n_cols=_NCOLS, style=S_TITLE_SHEET)
-        c.write([INTRO], styles=[S_ITALIC])
+        c.title(TAB_SUBAWARD_ACTIVITY, _NCOLS)
+        c.caption(INTRO)
         c.write([CAV1], styles=[S_ITALIC])
         c.write([CAV2], styles=[S_ITALIC])
         c.blank(2)
 
         # §1 Activity profile (styled block, indented to col C so labels don't clip) ---------
         assert c.at() == type_banner
-        c.banner("§1 - Observed activity intensity",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§1 - Observed activity intensity", _NCOLS)
         assert c.at() == type_header
         c.write(_TYPE_HEADERS, styles=header_styles(_TYPE_HEADERS, center_headers=_TYPE_CENTER),
                 start_col=2)
@@ -364,7 +362,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
                 f'=SUMIF({RP_PROFILE},"{lab}",{RP_NET})',
                 lambda r: f"=F{r}/SUM({RP_NET})",
                 f'=IFERROR(AVERAGEIF({RP_PROFILE},"{lab}",{RP_SPAN}),"")',
-            ], styles=_TYPE_STYLES, start_col=2, outline_level=1)
+            ], styles=_TYPE_STYLES, start_col=2)
         assert c.at() == type_total
         c.total(["Total", f"=SUM(D{type_first}:D{type_last})",
                  f"=SUM(E{type_first}:E{type_last})", f"=SUM(F{type_first}:F{type_last})",
@@ -374,8 +372,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
 
         # §1b Breadth x Duration matrix (styled block; vendor counts over §2, b rows x d cols) -
         assert c.at() == mtx_banner
-        c.banner("§1b - Breadth x Duration matrix (vendor counts by tier)",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§1b - Breadth x Duration matrix (vendor counts by tier)", _NCOLS)
         assert c.at() == mtx_cap
         c.write([MTX_CAP], styles=[S_ITALIC])
         assert c.at() == mtx_header
@@ -386,7 +383,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
                 lab,
                 *[f"=COUNTIFS({RP_BTIER},{b},{RP_DTIER},{d})" for d in range(4)],
                 lambda r: f"=SUM(D{r}:G{r})",
-            ], styles=_MTX_STYLES, start_col=2, outline_level=1)
+            ], styles=_MTX_STYLES, start_col=2)
         assert c.at() == mtx_total
         c.total(["All", f"=SUM(D{mtx_first}:D{mtx_last})", f"=SUM(E{mtx_first}:E{mtx_last})",
                  f"=SUM(F{mtx_first}:F{mtx_last})", f"=SUM(G{mtx_first}:G{mtx_last})",
@@ -396,8 +393,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
 
         # §2 Vendor rollup (native table) -------------------------------------------------
         assert c.at() == roll_banner
-        c.banner("§2 - Vendor rollup: recurrence per supplier",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§2 - Vendor rollup: recurrence per supplier", _NCOLS)
         assert c.at() == roll_header
         c.write(_ROLL_HEADERS, styles=header_styles(_ROLL_HEADERS, center_headers=_ROLL_CENTER))
         for v in roll_rows:
@@ -409,13 +405,12 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
                 _f2_net, _f2_reports, _f2_corr,
                 as_int(v[ri["Distinct PIIDs"]]),
                 as_int(v[ri["Distinct Programs"]]),
-            ], styles=_ROLL_STYLES, outline_level=1)
+            ], styles=_ROLL_STYLES)
         c.blank(2)
 
         # §3 Engagement detail (native table) ---------------------------------------------
         assert c.at() == eng_banner
-        c.banner("§3 - Engagement detail: per supplier x prime contract",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§3 - Engagement detail: per supplier x prime contract", _NCOLS)
         assert c.at() == eng_header
         c.write(_ENG_HEADERS, styles=header_styles(_ENG_HEADERS, center_headers=_ENG_CENTER))
         for a in act_rows:
@@ -429,13 +424,12 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
                 a[ai["Program"]],
                 a[ai["Prime PIID"]],
                 _e_block, _e_cov, _e_first(txc), _e_last(txc),
-            ], styles=_ENG_STYLES, outline_level=1)
+            ], styles=_ENG_STYLES)
         c.blank(2)
 
         # §4 Activity by block / MYP - first-observed / reactivated / continued (live over §3) -
         assert c.at() == blk_banner
-        c.banner("§4 - Activity by block / MYP: churn vs continuity",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§4 - Activity by block / MYP: churn vs continuity", _NCOLS)
         assert c.at() == blk_caption
         c.write([BLK_CAP], styles=[S_ITALIC])
         assert c.at() == blk_header
@@ -470,7 +464,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
                     if has_pred else "-"),                                            # N $ to continued
                 ((lambda r: f"=N{r}/M{r}") if has_pred else "-"),                     # O Continued $ %
                 (lambda r: f"=M{r}/SUM({RE_NET})"),                                   # P % of Portfolio $
-            ], styles=_BLK_STYLES, start_col=2, outline_level=1)
+            ], styles=_BLK_STYLES, start_col=2)
         assert c.at() == blk_total
         c.total(["Sum of block observations", None,
                  f"=SUM(E{blk_first}:E{blk_last})", f"=SUM(F{blk_first}:F{blk_last})",

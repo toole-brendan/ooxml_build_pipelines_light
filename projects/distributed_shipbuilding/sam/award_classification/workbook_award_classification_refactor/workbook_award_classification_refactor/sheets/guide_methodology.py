@@ -8,12 +8,11 @@ from __future__ import annotations
 
 from workbook_core.primitives import worksheet
 from workbook_core.styles import (
-    S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_TITLE_SHEET, S_TITLE_SECTION,
+    S_DEFAULT, S_BOLD, S_HEADER_LEFT,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
 from workbook_award_classification_refactor.sheets._layout import RowCursor
-from workbook_award_classification_refactor.sheets._italic import S_ITALIC
 from workbook_award_classification_refactor.sheets._tabs import (
     TAB_METHODOLOGY, TAB_SUPPLIER_MASTER, TAB_NAICS_MAP,
     TAB_ARCHETYPE_OVERRIDES, TAB_PRIME_AWARDS, TAB_SWBS_CROSSWALK,
@@ -34,12 +33,12 @@ def _p(c: RowCursor, text: str) -> int:
 
 def _render_methodology() -> WorksheetSpec:
     c = RowCursor(2)
-    c.banner(TAB_METHODOLOGY, n_cols=_NCOLS, style=S_TITLE_SHEET)
-    c.write(["Scope, classification axes, assignment rule, and inputs."], styles=[S_ITALIC])
+    c.title(TAB_METHODOLOGY, _NCOLS)
+    c.caption("Scope, classification axes, assignment rule, and inputs.")
     c.blank(2)
 
     # §1 Scope
-    c.banner("§1 - Scope", n_cols=_NCOLS, style=S_TITLE_SECTION)
+    c.section("§1 - Scope", _NCOLS)
     c.blank()
     _kv(c, "Unit", "The supplier operating entity (UEI), classified per program - not the "
                    "corporate parent or the subaward transaction.")
@@ -59,7 +58,7 @@ def _render_methodology() -> WorksheetSpec:
     c.blank(2)
 
     # §2 Classification axes
-    c.banner("§2 - Classification axes", n_cols=_NCOLS, style=S_TITLE_SECTION)
+    c.section("§2 - Classification axes", _NCOLS)
     c.blank()
     _p(c, "Two independent entity axes (one label each, with a forced catch-all) plus a "
           "transaction-level companion. Full code legend: Taxonomy tab.")
@@ -73,7 +72,7 @@ def _render_methodology() -> WorksheetSpec:
     c.blank(2)
 
     # §3 Assignment
-    c.banner("§3 - Assignment", n_cols=_NCOLS, style=S_TITLE_SECTION)
+    c.section("§3 - Assignment", _NCOLS)
     c.blank()
     _kv(c, "Precedence", "The curated vendor registry (hand-verified) overrides the NAICS-6 entity "
                          "default; unresolved only when neither resolves.")
@@ -85,7 +84,7 @@ def _render_methodology() -> WorksheetSpec:
     c.blank(2)
 
     # §4 Inputs
-    c.banner("§4 - Inputs", n_cols=_NCOLS, style=S_TITLE_SECTION)
+    c.section("§4 - Inputs", _NCOLS)
     c.blank()
     c.write(["Input", "Use"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
     for src, use in [

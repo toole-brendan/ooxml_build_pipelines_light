@@ -29,8 +29,9 @@ HII_SWBS_CROSSWALK, swbs_xwalk_cols = make_flat_sheet(
     banner="§1 - HII work-item code to SWBS crosswalk",
     intro="HII work-item code to SWBS subsystem.",
     widths=_WIDTHS,
-    # leaf source values rendered blue: the lookup key + the assigned subsystem code.
+    # editable levers: the lookup key + the assigned subsystem code, on a pale-yellow fill.
     input_cols=["HII Work-Item Code", "SWBS Subsystem"],
+    input_fill=True,
     # component-text / curation rationale folds into a hover Note on the SWBS cell.
     note_from_verbatim={"SWBS": "Evidence"},
 )

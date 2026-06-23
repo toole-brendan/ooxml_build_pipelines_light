@@ -42,8 +42,9 @@ VENDOR_ARCHETYPE_OVERRIDES, overrides_cols = make_flat_sheet(
     banner="§1 - Hand-researched archetype overrides",
     intro="Researched domain and output overrides by program and supplier UEI.",
     widths=_WIDTHS,
-    # leaf source values rendered blue: the UEI key + the two override codes.
+    # editable levers: the UEI key + the two override codes, on a pale-yellow fill.
     input_cols=["Subawardee UEI", "Capability Domain (D)", "Primary Output (P)"],
+    input_fill=True,
     formula_cols=_KEY_FORMULA, extra_cols=_EXTRA,
     # the composite "Program|UEI" join key is formula plumbing (Program + UEI are shown
     # separately); keep it in the grid for the Supplier Master MATCH but hide it.

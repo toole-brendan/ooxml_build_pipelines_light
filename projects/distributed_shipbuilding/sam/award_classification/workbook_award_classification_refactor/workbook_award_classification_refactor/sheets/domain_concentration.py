@@ -33,7 +33,7 @@ from __future__ import annotations
 from workbook_core.primitives import worksheet, col_letter
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER,
-    S_TITLE_SHEET, S_TITLE_SECTION, S_NUM, S_PCT, S_INT,
+    S_NUM, S_PCT, S_INT,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -134,8 +134,8 @@ def _make_domain_concentration():
     # before the Executive Summary renders - it calls the accessor inside its own render(),
     # which runs earlier in SHEETS order. render() just wraps the already-built rows.
     c = RowCursor(2)
-    c.banner(TAB_DOMAIN_CONC, n_cols=_NCOLS, style=S_TITLE_SHEET)
-    c.write([INTRO], styles=[S_ITALIC])
+    c.title(TAB_DOMAIN_CONC, _NCOLS)
+    c.caption(INTRO)
     c.write([CAVEAT], styles=[S_ITALIC])
     c.blank(2)
 
@@ -143,14 +143,13 @@ def _make_domain_concentration():
     for i, (prog, cols) in enumerate(PROGRAMS, start=1):
         M = cols("Subaward $M")
         D = cols("Capability Domain Archetype (D)")
-        c.banner(f"§{i} - {prog}: capability-domain concentration",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section(f"§{i} - {prog}: capability-domain concentration", _NCOLS)
         c.write(_HEADERS,
                 styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (_NCOLS - 1))
         for j, (code, name, _defn) in enumerate(DOMAINS):
             # Tag the block's first + last data row as the cursor writes them; the accessor
             # reads these captured anchors instead of a hand-counted base row + stride.
-            c.write(_domain_row(code, name, cols), styles=_BODY_STY, outline_level=1,
+            c.write(_domain_row(code, name, cols), styles=_BODY_STY,
                     mark=(f"{prog}:first" if j == 0
                           else f"{prog}:last" if j == _last_domain else None))
         c.total([f"{prog} total", f"=SUM({M})", "=1",

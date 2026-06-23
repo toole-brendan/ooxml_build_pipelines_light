@@ -14,6 +14,8 @@ Checks
   Hard failures (exit 1):
     - B2 title equals the tab name.
     - Every gutter-'x' section banner matches  ^§\\d+[a-z]? - .+
+      (the row-2 sheet title is excluded - it is a collapsible banner that folds the
+      whole sheet, validated instead by the B2 == tab-name rule).
     - A gutter 'x' exists only where outlined detail follows it.
     - Every outlined section sits under a gutter-'x' banner.
     - No en/em dashes survive in any cell literal or formula.
@@ -102,6 +104,11 @@ def audit() -> int:
         outlined_rows = sorted(r for r, lvl in outlined.items() if lvl and lvl > 0)
 
         for i, r in enumerate(x_rows):
+            # The row-2 sheet title is itself a collapsible banner (it folds the whole
+            # sheet under the house outline), but it is NOT a §-section; its text is
+            # validated by the B2 == tab-name rule above, so skip the §N checks here.
+            if r == 2:
+                continue
             text = ws.cell(row=r, column=2).value
             if not isinstance(text, str) or not SECTION_RE.match(text):
                 fails.append(f"[{tab}] section banner at row {r} not '§N - ...': {text!r}")

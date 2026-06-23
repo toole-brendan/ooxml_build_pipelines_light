@@ -22,7 +22,7 @@ from __future__ import annotations
 from workbook_core.primitives import worksheet
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER,
-    S_TITLE_SHEET, S_TITLE_SECTION, S_NUM, S_NUM_INPUT, S_LABEL_INDENT_1,
+    S_NUM, S_NUM_INPUT, S_LABEL_INDENT_1,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -103,21 +103,20 @@ DERIVATION = [
 def _make_market_bridge():
     def render() -> WorksheetSpec:
         c = RowCursor(2)
-        c.banner(TAB_MARKET_BRIDGE, n_cols=_NCOLS, style=S_TITLE_SHEET)
-        c.write([INTRO], styles=[S_ITALIC])
+        c.title(TAB_MARKET_BRIDGE, _NCOLS)
+        c.caption(INTRO)
         c.write([CAVEAT], styles=[S_ITALIC])
         c.blank(2)
 
-        c.banner("§1 - Observed reported subawards (nominal)", n_cols=_NCOLS,
-                 style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§1 - Observed reported subawards (nominal)", _NCOLS)
         c.write(_HEADERS, styles=[S_HEADER_LEFT, S_HEADER_LEFT] + [S_HEADER_CENTER] * 5)
         obs_style = [S_DEFAULT, S_ITALIC, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT]
         r_ddg = c.write(["DDG-51 observed subawards", "reported first-tier FFATA/FSRS, nominal $",
-                         _DDG_OBS, _DDG_OBS, _DDG_OBS, "", ""], styles=obs_style, outline_level=1)
+                         _DDG_OBS, _DDG_OBS, _DDG_OBS, "", ""], styles=obs_style)
         c.write(["Virginia observed subawards", "reported first-tier FFATA/FSRS, nominal $",
-                 _VA_OBS, _VA_OBS, _VA_OBS, "", ""], styles=obs_style, outline_level=1)
+                 _VA_OBS, _VA_OBS, _VA_OBS, "", ""], styles=obs_style)
         r_col = c.write(["Columbia observed subawards", "reported first-tier FFATA/FSRS, nominal $",
-                         _COL_OBS, _COL_OBS, _COL_OBS, "", ""], styles=obs_style, outline_level=1)
+                         _COL_OBS, _COL_OBS, _COL_OBS, "", ""], styles=obs_style)
         r_obs = c.total(["Observed subtotal (nominal)", "",
                          f"=SUM(D{r_ddg}:D{r_col})", f"=SUM(E{r_ddg}:E{r_col})",
                          f"=SUM(F{r_ddg}:F{r_col})", "", ""],
@@ -125,31 +124,29 @@ def _make_market_bridge():
                         n_cols=_NCOLS)
         c.write(["Observed subtotal, constant FY2026$ (memo, not added)",
                  "deflated; for comparison only", _FY26_MEMO, _FY26_MEMO, _FY26_MEMO, "", ""],
-                styles=[S_LABEL_INDENT_1, S_ITALIC, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT],
-                outline_level=1)
+                styles=[S_LABEL_INDENT_1, S_ITALIC, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT])
         c.blank(2)
 
-        c.banner("§2 - Co-build adjustment", n_cols=_NCOLS,
-                 style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§2 - Co-build adjustment", _NCOLS)
         gross_style = [S_DEFAULT, S_ITALIC, S_NUM_INPUT, S_NUM, S_NUM, S_NUM_INPUT, S_NUM_INPUT]
         live_style = [S_LABEL_INDENT_1, S_ITALIC, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT]
         r_va_gross = c.write(
             ["Virginia co-build workshare",
              "Low = disclosed $10.2B Block V value (2023); Base/High = analyst scale",
              10200, lambda r: f"=D{r}*G{r}", lambda r: f"=D{r}*H{r}", 1.47, 2.16],
-            styles=gross_style, outline_level=1)
+            styles=gross_style)
         c.write(["Less Virginia reported HII-NNS overlap",
                  "HII-NNS subawards already in Virginia observed (live; two UEIs)",
                  _VA_OVERLAP, _VA_OVERLAP, _VA_OVERLAP, "", ""],
-                styles=live_style, outline_level=1)
+                styles=live_style)
         r_col_gross = c.write(["Columbia co-build workshare",
                  "Low = disclosed-scope anchor about $3.4B; Base/High = analyst scale",
                  3400, lambda r: f"=D{r}*G{r}", lambda r: f"=D{r}*H{r}", 1.47, 2.35],
-                styles=gross_style, outline_level=1)
+                styles=gross_style)
         r_col_overlap = c.write(["Less Columbia reported HII-NNS overlap",
                  "HII-NNS subawards already in Columbia observed (live; currently $0)",
                  _COL_OVERLAP, _COL_OVERLAP, _COL_OVERLAP, "", ""],
-                styles=live_style, outline_level=1)
+                styles=live_style)
         c.total(["Estimated cumulative outsourced / co-build total (nominal)", "",
                  f"=D{r_obs}+SUM(D{r_va_gross}:D{r_col_overlap})",
                  f"=E{r_obs}+SUM(E{r_va_gross}:E{r_col_overlap})",
@@ -157,11 +154,10 @@ def _make_market_bridge():
                 styles=[S_BOLD, S_DEFAULT, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT], n_cols=_NCOLS)
         c.blank(2)
 
-        c.banner("§3 - Derivation, disclosed ledger & sources", n_cols=_NCOLS, style=S_TITLE_SECTION,
-                 mark_collapsible=True)
+        c.section("§3 - Derivation, disclosed ledger & sources", _NCOLS)
         c.write(["Component", "Basis"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
         for comp, basis in DERIVATION:
-            c.write([comp, basis], styles=[S_BOLD, S_DEFAULT], outline_level=1)
+            c.write([comp, basis], styles=[S_BOLD, S_DEFAULT])
 
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                        with_gutter=True, show_outline_symbols=True)

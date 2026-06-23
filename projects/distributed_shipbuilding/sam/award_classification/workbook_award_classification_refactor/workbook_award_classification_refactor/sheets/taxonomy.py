@@ -15,7 +15,7 @@ from __future__ import annotations
 
 from workbook_core.primitives import worksheet
 from workbook_core.styles import (
-    S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_TITLE_SHEET, S_TITLE_SECTION,
+    S_DEFAULT, S_BOLD, S_HEADER_LEFT,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -39,20 +39,19 @@ def _legend(c: RowCursor, title: str, intro: str, term_header: str,
             rows: list) -> None:
     """A §-section legend: banner + italic intro (immediately below) + a
     [Code, term, Definition] table."""
-    c.banner(title, n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-    c.write([intro], styles=[S_ITALIC], outline_level=1)
+    c.section(title, _NCOLS)
+    c.write([intro], styles=[S_ITALIC])
     c.blank()
     c.write(["Code", term_header, "Definition"], styles=S_HEADER_LEFT)
     for code, name, defn in rows:
-        c.write([code, name, defn], styles=[S_BOLD, S_DEFAULT, S_DEFAULT],
-                outline_level=1)
+        c.write([code, name, defn], styles=[S_BOLD, S_DEFAULT, S_DEFAULT])
 
 
 def _make_taxonomy():
     def render() -> WorksheetSpec:
         c = RowCursor(2)
-        c.banner(TAB_TAXONOMY, n_cols=_NCOLS, style=S_TITLE_SHEET)   # row 2
-        c.write([GRAIN_INTRO], styles=[S_ITALIC])                    # row 3 (italic)
+        c.title(TAB_TAXONOMY, _NCOLS)                                # row 2
+        c.caption(GRAIN_INTRO)                                       # row 3 (italic)
         c.blank(2)                                                   # rows 4-5
 
         _legend(c, "§1 - Capability Domain Archetypes",  # banner -> row 6
@@ -63,16 +62,14 @@ def _make_taxonomy():
         c.blank(2)
 
         # §3 - Ship-System Application (SWBS): transaction-level, HII-DDG only
-        c.banner("§3 - Ship-System Application (SWBS)",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-        c.write([SWBS_INTRO], styles=[S_ITALIC], outline_level=1)
+        c.section("§3 - Ship-System Application (SWBS)", _NCOLS)
+        c.write([SWBS_INTRO], styles=[S_ITALIC])
         c.blank()
         c.write(["Code", "Ship-System Application", "Example subsystems / drill-down"],
                 styles=S_HEADER_LEFT)
         for code, name, examples in SWBS_GROUPS:
-            c.write([code, name, examples], styles=[S_BOLD, S_DEFAULT, S_DEFAULT],
-                    outline_level=1)
-        c.write([SWBS_HIERARCHY_NOTE], styles=[S_DEFAULT], outline_level=1)
+            c.write([code, name, examples], styles=[S_BOLD, S_DEFAULT, S_DEFAULT])
+        c.write([SWBS_HIERARCHY_NOTE], styles=[S_DEFAULT])
 
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                        with_gutter=True, show_outline_symbols=True)

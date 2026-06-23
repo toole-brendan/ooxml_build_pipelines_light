@@ -56,7 +56,8 @@ DEFLATORS, deflators_cols = make_flat_sheet(
     intro="Green Book Procurement TOA index and FY2026 conversion factor.",
     widths=_WIDTHS,
     float_cols=["Procurement TOA (FY2025=100)", "Factor to FY2026 $"],
-    input_cols=["Procurement TOA (FY2025=100)"],   # hardcoded Green Book index -> blue
+    input_cols=["Procurement TOA (FY2025=100)"],   # editable Green Book index -> pale-yellow fill
+    input_fill=True,
     formula_cols=_FORMULAS,                          # derived factor -> black formula
 )
 

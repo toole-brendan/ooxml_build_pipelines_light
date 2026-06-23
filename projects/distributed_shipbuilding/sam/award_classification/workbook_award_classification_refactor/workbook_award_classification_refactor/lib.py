@@ -23,6 +23,27 @@ from workbook_core.lib import (
     load_extracted_csv as _core_load_extracted_csv,
 )
 from workbook_core.primitives import set_normalize_dashes
+import workbook_core.groups as _groups
+
+# ---------------------------------------------------------------------------
+# Tab palette - per-build override (THIS workbook only)
+# ---------------------------------------------------------------------------
+# Mirror the muted charcoal / teal / olive / slate / navy scheme used by the
+# Master TAM and SAM award_analysis workbooks (the shared workbook_core palette reads
+# "loud"). group_color() reads workbook_core's _COLOR dict inside each sheet's render()
+# closure, so mutating it here - at lib import, before build() packages the sheets -
+# repaints the tabs with no change to any sheet module. This mutates the shared dict IN
+# THIS PROCESS ONLY; every other pipeline builds in its own process and keeps its own
+# colors. Only the five groups THIS workbook uses are set (there is no Checks tab, so no
+# "validation" group). Group order / group->sheet assignment are unchanged.
+_TAB_PALETTE = {
+    "summary": "262626",   # charcoal   - the answer pages (Executive Summary, etc.)
+    "guide":   "2C5E5E",   # muted teal - scope & method (Taxonomy, Methodology)
+    "inputs":  "556B2F",   # olive      - editable levers + curated mappings
+    "model":   "48596B",   # slate      - Supplier Master + derived roll-ups
+    "data":    "203864",   # navy       - source evidence (prime awards + tx spines)
+}
+_groups._COLOR.update(_TAB_PALETTE)
 
 # ---------------------------------------------------------------------------
 # Pipeline bindings

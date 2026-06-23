@@ -26,7 +26,7 @@ from __future__ import annotations
 from workbook_core.primitives import worksheet
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER,
-    S_TITLE_SHEET, S_TITLE_SECTION, S_NUM, S_PCT, S_INT, S_DATE,
+    S_NUM, S_PCT, S_INT, S_DATE,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -96,11 +96,10 @@ def _headline(c: RowCursor) -> None:
             f'=MIN({cols("First Subaward")})',
             f'=MAX({cols("Last Subaward")})',
             f'=IFERROR(COUNTIF({pop},"Foreign")/COUNTA({uei}),"")',
-        ], styles=[S_DEFAULT, S_INT, S_NUM, S_INT, S_DATE, S_DATE, S_PCT],
-            outline_level=1)
+        ], styles=[S_DEFAULT, S_INT, S_NUM, S_INT, S_DATE, S_DATE, S_PCT])
     c.write(['"Foreign-maj. UEIs %" = share of subawardee UEIs whose record-majority place of '
              "performance is foreign (an entity-count ratio), not a share of dollars."],
-            styles=[S_ITALIC], outline_level=1)
+            styles=[S_ITALIC])
 
 
 def _concentration_headlines(c: RowCursor) -> None:
@@ -129,13 +128,13 @@ def _concentration_headlines(c: RowCursor) -> None:
             f'SUMIFS({dollar},{contest},"Highly concentrated")/SUM({dollar}),""))',
             f'=COUNTIFS({ptop1},">=0.6",{top1},"<0.6",{share},">=0.05")',
             f'=IF(COUNTIF({contest},"Check")>0,"CHECK","OK")',
-        ], styles=[S_DEFAULT, S_PCT, S_PCT, S_PCT, S_PCT, S_INT, S_BOLD], outline_level=1)
+        ], styles=[S_DEFAULT, S_PCT, S_PCT, S_PCT, S_PCT, S_INT, S_BOLD])
     c.write([
         "Material-domain screen = at least 5% of program net reported subaward $. "
         "Concentration ratios use positive spend; 'Highly-concentrated $ share' uses net domain $. "
         "Threshold crossings count material domains whose parent Top-1 is at least 60% while the "
         "largest operating UEI remains below 60%.",
-    ], styles=[S_ITALIC], outline_level=1)
+    ], styles=[S_ITALIC])
 
 
 def _activity_headlines(c: RowCursor) -> None:
@@ -155,28 +154,28 @@ def _activity_headlines(c: RowCursor) -> None:
             label,
             f'={subaward_activity_profile_cell(label, "% of Vendors")}',
             f'={subaward_activity_profile_cell(label, "% of Portfolio $")}',
-        ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+        ], styles=[S_DEFAULT, S_PCT, S_PCT])
     c.write([
         "Multi-program suppliers",
         f'=IFERROR(COUNTIF({programs},">1")/COUNTA({uei}),"")',
         f'=IFERROR(SUMIFS({net},{programs},">1")/SUM({net}),"")',
-    ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+    ], styles=[S_DEFAULT, S_PCT, S_PCT])
     c.write([
         "Long-duration activity (>=6 years)",
         f'=IFERROR(COUNTIF({duration},3)/COUNTA({uei}),"")',
         f'=IFERROR(SUMIFS({net},{duration},3)/SUM({net}),"")',
-    ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+    ], styles=[S_DEFAULT, S_PCT, S_PCT])
     c.write(["Reports per distinct subaward number",
              f'=IFERROR(SUM({reports})/SUM({distinct}),"")'],
-            styles=[S_ITALIC, S_NUM], outline_level=1)
+            styles=[S_ITALIC, S_NUM])
     c.write(["Negative adjustment rows / reports",
              f'=IFERROR(SUM({neg})/SUM({reports}),"")'],
-            styles=[S_ITALIC, S_PCT], outline_level=1)
+            styles=[S_ITALIC, S_PCT])
     c.write([
         "Activity tiers are analyst-defined reporting-pattern descriptors. Duration is first-to-last "
         "reported action and therefore a lower bound; see Subaward Activity for the breadth x duration "
         "matrix, vendor detail and block continuity.",
-    ], styles=[S_ITALIC], outline_level=1)
+    ], styles=[S_ITALIC])
 
 
 def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -> None:
@@ -202,7 +201,7 @@ def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -
                 fyr = cols(fyh)
                 vals.append(f'=IFERROR(SUMIFS({fyr},{axis},"{code}")/SUM({fyr}),"")')
                 sty.append(S_PCT)
-        c.write(vals, styles=sty, outline_level=1)
+        c.write(vals, styles=sty)
     # total $M (FY2026$) row - the per-program-FY denominator, as a bordered divider
     tvals, tsty = ["Total $M (FY26$)"], [S_BOLD]
     for _name, cols in PROGRAMS:
@@ -226,7 +225,7 @@ def _swbs_matrix(c: RowCursor) -> None:
             fyr = swbs_rollup_cols(fyh)
             vals.append(f'=IFERROR(SUMIFS({fyr},{grp},"{code}")/SUM({fyr}),"")')
             sty.append(S_PCT)
-        c.write(vals, styles=sty, outline_level=1)
+        c.write(vals, styles=sty)
     tvals, tsty = ["Total $M (FY26$)"], [S_BOLD]
     for _lbl, fyh in FYS:
         tvals.append(f"=SUM({swbs_rollup_cols(fyh)})")
@@ -235,62 +234,55 @@ def _swbs_matrix(c: RowCursor) -> None:
     sm = swbs_rollup_cols("Subaward $M")
     c.write(["SWBS coverage (HII-Ingalls DDG $ mapped)",
              f'=IFERROR(1-SUMIFS({sm},{grp},"U00")/SUM({sm}),"")'],
-            styles=[S_ITALIC, S_PCT], outline_level=1)
+            styles=[S_ITALIC, S_PCT])
 
 
 def _make_exec_summary():
     def render() -> WorksheetSpec:
         c = RowCursor(2)
-        c.banner(TAB_EXEC_SUMMARY, n_cols=_NCOLS, style=S_TITLE_SHEET)
-        c.write([INTRO], styles=[S_ITALIC])
+        c.title(TAB_EXEC_SUMMARY, _NCOLS)
+        c.caption(INTRO)
         c.blank(2)
 
-        c.banner("§1 - Scope & how to read these figures",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§1 - Scope & how to read these figures", _NCOLS)
         for line in CAVEATS:
-            c.write([line], styles=[S_DEFAULT], outline_level=1)
+            c.write([line], styles=[S_DEFAULT])
         c.blank(2)
 
-        c.banner("§2 - Program totals (lifetime, constant FY2026$)",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§2 - Program totals (lifetime, constant FY2026$)", _NCOLS)
         _headline(c)
         c.blank(2)
 
-        c.banner("§3 - Supplier concentration headlines",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§3 - Supplier concentration headlines", _NCOLS)
         _concentration_headlines(c)
         c.blank(2)
 
-        c.banner("§4 - Supplier activity & recurrence headlines",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§4 - Supplier activity & recurrence headlines", _NCOLS)
         _activity_headlines(c)
         c.blank(2)
 
-        c.banner("§5 - Capability Domain mix by fiscal year",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§5 - Capability Domain mix by fiscal year", _NCOLS)
         c.write(["Each cell = that domain's share of the program's reported first-tier subaward $ "
                  "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
                  "(pre-FY22 and partial FY26 are excluded from this mix; lifetime totals are in §2)."],
-                styles=[S_ITALIC], outline_level=1)
+                styles=[S_ITALIC])
         _matrix(c, "Capability Domain Archetype (D)", DOMAINS)
         c.blank(2)
 
-        c.banner("§6 - Primary Output mix by fiscal year",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§6 - Primary Output mix by fiscal year", _NCOLS)
         c.write(["Each cell = that output's share of the program's reported first-tier subaward $ "
                  "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
                  "(pre-FY22 and partial FY26 are excluded from this mix; lifetime totals are in §2)."],
-                styles=[S_ITALIC], outline_level=1)
+                styles=[S_ITALIC])
         _matrix(c, "Primary Output Archetype (P)", OUTPUTS)
         c.blank(2)
 
-        c.banner("§7 - DDG SWBS mix by FY",
-                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.section("§7 - DDG SWBS mix by FY", _NCOLS)
         c.write(["DDG-51 HII-Ingalls only (the SWBS-eligible builder), transaction-grain. Each cell = "
                  "that ship-system group's share of HII-Ingalls DDG reported subaward $ for the fiscal "
                  "year (constant FY2026$); columns sum to 100% incl. U00 unmapped. Denominator differs "
                  "from §5/§6, which include GD-BIW."],
-                styles=[S_ITALIC], outline_level=1)
+                styles=[S_ITALIC])
         _swbs_matrix(c)
 
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
