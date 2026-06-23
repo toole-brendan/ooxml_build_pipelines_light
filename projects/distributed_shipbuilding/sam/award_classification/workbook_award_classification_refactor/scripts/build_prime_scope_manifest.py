@@ -39,6 +39,16 @@ EXCLUDE_EXPLICIT = {
     "N0002419C2322": ("other-class",
                       "DDG-1000 class planning-yard / LMVLS work - not DDG-51 new construction",
                       "sam.gov DDG 1000 Class Planning Yard; review 2026-06-21"),
+    "N0002406C2303": ("other-class",
+                      "DDG-1000 (Zumwalt) detail design & construction ($3.31B, PSC 1903; SAM program "
+                      "'DDG 1000') - not DDG-51 new construction. Zero subawards in corpus, so no dollar "
+                      "impact; flipped from a mislabeled include=Y on 2026-06-23",
+                      "SAM Contract Awards API (awardeeUniqueEntityId=FREEMCLKFXE3); review 2026-06-23"),
+    "N0002411C2306": ("other-class",
+                      "DDG-1000 (Zumwalt) COSAL warehousing ($2.55B, PSC 1903, SAM program 'DDG 1000') - "
+                      "not DDG-51 new construction. Zero subawards in corpus; flipped from a mislabeled "
+                      "include=Y on 2026-06-23",
+                      "SAM Contract Awards API (awardeeUniqueEntityId=FREEMCLKFXE3); review 2026-06-23"),
     "N0002419C4452": ("provisioned-material/planning-yard",
                       "Integrated planning-yard provisioned-item orders, maintenance & modernization - not Basic Construction",
                       "war.gov Contracts 2019-02-04; review 2026-06-21"),
@@ -55,9 +65,14 @@ EXCLUDE_EXPLICIT = {
                       "review 2026-06-21"),
 }
 
-# Work types that are NOT Basic Construction and are excluded uniformly by rule. Any queried
-# prime whose scope label classifies to one of these is dropped (most are zero-subaward, so
-# the dollar impact beyond EXCLUDE_EXPLICIT is nil - they are excluded for scope consistency).
+# Work types that are out of scope and excluded uniformly by rule. Any queried prime whose
+# scope label classifies to one of these is dropped (most are zero-subaward, so the dollar
+# impact beyond EXCLUDE_EXPLICIT is nil - they are excluded for scope consistency).
+# IN-SCOPE BY DESIGN: the submarine master / LLTM PIIDs (titled "LONG LEAD TIME MATERIAL")
+# carry the shipbuilder-procured non-nuclear AP / LLTM / EOQ we WANT, commingled with Basic
+# Construction. "LLTM" is deliberately absent from _scope_type's exclude keywords below - do
+# NOT add it, or the submarine long-lead base disappears. (Nuclear-reactor LLTM is dropped
+# upstream by the bgroup == "GDEB" filter, which removes the BPMI naval-reactor PIIDs.)
 EXCLUDE_TYPES = {"design-engineering", "lead-yard-support", "ship-alteration",
                  "provisioned-material/planning-yard"}
 
@@ -102,11 +117,12 @@ def main() -> None:
             source = "nc_scope_summary.json"
             if stype in EXCLUDE_TYPES:
                 include = "N"
-                rationale = (f"Non-Basic-Construction work type ({stype}); excluded per the 2026-06-21 "
-                             "scope rule (Basic Construction only)")
+                rationale = (f"Out-of-scope work type ({stype}); excluded per the 2026-06-21 scope "
+                             "rule (hull-builder new construction only)")
             else:
                 include = "Y"
-                rationale = "In-scope new-construction (hull-builder directed)"
+                rationale = ("In-scope hull-builder new construction, incl. shipbuilder-procured "
+                             "non-nuclear long-lead / EOQ on the GDEB master / LLTM PIIDs")
         rows.append([piid, program, klass, group, stype, include, rationale, source])
 
     rows.sort(key=lambda r: (r[1], r[5], r[0]))  # program, include, piid

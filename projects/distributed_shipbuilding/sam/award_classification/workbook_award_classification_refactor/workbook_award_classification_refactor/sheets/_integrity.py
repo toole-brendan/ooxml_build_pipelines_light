@@ -180,3 +180,54 @@ def assert_universes_aligned() -> None:
         pv, tx, "program-vendor", "transaction")
     assert pv == sm, "program-vendor vs Supplier Master drift: " + _diff(
         pv, sm, "program-vendor", "Supplier Master")
+
+
+def assert_transaction_dates_covered_by_fiscal_axis() -> None:
+    """Fail before workbook build if a transaction has no action date or falls outside the
+    fixed deflator axis. The <=FY12 catch-all intentionally uses the FY2002 Procurement index,
+    so any newly introduced pre-FY2013 federal year other than FY2002 requires a real historical
+    deflator row rather than silent reuse of the FY2002 factor."""
+    from workbook_award_classification_refactor.sheets._fiscal import FY_BASE, FY_START
+
+    blank: list[str] = []
+    future: list[str] = []
+    pre_axis: set[int] = set()
+    for stem, label in _PROGRAMS:
+        headers, rows = load_table(f"{stem}_subaward_transactions")
+        jd = headers.index("Subaward Date")
+        jr = headers.index("subAwardReportId") if "subAwardReportId" in headers else None
+        for i, r in enumerate(rows, start=2):
+            raw = (r[jd] if jd < len(r) else "").strip()
+            rid = ((r[jr] if jr is not None and jr < len(r) else "") or f"row {i}").strip()
+            if not raw:
+                blank.append(f"{label}:{rid}")
+                continue
+            try:
+                y, m, _d = (int(x) for x in raw[:10].split("-"))
+            except Exception:
+                blank.append(f"{label}:{rid} invalid date {raw!r}")
+                continue
+            fy = y + int(m >= 10)
+            if fy > FY_BASE:
+                future.append(f"{label}:{rid}=FY{fy}")
+            if fy < FY_START:
+                pre_axis.add(fy)
+
+    assert not blank, "blank / invalid Subaward Date would be mis-binned: " + "; ".join(blank[:20])
+    assert not future, (
+        f"transaction federal FY exceeds FY{FY_BASE}; extend _fiscal + Deflators first: "
+        + "; ".join(future[:20]))
+    assert pre_axis <= {2002}, (
+        "<=FY12 catch-all is keyed to the FY2002 deflator but newly contains other fiscal years: "
+        + ", ".join(str(x) for x in sorted(pre_axis)))
+
+
+def assert_prime_awards_cover_transaction_piids() -> None:
+    """Every transaction PIID must have a Prime Awards row, otherwise Subaward Activity's
+    Block/MYP and prime-PoP lookups fall to '-' / blank while the dollars still remain in scope."""
+    headers, rows = load_table("prime_awards")
+    j = headers.index("Prime PIID")
+    prime = {(r[j] if j < len(r) else "").strip() for r in rows if j < len(r) and r[j].strip()}
+    tx = set().union(*_tx_piids().values())
+    missing = sorted(tx - prime)
+    assert not missing, f"transaction PIIDs missing from Prime Awards: {missing}"

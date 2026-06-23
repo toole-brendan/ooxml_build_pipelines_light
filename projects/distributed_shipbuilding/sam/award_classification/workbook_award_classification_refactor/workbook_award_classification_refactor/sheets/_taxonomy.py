@@ -15,10 +15,9 @@ every axis (MECE):
   - Operating Role     (R, internal) - what value-chain responsibility it owns
   - Primary Output     (P, published) - what physically leaves the vendor
 
-Operating Role is an internal validation layer: it BOUNDS and VALIDATES the Primary
-Output assignment (see ROLE_OUTPUT_LATTICE) and is not itself a published dimension.
-Output is assigned from its own physical-form evidence; Role checks it, it does not
-generate it. Off-lattice Role x Output cells are review flags, not errors.
+Operating Role is an internal validation layer: it bounds and validates the Primary
+Output assignment, and is not itself a published dimension. Output is assigned from its
+own physical-form evidence; Role checks it, it does not generate it.
 """
 from __future__ import annotations
 
@@ -29,14 +28,6 @@ from __future__ import annotations
 GRAIN_INTRO = (
     "Domain, role, output and SWBS definitions."
 )
-
-# Axis register (name, the one question it answers, published?) - rendered by the
-# methodology sheet's "three axes" table.
-AXES: list[tuple[str, str, str]] = [
-    ("Capability Domain (D)", "What technical ship function or enabling capability does the vendor support?", "Published"),
-    ("Operating Role (R)", "What value-chain responsibility does the vendor own?", "Internal (validation only)"),
-    ("Primary Output (P)", "What actually leaves the vendor (physical form / integration level)?", "Published"),
-]
 
 # ---------------------------------------------------------------------------
 # Section 1 - Capability Domain archetypes (published)   (code, name, definition)
@@ -86,7 +77,7 @@ DOMAIN_TIEBREAKS: list[tuple[str, str]] = [
     ("D1 vs D4 (pressure boundaries)",
      "Structural / pressure-vessel fabrication to D1; functional fluid/pressure equipment (valves, pumps) to D4."),
     ("D2 vs D3 (electric drive & power)",
-     "A firm whose output spans propulsion motors/drives (D2) and power generation, conversion, or distribution (D3) - e.g. an integrated electric-plant or motor-and-generator supplier (NAICS 335312) - is assigned by its dollar-dominant ship function, never D0: propulsion-motor / electric-drive dominant to D2; ship-service power dominant to D3."),
+     "A firm spanning propulsion motors/drives (D2) and power generation, conversion, or distribution (D3) - e.g. an integrated electric-plant or motor-and-generator supplier (NAICS 335312) - is assigned by its dollar-dominant ship function, never D0: propulsion-motor / electric-drive dominant to D2; ship-service power dominant to D3."),
     ("Ordnance",
      "Naval guns, missile launch systems and tubes, and weapon-handling stay in D6; there is no separate ordnance domain - under the hull-builder scope the dedicated weapons GFE primes are out of scope, so standalone ordnance content is sparse."),
     ("Service firms",
@@ -161,33 +152,14 @@ OUTPUT_BOUNDARIES: list[tuple[str, str]] = [
 ]
 
 # ---------------------------------------------------------------------------
-# Assignment rule + Role x Output validation lattice
+# Assignment rule
 # ---------------------------------------------------------------------------
 
 ASSIGNMENT_RULE = (
-    "For each UEI x Program, classify the most representative recurring "
-    "program-specific output sold or transferred across the vendor's contractual "
-    "boundary - not the most sophisticated item in the firm's general portfolio. "
-    "Where several items are supplied, choose the highest integration level only "
-    "when those items are actually delivered as one configured product or system."
-)
-
-# (role code, role short name, expected output) - the QA expectation; off-lattice
-# combinations are legitimate review flags, not errors.
-ROLE_OUTPUT_LATTICE: list[tuple[str, str, str]] = [
-    ("R1", "Build-to-Spec Mfr / Processor / Distributor", "P1 / P2"),
-    ("R2", "Product / Equipment OEM", "P2 / P3"),
-    ("R3", "Subsystem / Shipset Integrator", "P4"),
-    ("R4", "Module / Distributed Shipbuilder", "P5"),
-    ("R5", "Production / Test / Lifecycle Service", "P6"),
-    ("R0", "Unresolved / Non-operating", "P0"),
-]
-
-LATTICE_NOTE = (
-    "The overlaps make this a QA check, not a 1:1 derivation: an output outside its "
-    "role's expected set is a review flag, not an error. A build-to-print fabricator "
-    "delivering a complete functional unit (R1 x P3) is a legitimate off-diagonal - "
-    "it just means 'verify the vendor does not actually own the design (revisit as R2).'"
+    "For each UEI x Program, classify the most representative recurring output "
+    "transferred across the vendor's contractual boundary, not the most "
+    "sophisticated item in its portfolio. With several items, take the highest "
+    "integration level only when they ship as one configured system."
 )
 
 # ---------------------------------------------------------------------------
@@ -239,23 +211,3 @@ SWBS_HIERARCHY_NOTE = (
     "headline: it is finer than SWBS but proprietary to HII, so it is weaker for "
     "cross-prime / cross-program comparison."
 )
-
-# Mapping provenance (code, method) - rendered on the Methodology tab (§9a).
-SWBS_MAPPING_METHOD: list[tuple[str, str]] = [
-    ("E", "Explicit three-digit SWBS in the transaction description."),
-    ("X", "Deterministic crosswalk from HII work-item code to an explicitly observed SWBS."),
-    ("C", "Curated inference from HII code, component text, vendor evidence, and codebook."),
-    ("L", "Legacy / codebook-version mismatch."),
-    ("U", "Unresolved / no SWBS evidence."),
-]
-
-# Standing rules for the SWBS dimension - rendered on the Methodology tab (§9b).
-SWBS_GUARDRAILS: list[str] = [
-    "Grain is the subaward transaction, not the entity: a UEI's transactions can hit many SWBS groups, so SWBS is never collapsed to one-per-UEI.",
-    "SWBS validates entity tags, it does not overwrite them: transaction evidence (HII code + component text, not the SWBS number itself) can flag a Capability Domain or Primary Output to revisit, but the published call stays the entity-level one.",
-    "Present every cut as 'within mapped SWBS records' and show mapped-dollar coverage beside each FY / hull / PIID comparison; never treat unmapped records as zero system activity.",
-    "Concentration measures (top-3 share, HHI) are within mapped dollars only - the uncoded long tail may hide alternate sources, so read them as an upper bound.",
-    "The HII-to-SWBS crosswalk is one-to-one in the observed data; treat that as a property of this sample, not a guarantee.",
-    "Subaward amount is an award/report amount, not a unit price; negative-amount records are treated as adjustments, not procurement.",
-    "Three lookup exceptions are handled explicitly, not forced to the nearest headline: 436 via prefix-family (4361x); 730 to 7300 Noise & Vibration (cross-cutting X00, not Armament); 351 kept Legacy until validated.",
-]

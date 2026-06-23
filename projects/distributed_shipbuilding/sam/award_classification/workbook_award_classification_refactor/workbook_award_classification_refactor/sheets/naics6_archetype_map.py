@@ -3,9 +3,8 @@
 One row per observed subawardee NAICS-6 industry code, giving the DEFAULT 3-axis
 archetype - Capability Domain (D), Operating Role (R, internal), Primary Output (P) -
 used to tag a program-vendor row when that UEI has no hand-researched override. R is the
-internal validation axis (carried here, not published per-vendor). Resolution / Review /
-R-P Lattice / High-Integration Gate are the QA flags; the per-axis rationale and any
-caveat fold into hover Notes on the D / R / P / Resolution cells. Built from
+internal validation axis (carried here, not published per-vendor). The per-axis rationale
+and any caveat fold into hover Notes on the D / R / P / Resolution cells. Built from
 extracted/naics6_archetype_map.csv.
 
 Promoted accessor (imported by the program-vendor sheets, Phase 2):
@@ -16,12 +15,11 @@ from __future__ import annotations
 from workbook_award_classification_refactor.sheets._flat import make_flat_sheet
 from workbook_award_classification_refactor.sheets._tabs import TAB_NAICS_MAP
 from workbook_award_classification_refactor.sheets._widths import (
-    W_NAICS, W_NAICS_DESC, W_CONF, W_CODE, W_DOMFOR,
+    W_NAICS, W_NAICS_DESC, W_CONF,
 )
 
-# NAICS-6 | Title | D | R(internal) | P | Resolution | Review | R-P Lattice | Gate
-_WIDTHS = [W_NAICS, W_NAICS_DESC, W_CONF, W_CONF, W_CONF, W_CONF, W_CODE,
-           W_DOMFOR, W_DOMFOR]
+# NAICS-6 | Title | D | R(internal) | P | Resolution
+_WIDTHS = [W_NAICS, W_NAICS_DESC, W_CONF, W_CONF, W_CONF, W_CONF]
 
 NAICS_ARCHETYPE_MAP, naics_map_cols = make_flat_sheet(
     tab=TAB_NAICS_MAP, group="inputs",

@@ -1,17 +1,21 @@
 """executive_summary - the front-door dashboard tab.
 
 The first sheet: orients a cold reader and carries the headline numbers, all as LIVE
-formulas off the three program-vendor sheets (so they never drift). Four blocks:
+formulas off the model / summary sheets (so they never drift). Seven blocks:
 
   - Purpose + scope (static intro).
   - §1 Scope & how to read these figures (the denominator caveat - what is and isn't
     counted, and why submarine shares are NOT total-boat-construction shares).
   - §2 Program totals (live per-program roll-up: UEIs, $M FY2026$, transactions, span,
     foreign share).
-  - §3 / §4 Capability Domain and Primary Output mix by fiscal year - one matrix each,
+  - §3 Supplier-concentration headlines: the most concentrated material domain per program,
+    parent-collapse threshold crossings, and the share of dollars in highly concentrated domains.
+  - §4 Vendor-activity headlines: recurring-core vs one-time tail, multi-program reach and duration.
+  - §5 / §6 Capability Domain and Primary Output mix by fiscal year - one matrix each,
     the three programs side by side (FY2022-FY2025), body = each archetype's % of that
     program-FY's reported first-tier subaward $ (constant FY2026$); the bottom row gives
     the absolute $M so a reader sees mix and magnitude together.
+  - §7 DDG SWBS mix by FY (HII-Ingalls only).
 
 Cells reference the program-vendor sheets' per-FY and archetype columns via their
 promoted cols accessors (ddg_pv_cols / virginia_pv_cols / columbia_pv_cols), the same
@@ -40,6 +44,11 @@ from workbook_award_classification_refactor.sheets.columbia_program_vendors impo
     columbia_pv_cols,
 )
 from workbook_award_classification_refactor.sheets.ddg_swbs_rollup import swbs_rollup_cols
+from workbook_award_classification_refactor.sheets.domain_concentration import domain_conc_range
+from workbook_award_classification_refactor.sheets.parent_concentration import parent_conc_range
+from workbook_award_classification_refactor.sheets.subaward_activity import (
+    subaward_activity_profile_cell, subaward_activity_rollup_range,
+)
 
 _GROUP = "summary"
 
@@ -67,7 +76,8 @@ CAVEATS = [
     "Submarine shares are percentages of GDEB-reported subcontracted scope, not of total boat "
     "construction; the HII-Newport News co-build workshare is largely outside the reported subaward "
     "data (about $98M visible against tens of billions - see HII Co-Build Workshare).",
-    "Read a domain's mix with its supplier concentration (Domain Concentration).",
+    "Read a domain's mix with both operating-entity and ultimate-parent concentration "
+    "(Domain Concentration; Parent Concentration).",
 ]
 
 
@@ -92,6 +102,82 @@ def _headline(c: RowCursor) -> None:
     c.write(['"Foreign-maj. UEIs %" = share of subawardee UEIs whose record-majority place of '
              "performance is foreign (an entity-count ratio), not a share of dollars."],
             styles=[S_ITALIC], outline_level=1)
+
+
+def _concentration_headlines(c: RowCursor) -> None:
+    """Answer-first concentration cut. 'Material' means at least 5% of program net $."""
+    headers = [
+        "Most concentrated material domain / Top-1 firm", "Domain share", "UEI Top-1",
+        "Parent Top-1", "Highly-conc. $ share", "Parent threshold crossings", "Status",
+    ]
+    c.write(headers, styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (len(headers) - 1))
+    for name, _cols in PROGRAMS:
+        labels = domain_conc_range(name, "")
+        share = domain_conc_range(name, "Share")
+        dollar = domain_conc_range(name, "$M (FY26$)")
+        firms = domain_conc_range(name, "Top-1 firm")
+        top1 = domain_conc_range(name, "Top-1 share")
+        contest = domain_conc_range(name, "Contestability")
+        ptop1 = parent_conc_range(name, "Parent Top-1 %")
+        max_material = f'_xlfn.MAXIFS({top1},{share},">=0.05")'
+        match = f'MATCH(1,INDEX(({top1}={max_material})*({share}>=0.05),0),0)'
+        c.write([
+            f'=IFERROR("{name}: "&INDEX({labels},{match})&" - "&INDEX({firms},{match}),"{name}")',
+            f'=IFERROR(INDEX({share},{match}),"")',
+            f'=IFERROR({max_material},"")',
+            f'=IFERROR(INDEX({ptop1},{match}),"")',
+            f'=IF(COUNTIF({contest},"Check")>0,"",IFERROR('
+            f'SUMIFS({dollar},{contest},"Highly concentrated")/SUM({dollar}),""))',
+            f'=COUNTIFS({ptop1},">=0.6",{top1},"<0.6",{share},">=0.05")',
+            f'=IF(COUNTIF({contest},"Check")>0,"CHECK","OK")',
+        ], styles=[S_DEFAULT, S_PCT, S_PCT, S_PCT, S_PCT, S_INT, S_BOLD], outline_level=1)
+    c.write([
+        "Material-domain screen = at least 5% of program net reported subaward $. "
+        "Concentration ratios use positive spend; 'Highly-concentrated $ share' uses net domain $. "
+        "Threshold crossings count material domains whose parent Top-1 is at least 60% while the "
+        "largest operating UEI remains below 60%.",
+    ], styles=[S_ITALIC], outline_level=1)
+
+
+def _activity_headlines(c: RowCursor) -> None:
+    """Portfolio-wide supplier recurrence / persistence takeaways, live off Subaward Activity."""
+    uei = subaward_activity_rollup_range("Subawardee UEI")
+    net = subaward_activity_rollup_range("Net Subaward $M")
+    programs = subaward_activity_rollup_range("Distinct Programs")
+    duration = subaward_activity_rollup_range("Duration Tier")
+    reports = subaward_activity_rollup_range("Reports")
+    distinct = subaward_activity_rollup_range("Distinct Subaward Numbers")
+    neg = subaward_activity_rollup_range("Neg. Adjustments")
+
+    c.write(["Cohort", "% of vendors", "% of portfolio $"],
+            styles=[S_HEADER_LEFT, S_HEADER_CENTER, S_HEADER_CENTER])
+    for label in ("High / sustained activity", "Single / one-time"):
+        c.write([
+            label,
+            f'={subaward_activity_profile_cell(label, "% of Vendors")}',
+            f'={subaward_activity_profile_cell(label, "% of Portfolio $")}',
+        ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+    c.write([
+        "Multi-program suppliers",
+        f'=IFERROR(COUNTIF({programs},">1")/COUNTA({uei}),"")',
+        f'=IFERROR(SUMIFS({net},{programs},">1")/SUM({net}),"")',
+    ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+    c.write([
+        "Long-duration activity (>=6 years)",
+        f'=IFERROR(COUNTIF({duration},3)/COUNTA({uei}),"")',
+        f'=IFERROR(SUMIFS({net},{duration},3)/SUM({net}),"")',
+    ], styles=[S_DEFAULT, S_PCT, S_PCT], outline_level=1)
+    c.write(["Reports per distinct subaward number",
+             f'=IFERROR(SUM({reports})/SUM({distinct}),"")'],
+            styles=[S_ITALIC, S_NUM], outline_level=1)
+    c.write(["Negative adjustment rows / reports",
+             f'=IFERROR(SUM({neg})/SUM({reports}),"")'],
+            styles=[S_ITALIC, S_PCT], outline_level=1)
+    c.write([
+        "Activity tiers are analyst-defined reporting-pattern descriptors. Duration is first-to-last "
+        "reported action and therefore a lower bound; see Subaward Activity for the breadth x duration "
+        "matrix, vendor detail and block continuity.",
+    ], styles=[S_ITALIC], outline_level=1)
 
 
 def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -> None:
@@ -171,7 +257,17 @@ def _make_exec_summary():
         _headline(c)
         c.blank(2)
 
-        c.banner("§3 - Capability Domain mix by fiscal year",
+        c.banner("§3 - Supplier concentration headlines",
+                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        _concentration_headlines(c)
+        c.blank(2)
+
+        c.banner("§4 - Supplier activity & recurrence headlines",
+                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        _activity_headlines(c)
+        c.blank(2)
+
+        c.banner("§5 - Capability Domain mix by fiscal year",
                  n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
         c.write(["Each cell = that domain's share of the program's reported first-tier subaward $ "
                  "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
@@ -180,7 +276,7 @@ def _make_exec_summary():
         _matrix(c, "Capability Domain Archetype (D)", DOMAINS)
         c.blank(2)
 
-        c.banner("§4 - Primary Output mix by fiscal year",
+        c.banner("§6 - Primary Output mix by fiscal year",
                  n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
         c.write(["Each cell = that output's share of the program's reported first-tier subaward $ "
                  "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
@@ -189,12 +285,12 @@ def _make_exec_summary():
         _matrix(c, "Primary Output Archetype (P)", OUTPUTS)
         c.blank(2)
 
-        c.banner("§5 - DDG SWBS mix by FY",
+        c.banner("§7 - DDG SWBS mix by FY",
                  n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
         c.write(["DDG-51 HII-Ingalls only (the SWBS-eligible builder), transaction-grain. Each cell = "
                  "that ship-system group's share of HII-Ingalls DDG reported subaward $ for the fiscal "
                  "year (constant FY2026$); columns sum to 100% incl. U00 unmapped. Denominator differs "
-                 "from §3/§4, which include GD-BIW."],
+                 "from §5/§6, which include GD-BIW."],
                 styles=[S_ITALIC], outline_level=1)
         _swbs_matrix(c)
 

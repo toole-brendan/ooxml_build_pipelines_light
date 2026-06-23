@@ -32,10 +32,14 @@ TAB_DOMAIN_CONC      = "Domain Concentration"
 TAB_MARKET_BRIDGE    = "Market Bridge"
 # capability-domain concentration at UEI vs ultimate-parent grain (reviewer finding #6)
 TAB_PARENT_CONC      = "Parent Concentration"
+# observed subaward reporting activity per (UEI x prime PIID): reports, action span, $
+TAB_SUBAWARD_ACTIVITY = "Subaward Activity"
 # raw transaction fact sheets (one row per subaward report id)
 TAB_DDG_TX           = "DDG Subaward Transactions"
 TAB_VIRGINIA_TX      = "Virginia Subaward Transactions"
 TAB_COLUMBIA_TX      = "Columbia Subaward Transactions"
+# in-scope prime contracts (USAspending award detail: authoritative prime PoP + obligations)
+TAB_PRIME_AWARDS     = "Prime Awards"
 # supplier dimension + classification (one row per UEI x program; merges the former
 # Subawardee UEI Index + Subawardee Parents into one source)
 TAB_SUPPLIER_MASTER  = "Supplier Master"
@@ -43,8 +47,6 @@ TAB_SUPPLIER_MASTER  = "Supplier Master"
 TAB_ARCHETYPE_OVERRIDES = "Vendor Archetype Overrides"
 # back-of-book price-deflator helper (Green Book Procurement TOA -> constant FY2026$ factor)
 TAB_DEFLATORS        = "Deflators"
-# semantic-duplicate adjudication: gross vs net-of-candidates by program (reviewer finding #2)
-TAB_DUP_AUDIT        = "Duplicate-Report Audit"
 
 # All <= 31 chars (Excel sheet-name limit); the packager re-asserts this.
 assert all(len(n) <= 31 for n in (
@@ -53,6 +55,6 @@ assert all(len(n) <= 31 for n in (
     TAB_DDG_PROGRAM, TAB_VIRGINIA_PROGRAM, TAB_COLUMBIA_PROGRAM, TAB_SWBS_ROLLUP,
     TAB_DOMAIN_CONC, TAB_MARKET_BRIDGE,
     TAB_DDG_TX, TAB_VIRGINIA_TX, TAB_COLUMBIA_TX,
-    TAB_SUPPLIER_MASTER, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS, TAB_DUP_AUDIT,
-    TAB_PARENT_CONC,
+    TAB_SUPPLIER_MASTER, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS,
+    TAB_PARENT_CONC, TAB_SUBAWARD_ACTIVITY, TAB_PRIME_AWARDS,
 ))

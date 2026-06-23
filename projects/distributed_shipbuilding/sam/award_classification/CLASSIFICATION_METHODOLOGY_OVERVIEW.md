@@ -76,6 +76,12 @@ the SWBS code on HII-DDG records and is not subject to this precedence.
   never an automatic module assignment.
 - Always the **post-filtered $13.1B base** (GFE primes and SIB pass-throughs already removed upstream);
   the raw per-PIID pulls are not analyzed directly.
+- **Scope is hull-builder new construction, including shipbuilder-procured non-nuclear long-lead / EOQ**
+  material (carried on the GDEB master / LLTM PIIDs for submarines, commingled with Basic Construction).
+  Excluded: nuclear-reactor LLTM (BPMI), GFE / component-prime advance procurement (GE propulsion, Aegis),
+  and design / lead-yard / ship-alteration / planning-yard work. DDG long-lead is predominantly GFE, so
+  the DDG base captures far less AP / LLTM / EOQ than the submarine base — **not a like-for-like make/buy
+  comparison.**
 - **`scope_status` is quarantine-and-report** — residuals are shown separately and retained so totals
   still tie to $13.1B; the corpus is not re-baselined for them.
 - **Never compare subsystem mix across programs** — `subsystem` exists only for HII-DDG, so any

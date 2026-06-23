@@ -34,27 +34,30 @@ from workbook_award_classification_refactor.sheets._widths import (
 )
 
 _SM_ROW = "SM Match Row"
-# Parent-grain helpers (sheet-only, hidden): collapse each UEI to its standardized
-# ULTIMATE PARENT (parent UEI, else the UEI itself), then carry that parent's positive
-# FY2026$ total and positive-row count WITHIN this row's domain - the inputs the live
-# Parent Concentration sheet aggregates (MAXIFS / SUMPRODUCT) at parent grain, exactly the
-# way Domain Concentration aggregates the per-UEI rows. They turn a per-parent grouping
-# (which a flat SUMIFS can't do across rows) into one value per row, so the parent metrics
-# stay live formulas instead of a baked CSV.
+# Concentration helpers (sheet-only, hidden). The parent helpers collapse each UEI to its
+# standardized ultimate parent and pre-aggregate that parent's positive FY2026$ within the
+# row's domain. The three row-level numerator/weight helpers deliberately move array arithmetic
+# out of the summary sheets: Domain Concentration / Parent Concentration can aggregate them with
+# SUMIFS, avoiding cross-sheet SUMPRODUCT expressions (especially 1/range) that surface #VALUE!
+# when any upstream cell is nonnumeric or temporarily unresolved during recalc.
 _PKEY = "Parent Key"
 _PDOM = "Parent Domain $"
 _PROWS = "Parent Domain Rows"
-_HELPERS = [_SM_ROW, _PKEY, _PDOM, _PROWS]
+_USQ = "UEI Positive $ Squared"
+_PHHI = "Parent HHI Numerator"
+_PWT = "Parent Firm Weight"
+_HELPERS = [_SM_ROW, _PKEY, _PDOM, _PROWS, _USQ, _PHHI, _PWT]
 
 # Subawardee UEI | NAICS-6 | NAICS-6 desc | Parent UEI | Parent name | Subawardee name |
 # Dom/For | $M | Records | First | Last | ≤FY12..FY26 $M (15) | D | D basis | P | P basis |
-# Role | SM Match Row | Parent Key | Parent Domain $ | Parent Domain Rows (all 4 hidden).
+# Role | SM Match Row | Parent Key | Parent Domain $ | Parent Domain Rows |
+# UEI Positive $ Squared | Parent HHI Numerator | Parent Firm Weight (all hidden).
 _WIDTHS = [W_UEI, W_NAICS, W_NAICS_DESC, W_UEI, W_VENDOR, W_VENDOR, W_DOMFOR,
            W_DOLLAR, W_COUNT, W_CONF, W_CONF,
            *([W_FY] * 15),
            W_CONF, W_DOMFOR, W_CONF, W_DOMFOR,
            W_TEXT_WIDE,
-           W_CD, W_UEI, W_DOLLAR, W_CD]
+           W_CD, W_UEI, W_DOLLAR, W_CD, W_DOLLAR, W_DOLLAR, W_DOLLAR]
 
 # Supplier Master source ranges (each attribute resolved once per UEI x program over there).
 _SM_KEY = supplier_master_cols("Key")
@@ -103,6 +106,9 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
     _UEI = f"${L['Subawardee UEI']}"       # the row's own UEI (column B), parent fallback
     _PKC = f"${L[_PKEY]}"                  # this row's Parent Key cell
     _DC = f"${L['Capability Domain Archetype (D)']}"   # this row's resolved D cell
+    _MC = f"${L['Subaward $M']}"              # this row's net FY2026$ total
+    _PDC = f"${L[_PDOM]}"                     # this row's parent-domain positive total
+    _PRC = f"${L[_PROWS]}"                    # positive rows in this parent x domain
     _M_RNG = _rng("Subaward $M")
     _PK_RNG = _rng(_PKEY)
     _D_RNG = _rng("Capability Domain Archetype (D)")
@@ -118,6 +124,11 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
         # distinct-parent count 1/COUNT never divides by zero on the Parent Concentration sheet).
         _PROWS: lambda r: (f'=MAX(1,COUNTIFS({_PK_RNG},{_PKC}{r},'
                            f'{_D_RNG},{_DC}{r},{_M_RNG},">0"))'),
+        # Row-level concentration numerators / weights. These are zero for nonpositive rows,
+        # matching the positive-spend concentration denominator used on the summary sheets.
+        _USQ: lambda r: f'=IF({_MC}{r}>0,{_MC}{r}^2,0)',
+        _PHHI: lambda r: f'=IF({_MC}{r}>0,{_MC}{r}*{_PDC}{r},0)',
+        _PWT: lambda r: f'=IF({_MC}{r}>0,1/{_PRC}{r},0)',
         _SM_ROW: lambda r: sm_match_row(f'"{program}|"&$B{r}', _SM_KEY),
         "Subaward $M":      pv_lifetime_formula(real, uei),
         "Published Subaward Records": lambda r: f"=COUNTIFS({uei},$B{r})",
@@ -144,15 +155,14 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
         tab=tab, group="model", csv_name=csv_name, table_name=table_name,
         banner=banner, intro=intro, widths=_WIDTHS,
         int_cols=["Published Subaward Records", _SM_ROW, _PROWS],
-        float_cols=["Subaward $M", *FY_HEADERS, _PDOM],
+        float_cols=["Subaward $M", *FY_HEADERS, _PDOM, _USQ, _PHHI, _PWT],
         date_cols=["First Subaward", "Last Subaward"], formula_cols=formulas,
         input_cols=["Subawardee UEI"],
         # COUNTIFS/MINIFS/MAXIFS surface values living on the tx sheet -> green links;
         # $M (a new SUMIFS aggregate) and the place-of-performance classifier stay black.
         link_cols=["Published Subaward Records", "First Subaward", "Last Subaward"],
         note_from=_NOTE_FROM, right_spacer=True, extra_cols=_HELPERS,
-        # the SM match index + the three parent-grain helpers are formula plumbing, not reader
-        # content (the Parent Concentration sheet aggregates the parent helpers cross-sheet).
+        # the SM match index + concentration helpers are formula plumbing, not reader content.
         hidden_headers=_HELPERS,
         # shorten the wide headers for the reader; the canonical names still drive every
         # formula / cols accessor (cross-sheet refs are unaffected).

@@ -13,9 +13,10 @@ All cells are LIVE formulas over the three program-vendor sheets' entity-grain r
                              $>0), the firm holding it (a DOMAIN-CONSTRAINED INDEX/MATCH on
                              that amount, so a tied $ in another domain can't mis-name it),
                              and that amount over the domain total.
-  - HHI                    = SUMPRODUCT(--(D=code), --($M>0), $M^2) / positivedomaintotal^2
-                             (Herfindahl, share-of-domain; 0..1; positive spend only, so
-                             negative adjustment balances don't distort it). Eff. # firms = 1/HHI.
+  - HHI                    = SUMIFS of a hidden per-UEI positive-$-squared helper divided by
+                             positive-domain-total^2 (Herfindahl, share-of-domain; 0..1).
+                             Negative adjustment balances do not enter either side of the ratio.
+                             Eff. # firms = 1/HHI.
   - Contestability         = a live label off Top-1 share + HHI + effective # firms.
 
 Scope inherited from the program-vendor sheets: GDEB-reported first-tier subcontracted
@@ -25,7 +26,7 @@ excluded (see Executive Summary S1 and the HII Co-Build sheet). Submarine shares
 """
 from __future__ import annotations
 
-from workbook_core.primitives import worksheet
+from workbook_core.primitives import worksheet, col_letter
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER,
     S_TITLE_SHEET, S_TITLE_SECTION, S_NUM, S_PCT, S_INT,
@@ -70,6 +71,7 @@ def _domain_row(code: str, name: str, cols):
     """One (program x domain) row: size + concentration, all live."""
     D = cols("Capability Domain Archetype (D)")
     M = cols("Subaward $M")
+    SQ = cols("UEI Positive $ Squared")
     NM = cols("Subawardee Vendor Name")
     dollar = f'SUMIFS({M},{D},"{code}")'                       # net domain total (size / share)
     pos = f'SUMIFS({M},{D},"{code}",{M},">0")'                 # positive-spend total (HHI denom)
@@ -88,12 +90,14 @@ def _domain_row(code: str, name: str, cols):
         # below - net dollars stay the size/share denominator (col D), concentration ratios use
         # positive dollars (reviewer finding #6).
         lambda r: f'=IFERROR(G{r}/{pos},"")',
-        # I HHI: positive spend only, numerator AND denominator, so negative adjustment
-        # balances are neither squared in nor able to shrink the denominator.
-        f'=IFERROR(SUMPRODUCT(--({D}="{code}"),--({M}>0),{M}^2)/{pos}^2,"")',  # I HHI
+        # I HHI: the row-level square helper is zero for nonpositive spend, so this is
+        # a plain SUMIFS rather than a cross-sheet array expression.
+        f'=IFERROR(SUMIFS({SQ},{D},"{code}")/{pos}^2,"")',                 # I HHI
         lambda r: f'=IFERROR(1/I{r},"")',                                   # J eff # firms
-        lambda r: (f'=IF(C{r}<=0,"",IF(OR(H{r}>=0.6,I{r}>=0.4),"Highly concentrated",'  # K
-                   f'IF(J{r}<=3,"Concentrated","Contestable")))'),
+        # Never classify an error / unavailable concentration metric as a real result.
+        lambda r: (f'=IF(E{r}=0,"",IF(NOT(AND(ISNUMBER(H{r}),ISNUMBER(I{r}),'  # K
+                   f'ISNUMBER(J{r}))),"Check",IF(OR(H{r}>=0.6,I{r}>=0.4),'
+                   f'"Highly concentrated",IF(J{r}<=3,"Concentrated","Contestable"))))'),
     ]
 
 
@@ -131,6 +135,25 @@ def _make_domain_concentration():
         return WorksheetSpec(ws)
 
     return SheetEntry(TAB_DOMAIN_CONC, _GROUP, render)
+
+
+# Promoted accessor for answer-first dashboards. Layout is deterministic: after the title /
+# intro / caveat, each program block is banner + header + len(DOMAINS) rows + total + 2 blanks.
+_FIRST_DOMAIN_ROW = 9
+_PROGRAM_STRIDE = len(DOMAINS) + 5
+_PROGRAM_INDEX = {name: i for i, (name, _cols) in enumerate(PROGRAMS)}
+
+
+def domain_conc_range(program: str, header: str) -> str:
+    """Absolute data range for one program block / visible header on Domain Concentration."""
+    if program not in _PROGRAM_INDEX:
+        raise KeyError(program)
+    if header not in _HEADERS:
+        raise KeyError(header)
+    first = _FIRST_DOMAIN_ROW + _PROGRAM_INDEX[program] * _PROGRAM_STRIDE
+    last = first + len(DOMAINS) - 1
+    letter = col_letter(_HEADERS.index(header) + 1)   # gutter A -> first content col B
+    return f"'{TAB_DOMAIN_CONC}'!${letter}${first}:${letter}${last}"
 
 
 DOMAIN_CONCENTRATION = _make_domain_concentration()

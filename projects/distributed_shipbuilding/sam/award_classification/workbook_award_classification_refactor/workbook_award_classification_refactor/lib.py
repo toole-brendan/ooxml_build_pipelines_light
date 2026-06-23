@@ -63,6 +63,8 @@ def build() -> int:
         assert_duplicate_audit_recorded,
         assert_archetype_codes_valid,
         assert_naics_rationale_aligned,
+        assert_transaction_dates_covered_by_fiscal_axis,
+        assert_prime_awards_cover_transaction_piids,
     )
     # Build-stopping guards (fail loudly before anything is packaged):
     #  - every transaction prime PIID is in the versioned scope manifest as include=Y, and
@@ -75,5 +77,7 @@ def build() -> int:
     assert_duplicate_audit_recorded()
     assert_archetype_codes_valid()
     assert_naics_rationale_aligned()
+    assert_transaction_dates_covered_by_fiscal_axis()
+    assert_prime_awards_cover_transaction_piids()
     return package_workbook(OUT, SHEETS, title=_TITLE, creator=_CREATOR,
                             app_name=_APP, normalize_dashes=True)

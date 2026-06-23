@@ -10,8 +10,8 @@ Discipline:
   - the bridge math is in ONE unit, nominal $M (observed FY2026$ is shown only as a memo);
   - the co-build Low is the strongest single issuer-disclosed figure (an input cell); Base/High
     are FORMULAS = Low x an explicit, editable scale multiple (blue), never hardcoded magnitudes;
-  - the "less reported HII-NNS overlap" line is a LIVE subtraction over the Virginia transaction
-    sheet keyed on the HII-NNS UEIs, so it reconciles to the data and updates on refresh;
+  - the "less reported HII-NNS overlap" lines are LIVE subtractions over both submarine
+    transaction sheets keyed on the HII-NNS UEIs, so a future Columbia report cannot be double-counted;
   - the result is labelled a cumulative co-build scenario blending vintages, order-of-magnitude.
 
 `summary` group. Live observed = the program-vendor / transaction sheets; the scenario columns
@@ -41,9 +41,8 @@ _HEADERS = ["Component", "Basis", "Low $M", "Base $M", "High $M", "Base x", "Hig
 _NCOLS = len(_HEADERS)
 _COLS = [36, 34, 12, 12, 12, 9, 9]
 
-# HII-Newport News operating entities visible in the Virginia subaward data (subawardee UEIs).
-# The "less reported overlap" line sums these so the co-build add-on is net of what observed
-# already counts. (Columbia retains no HII-NNS subaward after the scope exclusions -> $0.)
+# HII-Newport News operating entities used for the live overlap check on each submarine leaf.
+# Columbia is currently zero, but it remains formula-driven so a refresh cannot silently double-count.
 _HII_NNS_UEIS = ["WMXDDH6HJNA5", "CR39JL3216G7"]   # Huntington Ingalls Inc; Newport News Nuclear
 
 # Observed totals (live). Nominal = sum of the transaction "Subaward Amount $" (raw $) / 1e6;
@@ -54,33 +53,36 @@ _COL_OBS = f"=SUM({columbia_tx_cols('Subaward Amount $')})/1000000"
 _FY26_MEMO = "=" + "+".join(f"SUM({c('Subaward $M')})"
                             for c in (ddg_pv_cols, virginia_pv_cols, columbia_pv_cols))
 
-_VA_AMT = virginia_tx_cols("Subaward Amount $")
-_VA_UEI = virginia_tx_cols("Subawardee UEI")
-_VA_OVERLAP = ("=-(" + "+".join(f'SUMIFS({_VA_AMT},{_VA_UEI},"{u}")' for u in _HII_NNS_UEIS)
-               + ")/1000000")
+def _overlap_formula(txc) -> str:
+    amt = txc("Subaward Amount $")
+    uei = txc("Subawardee UEI")
+    return ("=-(" + "+".join(f'SUMIFS({amt},{uei},"{u}")' for u in _HII_NNS_UEIS)
+            + ")/1000000")
+
+
+_VA_OVERLAP = _overlap_formula(virginia_tx_cols)
+_COL_OVERLAP = _overlap_formula(columbia_tx_cols)
 
 INTRO = ("Illustrative bridge from reported subawards to cumulative submarine co-build workshare.")
 CAVEAT = ("Not a point-in-time market size. All bridge figures are nominal $M (observed "
           "constant-FY2026$ is a memo). Co-build Low is the strongest single issuer-disclosed "
-          "figure (blue input); Base and High are Low times an editable scale multiple (blue). "
-          "Vintages differ, so the scenario is order-of-magnitude and the co-build mass is not "
+          "figure (blue input); Base and High are Low times an editable analyst scenario multiple "
+          "(blue, not source-derived). Vintages differ, so the scenario is order-of-magnitude and the co-build mass is not "
           "split across capability domains.")
 
-# §3 derivation, as a compact (component, basis) table instead of a prose block.
+# §3 is a pointer plus the two bridge-operation rows. The full disclosed ledger and the CRS
+# workshare cross-check are the single home of the derivation, on HII Co-Build Workshare §3-§4.
 DERIVATION = [
-    ("Virginia co-build Low",
-     "$10,200M - HII-NNS Block V contract value as of 2023-05-24 (disclosed cumulative value)."),
-    ("Virginia Base / High",
-     "Low times scale (earlier blocks + CRS about 25% place-of-performance to about 50% "
-     "co-builder workshare, RL32418); judgment, order-of-magnitude."),
-    ("Columbia co-build Low",
-     "about $3,400M - lineage-summed disclosed mods ($2.2B 2020 modules + $567.6M 2023 + "
-     "$197M 2018 + $468M 2017 ceiling; cumulative values not also added)."),
-    ("Columbia Base / High",
-     "Low times scale (CRS about 22-23% workshare, R41129)."),
+    ("Co-build derivation",
+     "See HII Co-Build Workshare §3-§4 for the issuer-disclosed subcontract ledger (the $10.2B "
+     "Virginia Block V value, the lineage-summed Columbia mods) and the CRS workshare cross-check "
+     "that source and bound the Low figures."),
     ("Less reported HII-NNS overlap",
-     "HII-NNS subawards already in observed (Virginia UEIs WMXDDH6HJNA5 / CR39JL3216G7), "
-     "subtracted live. Columbia overlap = $0."),
+     "HII-NNS subawards already in observed (UEIs WMXDDH6HJNA5 / CR39JL3216G7) are "
+     "subtracted live from both Virginia and Columbia; Columbia currently evaluates to $0."),
+    ("Scenario multiples",
+     "Base / High scale multiples are editable analyst assumptions, not issuer-disclosed values. "
+     "They require an explicit rationale before the bridge is used as a market-sizing output."),
     ("Scope",
      "Co-build figures are not FFATA/FSRS transactions and are excluded from every other "
      "sheet. Edit the blue Low and scale cells to re-scope; the scenario updates live."),
@@ -122,21 +124,25 @@ def _make_market_bridge():
         live_style = [S_LABEL_INDENT_1, S_ITALIC, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT]
         r_va_gross = c.write(
             ["Virginia co-build workshare",
-             "Low = disclosed $10.2B Block V value (2023); Base/High = Low x scale",
+             "Low = disclosed $10.2B Block V value (2023); Base/High = analyst scale",
              10200, lambda r: f"=D{r}*G{r}", lambda r: f"=D{r}*H{r}", 1.47, 2.16],
             styles=gross_style, outline_level=1)
-        c.write(["Less reported HII-NNS overlap",
-                 "HII-NNS subawards already in observed (live; UEIs WMXDDH6HJNA5/CR39JL3216G7)",
+        c.write(["Less Virginia reported HII-NNS overlap",
+                 "HII-NNS subawards already in Virginia observed (live; two UEIs)",
                  _VA_OVERLAP, _VA_OVERLAP, _VA_OVERLAP, "", ""],
                 styles=live_style, outline_level=1)
         r_col_gross = c.write(["Columbia co-build workshare",
-                 "Low = disclosed lineage-summed mods about $3.4B; Base/High = Low x scale",
+                 "Low = disclosed-scope anchor about $3.4B; Base/High = analyst scale",
                  3400, lambda r: f"=D{r}*G{r}", lambda r: f"=D{r}*H{r}", 1.47, 2.35],
                 styles=gross_style, outline_level=1)
+        r_col_overlap = c.write(["Less Columbia reported HII-NNS overlap",
+                 "HII-NNS subawards already in Columbia observed (live; currently $0)",
+                 _COL_OVERLAP, _COL_OVERLAP, _COL_OVERLAP, "", ""],
+                styles=live_style, outline_level=1)
         c.total(["Estimated cumulative outsourced / co-build total (nominal)", "",
-                 f"=D{r_obs}+SUM(D{r_va_gross}:D{r_col_gross})",
-                 f"=E{r_obs}+SUM(E{r_va_gross}:E{r_col_gross})",
-                 f"=F{r_obs}+SUM(F{r_va_gross}:F{r_col_gross})", "", ""],
+                 f"=D{r_obs}+SUM(D{r_va_gross}:D{r_col_overlap})",
+                 f"=E{r_obs}+SUM(E{r_va_gross}:E{r_col_overlap})",
+                 f"=F{r_obs}+SUM(F{r_va_gross}:F{r_col_overlap})", "", ""],
                 styles=[S_BOLD, S_DEFAULT, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT], n_cols=_NCOLS)
         c.blank(2)
 

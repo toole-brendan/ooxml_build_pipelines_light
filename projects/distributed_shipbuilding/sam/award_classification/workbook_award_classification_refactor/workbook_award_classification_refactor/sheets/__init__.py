@@ -8,14 +8,15 @@ groups.SHEET_GROUPS canonical order. package_workbook() asserts that at build ti
 Reader-first layers (answer -> scope -> levers -> model -> evidence):
   - summary : the reader-facing answer pages - Executive Summary, the Domain
               Concentration "where to play" cut, and the Market Bridge estimate.
-  - guide   : scope & method - Taxonomy, Methodology, the HII Co-Build narrative.
+  - guide   : scope & method - Taxonomy and Methodology.
   - inputs  : the editable classification levers - the NAICS-6 archetype crosswalk
               and the hand-researched (Program, UEI) overrides.
   - model   : the derived cuts - the three program-vendor roll-ups (live SUMIFS /
               COUNTIFS / MINIFS / MAXIFS over the transaction leaves + a single
               Supplier Master match-row) plus the per-subsystem SWBS roll-up.
   - data    : the source evidence - the Supplier Master dimension, the SWBS crosswalk,
-              the deflators, and the three raw subaward-transaction fact spines.
+              the deflators, the prime awards, the HII co-build narrative, and the three
+              raw subaward-transaction fact spines.
 
 Shared NON-sheet helpers (imported by the sheet modules; NOT registered here):
   - _layout / _tabs / _widths / _cuts / _flat / _fiscal / _program_vendors / _taxonomy
@@ -28,11 +29,11 @@ from . import (
     executive_summary,
     domain_concentration,
     parent_concentration,
+    subaward_activity,
     market_bridge,
     # guide (scope & method)
     taxonomy,
     guide_methodology,
-    hii_co_build,
     # inputs (editable classification levers)
     naics6_archetype_map,
     vendor_archetype_overrides,
@@ -41,15 +42,15 @@ from . import (
     ddg_swbs_rollup,
     virginia_program_vendors,
     columbia_program_vendors,
-    # data (source evidence: dimension + crosswalk + deflators + raw transaction spines)
+    # data (source evidence: dimension + crosswalk + deflators + primes + co-build + raw transaction spines)
     supplier_master,
     hii_swbs_crosswalk,
     deflators,
+    prime_awards,
+    hii_co_build,
     ddg_subaward_transactions,
     virginia_subaward_transactions,
     columbia_subaward_transactions,
-    # validation (audit / sensitivity trail)
-    duplicate_audit,
 )
 
 
@@ -58,11 +59,11 @@ SHEETS: list = [
     executive_summary.EXECUTIVE_SUMMARY,
     domain_concentration.DOMAIN_CONCENTRATION,
     parent_concentration.PARENT_CONCENTRATION,
+    subaward_activity.SUBAWARD_ACTIVITY,
     market_bridge.MARKET_BRIDGE,
     # --- Guide (scope & method) ---
     taxonomy.TAXONOMY,
     guide_methodology.METHODOLOGY,
-    hii_co_build.HII_CO_BUILD,
     # --- Inputs (editable classification levers) ---
     naics6_archetype_map.NAICS_ARCHETYPE_MAP,
     vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
@@ -71,13 +72,13 @@ SHEETS: list = [
     ddg_swbs_rollup.DDG_SWBS_ROLLUP,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,
     columbia_program_vendors.COLUMBIA_PROGRAM_VENDORS,
-    # --- Data (source evidence: dimension + crosswalk + deflators + raw fact spines) ---
+    # --- Data (source evidence: dimension + crosswalk + deflators + primes + co-build + raw fact spines) ---
     supplier_master.SUPPLIER_MASTER,
     hii_swbs_crosswalk.HII_SWBS_CROSSWALK,
     deflators.DEFLATORS,
+    prime_awards.PRIME_AWARDS,
+    hii_co_build.HII_CO_BUILD,
     ddg_subaward_transactions.DDG_SUBAWARD_TX,
     virginia_subaward_transactions.VIRGINIA_SUBAWARD_TX,
     columbia_subaward_transactions.COLUMBIA_SUBAWARD_TX,
-    # --- Validation (audit / sensitivity trail) ---
-    duplicate_audit.DUPLICATE_AUDIT,
 ]

@@ -52,15 +52,22 @@ def tx_fy_formulas(csv_name: str, *, date_header: str, amount_header: str,
     factors = deflators_cols("Factor to FY2026 $")    # 'Deflators'!$D$f:$D$l
 
     def fed_fy(r):
-        return f"={_federal_fy_expr(f'${L[date_header]}{r}')}"
+        date_cell = f"${L[date_header]}{r}"
+        # A blank date must stay blank. Without this guard Excel treats the blank as serial 0,
+        # maps it to FY1900 / the <=FY12 bucket, and silently deflates an undated transaction.
+        return f'=IF({date_cell}="","",{_federal_fy_expr(date_cell)})'
 
     def factor(r):
         fy = f"${L[TX_FED_FY]}{r}"
         key = f'IF({fy}<={LE_CUTOFF},"{LE_KEY}","FY"&{fy})'
-        return f"=INDEX({factors},MATCH({key},{fy_keys},0))"
+        # A post-axis FY intentionally remains #N/A via MATCH, forcing the deflator table / axis
+        # to be extended rather than silently dropping or mis-binning new transactions.
+        return f'=IF({fy}="","",INDEX({factors},MATCH({key},{fy_keys},0)))'
 
     def real(r):
-        return f"=${L[amount_header]}{r}*${L[TX_FACTOR]}{r}"
+        amount = f"${L[amount_header]}{r}"
+        factor_cell = f"${L[TX_FACTOR]}{r}"
+        return f'=IF(OR({amount}="",{factor_cell}=""),"",{amount}*{factor_cell})'
 
     return {TX_FED_FY: fed_fy, TX_FACTOR: factor, TX_REAL: real}
 
