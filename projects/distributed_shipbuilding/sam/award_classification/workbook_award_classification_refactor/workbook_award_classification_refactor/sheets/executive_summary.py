@@ -1,32 +1,31 @@
 """executive_summary - the front-door dashboard tab.
 
 The first sheet: orients a cold reader and carries the headline numbers, all as LIVE
-formulas off the model / summary sheets (so they never drift). Seven blocks:
+formulas off the model / summary sheets (so they never drift). Answer-first order - market
+scale, then where the dollars sit, then accessibility:
 
   - Purpose + scope (static intro).
-  - §1 Scope & how to read these figures (the denominator caveat - what is and isn't
-    counted, and why submarine shares are NOT total-boat-construction shares).
-  - §2 Program totals (live per-program roll-up: UEIs, $M FY2026$, transactions, span,
-    foreign share).
-  - §3 Supplier-concentration headlines: the most concentrated material domain per program,
-    parent-collapse threshold crossings, and the share of dollars in highly concentrated domains.
-  - §4 Vendor-activity headlines: recurring-core vs one-time tail, multi-program reach and duration.
-  - §5 / §6 Capability Domain and Primary Output mix by fiscal year - one matrix each,
-    the three programs side by side (FY2022-FY2025), body = each archetype's % of that
-    program-FY's reported first-tier subaward $ (constant FY2026$); the bottom row gives
-    the absolute $M so a reader sees mix and magnitude together.
+  - §1 Scope & how to read these figures (the denominator caveat - what is and isn't counted,
+    and why submarine shares are NOT total-boat-construction shares).
+  - §2 Observed SAM by program and fiscal year (per-program $ by FY, lifetime memo, FY2025 reach).
+  - §3 Capability Domain mix by fiscal year (one matrix, the three programs side by side).
+  - §4 FY2025 where-to-play scorecard (per program x domain: size, parent concentration,
+    incumbency, retention, entry and the Observed Structure read - all read off Where to Play).
+  - §5 Supplier continuity by program and fiscal year (incumbent $ share + retention by FY,
+    program grain, off Supplier-Year Activity).
+  - §6 Primary Output mix by fiscal year (one matrix).
   - §7 DDG SWBS mix by FY (HII-Ingalls only).
 
-Cells reference the program-vendor sheets' per-FY and archetype columns via their
-promoted cols accessors (ddg_pv_cols / virginia_pv_cols / columbia_pv_cols), the same
-way those sheets reference the tx leaf. Carries no native table (a legend/dashboard).
+Cells reference the program-vendor per-FY / archetype columns, the Where to Play scorecard and
+the Supplier-Year Activity model via their promoted cols accessors, the same way those sheets
+reference the transaction leaf. Carries no native table (a legend/dashboard).
 """
 from __future__ import annotations
 
 from workbook_core.primitives import worksheet
 from workbook_core.styles import (
     S_DEFAULT, S_BOLD, S_HEADER_LEFT, S_HEADER_CENTER,
-    S_NUM, S_PCT, S_INT, S_DATE,
+    S_NUM, S_PCT, S_INT,
 )
 from workbook_core.tables import WorksheetSpec, SheetEntry
 from workbook_core.groups import group_color
@@ -44,9 +43,9 @@ from workbook_award_classification_refactor.sheets.columbia_program_vendors impo
     columbia_pv_cols,
 )
 from workbook_award_classification_refactor.sheets.ddg_swbs_rollup import swbs_rollup_cols
-from workbook_award_classification_refactor.sheets.domain_concentration import domain_conc_range
-from workbook_award_classification_refactor.sheets.subaward_activity import (
-    subaward_activity_profile_cell, subaward_activity_rollup_range,
+from workbook_award_classification_refactor.sheets.where_to_play import where_to_play_cols
+from workbook_award_classification_refactor.sheets.supplier_year_activity import (
+    supplier_year_cols,
 )
 
 _GROUP = "summary"
@@ -57,13 +56,28 @@ PROGRAMS = [
     ("Columbia", columbia_pv_cols),
     ("DDG-51", ddg_pv_cols),
 ]
+# Display label -> internal program key (the Supplier-Year Activity / spine key; DDG-51 -> DDG).
+_PROGRAM_KEY = {"Virginia": "Virginia", "Columbia": "Columbia", "DDG-51": "DDG"}
 # (column label, the per-FY header on the program-vendor sheet)
 FYS = [("FY22", "FY22 $M"), ("FY23", "FY23 $M"),
        ("FY24", "FY24 $M"), ("FY25", "FY25 $M")]
+FY_NUMS = [2022, 2023, 2024, 2025]
 
 # B label + 3 programs x 4 FY = 13 content columns (gutter A added by worksheet()).
 _NCOLS = 1 + len(PROGRAMS) * len(FYS)
 _COLS = [44] + [10] * (_NCOLS - 1)
+
+# Supplier-Year Activity ranges (program-grain continuity + FY reach).
+_SY_PROG = supplier_year_cols("Program")
+_SY_FY = supplier_year_cols("Federal FY")
+_SY_POS = supplier_year_cols("Positive Supplier $M")
+_SY_STATUS = supplier_year_cols("Activity Status")
+
+# Where to Play lookup columns (the FY2025 scorecard reads its rows by Axis / Program / FY / code).
+_W_AXIS = where_to_play_cols("Axis")
+_W_CODE = where_to_play_cols("Archetype Code")
+_W_PROGRAM = where_to_play_cols("Program")
+_W_FY = where_to_play_cols("Federal FY")
 
 INTRO = ("Reported hull-builder first-tier subawards for DDG-51, Virginia and Columbia; "
          "constant FY2026$.")
@@ -75,107 +89,103 @@ CAVEATS = [
     "Submarine shares are percentages of GDEB-reported subcontracted scope, not of total boat "
     "construction; the HII-Newport News co-build workshare is largely outside the reported subaward "
     "data (about $98M visible against tens of billions - see Market Bridge).",
-    "Read a domain's mix with both operating-entity and ultimate-parent concentration "
-    "(Domain Concentration, including its Parent columns).",
+    "Size, concentration and supplier continuity are read at one program x archetype x fiscal-year "
+    "grain (Where to Play). Domain Concentration keeps the lifetime structural view, with both "
+    "operating-entity and ultimate-parent concentration.",
 ]
 
 
-def _headline(c: RowCursor) -> None:
-    """§2 - one live row per program."""
-    c.write(["Program", "Subawardee UEIs", "Subaward $M (FY26$)", "Transactions",
-             "Earliest", "Latest", "Foreign-maj. UEIs %"],
-            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * 6)
+def _program_fy_totals(c: RowCursor) -> None:
+    """§2 - per-program $ by fiscal year, with a lifetime memo and FY2025 reach."""
+    total_fy25 = "+".join(f"SUM({cols('FY25 $M')})" for _n, cols in PROGRAMS)
+    c.write(["Program", "FY22 $M", "FY23 $M", "FY24 $M", "FY25 $M",
+             "Lifetime $M", "FY25 active UEIs", "FY25 share"],
+            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * 7)
     for name, cols in PROGRAMS:
-        uei = cols("Subawardee UEI")
-        pop = cols("Predominant Place of Performance (by records)")
+        key = _PROGRAM_KEY[name]
         c.write([
             name,
-            f"=COUNTA({uei})",
-            f'=SUM({cols("Subaward $M")})',
-            f'=SUM({cols("Published Subaward Records")})',
-            f'=MIN({cols("First Subaward")})',
-            f'=MAX({cols("Last Subaward")})',
-            f'=IFERROR(COUNTIF({pop},"Foreign")/COUNTA({uei}),"")',
-        ], styles=[S_DEFAULT, S_INT, S_NUM, S_INT, S_DATE, S_DATE, S_PCT])
-    c.write(['"Foreign-maj. UEIs %" = share of subawardee UEIs whose record-majority place of '
-             "performance is foreign (an entity-count ratio), not a share of dollars."],
+            f"=SUM({cols('FY22 $M')})",
+            f"=SUM({cols('FY23 $M')})",
+            f"=SUM({cols('FY24 $M')})",
+            f"=SUM({cols('FY25 $M')})",
+            f"=SUM({cols('Subaward $M')})",
+            f'=COUNTIFS({_SY_PROG},"{key}",{_SY_FY},2025,{_SY_POS},">0")',
+            lambda r: f'=IFERROR(F{r}/({total_fy25}),"")',
+        ], styles=[S_DEFAULT, S_NUM, S_NUM, S_NUM, S_NUM, S_NUM, S_INT, S_PCT])
+    c.write(["FY columns are constant FY2026$ reported first-tier subaward $; lifetime is all years. "
+             "FY25 active UEIs = distinct suppliers with positive FY2025 spend; FY25 share = the "
+             "program's FY2025 dollars over the three-program FY2025 total."],
             styles=[S_ITALIC])
 
 
-def _concentration_headlines(c: RowCursor) -> None:
-    """Answer-first concentration cut. 'Material' means at least 5% of program net $."""
-    headers = [
-        "Most concentrated material domain / Top-1 firm", "Domain share", "UEI Top-1",
-        "Parent Top-1", "Highly-conc. $ share", "Parent threshold crossings", "Status",
-    ]
-    c.write(headers, styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (len(headers) - 1))
+def _wtp(metric: str, program_disp: str, code: str) -> str:
+    """One FY2025 Where to Play cell, by axis D / program display label / archetype code."""
+    vals = where_to_play_cols(metric)
+    match = (f'MATCH(1,INDEX(({_W_AXIS}="D")*({_W_PROGRAM}="{program_disp}")'
+             f'*({_W_FY}=2025)*({_W_CODE}="{code}"),0),0)')
+    return f'=IFERROR(INDEX({vals},{match}),"")'
+
+
+def _fy25_domain_scorecard(c: RowCursor) -> None:
+    """§4 - one row per program x capability domain, FY2025, read off Where to Play."""
+    c.write(["Domain (FY2025)", "$M (FY26$)", "Program share", "Active UEIs", "Parent Top-1",
+             "Parent HHI", "Incumbent $", "Retention", "First-observed $", "Observed structure"],
+            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * 9)
+    for disp, _cols in PROGRAMS:
+        c.write([disp], styles=[S_BOLD])
+        for code, name, _defn in DOMAINS:
+            c.write([
+                f"{code}  {name}",
+                _wtp("Net Subaward $M", disp, code),
+                _wtp("Program Share", disp, code),
+                _wtp("Active Suppliers", disp, code),
+                _wtp("Parent Top-1", disp, code),
+                _wtp("Parent HHI", disp, code),
+                _wtp("Incumbent $ %", disp, code),
+                _wtp("Retention %", disp, code),
+                _wtp("First-observed $ %", disp, code),
+                _wtp("Observed Structure", disp, code),
+            ], styles=[S_DEFAULT, S_NUM, S_PCT, S_INT, S_PCT, S_NUM,
+                       S_PCT, S_PCT, S_PCT, S_DEFAULT])
+    c.write(["Parent Top-1 / Parent HHI / Incumbent $ / Retention / First-observed $ use positive "
+             "spend at the ultimate-parent grain. Observed Structure is an analyst-defined screen on "
+             "parent concentration and incumbency (Thin observation below three suppliers), not proof "
+             "of contestability - see Methodology. Full annual detail is on Where to Play."],
+            styles=[S_ITALIC])
+
+
+def _continuity_incumbent(key: str, fy: int) -> str:
+    cont = f'SUMIFS({_SY_POS},{_SY_PROG},"{key}",{_SY_FY},{fy},{_SY_STATUS},"Continued")'
+    tot = f'SUMIFS({_SY_POS},{_SY_PROG},"{key}",{_SY_FY},{fy})'
+    return f'=IFERROR({cont}/{tot},"")'
+
+
+def _continuity_retention(key: str, fy: int) -> str:
+    cont = (f'COUNTIFS({_SY_PROG},"{key}",{_SY_FY},{fy},'
+            f'{_SY_STATUS},"Continued",{_SY_POS},">0")')
+    prior = f'COUNTIFS({_SY_PROG},"{key}",{_SY_FY},{fy - 1},{_SY_POS},">0")'
+    return f'=IFERROR({cont}/{prior},"")'
+
+
+def _program_fy_continuity(c: RowCursor) -> None:
+    """§5 - program-grain supplier continuity across the FY window (off Supplier-Year Activity)."""
+    c.write(["Continuity (program x FY)", "FY22", "FY23", "FY24", "FY25"],
+            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * 4)
+    c.write(["Incumbent $ share (dollars to suppliers active the prior FY)"], styles=[S_BOLD])
     for name, _cols in PROGRAMS:
-        labels = domain_conc_range(name, "")
-        share = domain_conc_range(name, "Share")
-        dollar = domain_conc_range(name, "$M (FY26$)")
-        firms = domain_conc_range(name, "Top-1 firm")
-        top1 = domain_conc_range(name, "Top-1 share")
-        contest = domain_conc_range(name, "Contestability")
-        ptop1 = domain_conc_range(name, "Parent Top-1 %")
-        max_material = f'_xlfn.MAXIFS({top1},{share},">=0.05")'
-        match = f'MATCH(1,INDEX(({top1}={max_material})*({share}>=0.05),0),0)'
-        c.write([
-            f'=IFERROR("{name}: "&INDEX({labels},{match})&" - "&INDEX({firms},{match}),"{name}")',
-            f'=IFERROR(INDEX({share},{match}),"")',
-            f'=IFERROR({max_material},"")',
-            f'=IFERROR(INDEX({ptop1},{match}),"")',
-            f'=IF(COUNTIF({contest},"Check")>0,"",IFERROR('
-            f'SUMIFS({dollar},{contest},"Highly concentrated")/SUM({dollar}),""))',
-            f'=COUNTIFS({ptop1},">=0.6",{top1},"<0.6",{share},">=0.05")',
-            f'=IF(COUNTIF({contest},"Check")>0,"CHECK","OK")',
-        ], styles=[S_DEFAULT, S_PCT, S_PCT, S_PCT, S_PCT, S_INT, S_BOLD])
-    c.write([
-        "Material-domain screen = at least 5% of program net reported subaward $. "
-        "Concentration ratios use positive spend; 'Highly-concentrated $ share' uses net domain $. "
-        "Threshold crossings count material domains whose parent Top-1 is at least 60% while the "
-        "largest operating UEI remains below 60%.",
-    ], styles=[S_ITALIC])
-
-
-def _activity_headlines(c: RowCursor) -> None:
-    """Portfolio-wide supplier recurrence / persistence takeaways, live off Subaward Activity."""
-    uei = subaward_activity_rollup_range("Subawardee UEI")
-    net = subaward_activity_rollup_range("Net Subaward $M")
-    programs = subaward_activity_rollup_range("Distinct Programs")
-    duration = subaward_activity_rollup_range("Duration Tier")
-    reports = subaward_activity_rollup_range("Reports")
-    distinct = subaward_activity_rollup_range("Distinct Subaward Numbers")
-    neg = subaward_activity_rollup_range("Neg. Adjustments")
-
-    c.write(["Cohort", "% of vendors", "% of portfolio $"],
-            styles=[S_HEADER_LEFT, S_HEADER_CENTER, S_HEADER_CENTER])
-    for label in ("High / sustained activity", "Single / one-time"):
-        c.write([
-            label,
-            f'={subaward_activity_profile_cell(label, "% of Vendors")}',
-            f'={subaward_activity_profile_cell(label, "% of Portfolio $")}',
-        ], styles=[S_DEFAULT, S_PCT, S_PCT])
-    c.write([
-        "Multi-program suppliers",
-        f'=IFERROR(COUNTIF({programs},">1")/COUNTA({uei}),"")',
-        f'=IFERROR(SUMIFS({net},{programs},">1")/SUM({net}),"")',
-    ], styles=[S_DEFAULT, S_PCT, S_PCT])
-    c.write([
-        "Long-duration activity (>=6 years)",
-        f'=IFERROR(COUNTIF({duration},3)/COUNTA({uei}),"")',
-        f'=IFERROR(SUMIFS({net},{duration},3)/SUM({net}),"")',
-    ], styles=[S_DEFAULT, S_PCT, S_PCT])
-    c.write(["Reports per distinct subaward number",
-             f'=IFERROR(SUM({reports})/SUM({distinct}),"")'],
-            styles=[S_ITALIC, S_NUM])
-    c.write(["Negative adjustment rows / reports",
-             f'=IFERROR(SUM({neg})/SUM({reports}),"")'],
-            styles=[S_ITALIC, S_PCT])
-    c.write([
-        "Activity tiers are analyst-defined reporting-pattern descriptors. Duration is first-to-last "
-        "reported action and therefore a lower bound; see Subaward Activity for the breadth x duration "
-        "matrix, vendor detail and block continuity.",
-    ], styles=[S_ITALIC])
+        key = _PROGRAM_KEY[name]
+        c.write([name] + [_continuity_incumbent(key, fy) for fy in FY_NUMS],
+                styles=[S_DEFAULT] + [S_PCT] * 4)
+    c.write(["Retention (prior-FY suppliers still active this FY)"], styles=[S_BOLD])
+    for name, _cols in PROGRAMS:
+        key = _PROGRAM_KEY[name]
+        c.write([name] + [_continuity_retention(key, fy) for fy in FY_NUMS],
+                styles=[S_DEFAULT] + [S_PCT] * 4)
+    c.write(["Incumbent = positive-spend suppliers active in the prior fiscal year too. Retention = "
+             "the prior year's active suppliers still active this year. Both pool all archetypes; "
+             "the archetype detail is on Where to Play."],
+            styles=[S_ITALIC])
 
 
 def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -> None:
@@ -212,7 +222,7 @@ def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -
 
 
 def _swbs_matrix(c: RowCursor) -> None:
-    """§5 - DDG SWBS mix by FY: one DDG block (subs carry no SWBS). Rows = SWBS major
+    """§7 - DDG SWBS mix by FY: one DDG block (subs carry no SWBS). Rows = SWBS major
     groups (+U00); cells = the group's share of HII-Ingalls DDG reported subaward $ for the
     FY, off the per-subsystem roll-up rolled to major group. Columns sum to 100% incl. U00."""
     n = 1 + len(FYS)   # B label + FY22..FY25
@@ -249,24 +259,31 @@ def _make_exec_summary():
             c.write([line], styles=[S_DEFAULT])
         c.blank(2)
 
-        c.section("§2 - Program totals (lifetime, constant FY2026$)", _NCOLS)
-        _headline(c)
+        c.section("§2 - Observed SAM by program and fiscal year", _NCOLS)
+        _program_fy_totals(c)
         c.blank(2)
 
-        c.section("§3 - Supplier concentration headlines", _NCOLS)
-        _concentration_headlines(c)
-        c.blank(2)
-
-        c.section("§4 - Supplier activity & recurrence headlines", _NCOLS)
-        _activity_headlines(c)
-        c.blank(2)
-
-        c.section("§5 - Capability Domain mix by fiscal year", _NCOLS)
+        c.section("§3 - Capability Domain mix by fiscal year", _NCOLS)
         c.write(["Each cell = that domain's share of the program's reported first-tier subaward $ "
                  "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
                  "(pre-FY22 and partial FY26 are excluded from this mix; lifetime totals are in §2)."],
                 styles=[S_ITALIC])
         _matrix(c, "Capability Domain Archetype (D)", DOMAINS)
+        c.blank(2)
+
+        c.section("§4 - FY2025 where-to-play scorecard", _NCOLS)
+        c.write(["The answer page: FY2025 size and accessibility per program x capability domain, "
+                 "read off Where to Play. Read size (left) with parent concentration and incumbency "
+                 "(right) - a large share that is one embedded parent is not an open field."],
+                styles=[S_ITALIC])
+        _fy25_domain_scorecard(c)
+        c.blank(2)
+
+        c.section("§5 - Supplier continuity by program and fiscal year", _NCOLS)
+        c.write(["Whether FY2025 looks like the prior years: incumbent dollar share and supplier "
+                 "retention by program and fiscal year, pooled across archetypes."],
+                styles=[S_ITALIC])
+        _program_fy_continuity(c)
         c.blank(2)
 
         c.section("§6 - Primary Output mix by fiscal year", _NCOLS)
@@ -277,11 +294,11 @@ def _make_exec_summary():
         _matrix(c, "Primary Output Archetype (P)", OUTPUTS)
         c.blank(2)
 
-        c.section("§7 - DDG SWBS mix by FY", _NCOLS)
+        c.section("§7 - DDG SWBS mix by fiscal year", _NCOLS)
         c.write(["DDG-51 HII-Ingalls only (the SWBS-eligible builder), transaction-grain. Each cell = "
                  "that ship-system group's share of HII-Ingalls DDG reported subaward $ for the fiscal "
                  "year (constant FY2026$); columns sum to 100% incl. U00 unmapped. Denominator differs "
-                 "from §5/§6, which include GD-BIW."],
+                 "from §3/§6, which include GD-BIW."],
                 styles=[S_ITALIC])
         _swbs_matrix(c)
 

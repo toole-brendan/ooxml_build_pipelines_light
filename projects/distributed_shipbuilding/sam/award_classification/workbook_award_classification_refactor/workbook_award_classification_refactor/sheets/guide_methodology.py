@@ -1,8 +1,10 @@
 """guide_methodology - the "Methodology" tab (guide group; one module = one sheet).
 
-Scope, the classification axes, the assignment rule, and the inputs - the compact
-method a reader needs to interpret the figures. Full code definitions live on the
-Taxonomy tab (the shared ``_taxonomy`` leaf); this sheet only summarizes them.
+Scope, the classification axes, the assignment rule, the inputs, and the activity /
+continuity definitions - the compact method a reader needs to interpret the figures.
+Full code definitions live on the Taxonomy tab (the shared ``_taxonomy`` leaf); this
+sheet only summarizes them, and defines the annual activity / continuity measures the
+Where to Play and Supplier-Year Activity sheets report.
 """
 from __future__ import annotations
 
@@ -96,6 +98,36 @@ def _render_methodology() -> WorksheetSpec:
         (TAB_SWBS_CROSSWALK, "HII work-item code to observed SWBS group (HII-DDG only)"),
     ]:
         c.write([src, use], styles=[S_DEFAULT, S_DEFAULT])
+    c.blank(2)
+
+    # §5 Activity & continuity definitions
+    c.section("§5 - Activity and continuity definitions", _NCOLS)
+    c.blank()
+    _p(c, "Exact definitions for the annual measures on Where to Play and Supplier-Year Activity. "
+          "A supplier-year is one supplier (UEI) on one program in one federal fiscal year.")
+    c.blank()
+    _kv(c, "Active (in a FY)", "A supplier with positive spend on the program that fiscal year. "
+                               "Positive Supplier $ is the larger of net spend and zero, so "
+                               "deobligation-only years do not count as active.")
+    _kv(c, "First observed", "Active this fiscal year with no positive spend on the program in any "
+                             "earlier year - a genuinely new supplier (the start of the window can "
+                             "censor this, so it is a lower bound).")
+    _kv(c, "Continued", "Active this fiscal year and active the immediately preceding fiscal year.")
+    _kv(c, "Reactivated", "Active this fiscal year and in some earlier year, but not the immediately "
+                          "preceding one - a returning supplier.")
+    _kv(c, "Incumbent vendor share", "Of this year's active suppliers, the share active the prior "
+                                     "year too (a supplier-count ratio).")
+    _kv(c, "Incumbent $ share", "Of this year's positive spend, the share paid to suppliers active "
+                                "the prior year too (a dollar ratio).")
+    _kv(c, "Retention", "Of last year's active suppliers, the share still active this year.")
+    _kv(c, "Parent concentration", "Concentration after each operating UEI is collapsed to its "
+                                   "standardized ultimate parent: Parent Top-1 (largest parent's "
+                                   "share of positive spend), Parent HHI (sum of squared parent "
+                                   "shares) and Parent Eff Firms (one over Parent HHI).")
+    _kv(c, "Observed Structure", "An analyst-defined screen, NOT an economic market test: a cell "
+                                 "with fewer than three suppliers is Thin observation; otherwise it "
+                                 "is read on parent concentration (HHI at least 0.40) and incumbency "
+                                 "(incumbent $ at least 75%).")
 
     ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                    with_gutter=True, show_outline_symbols=False)

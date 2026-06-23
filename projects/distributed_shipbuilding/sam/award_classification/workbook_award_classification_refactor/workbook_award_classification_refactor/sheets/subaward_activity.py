@@ -1,9 +1,11 @@
-"""subaward_activity - vendor recurrence on new-construction subawards (multi-section).
+"""subaward_activity - historical supplier activity intensity on new-construction subawards.
 
-This sheet characterizes WHO the third-party suppliers are: one-off / brief makers vs
-long-running, recurring vendors. Recurrence is TWO INDEPENDENT AXES, so a single report count
-misleads. Both axes are shown as their own 0-3 tier column, and the composite profile is just
-the more intense of the two - nothing claims a mechanism a single axis can't establish:
+This sheet characterizes the HISTORICAL ACTIVITY INTENSITY of the third-party suppliers: one-off /
+brief makers vs broad, long-running vendors. It is a DESCRIPTIVE intensity measure, not a measure
+of annual supplier retention or incumbency - those are reported at the Program x Archetype x FY
+grain on Where to Play. Intensity is TWO INDEPENDENT AXES, so a single report count misleads. Both
+axes are shown as their own 0-3 tier column, and the composite profile is just the more intense of
+the two - nothing claims a mechanism a single axis can't establish:
 
   - BREADTH   = distinct subaward NUMBERS (one scope or many separate buys). Deduped: ~16.5% of
                 subaward numbers are refiled, so raw report rows overstate breadth ~1.3x.
@@ -242,12 +244,13 @@ _BLK_CENTER = {"# Vendors", "First observed", "Reactivated", "Continued from pri
 _BLK_STYLES = [S_DEFAULT, S_DEFAULT, S_INT, S_INT, S_INT, S_INT, S_PCT, S_PCT, S_INT, S_INT,
                S_NUM, S_NUM, S_PCT, S_PCT]
 
-INTRO = ("Vendor recurrence on new-construction subawards - profiled by type (§1), per vendor "
-         "(§2), per engagement (§3).")
-CAV1 = ("Two axes, each a 0-3 tier: breadth = distinct subaward numbers (deduped); duration = "
-        "first-to-last reported-action span (years). Observed Activity Profile = the more intense "
-        "of the two tiers. FFATA has no PoP field, so span is a reporting-based lower bound, not "
-        "contractual PoP.")
+INTRO = ("Historical supplier activity on reported new-construction subawards - breadth, observed "
+         "duration and block continuity.")
+CAV1 = ("Historical Activity Intensity combines two descriptive axes, each a 0-3 tier: breadth = "
+        "distinct subaward numbers (deduped); duration = first-to-last reported-action span (years). "
+        "Observed Activity Profile = the more intense of the two. It is not a measure of annual "
+        "supplier retention or incumbency; those are on Where to Play. FFATA has no PoP field, so "
+        "span is a reporting-based lower bound, not contractual PoP.")
 CAV2 = ("Span / Prime PoP = engagement span / prime PoP (Start to Current End, from Prime "
         "Awards). Net $ is constant FY2026$ and reconciles to the program-vendor total. Reports "
         "is a data-quality check (refilings inflate it); Neg. Adjustments counts reports with "
@@ -350,7 +353,7 @@ def _make_subaward_activity() -> tuple[SheetEntry, dict]:
 
         # §1 Activity profile (styled block, indented to col C so labels don't clip) ---------
         assert c.at() == type_banner
-        c.section("§1 - Observed activity intensity", _NCOLS)
+        c.section("§1 - Historical activity intensity", _NCOLS)
         assert c.at() == type_header
         c.write(_TYPE_HEADERS, styles=header_styles(_TYPE_HEADERS, center_headers=_TYPE_CENTER),
                 start_col=2)

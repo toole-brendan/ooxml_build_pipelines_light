@@ -15,8 +15,9 @@ Stages, in dependency order:
   [offline] build_program_vendors      -> {ddg,virginia,columbia}_program_vendors.csv  (research-prep + row spine)
   [offline] build_supplier_master      -> supplier_master.csv                     (the dimension; imports NAICS precedence from build_program_vendors)
   [offline] build_subaward_activity    -> subaward_activity.csv
+  [offline] build_supplier_year_activity -> supplier_year_activity.csv            (Program x UEI x Federal FY spine for Where to Play)
   [offline] build_ddg_swbs_rollup      -> ddg_swbs_by_subsystem.csv
-  [build]   build_workbook             -> award_classification_refactor.xlsx      (runs the 7 integrity asserts)
+  [build]   build_workbook             -> award_classification_refactor.xlsx      (runs the 8 integrity asserts)
 
 Hand-maintained inputs (NOT regenerated here): extracted/deflators.csv,
 extracted/naics6_archetype_map.csv, extracted/swbs_curated_c.csv, and
@@ -53,6 +54,7 @@ STAGES = [
     ("build_program_vendors:columbia", False, [PY, str(SCRIPTS / "build_program_vendors.py"), "columbia"]),
     ("build_supplier_master",      False, [PY, str(SCRIPTS / "build_supplier_master.py")]),
     ("build_subaward_activity",    False, [PY, str(SCRIPTS / "build_subaward_activity.py")]),
+    ("build_supplier_year_activity", False, [PY, str(SCRIPTS / "build_supplier_year_activity.py")]),
     ("build_ddg_swbs_rollup",      False, [PY, str(SCRIPTS / "build_ddg_swbs_rollup.py")]),
     ("build_workbook",             False, [PY, str(REFACTOR / "build_workbook.py")]),
 ]

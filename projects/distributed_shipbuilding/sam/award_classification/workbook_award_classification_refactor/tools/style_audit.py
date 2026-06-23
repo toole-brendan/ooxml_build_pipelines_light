@@ -50,6 +50,10 @@ SECTION_MAX = {"Taxonomy": 4, "Methodology": 6}
 # Helper columns that must never be visible (kept in-grid for formulas, hidden).
 FORBIDDEN_HEADERS = {
     "SM Match Row", "Override Match Row", "NAICS Map Match Row", "SWBS Match Row", "Key",
+    # Supplier-Year Activity parent-concentration helpers (hidden; read by Where to Play).
+    "UEI Positive $ Squared",
+    "Parent D-FY $M", "Parent D HHI Numerator", "Parent D Firm Weight",
+    "Parent P-FY $M", "Parent P HHI Numerator", "Parent P Firm Weight",
 }
 
 # Implementation / pipeline language that should not appear in visible prose.

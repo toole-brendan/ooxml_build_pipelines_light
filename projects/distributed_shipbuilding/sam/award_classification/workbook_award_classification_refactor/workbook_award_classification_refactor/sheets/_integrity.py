@@ -231,3 +231,34 @@ def assert_prime_awards_cover_transaction_piids() -> None:
     tx = set().union(*_tx_piids().values())
     missing = sorted(tx - prime)
     assert not missing, f"transaction PIIDs missing from Prime Awards: {missing}"
+
+
+def assert_supplier_year_activity_spine() -> None:
+    """The Supplier-Year Activity spine must be EXACTLY the (Program, Federal FY, Subawardee UEI)
+    universe derived from the three transaction CSVs - one row per key, no missing/extra key. A
+    drift would silently leave Where to Play cells empty (a missing supplier-year) or double-count
+    (a duplicate row), so fail the build loudly instead. Federal FY = calendar year, +1 from October
+    on (the same convention as _fiscal / build_supplier_year_activity)."""
+    expected: set[tuple[str, int, str]] = set()
+    for stem, label in _PROGRAMS:
+        headers, rows = load_table(f"{stem}_subaward_transactions")
+        ju = headers.index("Subawardee UEI")
+        jd = headers.index("Subaward Date")
+        for r in rows:
+            uei = (r[ju] if ju < len(r) else "").strip()
+            raw = (r[jd] if jd < len(r) else "").strip()
+            if not uei or not raw:
+                continue
+            y, m, _d = (int(x) for x in raw[:10].split("-"))
+            expected.add((label, y + int(m >= 10), uei))
+
+    sh, srows = load_table("supplier_year_activity")
+    jp, jf, ju = (sh.index("Program"), sh.index("Federal FY"), sh.index("Subawardee UEI"))
+    actual = {((r[jp]).strip(), int(r[jf]), (r[ju]).strip()) for r in srows}
+
+    assert len(actual) == len(srows), (
+        f"supplier_year_activity has duplicate (Program, FY, UEI) rows: "
+        f"{len(srows)} rows, {len(actual)} distinct keys")
+    assert actual == expected, (
+        "supplier-year spine != transaction-derived (Program x FY x UEI) universe: "
+        + _diff(actual, expected, "supplier-year", "transactions"))

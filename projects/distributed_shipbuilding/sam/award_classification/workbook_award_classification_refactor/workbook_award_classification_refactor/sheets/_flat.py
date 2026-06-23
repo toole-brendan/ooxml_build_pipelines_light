@@ -159,18 +159,26 @@ def override_or_map(ov_match: str, ov_ret: str, naics_match: str, naics_ret: str
     (UEI x Program) override only when it matched AND this axis's override cell is non-blank
     (an override row may set D but leave P blank - INDEX of a blank cell is numeric 0, not a
     valid P code), else the NAICS-6 map if matched, else `default` (D0 / P0). The MATCHes are
-    hoisted to one per-row helper column each, so this stays a short IF/INDEX."""
+    hoisted to one per-row helper column each, so this stays a short IF/INDEX.
+
+    AND does not short-circuit, so the override INDEX is evaluated even when ov_match=0; guard its
+    index with MAX(.,1) so it never becomes INDEX(range,0) - which returns the whole column and,
+    in a scalar context on a row OUTSIDE the override range, fails by implicit intersection
+    (#VALUE!) on recalc. The guarded value is irrelevant there since AND's first arg is already
+    FALSE; the THEN branch keeps the bare ov_match (only reached when ov_match>0)."""
+    cond_idx = f"INDEX({ov_ret},MAX({ov_match},1))"
     ov_idx = f"INDEX({ov_ret},{ov_match})"
-    return (f'=IF(AND({ov_match}>0,{ov_idx}<>""),{ov_idx},'
+    return (f'=IF(AND({ov_match}>0,{cond_idx}<>""),{ov_idx},'
             f'IF({naics_match}>0,INDEX({naics_ret},{naics_match}),"{default}"))')
 
 
 def override_or_map_basis(ov_match: str, ov_ret: str, naics_match: str) -> str:
     """The basis-tier label paired with override_or_map, AXIS-SPECIFIC (takes this axis's
     override range so the override-cell-blank case falls through to the map): 'Research
-    override' / 'NAICS-6 map' / 'Unresolved'."""
-    ov_idx = f"INDEX({ov_ret},{ov_match})"
-    return (f'=IF(AND({ov_match}>0,{ov_idx}<>""),"Research override",'
+    override' / 'NAICS-6 map' / 'Unresolved'. Same MAX(.,1) index guard as override_or_map so the
+    non-short-circuiting AND never evaluates INDEX(range,0) on an out-of-range row (#VALUE!)."""
+    cond_idx = f"INDEX({ov_ret},MAX({ov_match},1))"
+    return (f'=IF(AND({ov_match}>0,{cond_idx}<>""),"Research override",'
             f'IF({naics_match}>0,"NAICS-6 map","Unresolved"))')
 
 

@@ -86,6 +86,7 @@ def build() -> int:
         assert_naics_rationale_aligned,
         assert_transaction_dates_covered_by_fiscal_axis,
         assert_prime_awards_cover_transaction_piids,
+        assert_supplier_year_activity_spine,
     )
     # Build-stopping guards (fail loudly before anything is packaged):
     #  - every transaction prime PIID is in the versioned scope manifest as include=Y, and
@@ -100,5 +101,8 @@ def build() -> int:
     assert_naics_rationale_aligned()
     assert_transaction_dates_covered_by_fiscal_axis()
     assert_prime_awards_cover_transaction_piids()
+    #  - the Supplier-Year Activity spine is exactly the transaction-derived (Program x FY x UEI)
+    #    universe, so Where to Play never silently empties a cell or double-counts a supplier-year.
+    assert_supplier_year_activity_spine()
     return package_workbook(OUT, SHEETS, title=_TITLE, creator=_CREATOR,
                             app_name=_APP, normalize_dashes=True)

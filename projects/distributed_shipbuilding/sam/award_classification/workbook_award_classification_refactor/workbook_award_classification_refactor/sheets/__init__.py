@@ -29,6 +29,7 @@ from . import (
     # summary (reader-facing answer pages)
     executive_summary,
     domain_concentration,
+    where_to_play,
     subaward_activity,
     market_bridge,
     # guide (scope & method)
@@ -41,6 +42,7 @@ from . import (
     deflators,
     # model (Supplier Master dimension + derived program-vendor roll-ups + per-subsystem SWBS roll-up)
     supplier_master,
+    supplier_year_activity,
     ddg_program_vendors,
     ddg_swbs_rollup,
     virginia_program_vendors,
@@ -57,6 +59,7 @@ SHEETS: list = [
     # --- Summary (the answer pages) ---
     executive_summary.EXECUTIVE_SUMMARY,
     domain_concentration.DOMAIN_CONCENTRATION,
+    where_to_play.WHERE_TO_PLAY,
     subaward_activity.SUBAWARD_ACTIVITY,
     market_bridge.MARKET_BRIDGE,
     # --- Guide (scope & method) ---
@@ -69,6 +72,7 @@ SHEETS: list = [
     deflators.DEFLATORS,
     # --- Model (Supplier Master dimension + program-vendor roll-ups + per-subsystem SWBS roll-up) ---
     supplier_master.SUPPLIER_MASTER,
+    supplier_year_activity.SUPPLIER_YEAR_ACTIVITY,
     ddg_program_vendors.DDG_PROGRAM_VENDORS,
     ddg_swbs_rollup.DDG_SWBS_ROLLUP,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,

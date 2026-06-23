@@ -1,9 +1,11 @@
-"""domain_concentration - the "where to play" contestability view (live).
+"""domain_concentration - the LIFETIME capability-domain structure view (live).
 
 Turns the documented Capability-Domain concentration caveat into an analytical axis:
 for each program x capability domain, the domain's SIZE (reported first-tier subaward
 $, FY2026$) paired with its CONCENTRATION - so a large share that is really one or two
-contracts (a "fortress") is never misread as a broad, contestable supplier field.
+contracts (a "fortress") is never misread as a broad, open supplier field. This is the
+LIFETIME structural view; for annual Program x Archetype x FY dynamics (incumbency,
+retention, entry) read the Where to Play sheet.
 
 All cells are LIVE formulas over the three program-vendor sheets' entity-grain rows
 (one row per subawardee UEI), via their promoted cols accessors:
@@ -17,7 +19,8 @@ All cells are LIVE formulas over the three program-vendor sheets' entity-grain r
                              positive-domain-total^2 (Herfindahl, share-of-domain; 0..1).
                              Negative adjustment balances do not enter either side of the ratio.
                              Eff. # firms = 1/HHI.
-  - Contestability         = a live label off Top-1 share + HHI + effective # firms.
+  - Observed Structure     = a live label off Top-1 share + HHI + effective # firms (an
+                             analyst-defined screen on observed concentration, not a market test).
   - Parent grain           = the same domain's Top-1 share / HHI / effective firms / distinct
                              parents after each UEI is collapsed to its standardized ultimate
                              parent (the hidden program-vendor helpers), plus HHI-uplift and
@@ -60,21 +63,24 @@ PROGRAMS = [
 # parent (the same hidden program-vendor helpers the former Parent Concentration sheet used): a
 # domain can look contestable across operating entities yet be far more concentrated by parent.
 _HEADERS = ["", "$M (FY26$)", "Share", "Suppliers", "Top-1 firm",
-            "Top-1 $M", "Top-1 share", "HHI", "Eff. # firms", "Contestability",
+            "Top-1 $M", "Top-1 share", "HHI", "Eff. # firms", "Observed Structure",
             "Parent Top-1 %", "Parent HHI", "Parent Eff Firms", "Parent Firms",
             "HHI uplift", "Firm reduction"]
 _NCOLS = len(_HEADERS)
 _COLS = [40, 12, 8, 10, 26, 12, 11, 8, 12, 15, 13, 9, 13, 12, 11, 13]
 
-INTRO = "Capability-domain size and supplier concentration by program."
+INTRO = "Lifetime capability-domain size and supplier concentration by program."
 CAVEAT = ("Scope: GDEB-reported first-tier subcontracted scope, hull-builder only; the HII-Newport "
           "News co-build workshare is excluded (see Market Bridge). Submarine shares are share of "
           "reported subcontracted scope, not of total boat construction. Concentration uses positive "
-          "spend; size and share use net spend. Highly concentrated: Top-1 at least 60% or HHI at "
-          "least 0.40; concentrated: effective firms at most 3; otherwise contestable. HHI = sum of "
-          "squared within-domain shares; effective firms = 1/HHI. UEI (operating-entity) grain in the "
-          "left block; the Parent columns collapse entities to their standardized ultimate parent "
-          "(HHI uplift and firm reduction show what the collapse changes).")
+          "spend; size and share use net spend. Observed Structure is an analyst-defined screen on "
+          "observed concentration (not a market test): High concentration when Top-1 at least 60% or "
+          "HHI at least 0.40; Moderate concentration when effective firms at most 3; otherwise Lower "
+          "concentration. HHI = sum of squared within-domain shares; effective firms = 1/HHI. UEI "
+          "(operating-entity) grain in the left block; the Parent columns collapse entities to their "
+          "standardized ultimate parent (HHI uplift and firm reduction show what the collapse "
+          "changes). This is the lifetime view; see Where to Play for annual program x archetype "
+          "dynamics.")
 
 
 def _domain_row(code: str, name: str, cols):
@@ -111,7 +117,7 @@ def _domain_row(code: str, name: str, cols):
         # Never classify an error / unavailable concentration metric as a real result.
         lambda r: (f'=IF(E{r}=0,"",IF(NOT(AND(ISNUMBER(H{r}),ISNUMBER(I{r}),'  # K
                    f'ISNUMBER(J{r}))),"Check",IF(OR(H{r}>=0.6,I{r}>=0.4),'
-                   f'"Highly concentrated",IF(J{r}<=3,"Concentrated","Contestable"))))'),
+                   f'"High concentration",IF(J{r}<=3,"Moderate concentration","Lower concentration"))))'),
         # --- ultimate-parent grain (merged in from the former Parent Concentration sheet) ---
         f'=IFERROR({p_top1}/{pos},"")',                                     # L Parent Top-1 %
         # Parent HHI numerator already equals sum(parent total^2) when summed by domain.

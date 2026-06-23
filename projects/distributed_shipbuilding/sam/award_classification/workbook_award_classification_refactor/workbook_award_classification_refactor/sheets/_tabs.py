@@ -24,8 +24,10 @@ TAB_VIRGINIA_PROGRAM = "Virginia Program Vendors"
 TAB_COLUMBIA_PROGRAM = "Columbia Program Vendors"
 # per-subsystem SWBS roll-up (HII-Ingalls DDG-51 only carries SWBS)
 TAB_SWBS_ROLLUP      = "DDG SWBS by Ship-System"
-# capability-domain contestability ("where to play") — size x concentration, live
+# lifetime capability-domain structure ("observed structure") — size x concentration, live
 TAB_DOMAIN_CONC      = "Domain Concentration"
+# annual Program x Archetype x FY "where to play" scorecard (over Supplier-Year Activity)
+TAB_WHERE_TO_PLAY    = "Where to Play"
 # observed reported subawards -> illustrative cumulative co-build scenario (HII co-build add-on)
 TAB_MARKET_BRIDGE    = "Market Bridge"
 # observed subaward reporting activity per (UEI x prime PIID): reports, action span, $
@@ -39,6 +41,8 @@ TAB_PRIME_AWARDS     = "Prime Awards"
 # supplier dimension + classification (one row per UEI x program; merges the former
 # Subawardee UEI Index + Subawardee Parents into one source)
 TAB_SUPPLIER_MASTER  = "Supplier Master"
+# annual supplier activity model (one row per Program x UEI x Federal FY; status + concentration)
+TAB_SUPPLIER_YEAR    = "Supplier-Year Activity"
 # archetype crosswalk (NAICS-6 default) + the hand-researched (Program, UEI) overrides
 TAB_ARCHETYPE_OVERRIDES = "Mapping - Vendor Overrides"
 # back-of-book price-deflator helper (Green Book Procurement TOA -> constant FY2026$ factor)
@@ -49,8 +53,8 @@ assert all(len(n) <= 31 for n in (
     TAB_EXEC_SUMMARY,
     TAB_TAXONOMY, TAB_METHODOLOGY, TAB_NAICS_MAP, TAB_SWBS_CROSSWALK,
     TAB_DDG_PROGRAM, TAB_VIRGINIA_PROGRAM, TAB_COLUMBIA_PROGRAM, TAB_SWBS_ROLLUP,
-    TAB_DOMAIN_CONC, TAB_MARKET_BRIDGE,
+    TAB_DOMAIN_CONC, TAB_WHERE_TO_PLAY, TAB_MARKET_BRIDGE,
     TAB_DDG_TX, TAB_VIRGINIA_TX, TAB_COLUMBIA_TX,
-    TAB_SUPPLIER_MASTER, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS,
+    TAB_SUPPLIER_MASTER, TAB_SUPPLIER_YEAR, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS,
     TAB_SUBAWARD_ACTIVITY, TAB_PRIME_AWARDS,
 ))
