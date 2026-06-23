@@ -36,7 +36,7 @@ import csv
 from collections import Counter, defaultdict
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 EXTRACTED = REPO / ("projects/distributed_shipbuilding/sam/award_classification/"
                     "workbook_award_classification_refactor/extracted")
 

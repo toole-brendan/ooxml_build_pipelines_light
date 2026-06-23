@@ -7,17 +7,14 @@ guide sheets that present it - ``taxonomy`` (the legend) and ``guide_methodology
 the ``_taxonomy`` leaf in the DDG/submarine workbooks: a true leaf with no sheet
 dependencies, so any consumer can depend on it without importing a renderer.
 
-The schema is three independent axes, each answering exactly one question, plus a
+The schema is two independent published axes, each answering exactly one question, plus a
 forced catch-all per axis so every UEI x Program receives exactly one label on
 every axis (MECE):
 
   - Capability Domain (D, published) - what technical ship area the vendor supports
-  - Operating Role     (R, internal) - what value-chain responsibility it owns
   - Primary Output     (P, published) - what physically leaves the vendor
 
-Operating Role is an internal validation layer: it bounds and validates the Primary
-Output assignment, and is not itself a published dimension. Output is assigned from its
-own physical-form evidence; Role checks it, it does not generate it.
+Output is assigned from its own physical-form evidence.
 """
 from __future__ import annotations
 
@@ -26,7 +23,7 @@ from __future__ import annotations
 # ---------------------------------------------------------------------------
 
 GRAIN_INTRO = (
-    "Domain, role, output and SWBS definitions."
+    "Domain, output and SWBS definitions."
 )
 
 # ---------------------------------------------------------------------------
@@ -87,31 +84,7 @@ DOMAIN_TIEBREAKS: list[tuple[str, str]] = [
 ]
 
 # ---------------------------------------------------------------------------
-# Section 2 - Operating Role archetypes (internal)   (code, name, definition, validates)
-# ---------------------------------------------------------------------------
-
-ROLE_INTRO = (
-    "The value-chain responsibility the entity owns - design authority and "
-    "integration level. An internal validation layer, not published."
-)
-
-ROLES: list[tuple[str, str, str]] = [
-    ("R1", "Build-to-Spec Manufacturer / Processor / Distributor",
-     "Executes another party's drawings and specifications, or processes/resells others' material; supplies capacity, tradecraft, or material rather than an owned product design."),
-    ("R2", "Product / Equipment OEM",
-     "Owns the qualified design and configuration of its own finished equipment or product family."),
-    ("R3", "Subsystem / Shipset Integrator",
-     "Owns system-level integration and interface responsibility for a multi-item functional subsystem or shipset."),
-    ("R4", "Module / Distributed Shipbuilder",
-     "Performs shipyard-like structural construction and outfitting; delivers major ship modules or zone units."),
-    ("R5", "Production, Test & Lifecycle Service Provider",
-     "Delivers engineering, test/qualification, installation, repair, overhaul, or industrial labor; no new physical article."),
-    ("R0", "Unresolved / Non-operating Attribution",
-     "A holding, private-equity, or parent entity with no direct production, or insufficient evidence to assign an operating role."),
-]
-
-# ---------------------------------------------------------------------------
-# Section 3 - Primary Output archetypes (published)   (code, name, definition)
+# Section 2 - Primary Output archetypes (published)   (code, name, definition)
 # ---------------------------------------------------------------------------
 
 OUTPUT_INTRO = (
@@ -163,7 +136,7 @@ ASSIGNMENT_RULE = (
 )
 
 # ---------------------------------------------------------------------------
-# Section 5 - Ship-System Application (SWBS) - transaction-level, HII-DDG only
+# Section 3 - Ship-System Application (SWBS) - transaction-level, HII-DDG only
 # ---------------------------------------------------------------------------
 #
 # A different-grain COMPANION dimension, not a fourth entity archetype: it is

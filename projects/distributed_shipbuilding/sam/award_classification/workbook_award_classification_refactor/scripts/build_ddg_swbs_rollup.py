@@ -25,7 +25,7 @@ from build_swbs_crosswalk import (  # noqa: E402  (reuse the display / bucket lo
     GROUP_NAME, load_hierarchy, swbs_display, major_bucket,
 )
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 EXTRACTED = (REPO / "projects/distributed_shipbuilding/sam/award_classification"
              / "workbook_award_classification_refactor/extracted")
 XWALK_CSV = EXTRACTED / "hii_swbs_crosswalk.csv"

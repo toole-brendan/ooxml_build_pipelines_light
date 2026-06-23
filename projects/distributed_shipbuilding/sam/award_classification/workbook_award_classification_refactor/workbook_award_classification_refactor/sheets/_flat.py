@@ -100,18 +100,20 @@ class Cols:
         return f"{self.letter(h1)}{row}:{self.letter(h2)}{row}"
 
 
-def flat_header_letters(csv_name: str, *, note_from=None, note_from_verbatim=None,
-                        extra_cols=()) -> dict:
-    """{header: column letter} for the sheet make_flat_sheet WILL build from <csv_name>,
-    matching its column math: note-source columns dropped, extra_cols appended, gutter at
-    A (so the first data column is B). Lets a module reference its OWN columns by NAME at
-    build time (same-sheet self-references like the SWBS match-row or a Federal-FY column),
-    before the post-build cols accessor exists - so no column letter is hardcoded in Python.
-    Pass the SAME note_from / note_from_verbatim / extra_cols the make_flat_sheet call uses."""
-    headers = load_headers(csv_name)
+def flat_header_letters(csv_name: str = None, *, headers=None, note_from=None,
+                        note_from_verbatim=None, extra_cols=()) -> dict:
+    """{header: column letter} for the sheet make_flat_sheet WILL build, matching its column
+    math: note-source columns dropped, extra_cols appended, gutter at A (so the first data
+    column is B). Lets a module reference its OWN columns by NAME at build time (same-sheet
+    self-references like the SWBS match-row or a Federal-FY column), before the post-build cols
+    accessor exists - so no column letter is hardcoded in Python. Pass the SAME note_from /
+    note_from_verbatim / extra_cols the make_flat_sheet call uses. Column source: the explicit
+    `headers` list when given (a sheet whose rows come from a `table=` source rather than a CSV),
+    else <csv_name>'s header."""
+    base = list(headers) if headers is not None else load_headers(csv_name)
     drop = set((note_from or {}).values()) | set((note_from_verbatim or {}).values())
-    headers = [h for h in headers if h not in drop] + list(extra_cols)
-    return {h: col_letter(i + 1) for i, h in enumerate(headers)}   # +1 for the gutter (A)
+    cols = [h for h in base if h not in drop] + list(extra_cols)
+    return {h: col_letter(i + 1) for i, h in enumerate(cols)}   # +1 for the gutter (A)
 
 
 # --- Supplier Master match-row helpers --------------------------------------------------
@@ -213,7 +215,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     float_cols=(), date_cols=(), input_cols=(), formula_cols=None,
                     link_cols=(), note_from=None, note_from_verbatim=None,
                     right_spacer=False, extra_cols=(), hidden_headers=(),
-                    display_headers=None):
+                    display_headers=None, table=None):
     """Build a single-table sheet from extracted/<csv_name>.csv.
 
     Returns (SheetEntry, cols) where cols(header) -> "'Tab'!$Col$first:$Col$last".
@@ -264,7 +266,10 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     # (anchor header, source header, mode): URL-normalized vs verbatim note text.
     note_specs = ([(a, s, "url") for a, s in note_from.items()]
                   + [(a, s, "verbatim") for a, s in note_from_verbatim.items()])
-    headers, rows = load_table(csv_name)
+    # Row source: an explicit (headers, rows) `table` when given - a sheet whose rows are built
+    # in-memory (e.g. the program-vendor sheets, filtered from the Supplier Master dimension)
+    # rather than read from extracted/<csv_name>.csv - else load that CSV.
+    headers, rows = table if table is not None else load_table(csv_name)
     # Columns consumed into Notes are dropped from the visible table; capture their
     # original positions first so each row's source value can be read after the drop.
     for anchor, src, _mode in note_specs:

@@ -17,10 +17,8 @@ from __future__ import annotations
 TAB_EXEC_SUMMARY     = "Executive Summary"
 TAB_TAXONOMY         = "Taxonomy"
 TAB_METHODOLOGY      = "Methodology"
-TAB_NAICS_MAP        = "NAICS-6 Archetype Map"
-TAB_SWBS_CROSSWALK   = "HII Work-Item SWBS Crosswalk"
-# HII-Newport News co-build workshare (issuer-disclosed; excluded from the subaward data)
-TAB_HII_CO_BUILD     = "HII Co-Build Workshare"
+TAB_NAICS_MAP        = "Mapping - NAICS Defaults"
+TAB_SWBS_CROSSWALK   = "Mapping - HII Code to SWBS"
 TAB_DDG_PROGRAM      = "DDG Program Vendors"
 TAB_VIRGINIA_PROGRAM = "Virginia Program Vendors"
 TAB_COLUMBIA_PROGRAM = "Columbia Program Vendors"
@@ -30,8 +28,6 @@ TAB_SWBS_ROLLUP      = "DDG SWBS by Ship-System"
 TAB_DOMAIN_CONC      = "Domain Concentration"
 # observed reported subawards -> illustrative cumulative co-build scenario (HII co-build add-on)
 TAB_MARKET_BRIDGE    = "Market Bridge"
-# capability-domain concentration at UEI vs ultimate-parent grain (reviewer finding #6)
-TAB_PARENT_CONC      = "Parent Concentration"
 # observed subaward reporting activity per (UEI x prime PIID): reports, action span, $
 TAB_SUBAWARD_ACTIVITY = "Subaward Activity"
 # raw transaction fact sheets (one row per subaward report id)
@@ -44,17 +40,17 @@ TAB_PRIME_AWARDS     = "Prime Awards"
 # Subawardee UEI Index + Subawardee Parents into one source)
 TAB_SUPPLIER_MASTER  = "Supplier Master"
 # archetype crosswalk (NAICS-6 default) + the hand-researched (Program, UEI) overrides
-TAB_ARCHETYPE_OVERRIDES = "Vendor Archetype Overrides"
+TAB_ARCHETYPE_OVERRIDES = "Mapping - Vendor Overrides"
 # back-of-book price-deflator helper (Green Book Procurement TOA -> constant FY2026$ factor)
 TAB_DEFLATORS        = "Deflators"
 
 # All <= 31 chars (Excel sheet-name limit); the packager re-asserts this.
 assert all(len(n) <= 31 for n in (
     TAB_EXEC_SUMMARY,
-    TAB_TAXONOMY, TAB_METHODOLOGY, TAB_NAICS_MAP, TAB_SWBS_CROSSWALK, TAB_HII_CO_BUILD,
+    TAB_TAXONOMY, TAB_METHODOLOGY, TAB_NAICS_MAP, TAB_SWBS_CROSSWALK,
     TAB_DDG_PROGRAM, TAB_VIRGINIA_PROGRAM, TAB_COLUMBIA_PROGRAM, TAB_SWBS_ROLLUP,
     TAB_DOMAIN_CONC, TAB_MARKET_BRIDGE,
     TAB_DDG_TX, TAB_VIRGINIA_TX, TAB_COLUMBIA_TX,
     TAB_SUPPLIER_MASTER, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS,
-    TAB_PARENT_CONC, TAB_SUBAWARD_ACTIVITY, TAB_PRIME_AWARDS,
+    TAB_SUBAWARD_ACTIVITY, TAB_PRIME_AWARDS,
 ))

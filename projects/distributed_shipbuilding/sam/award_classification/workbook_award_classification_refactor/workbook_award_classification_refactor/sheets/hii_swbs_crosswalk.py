@@ -10,7 +10,7 @@ The component-text / curation rationale folds into a hover Note on the SWBS cell
 from extracted/hii_swbs_crosswalk.csv (scripts/build_swbs_crosswalk.py).
 
 Promoted accessor (imported by ddg_subaward_swbs):
-  swbs_xwalk_cols(header) -> "'HII Work-Item SWBS Crosswalk'!$X$first:$X$last".
+  swbs_xwalk_cols(header) -> "'Mapping - HII Code to SWBS'!$X$first:$X$last".
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ from workbook_award_classification_refactor.sheets._widths import (
 _WIDTHS = [W_CODE, W_CODE, W_TEXT_WIDE, W_TEXT]
 
 HII_SWBS_CROSSWALK, swbs_xwalk_cols = make_flat_sheet(
-    tab=TAB_SWBS_CROSSWALK, group="data",
+    tab=TAB_SWBS_CROSSWALK, group="inputs",
     csv_name="hii_swbs_crosswalk", table_name="HiiSwbsCrosswalk",
     banner="§1 - HII work-item code to SWBS crosswalk",
     intro="HII work-item code to SWBS subsystem.",

@@ -8,7 +8,7 @@ axis, defaulted from the crosswalk), so it is not carried here. Built from
 extracted/vendor_archetype_overrides.csv (scripts/build_archetype_overrides.py).
 
 Promoted accessor (imported by the program-vendor sheets, Phase 2):
-  overrides_cols(header) -> "'Vendor Archetype Overrides'!$X$first:$X$last".
+  overrides_cols(header) -> "'Mapping - Vendor Overrides'!$X$first:$X$last".
 """
 from __future__ import annotations
 
@@ -17,11 +17,11 @@ from workbook_award_classification_refactor.sheets._flat import (
 )
 from workbook_award_classification_refactor.sheets._tabs import TAB_ARCHETYPE_OVERRIDES
 from workbook_award_classification_refactor.sheets._widths import (
-    W_PROGRAM, W_UEI, W_CONF, W_VENDOR,
+    W_PROGRAM, W_UEI, W_SHORT_FLAG, W_VENDOR,
 )
 
 # Program | Subawardee UEI | Capability Domain (D) | Primary Output (P) | Key (Program|UEI)
-_WIDTHS = [W_PROGRAM, W_UEI, W_CONF, W_CONF, W_VENDOR]
+_WIDTHS = [W_PROGRAM, W_UEI, W_SHORT_FLAG, W_SHORT_FLAG, W_VENDOR]
 
 _NOTE_VERBATIM = {
     "Capability Domain (D)": "Capability Domain Note",

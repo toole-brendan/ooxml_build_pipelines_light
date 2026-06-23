@@ -8,9 +8,9 @@ on the code. Two provenance tiers:
   X (observed)  - the code has a deterministic modal SWBS group in the HII code
                   dictionary (i.e. it was seen with an explicit 3-digit SWBS somewhere;
                   no one-to-many conflicts in this pull). 113 codes.
-  C (curated)   - a high-/medium-confidence inference from the code's component text,
-                  vendor evidence and codebook, hand-authored in extracted/swbs_curated_c.csv
-                  for high-dollar codes the dictionary left blank.
+  C (curated)   - a curated inference from the code's component text, vendor evidence and
+                  codebook, hand-authored in extracted/swbs_curated_c.csv for high-dollar
+                  codes the dictionary left blank.
 
 The SWBS display string ("200 Propulsion Plant > 234 Propulsion gas turbines") is composed
 here from swbs_hierarchy.csv + _taxonomy.SWBS_GROUPS, with the three standing code
@@ -25,7 +25,7 @@ import csv
 import importlib.util
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 AC = REPO / "projects/distributed_shipbuilding/sam/award_classification"
 REFACTOR = AC / "workbook_award_classification_refactor"
 EXTRACTED = REFACTOR / "extracted"
@@ -117,9 +117,7 @@ def build() -> None:
             if code in xwalk:           # deterministic X wins; flag the redundant curation
                 c_skipped += 1
                 continue
-            conf = (r.get("Confidence") or "").strip()
-            rat = (r.get("Rationale") or "").strip()
-            ev = f"[{conf}] {rat}".strip() if conf else rat
+            ev = (r.get("Rationale") or "").strip()
             xwalk[code] = {"sg": sg, "basis": BASIS_C, "evidence": ev}
             c_added += 1
 

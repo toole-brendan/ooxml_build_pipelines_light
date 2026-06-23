@@ -25,7 +25,7 @@ import os
 import sys
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+REPO = Path(__file__).resolve().parents[6]  # award_classification/corpus/scripts/_corpus.py -> repo root
 TAXONOMY_PY = REPO / "projects/distributed_shipbuilding/tam/consolidated/workbook_consolidated/sheets/_taxonomy.py"
 REGISTRY_CSV = REPO / "projects/distributed_shipbuilding/sam/award_classification/supplier_bucketing/vendor_evidence_registry.csv"
 EXTRACTED = REPO / "projects/distributed_shipbuilding/sam/award_classification/corpus/extracted"

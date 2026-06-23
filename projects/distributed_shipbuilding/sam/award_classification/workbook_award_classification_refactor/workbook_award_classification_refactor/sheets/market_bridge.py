@@ -3,8 +3,8 @@
 The program-vendor / Domain Concentration sheets model the OBSERVED reported first-tier
 FFATA/FSRS subawards. This sheet is an illustrative cumulative co-build scenario, not a
 point-in-time market size: it adds the FFATA-invisible HII-Newport News co-build workshare
-(issuer-disclosed; see HII Co-Build) to the observed base and subtracts the HII-NNS footprint
-already counted in observed so nothing is double-counted.
+(issuer-disclosed; the disclosed ledger + sources are folded into §3) to the observed base and
+subtracts the HII-NNS footprint already counted in observed so nothing is double-counted.
 
 Discipline:
   - the bridge math is in ONE unit, nominal $M (observed FY2026$ is shown only as a memo);
@@ -70,13 +70,18 @@ CAVEAT = ("Not a point-in-time market size. All bridge figures are nominal $M (o
           "(blue, not source-derived). Vintages differ, so the scenario is order-of-magnitude and the co-build mass is not "
           "split across capability domains.")
 
-# §3 is a pointer plus the two bridge-operation rows. The full disclosed ledger and the CRS
-# workshare cross-check are the single home of the derivation, on HII Co-Build Workshare §3-§4.
+# §3 is the single home of the co-build derivation: the issuer-disclosed ledger that sources the
+# §2 Low anchors, the live overlap subtraction, the scenario-multiple caveat, and the sources.
 DERIVATION = [
-    ("Co-build derivation",
-     "See HII Co-Build Workshare §3-§4 for the issuer-disclosed subcontract ledger (the $10.2B "
-     "Virginia Block V value, the lineage-summed Columbia mods) and the CRS workshare cross-check "
-     "that source and bound the Low figures."),
+    ("Virginia co-build Low ($10.2B)",
+     "HII-NNS Block V cumulative contract value disclosed 2023-05-24 - the strongest single public "
+     "Virginia figure (supersedes the $9.8B Mar-2021 option-exercise value and the $1.04B Apr-2019 "
+     "AP mod). An issuer disclosure (HII newsroom / SEC), not an FFATA transaction."),
+    ("Columbia co-build Low (~$3.4B)",
+     "Lineage-summed HII-NNS disclosures: ~$2.2B design + modules for the first two boats (Nov 2020), "
+     "$567.6M Build-II LLTM + advance construction (Apr 2023), $197M long-lead (Nov 2018), under the "
+     "$468M IPPD ceiling (Dec 2017). Cumulative values are basis-typed and not additive - summed by "
+     "lineage, not down a column."),
     ("Less reported HII-NNS overlap",
      "HII-NNS subawards already in observed (UEIs WMXDDH6HJNA5 / CR39JL3216G7) are "
      "subtracted live from both Virginia and Columbia; Columbia currently evaluates to $0."),
@@ -86,6 +91,12 @@ DERIVATION = [
     ("Scope",
      "Co-build figures are not FFATA/FSRS transactions and are excluded from every other "
      "sheet. Edit the blue Low and scale cells to re-scope; the scenario updates live."),
+    ("Sources",
+     "CRS RL32418 (Virginia) / R41129 (Columbia); DoD/DoW contract announcements (N00024-17-C-2100 "
+     "Block V; N00024-17-C-2117 Columbia design); HII issuer disclosures (hii.com newsroom) + SEC "
+     "10-K (EDGAR CIK 1501585); GD Electric Boat releases. Mechanism: FAR 52.204-10 first-tier FFATA "
+     "reporting - HII characterises these as EB subcontract modifications, so the absence is a "
+     "reporting / data-treatment gap, not a clean teaming carve-out."),
 ]
 
 
@@ -146,7 +157,7 @@ def _make_market_bridge():
                 styles=[S_BOLD, S_DEFAULT, S_NUM, S_NUM, S_NUM, S_DEFAULT, S_DEFAULT], n_cols=_NCOLS)
         c.blank(2)
 
-        c.banner("§3 - Derivation & basis", n_cols=_NCOLS, style=S_TITLE_SECTION,
+        c.banner("§3 - Derivation, disclosed ledger & sources", n_cols=_NCOLS, style=S_TITLE_SECTION,
                  mark_collapsible=True)
         c.write(["Component", "Basis"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
         for comp, basis in DERIVATION:

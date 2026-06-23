@@ -18,10 +18,14 @@ All cells are LIVE formulas over the three program-vendor sheets' entity-grain r
                              Negative adjustment balances do not enter either side of the ratio.
                              Eff. # firms = 1/HHI.
   - Contestability         = a live label off Top-1 share + HHI + effective # firms.
+  - Parent grain           = the same domain's Top-1 share / HHI / effective firms / distinct
+                             parents after each UEI is collapsed to its standardized ultimate
+                             parent (the hidden program-vendor helpers), plus HHI-uplift and
+                             firm-reduction deltas. Merged in from the former Parent Concentration sheet.
 
 Scope inherited from the program-vendor sheets: GDEB-reported first-tier subcontracted
 scope, hull-builder-only; the HII-Newport News co-build workshare is FFATA-invisible and
-excluded (see Executive Summary S1 and the HII Co-Build sheet). Submarine shares are
+excluded (see Executive Summary §1 and Market Bridge). Submarine shares are
 "% of reported subcontracted scope," NOT "% of total boat construction." `model` group.
 """
 from __future__ import annotations
@@ -50,32 +54,42 @@ PROGRAMS = [
     ("DDG-51", ddg_pv_cols),
 ]
 
-# B label + 9 metric columns. Top-1 $M (G) is the helper the firm-name match keys on -
-# kept beside Top-1 firm / Top-1 share so the dollar, holder, and share read together.
+# B label + 9 UEI-grain metric columns + 6 ultimate-parent-grain columns. Top-1 $M (G) is the
+# helper the firm-name match keys on - kept beside Top-1 firm / Top-1 share so the dollar, holder,
+# and share read together. The Parent block (L..Q) collapses each UEI to its standardized ultimate
+# parent (the same hidden program-vendor helpers the former Parent Concentration sheet used): a
+# domain can look contestable across operating entities yet be far more concentrated by parent.
 _HEADERS = ["", "$M (FY26$)", "Share", "Suppliers", "Top-1 firm",
-            "Top-1 $M", "Top-1 share", "HHI", "Eff. # firms", "Contestability"]
+            "Top-1 $M", "Top-1 share", "HHI", "Eff. # firms", "Contestability",
+            "Parent Top-1 %", "Parent HHI", "Parent Eff Firms", "Parent Firms",
+            "HHI uplift", "Firm reduction"]
 _NCOLS = len(_HEADERS)
-_COLS = [40, 12, 8, 10, 26, 12, 11, 8, 12, 15]
+_COLS = [40, 12, 8, 10, 26, 12, 11, 8, 12, 15, 13, 9, 13, 12, 11, 13]
 
 INTRO = "Capability-domain size and supplier concentration by program."
 CAVEAT = ("Scope: GDEB-reported first-tier subcontracted scope, hull-builder only; the HII-Newport "
-          "News co-build workshare is excluded (see HII Co-Build). Submarine shares are share of "
+          "News co-build workshare is excluded (see Market Bridge). Submarine shares are share of "
           "reported subcontracted scope, not of total boat construction. Concentration uses positive "
           "spend; size and share use net spend. Highly concentrated: Top-1 at least 60% or HHI at "
           "least 0.40; concentrated: effective firms at most 3; otherwise contestable. HHI = sum of "
-          "squared within-domain shares; effective firms = 1/HHI. Operating-entity (UEI) grain; for "
-          "ultimate-parent grain see Parent Concentration.")
+          "squared within-domain shares; effective firms = 1/HHI. UEI (operating-entity) grain in the "
+          "left block; the Parent columns collapse entities to their standardized ultimate parent "
+          "(HHI uplift and firm reduction show what the collapse changes).")
 
 
 def _domain_row(code: str, name: str, cols):
-    """One (program x domain) row: size + concentration, all live."""
+    """One (program x domain) row: size + UEI-grain + ultimate-parent-grain concentration, all live."""
     D = cols("Capability Domain Archetype (D)")
     M = cols("Subaward $M")
     SQ = cols("UEI Positive $ Squared")
     NM = cols("Subawardee Vendor Name")
+    PD = cols("Parent Domain $")                               # parent's positive $ within the row's domain
+    PN = cols("Parent HHI Numerator")                         # positive UEI $ x parent-domain total
+    PW = cols("Parent Firm Weight")                           # positive row weight = 1/parent-domain rows
     dollar = f'SUMIFS({M},{D},"{code}")'                       # net domain total (size / share)
     pos = f'SUMIFS({M},{D},"{code}",{M},">0")'                 # positive-spend total (HHI denom)
     top1 = f'_xlfn.MAXIFS({M},{D},"{code}",{M},">0")'          # largest positive vendor total
+    p_top1 = f'_xlfn.MAXIFS({PD},{D},"{code}",{M},">0")'       # largest single parent (max of parent totals)
     return [
         f"{code}  {name}",
         f"={dollar}",                                                       # C $M (net)
@@ -98,11 +112,20 @@ def _domain_row(code: str, name: str, cols):
         lambda r: (f'=IF(E{r}=0,"",IF(NOT(AND(ISNUMBER(H{r}),ISNUMBER(I{r}),'  # K
                    f'ISNUMBER(J{r}))),"Check",IF(OR(H{r}>=0.6,I{r}>=0.4),'
                    f'"Highly concentrated",IF(J{r}<=3,"Concentrated","Contestable"))))'),
+        # --- ultimate-parent grain (merged in from the former Parent Concentration sheet) ---
+        f'=IFERROR({p_top1}/{pos},"")',                                     # L Parent Top-1 %
+        # Parent HHI numerator already equals sum(parent total^2) when summed by domain.
+        f'=IFERROR(SUMIFS({PN},{D},"{code}")/{pos}^2,"")',                 # M Parent HHI
+        lambda r: f'=IFERROR(1/M{r},"")',                                   # N Parent Eff Firms
+        # Each parent's positive rows carry weights summing to exactly one (distinct-parent count).
+        lambda r: f'=IF(E{r}=0,"",SUMIFS({PW},{D},"{code}"))',             # O Parent Firms
+        lambda r: f'=IF(OR(I{r}="",M{r}=""),"",M{r}-I{r})',              # P HHI uplift (parent - UEI HHI)
+        lambda r: f'=IF(OR(E{r}="",O{r}=""),"",E{r}-O{r})',             # Q firm reduction (suppliers - parent firms)
     ]
 
 
 _BODY_STY = [S_DEFAULT, S_NUM, S_PCT, S_INT, S_DEFAULT, S_NUM, S_PCT, S_NUM,
-             S_NUM, S_BOLD]
+             S_NUM, S_BOLD, S_PCT, S_NUM, S_NUM, S_INT, S_NUM, S_INT]
 
 
 def _make_domain_concentration():
@@ -131,9 +154,11 @@ def _make_domain_concentration():
                     mark=(f"{prog}:first" if j == 0
                           else f"{prog}:last" if j == _last_domain else None))
         c.total([f"{prog} total", f"=SUM({M})", "=1",
-                 f'=COUNTIFS({M},">0")', "", "", "", "", "", ""],
+                 f'=COUNTIFS({M},">0")', "", "", "", "", "", "",
+                 "", "", "", "", "", ""],
                 styles=[S_BOLD, S_NUM, S_PCT, S_INT, S_DEFAULT, S_DEFAULT,
-                        S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT],
+                        S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT,
+                        S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT],
                 n_cols=_NCOLS)
         c.blank(2)
 

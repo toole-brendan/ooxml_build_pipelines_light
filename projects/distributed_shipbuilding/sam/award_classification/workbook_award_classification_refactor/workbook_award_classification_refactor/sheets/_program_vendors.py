@@ -30,14 +30,14 @@ from workbook_award_classification_refactor.sheets.supplier_master import (
 from workbook_award_classification_refactor.sheets._cuts import load_table
 from workbook_award_classification_refactor.sheets._widths import (
     W_UEI, W_NAICS, W_NAICS_DESC, W_VENDOR, W_DOMFOR, W_DOLLAR, W_COUNT,
-    W_CONF, W_FY, W_TEXT_WIDE, W_CD,
+    W_SHORT_FLAG, W_FY, W_TEXT_WIDE, W_CD,
 )
 
 _SM_ROW = "SM Match Row"
 # Concentration helpers (sheet-only, hidden). The parent helpers collapse each UEI to its
 # standardized ultimate parent and pre-aggregate that parent's positive FY2026$ within the
 # row's domain. The three row-level numerator/weight helpers deliberately move array arithmetic
-# out of the summary sheets: Domain Concentration / Parent Concentration can aggregate them with
+# out of the summary sheets: Domain Concentration can aggregate them with
 # SUMIFS, avoiding cross-sheet SUMPRODUCT expressions (especially 1/range) that surface #VALUE!
 # when any upstream cell is nonnumeric or temporarily unresolved during recalc.
 _PKEY = "Parent Key"
@@ -48,14 +48,55 @@ _PHHI = "Parent HHI Numerator"
 _PWT = "Parent Firm Weight"
 _HELPERS = [_SM_ROW, _PKEY, _PDOM, _PROWS, _USQ, _PHHI, _PWT]
 
+# The program-vendor sheet's canonical column layout (it used to be the header of the
+# <program>_program_vendors.csv). The sheet's ROWS now come from the Supplier Master dimension
+# (see _program_vendor_table) instead of that CSV; only Subawardee UEI + Role / Description +
+# Source URLs are static leaf values, every other column is a live formula defined in
+# make_program_vendor_sheet. (<program>_program_vendors.csv survives only for the research-prep
+# worklists - it is no longer a workbook input, so no second Program x UEI universe can drift.)
+PV_HEADERS = [
+    "Subawardee UEI", "Subawardee NAICS-6 (Primary)", "Subawardee NAICS-6 Description",
+    "Parent UEI", "Parent Vendor Name", "Subawardee Vendor Name",
+    "Predominant Place of Performance (by records)", "Subaward $M",
+    "Published Subaward Records", "First Subaward", "Last Subaward",
+    *FY_HEADERS,
+    "Capability Domain Archetype (D)", "Capability Domain Archetype Basis",
+    "Primary Output Archetype (P)", "Primary Output Archetype Basis",
+    "Role / Description", "Source URLs",
+]
+
+
+def _program_vendor_table(program: str):
+    """The program-vendor sheet's (headers, rows), sourced from the Supplier Master dimension
+    filtered on `program`. Each row carries only the static leaf values - the subawardee UEI plus
+    its Role / Description + Source URLs (relocated into the Supplier Master) - in the PV_HEADERS
+    layout; every other column is a live formula filled by make_program_vendor_sheet, so its
+    placeholder here is blank. Supplier Master is already dollar-desc per program, so filtering
+    preserves that row order."""
+    sm_headers, sm_rows = load_table("supplier_master")
+    p_at = sm_headers.index("Program")
+    src = {h: sm_headers.index(h)
+           for h in ("Subawardee UEI", "Role / Description", "Source URLs")}
+    dst = {h: PV_HEADERS.index(h)
+           for h in ("Subawardee UEI", "Role / Description", "Source URLs")}
+    rows = []
+    for r in sm_rows:
+        if r[p_at] != program:
+            continue
+        row = [""] * len(PV_HEADERS)
+        for h in src:
+            row[dst[h]] = r[src[h]]
+        rows.append(row)
+    return PV_HEADERS, rows
+
 # Subawardee UEI | NAICS-6 | NAICS-6 desc | Parent UEI | Parent name | Subawardee name |
 # Dom/For | $M | Records | First | Last | ≤FY12..FY26 $M (15) | D | D basis | P | P basis |
 # Role | SM Match Row | Parent Key | Parent Domain $ | Parent Domain Rows |
 # UEI Positive $ Squared | Parent HHI Numerator | Parent Firm Weight (all hidden).
 _WIDTHS = [W_UEI, W_NAICS, W_NAICS_DESC, W_UEI, W_VENDOR, W_VENDOR, W_DOMFOR,
-           W_DOLLAR, W_COUNT, W_CONF, W_CONF,
+           W_DOLLAR, W_COUNT, W_SHORT_FLAG, W_SHORT_FLAG,
            *([W_FY] * 15),
-           W_CONF, W_DOMFOR, W_CONF, W_DOMFOR,
+           W_SHORT_FLAG, W_DOMFOR, W_SHORT_FLAG, W_DOMFOR,
            W_TEXT_WIDE,
            W_CD, W_UEI, W_DOLLAR, W_CD, W_DOLLAR, W_DOLLAR, W_DOLLAR]
 
@@ -84,8 +125,12 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
     real = tx_cols(TX_REAL)           # constant-FY2026$ amount, at transaction grain
     fedfy = tx_cols(TX_FED_FY)        # federal FY, at transaction grain
 
+    # Rows come from the Supplier Master dimension filtered on this program (the program-vendor
+    # CSV is no longer a workbook input - it survives only for the research-prep worklists).
+    pv_headers, pv_rows = _program_vendor_table(program)
+
     # This sheet's own column letters (gutter at A; note source col dropped; helpers appended).
-    L = flat_header_letters(csv_name, note_from=_NOTE_FROM, extra_cols=_HELPERS)
+    L = flat_header_letters(headers=pv_headers, note_from=_NOTE_FROM, extra_cols=_HELPERS)
     smrow_col = L[_SM_ROW]
 
     def smrow(r):
@@ -95,7 +140,7 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
     # header 8 -> data starts at 9). Asserted against the post-build cols accessor below, so a
     # layout change fails loudly rather than mis-keying the parent-grain helpers.
     _first = 9
-    _last = 8 + len(load_table(csv_name)[1])
+    _last = 8 + len(pv_rows)
 
     def _rng(header: str) -> str:
         """Absolute same-sheet range for one of THIS sheet's columns (no tab prefix needed)."""
@@ -121,7 +166,7 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
         _PDOM: lambda r: (f'=SUMIFS({_M_RNG},{_PK_RNG},{_PKC}{r},'
                           f'{_D_RNG},{_DC}{r},{_M_RNG},">0")'),
         # Parent Domain Rows = positive rows sharing this parent + domain (>=1 guard so the
-        # distinct-parent count 1/COUNT never divides by zero on the Parent Concentration sheet).
+        # distinct-parent count 1/COUNT never divides by zero on the Domain Concentration sheet).
         _PROWS: lambda r: (f'=MAX(1,COUNTIFS({_PK_RNG},{_PKC}{r},'
                            f'{_D_RNG},{_DC}{r},{_M_RNG},">0"))'),
         # Row-level concentration numerators / weights. These are zero for nonpositive rows,
@@ -153,6 +198,7 @@ def make_program_vendor_sheet(*, program: str, tab: str, tx_cols, csv_name: str,
 
     entry, cols = make_flat_sheet(
         tab=tab, group="model", csv_name=csv_name, table_name=table_name,
+        table=(pv_headers, pv_rows),
         banner=banner, intro=intro, widths=_WIDTHS,
         int_cols=["Published Subaward Records", _SM_ROW, _PROWS],
         float_cols=["Subaward $M", *FY_HEADERS, _PDOM, _USQ, _PHHI, _PWT],

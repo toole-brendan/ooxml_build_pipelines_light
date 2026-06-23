@@ -25,7 +25,7 @@ import json
 import sys
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 sys.path.insert(0, str(REPO / "projects/distributed_shipbuilding/sam/award_classification/corpus/scripts"))
 from _corpus import PROGRAMS, load_scope, iter_records  # noqa: E402
 

@@ -45,7 +45,6 @@ from workbook_award_classification_refactor.sheets.columbia_program_vendors impo
 )
 from workbook_award_classification_refactor.sheets.ddg_swbs_rollup import swbs_rollup_cols
 from workbook_award_classification_refactor.sheets.domain_concentration import domain_conc_range
-from workbook_award_classification_refactor.sheets.parent_concentration import parent_conc_range
 from workbook_award_classification_refactor.sheets.subaward_activity import (
     subaward_activity_profile_cell, subaward_activity_rollup_range,
 )
@@ -75,9 +74,9 @@ CAVEATS = [
     "deflator). GFE and MIB / BlueForge accounts are excluded.",
     "Submarine shares are percentages of GDEB-reported subcontracted scope, not of total boat "
     "construction; the HII-Newport News co-build workshare is largely outside the reported subaward "
-    "data (about $98M visible against tens of billions - see HII Co-Build Workshare).",
+    "data (about $98M visible against tens of billions - see Market Bridge).",
     "Read a domain's mix with both operating-entity and ultimate-parent concentration "
-    "(Domain Concentration; Parent Concentration).",
+    "(Domain Concentration, including its Parent columns).",
 ]
 
 
@@ -118,7 +117,7 @@ def _concentration_headlines(c: RowCursor) -> None:
         firms = domain_conc_range(name, "Top-1 firm")
         top1 = domain_conc_range(name, "Top-1 share")
         contest = domain_conc_range(name, "Contestability")
-        ptop1 = parent_conc_range(name, "Parent Top-1 %")
+        ptop1 = domain_conc_range(name, "Parent Top-1 %")
         max_material = f'_xlfn.MAXIFS({top1},{share},">=0.05")'
         match = f'MATCH(1,INDEX(({top1}={max_material})*({share}>=0.05),0),0)'
         c.write([

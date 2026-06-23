@@ -23,8 +23,7 @@ from pathlib import Path
 
 import openpyxl
 
-REFACTOR = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light"
-                "/projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor")
+from _paths import REFACTOR  # noqa: E402
 RAW_DIR = REFACTOR / "research_pulls"
 EXTRACTED = REFACTOR / "extracted"
 

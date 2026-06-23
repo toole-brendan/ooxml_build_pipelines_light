@@ -21,7 +21,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 AC = REPO / "projects/distributed_shipbuilding/sam/award_classification"
 EXTRACTED = AC / "workbook_award_classification_refactor/extracted"
 PKG = AC / "ddg_hii_swbs_subaward_package"

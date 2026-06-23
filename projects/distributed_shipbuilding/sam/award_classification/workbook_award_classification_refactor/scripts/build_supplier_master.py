@@ -33,14 +33,14 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 SCRIPTS = REPO / "projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor/scripts"
 sys.path.insert(0, str(REPO / "projects/distributed_shipbuilding/sam/award_classification/corpus/scripts"))
 sys.path.insert(0, str(SCRIPTS))
 from _corpus import iter_records  # noqa: E402
-from build_program_vendors import (  # noqa: E402  (reuse the exact NAICS precedence)
+from build_program_vendors import (  # noqa: E402  (reuse the exact NAICS + prose precedence)
     load_naics_primary, load_naics_titles, load_research_naics, load_sam_naics,
-    load_sam_status, na_label,
+    load_sam_status, na_label, load_old_prose, load_research_prose,
 )
 
 EXTRACTED = REPO / "projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor/extracted"
@@ -49,7 +49,8 @@ PROGRAMS = [("ddg", "DDG"), ("virginia", "Virginia"), ("columbia", "Columbia")]
 
 HEADERS = ["Key", "Program", "Subawardee UEI", "Subawardee Vendor Name",
            "Primary NAICS-6", "NAICS-6 Description",
-           "Parent UEI", "Parent Vendor Name", "Parent UEI(s)"]
+           "Parent UEI", "Parent Vendor Name", "Parent UEI(s)",
+           "Role / Description", "Source URLs"]
 
 
 def _aggregate(program: str):
@@ -100,6 +101,8 @@ def build():
     for program, label in PROGRAMS:
         g = _aggregate(program)
         research_naics = load_research_naics(program)
+        old_prose = load_old_prose(program)
+        research_prose = load_research_prose(program)
         for eu, d in sorted(g.items(), key=lambda kv: kv[1]["dol"], reverse=True):
             name = _modal(d["names"])
             code, desc = naics_primary.get(eu, ("", ""))
@@ -118,7 +121,23 @@ def build():
             else:
                 pname = _modal(d["pnames"])
             parents = "; ".join(sorted(d["parents"]))
-            rows.append([f"{label}|{eu}", label, eu, name, code, desc, puei, pname, parents])
+            # Role / Description + Source URLs: leaf-UEI research result wins; else direct UEI
+            # in the old parent-level sheet; else the dollar-modal parent UEI's prose. This is
+            # the SAME precedence + dollar-modal tie-break build_program_vendors uses, so the
+            # value matches the program-vendor CSV exactly (the program-vendor sheets now read
+            # this prose from here instead of re-deriving it).
+            prose = url = ""
+            if eu in research_prose:
+                prose, url = research_prose[eu]
+            elif eu in old_prose:
+                prose, url = old_prose[eu]
+            else:
+                for p in sorted(d["pudol"], key=lambda x: (-d["pudol"][x], x)):
+                    if p in old_prose:
+                        prose, url = old_prose[p]
+                        break
+            rows.append([f"{label}|{eu}", label, eu, name, code, desc, puei, pname,
+                         parents, prose, url])
 
     path = EXTRACTED / "supplier_master.csv"
     with path.open("w", encoding="utf-8", newline="") as fh:

@@ -61,13 +61,11 @@ def _render_methodology() -> WorksheetSpec:
     # §2 Classification axes
     c.banner("§2 - Classification axes", n_cols=_NCOLS, style=S_TITLE_SECTION)
     c.blank()
-    _p(c, "Three independent entity axes (one label each, with a forced catch-all) plus a "
+    _p(c, "Two independent entity axes (one label each, with a forced catch-all) plus a "
           "transaction-level companion. Full code legend: Taxonomy tab.")
     c.blank()
     _kv(c, "Capability Domain (D)", "The technical ship area the entity is competent in. "
                                     "D1-D11, D0. Published.")
-    _kv(c, "Operating Role (R)", "The value-chain responsibility the entity owns. R1-R5, R0. "
-                                 "Internal.")
     _kv(c, "Primary Output (P)", "The physical form / integration level of what is delivered. "
                                  "P1-P6, P0. Published.")
     _kv(c, "Ship-System Application (SWBS)", "Which ship system a subaward supports; "
@@ -92,7 +90,7 @@ def _render_methodology() -> WorksheetSpec:
     c.write(["Input", "Use"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
     for src, use in [
         (TAB_SUPPLIER_MASTER, "supplier dimension: one row per UEI x program, with primary NAICS-6"),
-        (TAB_NAICS_MAP, "NAICS-6 to D / R / P default archetype crosswalk (the long-tail mapping)"),
+        (TAB_NAICS_MAP, "NAICS-6 to D / P default archetype crosswalk (the long-tail mapping)"),
         (TAB_ARCHETYPE_OVERRIDES, "hand-researched (Program, UEI) overrides of the default"),
         ("Subaward Transactions", "the subaward-dollar fact spine (DDG / Virginia / Columbia)"),
         (TAB_PRIME_AWARDS, "in-scope prime contracts (USAspending place-of-performance + obligations)"),

@@ -6,28 +6,28 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 01011-01,582,500 Auxiliary Systems › 582 Mooring and towing systems,X · code crosswalk (observed),WARPING CAPSTAN
 01013-03,581,500 Auxiliary Systems › 581 Anchor handling and stowage systems,X · code crosswalk (observed),ANCHOR WINDLASS
 01020-01,624,600 Outfit & Furnishings › 624 Non-structural closures,X · code crosswalk (observed),MAFO DOORS
-01021-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"[High] Component text ""STRUCTURAL DOORS"" -> 167 Hull Structural Closures."
-01022-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"[High] Component text ""HATCHES"" -> 167 Hull Structural Closures."
-01027-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"[High] Component text ""SCUTTLES"" -> 167 Hull Structural Closures."
-01039-01,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"[High] Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
-01039-02,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"[High] Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
-01039-03,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"[High] Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
-01041-01,516,500 Auxiliary Systems › 516 Refrigeration system,C · curated inference,"[Medium] Component text ""MODULAR REEFERS"" (refrigerated stores) -> 516 Refrigeration System."
-01043-02,634,600 Outfit & Furnishings › 634 Deck covering,C · curated inference,"[High] Component text ""DECK COVERING"" -> 634 Deck Covering."
+01021-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"Component text ""STRUCTURAL DOORS"" -> 167 Hull Structural Closures."
+01022-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"Component text ""HATCHES"" -> 167 Hull Structural Closures."
+01027-01,167,100 Hull Structure › 167 Hull structural closures,C · curated inference,"Component text ""SCUTTLES"" -> 167 Hull Structural Closures."
+01039-01,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
+01039-02,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
+01039-03,651,600 Outfit & Furnishings › 651 Commissary spaces,C · curated inference,"Component text ""COMMISSARY EQUIPMENT"" -> 651 Commissary Spaces."
+01041-01,516,500 Auxiliary Systems › 516 Refrigeration system,C · curated inference,"Component text ""MODULAR REEFERS"" (refrigerated stores) -> 516 Refrigeration System."
+01043-02,634,600 Outfit & Furnishings › 634 Deck covering,C · curated inference,"Component text ""DECK COVERING"" -> 634 Deck Covering."
 01114-01,581,500 Auxiliary Systems › 581 Anchor handling and stowage systems,X · code crosswalk (observed),ANCHOR CHAINS
 01137-01,571,500 Auxiliary Systems › 571 Replenishment-at-sea systems,X · code crosswalk (observed),UNREP SYSTEM
 01140-01,730,X00 Cross-Cutting Design & Construction Requirements › 730 Noise and vibration,X · code crosswalk (observed),OVHD WEAPON HNDLG SYS
 01140-02,730,X00 Cross-Cutting Design & Construction Requirements › 730 Noise and vibration,X · code crosswalk (observed),TORPEDO CHOCKS
-01549-02,588,"500 Auxiliary Systems › 588 Aircraft handling, servicing and stowage",C · curated inference,"[Medium] Component text ""HELI HANGER DOORS"" (helicopter hangar) -> 588 Aircraft Handling, Servicing and Stowage."
+01549-02,588,"500 Auxiliary Systems › 588 Aircraft handling, servicing and stowage",C · curated inference,"Component text ""HELI HANGER DOORS"" (helicopter hangar) -> 588 Aircraft Handling, Servicing and Stowage."
 02000-04,516,500 Auxiliary Systems › 516 Refrigeration system,X · code crosswalk (observed),MOD SYS S/S
-02002-02,514,500 Auxiliary Systems › 514 Air conditioning system,C · curated inference,"[High] Component text ""A/C PLANT"" (air-conditioning plant) -> 514 Air Conditioning System."
+02002-02,514,500 Auxiliary Systems › 514 Air conditioning system,C · curated inference,"Component text ""A/C PLANT"" (air-conditioning plant) -> 514 Air Conditioning System."
 02002-03,516,500 Auxiliary Systems › 516 Refrigeration system,X · code crosswalk (observed),
 02004-01,505,500 Auxiliary Systems › 505 General piping requirements,X · code crosswalk (observed),SOLENOID OPER VALVES
 02506-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),FAN VANEAXIAL
 02506-02,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),CENTRIFUGAL FANS
 02507-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),COILS UNIT COOLER
 02508-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),AIRTIGHT CLOSURES
-02517-01,512,500 Auxiliary Systems › 512 Ventilation system,C · curated inference,"[Medium] Component text ""CLOSURE, VENTILATION"" (ventilation dampers/closures) -> 512 Ventilation System."
+02517-01,512,500 Auxiliary Systems › 512 Ventilation system,C · curated inference,"Component text ""CLOSURE, VENTILATION"" (ventilation dampers/closures) -> 512 Ventilation System."
 02524-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),ELEC DUCT HEATERS
 02525-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),ELEC CONV HEATERS
 02537-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),FAN COIL ASSEMBLIES
@@ -35,7 +35,7 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 02545-02,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),VANEAXIAL FANS
 02558-01,512,500 Auxiliary Systems › 512 Ventilation system,X · code crosswalk (observed),CPS PRESSURE CTRL VLV
 03000-01,551,500 Auxiliary Systems › 551 Compressed air systems,X · code crosswalk (observed),AIR COMPRESSOR
-03003-01,243,200 Propulsion Plant › 243 Propulsion shafting,C · curated inference,"[High] Component text ""PROPULSION SHAFT, FWD"" -> 243 Propulsion Shafting."
+03003-01,243,200 Propulsion Plant › 243 Propulsion shafting,C · curated inference,"Component text ""PROPULSION SHAFT, FWD"" -> 243 Propulsion Shafting."
 03004-01,503,500 Auxiliary Systems › 503 Pumps,X · code crosswalk (observed),POS DIS PUMPS-GROUP
 03005-01,503,500 Auxiliary Systems › 503 Pumps,X · code crosswalk (observed),TRANSFER PUMP
 03006-01,541,500 Auxiliary Systems › 541 Ship fuel and fuel compensating system,X · code crosswalk (observed),FUEL FILTER/SEPARATOR
@@ -46,7 +46,7 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 03014-01,521,500 Auxiliary Systems › 521 Firemain and flushing  (sea water) system,X · code crosswalk (observed),P/S; FIRE PUMP
 03015-02,241,200 Propulsion Plant › 241 Propulsion reduction gears,X · code crosswalk (observed),
 03017-01,245,200 Propulsion Plant › 245 Propulsors,X · code crosswalk (observed),PROP SYSTEM
-03019-01,311,300 Electric Plant › 311 Ship service power generation,C · curated inference,"[High] Component text ""SS GAS TURBINE GEN / SSGTG"" (ship service gas turbine generator) -> 311 Ship Service Power Generation."
+03019-01,311,300 Electric Plant › 311 Ship service power generation,C · curated inference,"Component text ""SS GAS TURBINE GEN / SSGTG"" (ship service gas turbine generator) -> 311 Ship Service Power Generation."
 03019-02,310,300 Electric Plant › 310 Electric power generation,X · code crosswalk (observed),
 03020-01,262,200 Propulsion Plant › 262 Main propulsion lube oil system,X · code crosswalk (observed),LUBE OIL SERV PUMP
 03025-01,259,200 Propulsion Plant › 259 Uptakes (inner casing),X · code crosswalk (observed),MS/B-I PANEL SET
@@ -73,10 +73,10 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 03136-01,244,200 Propulsion Plant › 244 Propulsion shaft bearings,X · code crosswalk (observed),STERN TUBE SEALS
 03149-01,541,500 Auxiliary Systems › 541 Ship fuel and fuel compensating system,X · code crosswalk (observed),FUEL SERV PREFILTER
 03165-01,503,500 Auxiliary Systems › 503 Pumps,X · code crosswalk (observed),POS DISP PUMPS GRP
-03174-01,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"[High] Component text ""HALON FIRE EXT SYSTEM"" -> 555 Fire Extinguishing Systems."
-03174-02,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"[High] Component text ""HALON INSTALLATION"" -> 555 Fire Extinguishing Systems."
+03174-01,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"Component text ""HALON FIRE EXT SYSTEM"" -> 555 Fire Extinguishing Systems."
+03174-02,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"Component text ""HALON INSTALLATION"" -> 555 Fire Extinguishing Systems."
 03174-03,555,500 Auxiliary Systems › 555 Fire extinguishing systems,X · code crosswalk (observed),HFP FIRE EXT SYSTEM
-03174-04,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"[High] Component text ""HFP FIRE EXT SYSTEM"" -> 555 Fire Extinguishing Systems."
+03174-04,555,500 Auxiliary Systems › 555 Fire extinguishing systems,C · curated inference,"Component text ""HFP FIRE EXT SYSTEM"" -> 555 Fire Extinguishing Systems."
 03182-01,262,200 Propulsion Plant › 262 Main propulsion lube oil system,X · code crosswalk (observed),
 03185-01,262,200 Propulsion Plant › 262 Main propulsion lube oil system,X · code crosswalk (observed),OIL TANK HEATERS
 03189-01,532,500 Auxiliary Systems › 532 Cooling water,X · code crosswalk (observed),ELEC WATER HEATER; ELECTRIC WATER HEATER
@@ -105,7 +105,7 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 04011-01,431,"400 Command, Control & Surveillance › 431 Switchboards for interior communication systems",X · code crosswalk (observed),MAIN SWITCHBOARD
 04016-01,633,600 Outfit & Furnishings › 633 Cathodic protection,X · code crosswalk (observed),CATHODIC PROT SYS
 04017-01,314,300 Electric Plant › 314 Power conversion equipment,X · code crosswalk (observed),POWER SUPPLY
-04018-01,324,300 Electric Plant › 324 Switchgear and panels,C · curated inference,"[High] Component text ""P&L PANELS"" (power & lighting panels) -> 324 Switchgear and Panels."
+04018-01,324,300 Electric Plant › 324 Switchgear and panels,C · curated inference,"Component text ""P&L PANELS"" (power & lighting panels) -> 324 Switchgear and Panels."
 04020-01,314,300 Electric Plant › 314 Power conversion equipment,X · code crosswalk (observed),TRANSFORMERS
 04021-01,302,300 Electric Plant › 302 Motors and associated equipment,X · code crosswalk (observed),MAG CONTROLLERS
 04022-02,314,300 Electric Plant › 314 Power conversion equipment,X · code crosswalk (observed),PP-
@@ -116,7 +116,7 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 04068-01,504,500 Auxiliary Systems › 504 Instruments and instrument boards,X · code crosswalk (observed),TANK LEVEL INDICATORS
 04068-02,504,500 Auxiliary Systems › 504 Instruments and instrument boards,X · code crosswalk (observed),RADAR TDR TLIs
 04071-01,436,"400 Command, Control & Surveillance › 436",X · code crosswalk (observed),SHBD FIRE DETECTION
-04072-01,314,300 Electric Plant › 314 Power conversion equipment,C · curated inference,"[High] Component text ""FREQUENCY CHANGER"" -> 314 Power Conversion Equipment."
+04072-01,314,300 Electric Plant › 314 Power conversion equipment,C · curated inference,"Component text ""FREQUENCY CHANGER"" -> 314 Power Conversion Equipment."
 04077-01,475,"400 Command, Control & Surveillance › 475 Degaussing systems",X · code crosswalk (observed),ACTIVE SHAFT GRND SYS
 04080-01,324,300 Electric Plant › 324 Switchgear and panels,X · code crosswalk (observed),SSABT SWITCH
 04081-01,451,"400 Command, Control & Surveillance › 451 Surface surveillance radar systems",X · code crosswalk (observed),SEC NAV RADAR SYSTEM
@@ -128,9 +128,9 @@ HII Work-Item Code,SWBS Subsystem,SWBS,SWBS basis,Evidence
 04091-01,324,300 Electric Plant › 324 Switchgear and panels,X · code crosswalk (observed),
 04093-01,314,300 Electric Plant › 314 Power conversion equipment,X · code crosswalk (observed),
 04165-01,555,500 Auxiliary Systems › 555 Fire extinguishing systems,X · code crosswalk (observed),
-05002-01,243,200 Propulsion Plant › 243 Propulsion shafting,C · curated inference,"[High] Component text ""STRUT CASTINGS"" -> propeller-shaft struts, part of 243 Propulsion Shafting."
-05011-01,561,500 Auxiliary Systems › 561 Steering and diving control systems,C · curated inference,"[Medium] Component text ""RUDDER STOCKS"" (steering-gear rudder stock) -> 561 Steering and Diving Control Systems."
+05002-01,243,200 Propulsion Plant › 243 Propulsion shafting,C · curated inference,"Component text ""STRUT CASTINGS"" -> propeller-shaft struts, part of 243 Propulsion Shafting."
+05011-01,561,500 Auxiliary Systems › 561 Steering and diving control systems,C · curated inference,"Component text ""RUDDER STOCKS"" (steering-gear rudder stock) -> 561 Steering and Diving Control Systems."
 05040-02,582,500 Auxiliary Systems › 582 Mooring and towing systems,X · code crosswalk (observed),RET BITTS CHOCKS
-05055-01,561,500 Auxiliary Systems › 561 Steering and diving control systems,C · curated inference,"[Medium] Component text ""SEAL ASSY, RUDDER STK"" (rudder-stock seal) -> 561 Steering and Diving Control Systems."
-09108-01,631,600 Outfit & Furnishings › 631 Painting,C · curated inference,"[Medium] Component text ""BLAST & PAINT"" (surface prep + coating) -> 631 Painting."
+05055-01,561,500 Auxiliary Systems › 561 Steering and diving control systems,C · curated inference,"Component text ""SEAL ASSY, RUDDER STK"" (rudder-stock seal) -> 561 Steering and Diving Control Systems."
+09108-01,631,600 Outfit & Furnishings › 631 Painting,C · curated inference,"Component text ""BLAST & PAINT"" (surface prep + coating) -> 631 Painting."
 80029-00,561,500 Auxiliary Systems › 561 Steering and diving control systems,X · code crosswalk (observed),STEERING SYSTEM

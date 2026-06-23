@@ -9,10 +9,12 @@ guard (_integrity) to cover exactly the program-vendor / transaction universe - 
 
 Columns: a composite "Program|UEI" Key (the match target), Program, UEI, vendor name, NAICS-6
 + description, the dollar-modal standardized Parent UEI + name (and the raw Parent UEI(s) set),
-then the RESOLVED archetype - Capability Domain (D) / Primary Output (P) + their bases - computed
-LIVE here (override-first over the Vendor Archetype Overrides sheet, then the NAICS-6 Archetype
-Map, else D0/P0) from two one-per-row match-row helpers, so editing an override or the crosswalk
-updates them. Built from extracted/supplier_master.csv (scripts/build_supplier_master.py).
+the Role / Description + Source URLs prose (relocated here so the program-vendor sheets read it
+from this one dimension), then the RESOLVED archetype - Capability Domain (D) / Primary Output
+(P) + their bases - computed
+LIVE here (override-first over the Mapping - Vendor Overrides sheet, then the Mapping - NAICS
+Defaults sheet, else D0/P0) from two one-per-row match-row helpers, so editing an override or the
+crosswalk updates them. Built from extracted/supplier_master.csv (scripts/build_supplier_master.py).
 
 Promoted accessor (imported by the program-vendor factory): `supplier_master_cols`.
 """
@@ -26,20 +28,24 @@ from workbook_award_classification_refactor.sheets._tabs import TAB_SUPPLIER_MAS
 from workbook_award_classification_refactor.sheets.naics6_archetype_map import naics_map_cols
 from workbook_award_classification_refactor.sheets.vendor_archetype_overrides import overrides_cols
 from workbook_award_classification_refactor.sheets._widths import (
-    W_VENDOR, W_PROGRAM, W_UEI, W_NAICS, W_NAICS_DESC, W_CD, W_CONF, W_DOMFOR,
+    W_VENDOR, W_PROGRAM, W_UEI, W_NAICS, W_NAICS_DESC, W_CD, W_SHORT_FLAG, W_DOMFOR,
+    W_TEXT_WIDE,
 )
 
 # Key | Program | UEI | Vendor Name | NAICS-6 | NAICS-6 desc | Parent UEI | Parent name |
-# Parent UEI(s) | Override Match Row | NAICS Map Match Row | D | D Basis | P | P Basis
+# Parent UEI(s) | Role / Description | Override Match Row | NAICS Map Match Row | D | D Basis |
+# P | P Basis   (Source URLs folds into a hover Note on Role / Description)
 _CSV_WIDTHS = [W_VENDOR, W_PROGRAM, W_UEI, W_VENDOR, W_NAICS, W_NAICS_DESC,
-               W_UEI, W_VENDOR, W_VENDOR]
+               W_UEI, W_VENDOR, W_VENDOR, W_TEXT_WIDE]
 _EXTRA = ["Override Match Row", "NAICS Map Match Row",
           "Capability Domain (D)", "Capability Domain Basis",
           "Primary Output (P)", "Primary Output Basis"]
-_EXTRA_WIDTHS = [W_CD, W_CD, W_CONF, W_DOMFOR, W_CONF, W_DOMFOR]
+_EXTRA_WIDTHS = [W_CD, W_CD, W_SHORT_FLAG, W_DOMFOR, W_SHORT_FLAG, W_DOMFOR]
 _WIDTHS = _CSV_WIDTHS + _EXTRA_WIDTHS
 
-_L = flat_header_letters("supplier_master", extra_cols=_EXTRA)
+# Source URLs folds into a hover Note on Role / Description (dropped from the visible table).
+_NOTE_FROM = {"Role / Description": "Source URLs"}
+_L = flat_header_letters("supplier_master", note_from=_NOTE_FROM, extra_cols=_EXTRA)
 
 # override + crosswalk source ranges for the resolved archetype
 _OV_KEY = overrides_cols("Key")
@@ -67,14 +73,14 @@ _FORMULAS = {
 }
 
 SUPPLIER_MASTER, supplier_master_cols = make_flat_sheet(
-    tab=TAB_SUPPLIER_MASTER, group="data",
+    tab=TAB_SUPPLIER_MASTER, group="model",
     csv_name="supplier_master", table_name="SupplierMaster",
     banner="§1 - Supplier master",
-    intro="One row per program and supplier UEI; standardized identity, parent, domain and output.",
+    intro="One row per program and supplier UEI; standardized identity, parent, role, domain and output.",
     widths=_WIDTHS,
     int_cols=["Override Match Row", "NAICS Map Match Row"],
     input_cols=["Key", "Subawardee UEI", "Parent UEI"],
-    formula_cols=_FORMULAS, extra_cols=_EXTRA,
+    formula_cols=_FORMULAS, extra_cols=_EXTRA, note_from=_NOTE_FROM,
     # internal join key + the per-row override / NAICS-map match indices are formula
     # plumbing (Program + UEI are shown separately); hide them from the reader.
     hidden_headers=["Key", "Override Match Row", "NAICS Map Match Row"],

@@ -23,7 +23,7 @@ import csv
 import json
 from pathlib import Path
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 DDG_SCOPE = REPO / "projects/distributed_shipbuilding/tam/ddg_research/extracted/nc_scope_summary.json"
 SUBS_SCOPE = REPO / "projects/distributed_shipbuilding/tam/virginia_columbia_research/extracted/nc_scope_summary.json"
 OUT = REPO / "projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor/prime_contract_scope.csv"

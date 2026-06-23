@@ -86,6 +86,4 @@ the SWBS code on HII-DDG records and is not subject to this precedence.
   still tie to $13.1B; the corpus is not re-baselined for them.
 - **Never compare subsystem mix across programs** — `subsystem` exists only for HII-DDG, so any
   cross-program system comparison would be a data artifact.
-- Coverage is always reported segmented by **assignment basis** (registry / NAICS / unresolved) and
-  **confidence** (`A` specific primary NAICS · `B` corroborated process/secondary · `C` curated entity
-  evidence · `U` unresolved).
+- Coverage is always reported segmented by **assignment basis** (registry / NAICS / unresolved).

@@ -22,7 +22,7 @@ from pathlib import Path
 
 import xlsxwriter
 
-REPO = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light")
+from _paths import REPO  # noqa: E402
 EXTRACTED = REPO / "projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor/extracted"
 OUT_DIR = REPO / "projects/research_shared"
 

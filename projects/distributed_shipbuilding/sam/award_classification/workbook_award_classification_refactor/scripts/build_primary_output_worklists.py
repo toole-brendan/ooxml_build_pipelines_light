@@ -27,8 +27,7 @@ from pathlib import Path
 
 import xlsxwriter
 
-REFACTOR = Path("/Users/brendantoole/projects3/ooxml_build_pipelines_light"
-                "/projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor")
+from _paths import REFACTOR  # noqa: E402
 EXTRACTED = REFACTOR / "extracted"
 OUT_DIR = REFACTOR.parent  # projects/research_shared
 

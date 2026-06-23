@@ -1,14 +1,13 @@
 """taxonomy - the "Taxonomy" tab: the entity-level classification legend.
 
-A reference / legend sheet (guide group): the code tables for the three entity
-axes - Capability Domain, Operating Role, Primary Output - plus the transaction-
-level Ship-System Application (SWBS) legend. Each axis is a section banner + a
+A reference / legend sheet (guide group): the code tables for the two entity
+axes - Capability Domain and Primary Output - plus the transaction-level
+Ship-System Application (SWBS) legend. Each axis is a section banner + a
 short intro + a [code, term, definition] table.
 
-This sheet is PURELY the legend (what each code means). How codes are assigned,
-disambiguated, and validated - the assignment rule, the Domain tie-breaks, the
-Output boundary tests, the Role -> Output validation lattice - lives on the
-Methodology tab. The vocabulary lives in the ``_taxonomy`` leaf so this renderer
+This sheet is PURELY the legend (what each code means). How codes are assigned and
+disambiguated - the assignment rule, the Domain tie-breaks, the Output boundary
+tests - lives on the Methodology tab. The vocabulary lives in the ``_taxonomy`` leaf so this renderer
 and ``guide_methodology`` share one source of truth; this module only lays it out.
 Like Sources in the analysis workbook, the tab carries no native table.
 """
@@ -26,7 +25,6 @@ from workbook_award_classification_refactor.sheets._tabs import TAB_TAXONOMY
 from workbook_award_classification_refactor.sheets._taxonomy import (
     GRAIN_INTRO,
     DOMAIN_INTRO, DOMAINS,
-    ROLE_INTRO, ROLES,
     OUTPUT_INTRO, OUTPUTS,
     SWBS_INTRO, SWBS_GROUPS, SWBS_HIERARCHY_NOTE,
 )
@@ -60,15 +58,12 @@ def _make_taxonomy():
         _legend(c, "§1 - Capability Domain Archetypes",  # banner -> row 6
                 DOMAIN_INTRO, "Capability Domain", DOMAINS)
         c.blank(2)
-        _legend(c, "§2 - Operating Role Archetypes",
-                ROLE_INTRO, "Operating Role", ROLES)
-        c.blank(2)
-        _legend(c, "§3 - Primary Output Archetypes",
+        _legend(c, "§2 - Primary Output Archetypes",
                 OUTPUT_INTRO, "Primary Output", OUTPUTS)
         c.blank(2)
 
-        # §4 - Ship-System Application (SWBS): transaction-level, HII-DDG only
-        c.banner("§4 - Ship-System Application (SWBS)",
+        # §3 - Ship-System Application (SWBS): transaction-level, HII-DDG only
+        c.banner("§3 - Ship-System Application (SWBS)",
                  n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
         c.write([SWBS_INTRO], styles=[S_ITALIC], outline_level=1)
         c.blank()

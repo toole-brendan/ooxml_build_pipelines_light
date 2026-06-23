@@ -50,7 +50,7 @@ _FORMULAS = {
 }
 
 DEFLATORS, deflators_cols = make_flat_sheet(
-    tab=TAB_DEFLATORS, group="data",
+    tab=TAB_DEFLATORS, group="inputs",
     csv_name="deflators", table_name="Deflators",
     banner="§1 - Procurement deflators",
     intro="Green Book Procurement TOA index and FY2026 conversion factor.",
