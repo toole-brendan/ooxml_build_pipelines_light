@@ -23,10 +23,18 @@ from . import (
     contracts_recompete_timing,          # 01  recompete-clock timeline (native stacked bar chart + overlays)
     contracts_obligated_vs_unobligated,  # 02  contract-value snapshots vs additive action obligations
     contracts_award_data_sourcing,       # 03  source methodology -> one validated operating model
+    # Sandbox duplicates of 01-03 (slides 04-06): edit freely without touching the originals.
+    contracts_recompete_timing_copy,          # 04  == 01
+    contracts_obligated_vs_unobligated_copy,  # 05  == 02
+    contracts_award_data_sourcing_copy,       # 06  == 03
 )
 
 SLIDE_RENDERS: list[tuple] = [
     (contracts_recompete_timing, contracts_recompete_timing.render),
     (contracts_obligated_vs_unobligated, contracts_obligated_vs_unobligated.render),
     (contracts_award_data_sourcing, contracts_award_data_sourcing.render),
+    # Sandbox copies (slides 04-06).
+    (contracts_recompete_timing_copy, contracts_recompete_timing_copy.render),
+    (contracts_obligated_vs_unobligated_copy, contracts_obligated_vs_unobligated_copy.render),
+    (contracts_award_data_sourcing_copy, contracts_award_data_sourcing_copy.render),
 ]
