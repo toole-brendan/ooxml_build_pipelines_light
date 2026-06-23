@@ -20,8 +20,11 @@ Stages, in dependency order:
 
 Hand-maintained inputs (NOT regenerated here): extracted/deflators.csv,
 extracted/naics6_archetype_map.csv, extracted/swbs_curated_c.csv, and
-extracted/vendor_archetype_overrides.csv (refreshed via scripts/build_archetype_overrides.py
-from the research pulls when overrides change).
+extracted/vendor_archetype_overrides.csv. These are hand-curated sources of truth - edit
+them by hand. In particular do NOT run scripts/build_archetype_overrides.py: its archetype
+columns now read from blank placeholders, so it silently overwrites the curated
+vendor_archetype_overrides.csv with a near-empty table. It is intentionally excluded from
+this orchestrator.
 
 Usage:
     python3 scripts/rebuild_all.py          # offline stages + build
@@ -45,7 +48,9 @@ STAGES = [
     ("build_swbs_crosswalk",       False, [PY, str(SCRIPTS / "build_swbs_crosswalk.py")]),
     ("tag_ddg_transactions_swbs",  False, [PY, str(SCRIPTS / "tag_ddg_transactions_swbs.py")]),
     ("build_program_transactions", False, [PY, str(SCRIPTS / "build_program_transactions.py")]),
-    ("build_program_vendors",      False, [PY, str(SCRIPTS / "build_program_vendors.py")]),
+    ("build_program_vendors:ddg",      False, [PY, str(SCRIPTS / "build_program_vendors.py"), "ddg"]),
+    ("build_program_vendors:virginia", False, [PY, str(SCRIPTS / "build_program_vendors.py"), "virginia"]),
+    ("build_program_vendors:columbia", False, [PY, str(SCRIPTS / "build_program_vendors.py"), "columbia"]),
     ("build_supplier_master",      False, [PY, str(SCRIPTS / "build_supplier_master.py")]),
     ("build_subaward_activity",    False, [PY, str(SCRIPTS / "build_subaward_activity.py")]),
     ("build_ddg_swbs_rollup",      False, [PY, str(SCRIPTS / "build_ddg_swbs_rollup.py")]),

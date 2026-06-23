@@ -1,4 +1,4 @@
-"""_taxonomy - the finalized 3-axis classification vocabulary (shared leaf).
+"""_taxonomy - the finalized classification vocabulary (shared leaf).
 
 NON-sheet helper module (renders nothing; NOT registered in SHEETS). It is the
 single source of truth for the entity-level classification schema, so the two
@@ -80,7 +80,7 @@ DOMAIN_TIEBREAKS: list[tuple[str, str]] = [
     ("Service firms",
      "A service firm whose specialty maps unambiguously to one technical area keeps that area (a propulsion test house to D2); a firm whose deliverable is general non-material support with no single technical area to D11 Services (no longer D0)."),
     ("Pure distributors",
-     "Assign the domain of the material handled and let Role R1 carry the pass-through signal; D0 only when even that is indeterminate."),
+     "Assign the domain of the material handled; D0 only when even that is indeterminate."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -141,8 +141,8 @@ ASSIGNMENT_RULE = (
 #
 # A different-grain COMPANION dimension, not a fourth entity archetype: it is
 # carried on the subaward TRANSACTION (one HII-DDG subaward to one ship-system
-# application), where D / R / P are entity-level (UEI x Program). A UEI keeps one
-# Capability Domain / Role / Output while its transactions hit many SWBS groups.
+# application), where D / P are entity-level (UEI x Program). A UEI keeps one
+# Capability Domain / Output while its transactions hit many SWBS groups.
 
 SWBS_INTRO = (
     "Which shipboard system a subaward supports, read from the observed SWBS code. "
