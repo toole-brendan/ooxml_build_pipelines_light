@@ -46,12 +46,12 @@ _SECTION = "Market Sizing"
 _TOPIC = "Award Data Sourcing"               # title topic
 _BREADCRUMB_TOPIC = "Sources and Validation"   # breadcrumb second half
 _TAKEAWAY = (
-    "SAM Contract Awards anchors the pull; funding and subaward layers enrich it, "
+    "SAM.gov Contract Awards anchors the pull; funding and subaward layers enrich it, "
     "and validation precedes any total."
 )
 _SOURCES = (
-    "Sources: SAM.gov Contract Awards API; USAspending; SAM Acquisition Subaward Reporting; "
-    "SAM Entity Management and Opportunities; President's Budget P-1 / R-1; external program "
+    "Sources: SAM.gov Contract Awards API; USAspending; SAM.gov Acquisition Subaward Reporting; "
+    "SAM.gov Entity Management and Opportunities; President's Budget P-1 / R-1; external program "
     "and operational reporting; FPDS Atom (legacy validation, slated to retire FY2026) | "
     "As of 2026-06-22"
 )
@@ -83,7 +83,7 @@ _SOURCE_REFERENCE_ROWS = [
         "Funded-demand spine",
     ],
     [
-        "SAM Contract Awards API",
+        "SAM.gov Contract Awards API",
         "Prime and vehicle pull",
         "Awards/IDVs; parent-child structure; ceilings?",
         "Do not double-count vehicle and child orders; tag coverage",
@@ -97,14 +97,14 @@ _SOURCE_REFERENCE_ROWS = [
         "TAS bridge and FY view",
     ],
     [
-        "SAM Subaward Reporting",
+        "SAM.gov Subaward Reporting",
         "First-tier layer",
         "Which reported suppliers sit under a prime?",
         "Lagged/incomplete; separate from prime obligations",
         "Supplier and workshare map",
     ],
     [
-        "SAM enrichment sources",
+        "SAM.gov enrichment sources",
         "Resolve and pipeline",
         "UEI/CAGE/NAICS; what is posted pre-award?",
         "Registration/posting does not prove program relevance or award",
@@ -288,18 +288,18 @@ def _body() -> str:
     parts.extend(
         [
             text_box(13, "PullLabel", BODY_X + _i(0.08), role_y, _i(0.65), role_h,
-                     [paragraph([run("PULL", size=800, bold=True, color=BLACK, font=FONT)])],
+                     [paragraph([run("Pull", size=800, bold=True, color=BLACK, font=FONT)])],
                      fill=None, line_color=None, insets=INSETS_NONE, wrap="none"),
             text_box(14, "EnrichLabel", BODY_X + pull_w + _i(0.08), role_y, _i(0.75), role_h,
-                     [paragraph([run("ENRICH", size=800, bold=True, color=BLACK, font=FONT)])],
+                     [paragraph([run("Enrich", size=800, bold=True, color=BLACK, font=FONT)])],
                      fill=None, line_color=None, insets=INSETS_NONE, wrap="none"),
             text_box(15, "ValidateLabel", BODY_X + pull_w + enrich_w + _i(0.08), role_y,
                      _i(0.88), role_h,
-                     [paragraph([run("VALIDATE", size=800, bold=True, color=BLACK, font=FONT)])],
+                     [paragraph([run("Validate", size=800, bold=True, color=BLACK, font=FONT)])],
                      fill=None, line_color=None, insets=INSETS_NONE, wrap="none"),
             text_box(16, "OutputsLabel", BODY_X + pull_w + enrich_w + validate_w + _i(0.43),
                      role_y, _i(0.75), role_h,
-                     [paragraph([run("OUTPUTS", size=800, bold=True, color=BLACK, font=FONT)])],
+                     [paragraph([run("Outputs", size=800, bold=True, color=BLACK, font=FONT)])],
                      fill=None, line_color=None, insets=INSETS_NONE, wrap="none"),
         ]
     )
@@ -319,7 +319,7 @@ def _body() -> str:
             note_h,
             [
                 paragraph(
-                    [run("The modern base pull is SAM Contract Awards, not the FPDS Atom feed.",
+                    [run("The modern base pull is SAM.gov Contract Awards, not the FPDS Atom feed.",
                          size=900, bold=True, color=BLACK, font=FONT)],
                     line_spacing=102_000,
                 ),
@@ -348,34 +348,34 @@ def _body() -> str:
     source_w = _i(1.12)
     comment_w = _i(1.55)   # comment cards grow into the empty column beside them
     source_x = [BODY_X + _i(v) for v in (2.78, 4.00, 5.22, 6.44)]
-    step_verbs = ("ADD", "LINK", "PULL", "RESOLVE")
+    step_verbs = ("Add", "Link", "Pull", "Resolve")
     for idx, (sx, verb) in enumerate(zip(source_x, step_verbs), start=3):
         parts.append(_step_above_node(20 + (idx - 3) * 2, idx, verb, sx, source_y))
 
     parts.extend(
         [
             _box(28, "USAspending", source_x[0], source_y, source_w, source_h,
-                 "USASPENDING", "FY obligations, TAS",
+                 "USAspending", "FY obligations, TAS",
                  fill=BLUE_2, title_size=750, body_size=650,
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(29, "VehicleFamilies", source_x[1], source_y, source_w, source_h,
-                 "VEHICLE FAMILY", "Parent/child orders",
+                 "Vehicle Family", "Parent/child orders",
                  fill=BLUE_1, title_size=750, body_size=650,
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(30, "Subawards", source_x[2], source_y, source_w, source_h,
-                 "SAM SUBAWARDS", "First-tier suppliers",
+                 "SAM.gov Subawards", "First-tier suppliers",
                  fill=BLUE_2, title_size=750, body_size=650,
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(31, "EntityManagement", source_x[3], source_y, source_w, source_h,
-                 "SAM ENTITY", "UEI / CAGE / NAICS",
+                 "SAM.gov Entity", "UEI / CAGE / NAICS",
                  fill=BLUE_1, title_size=750, body_size=650,
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(32, "USAspendingComment", source_x[0], card_y, comment_w, card_h,
-                 "BUDGET BRIDGE", "FY obligations and TAS; reconcile to SAM.",
+                 "Budget Bridge", "FY obligations and TAS; reconcile to SAM.gov.",
                  fill=BLUE_1, title_size=775, body_size=625, align="l", anchor="t",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(33, "SubawardComment", source_x[2], card_y, comment_w, card_h,
-                 "DIFFERENT QUESTION", "Lagged first-tier only; never add to primes.",
+                 "Different Question", "Lagged first-tier only; never add to primes.",
                  fill=GRAY_2, title_size=675, body_size=600, align="l", anchor="t",
                  insets=(40_000, 18_000, 40_000, 18_000)),
         ]
@@ -416,15 +416,15 @@ def _body() -> str:
     parts.extend(
         [
             _box(40, "DefineMarketSpine", define_x, spine_y, define_w, spine_h,
-                 "PRESIDENT'S BUDGET", "PE/BLI and money color",
+                 "President's Budget", "PE/BLI and money color",
                  fill=GRAY_1, title_size=750, body_size=650,
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(41, "SAMContractAwardsSpine", spine_x, spine_y, spine_w, spine_h,
-                 "SAM CONTRACT AWARDS", "Primes, IDVs, orders/calls and ceiling",
+                 "SAM.gov Contract Awards", "Primes, IDVs, orders/calls and ceiling",
                  fill=BLUE_3, title_color=WHITE, body_color=WHITE,
                  title_size=LABEL_9PT, body_size=775),
-            _step_above_node(42, 1, "DEFINE", define_x, spine_y),
-            _step_above_node(44, 2, "PULL", spine_x, spine_y),
+            _step_above_node(42, 1, "Define", define_x, spine_y),
+            _step_above_node(44, 2, "Pull", spine_x, spine_y),
             connector(46, "DefineToSpine", define_x + define_w, spine_y + spine_h // 2,
                       spine_x - (define_x + define_w), 0, width=9_525, arrow=True),
         ]
@@ -445,9 +445,9 @@ def _body() -> str:
                 gate_w,
                 gate_h,
                 [
-                    paragraph([run("VALIDATION", size=1325, bold=True, color=WHITE, font=FONT)],
+                    paragraph([run("Validation", size=1325, bold=True, color=WHITE, font=FONT)],
                               align="ctr", line_spacing=95_000),
-                    paragraph([run("GATE", size=1500, bold=True, color=WHITE, font=FONT)],
+                    paragraph([run("Gate", size=1500, bold=True, color=WHITE, font=FONT)],
                               align="ctr", line_spacing=95_000),
                     paragraph([run("Tag source, vintage, measure, family and confidence",
                                            size=560, color=WHITE, font=FONT)],
@@ -459,7 +459,7 @@ def _body() -> str:
                 anchor="ctr",
                 insets=(45_000, 22_000, 45_000, 18_000),
             ),
-            _step_above_node(48, 7, "VALIDATE", gate_x, gate_y,
+            _step_above_node(48, 7, "Validate", gate_x, gate_y,
                              inset=_i(0.12), dark=True),
             connector(50, "SpineToGate", spine_x + spine_w, spine_y + spine_h // 2,
                       gate_x - (spine_x + spine_w), 0, width=12_700, arrow=True),
@@ -474,7 +474,7 @@ def _body() -> str:
     parts.extend(
         [
             _box(51, "FPDSLegacy", fpds_x, fpds_y, fpds_w, fpds_h,
-                 "FPDS ATOM | legacy lineage and validation; retiring FY2026",
+                 "FPDS Atom | legacy lineage and validation; retiring FY2026",
                  fill=None, title_color=GRAY_4, title_size=650,
                  dashed=True, line_color=BLACK, line_width=12_700,
                  body_size=650, align="ctr", insets=(35_000, 8_000, 35_000, 8_000)),
@@ -493,7 +493,7 @@ def _body() -> str:
     parts.extend(
         [
             _box(53, "ExternalProgramEvidence", output_x, external_y, output_w, external_h,
-                 "EXTERNAL PROGRAM EVIDENCE",
+                 "External Program Evidence",
                  "End-user, low confidence. Payer, buyer and user often differ; place of performance is not proof.",
                  fill=None, title_color=GRAY_4, body_color=GRAY_4,
                  title_size=750, body_size=650, dashed=True,
@@ -525,15 +525,15 @@ def _body() -> str:
                       0, (chip_y[-1] + chip_h // 2) - (chip_y[0] + chip_h // 2),
                       width=9_525),
             _box(58, "MarketOutput", chip_x, chip_y[0], output_w, chip_h,
-                 "MARKET SIZE", "Funded-demand spine",
+                 "Market Size", "Funded-demand spine",
                  fill=BLUE_2, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(59, "OpportunityOutput", chip_x, chip_y[1], output_w, chip_h,
-                 "OPPORTUNITY MAP", "SAM Opportunities, vehicles and incumbents",
+                 "Opportunity Map", "SAM.gov Opportunities, vehicles and incumbents",
                  fill=BLUE_1, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(60, "EndUserOutput", chip_x, chip_y[2], output_w, chip_h,
-                 "END-USER READ", "External evidence, confidence-tagged",
+                 "End-User Read", "External evidence, confidence-tagged",
                  fill=GRAY_1, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             connector(61, "BusToMarket", bus_x, chip_y[0] + chip_h // 2,
@@ -575,7 +575,7 @@ def _body() -> str:
             left_w,
             rail_h,
             [
-                paragraph([run("VALIDATION IS THE METHOD.", size=950, bold=True,
+                paragraph([run("Validation is the method.", size=950, bold=True,
                                color=BLACK, font=FONT)], line_spacing=100_000),
                 paragraph([run("Most errors come from mixed money universes or double counting. "
                                "Award data names the buyer, not the user.",
