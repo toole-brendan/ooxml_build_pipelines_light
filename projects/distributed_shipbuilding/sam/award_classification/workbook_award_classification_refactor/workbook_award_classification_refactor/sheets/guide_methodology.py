@@ -19,6 +19,9 @@ from workbook_award_classification_refactor.sheets._tabs import (
     TAB_METHODOLOGY, TAB_SUPPLIER_MASTER, TAB_NAICS_MAP,
     TAB_ARCHETYPE_OVERRIDES, TAB_PRIME_AWARDS, TAB_SWBS_CROSSWALK,
 )
+from workbook_award_classification_refactor.sheets._structure_classes import (
+    STRUCTURE_RULES,
+)
 
 _GROUP = "guide"
 _NCOLS = 2
@@ -124,10 +127,12 @@ def _render_methodology() -> WorksheetSpec:
                                    "standardized ultimate parent: Parent Top-1 (largest parent's "
                                    "share of positive spend), Parent HHI (sum of squared parent "
                                    "shares) and Parent Eff Firms (one over Parent HHI).")
-    _kv(c, "Observed Structure", "An analyst-defined screen, NOT an economic market test: a cell "
-                                 "with fewer than three suppliers is Thin observation; otherwise it "
-                                 "is read on parent concentration (HHI at least 0.40) and incumbency "
-                                 "(incumbent $ at least 75%).")
+    _kv(c, "Structure class", "Annual screen based on active-supplier count, Parent HHI, and "
+                              "incumbent-dollar share - a neutral MECE label, not a market test.")
+    c.blank()
+    c.write(["Class", "Rule"], styles=[S_HEADER_LEFT, S_HEADER_LEFT])
+    for label, rule in STRUCTURE_RULES:
+        c.write([label, rule], styles=[S_DEFAULT, S_DEFAULT])
 
     ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                    with_gutter=True, show_outline_symbols=False)

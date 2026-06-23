@@ -1,9 +1,9 @@
 """where_to_play - the annual Program x Archetype x FY "where to play" scorecard (live).
 
-The answer page the SAM workbook was missing: size, concentration and supplier continuity at ONE
-grain, so a reader can ask whether a program vertical is open, concentrated, incumbent-heavy or a
-fortress in a given year. One row per (Axis, Program, Archetype, Federal FY) for the FY2022-FY2025
-window, both published axes (Capability Domain D and Primary Output P).
+Size, concentration and supplier continuity at ONE grain, so a reader can ask whether a program
+vertical is open, concentrated or incumbent-heavy in a given year. One row per (Axis, Program,
+Archetype, Federal FY) for the FY2022-FY2025 window, both published axes (Capability Domain D and
+Primary Output P).
 
 Every metric is a live SUMIFS / COUNTIFS over the Supplier-Year Activity model, reusing the SAME
 criteria (program key, federal FY, axis code) so the columns reconcile:
@@ -13,16 +13,18 @@ criteria (program key, federal FY, axis code) so the columns reconcile:
   - Incumbent Vendors % / Incumbent $ %              - share of suppliers / dollars active last FY too.
   - Retention %                                       - prior-FY suppliers still active this FY.
   - First-observed $ % / Reactivated $ %             - dollars to brand-new / returning suppliers.
-  - Observed Structure                               - an analyst-defined 2x2 screen on parent HHI x
-    incumbent $ (Thin observation when fewer than three suppliers). These thresholds are SCREENS,
-    not proof of economic contestability (see Methodology).
+  - Structure Class (internal header "Observed Structure")  - a neutral MECE screen on active-
+    supplier count, parent HHI and incumbent $: Low Count (< 3 suppliers), else one of HHI-{H,L} /
+    Inc-{H,L} from the two thresholds (see _structure_classes and Methodology). A SCREEN, not proof
+    of economic contestability.
 
-Share / ratio columns render as decimals (the flat-table builder has no percent format); the
-values are exact. Domain Concentration stays the lifetime structural view; this is its annual
-companion. `summary` group.
+Share / ratio columns render as true percentages (the flat-table builder's pct_cols). Domain
+Concentration stays the lifetime structural view; this is its annual companion. `summary` group.
 
 The program label shown is the display form ("DDG-51"); the SUMIFS filter uses the internal key
-("DDG"), matching Supplier-Year Activity. Promoted accessor: `where_to_play_cols`.
+("DDG"), matching Supplier-Year Activity. The canonical internal header stays "Observed Structure"
+(so the accessors and the Executive Summary lookup do not break); it is displayed as "Structure
+Class". Promoted accessor: `where_to_play_cols`.
 """
 from __future__ import annotations
 
@@ -35,7 +37,18 @@ from workbook_award_classification_refactor.sheets.supplier_year_activity import
     supplier_year_cols,
 )
 from workbook_award_classification_refactor.sheets._widths import (
-    W_RANK, W_CODE, W_TERM, W_PROGRAM, W_FY, W_DOLLAR, W_COUNT, W_SHORT_FLAG, W_DOMFOR,
+    W_RANK, W_CODE, W_TERM, W_PROGRAM, W_FY, W_DOLLAR, W_COUNT,
+    W_RATIO, W_STATUS, W_METRIC, W_CLASS,
+)
+from workbook_award_classification_refactor.sheets._structure_classes import (
+    MIN_ACTIVE_SUPPLIERS,
+    HIGH_PARENT_HHI,
+    HIGH_INCUMBENT_DOLLAR_SHARE,
+    LOW_COUNT,
+    HHI_H_INC_H,
+    HHI_H_INC_L,
+    HHI_L_INC_H,
+    HHI_L_INC_L,
 )
 
 _GROUP = "summary"
@@ -56,11 +69,26 @@ HEADERS = [
 _STATIC = ["Axis", "Archetype Code", "Archetype Name", "Program", "Federal FY"]
 _FORMULA_HEADERS = [h for h in HEADERS if h not in _STATIC]
 
-_WIDTHS = [W_RANK, W_CODE, W_TERM, W_PROGRAM, W_FY,
-           W_DOLLAR, W_DOLLAR, W_DOLLAR, W_COUNT,
-           W_DOLLAR, W_DOLLAR, W_COUNT,
-           W_SHORT_FLAG, W_SHORT_FLAG, W_DOLLAR,
-           W_SHORT_FLAG, W_SHORT_FLAG, W_DOMFOR]
+_WIDTHS = [
+    W_RANK,      # Axis
+    W_CODE,      # Code
+    W_TERM,      # Archetype
+    W_PROGRAM,   # Program
+    W_FY,        # FY
+    W_DOLLAR,    # Net $M
+    W_RATIO,     # Program Share
+    W_RATIO,     # YoY Growth
+    W_COUNT,     # Active UEIs
+    W_RATIO,     # Parent Top-1
+    W_DOLLAR,    # Parent HHI
+    W_METRIC,    # Effective Parents
+    W_STATUS,    # Incumbent UEI %
+    W_RATIO,     # Incumbent $ %
+    W_RATIO,     # Retention %
+    W_STATUS,    # First-observed %
+    W_RATIO,     # Reactivated %
+    W_CLASS,     # Structure Class
+]
 assert len(_WIDTHS) == len(HEADERS)
 
 # --- in-memory row spine + per-row context --------------------------------------------------
@@ -188,11 +216,16 @@ def _f_react_dollar(r):
 def _f_structure(r):
     active = _cell("Active Suppliers", r)
     hhi = _cell("Parent HHI", r)
-    inc = _cell("Incumbent $ %", r)
-    return (f'=IF({active}<3,"Thin observation",'
-            f'IF({hhi}>=0.4,'
-            f'IF({inc}>=0.75,"Fortress / partner-led","Concentrated / rotating"),'
-            f'IF({inc}>=0.75,"Broad / relationship-heavy","Open / dynamic")))')
+    incumbent = _cell("Incumbent $ %", r)
+
+    return (
+        f'=IF({active}<{MIN_ACTIVE_SUPPLIERS},"{LOW_COUNT}",'
+        f'IF({hhi}>={HIGH_PARENT_HHI},'
+        f'IF({incumbent}>={HIGH_INCUMBENT_DOLLAR_SHARE},'
+        f'"{HHI_H_INC_H}","{HHI_H_INC_L}"),'
+        f'IF({incumbent}>={HIGH_INCUMBENT_DOLLAR_SHARE},'
+        f'"{HHI_L_INC_H}","{HHI_L_INC_L}")))'
+    )
 
 
 _FORMULAS = {
@@ -215,15 +248,27 @@ WHERE_TO_PLAY, where_to_play_cols = make_flat_sheet(
     tab=TAB_WHERE_TO_PLAY, group=_GROUP,
     csv_name="where_to_play", table_name="WhereToPlay",
     table=(HEADERS, _ROWS),
-    banner="§1 - Where to play: annual program x archetype scorecard",
-    intro="Annual size, concentration and supplier continuity by program, archetype and fiscal year (FY2022-FY2025).",
+    banner="§1 - Annual program-archetype screen",
+    intro="Size, concentration and supplier continuity by program, archetype and fiscal year.",
     widths=_WIDTHS,
     int_cols=["Federal FY", "Active Suppliers"],
-    float_cols=["Net Subaward $M", "Program Share", "YoY $ Growth",
-                "Parent Top-1", "Parent HHI", "Parent Eff Firms",
-                "Incumbent Vendors %", "Incumbent $ %", "Retention %",
-                "First-observed $ %", "Reactivated $ %"],
+    float_cols=["Net Subaward $M", "Parent HHI", "Parent Eff Firms"],
+    pct_cols=["Program Share", "YoY $ Growth", "Parent Top-1",
+              "Incumbent Vendors %", "Incumbent $ %", "Retention %",
+              "First-observed $ %", "Reactivated $ %"],
     formula_cols=_FORMULAS,
+    display_headers={
+        "Archetype Code": "Code",
+        "Archetype Name": "Archetype",
+        "Federal FY": "FY",
+        "Net Subaward $M": "Net $M",
+        "Active Suppliers": "Active UEIs",
+        "Parent Eff Firms": "Effective Parents",
+        "Incumbent Vendors %": "Incumbent UEI %",
+        "First-observed $ %": "First-observed %",
+        "Reactivated $ %": "Reactivated %",
+        "Observed Structure": "Structure Class",
+    },
 )
 
 # Guard: the data-row span the per-row context was built on must match what make_flat_sheet rendered.

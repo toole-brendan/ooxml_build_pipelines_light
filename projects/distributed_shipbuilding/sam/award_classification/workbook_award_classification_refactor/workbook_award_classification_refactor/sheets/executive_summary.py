@@ -10,7 +10,7 @@ scale, then where the dollars sit, then accessibility:
   - §2 Observed SAM by program and fiscal year (per-program $ by FY, lifetime memo, FY2025 reach).
   - §3 Capability Domain mix by fiscal year (one matrix, the three programs side by side).
   - §4 FY2025 where-to-play scorecard (per program x domain: size, parent concentration,
-    incumbency, retention, entry and the Observed Structure read - all read off Where to Play).
+    incumbency, retention, entry and the Structure Class read - all read off Where to Play).
   - §5 Supplier continuity by program and fiscal year (incumbent $ share + retention by FY,
     program grain, off Supplier-Year Activity).
   - §6 Primary Output mix by fiscal year (one matrix).
@@ -65,7 +65,7 @@ FY_NUMS = [2022, 2023, 2024, 2025]
 
 # B label + 3 programs x 4 FY = 13 content columns (gutter A added by worksheet()).
 _NCOLS = 1 + len(PROGRAMS) * len(FYS)
-_COLS = [44] + [10] * (_NCOLS - 1)
+_COLS = [44] + [13] * (_NCOLS - 1)
 
 # Supplier-Year Activity ranges (program-grain continuity + FY reach).
 _SY_PROG = supplier_year_cols("Program")
@@ -79,19 +79,11 @@ _W_CODE = where_to_play_cols("Archetype Code")
 _W_PROGRAM = where_to_play_cols("Program")
 _W_FY = where_to_play_cols("Federal FY")
 
-INTRO = ("Reported hull-builder first-tier subawards for DDG-51, Virginia and Columbia; "
-         "constant FY2026$.")
+INTRO = "Reported first-tier hull-builder subawards; constant FY2026$."
 
 CAVEATS = [
-    "Reported first-tier subawards under the hull-construction primes (GDEB for Virginia and "
-    "Columbia, Bath Iron Works and Ingalls for DDG-51); constant FY2026$ (Green Book Procurement "
-    "deflator). GFE and MIB / BlueForge accounts are excluded.",
-    "Submarine shares are percentages of GDEB-reported subcontracted scope, not of total boat "
-    "construction; the HII-Newport News co-build workshare is largely outside the reported subaward "
-    "data (about $98M visible against tens of billions - see Market Bridge).",
-    "Size, concentration and supplier continuity are read at one program x archetype x fiscal-year "
-    "grain (Where to Play). Domain Concentration keeps the lifetime structural view, with both "
-    "operating-entity and ultimate-parent concentration.",
+    "Submarine shares use reported GDEB subcontracted scope, not total boat cost.",
+    "HII-Newport News co-build workshare is excluded; see Market Bridge.",
 ]
 
 
@@ -113,9 +105,8 @@ def _program_fy_totals(c: RowCursor) -> None:
             f'=COUNTIFS({_SY_PROG},"{key}",{_SY_FY},2025,{_SY_POS},">0")',
             lambda r: f'=IFERROR(F{r}/({total_fy25}),"")',
         ], styles=[S_DEFAULT, S_NUM, S_NUM, S_NUM, S_NUM, S_NUM, S_INT, S_PCT])
-    c.write(["FY columns are constant FY2026$ reported first-tier subaward $; lifetime is all years. "
-             "FY25 active UEIs = distinct suppliers with positive FY2025 spend; FY25 share = the "
-             "program's FY2025 dollars over the three-program FY2025 total."],
+    c.write(["Constant FY2026$; lifetime is all years. FY25 share = the program's share of the "
+             "three-program FY2025 total."],
             styles=[S_ITALIC])
 
 
@@ -129,8 +120,8 @@ def _wtp(metric: str, program_disp: str, code: str) -> str:
 
 def _fy25_domain_scorecard(c: RowCursor) -> None:
     """§4 - one row per program x capability domain, FY2025, read off Where to Play."""
-    c.write(["Domain (FY2025)", "$M (FY26$)", "Program share", "Active UEIs", "Parent Top-1",
-             "Parent HHI", "Incumbent $", "Retention", "First-observed $", "Observed structure"],
+    c.write(["Capability Domain", "FY25 $M", "Program Share", "Active UEIs", "Parent Top-1",
+             "Parent HHI", "Incumbent $", "Retention", "First-observed $", "Class"],
             styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * 9)
     for disp, _cols in PROGRAMS:
         c.write([disp], styles=[S_BOLD])
@@ -148,10 +139,8 @@ def _fy25_domain_scorecard(c: RowCursor) -> None:
                 _wtp("Observed Structure", disp, code),
             ], styles=[S_DEFAULT, S_NUM, S_PCT, S_INT, S_PCT, S_NUM,
                        S_PCT, S_PCT, S_PCT, S_DEFAULT])
-    c.write(["Parent Top-1 / Parent HHI / Incumbent $ / Retention / First-observed $ use positive "
-             "spend at the ultimate-parent grain. Observed Structure is an analyst-defined screen on "
-             "parent concentration and incumbency (Thin observation below three suppliers), not proof "
-             "of contestability - see Methodology. Full annual detail is on Where to Play."],
+    c.write(["Concentration and incumbency use positive spend at the ultimate-parent grain. Class "
+             "is a screen, not proof of contestability - see Methodology. Detail on Where to Play."],
             styles=[S_ITALIC])
 
 
@@ -182,19 +171,20 @@ def _program_fy_continuity(c: RowCursor) -> None:
         key = _PROGRAM_KEY[name]
         c.write([name] + [_continuity_retention(key, fy) for fy in FY_NUMS],
                 styles=[S_DEFAULT] + [S_PCT] * 4)
-    c.write(["Incumbent = positive-spend suppliers active in the prior fiscal year too. Retention = "
-             "the prior year's active suppliers still active this year. Both pool all archetypes; "
-             "the archetype detail is on Where to Play."],
+    c.write(["Both pool all archetypes; archetype detail is on Where to Play."],
             styles=[S_ITALIC])
 
 
-def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]]) -> None:
+def _matrix(c: RowCursor, axis_header: str, codes: list[tuple[str, str, str]],
+            row_header: str) -> None:
     """A mix-by-FY matrix: archetype rows x (program x FY) columns. Body cells = the
     archetype's share of that program-FY's reported subaward $; bottom row = the $M total
-    that is the share denominator. `codes` = (code, name, definition) tuples."""
-    # group header (program name at each block's first column) + FY sub-header
-    grp, gsty = [""], [S_DEFAULT]
-    fy, fsty = [""], [S_DEFAULT]
+    that is the share denominator. `codes` = (code, name, definition) tuples. `row_header`
+    titles the archetype-label column on the FY sub-header row."""
+    # group header (program name at each block's first column) + FY sub-header; both header
+    # rows name the archetype-label column so the row-label column is never blank.
+    grp, gsty = ["Program"], [S_HEADER_LEFT]
+    fy, fsty = [row_header], [S_HEADER_LEFT]
     for name, _cols in PROGRAMS:
         grp += [name] + [""] * (len(FYS) - 1)
         gsty += [S_BOLD] + [S_DEFAULT] * (len(FYS) - 1)
@@ -227,8 +217,8 @@ def _swbs_matrix(c: RowCursor) -> None:
     FY, off the per-subsystem roll-up rolled to major group. Columns sum to 100% incl. U00."""
     n = 1 + len(FYS)   # B label + FY22..FY25
     grp = swbs_rollup_cols("SWBS Major Group")
-    c.write([""] + [lbl for lbl, _h in FYS],
-            styles=[S_DEFAULT] + [S_HEADER_CENTER] * len(FYS))
+    c.write(["SWBS Group"] + [lbl for lbl, _h in FYS],
+            styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * len(FYS))
     for code, name, _ex in SWBS_GROUPS:
         vals, sty = [f"{code}  {name}"], [S_DEFAULT]
         for _lbl, fyh in FYS:
@@ -264,41 +254,31 @@ def _make_exec_summary():
         c.blank(2)
 
         c.section("§3 - Capability Domain mix by fiscal year", _NCOLS)
-        c.write(["Each cell = that domain's share of the program's reported first-tier subaward $ "
-                 "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
-                 "(pre-FY22 and partial FY26 are excluded from this mix; lifetime totals are in §2)."],
+        c.write(["FY2022-FY2025 share of reported subawards; each program-year column sums to 100%."],
                 styles=[S_ITALIC])
-        _matrix(c, "Capability Domain Archetype (D)", DOMAINS)
+        _matrix(c, "Capability Domain Archetype (D)", DOMAINS, "Capability Domain")
         c.blank(2)
 
         c.section("§4 - FY2025 where-to-play scorecard", _NCOLS)
-        c.write(["The answer page: FY2025 size and accessibility per program x capability domain, "
-                 "read off Where to Play. Read size (left) with parent concentration and incumbency "
-                 "(right) - a large share that is one embedded parent is not an open field."],
+        c.write(["FY2025 size, parent concentration and supplier continuity by capability domain."],
                 styles=[S_ITALIC])
         _fy25_domain_scorecard(c)
         c.blank(2)
 
         c.section("§5 - Supplier continuity by program and fiscal year", _NCOLS)
-        c.write(["Whether FY2025 looks like the prior years: incumbent dollar share and supplier "
-                 "retention by program and fiscal year, pooled across archetypes."],
+        c.write(["Incumbent spend and supplier retention by program."],
                 styles=[S_ITALIC])
         _program_fy_continuity(c)
         c.blank(2)
 
         c.section("§6 - Primary Output mix by fiscal year", _NCOLS)
-        c.write(["Each cell = that output's share of the program's reported first-tier subaward $ "
-                 "for the fiscal year (constant FY2026$); columns sum to 100%. Window: FY2022-FY2025 "
-                 "(pre-FY22 and partial FY26 are excluded from this mix; lifetime totals are in §2)."],
+        c.write(["FY2022-FY2025 share of reported subawards; each program-year column sums to 100%."],
                 styles=[S_ITALIC])
-        _matrix(c, "Primary Output Archetype (P)", OUTPUTS)
+        _matrix(c, "Primary Output Archetype (P)", OUTPUTS, "Primary Output")
         c.blank(2)
 
         c.section("§7 - DDG SWBS mix by fiscal year", _NCOLS)
-        c.write(["DDG-51 HII-Ingalls only (the SWBS-eligible builder), transaction-grain. Each cell = "
-                 "that ship-system group's share of HII-Ingalls DDG reported subaward $ for the fiscal "
-                 "year (constant FY2026$); columns sum to 100% incl. U00 unmapped. Denominator differs "
-                 "from §3/§6, which include GD-BIW."],
+        c.write(["HII-Ingalls DDG only; shares include U00 unmapped."],
                 styles=[S_ITALIC])
         _swbs_matrix(c)
 

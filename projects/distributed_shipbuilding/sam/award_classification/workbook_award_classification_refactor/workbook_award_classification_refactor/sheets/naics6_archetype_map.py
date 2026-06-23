@@ -34,4 +34,9 @@ NAICS_ARCHETYPE_MAP, naics_map_cols = make_flat_sheet(
         "Primary Output (P)": "P Rationale",
         "Mapping Status": "Notes / Caveats",
     },
+    display_headers={
+        "Capability Domain (D)": "Domain (D)",
+        "Primary Output (P)": "Output (P)",
+        "Mapping Status": "Status",
+    },
 )

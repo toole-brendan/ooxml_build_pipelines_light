@@ -25,16 +25,33 @@ from pathlib import Path
 
 # Built workbook lands at the project root (projects/distributed_shipbuilding/sam/award_classification/), one level up from here.
 OUT = Path(__file__).resolve().parent.parent / os.environ.get(
-    "WB_OUT", "award_classification_refactor.xlsx")
+    "WB_OUT", "20260620_Distributed Shipbuilding Master SAM_vS.xlsx")
 
 # Expected tab order (group-contiguous). A drift here means a sheet was added/removed/reordered.
 EXPECTED_SHEETS = [
-    "Executive Summary", "Domain Concentration", "Where to Play", "Subaward Activity",
-    "Market Bridge", "Taxonomy", "Methodology", "Mapping - NAICS Defaults",
-    "Mapping - Vendor Overrides", "Mapping - HII Code to SWBS", "Deflators",
-    "Supplier Master", "Supplier-Year Activity", "DDG Program Vendors",
-    "DDG SWBS by Ship-System", "Virginia Program Vendors", "Columbia Program Vendors",
-    "Prime Awards", "DDG Subaward Transactions", "Virginia Subaward Transactions",
+    "Executive Summary",
+    "Domain Concentration",
+    "Where to Play",
+    "Subaward Activity",
+    "Market Bridge",
+    "Taxonomy",
+    "Methodology",
+
+    "Supplier Master",
+    "Supplier-Year Activity",
+    "DDG Program Vendors",
+    "DDG SWBS by Ship-System",
+    "Virginia Program Vendors",
+    "Columbia Program Vendors",
+
+    "Mapping - NAICS Defaults",
+    "Mapping - Vendor Overrides",
+    "Mapping - HII Code to SWBS",
+    "Deflators",
+
+    "Prime Awards",
+    "DDG Subaward Transactions",
+    "Virginia Subaward Transactions",
     "Columbia Subaward Transactions",
 ]
 
@@ -52,7 +69,7 @@ EXPECTED_TAB_COLORS = {
 # under the header on the first data row (row 9) must carry a live formula.
 EXPECTED_FORMULA_COLS = [
     ("Supplier-Year Activity", "Activity Status"),
-    ("Where to Play", "Observed Structure"),
+    ("Where to Play", "Structure Class"),
 ]
 
 

@@ -78,7 +78,8 @@ B2_PIIDS, B2_PROGS = "L", "M"
 _NCOLS = 16                      # B..Q - banners span the full width
 
 # B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q
-_WIDTHS = [14, 31, 16, 12, 18, 12, 26, 15, 10, 14, 14, 22, 24, 14, 14, 14]
+# D widened to 20 for the "Distinct Subaward Numbers" / "PIID-Subaward Pairs" headings.
+_WIDTHS = [14, 31, 20, 12, 18, 12, 26, 15, 10, 14, 14, 22, 24, 14, 14, 14]
 assert len(_WIDTHS) == _NCOLS
 
 _PROFILE_LABELS = ("Single / one-time", "Limited", "Established", "High / sustained activity")
@@ -244,25 +245,25 @@ _BLK_CENTER = {"# Vendors", "First observed", "Reactivated", "Continued from pri
 _BLK_STYLES = [S_DEFAULT, S_DEFAULT, S_INT, S_INT, S_INT, S_INT, S_PCT, S_PCT, S_INT, S_INT,
                S_NUM, S_NUM, S_PCT, S_PCT]
 
-INTRO = ("Historical supplier activity on reported new-construction subawards - breadth, observed "
-         "duration and block continuity.")
-CAV1 = ("Historical Activity Intensity combines two descriptive axes, each a 0-3 tier: breadth = "
-        "distinct subaward numbers (deduped); duration = first-to-last reported-action span (years). "
-        "Observed Activity Profile = the more intense of the two. It is not a measure of annual "
-        "supplier retention or incumbency; those are on Where to Play. FFATA has no PoP field, so "
-        "span is a reporting-based lower bound, not contractual PoP.")
-CAV2 = ("Span / Prime PoP = engagement span / prime PoP (Start to Current End, from Prime "
-        "Awards). Net $ is constant FY2026$ and reconciles to the program-vendor total. Reports "
-        "is a data-quality check (refilings inflate it); Neg. Adjustments counts reports with "
-        "a negative amount (deobligations, not necessarily corrections).")
-MTX_CAP = ("Tiers are analyst-defined descriptive thresholds (not contractual). Breadth = distinct "
-           "subaward numbers: 0 = 1, 1 = 2-3, 2 = 4-9, 3 = 10+. Duration = reported-action span "
-           "(yrs): 0 = none, 1 = <2, 2 = 2 to <6, 3 = >=6. Profile = the more intense of the two tiers.")
-BLK_CAP = ("Continuity is observed-to-date (later blocks are right-censored, so continuation and "
-           "retention are lower bounds). 'Compared with' is the single hand-set predecessor block; "
-           "'Reactivated' = seen in an earlier block but not that predecessor. Baseline blocks (no "
-           "predecessor) show '-'. The final row sums block observations, so vendors appearing in "
-           "multiple blocks are intentionally counted more than once there.")
+INTRO = (
+    "Historical supplier breadth and observed duration on reported "
+    "new-construction subawards."
+)
+CAV1 = (
+    "Profile = the higher of breadth tier and duration tier; "
+    "it is not an annual retention measure."
+)
+CAV2 = (
+    "Activity span is report-date based; FFATA does not provide "
+    "contractual period of performance."
+)
+MTX_CAP = (
+    "Breadth tiers use distinct subawards; duration tiers use observed action span."
+)
+BLK_CAP = (
+    "Later blocks are right-censored. Reactivated means seen earlier, "
+    "but not in the immediately prior block."
+)
 
 
 def _block_order() -> list[str]:

@@ -6,7 +6,7 @@ primary output), a first-pass classification roster, a wide vendor-context profi
 and per-program (DDG-51 / Virginia / Columbia) top-vendor work-description cuts.
 
 This pipeline reconstructs the hand-built
-``projects/distributed_shipbuilding/sam/award_classification/award_classification_refactor.xlsx`` through the shared
+``projects/distributed_shipbuilding/sam/award_classification/20260620_Distributed Shipbuilding Master SAM_vS.xlsx`` through the shared
 raw-OOXML engine so it carries the house style (title/section banners, header
 underlines, tab colors by group, sized columns, native filterable tables, Arial 8 /
 gutter layout). The cell content is extracted verbatim into ``extracted/*.csv`` by

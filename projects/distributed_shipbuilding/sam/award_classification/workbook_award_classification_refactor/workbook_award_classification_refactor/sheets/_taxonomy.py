@@ -23,7 +23,7 @@ from __future__ import annotations
 # ---------------------------------------------------------------------------
 
 GRAIN_INTRO = (
-    "Domain, output and SWBS definitions."
+    "Classification definitions."
 )
 
 # ---------------------------------------------------------------------------
@@ -31,9 +31,7 @@ GRAIN_INTRO = (
 # ---------------------------------------------------------------------------
 
 DOMAIN_INTRO = (
-    "The technical / material ship area the entity is competent in, inferred "
-    "from work descriptions and NAICS. A published, pure technical-area axis - "
-    "no role or production-mode meaning."
+    "Technical ship area supported by the supplier."
 )
 
 DOMAINS: list[tuple[str, str, str]] = [
@@ -88,9 +86,7 @@ DOMAIN_TIEBREAKS: list[tuple[str, str]] = [
 # ---------------------------------------------------------------------------
 
 OUTPUT_INTRO = (
-    "The physical form and integration level of the entity's primary delivered "
-    "article - a deliverable-maturity ladder (P1 lowest to P5 highest, P6 for "
-    "labor-led handoffs). A published axis."
+    "Primary delivered form and integration level."
 )
 
 OUTPUTS: list[tuple[str, str, str]] = [
@@ -145,9 +141,7 @@ ASSIGNMENT_RULE = (
 # Capability Domain / Output while its transactions hit many SWBS groups.
 
 SWBS_INTRO = (
-    "Which shipboard system a subaward supports, read from the observed SWBS code. "
-    "Transaction-level and HII-DDG only - submarine subawards carry no SWBS "
-    "equivalent, and SWBS is never compared across programs."
+    "Ship-system application from observed HII-DDG work-item codes."
 )
 
 # (code, ship-system application, example subsystems / drill-down)
@@ -179,8 +173,5 @@ SWBS_GROUPS: list[tuple[str, str, str]] = [
 ]
 
 SWBS_HIERARCHY_NOTE = (
-    "Hierarchy: SWBS major group to 3-digit SWBS subsystem to HII work-item code to "
-    "component text. The HII work-item code stays a drill-down and audit key, not the "
-    "headline: it is finer than SWBS but proprietary to HII, so it is weaker for "
-    "cross-prime / cross-program comparison."
+    "HII work-item codes remain drill-down fields; SWBS is the comparable headline."
 )

@@ -38,7 +38,7 @@ from workbook_award_classification_refactor.sheets.ddg_subaward_transactions imp
 from workbook_award_classification_refactor.sheets.virginia_subaward_transactions import virginia_tx_cols
 from workbook_award_classification_refactor.sheets.columbia_subaward_transactions import columbia_tx_cols
 from workbook_award_classification_refactor.sheets._widths import (
-    W_PROGRAM, W_FY, W_UEI, W_COUNT, W_VENDOR, W_SHORT_FLAG, W_DOLLAR, W_DOMFOR, W_RANK,
+    W_PROGRAM, W_FY, W_UEI, W_VENDOR, W_DOLLAR, W_RANK,
 )
 
 _GROUP = "model"
@@ -59,13 +59,13 @@ _HELPERS = [
 # CSV columns (Program | Federal FY | UEI | Distinct Subaward Numbers materialized; the rest blank,
 # filled live below) + the 8 hidden helpers. widths must cover every column in this order.
 _WIDTHS = [
-    W_PROGRAM, W_FY, W_UEI, W_COUNT,            # Program, Federal FY, UEI, Distinct Subaward Numbers
-    W_VENDOR, W_UEI, W_SHORT_FLAG, W_SHORT_FLAG,  # Vendor Name, Parent Key, Domain (D), Output (P)
-    W_DOLLAR, W_DOLLAR, W_COUNT,                # Net $M, Positive $M, Reports
-    W_RANK, W_RANK, W_DOMFOR, W_COUNT,          # Prior-Year, Earlier-Year, Activity Status, Active FYs
-    W_RANK, W_DOLLAR,                           # SM Match Row, UEI Positive $ Squared
-    W_DOLLAR, W_DOLLAR, W_DOLLAR,               # Parent D-FY $M, Parent D HHI Num, Parent D Firm Weight
-    W_DOLLAR, W_DOLLAR, W_DOLLAR,               # Parent P-FY $M, Parent P HHI Num, Parent P Firm Weight
+    W_PROGRAM, W_FY, W_UEI, 18,            # Program, FY, Subawardee UEI, Distinct subawards
+    W_VENDOR, W_UEI, 12, 12,               # Supplier, Parent UEI, Domain (D), Output (P)
+    W_DOLLAR, W_DOLLAR, 10,                # Net $M, Positive $M, Reports
+    15, 17, 16, 10,                        # Prior FY Active, Earlier FY Active, Activity Status, Active FYs
+    W_RANK, W_DOLLAR,                       # SM Match Row, UEI Positive $ Squared (hidden)
+    W_DOLLAR, W_DOLLAR, W_DOLLAR,           # Parent D-FY $M, Parent D HHI Num, Parent D Firm Weight (hidden)
+    W_DOLLAR, W_DOLLAR, W_DOLLAR,           # Parent P-FY $M, Parent P HHI Num, Parent P Firm Weight (hidden)
 ]
 
 # Supplier Master source ranges (each attribute resolved once per UEI x program over there).
@@ -202,8 +202,8 @@ _FORMULAS = {
 SUPPLIER_YEAR_ACTIVITY, supplier_year_cols = make_flat_sheet(
     tab=TAB_SUPPLIER_YEAR, group=_GROUP,
     csv_name="supplier_year_activity", table_name="SupplierYearActivity",
-    banner="§1 - Supplier-year activity",
-    intro="One row per program, supplier UEI and federal fiscal year; live spend, supplier status and parent concentration.",
+    banner="§1 - Supplier activity by fiscal year",
+    intro="Program-supplier activity by federal fiscal year.",
     widths=_WIDTHS,
     int_cols=["Federal FY", "Distinct Subaward Numbers", "Reports",
               "Prior-Year Active", "Earlier-Year Active", "Active FYs", "SM Match Row"],
@@ -215,7 +215,14 @@ SUPPLIER_YEAR_ACTIVITY, supplier_year_cols = make_flat_sheet(
     formula_cols=_FORMULAS, extra_cols=_HELPERS,
     hidden_headers=_HELPERS,
     display_headers={
+        "Federal FY": "FY",
         "Distinct Subaward Numbers": "Distinct subawards",
+        "Subawardee Vendor Name": "Supplier",
+        "Parent Key": "Parent UEI",
+        "Net Subaward $M": "Net $M",
+        "Positive Supplier $M": "Positive $M",
+        "Prior-Year Active": "Prior FY Active",
+        "Earlier-Year Active": "Earlier FY Active",
         "Capability Domain (D)": "Domain (D)",
         "Primary Output (P)": "Output (P)",
     },

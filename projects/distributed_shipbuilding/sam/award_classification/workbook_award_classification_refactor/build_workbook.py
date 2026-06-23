@@ -4,7 +4,7 @@ Run via:
     python build_workbook.py
 
 Output:
-    award_classification_refactor.xlsx  (at the project root, projects/distributed_shipbuilding/sam/award_classification/)
+    20260620_Distributed Shipbuilding Master SAM_vS.xlsx  (at the project root, projects/distributed_shipbuilding/sam/award_classification/)
 
 The shared raw-OOXML engine is the canonical ``workbook_core`` package at the
 workspace root; all pipeline-specific binding lives in

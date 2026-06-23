@@ -27,11 +27,13 @@ from workbook_award_classification_refactor.sheets._flat import make_flat_sheet
 from workbook_award_classification_refactor.sheets._fiscal import FY_BIN_KEYS as _FY_ROW_ORDER
 from workbook_award_classification_refactor.sheets._tabs import TAB_DEFLATORS
 from workbook_award_classification_refactor.sheets._widths import (
-    W_FY, W_DOLLAR, W_TEXT_WIDE,
+    W_FY, W_TEXT_WIDE,
 )
 
 # FY (text) | Procurement TOA (FY2025=100, blue input) | Factor to FY2026 $ (formula) | Basis (text)
-_WIDTHS = [W_FY, W_DOLLAR, W_DOLLAR, W_TEXT_WIDE]
+# Displayed headers are shortened (Procurement Index / FY26 Factor), so the columns size to the
+# label, not the verbose canonical name.
+_WIDTHS = [W_FY, 17, 12, W_TEXT_WIDE]
 
 # Row order MUST match extracted/deflators.csv. The FY2026 base-index row is DERIVED from the
 # first data row + the FY2026 position (not a hardcoded row or base number), so re-basing to a
@@ -59,6 +61,10 @@ DEFLATORS, deflators_cols = make_flat_sheet(
     input_cols=["Procurement TOA (FY2025=100)"],   # editable Green Book index -> pale-yellow fill
     input_fill=True,
     formula_cols=_FORMULAS,                          # derived factor -> black formula
+    display_headers={
+        "Procurement TOA (FY2025=100)": "Procurement Index",
+        "Factor to FY2026 $": "FY26 Factor",
+    },
 )
 
 # --- promoted per-FY factor-cell accessor --------------------------------------------------

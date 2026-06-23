@@ -23,8 +23,9 @@ Three kinds of column live on these sheets:
     to a genuinely new aggregate like a SUMIFS total. link_cols applies to numeric
     and date columns only - text columns always render default black.
 
-Column TYPE is declared via int_cols / float_cols / date_cols (controls coercion +
-number format). A column with no type is text. `make_flat_sheet` returns
+Column TYPE is declared via int_cols / float_cols / pct_cols / date_cols (controls
+coercion + number format; pct_cols carry a decimal rendered as a percent via S_PCT).
+A column with no type is text. `make_flat_sheet` returns
 (SheetEntry, cols): `cols(header)` gives the absolute range "'Tab'!$X$f:$X$l" of
 that column's data, so a derived sheet's formulas can reference this sheet's leaf
 ranges (the data_lane_vendors -> model_by_vendor pattern).
@@ -36,7 +37,7 @@ import re
 from workbook_core.primitives import col_letter, worksheet
 from workbook_core.styles import (
     S_DEFAULT, S_INT, S_INT_INPUT, S_NUM, S_NUM_INPUT, S_DATE, S_DATE_INPUT,
-    S_LINK_INT, S_LINK_NUM, S_DATE_LINK,
+    S_LINK_INT, S_LINK_NUM, S_DATE_LINK, S_PCT, S_PCT_INPUT, S_LINK_PCT,
 )
 from workbook_award_classification_refactor.sheets._text_input import S_TEXT_INPUT
 from workbook_award_classification_refactor.sheets._inputfill import (
@@ -55,6 +56,7 @@ from workbook_award_classification_refactor.sheets._widths import header_styles
 _STYLE_BY_TYPE = {
     "int":   (S_INT, S_INT_INPUT, S_LINK_INT),
     "float": (S_NUM, S_NUM_INPUT, S_LINK_NUM),
+    "pct":   (S_PCT, S_PCT_INPUT, S_LINK_PCT),
     "date":  (S_DATE, S_DATE_INPUT, S_DATE_LINK),
 }
 
@@ -230,8 +232,8 @@ def _note_verbatim(raw: str) -> str:
 
 def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
                     banner: str, widths: list, intro=None, int_cols=(),
-                    float_cols=(), date_cols=(), input_cols=(), input_fill=False,
-                    formula_cols=None, link_cols=(), note_from=None,
+                    float_cols=(), pct_cols=(), date_cols=(), input_cols=(),
+                    input_fill=False, formula_cols=None, link_cols=(), note_from=None,
                     note_from_verbatim=None, right_spacer=False, extra_cols=(),
                     hidden_headers=(), display_headers=None, table=None):
     """Build a single-table sheet from extracted/<csv_name>.csv.
@@ -313,6 +315,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         raise ValueError(
             f"{csv_name}: {len(widths)} widths != {ncols} columns ({headers})")
     int_cols, float_cols, date_cols = set(int_cols), set(float_cols), set(date_cols)
+    pct_cols = set(pct_cols)
     input_cols = set(input_cols)
     link_cols = set(link_cols)
     hidden_headers = set(hidden_headers)
@@ -327,13 +330,15 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
     missing_fx = [h for h in extra_cols if h not in formula_cols]
     if missing_fx:
         raise ValueError(f"{csv_name}: extra_cols without a formula: {missing_fx}")
-    numeric = int_cols | float_cols | date_cols   # centered headers
+    numeric = int_cols | float_cols | pct_cols | date_cols   # centered headers
 
     def _type(h: str):
         if h in int_cols:
             return "int"
         if h in float_cols:
             return "float"
+        if h in pct_cols:
+            return "pct"
         if h in date_cols:
             return "date"
         return None
@@ -353,7 +358,8 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
             return derived          # live aggregation -> black
         if h in input_cols:
             # hardcoded source -> blue, or pale-yellow filled when the sheet opts in
-            return _INPUT_FILL_BY_TYPE[t] if input_fill else inp
+            # (.get: no pale-yellow pct fill exists, so a pct input falls back to blue)
+            return _INPUT_FILL_BY_TYPE.get(t, inp) if input_fill else inp
         return derived             # typed leaf without an input flag -> black
 
     col_styles = [_style(h) for h in headers]
@@ -365,7 +371,7 @@ def make_flat_sheet(*, tab: str, group: str, csv_name: str, table_name: str,
         t = _type(h)
         if t == "int":
             return as_int(raw)
-        if t == "float":
+        if t in ("float", "pct"):       # a percent is stored as a decimal, formatted by S_PCT
             return as_float(raw)
         if t == "date":
             return date_serial(raw)

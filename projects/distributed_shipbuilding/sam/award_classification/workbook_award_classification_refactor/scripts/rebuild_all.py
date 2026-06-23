@@ -17,7 +17,7 @@ Stages, in dependency order:
   [offline] build_subaward_activity    -> subaward_activity.csv
   [offline] build_supplier_year_activity -> supplier_year_activity.csv            (Program x UEI x Federal FY spine for Where to Play)
   [offline] build_ddg_swbs_rollup      -> ddg_swbs_by_subsystem.csv
-  [build]   build_workbook             -> award_classification_refactor.xlsx      (runs the 8 integrity asserts)
+  [build]   build_workbook             -> 20260620_Distributed Shipbuilding Master SAM_vS.xlsx  (runs the 8 integrity asserts)
 
 Hand-maintained inputs (NOT regenerated here): extracted/deflators.csv,
 extracted/naics6_archetype_map.csv, extracted/swbs_curated_c.csv, and

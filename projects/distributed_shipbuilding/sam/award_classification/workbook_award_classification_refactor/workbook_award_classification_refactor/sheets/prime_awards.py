@@ -33,4 +33,12 @@ PRIME_AWARDS, prime_awards_cols = make_flat_sheet(
                 "USAspending Subaward $M"],
     date_cols=["Date Signed", "PoP Start", "PoP Current End", "PoP Potential End"],
     input_cols=["Prime PIID"],
+    # Shorten the verbose numeric headers (display only; the canonical names still drive the
+    # cols accessor that subaward_activity reads) so they sit over their dollar/count columns.
+    display_headers={
+        "Total Obligated $M (nominal)": "Total Oblig $M",
+        "Base + All Options $M (nominal)": "Base+Options $M",
+        "USAspending Subaward Count": "Subaward Count",
+        "USAspending Subaward $M": "Subaward $M",
+    },
 )

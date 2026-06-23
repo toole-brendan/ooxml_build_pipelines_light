@@ -11,8 +11,8 @@ workbook by ``extract_classification_cuts.py`` (re-run only if the manual source
 changes). Cell values are stored as strings so identifiers keep their exact form
 (Work-type ID "01", CAGE "90099"); the sheet modules cast the numeric columns.
 
-The build always writes the canonical ``award_classification_refactor.xlsx`` at the
-project root.
+The build always writes the canonical ``20260620_Distributed Shipbuilding Master SAM_vS.xlsx`` at
+the project root.
 """
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ import workbook_core.groups as _groups
 # repaints the tabs with no change to any sheet module. This mutates the shared dict IN
 # THIS PROCESS ONLY; every other pipeline builds in its own process and keeps its own
 # colors. Only the five groups THIS workbook uses are set (there is no Checks tab, so no
-# "validation" group). Group order / group->sheet assignment are unchanged.
+# "validation" group). Colors and group order are overridden for this workbook only.
 _TAB_PALETTE = {
     "summary": "262626",   # charcoal   - the answer pages (Executive Summary, etc.)
     "guide":   "2C5E5E",   # muted teal - scope & method (Taxonomy, Methodology)
@@ -46,13 +46,42 @@ _TAB_PALETTE = {
 _groups._COLOR.update(_TAB_PALETTE)
 
 # ---------------------------------------------------------------------------
+# Tab block order - per-build override (THIS workbook only)
+# ---------------------------------------------------------------------------
+# Workbook-local reader order:
+#   summary -> guide -> model -> inputs -> data.
+# The shared core sorts inputs before model; here the Mapping / Deflators levers sit
+# AFTER the model/calculation tabs (Supplier Master and the derived roll-ups), so a
+# reader meets the answer, then the calculations, then the editable mappings.
+#
+# Mutate the existing dict in place. workbook_core.lib imported the same dict
+# object, so assigning a new dict here would not update its reference. Process-scoped,
+# exactly like the palette override above (every other pipeline keeps the core order).
+_LOCAL_GROUP_SEQUENCE = (
+    "summary",
+    "guide",
+    "model",
+    "inputs",
+    "data",
+    "outputs",
+    "validation",
+    "sources",
+    "chartdata",
+)
+
+_groups.GROUP_ORDER.clear()
+_groups.GROUP_ORDER.update(
+    {group: index for index, group in enumerate(_LOCAL_GROUP_SEQUENCE)}
+)
+
+# ---------------------------------------------------------------------------
 # Pipeline bindings
 # ---------------------------------------------------------------------------
 
 WORKBOOK_DIR = Path(__file__).resolve().parents[1]   # projects/distributed_shipbuilding/sam/award_classification/workbook_award_classification_refactor/
 PROJECT_DIR = Path(__file__).resolve().parents[2]    # projects/distributed_shipbuilding/sam/award_classification/   (build output lands here)
 REPO_ROOT = Path(__file__).resolve().parents[6]      # ooxml_build_pipelines_light/
-OUT = PROJECT_DIR / "award_classification_refactor.xlsx"
+OUT = PROJECT_DIR / "20260620_Distributed Shipbuilding Master SAM_vS.xlsx"
 EXTRACTED = WORKBOOK_DIR / "extracted"
 
 _TITLE = "Award Classification Refactor - New-Construction Subaward Vendor Classification"

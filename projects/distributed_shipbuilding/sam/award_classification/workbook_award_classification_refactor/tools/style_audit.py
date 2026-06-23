@@ -39,7 +39,7 @@ import openpyxl
 
 # Built workbook lands at the project root, two levels up from tools/.
 OUT = Path(__file__).resolve().parents[2] / os.environ.get(
-    "WB_OUT", "award_classification_refactor.xlsx")
+    "WB_OUT", "20260620_Distributed Shipbuilding Master SAM_vS.xlsx")
 
 SECTION_RE = re.compile(r"^§\d+[a-z]? - .+")
 DASH_RE = re.compile(r"[–—]")          # en dash, em dash

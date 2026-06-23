@@ -50,6 +50,10 @@ W_SUPTYPE    = 16    # supplier type (integrator/OEM, manufacturer, ...)
 # Numeric
 W_DOLLAR     = 12    # $M summary columns (Total / Submarines / DDG-51)
 W_COUNT      = 13    # record-count column
+W_RATIO      = 14    # percentage / rate columns (share, retention, incumbency)
+W_STATUS     = 18    # medium status or descriptive header columns
+W_METRIC     = 18    # effective-count and similar metric columns
+W_CLASS      = 16    # compact classification-code columns (e.g. Structure Class)
 
 # Short-phrase categorical columns
 W_WORKTYPE   = 30    # work type / work-type id (the bucketed label)

@@ -51,4 +51,9 @@ VENDOR_ARCHETYPE_OVERRIDES, overrides_cols = make_flat_sheet(
     hidden_headers=_EXTRA,
     # per-axis research evidence folds into hover Notes (dropped from the visible table).
     note_from_verbatim=_NOTE_VERBATIM,
+    display_headers={
+        "Subawardee UEI": "Supplier UEI",
+        "Capability Domain (D)": "Domain (D)",
+        "Primary Output (P)": "Output (P)",
+    },
 )

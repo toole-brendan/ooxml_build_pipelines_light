@@ -5,17 +5,18 @@ below. Each module exposes a single tables.SheetEntry and declares its group (se
 workbook_core.groups); the blocks below keep each group contiguous and in
 groups.SHEET_GROUPS canonical order. package_workbook() asserts that at build time.
 
-Reader-first layers (answer -> scope -> levers -> model -> evidence):
+Reader-first layers (answer -> scope/method -> model/calculations -> mappings/deflators ->
+evidence):
   - summary : the reader-facing answer pages - Executive Summary, the Domain
               Concentration "where to play" cut, and the Market Bridge estimate.
   - guide   : scope & method - Taxonomy and Methodology.
-  - inputs  : the editable classification levers + curated mappings - the NAICS-6 archetype
-              defaults, the hand-researched (Program, UEI) overrides, the HII code -> SWBS
-              crosswalk, and the deflators (hand-maintained values that drive formulas).
   - model   : the Supplier Master dimension (override-first D / P resolved live) plus the
               derived cuts - the three program-vendor roll-ups (live SUMIFS / COUNTIFS /
               MINIFS / MAXIFS over the transaction leaves + a single Supplier Master
               match-row) and the per-subsystem SWBS roll-up.
+  - inputs  : the editable classification levers + curated mappings - the NAICS-6 archetype
+              defaults, the hand-researched (Program, UEI) overrides, the HII code -> SWBS
+              crosswalk, and the deflators (hand-maintained values that drive formulas).
   - data    : the source evidence - the prime awards and the three raw subaward-transaction
               fact spines.
 
@@ -35,11 +36,6 @@ from . import (
     # guide (scope & method)
     taxonomy,
     guide_methodology,
-    # inputs (editable classification levers + curated mappings + deflators)
-    naics6_archetype_map,
-    vendor_archetype_overrides,
-    hii_swbs_crosswalk,
-    deflators,
     # model (Supplier Master dimension + derived program-vendor roll-ups + per-subsystem SWBS roll-up)
     supplier_master,
     supplier_year_activity,
@@ -47,6 +43,11 @@ from . import (
     ddg_swbs_rollup,
     virginia_program_vendors,
     columbia_program_vendors,
+    # inputs (editable classification levers + curated mappings + deflators)
+    naics6_archetype_map,
+    vendor_archetype_overrides,
+    hii_swbs_crosswalk,
+    deflators,
     # data (source evidence: prime awards + the three raw subaward-transaction spines)
     prime_awards,
     ddg_subaward_transactions,
@@ -65,18 +66,18 @@ SHEETS: list = [
     # --- Guide (scope & method) ---
     taxonomy.TAXONOMY,
     guide_methodology.METHODOLOGY,
-    # --- Inputs (editable classification levers + curated mappings + deflators) ---
-    naics6_archetype_map.NAICS_ARCHETYPE_MAP,
-    vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
-    hii_swbs_crosswalk.HII_SWBS_CROSSWALK,
-    deflators.DEFLATORS,
-    # --- Model (Supplier Master dimension + program-vendor roll-ups + per-subsystem SWBS roll-up) ---
+    # --- Model / calculations (Supplier Master dimension + program-vendor roll-ups + SWBS roll-up) ---
     supplier_master.SUPPLIER_MASTER,
     supplier_year_activity.SUPPLIER_YEAR_ACTIVITY,
     ddg_program_vendors.DDG_PROGRAM_VENDORS,
     ddg_swbs_rollup.DDG_SWBS_ROLLUP,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,
     columbia_program_vendors.COLUMBIA_PROGRAM_VENDORS,
+    # --- Inputs / mappings (editable classification levers + curated mappings + deflators) ---
+    naics6_archetype_map.NAICS_ARCHETYPE_MAP,
+    vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
+    hii_swbs_crosswalk.HII_SWBS_CROSSWALK,
+    deflators.DEFLATORS,
     # --- Data (source evidence: prime awards + the three raw subaward-transaction spines) ---
     prime_awards.PRIME_AWARDS,
     ddg_subaward_transactions.DDG_SUBAWARD_TX,

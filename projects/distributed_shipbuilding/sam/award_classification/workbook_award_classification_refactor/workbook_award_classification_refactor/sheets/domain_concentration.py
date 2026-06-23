@@ -20,7 +20,10 @@ All cells are LIVE formulas over the three program-vendor sheets' entity-grain r
                              Negative adjustment balances do not enter either side of the ratio.
                              Eff. # firms = 1/HHI.
   - Observed Structure     = a live label off Top-1 share + HHI + effective # firms (an
-                             analyst-defined screen on observed concentration, not a market test).
+                             analyst-defined screen on observed concentration, not a market test):
+                             High concentration when Top-1 >= 60% or HHI >= 0.40; Moderate when
+                             effective firms <= 3; otherwise Lower concentration. HHI = sum of
+                             squared within-domain shares; effective firms = 1/HHI.
   - Parent grain           = the same domain's Top-1 share / HHI / effective firms / distinct
                              parents after each UEI is collapsed to its standardized ultimate
                              parent (the hidden program-vendor helpers), plus HHI-uplift and
@@ -62,25 +65,21 @@ PROGRAMS = [
 # and share read together. The Parent block (L..Q) collapses each UEI to its standardized ultimate
 # parent (the same hidden program-vendor helpers the former Parent Concentration sheet used): a
 # domain can look contestable across operating entities yet be far more concentrated by parent.
-_HEADERS = ["", "$M (FY26$)", "Share", "Suppliers", "Top-1 firm",
+_HEADERS = ["Capability Domain", "$M (FY26$)", "Share", "Suppliers", "Top-1 firm",
             "Top-1 $M", "Top-1 share", "HHI", "Eff. # firms", "Observed Structure",
             "Parent Top-1 %", "Parent HHI", "Parent Eff Firms", "Parent Firms",
             "HHI uplift", "Firm reduction"]
 _NCOLS = len(_HEADERS)
-_COLS = [40, 12, 8, 10, 26, 12, 11, 8, 12, 15, 13, 9, 13, 12, 11, 13]
+_COLS = [40, 12, 8, 10, 26, 12, 11, 8, 12, 18, 14, 10, 16, 12, 11, 14]
 
-INTRO = "Lifetime capability-domain size and supplier concentration by program."
-CAVEAT = ("Scope: GDEB-reported first-tier subcontracted scope, hull-builder only; the HII-Newport "
-          "News co-build workshare is excluded (see Market Bridge). Submarine shares are share of "
-          "reported subcontracted scope, not of total boat construction. Concentration uses positive "
-          "spend; size and share use net spend. Observed Structure is an analyst-defined screen on "
-          "observed concentration (not a market test): High concentration when Top-1 at least 60% or "
-          "HHI at least 0.40; Moderate concentration when effective firms at most 3; otherwise Lower "
-          "concentration. HHI = sum of squared within-domain shares; effective firms = 1/HHI. UEI "
-          "(operating-entity) grain in the left block; the Parent columns collapse entities to their "
-          "standardized ultimate parent (HHI uplift and firm reduction show what the collapse "
-          "changes). This is the lifetime view; see Where to Play for annual program x archetype "
-          "dynamics.")
+INTRO = "Lifetime size and concentration by program and capability domain."
+CAVEATS = [
+    "Scope: reported first-tier hull-builder subawards; positive spend drives concentration.",
+    "Submarine shares use reported subcontracted scope. HII-Newport News co-build is excluded; "
+    "see Market Bridge.",
+    "Parent columns consolidate operating entities to ultimate parent. Annual results are on "
+    "Where to Play.",
+]
 
 
 def _domain_row(code: str, name: str, cols):
@@ -142,7 +141,8 @@ def _make_domain_concentration():
     c = RowCursor(2)
     c.title(TAB_DOMAIN_CONC, _NCOLS)
     c.caption(INTRO)
-    c.write([CAVEAT], styles=[S_ITALIC])
+    for text in CAVEATS:
+        c.write([text], styles=[S_ITALIC])
     c.blank(2)
 
     _last_domain = len(DOMAINS) - 1
