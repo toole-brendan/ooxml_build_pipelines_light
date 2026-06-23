@@ -63,8 +63,11 @@ def _i(value: float) -> int:
     return int(round(value * _EMU))
 
 
-_DOT = _i(0.18)        # numbered-step circle diameter
-_STEP_GAP = _i(0.04)   # uniform clearance between each step circle and the node directly below it
+_DOT = _i(0.18)          # numbered-step circle diameter
+_STEP_GAP = _i(0.055)    # clears role-band labels before docking above nodes
+_STEP_INSET = _i(0.10)   # consistent circle inset from each target node's left edge
+_STEP_VERB_GAP = _i(0.035)
+_STEP_VERB_W = _i(0.82)  # wide enough for RESOLVE / VALIDATE without drifting
 
 
 def _box(
@@ -122,7 +125,16 @@ def _box(
     )
 
 
-def _step(sp_id: int, number: int, verb: str, x: int, y: int, *, dark: bool = False) -> str:
+def _step(
+    sp_id: int,
+    number: int,
+    verb: str,
+    x: int,
+    y: int,
+    *,
+    dark: bool = False,
+    label_w: int = _STEP_VERB_W,
+) -> str:
     dot = _DOT
     fill = BLUE_5 if dark else BLUE_3
     return (
@@ -133,7 +145,8 @@ def _step(sp_id: int, number: int, verb: str, x: int, y: int, *, dark: bool = Fa
             y,
             dot,
             dot,
-            [paragraph([run(str(number), size=700, bold=True, color=WHITE, font=FONT)], align="ctr", line_spacing=100_000)],
+            [paragraph([run(str(number), size=700, bold=True, color=WHITE, font=FONT)],
+                       align="ctr", line_spacing=100_000)],
             fill=fill,
             line_color=BLACK,
             anchor="ctr",
@@ -143,17 +156,44 @@ def _step(sp_id: int, number: int, verb: str, x: int, y: int, *, dark: bool = Fa
         + text_box(
             sp_id + 1,
             f"Verb{number}",
-            x + dot + _i(0.035),
+            x + dot + _STEP_VERB_GAP,
             y,
-            _i(0.58),
+            label_w,
             dot,
-            [paragraph([run(verb, size=800, bold=True, color=BLACK, font=FONT)])],
+            [paragraph(
+                [run(verb, size=800, bold=True, color=BLACK, font=FONT)],
+                align="l",
+                line_spacing=100_000,
+            )],
             fill=None,
             line_color=None,
             anchor="ctr",
             insets=INSETS_NONE,
             wrap="none",
         )
+    )
+
+
+def _step_above_node(
+    sp_id: int,
+    number: int,
+    verb: str,
+    node_x: int,
+    node_y: int,
+    *,
+    inset: int = _STEP_INSET,
+    dark: bool = False,
+    label_w: int = _STEP_VERB_W,
+) -> str:
+    """Place a numbered step consistently above the node it describes."""
+    return _step(
+        sp_id,
+        number,
+        verb,
+        node_x + inset,
+        node_y - _DOT - _STEP_GAP,
+        dark=dark,
+        label_w=label_w,
     )
 
 
@@ -300,33 +340,38 @@ def _body() -> str:
     )
 
     # Enrichment tributaries and numbered verbs.
-    # Lower the source row by _STEP_GAP and shrink its height to hold the bottom edge
-    # fixed (0.69) - this opens the step-circle gap without disturbing the cards/spine below.
-    source_y = flow_y + _i(0.345)
-    source_h = _i(0.345)
-    card_y = flow_y + _i(0.73)
-    card_h = _i(0.41)
+    # Drop the source row slightly so badges clear the role-band labels.
+    # All step circles use the same left inset from their target node, so the
+    # numbered circles no longer appear to drift.
+    source_y = flow_y + _i(0.405)
+    source_h = _i(0.335)
+    card_y = flow_y + _i(0.785)
+    card_h = _i(0.395)
     source_w = _i(1.12)
     comment_w = _i(1.55)   # comment cards grow into the empty column beside them
     source_x = [BODY_X + _i(v) for v in (2.78, 4.00, 5.22, 6.44)]
     step_verbs = ("ADD", "LINK", "PULL", "RESOLVE")
     for idx, (sx, verb) in enumerate(zip(source_x, step_verbs), start=3):
-        parts.append(_step(20 + (idx - 3) * 2, idx, verb, sx, source_y - _DOT - _STEP_GAP))
+        parts.append(_step_above_node(20 + (idx - 3) * 2, idx, verb, sx, source_y))
 
     parts.extend(
         [
             _box(28, "USAspending", source_x[0], source_y, source_w, source_h,
                  "USASPENDING", "FY obligations, TAS",
-                 fill=BLUE_2, body_size=725, insets=(40_000, 18_000, 40_000, 18_000)),
+                 fill=BLUE_2, title_size=750, body_size=650,
+                 insets=(40_000, 18_000, 40_000, 18_000)),
             _box(29, "VehicleFamilies", source_x[1], source_y, source_w, source_h,
                  "VEHICLE FAMILY", "Parent/child orders",
-                 fill=BLUE_1, body_size=725, insets=(40_000, 18_000, 40_000, 18_000)),
+                 fill=BLUE_1, title_size=750, body_size=650,
+                 insets=(40_000, 18_000, 40_000, 18_000)),
             _box(30, "Subawards", source_x[2], source_y, source_w, source_h,
                  "SAM SUBAWARDS", "First-tier suppliers",
-                 fill=BLUE_2, body_size=725, insets=(40_000, 18_000, 40_000, 18_000)),
+                 fill=BLUE_2, title_size=750, body_size=650,
+                 insets=(40_000, 18_000, 40_000, 18_000)),
             _box(31, "EntityManagement", source_x[3], source_y, source_w, source_h,
                  "SAM ENTITY", "UEI / CAGE / NAICS",
-                 fill=BLUE_1, body_size=725, insets=(40_000, 18_000, 40_000, 18_000)),
+                 fill=BLUE_1, title_size=750, body_size=650,
+                 insets=(40_000, 18_000, 40_000, 18_000)),
             _box(32, "USAspendingComment", source_x[0], card_y, comment_w, card_h,
                  "BUDGET BRIDGE", "FY obligations and TAS; reconcile to SAM.",
                  fill=BLUE_1, title_size=775, body_size=625, align="l", anchor="t",
@@ -339,8 +384,8 @@ def _body() -> str:
     )
 
     # Tributaries dock directly onto the upper edge of the prime/vehicle spine.
-    spine_y = flow_y + _i(1.18)
-    spine_h = _i(0.36)
+    spine_y = flow_y + _i(1.20)
+    spine_h = _i(0.34)
     spine_top = spine_y
     parts.extend(
         [
@@ -380,8 +425,8 @@ def _body() -> str:
                  "SAM CONTRACT AWARDS", "Primes, IDVs, orders/calls and ceiling",
                  fill=BLUE_3, title_color=WHITE, body_color=WHITE,
                  title_size=LABEL_9PT, body_size=775),
-            _step(42, 1, "DEFINE", define_x + _i(0.02), spine_y - _DOT - _STEP_GAP),
-            _step(44, 2, "PULL", spine_x + _i(0.02), spine_y - _DOT - _STEP_GAP),
+            _step_above_node(42, 1, "DEFINE", define_x, spine_y),
+            _step_above_node(44, 2, "PULL", spine_x, spine_y),
             connector(46, "DefineToSpine", define_x + define_w, spine_y + spine_h // 2,
                       spine_x - (define_x + define_w), 0, width=9_525, arrow=True),
         ]
@@ -389,7 +434,7 @@ def _body() -> str:
 
     # Mandatory validation gate - the single dark focal object.
     gate_x = BODY_X + _i(7.72)
-    gate_y = flow_y + _i(0.74)
+    gate_y = flow_y + _i(0.760)
     gate_w = _i(1.48)
     gate_h = _i(0.96)
     parts.extend(
@@ -402,12 +447,12 @@ def _body() -> str:
                 gate_w,
                 gate_h,
                 [
-                    paragraph([run("VALIDATION", size=1400, bold=True, color=WHITE, font=FONT)],
+                    paragraph([run("VALIDATION", size=1325, bold=True, color=WHITE, font=FONT)],
                               align="ctr", line_spacing=95_000),
-                    paragraph([run("GATE", size=BADGE_16PT, bold=True, color=WHITE, font=FONT)],
+                    paragraph([run("GATE", size=1500, bold=True, color=WHITE, font=FONT)],
                               align="ctr", line_spacing=95_000),
                     paragraph([run("Tag source, vintage, measure, family and confidence",
-                                           size=625, color=WHITE, font=FONT)],
+                                           size=560, color=WHITE, font=FONT)],
                               align="ctr", line_spacing=100_000),
                 ],
                 fill=BLUE_5,
@@ -416,7 +461,8 @@ def _body() -> str:
                 anchor="ctr",
                 insets=(45_000, 22_000, 45_000, 18_000),
             ),
-            _step(48, 7, "VALIDATE", gate_x + _i(0.14), gate_y - _DOT - _STEP_GAP, dark=True),
+            _step_above_node(48, 7, "VALIDATE", gate_x, gate_y,
+                             inset=_i(0.12), dark=True),
             connector(50, "SpineToGate", spine_x + spine_w, spine_y + spine_h // 2,
                       gate_x - (spine_x + spine_w), 0, width=12_700, arrow=True),
         ]
@@ -424,9 +470,9 @@ def _body() -> str:
 
     # Dashed legacy validation tap below the spine.
     fpds_x = BODY_X + _i(4.72)
-    fpds_y = flow_y + _i(1.54)
+    fpds_y = flow_y + _i(1.55)
     fpds_w = _i(2.70)
-    fpds_h = _i(0.24)
+    fpds_h = _i(0.22)
     parts.extend(
         [
             _box(51, "FPDSLegacy", fpds_x, fpds_y, fpds_w, fpds_h,
@@ -445,15 +491,16 @@ def _body() -> str:
     output_x = BODY_X + _i(9.62)
     output_w = BODY_X + BODY_CX - output_x - _i(0.08)
     external_y = flow_y + _i(0.17)
-    external_h = _i(0.44)
+    external_h = _i(0.47)
     parts.extend(
         [
             _box(53, "ExternalProgramEvidence", output_x, external_y, output_w, external_h,
                  "EXTERNAL PROGRAM EVIDENCE",
                  "End-user, low confidence. Payer, buyer and user often differ; place of performance is not proof.",
                  fill=None, title_color=GRAY_4, body_color=GRAY_4,
-                 title_size=775, body_size=650, dashed=True,
-                 line_color=BLACK, line_width=12_700, align="l", anchor="t"),
+                 title_size=750, body_size=650, dashed=True,
+                 line_color=BLACK, line_width=12_700, align="l", anchor="t",
+                 insets=(40_000, 18_000, 40_000, 18_000)),
             connector(54, "ExternalEvidenceLeft", output_x,
                       external_y + external_h // 2,
                       (gate_x + gate_w // 2) - output_x, 0,
@@ -467,7 +514,7 @@ def _body() -> str:
 
     # Outputs fan out from the validation gate through one bus.
     chip_h = _i(0.30)
-    chip_y = [flow_y + _i(v) for v in (0.64, 0.98, 1.32)]
+    chip_y = [flow_y + _i(v) for v in (0.69, 1.03, 1.36)]
     bus_x = BODY_X + _i(9.38)
     chip_x = output_x
     parts.extend(
@@ -481,15 +528,15 @@ def _body() -> str:
                       width=9_525),
             _box(58, "MarketOutput", chip_x, chip_y[0], output_w, chip_h,
                  "MARKET SIZE", "Funded-demand spine",
-                 fill=BLUE_2, title_size=800, body_size=675, align="l",
+                 fill=BLUE_2, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(59, "OpportunityOutput", chip_x, chip_y[1], output_w, chip_h,
                  "OPPORTUNITY MAP", "SAM Opportunities, vehicles and incumbents",
-                 fill=BLUE_1, title_size=800, body_size=650, align="l",
+                 fill=BLUE_1, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             _box(60, "EndUserOutput", chip_x, chip_y[2], output_w, chip_h,
                  "END-USER READ", "External evidence, confidence-tagged",
-                 fill=GRAY_1, title_size=800, body_size=675, align="l",
+                 fill=GRAY_1, title_size=750, body_size=650, align="l",
                  insets=(40_000, 18_000, 40_000, 18_000)),
             connector(61, "BusToMarket", bus_x, chip_y[0] + chip_h // 2,
                       chip_x - bus_x, 0, width=6_350, arrow=True),

@@ -395,6 +395,7 @@ def _bars(
     value_label_size_pt: int = 9,
     value_label_bold: bool = True,
     cat_label_size_pt: int = 9,
+    cat_label_bold: bool = False,
     gap_width: int = 75,
     bar_overlap: int = -27,
     plot_area_fill: str | None = None,
@@ -484,6 +485,9 @@ def _bars(
             labels and floated totals share one regular weight and read apart by
             position, not boldness.
         cat_label_size_pt: category-axis label font size in points
+        cat_label_bold: bold the category-axis tick labels (default False —
+            byte-identical to before this param existed; the value axis is
+            unaffected).
         gap_width: % gap between bar groups (0-500). Smaller = thicker bars.
         bar_overlap: % bar overlap within a group (-100 to 100).
         plot_area_fill: optional hex color for the plot area background
@@ -657,7 +661,7 @@ def _bars(
         'wrap="square" anchor="ctr" anchorCtr="1"/>'
         "<a:lstStyle/>"
         "<a:p><a:pPr>"
-        f'<a:defRPr sz="{cat_label_size}" b="0">'
+        f'<a:defRPr sz="{cat_label_size}" b="{1 if cat_label_bold else 0}">'
         '<a:solidFill><a:srgbClr val="000000"/></a:solidFill>'
         '<a:latin typeface="Arial"/><a:ea typeface="Arial"/>'
         '<a:cs typeface="Arial"/>'
