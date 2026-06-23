@@ -20,15 +20,13 @@ To add a slide:
 from __future__ import annotations
 
 from . import (
-    contracts_recompete_timing,          # 01  recompete-clock swim-lane schematic
-    contracts_recompete_timing_copy,     # 02  verbatim copy of 01, rendered immediately after it
-    contracts_obligated_vs_unobligated,  # 03  contract-value snapshots vs additive action obligations
-    contracts_award_data_sourcing,       # 04  source methodology -> one validated operating model
+    contracts_recompete_timing,          # 01  recompete-clock timeline (native stacked bar chart + overlays)
+    contracts_obligated_vs_unobligated,  # 02  contract-value snapshots vs additive action obligations
+    contracts_award_data_sourcing,       # 03  source methodology -> one validated operating model
 )
 
 SLIDE_RENDERS: list[tuple] = [
     (contracts_recompete_timing, contracts_recompete_timing.render),
-    (contracts_recompete_timing_copy, contracts_recompete_timing_copy.render),
     (contracts_obligated_vs_unobligated, contracts_obligated_vs_unobligated.render),
     (contracts_award_data_sourcing, contracts_award_data_sourcing.render),
 ]
