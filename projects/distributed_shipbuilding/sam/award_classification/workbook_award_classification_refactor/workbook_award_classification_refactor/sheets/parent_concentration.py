@@ -88,46 +88,57 @@ def _domain_row(code: str, name: str, cols):
 
 
 def _make_parent_concentration():
-    def render() -> WorksheetSpec:
-        c = RowCursor(2)
-        c.banner(TAB_PARENT_CONC, n_cols=_NCOLS, style=S_TITLE_SHEET)
-        c.write([INTRO], styles=[S_ITALIC])
-        c.write([CAVEAT], styles=[S_ITALIC])
+    # Build eagerly at import (the make_flat_sheet shape) so each program block's first/last
+    # data rows are captured DURING the real row walk and are available to parent_conc_range
+    # before the Executive Summary renders. render() just wraps the already-built rows. This
+    # sheet emits NO total row (unlike Domain Concentration) - the captured anchors track that
+    # for free, so the load-bearing +4-vs-+5 stride difference simply disappears.
+    c = RowCursor(2)
+    c.banner(TAB_PARENT_CONC, n_cols=_NCOLS, style=S_TITLE_SHEET)
+    c.write([INTRO], styles=[S_ITALIC])
+    c.write([CAVEAT], styles=[S_ITALIC])
+    c.blank(2)
+
+    _last_domain = len(DOMAINS) - 1
+    for i, (prog, cols) in enumerate(PROGRAMS, start=1):
+        c.banner(f"§{i} - {prog}: UEI vs parent concentration",
+                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.write(_HEADERS,
+                styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (_NCOLS - 1))
+        for j, (code, name, _defn) in enumerate(DOMAINS):
+            # Tag the block's first + last data row as the cursor writes them; the accessor
+            # reads these captured anchors instead of a hand-counted base row + stride.
+            c.write(_domain_row(code, name, cols), styles=_BODY_STY, outline_level=1,
+                    mark=(f"{prog}:first" if j == 0
+                          else f"{prog}:last" if j == _last_domain else None))
         c.blank(2)
 
-        for i, (prog, cols) in enumerate(PROGRAMS, start=1):
-            c.banner(f"§{i} - {prog}: UEI vs parent concentration",
-                     n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-            c.write(_HEADERS,
-                    styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (_NCOLS - 1))
-            for code, name, _defn in DOMAINS:
-                c.write(_domain_row(code, name, cols), styles=_BODY_STY,
-                        outline_level=1)
-            c.blank(2)
+    anchors = dict(c.marks)
 
+    def render() -> WorksheetSpec:
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                        with_gutter=True, show_outline_symbols=True)
         return WorksheetSpec(ws)
 
-    return SheetEntry(TAB_PARENT_CONC, _GROUP, render)
+    return SheetEntry(TAB_PARENT_CONC, _GROUP, render), anchors
 
 
-# Promoted accessor for dashboards. Each block is banner + header + len(DOMAINS) rows + 2 blanks.
-_FIRST_DOMAIN_ROW = 9
-_PROGRAM_STRIDE = len(DOMAINS) + 4
-_PROGRAM_INDEX = {name: i for i, (name, _cols) in enumerate(PROGRAMS)}
+# Build at import; `_ANCHORS` holds each program block's captured first/last data row.
+PARENT_CONCENTRATION, _ANCHORS = _make_parent_concentration()
 
 
 def parent_conc_range(program: str, header: str) -> str:
-    """Absolute data range for one program block / visible header on Parent Concentration."""
-    if program not in _PROGRAM_INDEX:
-        raise KeyError(program)
+    """Absolute data range for one program block / visible header on Parent Concentration.
+
+    Row bounds come from the anchors the RowCursor captured while writing each program block
+    (see _make_parent_concentration), so the range tracks the rows the sheet actually emitted
+    - there is no hand-counted base/stride to drift if a caveat / blank row changes. Still
+    positional A1, no named ranges; only the column letter derives from _HEADERS.
+    """
     if header not in _HEADERS:
         raise KeyError(header)
-    first = _FIRST_DOMAIN_ROW + _PROGRAM_INDEX[program] * _PROGRAM_STRIDE
-    last = first + len(DOMAINS) - 1
+    first = _ANCHORS[f"{program}:first"]   # KeyError on an unknown program
+    last = _ANCHORS[f"{program}:last"]
+    assert last == first + len(DOMAINS) - 1, (program, first, last)
     letter = col_letter(_HEADERS.index(header) + 1)
     return f"'{TAB_PARENT_CONC}'!${letter}${first}:${letter}${last}"
-
-
-PARENT_CONCENTRATION = _make_parent_concentration()

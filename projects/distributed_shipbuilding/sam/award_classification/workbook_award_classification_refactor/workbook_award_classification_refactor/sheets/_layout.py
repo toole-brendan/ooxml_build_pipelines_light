@@ -38,44 +38,67 @@ def _resolve(values: list, r: int) -> list:
 
 
 class RowCursor:
-    """Tracks the next row as you append. Start at 2 (row 1 is the gutter blank)."""
+    """Tracks the next row as you append. Start at 2 (row 1 is the gutter blank).
+
+    Named anchors: pass ``mark="name"`` to any emit method to record the row it
+    wrote into ``self.marks``; read it back with ``marked("name")``. A producer
+    that exposes positions to another sheet (e.g. domain_concentration's
+    ``domain_conc_range`` accessor) tags the load-bearing rows AS IT WRITES THEM
+    and the accessor reads the captured value - so the cross-sheet range derives
+    from the same row the cursor actually emitted, with no parallel hand-counted
+    layout constant that can drift (the Cols invariant, for hand-built sheets).
+    """
 
     def __init__(self, start: int = 2):
         self.r = start
         self.rows: list[str] = []
+        self.marks: dict[str, int] = {}
 
     def at(self) -> int:
         """The row the next emit will use."""
         return self.r
 
-    def banner(self, text: str, n_cols: int, *, style: int, **kw) -> int:
+    def marked(self, name: str) -> int:
+        """The row recorded under `name` by a prior emit's mark= (KeyError if absent)."""
+        return self.marks[name]
+
+    def banner(self, text: str, n_cols: int, *, style: int,
+               mark: str | None = None, **kw) -> int:
         """Emit a full-width banner (gutter mode). Returns its row."""
         r0 = self.r
         self.rows.append(banner_row(r0, text, n_cols=n_cols, style=style,
                                     with_gutter=True, **kw))
+        if mark is not None:
+            self.marks[mark] = r0
         self.r += 1
         return r0
 
-    def write(self, values: list, *, styles, start_col: int = 1, **kw) -> int:
+    def write(self, values: list, *, styles, start_col: int = 1,
+              mark: str | None = None, **kw) -> int:
         """Emit one content row. Callable values are resolved against the row.
 
-        Returns the row written.
+        Returns the row written. `mark` records that row under the given name.
         """
         r0 = self.r
         self.rows.append(write_row(r0, _resolve(values, r0), styles=styles,
                                    start_col=start_col, **kw))
+        if mark is not None:
+            self.marks[mark] = r0
         self.r += 1
         return r0
 
     def total(self, values: list, *, styles, n_cols: int, start_col: int = 1,
-              **kw) -> int:
+              mark: str | None = None, **kw) -> int:
         """Emit a total/subtotal divider via total_row(). Pass BASE styles.
 
-        Callable values are resolved against the row. Returns the row written.
+        Callable values are resolved against the row. Returns the row written;
+        `mark` records that row under the given name.
         """
         r0 = self.r
         self.rows.append(total_row(r0, _resolve(values, r0), styles=styles,
                                    n_cols=n_cols, start_col=start_col, **kw))
+        if mark is not None:
+            self.marks[mark] = r0
         self.r += 1
         return r0
 

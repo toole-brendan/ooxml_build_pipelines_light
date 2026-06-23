@@ -106,54 +106,63 @@ _BODY_STY = [S_DEFAULT, S_NUM, S_PCT, S_INT, S_DEFAULT, S_NUM, S_PCT, S_NUM,
 
 
 def _make_domain_concentration():
-    def render() -> WorksheetSpec:
-        c = RowCursor(2)
-        c.banner(TAB_DOMAIN_CONC, n_cols=_NCOLS, style=S_TITLE_SHEET)
-        c.write([INTRO], styles=[S_ITALIC])
-        c.write([CAVEAT], styles=[S_ITALIC])
+    # Build eagerly at import (the make_flat_sheet shape) so each program block's first/last
+    # data rows are captured DURING the real row walk and are available to domain_conc_range
+    # before the Executive Summary renders - it calls the accessor inside its own render(),
+    # which runs earlier in SHEETS order. render() just wraps the already-built rows.
+    c = RowCursor(2)
+    c.banner(TAB_DOMAIN_CONC, n_cols=_NCOLS, style=S_TITLE_SHEET)
+    c.write([INTRO], styles=[S_ITALIC])
+    c.write([CAVEAT], styles=[S_ITALIC])
+    c.blank(2)
+
+    _last_domain = len(DOMAINS) - 1
+    for i, (prog, cols) in enumerate(PROGRAMS, start=1):
+        M = cols("Subaward $M")
+        D = cols("Capability Domain Archetype (D)")
+        c.banner(f"§{i} - {prog}: capability-domain concentration",
+                 n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
+        c.write(_HEADERS,
+                styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (_NCOLS - 1))
+        for j, (code, name, _defn) in enumerate(DOMAINS):
+            # Tag the block's first + last data row as the cursor writes them; the accessor
+            # reads these captured anchors instead of a hand-counted base row + stride.
+            c.write(_domain_row(code, name, cols), styles=_BODY_STY, outline_level=1,
+                    mark=(f"{prog}:first" if j == 0
+                          else f"{prog}:last" if j == _last_domain else None))
+        c.total([f"{prog} total", f"=SUM({M})", "=1",
+                 f'=COUNTIFS({M},">0")', "", "", "", "", "", ""],
+                styles=[S_BOLD, S_NUM, S_PCT, S_INT, S_DEFAULT, S_DEFAULT,
+                        S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT],
+                n_cols=_NCOLS)
         c.blank(2)
 
-        for i, (prog, cols) in enumerate(PROGRAMS, start=1):
-            M = cols("Subaward $M")
-            D = cols("Capability Domain Archetype (D)")
-            c.banner(f"§{i} - {prog}: capability-domain concentration",
-                     n_cols=_NCOLS, style=S_TITLE_SECTION, mark_collapsible=True)
-            c.write(_HEADERS,
-                    styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * (_NCOLS - 1))
-            for code, name, _defn in DOMAINS:
-                c.write(_domain_row(code, name, cols), styles=_BODY_STY,
-                        outline_level=1)
-            c.total([f"{prog} total", f"=SUM({M})", "=1",
-                     f'=COUNTIFS({M},">0")', "", "", "", "", "", ""],
-                    styles=[S_BOLD, S_NUM, S_PCT, S_INT, S_DEFAULT, S_DEFAULT,
-                            S_DEFAULT, S_DEFAULT, S_DEFAULT, S_DEFAULT],
-                    n_cols=_NCOLS)
-            c.blank(2)
+    anchors = dict(c.marks)
 
+    def render() -> WorksheetSpec:
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
                        with_gutter=True, show_outline_symbols=True)
         return WorksheetSpec(ws)
 
-    return SheetEntry(TAB_DOMAIN_CONC, _GROUP, render)
+    return SheetEntry(TAB_DOMAIN_CONC, _GROUP, render), anchors
 
 
-# Promoted accessor for answer-first dashboards. Layout is deterministic: after the title /
-# intro / caveat, each program block is banner + header + len(DOMAINS) rows + total + 2 blanks.
-_FIRST_DOMAIN_ROW = 9
-_PROGRAM_STRIDE = len(DOMAINS) + 5
-_PROGRAM_INDEX = {name: i for i, (name, _cols) in enumerate(PROGRAMS)}
+# Build at import; `_ANCHORS` holds each program block's captured first/last data row.
+DOMAIN_CONCENTRATION, _ANCHORS = _make_domain_concentration()
 
 
 def domain_conc_range(program: str, header: str) -> str:
-    """Absolute data range for one program block / visible header on Domain Concentration."""
-    if program not in _PROGRAM_INDEX:
-        raise KeyError(program)
+    """Absolute data range for one program block / visible header on Domain Concentration.
+
+    Row bounds come from the anchors the RowCursor captured while writing each program block
+    (see _make_domain_concentration), so the range tracks the rows the sheet actually emitted
+    - there is no hand-counted base/stride to drift if a caveat / blank / total row changes.
+    Still positional A1, no named ranges; only the column letter derives from _HEADERS.
+    """
     if header not in _HEADERS:
         raise KeyError(header)
-    first = _FIRST_DOMAIN_ROW + _PROGRAM_INDEX[program] * _PROGRAM_STRIDE
-    last = first + len(DOMAINS) - 1
+    first = _ANCHORS[f"{program}:first"]   # KeyError on an unknown program
+    last = _ANCHORS[f"{program}:last"]
+    assert last == first + len(DOMAINS) - 1, (program, first, last)
     letter = col_letter(_HEADERS.index(header) + 1)   # gutter A -> first content col B
     return f"'{TAB_DOMAIN_CONC}'!${letter}${first}:${letter}${last}"
-
-
-DOMAIN_CONCENTRATION = _make_domain_concentration()
