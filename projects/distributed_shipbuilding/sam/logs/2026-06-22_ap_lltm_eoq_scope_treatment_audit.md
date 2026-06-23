@@ -105,7 +105,17 @@ but that is a reporting-compliance gap, not a missing AP contract.
 program "DDG 1000", PSC 1903) and `N0002411C2306` ($2.55B, "COSAL WAREHOUSING", "DDG 1000") are tagged
 DDG-1000 by SAM yet carried in `prime_contract_scope.csv` as DDG-51 `include=Y` (new-construction-admin).
 Both return **zero subawards** (already in the build's "10 include=Y zero-subaward" note), so no analysis
-dollars depend on them — but they are Zumwalt contracts mislabeled DDG-51 in the manifest. Optional cleanup.
+dollars depend on them — but they are Zumwalt contracts mislabeled DDG-51 in the manifest.
+
+**Applied (2026-06-23):** flipped both to `include=N` in `scripts/build_prime_scope_manifest.py`'s
+`EXCLUDE_EXPLICIT` (scope_type `other-class`, rationale = DDG-1000/Zumwalt not DDG-51 new construction,
+source = the SAM Contract Awards enumeration above), and regenerated `prime_contract_scope.csv` (now 34
+primes / 14 excluded). Verified zero dollar impact: the build's zero-subaward note dropped 10 → 8 (the two
+PIIDs left the include=Y-but-zero list because they're now excluded), the `_integrity` PIID-in-manifest
+check still passes (no transaction references either contract), and validate/style-audit stayed clean
+(0 xml errors, 0 error-literal cells, 0 hard failures, 0 warnings). All working-tree; not committed.
+NB: the sheet count is 21 (not 22) only because `duplicate_audit` was removed from the registry by a
+separate concurrent edit — unrelated to this manifest flip.
 
 ## Recommended fixes (not yet applied — dollar logic untouched, it is correct)
 1. Reword the methodology scope line (and mirror to the manifest rationale +
