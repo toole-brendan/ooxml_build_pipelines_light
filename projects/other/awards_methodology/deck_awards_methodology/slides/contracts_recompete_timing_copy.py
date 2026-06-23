@@ -98,46 +98,45 @@ def _route_to_gate(sp_id: int, x: int, y: int, gate_x: int,
 
 
 # ── Timeline model ───────────────────────────────────────────────────────────
-# Relative units are inches measured from the timeline origin (TODAY). These
-# preserve the prior hand-drawn bar lengths exactly: an axis x of 0.312 puts the
-# native plot-left at BODY_X + 1.94in (the old timeline origin) and 1 unit == 1in.
-# _VEHICLES is the single source for chart lengths, trigger positions, child
-# tails, and the in-bar / category labels, so chart data and overlay geometry
-# cannot drift apart.
+# Relative units measured from the timeline origin (TODAY). _VEHICLES is the
+# single source for bar lengths, trigger positions, child tails, and labels, so
+# chart data and overlay geometry cannot drift apart. The lane labels are
+# abbreviated (IDIQ / BPA / OT), so the plot-left inset is tightened and the plot
+# widened to stretch the bars horizontally (now ~1.16in per unit, was ~1.0).
 _AXIS_MAX = 4.25
 
 _VEHICLES = [
     {
         "key": "Definitive", "axis": "Definitive contract",
-        "lane_label": "Standalone definitive\ncontract",
+        "lane_label": "Standalone definitive contract",
         "base": 2.16, "extension": 1.30, "trigger": 2.16,
         "bar_label": "base term", "ext_label": "option capacity",
         "child_label": None, "children": [],
     },
     {
         "key": "SA_IDIQ", "axis": "Single-award IDIQ",
-        "lane_label": "Single-award\nIndefinite-Delivery/\nIndefinite-Quantity (IDIQ)",
+        "lane_label": "Single-award IDIQ",
         "base": 2.01, "extension": 1.10, "trigger": 3.11,
         "bar_label": "parent ordering period", "ext_label": None,
         "child_label": "orders", "children": [(0.52, 3.08), (1.72, 2.33)],
     },
     {
         "key": "MA_IDIQ", "axis": "Multiple-award IDIQ",
-        "lane_label": "Multiple-award\nIndefinite-Delivery/\nIndefinite-Quantity (IDIQ)",
+        "lane_label": "Multiple-award IDIQ",
         "base": 1.71, "extension": 1.01, "trigger": 2.72,
         "bar_label": "parent vehicle", "ext_label": None,
         "child_label": "orders", "children": [(0.45, 2.85), (1.40, 2.71), (2.13, 2.00)],
     },
     {
         "key": "BPA", "axis": "BPA",
-        "lane_label": "Blanket Purchase Agreement\n(BPA)",
+        "lane_label": "BPA",
         "base": 1.54, "extension": 0.94, "trigger": 2.48,
         "bar_label": "agreement / call period", "ext_label": None,
         "child_label": "calls", "children": [(0.62, 2.76), (1.60, 2.43)],
     },
     {
         "key": "OT", "axis": "OT",
-        "lane_label": "Other Transaction (OT)\nagreement",
+        "lane_label": "OT",
         "base": 2.11, "extension": 1.22, "trigger": 3.33,
         "bar_label": "agreement-specific term", "ext_label": None,
         "child_label": "orders", "children": [(1.05, 3.20)],
@@ -154,9 +153,9 @@ _CHART_H = _in(3.14)
 # Inner-plot fractions (pinned via plot_layout) reused below to land every
 # overlay on the rendered bars. Tune only these four after a render.
 _PLOT_LAYOUT = {
-    "x": 0.312,   # leaves room for native abbreviated category labels
+    "x": 0.201,   # tight inset; the abbreviated lane labels need ~1.15in, not 1.78in
     "y": 0.089,
-    "w": 0.682,
+    "w": 0.793,   # widened (plot-right held at x+w ~= 0.994) to stretch the bars
     "h": 0.898,
 }
 
@@ -224,7 +223,7 @@ def _lane_label(sp_id: int, index: int, text: str) -> str:
     return _label(
         sp_id, f"LaneLabel_{index + 1}",
         BODY_X, row_y - _in(0.25),
-        _in(1.78), _in(0.50),
+        _in(1.15), _in(0.50),
         text,
         size=FINEPRINT_8_5PT,
         bold=True,
@@ -491,12 +490,12 @@ def _body() -> str:
          "High",
          "Follow-on order may be holders-only."],
 
-        ["BPA",
+        ["Blanket Purchase Agreement (BPA)",
          "Agreement or call-period logic",
          "Medium",
          "Inspect parent and call rules."],
 
-        ["OT agreement or order",
+        ["Other Transaction (OT)",
          "Agreement-specific terms",
          "Variable",
          "Read governing agreement; validate externally."],
@@ -507,7 +506,7 @@ def _body() -> str:
          "Medium",
          "Child-level follow-on may be holders-only."],
 
-        ["BOA  (not charted)",
+        ["Basic Ordering Agreement (BOA)  (not charted)",
          "Nominal agreement end",
          "Low",
          "Not a contract; not a guaranteed recompete."],
