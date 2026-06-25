@@ -22,7 +22,7 @@ from xml.sax.saxutils import escape as _xml_escape
 from deck_core.ooxml import XML_DECL, NS
 from deck_core.style import (
     SLIDE_W, SLIDE_H, LEFT_MARGIN,
-    DK, WHITE, BREADCRUMB, BLACK, PRELIM, LNSPC_BODY, FONT, DENSE_BODY_10PT,
+    DK, WHITE, BREADCRUMB, BLACK, PRELIM, LNSPC_BODY, LNSPC_SINGLE, FONT, DENSE_BODY_10PT,
     BLUE_5, GRAY_1,
     SZ_BREADCRUMB, SZ_SLIDE_TITLE, SZ_PRELIM, SZ_SOURCES,
     BREADCRUMB_X, BREADCRUMB_Y, BREADCRUMB_CX, BREADCRUMB_CY,
@@ -296,6 +296,14 @@ def run(text, *, size=None, bold=None, italic=None, color=None, font=None,
                       "color": color, "font": font, "lang": lang})
 
 
+def line_break():
+    """An explicit in-paragraph line break (<a:br/>). Place it between run()s in a
+    paragraph()'s run list to force a new line WITHOUT starting a new paragraph -
+    e.g. a tight legend label that must read 'Shoreside' / 'variable costs' inside a
+    narrow no-wrap box. The table-cell equivalent is tbreak()."""
+    return '<a:br/>'
+
+
 def paragraph(runs, *, align=None, bullet=False, level=0, space_after=0,
               mar_l=None, indent=None, line_spacing=LNSPC_BODY):
     """An <a:p>. `runs` is a list of run() outputs. bullet=True prepends a
@@ -434,15 +442,25 @@ def placeholder_sp(sp_id, name, *, ph_type=None, ph_sz=None, ph_idx=None,
             f'<p:txBody>{body_pr_xml}<a:lstStyle/>{body}</p:txBody></p:sp>')
 
 
-def picture(sp_id, name, r_embed, x, y, cx, cy):
+def picture(sp_id, name, r_embed, x, y, cx, cy, *, src_rect=None):
     """A <p:pic> image. `r_embed` is the slide-rels rId for the media part. Declare the
     same rId in the module's IMAGES list ({"rId": r_embed, "file": "<name in ppt/media>"})
     and build_pptx wires the rel for you. Image rIds continue after chart rIds (no charts
-    -> rId2; one chart -> rId3)."""
+    -> rId2; one chart -> rId3).
+
+    src_rect crops the source image before it fills the frame: a dict of any of
+    l/r/t/b in 1/1000 of a percent (e.g. {"t": 39000, "b": 39000} keeps the middle
+    ~22%). Source decks crop a logo strip out of a square canvas this way; drop the
+    crop and the whole canvas is stretched into the frame, so the logo renders as a
+    thin sliver. Omit (None) for an uncropped image."""
+    sr = ""
+    if src_rect:
+        attrs = "".join(f' {k}="{src_rect[k]}"' for k in ("l", "t", "r", "b") if src_rect.get(k))
+        sr = f"<a:srcRect{attrs}/>" if attrs else ""
     return (f'<p:pic><p:nvPicPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
             f'<p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr>'
             f'<p:nvPr/></p:nvPicPr>'
-            f'<p:blipFill><a:blip r:embed="{r_embed}"/>'
+            f'<p:blipFill><a:blip r:embed="{r_embed}"/>{sr}'
             f'<a:stretch><a:fillRect/></a:stretch></p:blipFill>'
             f'<p:spPr><a:xfrm><a:off x="{x}" y="{y}"/>'
             f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
@@ -450,7 +468,8 @@ def picture(sp_id, name, r_embed, x, y, cx, cy):
 
 
 def connector(sp_id, name, x, y, cx, cy, *, color=BLACK, dashed=False,
-              width=12700, arrow=False, prst="line"):
+              width=12700, arrow=False, prst="line", flip_h=False, flip_v=False,
+              rot=0, adj=None):
     """Straight / right-angled connector. arrow=True adds a tail arrowhead;
     width in EMU (12700 = 1pt). color None or "none" => invisible line.
     Connector lines default to BLACK (target_copy: connector lines are always
@@ -459,22 +478,37 @@ def connector(sp_id, name, x, y, cx, cy, *, color=BLACK, dashed=False,
     DrawingML <a:ext> must be a non-negative size box: a left/up vector
     (negative cx/cy) is normalized to a positive extent + flipH/flipV with the
     offset shifted, so callers can pass any signed cx/cy without tripping a
-    PowerPoint "repair" on open."""
-    flip_h = ' flipH="1"' if cx < 0 else ""
-    flip_v = ' flipV="1"' if cy < 0 else ""
+    PowerPoint "repair" on open.
+
+    To reproduce a source connector faithfully, pass a POSITIVE cx/cy box plus its
+    orientation: flip_h/flip_v (mirror within the box), rot (60000ths of a degree,
+    applied about the box centre - elbow connectors are often rot=5400000/16200000),
+    and adj (preset-geometry adjustments, e.g. {"adj1": "val 25000"} for an elbow's
+    bend point; omit for the 50% default). flip_h/flip_v OR with the sign of cx/cy,
+    so the signed-vector shorthand above still works for simple straight lines."""
+    do_flip_h = flip_h or cx < 0
+    do_flip_v = flip_v or cy < 0
     off_x = x + cx if cx < 0 else x
     off_y = y + cy if cy < 0 else y
+    cx, cy = abs(cx), abs(cy)
+    flip_attr = (' flipH="1"' if do_flip_h else '') + (' flipV="1"' if do_flip_v else '')
+    rot_attr = f' rot="{rot}"' if rot else ''
     dash_xml = '<a:prstDash val="dash"/>' if dashed else ''
     tail = '<a:tailEnd type="triangle" w="med" len="med"/>' if arrow else ''
+    if adj:
+        av_xml = '<a:avLst>' + ''.join(
+            f'<a:gd name="{k}" fmla="{v}"/>' for k, v in adj.items()) + '</a:avLst>'
+    else:
+        av_xml = '<a:avLst/>'
     if color in (None, "none"):
         ln_fill = '<a:noFill/>'
     else:
         ln_fill = f'<a:solidFill><a:srgbClr val="{color}"/></a:solidFill>'
     return (f'<p:cxnSp><p:nvCxnSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
             f'<p:cNvCxnSpPr/><p:nvPr/></p:nvCxnSpPr>'
-            f'<p:spPr><a:xfrm{flip_h}{flip_v}><a:off x="{off_x}" y="{off_y}"/>'
-            f'<a:ext cx="{abs(cx)}" cy="{abs(cy)}"/></a:xfrm>'
-            f'<a:prstGeom prst="{prst}"><a:avLst/></a:prstGeom>'
+            f'<p:spPr><a:xfrm{rot_attr}{flip_attr}><a:off x="{off_x}" y="{off_y}"/>'
+            f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
+            f'<a:prstGeom prst="{prst}">{av_xml}</a:prstGeom>'
             f'<a:ln w="{width}">{ln_fill}{dash_xml}{tail}</a:ln></p:spPr></p:cxnSp>')
 
 
@@ -494,29 +528,57 @@ def trun(text, *, size=DENSE_BODY_10PT, bold=None, italic=None, underline=None,
             "underline": underline, "color": color, "font": font}
 
 
-def tpara(runs, *, align="l"):
-    """Paragraph dict for table cells."""
-    return {"align": align, "runs": runs}
+def tbreak():
+    """An explicit line break inside a table cell paragraph - the tpara()/trun()
+    equivalent of line_break(). Place it between trun()s in a tpara()'s run list."""
+    return {"break": True}
+
+
+def tpara(runs, *, align="l", line_spacing=LNSPC_SINGLE, space_after=None, end_size=None):
+    """Paragraph dict for table cells. line_spacing defaults to single (100%) —
+    the correct density for tabular data (body text is 115%); raise it only for a
+    cell that needs breathing room. space_after is in EMU pts (rarely needed).
+    end_size (1/100 pt) sets the <a:endParaRPr> size of an EMPTY paragraph (no
+    runs): a small value (e.g. 100 = 1pt) collapses a spacer row/column, which an
+    empty run cannot do — renderers clamp an empty run to a min line height."""
+    p = {"align": align, "runs": runs, "line_spacing": line_spacing}
+    if space_after is not None:
+        p["space_after"] = space_after
+    if end_size is not None:
+        p["end_size"] = end_size
+    return p
 
 
 def tcell_rich(paragraphs, *, fill=None, grid_span=1, row_span=1, anchor="ctr",
-               l_ins=45720, r_ins=45720, borders=None):
+               l_ins=45720, r_ins=45720, t_ins=45720, b_ins=45720, borders=None):
     """Multi-paragraph table cell. gridSpan/rowSpan filler cells are
     synthesized by the framework - do not author them. `borders` is keyed by
-    side ("L"/"R"/"T"/"B") -> "none" or {"color": hex, "width": EMU}."""
+    side ("L"/"R"/"T"/"B") -> "none" or {"color": hex, "width": EMU}. t_ins/b_ins are
+    the vertical text insets (EMU); tighten them to fit a dense, many-row table inside
+    its frame height (think-cell auto-rows render compact)."""
     return {"paragraphs": paragraphs, "fill": fill, "gridSpan": grid_span,
             "rowSpan": row_span, "anchor": anchor,
-            "body_pr": {"lIns": l_ins, "rIns": r_ins}, "borders": borders or {}}
+            "body_pr": {"lIns": l_ins, "rIns": r_ins, "tIns": t_ins, "bIns": b_ins},
+            "borders": borders or {}}
 
 
 def tcell(text, *, fill=None, size=DENSE_BODY_10PT, bold=None, italic=None, color=BLACK,
           align="l", grid_span=1, row_span=1, anchor="ctr", font=FONT,
-          l_ins=45720, r_ins=45720, borders=None):
-    """Single-paragraph single-run cell - shortcut over tcell_rich()."""
-    return tcell_rich([tpara([trun(text, size=size, bold=bold, italic=italic,
-                                   color=color, font=font)], align=align)],
-                      fill=fill, grid_span=grid_span, row_span=row_span,
-                      anchor=anchor, l_ins=l_ins, r_ins=r_ins, borders=borders)
+          l_ins=45720, r_ins=45720, t_ins=45720, b_ins=45720, borders=None,
+          line_spacing=LNSPC_SINGLE):
+    """Single-paragraph single-run cell - shortcut over tcell_rich(). line_spacing
+    defaults to single (100%): tabular density, not the 115% body default. An empty
+    text ("") emits a runless paragraph whose <a:endParaRPr> carries `size`, so a
+    spacer cell at size=PT(1) collapses its row/column (an empty run would not —
+    renderers clamp it to a minimum line height)."""
+    if text == "":
+        para = tpara([], align=align, line_spacing=line_spacing, end_size=size)
+    else:
+        para = tpara([trun(text, size=size, bold=bold, italic=italic,
+                           color=color, font=font)], align=align, line_spacing=line_spacing)
+    return tcell_rich([para],
+                      fill=fill, grid_span=grid_span, row_span=row_span, anchor=anchor,
+                      l_ins=l_ins, r_ins=r_ins, t_ins=t_ins, b_ins=b_ins, borders=borders)
 
 
 def trow(cells, *, h=274_320):
@@ -547,82 +609,6 @@ def table(sp_id, name, x, y, cx, cy, *, col_widths, rows,
                               "table_style_id": table_style_id})
 
 
-def house_table(sp_id, name, x, y, col_w, rows, *,
-                row_h=274_320, table_skin="rule",
-                header_fill=None, header_color=None,
-                body_fill=None, body_color=BLACK,
-                aligns=None, anchor="ctr", size=950,
-                cell_fills=None, cell_text_colors=None, cell_bold=None):
-    """House-standard table — the common table path. rows[0] is the header row;
-    col_w is the per-column EMU width (sum = table width).
-
-    Promoted from the old copy-paste table recipe so slides IMPORT the house
-    table instead of copying it. Delegates to table() / trow() / tcell(),
-    so it shares the "No Style, No Grid" style, the deterministic 4-side border
-    posture (a side a cell omits is emitted as an explicit no-fill border — see
-    _emit_cell), and the tcPr-only 45_720 inset model text_metrics assumes. Reach
-    for the low-level table() directly ONLY for merges / row-spans / an unusual
-    structure this does not cover.
-
-    table_skin sets the header treatment: "rule" (default — no header fill, the
-    1.5pt header bottom-rule carries it; chart-side evidence / backup), "dark"
-    (BLUE_5 + white, the ONE primary table on a page), or "light" (GRAY_1 header,
-    dense matrices). header_fill / header_color override the skin (pass both).
-    row_h: one EMU height for every row (a MINIMUM — tables do not autofit and a
-    wrapped cell grows past it), OR a per-row list of len(rows); size content-fit
-    rows with text_metrics.estimate_row_heights(rows, col_w, size_pt=size/100) and
-    pass the list, so the frame cy = sum(row_h) matches the render. aligns:
-    per-column h-align ("l"/"ctr"/"r"); default first column left, rest centered.
-    cell_fills / cell_text_colors / cell_bold: optional {(row, col): value}
-    overrides. Cascading bottom borders: 1.5pt under the header, 1pt under each
-    body row but the last; no vertical rules."""
-    if table_skin == "dark":          # primary / answer table only (sparingly)
-        sk_fill, sk_color = BLUE_5, WHITE
-    elif table_skin == "light":       # dense matrices / crosswalks
-        sk_fill, sk_color = GRAY_1, BLACK
-    elif table_skin == "rule":        # chart-side evidence / backup (default)
-        sk_fill, sk_color = None, BLACK
-    else:
-        raise ValueError("table_skin must be 'rule', 'dark', or 'light'")
-    header_fill = sk_fill if header_fill is None else header_fill
-    header_color = sk_color if header_color is None else header_color
-    n = len(rows)
-    ncol = len(col_w)
-    if aligns is None:
-        aligns = ["l"] + ["ctr"] * (ncol - 1)   # house default: label left, rest centered
-    cell_fills = cell_fills or {}
-    cell_text_colors = cell_text_colors or {}
-    cell_bold = cell_bold or {}
-    heights = [row_h] * n if isinstance(row_h, int) else list(row_h)
-    if len(heights) != n:
-        raise ValueError(f"row_h list has {len(heights)} heights but {n} rows")
-
-    built_rows = []
-    for ri, row in enumerate(rows):
-        hdr = ri == 0
-        last = ri == n - 1
-        # Cascading bottom rule; L/R/T are left unset so the engine emits them as
-        # explicit no-fill borders (deterministic regardless of the table style).
-        if hdr:
-            border = {"B": {"color": BLACK, "width": 19_050}}
-        elif not last:
-            border = {"B": {"color": BLACK, "width": 12_700}}
-        else:
-            border = {"B": "none"}
-        cells = []
-        for ci, text in enumerate(row):
-            cells.append(tcell(
-                text,
-                fill=(header_fill if hdr else cell_fills.get((ri, ci), body_fill)),
-                color=(header_color if hdr else cell_text_colors.get((ri, ci), body_color)),
-                bold=(hdr or ci == 0 or cell_bold.get((ri, ci), False)),
-                size=size, align=aligns[ci], anchor=anchor, borders=border))
-        built_rows.append(trow(cells, h=heights[ri]))
-
-    return table(sp_id, name, x, y, sum(col_w), sum(heights),
-                 col_widths=col_w, rows=built_rows)
-
-
 _HMERGE_FILLER = ('<a:tc hMerge="1"><a:txBody><a:bodyPr/><a:lstStyle/>'
                   '<a:p><a:endParaRPr lang="en-US"/></a:p></a:txBody><a:tcPr/></a:tc>')
 _VMERGE_FILLER = ('<a:tc vMerge="1"><a:txBody><a:bodyPr/><a:lstStyle/>'
@@ -644,6 +630,8 @@ def _emit_cell(cell):
     CELL_INSET_H = 45720
     lIns = body_pr.get("lIns") if body_pr.get("lIns") is not None else CELL_INSET_H
     rIns = body_pr.get("rIns") if body_pr.get("rIns") is not None else CELL_INSET_H
+    tIns = body_pr.get("tIns") if body_pr.get("tIns") is not None else CELL_INSET_V
+    bIns = body_pr.get("bIns") if body_pr.get("bIns") is not None else CELL_INSET_V
     bp_attrs = []
     if body_pr.get("wrap"):
         bp_attrs.append(f'wrap="{body_pr["wrap"]}"')
@@ -671,8 +659,8 @@ def _emit_cell(cell):
                 border_xml += f'<a:ln{side}{attr_w}><a:noFill/></a:ln{side}>'
     fill_xml = (f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
                 if fill and fill != "none" else '<a:noFill/>')
-    tcPr = (f'<a:tcPr marL="{lIns}" marR="{rIns}" marT="{CELL_INSET_V}" '
-            f'marB="{CELL_INSET_V}" anchor="{anchor}">{border_xml}{fill_xml}</a:tcPr>')
+    tcPr = (f'<a:tcPr marL="{lIns}" marR="{rIns}" marT="{tIns}" '
+            f'marB="{bIns}" anchor="{anchor}">{border_xml}{fill_xml}</a:tcPr>')
     span_attrs = ""
     if cell.get("gridSpan", 1) > 1:
         span_attrs += f' gridSpan="{cell["gridSpan"]}"'
@@ -721,12 +709,20 @@ def _emit_paragraph(p):
         ppr = f'<a:pPr{attr_s}>{pPr_inner}</a:pPr>'
     else:
         ppr = ''
-    rxml = ("".join(_emit_run(r) for r in p.get("runs", []))
-            or '<a:endParaRPr lang="en-US"/>')
+    if p.get("runs"):
+        rxml = "".join(_emit_run(r) for r in p["runs"])
+    else:
+        # Runless paragraph -> <a:endParaRPr> only (no run). end_size collapses a
+        # spacer cell; an empty run would be clamped to a min line height instead.
+        end_sz = p.get("end_size")
+        sz_attr = f' sz="{end_sz}"' if end_sz else ''
+        rxml = f'<a:endParaRPr lang="en-US"{sz_attr}/>'
     return f'<a:p>{ppr}{rxml}</a:p>'
 
 
 def _emit_run(r):
+    if r.get("break"):          # tbreak() / line break inside a cell paragraph
+        return '<a:br/>'
     text = r.get("text", "")
     size = r.get("size")
     bold = r.get("bold")

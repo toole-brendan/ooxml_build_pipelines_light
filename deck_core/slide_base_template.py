@@ -5,7 +5,7 @@ deck_core (no longer copied per slide):
   - deck_core.style       palette, type scale, the BODY box, insets (tokens)
   - deck_core.primitives  chrome (breadcrumb / title_placeholder / prelim_chip /
                           sources_line) + body builders (run, paragraph,
-                          text_box, house_table, connector)
+                          text_box, connector) + native tables (table / trow / tcell)
   - deck_core.charts      column / bar / line / waterfall / marimekko factories
 Worked examples of the house conventions: deck_core/slide_snippets.md. Geometry
 truth of a built slide: the emitted XML + deck_{prog}/reports/slide_probe/<name>.
@@ -29,10 +29,9 @@ from xml.sax.saxutils import escape as _esc  # for raw-OOXML body text, if used
 from deck_core.primitives import (
     slide,
     breadcrumb, title_placeholder, prelim_chip, sources_line,
-    run, paragraph, text_box, house_table, connector,
+    run, paragraph, text_box, connector,
+    table, trow, tcell,   # native tables: row/column data, merges, spans
 )
-# Merge-heavy / custom-structure tables only — the low-level engine is opt-in:
-#   from deck_core.primitives import table, tcell, trow
 from deck_core.style import (
     BODY, BODY_X, BODY_Y, BODY_CX, BODY_CY, BODY_R, BODY_B,
     BLUE_1, BLUE_2, BLUE_3, BLUE_4, BLUE_5,
@@ -91,15 +90,15 @@ _SOURCES  = "Sources: (1) ...; (2) ...; (3) ..."   # 2-3 primary sources, no fin
 # build_pptx reads CHARTS, writes the chart parts, and wires the slide rels; the
 # slide body holds the chart's graphic_frame. See slide_snippets.md "charts".
 #
-# For a table: call the imported house_table() for an ordinary ledger / matrix /
-# evidence table and pick a table_skin (rule default; dark only for the one
-# primary table on a page). Do not hand-roll dark headers or fill maps
-# slide-by-slide. Only for merges / row-col spans / unusual structure, also
-# import the low-level engine: from deck_core.primitives import table, tcell, trow.
+# For a table: build it with the low-level engine — table(sp_id, name, x, y, cx, cy,
+# col_widths=[...], rows=[trow([tcell(...), ...]), ...]). tcell() carries fill /
+# color / bold / align / borders / insets and grid_span / row_span for merges; the
+# engine synthesizes the merge-filler cells. Cells default to single (100%) line
+# spacing. See slide_snippets.md "tables".
 #
 # Object choice: if the content has column headers, row labels, and comparable
-# values across rows/columns, it is a TABLE — use house_table(), not a grid of
-# text_box() shapes. Shape grids are for independent cards/chips/panels only.
+# values across rows/columns, it is a TABLE — use table()/trow()/tcell(), not a grid
+# of text_box() shapes. Shape grids are for independent cards/chips/panels only.
 #
 # ── TYPE QUICK REF ───────────────────────────────────────────────────────────
 # SOURCES_8PT           8pt    sources footer, true footnote/caveat

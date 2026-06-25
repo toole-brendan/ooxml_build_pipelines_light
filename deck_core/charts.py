@@ -10,6 +10,15 @@ label_meta — see its docstring):
     marimekko_chart(...)   variable-width percent-stacked columns (native, editable)
     graphic_frame(...)     the <p:graphicFrame> that places a chart on a slide
 
+Two more entry points handle a chart ported verbatim from a source deck:
+editable_bundled_chart() reattaches the source workbook to a byte-exact chart
+part (the data stays opaque, in caches + workbook only); styled_chart() keeps
+the source part as a pure style template but rewrites its data caches from a
+Python dict, so the values live in the slide module (readable / editable) while
+the look stays pixel-identical to the source — the faithful way to surface a
+real, style-dense chart's data without a lossy factory rebuild (it even covers
+bar+line combos). extract_chart_data() reads a chart part into that dict shape.
+
 column_chart / bar_chart are thin faces over the private _bars() engine; the
 specialty factories transform their inputs and call the same engine, so every
 chart shares one code path, one embedded-workbook mechanism, and one look.
@@ -53,10 +62,13 @@ from __future__ import annotations
 
 import io
 import zipfile
+from xml.etree import ElementTree as ET
 from xml.sax.saxutils import escape as _esc_text
 
 # Shared XML decl + chart-root namespace string (single source of truth).
-from deck_core.ooxml import XML_DECL as _XML_DECL, NS_CHART as _NS
+from deck_core.ooxml import (
+    XML_DECL as _XML_DECL, NS_CHART as _NS, NS_A, NS_C, NS_MC, NS_R,
+)
 
 
 def _esc(s: str) -> str:
@@ -257,6 +269,267 @@ def editable_bundled_chart(chart_xml: str, embed_bytes: bytes, *,
         "embed_filename": filename_tpl,
         "embed_content_type": content_type,
     }
+
+
+# ── Data-over-template charts (faithful style + Python-visible data) ──────────
+# editable_bundled_chart (above) is byte-exact but opaque: a chart's data lives
+# only inside its <c:numCache> blocks and the embedded workbook. styled_chart
+# keeps that exact styling template yet rewrites the caches from a Python `data`
+# dict, so the values become a readable/editable literal in the slide module
+# while the look stays pixel-identical to the source — colors, axes, data-label
+# selection, pattern fills, bar+line combos: everything that is *style* is
+# inherited verbatim from the template. It is the editable-data half of "Edit
+# Data" surfaced as Python; the style half stays templated by design. Because it
+# never interprets the chart (only its caches), it reproduces charts a factory
+# (column_chart/…) cannot. extract_chart_data() reads a part into the same shape.
+
+# Microsoft chart-extension prefixes a source part may carry beyond c/a/r/mc.
+# Registering every prefix makes ET re-serialize a parsed chart with its
+# original prefixes (no ns0: churn), so a parse->serialize round-trip preserves
+# the full element inventory (verified across the reference corpus).
+_CHART_NS_REGISTRY = {
+    "c": NS_C, "a": NS_A, "r": NS_R, "mc": NS_MC,
+    "c14": "http://schemas.microsoft.com/office/drawing/2007/8/2/chart",
+    "c15": "http://schemas.microsoft.com/office/drawing/2012/chart",
+    "c16": "http://schemas.microsoft.com/office/drawing/2014/chart",
+    "c16r2": "http://schemas.microsoft.com/office/drawing/2015/06/chart",
+}
+for _pfx, _uri in _CHART_NS_REGISTRY.items():
+    ET.register_namespace(_pfx, _uri)
+
+
+def _ct(tag: str) -> str:
+    """Chart-namespaced ElementTree tag, e.g. _ct('ser') -> '{...chart}ser'."""
+    return f"{{{NS_C}}}{tag}"
+
+
+def _at(tag: str) -> str:
+    """DrawingML-namespaced ElementTree tag, e.g. _at('solidFill')."""
+    return f"{{{NS_A}}}{tag}"
+
+
+def _iter_chart_series(root):
+    """Yield every <c:ser> under plotArea, in document order across all
+    chart-type containers (barChart series, then lineChart series, ...). This
+    order is the contract `data['series']` must match — extraction and rewrite
+    both use it, so they stay aligned even for bar+line combos."""
+    chart = root.find(_ct("chart"))
+    plot = (chart.find(_ct("plotArea")) if chart is not None
+            else root.find(".//" + _ct("plotArea")))
+    if plot is None:
+        return
+    for container in list(plot):
+        if container.tag.split("}")[-1].endswith("Chart"):
+            for ser in container.findall(_ct("ser")):
+                yield ser
+
+
+def _cache_node(parent):
+    """The numCache/strCache (or numLit/strLit) under a <c:cat>/<c:val>/<c:tx>,
+    or None when the parent or its cache is absent (think-cell omits cat/tx)."""
+    if parent is None:
+        return None
+    for kind in ("numCache", "strCache", "numLit", "strLit"):
+        node = parent.find(".//" + _ct(kind))
+        if node is not None:
+            return node
+    return None
+
+
+def _cache_values(parent, *, numeric):
+    """Ordered values from a cache node — None at any blank/missing index. With
+    numeric=True, parse floats (rounded; caches carry binary float artifacts)."""
+    node = _cache_node(parent)
+    if node is None:
+        return None
+    by_idx = {}
+    for pt in node.findall(_ct("pt")):
+        v = pt.find(_ct("v"))
+        by_idx[int(pt.get("idx"))] = v.text if v is not None else None
+    pc = node.find(_ct("ptCount"))
+    n = int(pc.get("val")) if pc is not None else 0
+    n = max(n, (max(by_idx) + 1) if by_idx else 0)
+    out = [by_idx.get(i) for i in range(n)]
+    if numeric:
+        out = [None if x in (None, "") else round(float(x), 4) for x in out]
+    return out
+
+
+def _series_name(ser):
+    """Series name from <c:tx> (cache or literal), or None if absent."""
+    tx = ser.find(_ct("tx"))
+    if tx is None:
+        return None
+    vals = _cache_values(tx, numeric=False)
+    if vals:
+        return next((v for v in vals if v), None)
+    v = tx.find(_ct("v"))
+    return v.text if v is not None else None
+
+
+def _series_color(ser):
+    """Series fill as a hex string from <c:spPr><a:solidFill><a:srgbClr>, or
+    None (theme/scheme fills and per-point dPt fills stay in the template)."""
+    sppr = ser.find(_ct("spPr"))
+    if sppr is None:
+        return None
+    fill = sppr.find(_at("solidFill"))
+    if fill is None:
+        return None
+    srgb = fill.find(_at("srgbClr"))
+    return srgb.get("val") if srgb is not None else None
+
+
+def extract_chart_data(chart_xml: str) -> dict:
+    """Read a chart part into the `data` dict styled_chart consumes.
+
+    Returns::
+
+        {
+            "categories": list[str] | None,   # None when the chart omits them
+            "series": [{"name": str|None, "values": list[float|None],
+                        "color": str|None}, ...],
+            "value_axis_max": float | None,
+            "gap_width": int | None,
+            "overlap": int | None,
+            "types": [{"type": str, "grouping": str|None, "n_ser": int}, ...],
+        }
+
+    Series come out in document order across every chart-type container — the
+    order _iter_chart_series yields and styled_chart rewrites — so a round-trip
+    (extract -> styled_chart) reproduces the source, combos included. think-cell
+    parts omit categories and series names (they are drawn as separate slide
+    shapes): both come back None; `values` and per-series solid `color` are
+    recovered from the caches. `color` is informational (style stays templated)
+    and is not consumed by styled_chart.
+    """
+    root = ET.fromstring(chart_xml)
+    series, categories = [], None
+    for ser in _iter_chart_series(root):
+        if categories is None:
+            categories = _cache_values(ser.find(_ct("cat")), numeric=False)
+        series.append({
+            "name": _series_name(ser),
+            "values": _cache_values(ser.find(_ct("val")), numeric=True) or [],
+            "color": _series_color(ser),
+        })
+    value_axis_max = None
+    for axis in root.findall(".//" + _ct("valAx")):
+        mx = axis.find(_ct("scaling") + "/" + _ct("max"))
+        if mx is not None:
+            value_axis_max = float(mx.get("val"))
+            break
+    gap = root.find(".//" + _ct("gapWidth"))
+    overlap = root.find(".//" + _ct("overlap"))
+    chart = root.find(_ct("chart"))
+    plot = chart.find(_ct("plotArea")) if chart is not None else None
+    types = []
+    for container in (list(plot) if plot is not None else []):
+        tag = container.tag.split("}")[-1]
+        if tag.endswith("Chart"):
+            grouping = container.find(_ct("grouping"))
+            types.append({
+                "type": tag,
+                "grouping": grouping.get("val") if grouping is not None else None,
+                "n_ser": len(container.findall(_ct("ser"))),
+            })
+    return {"categories": categories, "series": series,
+            "value_axis_max": value_axis_max,
+            "gap_width": int(gap.get("val")) if gap is not None else None,
+            "overlap": int(overlap.get("val")) if overlap is not None else None,
+            "types": types}
+
+
+def _fmt_cache_num(v) -> str:
+    """Shortest faithful text for a numeric cache value (42.0 -> '42')."""
+    f = float(v)
+    return str(int(f)) if f.is_integer() else repr(f)
+
+
+def _set_cache(node, values, *, numeric):
+    """Replace a cache's <c:pt> list (and ptCount) from `values`; blanks (None)
+    are dropped, matching PowerPoint's gap encoding. formatCode/ptCount keep
+    their leading position and the new pts append after — preserving the
+    formatCode?, ptCount, pt* schema order."""
+    pc = node.find(_ct("ptCount"))
+    if pc is None:
+        pc = ET.SubElement(node, _ct("ptCount"))
+    pc.set("val", str(len(values)))
+    for pt in node.findall(_ct("pt")):
+        node.remove(pt)
+    for idx, v in enumerate(values):
+        if numeric:
+            if v is None:
+                continue
+            text = _fmt_cache_num(v)
+        else:
+            if v is None or v == "":
+                continue
+            text = str(v)
+        pt = ET.SubElement(node, _ct("pt"))
+        pt.set("idx", str(idx))
+        ET.SubElement(pt, _ct("v")).text = text
+
+
+def _rewrite_chart_caches(template_xml: str, data: dict) -> str:
+    """Return template_xml with its data caches rewritten from `data` — values
+    per series, plus categories / series names where both the template carries
+    that cache and `data` supplies the field. Everything else (the style) is
+    left byte-for-byte. Raises if `data`'s series count != the template's."""
+    root = ET.fromstring(template_xml)
+    sers = list(_iter_chart_series(root))
+    dseries = data.get("series", [])
+    if len(dseries) != len(sers):
+        raise ValueError(
+            f"data has {len(dseries)} series but the chart template has "
+            f"{len(sers)}; styled_chart needs one data series per template series")
+    categories = data.get("categories")
+    for ser, dser in zip(sers, dseries):
+        vnode = _cache_node(ser.find(_ct("val")))
+        if vnode is not None and "values" in dser:
+            _set_cache(vnode, dser["values"], numeric=True)
+        if categories:
+            cnode = _cache_node(ser.find(_ct("cat")))
+            if cnode is not None:
+                _set_cache(cnode, categories, numeric=False)
+        if dser.get("name") is not None:
+            tnode = _cache_node(ser.find(_ct("tx")))
+            if tnode is not None:
+                _set_cache(tnode, [dser["name"]], numeric=False)
+    return _XML_DECL + "\n" + ET.tostring(root, encoding="unicode")
+
+
+def styled_chart(template_xml: str, data: dict, embed_bytes: bytes, *,
+                 embed_ext: str = "xlsb") -> dict:
+    """Data-over-template chart: keep `template_xml` as the exact style template
+    and rewrite its data caches from `data`, so the values live in Python while
+    the rendered look stays identical to the source chart.
+
+    The companion to editable_bundled_chart: bundling keeps the data opaque
+    (cache + workbook only); styled_chart surfaces it as a `data` literal
+    (see extract_chart_data for the shape) yet still reattaches `embed_bytes`
+    as the editable workbook, so "Edit Data" works. Type-agnostic — it never
+    interprets the chart, only its caches — so it reproduces combos (bar+line)
+    and exotic styling that a factory (column_chart/…) cannot.
+
+    Args:
+        template_xml: the source chart part, used verbatim as the style template
+            (its caches are overwritten; all other bytes are preserved).
+        data: categories + per-series values to write in (extract_chart_data's
+            output, or a hand-authored dict of the same shape).
+        embed_bytes: the source workbook to reattach (the chart's .xlsb/.xlsx).
+        embed_ext: "xlsb" (default, reuse the binary source) or "xlsx".
+
+    Returns the CHARTS dict the build loop wires into the package (same shape as
+    editable_bundled_chart). For a faithful re-port `data` equals the cached
+    values, so the result renders byte-for-byte like the bundled chart.
+
+    Note: the reattached workbook is the source's; if `data` is edited to differ
+    from it, the chart re-renders from the rewritten caches but PowerPoint's
+    "Edit Data" pane shows the original workbook until it is regenerated.
+    """
+    rewritten = _rewrite_chart_caches(template_xml, data)
+    return editable_bundled_chart(rewritten, embed_bytes, embed_ext=embed_ext)
 
 
 def _is_blank(v) -> bool:

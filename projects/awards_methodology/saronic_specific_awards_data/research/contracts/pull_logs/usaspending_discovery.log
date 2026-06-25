@@ -1,0 +1,133 @@
+=== USAspending discovery (Saronic USV/maritime) 2026-06-23 20:19:06
+time_period=[{'start_date': '2015-01-01', 'end_date': '2026-12-31'}]
+
+# KEYWORD axis (agency-unrestricted, post-filtered to sea services)
+  - keyword: 'unmanned surface vessel'
+      [contract] 47 records
+      [idv] 0 records
+  - keyword: 'unmanned surface vehicle'
+      [contract] 45 records
+      [idv] 0 records
+  - keyword: 'autonomous surface vessel'
+      [contract] 3 records
+      [idv] 0 records
+  - keyword: 'uncrewed surface vessel'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'medium unmanned surface'
+      [contract] 2 records
+      [idv] 0 records
+  - keyword: 'large unmanned surface'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'small unmanned surface'
+      [contract] 6 records
+      [idv] 0 records
+  - keyword: 'optionally manned surface'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'robotic surface vessel'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'unmanned maritime'
+      [contract] 52 records
+      [idv] 0 records
+  - keyword: 'maritime autonomy'
+      [contract] 2 records
+      [idv] 0 records
+  - keyword: 'autonomous maritime systems'
+      [contract] 2 records
+      [idv] 0 records
+  - keyword: 'ghost fleet overlord'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'sea hunter'
+      [contract] 10 records
+      [idv] 0 records
+  - keyword: 'common unmanned surface'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'global autonomous reconnaissance'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'surface drone'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'autonomous boat'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'swarm boat'
+      [contract] 0 records
+      [idv] 0 records
+  - keyword: 'expeditionary unmanned'
+      [contract] 2 records
+      [idv] 0 records
+
+# NAICS/PSC axis (Navy-subtier-scoped so the 1500 cap applies WITHIN the Navy)
+  - naics:336611
+      [contract] 1500 records
+      [idv] 293 records
+  - naics:336612
+      [contract] 1500 records
+      [idv] 17 records
+  - psc:1905
+      [contract] 712 records
+      [idv] 25 records
+  - psc:1925
+      [contract] 69 records
+      [idv] 0 records
+  - psc:1940
+      [contract] 533 records
+      [idv] 0 records
+  - psc:1990
+      [contract] 223 records
+      [idv] 3 records
+  - psc:2090
+      [contract] 1500 records
+      [idv] 4 records
+
+=== consolidated: 5836 unique awards; 5760 in-scope (sea services), 76 out-of-scope.
+
+Top awarding sub-agencies seen (calibration):
+   6457  Department of the Navy
+     45  Defense Logistics Agency
+     17  National Oceanic and Atmospheric Administration
+      6  Defense Contract Management Agency
+      5  National Aeronautics and Space Administration
+      4  Department of the Army
+      3  Defense Information Systems Agency
+      2  Defense Advanced Research Projects Agency
+      2  U.S. Geological Survey
+      2  Department of the Air Force
+      2  National Park Service
+      2  Federal Acquisition Service
+      1  Bureau of Ocean Energy Management
+      1  Washington Headquarters Services
+      1  Office of Procurement Operations
+
+Top 25 in-scope awards by amount:
+  $ 34,664.2M  N0002417C2100       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611; psc:1905
+  $ 30,825.6M  N0002417C2117       ELECTRIC BOAT CORPORATION         Department of the Navy        psc:1905
+  $ 20,180.1M  N0002412C2115       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611; psc:1905
+  $ 16,238.8M  N0002409C2104       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611
+  $ 11,895.2M  N0002416C2116       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611; psc:1905
+  $ 10,029.6M  N0002406C2222       HUNTINGTON INGALLS INCORPORATED   Department of the Navy        naics:336611
+  $  9,397.3M  N0002403C2101       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611
+  $  6,948.2M  N0002423C2307       HUNTINGTON INGALLS INCORPORATED   Department of the Navy        naics:336611; psc:1905
+  $  6,826.7M  N0002418C2307       HUNTINGTON INGALLS INCORPORATED   Department of the Navy        naics:336611; psc:1905
+  $  6,645.7M  N0002408C2110       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611
+  $  5,922.6M  N0002402C2300       NATIONAL STEEL AND SHIPBUILDING   Department of the Navy        naics:336611
+  $  5,875.6M  N0002416C2229       NATIONAL STEEL AND SHIPBUILDING   Department of the Navy        naics:336611
+  $  5,339.0M  N0002418C2305       BATH IRON WORKS CORPORATION       Department of the Navy        naics:336611; psc:1905
+  $  5,027.6M  N0002423C2305       BATH IRON WORKS CORPORATION       Department of the Navy        naics:336611; psc:1905
+  $  4,980.5M  N0002411C2300       LOCKHEED MARTIN CORPORATION       Department of the Navy        naics:336611; psc:1905
+  $  4,960.0M  N0002424C2110       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611; psc:1905
+  $  4,932.5M  N0002413C2305       BATH IRON WORKS CORPORATION       Department of the Navy        naics:336611; psc:1905
+  $  4,643.6M  N0002418C2406       HUNTINGTON INGALLS INCORPORATED   Department of the Navy        naics:336611; psc:1905
+  $  4,563.7M  N0002498C2104       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611
+  $  4,515.7M  N0002409C2116       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611
+  $  4,500.9M  N0002415C2114       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611; psc:1905
+  $  4,462.9M  N0002411C2301       AUSTAL USA, LLC                   Department of the Navy        naics:336611; psc:1905
+  $  4,315.0M  N0002420C2120       ELECTRIC BOAT CORPORATION         Department of the Navy        naics:336611; psc:1905
+  $  3,718.7M  N0002421C2106       HUNTINGTON INGALLS INC            Department of the Navy        naics:336611; psc:1905
+  $  3,405.7M  N0002402C2303       BATH IRON WORKS CORPORATION       Department of the Navy        naics:336611

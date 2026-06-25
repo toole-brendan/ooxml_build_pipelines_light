@@ -1,0 +1,298 @@
+{
+  "n_edges": 681,
+  "n_suppliers": 202,
+  "total_subaward_dollars": 131701122.08,
+  "n_recurring_suppliers": 10,
+  "median_report_lag_months": 1.5,
+  "capability_totals": {
+    "other_unclassified": 58804251.52,
+    "propulsion_power": 44168998.01,
+    "integration_eng_svcs": 10040171.0,
+    "platform_hull": 9285737.96,
+    "autonomy_software": 8053415.7,
+    "sensors_payload": 617059.68,
+    "c2_comms": 416084.72,
+    "materials_components": 315403.49
+  },
+  "top_suppliers": [
+    {
+      "supplier": "EMPIRICAL SYSTEMS AEROSPACE INC",
+      "sub_key": "U1ASEJJJKDP5",
+      "total_sub_dollars": 21028425.0,
+      "n_distinct_primes": 1,
+      "primes": "RAYTHEON COMPANY",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "EMPIRICAL SYSTEMS AEROSPACE, INC.",
+      "sub_key": "MFCTLU3MRXC8",
+      "total_sub_dollars": 11876698.0,
+      "n_distinct_primes": 1,
+      "primes": "RAYTHEON COMPANY",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "TELEDYNE TECHNOLOGIES INCORPORATED",
+      "sub_key": "SQ2DSCE69F15",
+      "total_sub_dollars": 10648960.87,
+      "n_distinct_primes": 3,
+      "primes": "HII UNMANNED SYSTEMS, INC; SERCO-IPS CORPORATION; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "TELEDYNE INSTRUMENTS INC",
+      "sub_key": "PAH8M4BJACA5",
+      "total_sub_dollars": 8877394.0,
+      "n_distinct_primes": 1,
+      "primes": "TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "BEAUFORT COMPOSITE TECHNOLOGIES, INC.",
+      "sub_key": "XNHRXR2HTXA8",
+      "total_sub_dollars": 6929010.0,
+      "n_distinct_primes": 1,
+      "primes": "TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "platform_hull"
+    },
+    {
+      "supplier": "SYSTIMA TECHNOLOGIES, INC.",
+      "sub_key": "ME2BVJ4KGAM1",
+      "total_sub_dollars": 6464124.0,
+      "n_distinct_primes": 1,
+      "primes": "RAYTHEON COMPANY",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "SAAB DYNAMICS AKTIEBOLAG",
+      "sub_key": "NQEMKX3MRBV6",
+      "total_sub_dollars": 4385986.33,
+      "n_distinct_primes": 1,
+      "primes": "SAAB, INC",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "UNITED STATES MARINE, INC.",
+      "sub_key": "JXUMFLGNSMP8",
+      "total_sub_dollars": 4195496.0,
+      "n_distinct_primes": 1,
+      "primes": "LEIDOS, INC.",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "MOBILEASE MODULAR SPACE, INC.",
+      "sub_key": "RLDUT4AS31N5",
+      "total_sub_dollars": 3213514.03,
+      "n_distinct_primes": 1,
+      "primes": "HUNTINGTON INGALLS INC",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "Exail Defense Systems, Inc.",
+      "sub_key": "Q1B3NG6LP9B5",
+      "total_sub_dollars": 3064447.21,
+      "n_distinct_primes": 2,
+      "primes": "HII UNMANNED SYSTEMS, INC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "autonomy_software"
+    },
+    {
+      "supplier": "EDGEONE LLC",
+      "sub_key": "JNJDBJZLL2R7",
+      "total_sub_dollars": 2289319.0,
+      "n_distinct_primes": 2,
+      "primes": "SAAB, INC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "MOTION CONTROL SYSTEMS, INC.",
+      "sub_key": "G68SW8U2WVM4",
+      "total_sub_dollars": 1755290.0,
+      "n_distinct_primes": 1,
+      "primes": "TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "APEX SPECIALTY METALS, INC.",
+      "sub_key": "CJGFRMQ3CDM4",
+      "total_sub_dollars": 1618078.6,
+      "n_distinct_primes": 1,
+      "primes": "TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "WHITESBURG ELECTRONICS INC",
+      "sub_key": "RKXHNMJD8639",
+      "total_sub_dollars": 1503074.04,
+      "n_distinct_primes": 1,
+      "primes": "TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "EPSILON SYSTEMS SOLUTIONS, INC.",
+      "sub_key": "MYJHF1S2HGV5",
+      "total_sub_dollars": 1432362.6,
+      "n_distinct_primes": 1,
+      "primes": "HUNTINGTON INGALLS INC",
+      "primary_capability": "other_unclassified"
+    }
+  ],
+  "recurring_suppliers": [
+    {
+      "supplier": "TELEDYNE TECHNOLOGIES INCORPORATED",
+      "sub_key": "SQ2DSCE69F15",
+      "total_sub_dollars": 10648960.87,
+      "n_distinct_primes": 3,
+      "primes": "HII UNMANNED SYSTEMS, INC; SERCO-IPS CORPORATION; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "Exail Defense Systems, Inc.",
+      "sub_key": "Q1B3NG6LP9B5",
+      "total_sub_dollars": 3064447.21,
+      "n_distinct_primes": 2,
+      "primes": "HII UNMANNED SYSTEMS, INC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "autonomy_software"
+    },
+    {
+      "supplier": "EDGEONE LLC",
+      "sub_key": "JNJDBJZLL2R7",
+      "total_sub_dollars": 2289319.0,
+      "n_distinct_primes": 2,
+      "primes": "SAAB, INC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    },
+    {
+      "supplier": "GENERAL DYNAMICS CORPORATION",
+      "sub_key": "VF58HFRNGEL8",
+      "total_sub_dollars": 573421.76,
+      "n_distinct_primes": 2,
+      "primes": "AVIAN, LLC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "autonomy_software"
+    },
+    {
+      "supplier": "WOODS HOLE OCEANOGRAPHIC INSTITUTION",
+      "sub_key": "GFKFBWG2TV98",
+      "total_sub_dollars": 500100.08,
+      "n_distinct_primes": 2,
+      "primes": "SERCO-IPS CORPORATION; THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "Dell Technologies Inc.",
+      "sub_key": "TJCDPVN6RNP7",
+      "total_sub_dollars": 257437.55,
+      "n_distinct_primes": 2,
+      "primes": "LEIDOS, INC.; OASIS SYSTEMS, LLC",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "EACO CORPORATION",
+      "sub_key": "UZ6EFJJNEFT3",
+      "total_sub_dollars": 170209.5,
+      "n_distinct_primes": 2,
+      "primes": "RAYTHEON COMPANY; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "PURVIS SYSTEMS INC",
+      "sub_key": "E4G7PDVYZS83",
+      "total_sub_dollars": 135225.64,
+      "n_distinct_primes": 2,
+      "primes": "SERCO INC; SERCO-IPS CORPORATION",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "SOCIETE DE NEGOCE ET DE PARTICIPATION",
+      "sub_key": "J3DRM4537TG4",
+      "total_sub_dollars": 123118.81,
+      "n_distinct_primes": 2,
+      "primes": "LEIDOS, INC.; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "other_unclassified"
+    },
+    {
+      "supplier": "B.N.L. INDUSTRIES, INC.",
+      "sub_key": "PJRYS7EFXQD9",
+      "total_sub_dollars": 109830.0,
+      "n_distinct_primes": 2,
+      "primes": "HUNTINGTON INGALLS INC; TELEDYNE BROWN ENGINEERING, INC.",
+      "primary_capability": "propulsion_power"
+    }
+  ],
+  "top_subcontracting_primes": [
+    {
+      "prime": "TELEDYNE BROWN ENGINEERING, INC.",
+      "piid": "N0002419C6402",
+      "subawarded_dollars": 45675694.05
+    },
+    {
+      "prime": "RAYTHEON COMPANY",
+      "piid": "N0001421C1009",
+      "subawarded_dollars": 43671438.0
+    },
+    {
+      "prime": "HUNTINGTON INGALLS INC",
+      "piid": "N0002417C4103",
+      "subawarded_dollars": 13148636.73
+    },
+    {
+      "prime": "SAAB, INC",
+      "piid": "N0002424C2204",
+      "subawarded_dollars": 5576211.88
+    },
+    {
+      "prime": "LEIDOS, INC.",
+      "piid": "N0001418C2006",
+      "subawarded_dollars": 4404522.93
+    },
+    {
+      "prime": "SERCO-IPS CORPORATION",
+      "piid": "N6660418F3022",
+      "subawarded_dollars": 3686996.71
+    },
+    {
+      "prime": "TELEDYNE BROWN ENGINEERING, INC.",
+      "piid": "N0003925F1019",
+      "subawarded_dollars": 3189833.0
+    },
+    {
+      "prime": "TELEDYNE BROWN ENGINEERING, INC.",
+      "piid": "N0003921F2173",
+      "subawarded_dollars": 2044005.8
+    },
+    {
+      "prime": "AVIAN, LLC",
+      "piid": "N6133120F3009",
+      "subawarded_dollars": 1621577.53
+    },
+    {
+      "prime": "ATLANTIC DIVING SUPPLY, INC.",
+      "piid": "N0016419F0049",
+      "subawarded_dollars": 1388200.0
+    },
+    {
+      "prime": "TELEDYNE BROWN ENGINEERING, INC.",
+      "piid": "N0003922F2153",
+      "subawarded_dollars": 1241760.0
+    },
+    {
+      "prime": "LEIDOS, INC.",
+      "piid": "N0001419C1020",
+      "subawarded_dollars": 1042490.07
+    },
+    {
+      "prime": "HUNTINGTON INGALLS INC",
+      "piid": "N0002416C4112",
+      "subawarded_dollars": 966035.88
+    },
+    {
+      "prime": "HII UNMANNED SYSTEMS, INC",
+      "piid": "N0002423C6308",
+      "subawarded_dollars": 794292.28
+    },
+    {
+      "prime": "Y-TECH SERVICES, INC.",
+      "piid": "N6133115C0025",
+      "subawarded_dollars": 686565.0
+    }
+  ]
+}

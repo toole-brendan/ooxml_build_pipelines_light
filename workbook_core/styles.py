@@ -361,6 +361,28 @@ CELL_XFS = [
     # 55 S_DATE_TOTAL - bold date + top border
     '<xf numFmtId="169" fontId="1" fillId="0" borderId="2" xfId="0" '
     'applyNumberFormat="1" applyFont="1" applyBorder="1"/>',
+    # ----- Vertical-fence percent variants (matrix block left/right edges) -----
+    # Black italic percent (like S_PCT) plus one thin vertical border, used to fence
+    # each program block in the exec-summary mix matrices: a left border on the block's
+    # first FY column, a right border on its last. borderId 8 = left, 9 = right.
+    # 56 S_PCT_LEFT - black italic percent + left border
+    '<xf numFmtId="165" fontId="5" fillId="0" borderId="8" xfId="0" '
+    'applyNumberFormat="1" applyFont="1" applyBorder="1"/>',
+    # 57 S_PCT_RIGHT - black italic percent + right border
+    '<xf numFmtId="165" fontId="5" fillId="0" borderId="9" xfId="0" '
+    'applyNumberFormat="1" applyFont="1" applyBorder="1"/>',
+    # ----- Centered column headers carrying a vertical block fence -----
+    # Like S_HEADER_CENTER (bold, centered, bottom underline) but with one vertical
+    # border so a matrix block's left/right fence runs up into the FY header row.
+    # borderId 6 = bottom+left, 7 = bottom+right (reused from the paste-range set).
+    # 58 S_HEADER_CENTER_LEFT - centered header + bottom underline + left fence
+    '<xf numFmtId="0" fontId="1" fillId="0" borderId="6" xfId="0" '
+    'applyFont="1" applyBorder="1" applyAlignment="1">'
+    '<alignment horizontal="center" vertical="center"/></xf>',
+    # 59 S_HEADER_CENTER_RIGHT - centered header + bottom underline + right fence
+    '<xf numFmtId="0" fontId="1" fillId="0" borderId="7" xfId="0" '
+    'applyFont="1" applyBorder="1" applyAlignment="1">'
+    '<alignment horizontal="center" vertical="center"/></xf>',
 ]
 
 
@@ -431,6 +453,13 @@ S_DATE_LINK        = 52
 S_DATE_LINK_TOTAL  = 53
 S_DATE             = 54   # black derived date (formula result)
 S_DATE_TOTAL       = 55
+
+# Vertical-fence percent variants (matrix block left/right edges).
+S_PCT_LEFT         = 56
+S_PCT_RIGHT        = 57
+# Centered headers carrying a vertical block fence (left/right edge of a matrix block).
+S_HEADER_CENTER_LEFT  = 58
+S_HEADER_CENTER_RIGHT = 59
 
 
 # Base style -> its top-bordered total-row variant. total_row() (primitives.py)

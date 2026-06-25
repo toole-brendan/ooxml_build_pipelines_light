@@ -258,7 +258,8 @@ def banner_row(r: int, text: str, n_cols: int,
                *, style: int,
                with_gutter: bool = False,
                mark_collapsible: bool = False,
-               outline_level: int = 0) -> str:
+               outline_level: int = 0,
+               text_col: int = 1) -> str:
     """Render a full-width banner row. `style` is required (keyword-only).
 
     Legacy (with_gutter=False): `text` is placed in column A with `style`;
@@ -275,15 +276,20 @@ def banner_row(r: int, text: str, n_cols: int,
     the summary row for the rows below it (e.g. a §-section banner at level 1
     summarising level-2 detail). Default 0 keeps banners outside any group.
 
+    text_col (gutter mode): the content column the label is written into; the
+    banner fill always spans columns 1..n_cols. Default 1 (the first content
+    column, B). Pass the first VISIBLE content column when leading columns are
+    hidden, so the label is not lost behind a zero-width hidden column.
+
     Use S_TITLE_SHEET / S_TITLE_SECTION / S_TITLE_SUBSECTION as `style`.
     """
     if with_gutter:
         parts = []
         if mark_collapsible:
             parts.append(cell(cref(r, 0), value="x", style=S_DEFAULT))
-        parts.append(cell(cref(r, 1), value=text, style=style))
-        for i in range(2, n_cols + 1):
-            parts.append(cell(cref(r, i), value=None, style=style))
+        for i in range(1, n_cols + 1):
+            parts.append(cell(cref(r, i), value=(text if i == text_col else None),
+                              style=style))
     else:
         parts = [cell(cref(r, 0), value=text, style=style)]
         for i in range(1, n_cols):

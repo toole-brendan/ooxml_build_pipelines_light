@@ -30,6 +30,24 @@ from __future__ import annotations
 SLIDE_W = 12_192_000
 SLIDE_H = 6_858_000
 
+EMU_PER_INCH = 914_400
+
+
+def IN(inches: float) -> int:
+    """Inches -> EMU (rounded). Lets a slide module express geometry in inches and
+    have the build convert to EMU for the OOXML, e.g. text_box(.., IN(1.5), IN(0.3), ..).
+    Backward-compatible: raw EMU ints still work. Round-trip through a 3-decimal inch
+    value is visually exact (sub-0.05 px) but not byte-exact, so the locked chrome
+    geometry below stays in verbatim EMU."""
+    return round(inches * EMU_PER_INCH)
+
+
+def PT(points: float) -> int:
+    """Points -> 1/100 pt, the unit run(size=..) / OOXML sz use, e.g. PT(10) == 1000,
+    PT(8.5) == 850. Exact for the usual half-point sizes. Lets a module write font
+    sizes as points (PT(10)) instead of the 1/100-pt integer (1000)."""
+    return round(points * 100)
+
 # Symmetric left/right margin used by every content slide.
 LEFT_MARGIN = 453_079
 RIGHT_MARGIN = LEFT_MARGIN
@@ -150,6 +168,9 @@ FONT = "Arial"   # Arial everywhere (slide_guide.md -> Text)
 # Default line spacing for body paragraphs. PPTX <a:spcPct val="N"/> is
 # N/1000 of single - 115_000 => 115%.
 LNSPC_BODY = 115_000
+# Single (100%) line spacing — the right density for TABLE cells (dense tabular
+# data), as opposed to the 115% body default. Table builders default to this.
+LNSPC_SINGLE = 100_000
 
 # PPTX <a:rPr sz="..."> is in hundredths of a point: 800 == 8pt, 1200 == 12pt.
 #

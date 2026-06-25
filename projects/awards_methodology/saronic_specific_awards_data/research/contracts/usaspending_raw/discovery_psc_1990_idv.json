@@ -1,0 +1,100 @@
+{
+  "label": "psc:1990",
+  "filters": {
+    "agencies": [
+      {
+        "type": "awarding",
+        "tier": "subtier",
+        "name": "Department of the Navy"
+      }
+    ],
+    "psc_codes": [
+      "1990"
+    ]
+  },
+  "award_type_group": "idv",
+  "record_count": 3,
+  "results": [
+    {
+      "internal_id": 351363225,
+      "Award ID": "N0002416G2218",
+      "Recipient Name": "AUSTAL USA, LLC",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Funding Agency": "Department of Defense",
+      "Funding Sub Agency": "Department of the Navy",
+      "Award Amount": 0.0,
+      "Description": "EMERGENT AVAILABILITIES",
+      "Contract Award Type": "BOA",
+      "Start Date": "2016-08-31",
+      "End Date": null,
+      "NAICS": {
+        "code": "336611",
+        "description": "SHIP BUILDING AND REPAIRING"
+      },
+      "PSC": {
+        "code": "1990",
+        "description": "MISCELLANEOUS VESSELS"
+      },
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_IDV_N0002416G2218_9700",
+      "_matched_query": "psc:1990",
+      "_award_type_group": "idv"
+    },
+    {
+      "internal_id": 351363224,
+      "Award ID": "N0002416G2214",
+      "Recipient Name": "NATIONAL STEEL AND SHIPBUILDING COMPANY",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Funding Agency": "Department of Defense",
+      "Funding Sub Agency": "Department of the Navy",
+      "Award Amount": 0.0,
+      "Description": "ESD/ESB BOA",
+      "Contract Award Type": "BOA",
+      "Start Date": "2016-08-02",
+      "End Date": null,
+      "NAICS": {
+        "code": "336611",
+        "description": "SHIP BUILDING AND REPAIRING"
+      },
+      "PSC": {
+        "code": "1990",
+        "description": "MISCELLANEOUS VESSELS"
+      },
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_IDV_N0002416G2214_9700",
+      "_matched_query": "psc:1990",
+      "_award_type_group": "idv"
+    },
+    {
+      "internal_id": 351357037,
+      "Award ID": "M6700414A0003",
+      "Recipient Name": "CANNON MARINE PARTNERS, LLC",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Funding Agency": "Department of Defense",
+      "Funding Sub Agency": "Department of the Navy",
+      "Award Amount": 0.0,
+      "Description": "IGF::CT::IGF  BOAT MAINTENANCE REPAIR SERVICES",
+      "Contract Award Type": "BPA",
+      "Start Date": "2013-12-18",
+      "End Date": null,
+      "NAICS": {
+        "code": "811490",
+        "description": "OTHER PERSONAL AND HOUSEHOLD GOODS REPAIR AND MAINTENANCE"
+      },
+      "PSC": {
+        "code": "1990",
+        "description": "MISCELLANEOUS VESSELS"
+      },
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_IDV_M6700414A0003_9700",
+      "_matched_query": "psc:1990",
+      "_award_type_group": "idv"
+    }
+  ]
+}
