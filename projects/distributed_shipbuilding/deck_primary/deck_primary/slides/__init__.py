@@ -9,10 +9,15 @@ Slides 1-3 are ported 1:1 from the v3 working deck (20260605_Defense Demand
 Drivers New Construction_v3.pptx - the v2 build re-edited by hand in
 PowerPoint and re-exported); slides 4-6 from the v2.0 deck as placeholder
 slides (the intended exhibit described in a gray placeholder box, not yet
-realized). Slide 7 is the new-built outsourcing-ceiling sizing slide; slides 8-10
-are the outsourcing-ceiling set built to compare side by side - two alternative
-methodology treatments (8 = flow + ledger + rail; 9 = the method bridge:
-flow spine + p-reads + ledger + guardrails) and a results exhibit (10).
+realized). Slide 7 is the SAM outsourcing-ceiling methodology
+discussion-questions table; slide 8 is the plain methodology backup (PIID
+scope, work-type taxonomy, native award fields).
+
+Archived (moved to ../archived/, out of the build): the outsourcing-ceiling
+method/results set (former slides 7-10: outsourcing_ceiling_method, _v2, _v3
+and outsourcing_ceiling_results) and the supplier-lane method pair (former
+slides 11-12: supplier_lane_method_part1/part2) with their shared
+_lane_method_kit helper.
 """
 from __future__ import annotations
 
@@ -25,14 +30,8 @@ from . import (
     penetration_outlook,              # v2.0 4: penetration rate outlook (placeholder)
     worktype_by_fy,                   # v2.0 5: work-type FY stacked bars per class
     contracts_outlook_placeholder,    # v2.0 6: placeholder - contracts outlook table
-    outsourcing_ceiling_method,       # 7 (new): how the outsourcing ceiling (the pool) is sized
-    outsourcing_ceiling_method_v2,    # 8 (new): alt methodology treatment (flow + ledger + rail)
-    outsourcing_ceiling_method_v3,    # 9 (new): method bridge (flow spine + p-reads + ledger + guardrails)
-    outsourcing_ceiling_results,      # 10 (new): results exhibit (clustered columns + KPI strip)
-    supplier_lane_method_part1,       # 11 (new): supplier-lane method part 1 - build the lane, concentration-first split
-    supplier_lane_method_part2,       # 12 (new): supplier-lane method part 2 - track interpretation (maintained / diversifying / periodic / continuous)
-    sam_methodology_outsourcing_ceiling_questions_v2,  # 13 (new): outsourcing-ceiling methodology discussion-questions table
-    data_reference,                   # 14 (new): plain methodology backup - PIID scope, work-type taxonomy, native award fields
+    sam_methodology_outsourcing_ceiling_questions_v2,  # 7: outsourcing-ceiling methodology discussion-questions table
+    data_reference,                   # 8: plain methodology backup - PIID scope, work-type taxonomy, native award fields
 )
 
 SLIDE_RENDERS: list[tuple] = [
@@ -42,12 +41,6 @@ SLIDE_RENDERS: list[tuple] = [
     (penetration_outlook, penetration_outlook.render),
     (worktype_by_fy, worktype_by_fy.render),
     (contracts_outlook_placeholder, contracts_outlook_placeholder.render),
-    (outsourcing_ceiling_method, outsourcing_ceiling_method.render),
-    (outsourcing_ceiling_method_v2, outsourcing_ceiling_method_v2.render),
-    (outsourcing_ceiling_method_v3, outsourcing_ceiling_method_v3.render),
-    (outsourcing_ceiling_results, outsourcing_ceiling_results.render),
-    (supplier_lane_method_part1, supplier_lane_method_part1.render),
-    (supplier_lane_method_part2, supplier_lane_method_part2.render),
     (sam_methodology_outsourcing_ceiling_questions_v2, sam_methodology_outsourcing_ceiling_questions_v2.render),
     (data_reference, data_reference.render),
 ]

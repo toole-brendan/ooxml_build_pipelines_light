@@ -1,0 +1,22 @@
+{
+  "overall_supplier_hhi": 354.0,
+  "overall_band": "competitive",
+  "n_suppliers": 521,
+  "mock_pop_note": "mock PoP = count of unique subaward Report IDs per supplier (FFATA has no PoP field)",
+  "mock_pop_median_report_ids": 5,
+  "mock_pop_max": 218,
+  "most_concentrated_system": {
+    "ship_system": "Armament",
+    "hhi": 6561.0,
+    "top_supplier": "LAKE SHORE SYSTEMS, INC.",
+    "top_supplier_share_pct": 77.9,
+    "reported_$m": 1.5
+  },
+  "least_concentrated_system": {
+    "ship_system": "Auxiliary systems",
+    "hhi": 683.0,
+    "n_suppliers": 90,
+    "reported_$m": 947.5
+  },
+  "interpretation": "Overall base is fragmented (low HHI) but concentration is system-specific: the most-concentrated big systems are entrenched/teaming targets, the least-concentrated are the most enterable as a new sub."
+}

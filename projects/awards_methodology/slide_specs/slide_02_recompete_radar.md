@@ -1,106 +1,185 @@
-# Slide Spec — Recompete Radar
+# Recompete Cadence → Supply-Chain Entry — Slide 02
 
-```text
-SLIDE 02 - Recompete Radar
-Type: Body
+**Companion to slide 03 (Recompete On-Ramp, Army ship-repair pool).** Together they show
+two ways into a recompete: *supply the prime* (this slide — a closed prime whose supply
+chain is open) versus *become a holder* (slide 03 — bid onto a multiple-award pool).
 
-Slide's purpose:
-  The payoff: populate the funnel's lower gates with the actual named vehicles. Show
-  the forward (and overdue) pipeline of competitor buying vehicles reaching their
-  ordering-period end, each with its incumbent, route, and the fact that none was
-  advertised on the portal. Carry the honest framing: the close date is certain (an
-  FPDS field), the re-buy is inferred, and the order history signals how strong that
-  inference is.
+**What the slide demonstrates:** the DDG-51 prime is a closed two-yard duopoly you can't
+win — but it re-buys on a fixed ~5-year cadence, and each block flows **~$1B+ to a visible
+first-tier supplier base**. The cadence is the *timing engine*; the addressable move is to
+supply the next block's sourcing wave, positioned years ahead.
 
-TITLE
------
-Copy:
-  Recompete Radar | 52 competitor vehicles reach turnover, 12 already overdue, none advertised on SAM.gov Opportunities.
+---
 
-HIGH-LEVEL LAYOUT
------------------
-A thin KPI strip of four readouts across the top, then a full-width table beneath
-it (scoreboard over register). The strip is the shape of the pipeline; the table is
-the named candidates. No chart.
+## Key takeaways
 
-COMMENTARY COPY
----------------
-Commentary 1
-  Copy:
-    Every vehicle here reaches its ordering-period end with no notice on the portal yet; the route is set by the vehicle, not by us.
-    Bid the open ones, get on the multiple-award on-ramps, or sub to a holder on the FAR 16.5 vehicles.
-  Text / shape treatment:
-    Bold finding strap directly under the table, no fill, full width.
+1. **The cadence is the timing engine.** DDG-51 is bought as sequential multi-year
+   procurements — FY13-17 → FY18-22 → FY23-27, awarded 2013 / 2018 / 2023. The next block
+   (FY28-32) is due **~2028**, readable in the award record now.
 
-Commentary 2
-  Copy:
-    Clock = the vehicle's ordering-period end (FPDS lastDateToOrder) - date-certain, and visible 2-6 years before the portal shows anything.
-    The re-buy is inferred, strongest where the order history is deep; successor and access are applied per vehicle.
-  Text / shape treatment:
-    Small italic footnote line at the bottom, no fill, no border - the honesty
-    caveat, set quieter than the finding strap.
+2. **The prime is closed; the supply chain is the opening.** You can't win the prime (it
+   re-ups to Huntington Ingalls + Bath Iron Works), but each block sub-contracts **~$1B+**
+   to first-tier suppliers — **$3.47B reported across 521 suppliers** over the chain. That
+   layer is enterable.
 
-OTHER VISIBLE COPY
-------------------
-Copy (KPI strip, four readouts left to right):
-  52 vehicles surfaced (>= $5M)
-  12 ordering periods already closed (overdue)
-  100% with no portal notice
-  clock visible 2-6 years before the portal
+3. **The cadence makes the supplier opportunity *datable*.** Subaward dollars are
+   front-loaded off each prime award — **~26% land in the award year, ~80% within four
+   years** — so the FY28-32 buy (~2028) opens a dated supplier window **~2028–2031**.
+   Position *ahead* of the surge instead of chasing it.
 
-Text / visual treatment:
-  Four no-fill readouts: large value over a small caption, separated by thin
-  vertical rules. The strip stays no-fill so the table is the only filled object on
-  the slide. Every readout is a count or fact drawn straight from the table below.
+4. **The base is fragmented overall, but concentration is system-specific — that's the
+   where-to-enter signal.** Overall supplier HHI is just 354, but **auxiliary systems
+   ($948M, HHI 683, no supplier >16%) is the open lane**, while propulsion and electric are
+   big but entrenched (GE 35%, Rolls-Royce 43% — teaming targets). 266 of 521 suppliers
+   recur across ≥2 blocks — the established base you'd compete with or team with.
 
-TABLE
------
-Copy / rows / columns:
-  Columns: Clock | $M | Orders | Incumbent | Tier | Route | Notice
-  Representative rows (full set = the 52 on the Recompete Radar tab, soonest clock first):
-    2023-09-30 | 117.8 |  8 | Gravois Aluminum Boats | small craft  | holders-only       | NONE
-    2023-09-30 |  44.0 | 13 | United States Marine   | small craft  | holders-only       | NONE
-    2024-04-03 |  27.5 |  7 | RIBCRAFT USA           | small craft  | holders-only       | NONE
-    2026-03-15 |  16.2 |  1 | Silver Ships           | small craft  | open / standalone  | NONE
-    2026-10-01 |  55.7 |  8 | Silver Ships           | small craft  | holders-only       | NONE
-    2027-01-31 |  98.7 |  1 | NASSCO                 | other small  | open / standalone  | NONE
+5. **Read it honestly.** First-tier (FFATA) subaward reporting is a **floor, not a census**
+   — first-tier only, 6–18 month lag, and under-reported: **Bath Iron Works files <5% of
+   Huntington Ingalls** on the same block, so its chain is essentially dark. And the timing
+   is a **demand-surge forecast, not a bid deadline**.
 
-Purpose:
-  Name the addressable candidates and make two things land: every Notice cell is
-  NONE (these are competitors' vehicles, none advertised), and the turnover is real
-  and dated (clocks in the recent past and near future).
+---
 
-Structure:
-  One row per vehicle, ordered by Clock soonest-first so the overdue rows sit on top.
-  Clock is the FPDS ordering-period end (lastDateToOrder for an IDV, ultimate
-  completion for a standalone). Orders is the re-buy-confidence signal: a deep order
-  history (8, 13) is a strong recurring channel; a single order is a softer bet.
-  Route is read off the vehicle structure (open / multiple-award / holders-only).
+## Supporting evidence
 
-Cell / table treatment:
-  Dark header (blue fill, white text) - the one primary table on the slide. Clock,
-  $M, and Orders right- or center-aligned; Incumbent, Tier, Route left. The Notice
-  column is a single uniform light-gray band (every cell identical "NONE") - the
-  rhetorical device. In the Route column, open / standalone cells take a soft-positive
-  light-blue fill (reachable now); holders-only cells stay no-fill (gated). Horizontal
-  rules only, no vertical borders.
+### The timing engine — the multi-year procurement cadence
 
-Fit behavior:
-  Keep Clock, Incumbent, Route, and Notice visible at all costs - they carry the
-  argument. Drop Tier first, then Orders, if width is tight. Do not add an Obligated-
-  to-date column or a status column; the strip already carries the totals.
+DDG-51 is re-bought as 5-year multi-year procurements, dual-sourced HII + BIW from one
+solicitation each cycle. (Full prime detail — authority, the §7 dollar measures, TAS — is
+in the prime provenance CSV; here it is the backbone that *dates* the supplier waves.)
 
-OBJECT NOTES
-------------
-  - The KPI strip and the table are the same evidence at two grains; the strip floats
-    above with whitespace separating it from the table, not a heavy divider.
-  - The all-NONE band is the punchline - keep it a single continuous gray, identical
-    across rows, so it reads as one block beside named competitors.
-  - Keep the dark-header table as the only filled object family; the route soft-blue
-    cells are the one accent and must not compete with it for weight.
+| Block | Awarded | Prime obligated to date (HII / BIW) | Next event |
+|---|---|---|---|
+| FY13-17 MYP | 2013-06-03 | $3.35B / $4.93B | — |
+| FY18-22 MYP | 2018-09-27 | $6.83B / $5.34B | — |
+| FY23-27 MYP | 2023-08-01 | $6.95B / $5.03B | — |
+| **FY28-32 MYP** | **~2028 (forecast)** | **not yet awarded** | **next sourcing wave** |
 
-SOURCES
--------
-Copy:
-  Sources: USAspending award detail; FPDS per-action records (lastDateToOrder); SAM.gov Contract Opportunities
-```
+Award cadence 2013 → 2018 → 2023 (~5 FY) → next buy **~2028**. The prime route is closed
+(definitive contracts, no on-ramp); the *route in* is to supply a holder.
+
+### The sourcing wave — first-tier subaward $ by block
+
+| Block | Reported first-tier subaward $ | Distinct suppliers |
+|---|--:|--:|
+| FY11 single-ship | $51.7M | 144 |
+| FY13-17 MYP | $942.3M | 320 |
+| FY18-22 MYP | $1,327.2M | 344 |
+| FY23-27 MYP (young, ramping) | $1,144.6M | 89 |
+| **Total** | **$3,465.8M** | **521** |
+
+Each new block re-opens ~$1B of first-tier supplier demand — the FY28-32 wave is the next.
+
+### The supplier base — recurring suppliers (serve ≥2 blocks)
+
+The established base: **266 suppliers** appear on ≥2 blocks (out of 521). These are the
+incumbents you compete with or team with; top by reported $:
+
+| Supplier | Blocks | Reported $ | Ship system |
+|---|--:|--:|---|
+| Rolls-Royce Marine North America | 3 | $384.7M | Propulsion (gas-turbine / mechanical) |
+| General Electric | 3 | $333.1M | Propulsion (LM2500 gas turbines) |
+| Johnson Controls Navy Systems | 3 | $178.0M | Auxiliary (HVAC / climate) |
+| Timken Gears & Services | 3 | $169.2M | Propulsion (main reduction gears) |
+| SOCAIL, LDA | 2 | $151.4M | Auxiliary |
+| Northrop Grumman Systems | 4 | $123.1M | Command, control & surveillance |
+| York International | 2 | $115.4M | Auxiliary (chilled water / AC) |
+| Ellwood National Forge | 2 | $87.9M | Hull / propulsion forgings |
+
+Full roster in `ddg_recurring_suppliers.csv`.
+
+### What the dollars buy — SWBS ship-system map
+
+Subaward dollars mapped to ship work-breakdown system (HII work-item crosswalk; 81% of
+dollars map):
+
+| SWBS major group | Ship system | Reported $ | % of total |
+|---|---|--:|--:|
+| 200 | Propulsion plant | $957.9M | 27.6% |
+| 500 | Auxiliary systems | $947.5M | 27.3% |
+| 300 | Electric plant | $750.8M | 21.7% |
+| 600 | Outfit & furnishings | $62.4M | 1.8% |
+| 400 | Command, control & surveillance | $47.5M | 1.4% |
+| 100 | Hull structure | $24.3M | 0.7% |
+| 700 | Armament | $1.5M | 0.0% |
+| — | unmapped / non-Ingalls (incl. BIW) | $674.0M | 19.5% |
+
+**Propulsion + auxiliary + electric = 76% of mapped dollars** — that's where the supplier
+opportunity concentrates.
+
+### Where and when to enter
+
+**When — the award → wave lag.** Subawards are front-loaded off the prime award, so the
+prime's date-certain contract timing dates the supplier window:
+
+| Years after prime award | Share of first-tier subaward $ | Cumulative |
+|---|--:|--:|
+| year 0 | 26% | 26% |
+| +1 | 16% | 42% |
+| +2 | 15% | 58% |
+| +3 | 11% | 69% |
+| +4 | 10% | 79% |
+
+→ the FY28-32 award (~2028) opens a supplier window **~2028–2031**; the time to be sourced
+is *before* it opens. (Mature blocks FY13-17 + FY18-22; `ddg_subaward_lag_after_award.csv`.)
+
+**Where — concentration by ship system (HHI).** Big *and* fragmented = most enterable;
+big *and* concentrated = teaming target, not break-in:
+
+| Ship system | $M | Suppliers | HHI | Read |
+|---|--:|--:|--:|---|
+| Auxiliary systems | 948 | 90 | 683 | **open lane** — no supplier >16% |
+| Propulsion plant | 958 | 29 | 1,905 | entrenched (GE 35%) — team |
+| Electric plant | 751 | 24 | 2,106 | entrenched (Rolls-Royce 43%) — team |
+| Command, control & surveillance | 48 | 7 | 2,188 | concentrated, small |
+| Armament | 2 | 2 | 6,561 | locked (Lake Shore 78%) |
+
+**Longevity — which seats are sticky.** A subaward has no period of performance, so use the
+count of unique subaward report IDs as a mock PoP, paired with the first→last date span:
+Rolls-Royce (115 report IDs / 139 mo) and Northrop (69 / 138 mo) are deep, sustained seats;
+Timken (8 report IDs but a 125-mo span) shows the count alone understates a few-big-orders
+relationship — so both measures are kept (`ddg_subaward_supplier_mockpop.csv`).
+
+### SAM corroboration & under-reporting
+
+Pulled fresh from **SAM.gov Subaward Reporting** (the FFATA source) and reconciled to the
+workbook — they agree to the dollar — and the same pull quantifies the under-reporting:
+
+| Block | HII reported (SAM) | BIW reported (SAM) | BIW share |
+|---|--:|--:|--:|
+| FY13-17 MYP | $933.4M | $8.9M | 0.9% |
+| FY18-22 MYP | $1,270.1M | $57.1M | 4.3% |
+| FY23-27 MYP | $1,144.6M | $0.0M | 0.0% |
+
+BIW's near-zero is a **reporting artifact, not its real supplier spend** — so the visible
+base is effectively Ingalls'; Bath's chain is dark in FFATA.
+
+### Appropriation, provenance & caveats
+
+- **Prime appropriation:** the blocks fund from **SCN (Shipbuilding & Conversion, Navy,
+  017-1611)** — the multi-year shipbuilding account (prime provenance CSV).
+- **Provenance — field → source:** prime cadence, dollars, dates, TAS → SAM Contract
+  Awards + USAspending (`ddg_myp_recompete_provenance.csv`); first-tier subawards (by block,
+  by supplier, by SWBS, by year) → **SAM Subaward Reporting** corroborated against the
+  Distributed Shipbuilding extract; SWBS via the workbook HII-code→SWBS crosswalk.
+- **Honest caveats:** FFATA subawards are first-tier only, lag 6–18 months, and are
+  under-reported (BIW ≪ HII) → every subaward total is a floor, and the HHI / where-to-enter
+  read is on *reported* dollars. The supplier "recompete" is a **forecastable demand surge
+  on the prime's cadence**, not a date-certain ordering-period end (a multi-year definitive
+  contract records none — unlike slide 03's IDIQ); the **mock PoP (report-ID count) is a
+  proxy**, not a contractual period of performance.
+
+Backing: `research/recompete_cadence_ddg/extracted/` — `ddg_subaward_by_block.csv`,
+`ddg_recurring_suppliers.csv`, `ddg_subaward_by_swbs.csv`, `ddg_subaward_wave_by_year.csv`,
+`ddg_subaward_lag_after_award.csv`, `ddg_subaward_hhi_by_system.csv`,
+`ddg_subaward_supplier_mockpop.csv`, `ddg_subaward_sam_corroboration.csv`, plus the prime
+layer in `ddg_myp_recompete_provenance.csv`. Scripts: `build_ddg_subaward_evidence.py`,
+`build_ddg_subaward_concentration.py`, `pull_ddg_sam_subawards.py`, `build_ddg_provenance.py`.
+
+### Sources
+
+Prime cadence & dollars: SAM.gov Contract Awards (by PIID) + USAspending (/awards,
+/transactions, /awards/funding); multiyear basis 10 U.S.C. 3501 / FAR Subpart 17.1.
+First-tier supplier base: SAM.gov Subaward Reporting (FFATA), corroborated against the
+Distributed Shipbuilding subaward extract; SWBS ship-system crosswalk from the program
+workbook. As of 2026-06-24.

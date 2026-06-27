@@ -1,6 +1,6 @@
 """prime_awards - the in-scope prime contracts (USAspending award detail).
 
-A data-group reference sheet, one row per in-scope prime PIID (12 today), pulled by
+A data-group reference sheet, one row per in-scope prime PIID (13 today), pulled by
 scripts/pull_prime_awards.py from USAspending award detail. It carries the authoritative
 prime period of performance and obligations - the prime fields embedded on the subaward
 rows are per-report snapshots and must not be trusted for the prime timeline.

@@ -1,8 +1,26 @@
-"""outsourced_bc_annual_tam_ref - the self-contained native-chart reference for
-the annual outsourced-BC TAM slide (deck_primary slide 3), for AI agents.
+"""outsourced_bc_annual_tam_ref — deck_primary slide 3 (Outsourced BC Annual TAM).
 
-This is the flattened, single-file version of the staged chart_ref -> layers ->
-data progression. One module, no import chain. It teaches, top to bottom:
+EXHIBIT — annual outsourced-BC TAM FY2022–FY2031, pre/post-OBBBA: a stacked-column
+chart of outsourced vs retained spend per program-year ($B/yr, FY26$), with bar-total
+labels, $-peak callouts, FY axis labels, a 9-key legend, a forecast-framing outline
+layer, a band-commentary table along the bottom, and a per-class
+outsourced-penetration-% strip (DDG-51 / Virginia / Columbia).
+
+CODE MAP (render z-stack: band table → native chart frame → 8 overlay layers):
+  • band table .... _read("slide03_tables.xml") — verbatim band-commentary <a:tbl>
+  • native chart .. CHARTS / _chart_frame() — the real <c:chart> (slide03_chart4.xml)
+                    bundled verbatim via editable_bundled_chart; CHART_NODE / CHART_STYLE /
+                    CHART_SERIES / CHART_POINTS are a read-only SEMANTIC MIRROR of its cache
+  • overlay ....... _overlay() paints OVERLAY_PAINT_ORDER — 7 pinned verbatim layers
+                    (chrome · forecasted_chip · forecast_framing · fy_labels · value_labels ·
+                    dollar_callouts · legend) + penetration, which is DATA-DRIVEN
+  • penetration ... _penetration() regenerates the % strip from CHART_POINTS via templates
+                    (_T_OVAL / _T_LABEL / _T_PILL / _T_HEADER / _T_COLNOTE / _T_FCNOTE)
+                    lifted verbatim from the export — only id/position/text vary; "n/a" auto
+
+This is the self-contained native-chart REFERENCE for the slide — the flattened,
+single-file version of the staged chart_ref -> layers -> data progression. One module,
+no import chain. It teaches, top to bottom:
 
   1. NATIVE CHART, not faked shapes. The chart stays a real <c:chart> part
      (slide03_chart4.xml) with its original binary .xlsb bundled, so "Edit Data"
@@ -22,6 +40,20 @@ Pinned-on-purpose: forecast_framing (80 think-cell shapes) is pure geometry with
 no semantic value - it stays a pinned file forever. To make another layer
 data-driven, copy the penetration pattern below (verbatim template + a data
 model), and verify the regenerated layer's {name,x,y,text} set matches the file.
+
+Hand-authored from the v3 working deck (20260605 Defense Demand Drivers New
+Construction), source slide 3. Annotated to the study convention.
+
+Data refresh (2026-06-26): the DDG-51 FY2028-31 outyear bars were re-pointed to the
+updated TAM workbook's high (compound-ramped) BC-TAM with the new BIW carve-out
+(577.4 / 613.7 / 980.9 / 1051.5 $M, FY26$). Each bar's total ship spend is held
+constant, so only the outsourced/retained split and the penetration mirror move; the
+total-value labels (3.9 / 4.0 / 6.1 / 6.3) are unchanged. Virginia/Columbia outyears
+already tie to the workbook high (Virginia within the deck's ~$2M tolerance, so left
+as-is). Patched in slide03_chart4.xml's numCache (series 0 outsourced / series 1
+retained, idx 24/28/32/36) and the CHART_POINTS mirror; the embedded .xlsb is left
+verbatim (the render reads the cache). The render is therefore NOT byte-identical to
+the prior build for the DDG-51 outyear bars; FY2022-27 and the other layers are.
 """
 from __future__ import annotations
 
@@ -92,16 +124,16 @@ CHART_POINTS = [
     dict(slot=20, year="FY2027", program="ddg51",    outsourced=0.674118, retained=3.497658, total_label="4.2",  penetration="16%"),
     dict(slot=21, year="FY2027", program="virginia", outsourced=2.961918, retained=8.246377, total_label="11.2", penetration="26%"),
     dict(slot=22, year="FY2027", program="columbia", outsourced=1.477665, retained=8.798977, total_label="10.3", penetration="14%"),
-    dict(slot=24, year="FY2028", program="ddg51",    outsourced=0.589914, retained=3.275239, total_label="3.9",  penetration="15%"),
+    dict(slot=24, year="FY2028", program="ddg51",    outsourced=0.577358, retained=3.287795, total_label="3.9",  penetration="15%"),
     dict(slot=25, year="FY2028", program="virginia", outsourced=2.724440, retained=8.108991, total_label="10.8", penetration="25%"),
     dict(slot=26, year="FY2028", program="columbia", outsourced=1.359418, retained=8.372177, total_label="9.7",  penetration="14%"),
-    dict(slot=28, year="FY2029", program="ddg51",    outsourced=0.644852, retained=3.312022, total_label="4.0",  penetration="16%"),
+    dict(slot=28, year="FY2029", program="ddg51",    outsourced=0.613744, retained=3.343129, total_label="4.0",  penetration="16%"),
     dict(slot=29, year="FY2029", program="virginia", outsourced=2.801472, retained=7.631048, total_label="10.4", penetration="27%"),
     dict(slot=30, year="FY2029", program="columbia", outsourced=1.452728, retained=8.286610, total_label="9.7",  penetration="15%"),
-    dict(slot=32, year="FY2030", program="ddg51",    outsourced=1.058742, retained=5.025357, total_label="6.1",  penetration="17%"),
+    dict(slot=32, year="FY2030", program="ddg51",    outsourced=0.980941, retained=5.103158, total_label="6.1",  penetration="16%"),
     dict(slot=33, year="FY2030", program="virginia", outsourced=2.689841, retained=6.691043, total_label="9.4",  penetration="29%"),
     dict(slot=34, year="FY2030", program="columbia", outsourced=1.529927, retained=8.075794, total_label="9.6",  penetration="16%"),
-    dict(slot=36, year="FY2031", program="ddg51",    outsourced=1.164647, retained=5.103149, total_label="6.3",  penetration="19%"),
+    dict(slot=36, year="FY2031", program="ddg51",    outsourced=1.051530, retained=5.216266, total_label="6.3",  penetration="17%"),
     dict(slot=37, year="FY2031", program="virginia", outsourced=2.919313, retained=6.615494, total_label="9.5",  penetration="31%"),
     dict(slot=38, year="FY2031", program="columbia", outsourced=1.636711, retained=7.987063, total_label="9.6",  penetration="17%"),
 ]

@@ -88,6 +88,21 @@ HOUSE_POS = {
 }
 TOL = 91440   # 0.1 in
 
+# House slideLayouts keyed by their <p:cSld name>. A source slide's own layout is
+# matched to the house layout of the SAME NAME, so a "50% Block + Title", "Cover 1",
+# "Section Divider", or "Glossary" source slide gets the house equivalent instead of
+# being flattened onto the body layout. (Source decks reference layout NUMBERS that
+# don't exist in infra/template -- e.g. slideLayout12/13 -- but the layout NAMES line
+# up.) A name with no house match falls back to the --layout default (body slide).
+HOUSE_LAYOUTS = {
+    "Cover 1": "slideLayout1",
+    "Section Divider": "slideLayout2",
+    "50% Block + Title": "slideLayout3",
+    "Light Blank": "slideLayout4",
+    "Blank": "slideLayout5",
+    "Glossary": "slideLayout6",
+}
+
 # fields a same-style cluster is allowed to vary on, in tuple order
 VARYING_ORDER = ["x", "y", "cx", "cy", "fill", "line_color", "text", "geom_adj"]
 VAR_NAMES = {"x": "_x", "y": "_y", "cx": "_cx", "cy": "_cy", "fill": "_fill",
@@ -222,18 +237,44 @@ def _lnref_color(el, theme):
     return color_lit(color_hex(ref, theme))
 
 
+def _parse_pattfill(pat, theme):
+    """<a:pattFill> -> {"prst", "fg", "bg"} for text_box(pattern_fill=...). fg/bg
+    come back as a "scheme:NAME" ref (kept symbolic, e.g. tx1/bg1, so the swatch
+    tracks the theme like the source) or a baked hex; an absent colour is omitted
+    so text_box falls back to its tx1/bg1 default."""
+    def _clr(tagname):
+        wrap = pat.find(q(A, tagname))
+        if wrap is None:
+            return None
+        sc = wrap.find(q(A, "schemeClr"))
+        if sc is not None:
+            return "scheme:" + sc.get("val")
+        sr = wrap.find(q(A, "srgbClr"))
+        return color_hex(sr, theme) if sr is not None else None
+    d = {"prst": pat.get("prst", "pct50")}
+    fg, bg = _clr("fgClr"), _clr("bgClr")
+    if fg is not None:
+        d["fg"] = fg
+    if bg is not None:
+        d["bg"] = bg
+    return d
+
+
 def py_str(s: str) -> str:
-    return (s or "").replace("\\", "\\\\").replace('"', '\\"')
+    return ((s or "").replace("\\", "\\\\").replace('"', '\\"')
+            .replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t"))
 
 
 # ── parse: source element -> record dict ──────────────────────────────────────
 def parse_run(rPr, text, theme):
-    d = {"text": text or "", "size": None, "bold": False, "italic": False, "color": None}
+    d = {"text": text or "", "size": None, "bold": False, "italic": False,
+         "underline": False, "color": None}
     if rPr is not None:
         if rPr.get("sz"):
             d["size"] = int(rPr.get("sz"))
         d["bold"] = rPr.get("b") == "1"
         d["italic"] = rPr.get("i") == "1"
+        d["underline"] = rPr.get("u") not in (None, "none")
         d["color"] = color_lit(color_hex(_solid_child(rPr), theme))
     return d
 
@@ -249,8 +290,8 @@ def parse_para(p, theme):
             runs.append({"break": True})
     pPr = p.find(q(A, "pPr"))
     pa = {"align": None, "level": 0, "marL": None, "indent": None,
-          "space_after": None, "line_spacing": None, "bullet": False,
-          "end_size": None, "runs": runs}
+          "space_after": None, "space_before": None, "line_spacing": None, "bullet": False,
+          "bullet_char": None, "end_size": None, "runs": runs}
     # <a:endParaRPr> drives an EMPTY paragraph's height. think-cell collapses
     # spacer rows/cols by giving their empty cells a tiny font (e.g. sz=100 = 1pt);
     # capture it so empty cells reproduce that height instead of the 10pt default.
@@ -262,11 +303,19 @@ def parse_para(p, theme):
         pa["level"] = int(pPr.get("lvl")) if pPr.get("lvl") else 0
         pa["marL"] = int(pPr.get("marL")) if pPr.get("marL") is not None else None
         pa["indent"] = int(pPr.get("indent")) if pPr.get("indent") is not None else None
+        sb = pPr.find(q(A, "spcBef") + "/" + q(A, "spcPts"))
+        pa["space_before"] = int(sb.get("val")) if sb is not None else None
         sa = pPr.find(q(A, "spcAft") + "/" + q(A, "spcPts"))
         pa["space_after"] = int(sa.get("val")) if sa is not None else None
         ls = pPr.find(q(A, "lnSpc") + "/" + q(A, "spcPct"))
         pa["line_spacing"] = int(ls.get("val")) if ls is not None else None
-        pa["bullet"] = pPr.find(q(A, "buChar")) is not None
+        # bullet: <a:buChar char="•"/> (or "-" sub-bullet) -> that glyph;
+        # <a:buAutoNum> -> "auto" (numbered); <a:buNone>/absent -> no bullet.
+        buchar = pPr.find(q(A, "buChar"))
+        if buchar is not None:
+            pa["bullet"], pa["bullet_char"] = True, buchar.get("char", "•")
+        elif pPr.find(q(A, "buAutoNum")) is not None:
+            pa["bullet"], pa["bullet_char"] = True, "auto"
     return pa
 
 
@@ -281,13 +330,14 @@ def parse_sp(el, theme):
     if xfrm is None:
         rec["raw"] = "no explicit xfrm (layout placeholder)"
         return rec
-    for exotic in ("gradFill", "pattFill", "blipFill"):
+    # gradient / picture fills have no param form -> verbatim. pattFill and
+    # custGeom DO: a pattFill becomes text_box(pattern_fill=...), a custGeom
+    # becomes custom_geometry() (finalized after the text body is parsed, below).
+    for exotic in ("gradFill", "blipFill"):
         if spPr.find(q(A, exotic)) is not None:
             rec["raw"] = exotic
             return rec
-    if spPr.find(q(A, "custGeom")) is not None:
-        rec["raw"] = "custGeom"
-        return rec
+    custgeom_el = spPr.find(q(A, "custGeom"))
     off, ext = xfrm.find(q(A, "off")), xfrm.find(q(A, "ext"))
     rec["x"], rec["y"] = int(off.get("x")), int(off.get("y"))
     rec["cx"], rec["cy"] = int(ext.get("cx")), int(ext.get("cy"))
@@ -296,6 +346,9 @@ def parse_sp(el, theme):
     rec["prst"] = pg.get("prst") if pg is not None else "rect"
     rec["geom_adj"] = ({gd.get("name"): gd.get("fmla") for gd in pg.findall(q(A, "avLst") + "/" + q(A, "gd"))}
                        if pg is not None else {})
+    # pattern fill (think-cell hatch swatch) -> a pattern_fill= param on text_box
+    pat = spPr.find(q(A, "pattFill"))
+    rec["pattern_fill"] = _parse_pattfill(pat, theme) if pat is not None else None
     rec["fill"] = "None" if spPr.find(q(A, "noFill")) is not None \
         else (color_lit(color_hex(_solid_child(spPr), theme)) or "None")
     # border: explicit ln colour, else inherit from <p:style><a:lnRef> (think-cell callouts)
@@ -323,6 +376,9 @@ def parse_sp(el, theme):
             if lc is not None:
                 rec["line_color"] = lc
                 rec["line_width"] = theme.get("__lnw__", {}).get(int(lnRef.get("idx")))
+    # shadow / glow (think-cell callouts) -> verbatim effectLst on text_box(effects=)
+    eff = spPr.find(q(A, "effectLst"))
+    rec["effects"] = _elem_inner_xml(eff) if eff is not None else None
     txBody = el.find(q(P, "txBody"))
     bodyPr = txBody.find(q(A, "bodyPr")) if txBody is not None else None
     rec["anchor"], rec["wrap"], rec["ins"] = "t", "square", {}
@@ -333,6 +389,16 @@ def parse_sp(el, theme):
             if bodyPr.get(attr) is not None:
                 rec["ins"][kw] = int(bodyPr.get(attr))
     rec["paras"] = [parse_para(p, theme) for p in txBody.findall(q(A, "p"))] if txBody is not None else []
+    # custom geometry: a freeform <a:custGeom> path. Text-free -> custom_geometry()
+    # (the path stays verbatim; position / fill / line become params). With text we
+    # can't reposition, or combined with a pattern fill, keep the whole shape raw.
+    if custgeom_el is not None:
+        has_text = any((r.get("text") or "").strip()
+                       for p in rec["paras"] for r in p["runs"])
+        if has_text or rec["pattern_fill"] is not None:
+            rec["raw"] = "custGeom"
+        else:
+            rec["custgeom"] = _elem_inner_xml(custgeom_el)
     return rec
 
 
@@ -439,6 +505,8 @@ def render_run(d, text_override=None):
         parts.append("bold=True")
     if d["italic"]:
         parts.append("italic=True")
+    if d.get("underline"):
+        parts.append("underline=True")
     if d["color"] is not None:
         parts.append(f"color={d['color']}")
     parts.append("font=FONT")
@@ -463,6 +531,8 @@ def render_para(pa, text_override=None):
         kw.append(f"mar_l={pa['marL']}")
     if pa["indent"] is not None:
         kw.append(f"indent={pa['indent']}")
+    if pa.get("space_before") is not None:
+        kw.append(f"space_before={pa['space_before']}")
     if pa["space_after"] is not None:
         kw.append(f"space_after={pa['space_after']}")
     # deck_core paragraph() defaults to 115% (LNSPC_BODY house style); a ported text
@@ -473,6 +543,9 @@ def render_para(pa, text_override=None):
         kw.append(f"line_spacing={ls}")
     if pa["bullet"]:
         kw.append("bullet=True")
+        bc = pa.get("bullet_char")
+        if bc and bc != "•":
+            kw.append(f'bullet_char="{py_str(bc)}"')
     return f"paragraph({runs_str}{(', ' + ', '.join(kw)) if kw else ''})"
 
 
@@ -494,6 +567,14 @@ def render_sp(rec, id_expr, varmap=None):
             v("x", coordlit(rec["x"])), v("y", coordlit(rec["y"])),
             v("cx", coordlit(rec["cx"])), v("cy", coordlit(rec["cy"])), paras_str]
     kw = [f"fill={v('fill', rec['fill'])}", f"line_color={v('line_color', rec['line_color'])}"]
+    if rec.get("pattern_fill"):
+        pf = rec["pattern_fill"]
+        pf_items = [f'"prst": "{pf["prst"]}"']
+        if "fg" in pf:
+            pf_items.append(f'"fg": "{pf["fg"]}"')
+        if "bg" in pf:
+            pf_items.append(f'"bg": "{pf["bg"]}"')
+        kw.append("pattern_fill={" + ", ".join(pf_items) + "}")
     if rec["line_width"] is not None and rec["line_width"] != 12700:
         kw.append(f"line_width={rec['line_width']}")
     if rec["dashed"]:
@@ -512,6 +593,8 @@ def render_sp(rec, id_expr, varmap=None):
         kw.append(f"{k}={val}")
     if rec.get("rot"):
         kw.append(f"rot={rec['rot']}")
+    if rec.get("effects"):
+        kw.append("effects=" + '"' + rec["effects"].replace("\\", "\\\\").replace('"', '\\"') + '"')
     return f"text_box({', '.join(args)}, {', '.join(kw)})"
 
 
@@ -563,6 +646,8 @@ def render_trun(r):
         a.append("bold=True")
     if r["italic"]:
         a.append("italic=True")
+    if r.get("underline"):
+        a.append("underline=True")
     if r["color"] is not None:
         a.append(f"color={r['color']}")
     a.append("font=FONT")
@@ -571,38 +656,76 @@ def render_trun(r):
 
 def render_tpara(p):
     runs = ", ".join(render_trun(r) for r in p["runs"])
-    al = f', align="{p["align"]}"' if p["align"] and p["align"] != "l" else ""
-    return f"tpara([{runs}]{al})"
+    kw = []
+    if p["align"] and p["align"] != "l":
+        kw.append(f'align="{p["align"]}"')
+    if p.get("bullet"):
+        kw.append("bullet=True")
+        bc = p.get("bullet_char")
+        if bc and bc != "•":
+            kw.append(f'bullet_char="{py_str(bc)}"')
+    if p.get("level"):
+        kw.append(f"level={p['level']}")
+    if p.get("marL") is not None:
+        kw.append(f"mar_l={p['marL']}")
+    if p.get("indent") is not None:
+        kw.append(f"indent={p['indent']}")
+    if p.get("line_spacing") is not None and p["line_spacing"] != 100000:
+        kw.append(f"line_spacing={p['line_spacing']}")
+    if p.get("space_before") is not None:
+        kw.append(f"space_before={p['space_before']}")
+    if p.get("space_after") is not None:
+        kw.append(f"space_after={p['space_after']}")
+    return f"tpara([{runs}]{(', ' + ', '.join(kw)) if kw else ''})"
 
 
-def _border_lit(b):
+def _edge_lit(b):
+    """A border edge -> edge(...) literal; the "none" sentinel -> None so the caller drops it
+    (an omitted side renders <a:noFill/>, identical to an explicit "none")."""
     if b == "none":
-        return '"none"'
-    return '{"color": ' + color_lit(b["color"]) + f', "width": {b["width"]}' + "}"
+        return None
+    w = b["width"]
+    return f"edge({color_lit(b['color'])}" + (f", {w}" if w != 12700 else "") + ")"
+
+
+def _border_kw(borders):
+    """L/R/T/B=edge(...) kwargs for the drawn sides only (omitted sides render no-fill)."""
+    out = []
+    for side in ("L", "R", "T", "B"):
+        v = (borders or {}).get(side)
+        if v is None:
+            continue
+        lit = _edge_lit(v)
+        if lit is not None:
+            out.append(f"{side}={lit}")
+    return out
+
+
+def _inset_kw(c):
+    """Insets -> ['**PAD'] when all four are the source's 60960, [] when all are the engine
+    default 45720, else explicit l_ins=.. for each non-default side."""
+    vals = {k: (c.get(k) if c.get(k) is not None else 45720)
+            for k in ("l_ins", "r_ins", "t_ins", "b_ins")}
+    if all(v == 60960 for v in vals.values()):
+        return ["**PAD"]
+    return [f"{k}={v}" for k, v in vals.items() if v != 45720]
 
 
 def render_cell(c):
-    kw = []
-    if c["fill"] and c["fill"] != "None":
-        kw.append(f"fill={c['fill']}")
+    fill_kw = [f"fill={c['fill']}"] if (c["fill"] and c["fill"] != "None") else []
+    span_kw = []
     if c["grid_span"] > 1:
-        kw.append(f"grid_span={c['grid_span']}")
+        span_kw.append(f"span={c['grid_span']}")
     if c["row_span"] > 1:
-        kw.append(f"row_span={c['row_span']}")
-    if c["anchor"] and c["anchor"] != "ctr":
-        kw.append(f'anchor="{c["anchor"]}"')
-    if c["l_ins"] is not None and c["l_ins"] != 45720:
-        kw.append(f"l_ins={c['l_ins']}")
-    if c["r_ins"] is not None and c["r_ins"] != 45720:
-        kw.append(f"r_ins={c['r_ins']}")
-    if c.get("t_ins") is not None and c["t_ins"] != 45720:
-        kw.append(f"t_ins={c['t_ins']}")
-    if c.get("b_ins") is not None and c["b_ins"] != 45720:
-        kw.append(f"b_ins={c['b_ins']}")
-    if c["borders"]:
-        kw.append("borders={" + ", ".join(f'"{k}": {_border_lit(v)}' for k, v in c["borders"].items()) + "}")
+        span_kw.append(f"rowspan={c['row_span']}")
+    anchor_kw = [f'anchor="{c["anchor"]}"'] if (c["anchor"] and c["anchor"] != "ctr") else []
+    mech = fill_kw + anchor_kw + span_kw + _inset_kw(c) + _border_kw(c["borders"])
     paras = c["paras"]
-    if len(paras) <= 1 and (not paras or len(paras[0]["runs"]) <= 1):   # tcell shortcut
+    # cell() is a single-run shortcut with no bullet/indent support, so a cell whose lone
+    # paragraph is bulleted or hanging-indented must take the rich rcell() path.
+    plain = (not paras) or not (paras[0].get("bullet") or paras[0].get("marL") is not None
+                                or paras[0].get("indent") is not None or paras[0].get("level"))
+    if plain and len(paras) <= 1 and (not paras or len(paras[0]["runs"]) <= 1):   # cell() shortcut
         run = paras[0]["runs"][0] if (paras and paras[0]["runs"]) else None
         a = [f'"{py_str(run["text"]) if run else ""}"']
         if run:
@@ -620,9 +743,9 @@ def render_cell(c):
             a.append(f"size={sizelit(paras[0]['end_size'])}")
         if paras and paras[0]["align"] and paras[0]["align"] != "l":
             a.append(f'align="{paras[0]["align"]}"')
-        return f"tcell({', '.join(a + kw)})"
+        return f"cell({', '.join(a + mech)})"
     paras_str = ", ".join(render_tpara(p) for p in paras)
-    return f"tcell_rich([{paras_str}]{(', ' + ', '.join(kw)) if kw else ''})"
+    return f"rcell([{paras_str}]{(', ' + ', '.join(mech)) if mech else ''})"
 
 
 def render_table(rec, id_expr):
@@ -648,14 +771,28 @@ def _strip_cruft(elem):
     return elem
 
 
+def _strip_ns_decls(xml: str) -> str:
+    """Drop the xmlns:a/p/r/c declarations ElementTree adds when serializing a
+    subtree standalone — they are already declared on the slide root the string
+    is embedded into."""
+    for decl in (f' xmlns:a="{A}"', f' xmlns:p="{P}"', f' xmlns:r="{R}"', f' xmlns:c="{C}"'):
+        xml = xml.replace(decl, "")
+    return xml
+
+
+def _elem_inner_xml(elem) -> str:
+    """An element serialized to namespace-prefixed XML with the xmlns
+    declarations stripped — used to lift a verbatim <a:custGeom> path into a
+    module constant (custom_geometry() supplies the surrounding <p:sp>)."""
+    return _strip_ns_decls(ET.tostring(elem, encoding="unicode"))
+
+
 def raw_literal(elem, new_id: int) -> str:
     _strip_cruft(elem)
     nv = elem.find(".//" + q(P, "cNvPr"))
     if nv is not None:
         nv.set("id", str(new_id))
-    xml = ET.tostring(elem, encoding="unicode")
-    for decl in (f' xmlns:a="{A}"', f' xmlns:p="{P}"', f' xmlns:r="{R}"', f' xmlns:c="{C}"'):
-        xml = xml.replace(decl, "")
+    xml = _strip_ns_decls(ET.tostring(elem, encoding="unicode"))
     return '"' + xml.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
@@ -717,7 +854,11 @@ def detect_chrome(items):
 
 
 def is_simple(rec):
+    # pattern_fill / custgeom shapes carry a fill or geometry the cluster machinery
+    # (which only varies x/y/cx/cy/fill/line/text/geom_adj) can't reproduce, so keep
+    # them standalone — they emit text_box(pattern_fill=)/custom_geometry() instead.
     return (rec["type"] == "sp" and not rec["raw"] and not rec["role"]
+            and not rec.get("pattern_fill") and not rec.get("custgeom")
             and len(rec["paras"]) <= 1
             and (not rec["paras"] or len(rec["paras"][0]["runs"]) <= 1))
 
@@ -763,22 +904,69 @@ def detect_clusters(items):
     return clusters
 
 
+# Affordance vocabulary: map a style-cluster to a reusable, semantic VARIABLE name
+# (what the shapes are/do on the canvas). These names never enter the produced XML —
+# they only name the Python data table + its anchor constants — so re-conversion can
+# emit them freely without changing one rendered byte. The shape-name string
+# (cNvPr/@name) is chosen separately in cluster_identity and kept byte-faithful.
+_MATH_PRST = re.compile(r"^math(?:Equal|Plus|Minus|Multiply|Divide|NotEqual)$")
+_YEAR_TICK = re.compile(r"^(?:(?:19|20)\d\d|FY ?\d{2}(?:\d\d)?)$")
+_NUMERIC_LBL = re.compile(r"^[~<>]?\$?-?\d[\d,. ]*%?$")
+
+
+def affordance_name(lead, texts):
+    """Best-effort affordance classification -> (table var name, anchor prefix).
+    Heuristic and intentionally conservative: it nails the high-confidence cases
+    (operators, callouts, chevrons, rings, year ticks, legend keys, numeric data
+    labels, filled flow nodes) and otherwise falls back to a generic _LABELS /
+    _GROUP that a human specializes. VARIABLE names only -- never the shape string."""
+    prst = lead.get("prst") or "rect"
+    filled = lead.get("fill", "None") != "None"
+    ne = [(t or "").strip() for t in texts if (t or "").strip()]
+    empty = not ne
+    if _MATH_PRST.match(prst):                       # = + x / glyphs (the old "LegendSwatch" mislabel)
+        return "_OPERATOR_GLYPHS", "OP"
+    if "Callout" in prst:                            # wedgeRectCallout, borderCallout, cloudCallout
+        return "_CALLOUTS", "CALLOUT"
+    if prst in ("chevron", "homePlate"):             # value-chain stage headers
+        return "_STAGE_HEADERS", "STAGE"
+    if prst == "ellipse" and empty and not filled:   # empty outline rings emphasizing chart numbers
+        return "_HIGHLIGHT_RINGS", "RING"
+    if ne and not filled and all(_YEAR_TICK.match(t) for t in ne):
+        return "_CATEGORY_TICK_LABELS", "TICK"       # year / FY ticks under a chart axis
+    if empty and filled:                             # filled, textless swatches/chips
+        return "_LEGEND_KEYS", "KEY"
+    if ne and all(_NUMERIC_LBL.match(t) for t in ne):
+        return "_DATA_LABELS", "DLBL"                # numeric values riding marks (filled chips ok)
+    if filled and ne:                                # filled boxes carrying text
+        return "_FLOW_NODES", "NODE"
+    if ne and not filled:                            # no-fill captions -> human specializes the role
+        return "_LABELS", "LBL"
+    return "_GROUP", "G"
+
+
 def cluster_identity(items, cl, used):
-    """Infer a cluster's role -> (data-table name, const-anchor prefix, shape name)."""
+    """Infer a cluster's identity -> (data-table var name, const-anchor prefix,
+    shape-name string). The shape-name string (sn) keeps the ORIGINAL heuristic so
+    cNvPr/@name -- and thus the produced XML -- stays byte-identical to prior output;
+    the table var + anchor prefix take the affordance vocabulary (variables only)."""
     texts = [_member_text(items[i]) for i in cl["idxs"]]
     lead = items[cl["leader"]]
+    # shape-name string (cNvPr/@name) -- UNCHANGED logic; XML-bearing, do not alter
     if lead["prst"] == "wedgeRectCallout":
-        base, pfx, sn = "_CALLOUTS", "CALLOUT", "Callout"
+        sn = "Callout"
     elif all(re.fullmatch(r"(19|20)\d\d", (t or "").strip()) for t in texts):
-        base, pfx, sn = "_AXIS_YEARS", "AXIS", "YearLabel"
+        sn = "YearLabel"
     elif all((t or "").strip() == "" for t in texts) and lead["fill"] != "None":
-        base, pfx, sn = "_LEGEND_SWATCHES", "SW", "LegendSwatch"
+        sn = "LegendSwatch"
     elif all(re.fullmatch(r"~?\d{1,3}%?", (t or "").strip()) for t in texts if t):
-        base, pfx, sn = "_VALUE_LABELS", "VAL", "ValueLabel"
+        sn = "ValueLabel"
     elif all((t or "").strip() for t in texts):
-        base, pfx, sn = "_LABELS", "LBL", "Label"
+        sn = "Label"
     else:
-        base, pfx, sn = "_GROUP", "G", "Shape"
+        sn = "Shape"
+    # affordance VARIABLE name + anchor prefix -- semantic; never in XML
+    base, pfx = affordance_name(lead, texts)
     name, k = base, 2
     while name in used:
         name, k = f"{base}{k}", k + 1
@@ -805,6 +993,26 @@ def render_value(rec, field):
 def slide_rels(z, slide_no):
     root = ET.fromstring(z.read(f"ppt/slides/_rels/slide{slide_no}.xml.rels"))
     return {r.get("Id"): r.get("Target") for r in root}
+
+
+def source_layout_name(z, slide_no):
+    """The <p:cSld name> of the slideLayout this source slide references (e.g.
+    'Light Blank', '50% Block + Title'), or None. Used to pick the matching house
+    layout by name rather than forcing every slide onto the body layout."""
+    try:
+        rels = ET.fromstring(z.read(f"ppt/slides/_rels/slide{slide_no}.xml.rels"))
+    except KeyError:
+        return None
+    tgt = next((r.get("Target") for r in rels
+                if (r.get("Type") or "").endswith("/slideLayout")), None)
+    if not tgt:
+        return None
+    layout_part = "ppt/" + tgt.split("../", 1)[-1]
+    try:
+        csld = ET.fromstring(z.read(layout_part)).find(q(P, "cSld"))
+    except KeyError:
+        return None
+    return csld.get("name") if csld is not None else None
 
 
 def chart_xlsb(z, chart_target):
@@ -963,17 +1171,71 @@ def flatten_group(grp, theme, rels, notes, parent_tx=None):
     return out
 
 
+def derive_provenance(z, src_pptx, deck_name_override=None):
+    """(deck_name, date_str) for the module docstring. Source decks are named
+    YYYYMMDD_<name>_<version>.pptx, so the deck name comes from the filename (date
+    prefix + trailing version tag stripped, underscores -> spaces) and the date is
+    that leading YYYYMMDD. An explicit override wins; if the filename yields no
+    name, fall back to docProps/core.xml <dc:title>. (Replaces the old hardcoded
+    "Commercial Strategy deck" that mislabeled every ported module — including the
+    Navy ones.)"""
+    DC = "http://purl.org/dc/elements/1.1/"
+    stem = Path(src_pptx).stem
+    m = re.match(r"\s*(\d{8})[_\s-]+(.*)$", stem)
+    date_str = m.group(1) if m else None
+    if deck_name_override and deck_name_override.strip():
+        return deck_name_override.strip(), date_str
+    rest = m.group(2) if m else stem
+    rest = re.sub(r"[_\s-]+v(?:\d[\d.]*|[A-Z])\s*$", "", rest)   # drop _vS / _v2.1 / _v3
+    name = rest.replace("_", " ").strip()
+    if not name:                                # filename gave nothing -> core.xml title
+        try:
+            core = ET.fromstring(z.read("docProps/core.xml"))
+            t = core.find(q(DC, "title"))
+            if t is not None and (t.text or "").strip():
+                name = t.text.strip()
+        except KeyError:
+            pass
+    return (name or stem), date_str
+
+
+HANDPOLISH_MARKER = "HAND-POLISHED"   # modules carrying this sentinel are NEVER overwritten
+
+
 def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="inches",
-            images_dir=None):
+            images_dir=None, deck_name=None, force=False):
     global _UNITS
     _UNITS = units
     out_path, src_dir = Path(out_path), Path(src_dir)
+    # Guardrail: never silently clobber an existing module (fail fast, before any work).
+    if out_path.exists():
+        if HANDPOLISH_MARKER in out_path.read_text(encoding="utf-8"):
+            raise SystemExit(
+                f"refusing to overwrite {out_path}: it is HAND-POLISHED (contains the "
+                f"'{HANDPOLISH_MARKER}' sentinel). Re-converting would clobber manual edits "
+                f"(affordance names, local_meaning, merges, the table kit). --force does NOT "
+                f"override this; delete the file deliberately or pick a different --out.")
+        if not force:
+            raise SystemExit(
+                f"refusing to overwrite existing {out_path}: pass --force to overwrite, "
+                f"or pick a new --out path. (Never point --out at the curated slides/ dir.)")
     src_dir.mkdir(parents=True, exist_ok=True)
     images_dir = Path(images_dir) if images_dir else out_path.parent / "images"
     images_dir.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(src_pptx) as z:
         theme = build_theme_map(z)
+        deck_name, deck_date = derive_provenance(z, src_pptx, deck_name)
         rels = slide_rels(z, slide_no)
+        # Pick the house layout whose name matches the source slide's layout (so a
+        # cover/divider/50%-block/glossary slide gets its house base, not the body
+        # one). Unmatched names keep the --layout default.
+        src_layout = (source_layout_name(z, slide_no) or "").strip()
+        mapped_layout = HOUSE_LAYOUTS.get(src_layout)
+        layout_note = None
+        if mapped_layout and mapped_layout != layout:
+            layout_note = (f"layout: source uses {src_layout!r} -> house {mapped_layout} "
+                           f"(was --layout {layout})")
+            layout = mapped_layout
         root = ET.fromstring(z.read(f"ppt/slides/slide{slide_no}.xml"))
         spTree = root.find(q(P, "cSld") + "/" + q(P, "spTree"))
 
@@ -1052,7 +1314,7 @@ def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="i
                 images.append({"rId": rid, "file": new_name})
             rec["rId"], rec["file"] = tgt_to_img[tgt]
 
-        notes = group_notes + detect_chrome(items)
+        notes = ([layout_note] if layout_note else []) + group_notes + detect_chrome(items)
         clusters = detect_clusters(items)
 
     leader_of = {cl["leader"]: cl for cl in clusters}
@@ -1102,9 +1364,29 @@ def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="i
         return {f: global_alias[rec[f]] for f in ("x", "y", "cx", "cy")
                 if isinstance(rec.get(f), int) and rec[f] in global_alias}
 
+    # ── custom-geometry constants: dedup identical <a:custGeom> paths into one ──
+    # module constant (e.g. freight_charges' 5 icon shapes = 2 unique geometries).
+    geom_consts = {}          # geom xml -> constant name (_GEOM0, _GEOM1, ...)
+    geom_meta = {}            # constant name -> [sample source shape name, count]
+    for rec in items:
+        g = rec.get("custgeom")
+        if not g:
+            continue
+        if g not in geom_consts:
+            cn = f"_GEOM{len(geom_consts)}"
+            geom_consts[g] = cn
+            geom_meta[cn] = [rec.get("name", "Shape"), 0]
+        geom_meta[geom_consts[g]][1] += 1
+    geom_defs = []
+    for g, cn in geom_consts.items():
+        src_name, cnt = geom_meta[cn]
+        lit = '"' + g.replace("\\", "\\\\").replace('"', '\\"') + '"'
+        times = f" x{cnt}" if cnt > 1 else ""
+        geom_defs.append(f'{cn} = {lit}   # source: "{py_str(src_name)}"{times}')
+
     data_defs, body = [], []
     stats = {"text_box": 0, "connector": 0, "chart": 0, "table": 0, "picture": 0, "raw": 0,
-             "dropped": 0, "fld": 0, "clusters": 0, "chrome": 0, "looped": 0}
+             "dropped": 0, "fld": 0, "clusters": 0, "chrome": 0, "looped": 0, "custgeom": 0}
     raw_id = 2000
     for i, rec in enumerate(items):
         if i in leader_of:
@@ -1114,6 +1396,13 @@ def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="i
             stats["looped"] += len(cl["idxs"])
             stats["fld"] += sum(len(items[j]["el"].findall(".//" + q(A, "fld"))) for j in cl["idxs"])
             keycmt = ", ".join(FIELD_LABEL[f] for f in fields)
+            # local_meaning slot: a human fills in the slide-specific read. The converter
+            # seeds a TODO + sample text (it knows the affordance, not the slide's meaning).
+            _lm_samples = [t for t in (_member_text(items[j]).strip() for j in cl["idxs"]) if t][:3]
+            _lm = "# local_meaning: TODO - " + cl["table"].strip("_").lower().replace("_", " ")
+            if _lm_samples:
+                _lm += "; sample: " + ", ".join(_lm_samples)
+            data_defs.append(_lm)
             data_defs.append(f"{cl['table']} = [    # ({keycmt}) x{len(cl['idxs'])}")
             for j in cl["idxs"]:
                 vals = ", ".join(render_value(items[j], f) for f in fields)
@@ -1171,17 +1460,35 @@ def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="i
                 body.append(f"    out.append({raw_literal(rec['el'], raw_id)})")
                 raw_id += 1
                 stats["raw"] += 1
+            elif rec.get("custgeom"):
+                cn = geom_consts[rec["custgeom"]]
+                kw = ""
+                if rec["fill"] != "None":
+                    kw += f", fill={rec['fill']}"
+                if rec["line_color"] != '"none"':
+                    kw += f", line_color={rec['line_color']}"
+                    if rec["line_width"] not in (None, 12700):
+                        kw += f", line_width={rec['line_width']}"
+                if rec.get("rot"):
+                    kw += f", rot={rec['rot']}"
+                body.append('    # custom-geometry icon: verbatim <a:custGeom> path, pos/fill/line as params')
+                body.append(f'    out.append(custom_geometry(n(), "{py_str(rec["name"])}", '
+                            f'{coordlit(rec["x"])}, {coordlit(rec["y"])}, '
+                            f'{coordlit(rec["cx"])}, {coordlit(rec["cy"])}, {cn}{kw}))')
+                stats["custgeom"] += 1
             else:
                 body.append(f"    out.append({render_sp(rec, 'n()', coord_map_for(rec))})")
                 stats["text_box"] += 1
 
     module = build_module_text(module_name, slide_no, layout, chart_assets, images,
-                               anchor_defs, data_defs, body, stats, notes)
+                               anchor_defs, data_defs, geom_defs, body, stats, notes,
+                               deck_name, deck_date)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(module, encoding="utf-8")
     print(f"wrote {out_path}")
     print(f"  text_box={stats['text_box']} connector={stats['connector']} chart={stats['chart']} "
-          f"table={stats['table']} picture={stats['picture']} raw={stats['raw']} dropped={stats['dropped']} frozen_fields={stats['fld']}")
+          f"table={stats['table']} picture={stats['picture']} custom_geometry={stats['custgeom']} "
+          f"raw={stats['raw']} dropped={stats['dropped']} frozen_fields={stats['fld']}")
     print(f"  chrome builders={stats['chrome']} | clusters={stats['clusters']} "
           f"collapsing {stats['looped']} shapes into loops")
     for nt in notes:
@@ -1190,7 +1497,8 @@ def convert(src_pptx, slide_no, out_path, src_dir, module_name, layout, units="i
 
 def _imports(text, chart_syms=()):
     prims = ["slide"]
-    for nm in ("run", "paragraph", "text_box", "connector", "picture", "line_break",
+    for nm in ("run", "paragraph", "text_box", "custom_geometry", "connector",
+               "picture", "line_break",
                "table", "trow", "tcell", "tcell_rich", "tpara", "trun", "tbreak"):
         if re.search(rf"\b{nm}\(", text):
             prims.append(nm)
@@ -1245,7 +1553,37 @@ def _format_chart_data(var, data):
     return "\n".join(out)
 
 
-def build_module_text(module_name, slide_no, layout, chart_assets, images, anchor_defs, data_defs, body, stats, notes):
+_TABLE_KIT = '''
+# ── table kit (local): separates a cell's CONTENT from its MECHANICS (insets, borders,
+#    spans). Renders identically to raw tcell()/tcell_rich(); hand-polish the cells from here. ──
+PAD = dict(l_ins=60960, r_ins=60960, t_ins=60960, b_ins=60960)   # the source's heavier cell padding
+
+
+def edge(color, w=12700):
+    return {"color": color, "width": w}
+
+
+def bd(L=None, R=None, T=None, B=None):
+    return {k: v for k, v in (("L", L), ("R", R), ("T", T), ("B", B)) if v is not None} or None
+
+
+def cell(text="", *, fill=None, bold=None, italic=None, color=BLACK, size=PT(10),
+         align="l", anchor="ctr", span=1, rowspan=1,
+         l_ins=45720, r_ins=45720, t_ins=45720, b_ins=45720, **edges):
+    return tcell(text, fill=fill, bold=bold, italic=italic, color=color, size=size,
+                 align=align, anchor=anchor, grid_span=span, row_span=rowspan, font=FONT,
+                 l_ins=l_ins, r_ins=r_ins, t_ins=t_ins, b_ins=b_ins, borders=bd(**edges))
+
+
+def rcell(paras, *, fill=None, anchor="ctr", span=1, rowspan=1,
+          l_ins=45720, r_ins=45720, t_ins=45720, b_ins=45720, **edges):
+    return tcell_rich(paras, fill=fill, grid_span=span, row_span=rowspan, anchor=anchor,
+                      l_ins=l_ins, r_ins=r_ins, t_ins=t_ins, b_ins=b_ins, borders=bd(**edges))
+'''
+
+
+def build_module_text(module_name, slide_no, layout, chart_assets, images, anchor_defs,
+                      data_defs, geom_defs, body, stats, notes, deck_name, deck_date):
     chart_reads, data_literals, charts, chart_syms = [], [], [], set()
     for i, (cfile, xfile, cdata) in enumerate(chart_assets):
         # styled_chart (data-over-template) when we recovered both the .xlsb and
@@ -1280,7 +1618,10 @@ def build_module_text(module_name, slide_no, layout, chart_assets, images, ancho
         images_block = "\n" + "\n".join(img_lines)
     else:
         images_block = ""
-    all_text = "\n".join(anchor_defs + data_defs + body)
+    kit_block = _TABLE_KIT if stats.get("table") else ""
+    # include the kit in the text _imports() scans so tcell/tcell_rich/PT/BLACK/FONT (used
+    # only inside the kit defs) still get imported even though the body calls cell()/rcell().
+    all_text = "\n".join(anchor_defs + data_defs + body) + kit_block
     has_styled = any(xfile and cdata and cdata.get("series")
                      for (_, xfile, cdata) in chart_assets)
     if has_styled:
@@ -1300,18 +1641,25 @@ def build_module_text(module_name, slide_no, layout, chart_assets, images, ancho
     if data_defs:
         data_section += ("# ── repeated-shape data tables (each drives a loop in _body) ──\n"
                          + "\n".join(data_defs) + "\n")
-    return f'''"""{module_name} - Commercial Strategy deck, source slide {slide_no}.
+    if geom_defs:
+        data_section += ("# ── custom-geometry paths (verbatim <a:custGeom>, deduped) ──\n"
+                         + "\n".join(geom_defs) + "\n\n")
+    prov = f" ({deck_date})" if deck_date else ""
+    return f'''"""{module_name} — {deck_name} deck{prov}, source slide {slide_no}.
 
 Auto-converted from the source .pptx by _tools/convert_slide.py.
 {chart_doc}
 Shapes are deck_core primitives at the source EMU coordinates; standard chrome
 uses the house builders; repeated shape clusters are data tables + loops;
 think-cell <a:fld> labels are frozen; <p:pic> images are copied into slides/images/
-and wired via IMAGES + picture(); think-cell OLE frames (and the EMF chart previews
+and wired via IMAGES + picture(); pattern-fill swatches become
+text_box(pattern_fill=…) and freeform <a:custGeom> icons become custom_geometry()
+over a deduped path constant; think-cell OLE frames (and the EMF chart previews
 that sit over bundled charts) are dropped.
 
 Converter stats: text_box={stats['text_box']}, connector={stats['connector']}, chart={stats['chart']}, \
-table={stats['table']}, picture={stats['picture']}, chrome_builders={stats['chrome']}, clusters={stats['clusters']} (covering {stats['looped']} shapes), \
+table={stats['table']}, picture={stats['picture']}, custom_geometry={stats['custgeom']}, \
+chrome_builders={stats['chrome']}, clusters={stats['clusters']} (covering {stats['looped']} shapes), \
 raw_verbatim={stats['raw']}, dropped={stats['dropped']}, frozen_fields={stats['fld']}.{notes_doc}
 """
 from __future__ import annotations
@@ -1325,7 +1673,7 @@ LAYOUT = "{layout}"
 _SRC = Path(__file__).parent / "_src"
 {chart_block}{images_block}
 
-
+{kit_block}
 {data_section}def _body() -> str:
     out: list[str] = []
     _ids = iter(range(100, 2000))
@@ -1352,9 +1700,14 @@ def main():
     ap.add_argument("--images-dir", default=None,
                     help="dir to copy <p:pic> media into (default: <out>/../images, "
                          "i.e. the slides/images/ the build packs into ppt/media/)")
+    ap.add_argument("--deck-name", default=None,
+                    help="deck name for the module docstring provenance (default: "
+                         "derived from the source filename, else docProps title)")
+    ap.add_argument("--force", action="store_true",
+                    help="overwrite an existing --out file (still refused if it is HAND-POLISHED)")
     a = ap.parse_args()
     convert(a.source, a.slide, a.out, a.src_dir, a.module_name, a.layout, a.units,
-            a.images_dir)
+            a.images_dir, a.deck_name, a.force)
 
 
 if __name__ == "__main__":

@@ -45,6 +45,7 @@ BLOCK_MYP = {
     "N0002413C2307": "DDG FY13-17 MYP",
     "N0002418C2305": "DDG FY18-22 MYP",
     "N0002418C2307": "DDG FY18-22 MYP",
+    "N0002423C2305": "DDG FY23-27 MYP",
     "N0002423C2307": "DDG FY23-27 MYP",
     "N0002412C2115": "Virginia Block IV (LLTM)",
     "N0002416C2111": "Virginia LYS (cross-block)",
@@ -58,13 +59,26 @@ HEADERS = ["Program", "Prime PIID", "Prime Entity Name", "Award Description", "B
            "Total Obligated $M (nominal)", "Base + All Options $M (nominal)",
            "USAspending Subaward Count", "USAspending Subaward $M"]
 
+# In-scope primes (prime_contract_scope.csv include=Y) that have filed NO subawards yet, so they
+# never surface in the subaward transaction universe that seeds _scope() below. The BIW FY23-27
+# DDG-51 MYP ($5.03B obligated / $13.79B ceiling, zero FSRS subawards) is the case; surfaced by
+# the research/recompete_cadence_ddg probe. Key = USAspending generated_unique_award_id.
+EXTRA_PRIMES = {
+    ("DDG", "N0002423C2305"): "CONT_AWD_N0002423C2305_9700_-NONE-_-NONE-",
+}
+
 
 def _scope() -> dict:
-    """{(program, piid): prime_contract_key} for the in-scope primes, from the tx sheets."""
+    """{(program, piid): prime_contract_key} for the in-scope primes, from the tx sheets.
+
+    Augmented with EXTRA_PRIMES - in-scope primes that have filed no subawards yet, so the tx
+    sheets alone would omit them (the BIW FY23-27 MYP, N0002423C2305)."""
     out = {}
     for label, stem in PROGRAMS:
         for r in csv.DictReader((EXTRACTED / f"{stem}_subaward_transactions.csv").open()):
             out.setdefault((label, r["Prime PIID"]), r["Prime Contract Key"])
+    for k, v in EXTRA_PRIMES.items():
+        out.setdefault(k, v)
     return out
 
 
@@ -115,7 +129,7 @@ def build():
     missing_block = [r[1] for r in rows if not r[4]]
     assert not missing_block, f"BLOCK_MYP missing label for: {missing_block}"
     if failed:
-        print(f"FAILED ({len(failed)}): {failed}  -- re-run; the sheet needs all 12.")
+        print(f"FAILED ({len(failed)}): {failed}  -- re-run; the sheet needs all 13.")
 
 
 if __name__ == "__main__":

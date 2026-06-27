@@ -1,0 +1,64 @@
+{
+  "pool_family": "W56HZV21DL",
+  "n_holder_vehicles": 14,
+  "n_distinct_vendors": 10,
+  "vendors": [
+    "BAY SHIP & YACHT CO",
+    "COLONNA'S SHIP YARD, INCORPORATED",
+    "HII FLEET SUPPORT GROUP LLC",
+    "LYON SHIPYARD INC",
+    "METAL TRADES, LLC",
+    "MURTECH, INC.",
+    "SUMITOMO HEAVY INDUSTRIES, LTD",
+    "SUNJIN ENTECH CO.,LTD.",
+    "YANK MARINE SERVICES LLC",
+    "YOKOHAMA ENGINEERING WORKS, LTD."
+  ],
+  "common_last_date_to_order": [
+    "2026-01-25"
+  ],
+  "contracting_office": [
+    "W56HZV W4GG HQ US ARMY TACOM"
+  ],
+  "competition": [
+    "FULL AND OPEN COMPETITION"
+  ],
+  "route": "multiple-award IDIQ, FAR 16.505 fair-opportunity task orders (on-ramp at recompete)",
+  "solicitation_tiers": {
+    "W56HZV20RL807": {
+      "n_holders": 6,
+      "shared_ceiling_$m": 529.0,
+      "holders": [
+        "BAY SHIP & YACHT CO",
+        "COLONNA'S SHIP YARD, INCORPORATED",
+        "LYON SHIPYARD INC",
+        "METAL TRADES, LLC",
+        "MURTECH, INC.",
+        "YANK MARINE SERVICES LLC"
+      ]
+    },
+    "W56HZV20RL806": {
+      "n_holders": 3,
+      "shared_ceiling_$m": 216.0,
+      "holders": [
+        "SUMITOMO HEAVY INDUSTRIES, LTD",
+        "SUNJIN ENTECH CO.,LTD.",
+        "YOKOHAMA ENGINEERING WORKS, LTD."
+      ]
+    },
+    "W56HZV20RL805": {
+      "n_holders": 5,
+      "shared_ceiling_$m": 186.0,
+      "holders": [
+        "HII FLEET SUPPORT GROUP LLC",
+        "LYON SHIPYARD INC",
+        "METAL TRADES, LLC",
+        "SUMITOMO HEAVY INDUSTRIES, LTD",
+        "YOKOHAMA ENGINEERING WORKS, LTD."
+      ]
+    }
+  },
+  "total_realized_obligation_$m": 416.8,
+  "total_orders": 74,
+  "note": "Ceilings are SHARED across holders within a solicitation tier -- never summed (money-hygiene rule). Realized obligation = sum of delivery-order obligations, the only summable measure."
+}

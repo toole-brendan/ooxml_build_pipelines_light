@@ -9,13 +9,14 @@ on the Checks tab (validation group), complementing the external validate_workbo
 Sections:
   §2 DDG AP/LLTM supplier coefficient (the P-10 EOQ source dollars live on SCN Budget).
   §3 OBBBA BC shares (per-program BC share of the gross award + spillover).
-  §4 Outyear intensity growth (throughput-normalized outsourcing intensity).
+  §4 Outyear outsourcing growth (raw HII outsourcing-hours target; the program TAM
+     tabs compound-ramp it onto the outyear BC coefficient - no throughput normalization).
 (The FY window and units are fixed model facts; they live in the caption and Methodology.)
 
 Promoted accessors (cell refs into 'Assumptions'!):
   ddg_ap_coeff_cell,
   obbba_bc_share_cell(li), obbba_spillover_cell,
-  outlook_g_intensity_cell, outlook_ddg_hii_share_cell
+  outlook_growth_cell, outlook_ddg_hii_share_cell
 """
 from __future__ import annotations
 
@@ -74,18 +75,13 @@ def _make():
                              styles=[S_DEFAULT, S_PCT_INPUT_FILL])
     c.blank(2)
 
-    # §4 Outyear intensity growth (throughput-normalized)
-    c.section("§4 - Outyear intensity growth", _NCOLS)
+    # §4 Outyear outsourcing growth (raw HII hours-growth target; the program TAM tabs
+    # compound-ramp it onto the outyear BC coefficient - NO throughput normalization).
+    c.section("§4 - Outyear outsourcing growth", _NCOLS)
     c.blank()
     c.write(["Knob", "Value"], styles=[S_HEADER_LEFT, S_HEADER_CENTER])
-    P["g_hours"] = c.write(["HII outsourcing-hours growth", 0.30],
+    P["g_hours"] = c.write(["HII outsourcing-hours growth (annual)", 0.30],
                            styles=[S_DEFAULT, S_PCT_INPUT_FILL])
-    P["g_thru"] = c.write(["HII shipbuilding-throughput growth", 0.15],
-                          styles=[S_DEFAULT, S_PCT_INPUT_FILL])
-    P["g_intensity"] = c.write(
-        ["Outsourcing intensity growth",
-         f"=(1+C{P['g_hours']})/(1+C{P['g_thru']})-1"],
-        styles=[S_BOLD, S_PCT])
     P["ddg_hii"] = c.write(["DDG-51 HII share of BC", 0.55],
                            styles=[S_DEFAULT, S_PCT_INPUT_FILL])
 
@@ -93,11 +89,9 @@ def _make():
         ExcelNote(f"C{P['ap_coeff']}",
                   "P-10 Ship Construction EOQ only; excludes adds and terminal GFE."),
         ExcelNote(f"C{P['g_hours']}",
-                  "HII FY2026 target: outsourcing hours +30% y/y."),
-        ExcelNote(f"C{P['g_thru']}",
-                  "HII FY2026 target: shipbuilding throughput +15%."),
-        ExcelNote(f"C{P['g_intensity']}",
-                  "Intensity growth = 1.30 / 1.15 - 1 = 13.0%; applied once."),
+                  "HII FY2026 target: outsourcing hours +30% y/y. Phased onto the outyear "
+                  "BC coefficient as a compound ramp reaching the full +30% at FY2031 "
+                  "(no throughput normalization)."),
         ExcelNote(f"C{P['ddg_hii']}",
                   "Growth applies to HII's 55% DDG BC share; BIW held flat."),
     ]
@@ -120,8 +114,8 @@ def _make():
     def obbba_spillover_cell() -> str:
         return f"'{TAB_ASSUMPTIONS}'!C{P['spillover']}"
 
-    def outlook_g_intensity_cell() -> str:
-        return f"'{TAB_ASSUMPTIONS}'!C{P['g_intensity']}"
+    def outlook_growth_cell() -> str:
+        return f"'{TAB_ASSUMPTIONS}'!C{P['g_hours']}"
 
     def outlook_ddg_hii_share_cell() -> str:
         return f"'{TAB_ASSUMPTIONS}'!C{P['ddg_hii']}"
@@ -129,7 +123,7 @@ def _make():
     return (SheetEntry(TAB_ASSUMPTIONS, _GROUP, render),
             dict(ddg_ap_coeff_cell=ddg_ap_coeff_cell,
                  obbba_bc_share_cell=obbba_bc_share_cell, obbba_spillover_cell=obbba_spillover_cell,
-                 outlook_g_intensity_cell=outlook_g_intensity_cell,
+                 outlook_growth_cell=outlook_growth_cell,
                  outlook_ddg_hii_share_cell=outlook_ddg_hii_share_cell))
 
 
@@ -137,5 +131,5 @@ def _make():
 ddg_ap_coeff_cell = _A["ddg_ap_coeff_cell"]
 obbba_bc_share_cell = _A["obbba_bc_share_cell"]
 obbba_spillover_cell = _A["obbba_spillover_cell"]
-outlook_g_intensity_cell = _A["outlook_g_intensity_cell"]
+outlook_growth_cell = _A["outlook_growth_cell"]
 outlook_ddg_hii_share_cell = _A["outlook_ddg_hii_share_cell"]

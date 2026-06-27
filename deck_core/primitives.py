@@ -10,7 +10,8 @@ auto-number from the base layout. section_divider_layout keeps its OPTIONAL
 page-counter block because dividers (slideLayout2) do not auto-number.
 
 Body builders and the content-slide chrome now live here as importable
-functions (run / paragraph / text_box / table / house_table / connector / picture; the
+functions (run / paragraph / text_box / custom_geometry / table / house_table /
+connector / picture; the
 breadcrumb / title_placeholder / prelim_chip / sources_line chrome pieces),
 with the design tokens in deck_core.style. They are conveniences, not a
 cage: a slide may still compose raw OOXML directly, or mix raw strings with
@@ -48,6 +49,15 @@ _C_DK1 = "162029"
 # Sentinel default for text_box(line_color=...): resolve from fill (house rule:
 # a filled shape gets a black border unless the caller opts out).
 _AUTO = object()
+
+
+def _fill_clr_xml(color: str) -> str:
+    """Inner color element for a fill: a "scheme:NAME" ref (e.g. "scheme:tx1")
+    becomes <a:schemeClr val="NAME"/>; a 6-char hex becomes <a:srgbClr val="HEX"/>.
+    Used by text_box(pattern_fill=...) for the pattern's fg/bg colors."""
+    if color.startswith("scheme:"):
+        return f'<a:schemeClr val="{color[len("scheme:"):]}"/>'
+    return f'<a:srgbClr val="{color}"/>'
 
 
 # ── Public API ─────────────────────────────────────────────────────────
@@ -286,14 +296,16 @@ def esc(s: str) -> str:
 # ─────────────────────────────────────────────────────────────────────────────
 
 
-def run(text, *, size=None, bold=None, italic=None, color=None, font=None,
-        lang="en-US"):
+def run(text, *, size=None, bold=None, italic=None, underline=None, color=None, font=None,
+        highlight=None, lang="en-US"):
     """An <a:r> run. Any attribute left None is omitted from <a:rPr> so the
     placeholder / layout / master default applies. size is 1/100 pt
     (DENSE_BODY_10PT=1000 => 10pt, BODY_12PT=1200 => 12pt); color is 6-char
-    hex, "scheme:tx1", or None."""
+    hex, "scheme:tx1", or None. highlight is the PowerPoint text-highlighter
+    colour (6-char hex / "scheme:NAME", e.g. "FFFF00"), or None for none."""
     return _emit_run({"text": text, "size": size, "bold": bold, "italic": italic,
-                      "color": color, "font": font, "lang": lang})
+                      "underline": underline, "color": color, "font": font,
+                      "highlight": highlight, "lang": lang})
 
 
 def line_break():
@@ -304,10 +316,15 @@ def line_break():
     return '<a:br/>'
 
 
-def paragraph(runs, *, align=None, bullet=False, level=0, space_after=0,
-              mar_l=None, indent=None, line_spacing=LNSPC_BODY):
+def paragraph(runs, *, align=None, bullet=False, bullet_char=None, level=0, space_after=0,
+              space_before=None, mar_l=None, indent=None, line_spacing=LNSPC_BODY,
+              end_size=None):
     """An <a:p>. `runs` is a list of run() outputs. bullet=True prepends a
-    glyph (auto marL/indent); space_after / line_spacing are pptx units."""
+    glyph (auto marL/indent); bullet_char picks the glyph ("•" default, "-" for a
+    dash sub-bullet, or "auto" for an arabic-period number); space_after /
+    line_spacing are pptx units. end_size (1/100 pt) sets the <a:endParaRPr> size
+    of an EMPTY paragraph (no runs): a small value collapses a blank spacer line to
+    that height — renderers otherwise clamp an empty line to a min height (~18pt)."""
     if bullet and mar_l is None and indent is None:
         mar_l = 142875
         indent = -142875
@@ -325,18 +342,29 @@ def paragraph(runs, *, align=None, bullet=False, level=0, space_after=0,
     pPr_children = ""
     if line_spacing:
         pPr_children += f'<a:lnSpc><a:spcPct val="{line_spacing}"/></a:lnSpc>'
+    if space_before:
+        pPr_children += f'<a:spcBef><a:spcPts val="{space_before}"/></a:spcBef>'
     if space_after:
         pPr_children += f'<a:spcAft><a:spcPts val="{space_after}"/></a:spcAft>'
     if bullet:
-        pPr_children += ('<a:buFont typeface="Arial" panose="020B0604020202020204" '
-                         'pitchFamily="34" charset="0"/><a:buChar char="•"/>')
-    elif attrs or space_after or line_spacing:
+        if bullet_char == "auto":
+            pPr_children += '<a:buAutoNum type="arabicPeriod"/>'
+        else:
+            pPr_children += ('<a:buFont typeface="Arial" panose="020B0604020202020204" '
+                             'pitchFamily="34" charset="0"/>'
+                             f'<a:buChar char="{esc(bullet_char or "•")}"/>')
+    elif attrs or space_after or space_before or line_spacing:
         pPr_children += '<a:buNone/>'
     if pPr_children or attrs:
         ppr = f'<a:pPr{pPr_attrs}>{pPr_children}</a:pPr>'
     else:
         ppr = ''
-    body = "".join(runs) if runs else '<a:endParaRPr lang="en-US"/>'
+    if runs:
+        body = "".join(runs)
+    elif end_size is not None:
+        body = f'<a:endParaRPr lang="en-US" sz="{end_size}"/>'
+    else:
+        body = '<a:endParaRPr lang="en-US"/>'
     return f'<a:p>{ppr}{body}</a:p>'
 
 
@@ -360,11 +388,11 @@ def _prst_avlst_xml(geom_adj=None) -> str:
 
 
 def text_box(sp_id, name, x, y, cx, cy, paragraphs, *, anchor="t",
-             fill=None, line_color=_AUTO, line_width=12700, dashed_line=False,
-             num_cols=1, rot=0, prst="rect", geom_adj=None,
+             fill=None, fill_alpha=None, pattern_fill=None, line_color=_AUTO, line_width=12700,
+             dashed_line=False, num_cols=1, rot=0, prst="rect", geom_adj=None,
              l_ins=91440, t_ins=45720, r_ins=91440, b_ins=45720,
              insets=None, wrap="square", body_attrs_extra="", tx_box=True,
-             placeholder=None):
+             placeholder=None, effects=None):
     """A <p:sp> with a text body. `paragraphs` is a list of paragraph()
     strings. fill/line_color are 6-char hex or None; pass an INSETS_* tuple via
     `insets` or the four *_ins kwargs. Blue/gray fills must be ramp tokens.
@@ -374,15 +402,33 @@ def text_box(sp_id, name, x, y, cx, cy, paragraphs, *, anchor="t",
     filled shape, an explicit hex to recolor, or line_width=19050 for a 1.5pt
     focal border; an unfilled shape stays borderless.
 
+    pattern_fill (optional) gives the shape a <a:pattFill> hatch/dot pattern
+    instead of a solid fill — a dict {"prst": <DrawingML pattern>, "fg": <color>,
+    "bg": <color>}, e.g. {"prst": "ltDnDiag"} for a light down-diagonal hatch.
+    `prst` is a pattern preset name (ltDnDiag / dkUpDiag / pct50 / wdDnDiag / ...);
+    fg/bg are a 6-char hex or a "scheme:NAME" theme ref and default to the
+    think-cell standard "scheme:tx1" (dark) on "scheme:bg1" (light). When set it
+    overrides `fill`; it still counts as "filled" for the AUTO border rule.
+
     geom_adj (optional) drives preset-geometry handles for a non-rect `prst` —
     e.g. prst="wedgeRectCallout" with {"adj1": ..., "adj2": ...} to aim the tail,
     or a roundRect corner radius. Default None emits an empty <a:avLst/>."""
     if insets is not None:
         l_ins, t_ins, r_ins, b_ins = insets
     if line_color is _AUTO:
-        line_color = BLACK if fill not in (None, "none") else None
-    if fill is None or fill == "none":
+        line_color = BLACK if (fill not in (None, "none") or pattern_fill is not None) else None
+    if pattern_fill is not None:
+        fill_xml = (f'<a:pattFill prst="{pattern_fill["prst"]}">'
+                    f'<a:fgClr>{_fill_clr_xml(pattern_fill.get("fg", "scheme:tx1"))}</a:fgClr>'
+                    f'<a:bgClr>{_fill_clr_xml(pattern_fill.get("bg", "scheme:bg1"))}</a:bgClr>'
+                    f'</a:pattFill>')
+    elif fill is None or fill == "none":
         fill_xml = '<a:noFill/>'
+    elif fill_alpha is not None:
+        # faded / transparent solid fill — fill_alpha is OOXML opacity in 1/1000 %
+        # (100000 = opaque, 20000 = a 20%-opacity wash).
+        fill_xml = (f'<a:solidFill><a:srgbClr val="{fill}">'
+                    f'<a:alpha val="{fill_alpha}"/></a:srgbClr></a:solidFill>')
     else:
         fill_xml = f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
     if line_color in (None, "none"):
@@ -410,12 +456,50 @@ def text_box(sp_id, name, x, y, cx, cy, paragraphs, *, anchor="t",
     sp_pr = (f'<p:spPr><a:xfrm{rot_attr}><a:off x="{x}" y="{y}"/>'
              f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
              f'<a:prstGeom prst="{prst}">{_prst_avlst_xml(geom_adj)}</a:prstGeom>'
-             f'{fill_xml}{line_xml}</p:spPr>')
+             f'{fill_xml}{line_xml}{effects or ""}</p:spPr>')
     return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
             f'{cNvSpPr}{nv_pr}</p:nvSpPr>{sp_pr}'
             f'<p:txBody><a:bodyPr wrap="{wrap}" anchor="{anchor}" lIns="{l_ins}" '
             f'tIns="{t_ins}" rIns="{r_ins}" bIns="{b_ins}"{col_attr}{body_attrs_extra}/>'
             f'<a:lstStyle/>{body}</p:txBody></p:sp>')
+
+
+def custom_geometry(sp_id, name, x, y, cx, cy, geom, *, fill=None,
+                    line_color="none", line_width=12700, rot=0):
+    """A <p:sp> whose outline is an arbitrary <a:custGeom> path — bézier / line
+    art that no preset `prst` can express (think-cell status icons, logos, small
+    vector marks). The companion to text_box for the one thing a preset shape
+    can't do: a freeform path.
+
+    `geom` is the verbatim <a:custGeom>...</a:custGeom> XML string. The path data
+    (gdLst / pathLst) is intrinsic and cannot be parameterized, so lift it from
+    the source and keep it as a module-level constant — and dedupe identical paths
+    into ONE constant (e.g. a check glyph reused 3×). The path's own coordinate
+    space scales to the cx/cy box, so position and SIZE are parameters here, along
+    with fill and line: that is the faithful-but-idiomatic split — the geometry is
+    verbatim, everything around it reads as Python.
+
+    fill is a 6-char hex or None (no fill); line_color is hex or "none" (default
+    "none" — these marks are usually fill-only, unlike text_box's filled-shape
+    border rule). The shape carries no text (an empty body); use text_box for a
+    text-bearing shape. Build a unique sp_id via the slide's n()."""
+    rot_attr = f' rot="{rot}"' if rot else ""
+    if fill in (None, "none"):
+        fill_xml = '<a:noFill/>'
+    else:
+        fill_xml = f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
+    if line_color in (None, "none"):
+        line_xml = '<a:ln><a:noFill/></a:ln>'
+    else:
+        line_xml = (f'<a:ln w="{line_width}"><a:solidFill>'
+                    f'<a:srgbClr val="{line_color}"/></a:solidFill></a:ln>')
+    return (f'<p:sp><p:nvSpPr><p:cNvPr id="{sp_id}" name="{esc(name)}"/>'
+            f'<p:cNvSpPr/><p:nvPr/></p:nvSpPr>'
+            f'<p:spPr><a:xfrm{rot_attr}><a:off x="{x}" y="{y}"/>'
+            f'<a:ext cx="{cx}" cy="{cy}"/></a:xfrm>'
+            f'{geom}{fill_xml}{line_xml}</p:spPr>'
+            f'<p:txBody><a:bodyPr rtlCol="0"/><a:lstStyle/>'
+            f'<a:p><a:endParaRPr lang="en-US"/></a:p></p:txBody></p:sp>')
 
 
 def placeholder_sp(sp_id, name, *, ph_type=None, ph_sz=None, ph_idx=None,
@@ -534,18 +618,35 @@ def tbreak():
     return {"break": True}
 
 
-def tpara(runs, *, align="l", line_spacing=LNSPC_SINGLE, space_after=None, end_size=None):
+def tpara(runs, *, align="l", line_spacing=LNSPC_SINGLE, space_after=None, space_before=None,
+          end_size=None, bullet=False, bullet_char=None, level=0, mar_l=None, indent=None):
     """Paragraph dict for table cells. line_spacing defaults to single (100%) —
     the correct density for tabular data (body text is 115%); raise it only for a
     cell that needs breathing room. space_after is in EMU pts (rarely needed).
     end_size (1/100 pt) sets the <a:endParaRPr> size of an EMPTY paragraph (no
     runs): a small value (e.g. 100 = 1pt) collapses a spacer row/column, which an
-    empty run cannot do — renderers clamp an empty run to a min line height."""
+    empty run cannot do — renderers clamp an empty run to a min line height.
+
+    bullet/bullet_char/level/mar_l/indent give a cell paragraph the same bulleting
+    + hanging indent the text_box paragraph() has (a bulleted list inside a cell):
+    bullet_char picks the glyph ("•" default, "-" for a dash sub-bullet, "auto" for
+    an arabic-period number); mar_l/indent are the EMU hanging-indent pair."""
     p = {"align": align, "runs": runs, "line_spacing": line_spacing}
     if space_after is not None:
         p["space_after"] = space_after
+    if space_before is not None:
+        p["space_before"] = space_before
     if end_size is not None:
         p["end_size"] = end_size
+    if bullet:
+        p["bullet"] = True
+        p["bullet_char"] = bullet_char if bullet_char is not None else "•"
+    if level:
+        p["level"] = level
+    if mar_l is not None:
+        p["marL"] = mar_l
+    if indent is not None:
+        p["indent"] = indent
     return p
 
 
@@ -680,6 +781,7 @@ def _emit_paragraph(p):
     marL = p.get("marL")
     indent = p.get("indent")
     space_after = p.get("space_after")
+    space_before = p.get("space_before")
     bullet = p.get("bullet")
     bullet_char = p.get("bullet_char")
     line_spacing = p.get("line_spacing", LNSPC_BODY)
@@ -695,6 +797,8 @@ def _emit_paragraph(p):
     pPr_inner = ""
     if line_spacing:
         pPr_inner += f'<a:lnSpc><a:spcPct val="{line_spacing}"/></a:lnSpc>'
+    if space_before:
+        pPr_inner += f'<a:spcBef><a:spcPts val="{space_before}"/></a:spcBef>'
     if space_after:
         pPr_inner += f'<a:spcAft><a:spcPts val="{space_after}"/></a:spcAft>'
     if bullet:
@@ -748,6 +852,13 @@ def _emit_run(r):
                              f'val="{color[len("scheme:"):]}"/></a:solidFill>')
         elif color != "none":
             rpr_children += f'<a:solidFill><a:srgbClr val="{color}"/></a:solidFill>'
+    # <a:highlight> follows the run fill and precedes the font run (schema order).
+    highlight = r.get("highlight")
+    if highlight:
+        if highlight.startswith("scheme:"):
+            rpr_children += f'<a:highlight><a:schemeClr val="{highlight[len("scheme:"):]}"/></a:highlight>'
+        elif highlight != "none":
+            rpr_children += f'<a:highlight><a:srgbClr val="{highlight}"/></a:highlight>'
     if font is not None:
         rpr_children += (f'<a:latin typeface="{font}"/><a:ea typeface="{font}"/>'
                          f'<a:cs typeface="{font}"/>')

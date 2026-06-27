@@ -1,12 +1,22 @@
-"""penetration_outlook - v2.0 slide 4: "Penetration Rate Outlook" placeholder.
+"""penetration_outlook — deck_primary slide 4 (Penetration Rate Outlook · PLACEHOLDER).
 
-Reverted to the v2.0 working-deck placeholder: standard chrome plus a
-full-body gray placeholder box describing the intended exhibit (a per-class
-penetration line chart with forecast/ceiling overlays and a commentary
-column). The realized line-chart build was a draft that was never
-green-lighted, so this slide carries only the placeholder, transcribed
-verbatim from slide04.xml - matching the slide 6 contracts-outlook placeholder
-treatment.
+EXHIBIT — a placeholder slide: standard chrome plus a full-body gray placeholder box
+describing the intended exhibit (a per-class penetration line chart with forecast /
+ceiling overlays and a commentary column). The realized line-chart build was a draft
+that was never green-lit, so only the placeholder ships — matching the slide 6
+contracts-outlook placeholder treatment.
+
+CODE MAP:
+  • chrome + placeholder box . _SHAPES — breadcrumb / title / Preliminary chip plus the
+                               gray "intended exhibit" box, transcribed verbatim from
+                               _chart_xml/slide04.xml
+
+Hand-authored PLACEHOLDER from the v2.0 working deck — the intended exhibit is described
+in the gray box, not yet realized. Annotated to the study convention — docstring /
+comments only; NO coordinate, value, colour, or paint-order changed, so the render is
+byte-identical to the pre-annotation module.
+
+Structure: one verbatim-XML layer (no chart, no table).
 """
 from __future__ import annotations
 

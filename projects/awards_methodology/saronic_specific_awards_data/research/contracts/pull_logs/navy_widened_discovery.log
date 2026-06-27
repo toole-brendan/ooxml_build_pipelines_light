@@ -1,0 +1,119 @@
+=== widened Navy discovery 2026-06-26 13:43:30  (33 codes, 8 pages, instruments=['C', 'D']+['IDV_A', 'IDV_B', 'IDV_C'])
+  - naics:336611
+      [contract] 800 records
+      [idv] 19 records
+  - naics:336612
+      [contract] 469 records
+      [idv] 0 records
+  - psc:1905
+      [contract] 657 records
+      [idv] 0 records
+  - psc:1925
+      [contract] 37 records
+      [idv] 0 records
+  - psc:1940
+      [contract] 399 records
+      [idv] 0 records
+  - psc:1990
+      [contract] 174 records
+      [idv] 0 records
+  - psc:2090
+      [contract] 800 records
+      [idv] 0 records
+  - naics:334511
+      [contract] 800 records
+      [idv] 3 records
+  - psc:1550
+      [contract] 349 records
+      [idv] 0 records
+  - naics:334220
+      [contract] 800 records
+      [idv] 2 records
+  - naics:334290
+      [contract] 800 records
+      [idv] 0 records
+  - naics:517410
+      [contract] 66 records
+      [idv] 0 records
+  - psc:5841
+      [contract] 514 records
+      [idv] 0 records
+  - psc:5845
+      [contract] 800 records
+      [idv] 0 records
+  - psc:5865
+      [contract] 800 records
+      [idv] 2 records
+  - psc:5826
+      [contract] 343 records
+      [idv] 0 records
+  - psc:6605
+      [contract] 538 records
+      [idv] 0 records
+  - psc:5820
+      [contract] 800 records
+      [idv] 1 records
+  - psc:5895
+      [contract] 800 records
+      [idv] 0 records
+  - psc:5810
+      [contract] 800 records
+      [idv] 0 records
+  - naics:511210
+      [contract] 800 records
+      [idv] 5 records
+  - naics:541511
+      [contract] 800 records
+      [idv] 0 records
+  - naics:541512
+      [contract] 800 records
+      [idv] 0 records
+  - psc:7030
+      [contract] 800 records
+      [idv] 11 records
+  - psc:D302
+      [contract] 431 records
+      [idv] 0 records
+  - psc:D399
+      [contract] 800 records
+      [idv] 0 records
+  - naics:332993
+      [contract] 273 records
+      [idv] 0 records
+  - naics:336414
+      [contract] 800 records
+      [idv] 0 records
+  - psc:1410
+      [contract] 486 records
+      [idv] 1 records
+  - psc:1336
+      [contract] 3 records
+      [idv] 0 records
+  - psc:1055
+      [contract] 64 records
+      [idv] 0 records
+  - naics:541330
+      [contract] 800 records
+      [idv] 72 records
+  - naics:541715
+      [contract] 800 records
+      [idv] 0 records
+
+=== 17356 unique awards | 16401 in-scope (Navy, non-USMC, non-Saronic) | excluded 955 USMC, 0 Saronic
+by instrument: {'DEFINITIVE CONTRACT': 2482, 'DELIVERY ORDER': 13169, 'DCA': 99, 'DO': 543, 'INDEFINITE DELIVERY CONTRACT': 108}
+top 15 in-scope by amount:
+  $ 34,664.2M  N0002417C2100       ELECTRIC BOAT CORPORATION       naics:336611; psc:1905
+  $ 30,825.6M  N0002417C2117       ELECTRIC BOAT CORPORATION       naics:541330; psc:1905
+  $ 20,183.7M  N0002412C2115       ELECTRIC BOAT CORPORATION       naics:336611; psc:1905
+  $ 16,238.8M  N0002409C2104       ELECTRIC BOAT CORPORATION       naics:336611
+  $ 14,426.1M  N0002418C2130       FLUOR MARINE PROPULSION, LLC    naics:541715
+  $ 11,897.7M  N0002416C2116       HUNTINGTON INGALLS INC          naics:336611; psc:1905
+  $ 10,029.6M  N0002406C2222       HUNTINGTON INGALLS INCORPORATE  naics:336611
+  $  9,397.3M  N0002403C2101       ELECTRIC BOAT CORPORATION       naics:336611
+  $  6,948.1M  N0002423C2307       HUNTINGTON INGALLS INCORPORATE  naics:336611; psc:1905
+  $  6,826.7M  N0002418C2307       HUNTINGTON INGALLS INCORPORATE  naics:336611; psc:1905
+  $  6,645.7M  N0002408C2110       HUNTINGTON INGALLS INC          naics:336611
+  $  5,922.6M  N0002402C2300       NATIONAL STEEL AND SHIPBUILDIN  naics:336611
+  $  5,875.6M  N0002416C2229       NATIONAL STEEL AND SHIPBUILDIN  naics:336611
+  $  5,668.5M  N0002405C5346       RAYTHEON COMPANY                naics:541330
+  $  5,339.0M  N0002418C2305       BATH IRON WORKS CORPORATION     naics:336611; psc:1905

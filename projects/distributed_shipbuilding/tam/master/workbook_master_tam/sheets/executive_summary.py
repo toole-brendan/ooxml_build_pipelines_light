@@ -7,8 +7,8 @@ TAM is the supplier-addressable share of Basic Construction (BC base x place-of-
 performance coefficient), plus the OBBBA mandatory overlay. §2 shows it by fiscal year
 FY2022-2027 (no cumulative roll-up; FY2026-27 are budget-request estimates, E). §3
 carries the FY2028-31 outyear projection as an explicit low/high band (no single central
-case): low = status-quo BC coefficient, high = coefficient grown by the throughput-
-normalized outsourcing-intensity rate (Assumptions §4), DDG-51 HII-Ingalls only.
+case): low = status-quo BC coefficient, high = the coefficient compound-ramped to the
+full HII outsourcing-hours uplift by FY2031 (Assumptions §4; DDG-51 HII-Ingalls 55% share).
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ _GROUP = "summary"
 # cumulative roll-up) for FY2022-2027: FY2022-25 firm, FY2026-27 budget request
 # (E; FY26 incl. OBBBA). §3 carries the FY2028-31 outyear projection as an explicit
 # low/high band (no single central case): low = status-quo BC coefficient, high =
-# coefficient grown by the throughput-normalized outsourcing-intensity rate.
+# the coefficient compound-ramped to the full outsourcing-hours uplift by FY2031.
 _FIRM_FY = _periods.FY               # FY2022-2027 in the firm/budget grid
 _OY = _periods.OY                    # FY2028-2031 FYDP outyear band
 _LAST_FIRM_FY = 2025                 # <= this: firm; > this: "E" suffix
@@ -87,7 +87,7 @@ def _render() -> WorksheetSpec:
             styles=[S_ITALIC])
     c.blank(2)
 
-    # §3 FY2028-31 outyear outlook band: low (status-quo coeff) and high (intensity-grown)
+    # §3 FY2028-31 outyear outlook band: low (status-quo coeff) and high (compound-ramped)
     c.section("§3 - FY2028-31 outlook ($M)", _NCOLS_3)
     c.blank()
     c.write(["Outyear ($M)"] + [_fy_label(fy) for fy in _OY],
@@ -105,7 +105,7 @@ def _render() -> WorksheetSpec:
     c.total(["Total high"] + [f"=SUM({cl[i]}{hi_rows[0]}:{cl[i]}{hi_rows[-1]})"
                               for i in range(len(_OY))],
             styles=[S_BOLD] + [S_NUM] * len(_OY), n_cols=_NCOLS_3)
-    c.write(["Low holds coefficients flat; high applies Assumptions §4."],
+    c.write(["Low holds coefficients flat; high compound-ramps Assumptions §4 growth to FY2031."],
             styles=[S_ITALIC])
 
     ws = worksheet(c.rows, cols=[22] + [11] * len(_FIRM_FY) + [11],

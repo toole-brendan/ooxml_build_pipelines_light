@@ -1,24 +1,31 @@
-"""outsourced_bc_walk - v3 slide 1: the walk from each program's total ship
-spend down to outsourced Basic Construction, DDG-51 and Virginia/Columbia side
-by side, with a step/rationale ledger on the right.
+"""outsourced_bc_walk — deck_primary slide 1 (Total Ship Spend → outsourced BC walk).
 
-Ported 1:1 from the v3 working deck (20260605_Defense Demand Drivers New
-Construction_v3.pptx) - the v2-built deck re-edited by hand in PowerPoint and
-re-exported, so every former module-level patch (the "$" on ~$1.1B, the
-separator/callout/caption moves, the two-line "Less: Prime / AP/LLTM" label)
-is baked into the source XML and the module is a pure verbatim read.
+EXHIBIT — the walk from each program's total ship spend down to outsourced Basic
+Construction, DDG-51 and Virginia/Columbia side by side as two vertical waterfall
+charts, with a step/rationale ledger down the right. A header strip captions the
+two walks; the ledger explains each deduction (e.g. the two-line "Less: Prime /
+AP/LLTM" step).
 
-The two walk charts are REAL native <c:chart> barChart parts, bundled verbatim
-via CHARTS and placed by graphic_frame at the source frame coordinates. In v3
-chart1 is the SUBMARINE walk ('Chart 70') and chart2 the DDG walk ('Chart 77')
-- swapped vs the v2.0 source; the rIds below follow CHARTS order, verified
-against slide1.xml.rels. Each ships with its ORIGINAL binary .xlsb workbook
-reattached (editable_bundled_chart) so PowerPoint's "Edit Data" works; the
-chart XML is otherwise untouched (renders from its cached <c:numCache>
-values). Everything else - chrome included - is transcribed verbatim
-(`_chart_xml/slide01.xml`); the walk header strip (table 14) and the
-step/rationale ledger (table 50) are verbatim tables
-(`_chart_xml/slide01_tables.xml`).
+CODE MAP (body paints back-to-front: tables → charts → overlay shapes):
+  • tables ......... _TABLES — header strip (table 14) + step/rationale ledger
+                     (table 50), verbatim <a:tbl> from _chart_xml/slide01_tables.xml
+  • charts ......... CHARTS — two native <c:chart> barChart walks bundled verbatim via
+                     editable_bundled_chart; placed by graphic_frame() (submarine
+                     'Chart 70' → rId2, DDG 'Chart 77' → rId3; note v3 swaps
+                     chart1=SUB / chart2=DDG vs the v2.0 source)
+  • chrome+overlay . _SHAPES — breadcrumb / title / callouts / captions, transcribed
+                     verbatim from _chart_xml/slide01.xml
+
+Hand-authored 1:1 port of the v3 working deck (20260605 Defense Demand Drivers New
+Construction), source slide 1: the charts are native parts bundled untouched (each
+with its original .xlsb so "Edit Data" works, rendering from its cached
+<c:numCache>); chrome, overlays and both tables are verbatim-XML transcriptions.
+Annotated to the study convention — docstring / comments only; NO coordinate, value,
+colour, or paint-order changed, so the render is byte-identical to the pre-annotation
+module.
+
+Structure: 2 native charts (editable_bundled_chart) + 2 verbatim tables + the
+verbatim chrome/overlay layer.
 """
 from __future__ import annotations
 

@@ -116,7 +116,7 @@ def _make():
     c.write(["Check", "Count", "Status"],
             styles=[S_HEADER_LEFT, S_HEADER_CENTER, S_HEADER_CENTER])
     knobs = [A.ddg_ap_coeff_cell(), A.obbba_spillover_cell(),
-             A.outlook_g_intensity_cell(), A.outlook_ddg_hii_share_cell(),
+             A.outlook_growth_cell(), A.outlook_ddg_hii_share_cell(),
              A.obbba_bc_share_cell(2013), A.obbba_bc_share_cell(2122)]
     r_knobs = c.write(
         ["Key behavioral knobs present & numeric", f"=COUNT({','.join(knobs)})",

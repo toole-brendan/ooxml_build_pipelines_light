@@ -30,3 +30,14 @@ env/
 # ─── mro QA probe fixtures — exceed GitHub's 100 MB push limit ───
 projects/mro/workbook/qa/gold/probe/09_Awards.json
 projects/mro/workbook/qa/new/probe/09_Awards.json
+
+# ─── Navy/budget justification books — large source PDFs + extracted text ───
+# The downloader (download_navy_books.py) + manifest (_manifest_navy_fy27.csv) stay
+# tracked so the corpus is reproducible; the book binaries themselves are not committed.
+projects/distributed_shipbuilding/tam/shared/budget_books/*.pdf
+projects/distributed_shipbuilding/tam/shared/budget_books/*.txt
+# ...but keep the SCN back-run + 30-year plan that were committed before this rule:
+!projects/distributed_shipbuilding/tam/shared/budget_books/SCN_Book_FY*.pdf
+!projects/distributed_shipbuilding/tam/shared/budget_books/SCN_Book_FY*.txt
+!projects/distributed_shipbuilding/tam/shared/budget_books/30_Year_Shipbuilding_Plan.pdf
+!projects/distributed_shipbuilding/tam/shared/budget_books/30_Year_Shipbuilding_Plan.txt

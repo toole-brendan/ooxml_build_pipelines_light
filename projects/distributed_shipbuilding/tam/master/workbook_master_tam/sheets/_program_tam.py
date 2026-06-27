@@ -33,7 +33,7 @@ from workbook_master_tam.sheets.obbba import (
 from workbook_master_tam.sheets.fydp_outyears import fydp_gross_cell
 from workbook_master_tam.sheets.assumptions import (
     ddg_ap_coeff_cell,
-    outlook_g_intensity_cell, outlook_ddg_hii_share_cell,
+    outlook_growth_cell, outlook_ddg_hii_share_cell,
 )
 from workbook_master_tam.sheets._periods import FY as _FY, OY as _OY
 
@@ -194,30 +194,27 @@ def build_program_tam(*, li, name, tab, intro, bc_coeff_cell, bc_coeff_fy22_cell
              f"=SUM({_C0}{P['pen_num']}:{_C25}{P['pen_num']})/SUM({_C0}{P['den']}:{_C25}{P['den']})"],
             styles=[S_DEFAULT, S_PCT])
         # Outyear outlook: growth applied to the BC coefficient (not blended penetration).
-        # The intensity step is taken once and held flat across FY2028-31 (the HII
-        # outsourcing-hours rate is decelerating off an explosive 2025, so it is not compounded).
+        # The HII outsourcing-hours growth (Assumptions §4) is phased in as a COMPOUND
+        # ramp - a constant annual rate that reaches the full uplift at FY2031, the last
+        # outyear: the i-th of N outyears gets factor (1+g)^(i/N), so FY2031 = (1+g)^1.
+        # DDG-51 carves BIW out - only HII's responsive BC share grows, BIW held flat -
+        # so its blended coefficient grows by 1 + w_hii*((1+g)^(i/N) - 1); subs ramp the
+        # whole coefficient (w = 1). Growth is NOT throughput-normalized (raw hours rate).
         P["fc_bc_share"] = c.write(
             ["Forecast BC share",
              f"=SUM({_C0}{P['bc_base']}:{_C25}{P['bc_base']})/SUM({_C0}{P['den_tse']}:{_C25}{P['den_tse']})"],
             styles=[S_BOLD, S_PCT])
         P["coeff_low"] = c.write(["Outyear BC coefficient, low", f"={bc_coeff_cell()}"],
                                  styles=[S_DEFAULT, S_LINK_PCT])
-        P["g_int"] = c.write(["Outsourcing intensity growth",
-                              f"={outlook_g_intensity_cell()}"],
+        P["g_int"] = c.write(["Outyear outsourcing growth (annual target)",
+                              f"={outlook_growth_cell()}"],
                              styles=[S_DEFAULT, S_LINK_PCT])
         if biw_carveout:
             P["w_resp"] = c.write(["HII share of DDG BC",
                                    f"={outlook_ddg_hii_share_cell()}"],
                                   styles=[S_DEFAULT, S_LINK_PCT])
-            _hi_factor = f"(1+C{P['w_resp']}*C{P['g_int']})"
-        else:
-            _hi_factor = f"(1+C{P['g_int']})"
-        P["coeff_high"] = c.write(
-            ["Outyear BC coefficient, high",
-             f"=C{P['coeff_low']}*{_hi_factor}"],
-            styles=[S_BOLD, S_PCT])
         c.blank()
-        c.write(["Outyear ($M)"] + [f"FY{fy}" for fy in _OY],
+        c.write(["Outyears"] + [f"FY{fy}" for fy in _OY],
                 styles=[S_HEADER_LEFT] + [S_HEADER_CENTER] * len(_OY))
         P["oy_gross"] = c.write(["FYDP gross"]
                                 + [f"={fydp_gross_cell(fydp_li, fy)}" for fy in _OY],
@@ -225,11 +222,22 @@ def build_program_tam(*, li, name, tab, intro, bc_coeff_cell, bc_coeff_fy22_cell
         P["oy_bc"] = c.write(["Outyear BC base"]
                              + [f"={_OY_COL[fy]}{P['oy_gross']}*$C${P['fc_bc_share']}" for fy in _OY],
                              styles=[S_DEFAULT] + [S_NUM] * len(_OY))
+        # High BC coefficient, ramped: compound to the full uplift at FY2031 (last outyear).
+        # i-th of N outyears -> (1+g)^(i/N); DDG blends only HII's share (BIW held flat).
+        _n_oy = len(_OY)
+        _ramp = [f"POWER(1+$C${P['g_int']},{i + 1}/{_n_oy})" for i in range(_n_oy)]
+        if biw_carveout:
+            _hi_cells = [f"=$C${P['coeff_low']}*(1+$C${P['w_resp']}*({r}-1))" for r in _ramp]
+        else:
+            _hi_cells = [f"=$C${P['coeff_low']}*{r}" for r in _ramp]
+        P["oy_coeff_hi"] = c.write(
+            ["Outyear BC coefficient, high (compounded)"] + _hi_cells,
+            styles=[S_DEFAULT] + [S_PCT] * _n_oy)
         P["oy_lo"] = c.write(["Outsourced BC, low"]
                              + [f"={_OY_COL[fy]}{P['oy_bc']}*$C${P['coeff_low']}" for fy in _OY],
                              styles=[S_BOLD] + [S_NUM] * len(_OY))
         P["oy_hi"] = c.write(["Outsourced BC, high"]
-                             + [f"={_OY_COL[fy]}{P['oy_bc']}*$C${P['coeff_high']}" for fy in _OY],
+                             + [f"={_OY_COL[fy]}{P['oy_bc']}*{_OY_COL[fy]}{P['oy_coeff_hi']}" for fy in _OY],
                              styles=[S_BOLD] + [S_NUM] * len(_OY))
         c.blank()
         P["oy_lo_avg"] = c.write(["Outyear low average",
