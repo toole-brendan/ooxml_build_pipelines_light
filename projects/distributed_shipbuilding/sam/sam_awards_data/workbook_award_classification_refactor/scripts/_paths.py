@@ -16,7 +16,7 @@ from pathlib import Path
 
 SCRIPTS        = Path(__file__).resolve().parent          # .../workbook_award_classification_refactor/scripts
 REFACTOR       = SCRIPTS.parent                            # .../workbook_award_classification_refactor
-AC             = REFACTOR.parent                           # .../award_classification
+AC             = REFACTOR.parent                           # .../sam_awards_data
 SAM            = AC.parent                                 # .../sam
 REPO           = SAM.parents[2]                            # .../ooxml_build_pipelines_light  (sam -> distributed_shipbuilding -> projects -> repo)
 REPO_ROOT      = REPO                                      # alias

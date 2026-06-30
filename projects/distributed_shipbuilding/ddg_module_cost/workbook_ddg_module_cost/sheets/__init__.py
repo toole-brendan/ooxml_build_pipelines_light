@@ -24,6 +24,7 @@ from . import (
     module_cost,
     # guide
     structural_hierarchy,
+    sam_module_bridge,
     # inputs
     assumptions,
     # data
@@ -37,6 +38,7 @@ SHEETS: list = [
     module_cost.MODULE_COST,
     # --- Guide ---
     structural_hierarchy.STRUCTURAL_HIERARCHY,
+    sam_module_bridge.SAM_MODULE_BRIDGE,
     # --- Inputs ---
     assumptions.ASSUMPTIONS,
     # --- Data ---

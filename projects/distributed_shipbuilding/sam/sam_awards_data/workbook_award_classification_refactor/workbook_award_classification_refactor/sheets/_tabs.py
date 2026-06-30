@@ -48,6 +48,19 @@ TAB_ARCHETYPE_OVERRIDES = "Mapping - Vendor Overrides"
 # back-of-book price-deflator helper (Green Book Procurement TOA -> constant FY2026$ factor)
 TAB_DEFLATORS        = "Deflators"
 
+# --- DDG hull-linkage layer ---
+# curated reference inputs (the single source of truth for hull data)
+TAB_PIID_HULL_MAP    = "Mapping - PIID to Hull"   # Prime PIID -> candidate hull family
+TAB_HULL_MASTER      = "DDG Hull Master"          # one row per hull (builder / PIID / block / flight)
+# derived hull roll-ups (live SUMIFS over the DDG tx leaf, keyed on Assigned Hull / Confidence)
+TAB_HULL_SPEND       = "DDG Hull Spend Summary"   # one row per hull: assigned subaward $
+TAB_HULL_COVERAGE    = "DDG Hull Coverage"        # exact vs inferred vs unassigned vs conflict $
+TAB_HULL_SWBS        = "DDG Hull x SWBS"          # HII hulls x SWBS major group
+TAB_VENDOR_HULL      = "DDG Vendor x Hull Exposure"  # vendor x assigned hull (long-format)
+TAB_VENDOR_HULL_SWBS = "DDG Vendor x Hull x SWBS"  # vendor x assigned hull x ship-system (HII)
+TAB_HULL_EXCEPTIONS  = "DDG Hull Exceptions"      # conflict / multi-hull / out-of-family log
+TAB_HULL_METHODOLOGY = "Hull Mapping Methodology"  # the two-layer method + confidence grades
+
 # All <= 31 chars (Excel sheet-name limit); the packager re-asserts this.
 assert all(len(n) <= 31 for n in (
     TAB_EXEC_SUMMARY,
@@ -57,4 +70,7 @@ assert all(len(n) <= 31 for n in (
     TAB_DDG_TX, TAB_VIRGINIA_TX, TAB_COLUMBIA_TX,
     TAB_SUPPLIER_MASTER, TAB_SUPPLIER_YEAR, TAB_ARCHETYPE_OVERRIDES, TAB_DEFLATORS,
     TAB_SUBAWARD_ACTIVITY, TAB_PRIME_AWARDS,
+    TAB_PIID_HULL_MAP, TAB_HULL_MASTER, TAB_HULL_SPEND, TAB_HULL_COVERAGE,
+    TAB_HULL_SWBS, TAB_VENDOR_HULL, TAB_VENDOR_HULL_SWBS, TAB_HULL_EXCEPTIONS,
+    TAB_HULL_METHODOLOGY,
 ))

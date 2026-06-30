@@ -25,10 +25,7 @@ import csv
 import importlib.util
 from pathlib import Path
 
-from _paths import REPO  # noqa: E402
-AC = REPO / "projects/distributed_shipbuilding/sam/award_classification"
-REFACTOR = AC / "workbook_award_classification_refactor"
-EXTRACTED = REFACTOR / "extracted"
+from _paths import AC, REFACTOR, EXTRACTED  # noqa: E402  (anchors derive from __file__)
 PKG = AC / "ddg_hii_swbs_subaward_package"
 
 DICT_CSV = PKG / "hii_ddg_code_dictionary.csv"

@@ -116,6 +116,8 @@ def build() -> int:
         assert_transaction_dates_covered_by_fiscal_axis,
         assert_prime_awards_cover_transaction_piids,
         assert_supplier_year_activity_spine,
+        assert_hull_piids_mapped,
+        assert_hull_map_master_consistent,
     )
     # Build-stopping guards (fail loudly before anything is packaged):
     #  - every transaction prime PIID is in the versioned scope manifest as include=Y, and
@@ -133,5 +135,10 @@ def build() -> int:
     #  - the Supplier-Year Activity spine is exactly the transaction-derived (Program x FY x UEI)
     #    universe, so Where to Play never silently empties a cell or double-counts a supplier-year.
     assert_supplier_year_activity_spine()
+    #  - the DDG hull-linkage layer: every HII DDG transaction PIID has a hull-family map row, and
+    #    the curated PIID->Hull map is consistent with the Hull Master the live formulas + roll-ups
+    #    depend on (candidate hulls all exist; single-ship rows carry exactly one hull).
+    assert_hull_piids_mapped()
+    assert_hull_map_master_consistent()
     return package_workbook(OUT, SHEETS, title=_TITLE, creator=_CREATOR,
                             app_name=_APP, normalize_dashes=True)

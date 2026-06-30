@@ -25,9 +25,7 @@ from build_swbs_crosswalk import (  # noqa: E402  (reuse the display / bucket lo
     GROUP_NAME, load_hierarchy, swbs_display, major_bucket,
 )
 
-from _paths import REPO  # noqa: E402
-EXTRACTED = (REPO / "projects/distributed_shipbuilding/sam/award_classification"
-             / "workbook_award_classification_refactor/extracted")
+from _paths import EXTRACTED  # noqa: E402  (anchor derives from __file__, so a checkout move needs no edit)
 XWALK_CSV = EXTRACTED / "hii_swbs_crosswalk.csv"
 OUT_CSV = EXTRACTED / "ddg_swbs_by_subsystem.csv"
 

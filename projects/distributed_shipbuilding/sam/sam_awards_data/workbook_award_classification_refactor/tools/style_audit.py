@@ -68,7 +68,8 @@ SECTION_TITLE_MAX = 60
 WIDTH_MAX = 44
 # Columns intentionally wider than WIDTH_MAX (deliberate prose columns).
 WIDTH_ALLOW = {("Taxonomy", "D"),      # the code-definition column
-               ("Methodology", "C")}   # the scope / method detail-prose column
+               ("Methodology", "C"),   # the scope / method detail-prose column
+               ("Hull Mapping Methodology", "C")}  # the hull-method detail-prose column
 
 
 def _is_formula(v) -> bool:

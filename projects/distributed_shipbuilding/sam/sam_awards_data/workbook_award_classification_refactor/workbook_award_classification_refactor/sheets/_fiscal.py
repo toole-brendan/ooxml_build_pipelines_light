@@ -87,3 +87,13 @@ def pv_lifetime_formula(real_range: str, uei_range: str):
     """fn(r)->'=...' for the lifetime Subaward $M: full constant-FY2026$ over this UEI, $M.
     Equals the sum of the per-FY split as long as no transaction post-dates FY2026."""
     return lambda r: f"=SUMIFS({real_range},{uei_range},$B{r})/1000000"
+
+
+def first_last_or_na(date_range: str, key_range: str, kind: str = "MIN"):
+    """fn(r)->'=...' for a First / Last Subaward date that shows "n/a" instead of the 1900 epoch
+    when the row's key (col B) matches zero transactions. MINIFS / MAXIFS return 0 over an empty
+    set, which a date format renders as 1900-01-00; guard on a COUNTIFS over the same key so a
+    keyless row (e.g. a hull with no assigned subaward) reads "n/a" rather than a phantom date."""
+    fn = "MINIFS" if kind == "MIN" else "MAXIFS"
+    return lambda r: (f'=IF(COUNTIFS({key_range},$B{r})=0,"n/a",'
+                      f'_xlfn.{fn}({date_range},{key_range},$B{r}))')

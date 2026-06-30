@@ -262,3 +262,52 @@ def assert_supplier_year_activity_spine() -> None:
     assert actual == expected, (
         "supplier-year spine != transaction-derived (Program x FY x UEI) universe: "
         + _diff(actual, expected, "supplier-year", "transactions"))
+
+
+def _hull_set(s: str) -> set[str]:
+    """The set of 'DDG NNN' hull tokens in a candidate-hulls / direct-text string."""
+    return set(re.findall(r"DDG \d{3}", s or ""))
+
+
+def assert_hull_piids_mapped() -> None:
+    """Every HII-Ingalls DDG transaction PIID must be present in the curated PIID->Hull map
+    (extracted/ddg_piid_hull_map.csv), or the hull tagger / roll-ups silently treat the row's hull
+    family as unknown. The hull analogue of assert_piids_in_manifest."""
+    th, trows = load_table("ddg_subaward_transactions")
+    jp, jb = th.index("Prime PIID"), th.index("Builder")
+    hii = {(r[jp] or "").strip() for r in trows
+           if (r[jb] if jb < len(r) else "").strip() == "HII-Ingalls" and (r[jp] or "").strip()}
+    mh, mrows = load_table("ddg_piid_hull_map")
+    jm = mh.index("Prime PIID")
+    mapped = {(r[jm] or "").strip() for r in mrows if (r[jm] or "").strip()}
+    missing = sorted(hii - mapped)
+    assert not missing, (
+        f"HII-Ingalls DDG transaction PIIDs absent from ddg_piid_hull_map.csv: {missing}")
+
+
+def assert_hull_map_master_consistent() -> None:
+    """The hull classification is now LIVE on the transaction sheet - it INDEXes the curated
+    PIID->Hull map and the roll-ups key on the resulting Assigned Hull. So the map must be internally
+    consistent with the Hull Master that supplies the roll-up spines: every `Candidate Hulls` token
+    has a Hull Master row (else a live INDEX resolves a hull no roll-up row exists for), and every
+    `single-ship` PIID lists exactly one candidate (the single-ship formula branch assigns that one
+    hull). The conflict-aware formula cannot itself assign an out-of-family hull, so validating these
+    inputs is what keeps the live layer sound (the prior assignment-level check read materialized
+    columns that are now sheet formulas)."""
+    mh, mrows = load_table("ddg_piid_hull_map")
+    jc, jk, jp = (mh.index("Candidate Hulls"), mh.index("Exact or Family"), mh.index("Prime PIID"))
+    hm, hrows = load_table("ddg_hull_master")
+    jh = hm.index("Hull")
+    master = {(r[jh] or "").strip() for r in hrows if (r[jh] or "").strip()}
+
+    missing: list[str] = []
+    bad_single: list[str] = []
+    for r in mrows:
+        piid = (r[jp] if jp < len(r) else "").strip()
+        toks = sorted(_hull_set(r[jc] if jc < len(r) else ""))
+        kind = (r[jk] if jk < len(r) else "").strip()
+        missing += [f"{piid}:{t}" for t in toks if t not in master]
+        if kind == "single-ship" and len(toks) != 1:
+            bad_single.append(f"{piid}:{len(toks)} candidates")
+    assert not missing, f"PIID-map Candidate Hulls absent from ddg_hull_master.csv: {missing[:20]}"
+    assert not bad_single, f"single-ship PIID rows without exactly one candidate: {bad_single}"

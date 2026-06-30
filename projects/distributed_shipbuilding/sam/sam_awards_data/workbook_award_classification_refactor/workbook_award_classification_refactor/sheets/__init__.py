@@ -36,17 +36,27 @@ from . import (
     # guide (scope & method)
     taxonomy,
     guide_methodology,
-    # model (Supplier Master dimension + derived program-vendor roll-ups + per-subsystem SWBS roll-up)
+    hull_mapping_methodology,
+    # model (Supplier Master dimension + derived program-vendor roll-ups + per-subsystem SWBS roll-up
+    #        + the DDG hull-linkage roll-ups)
     supplier_master,
     supplier_year_activity,
     ddg_program_vendors,
     ddg_swbs_rollup,
+    ddg_hull_spend_summary,
+    ddg_hull_coverage,
+    ddg_hull_swbs,
+    ddg_vendor_hull,
+    ddg_vendor_hull_swbs,
+    ddg_hull_exceptions,
     virginia_program_vendors,
     columbia_program_vendors,
     # inputs (editable classification levers + curated mappings + deflators)
     naics6_archetype_map,
     vendor_archetype_overrides,
     hii_swbs_crosswalk,
+    ddg_piid_hull_map,
+    ddg_hull_master,
     deflators,
     # data (source evidence: prime awards + the three raw subaward-transaction spines)
     prime_awards,
@@ -66,17 +76,27 @@ SHEETS: list = [
     # --- Guide (scope & method) ---
     taxonomy.TAXONOMY,
     guide_methodology.METHODOLOGY,
-    # --- Model / calculations (Supplier Master dimension + program-vendor roll-ups + SWBS roll-up) ---
+    hull_mapping_methodology.HULL_MAPPING_METHODOLOGY,
+    # --- Model / calculations (Supplier Master dimension + program-vendor roll-ups + SWBS roll-up
+    #     + the DDG hull-linkage roll-ups) ---
     supplier_master.SUPPLIER_MASTER,
     supplier_year_activity.SUPPLIER_YEAR_ACTIVITY,
     ddg_program_vendors.DDG_PROGRAM_VENDORS,
     ddg_swbs_rollup.DDG_SWBS_ROLLUP,
+    ddg_hull_spend_summary.DDG_HULL_SPEND,
+    ddg_hull_coverage.DDG_HULL_COVERAGE,
+    ddg_hull_swbs.DDG_HULL_SWBS,
+    ddg_vendor_hull.DDG_VENDOR_HULL,
+    ddg_vendor_hull_swbs.DDG_VENDOR_HULL_SWBS,
+    ddg_hull_exceptions.DDG_HULL_EXCEPTIONS,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,
     columbia_program_vendors.COLUMBIA_PROGRAM_VENDORS,
     # --- Inputs / mappings (editable classification levers + curated mappings + deflators) ---
     naics6_archetype_map.NAICS_ARCHETYPE_MAP,
     vendor_archetype_overrides.VENDOR_ARCHETYPE_OVERRIDES,
     hii_swbs_crosswalk.HII_SWBS_CROSSWALK,
+    ddg_piid_hull_map.DDG_PIID_HULL_MAP,
+    ddg_hull_master.DDG_HULL_MASTER,
     deflators.DEFLATORS,
     # --- Data (source evidence: prime awards + the three raw subaward-transaction spines) ---
     prime_awards.PRIME_AWARDS,

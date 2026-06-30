@@ -21,9 +21,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-from _paths import REPO  # noqa: E402
-AC = REPO / "projects/distributed_shipbuilding/sam/award_classification"
-EXTRACTED = AC / "workbook_award_classification_refactor/extracted"
+from _paths import AC, EXTRACTED  # noqa: E402  (anchors derive from __file__, so a checkout move needs no edit)
 PKG = AC / "ddg_hii_swbs_subaward_package"
 
 TX_CSV = EXTRACTED / "ddg_subaward_transactions.csv"
