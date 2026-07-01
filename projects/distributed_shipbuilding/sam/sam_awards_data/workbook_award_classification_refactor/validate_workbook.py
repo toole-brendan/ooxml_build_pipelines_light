@@ -36,17 +36,31 @@ EXPECTED_SHEETS = [
     "Market Bridge",
     "Taxonomy",
     "Methodology",
+    "Hull Mapping Methodology",
+    "Lifecycle Methodology",
 
     "Supplier Master",
     "Supplier-Year Activity",
     "DDG Program Vendors",
     "DDG SWBS by Ship-System",
+    "DDG Hull Spend Summary",
+    "DDG Hull Coverage",
+    "DDG Hull x SWBS",
+    "DDG Vendor x Hull Exposure",
+    "DDG Vendor x Hull x SWBS",
+    "DDG Hull Exceptions",
+    "DDG Hull x Lifecycle Stage",
+    "DDG C-D Lifecycle Coverage",
+    "DDG C-D Lifecycle Rollup",
+    "DDG C-D Lifecycle Candidates",
     "Virginia Program Vendors",
     "Columbia Program Vendors",
 
     "Mapping - NAICS Defaults",
     "Mapping - Vendor Overrides",
     "Mapping - HII Code to SWBS",
+    "Mapping - PIID to Hull",
+    "DDG Hull Master",
     "Deflators",
 
     "Prime Awards",
@@ -70,6 +84,8 @@ EXPECTED_TAB_COLORS = {
 EXPECTED_FORMULA_COLS = [
     ("Supplier-Year Activity", "Activity Status"),
     ("Where to Play", "Structure Class"),
+    ("DDG Hull x Lifecycle Stage", "Long-lead"),     # SUMIFS by hull x build stage
+    ("DDG C-D Lifecycle Coverage", "Subaward $M"),   # SUMIFS by narrowing result
 ]
 
 

@@ -16,7 +16,7 @@ from workbook_award_classification_refactor.sheets._italic import S_ITALIC
 from workbook_award_classification_refactor.sheets._tabs import (
     TAB_HULL_METHODOLOGY, TAB_PIID_HULL_MAP, TAB_HULL_MASTER, TAB_DDG_TX,
     TAB_HULL_SPEND, TAB_HULL_COVERAGE, TAB_HULL_SWBS, TAB_VENDOR_HULL,
-    TAB_VENDOR_HULL_SWBS, TAB_HULL_EXCEPTIONS,
+    TAB_VENDOR_HULL_SWBS, TAB_HULL_EXCEPTIONS, TAB_LIFECYCLE_METHOD,
 )
 
 _GROUP = "guide"
@@ -122,9 +122,9 @@ def _render() -> WorksheetSpec:
                                      "(C / D), not an exact hull - see Hull Coverage.")
     _kv(c, "Multi-hull material", "A multi-hull buy, class-standard equipment, spares, or repair "
                                   "parts may legitimately span hulls; it is not forced onto one.")
-    _kv(c, "Lifecycle deferred", "Tagging subawards to a hull lifecycle stage (long-lead / "
-                                 "fabrication / outfit / delivery) needs per-hull milestone dates - "
-                                 "a deferred later phase.")
+    _kv(c, "Lifecycle layer", f"Purchase timing vs each hull's build schedule now stage-tags every "
+                              f"exact-hull subaward and narrows the family-level (C/D) candidates - "
+                              f"see '{TAB_LIFECYCLE_METHOD}'.")
     _kv(c, "No physical module", "Subaward text supports hull / SWBS / vendor / timing, not the HII "
                                  "physical module / grand block / structural unit.")
 

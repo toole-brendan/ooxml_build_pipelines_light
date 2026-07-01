@@ -118,6 +118,8 @@ def build() -> int:
         assert_supplier_year_activity_spine,
         assert_hull_piids_mapped,
         assert_hull_map_master_consistent,
+        assert_hull_milestones_monotonic,
+        assert_lifecycle_columns_consistent,
     )
     # Build-stopping guards (fail loudly before anything is packaged):
     #  - every transaction prime PIID is in the versioned scope manifest as include=Y, and
@@ -140,5 +142,11 @@ def build() -> int:
     #    depend on (candidate hulls all exist; single-ship rows carry exactly one hull).
     assert_hull_piids_mapped()
     assert_hull_map_master_consistent()
+    #  - the construction-lifecycle layer: curated milestones are monotonic (start <= launch <=
+    #    delivery), and the materialized tx stage / narrowing columns agree with the C/D candidate +
+    #    rollup spines (known labels, A/B-vs-C/D exclusive, one rollup row per C/D tx, counts tie, and
+    #    no per-hull dollar split crept in - attribution, not allocation).
+    assert_hull_milestones_monotonic()
+    assert_lifecycle_columns_consistent()
     return package_workbook(OUT, SHEETS, title=_TITLE, creator=_CREATOR,
                             app_name=_APP, normalize_dashes=True)

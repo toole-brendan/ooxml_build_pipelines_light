@@ -311,3 +311,113 @@ def assert_hull_map_master_consistent() -> None:
             bad_single.append(f"{piid}:{len(toks)} candidates")
     assert not missing, f"PIID-map Candidate Hulls absent from ddg_hull_master.csv: {missing[:20]}"
     assert not bad_single, f"single-ship PIID rows without exactly one candidate: {bad_single}"
+
+
+# --- construction-lifecycle layer guards ---------------------------------------------------
+
+_MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
+
+# Known lifecycle labels (mirror scripts/_lifecycle.STAGE_* / NR_*; the sheet SUMIFS criteria use the
+# same strings). A materialized value outside these sets is drift between the Python materializer and
+# the live sheet - fail the build, the lifecycle analogue of the hull recalc QA.
+_STAGE_LABELS = {"Long-lead", "Construction", "Outfit / test", "Post-delivery", "No schedule data"}
+_NARROW_LABELS = {"Single candidate", "2-3 candidates", "Still family-level",
+                  "Exception (no window match)", "No schedule data"}
+
+
+def _ym(s: str):
+    """'Sep 2017' -> (2017, 9) for ordering; None if blank / unparseable."""
+    parts = (s or "").strip().split()
+    if len(parts) != 2 or not parts[1].isdigit():
+        return None
+    mon = _MONTHS.get(parts[0][:3].lower())
+    return (int(parts[1]), mon) if mon else None
+
+
+def assert_hull_milestones_monotonic() -> None:
+    """The curated DDG Hull Master milestones must satisfy Start Fabrication <= Launch <= Delivery
+    wherever present, so the lifecycle windows are well-formed - a launch before fab start, or a
+    delivery before launch, would invert a stage boundary and mis-tag every purchase against it."""
+    headers, rows = load_table("ddg_hull_master")
+    jh = headers.index("Hull")
+    js, jl, jd = (headers.index("Start Fabrication"), headers.index("Launch"),
+                  headers.index("Delivery"))
+    bad: list[str] = []
+    for r in rows:
+        hull = (r[jh] if jh < len(r) else "").strip()
+        seq = [(n, _ym(r[j] if j < len(r) else "")) for n, j in
+               (("start", js), ("launch", jl), ("delivery", jd))]
+        present = [(n, v) for n, v in seq if v]
+        for (n1, v1), (n2, v2) in zip(present, present[1:]):
+            if v1 > v2:
+                bad.append(f"{hull}: {n1} {v1} > {n2} {v2}")
+    assert not bad, "DDG Hull Master milestone dates out of order: " + "; ".join(bad[:20])
+
+
+def assert_lifecycle_columns_consistent() -> None:
+    """The construction-lifecycle layer's materialized columns must be well-formed and the per-row tx
+    columns must agree with the C/D candidate + rollup spines (the lifecycle analogue of the hull
+    recalc QA). Guards:
+      (a) every materialized Lifecycle Stage / Narrowing Result is a KNOWN label (drift vs sheet criteria);
+      (b) Lifecycle Stage (A/B) and Narrowing Result (C/D) are mutually exclusive per row;
+      (c) the rollup is one row per C/D tx and its Narrowing Result matches the tx column;
+      (d) each rollup Timing Candidate Count equals that tx's TRUE (matched) candidate rows;
+      (e) the candidate / rollup spines carry NO per-hull dollar (attribution, not allocation - the wall).
+    """
+    th, trows = load_table("ddg_subaward_transactions")
+    jstage, jnarrow, jrid = (th.index("Lifecycle Stage"), th.index("Narrowing Result"),
+                             th.index("Subaward Report ID"))
+    bad_label: set[str] = set()
+    both: list[str] = []
+    tx_narrow: dict[str, str] = {}
+    for r in trows:
+        stage = (r[jstage] if jstage < len(r) else "").strip()
+        narrow = (r[jnarrow] if jnarrow < len(r) else "").strip()
+        rid = (r[jrid] if jrid < len(r) else "").strip()
+        if stage and stage not in _STAGE_LABELS:
+            bad_label.add(f"stage {stage!r}")
+        if narrow and narrow not in _NARROW_LABELS:
+            bad_label.add(f"narrowing {narrow!r}")
+        if stage and narrow:
+            both.append(rid)
+        if narrow:
+            tx_narrow[rid] = narrow
+    assert not bad_label, ("unknown lifecycle labels (drift vs sheet SUMIFS criteria): "
+                           + "; ".join(sorted(bad_label)[:20]))
+    assert not both, ("rows carry BOTH a Lifecycle Stage and a Narrowing Result "
+                      f"(A/B and C/D must be exclusive): {both[:10]}")
+
+    rh, rrows = load_table("ddg_cd_lifecycle_rollup")
+    money_r = [h for h in rh if "$" in h or "amount" in h.lower() or "allocat" in h.lower()]
+    assert not money_r, f"rollup spine carries a $ / allocation column (the wall): {money_r}"
+    jr_rid, jr_nr, jr_cnt = (rh.index("Subaward Report ID"), rh.index("Narrowing Result"),
+                             rh.index("Timing Candidate Count"))
+    rollup_nr: dict[str, str] = {}
+    rollup_cnt: dict[str, int] = {}
+    for r in rrows:
+        rid = (r[jr_rid] if jr_rid < len(r) else "").strip()
+        assert rid not in rollup_nr, f"duplicate rollup row for transaction {rid}"
+        rollup_nr[rid] = (r[jr_nr] if jr_nr < len(r) else "").strip()
+        try:
+            rollup_cnt[rid] = int((r[jr_cnt] if jr_cnt < len(r) else "0") or 0)
+        except ValueError:
+            rollup_cnt[rid] = -1
+    assert set(rollup_nr) == set(tx_narrow), ("C/D rollup vs transaction report-id set drift: "
+                                              + _diff(set(rollup_nr), set(tx_narrow), "rollup", "tx"))
+    mism = [rid for rid, nr in rollup_nr.items() if nr != tx_narrow.get(rid)]
+    assert not mism, f"rollup Narrowing Result disagrees with the tx column for: {mism[:10]}"
+
+    ch, crows = load_table("ddg_cd_lifecycle_candidates")
+    money_c = [h for h in ch if "$" in h or "amount" in h.lower() or "allocat" in h.lower()]
+    assert not money_c, f"candidate spine carries a $ / allocation column (the wall): {money_c}"
+    jc_rid, jc_match = ch.index("Subaward Report ID"), ch.index("Window Match Flag")
+    matched: dict[str, int] = {}
+    for r in crows:
+        rid = (r[jc_rid] if jc_rid < len(r) else "").strip()
+        if (r[jc_match] if jc_match < len(r) else "").strip() == "TRUE":
+            matched[rid] = matched.get(rid, 0) + 1
+    cnt_bad = [f"{rid}: rollup {rollup_cnt[rid]} vs candidate TRUE {matched.get(rid, 0)}"
+               for rid in rollup_cnt if matched.get(rid, 0) != rollup_cnt[rid]]
+    assert not cnt_bad, ("Timing Candidate Count disagrees with TRUE candidate rows: "
+                         + "; ".join(cnt_bad[:10]))

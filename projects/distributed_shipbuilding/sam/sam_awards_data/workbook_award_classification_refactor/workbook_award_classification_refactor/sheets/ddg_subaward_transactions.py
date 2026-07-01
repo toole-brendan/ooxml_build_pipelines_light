@@ -21,6 +21,13 @@ the transaction sheet and every roll-up. A hidden `PIID Map Row` helper MATCHes 
 `Assigned Hull` / `Hull Assignment Scope` / `Basis` / `Hull Confidence` are nested IFs reproducing
 scripts/_hull_logic.resolve() (A/B/C/D/X, conflict-aware). The roll-ups SUMIFS over these columns.
 
+The construction-lifecycle tag (`Lifecycle Stage` / `Lifecycle Stage Basis` / `Date Source Confidence`
+/ `Narrowing Result` / `Lifecycle Confidence`) is materialized by scripts/tag_ddg_transactions_lifecycle.py
+(a date-window join cannot be a live formula). A/B rows carry the single construction Stage of their
+known hull; C/D rows carry the timing Narrowing Result + Lifecycle Confidence (the per-candidate stages
+live on DDG C-D Lifecycle Candidates); X / unassigned rows are blank. DDG Hull x Lifecycle Stage SUMIFS
+on (Assigned Hull x Lifecycle Stage); DDG C-D Lifecycle Coverage SUMIFS on Narrowing Result.
+
 Promoted accessor (imported by the program-vendor + SWBS + hull roll-up sheets): `ddg_tx_cols`.
 """
 from __future__ import annotations
@@ -50,8 +57,9 @@ from workbook_award_classification_refactor.sheets._widths import (
     W_RANK, W_SHORT_FLAG, W_CLASS, W_CATEGORY,
 )
 
-# 71 columns = 50 raw (build_program_transactions.COLUMNS order, UEI = column B) + 5 SWBS
+# 76 columns = 50 raw (build_program_transactions.COLUMNS order, UEI = column B) + 5 SWBS
 # + 4 hull regex evidence (materialized by scripts/tag_ddg_transactions_hulls.py)
+# + 5 construction-lifecycle (materialized by scripts/tag_ddg_transactions_lifecycle.py)
 # + 12 sheet-only formula columns (3 SWBS/hull helpers below + the hull classification + fiscal).
 _WIDTHS = [
     W_UEI, W_VENDOR, W_VENDOR, W_UEI, W_VENDOR,                 # subawardee entity
@@ -65,6 +73,9 @@ _WIDTHS = [
     W_CODE, W_SUPTYPE, W_CODE, W_TEXT_WIDE, W_TEXT,            # SWBS: code | builder | subsystem | SWBS | basis
     # hull regex evidence (CSV): direct text | count | prime-req text | count
     W_SUBNUM, W_RANK, W_SUBNUM, W_RANK,
+    # construction-lifecycle (CSV, tag_ddg_transactions_lifecycle): stage | basis | date-source conf |
+    #   narrowing result | lifecycle confidence. A/B carry the stage; C/D carry the narrowing; X blank.
+    W_SUPTYPE, W_TEXT_WIDE, W_SHORT_FLAG, W_CATEGORY, W_CLASS,
     # sheet-only formula columns (extra_cols order): SWBS match-row helper |
     #   PIID map row | PIID map kind | hull-in-family (3 hidden helpers) |
     #   PIID candidate hulls | assigned hull | scope | basis | confidence |
@@ -74,7 +85,7 @@ _WIDTHS = [
     W_TEXT_WIDE, W_SHORT_FLAG, W_CLASS, W_CATEGORY, W_CODE,
     W_CD, W_CD, W_AMOUNT,
 ]
-assert len(_WIDTHS) == 71, len(_WIDTHS)
+assert len(_WIDTHS) == 76, len(_WIDTHS)
 
 _DATE_COLS = ["Subaward Date", "Submitted Date", "Base Award Date Signed"]
 _FLOAT_COLS = ["Subaward Amount $", "Total Contract Value $"]

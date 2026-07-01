@@ -61,6 +61,13 @@ TAB_VENDOR_HULL_SWBS = "DDG Vendor x Hull x SWBS"  # vendor x assigned hull x sh
 TAB_HULL_EXCEPTIONS  = "DDG Hull Exceptions"      # conflict / multi-hull / out-of-family log
 TAB_HULL_METHODOLOGY = "Hull Mapping Methodology"  # the two-layer method + confidence grades
 
+# --- construction-lifecycle layer (timing: when each subaward was made vs each hull's build) ---
+TAB_HULL_LIFECYCLE   = "DDG Hull x Lifecycle Stage"   # exact A/B $ by hull x build stage
+TAB_CD_LC_COVERAGE   = "DDG C-D Lifecycle Coverage"   # family-level $ by timing-narrowing result
+TAB_CD_LC_ROLLUP     = "DDG C-D Lifecycle Rollup"     # one row per C/D tx: narrowed candidate set
+TAB_CD_LC_CANDIDATES = "DDG C-D Lifecycle Candidates"  # one row per C/D tx x candidate hull
+TAB_LIFECYCLE_METHOD = "Lifecycle Methodology"        # stages, windows, dual confidence, the wall
+
 # All <= 31 chars (Excel sheet-name limit); the packager re-asserts this.
 assert all(len(n) <= 31 for n in (
     TAB_EXEC_SUMMARY,
@@ -73,4 +80,6 @@ assert all(len(n) <= 31 for n in (
     TAB_PIID_HULL_MAP, TAB_HULL_MASTER, TAB_HULL_SPEND, TAB_HULL_COVERAGE,
     TAB_HULL_SWBS, TAB_VENDOR_HULL, TAB_VENDOR_HULL_SWBS, TAB_HULL_EXCEPTIONS,
     TAB_HULL_METHODOLOGY,
+    TAB_HULL_LIFECYCLE, TAB_CD_LC_COVERAGE, TAB_CD_LC_ROLLUP, TAB_CD_LC_CANDIDATES,
+    TAB_LIFECYCLE_METHOD,
 ))

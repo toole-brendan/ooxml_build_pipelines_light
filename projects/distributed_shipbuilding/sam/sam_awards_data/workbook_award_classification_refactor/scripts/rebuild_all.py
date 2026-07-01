@@ -12,6 +12,7 @@ Stages, in dependency order:
   [offline] build_swbs_crosswalk       -> hii_swbs_crosswalk.csv                  (HII work-item code -> SWBS)
   [offline] tag_ddg_transactions_swbs  -> DDG SWBS transaction tags
   [offline] tag_ddg_transactions_hulls -> DDG hull tags + ddg_hull_exceptions.csv (reads ddg_piid_hull_map.csv)
+  [offline] tag_ddg_transactions_lifecycle -> DDG construction-lifecycle tx columns (reads hull-master milestones)
   [offline] build_program_transactions -> {ddg,virginia,columbia}_subaward_transactions.csv
   [offline] build_program_vendors      -> {ddg,virginia,columbia}_program_vendors.csv  (research-prep + row spine)
   [offline] build_supplier_master      -> supplier_master.csv                     (the dimension; imports NAICS precedence from build_program_vendors)
@@ -19,6 +20,7 @@ Stages, in dependency order:
   [offline] build_supplier_year_activity -> supplier_year_activity.csv            (Program x UEI x Federal FY spine for Where to Play)
   [offline] build_ddg_swbs_rollup      -> ddg_swbs_by_subsystem.csv
   [offline] build_ddg_vendor_hull      -> ddg_vendor_hull_exposure.csv            (vendor x assigned-hull spine)
+  [offline] build_ddg_cd_lifecycle     -> ddg_cd_lifecycle_candidates.csv + _rollup.csv (C/D timing narrowing)
   [build]   build_workbook             -> 20260620_Distributed Shipbuilding Master SAM_vS.xlsx  (runs the integrity asserts)
 
 Hand-maintained inputs (NOT regenerated here): extracted/deflators.csv,
@@ -52,6 +54,7 @@ STAGES = [
     ("build_swbs_crosswalk",       False, [PY, str(SCRIPTS / "build_swbs_crosswalk.py")]),
     ("tag_ddg_transactions_swbs",  False, [PY, str(SCRIPTS / "tag_ddg_transactions_swbs.py")]),
     ("tag_ddg_transactions_hulls", False, [PY, str(SCRIPTS / "tag_ddg_transactions_hulls.py")]),
+    ("tag_ddg_transactions_lifecycle", False, [PY, str(SCRIPTS / "tag_ddg_transactions_lifecycle.py")]),
     ("build_program_transactions", False, [PY, str(SCRIPTS / "build_program_transactions.py")]),
     ("build_program_vendors:ddg",      False, [PY, str(SCRIPTS / "build_program_vendors.py"), "ddg"]),
     ("build_program_vendors:virginia", False, [PY, str(SCRIPTS / "build_program_vendors.py"), "virginia"]),
@@ -61,6 +64,7 @@ STAGES = [
     ("build_supplier_year_activity", False, [PY, str(SCRIPTS / "build_supplier_year_activity.py")]),
     ("build_ddg_swbs_rollup",      False, [PY, str(SCRIPTS / "build_ddg_swbs_rollup.py")]),
     ("build_ddg_vendor_hull",      False, [PY, str(SCRIPTS / "build_ddg_vendor_hull.py")]),
+    ("build_ddg_cd_lifecycle",     False, [PY, str(SCRIPTS / "build_ddg_cd_lifecycle.py")]),
     ("build_workbook",             False, [PY, str(REFACTOR / "build_workbook.py")]),
 ]
 

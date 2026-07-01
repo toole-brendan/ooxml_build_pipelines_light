@@ -37,8 +37,9 @@ from . import (
     taxonomy,
     guide_methodology,
     hull_mapping_methodology,
+    lifecycle_methodology,
     # model (Supplier Master dimension + derived program-vendor roll-ups + per-subsystem SWBS roll-up
-    #        + the DDG hull-linkage roll-ups)
+    #        + the DDG hull-linkage roll-ups + the construction-lifecycle roll-ups)
     supplier_master,
     supplier_year_activity,
     ddg_program_vendors,
@@ -49,6 +50,10 @@ from . import (
     ddg_vendor_hull,
     ddg_vendor_hull_swbs,
     ddg_hull_exceptions,
+    ddg_hull_lifecycle_stage,
+    ddg_cd_lifecycle_coverage,
+    ddg_cd_lifecycle_rollup,
+    ddg_cd_lifecycle_candidates,
     virginia_program_vendors,
     columbia_program_vendors,
     # inputs (editable classification levers + curated mappings + deflators)
@@ -77,8 +82,9 @@ SHEETS: list = [
     taxonomy.TAXONOMY,
     guide_methodology.METHODOLOGY,
     hull_mapping_methodology.HULL_MAPPING_METHODOLOGY,
+    lifecycle_methodology.LIFECYCLE_METHODOLOGY,
     # --- Model / calculations (Supplier Master dimension + program-vendor roll-ups + SWBS roll-up
-    #     + the DDG hull-linkage roll-ups) ---
+    #     + the DDG hull-linkage roll-ups + the construction-lifecycle roll-ups) ---
     supplier_master.SUPPLIER_MASTER,
     supplier_year_activity.SUPPLIER_YEAR_ACTIVITY,
     ddg_program_vendors.DDG_PROGRAM_VENDORS,
@@ -89,6 +95,10 @@ SHEETS: list = [
     ddg_vendor_hull.DDG_VENDOR_HULL,
     ddg_vendor_hull_swbs.DDG_VENDOR_HULL_SWBS,
     ddg_hull_exceptions.DDG_HULL_EXCEPTIONS,
+    ddg_hull_lifecycle_stage.DDG_HULL_LIFECYCLE,
+    ddg_cd_lifecycle_coverage.DDG_CD_LC_COVERAGE,
+    ddg_cd_lifecycle_rollup.DDG_CD_LC_ROLLUP,
+    ddg_cd_lifecycle_candidates.DDG_CD_LC_CANDIDATES,
     virginia_program_vendors.VIRGINIA_PROGRAM_VENDORS,
     columbia_program_vendors.COLUMBIA_PROGRAM_VENDORS,
     # --- Inputs / mappings (editable classification levers + curated mappings + deflators) ---
