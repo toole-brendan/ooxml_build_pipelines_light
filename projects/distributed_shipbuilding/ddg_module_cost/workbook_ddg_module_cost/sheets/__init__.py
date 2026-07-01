@@ -7,7 +7,8 @@ groups.SHEET_GROUPS order (summary -> guide -> inputs -> data -> validation).
 
 Layers:
   - summary : the answer page (Module Cost: the cascade).
-  - guide   : the build hierarchy (Structural Hierarchy).
+  - guide   : the build hierarchy (Structural Hierarchy), the SAM<->module bridge, and
+              the grand-block outsourcing evidence behind it (DDG Grand-Block Outsourcing).
   - inputs  : the single edit surface (Assumptions: anchor FY, counts, weights).
   - data    : the cost basis (Ship Cost Basis) + supplier context (Outfit Context).
 
@@ -25,6 +26,7 @@ from . import (
     # guide
     structural_hierarchy,
     sam_module_bridge,
+    grand_block_outsourcing,
     # inputs
     assumptions,
     # data
@@ -39,6 +41,7 @@ SHEETS: list = [
     # --- Guide ---
     structural_hierarchy.STRUCTURAL_HIERARCHY,
     sam_module_bridge.SAM_MODULE_BRIDGE,
+    grand_block_outsourcing.GRAND_BLOCK_OUTSOURCING,
     # --- Inputs ---
     assumptions.ASSUMPTIONS,
     # --- Data ---

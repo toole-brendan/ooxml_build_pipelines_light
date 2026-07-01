@@ -120,6 +120,29 @@ def recalc_report() -> int:
         print(f"  [{'OK' if ok else 'FAIL'}] module breakout total = ship BC "
               f"({alloc:.1f} vs {ship_bc:.1f})")
 
+    # --- DDG Grand-Block Outsourcing tab -----------------------------------------
+    gb = wb["DDG Grand-Block Outsourcing"]
+
+    # §3 three-yard total sits in the ~$55.0M band (SUM of the transcribed yard rows).
+    yards, cellref = _num(gb, "Grand-block outsourcing, 3 yards", "C")
+    ok = isinstance(yards, (int, float)) and 53.0 <= yards <= 57.0
+    fails += 0 if ok else 1
+    print(f"  [{'OK' if ok else 'FAIL'}] grand-block 3-yard total = {yards!r}  (expect ~55.0)")
+
+    # §2 DDG 137 per-block rows sum to the DDG 137 subtotal (~$49.2M).
+    d137, _ = _num(gb, "DDG 137 grand-block total", "D")
+    ok = isinstance(d137, (int, float)) and 48.0 <= d137 <= 50.5
+    fails += 0 if ok else 1
+    print(f"  [{'OK' if ok else 'FAIL'}] DDG 137 grand-block sum = {d137!r}  (expect ~49.2)")
+
+    # §4 cost anchor: model per grand block == per-ship BC / grand-block count.
+    perblk, _ = _num(gb, "Model allocation per grand block (even split)", "C")
+    if isinstance(perblk, (int, float)) and isinstance(ship_bc, (int, float)):
+        ok = abs(perblk - ship_bc / 21.0) < 0.3
+        fails += 0 if ok else 1
+        print(f"  [{'OK' if ok else 'FAIL'}] model per grand block = ship BC / 21 "
+              f"({perblk:.2f} vs {ship_bc / 21.0:.2f})")
+
     return 1 if (errs or fails) else 0
 
 

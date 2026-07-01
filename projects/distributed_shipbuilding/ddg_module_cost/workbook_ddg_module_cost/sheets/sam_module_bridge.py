@@ -19,6 +19,7 @@ from workbook_ddg_module_cost.sheets._layout import RowCursor
 from workbook_ddg_module_cost.sheets._italic import S_ITALIC
 from workbook_ddg_module_cost.sheets._tabs import (
     TAB_SAM_MODULE_BRIDGE, TAB_STRUCTURAL_HIER, TAB_OUTFIT_CONTEXT,
+    TAB_GRAND_BLOCK_OUT,
 )
 
 _GROUP = "guide"
@@ -104,6 +105,25 @@ def _make():
     c.write(["Sources: NSRP-0164 (HathiTrust, full view); 'Ship Work Breakdown Structures Through "
              "Different Ship Lifecycle Stages' (CWBS / SWBS / PWBS / ZWBS); OSTI biblio 6892557 "
              "(Seubert 1988)."], styles=[S_NOTE])
+    c.blank(2)
+
+    # §5 the explicit-text case -------------------------------------------------------
+    c.section("§5 - The explicit-text case: grand-block outsourcing", _NCOLS)
+    c.write(["Where the §2 / §3 rule actually fires - subawards that DO name the block."],
+            styles=[S_ITALIC])
+    c.blank()
+    _kv(c, "What it is", "On the FY2018-22 multi-year buy, HII outsourced fabrication of whole "
+                         "grand blocks to three yards (Gulf Copper, BAE Jacksonville, Eastern "
+                         "Shipbuilding). Their SOW text names the block - \"GB B15\", \"GB A16 "
+                         "& A21\", \"C15GB\", \"GRAND BLOCK\" - so these subawards attribute to "
+                         "a physical grand block on explicit text, exactly as §3 permits.")
+    _kv(c, "Why it stays rare", "It is the visible tail of make-vs-buy: only OUTSOURCED blocks "
+                                "generate a block-named subaward. In-house blocks never enter the "
+                                "subaward corpus, so this lens sees outsourced fabrication only, "
+                                "not the full block population.")
+    _kv(c, "See", f"The {TAB_GRAND_BLOCK_OUT} tab - the verbatim evidence, the per-block split "
+                  f"for DDG 137, and a first bottom-up check of outsourced fabrication against "
+                  f"the Module Cost per-grand-block allocation.")
 
     def render() -> WorksheetSpec:
         ws = worksheet(c.rows, cols=_COLS, tab_color=group_color(_GROUP),
